@@ -1,0 +1,11 @@
+{
+    "model": "AI.Models.mixtral",
+    "temperature": 1,
+    "stream": false,
+    "messages": [
+      {
+        "role": "user",
+        "content": ""
+      }
+    ]
+  }

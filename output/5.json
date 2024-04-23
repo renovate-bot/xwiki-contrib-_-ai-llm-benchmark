@@ -1,0 +1,26 @@
+{
+  "id": 5,
+  "question": "What is the boiling point of water in Celsius?",
+  "expected_answer": "100 degrees",
+  "ai_answer": " The boiling point of water is 100 degrees Celsius at standard atmospheric pressure. However, this can vary with changes in altitude or pressure.",
+  "sources": [
+    {
+      "docId": "EvalDoc",
+      "url": "localhost:8081/xwiki/bin/view/EvalDoc",
+      "content": "\"It s official: 2023 was the hottest year on record, with global temperatures averaging between 1.35 \u00b0C and 1.54 \u00b0C above preindustrial conditions (1 4), according to the leading projects tracking global temperatures. Given that 1.5 \u00b0C was the goal set in the 2015 Paris Agreement, it seems an inauspicious milestone. As the mercury continues to rise, it s important to be clear about what exactly such milestones mean, while, at the same time, considering the prospects for mitigating further temperature increases.\\n\\nFirst, one year with 1.5 \u00b0C or so of warming or one day above 2 \u00b0C, as recorded by the European Union s Copernicus program in mid-November (5) doesn t mean we ve already reached those targets as laid out by the Paris Agreement. When climate scientists refer to targets to limit warming, they mean a sustained period generally 20 years during which the global temperature averages 1.5 \u00b0C or 2 \u00b0C above the years from 1850 to 1900 (6).\\n\\nMore importantly, actions taken by the world s n\"",
+      "similarityScore": "0.62735647"
+    },
+    {
+      "docId": "EvalDoc",
+      "url": "localhost:8081/xwiki/bin/view/EvalDoc",
+      "content": "\"y the world s nations right now can make a big difference in determining which path we take. Current policies, which fall somewhat short of pledges made to cut emissions, have the planet on course to warm by between 2.2 \u00b0C and 3.4 \u00b0C above preindustrial levels by the end of the century (7). The 1.5 \u00b0C Paris goal is likely beyond our grasp, but more aggressive action to cut greenhouse gas emissions could still limit global warming to less than 2 \u00b0C. And that would mean a massive reduction in the local consequences of climate change.  Every 10th of a degree matters,  says Katharine Hayhoe, a climate scientist at Texas Tech University in Lubbock and chief scientist with The Nature Conservancy.\\n\\nTo illustrate what different possible climate destinations mean in terms of deadly heat, debilitating droughts, and destructive floods, PNAS Front Matter has created a series of interactive maps and charts using projections compiled by Probable Futures, a nonprofit that aims to help governments, or\"",
+      "similarityScore": "0.6040028"
+    },
+    {
+      "docId": "RR2",
+      "url": "",
+      "content": "\"ceptional [[expense>>url:https://en.wikipedia.org/wiki/Expense]] was taken for 2018, 40% of the total cash cost to 2022, before \u00a3450 million in 2019 and \u00a3100 million less in 2020.^^[[~[42~]>>url:https://en.wikipedia.org/wiki/Rolls-Royce_Trent_1000#cite_note-42]]^^\\n\\n==== Mitigation ====\\n\\nExposing the base material to [[low-cycle fatigue>>url:https://en.wikipedia.org/wiki/Low-cycle_fatigue]], the [[thermal barrier coating>>url:https://en.wikipedia.org/wiki/Thermal_barrier_coating]] on the IP turbine blades was eroded prematurely by \\\"[[hot corrosion>>url:https://en.wikipedia.org/wiki/Hot_corrosion]]\\\" caused by high atmospheric [[sulfur>>url:https://en.wikipedia.org/wiki/Sulfur_dioxide]] due to [[polluting>>url:https://en.wikipedia.org/wiki/Polluting]] industries around large Asia-Pacific cities. The initial fix, a revised base material and [[coating>>url:https://en.wikipedia.org/wiki/Coating]] to counter IP turbine corrosion, was installed by September 2018 in over 62% of the affected fleet. Laboratory testing of the newer turbine is satisfactory and the turbine lifetime should be proved by in-service inspections, with some engines already having completed 1,000 1,500 cycles. A materials test programme was verified with UK and European universities: low-cycle [[fatigue tests>>url:https://en.wikipedia.org/wiki/Fatigue_testing]] showed the agent [[diffusion>>url:https://en.wikipedia.org/wiki/Diffusion]] into the main material was prevented, avoiding [[microcrack>>url:https://en.wikipedia.org/wiki/Microcrack]] formation. A model predicts the [[corrosive agents>>url:https://en.wikipedia.org/wiki/Corrosive_agents]] exposure to avoid inspections and to sequence the retrofits.^^[[~[43~]>>url:https://en.wikipedia.org/wiki/Rolls-Royce_Trent_1000#cite_note-AvWeek20sep2018-43]]^^\\n\\nThe [[failure mechanism>>url:https://en.wikipedia.org/wiki/Failure_mechanism]] was not clearly understood when the issue was discovered in March, after four compressor blades on the first IP rotor and o\"",
+      "similarityScore": "0.5588809"
+    }
+  ]
+}

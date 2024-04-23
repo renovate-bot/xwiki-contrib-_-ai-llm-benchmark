@@ -60,6 +60,7 @@ nbproject
 # Misc
 *.log.*
 *.log
+.env
 .sonar-ide.properties
 .clover
 *~

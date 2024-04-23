@@ -1,0 +1,9 @@
+{
+    "id": "EvalDoc",
+    "title": "EvalDoc",
+    "language": "en",
+    "url": "localhost:8081/xwiki/bin/view/EvalDoc",
+    "collection": "Eval",
+    "mimetype": "plain/text",
+    "content": "placeholder content"
+}

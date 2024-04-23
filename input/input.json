@@ -1,0 +1,29 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the capital of France?",
+      "expected_answer": "Paris"
+    },
+    {
+      "id": 2,
+      "question": "Who wrote 'Romeo and Juliet'?",
+      "expected_answer": "William Shakespeare"
+    },
+    {
+      "id": 3,
+      "question": "What is WAISE?",
+      "expected_answer": "WAISE is a project that aims to develop an AI-powered search engine integrating with platforms like XWiki. The core of the project is a WAISE server, which will provide context-based answers using Large Language Models (LLMs) based on indexed content."
+    },
+    {
+      "id": 4,
+      "question": "What was the hottest year on record?",
+      "expected_answer": " 2023"
+    },
+    {
+      "id": 5,
+      "question": "What is the boiling point of water in Celsius?",
+      "expected_answer": "100 degrees"
+    }
+  ]
+}
