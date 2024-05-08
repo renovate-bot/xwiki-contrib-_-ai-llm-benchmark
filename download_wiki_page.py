@@ -20,32 +20,6 @@ def download_and_extract(session, url):
     return response.text
 
 
-def convert_html_to_xwiki_syntax(session, html_content):
-    # Prepare the payload
-    payload = {
-        'text': html_content
-    }
-
-    # Send the request
-    url = 'http://localhost:1620/xwiki/bin/view/Main/?sheet=CKEditor.HTMLConverter&fromHTML=true'
-    # Get the form token
-    response = session.get(url)
-    response.raise_for_status()  # Ensure the request was successful
-
-    # Extract the form token
-    match = re.search(r'data-xwiki-form-token="([^"]+)"', response.text)
-    if match:
-        form_token = match.group(1)
-    else:
-        raise ValueError("Could not find form token")
-    payload['formToken'] = form_token
-
-    response = session.post(url, data=payload)
-    response.raise_for_status()  # Ensure the request was successful
-
-    return response.text
-
-
 def generate_json(reference, url, title, content):
     return {
         'id': reference,
