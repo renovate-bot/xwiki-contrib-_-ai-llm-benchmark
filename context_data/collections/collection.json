@@ -8,6 +8,5 @@
     "document_spaces": [],
     "allow_guests": true,
     "query_groups": "XWiki.XWikiAllGroup",
-    "rights_check_method": "rightsCheckJWT",
-    "rights_check_method_param": ""
+    "rights_check_method": "public"
 }
