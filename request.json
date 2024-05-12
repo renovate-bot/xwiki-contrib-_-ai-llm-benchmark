@@ -1,6 +1,6 @@
 {
-    "model": "AI.Models.mixtral",
-    "temperature": 1,
+    "model": "AI.Models.llama3",
+    "temperature": 0.3,
     "stream": false,
     "messages": [
       {

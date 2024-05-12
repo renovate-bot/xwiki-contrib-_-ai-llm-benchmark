@@ -1,6 +1,13 @@
 import json
 import os
 import matplotlib.pyplot as plt
+import argparse
+
+# Parse command-line arguments
+parser = argparse.ArgumentParser(description='Create plots from evaluation results.')
+parser.add_argument('--results-dir', required=True, help='Directory containing evaluation result files')
+parser.add_argument('--plots-dir', required=True, help='Directory to store the generated plots')
+args = parser.parse_args()
 
 # Load and parse results data
 def load_results(results_dir):
@@ -14,12 +21,10 @@ def load_results(results_dir):
     return results
 
 # Create plots directory if it doesn't exist
-plots_dir = 'plots'
-os.makedirs(plots_dir, exist_ok=True)
+os.makedirs(args.plots_dir, exist_ok=True)
 
 # Load results data
-results_dir = 'results'
-results = load_results(results_dir)
+results = load_results(args.results_dir)
 
 # Extract data for plotting
 queries = [result['query'] for result in results]
@@ -34,7 +39,7 @@ plt.ylabel('Relevance Score')
 plt.title('Relevance Scores')
 plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
-plt.savefig(os.path.join(plots_dir, 'relevance_scores.png'))
+plt.savefig(os.path.join(args.plots_dir, 'relevance_scores.png'))
 plt.close()
 
 # Create a bar plot for accuracy scores (ROUGE-1 F-score)
@@ -45,7 +50,7 @@ plt.ylabel('Accuracy Score (ROUGE-1 F-score)')
 plt.title('Accuracy Scores')
 plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
-plt.savefig(os.path.join(plots_dir, 'accuracy_scores.png'))
+plt.savefig(os.path.join(args.plots_dir, 'accuracy_scores.png'))
 plt.close()
 
-print("Plots saved in the 'plots' directory.")
+print(f"Plots saved in the '{args.plots_dir}' directory.")

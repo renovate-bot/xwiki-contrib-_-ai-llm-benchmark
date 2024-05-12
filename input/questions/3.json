@@ -1,5 +1,0 @@
-{
-  "id": 3,
-  "question": "What is WAISE?",
-  "expected_answer": "WAISE is a project that aims to develop an AI-powered search engine integrating with platforms like XWiki. The core of the project is a WAISE server, which will provide context-based answers using Large Language Models (LLMs) based on indexed content."
-}

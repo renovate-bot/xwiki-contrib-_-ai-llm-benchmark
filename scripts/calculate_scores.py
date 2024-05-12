@@ -3,6 +3,13 @@ import os
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 from rouge import Rouge
+import argparse
+
+# Parse command-line arguments
+parser = argparse.ArgumentParser(description='Calculate evaluation scores.')
+parser.add_argument('--output-dir', required=True, help='Directory containing output files')
+parser.add_argument('--results-dir', required=True, help='Directory to store the evaluation results')
+args = parser.parse_args()
 
 # Load and parse data
 def load_data(file_path):
@@ -15,6 +22,8 @@ vectorizer = TfidfVectorizer()
 # Evaluation metrics
 def relevance_score(input_text, source_texts):
     """Calculates average cosine similarity between input text and source documents."""
+    if not source_texts:
+        return 0.0
     tfidf = vectorizer.fit_transform([input_text] + source_texts)
     cosine_similarities = cosine_similarity(tfidf[0:1], tfidf[1:])
     return cosine_similarities.mean()
@@ -32,14 +41,12 @@ def accuracy_metric(predicted, reference):
     return scores[0]
 
 # Create results directory if it doesn't exist
-results_dir = 'results'
-os.makedirs(results_dir, exist_ok=True)
+os.makedirs(args.results_dir, exist_ok=True)
 
 # Process each output file
-output_dir = 'output'
-for filename in os.listdir(output_dir):
+for filename in os.listdir(args.output_dir):
     if filename.endswith('.json'):
-        output_file = os.path.join(output_dir, filename)
+        output_file = os.path.join(args.output_dir, filename)
         output_data = load_data(output_file)
 
         # Process the output data
@@ -48,7 +55,7 @@ for filename in os.listdir(output_dir):
         expected_response = output_data['expected_answer']
 
         # Sources list
-        sources = [src['content'] for src in output_data['sources']]
+        sources = [src['content'] for src in output_data['sources']] if output_data['sources'] else []
 
         # Calculate metrics
         relevance = relevance_score(predicted_response, sources)
@@ -62,8 +69,8 @@ for filename in os.listdir(output_dir):
         }
 
         # Save result to JSON file
-        result_file = os.path.join(results_dir, f"{os.path.splitext(filename)[0]}_result.json")
+        result_file = os.path.join(args.results_dir, f"{os.path.splitext(filename)[0]}_result.json")
         with open(result_file, 'w') as file:
             json.dump(result, file, indent=2)
 
-print("Evaluation completed. Results saved in the 'results' directory.")
+print(f"Evaluation completed. Results stored in {args.results_dir}.")

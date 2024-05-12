@@ -3,6 +3,22 @@ import os
 import requests
 import json
 import html
+import argparse
+
+# Get the absolute path of the script's directory
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Parse command-line arguments
+parser = argparse.ArgumentParser(description='Index data using the WAISE API.')
+parser.add_argument('--collections-dir', required=True, help='Directory containing collection JSON files')
+parser.add_argument('--documents-dir', required=True, help='Directory containing document JSON and text files')
+parser.add_argument('--output-dir', required=True, help='Directory to store the indexed data')
+args = parser.parse_args()
+
+# Resolve the relative paths to absolute paths
+collections_dir = os.path.abspath(args.collections_dir)
+documents_dir = os.path.abspath(args.documents_dir)
+output_dir = os.path.abspath(args.output_dir)
 
 # Load environment variables from .env file
 load_dotenv()
@@ -65,7 +81,10 @@ def put_document(document_json_file, document_content_file):
         error_message = f"Failed to decode JSON from response: Status code {response.status_code}, Response body: {response.text}"
         raise ValueError(error_message) from e
 
-def index_data(collections_dir, documents_dir):
+def index_data(collections_dir, documents_dir, output_dir):
+    # Create the output directory if it doesn't exist
+    os.makedirs(output_dir, exist_ok=True)
+
     # Iterate through all the files in the collections directory
     for collection_file in os.listdir(collections_dir):
         if collection_file.endswith('.json'):
@@ -84,15 +103,13 @@ def index_data(collections_dir, documents_dir):
             if not os.path.exists(document_txt_file):
                 print(f"Warning: Corresponding .txt file not found for {document_file}: using json content field instead")
 
+    print(f"Indexing completed. Indexed data stored in {output_dir}.")
+
 
 if __name__ == '__main__':
     ####
-    # Paths
-    collection_dir = 'context_data/collections'
-    document_dir = 'context_data/documents'
-    ####
     # Populate collections using the index API
-    index_data(collection_dir, document_dir)
+    index_data(collections_dir, documents_dir, output_dir)
     ####
     # Uncomment the function below to remove indexed evaluation data
-    # delete_all_collections(collectio_dir)
+    # delete_all_collections(collections_dir)

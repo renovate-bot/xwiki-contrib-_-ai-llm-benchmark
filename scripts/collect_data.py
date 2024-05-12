@@ -3,6 +3,14 @@ import os
 import requests
 import json
 import html
+import argparse
+
+# Parse command-line arguments
+parser = argparse.ArgumentParser(description='Collect data from the WAISE API.')
+parser.add_argument('--input-dir', required=True, help='Directory containing input question files')
+parser.add_argument('--output-dir', required=True, help='Directory to store the output results')
+parser.add_argument('--request-template', default='request.json', help='Path to the request template file')
+args = parser.parse_args()
 
 # Load environment variables from .env file
 load_dotenv()
@@ -46,8 +54,8 @@ def load_question_data(question_file):
         question_data = json.load(file)
     return question_data
 
-def load_request_template():
-    with open('request.json', 'r') as file:
+def load_request_template(request_template_file):
+    with open(request_template_file, 'r') as file:
         request_template = json.load(file)
     return request_template
 
@@ -71,12 +79,7 @@ def process_request(question_data, request_template):
     response = send_request_to_model(model, temperature, stream, messages)
 
     answer_content = response.json()['choices'][0]['message']['content']
-    x_sources = response.headers.get('X-Sources', '[]')
-
-    try:
-        sources_json = json.loads(x_sources)
-    except (json.JSONDecodeError, KeyError):
-        sources_json = []
+    x_sources = response.json()['choices'][0]['message']['context']
 
     result = {
         # 'model': model,
@@ -85,18 +88,19 @@ def process_request(question_data, request_template):
         'question': question,
         'expected_answer': expected_answer,
         'ai_answer': answer_content,
-        'sources': sources_json
+        'sources': x_sources
     }
 
     return result
 
-def process_requests(input_dir, output_dir):
+def process_requests(input_dir, output_dir, request_template_file):
+    # Create the output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
 
-    request_template = load_request_template()
+    request_template = load_request_template(request_template_file)
 
-    ## This is just to process the files in order but os.listdir(input_dir) would also work
-    filenames = sorted(os.listdir(input_dir), key=lambda x: int(x.split('.')[0]))
+    filenames = os.listdir(input_dir)
+    filenames.sort(key=lambda x: int(x.split('.')[0]) if x.split('.')[0].isdigit() else float('inf'))
 
     for filename in filenames:
         if filename.endswith(".json"):
@@ -112,27 +116,7 @@ def process_requests(input_dir, output_dir):
             result = process_request(question_data, request_template)
             save_result(output_dir, question_id, result)
 
-    print("All requests processed.")
-
-
-# define evaluation metrics 
-
-# calculate evaluation scores
-
-# produce plots
-
-# compile report
+    print(f"All requests processed. Results stored in {output_dir}.")
 
 if __name__ == '__main__':
-    ####
-    # Paths
-    input_dir = 'input/questions'
-    output_file = 'output'
-    ####
-    # Data
-    ####
-
-
-    ####
-    # Send a request to a model
-    process_requests(input_dir, output_file)
+    process_requests(args.input_dir, args.output_dir, args.request_template)

@@ -34,3 +34,40 @@ The source URL is provided in every document.
 * Translations: N/A
 * Sonar Dashboard: N/A
 * Continuous Integration Status: N/A
+
+## Usage
+
+To use the LLM AI Evaluation framework, follow these steps:
+
+1. Clone the repository:
+
+```
+git clone https://github.com/yourusername/llm-ai-evaluation.git
+```
+
+2. Navigate to the project directory:
+
+```
+cd llm-ai-evaluation
+```
+
+3. Create and activate the Conda environment:
+
+```
+conda env create -f environment.yml
+conda activate snakemake
+```
+
+or update the environment:
+
+```
+conda env update --name snakemake --file environment.yml --prune
+```
+
+4. Customize the input/input.json and request.json according to your needs.
+
+5. Run the pipeline with snakemake
+
+```
+snakemake --cores 1
+```

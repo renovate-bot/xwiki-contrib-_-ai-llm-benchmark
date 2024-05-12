@@ -64,3 +64,6 @@ nbproject
 .sonar-ide.properties
 .clover
 *~
+
+# Snakemake
+.snakemake
