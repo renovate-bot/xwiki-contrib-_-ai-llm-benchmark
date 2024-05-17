@@ -1,122 +1,106 @@
-from dotenv import load_dotenv
 import os
-import requests
 import json
 import argparse
+import requests
+from dotenv import load_dotenv
 
-# Parse command-line arguments
-parser = argparse.ArgumentParser(description='Collect data from the WAISE API.')
-parser.add_argument('--input-dir', required=True, help='Directory containing input question files')
-parser.add_argument('--output-dir', required=True, help='Directory to store the output results')
-parser.add_argument('--request-template', default='config.json', help='Path to the request template file')
-args = parser.parse_args()
+def load_environment_variables():
+    load_dotenv()
+    return os.getenv('WIKI_NAME'), os.getenv('BASE_URL'), os.getenv('WAISE_USERNAME'), os.getenv('WAISE_PASSWORD')
 
-# Load environment variables from .env file
-load_dotenv()
+def parse_arguments():
+    parser = argparse.ArgumentParser(description='Collect data from the WAISE API.')
+    parser.add_argument('--input-dir', required=True, help='Directory containing input task files')
+    parser.add_argument('--output-dir', required=True, help='Directory to store the output results')
+    parser.add_argument('--request-template', default='config.json', help='Path to the request template file')
+    return parser.parse_args()
 
-# Waise server connection information
-wiki_name = os.getenv('WIKI_NAME')
-base_url = os.getenv('BASE_URL').format(wikiName=wiki_name)
-
-# Authentication credentials
-username = os.getenv('WAISE_USERNAME')
-password = os.getenv('WAISE_PASSWORD')
-auth = (username, password)
-
-# Input data in json format (the questions to be run against waise) and collect responses
-def send_request_to_model(model, temperature, stream, messages):
+def send_request_to_model(base_url, auth, model, temperature, stream, question):
     url = f'{base_url}/v1/chat/completions'
-    headers = {
-        "Content-Type": "application/json"
-    }
+    headers = {"Content-Type": "application/json"}
     data = {
         "model": model,
         "temperature": temperature,
         "stream": stream,
-        "messages": messages
+        "messages": [{"role": "user", "content": question}]
     }
+    response = requests.post(url, headers=headers, json=data, auth=auth)
+    if response.status_code != 200:
+        raise Exception(f"Request failed with status code {response.status_code}: {response.text}")
+    return response
 
-    response = requests.post(url, headers=headers, json=data)
+def load_data(file_path):
+    with open(file_path, 'r') as file:
+        return json.load(file)
 
-    if response.status_code == 200:
-        try:
-            return response
-        except json.JSONDecodeError:
-            error_message = f"Failed to decode JSON from response: Status code {response.status_code}, Response body: {response.text}"
-            raise Exception(error_message)
-    else:
-        error_message = f"Request failed with status code {response.status_code}: {response.text}"
-        raise Exception(error_message)
-
-def load_question_data(question_file):
-    with open(question_file, 'r') as file:
-        question_data = json.load(file)
-    return question_data
-
-def load_request_template(request_template_file):
-    with open(request_template_file, 'r') as file:
-        data = json.load(file)
-        # Filter to get only the QA task details
-        qa_details = next(task['details'] for task in data['tasks'] if task['task'] == 'qa')
-        return qa_details
-
-def save_result(output_dir, question_id, result):
-    output_file = os.path.join(output_dir, f"{question_id}.json")
+def save_result(output_dir, task_name, question_id, result):
+    task_dir = os.path.join(output_dir, 'tasks', task_name)
+    os.makedirs(task_dir, exist_ok=True)
+    output_file = os.path.join(task_dir, f"{question_id}.json")
     with open(output_file, 'w') as file:
         json.dump(result, file, indent=2)
 
-def process_request(question_data, request_template):
+def process_request(task_name, question_data, settings, base_url, auth, question_file):
     question_id = question_data['id']
-    question = question_data['prompt']
-    expected_answer = question_data['expected_answer']
+    if task_name == 'qa':
+        question = question_data['prompt']
+        expected_answer = question_data['expected_answer']
+    elif task_name == 'summarization':
+        data_path = question_data['data_path']
+        # Construct the absolute path based on the relative path
+        abs_data_path = os.path.abspath(os.path.join(os.path.dirname(question_file), '..', '..', data_path))
+        with open(abs_data_path, 'r') as file:
+            content = file.read()
+        question = f"Please summarize the following text:\n\n{content}"
+        expected_answer = None
+    elif task_name == 'text_generation':
+        question = question_data['prompt']
+        expected_answer = question_data['expected_answer']
+    else:
+        raise ValueError(f"Unknown task: {task_name}")
 
-    model = request_template['model']
-    temperature = request_template['temperature']
-    stream = request_template['stream']
-    messages = request_template['messages']
-
-    messages[0]['content'] = question
-
-    response = send_request_to_model(model, temperature, stream, messages)
-
+    model = settings['model']
+    temperature = settings['temperature']
+    stream = settings['stream']
+    response = send_request_to_model(base_url, auth, model, temperature, stream, question)
     answer_content = response.json()['choices'][0]['message']['content']
-    x_sources = response.json()['choices'][0]['message']['context']
-
-    result = {
-        # 'model': model,
-        # 'temperature': temperature,
+    sources = response.json()['choices'][0]['message']['context']
+    return {
         'id': question_id,
         'prompt': question,
         'expected_answer': expected_answer,
         'ai_answer': answer_content,
-        'sources': x_sources
+        'sources': sources
     }
 
-    return result
-
-def process_requests(input_dir, output_dir, request_template_file):
-    # Create the output directory if it doesn't exist
-    os.makedirs(output_dir, exist_ok=True)
-
-    request_template = load_request_template(request_template_file)
-
-    filenames = os.listdir(input_dir)
-
-    for filename in filenames:
-        if filename.endswith(".json"):
-            question_file = os.path.join(input_dir, filename)
-            question_data = load_question_data(question_file)
-            question_id = question_data['id']
-
-            output_file = os.path.join(output_dir, f"{question_id}.json")
-            if os.path.exists(output_file):
-                print(f"Skipping question {question_id} as it already exists.")
-                continue
-
-            result = process_request(question_data, request_template)
-            save_result(output_dir, question_id, result)
-
+def process_tasks(input_dir, output_dir, request_template, base_url, auth):
+    for task in request_template['tasks']:
+        task_name = task['task']
+        settings = task['settings']
+        model_dir = os.path.join(output_dir, settings['model'])
+        os.makedirs(model_dir, exist_ok=True)
+        task_input_dir = os.path.join(input_dir, task_name)
+        filenames = os.listdir(task_input_dir)
+        for filename in filenames:
+            if filename.endswith(".json"):
+                question_file = os.path.join(task_input_dir, filename)
+                question_data = load_data(question_file)
+                question_id = question_data['id']
+                output_file = os.path.join(model_dir, 'tasks', task_name, f"{question_id}.json")
+                if os.path.exists(output_file):
+                    print(f"Skipping question {question_id} as it already exists.")
+                    continue
+                result = process_request(task_name, question_data, settings, base_url, auth, question_file)
+                save_result(model_dir, task_name, question_id, result)
     print(f"All requests processed. Results stored in {output_dir}.")
 
+def main():
+    args = parse_arguments()
+    wiki_name, base_url_template, username, password = load_environment_variables()
+    base_url = base_url_template.format(wikiName=wiki_name)
+    auth = (username, password)
+    request_template = load_data(args.request_template)
+    process_tasks(args.input_dir, args.output_dir, request_template, base_url, auth)
+
 if __name__ == '__main__':
-    process_requests(args.input_dir, args.output_dir, args.request_template)
+    main()

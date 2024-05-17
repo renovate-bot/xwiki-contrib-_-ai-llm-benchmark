@@ -7,8 +7,6 @@ SNAKEOUT_DIR = "snakeout"
 EVALUATION_DIR = "evaluation"
 TASKS_DIR = f"{INPUT_DIR}/tasks"
 INDEXED_DIR = f"{SNAKEOUT_DIR}/indexed"
-QA_OUTPUT_DIR = f"{OUTPUT_DIR}/tasks/qa"
-SUMMARIZATION_INPUT_FILE = f"{INPUT_DIR}/summarization.json"
 RESULTS_SUMMARIZATION_DIR = f"{EVALUATION_DIR}/results_summarization"
 RESULTS_QA_DIR = f"{EVALUATION_DIR}/results_qa"
 PLOTS_DIR = f"{EVALUATION_DIR}/plots"
@@ -19,7 +17,7 @@ rule all:
     input:
         INDEXED_DIR,
         TASKS_DIR,
-        QA_OUTPUT_DIR
+        OUTPUT_DIR
 
 rule index_data:
     input:
@@ -43,33 +41,33 @@ rule split_input_to_files:
     shell:
         "python {input.script} --input-file {params.file} --output-dir {output}"
 
-rule collect_model_response:
+rule collect_model_responses:
     input:
         dependency = TASKS_DIR,
         script = f"{SCRIPTS_DIR}/collect_model_responses.py"
     output:
-        directory(QA_OUTPUT_DIR)
+        directory(OUTPUT_DIR)
     params:
-        input_dir = f"{TASKS_DIR}/qa",
+        input_dir = TASKS_DIR,
         file = CONFIG_FILE
     shell:
         "python {input.script} --input-dir {params.input_dir} --output-dir {output} --request-template {params.file}"
 
 # Uncomment and update the following rules as needed
 
-rule test_eval_summary:
-    input:
-        SUMMARIZATION_INPUT_FILE
-    output:
-        directory(RESULTS_SUMMARIZATION_DIR)
-    params:
-        script = f"{SCRIPTS_DIR}/test_eval_summary.py"
-    shell:
-        "python {params.script} --input-file {input} --results-dir {output}"
+# rule test_eval_summary:
+#     input:
+#         SUMMARIZATION_INPUT_FILE
+#     output:
+#         directory(RESULTS_SUMMARIZATION_DIR)
+#     params:
+#         script = f"{SCRIPTS_DIR}/test_eval_summary.py"
+#     shell:
+#         "python {params.script} --input-file {input} --results-dir {output}"
 
 # rule calculate_scores:
 #     input:
-#         output_dir = QA_OUTPUT_DIR
+#         output_dir = OUTPUT_DIR
 #     output:
 #         directory(RESULTS_QA_DIR)
 #     params:

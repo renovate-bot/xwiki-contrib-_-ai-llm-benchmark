@@ -1,47 +1,36 @@
-  {
-    "tasks": [
-      {
-        "task": "qa",
-        "details": {
-          "model": "AI.Models.llama3",
-          "temperature": 0.5,
-          "stream": false,
-          "messages": [
-            {
-              "role": "user",
-              "content": ""
-            }
-          ]
-        }
-      },
-      {
-        "task": "summarization",
-        "details": {
-          "model": "AI.Models.llama3",
-          "temperature": 0.5,
-          "stream": false,
-          "messages": [
-            {
-              "role": "user",
-              "content": ""
-            }
-          ]
-        }
-      },
-      {
-        "task": "content_generation",
-        "details": {
-          "model": "AI.Models.llama3",
-          "temperature": 0.5,
-          "stream": false,
-          "messages": [
-            {
-              "role": "user",
-              "content": ""
-            }
-          ]
-        }
+{
+  "tasks": [
+    {
+      "task": "qa",
+      "settings": {
+        "model": "AI.Models.llama3",
+        "temperature": 0.5,
+        "stream": false
       }
-    ]
-  }
-  
+    },
+    {
+      "task": "qa",
+      "settings": {
+        "model": "AI.Models.gemma",
+        "temperature": 0.5,
+        "stream": false
+      }
+    },
+    {
+      "task": "summarization",
+      "settings": {
+        "model": "AI.Models.gemma",
+        "temperature": 0.5,
+        "stream": false
+      }
+    },
+    {
+      "task": "text_generation",
+      "settings": {
+        "model": "AI.Models.gemma",
+        "temperature": 0.5,
+        "stream": false
+      }
+    }
+  ]
+}
