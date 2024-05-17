@@ -67,3 +67,9 @@ nbproject
 
 # Snakemake
 .snakemake
+
+# DeepEval
+.deepeval-cache.json
+
+# Pycache
+__pycache__/

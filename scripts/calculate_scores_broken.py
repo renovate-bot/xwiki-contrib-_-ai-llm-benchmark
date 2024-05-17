@@ -50,7 +50,7 @@ for filename in os.listdir(args.output_dir):
         output_data = load_data(output_file)
 
         # Process the output data
-        query = output_data['question']
+        query = output_data['prompt']
         predicted_response = output_data['ai_answer']
         expected_response = output_data['expected_answer']
 
