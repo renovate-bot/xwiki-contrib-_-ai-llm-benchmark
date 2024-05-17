@@ -2,19 +2,17 @@
 
 import argparse
 import json
+import os
 import re
 import requests
-from urllib.parse import urlencode
+from urllib.parse import urljoin
 import markdownify
 import bs4
 
 
 def download_and_extract(session, url):
-    # Append query parameters
-    url_with_params = f"{url}?{urlencode({'xpage': 'plain', 'htmlHeaderAndFooter': 'true'})}"
-
     # Download the HTML
-    response = session.get(url_with_params)
+    response = session.get(url)
     response.raise_for_status()  # Ensure the request was successful
 
     return response.text
@@ -61,10 +59,19 @@ def main(urls):
             title = re.sub(r'\s*\(XWiki\.org\)\s*$', '', title)
             print(f"Extracted title: {title}")
 
-            # Convert the contents of the #xwikimaincontainerinner div to XWiki syntax
-            content_html = parsed_html.find(id='xwikimaincontainerinner', recursive=True)
+            # Convert the contents of the #xwikicontent div to XWiki syntax
+            content_html = parsed_html.find(id='xwikicontent')
             if content_html is None:
                 raise ValueError("Could not find content in HTML")
+
+            # Iterate over all links in the content and make them absolute
+            for link in content_html.find_all('a'):
+                link['href'] = urljoin(url, link['href'])
+
+            # Iterate over all images and make their source URLs absolute
+            for image in content_html.find_all('img'):
+                image['src'] = urljoin(url, image['src'])
+
             markdown_content = markdownify.markdownify(str(content_html), heading_style="ATX")
 
             # Generate the JSON object
@@ -84,7 +91,17 @@ def main(urls):
 if __name__ == "__main__":
     arguments = argparse.ArgumentParser(description="Download one or several XWiki pages and convert them to JSON "
                                                     "with Markdown content.")
-    arguments.add_argument('urls', metavar='URL', type=str, nargs='+', help="One or more URLs to process.")
+    arguments.add_argument('input', metavar='INPUT', type=str, nargs='+',
+                           help="One or more URLs or a file containing URLs.")
     args = arguments.parse_args()
 
-    main(args.urls)
+    arg_urls = []
+    for input_value in args.input:
+        if os.path.isfile(input_value):
+            with open(input_value, 'r') as f:
+                # Read all lines from the file, strip whitespace and remove empty lines
+                arg_urls.extend([line.strip() for line in f.readlines() if line.strip()])
+        else:
+            arg_urls.append(input_value)
+
+    main(arg_urls)

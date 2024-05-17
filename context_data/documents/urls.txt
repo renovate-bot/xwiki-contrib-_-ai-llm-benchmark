@@ -1,5 +1,6 @@
 https://dev.xwiki.org/xwiki/bin/view/Community/SupportStrategy/DatabaseSupportStrategy
 https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application
+https://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/
 https://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/
 https://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Authenticator/
 https://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Index%20for%20the%20LLM%20Application/
@@ -8,6 +9,7 @@ https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Applicatio
 https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/
 https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/
 https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/
+https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments
 https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/
 https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Configuration/
 https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Upgrade/
