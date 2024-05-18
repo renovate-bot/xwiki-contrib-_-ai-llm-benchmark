@@ -1,7 +1,7 @@
 import asyncio
 from deepeval.models.base_model import DeepEvalBaseLLM
 
-class CustomModel(DeepEvalBaseLLM):
+class EvaluatorModel(DeepEvalBaseLLM):
     def __init__(
         self,
         model
@@ -22,7 +22,7 @@ class CustomModel(DeepEvalBaseLLM):
         return res
 
     def get_model_name(self):
-        return "Custom waise model"
+        return "Custom waise model: [{}]".format(self.model.model)
     
 class OllamaModel(DeepEvalBaseLLM):
     def __init__(
@@ -44,7 +44,7 @@ class OllamaModel(DeepEvalBaseLLM):
         return res
 
     def get_model_name(self):
-        return "Custom ollama model"
+        return "Custom ollama model: [{}]".format(self.model.model)
 
 ####    
 ## Examples:

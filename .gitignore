@@ -73,3 +73,4 @@ nbproject
 
 # Pycache
 __pycache__/
+.pytest_cache/

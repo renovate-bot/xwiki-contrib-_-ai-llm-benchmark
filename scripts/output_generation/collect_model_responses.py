@@ -49,8 +49,7 @@ def process_request(task_name, question_data, settings, base_url, auth, question
         data_path = question_data['data_path']
         # Construct the absolute path based on the relative path
         abs_data_path = os.path.abspath(os.path.join(os.path.dirname(question_file), '..', '..', data_path))
-        with open(abs_data_path, 'r') as file:
-            content = file.read()
+        content = load_data(abs_data_path)["content"]
         question = f"Please summarize the following text:\n\n{content}"
         expected_answer = None
     elif task_name == 'text_generation':
