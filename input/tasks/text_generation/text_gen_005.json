@@ -1,0 +1,6 @@
+{
+  "id": "text_gen_005",
+  "prompt": "Generate a creative story about a space adventure.",
+  "expected_answer": "A story about a group of astronauts exploring a new planet.",
+  "data_path": null
+}

@@ -1,0 +1,48 @@
+{
+  "id": "qa_014",
+  "prompt": "Ich erhalte viele Benachrichtigungen \u00fcber alle m\u00f6glichen Seiten, an denen ich nicht interessiert bin. Diese scheinen automatisch aktiviert worden zu sein. Wie kann ich diese Benachrichtigungen deaktivieren?",
+  "expected_answer": "Standardm\u00e4\u00dfig wird eine Seite, an der Sie eine wesentliche \u00c4nderung vorgenommen haben, automatisch zu der Liste der Seiten hinzugef\u00fcgt, denen Sie folgen. Das bedeutet, dass Sie \u00fcber \u00c4nderungen an Ihrer Arbeit benachrichtigt werden. Sie k\u00f6nnen die Einstellung f\u00fcr \"Automatisches Verfolgen von Seiten\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil \u00e4ndern. Sie k\u00f6nnen vorhandene Benachrichtigungsfilter, die auf diese Weise erstellt wurden, in der Liste \"Benutzerdefinierte Filter\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil l\u00f6schen.",
+  "ai_answer": "https://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Index%20for%20the%20LLM%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Applications \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/KeyboardShortcuts \n\n\nEs tut mir leid, aber die Informationen, die ich zur Verf\u00fcgung habe, beziehen sich haupts\u00e4chlich auf XWiki-Anwendungen und -Erweiterungen. Wenn es um Benachrichtigungen auf verschiedenen Seiten geht, k\u00f6nnte es sich um Einstellungen innerhalb dieser spezifischen Plattform handeln. Normalerweise gibt es in den Einstellungen eines Kontos oder einer Seite die M\u00f6glichkeit, Benachrichtigungen zu verwalten oder zu deaktivieren. Es k\u00f6nnte hilfreich sein, die Einstellungen auf den betreffenden Seiten zu \u00fcberpr\u00fcfen oder den Support der jeweiligen Plattform um Hilfe zu bitten.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.LLM Application.Index for the LLM Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Index%20for%20the%20LLM%20Application/",
+      "content": "\"sion/LLM%20Application/). A technique called Retrieval Augmented Generation (RAG) is used to provide context to the chat completion. Context chunks that are semantically similar to the chat message are retrieved from the index and provided to the completion model. This allows the completion model to use knowledge from the index to generate more factual completions.\\n\\nThere are two ways to manage collections and the documents in them: through the UI that is provided in this extension or through the REST API. Right now, the extension primarily supports indexing external content, but in the future, it will also support indexing existing content that is already in the wiki.\\n\\n## Managing Collections\\n\\nThe AI application provides a simple interface for managing collections and their documents. When opening the AI application as admin, a link is provided at the bottom to open the Collections overview.\\n\\n![Collections overview, showing two collections in a table](https://extensions.xwiki.org/xwik\"",
+      "similarity_score": 0.5923152565956116,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Applications",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Applications",
+      "content": "\"\\n**Contents*** [Applications](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Applications#HApplications)\\n* [Extensions](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Applications#HExtensions)\\n* [Flavors](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Applications#HFlavors)\\n* [Creating Applications &amp; Extensions](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Applications#HCreatingApplications26Extensions)\\n# Applications\\n\\nAs you&#x27;ve learned from the [Programming feature](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Programming), it&#x27;s possible to put scripts inside wiki pages. You can also define [your own data structures](https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/DataModel/) in wiki pages and then use them in other wiki pages. You can thus combine several pages together to form an application. In other words an application is simply a self-c\"",
+      "similarity_score": 0.5767112970352173,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Applications",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Applications",
+      "content": "\"res/Applications/ForumApplication.png?rev=1.2)\\n\\n*[Ideas Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Ideas)*\\n\\n[![IdeasApplication.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/Applications/IdeasApplication.png?width=350&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/Applications/IdeasApplication.png?rev=1.2)\\n\\n# Extensions\\n\\n[Extensions](https://extensions.xwiki.org/xwiki/bin/view/Main/) are adds-on that can be installed inside a running XWiki using the [Extension Manager](https://extensions.xwiki.org/xwiki/bin/view/Extension/Extension%20Manager%20Application). Applications (described above) are a special type of Extensions but there are other types. For example, you could install the Markdown Syntax, LDAP integration or others, which are not Applications (Applications are made of wiki pages).\\n\\n# Flavors\\n\\nA [Flavor](https://extensions.xwiki.org/xwiki/bin/view/Extension/Flavor%20Module) is a se\"",
+      "similarity_score": 0.5761483907699585,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.KeyboardShortcuts",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/KeyboardShortcuts",
+      "content": "\"on/DevGuide/Tutorials/SkinExtensionsTutorial/) and putting the following content:\\n\\nshortcut.add(&quot;Ctrl+Alt+n&quot;, function() { alert(&quot;Hey there! Congratulations on typing this one ;)&quot;); });Also check the [complete documentation](https://dmauro.github.io/Keypress/).\\n\\n## Removing keyboard shortcuts\\n\\nTo remove a shortcut adapt the following snippet to your needs and use by putting it in a [JavaScript StyleSheet Extension](https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/Tutorials/SkinExtensionsTutorial/):\\n\\nshortcut.remove(&quot;Ctrl+Alt+n&quot;);## Removing all shortcuts at once\\n\\nfor (binding in shortcut.all\\\\_shortcuts()) {  \\n\u00a0\u00a0shortcut.remove(binding.keys.join(&#x27; &#x27;));  \\n}## Credits\\n\\nXWiki keyboard shortcuts are powered by [Keypress JS shortcut library](https://dmauro.github.io/Keypress/).\\n\\n\\n\"",
+      "similarity_score": 0.5761390924453735,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.LLM Application.Index for the LLM Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Index%20for%20the%20LLM%20Application/",
+      "content": "\"n/download/Extension/LLM%20Application/Index%20for%20the%20LLM%20Application/WebHome/1715154174040-332.png?width=960&amp;height=968&amp;rev=1.1)\\n\\nThe following properties can be edited:\\n\\n* **Title**: The display name of the collection\\n* **Embedding Model**: The reference to the embedding model that can be configured in the models section of the AI application. This model is used to generate embeddings of parts (chunks) of the documents in the collection in order to support similarity search. By embedding the chat message in the same way, the similarity of the chat message to the documents in the collection can be calculated and the most relevant documents can be found.\\n* **Chunking Method**: The method used to split the documents into chunks. Currently, only the maxChars method is supported, which splits the document into chunks of a maximum size with an overlap.\\n* **Chunking Max Size**: The maximum size of a chunk in characters\\n* **Chunking Overlap Offset**: The overlap of chunks in c\"",
+      "similarity_score": 0.5738869905471802,
+      "vector": null
+    }
+  ]
+}

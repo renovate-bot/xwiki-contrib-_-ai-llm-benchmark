@@ -1,0 +1,48 @@
+{
+  "id": "qa_019",
+  "prompt": "Wie kann ich einem Bereichsadministrator das Skriptrecht verweigern?",
+  "expected_answer": "Leider wird dies in XWiki nicht unterst\u00fctzt, Rechte, die durch das Admin-Recht impliziert sind, k\u00f6nnen nicht verweigert werden.",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiRESTfulAPI \n\n\nUm einem Bereichsadministrator das Skriptrecht zu verweigern, m\u00fcssen Sie die entsprechenden Berechtigungen in Ihrem XWiki-System anpassen. Normalerweise wird das Skriptrecht \u00fcber die Gruppenberechtigungen gesteuert. Hier sind die allgemeinen Schritte, die Sie befolgen k\u00f6nnen:\n\n1. Gehen Sie zu dem Bereich, f\u00fcr den Sie die Berechtigungen \u00e4ndern m\u00f6chten.\n2. Klicken Sie auf \"Einstellungen\" oder \"Berechtigungen\" (je nach Version Ihres XWiki-Systems).\n3. Suchen Sie nach der Gruppe, der der Bereichsadministrator angeh\u00f6rt.\n4. Entfernen Sie das Recht \"Skript\" oder \u00e4hnliche Rechte, die das Ausf\u00fchren von Skripten erm\u00f6glichen.\n5. Speichern Sie die ge\u00e4nderten Berechtigungen.\n\nEs ist wichtig zu beachten, dass die genauen Schritte je nach der konkreten Konfiguration Ihres XWiki-Systems variieren k\u00f6nnen. Es wird empfohlen, die Dokumentation Ihres XWiki-Systems zu konsultieren oder den Systemadministrator um Unterst\u00fctzung zu bitten, um sicherzustellen, dass die Berechtigungen korrekt angepasst werden.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Skins",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins",
+      "content": "\"![Schichtbericht-150-1025x780.png](https://www.xwiki.org/xwiki/bin/download/References/INDUSTRIALWIKI/Schichtbericht-150-1025x780.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/INDUSTRIALWIKI) [![wikiinra.png](https://www.xwiki.org/xwiki/bin/download/References/INRA/wikiinra.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/INRA) [![Inemar.png](https://www.xwiki.org/xwiki/bin/download/References/Inemar/Inemar.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/Inemar) [![InisAlga.png](https://www.xwiki.org/xwiki/bin/download/References/InisAlga/InisAlga.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/InisAlga) [![JASMINe.png](https://www.xwiki.org/xwiki/bin/download/References/JASMINe/JASMINe.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/JASMINe) [![AntonioGoncalves.png](https:\"",
+      "similarity_score": 0.5700646638870239,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Skins",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins",
+      "content": "\"ght=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/CNAM%20Languedoc-Roussillon) [![CNAM-PCH.png](https://www.xwiki.org/xwiki/bin/download/References/CNAM%20Poitou-Charentes/CNAM-PCH.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/CNAM%20Poitou-Charentes) [![caastnet.png](https://www.xwiki.org/xwiki/bin/download/References/Caastnet/caastnet.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/Caastnet) [![CampusNumerique20.png](https://www.xwiki.org/xwiki/bin/download/References/CampusNumerique20/CampusNumerique20.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/CampusNumerique20) [![AboutCapDigital.png](https://www.xwiki.org/xwiki/bin/download/References/CapDigital/AboutCapDigital.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/CapDigital) [![CartoPass.png](https://www.xwiki.org/xwiki/bin/download/Refere\"",
+      "similarity_score": 0.5588669180870056,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.XWikiRESTfulAPI",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiRESTfulAPI",
+      "content": "\"aultEditMode&quot; type=&quot;String&quot;&gt;  \\n \u00a0&lt;attribute name=&quot;name&quot; value=&quot;defaultEditMode&quot;&gt;&lt;/attribute&gt;  \\n \u00a0&lt;attribute name=&quot;prettyName&quot; value=&quot;Default Edit Mode&quot;&gt;&lt;/attribute&gt;  \\n \u00a0&lt;attribute name=&quot;unmodifiable&quot; value=&quot;0&quot;&gt;&lt;/attribute&gt;  \\n \u00a0&lt;attribute name=&quot;disabled&quot; value=&quot;0&quot;&gt;&lt;/attribute&gt;  \\n \u00a0&lt;attribute name=&quot;size&quot; value=&quot;15&quot;&gt;&lt;/attribute&gt;  \\n \u00a0&lt;attribute name=&quot;number&quot; value=&quot;1&quot;&gt;&lt;/attribute&gt;  \\n \u00a0&lt;value&gt;edit&lt;/value&gt;  \\n&lt;/property&gt;# Examples\\n\\n## Getting the list of users\\n\\nSince Users are stored as Objects, you can do a search of the type XWiki.XWikiUsers. For example:\\n\\nhttp://&lt;server&gt;/xwiki/rest/wikis/query?q=object:XWiki.XWikiUsers## Getting the list of users using XWQL\\n\\nUsing the parameter &quot;className&quot; the result includes the data for the first object of the XWik\"",
+      "similarity_score": 0.5522674322128296,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Skins",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins",
+      "content": "\"](https://www.xwiki.org/xwiki/bin/view/References/GC) [![gmx.png](https://www.xwiki.org/xwiki/bin/download/References/GMX/gmx.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/GMX) [![GloboTraders.png](https://www.xwiki.org/xwiki/bin/download/References/GlobotradersTahiti/GloboTraders.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/GlobotradersTahiti) [![GoMetric.png](https://www.xwiki.org/xwiki/bin/download/References/GoMetric/GoMetric.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/GoMetric) [![I2GEOSmall.png](https://www.xwiki.org/xwiki/bin/download/References/I2GEO/I2GEOSmall.png?width=100&amp;height=100&amp;rev=1.3)](https://www.xwiki.org/xwiki/bin/view/References/I2GEO) [![IDIS.png](https://www.xwiki.org/xwiki/bin/download/References/IDIS/IDIS.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/IDIS) [![Schichtberich\"",
+      "similarity_score": 0.5471241474151611,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.XWikiRESTfulAPI",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiRESTfulAPI",
+      "content": "\"arameters:\\n\\n\\n\\n| Name | Required | Values | Default | Description | Version |\\n| --- | --- | --- | --- | --- | --- |\\n| jobType | yes |  |  | The type of the job to pass to the Job Executor | 9.1RC1 |\\n| async | no | true|false | true | If false, return the response only when the job is done | 9.1RC1 |\\n\\nThis API is designed to be a REST clone of the JobExecutor Java API (the only real difference right now being way to deal with asynchronous jobs) documented on &lt;http://extensions.xwiki.org/xwiki/bin/view/Extension/Job+Module#HUseanexistingjob&gt; so the concepts (job type, job request) are the same and the exact information to put in the job request depends on the job you want to run and are usually documented in the extension this job is coming from (extension module, refactoring, etc.).\u00a0\\n\\n* **HTTP Method:** PUT\\n\\t+ **Input:**\\n\\t\\t- Media Types: application/xml or application/json\\n\\t\\t- Input body: JobRequest element\\n\\t+ **Output:**\\n\\t\\t- Media Types: application/xml or application/json\\n\\t\\t- Res\"",
+      "similarity_score": 0.5428606271743774,
+      "vector": null
+    }
+  ]
+}

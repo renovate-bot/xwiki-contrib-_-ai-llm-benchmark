@@ -1,0 +1,48 @@
+{
+  "id": "qa_013",
+  "prompt": "Ich erhalte keine Benachrichtigungen \u00fcber meine eigene Aktivit\u00e4t. Wie kann ich Benachrichtigungen f\u00fcr meine eigenen Aktionen aktivieren?",
+  "expected_answer": "Standardm\u00e4\u00dfig erh\u00e4lt man keine Benachrichtigungen \u00fcber die eigene Aktivit\u00e4t (es sei denn, das Ereignis, das die Benachrichtigung ausl\u00f6st, richtet sich explizit an diesen Benutzer). Sie haben die M\u00f6glichkeit, diesen Filter in den \"Erweiterten Filteroptionen\" Ihrer eigenen Benachrichtigungseinstellungen in Ihrem Benutzerprofil zu deaktivieren.",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Applications \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Model/Validation/UI/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \n\n\nEs gibt eine Erweiterung namens \"Notifications Application\" in XWiki, die Benachrichtigungen \u00fcber verschiedene Aktivit\u00e4ten im Wiki erm\u00f6glicht. Um Benachrichtigungen f\u00fcr Ihre eigenen Aktionen zu aktivieren, k\u00f6nnen Sie die folgenden Schritte befolgen:\n\n1. Stellen Sie sicher, dass die \"Notifications Application\" installiert ist. Falls nicht, k\u00f6nnen Sie dies mit dem Extension Manager tun.\n   \n2. Gehen Sie zu Ihrem Profil oder den Benachrichtigungseinstellungen, um anzupassen, welche Aktionen Sie benachrichtigen m\u00f6chten. \n\n3. Aktivieren Sie die entsprechenden Benachrichtigungen f\u00fcr Ihre eigenen Aktionen, z. B. Bearbeitungen von Seiten, Kommentare, Erw\u00e4hnungen usw.\n\n4. Speichern Sie die Einstellungen, damit Sie \u00fcber Ihre eigenen Aktivit\u00e4ten benachrichtigt werden.\n\nWenn Sie weitere Hilfe ben\u00f6tigen, k\u00f6nnen Sie die offizielle Dokumentation von XWiki zu Benachrichtigungen konsultieren.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Applications",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Applications",
+      "content": "\"res/Applications/ForumApplication.png?rev=1.2)\\n\\n*[Ideas Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Ideas)*\\n\\n[![IdeasApplication.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/Applications/IdeasApplication.png?width=350&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/Applications/IdeasApplication.png?rev=1.2)\\n\\n# Extensions\\n\\n[Extensions](https://extensions.xwiki.org/xwiki/bin/view/Main/) are adds-on that can be installed inside a running XWiki using the [Extension Manager](https://extensions.xwiki.org/xwiki/bin/view/Extension/Extension%20Manager%20Application). Applications (described above) are a special type of Extensions but there are other types. For example, you could install the Markdown Syntax, LDAP integration or others, which are not Applications (Applications are made of wiki pages).\\n\\n# Flavors\\n\\nA [Flavor](https://extensions.xwiki.org/xwiki/bin/view/Extension/Flavor%20Module) is a se\"",
+      "similarity_score": 0.5572027564048767,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Administration Application",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application",
+      "content": "\"\\n\\n\\n| administration.png | **Application for administrating wiki features like users, groups, rights etc.** |\\n| --- | --- |\\n\\n\\n\\n| Type | XAR |\\n| --- | --- |\\n| Category |  |\\n| Developed by | [XWiki Development Team](https://xwiki.org/xwiki/bin/view/XWiki/XWikiTeam) |\\n| Rating | *  * [1](https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application &quot;Poor&quot;) * [2](https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application &quot;Satisfactory&quot;) * [3](https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application &quot;Good&quot;) * [4](https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application &quot;Very good&quot;) * [5](https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application &quot;Excellent&quot;)    0\u00a0Votes |\\n| License | GNU Lesser General Public License 2.1 |\\n\\n\\n\\n| Bundled With | XWiki Standard |\\n| --- | --- |\\n\\n**Installable with the Extension Manager**\\n\\n[Downlo\"",
+      "similarity_score": 0.5528843402862549,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Model.Validation.UI.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Model/Validation/UI/",
+      "content": "\"d to install all [dependent Extensions](https://extensions.xwiki.org/xwiki/bin/view/Extension/Model/Validation/UI/#HDependencies) that are not already installed in your wiki\\n\\n\\n\"",
+      "similarity_score": 0.54951012134552,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"e with the Extension Manager&quot; is displayed at the top right location on this page to know if this extension can be installed with the Extension Manager). Note that installing Extensions when being offline is currently not supported and you&#x27;d need to use some [complex manual method](https://xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Installation/#HOthermethods).\\n\\nYou can also use the following manual method, which is useful if this extension cannot be installed with the Extension Manager or if you&#x27;re using an old version of XWiki that doesn&#x27;t have the Extension Manager:\\n\\n1. Log in the wiki with a user having Administration rights\\n2. Go to the Administration page and select the Import category\\n3. Follow the on-screen instructions to upload the downloaded XAR\\n4. Click on the uploaded XAR and follow the instructions\\n5. You&#x27;ll also need to install all [dependent Extensions](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HDe\"",
+      "similarity_score": 0.5490841269493103,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/",
+      "content": "\", getting search result RSS feeds and more\\n\\n![house](https://www.xwiki.org/xwiki/resources/icons/silk/house.png?cache-version=1711538036000)\\n\\n[Wiki](https://extensions.xwiki.org/xwiki/bin/view/Extension/Wiki%20Application)  \\nManage subwikis: create and delete subwikis, invite members\\n\\n![help](https://www.xwiki.org/xwiki/resources/icons/silk/help.png?cache-version=1711538036000)\\n\\n[Help](https://extensions.xwiki.org/xwiki/bin/view/Extension/Help%20Application)  \\nProvides help within your wiki and showcases the main XWiki features through demo content\\n\\n![application_view_tile](https://www.xwiki.org/xwiki/resources/icons/silk/application_view_tile.png?cache-version=1711538036000)\\n\\n[Dashboard](https://extensions.xwiki.org/xwiki/bin/view/Extension/Dashboard%20Application)  \\nProvides Wiki and User Dashboards\\n\\n![user](https://www.xwiki.org/xwiki/resources/icons/silk/user.png?cache-version=1711538036000)\\n\\n[User Directory](https://extensions.xwiki.org/xwiki/bin/view/Extension/User%20Directory%20\"",
+      "similarity_score": 0.5460026860237122,
+      "vector": null
+    }
+  ]
+}

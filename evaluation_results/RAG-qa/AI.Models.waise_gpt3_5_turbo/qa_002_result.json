@@ -1,0 +1,15 @@
+{
+  "average_score": 0.6964285714285714,
+  "individual_scores": {
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.75,
+    "ContextualRecall": 0.2857142857142857
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.75 because the response mostly addresses the issue about not receiving notifications, but the inclusion of an irrelevant URL slightly detracts from its overall relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment between the actual output and the retrieval context! Keep up the excellent work!",
+    "ContextualPrecision": "The score is 0.75 because the relevant nodes are mostly ranked higher than the irrelevant nodes. Specifically, the first node explains that users need to select which types of notifications they want to receive, and the fourth node mentions the Alert menu and the bell icon, both of which are pertinent to the input about not receiving notifications. However, the second and third nodes, which describe marking notifications as read and live email notifications respectively, should be ranked lower since they do not address enabling notifications or subscribing to pages/users.",
+    "ContextualRecall": "The score is 0.29 because while the retrieval context covers some aspects like enabling notifications via the bell icon and watching a page or its children, it lacks details on enabling notifications through `xwiki.properties`, subscribing to users, following users via the User Index, and viewing watched users and their events in the user profile."
+  }
+}

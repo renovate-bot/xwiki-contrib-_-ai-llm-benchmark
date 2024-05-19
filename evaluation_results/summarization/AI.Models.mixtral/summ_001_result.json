@@ -1,0 +1,8 @@
+{
+  "score": 0.7142857142857143,
+  "reason": "The score is 0.71 because the summary omits the 'tabbed area at the bottom of the page' which includes Comments and Annotations, Attachments, History, and Information. Additionally, it introduces a 'First steps with XWiki' section and a link that are not mentioned in the original text.",
+  "score_breakdown": {
+    "Alignment": 0.7142857142857143,
+    "Coverage": 1.0
+  }
+}

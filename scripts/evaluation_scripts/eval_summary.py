@@ -8,23 +8,7 @@ from deepeval.test_case import LLMTestCase
 # Add the parent directory of the 'scripts' folder to the Python module search path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
-from scripts.models_connections.waise_model import WaiseModel
-from scripts.models_connections.deepeval_model import EvaluatorModel
-
-def load_config(config_file):
-    with open(config_file, 'r') as file:
-        config = json.load(file)
-    return config
-
-def save_evaluation_result(result_file, score, reason, score_breakdown):
-    evaluation_result = {
-        "score": score,
-        "reason": reason,
-        "score_breakdown": score_breakdown
-    }
-    os.makedirs(os.path.dirname(result_file), exist_ok=True)
-    with open(result_file, 'w') as file:
-        json.dump(evaluation_result, file, indent=2)
+from evaluation_utils import load_config, save_evaluation_result, get_evaluator_model
 
 def calculate_summary_score(ai_summary_file, evaluator_model):
     # Load the AI-generated summary file
@@ -41,14 +25,7 @@ def calculate_summary_score(ai_summary_file, evaluator_model):
     # Create the evaluation metric
     metric = SummarizationMetric(
         threshold=0.5,
-        model=evaluator_model,
-        assessment_questions=[
-            "Does the summary capture the main ideas and key points of the original text?",
-            "Is the summary concise and free of unnecessary details?",
-            "Does the summary maintain the original meaning and context of the source text?",
-            "Is the summary coherent and well-structured, with logical flow and transitions?",
-            "Does the summary use clear and understandable language?"
-        ]
+        model=evaluator_model
     )
 
     # Measure the test case
@@ -58,30 +35,30 @@ def calculate_summary_score(ai_summary_file, evaluator_model):
 
 def evaluate_summaries(output_dir, evaluation_dir, config_file):
     config = load_config(config_file)
-    evaluator_settings = config['evaluator']
+    evaluator_model = get_evaluator_model(config_file)
 
-    evaluator_model = EvaluatorModel(WaiseModel(
-        model=evaluator_settings['model'],
-        temperature=evaluator_settings['temperature'],
-        stream=evaluator_settings['stream'],
-        verbose=False
-    ))
+    for task in config['tasks']:
+        if task['task'] == 'summarization':
+            model_name = task['settings']['model']
+            model_output_dir = os.path.join(output_dir, model_name)
+            if os.path.isdir(model_output_dir):
+                model_evaluation_dir = os.path.join(evaluation_dir, model_name)
+                os.makedirs(model_evaluation_dir, exist_ok=True)
 
-    for model_dir in os.listdir(output_dir):
-        model_output_dir = os.path.join(output_dir, model_dir)
-        if os.path.isdir(model_output_dir):
-            model_evaluation_dir = os.path.join(evaluation_dir, model_dir)
-            os.makedirs(model_evaluation_dir, exist_ok=True)
+                summarization_dir = os.path.join(model_output_dir, 'tasks', 'summarization')
+                if os.path.exists(summarization_dir):
+                    for summary_file in os.listdir(summarization_dir):
+                        if summary_file.endswith('.json'):
+                            ai_summary_file = os.path.join(summarization_dir, summary_file)
+                            result_file = os.path.join(model_evaluation_dir, f"{os.path.splitext(summary_file)[0]}_result.json")
 
-            summarization_dir = os.path.join(model_output_dir, 'tasks', 'summarization')
-            if os.path.exists(summarization_dir):
-                for summary_file in os.listdir(summarization_dir):
-                    if summary_file.endswith('.json'):
-                        ai_summary_file = os.path.join(summarization_dir, summary_file)
-                        result_file = os.path.join(model_evaluation_dir, f"{os.path.splitext(summary_file)[0]}_result.json")
-
-                        score, reason, score_breakdown = calculate_summary_score(ai_summary_file, evaluator_model)
-                        save_evaluation_result(result_file, score, reason, score_breakdown)
+                            score, reason, score_breakdown = calculate_summary_score(ai_summary_file, evaluator_model)
+                            evaluation_result = {
+                                "score": score,
+                                "reason": reason,
+                                "score_breakdown": score_breakdown
+                            }
+                            save_evaluation_result(result_file, evaluation_result)
 
 if __name__ == '__main__':
     import argparse

@@ -1,0 +1,48 @@
+{
+  "id": "qa_011",
+  "prompt": "Die Glocke oben rechts ist nicht verf\u00fcgbar, auch nicht wenn die Erweiterung \"Alert Notification\" installiert ist.",
+  "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen in Ihrem Wiki aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen.",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\nDie Glocke oben rechts, die f\u00fcr Benachrichtigungen zust\u00e4ndig ist, sollte normalerweise verf\u00fcgbar sein, wenn die Erweiterung \"Alert Notification\" korrekt installiert und konfiguriert ist. Hier sind einige Schritte, die du \u00fcberpr\u00fcfen kannst, um sicherzustellen, dass alles richtig eingerichtet ist:\n\n1. **Installation \u00fcberpr\u00fcfen**:\n   - Stelle sicher, dass die Erweiterung \"Alert Notification\" tats\u00e4chlich installiert ist. Du kannst dies in der Verwaltung der Erweiterungen deines XWiki \u00fcberpr\u00fcfen.\n\n2. **Benachrichtigungseinstellungen**:\n   - Gehe zu deinen Benachrichtigungseinstellungen und \u00fcberpr\u00fcfe, ob die Benachrichtigungen aktiviert sind. Dies kannst du in deinem Benutzerprofil unter den Benachrichtigungseinstellungen tun.\n\n3. **Rechte und Berechtigungen**:\n   - Stelle sicher, dass du die notwendigen Rechte hast, um Benachrichtigungen zu sehen. Manchmal k\u00f6nnen Berechtigungseinstellungen verhindern, dass bestimmte Benutzer Benachrichtigungen sehen.\n\n4. **Seiten\u00fcberwachung**:\n   - \u00dcberpr\u00fcfe, ob du Seiten oder Benutzer beobachtest, von denen du Benachrichtigungen erhalten m\u00f6chtest. Dies kannst du im \"Alert\"-Men\u00fc tun, das durch ein Glockensymbol dargestellt wird.\n\n5. **Fehlerprotokolle**:\n   - \u00dcberpr\u00fcfe die Fehlerprotokolle deines XWiki-Systems, um festzustellen, ob es irgendwelche Fehler oder Warnungen gibt, die auf ein Problem mit der Benachrichtigungsfunktion hinweisen.\n\nFalls diese Schritte das Problem nicht l\u00f6sen, k\u00f6nnte es hilfreich sein, weitere Informationen oder Unterst\u00fctzung im [XWiki-Forum](https://forum.xwiki.org/) oder in der [XWiki-Dokumentation](https://www.xwiki.org/xwiki/bin/view/Documentation/) zu suchen.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.XWikiSyntax.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/",
+      "content": "\"wiki.org/xwiki/bin/view/Main/MessageSenderMacro) | Message Sender | Social | A control that allows users to enter messages that are handled by the MessageStream module. | Current Wiki |\\n| missingLicenseMessage | Missing License Message |  | Display an error message when the extension does not have a valid license. | Global |\\n| [notifications](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/Macro/NotificationsMacro) | Notifications | Notifications | Display notifications about events happened on the wiki. | Current Wiki |\\n| [notificationsApplicationsPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsApplicationsPreferencesMacro) | Notifications Applications Preferences | Notifications | Display the preferences of the current user about notification applications. | Current Wiki |\\n| [notificationsAutoWatchPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsAutoWatchPreferencesMacro) | Notifications Auto\"",
+      "similarity_score": 0.714782178401947,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"png?rev=1.3)  \\n![NotificationsWithRSS.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotificationsWithRSS.png?rev=1.3)\\n\\n## Notifications Macro\\n\\nThe [Notifications Macro is provided by its own application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Macro/).\\n\\n# Settings\\n\\nOn the notifications menu, you also have a link to go to the &quot;settings&quot; of the notifications.\\n\\n![notif4.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif4.png?rev=1.8)\\n\\nBy default, users only get notifications when they are mentioned or when actions are performed on pages they created or updated. For receiving other notifications, you need to select which &quot;types&quot; of notifications you want to receive. When a page is created? When a blog post is published?\\n\\nYou can enable or disable all notification types that belong to a particular application by clicking on the bells as\"",
+      "similarity_score": 0.6952647566795349,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"pplication contributes content in the Alert menu (contributed by the [Alerts Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Alerts%20Application/)) in the top bar, represented by a bell:\\n\\n![Notifications.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/Notifications.png?rev=1.4)\\n\\nYou can find under this menu the notifications about some events happening on the wiki (a page has been modified, a new blog post has been posted, etc...).\\n\\nThe number of notifications is displayed on the top menu, just above the bell:\\n\\n![notif1.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif1.png?rev=1.5)\\n\\nIf you have more than 20 unread notifications, you will not see the real count but this instead:\\n\\n![MaxCounter.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/MaxCounter.png?rev=1.3)\\n\\nWhen you open the menu, the content of the notif\"",
+      "similarity_score": 0.6933724880218506,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"ents\\n\\nMinor events are not displayed on the notifications. But you can disable this filter.\\n\\n![FilterMinorEvent.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/FilterMinorEvent.png?rev=1.3)\\n\\n## Watched Entities\\n\\nYou can also decide to *watch* some entities. Either a location (a page, a page with its children or a wiki) or a user.\u00a0\\n\\n### Using it\\n\\nTo watch a location, all you need is to go to that place, and then click on the &quot;alert&quot; menu (represented by a bell).\u00a0\\n\\n![WatchedEntities.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/WatchedEntities.png?rev=1.4)\\n\\nHere you can decide to watch either this page, this page and its children, or the entire wiki.\\n\\nOn the notifications settings (in your user profile), you will see the watched entities in the filters box:\\n\\n![WatchedEntitiesFiltersUI.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/W\"",
+      "similarity_score": 0.6914669275283813,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"20Application/WebHome/WatchedEntitiesFiltersUI.png?rev=1.3)\\n\\nThe notifications settings from the user profile save which &quot;types&quot; of notifications you want to receive, while the options from the &quot;alert&quot; menu represent the pages/spaces/wiki you want to get notifications for.\\n\\nYou won&#x27;t be able to click on the buttons if you don&#x27;t have enabled some event type first:\\n\\n![NotificationsTogglesDisabled.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotificationsTogglesDisabled.png?rev=1.3)\\n\\n### Auto Watch\\n\\nBy default, a page where you have made a major modification is automatically added to the list of pages you watch. It means you will be notified about changes on your work. You can change this behavior in the settings:\\n\\n![AutoWatch.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/AutoWatch.png?rev=1.3)\\n\\n### Follow a user\\n\\nIf you go to the [profile of an user](ht\"",
+      "similarity_score": 0.6908828020095825,
+      "vector": null
+    }
+  ]
+}

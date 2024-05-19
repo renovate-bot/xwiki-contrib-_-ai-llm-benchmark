@@ -1,0 +1,15 @@
+{
+  "average_score": 0.6946969696969697,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.5454545454545454
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.90 because the response is mostly relevant and addresses the question about uploading images or PDF files with a size limit, but it includes a statement about exporting features, which is not directly related to the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions! Great job maintaining perfect alignment with the retrieval context. Keep up the excellent work!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node, which provides steps to change the maximum upload size in the XWikiPreferences document, is ranked third. This node should be ranked higher because it directly addresses configuring the maximum attachment size. The first node lists various links related to attachments without specific information on configuring MIME types or maximum file size, making it less relevant. The second node discusses the database attachment store and its limitations, which does not address MIME type restrictions or setting a maximum file size. These irrelevant nodes should be ranked lower than the relevant node.",
+    "ContextualRecall": "The score is 0.55 because while the retrieval context aligns well with the steps for setting the maximum upload size (sentence 7-12) and mentions repeating the configuration for each (sub)wiki (sentence 13), it lacks information on configuring MIME types (sentence 2-6), editing the `xwiki.properties` file, and specifying the line `attachment.upload.allowList=image/*,application/pdf`."
+  }
+}

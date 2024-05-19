@@ -1,0 +1,48 @@
+{
+  "id": "qa_026",
+  "prompt": "Puis-je personnaliser les champs de profil utilisateur qui sont remplis \u00e0 partir du fournisseur OpenID Connect dans XWiki?\nJe souhaite mapper des champs de profil utilisateur suppl\u00e9mentaires de mon fournisseur OpenID Connect aux propri\u00e9t\u00e9s de l'utilisateur XWiki. Comment puis-je y parvenir?",
+  "expected_answer": "Oui, vous pouvez personnaliser les champs de profil utilisateur qui sont remplis \u00e0 partir du fournisseur OpenID Connect en les mappant dans le fichier `xwiki.properties`.\n\nPour mapper des champs de profil utilisateur suppl\u00e9mentaires, utilisez la propri\u00e9t\u00e9 `oidc.user.mapping`. Voici un exemple de la fa\u00e7on de mapper des propri\u00e9t\u00e9s personnalis\u00e9es:\n\n```\n# oidc.user.mapping=myxproperty1=${oidc.user.subject}\n# oidc.user.mapping=myxproperty2=myprefix-${oidc.user.subject}\n```\n\nRemplacez `myxproperty1` et `myxproperty2` par les noms de propri\u00e9t\u00e9 d'utilisateur XWiki r\u00e9els, et `${oidc.user.subject}` par la variable appropri\u00e9e en fonction des donn\u00e9es fournies par votre fournisseur OpenID Connect.\n\nApr\u00e8s avoir configur\u00e9 les mappages, enregistrez le fichier `xwiki.properties` et red\u00e9marrez XWiki pour appliquer les modifications.",
+  "ai_answer": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \n\n\nIl est possible de personnaliser les champs de profil utilisateur qui sont remplis \u00e0 partir du fournisseur OpenID Connect dans XWiki. Pour mapper des champs de profil utilisateur suppl\u00e9mentaires de votre fournisseur OpenID Connect aux propri\u00e9t\u00e9s de l'utilisateur XWiki, vous pouvez suivre ces \u00e9tapes :\n\n1. Assurez-vous d'avoir install\u00e9 l'extension OpenID Connect Authenticator dans XWiki.\n2. Dans le fichier de configuration xwiki.cfg, vous pouvez d\u00e9finir les propri\u00e9t\u00e9s telles que `oidc.scope` pour sp\u00e9cifier les champs que vous souhaitez r\u00e9cup\u00e9rer du fournisseur OpenID Connect.\n3. Vous pouvez \u00e9galement configurer d'autres param\u00e8tres tels que `oidc.responseType` pour contr\u00f4ler le flux utilis\u00e9 par le protocole OpenID Connect.\n4. Une fois que vous avez configur\u00e9 les param\u00e8tres appropri\u00e9s, XWiki r\u00e9cup\u00e9rera les champs de profil utilisateur suppl\u00e9mentaires que vous avez sp\u00e9cifi\u00e9s \u00e0 partir du fournisseur OpenID Connect.\n\nPour plus de d\u00e9tails sur la configuration et la personnalisation des champs de profil utilisateur dans XWiki \u00e0 partir du fournisseur OpenID Connect, vous pouvez consulter la documentation officielle de l'extension OpenID Connect Authenticator [ici](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/).",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.OpenID Connect.OpenID Connect Authenticator.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/",
+      "content": "\"\\n\\n\\n| openid_connect_16x16.png | **Allow an XWiki instance to authenticate on an OpenID Connect provider** |\\n| --- | --- |\\n\\n**Recommended**\\n\\n| Type | JAR |\\n| --- | --- |\\n| Category | Authenticator |\\n| Developed by | [Thomas Mortagne](https://xwiki.org/xwiki/bin/view/XWiki/ThomasMortagne) |\\n| Active Installs | 146 |\\n| Rating | *  * [1](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ &quot;Poor&quot;) * [2](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ &quot;Satisfactory&quot;) * [3](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ &quot;Good&quot;) * [4](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ &quot;Very good&quot;) * [5](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ &quot;Excellent&quot;)    1\u00a0Vo\"",
+      "similarity_score": 0.7398893237113953,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.OpenID Connect.OpenID Connect Authenticator.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/",
+      "content": "\"rver\\n\\nA [configuration example for Univention Corporate Server (UCS)](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/OpenID%20Authentication%20with%20UCS/) is available.\\n\\n## Configuration files\\n\\n### xwiki.cfg\\n\\n#-# The authentication management class.  \\nxwiki.authentication.authclass=org.xwiki.contrib.oidc.auth.OIDCAuthServiceImpl### xwiki.properties\\n\\n#-# The base URL of the OpenId Connect Provider to use as starting point to discover the provider configuration.  \\n#-# See following endpoints properties if the provider is does not support OpenID Connect discovery.  \\n#-# If not indicated and not custom endpoint is provided, it will be asked to the user.  \\n# oidc.provider=https://xwikiorg-node1.xwikisas.com/xwiki/oidc  \\n  \\n#-# The generic OpenId Connect endpoints to use to communicate with the provider.  \\n#-# It&#x27;s generally not needed when providing the provider discovery endpoint (which is supposed to provide those enpoints).  \"",
+      "similarity_score": 0.7343143820762634,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.OpenID Connect.OpenID Connect Authenticator.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/",
+      "content": "\"point even when the user is not present (not logged in).  \\n#-#\u00a0  \\n#-# But depending on the provider more can be listed.  \\n#-#\u00a0  \\n#-# The default is:  \\n# oidc.scope=openid,profile,email,address,phone  \\n  \\n#-# The response type to control the flow used by the OpenId Connect protocol.  \\n#-# This is often used to control if the information about the user should  \\n#-# be gathered from the userinfo endpoint with a request from XWiki to the provider (&quot;code&quot;, the default)  \\n#-# or the id token directly provided when the provider redirects to XWiki (&quot;id\\\\_token&quot;)  \\n#-# but it&#x27;s also possible to combine.  \\n#-# See https://openid.net/specs/openid-connect-core-1\\\\_0.html#rfc.section.3 for mode details.  \\n#-# For an hybrid flow, use list syntax (so comma or several set) instead of the white space  \\n#-# documented in the specification to separate words.  \\n#-#  \\n#-# The default is:  \\n# oidc.responseType=code  \\n  \\n#-# The method used to access the userinfo endpoint.  \\n#-#\u00a0  \\n#-#\"",
+      "similarity_score": 0.7315800189971924,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.OpenID Connect.OpenID Connect Authenticator.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/",
+      "content": "\"Connect/OpenID%20Connect%20Authenticator/#Hxwiki.properties)\\n\\t+ [In-wiki configuration](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/#HIn-wikiconfiguration)\\n\\t+ [Authentication with a domain-based instance](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/#HAuthenticationwithadomain-basedinstance)\\n* [Endpoints](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/#HEndpoints)\\n\\t+ [Callback](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/#HCallback)\\n\\t+ [Back-Channel Logout](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/#HBack-ChannelLogout)\\n* [Bypass OpenID Connect](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/#HBypassOpenIDConnect)\\n* [Group synchronizatio\"",
+      "similarity_score": 0.7283691167831421,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.OpenID Connect.OpenID Connect Authenticator.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/",
+      "content": "\"Wiki.\\n\\n  \\nOnce you installed the extension you will need to indicate you want to use it as authenticator with the property xwiki.authentication.authclass in xwiki.cfg file. See [Configuration section](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/#HConfiguration) for more details.\\n\\n# Dependencies\\n\\nDependencies for this extension (org.xwiki.contrib.oidc:oidc-authenticator 2.8.6):\\n\\n* org.xwiki.platform:xwiki-platform-oldcore 14.10\\n* com.nimbusds:oauth2-oidc-sdk 11.10.1\\n* [org.xwiki.contrib.oidc:oidc-provider](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Provider/) 2.8.6\\n* org.xwiki.contrib.oidc:oidc-authenticator-configuration 2.8.6\\n* org.xwiki.contrib.oidc:oidc-authenticator-user 2.8.6\\n\\n\\n\"",
+      "similarity_score": 0.7266250848770142,
+      "vector": null
+    }
+  ]
+}

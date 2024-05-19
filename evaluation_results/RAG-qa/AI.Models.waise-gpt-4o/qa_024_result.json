@@ -1,0 +1,15 @@
+{
+  "average_score": 0.7152777777777778,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7777777777777778,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.75
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.78 because while the actual output contains some helpful information on disabling notifications, it also includes multiple irrelevant links that do not directly address the question about disabling unwanted notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context! Keep up the excellent work!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node, which explains how to change notification settings, is ranked third. The first and second nodes are irrelevant as they discuss the Notifications Macro and various actions related to notifications without addressing how to disable notifications. The fourth and fifth nodes are also irrelevant, discussing notification-related macros and grouping strategies without providing the needed information on disabling notifications. The relevant node should be ranked higher to improve the score.",
+    "ContextualRecall": "The score is 0.75 because sentences 1, 2, and 3 in the expected output are well-supported by nodes 3 and 1 in the retrieval context, but sentence 4 lacks support as there is no mention of 'Filtres personnalis\u00e9s' or removing existing notification filters in the provided retrieval context."
+  }
+}

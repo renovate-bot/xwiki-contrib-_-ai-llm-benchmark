@@ -1,0 +1,15 @@
+{
+  "average_score": 0.27380952380952384,
+  "individual_scores": {
+    "AnswerRelevancy": 0.09523809523809523,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.10 because the output contains numerous irrelevant statements that do not address the issue of not receiving notifications, such as providing URLs, general information about XWiki, and unrelated offers of help. These elements detract significantly from the relevancy of the response.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on ensuring the actual output is perfectly aligned with the retrieval context! Keep up the excellent work!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are ranked inappropriately. For instance, the first node, which is about a \"standard URL format,\" does not provide any information related to notifications or their settings. Similarly, the second node, which is about \"images and references,\" is not relevant to notifications or their settings. This pattern continues with the third, fourth, and fifth nodes, all of which are about images and references, and thus irrelevant to the input. Therefore, the irrelevant nodes are ranked higher than any potentially relevant nodes, resulting in a score of 0.00.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not contain any information related to enabling notifications, the `notifications.enabled` setting, following pages or users, the notification menu, user profile instructions, or the 'Netzwerk' tab."
+  }
+}

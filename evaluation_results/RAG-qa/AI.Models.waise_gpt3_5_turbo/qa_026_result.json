@@ -1,0 +1,15 @@
+{
+  "average_score": 0.75,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response perfectly addresses the question about customizing user profile fields from the OpenID Connect provider in XWiki. Excellent job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses \"general functionality and statistics of the OpenID Connect authenticator,\" which does not help with customizing user profile fields. The second node mentions \"configuration files and some properties in `xwiki.properties`,\" but again, it does not address mapping user profile fields. The third node covers \"various technical details about the OpenID Connect protocol,\" without providing relevant instructions. The fourth node lists \"different sections and configurations related to OpenID Connect,\" but lacks specific information on user profile fields. Finally, the fifth node talks about \"installation and dependencies for the OpenID Connect authenticator,\" which is unrelated to the input query.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is perfectly aligned with the information provided in the nodes in the retrieval context. Great job!"
+  }
+}

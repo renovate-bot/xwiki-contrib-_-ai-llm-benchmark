@@ -1,24 +1,32 @@
 # Define variables for repeating elements
-SCRIPTS_DIR = "scripts"
+
+CONFIG_FILE = "config.json"
 CONTEXT_DATA_DIR = "context_data"
 INPUT_DIR = "input"
-OUTPUT_DIR = "output"
-SNAKEOUT_DIR = "snakeout"
-EVALUATION_DIR = "evaluation_results"
+INPUT_JSON_FILE = f"{INPUT_DIR}/input.json"
 TASKS_DIR = f"{INPUT_DIR}/tasks"
-INDEXED_DIR = f"{SNAKEOUT_DIR}/indexed"
+SCRIPTS_DIR = "scripts"
+OUTPUT_DIR = "output"
+EVALUATION_DIR = "evaluation_results"
+
 RESULTS_SUMMARIZATION_DIR = f"{EVALUATION_DIR}/summarization"
 RESULTS_TEXT_GENERATION_DIR = f"{EVALUATION_DIR}/text_generation"
 RESULTS_QA_DIR = f"{EVALUATION_DIR}/RAG-qa"
-PLOTS_DIR = f"{EVALUATION_DIR}/plots"
-CONFIG_FILE = "config.json"
-INPUT_JSON_FILE = f"{INPUT_DIR}/input.json"
+
+PLOTS_DIR = "evaluation_results_graphcs"
+
+SNAKEOUT_DIR = "snakeout"
+INDEXED_DIR = f"{SNAKEOUT_DIR}/indexed"
 
 rule all:
     input:
         INDEXED_DIR,
         TASKS_DIR,
-        OUTPUT_DIR
+        OUTPUT_DIR,
+        RESULTS_SUMMARIZATION_DIR,
+        RESULTS_TEXT_GENERATION_DIR,
+        RESULTS_QA_DIR,
+        PLOTS_DIR
 
 rule index_data:
     input:
@@ -94,39 +102,17 @@ rule eval_rag_qa:
     shell:
         "python {input.script} --output-dir {input.output_dir} --evaluation-dir {params.evaluation_dir} --config-file {input.config_file}"
 
-
 rule create_plots:
     input:
+        config_file = CONFIG_FILE,
         results_dir = EVALUATION_DIR
     output:
-        directory("evaluation_plots")
+        directory(PLOTS_DIR)
     params:
         script = f"{SCRIPTS_DIR}/results_visualization/create_plots.py"
     shell:
-        "python {params.script} --results-dir {input.results_dir} --plot-dir {output}"
+        "python {params.script} --config {input.config_file} --results_dir {input.results_dir} --output_dir {output}"
 
-
-# Uncomment and update the following rules as needed
-
-# rule calculate_scores:
-#     input:
-#         output_dir = OUTPUT_DIR
-#     output:
-#         directory(RESULTS_QA_DIR)
-#     params:
-#         script = f"{SCRIPTS_DIR}/evaluation_scripts/calculate_scores.py"
-#     shell:
-#         "python {params.script} --output-dir {input.output_dir} --results-dir {output}"
-
-# rule create_plots:
-#     input:
-#         results_dir = RESULTS_QA_DIR
-#     output:
-#         directory(PLOTS_DIR)
-#     params:
-#         script = f"{SCRIPTS_DIR}/results_visualization/create_plots.py"
-#     shell:
-#         "python {params.script} --results-dir {input.results_dir} --plots-dir {output}"
 
 rule clean:
     shell:

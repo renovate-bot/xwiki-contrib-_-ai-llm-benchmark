@@ -1,0 +1,6 @@
+{
+  "id": "qa_019",
+  "prompt": "Wie kann ich einem Bereichsadministrator das Skriptrecht verweigern?",
+  "expected_answer": "Leider wird dies in XWiki nicht unterst\u00fctzt, Rechte, die durch das Admin-Recht impliziert sind, k\u00f6nnen nicht verweigert werden.",
+  "data_path": null
+}

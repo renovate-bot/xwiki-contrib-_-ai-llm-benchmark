@@ -1,0 +1,6 @@
+{
+  "id": "qa_006",
+  "prompt": "Can I customize the user profile fields that are populated from the OpenID Connect provider in XWiki?\nI want to map additional user profile fields from my OpenID Connect provider to XWiki user properties. How can I achieve this?",
+  "expected_answer": "Yes, you can customize the user profile fields that are populated from the OpenID Connect provider by mapping them in the `xwiki.properties` file.\n\nTo map additional user profile fields, use the `oidc.user.mapping` property. Here's an example of how to map custom properties:\n\n```\n# oidc.user.mapping=myxproperty1=${oidc.user.subject}\n# oidc.user.mapping=myxproperty2=myprefix-${oidc.user.subject}\n```\n\nReplace `myxproperty1` and `myxproperty2` with the actual XWiki user property names, and `${oidc.user.subject}` with the appropriate variable based on the data provided by your OpenID Connect provider.\n\nAfter configuring the mappings, save the `xwiki.properties` file and restart XWiki to apply the changes.",
+  "data_path": null
+}

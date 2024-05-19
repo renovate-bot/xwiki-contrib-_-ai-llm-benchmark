@@ -3,21 +3,69 @@
     "text_generation": [
       {
         "id": "text_gen_001",
+        "prompt": "Extract the key information (name, date of birth, address) from the following text:\n\nJohn Doe, born on 15th August 1990, currently resides at 123 Main Street, Anytown, USA.",
+        "expected_answer": "{\n  \"name\": \"John Doe\",\n  \"date_of_birth\": \"15th August 1990\",\n  \"address\": \"123 Main Street, Anytown, USA\"\n}",
+        "data_path": null
+      },
+      {
+        "id": "text_gen_002",
+        "prompt": "Transform the following keywords into a coherent sentence:\n\ncat, playful, garden, sunny day",
+        "expected_answer": "On a sunny day, the playful cat enjoyed exploring the garden.",
+        "data_path": null
+      },
+      {
+        "id": "text_gen_003",
+        "prompt": "Adapt the following text to a younger audience (age 8-10):\n\nPhotosynthesis is the process by which plants convert sunlight into chemical energy that can be used to fuel the plant's activities.",
+        "expected_answer": "Plants use a special process called photosynthesis to make their own food. They take in sunlight and turn it into energy that helps them grow and stay healthy.",
+        "data_path": null
+      },
+      {
+        "id": "text_gen_004",
+        "prompt": "Generate a short product description based on the following information:\n\nProduct: Wireless Bluetooth Headphones\nFeatures: Noise-cancelling, 20-hour battery life, comfortable fit\nTarget audience: Tech-savvy professionals",
+        "expected_answer": "Introducing our cutting-edge wireless Bluetooth headphones, designed for tech-savvy professionals who demand the best. With advanced noise-cancelling technology, you can immerse yourself in your music or focus on your work without any distractions. Enjoy an impressive 20-hour battery life, ensuring your headphones keep up with your busy lifestyle. The comfortable, ergonomic fit allows you to wear them all day long without any discomfort. Upgrade your audio experience with our premium wireless headphones.",
+        "data_path": null
+      },
+      {
+        "id": "text_gen_005",
         "prompt": "Generate a creative story about a space adventure.",
         "expected_answer": "A story about a group of astronauts exploring a new planet.",
         "data_path": null
       },
       {
-        "id": "text_gen_002",
-        "prompt": "Write a poem about the ocean.",
-        "expected_answer": "A poem capturing the beauty and mystery of the ocean.",
+        "id": "text_gen_006",
+        "prompt": "Write a poem about the beauty of nature.",
+        "expected_answer": "A poem describing the wonders of the natural world.",
+        "data_path": null
+      },
+      {
+        "id": "text_gen_007",
+        "prompt": "Generate a news article about a recent scientific discovery.",
+        "expected_answer": "An informative article summarizing a groundbreaking scientific finding.",
+        "data_path": null
+      },
+      {
+        "id": "text_gen_008",
+        "prompt": "Create a travel guide for a popular tourist destination.",
+        "expected_answer": "An informative guide highlighting the top attractions, accommodations, and activities in a popular tourist spot.",
+        "data_path": null
+      },
+      {
+        "id": "text_gen_009",
+        "prompt": "Extract the event details from the following text:\n\nJoin us for the Annual Tech Conference, taking place from September 15th to 17th, 2023 at the Riverside Convention Center, 123 Main Street, Anytown, USA. The conference will feature keynote speeches, workshops, and networking opportunities for professionals in the tech industry.",
+        "expected_answer": "{\n  \"event_name\": \"Annual Tech Conference\",\n  \"start_date\": \"September 15th, 2023\",\n  \"end_date\": \"September 17th, 2023\",\n  \"venue\": \"Riverside Convention Center\",\n  \"address\": \"123 Main Street, Anytown, USA\",\n  \"target_audience\": \"professionals in the tech industry\"\n}",
+        "data_path": null
+      },
+      {
+        "id": "text_gen_010",
+        "prompt": "Adapt the following text to a more technical audience:\n\nThe human brain is a complex organ that controls all functions of the body, interprets information from the outside world, and embodies the essence of the mind and soul.",
+        "expected_answer": "The human brain is a highly intricate and sophisticated organ responsible for regulating and coordinating various physiological processes, processing and interpreting sensory information from the external environment, and serving as the biological substrate for cognitive functions, consciousness, and subjective experiences.",
         "data_path": null
       }
     ],
     "summarization": [
       {
         "id": "summ_001",
-        "data_path": "../context_data/documents/extensions_Extension.LLM Application.Index for the LLM Application.WebHome.json"
+        "data_path": "../context_data/documents/xwiki_Documentation.UserGuide.GettingStarted.XWikiBasicConcepts.json"
       },
       {
         "id": "summ_002",
@@ -54,13 +102,9 @@
       {
         "id": "summ_010",
         "data_path": "../context_data/documents/xwiki_Documentation.UserGuide.GettingStarted.WhatsSpecialAboutXWiki.WebHome.json"
-      },
-      {
-        "id": "summ_011",
-        "data_path": "../context_data/documents/xwiki_Documentation.UserGuide.GettingStarted.XWikiBasicConcepts.json"
       }
     ],
-    "qa": [
+    "RAG-qa": [
       {
         "id": "qa_001",
         "prompt": "The \"Bell\" in the top right corner is not available, also not when the \"Alert Notification\" extension is installed.",

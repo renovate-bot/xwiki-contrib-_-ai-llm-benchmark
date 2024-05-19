@@ -1,0 +1,6 @@
+{
+  "id": "qa_012",
+  "prompt": "Ich erhalte keine Benachrichtigungen.",
+  "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen. Stellen Sie au\u00dferdem sicher, dass Sie den Seiten oder Benutzern, f\u00fcr die Sie Benachrichtigungen erhalten m\u00f6chten, folgen. Sie k\u00f6nnen einer Seite, einer Seite und ihren Unterseiten oder einem gesamten Wiki folgen. Um einem Ort zu folgen, m\u00fcssen Sie nur dorthin gehen und dann auf das Men\u00fc \"Benachrichtigung\" (dargestellt durch eine Glocke) klicken und die gew\u00fcnschten Benachrichtigungen aktivieren. Um einem Benutzer zu folgen, k\u00f6nnen Sie, wenn Sie auf das Profil eines Benutzers gehen, beispielsweise \u00fcber das Benutzerindex, entscheiden, dem Benutzer zu folgen. Das bedeutet, dass Sie alle Benachrichtigungen \u00fcber Ereignisse erhalten, die von diesem Benutzer ausgel\u00f6st wurden. In Ihrem Benutzerprofil k\u00f6nnen Sie in der Registerkarte \"Netzwerk\" die Liste der Benutzer anzeigen, denen Sie folgen, und die von ihnen durchgef\u00fchrten Ereignisse.",
+  "data_path": null
+}

@@ -1,0 +1,6 @@
+{
+  "id": "qa_025",
+  "prompt": "Comment puis-je configurer XWiki pour activer automatiquement les comptes d'utilisateurs lors de leur premi\u00e8re connexion \u00e0 l'aide de OpenID Connect?\nJ'ai configur\u00e9 l'authentification OpenID Connect dans mon instance XWiki, mais les utilisateurs ne sont pas automatiquement activ\u00e9s apr\u00e8s leur premi\u00e8re connexion. Quelle configuration dois-je ajuster?",
+  "expected_answer": "Pour activer automatiquement les comptes d'utilisateurs lors de leur premi\u00e8re connexion \u00e0 l'aide de OpenID Connect dans XWiki, vous devez ajuster le fichier `xwiki.properties`.\n\nAjoutez ou mettez \u00e0 jour la propri\u00e9t\u00e9 suivante:\n\n```\n#-# D\u00e9finir si les comptes utilisateurs doivent \u00eatre activ\u00e9s (marqu\u00e9s comme actifs) lors de la premi\u00e8re connexion\n# oidc.enableUser=true\n```\n\nAssurez-vous de d\u00e9commenter et de d\u00e9finir la propri\u00e9t\u00e9 `oidc.enableUser` sur `true`. Apr\u00e8s cette modification, enregistrez le fichier et red\u00e9marrez votre instance XWiki pour que les modifications prennent effet.\n\nCela garantira que les nouveaux comptes d'utilisateurs seront automatiquement activ\u00e9s lorsqu'ils se connecteront pour la premi\u00e8re fois via OpenID Connect.",
+  "data_path": null
+}

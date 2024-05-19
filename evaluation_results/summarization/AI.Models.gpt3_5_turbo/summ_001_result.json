@@ -1,0 +1,8 @@
+{
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary contains contradictions regarding the tabbed area and the display of panels. Additionally, it fails to answer specific questions about the layout and features of XWiki that the original text can address.",
+  "score_breakdown": {
+    "Alignment": 0.6666666666666666,
+    "Coverage": 0.6
+  }
+}

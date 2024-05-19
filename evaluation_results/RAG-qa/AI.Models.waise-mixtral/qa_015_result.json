@@ -1,0 +1,15 @@
+{
+  "average_score": 0.6,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.4
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the output is perfectly relevant and directly addresses the question about configuring XWiki for automatic activation of user accounts upon first login with OpenID Connect. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on ensuring the actual output perfectly aligns with the retrieval context! Keep up the fantastic work!",
+    "ContextualPrecision": "The score is 0.00 because all the nodes in the retrieval context are irrelevant to the input. The first node discusses a configuration example for Univention Corporate Server and mentions configuration files, but it does not provide the specific property `oidc.enableUser` or instructions to modify `xwiki.properties`. The second node includes links to release notes and mentions automatic user authentication, but it does not provide the specific configuration details needed to enable automatic account activation. The third node describes the OpenID Connect authenticator extension, its developer, and its rating, but it does not mention the specific configuration needed for automatic user activation. The fourth node provides links to various configuration guides and endpoints, but it does not include the specific property `oidc.enableUser` or instructions for modifying `xwiki.properties`. The fifth node discusses dependencies for the OpenID Connect extension and mentions the `xwiki.authentication.authclass` property, but it does not provide the specific configuration needed for automatic user activation. Therefore, irrelevant nodes are ranked higher than relevant ones, resulting in a score of 0.00.",
+    "ContextualRecall": "The score is 0.40 because, while the retrieval context mentions 'xwiki.properties' and the property 'oidc.enableUser=true', it lacks specific instructions on updating the property, uncommenting it, and ensuring new user accounts are automatically activated on first login."
+  }
+}

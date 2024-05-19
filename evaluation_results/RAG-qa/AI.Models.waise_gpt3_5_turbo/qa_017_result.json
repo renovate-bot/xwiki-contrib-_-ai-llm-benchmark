@@ -1,0 +1,15 @@
+{
+  "average_score": 0.5397727272727273,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9090909090909091,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.25,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.91 because the answer is mostly relevant and provides useful information on setting up group synchronization between XWiki and an OpenID Connect provider. However, it includes a statement about the automatically generated search results not containing direct information, which is not directly addressing the setup process.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.25 because only one relevant node is correctly identified, but it is ranked fourth instead of being higher. The first node discusses \"release notes, limitations, and specific configuration guides for systems like Lemon LDAP and Keycloak,\" which are not related to the group synchronization setup process. The second node mentions group synchronization but lacks \"specific details or steps on how to configure\" it. The third node talks about \"setting properties in the xwiki.cfg configuration file\" and connecting to an Active Directory server, which is irrelevant. The fifth node focuses on \"the installation of the extension and setting the authenticator property in the xwiki.cfg file,\" which is also not directly related. The fourth node, which is relevant, should be ranked higher as it discusses \"defining a mapping between XWiki groups and provider groups using the `oidc.groups.mapping` property.\"",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not provide any relevant information or instructions related to setting up group synchronization between XWiki and an OpenID Connect provider, including locating, opening, configuring, or saving the `xwiki.properties` file, nor does it mention any specific properties or examples required for this setup."
+  }
+}

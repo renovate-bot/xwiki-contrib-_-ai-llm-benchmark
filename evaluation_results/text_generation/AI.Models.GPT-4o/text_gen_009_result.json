@@ -1,0 +1,5 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output addresses the Input prompt and covers most key details such as event name, dates, location, and event features. However, it does not split the start and end dates, and it does not explicitly mention 'target_audience' as required in the Expected Output.",
+  "score_breakdown": null
+}

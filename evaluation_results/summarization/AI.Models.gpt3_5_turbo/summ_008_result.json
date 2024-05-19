@@ -1,0 +1,8 @@
+{
+  "score": 0.2,
+  "reason": "The score is 0.20 because the summary includes a link for creating a basic application in XWiki, which contradicts the original text that only mentions the next step without providing a link. Additionally, the summary fails to answer several questions that the original text can, indicating significant omissions and inaccuracies.",
+  "score_breakdown": {
+    "Alignment": 0.75,
+    "Coverage": 0.2
+  }
+}

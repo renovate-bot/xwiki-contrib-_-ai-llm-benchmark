@@ -1,0 +1,8 @@
+{
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary includes extra information not mentioned in the original text, such as a tabular view summarizing rights and links to detailed documentation, and it fails to answer whether the administration right can only be granted at the page or wiki level.",
+  "score_breakdown": {
+    "Alignment": 0.8333333333333334,
+    "Coverage": 0.8
+  }
+}

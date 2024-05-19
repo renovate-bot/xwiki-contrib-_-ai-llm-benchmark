@@ -1,0 +1,15 @@
+{
+  "average_score": 0.5416666666666666,
+  "individual_scores": {
+    "AnswerRelevancy": 0.6666666666666666,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.67 because the provided URLs do not directly address the issue of the \"Bell\" icon not being available, making parts of the response irrelevant. However, some relevant information is still provided, which is why the score is not lower.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions at all! Great job keeping the actual output perfectly aligned with the retrieval context. Keep up the excellent work!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses \"loading and viewing notifications\" and \"changing their background color,\" not enabling notifications, which is what the input is about. The second node talks about the \"Alerts menu\" and \"number of notifications displayed,\" but again does not address enabling notifications. The third node lists \"notification-related macros\" without mentioning enabling notifications. The fourth node explains \"minor events\" and \"watching locations or users,\" which is unrelated to the input. Finally, the fifth node discusses \"notifications settings\" but fails to mention the specific setting `notifications.enabled` in `xwiki.properties`, making it irrelevant as well. Therefore, the score remains at 0.00 because none of the nodes are relevant to the input.",
+    "ContextualRecall": "The score is 0.50 because while the expected output references 'notifications' and 'wiki' as seen in the 2nd node of the retrieval context, it also mentions 'xwiki.properties,' which is not found in any nodes in the retrieval context."
+  }
+}

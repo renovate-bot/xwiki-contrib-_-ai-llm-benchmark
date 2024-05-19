@@ -1,0 +1,48 @@
+{
+  "id": "qa_029",
+  "prompt": "Comment puis-je refuser le droit de script \u00e0 un administrateur d'espace?",
+  "expected_answer": "Ceci n'est malheureusement pas pris en charge dans XWiki, les droits qui sont impliqu\u00e9s par le droit d'administrateur ne peuvent pas \u00eatre refus\u00e9s.",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \n\n\nIl semble que vous cherchiez des informations sur la r\u00e9vocation des droits de script dans un environnement XWiki. Dans XWiki, le droit de script peut \u00eatre refus\u00e9 \u00e0 un administrateur d'espace en modifiant les autorisations au niveau de l'espace concern\u00e9. En r\u00e9voquant explicitement le droit de script pour un utilisateur ou un groupe sp\u00e9cifique, vous pouvez emp\u00eacher l'ex\u00e9cution des scripts qu'ils ont \u00e9crits.\n\nSi vous avez d'autres questions ou si vous avez besoin de plus de d\u00e9tails, n'h\u00e9sitez pas \u00e0 demander!",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Access Rights.Permission types.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/",
+      "content": "\" an administrator explicitly revokes the right for some users or groups, they will be able to execute the scripts they wrote. |\\n\\n1) TBD\\n\\n2) \u00a0For \u201cdeny &gt; allow\u201d, any encounter of a explicit deny will deny the permission  \\n\u00a0\u00a0\u00a0\u00a0For \u201callow &gt; deny\u201d, allow right will overrule any implicit or explicit deny\\n\\n[Another table with additional information about implied rights, inheritance and more](https://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module#HDefaultrightsbeingpredefined).\\n\\n\\n\"",
+      "similarity_score": 0.655697762966156,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Access Rights.Permission types.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/",
+      "content": "\" is usually granted or revoked for the non-registered pseudo-user &quot;XWiki.XWikiGuest&quot;. This permission can only be set from the wiki preferences page. | Allow | allow &gt;deny &gt;no setting | wiki | Wiki level only |\\n| **Create Wikis** | The &quot;createwiki&quot; right can only be granted via the main wiki, just like programming rights | Deny | allow &gt;deny &gt;no setting | wiki | Main wiki level only |\\n| **Script** | The &quot;Script&quot; right was introduced in version 7.2 in order to control who has the right to write scripts. Anyone with edit rights can write a script in a wiki page. However, when the page is rendered, the script will only execute if the last author of the page has the &quot;Script&quot; right. | Allow (Main Wiki)Deny (Sub Wiki) | deny &gt;allow &gt;no setting | wiki | For backward-compatibility reasons, the standard XWiki distribution comes with the &quot;Script&quot; right being allowed for all users at the main wiki level. So, unless an administrat\"",
+      "similarity_score": 0.6076408624649048,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Access Rights.Permission types.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/",
+      "content": "\"/xwiki/bin/view/Extension/Security%20Module))\\n* Default status: DENIED\\n* Priority order: allow &gt; deny &gt; no setting\\n* Checking order: wiki\\n\\n## Register Right\\n\\nThe register right is usually granted or revoked for the non-registered pseudo-user &quot;XWiki.XWikiGuest&quot;. This permission can only be set from the wiki preferences page.\\n\\n* Availability: Wiki level\\n* Default status: ALLOWED\\n* Priority order: allow &gt; deny &gt; no setting\\n* Checking order: wiki\\n\\n## Create Wikis Right\\n\\nThe &quot;createwiki&quot; right can only be granted via the main wiki, just like programming rights. .\\n\\n* Availability: Main wiki level\\n* Default status: DENIED\\n* Priority order: allow &gt; deny &gt; no setting\\n* Checking order: wiki\\n\\n## Script Right\\n\\nThe &quot;Script&quot; right was introduced in version 7.2 in order to control who has the right to write scripts. Anyone with edit rights can write a script in a wiki page. However, when the page is rendered, the script will only execute if the last aut\"",
+      "similarity_score": 0.5994274020195007,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Access Rights.Permission types.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/",
+      "content": "\"if the last author of the page has the &quot;Script&quot; right.\\n\\nXWiki &lt;14.10 For backward-compatibility reasons, the standard XWiki distribution comes with the &quot;Script&quot; right being allowed for all users at the main wiki level. So, unless an administrator explicitly revokes the right for some users or groups, they will be able to execute the scripts they wrote.\\n\\nXWiki 14.10+ The script right gives a lot of power to users so by default the right is not given anymore to all users at the main wiki level: administrators have to manually allow it.\\n\\n* Availability: Page and Wiki level.\\n* Default status:\\n\\t+ ALLOWED on the main wiki\\n\\t+ DENIED on sub-wikis\\n* Priority order: deny &gt; allow &gt; no setting\\n* Checking order: page &gt; wiki\\n\\n# Tabular view\\n\\n\\n\\n| Right | Description | Default 1) | Priority 2) | Order | Remarks |\\n| --- | --- | --- | --- | --- | --- |\\n| **View** | The view right gives the user the ability to view a document or load it using the API. | Allow | deny &gt;al\"",
+      "similarity_score": 0.5989106297492981,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Access Rights.Permission types.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/",
+      "content": "\"ights imply the view, comment, edit and delete permissions with the added ability to permanently delete a page from the recycle bin.\\n\\n* Availability:\\n\\t+ page (Automatically includes the view, comment, edit, delete rights)\\n\\t+ Wiki (Automatically includes the view, comment, edit, delete, register)\\n* Default status: DENIED\\n* Priority order: allow &gt; deny &gt; no setting\\n* Checking order: wiki &gt; page\\n\\n## Programming Right\\n\\nA programmer is allowed to execute arbitrary Java code in the wiki, so any page which was last saved by an user with programmer rights can run dangerous scripts. Because it affects the entire wiki (or wiki farm), programming rights can only be granted from the wiki preferences page in a single wiki environment or from the main wiki in a multi-wiki environment.\\n\\n* Availability: Main wiki level (automatically implies \u00a0LOGIN, VIEW, EDIT, DELETE, REGISTER, COMMENT, SCRIPT, ADMIN, see the documentation for the [security module](https://extensions.xwiki.org/xwiki/bin/view\"",
+      "similarity_score": 0.5922643542289734,
+      "vector": null
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "average_score": 0.7196428571428571,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.9285714285714286,
+    "ContextualPrecision": 0.7,
+    "ContextualRecall": 0.25
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant, directly addressing the process of configuring group synchronization between XWiki and an OpenID Connect provider with group claims. Great job!",
+    "Faithfulness": "The score is 0.93 because the claim states that the `oidc.groups.mapping` property should be added to your `xwiki.properties` file, but the retrieval context indicates it should be added to the configuration.",
+    "ContextualPrecision": "The score is 0.70 because the relevant nodes are generally ranked higher than the irrelevant nodes, but not perfectly so. The first node is relevant as it mentions the `oidc.groups.mapping` property, which is crucial for setting up group synchronization. However, the second node is irrelevant since it talks about release notes and limitations, which should be ranked lower. The third and fourth nodes are also irrelevant, discussing dependencies and Active Directory, respectively, and should be ranked lower. The fifth node is relevant because it details configuring OpenID Connect properties in the `xwiki.properties` file, which is pertinent to the input. The presence of irrelevant nodes ranked higher than some relevant ones lowers the score.",
+    "ContextualRecall": "The score is 0.25 because the retrieval context only partially supports the expected output. While it mentions configuring `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping` properties, it lacks details on locating and editing the `xwiki.properties` file, providing examples, and saving changes. This results in incomplete guidance compared to the expected output."
+  }
+}

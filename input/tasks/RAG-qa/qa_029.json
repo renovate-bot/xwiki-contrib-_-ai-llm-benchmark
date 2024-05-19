@@ -1,0 +1,6 @@
+{
+  "id": "qa_029",
+  "prompt": "Comment puis-je refuser le droit de script \u00e0 un administrateur d'espace?",
+  "expected_answer": "Ceci n'est malheureusement pas pris en charge dans XWiki, les droits qui sont impliqu\u00e9s par le droit d'administrateur ne peuvent pas \u00eatre refus\u00e9s.",
+  "data_path": null
+}

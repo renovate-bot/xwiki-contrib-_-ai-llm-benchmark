@@ -1,0 +1,15 @@
+{
+  "average_score": 0.815,
+  "individual_scores": {
+    "AnswerRelevancy": 0.96,
+    "Faithfulness": 0.8,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.5
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.96 because the response is highly relevant and provides useful information on troubleshooting notification issues. The only minor irrelevant part is the inclusion of a link to XWiki syntax documentation, which is not directly related to the notification problem.",
+    "Faithfulness": "The score is 0.80 because the actual output contains minor discrepancies with the retrieval context. Specifically, the actual output provides detailed steps for disabling the filter for minor events that are not mentioned in the retrieval context, and it incorrectly states that users need to click on the bell icon to watch both locations and users, whereas the retrieval context only mentions locations.",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are correctly ranked higher than irrelevant nodes. The first two nodes discuss settings for notifications and how to watch entities, which aligns with the input about not receiving notifications. The irrelevant nodes, ranked lower, discuss unrelated topics like macros, loading and reading notifications, and clearing notifications. Great job on maintaining perfect contextual precision!",
+    "ContextualRecall": "The score is 0.50 because while the retrieval context accurately describes how to follow pages, locations, and users (nodes 2), it lacks details on activating notifications through `xwiki.properties`, receiving notifications about specific user events, and viewing a list of followed users and their events in the user profile."
+  }
+}

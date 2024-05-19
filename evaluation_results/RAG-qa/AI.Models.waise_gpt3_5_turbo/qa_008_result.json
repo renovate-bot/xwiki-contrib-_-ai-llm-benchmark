@@ -1,0 +1,15 @@
+{
+  "average_score": 0.8209235209235208,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7857142857142857,
+    "Faithfulness": 0.8888888888888888,
+    "ContextualPrecision": 0.7,
+    "ContextualRecall": 0.9090909090909091
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.79 because the answer provides relevant information on how to set file upload restrictions on a wiki, but it includes multiple URLs that do not directly address the question and could have been summarized or omitted.",
+    "Faithfulness": "The score is 0.89 because the actual output incorrectly states the maximum size of an attachment as 32 megabytes by default, whereas the retrieval context specifies it as 100GB by default (32MB for XWiki < 10.9RC1).",
+    "ContextualPrecision": "The score is 0.70 because the first node in the retrieval context is relevant and provides steps to change the maximum size of an attachment, which is part of the expected output. However, the second, third, and fourth nodes are irrelevant as they either lack specific steps or configuration details needed to restrict uploads to images and PDF files or discuss unrelated topics such as forcing certain mime-types to be downloaded. The fifth node is relevant as it explains how to configure the default mimetype restrictions at the farm level. The presence of these irrelevant nodes ranked above the relevant fifth node lowers the overall score.",
+    "ContextualRecall": "The score is 0.91 because the retrieval context covers most of the steps and details for configuring allowed mimetypes and maximum attachment size, as seen in nodes 1 and 4. However, it does not explicitly mention blocking all other mimetypes."
+  }
+}

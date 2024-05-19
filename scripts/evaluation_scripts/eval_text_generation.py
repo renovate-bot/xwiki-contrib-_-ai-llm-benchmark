@@ -8,23 +8,7 @@ from deepeval.test_case import LLMTestCase, LLMTestCaseParams
 # Add the parent directory of the 'scripts' folder to the Python module search path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
-from scripts.models_connections.waise_model import WaiseModel
-from scripts.models_connections.deepeval_model import EvaluatorModel
-
-def load_config(config_file):
-    with open(config_file, 'r') as file:
-        config = json.load(file)
-    return config
-
-def save_evaluation_result(result_file, score, reason, score_breakdown):
-    evaluation_result = {
-        "score": score,
-        "reason": reason,
-        "score_breakdown": score_breakdown
-    }
-    os.makedirs(os.path.dirname(result_file), exist_ok=True)
-    with open(result_file, 'w') as file:
-        json.dump(evaluation_result, file, indent=2)
+from evaluation_utils import load_config, save_evaluation_result, get_evaluator_model
 
 def calculate_text_generation_score(ai_generated_file, evaluator_model):
     # Load the AI-generated text file
@@ -55,30 +39,30 @@ def calculate_text_generation_score(ai_generated_file, evaluator_model):
 
 def evaluate_text_generation(output_dir, evaluation_dir, config_file):
     config = load_config(config_file)
-    evaluator_settings = config['evaluator']
+    evaluator_model = get_evaluator_model(config_file)
 
-    evaluator_model = EvaluatorModel(WaiseModel(
-        model=evaluator_settings['model'],
-        temperature=evaluator_settings['temperature'],
-        stream=evaluator_settings['stream'],
-        verbose=False
-    ))
+    for task in config['tasks']:
+        if task['task'] == 'text_generation':
+            model_name = task['settings']['model']
+            model_output_dir = os.path.join(output_dir, model_name)
+            if os.path.isdir(model_output_dir):
+                model_evaluation_dir = os.path.join(evaluation_dir, model_name)
+                os.makedirs(model_evaluation_dir, exist_ok=True)
 
-    for model_dir in os.listdir(output_dir):
-        model_output_dir = os.path.join(output_dir, model_dir)
-        if os.path.isdir(model_output_dir):
-            model_evaluation_dir = os.path.join(evaluation_dir, model_dir)
-            os.makedirs(model_evaluation_dir, exist_ok=True)
+                text_generation_dir = os.path.join(model_output_dir, 'tasks', 'text_generation')
+                if os.path.exists(text_generation_dir):
+                    for generated_file in os.listdir(text_generation_dir):
+                        if generated_file.endswith('.json'):
+                            ai_generated_file = os.path.join(text_generation_dir, generated_file)
+                            result_file = os.path.join(model_evaluation_dir, f"{os.path.splitext(generated_file)[0]}_result.json")
 
-            text_generation_dir = os.path.join(model_output_dir, 'tasks', 'text_generation')
-            if os.path.exists(text_generation_dir):
-                for generated_file in os.listdir(text_generation_dir):
-                    if generated_file.endswith('.json'):
-                        ai_generated_file = os.path.join(text_generation_dir, generated_file)
-                        result_file = os.path.join(model_evaluation_dir, f"{os.path.splitext(generated_file)[0]}_result.json")
-
-                        score, reason, score_breakdown = calculate_text_generation_score(ai_generated_file, evaluator_model)
-                        save_evaluation_result(result_file, score, reason, score_breakdown)
+                            score, reason, score_breakdown = calculate_text_generation_score(ai_generated_file, evaluator_model)
+                            evaluation_result = {
+                                "score": score,
+                                "reason": reason,
+                                "score_breakdown": score_breakdown
+                            }
+                            save_evaluation_result(result_file, evaluation_result)
 
 if __name__ == '__main__':
     import argparse

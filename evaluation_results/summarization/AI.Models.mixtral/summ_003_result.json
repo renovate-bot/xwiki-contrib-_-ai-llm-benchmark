@@ -1,0 +1,8 @@
+{
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary includes several pieces of information that contradict the original text, such as the process for setting access rights and the concept of 'Group rights.' Additionally, there is extra information in the summary not found in the original text, such as a step-by-step guide and specific documentation pages. Furthermore, the summary fails to answer some questions that the original text can, such as whether page-level permissions can override wiki-wide permissions and if the wiki owner always has full admin privileges.",
+  "score_breakdown": {
+    "Alignment": 0.6363636363636364,
+    "Coverage": 0.6
+  }
+}

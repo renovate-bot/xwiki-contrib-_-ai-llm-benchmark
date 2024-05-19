@@ -1,0 +1,6 @@
+{
+  "id": "qa_011",
+  "prompt": "Die Glocke oben rechts ist nicht verf\u00fcgbar, auch nicht wenn die Erweiterung \"Alert Notification\" installiert ist.",
+  "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen in Ihrem Wiki aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen.",
+  "data_path": null
+}

@@ -1,0 +1,6 @@
+{
+  "id": "text_gen_007",
+  "prompt": "Generate a news article about a recent scientific discovery.",
+  "expected_answer": "An informative article summarizing a groundbreaking scientific finding.",
+  "data_path": null
+}

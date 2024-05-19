@@ -1,0 +1,6 @@
+{
+  "id": "qa_014",
+  "prompt": "Ich erhalte viele Benachrichtigungen \u00fcber alle m\u00f6glichen Seiten, an denen ich nicht interessiert bin. Diese scheinen automatisch aktiviert worden zu sein. Wie kann ich diese Benachrichtigungen deaktivieren?",
+  "expected_answer": "Standardm\u00e4\u00dfig wird eine Seite, an der Sie eine wesentliche \u00c4nderung vorgenommen haben, automatisch zu der Liste der Seiten hinzugef\u00fcgt, denen Sie folgen. Das bedeutet, dass Sie \u00fcber \u00c4nderungen an Ihrer Arbeit benachrichtigt werden. Sie k\u00f6nnen die Einstellung f\u00fcr \"Automatisches Verfolgen von Seiten\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil \u00e4ndern. Sie k\u00f6nnen vorhandene Benachrichtigungsfilter, die auf diese Weise erstellt wurden, in der Liste \"Benutzerdefinierte Filter\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil l\u00f6schen.",
+  "data_path": null
+}

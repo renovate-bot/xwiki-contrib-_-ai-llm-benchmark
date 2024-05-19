@@ -1,0 +1,15 @@
+{
+  "average_score": 0.7,
+  "individual_scores": {
+    "AnswerRelevancy": 0.6,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.60 because the actual output includes URLs that do not directly address the question about activating notifications for one's own actions, making parts of the response irrelevant. However, the score is not lower because there is still some relevant information provided.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job! Keep up the excellent work!",
+    "ContextualPrecision": "The score is 0.20 because the relevant node, which states, \"By default, you won\u2019t receive notifications for actions done by yourself. This can be changed by switching off the Own event filter,\" is ranked fifth. The first four nodes discuss general notification settings, various notification macros and preferences, enabling notifications for all users by default, and customizing email templates, none of which address the specific issue of receiving notifications for one's own activity. These irrelevant nodes should be ranked lower than the relevant node, resulting in a higher score.",
+    "ContextualRecall": "The score is 1.00 because the retrieval context perfectly matches the expected output, with nodes in the retrieval context accurately reflecting the details provided. Great job!"
+  }
+}

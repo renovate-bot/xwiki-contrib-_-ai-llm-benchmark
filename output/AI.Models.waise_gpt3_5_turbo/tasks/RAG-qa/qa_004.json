@@ -1,0 +1,48 @@
+{
+  "id": "qa_004",
+  "prompt": "I'm receiving lot's of notifications about all kinds of pages I'm not interested in. These seem to have been enabled automatically. How can I disable these notifications?",
+  "expected_answer": "By default, a page where you have made a major modification is automatically added to the list of pages you watch. It means you will be notified about changes on your work. You can change the setting for \"Automatic page watching\" in the notification settings in your user profile. You can delete existing notification filters that were created this way in the \"Custom Filters\" list in the notification settings in your user profile.",
+  "ai_answer": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\nIt seems like you are experiencing unwanted notifications on various pages. To manage your notification settings and disable notifications for pages you are not interested in, you can follow these steps:\n\n1. Access the notifications settings from your user profile.\n2. Select the \"types\" of notifications you want to receive.\n3. Disable notifications for the specific pages or spaces that you are not interested in.\n\nBy customizing your notification preferences, you can control the types of notifications you receive and avoid being notified about pages that are not relevant to you.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"g/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif3.png?rev=1.5)](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif3.png?rev=1.5)\\n\\nThe &quot;Clear All&quot; link will remove all notifications that were sent till now.\\n\\nWhen no notification is available, you will see the following:\\n\\n[![notif5.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif5.png?rev=1.4)](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif5.png?rev=1.4)\\n\\nBy default, you won&#x27;t receive notifications for actions done by yourself. This can be changed by switching off the Own event filter.\\n\\n## Group of notifications with details\\n\\nSimilar notifications are grouped together in order to avoid a batch of identical content. Only one notification is displayed, and it is possible to see the details of all activities in the &quot;Details&quot; section (if \"",
+      "similarity_score": 0.8026454448699951,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"png?rev=1.3)  \\n![NotificationsWithRSS.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotificationsWithRSS.png?rev=1.3)\\n\\n## Notifications Macro\\n\\nThe [Notifications Macro is provided by its own application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Macro/).\\n\\n# Settings\\n\\nOn the notifications menu, you also have a link to go to the &quot;settings&quot; of the notifications.\\n\\n![notif4.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif4.png?rev=1.8)\\n\\nBy default, users only get notifications when they are mentioned or when actions are performed on pages they created or updated. For receiving other notifications, you need to select which &quot;types&quot; of notifications you want to receive. When a page is created? When a blog post is published?\\n\\nYou can enable or disable all notification types that belong to a particular application by clicking on the bells as\"",
+      "similarity_score": 0.7987414002418518,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"bles:\u00a0\\n\\n* System filters that can only be enabled or disabled,\\n* Custom filters that can be customized by users, which can be enabled or disabled and can be deleted too. Note that those filters are dedicated to filter events on specific locations.\\n\\n![notifications-filters-settings.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notifications-filters-settings.png?rev=1.4)  \\n![notification-add-filter.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notification-add-filter.png?rev=1.1)\\n\\n\\n\\nXWiki 14.1+ Note that the &quot;System Event&quot; filter doesn&#x27;t filter out events that target the user *explicitly*.\\n\\n### Hidden (technical) pages\\n\\n**Filters that concern hidden pages are not shown in the table**, unless you have [enabled the option to see hidden pages](https://extensions.xwiki.org/xwiki/bin/view/Extension/User%20Profile%20Application#HEditPreferences). That is why you can end up i\"",
+      "similarity_score": 0.7822402715682983,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"20Application/WebHome/WatchedEntitiesFiltersUI.png?rev=1.3)\\n\\nThe notifications settings from the user profile save which &quot;types&quot; of notifications you want to receive, while the options from the &quot;alert&quot; menu represent the pages/spaces/wiki you want to get notifications for.\\n\\nYou won&#x27;t be able to click on the buttons if you don&#x27;t have enabled some event type first:\\n\\n![NotificationsTogglesDisabled.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotificationsTogglesDisabled.png?rev=1.3)\\n\\n### Auto Watch\\n\\nBy default, a page where you have made a major modification is automatically added to the list of pages you watch. It means you will be notified about changes on your work. You can change this behavior in the settings:\\n\\n![AutoWatch.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/AutoWatch.png?rev=1.3)\\n\\n### Follow a user\\n\\nIf you go to the [profile of an user](ht\"",
+      "similarity_score": 0.7773641347885132,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"/view/Extension/Notifications%20Application/#HCustomizingthenotificationemailtemplate)\\n\\t+ [Create global notification filters](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HCreateglobalnotificationfilters)\\n* [Developers](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HDevelopers)\\n\\t+ [Send notifications](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HSendnotifications)\\n\\t+ [Override default notification templates in wiki pages](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HOverridedefaultnotificationtemplatesinwikipages)\\n* [Prerequisites &amp; Installation Instructions](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HPrerequisites26InstallationInstructions)\\n* [Dependencies](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HDependencies)\\n# Description\\n\\nThis application cont\"",
+      "similarity_score": 0.7716386318206787,
+      "vector": null
+    }
+  ]
+}

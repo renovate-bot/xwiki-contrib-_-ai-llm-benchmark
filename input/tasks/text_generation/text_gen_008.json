@@ -1,0 +1,6 @@
+{
+  "id": "text_gen_008",
+  "prompt": "Create a travel guide for a popular tourist destination.",
+  "expected_answer": "An informative guide highlighting the top attractions, accommodations, and activities in a popular tourist spot.",
+  "data_path": null
+}

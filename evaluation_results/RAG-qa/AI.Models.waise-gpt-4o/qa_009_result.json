@@ -1,0 +1,15 @@
+{
+  "average_score": 0.45999999999999996,
+  "individual_scores": {
+    "AnswerRelevancy": 0.84,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.84 because the actual output provides useful information related to denying script rights to a space administrator, but it also includes several URLs that are not directly relevant to the question, which slightly detracts from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment between the actual output and the retrieval context! Keep up the excellent work!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input query. The first node discusses \"attachment upload settings and does not address the rights of a space administrator or denying script rights.\" The second node is about \"validation constraints and does not relate to denying script rights to a space administrator.\" The third node covers \"JavaScript validation and does not pertain to the administrative rights in XWiki.\" The fourth node is about \"attachment download settings and does not address the issue of denying script rights to a space administrator.\" Finally, the fifth node discusses \"HTML and object policies in XWiki but does not relate to denying script rights to a space administrator.\" Therefore, the contextual precision score is low because no relevant nodes were retrieved.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention admin rights or the inability to deny rights implied by admin rights, focusing instead on attachment upload restrictions and validation constraints."
+  }
+}

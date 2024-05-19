@@ -1,0 +1,6 @@
+{
+  "id": "text_gen_002",
+  "prompt": "Transform the following keywords into a coherent sentence:\n\ncat, playful, garden, sunny day",
+  "expected_answer": "On a sunny day, the playful cat enjoyed exploring the garden.",
+  "data_path": null
+}

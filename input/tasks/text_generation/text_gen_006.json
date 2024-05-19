@@ -1,0 +1,6 @@
+{
+  "id": "text_gen_006",
+  "prompt": "Write a poem about the beauty of nature.",
+  "expected_answer": "A poem describing the wonders of the natural world.",
+  "data_path": null
+}

@@ -1,0 +1,15 @@
+{
+  "average_score": 0.7444444444444445,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7777777777777778,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.78 because the response included helpful information related to notifications but contained irrelevant links that did not directly address enabling notifications for one's own actions.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment between the actual output and the retrieval context! Keep up the excellent work!",
+    "ContextualPrecision": "The score is 0.20 because the relevant node addressing the query is ranked fifth, while the irrelevant nodes are ranked higher. The first node discusses the Notifications Macro and settings but does not address the issue of receiving notifications for one's own actions. The second node lists different notification-related macros and preferences but lacks information on enabling notifications for one's own actions. The third node describes various administrative settings for notifications but does not mention how to enable notifications for one's own actions. The fourth node lists different notification preferences macros but does not provide information on enabling notifications for one's own actions. The fifth node directly addresses the input query by stating, \"By default, you won\u2019t receive notifications for actions done by yourself. This can be changed by switching off the Own event filter.\" Thus, the score is low because the relevant node is ranked lower than the irrelevant ones.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output matches perfectly with the nodes in the retrieval context. Great job!"
+  }
+}

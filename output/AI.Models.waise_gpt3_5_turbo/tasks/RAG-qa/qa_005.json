@@ -1,0 +1,48 @@
+{
+  "id": "qa_005",
+  "prompt": "How can I configure XWiki to automatically enable user accounts upon their first login using OpenID Connect?\nI've set up OpenID Connect authentication in my XWiki instance, but users are not automatically enabled after their first login. What configuration do I need to adjust?",
+  "expected_answer": "To automatically enable user accounts upon their first login using OpenID Connect in XWiki, you need to adjust the `xwiki.properties` file.\n\nAdd or update the following property:\n\n```\n#-# Define if user accounts should be enabled (marked as active) on first login\n# oidc.enableUser=true\n```\n\nMake sure to uncomment and set the `oidc.enableUser` property to `true`. After making this change, save the file and restart your XWiki instance for the changes to take effect.\n\nThis will ensure that new user accounts are automatically enabled when they log in for the first time via OpenID Connect.",
+  "ai_answer": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Authentication \n\n\nTo configure XWiki to automatically enable user accounts upon their first login using OpenID Connect, you need to set the following property in the `xwiki.cfg` configuration file:\n\n```properties\noidc.enableUser=true\n```\n\nThis configuration will mark user accounts as active on their first login. Make sure this property is set to `true` to enable automatic account activation.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.OpenID Connect.OpenID Connect Authenticator.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/",
+      "content": "\"rovider  \\n  \\n#-# Define if user accounts should be enabled (marked as active) on first login  \\n#-#  \\n# oidc.enableUser=true  \\n  \\n#-# Disable the OpenId Connect authenticator  \\n#-#\u00a0  \\n#-# The default is:  \\n# oidc.skipped=false## In-wiki configuration\\n\\nXWiki 1.30+ The OIDC authenticator can be configured in XWiki, and to rely on multiple configurations which get selected through a user cookie.\\n\\nIn order to use the in-wiki configuration of the OIDC authenticator, you will still need to define the configuration key xwiki.authentication.authclass in xwiki.cfg. Once the OIDC Authenticator installed, you will be able to define new OIDC Client configurations through objects of class XWiki.OIDC.ClientConfigurationClass.\\n\\nThe property &quot;Configuration name&quot; of the object will define the name of the OIDC configuration being declared. Use default for the default OIDC configuration. The other properties are similar to the properties defined in xwiki.properties. Use the key oidc.defaultClien\"",
+      "similarity_score": 0.8755017518997192,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Authentication.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/",
+      "content": "\" set in xwiki.cfg configuration file (if the property does not already exist, create it):\\n\\nxwiki.authentication.createuser=empty## OpenId Connect Authentication\\n\\nSee the [OpenId Connect Authenticator Extension](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/).\\n\\n## Active Directory\\n\\nIf you&#x27;re looking to connect XWiki to an Active Directory server, you currently have 2 options:\\n\\n* Using the manual and generic approach using the [LDAP Authenticator extension](https://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/)\\n* Using the dedicated [Active Directory Application](https://store.xwiki.com/xwiki/bin/view/Extension/ActiveDirectoryApplication) which is a paying application dedicated to simplifying the integration of Active Directory with XWiki. The Active Directory Application allows you to easily connect your Active Directory server to XWiki using a **visual editor**, update\u00a0**advanced configuration** settings\"",
+      "similarity_score": 0.857196569442749,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.OpenID Connect.OpenID Connect Authenticator.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/",
+      "content": "\"Wiki.\\n\\n  \\nOnce you installed the extension you will need to indicate you want to use it as authenticator with the property xwiki.authentication.authclass in xwiki.cfg file. See [Configuration section](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/#HConfiguration) for more details.\\n\\n# Dependencies\\n\\nDependencies for this extension (org.xwiki.contrib.oidc:oidc-authenticator 2.8.6):\\n\\n* org.xwiki.platform:xwiki-platform-oldcore 14.10\\n* com.nimbusds:oauth2-oidc-sdk 11.10.1\\n* [org.xwiki.contrib.oidc:oidc-provider](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Provider/) 2.8.6\\n* org.xwiki.contrib.oidc:oidc-authenticator-configuration 2.8.6\\n* org.xwiki.contrib.oidc:oidc-authenticator-user 2.8.6\\n\\n\\n\"",
+      "similarity_score": 0.8512541651725769,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.LDAP.Authenticator.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/",
+      "content": "\"\\n\\n## Generic LDAP configuration\\n\\nIn order to enable the LDAP support you have to change the authentication method in *WEB-INF/xwiki.cfg* located in the /usr/lib/xwiki directory as follows:\\n\\n#-# LDAP authentication service  \\nxwiki.authentication.authclass=org.xwiki.contrib.ldap.XWikiLDAPAuthServiceImpl  \\n  \\n#-# Turn LDAP authentication on - otherwise only XWiki authentication  \\n#-# - 0: disable  \\n#-# - 1: enable  \\n#-# The default is 0  \\nxwiki.authentication.ldap=1  \\n  \\n#-# Enable local accounts in addition to LDAP.  \\n#-# Without this setting you will be unable to log into XWiki with local accounts.  \\n#-# - 0: disable  \\n#-# - 1: enable  \\n#-# The default is 0  \\nxwiki.authentication.ldap.trylocal=1You can setup the LDAP configuration in the **xwiki.cfg** file by filling the following properties:\\n\\n#-# Turn LDAP authentication on - otherwise only XWiki authentication  \\n#-# - 0: disable  \\n#-# - 1: enable  \\n#-# The default is 0  \\nxwiki.authentication.ldap=1  \\n  \\n#-# LDAP Server (Active Directo\"",
+      "similarity_score": 0.8461942672729492,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Authentication",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Authentication",
+      "content": "\"lates)).\\n\\n![login-forgot-password-2](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/Authentication/login-forgot-password-2?rev=1.1)\\n\\n# Authentication Mechanisms\\n\\nXWiki Standard embeds several authentication mechanisms by default:\\n\\n* Form authentication\\n* Basic authentication\\n\\nIn addition XWiki allows you to create your own authentication extension in order to integrate with any custom mechanism you might be using already (SSO, etc).\\n\\nAdditional authenticators are available as extensions on [extensions.xwiki.org](https://extensions.xwiki.org/xwiki/bin/view/Main/):\\n\\n* [OpenID Connect Authenticator](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/)\\n* [WebAuthn](https://extensions.xwiki.org/xwiki/bin/view/Extension/WebAuthn/)\\n* [Authenticator](https://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/)\\n* [LDAP Authenticator Lowercase UID](https://extensions.xwiki.org/xwiki/bin/view/Extension/L\"",
+      "similarity_score": 0.8440797328948975,
+      "vector": null
+    }
+  ]
+}

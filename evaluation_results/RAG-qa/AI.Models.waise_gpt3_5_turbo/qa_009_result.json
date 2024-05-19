@@ -1,0 +1,15 @@
+{
+  "average_score": 0.6875,
+  "individual_scores": {
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.75 because the provided information includes a URL that does not directly address the question of denying script rights to a space administrator. However, the rest of the answer is relevant and helpful.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context! Keep up the excellent work!",
+    "ContextualPrecision": "The score is 0.00 because all the nodes in the retrieval context are irrelevant to the input question. Specifically, the first node discusses script execution conditions but does not address denying script rights to a space administrator. The second node covers various rights but does not mention denying script rights to a space administrator. The third node elaborates on the 'Script' right and its default status but does not address the specific question. The fourth node mentions administrators revoking script rights but does not clearly state that denying script rights to a space administrator is unsupported. Finally, the fifth node talks about various permissions but does not specifically address the question. Thus, all the irrelevant nodes are ranked higher, resulting in a low score.",
+    "ContextualRecall": "The score is 1.00 because each sentence in the expected output is fully supported by corresponding nodes in the retrieval context, demonstrating a perfect match. Great job!"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "score": 0.7692307692307693,
+  "reason": "The score is 0.77 because the summary contains some contradictions and extra information not present in the original text. Specifically, it incorrectly states that 'apt upgrade won't find anything' when upgrading from a pre-9.5 version due to a package name change, and it incorrectly mentions a Demo package (.ZIP) instead of the standard distribution. Additionally, the summary includes information about editing `core.properties` in `<permdir>/store/solr/`, which the original text does not mention.",
+  "score_breakdown": {
+    "Alignment": 0.7692307692307693,
+    "Coverage": 1.0
+  }
+}

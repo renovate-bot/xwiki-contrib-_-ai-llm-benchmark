@@ -1,0 +1,15 @@
+{
+  "average_score": 0.35714285714285715,
+  "individual_scores": {
+    "AnswerRelevancy": 0.42857142857142855,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.43 because the actual output contains multiple irrelevant URLs and apologies that do not directly address the question about disabling notifications. However, it may have some relevant information amidst the irrelevant parts, which is why the score is not lower.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions at all. Great job on maintaining perfect alignment with the retrieval context! Keep up the excellent work!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input question about disabling notifications. The first node discusses \"Retrieval Augmented Generation (RAG)\" and managing collections and documents, which is unrelated. The second node refers to applications, extensions, and flavors in XWiki, which does not address notifications. The third node is about extensions and applications in XWiki, also irrelevant. The fourth node discusses removing keyboard shortcuts, which does not pertain to notifications. Finally, the fifth node talks about properties of collections in an AI application, unrelated to notification settings.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context."
+  }
+}

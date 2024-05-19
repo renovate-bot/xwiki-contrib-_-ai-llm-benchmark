@@ -1,0 +1,15 @@
+{
+  "average_score": 0.7083333333333334,
+  "individual_scores": {
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.75
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.75 because while the answer provided some useful information on how to disable notifications, it included URLs that were not directly relevant to the question, thus detracting from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job keeping the actual output perfectly aligned with the retrieval context! Keep up the excellent work!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node that explains how to change the behavior of automatically adding pages to the watch list is ranked third, while the first two nodes are irrelevant. The first node discusses notification settings and types, but not how to disable notifications. The second node mentions creating global notification filters and overriding templates, which are also not directly related to the input query. This misranking of relevant and irrelevant nodes results in a lower contextual precision score.",
+    "ContextualRecall": "The score is 0.75 because the retrieval context (node 3) supports the information in sentences 1, 2, and 3 of the expected output, but lacks details about deleting existing notification filters from the \"Filtres personnalis\u00e9s\" list mentioned in sentence 4."
+  }
+}

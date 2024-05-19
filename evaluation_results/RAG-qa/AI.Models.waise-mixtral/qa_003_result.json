@@ -1,0 +1,15 @@
+{
+  "average_score": 0.76875,
+  "individual_scores": {
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.325,
+    "ContextualRecall": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.75 because, while the response provides some relevant information about enabling notifications, it includes URLs and a confidence statement that do not directly address the specific question about enabling notifications for one's own actions.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context! Keep up the excellent work!",
+    "ContextualPrecision": "The score is 0.33 because the relevant nodes in the retrieval contexts are ranked lower than several irrelevant nodes. The first three nodes are irrelevant as they discuss general notification settings, various notification-related macros, and administrators' settings, none of which address enabling notifications for one's own actions. The relevant nodes, which mention adding pages with major modifications to the watchlist (4th node) and changing the Own event filter to receive notifications for one's own actions (5th node), should be ranked higher. This misranking of relevant and irrelevant nodes results in a lower contextual precision score.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are perfectly matched to the nodes in the retrieval context, showing excellent alignment and thorough coverage. Great job!"
+  }
+}

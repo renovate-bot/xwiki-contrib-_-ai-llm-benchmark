@@ -33,8 +33,9 @@ def load_data(file_path):
     with open(file_path, 'r') as file:
         return json.load(file)
 
-def save_result(output_dir, task_name, question_id, result):
-    task_dir = os.path.join(output_dir, 'tasks', task_name)
+def save_result(output_dir, model_name, task_name, question_id, result):
+    model_dir = os.path.join(output_dir, model_name)
+    task_dir = os.path.join(model_dir, 'tasks', task_name)
     os.makedirs(task_dir, exist_ok=True)
     output_file = os.path.join(task_dir, f"{question_id}.json")
     with open(output_file, 'w') as file:
@@ -76,8 +77,7 @@ def process_tasks(input_dir, output_dir, request_template, base_url, auth):
     for task in request_template['tasks']:
         task_name = task['task']
         settings = task['settings']
-        model_dir = os.path.join(output_dir, settings['model'])
-        os.makedirs(model_dir, exist_ok=True)
+        model_name = settings['model']
         task_input_dir = os.path.join(input_dir, task_name)
         filenames = os.listdir(task_input_dir)
         for filename in filenames:
@@ -85,12 +85,12 @@ def process_tasks(input_dir, output_dir, request_template, base_url, auth):
                 question_file = os.path.join(task_input_dir, filename)
                 question_data = load_data(question_file)
                 question_id = question_data['id']
-                output_file = os.path.join(model_dir, 'tasks', task_name, f"{question_id}.json")
+                output_file = os.path.join(output_dir, model_name, 'tasks', task_name, f"{question_id}.json")
                 if os.path.exists(output_file):
                     print(f"Skipping question {question_id} as it already exists.")
                     continue
                 result = process_request(task_name, question_data, settings, base_url, auth, question_file)
-                save_result(model_dir, task_name, question_id, result)
+                save_result(output_dir, model_name, task_name, question_id, result)
     print(f"All requests processed. Results stored in {output_dir}.")
 
 def main():

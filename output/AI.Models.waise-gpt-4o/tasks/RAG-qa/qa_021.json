@@ -1,0 +1,48 @@
+{
+  "id": "qa_021",
+  "prompt": "La cloche en haut \u00e0 droite n'est pas disponible, m\u00eame lorsque l'extension \"Notification d'alerte\" est install\u00e9e.",
+  "expected_answer": "Assurez-vous que les notifications sont activ\u00e9es dans votre wiki. Vous pouvez les activer en d\u00e9finissant la propri\u00e9t\u00e9 `notifications.enabled` dans `xwiki.properties` sur `true`.",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\nIl semble que vous rencontriez un probl\u00e8me avec l'affichage de l'ic\u00f4ne de notification (la cloche) dans XWiki, m\u00eame apr\u00e8s avoir install\u00e9 l'extension \"Notification d'alerte\". Voici quelques pistes pour r\u00e9soudre ce probl\u00e8me :\n\n1. **V\u00e9rification de l'installation** :\n   - Assurez-vous que l'extension \"Notifications Application\" est correctement install\u00e9e et activ\u00e9e. Vous pouvez v\u00e9rifier cela via le [Extension Manager](http://extensions.xwiki.org/xwiki/bin/view/Extension/Extension+Manager+Application).\n\n2. **Configuration des notifications** :\n   - V\u00e9rifiez les param\u00e8tres de configuration des notifications. Vous pouvez acc\u00e9der aux param\u00e8tres de notification via le menu des notifications. Assurez-vous que les types de notifications que vous souhaitez recevoir sont activ\u00e9s. Plus d'informations peuvent \u00eatre trouv\u00e9es [ici](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HSettings).\n\n3. **Permissions et droits d'acc\u00e8s** :\n   - Assurez-vous que l'utilisateur a les droits n\u00e9cessaires pour voir les notifications. Parfois, les permissions peuvent restreindre l'acc\u00e8s \u00e0 certaines fonctionnalit\u00e9s.\n\n4. **Cache du navigateur** :\n   - Essayez de vider le cache de votre navigateur ou d'utiliser un autre navigateur pour voir si le probl\u00e8me persiste.\n\n5. **Journal des erreurs** :\n   - Consultez les journaux des erreurs de XWiki pour voir s'il y a des messages d'erreur li\u00e9s aux notifications. Cela peut fournir des indices sur ce qui ne va pas.\n\n6. **Support et documentation** :\n   - Consultez la [documentation officielle](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/) pour des informations d\u00e9taill\u00e9es sur l'installation et la configuration de l'extension de notifications.\n   - Si le probl\u00e8me persiste, vous pouvez \u00e9galement demander de l'aide sur les forums de support de XWiki ou contacter le support technique de XWiki.\n\nSi vous avez besoin d'informations plus sp\u00e9cifiques ou d'une assistance suppl\u00e9mentaire, n'h\u00e9sitez pas \u00e0 fournir plus de d\u00e9tails sur votre configuration et les \u00e9tapes que vous avez d\u00e9j\u00e0 suivies.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.XWikiSyntax.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/",
+      "content": "\"wiki.org/xwiki/bin/view/Main/MessageSenderMacro) | Message Sender | Social | A control that allows users to enter messages that are handled by the MessageStream module. | Current Wiki |\\n| missingLicenseMessage | Missing License Message |  | Display an error message when the extension does not have a valid license. | Global |\\n| [notifications](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/Macro/NotificationsMacro) | Notifications | Notifications | Display notifications about events happened on the wiki. | Current Wiki |\\n| [notificationsApplicationsPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsApplicationsPreferencesMacro) | Notifications Applications Preferences | Notifications | Display the preferences of the current user about notification applications. | Current Wiki |\\n| [notificationsAutoWatchPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsAutoWatchPreferencesMacro) | Notifications Auto\"",
+      "similarity_score": 0.7423949241638184,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"nt of the notifications is loaded:\\n\\n![NotificationsLoading.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotificationsLoading.png?rev=1.3)\\n\\nThen you can see the list of notifications:\\n\\n[![notif2.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif2.png?rev=1.5)](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif2.png?rev=1.5)![NotificationsMacro.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotificationsMacro.png?rev=1.3)\\n\\nIf you click on the little button with the &quot;check&quot; icon, you mark the notification as &quot;read&quot;. In the future, you will be able to select either you want to see only unread notifications or all of them.\\n\\nWhen the notification is read, the button disappear and the background color changes:\\n\\n[![notif3.png](https://extensions.xwiki.org/xwiki/bin/dow\"",
+      "similarity_score": 0.7131450176239014,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"png?rev=1.3)  \\n![NotificationsWithRSS.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotificationsWithRSS.png?rev=1.3)\\n\\n## Notifications Macro\\n\\nThe [Notifications Macro is provided by its own application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Macro/).\\n\\n# Settings\\n\\nOn the notifications menu, you also have a link to go to the &quot;settings&quot; of the notifications.\\n\\n![notif4.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif4.png?rev=1.8)\\n\\nBy default, users only get notifications when they are mentioned or when actions are performed on pages they created or updated. For receiving other notifications, you need to select which &quot;types&quot; of notifications you want to receive. When a page is created? When a blog post is published?\\n\\nYou can enable or disable all notification types that belong to a particular application by clicking on the bells as\"",
+      "similarity_score": 0.702497661113739,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"ns%20Application/#HCache)\\n* [Administrators](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HAdministrators)\\n\\t+ [Enabling notifications for all users by default](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HEnablingnotificationsforallusersbydefault)\\n\\t+ [Choosing the default frequency of notification emails](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HChoosingthedefaultfrequencyofnotificationemails)\\n\\t+ [Choosing the default level of details about the changes in the email](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HChoosingthedefaultlevelofdetailsaboutthechangesintheemail)\\n\\t+ [Choosing the default auto-watched mode](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HChoosingthedefaultauto-watchedmode)\\n\\t+ [Customizing the notification email template](https://extensions.xwiki.org/xwiki/bin/view/Extension\"",
+      "similarity_score": 0.6924268007278442,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"ns.xwiki.org/xwiki/bin/view/Extension/Notifications%20Module/#HTutorial:Howtosendnotifications).\\n\\n## Override default notification templates in wiki pages\\n\\nA wiki administrator can change the way notifications are displayed in the notification tray using the [NotificationDisplayerClass XObject](http://www.github.com/xwiki/xwiki-platform/tree/master/xwiki-platform-core/xwiki-platform-notifications/xwiki-platform-notifications-default/src/main/java/org/xwiki/notifications/internal/WikiNotificationDisplayerDocumentInitializer.java). You can get more informations about this feature in the [Notifications API documentation](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Module/#HCreatecustomnotificationtemplates).\\n\\n# Prerequisites &amp; Installation Instructions\\n\\nWe recommend using the [Extension Manager](http://extensions.xwiki.org/xwiki/bin/view/Extension/Extension+Manager+Application) to install this extension (Make sure that the text &quot;Installable with the Exte\"",
+      "similarity_score": 0.6904807090759277,
+      "vector": null
+    }
+  ]
+}

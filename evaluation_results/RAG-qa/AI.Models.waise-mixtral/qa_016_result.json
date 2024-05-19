@@ -1,0 +1,15 @@
+{
+  "average_score": 0.75,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant to the input, providing clear guidance on customizing user profile fields from an OpenID Connect provider in XWiki. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment between the actual output and the retrieval context! Keep up the excellent work!",
+    "ContextualPrecision": "The score is 1.00 because all the relevant nodes are correctly ranked higher than the irrelevant ones. The first node is relevant as it mentions the `xwiki.properties` file, which is crucial for configuring OpenID Connect settings. The subsequent nodes discuss release notes, dependencies, general information about the OpenID Connect Authenticator extension, and Active Directory integration, which are not relevant to the specific question about mapping user profile fields. Great job on the precise ranking!",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context."
+  }
+}

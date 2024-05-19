@@ -1,0 +1,15 @@
+{
+  "average_score": 0.4,
+  "individual_scores": {
+    "AnswerRelevancy": 0.6,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.60 because the provided URLs about XWiki skins and extensions do not address the issue of not receiving notifications, making parts of the output irrelevant.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, which means the actual output aligns perfectly with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input and are ranked higher than any relevant nodes. For instance, the first node contains \"image URLs and references to various projects\" which \"does not provide any information relevant to enabling or managing notifications.\" Similarly, the second node continues to list \"image URLs and references,\" which are \"not related to the process of enabling notifications or following pages/users.\" This pattern persists throughout all nodes, resulting in a contextual precision score of zero.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context contains only image links and does not provide any information related to enabling notifications, setting `notifications.enabled` to `true`, following pages or users, or any of the other detailed steps mentioned in the expected output."
+  }
+}

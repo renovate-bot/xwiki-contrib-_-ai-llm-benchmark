@@ -1,0 +1,48 @@
+{
+  "id": "qa_022",
+  "prompt": "Je ne re\u00e7ois pas de notifications.",
+  "expected_answer": "Assurez-vous que les notifications sont activ\u00e9es. Vous pouvez les activer en d\u00e9finissant la propri\u00e9t\u00e9 `notifications.enabled` dans `xwiki.properties` sur `true`. De plus, assurez-vous que vous suivez les pages ou les utilisateurs dont vous souhaitez recevoir des notifications. Vous pouvez suivre une page, une page et ses enfants, ou un wiki entier. Pour suivre un emplacement, il vous suffit d'y aller, puis de cliquer sur le menu \"alerte\" (repr\u00e9sent\u00e9 par une cloche) et d'activer les notifications souhait\u00e9es. Pour suivre un utilisateur, si vous allez sur le profil d'un utilisateur, en utilisant l'index utilisateur par exemple, vous pouvez d\u00e9cider de suivre l'utilisateur. Cela signifie que vous recevrez toutes les notifications concernant les \u00e9v\u00e9nements d\u00e9clench\u00e9s par cet utilisateur. Dans votre profil utilisateur, si vous allez dans l'onglet \"r\u00e9seau\", vous pouvez voir la liste des utilisateurs que vous suivez et les \u00e9v\u00e9nements qui ont \u00e9t\u00e9 effectu\u00e9s par eux.",
+  "ai_answer": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\nIl semble que vous ne receviez pas de notifications. Veuillez v\u00e9rifier vos param\u00e8tres de notifications pour vous assurer que vous avez activ\u00e9 les types de notifications que vous souhaitez recevoir. Vous pouvez personnaliser les types de notifications dans les param\u00e8tres pour choisir ce qui d\u00e9clenchera une notification.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"png?rev=1.3)  \\n![NotificationsWithRSS.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotificationsWithRSS.png?rev=1.3)\\n\\n## Notifications Macro\\n\\nThe [Notifications Macro is provided by its own application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Macro/).\\n\\n# Settings\\n\\nOn the notifications menu, you also have a link to go to the &quot;settings&quot; of the notifications.\\n\\n![notif4.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif4.png?rev=1.8)\\n\\nBy default, users only get notifications when they are mentioned or when actions are performed on pages they created or updated. For receiving other notifications, you need to select which &quot;types&quot; of notifications you want to receive. When a page is created? When a blog post is published?\\n\\nYou can enable or disable all notification types that belong to a particular application by clicking on the bells as\"",
+      "similarity_score": 0.6818231344223022,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"ents\\n\\nMinor events are not displayed on the notifications. But you can disable this filter.\\n\\n![FilterMinorEvent.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/FilterMinorEvent.png?rev=1.3)\\n\\n## Watched Entities\\n\\nYou can also decide to *watch* some entities. Either a location (a page, a page with its children or a wiki) or a user.\u00a0\\n\\n### Using it\\n\\nTo watch a location, all you need is to go to that place, and then click on the &quot;alert&quot; menu (represented by a bell).\u00a0\\n\\n![WatchedEntities.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/WatchedEntities.png?rev=1.4)\\n\\nHere you can decide to watch either this page, this page and its children, or the entire wiki.\\n\\nOn the notifications settings (in your user profile), you will see the watched entities in the filters box:\\n\\n![WatchedEntitiesFiltersUI.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/W\"",
+      "similarity_score": 0.6667673587799072,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"nt of the notifications is loaded:\\n\\n![NotificationsLoading.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotificationsLoading.png?rev=1.3)\\n\\nThen you can see the list of notifications:\\n\\n[![notif2.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif2.png?rev=1.5)](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif2.png?rev=1.5)![NotificationsMacro.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotificationsMacro.png?rev=1.3)\\n\\nIf you click on the little button with the &quot;check&quot; icon, you mark the notification as &quot;read&quot;. In the future, you will be able to select either you want to see only unread notifications or all of them.\\n\\nWhen the notification is read, the button disappear and the background color changes:\\n\\n[![notif3.png](https://extensions.xwiki.org/xwiki/bin/dow\"",
+      "similarity_score": 0.6586728096008301,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"g/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif3.png?rev=1.5)](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif3.png?rev=1.5)\\n\\nThe &quot;Clear All&quot; link will remove all notifications that were sent till now.\\n\\nWhen no notification is available, you will see the following:\\n\\n[![notif5.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif5.png?rev=1.4)](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif5.png?rev=1.4)\\n\\nBy default, you won&#x27;t receive notifications for actions done by yourself. This can be changed by switching off the Own event filter.\\n\\n## Group of notifications with details\\n\\nSimilar notifications are grouped together in order to avoid a batch of identical content. Only one notification is displayed, and it is possible to see the details of all activities in the &quot;Details&quot; section (if \"",
+      "similarity_score": 0.6520838141441345,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"pplication contributes content in the Alert menu (contributed by the [Alerts Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Alerts%20Application/)) in the top bar, represented by a bell:\\n\\n![Notifications.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/Notifications.png?rev=1.4)\\n\\nYou can find under this menu the notifications about some events happening on the wiki (a page has been modified, a new blog post has been posted, etc...).\\n\\nThe number of notifications is displayed on the top menu, just above the bell:\\n\\n![notif1.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif1.png?rev=1.5)\\n\\nIf you have more than 20 unread notifications, you will not see the real count but this instead:\\n\\n![MaxCounter.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/MaxCounter.png?rev=1.3)\\n\\nWhen you open the menu, the content of the notif\"",
+      "similarity_score": 0.6453341245651245,
+      "vector": null
+    }
+  ]
+}

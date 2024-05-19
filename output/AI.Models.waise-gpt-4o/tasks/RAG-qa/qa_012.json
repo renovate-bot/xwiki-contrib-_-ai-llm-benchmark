@@ -1,0 +1,48 @@
+{
+  "id": "qa_012",
+  "prompt": "Ich erhalte keine Benachrichtigungen.",
+  "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen. Stellen Sie au\u00dferdem sicher, dass Sie den Seiten oder Benutzern, f\u00fcr die Sie Benachrichtigungen erhalten m\u00f6chten, folgen. Sie k\u00f6nnen einer Seite, einer Seite und ihren Unterseiten oder einem gesamten Wiki folgen. Um einem Ort zu folgen, m\u00fcssen Sie nur dorthin gehen und dann auf das Men\u00fc \"Benachrichtigung\" (dargestellt durch eine Glocke) klicken und die gew\u00fcnschten Benachrichtigungen aktivieren. Um einem Benutzer zu folgen, k\u00f6nnen Sie, wenn Sie auf das Profil eines Benutzers gehen, beispielsweise \u00fcber das Benutzerindex, entscheiden, dem Benutzer zu folgen. Das bedeutet, dass Sie alle Benachrichtigungen \u00fcber Ereignisse erhalten, die von diesem Benutzer ausgel\u00f6st wurden. In Ihrem Benutzerprofil k\u00f6nnen Sie in der Registerkarte \"Netzwerk\" die Liste der Benutzer anzeigen, denen Sie folgen, und die von ihnen durchgef\u00fchrten Ereignisse.",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Navigate/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing \n\n\nDie bereitgestellten Suchergebnisse enthalten keine spezifischen Informationen zu Benachrichtigungen. Basierend auf meinem Wissen kann ich Ihnen jedoch allgemeine Informationen zu Benachrichtigungen in verschiedenen Kontexten geben. \n\n1. **E-Mail-Benachrichtigungen**:\n   - \u00dcberpr\u00fcfen Sie, ob Ihre E-Mail-Benachrichtigungen in den Einstellungen der jeweiligen Plattform aktiviert sind.\n   - Stellen Sie sicher, dass die Benachrichtigungen nicht im Spam-Ordner landen.\n   - Pr\u00fcfen Sie, ob Ihre E-Mail-Adresse korrekt eingegeben wurde.\n\n2. **App-Benachrichtigungen**:\n   - Stellen Sie sicher, dass Benachrichtigungen in den Einstellungen der App aktiviert sind.\n   - \u00dcberpr\u00fcfen Sie die Benachrichtigungseinstellungen Ihres Ger\u00e4ts, um sicherzustellen, dass die App die Berechtigung hat, Benachrichtigungen zu senden.\n   - Aktualisieren Sie die App auf die neueste Version, da \u00e4ltere Versionen m\u00f6glicherweise Probleme mit Benachrichtigungen haben.\n\n3. **Web-Benachrichtigungen**:\n   - Stellen Sie sicher, dass Sie Benachrichtigungen f\u00fcr die Website in Ihrem Browser aktiviert haben.\n   - \u00dcberpr\u00fcfen Sie Ihre Browser-Einstellungen und stellen Sie sicher, dass Benachrichtigungen nicht blockiert werden.\n   - L\u00f6schen Sie den Cache und die Cookies Ihres Browsers, da diese manchmal Probleme verursachen k\u00f6nnen.\n\nFalls Sie spezifische Informationen zu einer bestimmten Plattform oder Anwendung ben\u00f6tigen, lassen Sie es mich wissen, und ich werde versuchen, Ihnen gezielter zu helfen.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Navigate.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Navigate/",
+      "content": "\"ndard%20URL%20Format/).\\n\\n\\n\"",
+      "similarity_score": 0.5823127627372742,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Skins",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins",
+      "content": "\"![Schichtbericht-150-1025x780.png](https://www.xwiki.org/xwiki/bin/download/References/INDUSTRIALWIKI/Schichtbericht-150-1025x780.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/INDUSTRIALWIKI) [![wikiinra.png](https://www.xwiki.org/xwiki/bin/download/References/INRA/wikiinra.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/INRA) [![Inemar.png](https://www.xwiki.org/xwiki/bin/download/References/Inemar/Inemar.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/Inemar) [![InisAlga.png](https://www.xwiki.org/xwiki/bin/download/References/InisAlga/InisAlga.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/InisAlga) [![JASMINe.png](https://www.xwiki.org/xwiki/bin/download/References/JASMINe/JASMINe.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/JASMINe) [![AntonioGoncalves.png](https:\"",
+      "similarity_score": 0.5780602097511292,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Skins",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins",
+      "content": "\"s/EFFEA/Effea.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/EFFEA) [![ElsaBlog.png](https://www.xwiki.org/xwiki/bin/download/References/ELSA/ElsaBlog.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/ELSA) [![epec.png](https://www.xwiki.org/xwiki/bin/download/References/EPECNetwork/epec.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/EPECNetwork) [![EasyBeans.png](https://www.xwiki.org/xwiki/bin/download/References/EasyBeans/EasyBeans.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/EasyBeans) [![EasyBeansWiki.png](https://www.xwiki.org/xwiki/bin/download/References/EasyBeansWiki/EasyBeansWiki.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/EasyBeansWiki) [![EasyVista.png](https://www.xwiki.org/xwiki/bin/download/References/EasyVista/EasyVista.png?width=100&amp;height=100&amp\"",
+      "similarity_score": 0.5779155492782593,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.PageEditing",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing",
+      "content": "\"\\n\\n![defaultLanguage.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/PageEditing/defaultLanguage.png?rev=1.1)\\n\\n\\n\"",
+      "similarity_score": 0.566399335861206,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Skins",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins",
+      "content": "\"ves.png](https://www.xwiki.org/xwiki/bin/download/References/JavaEE5Book/AntonioGoncalves.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/JavaEE5Book) [![Wiki Showcase.mp4](https://www.xwiki.org/xwiki/bin/download/References/Johanneswerk%20KB/Wiki%20Showcase.mp4?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/Johanneswerk%20KB) [![Jonas.png](https://www.xwiki.org/xwiki/bin/download/References/Jonas/Jonas.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/Jonas) [![KEN.png](https://www.xwiki.org/xwiki/bin/download/References/KEN/KEN.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/KEN) [![KUSP_Xwiki.png](https://www.xwiki.org/xwiki/bin/download/References/KUSP/KUSP_Xwiki.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/KUSP) [![1711636030339-389.png](https://www.xwiki.org/xwiki/bin/do\"",
+      "similarity_score": 0.5650380849838257,
+      "vector": null
+    }
+  ]
+}

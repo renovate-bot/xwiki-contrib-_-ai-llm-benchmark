@@ -1,0 +1,6 @@
+{
+  "id": "qa_016",
+  "prompt": "Kann ich die Benutzerprofilfelder, die aus dem OpenID Connect-Anbieter in XWiki gef\u00fcllt werden, anpassen?\nIch m\u00f6chte zus\u00e4tzliche Benutzerprofilfelder von meinem OpenID Connect-Anbieter an XWiki-Benutzereigenschaften abbilden. Wie kann ich das erreichen?",
+  "expected_answer": "Ja, Sie k\u00f6nnen die Benutzerprofilfelder, die aus dem OpenID Connect-Anbieter gef\u00fcllt werden, anpassen, indem Sie sie in der Datei `xwiki.properties` abbilden.\n\nUm zus\u00e4tzliche Benutzerprofilfelder abzubilden, verwenden Sie die Eigenschaft `oidc.user.mapping`. Hier ist ein Beispiel, wie Sie benutzerdefinierte Eigenschaften abbilden k\u00f6nnen:\n\n```\n# oidc.user.mapping=myxproperty1=${oidc.user.subject}\n# oidc.user.mapping=myxproperty2=myprefix-${oidc.user.subject}\n```\n\nErsetzen Sie `myxproperty1` und `myxproperty2` durch die tats\u00e4chlichen XWiki-Benutzereigenschaftennamen und `${oidc.user.subject}` durch die entsprechende Variable basierend auf den Daten, die von Ihrem OpenID Connect-Anbieter bereitgestellt werden.\n\nNachdem Sie die Zuordnungen konfiguriert haben, speichern Sie die Datei `xwiki.properties` und starten Sie XWiki neu, um die \u00c4nderungen anzuwenden.",
+  "data_path": null
+}

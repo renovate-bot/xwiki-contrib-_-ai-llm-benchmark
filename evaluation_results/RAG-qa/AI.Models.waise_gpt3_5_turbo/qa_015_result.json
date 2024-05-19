@@ -1,0 +1,15 @@
+{
+  "average_score": 0.6,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.4
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the question about configuring XWiki for automatic user activation with OpenID Connect. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context! Keep up the excellent work!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For instance, the first node discusses \"an example configuration for Univention Corporate Server (UCS)\" and does not address the specific property `oidc.enableUser` in `xwiki.properties`. Similarly, the second node talks about \"release notes, limitations, and configuration guides for specific systems\" but fails to mention how to automatically activate user accounts. The remaining nodes follow the same pattern, focusing on topics like \"authenticator ratings\" and \"various configuration topics\" without providing the necessary information on `oidc.enableUser` or automatic user activation. Therefore, irrelevant nodes are ranked higher than any relevant content, leading to the low score.",
+    "ContextualRecall": "The score is 0.40 because while the nodes in the retrieval context mention `xwiki.properties` and OpenID Connect configuration, they do not specifically address adding or updating the property `oidc.enableUser`, saving the file, restarting the XWiki instance, or the automatic activation of new user accounts."
+  }
+}

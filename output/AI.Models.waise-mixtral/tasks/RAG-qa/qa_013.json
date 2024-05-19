@@ -1,0 +1,48 @@
+{
+  "id": "qa_013",
+  "prompt": "Ich erhalte keine Benachrichtigungen \u00fcber meine eigene Aktivit\u00e4t. Wie kann ich Benachrichtigungen f\u00fcr meine eigenen Aktionen aktivieren?",
+  "expected_answer": "Standardm\u00e4\u00dfig erh\u00e4lt man keine Benachrichtigungen \u00fcber die eigene Aktivit\u00e4t (es sei denn, das Ereignis, das die Benachrichtigung ausl\u00f6st, richtet sich explizit an diesen Benutzer). Sie haben die M\u00f6glichkeit, diesen Filter in den \"Erweiterten Filteroptionen\" Ihrer eigenen Benachrichtigungseinstellungen in Ihrem Benutzerprofil zu deaktivieren.",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Applications \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \n\n\n To receive notifications for your own actions, you can go to your profile settings and enable the \"Follow my activity\" option. This will allow you to receive email notifications for any actions that you perform on the XWiki platform.\n\nHere are the steps to follow:\n\n1. Go to your profile page by clicking on your avatar in the top right corner of the screen and selecting \"My Profile\" from the dropdown menu.\n2. Click on the \"Settings\" tab in your profile page.\n3. Scroll down to the \"Notifications\" section.\n4. Check the box next to \"Follow my activity\".\n5. Save your changes by clicking on the \"Save\" button at the bottom of the page.\n\nOnce you have enabled this option, you should start receiving email notifications for your own actions. You can also customize the frequency and type of notifications that you receive by using the other options in the \"Notifications\" section of your profile settings.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Skins",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins",
+      "content": "\"s/EFFEA/Effea.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/EFFEA) [![ElsaBlog.png](https://www.xwiki.org/xwiki/bin/download/References/ELSA/ElsaBlog.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/ELSA) [![epec.png](https://www.xwiki.org/xwiki/bin/download/References/EPECNetwork/epec.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/EPECNetwork) [![EasyBeans.png](https://www.xwiki.org/xwiki/bin/download/References/EasyBeans/EasyBeans.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/EasyBeans) [![EasyBeansWiki.png](https://www.xwiki.org/xwiki/bin/download/References/EasyBeansWiki/EasyBeansWiki.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/EasyBeansWiki) [![EasyVista.png](https://www.xwiki.org/xwiki/bin/download/References/EasyVista/EasyVista.png?width=100&amp;height=100&amp\"",
+      "similarity_score": 0.56949782371521,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Applications",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Applications",
+      "content": "\"res/Applications/ForumApplication.png?rev=1.2)\\n\\n*[Ideas Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Ideas)*\\n\\n[![IdeasApplication.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/Applications/IdeasApplication.png?width=350&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/Applications/IdeasApplication.png?rev=1.2)\\n\\n# Extensions\\n\\n[Extensions](https://extensions.xwiki.org/xwiki/bin/view/Main/) are adds-on that can be installed inside a running XWiki using the [Extension Manager](https://extensions.xwiki.org/xwiki/bin/view/Extension/Extension%20Manager%20Application). Applications (described above) are a special type of Extensions but there are other types. For example, you could install the Markdown Syntax, LDAP integration or others, which are not Applications (Applications are made of wiki pages).\\n\\n# Flavors\\n\\nA [Flavor](https://extensions.xwiki.org/xwiki/bin/view/Extension/Flavor%20Module) is a se\"",
+      "similarity_score": 0.5572027564048767,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.PageEditing",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing",
+      "content": "\"\\n**Contents*** [Content Editing](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing#HContentEditing)\\n* [Section Editing](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing#HSectionEditing)\\n* [Simple and Advanced editing profiles](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing#HSimpleandAdvancededitingprofiles)\\n\\t+ [Simple Profile](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing#HSimpleProfile)\\n\\t+ [Advanced Profile](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing#HAdvancedProfile)\\n* [Common edit actions](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing#HCommoneditactions)\\n\\t+ [Autosave](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing#HAutosave)\\n* [Wiki editing](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing#HWikiediting)\\n* [WY\"",
+      "similarity_score": 0.5537449717521667,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Administration Application",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application",
+      "content": "\"\\n\\n\\n| administration.png | **Application for administrating wiki features like users, groups, rights etc.** |\\n| --- | --- |\\n\\n\\n\\n| Type | XAR |\\n| --- | --- |\\n| Category |  |\\n| Developed by | [XWiki Development Team](https://xwiki.org/xwiki/bin/view/XWiki/XWikiTeam) |\\n| Rating | *  * [1](https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application &quot;Poor&quot;) * [2](https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application &quot;Satisfactory&quot;) * [3](https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application &quot;Good&quot;) * [4](https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application &quot;Very good&quot;) * [5](https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application &quot;Excellent&quot;)    0\u00a0Votes |\\n| License | GNU Lesser General Public License 2.1 |\\n\\n\\n\\n| Bundled With | XWiki Standard |\\n| --- | --- |\\n\\n**Installable with the Extension Manager**\\n\\n[Downlo\"",
+      "similarity_score": 0.5528843402862549,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/",
+      "content": "\"resExtract/preferences-desktop-theme.png?rev=1.6)\\n\\n[Skins](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins)  \\nCompletely customize page templates, add menus, modify CSS files. You&#x27;re in complete control of the look &amp; feel.\\n\\n![preferences-desktop-locale](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/FeaturesExtract/preferences-desktop-locale?rev=1.6)\\n\\n[Internationalization](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N)  \\nSupport different translations of your pages and have your users be automatically directed to version in their own language.\\n\\n![accessibility.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/FeaturesExtract/accessibility.png?rev=1.1)\\n\\n[Accessibility](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Accessibility/)  \\nSupport the diversity of user needs.\\n\\n![utilities-system-monitor.png](https://www.xwiki.org/xwiki/bin/download/D\"",
+      "similarity_score": 0.5515052676200867,
+      "vector": null
+    }
+  ]
+}

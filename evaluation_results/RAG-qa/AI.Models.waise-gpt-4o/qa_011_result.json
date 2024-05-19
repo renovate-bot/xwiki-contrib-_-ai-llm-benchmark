@@ -1,0 +1,15 @@
+{
+  "average_score": 0.8611111111111112,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9444444444444444,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.5
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.94 because the output is mostly relevant and addresses the issue with the Alert Notification feature. However, the inclusion of the URL 'https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/' is unrelated to the input about the notification feature not being available.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions at all. Great job maintaining perfect alignment with the retrieval context! Keep up the excellent work!",
+    "ContextualPrecision": "The score is 1.00 because the relevant nodes are ranked higher than the irrelevant ones. The first node discusses \"Display notifications about events happened on the wiki,\" which is directly relevant to the input. The second node talks about \"Settings\" and the ability to \"enable or disable all notification types,\" aligning well with solving the notification issue. The irrelevant nodes, which focus on less pertinent details like the alert menu, minor events, and specific page or user settings, are appropriately ranked lower. Great job!",
+    "ContextualRecall": "The score is 0.50 because while the 3rd node in the retrieval context supports the idea of enabling notifications, there is no explicit mention in any of the nodes about setting `notifications.enabled` in `xwiki.properties` to `true`."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "average_score": 0.45,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.80 because the answer provides relevant information on disabling notifications but includes three irrelevant URLs that do not address the specific question about how to disable notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context! Keep up the excellent work!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question about disabling notifications. The first node discusses \"various macros and their functions in XWiki,\" the second node talks about \"customizing page templates, internationalization, and accessibility features,\" the third node covers \"applications and extensions in XWiki,\" the fourth node explains \"extensions and flavors in XWiki,\" and the fifth node describes \"how to manually install extensions in XWiki.\" None of these contexts address the issue of disabling notifications, resulting in a score of 0.00.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not cover any of the topics mentioned in the expected output, such as automatically following pages with significant changes, notification settings, or deleting existing notification filters in the user profile settings."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "average_score": 0.9166666666666666,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.6666666666666666
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant and directly addresses the question about customizing user profile fields from the OpenID Connect provider in XWiki. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment between the actual output and the retrieval context! Keep up the excellent work!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node is ranked first, which includes an example directly related to mapping custom properties: \"The context includes an example of how to map custom properties: '# oidc.user.mapping=myxproperty1=${oidc.user.subject}'.\" The irrelevant nodes, such as the one discussing event notifications and logging for user profile updates (rank 2), are correctly ranked lower as they do not address mapping additional user profile fields. Great job on ensuring relevant information is prioritized!",
+    "ContextualRecall": "The score is 0.67 because while the retrieval context provides detailed examples of mapping custom properties using `oidc.user.mapping`, it does not cover the instructions to replace placeholders with actual XWiki user property names or specify the need to save the `xwiki.properties` file and restart XWiki to apply the changes."
+  }
+}

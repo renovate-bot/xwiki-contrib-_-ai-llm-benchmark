@@ -1,0 +1,48 @@
+{
+  "id": "qa_012",
+  "prompt": "Ich erhalte keine Benachrichtigungen.",
+  "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen. Stellen Sie au\u00dferdem sicher, dass Sie den Seiten oder Benutzern, f\u00fcr die Sie Benachrichtigungen erhalten m\u00f6chten, folgen. Sie k\u00f6nnen einer Seite, einer Seite und ihren Unterseiten oder einem gesamten Wiki folgen. Um einem Ort zu folgen, m\u00fcssen Sie nur dorthin gehen und dann auf das Men\u00fc \"Benachrichtigung\" (dargestellt durch eine Glocke) klicken und die gew\u00fcnschten Benachrichtigungen aktivieren. Um einem Benutzer zu folgen, k\u00f6nnen Sie, wenn Sie auf das Profil eines Benutzers gehen, beispielsweise \u00fcber das Benutzerindex, entscheiden, dem Benutzer zu folgen. Das bedeutet, dass Sie alle Benachrichtigungen \u00fcber Ereignisse erhalten, die von diesem Benutzer ausgel\u00f6st wurden. In Ihrem Benutzerprofil k\u00f6nnen Sie in der Registerkarte \"Netzwerk\" die Liste der Benutzer anzeigen, denen Sie folgen, und die von ihnen durchgef\u00fchrten Ereignisse.",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Navigate/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing \n\n\n Hello! I'd be happy to help you with any information related to the search results. Here is a summary of the content in the search results:\n\n- **Navigating XWiki:** This page provides information on how to navigate and use the XWiki software, including a guide on how to format URLs. (Source: <https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Navigate/>)\n- **XWiki Skins:** This page explains how to customize the appearance of your XWiki site using different skins. (Source: <https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins>)\n- **Page Editing in XWiki:** This page provides a guide on how to edit pages in XWiki, including information on formatting and inserting images. (Source: <https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing>)\n- **References on the XWiki site:** This page contains links to various external resources and projects that are related to XWiki. (Source: Multiple)\n\nPlease let me know if you have any questions about these topics, or if there is something specific you would like to learn more about!\n\nRegarding your message \"Ich erhalte keine Benachrichtigungen.\" I am an AI and do not provide notification services. If you have a question or need assistance with the information provided in the search results, please let me know and I will do my best to help.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Navigate.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Navigate/",
+      "content": "\"ndard%20URL%20Format/).\\n\\n\\n\"",
+      "similarity_score": 0.5823127627372742,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Skins",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins",
+      "content": "\"![Schichtbericht-150-1025x780.png](https://www.xwiki.org/xwiki/bin/download/References/INDUSTRIALWIKI/Schichtbericht-150-1025x780.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/INDUSTRIALWIKI) [![wikiinra.png](https://www.xwiki.org/xwiki/bin/download/References/INRA/wikiinra.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/INRA) [![Inemar.png](https://www.xwiki.org/xwiki/bin/download/References/Inemar/Inemar.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/Inemar) [![InisAlga.png](https://www.xwiki.org/xwiki/bin/download/References/InisAlga/InisAlga.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/InisAlga) [![JASMINe.png](https://www.xwiki.org/xwiki/bin/download/References/JASMINe/JASMINe.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/JASMINe) [![AntonioGoncalves.png](https:\"",
+      "similarity_score": 0.5780602097511292,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Skins",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins",
+      "content": "\"s/EFFEA/Effea.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/EFFEA) [![ElsaBlog.png](https://www.xwiki.org/xwiki/bin/download/References/ELSA/ElsaBlog.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/ELSA) [![epec.png](https://www.xwiki.org/xwiki/bin/download/References/EPECNetwork/epec.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/EPECNetwork) [![EasyBeans.png](https://www.xwiki.org/xwiki/bin/download/References/EasyBeans/EasyBeans.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/EasyBeans) [![EasyBeansWiki.png](https://www.xwiki.org/xwiki/bin/download/References/EasyBeansWiki/EasyBeansWiki.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/EasyBeansWiki) [![EasyVista.png](https://www.xwiki.org/xwiki/bin/download/References/EasyVista/EasyVista.png?width=100&amp;height=100&amp\"",
+      "similarity_score": 0.5779155492782593,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.PageEditing",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing",
+      "content": "\"\\n\\n![defaultLanguage.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/PageEditing/defaultLanguage.png?rev=1.1)\\n\\n\\n\"",
+      "similarity_score": 0.566399335861206,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Skins",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins",
+      "content": "\"ves.png](https://www.xwiki.org/xwiki/bin/download/References/JavaEE5Book/AntonioGoncalves.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/JavaEE5Book) [![Wiki Showcase.mp4](https://www.xwiki.org/xwiki/bin/download/References/Johanneswerk%20KB/Wiki%20Showcase.mp4?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/Johanneswerk%20KB) [![Jonas.png](https://www.xwiki.org/xwiki/bin/download/References/Jonas/Jonas.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/Jonas) [![KEN.png](https://www.xwiki.org/xwiki/bin/download/References/KEN/KEN.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/KEN) [![KUSP_Xwiki.png](https://www.xwiki.org/xwiki/bin/download/References/KUSP/KUSP_Xwiki.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/KUSP) [![1711636030339-389.png](https://www.xwiki.org/xwiki/bin/do\"",
+      "similarity_score": 0.5650380849838257,
+      "vector": null
+    }
+  ]
+}

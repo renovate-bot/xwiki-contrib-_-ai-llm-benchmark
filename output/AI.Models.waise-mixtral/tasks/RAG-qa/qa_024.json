@@ -1,0 +1,48 @@
+{
+  "id": "qa_024",
+  "prompt": "Je re\u00e7ois beaucoup de notifications concernant toutes sortes de pages qui ne m'int\u00e9ressent pas. Il semble qu'elles aient \u00e9t\u00e9 activ\u00e9es automatiquement. Comment puis-je d\u00e9sactiver ces notifications?",
+  "expected_answer": "Par d\u00e9faut, une page o\u00f9 vous avez apport\u00e9 une modification importante est automatiquement ajout\u00e9e \u00e0 la liste des pages que vous suivez. Cela signifie que vous serez notifi\u00e9 des changements sur votre travail. Vous pouvez modifier le param\u00e8tre pour \"Suivi automatique des pages\" dans les param\u00e8tres de notification de votre profil utilisateur. Vous pouvez supprimer les filtres de notification existants qui ont \u00e9t\u00e9 cr\u00e9\u00e9s de cette mani\u00e8re dans la liste \"Filtres personnalis\u00e9s\" des param\u00e8tres de notification de votre profil utilisateur.",
+  "ai_answer": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\n To disable unwanted notifications, you can follow these steps:\n\n1. Go to your **user profile** by clicking on your avatar at the top right corner of the XWiki interface and selecting \"Profile\" from the dropdown menu.\n2. In your user profile, find the \"**Notifications settings**\" section, which allows you to choose which types of notifications you want to receive.\n3. By default, users only get notifications when they are mentioned or when actions are performed on pages they created or updated. For receiving other notifications, you need to select which \"types\" of notifications you want to receive. If you want to stop receiving certain types of notifications, simply uncheck the corresponding boxes.\n4. Note that the options from the \"alert\" menu represent the pages/spaces/wiki you want to get notifications for. You can adjust these settings as needed.\n5. If you find that you are still receiving unwanted notifications, it is possible that they were activated automatically due to certain behaviors, such as modifying a page where Auto Watch is enabled. In this case, you can change the Auto Watch behavior in the settings.\n6. If you want to stop following a user, you can go to their profile and click on the \"Unfollow\" button.\n\nKeep in mind that these instructions are based on the information available from the search results provided, which may or may not be entirely relevant to your specific situation. However, they should give you a general idea of how to manage your notification settings in XWiki.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"png?rev=1.3)  \\n![NotificationsWithRSS.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotificationsWithRSS.png?rev=1.3)\\n\\n## Notifications Macro\\n\\nThe [Notifications Macro is provided by its own application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Macro/).\\n\\n# Settings\\n\\nOn the notifications menu, you also have a link to go to the &quot;settings&quot; of the notifications.\\n\\n![notif4.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif4.png?rev=1.8)\\n\\nBy default, users only get notifications when they are mentioned or when actions are performed on pages they created or updated. For receiving other notifications, you need to select which &quot;types&quot; of notifications you want to receive. When a page is created? When a blog post is published?\\n\\nYou can enable or disable all notification types that belong to a particular application by clicking on the bells as\"",
+      "similarity_score": 0.7491321563720703,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"/view/Extension/Notifications%20Application/#HCustomizingthenotificationemailtemplate)\\n\\t+ [Create global notification filters](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HCreateglobalnotificationfilters)\\n* [Developers](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HDevelopers)\\n\\t+ [Send notifications](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HSendnotifications)\\n\\t+ [Override default notification templates in wiki pages](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HOverridedefaultnotificationtemplatesinwikipages)\\n* [Prerequisites &amp; Installation Instructions](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HPrerequisites26InstallationInstructions)\\n* [Dependencies](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HDependencies)\\n# Description\\n\\nThis application cont\"",
+      "similarity_score": 0.735246479511261,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"20Application/WebHome/WatchedEntitiesFiltersUI.png?rev=1.3)\\n\\nThe notifications settings from the user profile save which &quot;types&quot; of notifications you want to receive, while the options from the &quot;alert&quot; menu represent the pages/spaces/wiki you want to get notifications for.\\n\\nYou won&#x27;t be able to click on the buttons if you don&#x27;t have enabled some event type first:\\n\\n![NotificationsTogglesDisabled.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotificationsTogglesDisabled.png?rev=1.3)\\n\\n### Auto Watch\\n\\nBy default, a page where you have made a major modification is automatically added to the list of pages you watch. It means you will be notified about changes on your work. You can change this behavior in the settings:\\n\\n![AutoWatch.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/AutoWatch.png?rev=1.3)\\n\\n### Follow a user\\n\\nIf you go to the [profile of an user](ht\"",
+      "similarity_score": 0.7308011054992676,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.XWikiSyntax.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/",
+      "content": "\"wiki.org/xwiki/bin/view/Main/MessageSenderMacro) | Message Sender | Social | A control that allows users to enter messages that are handled by the MessageStream module. | Current Wiki |\\n| missingLicenseMessage | Missing License Message |  | Display an error message when the extension does not have a valid license. | Global |\\n| [notifications](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/Macro/NotificationsMacro) | Notifications | Notifications | Display notifications about events happened on the wiki. | Current Wiki |\\n| [notificationsApplicationsPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsApplicationsPreferencesMacro) | Notifications Applications Preferences | Notifications | Display the preferences of the current user about notification applications. | Current Wiki |\\n| [notificationsAutoWatchPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsAutoWatchPreferencesMacro) | Notifications Auto\"",
+      "similarity_score": 0.7259001135826111,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"t; section (if any).\\n\\n![CompositeNotification.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/CompositeNotification.png?rev=1.4)  \\n![CompositeNotification2.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/CompositeNotification2.png?rev=1.4)\\n\\nXWiki 15.5+ We started to expose different ways of grouping notifications. All the details can be found on the dedicated page about [Notification Grouping Strategies](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/GroupingStrategies).\\n\\n## Get a notification RSS feed\\n\\nYou can get a RSS feed of the notifications occurring in your wiki. This feed can be accessed either through a link in your notification tray (or at the bottom of the notifications macro).\\n\\n![NotificationTrayRSSLink.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotificationTrayRSSLink.png?rev=1.3)  \\n\"",
+      "similarity_score": 0.7245055437088013,
+      "vector": null
+    }
+  ]
+}

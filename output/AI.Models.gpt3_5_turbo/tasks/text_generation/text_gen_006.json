@@ -1,0 +1,7 @@
+{
+  "id": "text_gen_006",
+  "prompt": "Write a poem about the beauty of nature.",
+  "expected_answer": "A poem describing the wonders of the natural world.",
+  "ai_answer": "In the heart of the forest, where the trees stand tall\nAnd the birds sing sweetly, a melody for all\nThe beauty of nature, so pure and true\nIt fills my soul with a sense of awe anew\n\nThe sun shines down, its golden rays\nDancing on the leaves in a dazzling display\nThe flowers bloom, their colors bright\nA symphony of hues, a wondrous sight\n\nThe gentle breeze whispers through the trees\nA soft caress, a soothing tease\nThe river flows, its waters clear\nReflecting the sky, so bright and near\n\nThe mountains loom, majestic and grand\nTheir peaks reaching for the heavens, a sight so grand\nThe meadows stretch, a carpet of green\nA peaceful oasis, a tranquil scene\n\nOh, the beauty of nature, so vast and wide\nIt fills my heart with joy and pride\nFor in its embrace, I find my peace\nA connection to all, a sense of release\n\nSo let us cherish this gift divine\nAnd protect it with love, for all time\nFor in the beauty of nature, we find our grace\nA reminder of the wonder of this sacred place.",
+  "sources": null
+}

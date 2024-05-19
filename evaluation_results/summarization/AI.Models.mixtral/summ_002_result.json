@@ -1,0 +1,8 @@
+{
+  "score": 0.0,
+  "reason": "The score is 0.00 because the summary contains multiple contradictions with the original text and includes a substantial amount of extra information not mentioned in the original text. Additionally, several questions that the original text can answer are not addressed by the summary, reflecting a significant disconnect between the summary and the original content.",
+  "score_breakdown": {
+    "Alignment": 0.28,
+    "Coverage": 0.0
+  }
+}

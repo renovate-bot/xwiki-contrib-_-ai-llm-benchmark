@@ -1,0 +1,48 @@
+{
+  "id": "qa_018",
+  "prompt": "Wie kann ich sicherstellen, dass nur Bilder oder PDF-Dateien mit maximal 10 MB als Anh\u00e4nge im gesamten Wiki hochgeladen werden k\u00f6nnen?",
+  "expected_answer": "Um sicherzustellen, dass nur Bilder oder PDF-Dateien mit maximal 10 MB als Anh\u00e4nge im gesamten Wiki hochgeladen werden k\u00f6nnen, f\u00fchren Sie die folgenden Schritte aus:\n\n**Schritt 1: Konfigurieren zul\u00e4ssiger MIME-Typen**\n\nBearbeiten Sie die Konfigurationsdatei `xwiki.properties` in Ihrer Installation und f\u00fcgen Sie oder aktualisieren Sie die folgende Zeile, um die Standard-MIME-Typ-Beschr\u00e4nkungen auf Farm-Ebene zu konfigurieren:\n```\nattachment.upload.allowList=image/*,application/pdf\n```\nDadurch werden nur Bilddateien (mit jedem Subtyp, z. B. `image/jpeg`, `image/png` usw.) und PDF-Dateien zum Hochladen zugelassen und alle anderen MIME-Typen blockiert.\n\n**Schritt 2: Konfigurieren der maximalen Anhangsgr\u00f6\u00dfe**\n\nUm die maximale Anhangsgr\u00f6\u00dfe auf 10 MB einzustellen, f\u00fchren Sie die folgenden Schritte aus:\n\n1. Gehen Sie zu `http://<IhrWiki>/xwiki/bin/edit/XWiki/XWikiPreferences?editor=object`\n2. Klicken Sie auf die Zeile, die XWikiPreferences 0 (direkt unter der Zeile, die Objects of type XWiki.XWikiPreferences (1) sagt) sagt\n3. Scrollen Sie nach unten zum Feld, das Maximum Upload Size hei\u00dft, und \u00e4ndern Sie die Zahl in `10485760` (10 MB in Byte)\n4. Scrollen Sie nach unten und klicken Sie auf \"Speichern\"\n5. Wiederholen Sie dies f\u00fcr jedes (Sub)Wiki, f\u00fcr das Sie diese Konfiguration festlegen m\u00fcssen!",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Attachments \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Exports \n\n\nUm sicherzustellen, dass nur Bilder oder PDF-Dateien mit maximal 10 MB als Anh\u00e4nge im gesamten Wiki hochgeladen werden k\u00f6nnen, k\u00f6nnen Sie als Administrator bestimmte Einstellungen vornehmen. Hier sind die Schritte, die Sie befolgen k\u00f6nnen:\n\n1. Gehen Sie zu *http://<yourwiki>/xwiki/bin/edit/XWiki/XWikiPreferences?editor=object*\n2. Klicken Sie auf die Zeile, die XWikiPreferences 0 (direkt unter der Zeile, die Objekte des Typs XWiki.XWikiPreferences (1) angibt) sagt.\n3. Scrollen Sie nach unten zum Feld, das Maximale Upload-Gr\u00f6\u00dfe sagt, und \u00e4ndern Sie die Zahl auf 10 MB (10.485.760 Bytes).\n4. Scrollen Sie nach unten und klicken Sie auf \"Speichern\".\n\nDurch diese Einstellung wird sichergestellt, dass nur Bilder oder PDF-Dateien mit maximal 10 MB als Anh\u00e4nge im gesamten Wiki hochgeladen werden k\u00f6nnen.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Attachments",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments",
+      "content": "\"\\n**Contents*** [Size Limit](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments#HSizeLimit)\\n* [Mimetype Restriction](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments#HMimetypeRestriction)\\n* [Versions](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments#HVersions)\\n* [Deletion](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments#HDeletion)\\n* [Attachment Storage](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments#HAttachmentStorage)\\n\\t+ [Filesystem Attachment Store](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments#HFilesystemAttachmentStore)\\n\\t\\t- [Filesystem attachment store location](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments#HFilesystemattachmentstorelocation)\\n\\t\\t- [Other considerations](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments#HOtherconsiderations)\\n\\t\\t\\t* [Directory cleanup](https://www.xwik\"",
+      "similarity_score": 0.6561551690101624,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Attachments",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments",
+      "content": "\"ories yourself.\\n\\n## Database Attachment Store\\n\\nThe default before 10.5.\\n\\nThis attachment storage mechanism stores your attachments in database entries in the [xwikiattachment\\\\_content](https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/DsXWikiAttachmentContent), [xwikiattachment\\\\_archive](https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/XWikiAttachmentArchive) and [xwikiattrecyclebin](https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/DsXwikiRecycleBin) tables. This system allows for easy backup of your attachments by dumping the database and keeping all of your data together, but attachment size is memory constrained since the attachment content and archive must all be held in memory. As a general rule, attachments larger than 30MB are not possible.\\n\\n### Switch to database attachment store\\n\\nThese settings should read as follows:\\n\\nxwiki.store.attachment.hint = hibernate  \\nxwiki.store.attachment.versioning.hint = hibernate  \\nxwiki.store.attachment.recyclebin\"",
+      "similarity_score": 0.6501445770263672,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Attachments",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments",
+      "content": "\"sions.xwiki.org/xwiki/bin/view/Extension/XML-RPC%20Integration) or [Rest](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiRESTfulAPI).  \\nAs an administrator you can set limits on the maximum size of an attachment and where the attachments will be stored.\\n\\n# Size Limit\\n\\nThe maximum size of an attachment is limited by a configuration parameter in the *XWikiPreferences* document. It is set to 100GB by default (32MB for XWiki &lt; 10.9RC1).  \\nTo change it follow these steps:\\n\\n1. Go to *http://&lt;yourwiki&gt;/xwiki/bin/edit/XWiki/XWikiPreferences?editor=object*\\n2. Click on the line that says XWikiPreferences 0 (right below the line that says Objects of type XWiki.XWikiPreferences (1))\\n3. Scroll down to the field that says Maximum Upload Size and change the number to whatever size you want (it is expressed in bytes)\\n4. Scroll to the bottom and click &quot;Save&quot;\\n5. Repeat for each (sub)wiki for which you need to increase the size, since currrently this configu\"",
+      "similarity_score": 0.6487473845481873,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Attachments",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Attachments",
+      "content": "\"nd drop, they will share the same upload summary.\\n\\n\\n\\n# Size Limit\\n\\nThe maximum size of an attachment is limited by the administrator. By default it is set at about 32 megabytes.\\n\\n# Learn More\\n\\nFor more information about how XWiki attachments work and how to configure/tune the attachment store, you can examine the [administrator&#x27;s guide to attachments](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments).\\n\\n\\n\"",
+      "similarity_score": 0.6451924443244934,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Exports",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Exports",
+      "content": "\"server. For instance /xwiki/bin/export/Sandbox/WebHome?format=doc exports Sandbox.WebHome page to Microsoft Word&#x27;s proprietary DOC format.\\n\\n## PDF Export\\n\\nXWiki 14.10+ Support for PDF export is provided by the [PDF Export Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/PDF%20Export%20Application/) which is bundled by default in XWiki Standard. Checkout its documentation for more information.\\n\\nXWiki &lt;14.10\u00a0On older versions of XWiki the PDF export was implemented using Apache FOP (Formatting Objects Processor). This implementation is replaced, by default, by the browser-based (client-side) PDF export provided by the PDF Export Application. You can restore the old implementation, if you want, from the PDF Export Application configuration.\\n\\nThe old PDF Export has a UI interface to manage the export:\\n\\n![pdfExportOptions.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/Exports/pdfExportOptions.png?rev=1.5)\\n\\n### Advanced\\n\\nA PDF export \"",
+      "similarity_score": 0.6328978538513184,
+      "vector": null
+    }
+  ]
+}

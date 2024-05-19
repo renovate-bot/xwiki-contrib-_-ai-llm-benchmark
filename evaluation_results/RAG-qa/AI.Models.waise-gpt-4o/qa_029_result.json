@@ -1,0 +1,15 @@
+{
+  "average_score": 0.9303571428571429,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9714285714285714,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.75,
+    "ContextualRecall": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.97 because the response directly addresses how to deny script rights to a space administrator, with only a minor irrelevant statement that does not significantly detract from the overall helpfulness of the answer. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job keeping the actual output perfectly aligned with the retrieval context! Keep up the excellent work!",
+    "ContextualPrecision": "The score is 0.75 because, although the first and fourth nodes in the retrieval context are relevant and correctly ranked higher, the second and third nodes are not directly addressing the input question. Specifically, the second node, which is ranked second, \"does not directly address the impossibility of denying script rights to an administrator,\" and the third node, ranked third, \"does not address the specific scenario of denying script rights to an administrator.\" These irrelevant nodes should be ranked lower than the relevant nodes.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the nodes in the retrieval context. Great job!"
+  }
+}

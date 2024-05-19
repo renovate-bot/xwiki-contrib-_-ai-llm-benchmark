@@ -1,0 +1,48 @@
+{
+  "id": "qa_002",
+  "prompt": "I'm not receiving any notifications.",
+  "expected_answer": "Make sure that notifications are enabled. You can enable them by setting the `notifications.enabled` setting in `xwiki.properties` to `true`. Further, ensure that you're subscribed to the pages or users you want to receive notifications for. You can watch a page, a page and its children, or an entire wiki. To watch a location, all you need is to go to that place, and then click on the \"alert\" menu (represented by a bell) and enable the desired notifications. To follow a user, if you go to the profile of an user, using the User Index for example, you can see decide to watching a user. It means you will receive all notifications about events triggered by this user. In your user profile, if you go to the \"network\" tab, you can see the list of users you are watching and the events that have been performed by them.",
+  "ai_answer": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\nIt seems like you're experiencing issues with receiving notifications. If you're using a specific platform or application, you may need to check your notification settings to ensure they are enabled for the types of activities you want to be notified about. If you're still facing problems, you may need to reach out to the platform's support for further assistance.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"png?rev=1.3)  \\n![NotificationsWithRSS.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotificationsWithRSS.png?rev=1.3)\\n\\n## Notifications Macro\\n\\nThe [Notifications Macro is provided by its own application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Macro/).\\n\\n# Settings\\n\\nOn the notifications menu, you also have a link to go to the &quot;settings&quot; of the notifications.\\n\\n![notif4.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif4.png?rev=1.8)\\n\\nBy default, users only get notifications when they are mentioned or when actions are performed on pages they created or updated. For receiving other notifications, you need to select which &quot;types&quot; of notifications you want to receive. When a page is created? When a blog post is published?\\n\\nYou can enable or disable all notification types that belong to a particular application by clicking on the bells as\"",
+      "similarity_score": 0.7242705821990967,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"nt of the notifications is loaded:\\n\\n![NotificationsLoading.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotificationsLoading.png?rev=1.3)\\n\\nThen you can see the list of notifications:\\n\\n[![notif2.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif2.png?rev=1.5)](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif2.png?rev=1.5)![NotificationsMacro.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotificationsMacro.png?rev=1.3)\\n\\nIf you click on the little button with the &quot;check&quot; icon, you mark the notification as &quot;read&quot;. In the future, you will be able to select either you want to see only unread notifications or all of them.\\n\\nWhen the notification is read, the button disappear and the background color changes:\\n\\n[![notif3.png](https://extensions.xwiki.org/xwiki/bin/dow\"",
+      "similarity_score": 0.7149267196655273,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"ll receive one email every day with the recap of the events that have happened during the day. Of course, if there were no activity in this period of time, no email is sent.\u00a0\\n\\nLive notifications emails can be sent to a user. The wiki administrator can also define a &quot;grace time&quot; for live email notifications ; when an event that triggers a notification is sent, the platform will wait for the duration of this grace time before sending a notification email. If during this interval, a new event of the same kind is sent, the two events will be grouped in the same email. You can get more informations on how to configure this feature [here](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HCustomizeliveemailnotificationsgracetime).\\n\\nOf course, it works only if the user has properly filled her e-mail address.\\n\\nYou can edit the frequency of your email notifications by using the selector just at the bottom of the notification preferences pane in your pr\"",
+      "similarity_score": 0.6924623250961304,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"pplication contributes content in the Alert menu (contributed by the [Alerts Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Alerts%20Application/)) in the top bar, represented by a bell:\\n\\n![Notifications.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/Notifications.png?rev=1.4)\\n\\nYou can find under this menu the notifications about some events happening on the wiki (a page has been modified, a new blog post has been posted, etc...).\\n\\nThe number of notifications is displayed on the top menu, just above the bell:\\n\\n![notif1.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif1.png?rev=1.5)\\n\\nIf you have more than 20 unread notifications, you will not see the real count but this instead:\\n\\n![MaxCounter.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/MaxCounter.png?rev=1.3)\\n\\nWhen you open the menu, the content of the notif\"",
+      "similarity_score": 0.6913676261901855,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"g/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif3.png?rev=1.5)](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif3.png?rev=1.5)\\n\\nThe &quot;Clear All&quot; link will remove all notifications that were sent till now.\\n\\nWhen no notification is available, you will see the following:\\n\\n[![notif5.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif5.png?rev=1.4)](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif5.png?rev=1.4)\\n\\nBy default, you won&#x27;t receive notifications for actions done by yourself. This can be changed by switching off the Own event filter.\\n\\n## Group of notifications with details\\n\\nSimilar notifications are grouped together in order to avoid a batch of identical content. Only one notification is displayed, and it is possible to see the details of all activities in the &quot;Details&quot; section (if \"",
+      "similarity_score": 0.6845638155937195,
+      "vector": null
+    }
+  ]
+}

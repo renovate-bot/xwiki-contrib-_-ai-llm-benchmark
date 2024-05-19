@@ -1,0 +1,15 @@
+{
+  "average_score": 0.5684523809523809,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9166666666666666,
+    "Faithfulness": 0.8571428571428571,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the response effectively addresses the issue of the notification bell not being available with the installed extension, but it includes a mention of XWiki syntax documentation, which is not directly relevant to solving the problem.",
+    "Faithfulness": "The score is 0.86 because the Notifications Macro is provided by its own application, but there is no information indicating it can be configured through the notifications menu.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses \"various macros and controls related to messages and licenses,\" which does not address enabling notifications in the wiki. The second node describes \"visual elements and functionality of notifications,\" but also fails to provide information on enabling notifications in the wiki settings. The third node talks about \"Notifications Macro and settings related to types of notifications,\" but does not mention how to enable notifications in the wiki settings. The fourth node lists \"various settings and options for notifications,\" yet does not provide information on enabling notifications in the wiki settings. Finally, the fifth node describes \"customizing notification templates and prerequisites for installation,\" but does not mention enabling notifications in the wiki settings.",
+    "ContextualRecall": "The score is 0.50 because while the retrieval context mentions 'Notifications' and their purpose in the wiki, it does not provide information about setting the property `notifications.enabled` in `xwiki.properties`."
+  }
+}

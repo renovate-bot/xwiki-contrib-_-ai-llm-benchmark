@@ -1,0 +1,8 @@
+{
+  "score": 0.75,
+  "reason": "The score is 0.75 because the summary includes extra information not mentioned in the original text, such as the specific mention of XWiki. Additionally, the summary fails to address whether a wiki can replace email for many-to-many communication, which the original text covers.",
+  "score_breakdown": {
+    "Alignment": 0.75,
+    "Coverage": 0.8
+  }
+}

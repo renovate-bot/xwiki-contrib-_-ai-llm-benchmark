@@ -1,0 +1,5 @@
+{
+  "score": 0.7,
+  "reason": "The Actual Output addresses the Input prompt and is relevant. It captures most details but lacks the specific structure and some fields like 'start_date', 'end_date', 'venue', 'address', and 'target_audience' from the Expected Output. It is fluent and maintains the context.",
+  "score_breakdown": null
+}

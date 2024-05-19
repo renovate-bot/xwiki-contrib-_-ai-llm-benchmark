@@ -1,0 +1,15 @@
+{
+  "average_score": 0.75,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.6666666666666666
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the question asked without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on ensuring the actual output is perfectly aligned with the retrieval context! Keep up the excellent work!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node, which provides the exact information needed (\"This context directly mentions the property 'oidc.enableUser=true' and explains that it should be defined in 'xwiki.properties' to enable user accounts on first login\"), is ranked third. The first and second nodes discuss other properties and configurations but do not mention the 'oidc.enableUser' property or the specific steps required, making them less relevant. The score is not higher because these irrelevant nodes are ranked higher than the relevant one, impacting the contextual precision.",
+    "ContextualRecall": "The score is 0.67 because the retrieval context accurately describes the property `oidc.enableUser=true` and its function to activate user accounts on first login, but it lacks details about adding or updating the specific property and does not mention the necessity of saving the file and restarting the XWiki instance."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "qa_014",
+  "prompt": "Ich erhalte viele Benachrichtigungen \u00fcber alle m\u00f6glichen Seiten, an denen ich nicht interessiert bin. Diese scheinen automatisch aktiviert worden zu sein. Wie kann ich diese Benachrichtigungen deaktivieren?",
+  "expected_answer": "Standardm\u00e4\u00dfig wird eine Seite, an der Sie eine wesentliche \u00c4nderung vorgenommen haben, automatisch zu der Liste der Seiten hinzugef\u00fcgt, denen Sie folgen. Das bedeutet, dass Sie \u00fcber \u00c4nderungen an Ihrer Arbeit benachrichtigt werden. Sie k\u00f6nnen die Einstellung f\u00fcr \"Automatisches Verfolgen von Seiten\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil \u00e4ndern. Sie k\u00f6nnen vorhandene Benachrichtigungsfilter, die auf diese Weise erstellt wurden, in der Liste \"Benutzerdefinierte Filter\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil l\u00f6schen.",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Applications \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\n To disable notifications in XWiki, you can follow these steps:\n\n1. Log in to your XWiki instance.\n2. Go to the top right corner of the screen and click on your avatar or username.\n3. From the drop-down menu, select \"Preferences.\"\n4. In the left-hand menu, click on \"Notifications.\"\n5. Under \"Notification Preferences,\" you can adjust your settings for each type of notification. To disable all notifications, uncheck the box next to \"Enable Notifications.\"\n6. Don't forget to save your changes by clicking the \"Save\" button at the bottom of the page.\n\nIf you are still receiving unwanted notifications, it is possible that they were configured at the wiki or application level rather than at the user level. In this case, you may need to contact your XWiki administrator for assistance in disabling these notifications.\n\nNote: The above instructions are based on general XWiki functionality and may vary depending on the specific configuration of your XWiki instance.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.XWikiSyntax.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/",
+      "content": "\"bal |\\n| toc | Table of contents | Navigation | Generates a table of contents. | Global |\\n| [todo](https://www.xwiki.org/xwiki/bin/view/Macros/Todo) | Todo | content | Todo macro | Global |\\n| translation | Translation | Content | Display a translation message. | Global |\\n| [tree](https://www.xwiki.org/xwiki/bin/view/Macros/Tree) | Tree | Navigation | Displays a tree hierarchy defined by the macro content or the source parameter. | Current Wiki |\\n| uiextension | UI Extension | Development | Insert a UI extension. | Global |\\n| uiextensions | UI Extensions | Development | Insert UI extensions. | Global |\\n| useravatar | User Avatar | Content | Allows displaying the avatar for a specific user. | Global |\\n| velocity | Velocity | Development | Executes a Velocity script. | Global |\\n| [version](https://www.xwiki.org/xwiki/bin/view/Macros/VersionMacro) | Version | Content | Specifies since which versions of XWiki the content of the macro corresponds to. | Global |\\n| [videoCard](https://www.xwiki\"",
+      "similarity_score": 0.5793564915657043,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/",
+      "content": "\"resExtract/preferences-desktop-theme.png?rev=1.6)\\n\\n[Skins](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins)  \\nCompletely customize page templates, add menus, modify CSS files. You&#x27;re in complete control of the look &amp; feel.\\n\\n![preferences-desktop-locale](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/FeaturesExtract/preferences-desktop-locale?rev=1.6)\\n\\n[Internationalization](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N)  \\nSupport different translations of your pages and have your users be automatically directed to version in their own language.\\n\\n![accessibility.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/FeaturesExtract/accessibility.png?rev=1.1)\\n\\n[Accessibility](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Accessibility/)  \\nSupport the diversity of user needs.\\n\\n![utilities-system-monitor.png](https://www.xwiki.org/xwiki/bin/download/D\"",
+      "similarity_score": 0.5782476663589478,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Applications",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Applications",
+      "content": "\"\\n**Contents*** [Applications](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Applications#HApplications)\\n* [Extensions](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Applications#HExtensions)\\n* [Flavors](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Applications#HFlavors)\\n* [Creating Applications &amp; Extensions](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Applications#HCreatingApplications26Extensions)\\n# Applications\\n\\nAs you&#x27;ve learned from the [Programming feature](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Programming), it&#x27;s possible to put scripts inside wiki pages. You can also define [your own data structures](https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/DataModel/) in wiki pages and then use them in other wiki pages. You can thus combine several pages together to form an application. In other words an application is simply a self-c\"",
+      "similarity_score": 0.5767112970352173,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Applications",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Applications",
+      "content": "\"res/Applications/ForumApplication.png?rev=1.2)\\n\\n*[Ideas Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Ideas)*\\n\\n[![IdeasApplication.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/Applications/IdeasApplication.png?width=350&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/Applications/IdeasApplication.png?rev=1.2)\\n\\n# Extensions\\n\\n[Extensions](https://extensions.xwiki.org/xwiki/bin/view/Main/) are adds-on that can be installed inside a running XWiki using the [Extension Manager](https://extensions.xwiki.org/xwiki/bin/view/Extension/Extension%20Manager%20Application). Applications (described above) are a special type of Extensions but there are other types. For example, you could install the Markdown Syntax, LDAP integration or others, which are not Applications (Applications are made of wiki pages).\\n\\n# Flavors\\n\\nA [Flavor](https://extensions.xwiki.org/xwiki/bin/view/Extension/Flavor%20Module) is a se\"",
+      "similarity_score": 0.5761483907699585,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\"e with the Extension Manager&quot; is displayed at the top right location on this page to know if this extension can be installed with the Extension Manager). Note that installing Extensions when being offline is currently not supported and you&#x27;d need to use some [complex manual method](https://xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Installation/#HOthermethods).\\n\\nYou can also use the following manual method, which is useful if this extension cannot be installed with the Extension Manager or if you&#x27;re using an old version of XWiki that doesn&#x27;t have the Extension Manager:\\n\\n1. Log in the wiki with a user having Administration rights\\n2. Go to the Administration page and select the Import category\\n3. Follow the on-screen instructions to upload the downloaded XAR\\n4. Click on the uploaded XAR and follow the instructions\\n5. You&#x27;ll also need to install all [dependent Extensions](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HDe\"",
+      "similarity_score": 0.5716097950935364,
+      "vector": null
+    }
+  ]
+}

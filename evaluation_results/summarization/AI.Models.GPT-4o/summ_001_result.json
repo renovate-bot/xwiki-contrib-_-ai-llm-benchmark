@@ -1,0 +1,8 @@
+{
+  "score": 0.8421052631578947,
+  "reason": "The score is 0.84 because the summary includes some inaccuracies, such as stating that panels are hidden when the original text indicates they are displayed within columns. Additionally, the summary introduces extra details not present in the original text, such as the content area containing the main content and specifying column widths as small, medium, or large.",
+  "score_breakdown": {
+    "Alignment": 0.8421052631578947,
+    "Coverage": 1.0
+  }
+}

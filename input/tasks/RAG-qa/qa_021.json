@@ -1,0 +1,6 @@
+{
+  "id": "qa_021",
+  "prompt": "La cloche en haut \u00e0 droite n'est pas disponible, m\u00eame lorsque l'extension \"Notification d'alerte\" est install\u00e9e.",
+  "expected_answer": "Assurez-vous que les notifications sont activ\u00e9es dans votre wiki. Vous pouvez les activer en d\u00e9finissant la propri\u00e9t\u00e9 `notifications.enabled` dans `xwiki.properties` sur `true`.",
+  "data_path": null
+}

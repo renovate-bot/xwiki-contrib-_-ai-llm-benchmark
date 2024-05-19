@@ -1,0 +1,15 @@
+{
+  "average_score": 0.4342105263157895,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7368421052631579,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.74 because the answer provides some relevant information about enabling notifications for own activities, but it includes multiple irrelevant URLs that do not address the specific question asked.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context! Keep up the excellent work!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input question about enabling notifications for one's own activity. For example, the first node contains \"image links and references to various applications and resources,\" which do not relate to notification settings. The second node discusses \"extensions and flavors in XWiki,\" and the third node lists \"content editing features and profiles,\" neither of which are pertinent to the question. Additionally, the fourth node talks about \"an application for administrating wiki features,\" and the fifth node discusses \"skins, internationalization, and accessibility features,\" both of which are unrelated to enabling notifications for one's own actions.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are found in any part of the nodes in the retrieval context."
+  }
+}
