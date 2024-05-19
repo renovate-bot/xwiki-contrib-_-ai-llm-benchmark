@@ -42,7 +42,7 @@ def save_result(output_dir, task_name, question_id, result):
 
 def process_request(task_name, question_data, settings, base_url, auth, question_file):
     question_id = question_data['id']
-    if task_name == 'qa':
+    if task_name == 'RAG-qa':
         question = question_data['prompt']
         expected_answer = question_data['expected_answer']
     elif task_name == 'summarization':
