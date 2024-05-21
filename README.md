@@ -24,11 +24,11 @@ The evaluation framework is built using Snakemake, a workflow management system 
 
 The LLM AI Evaluation Framework follows a structured workflow to evaluate the performance of LLMs:
 
-**Data Indexing**: The framework indexes the data using the LLM Application's API, reading collection and document JSON files from the _context_data_ directory.
-**Input Splitting**: The input JSON file is split into separate task files for each task defined in the input.
-**Model Response Collection**: The framework sends request to the waise models and collects the responses based on the task settings in the configuration file.
-**Evaluation**: The generated outputs for each task (text generation, content summarization, RAG-QA) are evaluated using specific evaluation scripts.
-**Visualization**: The evaluation results are visualized through generated plots to provide insights into the performance of the LLMs.
+- **Data Indexing**: The framework indexes the data using the LLM Application's API, reading collection and document JSON files from the _context_data_ directory.
+- **Input Splitting**: The input JSON file is split into separate task files for each task defined in the input.
+- **Model Response Collection**: The framework sends request to the waise models and collects the responses based on the task settings in the configuration file.
+- **Evaluation**: The generated outputs for each task (text generation, content summarization, RAG-QA) are evaluated using specific evaluation scripts.
+- **Visualization**: The evaluation results are visualized through generated plots to provide insights into the performance of the LLMs.
 
 The framework is designed to be flexible and customizable, allowing users to adapt the evaluation to their specific needs by modifying the input and configuration files. It provides a comprehensive set of tools and scripts to assess the suitability of LLMs for knowledge management and XWiki technical support tasks.
 
@@ -41,13 +41,13 @@ To use the LLM AI Evaluation framework, follow these steps:
 1. Clone the repository:
 
 ```
-git clone https://github.com/yourusername/llm-ai-evaluation.git
+git clone https://github.com/xwiki-contrib/ai-llm-benchmark.git
 ```
 
 2. Navigate to the project directory:
 
 ```
-cd llm-ai-evaluation
+cd ai-llm-benchmark
 ```
 
 3. Create and activate the Conda environment:
