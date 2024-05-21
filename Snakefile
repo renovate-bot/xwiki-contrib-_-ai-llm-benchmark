@@ -13,7 +13,7 @@ RESULTS_SUMMARIZATION_DIR = f"{EVALUATION_DIR}/summarization"
 RESULTS_TEXT_GENERATION_DIR = f"{EVALUATION_DIR}/text_generation"
 RESULTS_QA_DIR = f"{EVALUATION_DIR}/RAG-qa"
 
-PLOTS_DIR = "evaluation_results_graphcs"
+PLOTS_DIR = "evaluation_results_graphics"
 
 SNAKEOUT_DIR = "snakeout"
 INDEXED_DIR = f"{SNAKEOUT_DIR}/indexed"
