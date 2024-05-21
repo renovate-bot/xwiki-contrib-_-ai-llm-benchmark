@@ -20,7 +20,6 @@ INDEXED_DIR = f"{SNAKEOUT_DIR}/indexed"
 
 rule all:
     input:
-        INDEXED_DIR,
         TASKS_DIR,
         OUTPUT_DIR,
         RESULTS_SUMMARIZATION_DIR,

@@ -57,6 +57,9 @@ conda env create -f environment.yml
 conda activate snakemake
 ```
 
+4. Rename _example.env_ to _.env_ and update the variables for connecting to your XWiki instance. The BASE_URL needs to point to the _rest/wikis/{wikiName}/aiLLM_ endpoint of the LLM Application.
+
+
 ## Usage
 
 1. Customize the _input/input.json_ and _config.json_ according to your needs.
