@@ -158,11 +158,11 @@ snakemake --cores 1
 
 ## Running individual steps
 
-Snakemake allows us to run the entire pipeline or run things individually.
+Snakemake allows us to run the entire pipeline or run individual rules.
 
 ### Index data
 
-This step indexes the data using the LLm API. It reads the collection and document JSON files from the specified directories and indexes them in the LLM Application on the XWiki instance under the collection named Eval.
+This step indexes the data using the LLM Application API. It reads the collection and document JSON files from the specified directories and indexes them in the LLM Application on the XWiki instance under the collection named Eval.
 
 To run this step individually, use the following command:
 
@@ -182,7 +182,7 @@ snakemake --cores 1 split_input_to_files
 
 ### Collect model responses
 
-This step collects the model responses for each task. It reads the task files from the specified input directory, sends requests to the LLM API based on the task settings in the configuration file, and saves the model responses in the _output_ directory.
+This step collects the model responses for each task. It reads the task files from the specified input directory, sends requests to the LLM Application API based on the task settings in the configuration file, and saves the model responses in the _output_ directory.
 
 To run this step individually, use the following command:
 
@@ -242,7 +242,8 @@ snakemake --cores 1 create_plots
 
 ### Clean
 
-This step cleans up the generated files and directories. It removes the evaluation results directory, tasks directory, output directory, and the snakeout directory.
+This step cleans up all the generated files and directories. It removes the evaluation results directory, tasks directory, output directory, and the snakeout directory.
+
 
 To run this step individually, use the following command:
 
@@ -250,11 +251,15 @@ To run this step individually, use the following command:
 snakemake --cores 1 clean
 ```
 
+---
+
 ![Rag-qa Task Scores Comparison](evaluation_results_graphics/RAG-qa_grouped_bar_chart.png)
 
 ![Text gen scores](evaluation_results_graphics/text_generation_score_box_plot.png)
 
 ![Summary](evaluation_results_graphics/summarization_grouped_bar_chart.png)
+
+---
 
 * Project Lead: Ludovic Dubost 
 * [Issue Tracker](https://jira.xwiki.org/browse/LLMAI)
