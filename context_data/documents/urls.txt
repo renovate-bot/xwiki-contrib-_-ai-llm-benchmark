@@ -7,6 +7,7 @@ https://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Index%20
 https://extensions.xwiki.org/xwiki/bin/view/Extension/Model/Validation/UI/
 https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/
 https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/
+https://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module
 https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/
 https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/
 https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments
