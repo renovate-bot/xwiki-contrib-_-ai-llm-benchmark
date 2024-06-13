@@ -190,16 +190,6 @@ To run this step individually, use the following command:
 snakemake --cores 1 collect_model_responses
 ```
 
-### Update output
-
-After adding new rules or deleting files from the output directory, this step will re-send only those request to the LLM and re-generate the missing files.
-
-To run this step individually, use the following command:
-
-```
-snakemake --cores 1 update_output
-```
-
 ### Evaluate summaries
 
 This step evaluates the generated summaries using the eval_summary.py script. It reads the model outputs, evaluates the summaries using the _SummarizationMetric_ metric provided by the DeepEval library, and saves the evaluation results in the _evaluation_results_ directory.
