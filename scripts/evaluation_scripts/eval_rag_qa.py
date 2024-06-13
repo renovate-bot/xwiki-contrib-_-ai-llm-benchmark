@@ -83,6 +83,17 @@ def calculate_ragas_score(ai_qa_file, evaluator_model):
 
     return average_score, individual_scores, reasons
 
+def evaluate_rag_qa_task(qa_file, evaluator_model, evaluation_dir):
+    average_score, individual_scores, reasons = calculate_ragas_score(qa_file, evaluator_model)
+    evaluation_result = {
+        "average_score": average_score,
+        "individual_scores": individual_scores,
+        "reasons": reasons
+    }
+
+    result_file = os.path.join(evaluation_dir, f"{os.path.splitext(os.path.basename(qa_file))[0]}_result.json")
+    save_evaluation_result(result_file, evaluation_result)
+
 def evaluate_rag_qa(output_dir, evaluation_dir, config_file):
     config = load_config(config_file)
     evaluator_model = get_evaluator_model(config_file)
@@ -90,25 +101,24 @@ def evaluate_rag_qa(output_dir, evaluation_dir, config_file):
     for task in config['tasks']:
         if task['task'] == 'RAG-qa':
             model_name = task['settings']['model']
-            model_output_dir = os.path.join(output_dir, model_name)
-            if os.path.isdir(model_output_dir):
-                model_evaluation_dir = os.path.join(evaluation_dir, model_name)
-                os.makedirs(model_evaluation_dir, exist_ok=True)
+            model_output_dir = os.path.join(output_dir, model_name, 'tasks', 'RAG-qa')
+            model_evaluation_dir = os.path.join(evaluation_dir, model_name)
+            os.makedirs(model_evaluation_dir, exist_ok=True)
 
-                qa_dir = os.path.join(model_output_dir, 'tasks', 'RAG-qa')
-                if os.path.exists(qa_dir):
-                    for qa_file in os.listdir(qa_dir):
-                        if qa_file.endswith('.json'):
-                            ai_qa_file = os.path.join(qa_dir, qa_file)
-                            result_file = os.path.join(model_evaluation_dir, f"{os.path.splitext(qa_file)[0]}_result.json")
+            if os.path.exists(model_output_dir):
+                for qa_file in os.listdir(model_output_dir):
+                    if qa_file.endswith('.json'):
+                        qa_file_path = os.path.join(model_output_dir, qa_file)
+                        result_file = os.path.join(model_evaluation_dir, f"{os.path.splitext(qa_file)[0]}_result.json")
 
-                            average_score, individual_scores, reasons = calculate_ragas_score(ai_qa_file, evaluator_model)
-                            evaluation_result = {
-                                "average_score": average_score,
-                                "individual_scores": individual_scores,
-                                "reasons": reasons
-                            }
-                            save_evaluation_result(result_file, evaluation_result)
+                        # Check if the result file already exists
+                        if not os.path.exists(result_file):
+                            evaluate_rag_qa_task(qa_file_path, evaluator_model, model_evaluation_dir)
+                        else:
+                            print(f"Skipping evaluation for {model_name} - {qa_file} as it has already been evaluated.")
+
+def main(output_dir, evaluation_dir, config_file):
+    evaluate_rag_qa(output_dir, evaluation_dir, config_file)
 
 if __name__ == '__main__':
     import argparse
@@ -117,7 +127,7 @@ if __name__ == '__main__':
     parser.add_argument('--output-dir', required=True, help='Directory containing the output files')
     parser.add_argument('--evaluation-dir', required=True, help='Directory to store the evaluation results')
     parser.add_argument('--config-file', default='config.json', help='Path to the configuration file')
-
+    os.makedirs("snakeout/evaluated_rag_qa", exist_ok=True)
     args = parser.parse_args()
 
-    evaluate_rag_qa(args.output_dir, args.evaluation_dir, args.config_file)
+    main(args.output_dir, args.evaluation_dir, args.config_file)

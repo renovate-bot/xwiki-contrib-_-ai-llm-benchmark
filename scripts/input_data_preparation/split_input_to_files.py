@@ -25,9 +25,10 @@ for task_name, items in data['tasks'].items():
     for item in items:
         question_id = item['id']
         
-        # Create a new JSON file for each item
+        # Create a new JSON file for each item if it doesn't already exist
         output_file = os.path.join(task_dir, f"{question_id}.json")
-        with open(output_file, 'w') as file:
-            json.dump(item, file, indent=2)
+        if not os.path.exists(output_file):
+            with open(output_file, 'w') as file:
+                json.dump(item, file, indent=2)
 
 print(f"Individual question files created successfully in {args.output_dir}, organized by task.")

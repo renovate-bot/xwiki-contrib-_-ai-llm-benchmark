@@ -1,64 +1,65 @@
 import os
 import sys
-import json
-from deepeval import evaluate
-from deepeval.metrics import SummarizationMetric
-from deepeval.test_case import LLMTestCase
 
 # Add the parent directory of the 'scripts' folder to the Python module search path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
 from evaluation_utils import load_config, save_evaluation_result, get_evaluator_model
 
-def calculate_summary_score(ai_summary_file, evaluator_model):
-    # Load the AI-generated summary file
+import json
+from deepeval import evaluate
+from deepeval.metrics import SummarizationMetric
+from deepeval.test_case import LLMTestCase
+
+def calculate_summary_score(ai_summary_file, evaluator_model, threshold=0.5):
     with open(ai_summary_file, 'r') as file:
         summary_data = json.load(file)
 
-    # Extract the input text and the generated summary
     input_text = summary_data['prompt']
     generated_summary = summary_data['ai_answer']
 
-    # Create the test case
     test_case = LLMTestCase(input=input_text, actual_output=generated_summary)
-
-    # Create the evaluation metric
-    metric = SummarizationMetric(
-        threshold=0.5,
-        model=evaluator_model
-    )
-
-    # Measure the test case
+    metric = SummarizationMetric(threshold=threshold, model=evaluator_model)
     metric.measure(test_case)
 
     return metric.score, metric.reason, metric.score_breakdown
 
-def evaluate_summaries(output_dir, evaluation_dir, config_file):
+def evaluate_summary(summary_file, evaluator_model, evaluation_dir, threshold=0.5):
+    score, reason, score_breakdown = calculate_summary_score(summary_file, evaluator_model, threshold)
+    evaluation_result = {
+        "score": score,
+        "reason": reason,
+        "score_breakdown": score_breakdown
+    }
+
+    result_file = os.path.join(evaluation_dir, f"{os.path.splitext(os.path.basename(summary_file))[0]}_result.json")
+    save_evaluation_result(result_file, evaluation_result)
+
+def evaluate_summaries(output_dir, evaluation_dir, config_file, threshold=0.5):
     config = load_config(config_file)
     evaluator_model = get_evaluator_model(config_file)
 
     for task in config['tasks']:
         if task['task'] == 'summarization':
             model_name = task['settings']['model']
-            model_output_dir = os.path.join(output_dir, model_name)
-            if os.path.isdir(model_output_dir):
-                model_evaluation_dir = os.path.join(evaluation_dir, model_name)
-                os.makedirs(model_evaluation_dir, exist_ok=True)
+            model_output_dir = os.path.join(output_dir, model_name, 'tasks', 'summarization')
+            model_evaluation_dir = os.path.join(evaluation_dir, model_name)
+            os.makedirs(model_evaluation_dir, exist_ok=True)
 
-                summarization_dir = os.path.join(model_output_dir, 'tasks', 'summarization')
-                if os.path.exists(summarization_dir):
-                    for summary_file in os.listdir(summarization_dir):
-                        if summary_file.endswith('.json'):
-                            ai_summary_file = os.path.join(summarization_dir, summary_file)
-                            result_file = os.path.join(model_evaluation_dir, f"{os.path.splitext(summary_file)[0]}_result.json")
+            if os.path.exists(model_output_dir):
+                for summary_file in os.listdir(model_output_dir):
+                    if summary_file.endswith('.json'):
+                        summary_file_path = os.path.join(model_output_dir, summary_file)
+                        result_file = os.path.join(model_evaluation_dir, f"{os.path.splitext(summary_file)[0]}_result.json")
 
-                            score, reason, score_breakdown = calculate_summary_score(ai_summary_file, evaluator_model)
-                            evaluation_result = {
-                                "score": score,
-                                "reason": reason,
-                                "score_breakdown": score_breakdown
-                            }
-                            save_evaluation_result(result_file, evaluation_result)
+                        # Check if the result file already exists
+                        if not os.path.exists(result_file):
+                            evaluate_summary(summary_file_path, evaluator_model, model_evaluation_dir, threshold)
+                        else:
+                            print(f"Skipping evaluation for {model_name} - {summary_file} as it has already been evaluated.")
+
+def main(output_dir, evaluation_dir, config_file, threshold=0.5):
+    evaluate_summaries(output_dir, evaluation_dir, config_file, threshold)
 
 if __name__ == '__main__':
     import argparse
@@ -67,7 +68,9 @@ if __name__ == '__main__':
     parser.add_argument('--output-dir', required=True, help='Directory containing the output files')
     parser.add_argument('--evaluation-dir', required=True, help='Directory to store the evaluation results')
     parser.add_argument('--config-file', default='config.json', help='Path to the configuration file')
-
+    parser.add_argument('--threshold', type=float, default=0.5, help='Threshold for the SummarizationMetric')
+    os.makedirs("snakeout/evaluated_summaries", exist_ok=True)
     args = parser.parse_args()
 
-    evaluate_summaries(args.output_dir, args.evaluation_dir, args.config_file)
+    main(args.output_dir, args.evaluation_dir, args.config_file, args.threshold)
+    

@@ -1,5 +1,7 @@
-# Define variables for repeating elements
+import json
+import os
 
+# Define variables for repeating elements
 CONFIG_FILE = "config.json"
 CONTEXT_DATA_DIR = "context_data"
 INPUT_DIR = "input"
@@ -16,22 +18,26 @@ RESULTS_QA_DIR = f"{EVALUATION_DIR}/RAG-qa"
 PLOTS_DIR = "evaluation_results_graphics"
 
 SNAKEOUT_DIR = "snakeout"
-INDEXED_DIR = f"{SNAKEOUT_DIR}/indexed"
+SNAKEOUT_INDEXED = f"{SNAKEOUT_DIR}/indexed"
+SNAKEOUT_COLLECTED = f"{SNAKEOUT_DIR}/collected"
+SNAKEOUT_EVALUATED_SUMMARIES = f"{SNAKEOUT_DIR}/evaluated_summaries"
+SNAKEOUT_EVALUATED_TEXTGEN = f"{SNAKEOUT_DIR}/evaluated_textgen"
+SNAKEOUT_EVALUATED_RAG_QA = f"{SNAKEOUT_DIR}/evaluated_rag_qa"
 
 rule all:
     input:
         TASKS_DIR,
-        OUTPUT_DIR,
-        RESULTS_SUMMARIZATION_DIR,
-        RESULTS_TEXT_GENERATION_DIR,
-        RESULTS_QA_DIR,
+        SNAKEOUT_COLLECTED,
+        SNAKEOUT_EVALUATED_SUMMARIES,
+        SNAKEOUT_EVALUATED_TEXTGEN,
+        SNAKEOUT_EVALUATED_RAG_QA,
         PLOTS_DIR
 
 rule index_data:
     input:
         script = f"{SCRIPTS_DIR}/context_indexing/index_data.py"
     output:
-        directory(INDEXED_DIR)
+        directory(SNAKEOUT_INDEXED)
     params:
         collections_dir = f"{CONTEXT_DATA_DIR}/collections",
         documents_dir = f"{CONTEXT_DATA_DIR}/documents"
@@ -41,7 +47,8 @@ rule index_data:
 rule split_input_to_files:
     input:
         script = f"{SCRIPTS_DIR}/input_data_preparation/split_input_to_files.py",
-        dependency = INDEXED_DIR
+        dependency = SNAKEOUT_INDEXED,
+        input_json = INPUT_JSON_FILE
     output:
         directory(TASKS_DIR)
     params:
@@ -52,54 +59,63 @@ rule split_input_to_files:
 rule collect_model_responses:
     input:
         dependency = TASKS_DIR,
+        dependency2 = CONFIG_FILE,
+        input_json = INPUT_JSON_FILE,
         script = f"{SCRIPTS_DIR}/output_generation/collect_model_responses.py"
     output:
-        directory(OUTPUT_DIR)
+        directory(SNAKEOUT_COLLECTED)
     params:
         input_dir = TASKS_DIR,
+        output_dir = OUTPUT_DIR,
         file = CONFIG_FILE
     shell:
-        "python {input.script} --input-dir {params.input_dir} --output-dir {output} --request-template {params.file}"
-
-rule update_output:
-    shell:
-        "python scripts/output_generation/collect_model_responses.py --input-dir input/tasks --output-dir output --request-template config.json"
+        "python {input.script} --input-dir {params.input_dir} --output-dir {params.output_dir} --request-template {params.file}"
 
 rule eval_summary:
     input:
-        script = f"{SCRIPTS_DIR}/evaluation_scripts/eval_summary.py",
-        output_dir = OUTPUT_DIR,
-        config_file = CONFIG_FILE
+        dependency = TASKS_DIR,
+        dependency2 = SNAKEOUT_COLLECTED,
+        dependency3 = INPUT_JSON_FILE,
+        config_file = CONFIG_FILE,
+        script = f"{SCRIPTS_DIR}/evaluation_scripts/eval_summary.py"
     output:
-        directory(RESULTS_SUMMARIZATION_DIR)
+        directory(SNAKEOUT_EVALUATED_SUMMARIES)
     params:
-        evaluation_dir = RESULTS_SUMMARIZATION_DIR
+        evaluation_dir = RESULTS_SUMMARIZATION_DIR,
+        output_dir = OUTPUT_DIR,
+        threshold = 0.5
     shell:
-        "python {input.script} --output-dir {input.output_dir} --evaluation-dir {params.evaluation_dir} --config-file {input.config_file}"
+        "python {input.script} --output-dir {params.output_dir} --evaluation-dir {params.evaluation_dir} --config-file {input.config_file} --threshold {params.threshold}"
 
 rule eval_text_generation:
     input:
-        script = f"{SCRIPTS_DIR}/evaluation_scripts/eval_text_generation.py",
-        output_dir = OUTPUT_DIR,
-        config_file = CONFIG_FILE
+        dependency = TASKS_DIR,
+        dependency2 = SNAKEOUT_COLLECTED,
+        dependency3 = INPUT_JSON_FILE,
+        config_file = CONFIG_FILE,
+        script = f"{SCRIPTS_DIR}/evaluation_scripts/eval_text_generation.py"
     output:
-        directory(RESULTS_TEXT_GENERATION_DIR)
+        directory(SNAKEOUT_EVALUATED_TEXTGEN)
     params:
-        evaluation_dir = RESULTS_TEXT_GENERATION_DIR
+        evaluation_dir = RESULTS_TEXT_GENERATION_DIR,
+        output_dir = OUTPUT_DIR
     shell:
-        "python {input.script} --output-dir {input.output_dir} --evaluation-dir {params.evaluation_dir} --config-file {input.config_file}"
+        "python {input.script} --output-dir {params.output_dir} --evaluation-dir {params.evaluation_dir} --config-file {input.config_file}"
 
 rule eval_rag_qa:
     input:
-        script = f"{SCRIPTS_DIR}/evaluation_scripts/eval_rag_qa.py",
-        output_dir = OUTPUT_DIR,
-        config_file = CONFIG_FILE
+        dependency = TASKS_DIR,
+        dependency2 = SNAKEOUT_COLLECTED,
+        dependency3 = INPUT_JSON_FILE,
+        config_file = CONFIG_FILE,
+        script = f"{SCRIPTS_DIR}/evaluation_scripts/eval_rag_qa.py"
     output:
-        directory(RESULTS_QA_DIR)
+        directory(SNAKEOUT_EVALUATED_RAG_QA)
     params:
-        evaluation_dir = RESULTS_QA_DIR
+        evaluation_dir = RESULTS_QA_DIR,
+        output_dir = OUTPUT_DIR
     shell:
-        "python {input.script} --output-dir {input.output_dir} --evaluation-dir {params.evaluation_dir} --config-file {input.config_file}"
+        "python {input.script} --output-dir {params.output_dir} --evaluation-dir {params.evaluation_dir} --config-file {input.config_file}"
 
 rule create_plots:
     input:
@@ -112,9 +128,8 @@ rule create_plots:
     shell:
         "python {params.script} --config {input.config_file} --results_dir {input.results_dir} --output_dir {output}"
 
-
 rule clean:
     shell:
         """
-        rm -rf {EVALUATION_DIR}/ {TASKS_DIR}/ {OUTPUT_DIR}/ {SNAKEOUT_DIR}/
+        rm -rf {EVALUATION_DIR}/ {TASKS_DIR}/ {OUTPUT_DIR}/* {SNAKEOUT_DIR}/
         """

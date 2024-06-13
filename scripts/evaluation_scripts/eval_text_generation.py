@@ -37,6 +37,17 @@ def calculate_text_generation_score(ai_generated_file, evaluator_model):
 
     return metric.score, metric.reason, metric.score_breakdown
 
+def evaluate_text_generation_task(generated_file, evaluator_model, evaluation_dir):
+    score, reason, score_breakdown = calculate_text_generation_score(generated_file, evaluator_model)
+    evaluation_result = {
+        "score": score,
+        "reason": reason,
+        "score_breakdown": score_breakdown
+    }
+
+    result_file = os.path.join(evaluation_dir, f"{os.path.splitext(os.path.basename(generated_file))[0]}_result.json")
+    save_evaluation_result(result_file, evaluation_result)
+
 def evaluate_text_generation(output_dir, evaluation_dir, config_file):
     config = load_config(config_file)
     evaluator_model = get_evaluator_model(config_file)
@@ -44,25 +55,24 @@ def evaluate_text_generation(output_dir, evaluation_dir, config_file):
     for task in config['tasks']:
         if task['task'] == 'text_generation':
             model_name = task['settings']['model']
-            model_output_dir = os.path.join(output_dir, model_name)
-            if os.path.isdir(model_output_dir):
-                model_evaluation_dir = os.path.join(evaluation_dir, model_name)
-                os.makedirs(model_evaluation_dir, exist_ok=True)
+            model_output_dir = os.path.join(output_dir, model_name, 'tasks', 'text_generation')
+            model_evaluation_dir = os.path.join(evaluation_dir, model_name)
+            os.makedirs(model_evaluation_dir, exist_ok=True)
 
-                text_generation_dir = os.path.join(model_output_dir, 'tasks', 'text_generation')
-                if os.path.exists(text_generation_dir):
-                    for generated_file in os.listdir(text_generation_dir):
-                        if generated_file.endswith('.json'):
-                            ai_generated_file = os.path.join(text_generation_dir, generated_file)
-                            result_file = os.path.join(model_evaluation_dir, f"{os.path.splitext(generated_file)[0]}_result.json")
+            if os.path.exists(model_output_dir):
+                for generated_file in os.listdir(model_output_dir):
+                    if generated_file.endswith('.json'):
+                        generated_file_path = os.path.join(model_output_dir, generated_file)
+                        result_file = os.path.join(model_evaluation_dir, f"{os.path.splitext(generated_file)[0]}_result.json")
 
-                            score, reason, score_breakdown = calculate_text_generation_score(ai_generated_file, evaluator_model)
-                            evaluation_result = {
-                                "score": score,
-                                "reason": reason,
-                                "score_breakdown": score_breakdown
-                            }
-                            save_evaluation_result(result_file, evaluation_result)
+                        # Check if the result file already exists
+                        if not os.path.exists(result_file):
+                            evaluate_text_generation_task(generated_file_path, evaluator_model, model_evaluation_dir)
+                        else:
+                            print(f"Skipping evaluation for {model_name} - {generated_file} as it has already been evaluated.")
+
+def main(output_dir, evaluation_dir, config_file):
+    evaluate_text_generation(output_dir, evaluation_dir, config_file)
 
 if __name__ == '__main__':
     import argparse
@@ -71,7 +81,7 @@ if __name__ == '__main__':
     parser.add_argument('--output-dir', required=True, help='Directory containing the output files')
     parser.add_argument('--evaluation-dir', required=True, help='Directory to store the evaluation results')
     parser.add_argument('--config-file', default='config.json', help='Path to the configuration file')
-
+    os.makedirs("snakeout/evaluated_textgen", exist_ok=True)
     args = parser.parse_args()
 
-    evaluate_text_generation(args.output_dir, args.evaluation_dir, args.config_file)
+    main(args.output_dir, args.evaluation_dir, args.config_file)

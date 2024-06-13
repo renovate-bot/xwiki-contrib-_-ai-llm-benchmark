@@ -100,6 +100,7 @@ def main():
     auth = (username, password)
     request_template = load_data(args.request_template)
     process_tasks(args.input_dir, args.output_dir, request_template, base_url, auth)
+    os.makedirs("snakeout/collected", exist_ok=True)
 
 if __name__ == '__main__':
     main()
