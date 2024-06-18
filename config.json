@@ -11,7 +11,8 @@
         "model": "AI.Models.waise_gpt3_5_turbo",
         "temperature": 0.3,
         "stream": false
-      }
+      },
+      "power_measurement": false
     },
     {
       "task": "RAG-qa",
@@ -19,7 +20,8 @@
         "model": "AI.Models.waise-gpt-4o",
         "temperature": 0.3,
         "stream": false
-      }
+      },
+      "power_measurement": false
     },
     {
       "task": "RAG-qa",
@@ -27,7 +29,8 @@
         "model": "AI.Models.waise-mixtral",
         "temperature": 0.3,
         "stream": false
-      }
+      },
+      "power_measurement": true
     },
     {
       "task": "summarization",
@@ -35,7 +38,8 @@
         "model": "AI.Models.gpt3_5_turbo",
         "temperature": 0.3,
         "stream": false
-      }
+      },
+      "power_measurement": false
     },
     {
       "task": "summarization",
@@ -43,7 +47,8 @@
         "model": "AI.Models.GPT-4o",
         "temperature": 0.3,
         "stream": false
-      }
+      },
+      "power_measurement": false
     },
     {
       "task": "summarization",
@@ -51,7 +56,8 @@
         "model": "AI.Models.mixtral",
         "temperature": 0.3,
         "stream": false
-      }
+      },
+      "power_measurement": true
     },
     {
       "task": "text_generation",
@@ -59,7 +65,8 @@
         "model": "AI.Models.gpt3_5_turbo",
         "temperature": 0.3,
         "stream": false
-      }
+      },
+      "power_measurement": false
     },
     {
       "task": "text_generation",
@@ -67,7 +74,8 @@
         "model": "AI.Models.GPT-4o",
         "temperature": 0.3,
         "stream": false
-      }
+      },
+      "power_measurement": false
     },
     {
       "task": "text_generation",
@@ -75,7 +83,8 @@
         "model": "AI.Models.mixtral",
         "temperature": 0.3,
         "stream": false
-      }
+      },
+      "power_measurement": true
     }
   ]
 }

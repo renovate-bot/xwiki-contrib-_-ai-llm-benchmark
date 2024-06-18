@@ -11,6 +11,7 @@ SCRIPTS_DIR = "scripts"
 OUTPUT_DIR = "output"
 EVALUATION_DIR = "evaluation_results"
 
+
 RESULTS_SUMMARIZATION_DIR = f"{EVALUATION_DIR}/summarization"
 RESULTS_TEXT_GENERATION_DIR = f"{EVALUATION_DIR}/text_generation"
 RESULTS_QA_DIR = f"{EVALUATION_DIR}/RAG-qa"
@@ -23,6 +24,7 @@ SNAKEOUT_COLLECTED = f"{SNAKEOUT_DIR}/collected"
 SNAKEOUT_EVALUATED_SUMMARIES = f"{SNAKEOUT_DIR}/evaluated_summaries"
 SNAKEOUT_EVALUATED_TEXTGEN = f"{SNAKEOUT_DIR}/evaluated_textgen"
 SNAKEOUT_EVALUATED_RAG_QA = f"{SNAKEOUT_DIR}/evaluated_rag_qa"
+SNAKEOUT_AVERAGE_POWER = f"{SNAKEOUT_DIR}/average_power"
 
 rule all:
     input:
@@ -31,6 +33,7 @@ rule all:
         SNAKEOUT_EVALUATED_SUMMARIES,
         SNAKEOUT_EVALUATED_TEXTGEN,
         SNAKEOUT_EVALUATED_RAG_QA,
+        SNAKEOUT_AVERAGE_POWER,
         PLOTS_DIR
 
 rule index_data:
@@ -128,8 +131,20 @@ rule create_plots:
     shell:
         "python {params.script} --config {input.config_file} --results_dir {input.results_dir} --output_dir {output}"
 
+rule calculate_average_power:
+    input:
+        dependency = SNAKEOUT_COLLECTED,
+        script = f"{SCRIPTS_DIR}/evaluation_scripts/calculate_average_power.py"
+    output:
+        directory(SNAKEOUT_AVERAGE_POWER)
+    params:
+        evaluation_dir = OUTPUT_DIR,
+        output_dir = EVALUATION_DIR
+    shell:
+        "python {input.script} --evaluation-dir {params.evaluation_dir} --output-dir {params.output_dir}"
+
 rule clean:
     shell:
         """
-        rm -rf {EVALUATION_DIR}/ {TASKS_DIR}/ {OUTPUT_DIR}/* {SNAKEOUT_DIR}/
+        rm -rf {EVALUATION_DIR}/ {TASKS_DIR}/ {OUTPUT_DIR}/* {SNAKEOUT_DIR}/ {PLOTS_DIR}/*
         """

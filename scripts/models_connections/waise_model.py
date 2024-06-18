@@ -4,7 +4,7 @@ import json
 from dotenv import load_dotenv
 
 class WaiseModel:
-    def __init__(self, model="AI.Models.mixtral", temperature=1, stream=False, verbose=False):
+    def __init__(self, model="AI.Models.llama3", temperature=1, stream=False, verbose=False):
         # Load environment variables
         load_dotenv()
 

@@ -78,7 +78,7 @@ def process_evaluation_results(config, results_dir, output_dir):
                         bar_data.append({
                             'Model': model,
                             'Criterion': criterion,
-                            'Score': item.get('average_score', item.get('score', 0))  # Default to 0 if 'score' is not present
+                            'Score': item.get('average_score', item.get('score', 0)) # Default to 0 if 'score' is not present
                         })
 
         # Generate bar charts for each criterion
@@ -89,6 +89,71 @@ def process_evaluation_results(config, results_dir, output_dir):
 
         # Generate grouped bar chart for all criteria
         generate_grouped_bar_chart(bar_data, task_name, output_dir, f'{task_name}_grouped_bar_chart.png')
+
+# Function to generate average power consumption bar chart
+def generate_average_power_chart(data, output_dir, file_name):
+    df = pd.DataFrame(data)
+    print("Data for average power chart:", df)  # Debug print statement
+    plt.figure(figsize=(10, 6))
+    sns.barplot(x='Model', y='Average Power Consumption', data=df)
+    plt.title('Average Power Consumption by Model')
+    plt.xticks(rotation=45)
+    plt.savefig(os.path.join(output_dir, file_name))
+    plt.close()
+
+# Function to generate average power consumption grouped bar chart
+def generate_average_power_grouped_chart(data, output_dir, file_name):
+    df = pd.DataFrame(data)
+    print("Data for average power grouped chart:", df)  # Debug print statement
+    plt.figure(figsize=(12, 8))
+    sns.barplot(x='Model', y='power_consumption', hue='Task', data=df)
+    plt.title('Average Power Consumption by Model and Task')
+    plt.xticks(rotation=45)
+    plt.savefig(os.path.join(output_dir, file_name))
+    plt.close()
+
+# Function to generate detailed power consumption charts
+def generate_detailed_power_charts(data, output_dir):
+    df = pd.DataFrame(data)
+    print("Data for detailed power charts:", df)  # Debug print statement
+    metrics = ['power_per_input_token', 'power_per_output_token', 'power_per_total_token']
+    for metric in metrics:
+        plt.figure(figsize=(12, 8))
+        sns.barplot(x='Model', y=metric, hue='Task', data=df)
+        plt.title(f'Average {metric.replace("_", " ").capitalize()} by Model and Task')
+        plt.xticks(rotation=45)
+        plt.savefig(os.path.join(output_dir, f'average_{metric}_grouped_chart.png'))
+        plt.close()
+
+# Function to process average power consumption data and generate visualizations
+def process_average_power_data(results_dir, output_dir):
+    average_power_file = os.path.join(results_dir, 'average_power_consumption.json')
+    if os.path.exists(average_power_file):
+        with open(average_power_file, 'r') as f:
+            average_power_data = json.load(f)
+
+        model_data = []
+        task_data = []
+        for model, data in average_power_data.items():
+            model_data.append({
+                'Model': model,
+                'Average Power Consumption': data['model_average']
+            })
+            for task, power_data in data['task_averages'].items():
+                task_data.append({
+                    'Model': model,
+                    'Task': task,
+                    'power_consumption': power_data['power_consumption'],
+                    'power_per_input_token': power_data['power_per_input_token'],
+                    'power_per_output_token': power_data['power_per_output_token'],
+                    'power_per_total_token': power_data['power_per_total_token']
+                })
+
+        generate_average_power_chart(model_data, output_dir, 'average_power_consumption_chart.png')
+        generate_average_power_grouped_chart(task_data, output_dir, 'average_power_consumption_grouped_chart.png')
+        generate_detailed_power_charts(task_data, output_dir)
+    else:
+        print(f"Average power consumption data file not found: {average_power_file}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate plots from evaluation results.")
@@ -104,3 +169,6 @@ if __name__ == "__main__":
     # Load configuration and run the processing function
     config = load_config(args.config)
     process_evaluation_results(config, args.results_dir, args.output_dir)
+
+    # Process average power consumption data and generate visualizations
+    process_average_power_data(args.results_dir, args.output_dir)
