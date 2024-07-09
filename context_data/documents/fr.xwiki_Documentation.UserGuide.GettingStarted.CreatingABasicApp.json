@@ -1,0 +1,9 @@
+{
+  "id": "xwiki:Documentation.UserGuide.GettingStarted.CreatingABasicApp",
+  "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/CreatingABasicApp",
+  "title": "Step 7: Creating a basic application",
+  "collection": "Eval_fr",
+  "mimetype": "text/markdown",
+  "language": "fr",
+  "content": "Dans XWiki, vous pouvez exploiter le système de gestion de données structurées pour créer des applications web collaboratives en quelques minutes.\n\nCommencez par cliquer sur \"Plus d'applications\" dans le panneau \"Applications\", puis cliquez sur \"Créez la vôtre !\". Cela vous mènera à la page d'accueil de [App Within Minutes](https://extensions.xwiki.org/xwiki/bin/view/Extension/App%20Within%20Minutes%20Application).\n\nCliquez sur le bouton \"Créer une application\" pour démarrer l'assistant.\n\n[![AWM.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/GettingStarted/CreatingABasicApp/AWM.png?width=960&rev=1.1)](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/GettingStarted/CreatingABasicApp/AWM.png?rev=1.1)\n\nEn seulement quatre étapes, vous pourrez créer votre propre application sans écrire une seule ligne de code. Vous pouvez en savoir plus sur “App Within Minutes” en lisant la [page de documentation](https://extensions.xwiki.org/xwiki/bin/view/Extension/App%20Within%20Minutes%20Application) ou en essayant le [tutoriel de l'application Gestionnaire de Contacts](https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/Tutorials/Creating%20A%20Contact%20Manager%20Application/).\n\n**Ensuite [Conseils pour aller plus loin](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/GoingFurther)**"
+}

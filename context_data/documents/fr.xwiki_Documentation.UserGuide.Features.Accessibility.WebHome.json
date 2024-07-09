@@ -1,0 +1,9 @@
+{
+  "id": "xwiki:Documentation.UserGuide.Features.Accessibility.WebHome",
+  "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Accessibility/",
+  "title": "Accessibility",
+  "collection": "Eval_fr",
+  "mimetype": "text/markdown",
+  "language": "fr",
+  "content": "XWiki essaie de fournir une expérience accessible.\n\nPour ce faire, nous visons à respecter le niveau AA des [WCAG 2.2](https://www.w3.org/TR/WCAG22/).\n\nNous effectuons régulièrement des [tests automatisés](https://dev.xwiki.org/xwiki/bin/view/Community/Testing/WCAGTesting/) et suivons les problèmes d'accessibilité.\n\nLes développeurs de XWiki suivent nos directives d'accessibilité ([WIP](https://forum.xwiki.org/t/proposal-accessibility-guidelines/14318)). Tout utilisateur de script devrait également essayer de suivre ces directives afin de continuer à créer des interfaces accessibles."
+}

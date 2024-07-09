@@ -1,0 +1,9 @@
+{
+  "id": "xwiki:Documentation.UserGuide.Features.RightsManagement",
+  "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/RightsManagement",
+  "title": "Rights Management",
+  "collection": "Eval_fr",
+  "mimetype": "text/markdown",
+  "language": "fr",
+  "content": "XWiki fournit un système de permissions puissant et granulaire vous permettant de contrôler précisément ce que les [utilisateurs et groupes](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/UsersAndGroupsManagement) peuvent faire dans le wiki.\n\nIl offre divers droits qui peuvent être accordés (ou refusés), tels que le droit de \"Voir\" (capacité de voir les pages), le droit d'\"Éditer\" (capacité d'éditer le contenu des pages), le droit de \"Supprimer\" (capacité de supprimer des pages) ou le droit d'\"Administrer\" (capacité d'administrer les pages ou le wiki), pour n'en nommer que quelques-uns. Ces droits peuvent être définis à différents niveaux : pour l'ensemble du wiki ou pour un espace donné et ses enfants.\n\nSi nécessaire, il est même possible d'écrire un [script](https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/Scripting) pour contrôler de manière programmatique exactement ce que les utilisateurs sont autorisés à faire.\n\n*Exemple de l'interface des droits*  \n![GroupRights.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/RightsManagement/GroupRights.png?rev=1.1)\n\nPour apprendre comment configurer les permissions, consultez la [documentation des Droits dans le Guide Administrateur](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/)."
+}

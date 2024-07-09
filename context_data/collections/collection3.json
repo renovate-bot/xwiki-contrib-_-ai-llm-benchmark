@@ -1,6 +1,6 @@
 {
-    "id": "Eval_fr",
-    "title": "Eval_fr",
+    "id": "Eval_de",
+    "title": "Eval_de",
     "embedding_model": "AI.Models.bert",
     "chunking_method": "maxChars",
     "chunking_max_size": 1000,
