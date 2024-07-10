@@ -43,18 +43,33 @@ def get_gpu_power_usage():
     except (FileNotFoundError, subprocess.CalledProcessError):
         return 'N/A'
     
-def measure_power_consumption(model, temperature, stream, question, baseline_power, power_readings):
+def measure_power_consumption(model, temperature, stream, question, baseline_power):
+    power_readings = []
+    stop_event = threading.Event()
+    
+    power_thread = threading.Thread(target=collect_power_readings, args=(power_readings, stop_event))
+    power_thread.start()
+    
     start_time = time.time()
     response = send_request_to_model(model, temperature, stream, question)
     end_time = time.time()
-
+    
+    stop_event.set()
+    power_thread.join()
+    
+    duration = end_time - start_time
+    
     if power_readings:
         avg_power = sum(power_readings) / len(power_readings)
-        power_consumption = avg_power - baseline_power
+        avg_power_draw = avg_power - baseline_power  # Average power draw above baseline
+        energy_consumption = avg_power_draw * duration  # Energy in Joules
     else:
-        power_consumption = 'N/A'
+        avg_power_draw = 'N/A'
+        energy_consumption = 'N/A'
 
-    return response, power_consumption
+    return response, avg_power_draw, energy_consumption
+
+
 
 def collect_power_readings(power_readings, stop_event):
     while not stop_event.is_set():
@@ -82,32 +97,25 @@ def process_request(task_name, question_data, settings, question_file, baseline_
     stream = settings['stream']
 
     if measure_power:
-        power_readings = []
-        stop_event = threading.Event()
-        power_thread = threading.Thread(target=collect_power_readings, args=(power_readings, stop_event))
-        power_thread.start()
-
-        response, power_consumption = measure_power_consumption(model, temperature, stream, question, baseline_power, power_readings)
-
-        stop_event.set()
-        power_thread.join()
+        response, avg_power_draw, energy_consumption = measure_power_consumption(model, temperature, stream, question, baseline_power)
     else:
         response = send_request_to_model(model, temperature, stream, question)
-        power_consumption = 'N/A'
+        avg_power_draw = 'N/A'
+        energy_consumption = 'N/A'
 
     answer_content = response['choices'][0]['message']['content']
     sources = response['choices'][0]['message']['context']
     usage = response.get('usage', {})
 
-    # Calculate power per token metrics
-    power_per_input_token = 'N/A'
-    power_per_output_token = 'N/A'
-    power_per_total_token = 'N/A'
+    # Calculate energy per token metrics
+    energy_per_input_token = 'N/A'
+    energy_per_output_token = 'N/A'
+    energy_per_total_token = 'N/A'
 
-    if usage and power_consumption != 'N/A':
-        power_per_input_token = power_consumption / usage['prompt_tokens'] if usage.get('prompt_tokens', 0) > 0 else 'N/A'
-        power_per_output_token = power_consumption / usage['completion_tokens'] if usage.get('completion_tokens', 0) > 0 else 'N/A'
-        power_per_total_token = power_consumption / usage['total_tokens'] if usage.get('total_tokens', 0) > 0 else 'N/A'
+    if usage and energy_consumption != 'N/A':
+        energy_per_input_token = energy_consumption / usage['prompt_tokens'] if usage.get('prompt_tokens', 0) > 0 else 'N/A'
+        energy_per_output_token = energy_consumption / usage['completion_tokens'] if usage.get('completion_tokens', 0) > 0 else 'N/A'
+        energy_per_total_token = energy_consumption / usage['total_tokens'] if usage.get('total_tokens', 0) > 0 else 'N/A'
 
     return {
         'id': question_id,
@@ -116,10 +124,11 @@ def process_request(task_name, question_data, settings, question_file, baseline_
         'ai_answer': answer_content,
         'sources': sources,
         'usage': usage,
-        'power_consumption': power_consumption,
-        'power_per_input_token': power_per_input_token,
-        'power_per_output_token': power_per_output_token,
-        'power_per_total_token': power_per_total_token
+        'average_power_draw': f"{avg_power_draw:.4f} W" if avg_power_draw != 'N/A' else 'N/A',
+        'energy_consumption': f"{energy_consumption:.4f} J" if energy_consumption != 'N/A' else 'N/A',
+        'energy_per_input_token': f"{energy_per_input_token:.4f} J/token" if energy_per_input_token != 'N/A' else 'N/A',
+        'energy_per_output_token': f"{energy_per_output_token:.4f} J/token" if energy_per_output_token != 'N/A' else 'N/A',
+        'energy_per_total_token': f"{energy_per_total_token:.4f} J/token" if energy_per_total_token != 'N/A' else 'N/A'
     }
 
 def process_tasks(input_dir, output_dir, request_template, baseline_power):
@@ -158,7 +167,7 @@ def main():
         time.sleep(0.1)  # Adjust the interval as needed
     baseline_power = sum(baseline_power_readings) / len(baseline_power_readings)
     print(f"Baseline power usage: {baseline_power} W")
-
+    print("Gathering responses...")
     process_tasks(args.input_dir, args.output_dir, request_template, baseline_power)
     os.makedirs("snakeout/collected", exist_ok=True)
 
