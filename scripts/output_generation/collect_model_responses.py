@@ -80,55 +80,76 @@ def collect_power_readings(power_readings, stop_event):
 
 def process_request(task_name, question_data, settings, question_file, baseline_power, measure_power):
     question_id = question_data['id']
-    if task_name == 'RAG-qa' or task_name == 'text_generation':
-        question = question_data['prompt']
-        expected_answer = question_data['expected_answer']
-    elif task_name == 'summarization':
-        data_path = question_data['data_path']
-        abs_data_path = os.path.abspath(os.path.join(os.path.dirname(question_file), '..', '..', data_path))
-        content = load_data(abs_data_path)["content"]
-        question = f"Please summarize the following text:\n\n{content}"
-        expected_answer = None
-    else:
-        raise ValueError(f"Unknown task: {task_name}")
+    question, expected_answer = prepare_question(task_name, question_data, question_file)
 
     model = settings['model']
     temperature = settings['temperature']
     stream = settings['stream']
 
-    if measure_power:
-        response, avg_power_draw, energy_consumption = measure_power_consumption(model, temperature, stream, question, baseline_power)
+    response, avg_power_draw, energy_consumption = measure_model_performance(
+        model, temperature, stream, question, baseline_power, measure_power
+    )
+
+    result = process_response(response, question_id, question, expected_answer)
+    result.update(calculate_energy_metrics(energy_consumption, response['usage'], avg_power_draw))
+
+    return result
+
+def prepare_question(task_name, question_data, question_file):
+    if task_name in ['RAG-qa', 'text_generation']:
+        return question_data['prompt'], question_data['expected_answer']
+    elif task_name == 'summarization':
+        content = load_data(os.path.abspath(os.path.join(os.path.dirname(question_file), '..', '..', question_data['data_path'])))["content"]
+        return f"Please summarize the following text:\n\n{content}", None
     else:
-        response = send_request_to_model(model, temperature, stream, question)
-        avg_power_draw = 'N/A'
-        energy_consumption = 'N/A'
+        raise ValueError(f"Unknown task: {task_name}")
 
-    answer_content = response['choices'][0]['message']['content']
-    sources = response['choices'][0]['message']['context']
-    usage = response.get('usage', {})
+def measure_model_performance(model, temperature, stream, question, baseline_power, measure_power):
+    if measure_power:
+        return measure_power_consumption(model, temperature, stream, question, baseline_power)
+    else:
+        return send_request_to_model(model, temperature, stream, question), 'N/A', 'N/A'
 
-    # Calculate energy per token metrics
-    energy_per_input_token = 'N/A'
-    energy_per_output_token = 'N/A'
-    energy_per_total_token = 'N/A'
-
-    if usage and energy_consumption != 'N/A':
-        energy_per_input_token = energy_consumption / usage['prompt_tokens'] if usage.get('prompt_tokens', 0) > 0 else 'N/A'
-        energy_per_output_token = energy_consumption / usage['completion_tokens'] if usage.get('completion_tokens', 0) > 0 else 'N/A'
-        energy_per_total_token = energy_consumption / usage['total_tokens'] if usage.get('total_tokens', 0) > 0 else 'N/A'
-
+def process_response(response, question_id, question, expected_answer):
     return {
         'id': question_id,
         'prompt': question,
         'expected_answer': expected_answer,
-        'ai_answer': answer_content,
-        'sources': sources,
-        'usage': usage,
-        'average_power_draw': f"{avg_power_draw:.4f} W" if avg_power_draw != 'N/A' else 'N/A',
-        'energy_consumption': f"{energy_consumption:.4f} J" if energy_consumption != 'N/A' else 'N/A',
-        'energy_per_input_token': f"{energy_per_input_token:.4f} J/token" if energy_per_input_token != 'N/A' else 'N/A',
-        'energy_per_output_token': f"{energy_per_output_token:.4f} J/token" if energy_per_output_token != 'N/A' else 'N/A',
-        'energy_per_total_token': f"{energy_per_total_token:.4f} J/token" if energy_per_total_token != 'N/A' else 'N/A'
+        'ai_answer': response['choices'][0]['message']['content'],
+        'sources': response['choices'][0]['message']['context'],
+        'usage': response.get('usage', {})
+    }
+
+def calculate_energy_metrics(energy_consumption, usage, avg_power_draw):
+    if energy_consumption == 'N/A':
+        return {
+            'average_power_draw': 'N/A',
+            'energy_consumption': 'N/A',
+            'energy_per_input_token': 'N/A',
+            'energy_per_output_token': 'N/A',
+            'energy_per_total_token': 'N/A'
+        }
+
+    input_tokens = usage['prompt_tokens']
+    output_tokens = usage['completion_tokens']
+    total_tokens = usage['total_tokens']
+
+    input_weight = 1
+    output_weight = 2.5
+
+    weighted_input_tokens = input_tokens * input_weight
+    weighted_output_tokens = output_tokens * output_weight
+    total_weighted_tokens = weighted_input_tokens + weighted_output_tokens
+
+    input_energy = (weighted_input_tokens / total_weighted_tokens) * energy_consumption
+    output_energy = (weighted_output_tokens / total_weighted_tokens) * energy_consumption
+
+    return {
+        'average_power_draw': f"{avg_power_draw:.4f} W",
+        'energy_consumption': f"{energy_consumption:.4f} J",
+        'energy_per_input_token': f"{(input_energy / input_tokens):.4f} J/token",
+        'energy_per_output_token': f"{(output_energy / output_tokens):.4f} J/token",
+        'energy_per_total_token': f"{(energy_consumption / total_tokens):.4f} J/token"
     }
 
 def process_tasks(input_dir, output_dir, request_template, baseline_power):
