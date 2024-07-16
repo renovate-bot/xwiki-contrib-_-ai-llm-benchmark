@@ -1,5 +1,6 @@
 import os
 import sys
+from langdetect import detect
 
 # Add the parent directory of the 'scripts' folder to the Python module search path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
@@ -18,22 +19,29 @@ def calculate_summary_score(ai_summary_file, evaluator_model, threshold=0.5):
     input_text = summary_data['prompt']
     generated_summary = summary_data['ai_answer']
 
+    # Detect languages
+    input_language = detect(input_text)
+    summary_language = detect(generated_summary)
+
     test_case = LLMTestCase(input=input_text, actual_output=generated_summary)
     metric = SummarizationMetric(threshold=threshold, model=evaluator_model)
     metric.measure(test_case)
 
-    return metric.score, metric.reason, metric.score_breakdown
+    return metric.score, metric.reason, metric.score_breakdown, input_language, summary_language
 
 def evaluate_summary(summary_file, evaluator_model, evaluation_dir, threshold=0.5):
-    score, reason, score_breakdown = calculate_summary_score(summary_file, evaluator_model, threshold)
+    score, reason, score_breakdown, input_language, summary_language = calculate_summary_score(summary_file, evaluator_model, threshold)
     evaluation_result = {
         "score": score,
         "reason": reason,
-        "score_breakdown": score_breakdown
+        "score_breakdown": score_breakdown,
+        "input_language": input_language,
+        "summary_language": summary_language
     }
 
     result_file = os.path.join(evaluation_dir, f"{os.path.splitext(os.path.basename(summary_file))[0]}_result.json")
     save_evaluation_result(result_file, evaluation_result)
+
 
 def evaluate_summaries(output_dir, evaluation_dir, config_file, threshold=0.5):
     config = load_config(config_file)

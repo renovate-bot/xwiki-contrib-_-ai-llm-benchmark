@@ -4,6 +4,7 @@ import json
 from deepeval import evaluate
 from deepeval.metrics import GEval
 from deepeval.test_case import LLMTestCase, LLMTestCaseParams
+from langdetect import detect
 
 # Add the parent directory of the 'scripts' folder to the Python module search path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
@@ -20,6 +21,11 @@ def calculate_text_generation_score(ai_generated_file, evaluator_model):
     generated_text = generated_data['ai_answer']
     expected_answer = generated_data['expected_answer']
 
+    # Detect languages
+    prompt_language = detect(prompt)
+    expected_answer_language = detect(expected_answer)
+    generated_text_language = detect(generated_text)
+
     # Create the test case
     test_case = LLMTestCase(input=prompt, actual_output=generated_text, expected_output=expected_answer)
 
@@ -35,14 +41,16 @@ def calculate_text_generation_score(ai_generated_file, evaluator_model):
     # Measure the test case
     metric.measure(test_case)
 
-    return metric.score, metric.reason, metric.score_breakdown
+    return metric.score, metric.reason, prompt_language, expected_answer_language, generated_text_language
 
 def evaluate_text_generation_task(generated_file, evaluator_model, evaluation_dir):
-    score, reason, score_breakdown = calculate_text_generation_score(generated_file, evaluator_model)
+    score, reason, prompt_language, expected_answer_language, generated_text_language = calculate_text_generation_score(generated_file, evaluator_model)
     evaluation_result = {
         "score": score,
         "reason": reason,
-        "score_breakdown": score_breakdown
+        "prompt_language": prompt_language,
+        "expected_answer_language": expected_answer_language,
+        "generated_text_language": generated_text_language
     }
 
     result_file = os.path.join(evaluation_dir, f"{os.path.splitext(os.path.basename(generated_file))[0]}_result.json")

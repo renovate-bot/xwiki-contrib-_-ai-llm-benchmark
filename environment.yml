@@ -1,4 +1,4 @@
-name: snakemake
+name: eval
 channels:
   - conda-forge
   - bioconda
@@ -19,7 +19,11 @@ dependencies:
   - ragas=0.1.7
   - seaborn=0.11.0
   - plotly
-  - kaleido
+  - langdetect
+  - markdownify
+  - reportlab
+  - bs4
   - pip=24.0
   - pip:
     - deepeval
+    - kaleido

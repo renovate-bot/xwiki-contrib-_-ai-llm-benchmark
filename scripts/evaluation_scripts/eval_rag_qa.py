@@ -8,6 +8,8 @@ from deepeval.metrics import ContextualRecallMetric
 from deepeval.metrics import ContextualPrecisionMetric
 from deepeval.metrics import ContextualRelevancyMetric
 from deepeval.test_case import LLMTestCase
+from langdetect import detect
+
 
 # Add the parent directory of the 'scripts' folder to the Python module search path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
@@ -24,6 +26,11 @@ def calculate_ragas_score(ai_qa_file, evaluator_model):
     expected_answer = qa_data['expected_answer']
     ai_answer = qa_data['ai_answer']
     retrieval_context = [source['content'] for source in qa_data.get('sources', [])]
+
+    # Detect languages
+    question_language = detect(prompt)
+    expected_answer_language = detect(expected_answer)
+    answer_language = detect(ai_answer)
 
     # Create the test case
     test_case = LLMTestCase(
@@ -81,18 +88,22 @@ def calculate_ragas_score(ai_qa_file, evaluator_model):
         "ContextualRecall": cr_metric.reason
     }
 
-    return average_score, individual_scores, reasons
+    return average_score, individual_scores, reasons, question_language, expected_answer_language, answer_language
 
 def evaluate_rag_qa_task(qa_file, evaluator_model, evaluation_dir):
-    average_score, individual_scores, reasons = calculate_ragas_score(qa_file, evaluator_model)
+    average_score, individual_scores, reasons, question_language, expected_answer_language, answer_language = calculate_ragas_score(qa_file, evaluator_model)
     evaluation_result = {
         "average_score": average_score,
         "individual_scores": individual_scores,
-        "reasons": reasons
+        "reasons": reasons,
+        "question_language": question_language,
+        "expected_answer_language": expected_answer_language,
+        "answer_language": answer_language
     }
 
     result_file = os.path.join(evaluation_dir, f"{os.path.splitext(os.path.basename(qa_file))[0]}_result.json")
     save_evaluation_result(result_file, evaluation_result)
+
 
 def evaluate_rag_qa(output_dir, evaluation_dir, config_file):
     config = load_config(config_file)
