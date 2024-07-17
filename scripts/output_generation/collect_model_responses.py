@@ -153,25 +153,42 @@ def calculate_energy_metrics(energy_consumption, usage, avg_power_draw):
     }
 
 def process_tasks(input_dir, output_dir, request_template, baseline_power):
-    for task in request_template['tasks']:
+    total_tasks = len(request_template['tasks'])
+    for task_index, task in enumerate(request_template['tasks'], 1):
         task_name = task['task']
         settings = task['settings']
         model_name = settings['model']
         measure_power = task.get('power_measurement', False)
+        
+        print(f"\n[{task_index}/{total_tasks}] Processing task: {task_name}")
+        print(f"Model: {model_name}")
+        print(f"Power measurement: {'Enabled' if measure_power else 'Disabled'}")
+        
         task_input_dir = os.path.join(input_dir, task_name)
         filenames = os.listdir(task_input_dir)
-        for filename in filenames:
+        total_files = len(filenames)
+        
+        for file_index, filename in enumerate(filenames, 1):
             if filename.endswith(".json"):
                 question_file = os.path.join(task_input_dir, filename)
                 question_data = load_data(question_file)
                 question_id = question_data['id']
                 output_file = os.path.join(output_dir, model_name, 'tasks', task_name, f"{question_id}.json")
+                
+                print(f"\n  [{file_index}/{total_files}] Processing question ID: {question_id}")
+                
                 if os.path.exists(output_file):
-                    print(f"Skipping question {question_id} as it already exists.")
+                    print(f"    Skipping question {question_id} as it already exists.")
                     continue
+                
+                print(f"    Sending request to model...")
                 result = process_request(task_name, question_data, settings, question_file, baseline_power, measure_power)
                 save_result(output_dir, model_name, task_name, question_id, result)
-    print(f"All requests processed. Results stored in {output_dir}.")
+                print(f"    Response received and saved.")
+        
+        print(f"\nCompleted task: {task_name}")
+    
+    print(f"\nAll tasks processed. Results stored in {output_dir}.")
 
 def main():
     args = parse_arguments()
