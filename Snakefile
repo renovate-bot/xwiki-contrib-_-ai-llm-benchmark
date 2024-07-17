@@ -17,6 +17,7 @@ RESULTS_TEXT_GENERATION_DIR = f"{EVALUATION_DIR}/text_generation"
 RESULTS_QA_DIR = f"{EVALUATION_DIR}/RAG-qa"
 
 PLOTS_DIR = "evaluation_results_graphics"
+REPORTS_DIR = "reports"
 
 SNAKEOUT_DIR = "snakeout"
 SNAKEOUT_INDEXED = f"{SNAKEOUT_DIR}/indexed"
@@ -26,7 +27,7 @@ SNAKEOUT_EVALUATED_TEXTGEN = f"{SNAKEOUT_DIR}/evaluated_textgen"
 SNAKEOUT_EVALUATED_RAG_QA = f"{SNAKEOUT_DIR}/evaluated_rag_qa"
 SNAKEOUT_AVERAGE_POWER = f"{SNAKEOUT_DIR}/average_power"
 
-rule all:
+rule evaluate:
     input:
         TASKS_DIR,
         SNAKEOUT_COLLECTED,
@@ -34,23 +35,49 @@ rule all:
         SNAKEOUT_EVALUATED_TEXTGEN,
         SNAKEOUT_EVALUATED_RAG_QA,
         SNAKEOUT_AVERAGE_POWER,
-        PLOTS_DIR
+        REPORTS_DIR
 
-rule index_data:
+rule download:
+    input:
+        script = f"{SCRIPTS_DIR}/context_gathering/download_wiki_page.py",
+        urls = "input/urls.txt"
+    shell:
+        "python {input.script} {input.urls}"
+
+rule translate_to_french:
+    input:
+        script = f"{SCRIPTS_DIR}/translation/translate.py"
+    output:
+        directory(f"{CONTEXT_DATA_DIR}/documents_fr")
+    params:
+        language = "fr",
+        collection = "Eval_FR"
+    shell:
+        "python {input.script} {params.language} {params.collection}"
+
+rule translate_to_german:
+    input:
+        script = f"{SCRIPTS_DIR}/translation/translate.py"
+    output:
+        directory(f"{CONTEXT_DATA_DIR}/documents_de")
+    params:
+        language = "de",
+        collection = "Eval_DE"
+    shell:
+        "python {input.script} {params.language} {params.collection}"
+
+rule index:
     input:
         script = f"{SCRIPTS_DIR}/context_indexing/index_data.py"
-    output:
-        directory(SNAKEOUT_INDEXED)
     params:
         collections_dir = f"{CONTEXT_DATA_DIR}/collections",
         documents_dir = f"{CONTEXT_DATA_DIR}/documents"
     shell:
-        "python {input.script} --collections-dir {params.collections_dir} --documents-dir {params.documents_dir} --output-dir {output}"
+        "python {input.script} --collections-dir {params.collections_dir} --documents-dir {params.documents_dir}"
 
-rule split_input_to_files:
+rule split:
     input:
         script = f"{SCRIPTS_DIR}/input_data_preparation/split_input_to_files.py",
-        dependency = SNAKEOUT_INDEXED,
         input_json = INPUT_JSON_FILE
     output:
         directory(TASKS_DIR)
@@ -59,7 +86,7 @@ rule split_input_to_files:
     shell:
         "python {input.script} --input-file {params.file} --output-dir {output}"
 
-rule collect_model_responses:
+rule collect:
     input:
         dependency = TASKS_DIR,
         dependency2 = CONFIG_FILE,
@@ -120,7 +147,7 @@ rule eval_rag_qa:
     shell:
         "python {input.script} --output-dir {params.output_dir} --evaluation-dir {params.evaluation_dir} --config-file {input.config_file}"
 
-rule create_plots:
+rule generate_plots:
     input:
         config_file = CONFIG_FILE,
         results_dir = EVALUATION_DIR
@@ -130,6 +157,18 @@ rule create_plots:
         script = f"{SCRIPTS_DIR}/results_visualization/create_plots.py"
     shell:
         "python {params.script} --config {input.config_file} --results_dir {input.results_dir} --output_dir {output}"
+
+rule generate_report:
+    input:
+        config_file = CONFIG_FILE,
+        plots_dir = PLOTS_DIR,
+        evaluation_results_dir = EVALUATION_DIR,
+        model_outputs_dir = OUTPUT_DIR,
+        script = f"{SCRIPTS_DIR}/results_visualization/create_report.py"
+    output:
+        directory(REPORTS_DIR)
+    shell:
+        "python {input.script} --config {input.config_file} --plots_dir {input.plots_dir} --output_dir {REPORTS_DIR} --evaluation_results_dir {input.evaluation_results_dir} --model_outputs_dir {input.model_outputs_dir}"
 
 rule calculate_average_power:
     input:

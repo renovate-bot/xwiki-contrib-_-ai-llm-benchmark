@@ -254,14 +254,22 @@ To run this step individually, use the following command:
 snakemake --cores 1 eval_rag_qa
 ```
 
-### Create plots
+### Generate plots
 
 This step creates plots for visualizing the evaluation results. It reads the evaluation results, generates plots based on the configuration file, and saves the plots in the _evaluation_results_graphcs_ directory.
 
 To run this step individually, use the following command:
 
 ```
-snakemake --cores 1 create_plots
+snakemake --cores 1 generate_plots
+```
+
+### Generate report
+
+This step generates a pdf report containing evaluation data and plots.
+
+```
+snakemake --cores 1 generate_report
 ```
 
 ### Clean

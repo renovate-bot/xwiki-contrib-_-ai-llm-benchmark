@@ -5,6 +5,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import argparse
 
+criteria = {
+    'summarization': ['Alignment', 'Coverage'],
+    'text_generation': ['score'],
+    'RAG-qa': ['AnswerRelevancy', 'Faithfulness', 'ContextualPrecision', 'ContextualRecall']
+}
+
 # Function to read JSON files
 def read_json_files(directory):
     data = []
@@ -19,8 +25,10 @@ def read_json_files(directory):
 def generate_bar_chart(data, task, criterion, output_dir, file_name):
     df = pd.DataFrame(data)
     plt.figure(figsize=(10, 6))
-    sns.barplot(x='Criterion', y='Score', hue='Model', data=df)
+    sns.barplot(x='Model', y='Score', data=df[df['Criterion'] == criterion])
     plt.title(f'{task.capitalize()} Task Scores Comparison ({criterion})')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
     plt.savefig(os.path.join(output_dir, file_name))
     plt.close()
 
@@ -28,8 +36,11 @@ def generate_bar_chart(data, task, criterion, output_dir, file_name):
 def generate_grouped_bar_chart(data, task, output_dir, file_name):
     df = pd.DataFrame(data)
     plt.figure(figsize=(12, 8))
-    sns.barplot(x='Criterion', y='Score', hue='Model', data=df)
+    sns.barplot(x='Model', y='Score', hue='Criterion', data=df)
     plt.title(f'{task.capitalize()} Task Scores Comparison')
+    plt.xticks(rotation=45)
+    plt.legend(title='Criterion', bbox_to_anchor=(1.05, 1), loc='upper left')
+    plt.tight_layout()
     plt.savefig(os.path.join(output_dir, file_name))
     plt.close()
 
@@ -37,8 +48,10 @@ def generate_grouped_bar_chart(data, task, output_dir, file_name):
 def generate_box_plot(data, task, criterion, output_dir, file_name):
     df = pd.DataFrame(data)
     plt.figure(figsize=(10, 6))
-    sns.boxplot(x='Criterion', y='Score', hue='Model', data=df)
+    sns.boxplot(x='Model', y='Score', data=df[df['Criterion'] == criterion])
     plt.title(f'{task.capitalize()} Task Score Distribution ({criterion})')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
     plt.savefig(os.path.join(output_dir, file_name))
     plt.close()
 
@@ -50,11 +63,6 @@ def load_config(config_file):
 # Function to process evaluation results and generate visualizations
 def process_evaluation_results(config, results_dir, output_dir):
     tasks = config['tasks']
-    criteria = {
-        'summarization': ['score'],
-        'text_generation': ['score'],
-        'RAG-qa': ['AnswerRelevancy', 'Faithfulness', 'ContextualPrecision', 'ContextualRecall']
-    }
 
     for task in tasks:
         task_name = task['task']
@@ -67,19 +75,26 @@ def process_evaluation_results(config, results_dir, output_dir):
 
             # Prepare data for bar charts
             for item in data:
-                for criterion in criteria[task_name]:
-                    if item.get('score_breakdown') and criterion in item['score_breakdown']:
+                if task_name == 'RAG-qa':
+                    for criterion, score in item['individual_scores'].items():
                         bar_data.append({
                             'Model': model,
                             'Criterion': criterion,
-                            'Score': item['score_breakdown'][criterion]
+                            'Score': score
                         })
-                    else:
+                elif task_name == 'summarization':
+                    for criterion, score in item['score_breakdown'].items():
                         bar_data.append({
                             'Model': model,
                             'Criterion': criterion,
-                            'Score': item.get('average_score', item.get('score', 0)) # Default to 0 if 'score' is not present
+                            'Score': score
                         })
+                else:  # text_generation
+                    bar_data.append({
+                        'Model': model,
+                        'Criterion': 'score',
+                        'Score': item['score']
+                    })
 
         # Generate bar charts for each criterion
         for criterion in criteria[task_name]:
@@ -93,35 +108,44 @@ def process_evaluation_results(config, results_dir, output_dir):
 # Function to generate average power consumption bar chart
 def generate_average_power_chart(data, output_dir, file_name):
     df = pd.DataFrame(data)
-    print("Data for average power chart:", df)  # Debug print statement
     plt.figure(figsize=(10, 6))
     sns.barplot(x='Model', y='Average Power Consumption', data=df)
     plt.title('Average Power Consumption by Model')
+    plt.ylabel('Average Power Consumption (W)')
     plt.xticks(rotation=45)
+    plt.tight_layout()
     plt.savefig(os.path.join(output_dir, file_name))
     plt.close()
+
 
 # Function to generate average power consumption grouped bar chart
 def generate_average_power_grouped_chart(data, output_dir, file_name):
     df = pd.DataFrame(data)
-    print("Data for average power grouped chart:", df)  # Debug print statement
     plt.figure(figsize=(12, 8))
     sns.barplot(x='Model', y='power_consumption', hue='Task', data=df)
-    plt.title('Average Power Consumption by Model and Task')
+    plt.title('Average Energy Consumption by Model and Task')
+    plt.ylabel('Energy Consumption (J)')
     plt.xticks(rotation=45)
+    plt.tight_layout()
     plt.savefig(os.path.join(output_dir, file_name))
     plt.close()
+
 
 # Function to generate detailed power consumption charts
 def generate_detailed_power_charts(data, output_dir):
     df = pd.DataFrame(data)
-    print("Data for detailed power charts:", df)  # Debug print statement
-    metrics = ['power_per_input_token', 'power_per_output_token', 'power_per_total_token']
-    for metric in metrics:
+    metrics = {
+        'power_per_input_token': 'J/token',
+        'power_per_output_token': 'J/token',
+        'power_per_total_token': 'J/token'
+    }
+    for metric, unit in metrics.items():
         plt.figure(figsize=(12, 8))
         sns.barplot(x='Model', y=metric, hue='Task', data=df)
         plt.title(f'Average {metric.replace("_", " ").capitalize()} by Model and Task')
+        plt.ylabel(f'{metric.replace("_", " ").capitalize()} ({unit})')
         plt.xticks(rotation=45)
+        plt.tight_layout()
         plt.savefig(os.path.join(output_dir, f'average_{metric}_grouped_chart.png'))
         plt.close()
 
@@ -137,16 +161,16 @@ def process_average_power_data(results_dir, output_dir):
         for model, data in average_power_data.items():
             model_data.append({
                 'Model': model,
-                'Average Power Consumption': data['model_average']
+                'Average Power Consumption': data['model_average_power']
             })
             for task, power_data in data['task_averages'].items():
                 task_data.append({
                     'Model': model,
                     'Task': task,
-                    'power_consumption': power_data['power_consumption'],
-                    'power_per_input_token': power_data['power_per_input_token'],
-                    'power_per_output_token': power_data['power_per_output_token'],
-                    'power_per_total_token': power_data['power_per_total_token']
+                    'power_consumption': power_data['energy_consumption'],
+                    'power_per_input_token': power_data['energy_per_input_token'],
+                    'power_per_output_token': power_data['energy_per_output_token'],
+                    'power_per_total_token': power_data['energy_per_total_token']
                 })
 
         generate_average_power_chart(model_data, output_dir, 'average_power_consumption_chart.png')
@@ -154,6 +178,7 @@ def process_average_power_data(results_dir, output_dir):
         generate_detailed_power_charts(task_data, output_dir)
     else:
         print(f"Average power consumption data file not found: {average_power_file}")
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate plots from evaluation results.")
