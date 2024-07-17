@@ -4,7 +4,7 @@
     "embedding_model": "AI.Models.Default",
     "chunking_method": "maxChars",
     "chunking_max_size": 2000,
-    "chunking_overlap_offset": 15,
+    "chunking_overlap_offset": 0,
     "document_spaces": [],
     "allow_guests": false,
     "query_groups": "XWiki.XWikiAllGroup",
