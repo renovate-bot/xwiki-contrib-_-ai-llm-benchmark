@@ -123,11 +123,11 @@ def process_response(response, question_id, question, expected_answer):
 def calculate_energy_metrics(energy_consumption, usage, avg_power_draw):
     if energy_consumption == 'N/A':
         return {
-            'average_power_draw': 'N/A',
-            'energy_consumption': 'N/A',
-            'energy_per_input_token': 'N/A',
-            'energy_per_output_token': 'N/A',
-            'energy_per_total_token': 'N/A'
+            'average_power_draw': None,
+            'energy_consumption': None,
+            'energy_per_input_token': None,
+            'energy_per_output_token': None,
+            'energy_per_total_token': None
         }
 
     input_tokens = usage['prompt_tokens']
@@ -145,11 +145,11 @@ def calculate_energy_metrics(energy_consumption, usage, avg_power_draw):
     output_energy = (weighted_output_tokens / total_weighted_tokens) * energy_consumption
 
     return {
-        'average_power_draw': f"{avg_power_draw:.4f} W",
-        'energy_consumption': f"{energy_consumption:.4f} J",
-        'energy_per_input_token': f"{(input_energy / input_tokens):.4f} J/token",
-        'energy_per_output_token': f"{(output_energy / output_tokens):.4f} J/token",
-        'energy_per_total_token': f"{(energy_consumption / total_tokens):.4f} J/token"
+        'average_power_draw': avg_power_draw,
+        'energy_consumption': energy_consumption,
+        'energy_per_input_token': input_energy / input_tokens,
+        'energy_per_output_token': output_energy / output_tokens,
+        'energy_per_total_token': energy_consumption / total_tokens
     }
 
 def process_tasks(input_dir, output_dir, request_template, baseline_power):

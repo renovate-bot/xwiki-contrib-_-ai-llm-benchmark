@@ -18,15 +18,21 @@ def calculate_average_power(evaluation_dir, output_dir):
                             data = json.load(f)
                             model_name = root.split(os.sep)[-1]
                             task_name = task_dir.split(os.sep)[-1]
-                            power_consumption = data.get('power_consumption', 'N/A')
-                            power_per_input_token = data.get('power_per_input_token', 'N/A')
-                            power_per_output_token = data.get('power_per_output_token', 'N/A')
-                            power_per_total_token = data.get('power_per_total_token', 'N/A')
-                            if power_consumption != 'N/A':
-                                model_power_data[model_name][task_name]['power_consumption'].append(power_consumption)
-                                model_power_data[model_name][task_name]['power_per_input_token'].append(power_per_input_token)
-                                model_power_data[model_name][task_name]['power_per_output_token'].append(power_per_output_token)
-                                model_power_data[model_name][task_name]['power_per_total_token'].append(power_per_total_token)
+                            
+                            # Extract energy metrics
+                            average_power_draw = data.get('average_power_draw')
+                            energy_consumption = data.get('energy_consumption')
+                            energy_per_input_token = data.get('energy_per_input_token')
+                            energy_per_output_token = data.get('energy_per_output_token')
+                            energy_per_total_token = data.get('energy_per_total_token')
+                            
+                            # Only process valid numerical data
+                            if all(metric is not None for metric in [average_power_draw, energy_consumption, energy_per_input_token, energy_per_output_token, energy_per_total_token]):
+                                model_power_data[model_name][task_name]['average_power_draw'].append(average_power_draw)
+                                model_power_data[model_name][task_name]['energy_consumption'].append(energy_consumption)
+                                model_power_data[model_name][task_name]['energy_per_input_token'].append(energy_per_input_token)
+                                model_power_data[model_name][task_name]['energy_per_output_token'].append(energy_per_output_token)
+                                model_power_data[model_name][task_name]['energy_per_total_token'].append(energy_per_total_token)
 
     # Calculate average power consumption
     average_power_results = {}
@@ -35,21 +41,20 @@ def calculate_average_power(evaluation_dir, output_dir):
         model_total_count = 0
         task_averages = {}
         for task_name, power_data in tasks.items():
-            task_average = sum(power_data['power_consumption']) / len(power_data['power_consumption'])
-            task_average_per_input_token = sum(power_data['power_per_input_token']) / len(power_data['power_per_input_token'])
-            task_average_per_output_token = sum(power_data['power_per_output_token']) / len(power_data['power_per_output_token'])
-            task_average_per_total_token = sum(power_data['power_per_total_token']) / len(power_data['power_per_total_token'])
-            task_averages[task_name] = {
-                'power_consumption': task_average,
-                'power_per_input_token': task_average_per_input_token,
-                'power_per_output_token': task_average_per_output_token,
-                'power_per_total_token': task_average_per_total_token
+            task_average = {
+                'average_power_draw': sum(power_data['average_power_draw']) / len(power_data['average_power_draw']),
+                'energy_consumption': sum(power_data['energy_consumption']) / len(power_data['energy_consumption']),
+                'energy_per_input_token': sum(power_data['energy_per_input_token']) / len(power_data['energy_per_input_token']),
+                'energy_per_output_token': sum(power_data['energy_per_output_token']) / len(power_data['energy_per_output_token']),
+                'energy_per_total_token': sum(power_data['energy_per_total_token']) / len(power_data['energy_per_total_token'])
             }
-            model_total_power += sum(power_data['power_consumption'])
-            model_total_count += len(power_data['power_consumption'])
-        model_average = model_total_power / model_total_count if model_total_count > 0 else 'N/A'
+            task_averages[task_name] = task_average
+            model_total_power += sum(power_data['energy_consumption'])
+            model_total_count += len(power_data['energy_consumption'])
+        
+        model_average_power = model_total_power / model_total_count if model_total_count > 0 else None
         average_power_results[model_name] = {
-            'model_average': model_average,
+            'model_average_power': model_average_power,
             'task_averages': task_averages
         }
 
