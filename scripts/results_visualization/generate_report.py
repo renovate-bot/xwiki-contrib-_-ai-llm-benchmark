@@ -24,15 +24,29 @@ def add_title(elements, styles):
 
 def add_model_information(elements, styles, config):
     elements.append(Paragraph("Model Information", styles['Heading1']))
-    for task in config['tasks']:
-        elements.append(Paragraph(f"Task: {task['task']}", styles['Heading2']))
-        elements.append(Paragraph(f"Model: {task['settings']['model']}", styles['Normal']))
-        elements.append(Paragraph(f"Temperature: {task['settings']['temperature']}", styles['Normal']))
-        elements.append(Spacer(1, 12))
-
-def add_task_results(elements, styles, config, plots_dir):
+    
+    # Group tasks by task name
+    task_groups = {}
     for task in config['tasks']:
         task_name = task['task']
+        if task_name not in task_groups:
+            task_groups[task_name] = []
+        task_groups[task_name].append(task)
+    
+    # Display grouped information
+    for task_name, tasks in task_groups.items():
+        elements.append(Paragraph(f"Task: {task_name}", styles['Heading2']))
+        for task in tasks:
+            elements.append(Paragraph(f"Model: {task['settings']['model']}", styles['Normal']))
+            elements.append(Paragraph(f"Temperature: {task['settings']['temperature']}", styles['Normal']))
+            elements.append(Spacer(1, 6))
+        elements.append(Spacer(1, 12))
+
+
+def add_task_results(elements, styles, config, plots_dir):
+    unique_tasks = set(task['task'] for task in config['tasks'])
+    
+    for task_name in unique_tasks:
         elements.append(Paragraph(f"{task_name.capitalize()} Task Results", styles['Heading2']))
         elements.append(Spacer(1, 6))
 
@@ -55,11 +69,12 @@ def add_power_consumption_results(elements, styles, plots_dir):
     elements.append(Spacer(1, 6))
 
     power_img_paths = [
-        'average_power_consumption_chart.png',
-        'average_power_consumption_grouped_chart.png',
-        'average_power_per_input_token_grouped_chart.png',
-        'average_power_per_output_token_grouped_chart.png',
-        'average_power_per_total_token_grouped_chart.png'
+        'average_power_draw_chart.png',
+        'model_average_power_chart.png',
+        'average_energy_consumption_grouped_chart.png',
+        'average_energy_per_input_token_grouped_chart.png',
+        'average_energy_per_output_token_grouped_chart.png',
+        'average_energy_per_total_token_grouped_chart.png'
     ]
 
     for img_path in power_img_paths:
@@ -68,6 +83,7 @@ def add_power_consumption_results(elements, styles, plots_dir):
             img = Image(full_img_path, width=400, height=300)
             elements.append(img)
             elements.append(Spacer(1, 12))
+
 
 def add_evaluation_results(elements, styles, evaluation_results_dir):
     elements.append(Paragraph("Evaluation Results", styles['Heading1']))

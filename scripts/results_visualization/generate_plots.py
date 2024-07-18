@@ -117,6 +117,27 @@ def generate_average_power_chart(data, output_dir, file_name):
     plt.savefig(os.path.join(output_dir, file_name))
     plt.close()
 
+def generate_average_power_draw_chart(data, output_dir, file_name):
+    df = pd.DataFrame(data)
+    plt.figure(figsize=(10, 6))
+    sns.barplot(x='Model', y='average_power_draw', data=df)
+    plt.title('Average Power Draw by Model')
+    plt.ylabel('Average Power Draw (W)')
+    plt.xticks(rotation=45, ha='right')
+    plt.tight_layout()
+    plt.savefig(os.path.join(output_dir, file_name))
+    plt.close()
+
+def generate_model_average_power_chart(data, output_dir, file_name):
+    df = pd.DataFrame(data)
+    plt.figure(figsize=(10, 6))
+    sns.barplot(x='Model', y='Model Average Power', data=df)
+    plt.title('Model Average Power Consumption')
+    plt.ylabel('Model Average Power (J)')
+    plt.xticks(rotation=45, ha='right')
+    plt.tight_layout()
+    plt.savefig(os.path.join(output_dir, file_name))
+    plt.close()
 
 # Function to generate average power consumption grouped bar chart
 def generate_average_power_grouped_chart(data, output_dir, file_name):
@@ -134,20 +155,27 @@ def generate_average_power_grouped_chart(data, output_dir, file_name):
 # Function to generate detailed power consumption charts
 def generate_detailed_power_charts(data, output_dir):
     df = pd.DataFrame(data)
-    metrics = {
-        'power_per_input_token': 'J/token',
-        'power_per_output_token': 'J/token',
-        'power_per_total_token': 'J/token'
-    }
-    for metric, unit in metrics.items():
-        plt.figure(figsize=(12, 8))
-        sns.barplot(x='Model', y=metric, hue='Task', data=df)
-        plt.title(f'Average {metric.replace("_", " ").capitalize()} by Model and Task')
-        plt.ylabel(f'{metric.replace("_", " ").capitalize()} ({unit})')
-        plt.xticks(rotation=45)
-        plt.tight_layout()
-        plt.savefig(os.path.join(output_dir, f'average_{metric}_grouped_chart.png'))
-        plt.close()
+    metrics = [
+        'average_power_draw',
+        'energy_consumption',
+        'energy_per_input_token',
+        'energy_per_output_token',
+        'energy_per_total_token'
+    ]
+    
+    for metric in metrics:
+        if metric in df.columns:
+            plt.figure(figsize=(12, 8))
+            sns.barplot(x='Model', y=metric, hue='Task', data=df)
+            plt.title(f'Average {metric.replace("_", " ").capitalize()} by Model and Task')
+            plt.ylabel(f'{metric.replace("_", " ").capitalize()}')
+            plt.xticks(rotation=45, ha='right')
+            plt.tight_layout()
+            plt.savefig(os.path.join(output_dir, f'average_{metric}_grouped_chart.png'))
+            plt.close()
+        else:
+            print(f"Warning: Metric '{metric}' not found in data")
+
 
 # Function to process average power consumption data and generate visualizations
 def process_average_power_data(results_dir, output_dir):
@@ -156,29 +184,29 @@ def process_average_power_data(results_dir, output_dir):
         with open(average_power_file, 'r') as f:
             average_power_data = json.load(f)
 
-        model_data = []
-        task_data = []
+        power_draw_data = []
+        model_power_data = []
         for model, data in average_power_data.items():
-            model_data.append({
+            model_power_data.append({
                 'Model': model,
-                'Average Power Consumption': data['model_average_power']
+                'Model Average Power': data['model_average_power']
             })
             for task, power_data in data['task_averages'].items():
-                task_data.append({
+                power_draw_data.append({
                     'Model': model,
                     'Task': task,
-                    'power_consumption': power_data['energy_consumption'],
-                    'power_per_input_token': power_data['energy_per_input_token'],
-                    'power_per_output_token': power_data['energy_per_output_token'],
-                    'power_per_total_token': power_data['energy_per_total_token']
+                    'average_power_draw': power_data['average_power_draw'],
+                    'energy_consumption': power_data['energy_consumption'],
+                    'energy_per_input_token': power_data['energy_per_input_token'],
+                    'energy_per_output_token': power_data['energy_per_output_token'],
+                    'energy_per_total_token': power_data['energy_per_total_token']
                 })
 
-        generate_average_power_chart(model_data, output_dir, 'average_power_consumption_chart.png')
-        generate_average_power_grouped_chart(task_data, output_dir, 'average_power_consumption_grouped_chart.png')
-        generate_detailed_power_charts(task_data, output_dir)
+        generate_average_power_draw_chart(power_draw_data, output_dir, 'average_power_draw_chart.png')
+        generate_model_average_power_chart(model_power_data, output_dir, 'model_average_power_chart.png')
+        generate_detailed_power_charts(power_draw_data, output_dir)
     else:
         print(f"Average power consumption data file not found: {average_power_file}")
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate plots from evaluation results.")
