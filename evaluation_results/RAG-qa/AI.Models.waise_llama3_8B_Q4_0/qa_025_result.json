@@ -1,0 +1,18 @@
+{
+  "average_score": 0.5476190476190477,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8571428571428571,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.3333333333333333
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.86 because the provided answer is mostly relevant and helpful, addressing the configuration of OpenID Connect in XWiki. However, it includes a link to the LDAP Authenticator and an unrelated greeting 'Bonjour !', which are not pertinent to the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context provide general information or details unrelated to the configuration needed to automatically enable user accounts. For example, the first node provides general information about the OpenID Connect Authenticator but does not mention specific configuration settings. Similarly, the third node discusses LDAP configuration and Active Directory integration, which is unrelated to the required OpenID Connect configuration.",
+    "ContextualRecall": "The score is 0.33 because while some general concepts like automatic activation and OpenID Connect are supported by the nodes in the retrieval context, specific instructions and property details mentioned in the expected output are not found in the retrieval context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

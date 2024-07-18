@@ -1,0 +1,18 @@
+{
+  "average_score": 0.5625,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.25,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and addresses the input without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.25 because the relevant node, which mentions that administrators can enable notifications for all users by default and references editing the xwiki.properties file, is ranked fourth. Irrelevant nodes discussing general descriptions of notifications, settings and features, and notification RSS feeds are ranked higher (1st, 2nd, 3rd, and 5th), which should be ranked lower.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention enabling notifications through the `notifications.enabled` setting in `xwiki.properties` or provide any information about setting `notifications.enabled` to `true` in `xwiki.properties`."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

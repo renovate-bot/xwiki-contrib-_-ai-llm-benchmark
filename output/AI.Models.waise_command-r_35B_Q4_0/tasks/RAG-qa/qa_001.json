@@ -1,0 +1,58 @@
+{
+  "id": "qa_001",
+  "prompt": "The \"Bell\" in the top right corner is not available, also not when the \"Alert Notification\" extension is installed.",
+  "expected_answer": "Make sure that notifications are enabled in your wiki. You can enable them by setting the `notifications.enabled` setting in `xwiki.properties` to `true`.",
+  "ai_answer": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \n\n\nIt seems like you're missing the \"Notification Application\" extension. The \"Bell\" you're seeing in the top right corner is indeed the access to the notification center, which is part of this extension. \n\nYou can install it by following this link: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ . This should solve your issue!",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "# Description\n\nThis application contributes content in the Alert menu (contributed by the [Alerts Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Alerts%20Application/)) in the top bar, represented by a bell:\n\n![Notifications.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/Notifications.png?rev=1.4)\n\nYou can find under this menu the notifications about some events happening on the wiki (a page has been modified, a new blog post has been posted, etc...).\n\nThe number of notifications is displayed on the top menu, just above the bell:\n\n![notif1.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif1.png?rev=1.5)\n\nIf you have more than 20 unread notifications, you will not see the real count but this instead:\n\n![MaxCounter.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/MaxCounter.png?rev=1.3)\n\nWhen you open the menu, the content of the notifications is loaded:\n\n![NotificationsLoading.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotificationsLoading.png?rev=1.3)\n\nThen you can see the list of notifications:\n\n[![notif2.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif2.png?rev=1.5)](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif2.png?rev=1.5)![NotificationsMacro.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotificationsMacro.png?rev=1.3)\n\nIf you click on the little button with the &quot;check&quot; icon, you mark the notification as &quot;read&quot;. In the future, you will be able to select either you want to see only unread notifications or all of them.\n\nWhen the notification is read, the button disappear and the background color changes:\n\n",
+      "similarity_score": 0.7900174856185913,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "\n\n\n| bell | **Display notifications about events happening in the wiki.** |\n| --- | --- |\n\n\n\n| Type | XAR |\n| --- | --- |\n| Category | Application |\n| Developed by | [XWiki Development Team](https://xwiki.org/xwiki/bin/view/XWiki/XWikiTeam) |\n| Rating | *  * [1](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ &quot;Poor&quot;) * [2](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ &quot;Satisfactory&quot;) * [3](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ &quot;Good&quot;) * [4](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ &quot;Very good&quot;) * [5](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ &quot;Excellent&quot;)    0\u00a0Votes |\n| License | GNU Lesser General Public License 2.1 |\n\n\n\n| Bundled With | XWiki Standard |\n| --- | --- |\n\n**Installable with the Extension Manager**\n\n[Download v16.3.1](https://extensions.xwiki.org/xwiki/rest/repository/extensions/org.xwiki.platform%3Axwiki-platform-notifications-ui/versions/16.3.1/file?rid=maven-xwiki)[Sources](https://github.com/xwiki/xwiki-platform/tree/master/xwiki-platform-core/xwiki-platform-notifications/xwiki-platform-notifications-ui/)[Issues](https://jira.xwiki.org/browse/XWIKI)\n\nTable of contents\n\n",
+      "similarity_score": 0.744276762008667,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "* [Description](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HDescription)\n\t+ [Group of notifications with details](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HGroupofnotificationswithdetails)\n\t+ [Get a notification RSS feed](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HGetanotificationRSSfeed)\n\t+ [Notifications Macro](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HNotificationsMacro)\n* [Settings](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HSettings)\n\t+ [Filters](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HFilters)\n\t\t- [Hidden (technical) pages](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HHidden28technical29pages)\n\t\t- [Filter your own events](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HFilteryourownevents)\n\t\t- [Filter events that you have marked as read](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HFiltereventsthatyouhavemarkedasread)\n\t\t- [Filter minor events](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HFilterminorevents)\n\t+ [Watched Entities](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HWatchedEntities)\n\t\t- [Using it](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HUsingit)\n\t\t- [Auto Watch](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HAutoWatch)\n\t\t- [Follow a user](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HFollowauser)\n\t\t- [Default Watch Settings](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HDefaultWatchSettings)\n",
+      "similarity_score": 0.7366979122161865,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/",
+      "content": "![text_list_bullets](https://www.xwiki.org/xwiki/resources/icons/silk/text_list_bullets.png?cache-version=1711538036000)\n\n[Menu](https://extensions.xwiki.org/xwiki/bin/view/Extension/Menu%20Application)  \nMenu application\n\n![bell](https://www.xwiki.org/xwiki/resources/icons/silk/bell.png?cache-version=1711538036000)\n\n[Notifications](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/)  \nDisplay notifications about events happening in the wiki.\n\n![invitation.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Invitation%20Application/invitation.png?rev=1.3)\n\n[Invitation](https://extensions.xwiki.org/xwiki/bin/view/Extension/Invitation%20Application)  \nAllows users to send emails, inviting friends and colleagues to join a wiki\n\n# Other Features\n\nOther features can be added to your wiki by [installing](https://extensions.xwiki.org/xwiki/bin/view/Extension/Extension%20Manager%20Application) extensions not listed above. Check the [Extensions wiki](https://extensions.xwiki.org/xwiki/bin/view/Main/) for a full list of available extensions.\n\n\n",
+      "similarity_score": 0.735725998878479,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "# Dependencies\n\nDependencies for this extension (org.xwiki.platform:xwiki-platform-notifications-ui 16.3.1):\n\n* org.xwiki.platform:xwiki-platform-notifications-preferences-default 16.3.1\n* [org.xwiki.platform:xwiki-platform-notifications-macro-ui](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Macro/) 16.3.1\n* org.xwiki.platform:xwiki-platform-notifications-script 16.3.1\n* org.xwiki.platform:xwiki-platform-notifications-filters-default 16.3.1\n* org.xwiki.platform:xwiki-platform-notifications-notifiers-default 16.3.1\n* org.xwiki.platform:xwiki-platform-notifications-filters-watch 16.3.1\n* org.xwiki.platform:xwiki-platform-notifications-rest 16.3.1\n* org.xwiki.platform:xwiki-platform-eventstream-store-solr 16.3.1\n* org.webjars:bootstrap-switch 3.3.4\n* [org.xwiki.platform:xwiki-platform-rendering-macro-velocity](https://extensions.xwiki.org/xwiki/bin/view/Extension/Velocity%20Macro) 16.3.1\n* org.xwiki.platform:xwiki-platform-icon-script 16.3.1\n* [org.xwiki.platform:xwiki-platform-user-profile-ui](https://extensions.xwiki.org/xwiki/bin/view/Extension/User%20Module/User%20Profile%20Application/) 16.3.1\n* [org.xwiki.rendering:xwiki-rendering-macro-html](https://extensions.xwiki.org/xwiki/bin/view/Extension/HTML%20Macro) 16.3.1\n* [org.xwiki.platform:xwiki-platform-alerts-ui](https://extensions.xwiki.org/xwiki/bin/view/Extension/Alerts%20Application/) 16.3.1\n* [org.xwiki.platform:xwiki-platform-date](https://extensions.xwiki.org/xwiki/bin/view/Extension/Date%20Script%20Service/) 16.3.1\n* [org.xwiki.platform:xwiki-platform-rendering-macro-code](https://extensions.xwiki.org/xwiki/bin/view/Extension/Code%20Macro/) 16.3.1\n* [org.xwiki.platform:xwiki-platform-livedata-macro](https://extensions.xwiki.org/xwiki/bin/view/Extension/Live%20Data%20Macro/) 16.3.1\n* org.xwiki.platform:xwiki-platform-livedata-livetable 16.3.1\n* org.xwiki.platform:xwiki-platform-notifications-webjar 16.3.1\n\n\n",
+      "similarity_score": 0.7242769002914429,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1022,
+    "completion_tokens": 84,
+    "total_tokens": 1106
+  },
+  "average_power_draw": 115.23174430641826,
+  "energy_consumption": 1098.6572993160237,
+  "energy_per_input_token": 0.8917672884058634,
+  "energy_per_output_token": 2.229418221014658,
+  "energy_per_total_token": 0.993361030122987
+}

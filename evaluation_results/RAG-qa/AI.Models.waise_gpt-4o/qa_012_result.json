@@ -1,0 +1,18 @@
+{
+  "average_score": 0.4565217391304348,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8260869565217391,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.83 because the main issue of not receiving notifications is addressed well, but the inclusion of multiple URL links that do not directly address the issue slightly lowers the relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context discuss topics unrelated to notifications, such as 'customizing page templates' (rank 1), 'setting up languages' (rank 2), 'listing references and images' (rank 3 and 4), and 'localization settings' (rank 5).",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

@@ -1,0 +1,18 @@
+{
+  "average_score": 0.6875,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.25,
+    "ContextualRecall": 0.5
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response perfectly addresses the question without any irrelevant information. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.25 because the relevant node, ranked 4th, explains 'Choosing the default auto-watched mode' and how administrators can select the default behavior, which is relevant to changing notification settings. However, the first three nodes are ranked higher despite being irrelevant. For instance, the first node discusses 'Clear All' link and notification grouping strategies, and the second node talks about enabling and disabling email notifications by an administrator, neither of which address how to disable notifications for specific pages.",
+    "ContextualRecall": "The score is 0.50 because while nodes in the retrieval context support the information about automatic page watching and changing settings (sentences 1 and 3), they do not cover the notification details or the deletion of custom filters (sentences 2 and 4)."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

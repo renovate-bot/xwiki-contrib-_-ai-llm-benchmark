@@ -1,0 +1,18 @@
+{
+  "average_score": 0.6041666666666666,
+  "individual_scores": {
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.6666666666666666
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.75 because the output provides some relevant information about configuring access and editing permissions in XWiki, but it includes multiple irrelevant links that do not directly address the specific question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node is about a REST API implementation in XWiki and does not provide any relevant information on configuring access control for teams. The second node provides an image and link related to managing users and groups, but does not directly address setting specific access rights for teams. The third node discusses group synchronization using OpenID Connect and customization options, which is not relevant to configuring team-specific access control in XWiki. The fourth node is about LDAP configuration for groups and user attributes, which is not relevant to the specific access control requirements described in the input. The fifth node explains the concept of Nested Pages and subwikis in XWiki, which does not directly relate to configuring team-specific access control.",
+    "ContextualRecall": "The score is 0.67 because while several sentences in the expected output can be linked to nodes in the retrieval context, key introductory and concluding sentences are not supported by the retrieval context."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

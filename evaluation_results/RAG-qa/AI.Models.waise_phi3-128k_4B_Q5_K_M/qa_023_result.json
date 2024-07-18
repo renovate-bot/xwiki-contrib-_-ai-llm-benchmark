@@ -1,0 +1,18 @@
+{
+  "average_score": 0.9083333333333333,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.8333333333333333,
+    "ContextualRecall": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.80 because the answer mostly addresses the question about enabling notifications for one's own actions. However, the inclusion of URLs that are not directly relevant to this specific issue prevented the score from being higher.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job staying true to the retrieval context!",
+    "ContextualPrecision": "The score is 0.83 because the first node is highly relevant as it mentions 'Filter your own events,' directly addressing the ability to manage notifications for one's own actions. However, the second node, ranked higher than it should be, mainly discusses different types of notifications without specifically addressing notifications for one's own actions. The third node is relevant, explaining the default behavior of not receiving notifications for one's own actions. The fourth node, which talks about other notification settings like email frequency and level of detail, should be ranked lower as it does not touch on the subject of receiving notifications for one's own actions.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are well-supported by the nodes in the retrieval context, showing a perfect match."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

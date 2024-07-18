@@ -1,0 +1,18 @@
+{
+  "average_score": 0.5444444444444444,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7777777777777778,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.4
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.78 because the answer provides relevant information about configuring OpenID Connect in XWiki but includes unrelated details about LDAP authentication and an irrelevant image link, which detracts from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node provides 'general information about prerequisites, installation instructions, and dependencies for the OpenID Connect Authenticator' but does not address the specific configuration needed to automatically activate user accounts on first login. Similarly, the second node 'lists dependencies for the OpenID Connect Authenticator extension' without detailing the required configuration for user activation. The third node discusses 'LDAP authentication and configuration,' which is irrelevant to the query about OpenID Connect. The fourth node mentions 'container authentication and the OpenID Connect Authenticator Extension' but lacks specific configuration details for automatic user activation. Finally, the fifth node provides 'general information about the OpenID Connect Authenticator,' including developer and compatibility details, but again does not address the specific configuration needed.",
+    "ContextualRecall": "The score is 0.40 because while the 1st node in the retrieval context mentions configuration files and OpenID Connect, it does not specifically mention adding, updating, or uncommenting the 'oidc.enableUser' property, nor saving the file and restarting XWiki."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

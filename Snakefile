@@ -154,9 +154,12 @@ rule generate_plots:
     output:
         directory(PLOTS_DIR)
     params:
-        script = f"{SCRIPTS_DIR}/results_visualization/create_plots.py"
+        script = f"{SCRIPTS_DIR}/results_visualization/generate_plots.py"
     shell:
-        "python {params.script} --config {input.config_file} --results_dir {input.results_dir} --output_dir {output}"
+        """
+        mkdir -p {output}
+        python {params.script} --config {input.config_file} --results_dir {input.results_dir} --output_dir {output}
+        """
 
 rule generate_report:
     input:
@@ -164,11 +167,14 @@ rule generate_report:
         plots_dir = PLOTS_DIR,
         evaluation_results_dir = EVALUATION_DIR,
         model_outputs_dir = OUTPUT_DIR,
-        script = f"{SCRIPTS_DIR}/results_visualization/create_report.py"
+        script = f"{SCRIPTS_DIR}/results_visualization/generate_report.py"
     output:
         directory(REPORTS_DIR)
     shell:
-        "python {input.script} --config {input.config_file} --plots_dir {input.plots_dir} --output_dir {REPORTS_DIR} --evaluation_results_dir {input.evaluation_results_dir} --model_outputs_dir {input.model_outputs_dir}"
+        """
+        mkdir -p {output}
+        python {input.script} --config {input.config_file} --plots_dir {input.plots_dir} --output_dir {output} --evaluation_results_dir {input.evaluation_results_dir} --model_outputs_dir {input.model_outputs_dir}
+        """
 
 rule calculate_average_power:
     input:

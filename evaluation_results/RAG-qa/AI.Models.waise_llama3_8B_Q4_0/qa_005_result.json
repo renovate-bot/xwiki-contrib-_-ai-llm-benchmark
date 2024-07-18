@@ -1,0 +1,18 @@
+{
+  "average_score": 0.5166666666666666,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.16666666666666666
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.90 because the answer is mostly relevant and provides useful information on configuring XWiki for OpenID Connect. However, it includes a link to LDAP Authenticator, which is not directly relevant, and a concluding remark that does not add value to the configuration instructions.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'Container Authentication, Active Directory, and LDAP' instead of OpenID Connect. The second node provides general information about OpenID Connect Authentication but lacks details on the specific property (`oidc.enableUser`). The third node focuses on LDAP configuration, and the fourth node, although touching on OpenID Connect, does not mention the required configuration property. Finally, the fifth node discusses general authentication mechanisms without mentioning OpenID Connect.",
+    "ContextualRecall": "The score is 0.17 because only the general idea of adjusting the xwiki.properties file is supported by node 5 in the retrieval context, while specific details about the property, its format, and the process are not mentioned."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

@@ -1,0 +1,18 @@
+{
+  "average_score": 0.4423076923076923,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7692307692307693,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.77 because the response partially addresses the question about denying script rights to a space administrator, but includes multiple irrelevant URLs that do not contribute to the solution.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect faithfulness!",
+    "ContextualPrecision": "The score is 0.00 because the nodes in the retrieval context are not relevant to the input. For example, the first node discusses 'details about form validation, including jsPattern and programmaticValidation,' which do not relate to denying script rights. The second node contains 'a list of image links and references,' which is also unrelated. The third node is about 'recommending templates when creating pages,' which does not address the question. The fourth node again contains 'image links and references,' and the fifth node discusses 'custom right checks and configuration,' which is not specific to denying script rights to a domain administrator.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not contain any information related to the support or denial of admin rights in XWiki, nor does it mention rights, admin rights, or the inability to deny rights implied by admin rights in XWiki."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

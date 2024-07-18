@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_006",
+  "prompt": "Write a poem about the beauty of nature.",
+  "expected_answer": "A poem describing the wonders of the natural world.",
+  "ai_answer": " In verdant meadows under open skies,\nNature's artistry unfurls in quiet repose. \nGentle breeze whispers tales from ancient tree-roots.\n\nCascading waterfalls dance to the rhythm of a woodland choir.\nSunlight kisses every leafy vein with its golden light,\nEach dawn uncovers another masterpiece painted by Mother Nature's hand. \n\nBeneath twinkling stars aloft in sapphire night skies,\nSilhouettes of towering mountains rise to meet the cosmos\u2019 gaze.\nUnderneath this boundless universe\u2019s celestial dome, life humbly thrives.\n\nNature's canvas is adorned with myriad hues\u2014from emerald green and ocean blue to gold sunbeams and ruby red. \nA symphony of scents: the earthy musk after rainfall or wildflowers\u2019 sweet perfume.\nEach moment in nature\u2019s embrace, a testament to life's timeless cycle that never ceases to amaze.",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 11,
+    "completion_tokens": 248,
+    "total_tokens": 259
+  },
+  "average_power_draw": 184.86329192546586,
+  "energy_consumption": 283.25892532136874,
+  "energy_per_input_token": 0.4489047944871137,
+  "energy_per_output_token": 1.1222619862177843,
+  "energy_per_total_token": 1.093663804329609
+}

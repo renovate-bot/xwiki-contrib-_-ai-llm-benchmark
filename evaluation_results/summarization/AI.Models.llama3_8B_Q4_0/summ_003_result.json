@@ -1,0 +1,10 @@
+{
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary contains contradicting information regarding permission settings and the editability of terminal pages in XWiki. Additionally, the summary includes extra information about URLs for further reading that is not mentioned in the original text. Furthermore, the summary fails to answer specific questions about user groups, permission hierarchy, and privacy settings that the original text addresses.",
+  "score_breakdown": {
+    "Alignment": 0.7142857142857143,
+    "Coverage": 0.4
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

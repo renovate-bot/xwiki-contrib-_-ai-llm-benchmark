@@ -1,8 +1,0 @@
-{
-  "score": 0.2,
-  "reason": "The score is 0.20 because the summary includes a significant amount of extra information not present in the original text, such as specific version numbers and user experiences. Additionally, the summary fails to address several important questions that the original text can answer, such as migration paths, checking release notes, data backup recommendations, and updating extensions before upgrading. This indicates a poor alignment between the summary and the original text.",
-  "score_breakdown": {
-    "Alignment": 0.3333333333333333,
-    "Coverage": 0.2
-  }
-}

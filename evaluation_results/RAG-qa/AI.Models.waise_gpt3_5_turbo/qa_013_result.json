@@ -1,15 +1,18 @@
 {
-  "average_score": 0.4230769230769231,
+  "average_score": 0.375,
   "individual_scores": {
-    "AnswerRelevancy": 0.6923076923076923,
+    "AnswerRelevancy": 0.5,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.69 because while the response attempts to provide relevant information, it includes multiple URLs that are not directly related to enabling notifications for one's own actions, which dilutes the overall relevance.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions! Great job on maintaining perfect alignment with the retrieval context. Keep up the excellent work!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input query about enabling notifications for user activities. For example, the first node discusses \"various applications and extensions in XWiki,\" which does not address notifications. The second node is about \"administrating wiki features like users, groups, and rights,\" which is also unrelated to the query. The third node mentions \"installing dependent extensions,\" which is irrelevant. The fourth node explains \"the manual method for installing extensions and mentions administration rights,\" which does not pertain to notifications. Lastly, the fifth node lists \"various applications like Wiki, Help, Dashboard, and User Directory,\" none of which provide information about enabling notifications for user activities. Therefore, none of the nodes are relevant, leading to a contextual precision score of 0.00.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be linked to any nodes in the retrieval context, as the context does not mention notifications, user activities, notification settings, or user profiles."
-  }
+    "AnswerRelevancy": "The score is 0.50 because while some relevant information might be present, a significant portion of the output includes URLs that do not address the specific question about enabling notifications for one's own actions.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfectly faithful alignment with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all the nodes in the retrieval context are irrelevant to notifications or user activity. For example, the first node is about 'Authorized Applications Configuration', the second node discusses 'Skins' and customization, and the third node is about 'Office Importer' and various extensions. None of these contexts mention notifications or user activity.",
+    "ContextualRecall": "The score is 0.00 because the expected output discusses notification settings and advanced filter options, which are not covered in any of the nodes in the retrieval context."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
 }

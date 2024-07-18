@@ -1,5 +1,7 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output is relevant and coherent, using age-appropriate language and explaining photosynthesis in a simple way. However, it introduces the idea of a 'magic trick' which is not present in the Expected Output and could be slightly misleading.",
-  "score_breakdown": null
+  "reason": "The Actual Output is relevant to the Input and addresses the concept of photosynthesis in a way suitable for a younger audience. It is coherent and flows logically, with correct grammar and natural language. However, it introduces the idea of a 'magic trick,' which is not present in the Expected Output and slightly diverges from the anticipated quality and content.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
 }

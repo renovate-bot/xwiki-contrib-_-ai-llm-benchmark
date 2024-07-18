@@ -1,15 +1,18 @@
 {
-  "average_score": 0.75,
+  "average_score": 0.7291666666666666,
   "individual_scores": {
     "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.25,
-    "ContextualRecall": 0.75
+    "ContextualPrecision": 0.41666666666666663,
+    "ContextualRecall": 0.5
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the answer perfectly addresses the question without any irrelevant information. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context! Keep up the excellent work!",
-    "ContextualPrecision": "The score is 0.25 because the relevant node that directly addresses the 'Automatic page watching' feature is ranked fourth, while the first three nodes are irrelevant. The first node talks about clearing notifications and changing the 'Own event filter,' the second mentions the Notifications Macro and settings, and the third discusses system and custom filters. These do not provide information on how to disable notifications or change settings related to 'Automatic page watching,' leading to a low score.",
-    "ContextualRecall": "The score is 0.75 because while nodes in the retrieval context cover most of the expected output, there is no mention about deleting existing notification filters, which affects completeness."
-  }
+    "AnswerRelevancy": "The score is 1.00 because the response is fully relevant and directly addresses the question about disabling unwanted notifications. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job staying true to the retrieval context!",
+    "ContextualPrecision": "The score is 0.42 because irrelevant nodes ranked 1st, 2nd, and 5th discuss 'Clear All' link, administrator-level email notifications, and default notification templates respectively, which do not address disabling notifications or modifying notification settings. Relevant nodes ranked 3rd and 4th mention 'Advanced filtering options' and 'auto-watched mode,' which are pertinent to changing notification settings in the user profile.",
+    "ContextualRecall": "The score is 0.50 because while some sentences in the expected output can be linked to nodes in the retrieval context (like sentences 1 and 3 to node 4), other sentences (like sentences 2 and 4) cannot be attributed to any node in the retrieval context."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
 }

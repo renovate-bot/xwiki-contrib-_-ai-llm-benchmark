@@ -1,8 +1,0 @@
-{
-  "score": 0.875,
-  "reason": "The score is 0.88 because the summary is largely accurate and well-aligned with the original text, with only minor issues. The extra information about a section covering XWiki basic concepts, which is not mentioned in the original text, slightly detracts from the overall precision.",
-  "score_breakdown": {
-    "Alignment": 0.875,
-    "Coverage": 1.0
-  }
-}

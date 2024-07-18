@@ -1,0 +1,18 @@
+{
+  "average_score": 0.35,
+  "individual_scores": {
+    "AnswerRelevancy": 0.2,
+    "Faithfulness": 0.7,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.20 because the majority of the statements provided do not address the specific issue of the notification bell not being available, making the response largely irrelevant.",
+    "Faithfulness": "The score is 0.70 because the actual output makes several claims not supported by the retrieval context: administrators selecting the 'Archivierungslevel' instead of 'level of details', setting the 'Standard-Autowatching-Modus' instead of 'default auto-watching page behavior', and accessing the RSS feed via the Notifications Macro instead of through a link in the notification tray or at the bottom of the notifications macro.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. Specifically, the first node describes the notification bell and its functionality but does not provide information about enabling notifications in the settings. The second node lists different sections and features of the Notifications Application but does not address the issue of enabling notifications. The third node continues to list various features and settings but does not mention how to enable notifications in the settings. The fourth node focuses on the administration settings for notifications, including default settings and email notifications, but does not provide specific instructions for enabling notifications. Finally, the fifth node mentions getting a notification RSS feed and the Notifications Macro but does not address enabling notifications in the settings.",
+    "ContextualRecall": "The score is 0.50 because while the retrieval context discusses notifications and their configuration in the wiki, it does not specifically mention the 'notifications.enabled' setting in 'xwiki.properties' or setting it to 'true'."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

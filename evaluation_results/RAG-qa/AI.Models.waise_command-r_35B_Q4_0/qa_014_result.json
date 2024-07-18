@@ -1,0 +1,18 @@
+{
+  "average_score": 0.40384615384615385,
+  "individual_scores": {
+    "AnswerRelevancy": 0.6153846153846154,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.62 because multiple URLs provided in the output are not directly relevant to the question about disabling notifications. However, the answer does attempt to address the issue, which gives it some relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to disabling notifications. For example, the first node is about 'customizing page templates, internationalization, accessibility, scalability, and document templates,' which is not related to the input query.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

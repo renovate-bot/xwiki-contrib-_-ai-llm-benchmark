@@ -1,0 +1,18 @@
+{
+  "average_score": 0.4666666666666667,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8666666666666667,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.87 because the response is mostly relevant and addresses the question, but the inclusion of a URL that does not directly answer how to ensure only image or PDF files of a maximum size of 10 Mo can be uploaded slightly detracts from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'Notifications System Filters Preferences' and other unrelated tools, while subsequent nodes list image references and links, none of which address file upload restrictions or configurations.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

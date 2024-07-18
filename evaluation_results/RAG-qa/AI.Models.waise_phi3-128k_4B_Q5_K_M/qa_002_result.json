@@ -1,0 +1,18 @@
+{
+  "average_score": 0.8229166666666666,
+  "individual_scores": {
+    "AnswerRelevancy": 0.875,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.9166666666666666,
+    "ContextualRecall": 0.5
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.88 because the provided URL in the output is not directly relevant to solving the issue of not receiving notifications. However, the rest of the response is likely helpful and related to the problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job staying faithful to the retrieval context!",
+    "ContextualPrecision": "The score is 0.92 because most relevant nodes are ranked higher, such as the first node which mentions 'notifications.enabled = true' and the second node which describes the 'Alert menu'. However, the third node, which primarily describes visual aspects of notifications, and the fifth node, which provides links and descriptions about notification settings, are less relevant and should be ranked lower.",
+    "ContextualRecall": "The score is 0.50 because while the retrieval context supports enabling notifications and watching pages, it lacks information on subscribing to pages or users, following users via the User Index, and viewing the list of users or events in the 'network' tab."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

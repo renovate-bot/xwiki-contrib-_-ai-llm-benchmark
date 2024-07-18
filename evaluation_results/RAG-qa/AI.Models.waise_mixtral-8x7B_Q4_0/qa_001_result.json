@@ -1,0 +1,18 @@
+{
+  "average_score": 0.35064935064935066,
+  "individual_scores": {
+    "AnswerRelevancy": 0.5454545454545454,
+    "Faithfulness": 0.8571428571428571,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.55 because the output contains multiple irrelevant statements about the Invitation Application extension and its dependencies, which do not address the issue with the 'Bell' icon or the 'Alert Notification' extension.",
+    "Faithfulness": "The score is 0.86 because the actual output mentions the Invitation Application extension for XWiki, which is not referred to in the retrieval context.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node 'does not address the issue of enabling notifications,' and the second node 'does not give any solution related to enabling notifications,' but they are still ranked higher than more relevant nodes.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention enabling notifications in the wiki or the `notifications.enabled` setting in `xwiki.properties`."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

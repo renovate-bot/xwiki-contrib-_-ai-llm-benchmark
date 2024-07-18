@@ -1,0 +1,18 @@
+{
+  "average_score": 0.9166666666666666,
+  "individual_scores": {
+    "AnswerRelevancy": 0.6666666666666666,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.67 because while the answer provides some relevant information, it includes multiple irrelevant links that do not directly address the specific question about denying script rights to a space administrator.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node about 'Script' right and its implications is ranked first, while the irrelevant nodes about the checkAccess function, converting rights, and listing various rights are ranked lower.",
+    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the nodes in the retrieval context. Great job!"
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

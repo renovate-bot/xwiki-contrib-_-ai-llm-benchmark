@@ -1,8 +1,10 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary inaccurately claims that XWiki comes with built-in macros, which is not mentioned in the original text. Additionally, the summary fails to address whether XWiki offers powerful access rights and user management, a question that the original text can answer.",
+  "score": 0.8571428571428571,
+  "reason": "The score is 0.86 because the summary contradicts the original text by mentioning built-in macros, which are not stated in the original text. However, there is no extra information nor unanswered questions, indicating overall good quality.",
   "score_breakdown": {
-    "Alignment": 0.8,
-    "Coverage": 0.8
-  }
+    "Alignment": 0.8571428571428571,
+    "Coverage": 1.0
+  },
+  "input_language": "en",
+  "summary_language": "en"
 }

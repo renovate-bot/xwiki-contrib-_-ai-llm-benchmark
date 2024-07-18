@@ -1,0 +1,7 @@
+{
+  "score": 0.9,
+  "reason": "The Actual Output addresses the Input prompt by extracting the name, date of birth, and address accurately. It is logically structured and fluent. However, it differs slightly in format from the Expected Output, which uses JSON object notation.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

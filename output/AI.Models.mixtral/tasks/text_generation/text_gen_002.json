@@ -1,7 +1,0 @@
-{
-  "id": "text_gen_002",
-  "prompt": "Transform the following keywords into a coherent sentence:\n\ncat, playful, garden, sunny day",
-  "expected_answer": "On a sunny day, the playful cat enjoyed exploring the garden.",
-  "ai_answer": " On a sunny day, you might find my playful cat chasing butterflies in the garden.",
-  "sources": null
-}

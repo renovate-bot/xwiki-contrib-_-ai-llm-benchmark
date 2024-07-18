@@ -1,8 +1,10 @@
 {
-  "score": 0.75,
-  "reason": "The score is 0.75 because there is some contradictory information regarding the next step in the process and extra information about guides specifically for administrators that was not mentioned in the original text. Additionally, the summary fails to answer a question about whether the guide suggests asking an administrator for login credentials.",
+  "score": 0.625,
+  "reason": "The score is 0.62 because the summary contains contradictions regarding the inclusion of specific links in the guide and the next steps mentioned. It also introduces extra information not present in the original text about documentation for Administrators. Additionally, the summary fails to address questions about the availability of additional applications, macros, and extensions on the Extensions wiki.",
   "score_breakdown": {
-    "Alignment": 0.75,
+    "Alignment": 0.625,
     "Coverage": 0.8
-  }
+  },
+  "input_language": "en",
+  "summary_language": "en"
 }

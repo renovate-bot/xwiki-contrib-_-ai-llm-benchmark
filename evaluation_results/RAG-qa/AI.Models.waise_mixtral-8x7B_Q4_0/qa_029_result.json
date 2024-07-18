@@ -1,0 +1,18 @@
+{
+  "average_score": 0.6785714285714286,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8571428571428571,
+    "Faithfulness": 0.8571428571428571,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.86 because the answer provides useful information regarding permissions in XWiki, but includes several URLs that are not directly relevant to the specific question about refusing script rights to a space administrator.",
+    "Faithfulness": "The score is 0.86 because the claim states that the scripting right is granted by default to all space administrators, but the retrieval context indicates that the 'Script' right is denied by default.",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

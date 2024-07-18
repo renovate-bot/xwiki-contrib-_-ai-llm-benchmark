@@ -1,0 +1,18 @@
+{
+  "average_score": 0.6927083333333334,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.4375
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant and addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "Fantastic job! The score is 1.00 because there are no contradictions. Keep up the great work!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node (rank 3) provides specific details on 'Group synchronization' such as adding the claim xwiki_groups and configuring the oidc.groups.mapping property, which are crucial for the setup process. However, irrelevant nodes ranked higher (rank 1, 2, and 4) only mention automatic synchronization, list dependencies, or provide general information about the extension without addressing the specific setup process.",
+    "ContextualRecall": "The score is 0.44 because while the retrieval context covers the general aspects of group synchronization and configuration properties, it lacks specific details such as locating and opening the xwiki.properties file, providing exact claim names and separators, and instructions on saving and restarting the XWiki instance."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

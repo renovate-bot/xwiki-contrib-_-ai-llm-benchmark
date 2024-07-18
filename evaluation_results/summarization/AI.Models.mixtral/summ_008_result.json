@@ -1,8 +1,0 @@
-{
-  "score": 0.4,
-  "reason": "The score is 0.40 because the summary contains several inaccuracies, such as misrepresenting the configurations and their permissions. It also fails to address specific questions that the original text could answer, indicating a lack of completeness and precision.",
-  "score_breakdown": {
-    "Alignment": 0.45454545454545453,
-    "Coverage": 0.4
-  }
-}

@@ -1,15 +1,18 @@
 {
-  "average_score": 0.575,
+  "average_score": 0.65,
   "individual_scores": {
-    "AnswerRelevancy": 0.8,
+    "AnswerRelevancy": 0.6,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.5
+    "ContextualRecall": 1.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.80 because the output provides a useful resource link, but it does not directly address the specific question about refusing script rights to a space administrator.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output perfectly aligns with the retrieval context. Great job on ensuring accuracy and consistency!",
-    "ContextualPrecision": "The score is 0.00 because all the nodes in the retrieval context are irrelevant to the input. For example, the first node mentions \"unless an administrator explicitly revokes the right for some users or groups, they will be able to execute the scripts they wrote,\" which does not directly address the impossibility of revoking script rights from an administrator. Similarly, the second node discusses various rights like 'Create Wikis' and 'Script' rights but does not state that an administrator's script rights cannot be revoked. Since all nodes fail to address the specific issue of revoking script rights from an administrator, they are all ranked incorrectly.",
-    "ContextualRecall": "The score is 0.50 because although the 4th node in the retrieval context mentions that administrators have to manually allow script rights, none of the nodes in the retrieval context mention that the rights involved with the administrator role cannot be refused."
-  }
+    "AnswerRelevancy": "The score is 0.60 because the output includes multiple irrelevant links that do not directly address the specific action of refusing script rights to a space admin. However, the score is not lower because the output may still contain some useful information related to the topic.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node does not address whether an administrator's rights can be refused, the second node lists various rights without addressing the specific question, and the third node is about checking access rights in different scenarios but does not address the refusal of script rights to an administrator.",
+    "ContextualRecall": "The score is 1.00 because the retrieval context perfectly supports the expected output, specifically confirming that admin rights cannot be refused."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
 }

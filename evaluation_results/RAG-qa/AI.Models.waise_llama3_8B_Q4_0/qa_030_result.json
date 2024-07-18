@@ -1,0 +1,18 @@
+{
+  "average_score": 0.45588235294117646,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8235294117647058,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.82 because the answer provides some relevant information about configuring permissions in XWiki, but includes multiple irrelevant URLs that do not directly address the specific question about configuring space visibility and modification permissions.",
+    "Faithfulness": "Great job! The score is 1.00 because there are no contradictions. Keep up the excellent work!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node 'explains how pages and spaces are created and organized in XWiki but does not provide any information on how to set access controls for teams.' Similarly, the second node 'deals with actions required after running a migrator and does not relate to setting up access controls for teams in XWiki.'",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

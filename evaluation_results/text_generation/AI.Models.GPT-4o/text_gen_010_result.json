@@ -1,5 +1,7 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output addresses the main topic and covers most key points from the Expected Output, including the regulation of physiological processes and processing of sensory inputs. However, it lacks the mention of 'coordinating' physiological processes and 'subjective experiences.' The coherence and fluency are strong with logical flow and grammatical correctness.",
-  "score_breakdown": null
+  "score": 0.9,
+  "reason": "The Actual Output is highly relevant and coherent, with only minor differences in phrasing compared to the Expected Output, such as 'cognitive processes and consciousness' versus 'cognitive functions, consciousness, and subjective experiences.'",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
 }

@@ -1,5 +1,7 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output is directly relevant to the Input prompt, providing a comprehensive travel guide for Paris. It addresses key aspects such as attractions, dining, accommodations, transportation, and travel tips. The ideas are logically organized and flow smoothly. The language is natural and grammatically correct. The Actual Output meets the anticipated quality and completeness of the Expected Output.",
-  "score_breakdown": null
+  "reason": "The Actual Output directly addresses the topic and requirements specified in the Input prompt by providing a comprehensive travel guide for Paris, France. It logically flows from one section to the next, covering top attractions, accommodations, dining, transportation, and travel tips without any abrupt transitions. The language is fluent, with proper grammar and punctuation. All key points and details expected in a travel guide are included, meeting and exceeding the Expected Output.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
 }

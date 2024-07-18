@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_008",
+  "prompt": "Create a travel guide for a popular tourist destination.",
+  "expected_answer": "An informative guide highlighting the top attractions, accommodations, and activities in a popular tourist spot.",
+  "ai_answer": "Welcome to Paris, a city of timeless charm and unparalleled beauty! From iconic landmarks to hidden gems, Paris has something for everyone.\n\n**Unmissable Attractions:**\n\n1. **Eiffel Tower:** This world-famous monument is a must-see. Take in breathtaking views from the top and capture unforgettable memories.\n\n2. **Louvre Museum:** Housing the world's most renowned artwork, including the Mona Lisa, the Louvre offers an enriching cultural experience.\n\n3. **Notre Dame Cathedral:** Witness the Gothic masterpiece, marvel at its exquisite architecture, and uncover the secrets of its past.\n\n4. **Champs-\u00c9lys\u00e9es:** Stroll along this famous boulevard, indulging in the luxury shops and cafes. You can also explore the fascinating history of this iconic Parisian landmark.\n\n**Exploring Neighborhoods:**\n\n- **Le Marais:** This stylish district boasts trendy boutiques, art galleries, and quaint bistros. Discover hidden courtyards and secret passageways.\n\n- **Montmartre:** Known for its artistic ambiance, Montmartre offers a lively atmosphere, cobblestone streets, and iconic sights like the Sacr\u00e9-C\u0153ur Basilica.\n\n- **Le Notre Dame - Latin Quarter:** Immerse yourself in the vibrant student hub. Enjoy quaint cafes, quirky shops, and the lively atmosphere along the Seine's left bank.\n\n**Gourmet Delights:**\n\nIndulge in Parisian cuisine at its best:\n\n- **Le Bistro Parisien:** Sample classic bistro fare like coq au vin and croque monsieur in a traditional setting.\n\n- **La Cr\u00e8me de Paris:** This modern bakery specializes in exquisite pastries and desserts, perfect for an indulgent treat.\n\n- **Le Vin Fran\u00e7ais:** A cozy wine bar with an extensive selection of French vintages. Pair your wine with cheese and charcuterie for the ultimate taste experience.\n\n**Practical Tips:**\n\n1. **Transportation:** Navigating Paris is easy with the efficient metro system. Pick up a T+ ticket for seamless travel across the city.\n\n2. **Accommodation:** Book your stay in advance, especially if you want to be central. Consider areas like 5th arrondissement for a balanced blend of convenience and charm.\n\n3. **Language Barrier:** Although many Parisians speak English, learning a few basic French phrases will go a long way in gaining local favor and enhancing your experience.\n\n4. **Seasonal Considerations:** Paris sizzles in the summer, but for a less touristy atmosphere, spring and autumn offer delightful experiences too.\n\nRemember to respect local customs and culture, and your Parisian adventure will be unforgettable!",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 13,
+    "completion_tokens": 543,
+    "total_tokens": 556
+  },
+  "average_power_draw": 95.40530766396463,
+  "energy_consumption": 5200.0632116325505,
+  "energy_per_input_token": 3.794281803453156,
+  "energy_per_output_token": 9.48570450863289,
+  "energy_per_total_token": 9.352631675598113
+}

@@ -1,0 +1,18 @@
+{
+  "average_score": 0.9375,
+  "individual_scores": {
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.75 because the main response addresses the issue of not receiving notifications, but the inclusion of the link to the XWiki Syntax documentation is irrelevant to the problem discussed.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node, which includes a link to 'Settings' and 'Watched Entities', is ranked first, while all irrelevant nodes discussing RSS feeds, clearing notifications, and various notification preferences are ranked lower.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output align perfectly with the nodes in the retrieval context, ensuring comprehensive coverage and accuracy."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

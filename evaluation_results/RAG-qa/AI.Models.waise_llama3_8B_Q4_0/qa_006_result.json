@@ -1,0 +1,18 @@
+{
+  "average_score": 0.9368421052631579,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9473684210526315,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.8
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.95 because the answer is highly relevant and addresses the customization of user profile fields from the OpenID Connect provider to XWiki user properties. However, the statement 'oidc.mapping=*' lacks context and does not contribute to the solution.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first node mentions the `xwiki.properties` file and the `oidc.user.mapping` property, which are directly relevant. The second node provides information about variables like `oidc.user.subject` and custom properties, which is also pertinent. Irrelevant nodes, such as the third node focusing on in-wiki configuration of the OIDC authenticator, are ranked lower.",
+    "ContextualRecall": "The score is 0.80 because most of the expected output sentences are well-supported by the 2nd node in the retrieval context, which covers details about 'oidc.user.mapping' and 'oidc.user.subject'. However, it lacks explicit mention of saving the 'xwiki.properties' file and restarting XWiki to apply changes."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

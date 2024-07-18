@@ -1,8 +1,10 @@
 {
   "score": 0.8,
-  "reason": "The score is 0.80 because the summary accurately reflects the original text without any contradictions or unnecessary extra information. However, it fails to address whether you can receive information from the Blog and modified pages feeds using your browser's RSS notification button.",
+  "reason": "The score is 0.80 because the summary lacks information regarding whether RSS feeds for blog posts are available if the Blog application is installed.",
   "score_breakdown": {
     "Alignment": 1.0,
     "Coverage": 0.8
-  }
+  },
+  "input_language": "en",
+  "summary_language": "en"
 }

@@ -1,8 +1,10 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary accurately reflects the original text with no contradictions or extraneous information. However, it fails to address specific questions that the original text can answer, such as whether there are pre-installed applications in XWiki.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary contains contradictory information about the availability of resources and documentation, and it fails to address several key questions that the original text answers.",
   "score_breakdown": {
-    "Alignment": 1.0,
-    "Coverage": 0.8
-  }
+    "Alignment": 0.8,
+    "Coverage": 0.4
+  },
+  "input_language": "en",
+  "summary_language": "en"
 }

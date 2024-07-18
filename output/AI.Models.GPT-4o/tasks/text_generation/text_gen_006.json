@@ -2,6 +2,16 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "In the hush of dawn\u2019s first light,\nWhere shadows dance and take their flight,\nA symphony of colors wakes,\nAs morning dew the earth partakes.\n\nThe whispering wind through ancient trees,\nSings secrets carried by the breeze,\nLeaves like emeralds catch the sun,\nA tapestry by nature spun.\n\nMountains rise with regal grace,\nTheir peaks a kiss from heaven\u2019s face,\nRivers carve their timeless song,\nThrough valleys deep, they rush along.\n\nFields of flowers, wild and free,\nA canvas painted vibrantly,\nPetals soft as silken dreams,\nIn hues that rival sunset\u2019s beams.\n\nThe ocean\u2019s vast, unending blue,\nReflects the sky\u2019s cerulean hue,\nWaves that dance with rhythmic glee,\nA testament to nature\u2019s spree.\n\nIn twilight\u2019s glow, the stars ignite,\nA cosmic dance in velvet night,\nThe moon, a guardian in the sky,\nWatches over with a gentle eye.\n\nFrom deserts dry to forests lush,\nIn nature\u2019s arms, there is no rush,\nA beauty pure, both fierce and kind,\nA sacred bond with humankind.\n\nSo let us cherish every sight,\nFrom dawn\u2019s embrace to starry night,\nFor in the heart of nature\u2019s grace,\nWe find our true, eternal place.",
-  "sources": null
+  "ai_answer": "In the quiet hush of morning light,\nWhere dawn's first blush dispels the night,\nNature wakes in softest hues,\nA canvas kissed by morning dews.\n\nMountains rise with regal grace,\nTheir peaks a crown in sky's embrace,\nWhispering winds through ancient trees,\nCompose a symphony with ease.\n\nRivers carve their timeless path,\nIn gentle curves or mighty wrath,\nReflecting skies of azure blue,\nIn every drop, a world anew.\n\nFields of flowers, vibrant, bright,\nA tapestry of pure delight,\nPetals dance in breezes mild,\nEach bloom a wonder, nature's child.\n\nThe ocean's vast, unending sweep,\nA boundless blue, a mystic deep,\nWaves that crash and softly sigh,\nA lullaby beneath the sky.\n\nIn twilight's glow, the stars appear,\nA cosmic dance, both far and near,\nThe moon, a guardian in the night,\nBestows the world with silver light.\n\nFrom smallest ant to towering pine,\nEach life a thread in grand design,\nIn nature's realm, we find our place,\nA fleeting moment in its grace.\n\nSo let us tread with gentle care,\nIn awe of all that's wild and fair,\nFor in this world of green and blue,\nThe beauty of nature shines through.",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 258,
+    "total_tokens": 274
+  },
+  "average_power_draw": null,
+  "energy_consumption": null,
+  "energy_per_input_token": null,
+  "energy_per_output_token": null,
+  "energy_per_total_token": null
 }

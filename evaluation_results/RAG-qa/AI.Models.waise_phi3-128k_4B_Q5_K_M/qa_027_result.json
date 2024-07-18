@@ -1,0 +1,18 @@
+{
+  "average_score": 0.8194444444444444,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.7777777777777778,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.5
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant with no irrelevant statements. Great job!",
+    "Faithfulness": "The score is 0.78 because the actual output incorrectly mentions the need for middleware to link and access the OpenID Connect system and XWiki group tables, whereas the retrieval context specifies the use of properties and event listeners for synchronization.",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than the irrelevant nodes. The first node is highly relevant as it mentions the property `oidc.groups.mapping` which is directly related to the configuration of group synchronization between XWiki and the OpenID Connect provider.",
+    "ContextualRecall": "The score is 0.50 because while the 1st node in the retrieval context does discuss configuring group synchronization using the `xwiki.properties` file and setting properties like `oidc.groups.claim` and `oidc.groups.mapping`, it lacks specific details such as opening the file with a text editor, replacing placeholder values, configuring the `oidc.groups.separator` property, and saving and restarting XWiki."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

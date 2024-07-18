@@ -1,0 +1,18 @@
+{
+  "average_score": 0.7237838915470494,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8421052631578947,
+    "Faithfulness": 0.9166666666666666,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 0.6363636363636364
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.84 because the answer mostly addresses the input about restricting uploads to images or PDFs with a maximum size of 10 MB. However, it includes multiple irrelevant URLs to documentation pages that do not directly address the input.",
+    "Faithfulness": "The score is 0.92 because the actual output claims that the configuration for maximum attachment size is set per-request by default, which is not mentioned in the retrieval context.",
+    "ContextualPrecision": "The score is 0.50 because the second node, which explains 'the steps to set the maximum size of an attachment in the XWikiPreferences document', is directly relevant and correctly ranked. However, the first node, which 'provides a list of links and topics related to attachments in XWiki but does not directly address the specific configuration steps required', and other irrelevant nodes, are ranked higher than they should be.",
+    "ContextualRecall": "The score is 0.64 because while several steps for setting the maximum upload size are covered by nodes in the retrieval context, there is a lack of information on configuring allowable MIME types and ensuring only images or PDFs with a maximum of 10 MB can be uploaded."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

@@ -1,0 +1,18 @@
+{
+  "average_score": 0.8446969696969697,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.8333333333333334,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.5454545454545454
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is fully relevant and directly addresses the query without any irrelevant information. Great job!",
+    "Faithfulness": "The score is 0.83 because the actual output incorrectly states that only images or PDF files of a maximum size of 10MB can be uploaded, while the retrieval context specifies the maximum size is 100GB by default and 32MB for XWiki versions less than 10.9RC1.",
+    "ContextualPrecision": "The score is 1.00 because the relevant node in the retrieval context is ranked first, while all irrelevant nodes are ranked lower.",
+    "ContextualRecall": "The score is 0.55 because while the retrieval context covers the steps for configuring the maximum attachment size (Step 2) in detail, it lacks information on configuring allowed mimetypes (Step 1) as described in the expected output."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

@@ -1,0 +1,18 @@
+{
+  "average_score": 0.6904761904761904,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.3333333333333333,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.42857142857142855
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant and addresses the customization of user profile fields from the OpenID Connect provider in XWiki without any irrelevant statements.",
+    "Faithfulness": "The score is 0.33 because the actual output incorrectly states that the `oidc.groups.mapping` property is used for customizing user profile fields or mapping user attributes to XWiki user properties, whereas it is actually used for defining a mapping between XWiki groups and provider groups.",
+    "ContextualPrecision": "The score is 1.00 because all relevant contexts are ranked higher than the irrelevant nodes. Specifically, the first three nodes provide detailed information on customizing user profile fields in xwiki.properties and mapping user profile fields, while the fourth and fifth nodes, which focus on the base URL and general information, are ranked lower.",
+    "ContextualRecall": "The score is 0.43 because while some information about variables like 'oidc.user.subject' is supported by node 2 in the retrieval context, key details such as example mapping syntax and instructions for replacing variables are missing."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

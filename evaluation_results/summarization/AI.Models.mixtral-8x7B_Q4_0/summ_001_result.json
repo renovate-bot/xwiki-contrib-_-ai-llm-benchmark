@@ -1,0 +1,10 @@
+{
+  "score": 0.6666666666666666,
+  "reason": "The score is 0.67 because the summary contains contradictions regarding the footer area details and the function of panels, as well as extra information about an official documentation link that is not mentioned in the original text.",
+  "score_breakdown": {
+    "Alignment": 0.6666666666666666,
+    "Coverage": 1.0
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

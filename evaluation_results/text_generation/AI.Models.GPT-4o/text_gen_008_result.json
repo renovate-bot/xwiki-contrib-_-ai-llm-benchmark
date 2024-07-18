@@ -1,5 +1,7 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output provides a comprehensive and detailed travel guide for Paris, directly addressing the Input prompt. It is coherent, with logically connected ideas and smooth text flow. The language is fluent, grammatically correct, and readable. The guide includes top attractions, transportation options, cultural experiences, day trips, and practical tips, meeting the anticipated quality and content standards outlined in the Expected Output.",
-  "score_breakdown": null
+  "reason": "The Actual Output directly addresses the Input prompt by providing a detailed travel guide for Kyoto, Japan. It is coherent, logically structured, and flows well from one section to the next. The language is fluent and grammatically correct. The content meets the Expected Output by highlighting top attractions, accommodations, and activities in Kyoto.",
+  "prompt_language": "ro",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
 }

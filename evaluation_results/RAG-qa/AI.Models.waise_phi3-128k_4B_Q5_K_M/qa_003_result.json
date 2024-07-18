@@ -1,0 +1,18 @@
+{
+  "average_score": 0.5833333333333334,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8333333333333334,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.83 because the main response addresses the question about enabling notifications for one's own actions, but it includes irrelevant links that do not directly help with the issue.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to enabling notifications for one's own activity. For example, the first node discusses getting a notification RSS feed and general notification settings, the second node lists various notification preferences macros, and the third node covers topics like choosing the default frequency of notification emails and customizing notification email templates.",
+    "ContextualRecall": "The score is 0.50 because while the retrieval context supports the default notification settings mentioned in the first sentence, it lacks information about the 'Advanced filtering options' section mentioned in the second sentence."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

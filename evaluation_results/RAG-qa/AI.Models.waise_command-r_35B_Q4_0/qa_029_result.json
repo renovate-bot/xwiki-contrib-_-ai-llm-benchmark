@@ -1,0 +1,18 @@
+{
+  "average_score": 0.5555555555555556,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7222222222222222,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.72 because while the answer contains some relevant information, it includes multiple irrelevant URLs and statements that do not directly address the specific question about refusing script rights to a space administrator.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node 'describes the introduction and control of the 'Script' right in XWiki,' but does not address the specific question about refusing script rights to an administrator. Similarly, the second node 'lists various rights and their properties,' but does not provide information on refusing script rights to an administrator. The third node 'explains functions for checking and verifying access rights,' but does not specifically address the question. The fourth node 'discusses the conversion of rights when moving pages,' which is unrelated to refusing script rights to an administrator. Finally, the fifth node 'discusses XWiki's accessibility efforts,' which are completely unrelated to the input question.",
+    "ContextualRecall": "The score is 0.50 because the retrieval context supports the part about 'les droits qui sont impliqu\u00e9s par le droit d'administrateur ne peuvent pas \u00eatre refus\u00e9s,' but lacks information regarding the functionality not being supported in XWiki."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_004",
+  "prompt": "Generate a short product description based on the following information:\n\nProduct: Wireless Bluetooth Headphones\nFeatures: Noise-cancelling, 20-hour battery life, comfortable fit\nTarget audience: Tech-savvy professionals",
+  "expected_answer": "Introducing our cutting-edge wireless Bluetooth headphones, designed for tech-savvy professionals who demand the best. With advanced noise-cancelling technology, you can immerse yourself in your music or focus on your work without any distractions. Enjoy an impressive 20-hour battery life, ensuring your headphones keep up with your busy lifestyle. The comfortable, ergonomic fit allows you to wear them all day long without any discomfort. Upgrade your audio experience with our premium wireless headphones.",
+  "ai_answer": "##  Escape the Noise, Embrace Focus.\n\nThese wireless Bluetooth headphones are engineered for the tech-savvy professional who demands both performance and comfort.  With powerful noise-cancelling technology, distractions fade away, allowing you to immerse yourself in work or your favorite audio. Enjoy 20 hours of uninterrupted listening on a single charge, and experience a comfortable fit that stays put even during long workdays.  \n",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 50,
+    "completion_tokens": 85,
+    "total_tokens": 135
+  },
+  "average_power_draw": 185.78843478260873,
+  "energy_consumption": 205.25635810524489,
+  "energy_per_input_token": 0.7819289832580758,
+  "energy_per_output_token": 1.9548224581451894,
+  "energy_per_total_token": 1.5204174674462585
+}

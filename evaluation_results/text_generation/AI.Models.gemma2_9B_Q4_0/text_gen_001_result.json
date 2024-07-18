@@ -1,0 +1,7 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output is relevant and addresses the main points of the Input prompt. The information extracted is correct and coherent. However, the format does not match the Expected Output, which uses a JSON structure.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

@@ -1,8 +1,10 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because while the summary does not contain any contradictions or extra information, it fails to address specific questions that the original text can answer, such as whether all content added to the wiki is saved over time in XWiki and if there is a 'History' tab at the bottom of the page to compare versions.",
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary has a minor contradiction regarding how to access the 'History' menu item and fails to address whether content added to the wiki is saved over time in XWiki.",
   "score_breakdown": {
-    "Alignment": 1.0,
-    "Coverage": 0.6
-  }
+    "Alignment": 0.875,
+    "Coverage": 0.8
+  },
+  "input_language": "en",
+  "summary_language": "en"
 }

@@ -1,15 +1,18 @@
 {
-  "average_score": 0.5892857142857143,
+  "average_score": 0.625,
   "individual_scores": {
-    "AnswerRelevancy": 0.8571428571428571,
+    "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.5
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.86 because the response mostly addresses the issue of the notification bell not being available but includes an irrelevant URL pointing to general XWiki syntax documentation, which doesn't directly help with the specific problem mentioned.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfectly faithful alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. Specifically, the first node discusses \"various macros and their functions,\" the second node describes \"the appearance and functionality of the notifications interface,\" the third node covers \"the Notifications Macro and its settings,\" the fourth node details \"administrator settings for notifications,\" and the fifth node talks about \"customizing notification templates and installation instructions.\" None of these nodes provide information on enabling notifications in the wiki, which is the core issue in the input.",
-    "ContextualRecall": "The score is 0.50 because the retrieval context partially aligns with the expected output by mentioning 'notifications' and 'events happened on the wiki' (Sentence 1), but it lacks any reference to 'xwiki.properties' or setting 'notifications.enabled' to 'true' (Sentence 2)."
-  }
+    "AnswerRelevancy": "The score is 1.00 because the output is perfectly relevant and addresses the issue about the notification bell not being available even with the extension installed.",
+    "Faithfulness": "Great job! The score is 1.00 because there are no contradictions, indicating the actual output is perfectly aligned with the retrieval context.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node 'provides links and descriptions related to the Notifications Application but does not mention enabling notifications through `xwiki.properties` or provide troubleshooting steps.' Similarly, the second node 'lists dependencies for the Notifications Application but does not address the issue of enabling notifications or the specific property `notifications.enabled`.' These irrelevant nodes should be ranked lower.",
+    "ContextualRecall": "The score is 0.50 because the supportive context only partially aligns with the expected output, specifically with the first sentence, while the second sentence lacks direct support from the nodes in the retrieval context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
 }

@@ -1,5 +1,7 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output is relevant to the Input prompt and is coherent with a logical flow. It maintains grammatical correctness and natural language use. However, it is slightly less detailed than the Expected Output, missing terms like 'coordinating various physiological processes' and 'biological substrate for consciousness and subjective experiences.'",
-  "score_breakdown": null
+  "reason": "The Actual Output is relevant to the Input and addresses the prompt effectively. It is coherent and fluent. However, it lacks some sophistication and detail present in the Expected Output, such as 'coordinating various physiological processes' and 'serving as the biological substrate for cognitive functions, consciousness, and subjective experiences.'",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
 }

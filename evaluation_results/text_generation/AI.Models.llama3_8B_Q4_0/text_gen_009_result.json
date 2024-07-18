@@ -1,0 +1,7 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output is relevant to the Input and aligns well with the Expected Output in terms of key points like event name, dates, location, and features. However, it misses specific details such as 'target_audience' and the separation of start and end dates.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

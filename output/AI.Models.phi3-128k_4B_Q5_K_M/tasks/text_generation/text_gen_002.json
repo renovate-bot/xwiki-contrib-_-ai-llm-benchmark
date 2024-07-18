@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_002",
+  "prompt": "Transform the following keywords into a coherent sentence:\n\ncat, playful, garden, sunny day",
+  "expected_answer": "On a sunny day, the playful cat enjoyed exploring the garden.",
+  "ai_answer": " On a sunny day, the playful cat enjoys playing in the garden.",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 26,
+    "completion_tokens": 18,
+    "total_tokens": 44
+  },
+  "average_power_draw": 206.36710144927537,
+  "energy_consumption": 48.04998730932457,
+  "energy_per_input_token": 0.6767603846383743,
+  "energy_per_output_token": 1.6919009615959357,
+  "energy_per_total_token": 1.0920451661210129
+}

@@ -1,0 +1,18 @@
+{
+  "average_score": 0.7073863636363636,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9545454545454546,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.875
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.95 because the answer is highly relevant to the issue of not receiving notifications, with only a minor mention of XWiki syntax that is not directly related.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context discuss aspects of notifications such as features, RSS feeds, notification trays, preference macros, and alert menus, but none address enabling or ensuring the reception of notifications.",
+    "ContextualRecall": "The score is 0.88 because most of the sentences in the expected output are supported by the nodes in the retrieval context, such as mentions of 'Settings', 'Filters', 'Watched Entities', and 'Follow a user'. However, the context does not specifically mention `xwiki.properties` or the property `notifications.enabled`."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

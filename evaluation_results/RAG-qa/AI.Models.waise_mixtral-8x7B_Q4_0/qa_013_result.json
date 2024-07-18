@@ -1,0 +1,18 @@
+{
+  "average_score": 0.3846153846153846,
+  "individual_scores": {
+    "AnswerRelevancy": 0.5384615384615384,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.54 because although the output may contain some relevant information, it is significantly diluted by multiple irrelevant URLs and statements that do not address the specific query about enabling notifications for one's own actions in XWiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node is about 'configuring authorized applications and does not mention anything related to user notifications or activity.' The second node discusses 'customizing page templates, adding menus, and modifying CSS files, which is not relevant to user notifications or activity.' The third node is about 'importing office documents and other extensions, which is unrelated to user notifications or activity.' The fourth node lists 'various page editing features, which does not address user notifications or activity.' The fifth node is about 'the Admin UI for Model Validation, including installation and compatibility details, which is not related to user notifications or activity.'",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

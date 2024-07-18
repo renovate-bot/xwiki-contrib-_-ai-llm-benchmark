@@ -1,0 +1,18 @@
+{
+  "average_score": 0.6888111888111889,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8461538461538461,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.9090909090909091
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.85 because the response is mostly relevant but includes a URL that does not directly address the issue of not receiving notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For instance, the first node provides various links and descriptions about notifications but does not address enabling notifications or following users/pages. The second node explains how to get an RSS feed for notifications, which is not related to enabling notifications or following specific users/pages.",
+    "ContextualRecall": "The score is 0.91 because most of the expected output sentences are supported by nodes in the retrieval context, such as the instructions on following users and using the notifications menu. However, there is no direct mention in any node about setting 'notifications.enabled' in 'xwiki.properties'."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

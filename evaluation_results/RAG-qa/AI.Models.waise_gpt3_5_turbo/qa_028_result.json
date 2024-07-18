@@ -1,15 +1,18 @@
 {
-  "average_score": 0.6414141414141414,
+  "average_score": 0.41666666666666663,
   "individual_scores": {
-    "AnswerRelevancy": 0.7777777777777778,
+    "AnswerRelevancy": 0.6666666666666666,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.3333333333333333,
-    "ContextualRecall": 0.45454545454545453
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.78 because while the output provides some relevant information about file upload limits, it includes multiple URLs and mentions the default size limit, which do not directly address the specific requirement of limiting uploads to image or PDF files of a maximum size of 10 Mo.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context. Great job! Keep up the excellent work!",
-    "ContextualPrecision": "The score is 0.33 because the relevant node (ranked 3rd) that \"provides detailed steps on how to set limits on the maximum size of an attachment\" should have been ranked higher. The first node discusses \"configuring properties of documents and mentions MIME types\" but is not directly relevant to restricting uploads to image or PDF files of a maximum size of 10 MB. The second node includes \"links and images related to various references\" but does not address upload restrictions. The fourth node covers \"XWiki syntax for images and backlinks indexation,\" which is also irrelevant. The fifth node discusses \"document creation and limitations\" but does not provide information on configuring upload restrictions. Thus, the score is low because relevant information is not prioritized correctly.",
-    "ContextualRecall": "The score is 0.45 because while the steps to configure the maximum upload size (sentences 11-15) closely match the instructions in the 3rd node in the retrieval context, many key sentences (1-10) introducing the steps, explaining the configuration file modification, and providing the code snippet do not have direct matches in the nodes in the retrieval context."
-  }
+    "AnswerRelevancy": "The score is 0.67 because the provided URL does not directly address the specific requirement of ensuring only image or PDF files of a maximum size of 10 MB can be uploaded as attachments. However, the response still contains some relevant information.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment between the actual output and the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'various system filters and preferences', which is not related to configuring file upload restrictions. The second node lists 'various image files and their URLs', which is also unrelated to the input question about setting file upload restrictions.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not provide any relevant information or steps related to configuring allowed MIME types or setting the maximum attachment size as described in the expected output."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
 }

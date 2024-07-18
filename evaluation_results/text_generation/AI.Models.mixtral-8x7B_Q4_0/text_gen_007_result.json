@@ -1,0 +1,7 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output is relevant to the Input prompt and provides a detailed summary of a scientific discovery, aligning well with the Expected Output. It is coherent and logically flows from one sentence to the next. However, it includes a disclaimer about the AI's limitations and a fictional link, which slightly detracts from the overall fluency and realism.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

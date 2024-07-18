@@ -1,0 +1,18 @@
+{
+  "average_score": 0.29464285714285715,
+  "individual_scores": {
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 0.42857142857142855,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.75 because the answer partially addresses the question about configuring team spaces and permissions in XWiki, but the repeated irrelevant URL does not directly help in solving the issue.",
+    "Faithfulness": "The score is 0.43 because the actual output incorrectly states that 'spaces' are still managed by users, whereas the retrieval context indicates that 'spaces' have been removed from the XWiki UI and are no longer directly managed by users.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node 'does not provide any information on setting access rights for different teams', the second node 'does not address setting access rights for different teams or spaces', and the third node 'does not offer guidance on configuring access rights for teams'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any node(s) in the retrieval context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

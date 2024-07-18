@@ -1,0 +1,18 @@
+{
+  "average_score": 0.625,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant, addressing the question about customizing user profile fields from the OpenID Connect provider in XWiki without any irrelevant statements.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node provides 'general information about the OpenID Connect Authenticator' without addressing user profile field customization, and the second node 'lists dependencies for the extension' but does not provide relevant customization information.",
+    "ContextualRecall": "The score is 0.50 because while the retrieval context mentions 'xwiki.properties', 'oidc.user.mapping', and saving/restarting XWiki (supporting sentences 1, 2, and 5), it lacks specific examples and instructions for custom properties (missing support for sentences 3 and 4)."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

@@ -9,7 +9,7 @@
       "task": "RAG-qa",
       "settings": {
         "model": "AI.Models.waise_gpt3_5_turbo",
-        "temperature": 0.3,
+        "temperature": 0.5,
         "stream": false
       },
       "power_measurement": false
@@ -17,8 +17,8 @@
     {
       "task": "RAG-qa",
       "settings": {
-        "model": "AI.Models.waise-gpt-4o",
-        "temperature": 0.3,
+        "model": "AI.Models.waise_gpt-4o",
+        "temperature": 0.5,
         "stream": false
       },
       "power_measurement": false
@@ -26,8 +26,44 @@
     {
       "task": "RAG-qa",
       "settings": {
-        "model": "AI.Models.waise-mixtral",
-        "temperature": 0.3,
+        "model": "AI.Models.waise_mixtral-8x7B_Q4_0",
+        "temperature": 0.5,
+        "stream": false
+      },
+      "power_measurement": true
+    },
+    {
+      "task": "RAG-qa",
+      "settings": {
+        "model": "AI.Models.waise_gemma2_9B_Q4_0",
+        "temperature": 0.5,
+        "stream": false
+      },
+      "power_measurement": true
+    },
+    {
+      "task": "RAG-qa",
+      "settings": {
+        "model": "AI.Models.waise_llama3_8B_Q4_0",
+        "temperature": 0.5,
+        "stream": false
+      },
+      "power_measurement": true
+    },
+    {
+      "task": "RAG-qa",
+      "settings": {
+        "model": "AI.Models.waise_phi3-128k_4B_Q5_K_M",
+        "temperature": 0.5,
+        "stream": false
+      },
+      "power_measurement": true
+    },
+    {
+      "task": "RAG-qa",
+      "settings": {
+        "model": "AI.Models.waise_command-r_35B_Q4_0",
+        "temperature": 0.5,
         "stream": false
       },
       "power_measurement": true
@@ -36,7 +72,7 @@
       "task": "summarization",
       "settings": {
         "model": "AI.Models.gpt3_5_turbo",
-        "temperature": 0.3,
+        "temperature": 0.5,
         "stream": false
       },
       "power_measurement": false
@@ -45,7 +81,7 @@
       "task": "summarization",
       "settings": {
         "model": "AI.Models.GPT-4o",
-        "temperature": 0.3,
+        "temperature": 0.5,
         "stream": false
       },
       "power_measurement": false
@@ -53,8 +89,44 @@
     {
       "task": "summarization",
       "settings": {
-        "model": "AI.Models.mixtral",
-        "temperature": 0.3,
+        "model": "AI.Models.mixtral-8x7B_Q4_0",
+        "temperature": 0.5,
+        "stream": false
+      },
+      "power_measurement": true
+    },
+    {
+      "task": "summarization",
+      "settings": {
+        "model": "AI.Models.gemma2_9B_Q4_0",
+        "temperature": 0.5,
+        "stream": false
+      },
+      "power_measurement": true
+    },
+    {
+      "task": "summarization",
+      "settings": {
+        "model": "AI.Models.llama3_8B_Q4_0",
+        "temperature": 0.5,
+        "stream": false
+      },
+      "power_measurement": true
+    },
+    {
+      "task": "summarization",
+      "settings": {
+        "model": "AI.Models.phi3-128k_4B_Q5_K_M",
+        "temperature": 0.5,
+        "stream": false
+      },
+      "power_measurement": true
+    },
+    {
+      "task": "summarization",
+      "settings": {
+        "model": "AI.Models.command-r_35B_Q4_0",
+        "temperature": 0.5,
         "stream": false
       },
       "power_measurement": true
@@ -63,7 +135,7 @@
       "task": "text_generation",
       "settings": {
         "model": "AI.Models.gpt3_5_turbo",
-        "temperature": 0.3,
+        "temperature": 0.5,
         "stream": false
       },
       "power_measurement": false
@@ -72,7 +144,7 @@
       "task": "text_generation",
       "settings": {
         "model": "AI.Models.GPT-4o",
-        "temperature": 0.3,
+        "temperature": 0.5,
         "stream": false
       },
       "power_measurement": false
@@ -80,8 +152,44 @@
     {
       "task": "text_generation",
       "settings": {
-        "model": "AI.Models.mixtral",
-        "temperature": 0.3,
+        "model": "AI.Models.mixtral-8x7B_Q4_0",
+        "temperature": 0.5,
+        "stream": false
+      },
+      "power_measurement": true
+    },
+    {
+      "task": "text_generation",
+      "settings": {
+        "model": "AI.Models.gemma2_9B_Q4_0",
+        "temperature": 0.5,
+        "stream": false
+      },
+      "power_measurement": true
+    },
+    {
+      "task": "text_generation",
+      "settings": {
+        "model": "AI.Models.llama3_8B_Q4_0",
+        "temperature": 0.5,
+        "stream": false
+      },
+      "power_measurement": true
+    },
+    {
+      "task": "text_generation",
+      "settings": {
+        "model": "AI.Models.phi3-128k_4B_Q5_K_M",
+        "temperature": 0.5,
+        "stream": false
+      },
+      "power_measurement": true
+    },
+    {
+      "task": "text_generation",
+      "settings": {
+        "model": "AI.Models.command-r_35B_Q4_0",
+        "temperature": 0.5,
         "stream": false
       },
       "power_measurement": true

@@ -1,0 +1,7 @@
+{
+  "score": 0.6,
+  "reason": "The Actual Output aligns with the Input prompt by providing a structured travel guide framework. It is logically structured and fluent, but it lacks specific details about a particular tourist destination, which the Expected Output requires.",
+  "prompt_language": "ro",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

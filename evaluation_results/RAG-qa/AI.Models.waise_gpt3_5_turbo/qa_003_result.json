@@ -1,15 +1,18 @@
 {
-  "average_score": 0.7598214285714286,
+  "average_score": 0.4444444444444444,
   "individual_scores": {
-    "AnswerRelevancy": 0.7142857142857143,
+    "AnswerRelevancy": 0.7777777777777778,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.325,
-    "ContextualRecall": 1.0
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.71 because the response provides some relevant information regarding enabling notifications for own actions, but includes irrelevant URLs that do not directly address the input question.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions at all. Fantastic job on maintaining perfect alignment with the retrieval context! Keep up the great work!",
-    "ContextualPrecision": "The score is 0.33 because the first three nodes in the retrieval context are irrelevant to the input query. The first node discusses general settings and types of notifications but does not mention enabling notifications for one's own actions. The second node lists various notification-related macros and preferences but lacks information on the specific issue of receiving notifications for one's own activity. The third node talks about enabling notifications for all users by default and other administrative settings, which is not relevant to the user's query. The relevant nodes, which mention that users won't receive notifications for their own actions by default and provide a way to change this behavior, are ranked fourth and fifth. Therefore, the score is not higher because the relevant nodes are not ranked higher than the irrelevant ones.",
-    "ContextualRecall": "The score is 1.00 because the expected output aligns perfectly with the information provided in the 5th node in the retrieval context, ensuring a comprehensive and accurate match. Great job!"
-  }
+    "AnswerRelevancy": "The score is 0.78 because the main response addresses the question about enabling notifications for one's own actions, but it includes irrelevant links that do not directly contribute to solving the problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context discuss various aspects of notifications such as RSS feeds, notification preferences, customization options, overriding templates, and administrative settings, but none of them address how to enable notifications for one's own actions.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention that one doesn't receive notifications about one's own activity (sentence 1) or the ability to disable this filter in the 'Advanced filtering options' section of one's notification settings in the user profile (sentence 2)."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
 }

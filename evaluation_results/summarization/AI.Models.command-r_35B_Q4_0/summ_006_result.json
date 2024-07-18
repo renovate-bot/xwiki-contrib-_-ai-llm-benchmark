@@ -1,0 +1,10 @@
+{
+  "score": 0.25,
+  "reason": "The score is 0.25 because the summary contains multiple contradictions with the original text, including incorrect information about user login requirements for learning tasks, the location of the Developer's Guide documentation, and the availability of links for user next steps. Additionally, there are questions that the original text can answer but the summary does not address.",
+  "score_breakdown": {
+    "Alignment": 0.25,
+    "Coverage": 0.6
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

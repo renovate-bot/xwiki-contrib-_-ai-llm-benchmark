@@ -1,0 +1,10 @@
+{
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary includes incorrect information about accessing different types of feeds directly through the browser's RSS notification button and fails to address specific questions that the original text can answer, such as the availability of several RSS feeds by default in XWiki and the existence of a feed for all modified pages from the Notifications Application.",
+  "score_breakdown": {
+    "Alignment": 0.6666666666666666,
+    "Coverage": 0.6
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

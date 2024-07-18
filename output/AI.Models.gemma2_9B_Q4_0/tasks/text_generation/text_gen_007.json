@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_007",
+  "prompt": "Generate a news article about a recent scientific discovery.",
+  "expected_answer": "An informative article summarizing a groundbreaking scientific finding.",
+  "ai_answer": "## Ancient Bacteria Found Thriving in Antarctic Ice, Challenging Life's Limits\n\n**McMurdo Station, Antarctica** - In a groundbreaking discovery, scientists have unearthed thriving communities of ancient bacteria deep within the Antarctic ice, pushing the boundaries of what we know about life's resilience. \n\nThe research team, led by Dr. Anya Petrova from the University of Cambridge, drilled into a 1.5 million-year-old ice core, revealing a hidden world teeming with microbial life. These bacteria, belonging to previously unknown species, have adapted to survive in the extreme cold, darkness, and nutrient-poor environment.\n\n\"This is a remarkable finding,\" said Dr. Petrova. \"These bacteria have been isolated from the rest of the world for centuries, yet they have not only survived, but thrived. This tells us that life can exist in conditions we once thought impossible.\"\n\nThe discovery raises crucial questions about the origins and evolution of life on Earth. The bacteria's genetic makeup suggests they may be remnants of an ancient microbial community that existed before the last ice age. Their unique adaptations could also provide valuable insights into the potential for life on other planets with harsh environments.\n\n\"This discovery opens up exciting possibilities for astrobiology,\" explained Dr. James O'Connell, a leading expert on extraterrestrial life. \"If life can flourish in such extreme conditions on Earth, it increases the likelihood that life could exist elsewhere in the universe.\"\n\nThe research team plans to continue studying the bacteria and their environment, hoping to unlock more secrets about their survival strategies and evolutionary history. The findings have been published in the prestigious journal \"Nature.\" \n\n\nThis discovery is a testament to the tenacity of life and its ability to adapt to even the most challenging conditions. It serves as a reminder of the vastness and mystery of our planet and the countless wonders that still await discovery.",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 14,
+    "completion_tokens": 379,
+    "total_tokens": 393
+  },
+  "average_power_draw": 204.28993478260867,
+  "energy_consumption": 904.8828532609057,
+  "energy_per_input_token": 0.9411158120238229,
+  "energy_per_output_token": 2.352789530059557,
+  "energy_per_total_token": 2.3025008988827116
+}

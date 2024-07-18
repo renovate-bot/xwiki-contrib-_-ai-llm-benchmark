@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_005",
+  "prompt": "Generate a creative story about a space adventure.",
+  "expected_answer": "A story about a group of astronauts exploring a new planet.",
+  "ai_answer": "Deep space, the final frontier. Captain Max and his trusty crew embarked on yet another mission aboard the SS Adventure. Their objective: to explore uncharted territories beyond the reaches of known galaxies.\n\nAs they ventured deeper into the cosmos, they stumbled upon a mysterious swirling nebula, its vibrant colors contrasting the vast darkness that surrounded it. Curiosity piqued, the crew prepared for an extravehicular activity (EVA) to investigate this enigmatic phenomenon up close.\n\nDonning their spacesuits and boarding the Explorer pod, Captain Max and his team stepped into the void of space, drifting towards the nebula's mesmerizing expanse. The closer they got, the more they were enveloped by its ethereal beauty, as if time had slowed in the presence of this cosmic wonder.\n\nWithin the nebula's heart, they discovered an alien world, a hidden gem floating in the cosmos. Lush green landscapes and towering mountains, shrouded in an atmosphere of mystical aura, stretched as far as the eye could see. The crew was in awe, their eyes filled with wonder at the sight of this newfound realm.\n\nUnbeknownst to them, this world held its own secrets and sentinels, guardian spirits watching over their domain with enigmatic powers. As the crew approached, the sentinels awakened, summoning a celestial challenge to test the visitors' courage and wisdom.\n\nThe captain and his team faced trials of gravity manipulation, mind-bending puzzles, and cunning adversaries, each trial leading them deeper into the mysteries of this realm. Their wits were tested, and their bond of friendship strengthened with every obstacle overcome together.\n\nIn the climax of their adventure, the crew found themselves facing the celestial guardians in a showdown of cosmic proportions. With cunning strategies and teamwork, they emerged victorious, earning the respect and admiration of the sentient nebula's denizens.\n\nTheir triumphant return to the SS Adventure was celebrated across the galaxies, as their courageous journey opened new frontiers for exploration and discovery. News of their exploits spread far and wide, inspiring future generations of space explorers.\n\nCaptain Max and his crew, forever etched in the annals of spacefaring legends, continued on more extraordinary adventures, their thirst for exploring the cosmos insatiable. Their legacy, a beacon of hope and wonder, would guide other intrepid souls into the great unknown, pushing the boundaries of what was possible.",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 484,
+    "total_tokens": 496
+  },
+  "average_power_draw": 95.21486335403732,
+  "energy_consumption": 4617.217073802496,
+  "energy_per_input_token": 3.778410044028229,
+  "energy_per_output_token": 9.446025110070574,
+  "energy_per_total_token": 9.308905390730839
+}

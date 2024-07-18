@@ -1,0 +1,18 @@
+{
+  "average_score": 0.30434782608695654,
+  "individual_scores": {
+    "AnswerRelevancy": 0.21739130434782608,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.22 because the majority of the statements and URLs provided in the output are irrelevant to the input, which is about not receiving notifications. The output includes information about localization, import/export features, and various URLs that do not address the issue of notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job staying faithful to the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node is about 'customizing page templates, adding menus, and modifying CSS files,' which does not address 'enabling notifications'. Similarly, the second node discusses 'setting up languages and adjusting encoding for XWiki,' which is also not related to the issue of receiving notifications.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any node(s) in the retrieval context."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

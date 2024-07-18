@@ -1,15 +1,18 @@
 {
-  "average_score": 0.4444444444444444,
+  "average_score": 0.8333333333333333,
   "individual_scores": {
-    "AnswerRelevancy": 0.7777777777777778,
+    "AnswerRelevancy": 0.75,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0,
-    "ContextualRecall": 0.0
+    "ContextualPrecision": 0.8333333333333333,
+    "ContextualRecall": 0.75
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.78 because the answer provides some relevant information about configuring permissions in XWiki, but the repeated general documentation link does not directly address the specific configuration question, reducing the overall relevance.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions present. Fantastic job maintaining perfect alignment with the retrieval context! Keep up the excellent work!",
-    "ContextualPrecision": "The score is 0.00 because all the nodes in the retrieval contexts are irrelevant to the input query about configuring team-specific access rights in XWiki. For instance, the first node discusses \"controlling panels in XWiki,\" which is not pertinent to the question. Similarly, the second node talks about \"migrating to Nested Pages,\" which also doesn't relate to setting access controls for teams. Each subsequent node, ranked from third to fifth, similarly addresses unrelated topics such as \"potential code breakages,\" \"concepts of 'Page' and 'Space',\" and \"administration page configurations,\" none of which provide relevant information for configuring team-specific access rights in XWiki. Thus, the score is at its current level because all retrieved nodes are irrelevant.",
-    "ContextualRecall": "The score is 0.00 because the retrieval context does not provide any information related to the specific steps, group creation, setting of rights, or inheritance of rights mentioned in the expected output."
-  }
+    "AnswerRelevancy": "The score is 0.75 because the actual output provides some useful information on configuring permissions in XWiki, but it includes multiple irrelevant statements that are just URLs without direct information.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining accuracy and alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.83 because the first and third nodes are highly relevant, providing detailed information on XWiki's permission system and setting permissions. However, the second node, ranked second, is less relevant as it discusses spaces and sub-pages without addressing permissions. The fourth node, ranked fourth, focuses on advanced editing modes, which is not pertinent to the query. The fifth node, ranked fifth, talks about enabling/disabling statistics, which is unrelated to setting access control or permissions, and should be ranked lower.",
+    "ContextualRecall": "The score is 0.75 because while many parts of the expected output can be linked to nodes in the retrieval context, some sentences are summaries and not directly attributable to any specific part of the retrieval context."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
 }

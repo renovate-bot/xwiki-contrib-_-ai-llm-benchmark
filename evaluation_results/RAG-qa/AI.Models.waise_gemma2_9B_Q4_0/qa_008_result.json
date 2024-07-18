@@ -1,0 +1,18 @@
+{
+  "average_score": 0.8489304812834225,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9411764705882353,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.45454545454545453
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.94 because the response was highly relevant and addressed the main query about restricting uploads to images and PDFs of a specific size, but included a minor irrelevant detail about XWiki's control over file types displayed in the browser.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Great job maintaining perfect alignment!",
+    "ContextualPrecision": "The score is 1.00 because all the relevant nodes are ranked higher than the irrelevant nodes. The first node is highly relevant as it 'provides steps on how to set limits on the maximum size of an attachment,' while nodes ranked 2 to 6 are irrelevant as they discuss topics like 'display or download attachments,' 'attachment versioning and storage mechanisms,' 'handling attachment uploads via JavaScript,' 'using the Extension Manager for installing extensions,' and 'methods for adding attachments through the user interface,' none of which relate to configuring allowed mimetypes or setting maximum attachment sizes.",
+    "ContextualRecall": "The score is 0.45 because while the retrieval context covers the steps to change the maximum attachment size (steps 2.1 to 2.5 in the expected output), it lacks information about configuring allowed mimetypes (step 1 in the expected output)."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

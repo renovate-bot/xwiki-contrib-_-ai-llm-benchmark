@@ -1,0 +1,18 @@
+{
+  "average_score": 0.47916666666666663,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9166666666666666,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the answer is mostly relevant and provides useful information. However, it included a URL that did not directly address the specific configuration of permissions in XWiki, which slightly detracted from its relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions present. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node 'explains the internal structure of pages and spaces in XWiki', which does not address the input query about configuring access controls for teams. Similarly, the second node 'lists actions related to running a migrator and updating pages', which is also unrelated to the input query.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

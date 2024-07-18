@@ -1,8 +1,10 @@
 {
-  "score": 0.7,
-  "reason": "The score is 0.70 because the summary contains several inaccuracies and adds information not present in the original text. Specifically, it incorrectly mentions 'programmatic' rights as a permission level, misstates the effect of the scope of the right applied, and implies that an open wiki allows everyone to perform actions by default. Additionally, it introduces concepts like 'active user checks' and documentation availability that are not mentioned in the original text.",
+  "score": 0.8421052631578947,
+  "reason": "The score is 0.84 because there are some contradictions and extra information in the summary that is not present in the original text. However, the summary still captures a significant portion of the original text accurately.",
   "score_breakdown": {
-    "Alignment": 0.7,
+    "Alignment": 0.8421052631578947,
     "Coverage": 1.0
-  }
+  },
+  "input_language": "en",
+  "summary_language": "en"
 }

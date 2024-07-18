@@ -1,0 +1,18 @@
+{
+  "average_score": 0.84375,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.375
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the issue of not receiving notifications. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node that mentions 'notifications.enabled = true' is ranked first, while the irrelevant nodes that describe visual elements, email configurations, and other settings are ranked lower.",
+    "ContextualRecall": "The score is 0.38 because the retrieval context only partially covers the expected output, specifically mentioning the 'notifications.enabled' setting and the 'alert' menu, but missing details on subscribing to pages or users, following users, and the 'network' tab."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

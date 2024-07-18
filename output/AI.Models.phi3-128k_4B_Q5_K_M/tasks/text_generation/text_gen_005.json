@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_005",
+  "prompt": "Generate a creative story about a space adventure.",
+  "expected_answer": "A story about a group of astronauts exploring a new planet.",
+  "ai_answer": " Title: The Odyssey of the Star Voyagers\n\nOnce upon a time, in the far reaches of the Universe, nestled among twinkling celestial bodies, there was an adventurous crew known as \"The Star Voyagers\". \n\nCaptain Lyra Nova, with her silvery hair shining like a galaxy itself, commanded this extraordinary team. Comprising brilliant scientists, daring astronauts, and wise old beings from other galaxies, they were all ready to unlock the universe\u2019s deepest secrets. \n\nTheir journey began aboard their starship - the 'Celestial Seraphim'. Powered by a potent fusion engine that could traverse millions of light years in mere decades. Their mission was no ordinary one, they were on a quest to discover an ancient cosmic relic known as \"Eternal Luminance\".\n\nAs their journey unfolded through countless galaxies and nebulas, each member faced personal trials which tested the limits of bravery and courage. Yet amidst all these adventures and challenges, camaraderie was forged stronger than ever. \n\nDuring a particularly dangerous encounter with an interstellar black hole, their unity and resolve shone brightest. It was then that Captain Nova realized each member wasn't just part of the Star Voyager crew; they were all one family, bound by purpose and united in spirit.\n\nTowards the end, after overcoming several cosmic beasts, braving supernovae storms and confronting ancient alien civilizations, they finally reached their destination - The Luminous Shrine, a place where time seemed to stand still under its ethereal glow. \n\nInside this celestial sanctuary, the 'Eternal Luminance' revealed itself as an ever-shifting tapestry of stardust and cosmic energy; it was pure light - a beacon of unity in all matter and life forms throughout the universe. This sight filled them with an unimaginable sense of peace and wonderment.\n\nTheir journey had led them to not just one monumental discovery but also towards the realization that they were never alone in their cosmos-wide voyage; we are all linked together, woven into the very fabric of existence. \n\nAnd so, with hearts brimming with a newfound sense of unity and understanding, The Star Voyagers continued onwards into the unknown depths of space - forging ahead to explore the great mysteries awaiting them in the infinite cosmos. For they knew their adventures had just begun...the odyssey of the star voyagers was far from over.\n\nAnd so they sailed forth, towards a future as boundless and full of wonders as the universe itself!",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 14,
+    "completion_tokens": 604,
+    "total_tokens": 618
+  },
+  "average_power_draw": 214.9658893280632,
+  "energy_consumption": 777.8821553238672,
+  "energy_per_input_token": 0.5104213617610677,
+  "energy_per_output_token": 1.2760534044026692,
+  "energy_per_total_token": 1.258708989197196
+}

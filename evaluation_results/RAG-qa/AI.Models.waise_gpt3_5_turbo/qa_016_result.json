@@ -1,15 +1,18 @@
 {
-  "average_score": 0.3875,
+  "average_score": 0.8333333333333334,
   "individual_scores": {
-    "AnswerRelevancy": 0.8,
-    "Faithfulness": 0.75,
-    "ContextualPrecision": 0,
-    "ContextualRecall": 0.0
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 1.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.80 because the answer provides useful information on customizing user profile fields from the OpenID Connect provider in XWiki, but it also includes irrelevant details about the 'Logging Admin Guide' and enabling debug logging, which do not directly address the question.",
-    "Faithfulness": "The score is 0.75 because the actual output incorrectly states that the Logging Admin Guide provides information on customizing user profile fields from the OpenID Connect provider and on enabling debug logging to track events, neither of which are mentioned in the context.",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input. The first node discusses \"configuration examples, endpoints, and properties related to OpenID Connect\" but does not address mapping additional user profile fields in `xwiki.properties`. Subsequent nodes (2 to 5) similarly fail to provide relevant information, discussing \"release notes, limitations, and configuration guides,\" \"dependencies for the OpenID Connect extension,\" \"setting properties in the `xwiki.cfg` file,\" and \"events related to user profile updates and enabling debug logs,\" none of which pertain to mapping additional user profile fields in XWiki.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context."
-  }
+    "AnswerRelevancy": "The score is 1.00 because the output is perfectly relevant and directly addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining accuracy and alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node, which mentions `xwiki.properties` and includes configuration details, is ranked third. However, irrelevant nodes that provide general information about the OpenID Connect Authenticator, list dependencies, or mention endpoints and additional features are ranked higher (first, second, fourth, and fifth). These irrelevant nodes should be ranked lower than the relevant node.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are accurately supported by the information in node 3 in the retrieval context. Great job!"
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
 }

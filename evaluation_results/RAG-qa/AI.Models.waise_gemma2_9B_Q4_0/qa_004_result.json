@@ -1,0 +1,18 @@
+{
+  "average_score": 0.5625,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.25
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is completely relevant and directly addresses the concern about disabling notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For instance, the first node focuses on the 'Clear All' link and default behavior for notifications, which does not explain how to disable notifications. Similarly, the second node discusses enabling and disabling notifications at the administrator level, not at the user level. Therefore, irrelevant nodes are ranked higher than relevant ones.",
+    "ContextualRecall": "The score is 0.25 because only the first sentence in the expected output has some support from the 5th node in the retrieval context. The rest of the sentences lack any supporting information from the nodes in the retrieval context."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

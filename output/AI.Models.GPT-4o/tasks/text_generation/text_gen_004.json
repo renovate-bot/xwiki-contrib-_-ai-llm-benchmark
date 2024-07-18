@@ -2,6 +2,16 @@
   "id": "text_gen_004",
   "prompt": "Generate a short product description based on the following information:\n\nProduct: Wireless Bluetooth Headphones\nFeatures: Noise-cancelling, 20-hour battery life, comfortable fit\nTarget audience: Tech-savvy professionals",
   "expected_answer": "Introducing our cutting-edge wireless Bluetooth headphones, designed for tech-savvy professionals who demand the best. With advanced noise-cancelling technology, you can immerse yourself in your music or focus on your work without any distractions. Enjoy an impressive 20-hour battery life, ensuring your headphones keep up with your busy lifestyle. The comfortable, ergonomic fit allows you to wear them all day long without any discomfort. Upgrade your audio experience with our premium wireless headphones.",
-  "ai_answer": "Experience unparalleled audio quality with our Wireless Bluetooth Headphones, designed for tech-savvy professionals who demand the best. Featuring advanced noise-cancelling technology, these headphones ensure an immersive listening experience by blocking out distractions. With an impressive 20-hour battery life, you can enjoy your favorite tunes or important calls all day long. The ergonomic design provides a comfortable fit, perfect for extended wear during work or travel. Elevate your audio experience with the ultimate blend of performance and comfort.",
-  "sources": null
+  "ai_answer": "Experience unparalleled audio quality with our Wireless Bluetooth Headphones, designed specifically for tech-savvy professionals. Featuring advanced noise-cancelling technology, these headphones ensure an immersive listening experience, free from distractions. With an impressive 20-hour battery life, you can enjoy uninterrupted music, calls, and productivity throughout your busy day. The ergonomic design guarantees a comfortable fit, making them perfect for long hours of use. Elevate your audio experience and stay ahead in your professional life with our Wireless Bluetooth Headphones.",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 48,
+    "completion_tokens": 99,
+    "total_tokens": 147
+  },
+  "average_power_draw": null,
+  "energy_consumption": null,
+  "energy_per_input_token": null,
+  "energy_per_output_token": null,
+  "energy_per_total_token": null
 }

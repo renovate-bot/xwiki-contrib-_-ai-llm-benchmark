@@ -1,0 +1,18 @@
+{
+  "average_score": 0.7147727272727273,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9090909090909091,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 0.75
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.91 because the response is mostly relevant and provides useful information, but includes a URL that does not directly address the issue of disabling notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining accuracy and consistency!",
+    "ContextualPrecision": "The score is 0.20 because the relevant node in the retrieval context, which explains that 'By default, a page where you have made a major modification is automatically added to the list of pages you watch' and that you can 'change this behavior in the settings,' is ranked fifth. The first four nodes only describe different types of notification preferences, links to settings, RSS feeds, and customization options but do not directly address how to disable notifications.",
+    "ContextualRecall": "The score is 0.75 because the first three sentences in the expected output are well-supported by the 6th node in the retrieval context, but the last sentence about removing existing notification filters is not supported by any node in the retrieval context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

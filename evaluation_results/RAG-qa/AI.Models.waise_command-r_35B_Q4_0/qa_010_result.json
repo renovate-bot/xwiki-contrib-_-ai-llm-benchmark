@@ -1,0 +1,18 @@
+{
+  "average_score": 0.84375,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.6666666666666666,
+    "ContextualPrecision": 0.8333333333333333,
+    "ContextualRecall": 0.875
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response perfectly addresses the input without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 0.67 because the actual output incorrectly claims the existence of a `Spaces` section in the XWiki Administration console, while the retrieval context clearly states that the notion of space has been removed from the XWiki UI.",
+    "ContextualPrecision": "The score is 0.83 because the first and third nodes in the retrieval context provide detailed explanations of XWiki's permission system and rules for setting rights, which are directly relevant to configuring access control. However, the second, fourth, and fifth nodes, which discuss the creation of spaces, advanced editing options, and the Statistics feature respectively, are not related to setting access rights and should be ranked lower.",
+    "ContextualRecall": "The score is 0.88 because most of the expected output sentences are well-supported by the nodes in the retrieval context, such as the creation of groups, setting wiki-wide and space-level rights, and inheriting rights for child pages. However, the retrieval context does not mention adjusting rights for additional teams or spaces, leading to a slight deduction in the score."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

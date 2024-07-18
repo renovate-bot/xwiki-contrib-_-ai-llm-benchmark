@@ -1,0 +1,7 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output addresses the main points of the Input prompt by explaining photosynthesis in a simple way for a younger audience. It mentions plants making their own food using sunlight to create energy, similar to the Expected Output. The text is coherent and fluent, but it adds extra details like 'superpower' and 'amazing little generators' which are not necessary.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

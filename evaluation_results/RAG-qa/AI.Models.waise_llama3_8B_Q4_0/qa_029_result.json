@@ -1,0 +1,18 @@
+{
+  "average_score": 0.9375,
+  "individual_scores": {
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.75 because the main content addresses the question on how to deny script rights to a space administrator, but it includes multiple irrelevant URLs that do not contribute to answering the question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are correctly ranked higher than irrelevant nodes. The first node is highly relevant as it directly addresses the complexity of denying script rights to an administrator: 'administrators have to manually allow it.' Subsequent nodes are less relevant and correctly ranked lower, as they discuss unrelated topics such as rights properties, programmatic access checking, rights conversion during page migration, and accessibility.",
+    "ContextualRecall": "The score is 1.00 because the retrieval context perfectly supports the expected output. Great job!"
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

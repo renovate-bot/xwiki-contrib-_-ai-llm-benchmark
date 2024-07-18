@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_010",
+  "prompt": "Adapt the following text to a more technical audience:\n\nThe human brain is a complex organ that controls all functions of the body, interprets information from the outside world, and embodies the essence of the mind and soul.",
+  "expected_answer": "The human brain is a highly intricate and sophisticated organ responsible for regulating and coordinating various physiological processes, processing and interpreting sensory information from the external environment, and serving as the biological substrate for cognitive functions, consciousness, and subjective experiences.",
+  "ai_answer": "Here's an adapted version of the text for a more technical audience:\n\nThe human cerebral cortex is a highly intricate neuroanatomical structure that serves as the central hub for integrating and coordinating bodily functions, processing sensory information from the environment, and facilitating complex cognitive processes. This intricate system comprises approximately 100 billion neurons and trillions of glial cells, with each neuron exhibiting unique morphological features and functional properties.\n\nThe brain's primary role is to interpret and integrate information from various sensory modalities, including visual, auditory, tactile, olfactory, and gustatory stimuli, as well as interoceptive inputs related to bodily state and visceral sensations. Additionally, the brain processes and consolidates learning and memory, regulates emotional responses, and controls motor functions, including voluntary actions and autonomic reflexes.\n\nThe intricate neural circuitry within the brain also gives rise to higher-order cognitive processes, such as attention, perception, language, problem-solving, decision-making, and creativity, which are collectively regarded as the essence of consciousness.",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 51,
+    "completion_tokens": 204,
+    "total_tokens": 255
+  },
+  "average_power_draw": 209.2804347826087,
+  "energy_consumption": 373.51315299220704,
+  "energy_per_input_token": 0.665798846688426,
+  "energy_per_output_token": 1.6644971167210654,
+  "energy_per_total_token": 1.4647574627145374
+}

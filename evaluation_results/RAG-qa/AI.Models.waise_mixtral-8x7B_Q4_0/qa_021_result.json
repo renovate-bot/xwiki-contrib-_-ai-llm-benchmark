@@ -1,0 +1,18 @@
+{
+  "average_score": 0.5625,
+  "individual_scores": {
+    "AnswerRelevancy": 0.875,
+    "Faithfulness": 0.875,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.88 because the answer is mostly relevant and addresses the issue about the missing bell icon with the 'Notification d'alerte' extension installed. However, it includes some irrelevant statements that do not directly address the input.",
+    "Faithfulness": "The score is 0.88 because the actual output incorrectly claims that the Notifications Application contributes to the Alerts Application, while the retrieval context specifies that the Notifications Macro is provided by its own application.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in retrieval context are irrelevant. The first node talks about 'links and descriptions of various notification features' but does not address enabling notifications in the wiki's properties file. The second node lists 'dependencies for the notifications extension' without providing the needed information. The third node discusses 'getting a notification RSS feed and the notifications macro' but omits the relevant details. The fourth node covers 'various settings and customization options' but is missing the key information. Finally, the fifth node describes 'the notifications menu and how notifications are displayed' but also fails to provide the necessary information.",
+    "ContextualRecall": "The score is 0.50 because only the first sentence of the expected output can be attributed to node 3 in the retrieval context, while the second sentence lacks support from any part of the retrieval context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

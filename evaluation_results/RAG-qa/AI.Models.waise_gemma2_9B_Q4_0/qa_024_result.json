@@ -1,0 +1,18 @@
+{
+  "average_score": 0.6375,
+  "individual_scores": {
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 0.6
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.75 because while the response addresses the question about disabling notifications, it includes URLs that are not directly relevant to the specific query, slightly reducing the overall relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.20 because the relevant node in retrieval contexts is ranked last (fifth node), while the irrelevant nodes, which do not directly address how to disable notifications, are ranked higher. For example, the first node provides links and descriptions about various notification preferences and macros, but does not directly address how to disable notifications.",
+    "ContextualRecall": "The score is 0.60 because while the 1st and 2nd sentences of the expected output are supported by node 6 in the retrieval context, the 3rd and 4th sentences lack explicit mention in the nodes in the retrieval context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

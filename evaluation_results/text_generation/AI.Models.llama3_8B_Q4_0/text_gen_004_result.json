@@ -1,0 +1,7 @@
+{
+  "score": 0.9,
+  "reason": "The Actual Output directly addresses the Input prompt and covers the key points of noise-cancelling, 20-hour battery life, and comfortable fit. It is coherent and maintains logical flow, with high readability and natural language use. Minor differences in phrasing from the Expected Output prevent a perfect score.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

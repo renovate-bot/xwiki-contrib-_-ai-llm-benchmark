@@ -1,0 +1,17 @@
+{
+  "id": "summ_007",
+  "prompt": "Please summarize the following text:\n\n\nWhenever your make a modification to a page in XWiki, it is stored in that page's version history. You can compare any 2 versions of a page to see what has been changed between them. No content is ever lost \u2014 all the content you add to your wiki throughout time is saved. You can easily rollback to a previous version of a page if a recent modifications appears to be wrong.\n\n[![PageHistory.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/GettingStarted/PageHistory/PageHistory.png?width=650&rev=1.1)](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/GettingStarted/PageHistory/PageHistory.png?rev=1.1)\n\nTo compare 2 versions of a page, look for the \"History\" tab at the bottom of the page. You can also find the \"History\" menu item by clicking on the \"More Actions\" button at the top of a page.\n\n* To compare any 2 versions of a page, select those 2 versions and click on the \"Compare selected versions\" button located at the bottom of the page\n\t+ A page will show you the differences in content, attachments and comments between the 2 versions of the page\n\t+ Click on your browser's back button to come back where you were\n* To view the contents of an earlier version of the page, click on that page version number in the \"Version\" column\n* To rollback to a previous version of the page, click on the \"Rollback\" button\n\nFind out more about XWiki's page history feature **[on the Version Control page on XWiki.org.](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/VersionControl)**\n\n**Next: [Step 4 Changing the logo and the panels](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/ChangingTheLogoAndThePanels)**\n\n\n",
+  "expected_answer": null,
+  "ai_answer": "Every edit made in XWiki is saved in the page's version history, which allows users to revert pages back to previous versions or compare any two versions of a page for changes across attachments, content and comments. The history tab at the bottom of each page shows all available versions. This feature ensures that no changes are lost and makes it easy to track edits made over time. \n",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 448,
+    "completion_tokens": 77,
+    "total_tokens": 525
+  },
+  "average_power_draw": 106.26268830373549,
+  "energy_consumption": 866.0205504701217,
+  "energy_per_input_token": 1.3521007813741168,
+  "energy_per_output_token": 3.3802519534352915,
+  "energy_per_total_token": 1.6495629532764224
+}

@@ -1,0 +1,18 @@
+{
+  "average_score": 0.5125,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.25
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.80 because the output provides some relevant information about configuring permissions and spaces in XWiki, but it also includes several links and details that are not directly related to the specific task of setting permissions for teams.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all the nodes in the retrieval context are irrelevant to the input. For example, the first node is about 'Java programming and REST API in XWiki', which does not address configuring access controls. The second node is about 'managing users and groups' without detailed steps on configuring access controls. The third node discusses 'group synchronization with OpenID Connect', which is unrelated. The fourth node is about 'LDAP group configurations', not specific to configuring access controls for teams. Lastly, the fifth node discusses 'nested pages and subwikis', which is also not relevant to the access control configuration question.",
+    "ContextualRecall": "The score is 0.25 because only sentences 1 and 2 in the expected output can be attributed to nodes in the retrieval context, while the rest either do not correspond to any specific part of the retrieval context or mention details not covered in it."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

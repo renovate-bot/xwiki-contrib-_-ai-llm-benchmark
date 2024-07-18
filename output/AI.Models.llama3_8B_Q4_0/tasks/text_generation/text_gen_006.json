@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_006",
+  "prompt": "Write a poem about the beauty of nature.",
+  "expected_answer": "A poem describing the wonders of the natural world.",
+  "ai_answer": "Nature's canvas, vast and wide,\nA masterpiece that glides with pride.\nThe sun rises high in the sky,\nPainting the world with colors nigh.\n\nGreen forests stretch, a verdant sea,\nWhere birds sing sweetly, wild and free.\nThe trees, like sentinels of old,\nStand guard, their stories yet untold.\n\nRivers flow, a serpentine course,\nReflecting sunbeams with gentle force.\nTheir banks, a tapestry of delight,\nA dance of colors, shimmering bright.\n\nMountains rise, a towering range,\nCraggy peaks that challenge and change.\nThe valleys below, a verdant nest,\nWhere life abounds, in endless quest.\n\nDeserts bloom, a realm of gold,\nWhere cacti stand, their stories told.\nThe sand dunes shift, like shifting sands,\nA dance of wind, at nature's hands.\n\nIn every corner, beauty shines,\nA testament to nature's divine design.\nFor in her artistry, we find\nA reflection of our own heart and mind.\n\nSo let us cherish this world so grand,\nAnd preserve its beauty, hand in hand.\nFor in the beauty of nature lies\nA truth that touches the human skies.",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 14,
+    "completion_tokens": 250,
+    "total_tokens": 264
+  },
+  "average_power_draw": 198.95443478260876,
+  "energy_consumption": 431.60387207180537,
+  "energy_per_input_token": 0.6754364195176923,
+  "energy_per_output_token": 1.6885910487942308,
+  "energy_per_total_token": 1.6348631517871415
+}

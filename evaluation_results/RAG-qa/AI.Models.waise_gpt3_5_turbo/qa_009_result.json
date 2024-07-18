@@ -1,15 +1,18 @@
 {
-  "average_score": 0.6875,
+  "average_score": 0.6505681818181819,
   "individual_scores": {
-    "AnswerRelevancy": 0.75,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.7272727272727273,
+    "Faithfulness": 0.875,
     "ContextualPrecision": 0,
     "ContextualRecall": 1.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.75 because the provided information includes a URL that does not directly address the question of denying script rights to a space administrator. However, the rest of the answer is relevant and helpful.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context! Keep up the excellent work!",
-    "ContextualPrecision": "The score is 0.00 because all the nodes in the retrieval context are irrelevant to the input question. Specifically, the first node discusses script execution conditions but does not address denying script rights to a space administrator. The second node covers various rights but does not mention denying script rights to a space administrator. The third node elaborates on the 'Script' right and its default status but does not address the specific question. The fourth node mentions administrators revoking script rights but does not clearly state that denying script rights to a space administrator is unsupported. Finally, the fifth node talks about various permissions but does not specifically address the question. Thus, all the irrelevant nodes are ranked higher, resulting in a low score.",
-    "ContextualRecall": "The score is 1.00 because each sentence in the expected output is fully supported by corresponding nodes in the retrieval context, demonstrating a perfect match. Great job!"
-  }
+    "AnswerRelevancy": "The score is 0.73 because the answer contains useful information related to XWiki permissions, but it includes URLs that do not directly address the specific question about denying script rights to a space administrator.",
+    "Faithfulness": "The score is 0.88 because the actual output incorrectly claims that the 'Script' right can be denied for the space administrator role, while the retrieval context clarifies that the 'Script' right is denied on sub-wikis by default and the priority order for rights is deny > allow > no setting.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses the 'Script' right in XWiki without addressing how to deny it to a space administrator. The second node is about checking access rights programmatically, which is not related to denying script rights to a space administrator. The third node talks about rights conversion, excluding spaces and pages, without addressing the question. The fourth node focuses on using the checkAccess() method for access control, which does not provide information about denying script rights to a space administrator. Lastly, the fifth node lists various rights and their properties in XWiki but does not specifically address the query.",
+    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the retrieval context, specifically by the 5th node, indicating that admin rights and rights implied by admin right cannot be denied."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
 }

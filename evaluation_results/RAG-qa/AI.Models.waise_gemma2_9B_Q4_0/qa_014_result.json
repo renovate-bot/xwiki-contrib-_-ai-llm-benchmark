@@ -1,0 +1,18 @@
+{
+  "average_score": 0.34375,
+  "individual_scores": {
+    "AnswerRelevancy": 0.375,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.38 because the output contains multiple URLs that do not directly address the question about disabling notifications, making much of the response irrelevant.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining accuracy and consistency!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For instance, the first node discusses 'customizing page templates, adding menus, and modifying CSS files' which does not address notifications or how to disable them. Similarly, the second node talks about 'adding and removing keyboard shortcuts using JavaScript,' which also does not provide any information about notifications or their settings.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

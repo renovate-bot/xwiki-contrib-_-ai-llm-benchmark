@@ -1,0 +1,18 @@
+{
+  "average_score": 0.8673076923076923,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.7,
+    "ContextualRecall": 0.7692307692307693
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the output is fully relevant and directly addresses the question about configuring group synchronization between XWiki and an OpenID Connect provider. Great job!",
+    "Faithfulness": "Great job! The score is 1.00 because there are no contradictions, indicating perfect alignment with the retrieval context. Keep up the excellent work!",
+    "ContextualPrecision": "The score is 0.70 because the first node is relevant, mentioning 'mapping between the XWiki groups and the provider groups using oidc.groups.mapping property,' and the fifth node is also relevant, covering 'Group synchronization.' However, the second node, which mainly discusses authentication and installation instructions, the third node, focusing on the base URL and endpoints, and the fourth node, listing dependencies, are irrelevant and should be ranked lower.",
+    "ContextualRecall": "The score is 0.77 because while the retrieval context nodes mentioned key configuration properties and specific settings related to group synchronization, it lacked steps on opening the file with a text editor and saving/restarting the XWiki instance."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

@@ -1,8 +1,10 @@
 {
-  "score": 1.0,
-  "reason": "The score is 1.00 because the summary perfectly aligns with the original text, with no contradictions or additional information introduced. Excellent summarization quality.",
+  "score": 0.9090909090909091,
+  "reason": "The score is 0.91 because the summary contains a minor contradiction regarding the Watchlist Feature's RSS feed, which is not referred to as a default RSS feed in XWiki in the original text. Otherwise, the summary is accurate and concise.",
   "score_breakdown": {
-    "Alignment": 1.0,
+    "Alignment": 0.9090909090909091,
     "Coverage": 1.0
-  }
+  },
+  "input_language": "en",
+  "summary_language": "en"
 }

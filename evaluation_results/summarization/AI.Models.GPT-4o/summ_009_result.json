@@ -1,8 +1,10 @@
 {
-  "score": 0.8571428571428571,
-  "reason": "The score is 0.86 because the summary includes extra information about XWiki and its reference pages that were not mentioned in the original text. However, there are no contradictions, which indicates a generally accurate summarization with some additional, albeit unnecessary, details.",
+  "score": 1.0,
+  "reason": "The score is 1.00 because the summary is accurate, contains no contradictions, and includes no extra information not present in the original text.",
   "score_breakdown": {
-    "Alignment": 0.8571428571428571,
+    "Alignment": 1.0,
     "Coverage": 1.0
-  }
+  },
+  "input_language": "en",
+  "summary_language": "en"
 }

@@ -1,0 +1,7 @@
+{
+  "score": 1.0,
+  "reason": "The Actual Output directly addresses the Input prompt by providing a comprehensive travel guide for Paris, including attractions, neighborhoods, cuisine, and practical tips. The content is coherent with logical flow and well-connected ideas. The language is grammatically correct and natural. There are no significant deviations from the Expected Output.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

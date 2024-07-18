@@ -1,0 +1,18 @@
+{
+  "average_score": 0.8585858585858586,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8888888888888888,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.5454545454545454
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.89 because the answer is mostly relevant and addresses the question, but it includes a link that is not specifically related to restricting file types and sizes.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first node is highly relevant as it provides detailed steps to change the maximum size of an attachment in the XWikiPreferences document, which directly addresses the input question.",
+    "ContextualRecall": "The score is 0.55 because while the retrieval context covers the steps for configuring the maximum attachment size (Step 2) comprehensively, it does not address the steps for configuring allowed mimetypes (Step 1)."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

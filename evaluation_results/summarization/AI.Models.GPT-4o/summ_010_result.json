@@ -1,8 +1,10 @@
 {
-  "score": 0.6666666666666666,
-  "reason": "The score is 0.67 because the summary includes inaccuracies about the creation of blogs and task managers, which were not mentioned in the original text, and it adds extra information about the availability of basic concepts through provided links that was not present in the original.",
+  "score": 0.875,
+  "reason": "The score is 0.88 because the summary includes extra information about exploring XWiki basic concepts, which is not mentioned in the original text.",
   "score_breakdown": {
-    "Alignment": 0.6666666666666666,
+    "Alignment": 0.875,
     "Coverage": 1.0
-  }
+  },
+  "input_language": "en",
+  "summary_language": "en"
 }

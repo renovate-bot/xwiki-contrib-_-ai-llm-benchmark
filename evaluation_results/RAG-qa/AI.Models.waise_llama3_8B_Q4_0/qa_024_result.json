@@ -1,0 +1,18 @@
+{
+  "average_score": 0.8388888888888889,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8888888888888888,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.8666666666666667,
+    "ContextualRecall": 0.6
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.89 because the answer is mostly relevant and provides useful information about disabling notifications. However, the inclusion of unrelated URLs slightly detracts from its overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions present. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.87 because the relevant nodes are ranked higher overall, but there are still irrelevant nodes like the third node, which is about 'getting a notification RSS feed and general settings,' and the fourth node, which discusses 'email notifications and other customization options,' that should be ranked lower.",
+    "ContextualRecall": "The score is 0.60 because while the retrieval context supports the inclusion of automatic page watching and notification of changes (sentences 1 and 2), it lacks information about modifying the automatic watch settings and removing custom notification filters (sentences 3 and 4)."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

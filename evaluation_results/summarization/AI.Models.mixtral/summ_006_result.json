@@ -1,8 +1,0 @@
-{
-  "score": 0.7142857142857143,
-  "reason": "The score is 0.71 because the summary contains some contradictions and extra information not present in the original text, such as the need to log in to view page history and the mention of a \"User Guide\" under \"Getting Started.\" These inaccuracies reduce the summary's reliability and alignment with the original content. Additionally, the summary fails to address specific questions that the original text can answer, further impacting its comprehensiveness.",
-  "score_breakdown": {
-    "Alignment": 0.7142857142857143,
-    "Coverage": 0.8
-  }
-}

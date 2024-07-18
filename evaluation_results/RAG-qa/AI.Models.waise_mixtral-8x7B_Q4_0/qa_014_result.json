@@ -1,0 +1,18 @@
+{
+  "average_score": 0.42647058823529416,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7058823529411765,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.71 because the response includes several URLs that are not directly relevant to the user's query about disabling notifications, which detracts from the overall relevance. However, it still provides some useful information related to the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job staying true to the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node is about 'customizing page templates, adding menus, and modifying CSS files,' which does not address disabling notifications. Similarly, the second node discusses 'adding and removing keyboard shortcuts,' which is also not related to managing notification settings.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

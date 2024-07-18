@@ -1,0 +1,18 @@
+{
+  "average_score": 0.6888888888888889,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8888888888888888,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 0.6666666666666666
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.89 because the provided links do not directly address the specific question about disabling notifications, although the overall response is mostly relevant.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.20 because the relevant node, which explains the 'Auto Watch' feature and its settings, is ranked fifth. The irrelevant nodes, such as the first node discussing various notification-related macros and preferences, and the second node mentioning settings and filters without specific instructions, should be ranked lower.",
+    "ContextualRecall": "The score is 0.67 because while some sentences in the expected output are supported by nodes in the retrieval context (e.g., sentences 1, 2, and 3), other sentences lack specific mentions, such as 'Suivi automatique des pages' and 'filtres de notification existants'."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

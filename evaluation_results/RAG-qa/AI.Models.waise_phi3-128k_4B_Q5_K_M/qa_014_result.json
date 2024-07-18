@@ -1,0 +1,18 @@
+{
+  "average_score": 0.4107142857142857,
+  "individual_scores": {
+    "AnswerRelevancy": 0.6428571428571429,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.64 because the provided URL does not directly address the input question about how to disable notifications, leading to multiple instances of irrelevant information.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job staying faithful to the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'customizing page templates, adding menus, and modifying CSS files', which is unrelated to disabling notifications. The second node talks about 'adding and removing keyboard shortcuts using JavaScript', which does not address the issue of disabling notifications. The third node explains 'how to create and manage applications and extensions within XWiki', which is not relevant to the question about disabling notifications. The fourth node details 'the usage of different editors for editing text areas and content types', which does not help in resolving the notification issue. The fifth node provides information on 'configuring authorized applications for token generation', which is not related to disabling notifications.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

@@ -1,0 +1,18 @@
+{
+  "average_score": 0.45833333333333337,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8333333333333334,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.83 because the provided URLs are not directly relevant to the input question about restricting file types and sizes for uploads, although the rest of the answer addresses the question well.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining complete faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node describes 'various system filter preferences, office document viewers, and other unrelated features', which does not address configuring file upload restrictions or MIME types. Subsequent nodes continue to list references to images and files without providing relevant information on configuring file upload restrictions or MIME types.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention any of the steps or configurations related to ensuring only image or PDF files of a maximum size of 10 MB can be uploaded, configuring MIME types, modifying the `xwiki.properties` file, or setting the maximum attachment size to 10 MB."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

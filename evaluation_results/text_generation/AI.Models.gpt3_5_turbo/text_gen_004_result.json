@@ -1,5 +1,7 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output addresses the key points and requirements from the Input prompt, including noise-cancelling, 20-hour battery life, and comfortable fit for tech-savvy professionals. It closely matches the Expected Output in terms of details and coherence. Minor differences in phrasing and lack of terms like 'cutting-edge' and 'ergonomic' slightly reduce the score.",
-  "score_breakdown": null
+  "reason": "The Actual Output addresses the topic, maintains coherence, and aligns well with the Expected Output in terms of relevance and detail. It is fluent and grammatically correct. Minor differences in phrasing prevent a perfect score.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
 }

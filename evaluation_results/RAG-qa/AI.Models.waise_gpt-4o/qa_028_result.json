@@ -1,0 +1,18 @@
+{
+  "average_score": 0.47619047619047616,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9047619047619048,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.90 because the majority of the response is relevant and helpful, but the inclusion of unrelated URLs slightly detracts from its overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses various preferences and functionalities related to notifications, office documents, PDFs, and other content types, but does not address MIME type restrictions or file size limits for uploads. The second node provides a list of image references and links, which are unrelated to configuring MIME type restrictions or file size limits for uploads. Similarly, the third, fourth, and fifth nodes contain image references and links, which do not provide any information relevant to MIME type restrictions or file size limits for uploads.",
+    "ContextualRecall": "The score is 0.00 because none of the steps or details in the expected output can be attributed to the nodes in the retrieval context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

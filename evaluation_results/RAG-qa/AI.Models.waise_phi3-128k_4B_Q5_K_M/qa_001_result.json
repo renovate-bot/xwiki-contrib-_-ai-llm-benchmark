@@ -1,0 +1,18 @@
+{
+  "average_score": 0.5,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is fully relevant and addresses the issue without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect faithfulness!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node 'describes the Alert menu and its functionalities but does not address the issue of enabling notifications', and the second node 'provides metadata about the application, such as its type, category, and rating, but does not mention enabling notifications'.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention enabling notifications in the wiki or setting `notifications.enabled` in `xwiki.properties` to `true`."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

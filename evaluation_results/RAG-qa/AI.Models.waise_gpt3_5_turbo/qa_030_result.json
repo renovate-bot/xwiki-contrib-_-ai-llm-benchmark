@@ -1,15 +1,18 @@
 {
-  "average_score": 0.3611111111111111,
+  "average_score": 0.4464285714285714,
   "individual_scores": {
-    "AnswerRelevancy": 0.7777777777777778,
-    "Faithfulness": 0.6666666666666666,
+    "AnswerRelevancy": 0.7857142857142857,
+    "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.78 because while the response provides some relevant information about configuring permissions in XWiki, it includes a URL that does not directly address the specific question asked about team space permissions.",
-    "Faithfulness": "The score is 0.67 because the actual output incorrectly instructs users to configure permissions on spaces, even though the retrieval context states that the notion of space has been removed from the UI in XWiki.",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses the emulation of spaces and pages in XWiki, but it does not provide any information on configuring access rights for teams. The second node talks about changes in XWiki 16.3.0 and space naming conventions but does not address access control settings for teams. The third node explains the concepts of pages and spaces in XWiki and the introduction of Nested Pages, but it does not provide relevant information on setting access rights for teams. The fourth node discusses the distinction between pages and spaces and the implementation of Nested Spaces at the API level, but does not address access control for teams. The fifth node describes administration configurations for spaces and pages but does not provide guidance on how to set access rights for teams.",
-    "ContextualRecall": "The score is 0.00 because the retrieval context does not provide any relevant steps, guidelines, or instructions related to achieving access control, creating groups, setting rights at the wiki or space level, inheriting rights for child pages, or adjusting rights for additional teams or spaces as outlined in the expected output."
-  }
+    "AnswerRelevancy": "The score is 0.79 because the provided URL does not directly address the question about configuring permissions in XWiki. However, the rest of the content is relevant and useful.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to configuring team access rights in XWiki. For example, the first node discusses spaces with WebHome pages but lacks information on access rights, and the second node talks about actions after running a migrator, which is unrelated to team access configuration.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any node(s) in the retrieval context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
 }

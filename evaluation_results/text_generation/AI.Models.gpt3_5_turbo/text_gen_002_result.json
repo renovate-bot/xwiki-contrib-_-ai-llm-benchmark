@@ -1,5 +1,7 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output directly addresses the Input by forming a coherent sentence with the given keywords. It logically flows and maintains relevance and coherence similar to the Expected Output. The language used is fluent and grammatically correct, but the word order slightly differs from the Expected Output.",
-  "score_breakdown": null
+  "reason": "The Actual Output is relevant to the Input prompt and maintains coherence, fluency, and grammatical correctness. It closely aligns with the Expected Output with only minor differences in wording and structure.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
 }

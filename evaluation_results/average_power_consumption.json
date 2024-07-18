@@ -1,0 +1,157 @@
+{
+  "AI.Models.mixtral-8x7B_Q4_0": {
+    "model_average_power": 2145.160476042663,
+    "task_averages": {
+      "summarization": {
+        "average_power_draw": 71.62983463967393,
+        "energy_consumption": 2606.951548339576,
+        "energy_per_input_token": 1.1058729662395839,
+        "energy_per_output_token": 2.7646824155989598,
+        "energy_per_total_token": 1.690632930525565
+      },
+      "text_generation": {
+        "average_power_draw": 68.83881824977297,
+        "energy_consumption": 1683.3694037457503,
+        "energy_per_input_token": 1.8744880824263475,
+        "energy_per_output_token": 4.686220206065867,
+        "energy_per_total_token": 4.180315289100367
+      }
+    }
+  },
+  "AI.Models.waise_phi3-128k_4B_Q5_K_M": {
+    "model_average_power": 410.9875270273888,
+    "task_averages": {
+      "RAG-qa": {
+        "average_power_draw": 210.02727776500848,
+        "energy_consumption": 410.9875270273888,
+        "energy_per_input_token": 0.23667469908917987,
+        "energy_per_output_token": 0.5916867477229497,
+        "energy_per_total_token": 0.311983796110792
+      }
+    }
+  },
+  "AI.Models.gemma2_9B_Q4_0": {
+    "model_average_power": 648.9825623381391,
+    "task_averages": {
+      "summarization": {
+        "average_power_draw": 200.1210116827876,
+        "energy_consumption": 744.4179657091051,
+        "energy_per_input_token": 0.4427239016502873,
+        "energy_per_output_token": 1.106809754125718,
+        "energy_per_total_token": 0.5946284789828538
+      },
+      "text_generation": {
+        "average_power_draw": 182.7619056698825,
+        "energy_consumption": 553.5471589671732,
+        "energy_per_input_token": 0.852555436063764,
+        "energy_per_output_token": 2.1313885901594096,
+        "energy_per_total_token": 1.7899324888997126
+      }
+    }
+  },
+  "AI.Models.llama3_8B_Q4_0": {
+    "model_average_power": 568.1206673512213,
+    "task_averages": {
+      "summarization": {
+        "average_power_draw": 207.83847889637696,
+        "energy_consumption": 484.8177709336918,
+        "energy_per_input_token": 0.3538958401352349,
+        "energy_per_output_token": 0.8847396003380874,
+        "energy_per_total_token": 0.4760451544384459
+      },
+      "text_generation": {
+        "average_power_draw": 189.63483525500183,
+        "energy_consumption": 651.4235637687509,
+        "energy_per_input_token": 0.716202677272019,
+        "energy_per_output_token": 1.7905066931800477,
+        "energy_per_total_token": 1.558274285159711
+      }
+    }
+  },
+  "AI.Models.waise_gemma2_9B_Q4_0": {
+    "model_average_power": 746.2670976469715,
+    "task_averages": {
+      "RAG-qa": {
+        "average_power_draw": 219.08849602164062,
+        "energy_consumption": 746.2670976469715,
+        "energy_per_input_token": 0.2549535175181375,
+        "energy_per_output_token": 0.6373837937953439,
+        "energy_per_total_token": 0.28927268414671475
+      }
+    }
+  },
+  "AI.Models.command-r_35B_Q4_0": {
+    "model_average_power": 2070.872345957566,
+    "task_averages": {
+      "summarization": {
+        "average_power_draw": 103.23381042827518,
+        "energy_consumption": 2031.269216254234,
+        "energy_per_input_token": 1.5492209623102573,
+        "energy_per_output_token": 3.873052405775643,
+        "energy_per_total_token": 1.980060402423727
+      },
+      "text_generation": {
+        "average_power_draw": 93.14259427309173,
+        "energy_consumption": 2110.4754756608977,
+        "energy_per_input_token": 3.6354474245733366,
+        "energy_per_output_token": 9.088618561433341,
+        "energy_per_total_token": 7.692975120336743
+      }
+    }
+  },
+  "AI.Models.waise_mixtral-8x7B_Q4_0": {
+    "model_average_power": 2888.4076661675867,
+    "task_averages": {
+      "RAG-qa": {
+        "average_power_draw": 71.8655990234099,
+        "energy_consumption": 2888.4076661675867,
+        "energy_per_input_token": 1.0887569823009042,
+        "energy_per_output_token": 2.72189245575226,
+        "energy_per_total_token": 1.6525425749873903
+      }
+    }
+  },
+  "AI.Models.phi3-128k_4B_Q5_K_M": {
+    "model_average_power": 298.19933666698614,
+    "task_averages": {
+      "summarization": {
+        "average_power_draw": 206.5732729888469,
+        "energy_consumption": 276.24128541701765,
+        "energy_per_input_token": 0.20741337582815342,
+        "energy_per_output_token": 0.5185334395703836,
+        "energy_per_total_token": 0.2626646939166371
+      },
+      "text_generation": {
+        "average_power_draw": 189.0915160326087,
+        "energy_consumption": 320.1573879169547,
+        "energy_per_input_token": 0.6717169959583849,
+        "energy_per_output_token": 1.6792924898959627,
+        "energy_per_total_token": 1.2568808430495149
+      }
+    }
+  },
+  "AI.Models.waise_command-r_35B_Q4_0": {
+    "model_average_power": 3061.8240106355483,
+    "task_averages": {
+      "RAG-qa": {
+        "average_power_draw": 103.69933596414225,
+        "energy_consumption": 3061.8240106355483,
+        "energy_per_input_token": 1.706953021151285,
+        "energy_per_output_token": 4.267382552878214,
+        "energy_per_total_token": 2.283020568642858
+      }
+    }
+  },
+  "AI.Models.waise_llama3_8B_Q4_0": {
+    "model_average_power": 661.2948301455974,
+    "task_averages": {
+      "RAG-qa": {
+        "average_power_draw": 207.4524740441613,
+        "energy_consumption": 661.2948301455974,
+        "energy_per_input_token": 0.3647247634635018,
+        "energy_per_output_token": 0.9118119086587543,
+        "energy_per_total_token": 0.49400089289132537
+      }
+    }
+  }
+}
