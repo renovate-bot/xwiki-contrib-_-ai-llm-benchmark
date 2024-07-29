@@ -1,6 +1,6 @@
 {
   "id": "qa_009",
   "prompt": "How can I deny script right to a space administrator?",
-  "expected_answer": "This is unfortunately not supported in XWiki, rights that are implied by admin right cannot be denied.",
+  "expected_answer": "This is unfortunately not supported in XWiki, script right is implied by admin right, and rights that are implied by admin right cannot be denied.",
   "data_path": null
 }
