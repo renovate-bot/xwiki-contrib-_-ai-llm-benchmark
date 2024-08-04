@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.29365079365079366,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7619047619047619,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.76 because the answer partially addresses the question about disabling notifications, but the repeated irrelevant URLs lower its relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining accuracy and consistency!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For instance, the first node is about 'defining blocked attachment mimetypes', the second node discusses 'setting the default language for a wiki page', and the third node is about 'directory cleanup and database attachment storage'. None of these address notifications or how to disable them.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses configuring blocked attachment mimetypes, setting default languages, directory cleanup, editing translations, and programming permissions, none of which relate to disabling notifications.",
+    "Hallucination": "The score is 1.00 because the actual output consistently provides instructions on how to disable notifications in XWiki, which is unrelated to the contexts mentioned in the factual alignments. There are no contradictions, but the complete misalignment with the expected contexts results in a high hallucination score."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

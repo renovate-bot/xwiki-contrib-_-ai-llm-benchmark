@@ -1,0 +1,10 @@
+{
+  "score": 0.6666666666666666,
+  "reason": "The score is 0.67 because the summary includes extra information not mentioned in the original text and fails to answer a question that the original text can.",
+  "score_breakdown": {
+    "Alignment": 0.6666666666666666,
+    "Coverage": 0.8
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

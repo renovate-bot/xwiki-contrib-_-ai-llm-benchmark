@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.30952380952380953,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8571428571428571,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.86 because the response is mostly relevant but includes a URL that does not directly address the issue of not receiving notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect faithfulness!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'blocked attachment mimetypes' which is unrelated to notifications. The second node is about 'programming rights and permissions within a wiki', and the third node explains 'various user rights such as comment, edit, delete, and administration rights', none of which are related to notifications.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention notifications, how to enable them, or any related settings and actions described in the expected output.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses configuring blocked attachment mimetypes, programming rights, and user permissions, none of which are related to not receiving notifications.",
+    "Hallucination": "The score is 1.00 because the actual output provides information that is completely unrelated to the contexts, indicating a high level of hallucination."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

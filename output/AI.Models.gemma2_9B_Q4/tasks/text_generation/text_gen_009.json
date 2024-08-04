@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_009",
+  "prompt": "Extract the event details from the following text:\n\nJoin us for the Annual Tech Conference, taking place from September 15th to 17th, 2023 at the Riverside Convention Center, 123 Main Street, Anytown, USA. The conference will feature keynote speeches, workshops, and networking opportunities for professionals in the tech industry.",
+  "expected_answer": "{\n  \"event_name\": \"Annual Tech Conference\",\n  \"start_date\": \"September 15th, 2023\",\n  \"end_date\": \"September 17th, 2023\",\n  \"venue\": \"Riverside Convention Center\",\n  \"address\": \"123 Main Street, Anytown, USA\",\n  \"target_audience\": \"professionals in the tech industry\"\n}",
+  "ai_answer": "Here are the event details extracted from the text:\n\n* **Event Name:** Annual Tech Conference\n* **Dates:** September 15th to 17th, 2023\n* **Location:** Riverside Convention Center, 123 Main Street, Anytown, USA\n* **Features:**\n    * Keynote speeches\n    * Workshops\n    * Networking opportunities \n* **Target Audience:** Professionals in the tech industry \n\n\nLet me know if you need any further information extracted!",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 84,
+    "completion_tokens": 105,
+    "total_tokens": 189
+  },
+  "average_power_draw": 202.6824505928854,
+  "energy_consumption": 235.99539589736776,
+  "energy_per_input_token": 0.681083393643197,
+  "energy_per_output_token": 1.7027084841079925,
+  "energy_per_total_token": 1.2486528883458612
+}

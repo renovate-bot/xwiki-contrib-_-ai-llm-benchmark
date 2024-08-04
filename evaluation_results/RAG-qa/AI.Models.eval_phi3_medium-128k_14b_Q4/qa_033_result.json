@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.37222222222222223,
+  "individual_scores": {
+    "AnswerRelevancy": 0.0,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 0.4,
+    "ContextualRelevancy": 0.3333333333333333,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.00 because the output contains numerous irrelevant and nonsensical statements that do not address the question about authenticating users with access tokens.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.50 because the first node, which discusses form utilization on XWiki.org and does not mention anything about user authentication with access tokens, is ranked higher than the second node, which provides detailed information about the JWT token requirements, including the necessary claims and the use of the Ed25519 key for signing. Additionally, the third node, which focuses on various features and extensions available for XWiki but does not address user authentication with access tokens, is also ranked higher than the second node.",
+    "ContextualRecall": "The score is 0.40 because only sentences 2 and 4 in the expected output can be directly attributed to nodes in the retrieval context, while the rest are general statements or instructions not directly supported by specific nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.33 because the context discusses form utilization and various applications on XWiki.org, which are irrelevant to the question about authenticating users with access tokens.",
+    "Hallucination": "The score is 1.00 because the actual output lacks multiple critical details mentioned in the context, such as the Reference Form, JWT token generation process, and various applications and features, indicating a complete misalignment with the provided context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

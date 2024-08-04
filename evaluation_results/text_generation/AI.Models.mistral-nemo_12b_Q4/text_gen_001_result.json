@@ -1,0 +1,7 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output is relevant to the Input and addresses the key points (name, date of birth, address). It is coherent and fluent with correct grammar. However, it does not match the Expected Output format, which is in JSON.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

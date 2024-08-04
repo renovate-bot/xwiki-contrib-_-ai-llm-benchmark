@@ -1,0 +1,7 @@
+{
+  "score": 1.0,
+  "reason": "The Actual Output directly addresses the Input prompt by providing a comprehensive travel guide for Kyoto, Japan, which matches the Expected Output in terms of relevance. It is coherent, logically flowing from introduction to conclusion, and maintains consistency throughout. The language is fluent with correct grammar and syntax. There are no significant deviations or inaccuracies when compared to the Expected Output.",
+  "prompt_language": "ro",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

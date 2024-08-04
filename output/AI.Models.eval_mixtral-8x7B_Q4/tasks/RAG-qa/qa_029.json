@@ -1,0 +1,17 @@
+{
+  "id": "qa_029",
+  "prompt": "Comment puis-je refuser le droit de script \u00e0 un administrateur d'espace?",
+  "expected_answer": "Ceci n'est malheureusement pas pris en charge dans XWiki, les droits qui sont impliqu\u00e9s par le droit d'administrateur ne peuvent pas \u00eatre refus\u00e9s.",
+  "ai_answer": "\n\n I'm sorry for any confusion, but the information provided does not seem to be relevant to your question. \n\nIn most systems, an administrator has full rights and permissions, including the ability to run scripts. It's important to note that trying to refuse this right could potentially interfere with the administrator's ability to manage and maintain the system effectively.\n\nIf you're concerned about a specific action an administrator is taking, it would be more appropriate to address that concern directly. If you're referring to a specific system or context, could you please provide more details? I'll do my best to help with the information you provide.",
+  "sources": [],
+  "usage": {
+    "prompt_tokens": 105,
+    "completion_tokens": 139,
+    "total_tokens": 244
+  },
+  "average_power_draw": 66.84844650708351,
+  "energy_consumption": 694.2982558308415,
+  "energy_per_input_token": 1.5343607863665005,
+  "energy_per_output_token": 3.8359019659162517,
+  "energy_per_total_token": 2.8454846550444324
+}

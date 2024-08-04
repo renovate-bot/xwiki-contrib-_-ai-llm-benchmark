@@ -1,0 +1,10 @@
+{
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary contains a contradiction regarding implicit denial and fails to answer a question about managing user rights in XWiki.",
+  "score_breakdown": {
+    "Alignment": 0.9090909090909091,
+    "Coverage": 0.8
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

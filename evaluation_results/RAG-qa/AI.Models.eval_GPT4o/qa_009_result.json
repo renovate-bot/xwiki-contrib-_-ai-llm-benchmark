@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.7204761904761905,
+  "individual_scores": {
+    "AnswerRelevancy": 0.88,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.24285714285714285,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.88 because the answer is mostly relevant and provides useful information, but it includes general links to documentation that do not directly address the specific question about denying script rights to a space administrator.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.24 because the relevant nodes in retrieval context are ranked lower than several irrelevant nodes. For example, the first node discusses programming rights and their implications but does not address the denial of script rights to a space administrator, and the second node is about color themes and access for unregistered users, which is unrelated. However, the fifth node mentions that 'the wiki administrator cannot have his/her administration rights denied for a page,' which directly relates to the inability to deny script rights to a space administrator, and the seventh node includes a table that states 'ADMIN' rights cannot be denied and that they imply 'SCRIPT' rights, supporting the expected output.",
+    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the information provided in the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.20 because the context does not mention 'space administrator' or 'denying script rights' explicitly and mainly discusses unrelated topics such as Color Themes and general access rights management.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments and all the provided contradictions indicate that the actual output is consistent with the context."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

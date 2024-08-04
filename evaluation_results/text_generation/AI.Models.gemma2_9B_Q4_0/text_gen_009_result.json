@@ -1,7 +1,0 @@
-{
-  "score": 0.8,
-  "reason": "The Actual Output accurately captures the event name, dates, location, and target audience from the Input. However, the Expected Output specifies separate start and end dates, and the venue and address are split into two fields, which the Actual Output does not do. The Actual Output is coherent and fluent, with no grammatical errors.",
-  "prompt_language": "en",
-  "expected_answer_language": "en",
-  "generated_text_language": "en"
-}

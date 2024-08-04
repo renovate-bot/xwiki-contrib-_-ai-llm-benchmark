@@ -1,0 +1,7 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output is relevant and coherent, with correct grammar and natural sentence structure. However, it does not fully align with the Expected Output as it combines the start and end dates and misses the 'target_audience' key.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

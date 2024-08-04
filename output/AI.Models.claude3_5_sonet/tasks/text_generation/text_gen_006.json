@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_006",
+  "prompt": "Write a poem about the beauty of nature.",
+  "expected_answer": "A poem describing the wonders of the natural world.",
+  "ai_answer": "Here's a poem about the beauty of nature:\n\nNature's Symphony\n\nSunlight dances through emerald leaves,\nA gentle breeze whispers and weaves.\nFlowers bloom in vibrant hues,\nPainting meadows with morning dews.\n\nMajestic mountains touch the sky,\nAs eagles soar and rivers sigh.\nForests deep with secrets old,\nTell tales that nature alone can hold.\n\nOcean waves crash on golden sand,\nSculpting beauty across the land.\nStars twinkle in the velvet night,\nA cosmic dance of distant light.\n\nIn every leaf and grain of soil,\nIn creatures great and small that toil,\nThere's magic in this world so free,\nNature's endless symphony.",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 167,
+    "total_tokens": 183
+  },
+  "average_power_draw": null,
+  "energy_consumption": null,
+  "energy_per_input_token": null,
+  "energy_per_output_token": null,
+  "energy_per_total_token": null
+}

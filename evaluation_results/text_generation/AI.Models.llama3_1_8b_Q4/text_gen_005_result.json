@@ -1,0 +1,7 @@
+{
+  "score": 0.7,
+  "reason": "The Actual Output addresses the Input prompt by providing a creative space adventure story. It is coherent and fluent, with logical flow and grammatical correctness. However, it diverges from the Expected Output by focusing on exploring a wormhole and encountering an ancient civilization rather than exploring a new planet.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

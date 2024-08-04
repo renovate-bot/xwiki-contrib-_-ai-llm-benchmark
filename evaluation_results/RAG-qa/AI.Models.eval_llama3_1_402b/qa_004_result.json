@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.9208333333333334,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9583333333333334,
+    "Faithfulness": 0.8333333333333334,
+    "ContextualPrecision": 0.7333333333333333,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 1.0,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.96 because the answer is highly relevant and provides useful information on disabling notifications. However, it includes a link to XWiki syntax documentation, which is not directly relevant to the question.",
+    "Faithfulness": "The score is 0.83 because the actual output incorrectly claims that you can set the filter to 'Exclusive' to exclude notifications for the selected page or wiki, whereas the retrieval context specifies that exclusive filters can be defined to exclude some pages from notifications and take precedence over inclusive filters, without mentioning setting the filter to 'Exclusive' for a selected page or wiki.",
+    "ContextualPrecision": "The score is 0.73 because while relevant nodes are present and ranked relatively high, some irrelevant nodes like the second node ('different notification preferences macros') and the fourth node ('RSS feed of notifications') appear before other relevant nodes. This affects the overall precision.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are well-supported by the information provided in the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 1.00 because the input is perfectly relevant to the context. Great job!",
+    "Hallucination": "The score is 0.00 because all the provided factual alignments indicate that the actual output is consistent with the context, and there are no contradictions."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

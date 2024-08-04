@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5347222222222222,
+  "individual_scores": {
+    "AnswerRelevancy": 0.875,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.88 because the response acknowledges the lack of information but does not provide any guidance or relevant information to address the input question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node (rank 3) that mentions 'programming rights can only be granted from the wiki preferences page' is ranked lower than irrelevant nodes (rank 1 and 2) that discuss 'Color Themes, access rights, and related functionalities' and 'various rights such as comment, edit, delete, and administration rights'.",
+    "ContextualRecall": "The score is 1.00 because the expected output perfectly aligns with the information provided in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses Color Themes, icon fonts, and Forgot Username/Password functionality, none of which are relevant to refusing script rights to a space administrator.",
+    "Hallucination": "The score is 1.00 because the actual output fails to address multiple specific details provided in the context about Color Themes, icon fonts, access rights adjustments, comment, edit, delete rights, special permissions, programming rights, register rights, and create wikis rights."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

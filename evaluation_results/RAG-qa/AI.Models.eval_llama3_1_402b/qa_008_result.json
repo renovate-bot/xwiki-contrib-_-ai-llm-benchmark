@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6493867243867243,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.7857142857142857,
+    "ContextualPrecision": 0.5833333333333333,
+    "ContextualRecall": 0.7272727272727273,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant and addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 0.79 because the actual output incorrectly states the maximum upload size as 10MB instead of 100GB (32MB for XWiki < 10.9RC1), and it also mentions a specific configuration for blocking file types that is not provided in the retrieval context.",
+    "ContextualPrecision": "The score is 0.58 because irrelevant nodes like the first node, which 'describes how to add attachments using various methods but does not address configuring allowed mimetypes or setting maximum attachment size,' are ranked higher than relevant nodes. However, it is at its current score because relevant nodes like the second and third nodes, which provide information about 'configuring blocked attachment mimetypes' and 'setting the maximum size of an attachment in the XWikiPreferences document,' are also present.",
+    "ContextualRecall": "The score is 0.73 because while nodes in the retrieval context provide relevant information about configuring mimetypes and setting maximum attachment size, they do not fully cover the specific steps required to ensure only images or PDF files of at maximum 10MB can be uploaded.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address how to ensure that only images or PDF files of at maximum 10MB can be uploaded. It discusses attachment methods and other unrelated details.",
+    "Hallucination": "The score is 0.20 because the actual output aligns well with the context regarding setting maximum file size, restricting file types, and configuring attachment validation settings. However, it misses mentioning the filesystem attachment store and its configuration, which is a notable omission."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

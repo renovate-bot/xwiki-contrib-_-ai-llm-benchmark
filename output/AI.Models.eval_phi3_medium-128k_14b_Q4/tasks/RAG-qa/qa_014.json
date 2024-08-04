@@ -1,0 +1,42 @@
+{
+  "id": "qa_014",
+  "prompt": "Ich erhalte viele Benachrichtigungen \u00fcber alle m\u00f6glichen Seiten, an denen ich nicht interessiert bin. Diese scheinen automatisch aktiviert worden zu sein. Wie kann ich diese Benachrichtigungen deaktivieren?",
+  "expected_answer": "Standardm\u00e4\u00dfig wird eine Seite, an der Sie eine wesentliche \u00c4nderung vorgenommen haben, automatisch zu der Liste der Seiten hinzugef\u00fcgt, denen Sie folgen. Das bedeutet, dass Sie \u00fcber \u00c4nderungen an Ihrer Arbeit benachrichtigt werden. Sie k\u00f6nnen die Einstellung f\u00fcr \"Automatisches Verfolgen von Seiten\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil \u00e4ndern. Sie k\u00f6nnen vorhandene Benachrichtigungsfilter, die auf diese Weise erstellt wurden, in der Liste \"Benutzerdefinierte Filter\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil l\u00f6schen.",
+  "ai_answer": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments \n\n\nUm die unerw\u00fcnschten Benachrichtigungen in Ihrem XWiki-System zu verhindern, k\u00f6nnen Sie ein paar Optionen verwenden. \n\nF\u00fcr eine allgemeine Deaktivierung von Anzeigenchancen k\u00f6nnen Sie dies tun:  \n1. Gehen Sie zum Abschnitt 'Einstellungen' im System- und Administrationskonfigurator.  \n2. Klicken Sie in der obersten Leiste auf \"Benutzereinstellungen\".\n3. Scroll down to the section titled 'Abonnierter Artikel'. Hier k\u00f6nnen Sie die gew\u00fcnschten Chancenkategorien abw\u00e4hlen, um sie zu deaktivieren.\n\nUm jedoch spezifisch nur bestimmte Arten von Benachrichtigungen herauszufiltern, sollten Sie Ihre Einstellungen wie folgt konfigurieren:\n1. Im Admin-Interface \u00f6ffnen Sie das Attachment Block Listing (im Bereich 'Extensions/Attachment/Validation' finden Sie diese Funktion).  \n2. Geben Sie hier die MIME-Typen der Anzeigen an, die sie nicht sehen m\u00f6chten ein und dr\u00fccken Sie \"Save\". Zum Beispiel deaktivieren Sie f\u00fcr Textklartext- (text/plain) und alle Bilddateitypen mit: \n    * text/plain  \n    \nDar\u00fcber hinaus k\u00f6nnen Sie Benachrichtigungen auch nach Standorteinrichtung filtern. Im Admin-Interface durchlaufen die Optionen \"Wiki\", \"Raum\" oder andere spezifische Bereiche und konfigurieren dann einzelne Einstellungen innerhalb dieser Gebiete, um zu steuern, welche Art von Benachrichtigungen sie erhalten m\u00f6chten.\n\nWenn Sie gro\u00dfe Dateien verwenden (Gr\u00f6\u00dfe \u00fcber 30MB), ist es ratsam, die Datenbankspeichertaste f\u00fcr den Anhang in Ihren XWiki-Konfigurationen zu verwenden (im Abschnitt 'AdminGuide/Attachments'), um Probleme mit der maximalen Gr\u00f6\u00dfe des Pakettransports von MySQL zu vermeiden.\n\nWenn es nicht ausreicht, kann eine Einstellung im Systemxwiki.properties-Datei herangezogen werden (store.fsattach.cleanOnStartup=false), um den Speicheraufwand w\u00e4hrend der Startzeit Ihres Systems auf die Anhangsdatenbank zu reduzieren. Beachten Sie jedoch, dass sich dadurch auch ihre Verantwortung f\u00fcr das Leeren von leeren Abschnitten auf Ihrer eigenen Schuld f\u00e4llt.\n\nDenken Sie daran, dass diese Schritte innerhalb des XWiki-Administrationstools ausgef\u00fchrt werden m\u00fcssen und der genaue Eintrag je nachdem variieren kann, was im Admin-Dashboard oder in der Konfigurationsdatei angegeben wird. Wenn weitere Hilfe ben\u00f6tigt wird, z\u00f6gern Sie nicht, uns zu kontaktieren!",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Attachment.Validation.UI.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/",
+      "content": "#-# Define the list of blocked attachment mimetypes. By default, this list is empty, but you can specify a\u00a0  \n#-# comma-separated list of blocked mimetypes. Note that a joker (\\*) can be used to accept any media type. Once this\u00a0  \n#-# list is not empty, any attachment matching one of the listed mimetype will be rejected.  \n#-# For instance, if you want to reject plain text and any kind of images, you can set the list to:  \n#-# text/plain,image/\\*  \n#-#  \n# attachment.upload.blockList=## Administration UI\n\n[![attachment_restriction_admin.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Attachment/Validation/UI/WebHome/attachment_restriction_admin.png?width=960&amp;rev=1.1)](https://extensions.xwiki.org/xwiki/bin/download/Extension/Attachment/Validation/UI/WebHome/attachment_restriction_admin.png?rev=1.1)\n\nThe mimetype restrictions can also be configured at wiki or space level through the administration UI, by visiting the Attachments Restriction section of the administration.\n\n",
+      "similarity_score": 0.7555985450744629,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.PageEditing",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing",
+      "content": "# Default Language\n\nIf you&#x27;ve set up your wiki to be multingual, then when editing a page using the wiki editor, you&#x27;ll be able to set the default language for the current page as in:\n\n![defaultLanguage.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/PageEditing/defaultLanguage.png?rev=1.1)\n\n\n",
+      "similarity_score": 0.7422323822975159,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Attachments",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments",
+      "content": "#### Directory cleanup\n\nSince [XWiki 6.0M2](https://www.xwiki.org/xwiki/bin/view/ReleaseNotes/ReleaseNotesXWiki61M2), it is possible to save time on startup by preventing XWiki from cleaning up empty directories in the Filesystem Attachment Store. To do this, edit xwiki.properties and set **store.fsattach.cleanOnStartup** to false. If you do this, you will be responsible for cleanup of empty directories yourself.\n\n## Database Attachment Store\n\nThe default before 10.5.\n\nThis attachment storage mechanism stores your attachments in database entries in the [xwikiattachment\\_content](https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/DsXWikiAttachmentContent), [xwikiattachment\\_archive](https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/XWikiAttachmentArchive) and [xwikiattrecyclebin](https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/DsXwikiRecycleBin) tables. This system allows for easy backup of your attachments by dumping the database and keeping all of your data together, but attachment size is memory constrained since the attachment content and archive must all be held in memory. As a general rule, attachments larger than 30MB are not possible.\n\n### Switch to database attachment store\n\nThese settings should read as follows:\n\nxwiki.store.attachment.hint = hibernate  \nxwiki.store.attachment.versioning.hint = hibernate  \nxwiki.store.attachment.recyclebin.content.hint=hibernate  \n  \n# If you need to use database store for the attachment it&#x27;s probably true for deleted attachments  \nxwiki.store.recyclebin.content.hint = hibernateAlso make sure they are not commented out.\n\nWhen using this attachment store with a MySQL database, you must set the max\\_allowed\\_packet to about 3 times the size of your largest attachment since the attachment and its version history must be saved. See the [MySQL Installation guide](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/InstallationMySQL) for more information.\n\n",
+      "similarity_score": 0.7410373091697693,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1194,
+    "completion_tokens": 664,
+    "total_tokens": 1858
+  },
+  "average_power_draw": 262.46760594386353,
+  "energy_consumption": 2282.721576206615,
+  "energy_per_input_token": 0.7998323672763191,
+  "energy_per_output_token": 1.999580918190798,
+  "energy_per_total_token": 1.2285907299282104
+}

@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_006",
+  "prompt": "Write a poem about the beauty of nature.",
+  "expected_answer": "A poem describing the wonders of the natural world.",
+  "ai_answer": "In nature's soothing arms, where peace resides,\nHer enchanting realms beckon and hide,\nA sanctuary that heals, in verdant calm,\nWelcome relief from the chaos of the storm.\n\nThe lush landscape paints hues in harmony,\nSoothing strains of nature's symphony,\nWarming rays upon gentle breeze,\nAn inviting caress to set one at ease. \n\nMajestic mountains reach for the sky,\nTheir strength and grandeur drawing our eyes,\nWhile delicate blooms in all shapes and forms,\nScatter colors like nature's precious gems.\n\nHer secrets, unveiled with each season,\nOffer gifts of wonder never ceasing,\nNew life springs, bringing hope anew,\nAnd summer's warmth, its fires burning through. \n\nThe autumnal palette paints the trees gold,\nAs birds fly away, their travels to fold,\nAnd as crisp frosts arrive, nature's breath,\nGently blankets earth in slumberous peace. \n\nIn each wondrous sunrise and sunset's hue,\nNature's glorious masterpiece comes through,\nFor no words nor brushstrokes can quite compare,\nTo these awe-inspiring natural vistas. \n\nLet the beauty of nature sooth and inspire, \nLike a gentle touch lighting up desire,\nFor within its realm lies a timeless charm, \nOur sanctuary from life's roughest storm. \n\nLet's bask in this wondrous embrace,\nNature's grace in every lovely hue,\nFor here is where true beauty resides,\nAnd our souls find comfort to renew.",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 15,
+    "completion_tokens": 322,
+    "total_tokens": 337
+  },
+  "average_power_draw": 95.16007219637416,
+  "energy_consumption": 2981.3719064068837,
+  "energy_per_input_token": 3.635819398057175,
+  "energy_per_output_token": 9.089548495142939,
+  "energy_per_total_token": 8.846800909219239
+}

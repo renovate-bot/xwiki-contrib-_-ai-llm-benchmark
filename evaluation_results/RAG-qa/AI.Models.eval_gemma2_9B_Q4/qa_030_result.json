@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.2022792022792023,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7692307692307693,
+    "Faithfulness": 0.4444444444444444,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.77 because the answer provides some relevant information about configuring permissions in XWiki, but it includes URLs that do not directly address the specific question, which reduces its overall relevance.",
+    "Faithfulness": "The score is 0.44 because the actual output repeatedly mentions configuring access permissions for 'spaces' in XWiki, which contradicts the retrieval context stating that the notion of space has been removed from the XWiki UI.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses the scope of configuration display in XWiki administration but does not provide information on setting access rights for teams. The second node explains the concept of spaces and pages in XWiki but does not address how to configure access rights for different teams. The third node talks about XWiki's scalability, multi-tenancy, and clustering but does not provide relevant information on setting access rights for teams.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address how to set permissions for teams to view all spaces while only being able to modify their own space.",
+    "Hallucination": "The score is 1.00 because the actual output lacks crucial information about configuration scope options, the linkPrefix field, creation of pages and spaces in XWiki, the concept of Terminal Pages, and XWiki's scalability, multi-tenancy, and clustering capabilities. These omissions indicate a high degree of hallucination."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

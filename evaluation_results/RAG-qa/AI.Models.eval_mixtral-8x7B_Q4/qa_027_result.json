@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.4705882352941176,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8235294117647058,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0,
+    "Hallucination": 0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.82 because the response contains useful information but includes irrelevant details about OpenID Connect and XWiki, and expresses regret about the lack of specific information, which detracts from directly addressing the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because there are no relevant nodes in the retrieval context.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context is empty, so no part of the expected output can be attributed to any node in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because there are no reasons provided for the irrelevancy of the retrieval context to the input.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments or contradictions, indicating no hallucinations."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

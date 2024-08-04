@@ -1,0 +1,7 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output provides a coherent and fluent story about a space adventure, addressing the Input prompt well. However, it focuses on exploring a celestial object rather than a new planet, which slightly deviates from the Expected Output.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3796296296296296,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9444444444444444,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.6666666666666666
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.94 because the answer is highly relevant and addresses the process for setting up group synchronization between XWiki and an OpenID Connect provider. However, it includes a link about scalability and performance features of XWiki, which is not directly related to the question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node provides general information about OpenID Connect integration with XWiki but lacks specific steps for group synchronization. The second node discusses domain-based instance authentication and session cookie configuration, which is unrelated. The third node talks about XWiki's scalability, multi-tenancy, and clustering capabilities, which do not pertain to the task of configuring group synchronization.",
+    "ContextualRecall": "The score is 0.00 because none of the instructions or details in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address the specific process of setting up group synchronization between XWiki and an OpenID Connect provider, which is the main focus of the input question.",
+    "Hallucination": "The score is 0.67 because the actual output fails to mention specific configurations related to domain-based instances and session cookie settings in Tomcat, as well as scalability, multi-tenancy, and clustering features of XWiki, which are the main topics of the context. However, it does align with the context in terms of discussing OpenID Connect authentication and configuration in XWiki."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

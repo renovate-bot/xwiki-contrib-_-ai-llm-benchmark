@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3088235294117647,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8529411764705882,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.85 because the answer provides relevant information about configuring team spaces in XWiki, but it includes several irrelevant links that do not directly address the specific question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses the scope and display configuration in XWiki, but does not address access control or permissions settings. The second node explains the concept of spaces and sub-pages in XWiki, but does not provide information on setting access rights or permissions. The third node discusses XWiki's scalability and multi-tenancy features, which are unrelated to configuring access control for team spaces. The fourth node mentions actions like creating children pages and changing access rights, but it does not provide specific steps or details on configuring access control for team spaces. The fifth node explains that XWiki pages are saved in a relational database and mentions database support, which is not relevant to configuring access control for team spaces.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address configuring team permissions in XWiki, which is the main focus of the input question.",
+    "Hallucination": "The score is 1.00 because the actual output lacks multiple critical details mentioned in the factual alignments, such as configuration display options, creation of spaces and sub-spaces, multi-tenancy, clustering, examples of hosted wikis, actions like creating children pages, changing page access rights, and the use of relational databases and Hibernate support. There are no contradictions, but the omissions are significant."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

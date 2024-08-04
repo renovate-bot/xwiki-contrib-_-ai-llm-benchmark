@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_006",
+  "prompt": "Write a poem about the beauty of nature.",
+  "expected_answer": "A poem describing the wonders of the natural world.",
+  "ai_answer": "In verdant splendor, Nature sings her song,\nA chorus rising from daylight's vibrant throng;\nShe breathes with every whispering breeze,\nHer voice carried softly through emerald trees.\n\nBeneath a sky so wide and clear,\nWhere golden sunsets paint the sphere,\nCascading colors that ignite her grace,\nAn endless dance of light and embrace. \n\nShe cradles life in delicate arms,\nThe hummingbird' vice-regal charms;\nRivers whispering secrets deep below,\nMountains standing tall with wisdom to bestow.\n\nFrom jade forests teeming wild, unrestrained,\nTo tranquil valleys where the quiet reigned,\nEach blade of grass and feathery cloud, \nIn her embrace, together vowed.\n\nHer heartbeat pulsing with each tide's flow,\nShe weaves tales only winds may know;\nSkyward kisses from flaming rosy dawn,\nAs twinkling stars return at dusk reborn. \n\nFrom lustrous brook to ocean vast and wide,\nIn every creature that stray or glide;\nAll beats in unison with her gentle hand,\nAn eternal symphony across the land.\n\nHer breath carries hope on wings so light,\nEach petal's bloom is Nature\u2019s delight;\nBeneath a sun and moonlit glow,\nLife's cycle through her love does flow.\n\nThe majesty of eagles in flight, \nReflecting beauty beneath the soft twilight,\nA testament to time immemorially passed,\nEach moment held by nature vast.\n\nIn every leaf that falls and stirs,\nThrough autumn's blaze or winter blurs;\nHer ever-changing cloak unveils \nThe silent strength within her tales.\n\nOh, Nature! Painted masterpiece so rare,\nUnfolding beauty without a single care;\nEach petal, every star, your artful trace,\nIn nature's canvas we all embrace.",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 18,
+    "completion_tokens": 484,
+    "total_tokens": 502
+  },
+  "average_power_draw": 256.3903177257526,
+  "energy_consumption": 1462.9426368470301,
+  "energy_per_input_token": 1.191321365510611,
+  "energy_per_output_token": 2.978303413776527,
+  "energy_per_total_token": 2.914228360253048
+}

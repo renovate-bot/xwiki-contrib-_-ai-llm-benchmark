@@ -1,0 +1,7 @@
+{
+  "score": 1.0,
+  "reason": "The Actual Output is directly relevant to the Input prompt, maintaining coherence and logical flow similar to the Expected Output. It is fluent with proper grammar and syntax, and meets the quality of the Expected Output in terms of relevance, coherence, and fluency.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

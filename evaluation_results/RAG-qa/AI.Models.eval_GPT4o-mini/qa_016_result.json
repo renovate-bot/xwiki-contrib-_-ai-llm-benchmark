@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.30952380952380953,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8571428571428571,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.86 because the answer mostly addresses the question about customizing user profile fields from an OpenID Connect provider in XWiki. However, it includes irrelevant links about scalability, performance, and database support features, which do not pertain to the customization topic.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For instance, the first node discusses 'authentication with a domain-based instance and session cookie configuration', which does not pertain to customizing user profile fields in XWiki. Similarly, the second node provides 'general information about OpenID Connect authentication and links to various configuration guides', which also does not address the mapping of additional user profile fields in XWiki.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address customizing user profile fields or mapping additional user profile fields from an OpenID Connect provider to XWiki properties.",
+    "Hallucination": "The score is 1.00 because the actual output lacks significant information that is present in the contexts, indicating a high level of hallucination."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

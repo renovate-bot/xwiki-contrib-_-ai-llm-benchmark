@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6685185185185185,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.1111111111111111,
+    "ContextualRelevancy": 0.6666666666666666,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.90 because the URL provided is irrelevant to the input, which is about not receiving notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node in the third rank mentions that 'The extension status can be toggled by editing the configuration variable \"notifications.enabled\" in xwiki.properties and restarting the server,' which is directly relevant to enabling notifications. However, the irrelevant nodes in the first, second, and fourth ranks provide information about notification-related macros, email content changes, and email notification settings, which do not directly address how to enable notifications or follow pages/users.",
+    "ContextualRecall": "The score is 0.11 because only the 2nd sentence in the expected output can be partially attributed to the 3rd node in the retrieval context, while the rest of the sentences lack supporting information from the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.67 because the context includes sections like 'Macros for settings' and 'Enable and disable the extension,' which do not address the issue of not receiving notifications.",
+    "Hallucination": "The score is 0.00 because there are no contradictions between the actual output and the provided contexts."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

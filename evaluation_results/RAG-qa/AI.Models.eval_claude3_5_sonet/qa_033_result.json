@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5222222222222223,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7619047619047619,
+    "Faithfulness": 0.9,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 0.5714285714285714,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 0.8
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.76 because the response contains useful information about authenticating users with access tokens, but it includes multiple irrelevant URLs that do not address the specific question.",
+    "Faithfulness": "The score is 0.90 because the actual output incorrectly claims that the 'exp' claim has a maximum of 24 hours in the future and 'iss' must correspond to the URL configured in authorized applications, which is not mentioned in the retrieval context.",
+    "ContextualPrecision": "The score is 0.50 because the second node, which explains the requirements for generating a JWT token and is crucial for authenticating users with access tokens, is ranked lower than the first node, which discusses form utilization on XWiki.org and is irrelevant. Additionally, nodes ranked third, fourth, and fifth are also irrelevant as they discuss configuring access decisions, configurable class objects, and features of XWiki, respectively.",
+    "ContextualRecall": "The score is 0.57 because while some sentences in the expected output can be linked to nodes in the retrieval context (e.g., sentences about JWT token requirements and authorization headers), specific configuration steps and user creation details are not supported by the retrieval context nodes.",
+    "ContextualRelevancy": "The score is 0.20 because the context discusses form utilization, AuthorizationSettler, and application configurations, which are irrelevant to the question about authenticating users with access tokens.",
+    "Hallucination": "The score is 0.80 because the actual output misses several key elements described in the context, such as the Reference Form, Questionnaire Form, AuthorizationSettler, ConfigurableClass objects, and various applications. This indicates a high level of hallucination."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.37222222222222223,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.6666666666666666
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.90 because the answer is mostly relevant and addresses the question about restricting file types and sizes for attachments. However, it includes URLs that point to pages about access rights and authentication, which are not directly relevant to the specific question asked.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses programming rights and permissions in XWiki, the second node is about cookie protection levels and security strategies, and the third node lists dependencies for an XWiki extension. None of these are related to configuring file upload restrictions.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses permissions, security settings, and dependencies, none of which address file upload restrictions.",
+    "Hallucination": "The score is 0.67 because the actual output discusses attachment validation, which is not related to the majority of the context provided, indicating a significant level of hallucination."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

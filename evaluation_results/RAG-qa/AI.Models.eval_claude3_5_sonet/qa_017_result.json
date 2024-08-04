@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.32051282051282054,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9230769230769231,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the answer is mostly relevant and provides useful information on setting up group synchronization between XWiki and an OpenID Connect provider. However, it includes links about scalability, performance, and second-generation wiki features of XWiki, which are not directly relevant to the specific question asked.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node provides general information about the OpenID Connect Authenticator and its prerequisites, but does not detail the specific steps to configure group synchronization in `xwiki.properties`. The second node discusses domain-based instance authentication and session cookie configuration, which is unrelated to the group synchronization process between XWiki and an OpenID Connect provider.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not specifically address the process for synchronizing groups between XWiki and an OpenID Connect provider, focusing instead on general integration, installation instructions, and unrelated features.",
+    "Hallucination": "The score is 1.00 because the actual output lacks significant details and topics mentioned in the context, such as prerequisites, installation instructions, dependencies, domain-based instance configuration, session cookies, scalability, multi-tenancy, clustering, wiki features, and specific dependencies for the extension."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

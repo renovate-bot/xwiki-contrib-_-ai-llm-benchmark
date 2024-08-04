@@ -1,7 +1,0 @@
-{
-  "score": 0.6,
-  "reason": "The Actual Output addresses the main points of the Input prompt and covers the key elements, but it includes unnecessary additional information and does not match the Expected Output exactly. The sentence structure is coherent and fluent, but the extra content about search results is irrelevant.",
-  "prompt_language": "en",
-  "expected_answer_language": "en",
-  "generated_text_language": "en"
-}

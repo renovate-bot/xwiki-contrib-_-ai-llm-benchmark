@@ -1,7 +1,0 @@
-{
-  "score": 0.7,
-  "reason": "The Actual Output is relevant and coherent, addressing the main points from the Input. However, it does not match the structure of the Expected Output and misses some details like 'start_date', 'end_date', and 'target_audience'.",
-  "prompt_language": "en",
-  "expected_answer_language": "en",
-  "generated_text_language": "en"
-}

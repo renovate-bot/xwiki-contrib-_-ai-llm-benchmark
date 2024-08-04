@@ -1,0 +1,10 @@
+{
+  "score": 0.9,
+  "reason": "The score is 0.90 because the summary includes a contradiction by mentioning screenshots of different wiki rights configurations, which are not mentioned in the original text. However, there is no extra information or unanswered questions, indicating a high-quality summary overall.",
+  "score_breakdown": {
+    "Alignment": 0.9,
+    "Coverage": 1.0
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

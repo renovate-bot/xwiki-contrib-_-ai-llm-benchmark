@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3666666666666667,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.2,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and directly addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because the first node provides general information about OpenID Connect and various configuration guides, which is not relevant to the specific property `oidc.enableUser` in the `xwiki.properties` file. The second node discusses domain-based instance authentication and session cookie configuration, which is also not relevant to enabling user accounts automatically on first login using OpenID Connect. The third node lists dependencies for the OpenID Connect extension, which is not relevant to the specific configuration needed to automatically activate user accounts.",
+    "ContextualRecall": "The score is 0.20 because only the general use of xwiki.properties for configuration is mentioned in the retrieval context (node 3), while specific details about adding/updating properties, the property `oidc.enableUser`, saving the file, restarting XWiki, and automatic activation of new user accounts are not covered.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address the specific issue of automatically activating user accounts upon their first login with OpenID Connect, focusing instead on unrelated aspects like 'domain-based authentication' and 'session cookies'.",
+    "Hallucination": "The score is 1.00 because the actual output lacks critical information about prerequisites, installation instructions, dependencies, and specific configurations related to the OpenID Connect Authenticator, which are essential for accuracy and completeness."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

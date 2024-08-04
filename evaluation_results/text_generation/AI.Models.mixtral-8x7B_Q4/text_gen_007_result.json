@@ -1,0 +1,7 @@
+{
+  "score": 1.0,
+  "reason": "The Actual Output directly addresses the Input prompt by providing a detailed news article about a recent scientific discovery. It covers key points and themes such as the creation of a quantum entanglement network, its potential applications, and the significance of the discovery, aligning well with the Expected Output. The article is coherent, with a logical flow and consistent ideas, and is written in fluent, grammatically correct language.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

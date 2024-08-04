@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.30952380952380953,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8571428571428571,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.86 because the main response addresses the question about restricting file uploads to images or PDFs of a maximum size of 10 MB, but it includes irrelevant information about access rights, permission types, and authentication, which are not directly related to the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect faithfulness!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'programming rights and permissions in a wiki environment', the second node is about 'cookie protection levels and IP address usage in cookie encryption', and the third node lists 'dependencies for an extension'. None of these are related to configuring file upload restrictions.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses permissions, security settings, and dependencies, none of which address the query about file upload restrictions.",
+    "Hallucination": "The score is 1.00 because the actual output lacks several specific details mentioned in the context, such as programming rights, register rights, create wikis rights, script rights, protection level for the 'remember me' cookie functionality, use of IP addresses when encrypting cookie data, and dependencies for the extension 'org.xwiki.platform:xwiki-platform-attachment-validation-ui 16.3.1'."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

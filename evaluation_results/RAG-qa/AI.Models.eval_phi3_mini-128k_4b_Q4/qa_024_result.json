@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5277777777777778,
+  "individual_scores": {
+    "AnswerRelevancy": 0.16666666666666666,
+    "Faithfulness": 1,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.17 because the output contains multiple irrelevant and nonsensical statements that do not address the question about disabling notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first node is directly relevant as it mentions 'Notifications Auto Watch Preferences' and 'Notifications Custom Filters Preferences,' which are pertinent to modifying notification settings. The second node, which focuses on email notifications, and the third node, discussing notification RSS feed and Notifications Macro, are both irrelevant and correctly ranked lower.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are well-supported by nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.00 because the context does not provide direct instructions on how to disable notifications, focusing instead on unrelated notification preferences and settings.",
+    "Hallucination": "The score is 1.00 because the actual output contains unrelated URLs and nonsensical text that do not align with the provided context about notification preferences, email notifications, and RSS feed settings in XWiki."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

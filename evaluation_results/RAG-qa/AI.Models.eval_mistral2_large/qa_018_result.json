@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.31578947368421056,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8947368421052632,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.89 because the answer is mostly relevant and addresses the question about restricting file types and sizes for attachments in XWiki. However, it includes a URL that does not directly address the specific requirements, which slightly reduces the relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to configuring MIME types or attachment sizes. For example, the first node discusses 'HTTP methods and media types for retrieving page history and children,' which is not pertinent. Similarly, the second node talks about 'creating or updating page translations and their history,' which is unrelated to the input query.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention any of the steps or configurations related to uploading files, configuring MIME types, or setting maximum attachment size as described in the expected output.",
+    "ContextualRelevancy": "The score is 0.00 because the context focuses on HTTP methods, status codes, and API endpoints, which do not address the input question about restricting uploads to images or PDF files with a maximum size of 10 MB.",
+    "Hallucination": "The score is 1.00 because the actual output lacks specific details about API endpoints and the versioning system that are present in the context, indicating a complete omission of crucial factual information."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

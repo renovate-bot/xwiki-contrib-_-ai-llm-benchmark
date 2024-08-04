@@ -1,7 +1,0 @@
-{
-  "score": 0.8,
-  "reason": "The Actual Output is relevant to the Input prompt and is coherent and fluent. However, it includes additional details not present in the Expected Output, such as 'soaking up the warm rays and chasing after butterflies.'",
-  "prompt_language": "en",
-  "expected_answer_language": "en",
-  "generated_text_language": "en"
-}

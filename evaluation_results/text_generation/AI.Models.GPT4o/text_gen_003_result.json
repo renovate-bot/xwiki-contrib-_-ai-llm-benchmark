@@ -1,0 +1,7 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output addresses the Input prompt and aligns with the Expected Output in terms of topic relevance. It is coherent and flows logically, using simple language suitable for a younger audience. However, it introduces the concept as a 'magic trick,' which is not as accurate as the Expected Output's explanation of 'special process.'",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.7184343434343434,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5833333333333333,
+    "ContextualRecall": 0.7272727272727273,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is completely relevant and directly addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness!",
+    "ContextualPrecision": "The score is 0.58 because irrelevant nodes in the retrieval context, such as the first node which 'explains how to add attachments using different methods' and the fourth node which 'discusses the filesystem attachment store and its location,' are ranked higher than relevant nodes like the second and third nodes that address 'configuring mimetype restrictions' and 'setting the maximum attachment size' respectively.",
+    "ContextualRecall": "The score is 0.73 because while the retrieval context nodes provide detailed steps for setting the maximum attachment size (node 3), they lack information on configuring allowed mimetypes and ensuring only images or PDFs of a maximum of 10MB can be uploaded.",
+    "ContextualRelevancy": "The score is 0.20 because the context provides various details on attachment methods and settings but does not address file type and size restrictions specifically.",
+    "Hallucination": "The score is 0.20 because the actual output aligns well with the context regarding setting maximum upload size and MIME type restrictions, but it misses mentioning the filesystem attachment store and its configuration, which is a significant part of the context."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

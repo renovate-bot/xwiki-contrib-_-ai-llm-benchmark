@@ -1,0 +1,42 @@
+{
+  "id": "qa_013",
+  "prompt": "Ich erhalte keine Benachrichtigungen \u00fcber meine eigene Aktivit\u00e4t. Wie kann ich Benachrichtigungen f\u00fcr meine eigenen Aktionen aktivieren?",
+  "expected_answer": "Standardm\u00e4\u00dfig erh\u00e4lt man keine Benachrichtigungen \u00fcber die eigene Aktivit\u00e4t (es sei denn, das Ereignis, das die Benachrichtigung ausl\u00f6st, richtet sich explizit an diesen Benutzer). Sie haben die M\u00f6glichkeit, diesen Filter in den \"Erweiterten Filteroptionen\" Ihrer eigenen Benachrichtigungseinstellungen in Ihrem Benutzerprofil zu deaktivieren.",
+  "ai_answer": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/ \n\n\nLeider ist die Information, die mir zur Verf\u00fcgung steht, nicht direkt relevant auf deine Frage. Die Informationen, die ich habe, beziehen sich auf das Thema \"Benutzerrechte\" und \"Aktivit\u00e4tsnachrichten\" im Kontext eines Systems namens XWiki.\n\nEs scheint jedoch, dass die Funktion, \u00fcber die du sprichst, nicht Teil der Standardfunktionen von XWiki ist. Ich kann dir daher keine spezifische Anleitung geben, wie du Benachrichtigungen f\u00fcr deine eigenen Aktionen aktivieren kannst.\n\nWenn du m\u00f6chtest, kann ich dir jedoch allgemeine Tipps anbieten, wie du in \u00e4hnlichen Situationen vorgehen k\u00f6nntest:\n\n1. \u00dcberpr\u00fcfe die Einstellungen deines Systems, ob es eine Option gibt, um Benachrichtigungen f\u00fcr deine eigenen Aktionen zu aktivieren.\n2. Wenn keine solche Option existiert, k\u00f6nnte es sein, dass dies ein Feature ist, das von einem Drittanbieter entwickelt wurde und nicht Teil der Standardfunktionen deines Systems ist.\n3. In diesem Fall k\u00f6nntest du dich an die Entwickler oder Administratoren deines Systems wenden und sie bitten, dir zu helfen, diese Funktion zu aktivieren.\n\nEs tut mir leid, dass ich keine spezifischer Antwort auf deine Frage geben kann. Ich hoffe, diese allgemeinen Tipps helfen dir weiter!",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Security Module",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module",
+      "content": "Therefore, the real task of settling access decisions is entirely delegated to customizable components that may be introduce by third parties and configured without rebuilding the platform. The component hint of the AuthorizationSettler may be configured from the ConfigurationSource (xwiki.properties) using the key security.authorization.settler. The default hint &quot;default&quot; is implemented by the DefaultAuthorizationSettler. Another experimental PriorityAuthorizationSettler (currently unmaintained, use at your own risk) is also bundled. Both are based on a AbstractAuthorizationSettler which provide a common foundation for merging access provide at each hierarchy level based on a customizable dynamic policy.\n\n### Right definitions\n\nSince the settling process is delegated to the AuthorizationSettler, the interpretation of right definitions is up to it, and right definition is only a tool for helping the creation of an expandable authorization settler, allowing new rights to be easily externally defined. New Right maybe registered with the AuthorizationManager using a RightDescription. The meaning of the right definition explained here is mostly pertinent for the default implementation of the AuthorizationSettler, and should normally be followed by any other settler implementation, but this could not be guaranteed.\n\n",
+      "similarity_score": 0.7365106344223022,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Attachment.Validation.UI.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/",
+      "content": "#-# Define the list of blocked attachment mimetypes. By default, this list is empty, but you can specify a\u00a0  \n#-# comma-separated list of blocked mimetypes. Note that a joker (\\*) can be used to accept any media type. Once this\u00a0  \n#-# list is not empty, any attachment matching one of the listed mimetype will be rejected.  \n#-# For instance, if you want to reject plain text and any kind of images, you can set the list to:  \n#-# text/plain,image/\\*  \n#-#  \n# attachment.upload.blockList=## Administration UI\n\n[![attachment_restriction_admin.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Attachment/Validation/UI/WebHome/attachment_restriction_admin.png?width=960&amp;rev=1.1)](https://extensions.xwiki.org/xwiki/bin/download/Extension/Attachment/Validation/UI/WebHome/attachment_restriction_admin.png?rev=1.1)\n\nThe mimetype restrictions can also be configured at wiki or space level through the administration UI, by visiting the Attachments Restriction section of the administration.\n\n",
+      "similarity_score": 0.732499897480011,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Security Module",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module",
+      "content": "Therefore, you are strongly encouraged to use the new checkAccess() method everywhere you check an access before action. And you should refrain to catch the resulting exception, this should be done at higher level, by the UI which will therefore be able to centralize all access check violations. (Obviously this is a work in progress that we are starting now and will only properly work when the full migration of the old service is completed). Also note that, access violation done during checkAccess() are logged. In most situation, this should not happen, since the UI, or earlier code have already checked the possibility for access, and does not provide a path to the prohibited action. Remember also, that checking the same access several time is no more cost full, so checking access very near the action (even if you think there is no reason it would be denied) is good security measure to prevent security bugs. This is clearly the purpose of the checkAccess() method.\n\n## Some definitions as seen by this module\n\n",
+      "similarity_score": 0.7324199676513672,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 842,
+    "completion_tokens": 307,
+    "total_tokens": 1149
+  },
+  "average_power_draw": 211.86386473429945,
+  "energy_consumption": 620.6706703186034,
+  "energy_per_input_token": 0.3856294938295144,
+  "energy_per_output_token": 0.9640737345737859,
+  "energy_per_total_token": 0.5401833510170613
+}

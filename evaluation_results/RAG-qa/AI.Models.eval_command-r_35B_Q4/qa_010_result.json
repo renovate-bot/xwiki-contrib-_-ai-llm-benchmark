@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.26944444444444443,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8666666666666667,
+    "Faithfulness": 0.75,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.87 because the answer is mostly relevant and provides useful information, but it includes a URL that does not directly address the specific question about configuring spaces and permissions in XWiki.",
+    "Faithfulness": "The score is 0.75 because the actual output incorrectly claims that 'spaces' are central to XWiki and that pages are structured based on spaces, despite the retrieval context stating that the notion of space has been removed from the UI. Additionally, the actual output mentions Terminal Pages not being linked to any spaces, which is not addressed in the retrieval context.",
+    "ContextualPrecision": "The score is 0.00 because the first node discusses the structure of pages and spaces in XWiki but does not provide information on configuring access control for teams. The second node is about executing a migration plan and does not relate to setting access rights for teams in XWiki. The third node explains the XAR export process in XWiki, which is unrelated to configuring team-specific access rights.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses unrelated topics such as the removal of the space concept from the UI, the migration of nested pages, and the XAR export feature, none of which address configuring permissions for team spaces.",
+    "Hallucination": "The score is 1.00 because the actual output is missing several key pieces of information that are present in the factual alignments, such as details about Terminal Pages, specific steps for executing the plan, and information about the XAR export format and its conditions."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

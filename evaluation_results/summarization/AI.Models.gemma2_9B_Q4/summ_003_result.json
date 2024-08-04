@@ -1,0 +1,10 @@
+{
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary contains several contradictions with the original text, such as incorrect details about setting permissions at the sub-wiki level and the nature of implicit denial. Additionally, there are questions that the original text can answer but the summary cannot, indicating incomplete coverage.",
+  "score_breakdown": {
+    "Alignment": 0.6363636363636364,
+    "Coverage": 0.6
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

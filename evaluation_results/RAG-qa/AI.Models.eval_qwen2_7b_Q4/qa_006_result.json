@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.666951566951567,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8888888888888888,
+    "Faithfulness": 0.8461538461538461,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.6,
+    "ContextualRelevancy": 0.3333333333333333,
+    "Hallucination": 0.6666666666666666
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.89 because the answer is mostly relevant and addresses the main question about customizing user profile fields from the OpenID Connect provider. However, it loses some points due to the inclusion of a URL that does not directly address the question and a vague statement about identifying properties.",
+    "Faithfulness": "The score is 0.85 because the actual output incorrectly claims that customization is done using the `oidc.user.mapping` property and provides an incorrect format for mapping properties, neither of which are mentioned in the retrieval context. The correct property and format are related to `oidc.user.nameFormater`.",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first node discusses the `oidc.user.mapping` property, which is directly relevant to mapping additional user profile fields from the OpenID Connect provider to XWiki user properties. The irrelevant nodes, such as those discussing domain-based authentication and group synchronization, are ranked lower.",
+    "ContextualRecall": "The score is 0.60 because the retrieval context covers the mapping of user profile fields and provides examples, but it does not mention replacing placeholders with actual property names or the need to save and restart XWiki.",
+    "ContextualRelevancy": "The score is 0.33 because the context discusses domain-based authentication, session cookie configuration, and bypassing OpenID Connect, which are irrelevant to customizing or mapping additional user profile fields from the OpenID Connect provider to XWiki user properties.",
+    "Hallucination": "The score is 0.67 because the actual output omits significant details about authentication with a domain-based instance, session cookie configuration, and group synchronization, which are crucial elements in the provided context. However, it correctly aligns with the context regarding the mapping of non-standard properties from the OpenID Connect provider to XWiki user properties."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

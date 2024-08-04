@@ -1,0 +1,10 @@
+{
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary incorrectly states that Panels are optional, which is not mentioned in the original text. Additionally, the summary fails to answer specific questions that the original text can, such as whether a user can export a page in PDF format in XWiki and if panels are displayed within columns in XWiki.",
+  "score_breakdown": {
+    "Alignment": 0.875,
+    "Coverage": 0.6
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

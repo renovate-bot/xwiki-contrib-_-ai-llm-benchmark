@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.1693121693121693,
+  "individual_scores": {
+    "AnswerRelevancy": 0.015873015873015872,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.02 because the majority of the statements in the actual output are nonsensical and irrelevant to the input question about OpenID Connect and user profile customization.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.00 because the nodes in the retrieval context discuss topics such as 'domain-based authentication and session cookie configuration' (first node), 'XWiki's use of relational databases' (second node), and 'form utilization on XWiki.org' (third node), which are all unrelated to mapping user profile fields from OpenID Connect in XWiki.",
+    "ContextualRecall": "The score is 0.00 because none of the nodes in the retrieval context mention customizing user profile fields from OpenID Connect provider, mapping additional user profile fields using the `oidc.user.mapping` property, providing an example of how to map custom properties, replacing `myxproperty1` and `myxproperty2` with actual XWiki user property names, or saving the `xwiki.properties` file and restarting XWiki to apply changes.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses domain-based authentication configurations, session cookie settings, and bypassing OpenID Connect, none of which are related to mapping additional user profile fields from an OpenID Connect provider to XWiki user properties.",
+    "Hallucination": "The score is 1.00 because the actual output fails to mention several key details that are present in the contexts, indicating a high level of hallucination."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

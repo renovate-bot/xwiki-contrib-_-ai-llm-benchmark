@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.25925925925925924,
+  "individual_scores": {
+    "AnswerRelevancy": 0.5555555555555556,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.56 because the output contains multiple irrelevant statements, such as URLs and lines of code that do not directly address configuring attachment size limits. However, it still provides some relevant information, which is why it is not scored lower.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in retrieval context are irrelevant to the input. The first node discusses 'programming rights and permissions within the wiki', the second node is about 'cookie protection levels and IP address usage for encryption', and the third node lists 'dependencies for an extension'. None of these contexts relate to configuring file upload restrictions.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses permissions, security configurations, and dependencies, which do not address file upload restrictions.",
+    "Hallucination": "The score is 1.00 because the actual output does not address any of the contexts provided and instead discusses an unrelated topic, indicating a high level of hallucination."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

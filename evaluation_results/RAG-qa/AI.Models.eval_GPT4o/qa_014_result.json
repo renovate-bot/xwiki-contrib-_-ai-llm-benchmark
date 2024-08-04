@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.2894736842105263,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7368421052631579,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.74 because while the answer provides some relevant information about disabling notifications, it includes multiple irrelevant URLs that do not address the specific query about disabling notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'defining a list of blocked attachment mimetypes and configuring them in the administration UI,' which is unrelated to disabling notifications. Similarly, the second node talks about 'setting the default language for a wiki page,' which is not relevant to the topic of disabling notifications.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses topics such as blocked attachment mimetypes, setting default languages, directory cleanup, and programming rights, none of which are related to disabling notifications.",
+    "Hallucination": "The score is 1.00 because the actual output consistently discusses managing notifications in XWiki, which is unrelated to the expected topics such as blocked attachment mimetypes, default language settings, directory cleanup, database attachment store, editing translations, and various permissions in XWiki."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

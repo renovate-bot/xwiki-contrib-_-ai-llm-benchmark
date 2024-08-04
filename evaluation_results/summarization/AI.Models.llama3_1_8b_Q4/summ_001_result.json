@@ -1,0 +1,10 @@
+{
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary contains some contradictions regarding the structure of a wiki and the function of panels, and it includes extra information not mentioned in the original text.",
+  "score_breakdown": {
+    "Alignment": 0.8,
+    "Coverage": 1.0
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

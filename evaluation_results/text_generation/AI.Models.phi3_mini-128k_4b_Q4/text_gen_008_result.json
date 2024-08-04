@@ -1,0 +1,7 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output is relevant to the Input prompt and addresses the main topic by providing a detailed travel guide to Florence and Chianti Wine Country. It is coherent and maintains a clear structure, flowing logically from one idea to the next. The fluency is generally good with minor grammatical issues. However, it is overly verbose and includes some extraneous information, which slightly detracts from the intended concise and informative guide as outlined in the Expected Output.",
+  "prompt_language": "ro",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3871794871794872,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9230769230769231,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.4,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the answer is mostly relevant and provides useful information about configuring OpenID Connect authentication in XWiki. However, it includes an irrelevant statement about accessibility features, which slightly detracts from its overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context discuss topics such as 'domain-based authentication and session cookie configuration' (first node), 'general information about the OpenID Connect Authenticator' (second node), 'dependencies for the OpenID Connect Authenticator extension' (third node), 'accessibility and WCAG compliance' (fourth node), and 'creating custom authentication mechanisms' (fifth node), none of which are relevant to configuring automatic activation of user accounts upon first login with OpenID Connect.",
+    "ContextualRecall": "The score is 0.40 because the retrieval context mentions the xwiki.properties file and the oidc.enableUser property (node 3), but it lacks details on adding or updating properties, the specific property description, and the automatic activation of new user accounts upon first login with OpenID Connect.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses domain-based authentication, session cookie configuration, and bypassing OpenID Connect, but it does not address how to configure XWiki to automatically activate user accounts upon first login with OpenID Connect.",
+    "Hallucination": "The score is 1.00 because the actual output fails to mention several key elements described in the context, including domain-based instance configuration, session cookie settings, prerequisites, installation instructions, dependencies, accessibility guidelines, WCAG 2.2 compliance, custom authentication, and Groovy script configuration. There are no contradictions, but the omissions result in a high hallucination score."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

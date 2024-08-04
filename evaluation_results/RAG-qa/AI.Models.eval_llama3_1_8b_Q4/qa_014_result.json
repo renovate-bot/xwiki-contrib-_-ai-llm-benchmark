@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3020833333333333,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8125,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.81 because the answer provides relevant information on how to disable notifications, but it includes several irrelevant URLs that do not address the question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because the nodes in the retrieval context discuss topics like 'blocked attachment mimetypes and their configuration' (first node), 'setting the default language for a page in a multilingual wiki' (second node), and 'directory cleanup and database attachment storage settings' (third node), which are all irrelevant to the input query about disabling notifications.",
+    "ContextualRecall": "The score is 0.00 because none of the nodes in the retrieval context discuss the topics mentioned in the expected output.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses configuring blocked attachment mimetypes, setting default languages, and directory cleanup, none of which are related to disabling notifications.",
+    "Hallucination": "The score is 1.00 because the actual output consistently provides URLs and instructions for disabling notifications, which does not align with any of the provided contexts. The actual output should discuss topics such as defining blocked attachment mimetypes, setting the default language for a page, and directory cleanup and database attachment store configurations."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

@@ -1,0 +1,7 @@
+{
+  "score": 1.0,
+  "reason": "The Actual Output is a poem that directly addresses the Input prompt about the beauty of nature. It covers key points such as the forest, flowers, sea, mountains, rivers, and stars, aligning with the Expected Output. The ideas are logically connected and flow smoothly, and the poem is grammatically correct and reads naturally.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

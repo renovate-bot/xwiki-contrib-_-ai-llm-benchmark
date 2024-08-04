@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5661616161616162,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8636363636363636,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.86 because the answer is mostly relevant to the issue of the notification bell not being available, but it includes several URLs that do not directly address the specific problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment between the actual output and the retrieval context!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node (rank 3) is ranked lower than several irrelevant nodes. For example, the first node discusses 'details of changes in email content and user profile settings,' which is not related to enabling notifications in the wiki. Similarly, the second node explains 'how to get a notification RSS feed and mentions the Notifications Macro,' which does not help with enabling notifications in the wiki.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are perfectly supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.20 because the context discusses various aspects of notifications, but it does not address the specific issue of the bell icon not being available even with the 'Alert Notification' extension installed.",
+    "Hallucination": "The score is 1.00 because the actual output lacks multiple key details mentioned in the factual alignments, such as changes in email content, user profile settings, RSS feed, notification macros, email notification settings, and various features like menu application and invitations."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

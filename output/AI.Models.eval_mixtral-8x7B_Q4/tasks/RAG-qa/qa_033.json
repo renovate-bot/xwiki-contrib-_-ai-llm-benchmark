@@ -1,0 +1,17 @@
+{
+  "id": "qa_033",
+  "prompt": "Puis-je authentifier les utilisateurs avec des jetons d'acc\u00e8s ?",
+  "expected_answer": "Oui, vous pouvez authentifier les utilisateurs avec des jetons d'acc\u00e8s en utilisant l'extension d'authentification bas\u00e9e sur les jetons pour l'application LLM.\n\nCette extension permet aux applications externes d'authentifier les utilisateurs avec des jetons Web JSON sign\u00e9s (JWT). Le jeton doit contenir des revendications sp\u00e9cifiques, telles que la date d'expiration, l'\u00e9metteur, le sujet et la audience, et doit \u00eatre sign\u00e9 avec une cl\u00e9 Ed25519.\n\nPour utiliser cet authentificateur, vous devez :\n\n1. Activer l'authentificateur de jeton en d\u00e9finissant la propri\u00e9t\u00e9 `xwiki.authentication.authclass` dans le fichier `xwiki.properties` sur `org.xwiki.contrib.llm.authentication.JWTTokenAuth`.\n2. Configurer les applications autoris\u00e9es en ajoutant une nouvelle entr\u00e9e \u00e0 la liste des \u00ab Applications autoris\u00e9es \u00bb, en sp\u00e9cifiant le titre, l'URL, la cl\u00e9 publique et le format de groupe de l'application.\n3. G\u00e9n\u00e9rer un jeton JWT qui r\u00e9pond aux exigences de revendications et de cl\u00e9s de signature.\n4. Inclure le jeton dans l'en-t\u00eate \u00ab Authorization \u00bb de la requ\u00eate sous la forme \u00ab Bearer TOKEN \u00bb.\n\nNotez que cet authentificateur ne prend en charge que la cr\u00e9ation ou la mise \u00e0 jour des utilisateurs en fonction des informations fournies dans le jeton et ne prend pas en charge l'utilisation d'un jeton comme authentification pour un utilisateur existant qui n'a pas \u00e9t\u00e9 cr\u00e9\u00e9 via cet authentificateur.",
+  "ai_answer": "\n\n It seems that there is no specific information available to assist with your query. However, I can provide some general knowledge on the topic.\n\nYes, you can typically authenticate users with access tokens as part of an OAuth 2.0 flow or a similar authentication mechanism. The access token serves as a digital signature that verifies the user's identity and permissions when making requests to protected resources or services. To implement this, you would need to have a secure authentication system in place that generates and manages these tokens according to best practices.\n\nPlease note that this is a general explanation, and specific implementation details may vary depending on your use case and the technologies involved. If you have any more questions or need clarification, feel free to ask!",
+  "sources": [],
+  "usage": {
+    "prompt_tokens": 105,
+    "completion_tokens": 156,
+    "total_tokens": 261
+  },
+  "average_power_draw": 67.49702445652176,
+  "energy_consumption": 752.2226339675424,
+  "energy_per_input_token": 1.519641684782914,
+  "energy_per_output_token": 3.7991042119572844,
+  "energy_per_total_token": 2.8820790573469055
+}

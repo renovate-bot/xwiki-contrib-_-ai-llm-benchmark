@@ -7,6 +7,7 @@ from deepeval.metrics import FaithfulnessMetric
 from deepeval.metrics import ContextualRecallMetric
 from deepeval.metrics import ContextualPrecisionMetric
 from deepeval.metrics import ContextualRelevancyMetric
+from deepeval.metrics import HallucinationMetric
 from deepeval.test_case import LLMTestCase
 from langdetect import detect
 
@@ -15,6 +16,29 @@ from langdetect import detect
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
 from evaluation_utils import load_config, save_evaluation_result, get_evaluator_model
+
+def measure_metric_with_retry(metric, test_case):
+    try:
+        metric.measure(test_case)
+        return metric.score, metric.reason
+    except Exception as e:
+        print(f"First attempt failed for {metric.__class__.__name__}: {str(e)}")
+        try:
+            metric.measure(test_case)
+            return metric.score, metric.reason
+        except Exception as e:
+            print(f"Retry failed for {metric.__class__.__name__}: {str(e)}")
+            return 0, f"Failed to measure: {str(e)}"
+
+def measure_metric_with_retry(metric, test_case, max_retries=2):
+    for attempt in range(max_retries + 1):
+        try:
+            metric.measure(test_case)
+            return metric.score, metric.reason
+        except Exception as e:
+            print(f"Attempt {attempt + 1} failed for {metric.__class__.__name__}: {str(e)}")
+            if attempt == max_retries:
+                return 0, f"Failed to measure after {max_retries + 1} attempts: {str(e)}"
 
 def calculate_ragas_score(ai_qa_file, evaluator_model):
     # Load the AI-generated QA file
@@ -40,60 +64,41 @@ def calculate_ragas_score(ai_qa_file, evaluator_model):
         retrieval_context=retrieval_context
     )
 
-    ar_metric = AnswerRelevancyMetric(
-        threshold=0.7,
-        model=evaluator_model,
-        include_reason=True
+    # Create the test case specific for halucinations
+    test_case_halucinations = LLMTestCase(
+        input=prompt,
+        expected_output=expected_answer,
+        actual_output=ai_answer,
+        context=retrieval_context
     )
 
-    faithfulness_metric = FaithfulnessMetric(
-        threshold=0.7,
-        model=evaluator_model,
-        include_reason=True
-    )
+    metrics = [
+        (AnswerRelevancyMetric(model=evaluator_model, include_reason=True), "AnswerRelevancy"),
+        (FaithfulnessMetric(model=evaluator_model, include_reason=True), "Faithfulness"),
+        (ContextualPrecisionMetric(model=evaluator_model, include_reason=True), "ContextualPrecision"),
+        (ContextualRecallMetric(model=evaluator_model, include_reason=True), "ContextualRecall"),
+        (ContextualRelevancyMetric(model=evaluator_model, include_reason=True), "ContextualRelevancy"),
+        (HallucinationMetric(model=evaluator_model, include_reason=True), "Hallucination")
+    ]
 
-    cp_metric = ContextualPrecisionMetric(
-        threshold=0.7,
-        model=evaluator_model,
-        include_reason=True
-    )
+    individual_scores = {}
+    reasons = {}
+    total_score = 0
 
-    cr_metric = ContextualRecallMetric(
-        threshold=0.7,
-        model=evaluator_model,
-        include_reason=True
-    )
+    for metric, name in metrics:
+        score, reason = measure_metric_with_retry(metric, test_case if name != "Hallucination" else test_case_halucinations)
+        individual_scores[name] = score
+        reasons[name] = reason
+        total_score += score if name != "Hallucination" else (1 - score)
 
-    # Measure the test case
-    ar_metric.measure(test_case)
-    faithfulness_metric.measure(test_case)
-    cp_metric.measure(test_case)
-    cr_metric.measure(test_case)
+    overall_score = total_score / len(metrics)
 
-    average_score = (ar_metric.score
-                     + faithfulness_metric.score 
-                     + cp_metric.score 
-                     + cr_metric.score) / 4
-    
-    individual_scores = {
-        "AnswerRelevancy": ar_metric.score,
-        "Faithfulness": faithfulness_metric.score,
-        "ContextualPrecision": cp_metric.score,
-        "ContextualRecall": cr_metric.score
-    }
-    reasons = {
-        "AnswerRelevancy": ar_metric.reason,
-        "Faithfulness": faithfulness_metric.reason,
-        "ContextualPrecision": cp_metric.reason,
-        "ContextualRecall": cr_metric.reason
-    }
-
-    return average_score, individual_scores, reasons, question_language, expected_answer_language, answer_language
+    return overall_score, individual_scores, reasons, question_language, expected_answer_language, answer_language
 
 def evaluate_rag_qa_task(qa_file, evaluator_model, evaluation_dir):
-    average_score, individual_scores, reasons, question_language, expected_answer_language, answer_language = calculate_ragas_score(qa_file, evaluator_model)
+    overall_score, individual_scores, reasons, question_language, expected_answer_language, answer_language = calculate_ragas_score(qa_file, evaluator_model)
     evaluation_result = {
-        "average_score": average_score,
+        "overall_score": overall_score,
         "individual_scores": individual_scores,
         "reasons": reasons,
         "question_language": question_language,

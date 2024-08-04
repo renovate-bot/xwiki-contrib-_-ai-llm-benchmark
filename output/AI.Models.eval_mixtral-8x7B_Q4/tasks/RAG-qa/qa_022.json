@@ -1,0 +1,17 @@
+{
+  "id": "qa_022",
+  "prompt": "Je ne re\u00e7ois pas de notifications.",
+  "expected_answer": "Assurez-vous que les notifications sont activ\u00e9es. Vous pouvez les activer en d\u00e9finissant la propri\u00e9t\u00e9 `notifications.enabled` dans `xwiki.properties` sur `true`. De plus, assurez-vous que vous suivez les pages ou les utilisateurs dont vous souhaitez recevoir des notifications. Vous pouvez suivre une page, une page et ses enfants, ou un wiki entier. Pour suivre un emplacement, il vous suffit d'y aller, puis de cliquer sur le menu \"alerte\" (repr\u00e9sent\u00e9 par une cloche) et d'activer les notifications souhait\u00e9es. Pour suivre un utilisateur, si vous allez sur le profil d'un utilisateur, en utilisant l'index utilisateur par exemple, vous pouvez d\u00e9cider de suivre l'utilisateur. Cela signifie que vous recevrez toutes les notifications concernant les \u00e9v\u00e9nements d\u00e9clench\u00e9s par cet utilisateur. Dans votre profil utilisateur, si vous allez dans l'onglet \"r\u00e9seau\", vous pouvez voir la liste des utilisateurs que vous suivez et les \u00e9v\u00e9nements qui ont \u00e9t\u00e9 effectu\u00e9s par eux.",
+  "ai_answer": "\n\n I'm sorry for any inconvenience, but it seems like there's no relevant information provided to help answer your question. However, I'll do my best to assist you with the general knowledge that I have.\n\nAs for your statement \"Je ne re\u00e7ois pas de notifications,\" I understand that you're saying you're not receiving notifications. If you're referring to notifications from this platform, please check your account settings to ensure they are enabled. If you need further assistance with this, don't hesitate to ask.\n\nNow, feel free to ask me any question in a language you prefer, and I will do my best to provide a helpful response.",
+  "sources": [],
+  "usage": {
+    "prompt_tokens": 96,
+    "completion_tokens": 147,
+    "total_tokens": 243
+  },
+  "average_power_draw": 67.92797584541061,
+  "energy_consumption": 705.0894495060523,
+  "energy_per_input_token": 1.521228585773576,
+  "energy_per_output_token": 3.8030714644339394,
+  "energy_per_total_token": 2.901602672864413
+}

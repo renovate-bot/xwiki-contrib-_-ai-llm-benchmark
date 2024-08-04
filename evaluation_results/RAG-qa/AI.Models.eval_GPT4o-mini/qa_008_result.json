@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.575,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5833333333333333,
+    "ContextualRecall": 0.6666666666666666,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.58 because the first node discusses adding attachments using various methods but does not address configuring allowed mimetypes or maximum attachment size, which should be ranked lower. Additionally, the fourth node discusses the filesystem attachment store and its location, and the fifth node explains linking to external files and images, both of which are not relevant to configuring allowed mimetypes or maximum attachment size. However, the second and third nodes are correctly ranked as they provide information about configuring blocked attachment mimetypes and setting the maximum attachment size, respectively.",
+    "ContextualRecall": "The score is 0.67 because while the retrieval context nodes mention configuring blocked attachment mimetypes and setting maximum upload size in XWikiPreferences, they do not cover the specific steps to ensure only images or PDF files of up to 10MB can be uploaded.",
+    "ContextualRelevancy": "The score is 0.20 because the context discusses various methods and configurations for adding attachments but does not address the specific requirement of limiting uploads to images or PDF files of a maximum of 10MB.",
+    "Hallucination": "The score is 1.00 because the actual output omits several key details provided in the context, such as methods for adding attachments, list of blocked attachment mimetypes, various methods for uploading attachments, filesystem attachment store, and linking to external files/images."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

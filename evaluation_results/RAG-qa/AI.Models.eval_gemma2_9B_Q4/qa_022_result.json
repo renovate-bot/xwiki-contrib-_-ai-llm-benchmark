@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.613095238095238,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9285714285714286,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.8333333333333333,
+    "ContextualRecall": 0.25,
+    "ContextualRelevancy": 0.6666666666666666,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.93 because the response is highly relevant to the issue of not receiving notifications, but the inclusion of a URL that is not directly related to the problem slightly lowers the score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.83 because the first and third nodes in the retrieval context are relevant and ranked correctly. However, the second node, which discusses details about email notifications and the level of detail in the changes, and the fourth node, which provides detailed information about email notifications and customization, are not directly relevant and should be ranked lower than the relevant nodes.",
+    "ContextualRecall": "The score is 0.25 because only the sentence about enabling notifications through the `xwiki.properties` file is supported by the nodes in the retrieval context, while the rest of the sentences about following pages, users, and viewing events are not mentioned in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.67 because the context is about configuring email notifications, while the input is about not receiving notifications, which is not directly addressed.",
+    "Hallucination": "The score is 1.00 because the actual output lacks multiple specific details mentioned in the context, such as specific macros, details of changes in email content, types of email notifications, and configuration options for notifications."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

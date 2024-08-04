@@ -1,0 +1,10 @@
+{
+  "score": 0.2857142857142857,
+  "reason": "The score is 0.29 because the summary contains multiple contradictions regarding the definitions and configurations of 'strong protection', 'View & Edit Permissions', 'Protected' configuration, and 'Light and Strong' variations. Additionally, it includes extra information not present in the original text and fails to address a specific question about global rights for unregistered users in the light protection strength configuration.",
+  "score_breakdown": {
+    "Alignment": 0.2857142857142857,
+    "Coverage": 0.8
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

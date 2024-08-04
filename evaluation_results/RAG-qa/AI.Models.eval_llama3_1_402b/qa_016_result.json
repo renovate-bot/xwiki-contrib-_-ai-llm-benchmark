@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3137254901960784,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8823529411764706,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.88 because the response is mostly relevant and provides useful information, but it includes links about scalability and database support features of XWiki, which are not pertinent to customizing user profile fields from an OpenID Connect provider.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'domain-based authentication and session cookie configuration,' which is not related to customizing user profile fields from an OpenID Connect provider. Similarly, the second node provides 'general information about OpenID Connect authentication' without addressing the specific question. The third node talks about 'XWiki's scalability and multi-tenancy features,' which are also unrelated.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses domain-based instance authentication, session cookie configuration, and bypassing OpenID Connect, but it does not address customizing user profile fields or mapping additional user profile fields from an OpenID Connect provider to XWiki user properties.",
+    "Hallucination": "The score is 1.00 because the actual output does not align with multiple key aspects of the context, including authentication with a domain-based instance, session cookie configuration, prerequisites, installation instructions, dependencies, scalability, multi-tenancy, clustering, and the use of relational databases. No contradictions were found, but the lack of alignment with the context justifies the high hallucination score."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6756944444444445,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8125,
+    "Faithfulness": 0.875,
+    "ContextualPrecision": 0.16666666666666666,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.81 because the answer is mostly relevant and provides useful information, but it includes a URL that does not directly address the question about denying script rights to a space administrator.",
+    "Faithfulness": "The score is 0.88 because the actual output incorrectly claims that the ADMIN right is granted to space administrators, while the retrieval context only specifies that the ADMIN right is targeted at Wiki and Space entities.",
+    "ContextualPrecision": "The score is 0.17 because the relevant node (rank 6) is ranked lower than several irrelevant nodes. For example, the first node discusses programming rights and their implications, but does not address the specific question about denying script rights to a space administrator. Similarly, the second node is about Color Themes and their accessibility to unregistered users, which is not relevant to the question. However, the score is not lower because the relevant node is still included in the retrieval contexts.",
+    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.20 because the context discusses various rights and technical details, but it does not mention anything about denying script rights to a space administrator.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments and all the provided contradictions confirm that the actual output is consistent with the context."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5972222222222222,
+  "individual_scores": {
+    "AnswerRelevancy": 0,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0.8333333333333333,
+    "ContextualRecall": 0.75,
+    "ContextualRelevancy": 1.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "Failed to measure after 3 attempts: Evaluation LLM outputted an invalid JSON. Please use a better evaluation model.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.83 because the first and third nodes in the retrieval context are relevant and ranked correctly. However, the second node, which primarily lists different types of notification preferences and their corresponding macros, is irrelevant and should be ranked lower than the relevant nodes.",
+    "ContextualRecall": "The score is 0.75 because while the retrieval context nodes provide information about automatic creation of custom notification filters and their management, they do not explicitly mention changing the setting for 'Automatic page watching' in the notification settings.",
+    "ContextualRelevancy": "The score is 1.00 because the input is perfectly relevant and clear. Great job!",
+    "Hallucination": "The score is 1.00 because the actual output does not provide any relevant information related to the context and contains unrelated URLs and text. It fails to align with the context about filters, notifications, preferences, and custom filters in XWiki."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

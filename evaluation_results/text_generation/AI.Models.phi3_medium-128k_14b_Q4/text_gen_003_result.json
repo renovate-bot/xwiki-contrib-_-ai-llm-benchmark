@@ -1,0 +1,7 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output addresses the topic of photosynthesis and explains it in a way that is engaging for a younger audience. It covers the key points of plants using sunlight to make energy, similar to the Expected Output. However, it adds extra details and comparisons that, while engaging, slightly deviate from the concise explanation in the Expected Output. The language is fluent and coherent.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

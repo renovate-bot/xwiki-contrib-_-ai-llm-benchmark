@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6018518518518519,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7777777777777778,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.3333333333333333,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.78 because the answer partially addresses the question about authenticating users with access tokens, but includes irrelevant URLs that do not specifically relate to the topic.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.50 because the second node, which is directly relevant as it provides detailed information about the requirements and claims for JWT tokens, is ranked lower than the first node. The first node discusses form utilization on XWiki.org and does not mention anything related to user authentication or JWT tokens, thus it should be ranked lower. Additionally, the third node, which also does not provide any information related to user authentication or JWT tokens, is ranked lower than the relevant node, contributing to the current score.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.33 because the context discusses form utilization and examples on XWiki.org, which is irrelevant to the question about authenticating users with access tokens.",
+    "Hallucination": "The score is 1.00 because the actual output fails to mention critical elements such as the Reference Form, Questionnaire Form, Menu application, Notifications, Invitation, and other features as described in the context. Instead, it discusses unrelated JWT token authentication, indicating a complete misalignment with the provided context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

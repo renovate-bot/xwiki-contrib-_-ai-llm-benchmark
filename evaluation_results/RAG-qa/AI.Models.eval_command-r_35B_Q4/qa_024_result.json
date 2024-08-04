@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6472222222222223,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.75,
+    "ContextualRelevancy": 0.3333333333333333,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.80 because the provided links to XWiki syntax documentation and the Notifications Application extension are irrelevant to the question about disabling notifications. However, the rest of the response is relevant and helpful, which is why the score is relatively high.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node in the first rank mentions 'Notifications Auto Watch Preferences' and 'Notifications Custom Filters Preferences', which are directly related to the expected output about modifying auto watch settings and custom notification filters. The irrelevant nodes in the second and third ranks discuss email notifications and RSS feeds, which are not directly relevant to the question.",
+    "ContextualRecall": "The score is 0.75 because while nodes in the retrieval context cover the topics of 'auto watched pages' preferences and 'custom notification filters' (supporting sentences 1, 3, and 4), there is no mention of being notified of changes on your work, which is a key part of sentence 2.",
+    "ContextualRelevancy": "The score is 0.33 because the context discusses configuring email notifications and RSS feeds, which are not directly related to the user's query about disabling notifications for uninterested pages.",
+    "Hallucination": "The score is 1.00 because the actual output lacks several specific details mentioned in the factual alignments, such as displaying notifications about events, specifics of email notifications, and accessing the RSS feed and settings for notifications. There are no contradictions, but the omissions lead to a high hallucination score."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

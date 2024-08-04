@@ -1,6 +1,6 @@
 {
   "id": "qa_001",
-  "prompt": "The \"Bell\" in the top right corner is not available, also not when the \"Alert Notification\" extension is installed.",
+  "prompt": "In the context of XWiki the \"Bell\" in the top right corner is not available, also not when the \"Alert Notification\" extension is installed.",
   "expected_answer": "Make sure that notifications are enabled in your wiki. You can enable them by setting the `notifications.enabled` setting in `xwiki.properties` to `true`.",
   "data_path": null
 }

@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.30463980463980467,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9047619047619048,
+    "Faithfulness": 0.9230769230769231,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.90 because the majority of the response is relevant and provides useful information on setting up group synchronization between XWiki and an OpenID Connect provider. However, it includes some irrelevant details about scalability, performance features, and second-generation wiki features, which slightly detract from the overall relevance.",
+    "Faithfulness": "The score is 0.92 because the actual output suggests opening the configuration file `xwiki.cfg`, which contradicts the retrieval context stating that the OIDC authenticator does not rely on the property xwiki.authentication.cookiedomains in xwiki.cfg.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node 'provides links to installation instructions, dependencies, and general descriptions of the OpenID Connect Authenticator,' the second node 'discusses domain-based authentication and session cookie configuration,' and the third node 'focuses on XWiki's scalability, multi-tenancy, and clustering capabilities,' none of which detail the process of configuring group synchronization between XWiki and an OpenID Connect provider.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not provide any information related to setting up group synchronization between XWiki and an OpenID Connect provider, nor does it include any instructions or details mentioned in the expected output.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses various aspects of OpenID Connect and XWiki, but none specifically address the process for setting up group synchronization between XWiki and an OpenID Connect provider. For example, it mentions 'A configuration guide is available to connect XWiki to LemonLDAP / OpenPAAS using the OpenIDC XWiki client' and 'A configuration example for Univention Corporate Server (UCS) is available,' which are not directly related to group synchronization.",
+    "Hallucination": "The score is 1.00 because the actual output lacks multiple specific details and features mentioned in the context, such as URLs, installation instructions, dependencies, configuration guides, domain-based instance configuration, session cookie settings, scalability, multi-tenancy, clustering capabilities, first and second generation wikis, and their features."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

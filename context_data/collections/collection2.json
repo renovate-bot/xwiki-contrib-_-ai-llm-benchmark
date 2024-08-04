@@ -1,7 +1,7 @@
 {
     "id": "Eval_fr",
     "title": "Eval_fr",
-    "embedding_model": "AI.Models.Default",
+    "embedding_model": "AI.Models.mxbai-embed-large",
     "chunking_method": "maxChars",
     "chunking_max_size": 2000,
     "chunking_overlap_offset": 0,

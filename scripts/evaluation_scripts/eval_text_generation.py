@@ -11,25 +11,30 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..',
 
 from evaluation_utils import load_config, save_evaluation_result, get_evaluator_model
 
+def measure_metric_with_retry(metric, test_case, max_retries=3):
+    for attempt in range(max_retries + 1):
+        try:
+            metric.measure(test_case)
+            return metric.score, metric.reason
+        except Exception as e:
+            print(f"Attempt {attempt + 1} failed for GEval: {str(e)}")
+            if attempt == max_retries:
+                return 0, f"Failed to measure after {max_retries + 1} attempts: {str(e)}"
+
 def calculate_text_generation_score(ai_generated_file, evaluator_model):
-    # Load the AI-generated text file
     with open(ai_generated_file, 'r') as file:
         generated_data = json.load(file)
 
-    # Extract the prompt and the generated text
     prompt = generated_data['prompt']
     generated_text = generated_data['ai_answer']
     expected_answer = generated_data['expected_answer']
 
-    # Detect languages
     prompt_language = detect(prompt)
     expected_answer_language = detect(expected_answer)
     generated_text_language = detect(generated_text)
 
-    # Create the test case
     test_case = LLMTestCase(input=prompt, actual_output=generated_text, expected_output=expected_answer)
 
-    # Create the evaluation metric
     metric = GEval(
         name="TextGenerationEvaluation",
         criteria="Evaluate the quality of the generated text based on its relevance to the prompt, coherence, and fluency.",
@@ -38,10 +43,9 @@ def calculate_text_generation_score(ai_generated_file, evaluator_model):
         strict_mode=False
     )
 
-    # Measure the test case
-    metric.measure(test_case)
+    score, reason = measure_metric_with_retry(metric, test_case)
 
-    return metric.score, metric.reason, prompt_language, expected_answer_language, generated_text_language
+    return score, reason, prompt_language, expected_answer_language, generated_text_language
 
 def evaluate_text_generation_task(generated_file, evaluator_model, evaluation_dir):
     score, reason, prompt_language, expected_answer_language, generated_text_language = calculate_text_generation_score(generated_file, evaluator_model)

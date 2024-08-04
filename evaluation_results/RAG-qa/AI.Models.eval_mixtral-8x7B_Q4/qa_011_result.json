@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.4761904761904762,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8571428571428571,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0,
+    "Hallucination": 0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.86 because the response mostly addresses the issue with the bell icon and the 'Alert Notification' extension, but includes irrelevant statements about language and lack of specific information, which were not necessary given the context provided.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because there are no nodes in the retrieval context to evaluate.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context is empty, and none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because there are no reasons provided for the irrelevancy of the retrieval context to the input.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments or contradictions, indicating no hallucinations."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

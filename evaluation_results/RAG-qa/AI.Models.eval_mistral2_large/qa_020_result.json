@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5055555555555555,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8333333333333334,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.25,
+    "ContextualRecall": 0.75,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.8
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.83 because the answer mostly addresses the configuration question, but the repeated irrelevant URLs slightly detract from its overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect faithfulness!",
+    "ContextualPrecision": "The score is 0.25 because the relevant node that includes a link to information about managing users and groups in XWiki, which is relevant to setting up access control for teams, is ranked fourth. Irrelevant nodes, such as the first node that provides a general introduction to XWiki and its use cases, the second node that discusses features of first and second generation wikis, and the third node that talks about XWiki's database support and programming features, are ranked higher.",
+    "ContextualRecall": "The score is 0.75 because most sentences in the expected output align well with nodes in the retrieval context, particularly regarding managing users, setting rights, and controlling access. However, the introductory and reminder sentences do not directly match any specific part of the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context provides general information about XWiki but does not address the specific configuration question about team permissions.",
+    "Hallucination": "The score is 0.80 because the actual output lacks several key pieces of information present in the context, such as the distinction between first and second generation wikis, XWiki's use of relational databases, programming features, user and group management, and basic wiki features. However, it correctly provides links to relevant XWiki documentation, which aligns with the context."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

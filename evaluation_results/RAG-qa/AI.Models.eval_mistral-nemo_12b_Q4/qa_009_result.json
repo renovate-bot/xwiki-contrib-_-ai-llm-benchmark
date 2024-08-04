@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6904761904761904,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.14285714285714285,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant and there are no irrelevant statements.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.14 because the relevant node (rank 7) is ranked much lower than several irrelevant nodes. For example, the first node discusses programming rights and their implications but does not address denying script rights to a space administrator, and the second node is about color themes and access for unregistered users, which is unrelated to the input.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are well-supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.00 because the context provided does not mention how to deny script rights to a space administrator and discusses unrelated topics such as 'Programming Right', 'Register Right', 'Color Themes', and general access rights management.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments and the contradictions indicate that the actual output is consistent with the context, providing additional information without deviating from the discussed topics."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

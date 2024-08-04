@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.16666666666666666,
+  "individual_scores": {
+    "AnswerRelevancy": 0.0,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.00 because the output contains numerous irrelevant and nonsensical statements that do not address the input question about file upload restrictions in a wiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'HTTP methods and media types for retrieving page history and children', the second node discusses 'HTTP methods and media types for managing page translations and history', and the third node discusses 'HTTP methods and media types for creating a new wiki and retrieving spaces'. None of these are relevant to configuring attachment upload settings.",
+    "ContextualRecall": "The score is 0.00 because none of the steps or details in the expected output are mentioned in the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context provides information about various API endpoints and their descriptions, which is irrelevant to the question about ensuring that only images or PDF files with a maximum size of 10 MB can be uploaded in the wiki.",
+    "Hallucination": "The score is 1.00 because the actual output does not provide any information related to the context, which describes various API endpoints and their details."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

@@ -1,0 +1,7 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output addresses the Input prompt and is coherent and fluent. However, it deviates slightly from the Expected Output in structure and phrasing.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

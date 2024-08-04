@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5833333333333334,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8333333333333334,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.3333333333333333
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.83 because the answer is mostly relevant and provides useful information, but it includes URLs that do not directly address the input question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'Programming Right' but does not address denying script rights to a space administrator. The second node mentions 'Color Themes' and access rights for unregistered users, which is unrelated. The third node covers 'Comment Right' and 'Edit Right,' which do not pertain to the query. The fourth node discusses 'Delete Right' and 'Special Permissions,' but does not directly address the ability to deny script rights to a space administrator.",
+    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses various rights and themes in a wiki environment but does not address how to deny script rights to a space administrator.",
+    "Hallucination": "The score is 0.33 because the actual output uses the term 'scripting rights' instead of 'programming rights' as specified in the context. This slight misalignment in terminology leads to a moderate hallucination score, despite the overall alignment with the context's theme of managing access rights."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

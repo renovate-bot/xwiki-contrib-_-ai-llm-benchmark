@@ -1,0 +1,10 @@
+{
+  "score": 0.75,
+  "reason": "The score is 0.75 because the summary includes a contradiction regarding the accessibility of all feeds via the browser's RSS notification button, and it fails to address whether RSS feeds for blog posts can be received if the Blog application is installed.",
+  "score_breakdown": {
+    "Alignment": 0.75,
+    "Coverage": 0.8
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

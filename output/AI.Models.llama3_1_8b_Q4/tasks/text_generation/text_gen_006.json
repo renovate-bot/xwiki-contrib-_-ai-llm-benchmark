@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_006",
+  "prompt": "Write a poem about the beauty of nature.",
+  "expected_answer": "A poem describing the wonders of the natural world.",
+  "ai_answer": "In twilight's hush, where shadows play,\nThe forest whispers secrets all day.\nA gentle breeze rustles through the trees,\nAnd sunlight filters, dappled ease.\n\nThe flowers bloom with vibrant hue,\nTheir sweet perfume wafting anew.\nRays dance across the rippling sea,\nAs waves caress the sandy glee.\n\nIn mountain majesty, peaks soar high,\nWhere eagles ride the windy sky.\nRiver's melody flows like a song,\nWith fish that swim where waters belong.\n\nIn night's stillness, stars shine bright and fair,\nA twinkling canvas, infinite to share.\nThe scent of blooms in morning dew,\nInvigorates all senses anew.\n\nThe Earth's grand symphony, a wondrous blend,\nA kaleidoscope of beauty to amend.\nNature's palette, ever-changing and bold,\nIn beauty reigns, with tales yet untold.\n\nOh, how our spirits lift and soar,\nIn wonder at the world we adore!\nFor in each moment, nature's essence is free,\nA treasure trove, for you and me!",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 217,
+    "total_tokens": 238
+  },
+  "average_power_draw": 204.71921195652175,
+  "energy_consumption": 362.02524973906253,
+  "energy_per_input_token": 0.6424582958989575,
+  "energy_per_output_token": 1.6061457397473937,
+  "energy_per_total_token": 1.5211144947019435
+}

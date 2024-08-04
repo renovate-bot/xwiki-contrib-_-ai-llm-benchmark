@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5214285714285715,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.9285714285714286,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.2,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 0.93 because the actual output incorrectly states `xwiki.authentication.authclass = org.xwiki.contrib.oidc.OIDCAuthServiceImpl` instead of the correct `xwiki.authentication.authclass = com.xpn.xwiki.user.impl.xwiki.GroovyAuthServiceImpl` as per the retrieval context.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node provides general information about OpenID Connect and its configuration guides but does not mention the specific property `oidc.enableUser` in `xwiki.properties`. The second node discusses domain-based instance authentication and session cookie configuration, which is unrelated to the automatic activation of user accounts. The third node lists dependencies for the OpenID Connect extension, which is not relevant to the specific configuration needed for automatic user account activation. The fourth node explains the in-wiki configuration of the OIDC authenticator but does not mention the `oidc.enableUser` property in `xwiki.properties`. The fifth node provides information on creating custom authentication methods, which is not relevant to the automatic activation of user accounts using OpenID Connect.",
+    "ContextualRecall": "The score is 0.20 because only one sentence in the expected output can be attributed to the nodes in the retrieval context, while the rest lack direct support from the context.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not specifically address how to enable automatic user account activation on first login using OpenID Connect, and includes irrelevant information such as 'Prerequisites & Installation Instructions' and 'Dependencies'.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments or contradictions between the actual output and the context, indicating no hallucination."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

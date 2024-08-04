@@ -1,0 +1,7 @@
+{
+  "score": 0.9,
+  "reason": "The Actual Output addresses the Input prompt and is relevant. It is coherent with the Expected Output, though it combines dates into one field and lists activities differently. The fluency is high with correct grammar and readability.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

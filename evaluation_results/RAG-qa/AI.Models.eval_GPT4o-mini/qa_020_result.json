@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.47878787878787876,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7727272727272727,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.4
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.77 because the answer provides some useful information but includes multiple irrelevant URLs that do not directly address the specific configuration question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node provides a general introduction to XWiki and its use cases but does not address specific configuration steps for access control. The second node explains the differences between first and second generation wikis and some features like page editing and version control, but it does not provide information on configuring access control for teams. The third node discusses XWiki's database efficiency and programming features, which are unrelated to setting up access control for teams.",
+    "ContextualRecall": "The score is 0.50 because while nodes in the retrieval context mention managing users and rights, they do not provide specific steps or ensure visibility and edit restrictions for teams as outlined in the expected output.",
+    "ContextualRelevancy": "The score is 0.00 because the context provides general information about XWiki and wikis but does not address the specific configuration question about team permissions.",
+    "Hallucination": "The score is 0.40 because while the actual output aligns well with the context of managing users and groups in XWiki and explaining what a wiki is, it omits specific features of first generation wikis and XWiki such as page editing, version control, relational database, programming features, rights management, search, and exports."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

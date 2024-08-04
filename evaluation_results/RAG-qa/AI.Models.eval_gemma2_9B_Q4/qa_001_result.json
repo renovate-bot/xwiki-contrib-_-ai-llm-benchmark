@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3333333333333333,
+  "individual_scores": {
+    "AnswerRelevancy": 0.5,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.50 because the provided URLs are not directly relevant to the specific issue of the 'Bell' icon not being available, but the response may still contain some useful information.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node focuses on various applications and features in XWiki, the second node discusses the 'What's New Application' for news notifications, and the third node lists notification-related macros and preferences. None of these nodes provide information about enabling notifications in the `xwiki.properties` file.",
+    "ContextualRecall": "The score is 0.50 because while the retrieval context nodes mention notifications and getting notified about events, they do not reference the specific settings 'xwiki.properties' or 'notifications.enabled' mentioned in the expected output.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address the availability of the 'Bell' icon or the 'Alert Notification' extension, focusing instead on unrelated XWiki features and applications.",
+    "Hallucination": "The score is 1.00 because the actual output contains multiple factual inaccuracies and omissions, such as incorrect information about the 'Bell' icon and missing details about the 'What's New Application' and various notification preferences and macros, which significantly deviate from the provided context."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

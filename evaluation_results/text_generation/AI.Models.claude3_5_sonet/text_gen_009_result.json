@@ -1,0 +1,7 @@
+{
+  "score": 0.7,
+  "reason": "The Actual Output addresses the Input prompt and includes relevant details, but it does not match the Expected Output format exactly. The date is not split into start and end dates, and the target audience is included in the event description instead of as a separate field.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

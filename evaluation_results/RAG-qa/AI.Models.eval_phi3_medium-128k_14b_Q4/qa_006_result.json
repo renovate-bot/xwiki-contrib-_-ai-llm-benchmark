@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5277777777777778,
+  "individual_scores": {
+    "AnswerRelevancy": 0.0,
+    "Faithfulness": 1,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.8333333333333334,
+    "ContextualRelevancy": 0.3333333333333333,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.00 because the output contains numerous irrelevant and incomplete statements that do not address the question about customizing user profile fields in XWiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first node addresses the user's query about customizing user profile fields, while the second and third nodes discuss domain-based authentication and group synchronization, which are not relevant.",
+    "ContextualRecall": "The score is 0.83 because most of the expected output is supported by the 4th node in the retrieval context, but the retrieval context does not mention saving the `xwiki.properties` file and restarting XWiki.",
+    "ContextualRelevancy": "The score is 0.33 because the context discusses domain-based authentication, session cookie configuration, and bypassing OpenID Connect, but it does not address customizing user profile fields or mapping additional user profile fields from an OpenID Connect provider to XWiki user properties.",
+    "Hallucination": "The score is 1.00 because the actual output lacks information on multiple key points such as suffixes or variable syntax, authentication with a domain-based instance, and group synchronization, customization, or troubleshooting related to OpenID Connect, which are all mentioned in the context."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

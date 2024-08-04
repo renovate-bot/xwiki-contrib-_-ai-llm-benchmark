@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.27037037037037037,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7333333333333333,
+    "Faithfulness": 0.8888888888888888,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.73 because the answer partially addresses the question but includes several irrelevant statements that do not directly help in solving the problem.",
+    "Faithfulness": "The score is 0.89 because the actual output claims that a file can be uploaded using the HTTP POST method, but the retrieval context does not mention the POST method being used for file uploads.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'HTTP methods and status codes for retrieving page history and children', the second node details 'HTTP methods and status codes for page translations', and the third node talks about 'creating a new wiki and retrieving spaces'. None of these are related to configuring upload restrictions in a wiki.",
+    "ContextualRecall": "The score is 0.00 because none of the steps or details in the expected output are mentioned in the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context provides information about HTTP endpoints and methods, which does not address the input question about restricting uploads to images or PDF files with a maximum size of 10 MB.",
+    "Hallucination": "The score is 1.00 because the actual output does not align with the context at all, discussing topics not covered in the context and failing to mention any relevant details or endpoints."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

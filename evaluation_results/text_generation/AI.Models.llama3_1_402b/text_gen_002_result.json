@@ -1,0 +1,7 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output addresses the topic posed by the Input and is coherent and fluent. However, it introduces 'chased after butterflies' which is not mentioned in the Expected Output.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

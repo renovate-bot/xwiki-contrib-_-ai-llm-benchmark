@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6962962962962963,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7777777777777778,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.6,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 0.4
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.78 because the answer provides some relevant information about user authentication with access tokens, but it includes multiple URLs that are not directly related to the question, which reduces its overall relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node, which provides detailed information about JWT token generation and required claims, is ranked first. All irrelevant nodes, such as those discussing blocked attachment mimetypes (rank 2), creating custom authentication with Groovy script (rank 3), cookie protection levels (rank 4), and user rights within a wiki (rank 5), are correctly ranked lower.",
+    "ContextualRecall": "The score is 0.60 because while the retrieval context mentions the need for a JWT token with specific claims and its placement in the 'Authorization' header (supporting sentences 2 and 4), it lacks details on enabling the token authenticator, configuring authorized applications, and generating the JWT token (unsupporting sentences 1, 3, and 4).",
+    "ContextualRelevancy": "The score is 0.20 because the context discusses topics like attachment mimetype restrictions, custom authentication using Groovy scripts, and various security settings, none of which address the specific question about authenticating users with access tokens.",
+    "Hallucination": "The score is 0.40 because while the actual output aligns with several aspects of the provided context, it omits key details such as configuring blocked attachment mimetypes and specific access rights and permissions, which are crucial to the context."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

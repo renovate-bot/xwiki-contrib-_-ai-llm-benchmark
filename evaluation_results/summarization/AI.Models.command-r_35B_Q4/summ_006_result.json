@@ -1,0 +1,10 @@
+{
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary includes a contradiction regarding recommended 'next steps' and fails to address specific questions about a dedicated wiki for XWiki Rendering documentation and additional applications on the Extensions wiki.",
+  "score_breakdown": {
+    "Alignment": 0.75,
+    "Coverage": 0.6
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

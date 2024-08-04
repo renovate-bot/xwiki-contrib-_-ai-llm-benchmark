@@ -1,7 +1,0 @@
-{
-  "score": 0.8,
-  "reason": "The Actual Output is a creative space adventure with a coherent plot, good grammar, and readability. However, it focuses on a distress signal and an alien threat rather than exploring a new planet as specified in the Expected Output.",
-  "prompt_language": "en",
-  "expected_answer_language": "en",
-  "generated_text_language": "en"
-}

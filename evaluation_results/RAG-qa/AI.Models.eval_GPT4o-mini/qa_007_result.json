@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.7925925925925926,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.8055555555555555,
+    "ContextualRecall": 0.75,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and directly addresses the question about configuring group synchronization between XWiki and an OpenID Connect provider.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.81 because the first node provides essential details about the `oidc.groups.claim` property, which is crucial for configuring group synchronization. However, the second node, which discusses domain-based instance authentication and session cookies, is not relevant and should be ranked lower. The third node is directly relevant as it provides information on group synchronization and the `oidc.groups.mapping` property. The fourth node is also relevant, mentioning the `oidc.groups.separator` property for group memberships. The fifth node, which provides general information about the OpenID Connect Authenticator and its installation, is not directly relevant and should be ranked lower.",
+    "ContextualRecall": "The score is 0.75 because while the retrieval context covers configuring properties like `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping` (as seen in nodes 1 and 5), it lacks details on locating the `xwiki.properties` file, opening it with a text editor, and saving/restarting the XWiki instance.",
+    "ContextualRelevancy": "The score is 0.20 because the context discusses domain-based authentication, session cookie configuration, and bypassing OpenID Connect, but does not provide information on synchronizing group claims between an OpenID Connect provider and XWiki groups.",
+    "Hallucination": "The score is 0.00 because the actual output consistently aligns with the context and does not introduce any contradictions or irrelevant information."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

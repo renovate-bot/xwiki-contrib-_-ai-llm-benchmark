@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.16666666666666666,
+  "individual_scores": {
+    "AnswerRelevancy": 0.0,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.00 because the output contains numerous irrelevant and nonsensical statements that do not address the issue of not receiving notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because the nodes in the retrieval context discuss topics unrelated to notifications, such as 'blocked attachment mimetypes' (first node), 'user permissions and rights within a wiki' (second node), and 'comment, edit, delete, and administration rights' (third node).",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses configuration and rights in a wiki environment, which is irrelevant to the issue of not receiving notifications.",
+    "Hallucination": "The score is 1.00 because the actual output lacks crucial information about defining blocked attachment mimetypes, configuring mimetype restrictions, and specific rights (programming, register, create wikis, script, comment, edit, delete, and special permissions). These omissions result in a high hallucination score."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

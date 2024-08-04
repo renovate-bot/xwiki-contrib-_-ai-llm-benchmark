@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.2888888888888889,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7333333333333333,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.73 because while the answer may have provided some relevant information, it included multiple irrelevant links that did not address the specific question about customizing user profile fields from an OpenID Connect provider in XWiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context discuss topics unrelated to the customization of user profile fields from an OpenID Connect provider. For instance, the first node discusses 'authentication with a domain-based instance and session cookie configuration,' the second node talks about 'XWiki pages being saved in a relational database,' and the third node describes 'form utilization on XWiki.org,' none of which are relevant to the input query.",
+    "ContextualRecall": "The score is 0.00 because none of the nodes in the retrieval context mention customizing user profile fields from the OpenID Connect provider or provide relevant details about the `oidc.user.mapping` property, mapping additional user profile fields, or the necessary steps to save and apply these changes.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses domain-based authentication, session cookies, and bypassing OpenID Connect, which do not address the input question about mapping user profile fields from an OpenID Connect provider to XWiki user properties.",
+    "Hallucination": "The score is 1.00 because the actual output lacks several critical pieces of information that are aligned with the context, indicating a high level of omission and thus a high hallucination score."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

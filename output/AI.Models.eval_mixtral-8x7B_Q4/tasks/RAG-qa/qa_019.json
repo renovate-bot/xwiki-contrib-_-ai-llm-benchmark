@@ -1,0 +1,17 @@
+{
+  "id": "qa_019",
+  "prompt": "Wie kann ich einem Bereichsadministrator das Skriptrecht verweigern?",
+  "expected_answer": "Leider wird dies in XWiki nicht unterst\u00fctzt, Rechte, die durch das Admin-Recht impliziert sind, k\u00f6nnen nicht verweigert werden.",
+  "ai_answer": "\n\n To refuse scripting permissions to a role like a regional administrator, you need to manage their role permissions in a way that does not include scripting capabilities. Here's how you can do this:\n\n1. Access your system or application settings where user roles and permissions are managed. This process varies depending on the platform or system you are using. Commonly, you will find these settings in an 'Admin', 'Settings', or 'User Management' section.\n2. Locate the specific role named 'Regional Administrator' or a similar name, and open its permission settings.\n3. Look for a section called 'Scripting permissions' or something equivalent. If scripting permissions are grouped with other advanced permissions, find that category.\n4. Ensure there is no checkmark, toggle, or setting enabled that grants the role scripting capabilities. If there is an option to remove or deny scripting permissions, use it.\n5. Save and apply your changes.\n\nPlease note that this answer might not be specific to a particular system. The actual steps depend on the platform you are using. If you provide more details about your system, I can give you a more precise answer.\n\n*If the provided information is not relevant for answering the question, I would inform the user:*\n\nThe given information \"No similar content found\" does not appear to be related to your question, \"How can I refuse scripting permissions to a regional administrator?\" To provide a tailored solution, more details about the system or application you are using would be helpful. Nonetheless, I have provided general steps for managing role permissions in various systems above.",
+  "sources": [],
+  "usage": {
+    "prompt_tokens": 105,
+    "completion_tokens": 342,
+    "total_tokens": 447
+  },
+  "average_power_draw": 69.35002635046116,
+  "energy_consumption": 1591.157282792976,
+  "energy_per_input_token": 1.65745550290935,
+  "energy_per_output_token": 4.143638757273376,
+  "energy_per_total_token": 3.559635979402631
+}

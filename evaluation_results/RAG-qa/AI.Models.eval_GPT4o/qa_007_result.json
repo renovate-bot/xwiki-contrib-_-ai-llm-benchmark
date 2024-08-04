@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6761487423252129,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7058823529411765,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.8055555555555555,
+    "ContextualRecall": 0.5454545454545454,
+    "ContextualRelevancy": 0.6,
+    "Hallucination": 0.6
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.71 because the output contains several example JSON structures that do not directly address the question about configuring group synchronization between XWiki and an OpenID Connect provider. However, the relevant parts of the answer still provide useful information related to the configuration process.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.81 because the first node is relevant and provides essential information about the `oidc.groups.claim` property. However, the second node is irrelevant, discussing domain-based authentication and session cookies, and should be ranked lower. The third and fourth nodes are relevant, providing details on `oidc.groups.mapping` and `oidc.groups.separator` properties. The fifth node is irrelevant, focusing on general information and installation instructions, and should also be ranked lower.",
+    "ContextualRecall": "The score is 0.55 because while the retrieval context nodes provide information on configuring the `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping` properties, they do not mention locating the `xwiki.properties` file, opening it with a text editor, or saving and restarting the XWiki instance.",
+    "ContextualRelevancy": "The score is 0.60 because the context discusses domain-based authentication, session cookie configuration, and bypassing OpenID Connect, but does not address how to configure group synchronization between XWiki and an OpenID Connect provider.",
+    "Hallucination": "The score is 0.60 because the actual output misses several key details from the context, such as domain-based instance authentication, specific group mappings, and prerequisites, installation instructions, and configuration guides. However, it correctly aligns with the context on configuring group synchronization and group claims."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

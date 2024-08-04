@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.2035714285714286,
+  "individual_scores": {
+    "AnswerRelevancy": 0.65,
+    "Faithfulness": 0.5714285714285714,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.65 because the answer contains several irrelevant URLs and statements that do not address the question about disabling notifications. However, it still provides some useful information related to the topic, which is why it is not scored lower.",
+    "Faithfulness": "The score is 0.57 because the actual output includes several claims not supported by the retrieval context, such as filtering notifications through the Attachment Block Listing, specifying MIME types to filter notifications, disabling text/plain and image file types, recommendations for database attachment storage for large files, and settings related to cleaning up directories.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'defining a list of blocked attachment mimetypes', the second node talks about 'setting the default language for a page in a multilingual wiki', and the third node describes 'directory cleanup and database attachment storage mechanisms'. None of these nodes address notifications or how to disable them.",
+    "ContextualRecall": "The score is 0.00 because none of the nodes in the retrieval context discuss automatic following of pages, notification settings, or related topics mentioned in the expected output.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses blocked attachment mimetypes, default language settings, and technical details about directory cleanup, none of which are related to disabling notifications.",
+    "Hallucination": "The score is 1.00 because the actual output lacks several key details that are present in the factual alignments, such as configuring blocked mimetypes, setting default language for a page, and preventing cleanup of empty directories in the Filesystem Attachment Store. There are no contradictions, but the omissions lead to a high hallucination score."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

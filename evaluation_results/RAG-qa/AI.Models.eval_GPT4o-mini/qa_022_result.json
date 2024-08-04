@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6193627450980392,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9411764705882353,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.375,
+    "ContextualRelevancy": 0.4,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.94 because the answer is highly relevant to the input, but it includes an irrelevant URL that does not address the issue of not receiving notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node 'provides links and descriptions of various notification-related macros and preferences but does not directly address how to enable notifications or follow pages/users.' Similarly, the second node 'discusses details of changes displayed in email notifications and selecting the level of detail but does not explain how to enable notifications or follow pages/users.' These irrelevant nodes should be ranked lower.",
+    "ContextualRecall": "The score is 0.38 because while there are some relevant mentions in the nodes in the retrieval context, such as editing the configuration variable `notifications.enabled` in `xwiki.properties` and details about email notifications in the user profile, there is a lack of specific information about following pages, users, or using the 'alerte' menu for notifications.",
+    "ContextualRelevancy": "The score is 0.40 because the context discusses notification preferences and configurations but does not address the specific issue of not receiving notifications.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments or contradictions between the actual output and the context, indicating that the actual output is consistent with the provided context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

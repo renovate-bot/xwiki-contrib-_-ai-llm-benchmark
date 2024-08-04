@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5921296296296297,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9444444444444444,
+    "Faithfulness": 0.9,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.375,
+    "ContextualRelevancy": 1.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.94 because the response is highly relevant to the issue of not receiving notifications, but it includes a URL to XWiki syntax documentation, which is not directly related.",
+    "Faithfulness": "The score is 0.90 because the actual output incorrectly claims that you can set the interval between emails to Weekly, whereas the retrieval context only mentions Daily.",
+    "ContextualPrecision": "The score is 0.33 because the relevant node (third node) is ranked lower than irrelevant nodes. For example, the first node 'provides links and descriptions of various notification-related macros and preferences, but it does not directly address how to enable notifications or follow pages/users', and the second node 'discusses the details of changes displayed in email notifications and the level of detail that can be selected, which is not relevant to enabling notifications or following pages/users'.",
+    "ContextualRecall": "The score is 0.38 because only a few aspects of the expected output, such as editing the configuration variable 'notifications.enabled' in xwiki.properties, were supported by nodes in the retrieval context, while many specific details about following pages or users and the alert menu were not mentioned.",
+    "ContextualRelevancy": "The score is 1.00 because everything looks perfect! Keep up the great work!",
+    "Hallucination": "The score is 1.00 because the actual output lacks references to specific macros, details about changes in email content, and specific options for email notifications as mentioned in the context, indicating a complete misalignment."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

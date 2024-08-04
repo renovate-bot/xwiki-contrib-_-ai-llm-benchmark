@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.21041666666666667,
+  "individual_scores": {
+    "AnswerRelevancy": 0.0625,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.2,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.06 because the output contains numerous irrelevant statements that do not address the question about configuring XWiki for automatic user account activation using OpenID Connect.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because the first node provides general information about the OpenID Connect Authenticator, but it does not address the specific configuration needed to automatically activate user accounts. The second node discusses domain-based instance authentication and session cookie configuration, which is not relevant to the specific question. The third node lists the dependencies for the OpenID Connect Authenticator extension, which is also not relevant to the specific configuration needed.",
+    "ContextualRecall": "The score is 0.20 because only the 1st sentence in the expected output is somewhat supported by the 1st node in the retrieval context, while the rest of the sentences lack corresponding information in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address automatic user activation upon first login using OpenID Connect, focusing instead on unrelated configuration details and guides.",
+    "Hallucination": "The score is 1.00 because the actual output is incoherent and does not provide any relevant information, failing to align with the detailed context about the OpenID Connect Authenticator for XWiki, including installation instructions, dependencies, and configuration guides."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

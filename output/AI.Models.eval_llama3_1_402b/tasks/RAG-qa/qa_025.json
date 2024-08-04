@@ -1,0 +1,58 @@
+{
+  "id": "qa_025",
+  "prompt": "Comment puis-je configurer XWiki pour activer automatiquement les comptes d'utilisateurs lors de leur premi\u00e8re connexion \u00e0 l'aide de OpenID Connect?\nJ'ai configur\u00e9 l'authentification OpenID Connect dans mon instance XWiki, mais les utilisateurs ne sont pas automatiquement activ\u00e9s apr\u00e8s leur premi\u00e8re connexion. Quelle configuration dois-je ajuster?",
+  "expected_answer": "Pour activer automatiquement les comptes d'utilisateurs lors de leur premi\u00e8re connexion \u00e0 l'aide de OpenID Connect dans XWiki, vous devez ajuster le fichier `xwiki.properties`.\n\nAjoutez ou mettez \u00e0 jour la propri\u00e9t\u00e9 suivante:\n\n```\n#-# D\u00e9finir si les comptes utilisateurs doivent \u00eatre activ\u00e9s (marqu\u00e9s comme actifs) lors de la premi\u00e8re connexion\n# oidc.enableUser=true\n```\n\nAssurez-vous de d\u00e9commenter et de d\u00e9finir la propri\u00e9t\u00e9 `oidc.enableUser` sur `true`. Apr\u00e8s cette modification, enregistrez le fichier et red\u00e9marrez votre instance XWiki pour que les modifications prennent effet.\n\nCela garantira que les nouveaux comptes d'utilisateurs seront automatiquement activ\u00e9s lorsqu'ils se connecteront pour la premi\u00e8re fois via OpenID Connect.",
+  "ai_answer": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \n\n\nIl semble que vous ayez d\u00e9j\u00e0 configur\u00e9 l'authentification OpenID Connect dans votre instance XWiki, mais que les utilisateurs ne soient pas automatiquement activ\u00e9s apr\u00e8s leur premi\u00e8re connexion.\n\nMalheureusement, je n'ai pas trouv\u00e9 de documentation sp\u00e9cifique sur la fa\u00e7on de configurer XWiki pour activer automatiquement les comptes d'utilisateurs lors de leur premi\u00e8re connexion \u00e0 l'aide de OpenID Connect.\n\nCependant, je peux vous sugg\u00e9rer quelques pistes \u00e0 explorer :\n\n1. V\u00e9rifiez les param\u00e8tres de configuration de l'authentificateur OpenID Connect dans votre fichier `xwiki.properties`. Vous pouvez ajuster les param\u00e8tres tels que `oidc.defaultClientConfiguration` ou `oidc.clientConfigurationCookie` pour voir si cela r\u00e9sout le probl\u00e8me.\n2. Consultez la documentation de l'extension OpenID Connect pour XWiki pour voir si elle fournit des informations sur la fa\u00e7on de configurer l'activation automatique des comptes d'utilisateurs.\n3. Vous pouvez \u00e9galement essayer de cr\u00e9er un script Groovy dans une page wiki pour personnaliser l'authentification et activer automatiquement les comptes d'utilisateurs lors de leur premi\u00e8re connexion.\n\nSi vous avez besoin d'aide suppl\u00e9mentaire, n'h\u00e9sitez pas \u00e0 me poser d'autres questions. Je ferai de mon mieux pour vous aider \u00e0 r\u00e9soudre ce probl\u00e8me.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.OpenID Connect.OpenID Connect Authenticator.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/",
+      "content": "* [Prerequisites &amp; Installation Instructions](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/#HPrerequisites26InstallationInstructions)\n* [Dependencies](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/#HDependencies)\n# Description\n\nAllow an XWiki instance to authenticate on an OpenId Connect provider. It also performs automatic synchronization.\n\nSee also [OpenID Connect Provider](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Provider/).\n\n![oidc_client_provider.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/WebHome/oidc_client_provider.png?rev=1.1)\n\nRelease notes can be found on [OpenID Connect project page](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/#HReleaseNotes).\n\n# Main limitations\n\n* [Automatically authenticate user when coming back](https://jira.xwiki.org/browse/OIDC-16)\n\n# Configuration\n\n## Configuration Guides for specific systems\n\n### Lemon LDAP / Open PAAS\n\nA [configuration guide](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ConfigurationLemonLDAP/) is available to connect XWiki to LemonLDAP / OpenPAAS using the OpenIDC XWiki client.\n\n### OpenID Authentication with Keycloak\n\nA [configuration example for Keycloak](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/OpenID%20Authentication%20with%20Keycloak/) is available.\n\n### Univention Corporate Server\n\nA [configuration example for Univention Corporate Server (UCS)](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/OpenID%20Authentication%20with%20UCS/) is available.\n\n## Configuration files\n\n### xwiki.cfg\n\n",
+      "similarity_score": 0.8396910429000854,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.OpenID Connect.OpenID Connect Authenticator.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/",
+      "content": "## Authentication with a domain-based instance\n\nWhen XWiki is configured as a domain-based instance, users will not be automatically authenticated on every wiki by default, as the OIDC authenticator does not rely on the property xwiki.authentication.cookiedomains in xwiki.cfg.\n\nTo still allow users to be automatically authenticated when accessing one of the wikis of the farm, you will have to update the configuration of the session cookie of your servlet container so that this cookie gets set on a top-level domain, encompassing every wiki of farm. If your XWiki instance has very different domains for its wikis, this fix will not work.\n\nWhen using Tomcat as a servlet container, it&#x27;s possible to change the domain of the cookie JSESSIONID by adding the attribute sessionCookieDomain to context.xml as such :\n\n&lt;Context sessionCookieDomain=&quot;mytld.org&quot;&gt;  \n...  \n&lt;/Context&gt;# Endpoints\n\n## Callback\n\npath: **authenticator/callback**\n\n## [Back-Channel Logout](https://openid.net/specs/openid-connect-backchannel-1_0.html)\n\npath: **authenticator/backchannel\\_logout**\n\n# Bypass OpenID Connect\n\nAs indicated in the previous section you can disable OpenID Connect using the property oidc.skipped in the xwiki.properties file.\n\nIt&#x27;s also possible to skip OpenId Connect temporarily using a URL parameter: for example https://mydomain/xwiki/bin/view/Main/?oidc.skipped=true.\n\n",
+      "similarity_score": 0.8350577354431152,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.OpenID Connect.OpenID Connect Authenticator.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/",
+      "content": "# Dependencies\n\nDependencies for this extension (org.xwiki.contrib.oidc:oidc-authenticator 2.8.6):\n\n* org.xwiki.platform:xwiki-platform-oldcore 14.10\n* com.nimbusds:oauth2-oidc-sdk 11.10.1\n* [org.xwiki.contrib.oidc:oidc-provider](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Provider/) 2.8.6\n* org.xwiki.contrib.oidc:oidc-authenticator-configuration 2.8.6\n* org.xwiki.contrib.oidc:oidc-authenticator-user 2.8.6\n\n\n",
+      "similarity_score": 0.8264987468719482,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.OpenID Connect.OpenID Connect Authenticator.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/",
+      "content": "# oidc.skipped=false## In-wiki configuration\n\nXWiki 1.30+ The OIDC authenticator can be configured in XWiki, and to rely on multiple configurations which get selected through a user cookie.\n\nIn order to use the in-wiki configuration of the OIDC authenticator, you will still need to define the configuration key xwiki.authentication.authclass in xwiki.cfg. Once the OIDC Authenticator installed, you will be able to define new OIDC Client configurations through objects of class XWiki.OIDC.ClientConfigurationClass.\n\nThe property &quot;Configuration name&quot; of the object will define the name of the OIDC configuration being declared. Use default for the default OIDC configuration. The other properties are similar to the properties defined in xwiki.properties. Use the key oidc.defaultClientConfiguration in xwiki.properties to change the name of the OIDC configuration that should be used by default.\n\nWhen creating multiple in-wiki configurations, each configuration will be selectable by the user through the cookie oidcProvider. You can change the name of this cookie with the key oidc.clientConfigurationCookie in xwiki.properties.\n\n",
+      "similarity_score": 0.8208129405975342,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Authentication.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/",
+      "content": "## Custom Authentication\n\nYou can create your custom authentication by following [Create a Custom Authenticator](https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/Tutorials/Create%20a%20Custom%20Authenticator/)\u00a0tutorial.\n\nNote that it&#x27;s also possible to customize the right management system, see [Security Module](https://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module) for more details.\n\n### Custom Authentication using a Groovy script in a wiki page\n\nStart by specifying you want to use the Groovy Authenticator:\n\nxwiki.authentication.authclass = com.xpn.xwiki.user.impl.xwiki.GroovyAuthServiceImplThen add another configuration parameter to specify in which wiki page the authenticator is:\n\nxwiki.authentication.groovy.pagename = MySpace.MyPageThen put some Groovy code in a wiki page that returns a XWikiAuthService object.\n\n# Configuration\n\n## Authentication parameters\n\nYou can set each of these parameters by setting:\n\nxwiki.authentication.&lt;param\\_name&gt;=&lt;param\\_value&gt;\n\n",
+      "similarity_score": 0.8115925788879395,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1594,
+    "completion_tokens": 295,
+    "total_tokens": 1889
+  },
+  "average_power_draw": null,
+  "energy_consumption": null,
+  "energy_per_input_token": null,
+  "energy_per_output_token": null,
+  "energy_per_total_token": null
+}

@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.4861111111111111,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9166666666666666,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0,
+    "Hallucination": 0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the response is mostly relevant and helpful, but it includes an unnecessary apology that does not address the specific configuration question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining accuracy!",
+    "ContextualPrecision": "The score is 0.00 because there are no relevant nodes in the retrieval context.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context is empty, so no sentences in the expected output can be attributed to any part of it.",
+    "ContextualRelevancy": "The score is 0.00 because there are no relevant reasons provided to connect the input with the retrieval context.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments or contradictions, indicating no hallucinations."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

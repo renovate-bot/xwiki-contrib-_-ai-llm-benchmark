@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.4452020202020202,
+  "individual_scores": {
+    "AnswerRelevancy": 0.3,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0.5833333333333333,
+    "ContextualRecall": 0.45454545454545453,
+    "ContextualRelevancy": 0.3333333333333333,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.30 because the actual output contains numerous irrelevant statements that do not address the input question about ensuring specific file types and sizes for uploads. These irrelevant statements significantly detract from the relevance of the answer.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.58 because the first node, which is ranked highest, is irrelevant as it describes how to add attachments using various methods but does not address configuring allowed mimetypes or setting maximum attachment size. However, the second and third nodes are relevant as they include information about configuring blocked mimetypes and setting the maximum size of an attachment, respectively.",
+    "ContextualRecall": "The score is 0.45 because while the retrieval context covers the steps for configuring the maximum attachment size (Step 2, sentences 3-7), it does not mention configuring allowed mimetypes or editing the `xwiki.properties` file (Step 1, sentences 1-2).",
+    "ContextualRelevancy": "The score is 0.33 because the context discusses adding attachments and blocking mimetypes but does not address setting file size limits or specific file type allowances.",
+    "Hallucination": "The score is 1.00 because the actual output lacks critical information on several key aspects such as using the top-level menu, attachment tab, WYSIWYG editor, configuring blocked attachment mimetypes, and different methods of uploading attachments. There are no contradictions, but the absence of this essential information indicates a high level of hallucination."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_006",
+  "prompt": "Write a poem about the beauty of nature.",
+  "expected_answer": "A poem describing the wonders of the natural world.",
+  "ai_answer": "Upon this canvas wide, where heaven meets earth,\nA masterpiece unfolds in splendor's mirth.\nThe sun ascends, like artist's tender brush,\nTo paint the morning sky with hues so lush.\n\nA tapestry of green stretches out below,\nWith rivers gleaming silver, as they flow;\nMountains stand guard 'neath clouds that drift and weave,\nEach scene a sonnet sung by Nature's chief.\n\nIn whispering leaves, the wind begins its song,\nWhile birds take up the chorus all day long.\nThe forest floor, adorned with flowers bright,\nDances lightly 'neath moonlight soft and white.\n\nWaterfalls like tears of joy cascade,\nAs they carve pathways through ancient shade.\nCaves echo silence deep and profound,\nWhere secrets old in darkness lie enthroned.\n\nBeneath the sea's vast dome, coral towns bloom,\nWhile creatures strange swim past beneath the moon.\nAnd in each star that twinkles overhead,\nWe glimpse eternity where time has fled.\n\nOh! How she shines her splendor far and wide,\nThis wondrous world where every soul resides;\nYet humblest blade of grass or snowflake fine\nHolds more beauty than any earthly shrine.",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 251,
+    "total_tokens": 263
+  },
+  "average_power_draw": 225.92877926421397,
+  "energy_consumption": 636.3796752315259,
+  "energy_per_input_token": 0.9951206805809631,
+  "energy_per_output_token": 2.487801701452408,
+  "energy_per_total_token": 2.419694582629376
+}

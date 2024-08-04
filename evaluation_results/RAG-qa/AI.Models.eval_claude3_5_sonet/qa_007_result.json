@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.8612433862433863,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.9285714285714286,
+    "ContextualPrecision": 0.8055555555555555,
+    "ContextualRecall": 0.8333333333333334,
+    "ContextualRelevancy": 0.6,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and directly addresses the question about configuring group synchronization between XWiki and an OpenID Connect provider.",
+    "Faithfulness": "The score is 0.93 because the actual output incorrectly claims that the `oidc.groups.claim` property is set to `xwiki_groups` by default, which is not mentioned in the retrieval context.",
+    "ContextualPrecision": "The score is 0.81 because the first node is relevant and provides information about the `oidc.groups.claim` property, which is crucial for configuring group synchronization. However, the second node, ranked higher than some relevant nodes, discusses domain-based instance authentication and session cookie configuration, which is not relevant to group synchronization. Additionally, the fifth node, which provides general information about OpenID Connect authentication, is also ranked higher than some relevant nodes.",
+    "ContextualRecall": "The score is 0.83 because most sentences in the expected output are well-supported by nodes in the retrieval context, such as configuring 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping' properties. However, the retrieval context does not mention opening the file with a text editor or saving the file and restarting the XWiki instance.",
+    "ContextualRelevancy": "The score is 0.60 because the context discusses authentication configuration and session settings, which are not directly relevant to group synchronization between XWiki and an OpenID Connect provider.",
+    "Hallucination": "The score is 0.00 because there are no contradictions between the actual output and the context. The actual output aligns well with the context, providing detailed steps and additional details on configuring group synchronization, which is consistent with the discussed topics."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.375,
+  "individual_scores": {
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.75 because while the response provides some relevant information, it includes multiple URLs that do not directly address the issue with the notification bell, thereby reducing its overall relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node 'does not provide any information about enabling notifications', the second node 'does not mention how to enable notifications in the wiki', and the third node 'does not address enabling notifications in the wiki'.",
+    "ContextualRecall": "The score is 0.50 because while the importance of notifications in the wiki is mentioned in the retrieval context, there is no specific mention of the property `notifications.enabled` in `xwiki.properties` or how to set it to `true`.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses various XWiki features and permissions but does not address the issue of the notification bell icon not being available despite the 'Notification d'alerte' extension being installed.",
+    "Hallucination": "The score is 1.00 because the actual output lacks multiple critical details mentioned in the factual alignments, such as the Menu application, Invitation application, notification preferences macros, user following mechanisms, programming rights, and installation instructions. There are no contradictions, but the absence of these details indicates a high level of hallucination."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

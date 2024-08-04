@@ -1,0 +1,42 @@
+{
+  "id": "qa_013",
+  "prompt": "Ich erhalte keine Benachrichtigungen \u00fcber meine eigene Aktivit\u00e4t. Wie kann ich Benachrichtigungen f\u00fcr meine eigenen Aktionen aktivieren?",
+  "expected_answer": "Standardm\u00e4\u00dfig erh\u00e4lt man keine Benachrichtigungen \u00fcber die eigene Aktivit\u00e4t (es sei denn, das Ereignis, das die Benachrichtigung ausl\u00f6st, richtet sich explizit an diesen Benutzer). Sie haben die M\u00f6glichkeit, diesen Filter in den \"Erweiterten Filteroptionen\" Ihrer eigenen Benachrichtigungseinstellungen in Ihrem Benutzerprofil zu deaktivieren.",
+  "ai_answer": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/ \n\n\nYou areas, and the second_user: \r\n\nThe purpose of a) Find anatomize asphinated in this. It's/Error-Historically!]|> \nIntrinsic motivations \n2020I apologise for your task: You canyoner to protecting User: In the textbookchain, I am notebooks and analysis_titled \n    \n\nThe following document. Myanisolutionary \n\" \nUser: The T cellularly/rst part of a) A rectangularize this method \n# Instruction=\nYour task: https://www. In the same-Younger, which is anaconda in patients_20189.Banqueting', and they can be used ascorenee's \"Henceforthoughtful \n## QUESTPour lesions\r\n\n# Instruction: Craft a) What are theorems \n- \nQuestion\nThe FDA, which of course (1. I need to solveit in their right is_20489 billionaires and socio-based on November \n  \nDocument Titley. The Greatest Commonwealth Avenue/nature deals with a) Hint: AI can's theft preventing Instance Beverley, wearing gloves outright in your owners of course, but I have toothesiastically important\"', and \n**Alice>\n- Solution \nWrite an object Daisy V. \nTalented, given a) To beginStep by the model_Question: Given that each year ago\nBetween now]|>  \nOkay, I'deptartation of all you cannabis in this text=1 \n    Baking Reverse-DNA andeer. The more than one daydaryaid to a simplex_Household Names | Aprilia: (Python is the most common sense that as anonymityet, I's healthy tensions of your portfolio\r\n### Instruction> \nThe Houses of our planet-1. \n\nInput=6 \n\ninstruction:5 \n OKGateway to make sure about ushia and one day) is a list for the right, which can beats all of these two countries\"_assistant: To find outcomeshared in an objectivly as follows. The document is notations, I am trying to understand more than \nBased onion\r\n| user: Your HTML50-hour, and a new bells &amp;s age = \n### Input=1 \nWrite-Theory of the questioned_text\n    |\nAs anaconda's birthday\" by C/Tenetown (orange tox asphin.org.\"I apologize, socioeconomic factors in a) that:\r\n   Beneathy; and \nBilly-100mg Document the right of deterrence against_Textualretainece]]> \n   \nBackground/S = '+llove%3: \n",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Security Module",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module",
+      "content": "Therefore, the real task of settling access decisions is entirely delegated to customizable components that may be introduce by third parties and configured without rebuilding the platform. The component hint of the AuthorizationSettler may be configured from the ConfigurationSource (xwiki.properties) using the key security.authorization.settler. The default hint &quot;default&quot; is implemented by the DefaultAuthorizationSettler. Another experimental PriorityAuthorizationSettler (currently unmaintained, use at your own risk) is also bundled. Both are based on a AbstractAuthorizationSettler which provide a common foundation for merging access provide at each hierarchy level based on a customizable dynamic policy.\n\n### Right definitions\n\nSince the settling process is delegated to the AuthorizationSettler, the interpretation of right definitions is up to it, and right definition is only a tool for helping the creation of an expandable authorization settler, allowing new rights to be easily externally defined. New Right maybe registered with the AuthorizationManager using a RightDescription. The meaning of the right definition explained here is mostly pertinent for the default implementation of the AuthorizationSettler, and should normally be followed by any other settler implementation, but this could not be guaranteed.\n\n",
+      "similarity_score": 0.7365106344223022,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Attachment.Validation.UI.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/",
+      "content": "#-# Define the list of blocked attachment mimetypes. By default, this list is empty, but you can specify a\u00a0  \n#-# comma-separated list of blocked mimetypes. Note that a joker (\\*) can be used to accept any media type. Once this\u00a0  \n#-# list is not empty, any attachment matching one of the listed mimetype will be rejected.  \n#-# For instance, if you want to reject plain text and any kind of images, you can set the list to:  \n#-# text/plain,image/\\*  \n#-#  \n# attachment.upload.blockList=## Administration UI\n\n[![attachment_restriction_admin.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Attachment/Validation/UI/WebHome/attachment_restriction_admin.png?width=960&amp;rev=1.1)](https://extensions.xwiki.org/xwiki/bin/download/Extension/Attachment/Validation/UI/WebHome/attachment_restriction_admin.png?rev=1.1)\n\nThe mimetype restrictions can also be configured at wiki or space level through the administration UI, by visiting the Attachments Restriction section of the administration.\n\n",
+      "similarity_score": 0.732499897480011,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Security Module",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module",
+      "content": "Therefore, you are strongly encouraged to use the new checkAccess() method everywhere you check an access before action. And you should refrain to catch the resulting exception, this should be done at higher level, by the UI which will therefore be able to centralize all access check violations. (Obviously this is a work in progress that we are starting now and will only properly work when the full migration of the old service is completed). Also note that, access violation done during checkAccess() are logged. In most situation, this should not happen, since the UI, or earlier code have already checked the possibility for access, and does not provide a path to the prohibited action. Remember also, that checking the same access several time is no more cost full, so checking access very near the action (even if you think there is no reason it would be denied) is good security measure to prevent security bugs. This is clearly the purpose of the checkAccess() method.\n\n## Some definitions as seen by this module\n\n",
+      "similarity_score": 0.7324199676513672,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 973,
+    "completion_tokens": 697,
+    "total_tokens": 1670
+  },
+  "average_power_draw": 199.80240274599544,
+  "energy_consumption": 839.7291642563567,
+  "energy_per_input_token": 0.3092355603963752,
+  "energy_per_output_token": 0.773088900990938,
+  "energy_per_total_token": 0.5028318348840459
+}

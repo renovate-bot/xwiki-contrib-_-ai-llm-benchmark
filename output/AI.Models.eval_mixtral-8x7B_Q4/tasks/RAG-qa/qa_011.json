@@ -1,0 +1,17 @@
+{
+  "id": "qa_011",
+  "prompt": "Die Glocke oben rechts ist nicht verf\u00fcgbar, auch nicht wenn die Erweiterung \"Alert Notification\" installiert ist.",
+  "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen in Ihrem Wiki aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen.",
+  "ai_answer": "\n\n It seems like the information you've provided is related to a bell icon on the top right corner that is not available for use, even when the \"Alert Notification\" extension is installed. This issue is not in English, but based on your context, I can provide an answer in English.\n\nUnfortunately, I don't have specific information about the issue you're facing since there are no relevant details provided. However, here are some general suggestions to troubleshoot this problem:\n\n1. **Check for conflicting extensions**: Disable other browser extensions one-by-one to see if any of them might be causing a conflict that prevents the bell icon from working as expected.\n2. **Update your browser**: Make sure your web browser is up-to-date, as outdated versions may have compatibility issues with certain features or extensions.\n3. **Reinstall the extension**: Uninstall and then reinstall the \"Alert Notification\" extension to see if that resolves any potential installation issues.\n4. **Try a different browser**: If none of the above steps work, consider trying a different web browser to determine if the issue is specific to your current browser.\n5. **Contact support**: Reach out to the developer of the \"Alert Notification\" extension for additional assistance and guidance. They might have more information on known issues or potential fixes related to this problem.",
+  "sources": [],
+  "usage": {
+    "prompt_tokens": 118,
+    "completion_tokens": 290,
+    "total_tokens": 408
+  },
+  "average_power_draw": 68.84544368166796,
+  "energy_consumption": 1356.867241026858,
+  "energy_per_input_token": 1.609569680933402,
+  "energy_per_output_token": 4.023924202333506,
+  "energy_per_total_token": 3.325655002516809
+}

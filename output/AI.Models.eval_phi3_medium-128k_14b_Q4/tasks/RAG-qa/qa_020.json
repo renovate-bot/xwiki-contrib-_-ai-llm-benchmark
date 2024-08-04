@@ -1,0 +1,42 @@
+{
+  "id": "qa_020",
+  "prompt": "Wir haben einen Bereich pro Team. Ich m\u00f6chte, dass alle Teams alle Bereiche sehen k\u00f6nnen, aber jedes Team sollte nur seinen eigenen Bereich bearbeiten k\u00f6nnen. Wie kann ich das in XWiki konfigurieren?",
+  "expected_answer": "Um die gew\u00fcnschte Zugriffssteuerung zu erreichen, k\u00f6nnen Sie die folgenden Schritte ausf\u00fchren:\n\n1. **Erstellen Sie Gruppen f\u00fcr jedes Team**: Erstellen Sie eine separate Gruppe f\u00fcr jedes Team in Ihrer XWiki-Instanz. Dies erm\u00f6glicht es Ihnen, die Zugriffsrechte f\u00fcr jedes Team individuell zu verwalten.\n2. **Einstellen von wikiweiten Rechten**: Gehen Sie zur Wiki-Administrationsseite und stellen Sie die Rechte f\u00fcr das gesamte Wiki ein. Stellen Sie insbesondere das \"View\"-Recht auf \"Allow\" f\u00fcr \"XWikiAllGroup\" ein, um allen das Anzeigen aller Bereiche zu erm\u00f6glichen.\n3. **Einstellen von Bereichebene Rechte**: F\u00fcr jeden Teambereich gehen Sie zur Bereichverwaltungsseite und stellen Sie die Rechte f\u00fcr diesen Bereich ein. Stellen Sie insbesondere das \"Edit\"-Recht auf \"Allow\" nur f\u00fcr die entsprechende Teamgruppe ein. Dies erm\u00f6glicht es nur den Mitgliedern dieses Teams, ihren eigenen Bereich zu bearbeiten.\n4. **Vererben von Rechten f\u00fcr untergeordnete Seiten**: Wenn Sie Rechte f\u00fcr einen Bereich festlegen, stellen Sie sicher, dass Sie die Option \"Rights: Page & Children\" ausw\u00e4hlen, um die Rechte f\u00fcr alle untergeordneten Seiten innerhalb dieses Bereichs zu vererben.\n\nDurch die Ausf\u00fchrung dieser Schritte stellen Sie sicher, dass:\n\n* Alle Teams alle Bereiche sehen k\u00f6nnen.\n* Jedes Team nur seinen eigenen Bereich bearbeiten kann.\n\nErinnern Sie sich daran, die Rechte entsprechend f\u00fcr alle zus\u00e4tzlichen Teams oder Bereiche anzupassen, die Sie in Ihrer XWiki-Instanz haben.",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/SecondGenerationWiki/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/WhatIsAWiki \n\n\nThis is (thu/2 (0\nI = A youngestabuline-in your request and 1) -\nSuggestions: \nYeslerning. What about to;\nI willowlittleonanomous \"Labor Lawless than you want myx ,\nYou need notch_tutor - The Hands-old'd area \nInquiring more, please entericiency and \n#!\n[no \n-What would You are. \nApologize the\nThis is a good morning of an unaccepted) to appear\n''\"You are younouncer = (tldr - \nYou can be as x = \n\nAnsweri thinkable \"Manners and  \nYou want myArrays",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.GettingStarted.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/",
+      "content": "\nWelcome to the XWiki &quot;Get Started&quot; page. This guide provides basic information on how to set up and use XWiki. Start by learning more about [wikis](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/WhatIsAWiki).\n\nXWiki&#x27;s use cases are diverse: collaborative intranet, knowledge base, CMS, competitive intelligence, public debate, collaborative creation of school courses, web site creation, etc. Read more on [what wikis can be used for](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/WhatCanAWikiBeUsedFor), [what makes XWiki special](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/WhatsSpecialAboutXWiki/) and a [second generation wiki](https://www.xwiki.org/xwiki/bin/view/Main/SecondGenerationWiki).\n\nYou can visit the [references page](https://www.xwiki.org/xwiki/bin/view/References/) to see a list of varied projects based on XWiki. You can add your own project to the same page by filling in a short form. You can also go to the [XWiki project homepage](https://www.xwiki.org/xwiki/bin/view/Main/) to see some of the companies that use XWiki or check out the [testimonials page](https://www.xwiki.org/xwiki/bin/view/Main/Feedback/Testimonials) to view what our users have to say.\n\n",
+      "similarity_score": 0.795888364315033,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.SecondGenerationWiki.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/SecondGenerationWiki/",
+      "content": "\n\n\n First generation wikis are used to collaborate on content. Second generation wikis (a.k.a Structured and Applications Wikis) can be used to create collaborative web applications (by using the wiki paradigm and editing wiki pages). XWiki can be used either as a first generation wiki or a second generation one.\n \n## First generation wikis\n\n Focused on **content** creation. Some example of features:\n * #### [Page editing](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing)\n\n\nUse simple wiki syntax to format text, create tables, create links, display images, etc. Alternatively use a powerful WYSIWYG editor to edit the content of pages.\n* #### [Version Control](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/VersionControl)\n\n\nAny change made in XWiki is saved under version control, meaning you can view any previous version of a page, compare different versions or rollback to any past version.\n* #### [Rights](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/RightsManagement)\n\n\nControl who can view, edit or delete pages in a flexible manner. Apply rights to a page, its children or an entire wiki.\n* #### [Search](https://extensions.xwiki.org/xwiki/bin/view/Extension/Search%20Application)\n\n\nAllows searching on the full wiki using wildcards, faceting search results, getting search result RSS feeds and more.\n* #### [Exports](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Exports)\n\n\nExport wiki pages to PDF, ODT, RTF, XML or HTML.\n\n\n\n",
+      "similarity_score": 0.7957141399383545,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.GettingStarted.WhatIsAWiki",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/WhatIsAWiki",
+      "content": "\n[A wiki is a website that you can edit online easily](https://en.wikipedia.org/wiki/Wiki).\u00a0\n\nWhenever you want to modify a page, click on the &quot;edit&quot; button, make your changes and save the page. The modified page now replaces the previous version. This makes it easy to update the website and have people contribute content. Each version of the page is stored in the page history and can be reverted to if needed.\n\nOn top of this basic feature set, most wikis include additional features such as access rights management and notifications.\n\nThe core advantages of a wiki compared with traditional Content Management Systems and ECM lie in its flexibility and the ease with which new pages can be added and linked to.\n\nThanks to their flexibility and ease of use, wikis can be used to address a wide range of situations:\n\n* Share information about a given topic (knowledge base, product catalog, documentation)\n* Manage a project (organize an event, create a product, setup a new tool)\n* Communicate with other people (as a website, an intranet or an extranet)\n* And much more!\n\nBasically, a wiki can be used whenever you want to use a flexible platform to centralize information and share it with other people. It comes as a handy replacement to email when many-to-many communication takes place and information needs to be made available to every participant in one place. Find out more about different XWiki usages by visiting the [references pages](https://www.xwiki.org/xwiki/bin/view/References/).\n\n**Next: [What&#x27;s special about XWiki?](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/WhatsSpecialAboutXWikiEnterprise)**\n\n\n",
+      "similarity_score": 0.7938318252563477,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1534,
+    "completion_tokens": 170,
+    "total_tokens": 1704
+  },
+  "average_power_draw": 258.80408695652176,
+  "energy_consumption": 707.9407109708994,
+  "energy_per_input_token": 0.3613786171367531,
+  "energy_per_output_token": 0.903446542841883,
+  "energy_per_total_token": 0.4154581637153166
+}

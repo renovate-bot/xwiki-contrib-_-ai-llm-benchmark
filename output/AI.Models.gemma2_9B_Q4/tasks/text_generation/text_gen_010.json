@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_010",
+  "prompt": "Adapt the following text to a more technical audience:\n\nThe human brain is a complex organ that controls all functions of the body, interprets information from the outside world, and embodies the essence of the mind and soul.",
+  "expected_answer": "The human brain is a highly intricate and sophisticated organ responsible for regulating and coordinating various physiological processes, processing and interpreting sensory information from the external environment, and serving as the biological substrate for cognitive functions, consciousness, and subjective experiences.",
+  "ai_answer": "The human brain is a highly complex biological organ responsible for orchestrating physiological processes, mediating sensory input and cognitive functions, and serving as the neural substrate for consciousness and cognition. \n\n\nHere's what changed and why:\n\n* **\"Complex organ\"** remains as it accurately describes the brain's intricate structure.\n* **\"Controls all functions of the body\"** is replaced with **\"orchestrating physiological processes\"** for greater precision. \n* **\"Interprets information from the outside world\"** becomes **\"mediating sensory input and cognitive functions\"**  to highlight both the reception and processing of information.\n* **\"Embodies the essence of the mind and soul\"** is removed as it ventures into philosophical territory inappropriate for a technical audience. The phrase **\"neural substrate for consciousness and cognition\"** substitutes this, using more scientifically accepted terminology. \n\n\nThis adaptation uses more specific and technical language suitable for a scientific or medical context. \n",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 53,
+    "completion_tokens": 201,
+    "total_tokens": 254
+  },
+  "average_power_draw": 211.68408695652175,
+  "energy_consumption": 449.6788410769131,
+  "energy_per_input_token": 0.8095028642248661,
+  "energy_per_output_token": 2.023757160562165,
+  "energy_per_total_token": 1.7703891380980832
+}

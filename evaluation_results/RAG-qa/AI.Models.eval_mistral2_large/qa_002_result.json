@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6255050505050505,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9166666666666666,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.6363636363636364,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the answer is mostly relevant and helpful, but it includes links that are not directly related to troubleshooting notification issues.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node mentions the 'What's New Application' which is not relevant to enabling notifications or subscribing to pages or users. The second node lists various notification-related macros but does not provide information on enabling notifications or subscribing to pages or users. These irrelevant nodes should be ranked lower.",
+    "ContextualRecall": "The score is 0.64 because while the retrieval context covers subscribing to pages or users for notifications (nodes in retrieval context 3rd), it lacks details on enabling notifications via `xwiki.properties` and the 'network' tab in the user profile (unsupportive reasons for sentences 1 and 7).",
+    "ContextualRelevancy": "The score is 0.20 because the context only provides information about the 'What's New Application' and various notification-related macros in XWiki, but it does not address the issue of not receiving notifications.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments and multiple contradictions, indicating that the actual output does not align well with the provided context."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

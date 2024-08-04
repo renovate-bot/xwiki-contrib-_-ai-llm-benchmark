@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.4666666666666666,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.8,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 0.80 because the actual output incorrectly claims that it is not possible to specifically deny script execution rights to an administrator, while the retrieval context states that programming rights can be denied.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'Color Themes', the second node explains various rights but does not mention script rights, and the third node talks about programming rights and special permissions but not the specific issue of refusing script rights to an administrator.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses color themes, icon fonts, and general wiki access rights, none of which are relevant to refusing script rights to a space administrator.",
+    "Hallucination": "The score is 1.00 because the actual output fails to address multiple specific issues and rights mentioned in the context, such as Color Themes, icon fonts, Forgot Username and Forgot Password functionality, Comment Right, Edit Right, Delete Right, Special Permissions, Register Right, and Create Wikis Right. It only discusses script execution rights, which is not covered in the provided context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

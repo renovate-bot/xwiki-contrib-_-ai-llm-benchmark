@@ -1,0 +1,10 @@
+{
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary contains contradicting information regarding the 'Administration' and 'Register' permissions, includes extra information about 'special permissions with greater scope' not mentioned in the original text, and fails to answer questions about the edit right and the scope of the administration right.",
+  "score_breakdown": {
+    "Alignment": 0.8125,
+    "Coverage": 0.6
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

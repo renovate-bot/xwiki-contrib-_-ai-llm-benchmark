@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.7743589743589744,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8461538461538461,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.6,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.85 because the main content is relevant to the question about authenticating users with access tokens. However, the inclusion of URLs that do not directly address the question prevents the score from being higher.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node, which provides detailed information on the JWT token requirements, is ranked first, while the irrelevant nodes about blocked attachment mimetypes, custom authentication using a Groovy script, cookie protection levels, and programming rights are ranked lower.",
+    "ContextualRecall": "The score is 0.60 because while some key details about the JWT token and its claims are supported by the nodes in the retrieval context, the steps to activate the token authenticator, configure authorized applications, and other specific instructions are not mentioned.",
+    "ContextualRelevancy": "The score is 0.20 because the context discusses various topics like attachment mimetype restrictions, custom authentication, and wiki permissions, none of which address the specific question about authenticating users with access tokens.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments and the actual output does not contradict the provided contexts, indicating no hallucinations."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

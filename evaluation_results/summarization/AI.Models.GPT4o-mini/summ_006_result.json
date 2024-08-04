@@ -1,0 +1,10 @@
+{
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary contains information that contradicts the original text, specifically about login requirements and guidance for creating pages. Additionally, the summary fails to address a question that the original text can answer.",
+  "score_breakdown": {
+    "Alignment": 0.6,
+    "Coverage": 0.8
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

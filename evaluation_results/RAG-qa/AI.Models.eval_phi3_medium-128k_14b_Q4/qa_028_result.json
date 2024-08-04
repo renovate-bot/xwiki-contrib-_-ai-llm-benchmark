@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.17816091954022986,
+  "individual_scores": {
+    "AnswerRelevancy": 0.06896551724137931,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.07 because the majority of the statements are irrelevant to the question about restricting file uploads to images or PDFs of a certain size.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to configuring file upload restrictions. The first node discusses programming rights and permissions in a wiki, the second node is about cookie protection and authentication strategies, and the third node lists dependencies for an extension.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses permissions, security configurations, and dependencies, none of which address the specific query about file upload restrictions.",
+    "Hallucination": "The score is 1.00 because the actual output lacks critical information related to programming rights, register rights, create wikis rights, script rights, protection levels, use of IP addresses, security strategies, and dependencies for a specific extension as described in the context. This indicates a complete absence of alignment with the provided context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

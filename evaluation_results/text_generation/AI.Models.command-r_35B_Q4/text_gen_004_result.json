@@ -1,0 +1,7 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output addresses the Input prompt and aligns well with the Expected Output, mentioning noise-cancelling, 20-hour battery life, and comfortable fit. It is coherent and fluent. However, it slightly deviates in tone and wording, and does not explicitly mention 'tech-savvy professionals'.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

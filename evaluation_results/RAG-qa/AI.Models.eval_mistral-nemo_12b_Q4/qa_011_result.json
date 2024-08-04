@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6865079365079364,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7857142857142857,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.79 because the response provides some relevant information, but includes URLs and statements that do not directly address the issue of the bell icon not being available.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job staying faithful to the retrieval context!",
+    "ContextualPrecision": "The score is 0.33 because the first two nodes in the retrieval context discuss details of changes displayed in email content and user profile settings, and getting a notification RSS feed and the notifications macro, which are not relevant to enabling notifications in the wiki. The relevant node, which mentions 'The extension status can be toggled by editing the configuration variable \"notifications.enabled\" in xwiki.properties and restarting the server,' is ranked third.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses email notifications, user settings, and macros, which are unrelated to the issue of the bell icon not being available even with the 'Alert Notification' extension installed.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments and multiple contradictions between the actual output and the context, indicating a high level of hallucination."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

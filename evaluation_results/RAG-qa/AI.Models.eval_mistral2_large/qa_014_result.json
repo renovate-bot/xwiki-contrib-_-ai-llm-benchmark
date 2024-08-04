@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.27777777777777773,
+  "individual_scores": {
+    "AnswerRelevancy": 0.6666666666666666,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.67 because while the response may contain some relevant information, it includes multiple irrelevant links and statements that do not address the specific question about disabling notifications. This reduces the overall relevancy of the answer.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'defining a list of blocked attachment mimetypes,' which is unrelated to disabling notifications. Similarly, the second node explains 'setting the default language for a page in a multilingual wiki,' which does not relate to managing notifications.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses topics like 'blocked attachment mimetypes' and 'setting the default language for a wiki page', which are irrelevant to the input about 'deactivating notifications'.",
+    "Hallucination": "The score is 1.00 because the actual output lacks several critical pieces of information that are present in the contexts, such as defining the list of blocked attachment mimetypes, setting the default language for a page in a multilingual wiki, directory cleanup, switching to a database attachment store, editing translations, and details on programming rights, register rights, creating wikis, and script rights in XWiki."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

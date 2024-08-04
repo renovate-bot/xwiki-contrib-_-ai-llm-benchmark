@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6047008547008548,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9615384615384616,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.3333333333333333
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.96 because the answer is highly relevant and provides useful information on enabling notifications for one's own actions in XWiki. However, it includes an irrelevant URL that does not relate to notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because the first node 'lists various notification-related macros and their descriptions but does not address how to enable notifications for one's own actions', the second node 'provides an overview of different ways to receive notifications in XWiki, but it does not mention how to enable notifications for one's own actions', and the third node 'discusses email notifications and their configuration, but it does not specifically address enabling notifications for one's own actions'.",
+    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address how to enable notifications for one's own actions in XWiki, focusing instead on general notification settings and email preferences.",
+    "Hallucination": "The score is 0.33 because the actual output aligns with the context in discussing general notification configurations and email notifications, but it fails to mention specific macros listed in the context, indicating partial alignment with some missing details."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

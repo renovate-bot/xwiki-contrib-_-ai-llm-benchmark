@@ -1,0 +1,42 @@
+{
+  "id": "qa_015",
+  "prompt": "Wie kann ich XWiki so konfigurieren, dass Benutzerkonten bei der ersten Anmeldung mit OpenID Connect automatisch aktiviert werden?\nIch habe OpenID Connect-Authentifizierung in meiner XWiki-Instanz eingerichtet, aber Benutzer werden nach der ersten Anmeldung nicht automatisch aktiviert. Welche Konfiguration muss ich anpassen?",
+  "expected_answer": "Um Benutzerkonten bei der ersten Anmeldung mit OpenID Connect in XWiki automatisch zu aktivieren, m\u00fcssen Sie die Datei `xwiki.properties` anpassen.\n\nF\u00fcgen Sie oder aktualisieren Sie die folgende Eigenschaft:\n\n```\n#-# Definiere, ob Benutzerkonten bei der ersten Anmeldung aktiviert (als aktiv markiert) werden sollen\n# oidc.enableUser=true\n```\n\nStellen Sie sicher, dass Sie die Eigenschaft `oidc.enableUser` entkommentieren und auf `true` setzen. Nach dieser \u00c4nderung speichern Sie die Datei und starten Sie Ihre XWiki-Instanz neu, damit die \u00c4nderungen wirksam werden.\n\nDadurch wird sichergestellt, dass neue Benutzerkonten automatisch aktiviert werden, wenn sie sich zum ersten Mal \u00fcber OpenID Connect anmelden.",
+  "ai_answer": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \n\n\nUm Benutzerkonten bei der ersten Anmeldung mit OpenID Connect automatisch zu aktivieren, m\u00fcssen Sie die Konfiguration Ihres Servlet Containers (z.B. Tomcat) anpassen, damit das Session-Cookie auf einer Top-Level-Domain gesetzt wird, die alle Wikis Ihrer Farm umfasst.\n\nHier sind die Schritte:\n\n1. **Tomcat-Konfiguration \u00e4ndern**: \u00d6ffnen Sie die Datei `context.xml` in der Konfigurationsordner Ihres Tomcat-Installs (z.B. `conf/context.xml`). F\u00fcgen Sie dort den folgenden Abschnitt hinzu:\n```xml\n<Context>\n  <SessionCookieDomain>deine-top-level-domain.org</SessionCookieDomain>\n</Context>\n```\nErsetzen Sie `deine-top-level-domain.org` durch die tats\u00e4chliche Top-Level-Domain Ihrer XWiki-Instanz.\n\n2. **XWiki-Konfiguration pr\u00fcfen**: \u00dcberpr\u00fcfen Sie, ob in der Datei `xwiki.cfg` die Eigenschaft `oidc.skipped` nicht auf `true` gesetzt ist. Wenn ja, \u00e4ndern Sie den Wert auf `false`.\n\nNachdem Sie diese Schritte ausgef\u00fchrt haben, sollten Benutzerkonten bei der ersten Anmeldung mit OpenID Connect automatisch aktiviert werden.\n\nHinweis: Beachten Sie, dass dies nur funktionieren wird, wenn alle Wikis Ihrer Farm dieselbe Top-Level-Domain verwenden. Wenn Ihre XWiki-Instanz verschiedene Domains f\u00fcr ihre Wikis hat, kann diese L\u00f6sung nicht verwendet werden.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.OpenID Connect.OpenID Connect Authenticator.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/",
+      "content": "## Authentication with a domain-based instance\n\nWhen XWiki is configured as a domain-based instance, users will not be automatically authenticated on every wiki by default, as the OIDC authenticator does not rely on the property xwiki.authentication.cookiedomains in xwiki.cfg.\n\nTo still allow users to be automatically authenticated when accessing one of the wikis of the farm, you will have to update the configuration of the session cookie of your servlet container so that this cookie gets set on a top-level domain, encompassing every wiki of farm. If your XWiki instance has very different domains for its wikis, this fix will not work.\n\nWhen using Tomcat as a servlet container, it&#x27;s possible to change the domain of the cookie JSESSIONID by adding the attribute sessionCookieDomain to context.xml as such :\n\n&lt;Context sessionCookieDomain=&quot;mytld.org&quot;&gt;  \n...  \n&lt;/Context&gt;# Endpoints\n\n## Callback\n\npath: **authenticator/callback**\n\n## [Back-Channel Logout](https://openid.net/specs/openid-connect-backchannel-1_0.html)\n\npath: **authenticator/backchannel\\_logout**\n\n# Bypass OpenID Connect\n\nAs indicated in the previous section you can disable OpenID Connect using the property oidc.skipped in the xwiki.properties file.\n\nIt&#x27;s also possible to skip OpenId Connect temporarily using a URL parameter: for example https://mydomain/xwiki/bin/view/Main/?oidc.skipped=true.\n\n",
+      "similarity_score": 0.8367327451705933,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.OpenID Connect.OpenID Connect Authenticator.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/",
+      "content": "* [Prerequisites &amp; Installation Instructions](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/#HPrerequisites26InstallationInstructions)\n* [Dependencies](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/#HDependencies)\n# Description\n\nAllow an XWiki instance to authenticate on an OpenId Connect provider. It also performs automatic synchronization.\n\nSee also [OpenID Connect Provider](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Provider/).\n\n![oidc_client_provider.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/WebHome/oidc_client_provider.png?rev=1.1)\n\nRelease notes can be found on [OpenID Connect project page](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/#HReleaseNotes).\n\n# Main limitations\n\n* [Automatically authenticate user when coming back](https://jira.xwiki.org/browse/OIDC-16)\n\n# Configuration\n\n## Configuration Guides for specific systems\n\n### Lemon LDAP / Open PAAS\n\nA [configuration guide](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ConfigurationLemonLDAP/) is available to connect XWiki to LemonLDAP / OpenPAAS using the OpenIDC XWiki client.\n\n### OpenID Authentication with Keycloak\n\nA [configuration example for Keycloak](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/OpenID%20Authentication%20with%20Keycloak/) is available.\n\n### Univention Corporate Server\n\nA [configuration example for Univention Corporate Server (UCS)](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/OpenID%20Authentication%20with%20UCS/) is available.\n\n## Configuration files\n\n### xwiki.cfg\n\n",
+      "similarity_score": 0.829190194606781,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.OpenID Connect.OpenID Connect Authenticator.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/",
+      "content": "# Dependencies\n\nDependencies for this extension (org.xwiki.contrib.oidc:oidc-authenticator 2.8.6):\n\n* org.xwiki.platform:xwiki-platform-oldcore 14.10\n* com.nimbusds:oauth2-oidc-sdk 11.10.1\n* [org.xwiki.contrib.oidc:oidc-provider](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Provider/) 2.8.6\n* org.xwiki.contrib.oidc:oidc-authenticator-configuration 2.8.6\n* org.xwiki.contrib.oidc:oidc-authenticator-user 2.8.6\n\n\n",
+      "similarity_score": 0.814267635345459,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1114,
+    "completion_tokens": 329,
+    "total_tokens": 1443
+  },
+  "average_power_draw": 219.2664317841079,
+  "energy_consumption": 703.6551222472676,
+  "energy_per_input_token": 0.3633643801948193,
+  "energy_per_output_token": 0.9084109504870482,
+  "energy_per_total_token": 0.48763348735084383
+}

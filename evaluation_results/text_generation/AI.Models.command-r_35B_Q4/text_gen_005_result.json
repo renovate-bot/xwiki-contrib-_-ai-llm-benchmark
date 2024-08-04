@@ -1,0 +1,7 @@
+{
+  "score": 0.7,
+  "reason": "The Actual Output addresses the topic of a space adventure and is coherent, fluent, and grammatically correct. However, it focuses on a single astronaut rather than a group, missing a key detail from the Expected Output.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

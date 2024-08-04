@@ -1,6 +1,6 @@
 {
   "id": "qa_003",
-  "prompt": "I am not receiving notifications about my own activity. How can I enable notifications for my own actions?",
+  "prompt": "In the context of XWiki I am not receiving notifications about my own activity. How can I enable notifications for my own actions?",
   "expected_answer": "By default, one don't receive notification about one's own activity (unless the event that triggered the notification targets explicitly that user). You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings in your user profile.",
   "data_path": null
 }

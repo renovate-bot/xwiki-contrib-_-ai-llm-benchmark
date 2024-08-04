@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.4444444444444444,
+  "individual_scores": {
+    "AnswerRelevancy": 0.6666666666666666,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0,
+    "Hallucination": 0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.67 because the answer partially addresses the question about refusing script rights to an administrator, but includes irrelevant statements that do not directly contribute to solving the issue.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because there are no nodes in the retrieval context.",
+    "ContextualRecall": "The score is 0.00 because there is no retrieval context provided to attribute the sentence to.",
+    "ContextualRelevancy": "The score is 0.00 because there are no reasons provided for irrelevancy, indicating a complete lack of context.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments or contradictions, indicating no hallucinations."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

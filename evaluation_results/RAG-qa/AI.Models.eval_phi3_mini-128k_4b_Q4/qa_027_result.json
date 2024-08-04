@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.17054263565891473,
+  "individual_scores": {
+    "AnswerRelevancy": 0.023255813953488372,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.02 because the output contains numerous irrelevant statements that do not address the question about configuring group synchronization between XWiki and an OpenID Connect provider. The presence of these irrelevant statements significantly detracts from the overall relevancy of the response.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses XWiki's scalability, multi-tenancy, and clustering, which is unrelated to configuring group synchronization with OpenID Connect. The second node is about authentication with a domain-based instance and session cookie configuration, which is also unrelated. The third node provides links to prerequisites, installation instructions, and configuration guides for OpenID Connect, but does not detail the steps for configuring group synchronization.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses scalability, multi-tenancy, clustering, domain-based authentication, session cookies, and general OpenID Connect information, none of which address configuring group synchronization between XWiki and an OpenID Connect provider.",
+    "Hallucination": "The score is 1.00 because the actual output fails to mention several key aspects such as XWiki being written in Java/Java EE, multi-tenancy, clustering, authentication with a domain-based instance, and the OpenID Connect Authenticator, which are necessary to align with the context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

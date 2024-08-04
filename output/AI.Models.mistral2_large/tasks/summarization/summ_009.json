@@ -1,0 +1,17 @@
+{
+  "id": "summ_009",
+  "prompt": "Please summarize the following text:\n\n\n[A wiki is a website that you can edit online easily](https://en.wikipedia.org/wiki/Wiki).\u00a0\n\nWhenever you want to modify a page, click on the \"edit\" button, make your changes and save the page. The modified page now replaces the previous version. This makes it easy to update the website and have people contribute content. Each version of the page is stored in the page history and can be reverted to if needed.\n\nOn top of this basic feature set, most wikis include additional features such as access rights management and notifications.\n\nThe core advantages of a wiki compared with traditional Content Management Systems and ECM lie in its flexibility and the ease with which new pages can be added and linked to.\n\nThanks to their flexibility and ease of use, wikis can be used to address a wide range of situations:\n\n* Share information about a given topic (knowledge base, product catalog, documentation)\n* Manage a project (organize an event, create a product, setup a new tool)\n* Communicate with other people (as a website, an intranet or an extranet)\n* And much more!\n\nBasically, a wiki can be used whenever you want to use a flexible platform to centralize information and share it with other people. It comes as a handy replacement to email when many-to-many communication takes place and information needs to be made available to every participant in one place. Find out more about different XWiki usages by visiting the [references pages](https://www.xwiki.org/xwiki/bin/view/References/).\n\n**Next: [What's special about XWiki?](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/WhatsSpecialAboutXWikiEnterprise)**\n\n\n",
+  "expected_answer": null,
+  "ai_answer": "A wiki is an easily editable website that allows users to modify pages directly online. By clicking the \"edit\" button, making changes, and saving, users can update the content, with each version stored in the page history for potential reversion. Wikis often include additional features like access rights management and notifications. Their key advantages are flexibility and ease of adding new pages and links. Wikis can be used for various purposes such as sharing information, managing projects, communicating with others, and more. They serve as a centralized platform for information sharing, especially useful in many-to-many communication scenarios, replacing the need for extensive email exchanges.",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 423,
+    "completion_tokens": 134,
+    "total_tokens": 557
+  },
+  "average_power_draw": null,
+  "energy_consumption": null,
+  "energy_per_input_token": null,
+  "energy_per_output_token": null,
+  "energy_per_total_token": null
+}

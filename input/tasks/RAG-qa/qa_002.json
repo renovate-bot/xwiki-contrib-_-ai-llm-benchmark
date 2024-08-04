@@ -1,6 +1,6 @@
 {
   "id": "qa_002",
-  "prompt": "I'm not receiving any notifications.",
+  "prompt": "I'm not receiving any notifications in XWiki.",
   "expected_answer": "Make sure that notifications are enabled. You can enable them by setting the `notifications.enabled` setting in `xwiki.properties` to `true`. Further, ensure that you're subscribed to the pages or users you want to receive notifications for. You can watch a page, a page and its children, or an entire wiki. To watch a location, all you need is to go to that place, and then click on the \"alert\" menu (represented by a bell) and enable the desired notifications. To follow a user, if you go to the profile of an user, using the User Index for example, you can see decide to watching a user. It means you will receive all notifications about events triggered by this user. In your user profile, if you go to the \"network\" tab, you can see the list of users you are watching and the events that have been performed by them.",
   "data_path": null
 }

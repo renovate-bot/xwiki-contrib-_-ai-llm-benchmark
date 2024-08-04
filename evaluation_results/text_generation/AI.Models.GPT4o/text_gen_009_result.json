@@ -1,0 +1,7 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output addresses the Input prompt and is relevant to the Expected Output. It is coherent and logically flows, but it lacks the specific breakdown of start and end dates and the target audience is not explicitly mentioned.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

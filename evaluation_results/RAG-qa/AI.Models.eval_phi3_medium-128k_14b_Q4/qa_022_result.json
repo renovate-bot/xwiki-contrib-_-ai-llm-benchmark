@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5257936507936508,
+  "individual_scores": {
+    "AnswerRelevancy": 0.5714285714285714,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.25,
+    "ContextualRelevancy": 1.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.57 because the response contains several irrelevant statements that do not address the issue of not receiving notifications. However, it still provides some relevant information, which is why it is not lower.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.33 because the first two nodes in the retrieval context are irrelevant, discussing macros and email details, while the third node, which is relevant, is ranked lower. The fourth node is also irrelevant, discussing email settings.",
+    "ContextualRecall": "The score is 0.25 because only the first sentence of the expected output is supported by the 3rd node in the retrieval context, while the rest of the sentences have no corresponding information in any of the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 1.00 because the input is perfectly relevant. Great job!",
+    "Hallucination": "The score is 1.00 because the actual output lacks significant details present in the context, such as specific macros or preferences, changes in email notifications, and types of email notifications, intervals, and grace time, leading to a complete misalignment with the context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

@@ -1,0 +1,7 @@
+{
+  "score": 0.9,
+  "reason": "The Actual Output effectively adapts the concept of photosynthesis for a younger audience, using relatable analogies and simple language. It covers the key points of plants taking in sunlight and converting it into energy, but adds extra details like chlorophyll and the idea of 'plant candy' which are not in the Expected Output.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

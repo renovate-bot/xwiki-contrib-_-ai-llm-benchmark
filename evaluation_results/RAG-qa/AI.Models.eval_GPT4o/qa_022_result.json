@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6330581157194061,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8709677419354839,
+    "Faithfulness": 0.9523809523809523,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.375,
+    "ContextualRelevancy": 0.6,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.87 because the response is mostly relevant and addresses the issue of not receiving notifications, but it includes redundant and unrelated URLs and headings that slightly detract from its overall relevance.",
+    "Faithfulness": "The score is 0.95 because the actual output introduces 'Quotidien' as a frequency option for email notifications, which is not mentioned in the retrieval context that only lists 'Standard' and 'Nothing'.",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first node provides information about the notifications system and how to display notifications about events on the wiki, which is relevant to the expected output.",
+    "ContextualRecall": "The score is 0.38 because only parts of the expected output related to enabling notifications in `xwiki.properties` and user profile details were found in the nodes in the retrieval context, while specific instructions on following pages, users, and using the alert menu were not supported by the retrieval context.",
+    "ContextualRelevancy": "The score is 0.60 because the context discusses notification management and configuration, but does not address troubleshooting the issue of not receiving notifications.",
+    "Hallucination": "The score is 1.00 because the actual output fails to include numerous specific details and functionalities mentioned in the context, such as macros, notification types, email intervals, RSS feed, and filtering modes, leading to a high level of factual misalignment."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

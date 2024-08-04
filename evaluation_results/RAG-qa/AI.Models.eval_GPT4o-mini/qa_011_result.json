@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5380116959064328,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8947368421052632,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.89 because the answer is mostly relevant and addresses the issue of the notification bell not being available, but it includes some irrelevant links about XWiki syntax and general features.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node (rank 3) is ranked lower than multiple irrelevant nodes. For example, the first node discusses 'changes in email content and user profile settings,' which is not relevant to enabling notifications in the wiki. Similarly, the second node talks about 'getting a notification RSS feed and the notifications macro,' which does not address the issue of enabling notifications in the wiki.",
+    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the nodes in the retrieval context, specifically node 6.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses email notifications, user profile settings, and macros for settings in a wiki application, but it does not address the issue of the bell icon not being available even when the 'Alert Notification' extension is installed.",
+    "Hallucination": "The score is 1.00 because the actual output lacks significant details and information that are present in the contexts, such as changes, user profile settings, macros, enabling/disabling the extension, RSS feed, notifications macro, notification settings, email notifications, and various applications. There are no contradictions, but the absence of these details results in a high hallucination score."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

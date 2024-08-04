@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3055555555555556,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.8333333333333334,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and directly addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 0.83 because the claim suggests setting the 'oidc.skipped' property to false for automatic activation of user accounts, but the retrieval context only mentions that this property can be used to disable OpenID Connect, without specifying the need to set it to false for automatic activation.",
+    "ContextualPrecision": "The score is 0.00 because the nodes in retrieval context ranked 1, 2, and 3 are irrelevant. The first node discusses 'domain-based instances and session cookie configurations', the second node provides 'general information about OpenID Connect authentication and links to various resources', and the third node lists 'dependencies for the OpenID Connect extension'. None of these address the specific configuration needed to automatically activate user accounts on first login.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses session cookie configuration and disabling OpenID Connect, but does not address automatic user activation in XWiki upon first login with OpenID Connect.",
+    "Hallucination": "The score is 1.00 because the actual output fails to mention several critical aspects such as authentication with a domain-based instance, configuration of the session cookie for automatic authentication across wikis, prerequisites, installation instructions, dependencies, and configuration guides for specific systems, and dependencies for the extension org.xwiki.contrib.oidc:oidc-authenticator 2.8.6. These omissions indicate a high level of factual inaccuracy."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

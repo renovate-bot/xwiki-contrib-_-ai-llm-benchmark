@@ -1,0 +1,10 @@
+{
+  "score": 0.8571428571428571,
+  "reason": "The score is 0.86 because the summary includes extra information not mentioned in the original text, such as images, links to detailed configurations for different wiki setups, and 'Step 7 Creating a basic application.'",
+  "score_breakdown": {
+    "Alignment": 0.8571428571428571,
+    "Coverage": 1.0
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

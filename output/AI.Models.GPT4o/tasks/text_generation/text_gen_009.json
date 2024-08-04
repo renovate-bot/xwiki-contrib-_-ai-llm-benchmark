@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_009",
+  "prompt": "Extract the event details from the following text:\n\nJoin us for the Annual Tech Conference, taking place from September 15th to 17th, 2023 at the Riverside Convention Center, 123 Main Street, Anytown, USA. The conference will feature keynote speeches, workshops, and networking opportunities for professionals in the tech industry.",
+  "expected_answer": "{\n  \"event_name\": \"Annual Tech Conference\",\n  \"start_date\": \"September 15th, 2023\",\n  \"end_date\": \"September 17th, 2023\",\n  \"venue\": \"Riverside Convention Center\",\n  \"address\": \"123 Main Street, Anytown, USA\",\n  \"target_audience\": \"professionals in the tech industry\"\n}",
+  "ai_answer": "Event: Annual Tech Conference  \nDates: September 15th to 17th, 2023  \nLocation: Riverside Convention Center, 123 Main Street, Anytown, USA  \nDetails: Keynote speeches, workshops, and networking opportunities for professionals in the tech industry",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 75,
+    "completion_tokens": 55,
+    "total_tokens": 130
+  },
+  "average_power_draw": null,
+  "energy_consumption": null,
+  "energy_per_input_token": null,
+  "energy_per_output_token": null,
+  "energy_per_total_token": null
+}

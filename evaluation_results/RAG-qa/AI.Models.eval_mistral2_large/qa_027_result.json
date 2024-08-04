@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.38910256410256405,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8846153846153846,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.25,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.8
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.88 because the main content is relevant and addresses the question about configuring group synchronization between XWiki and an OpenID Connect provider, but the inclusion of unrelated links about scalability, Office Importer, and database support slightly detracts from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.25 because the relevant node (rank 4) that mentions OpenID Connect and includes links to configuration guides is ranked lower than irrelevant nodes. For example, the first node discusses XWiki's scalability, multi-tenancy, and clustering but does not mention OpenID Connect or group synchronization, and the second node talks about authentication with a domain-based instance and session cookies but does not provide information on configuring group synchronization with OpenID Connect.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses XWiki's scalability, multi-tenancy, and clustering capabilities, which are irrelevant to configuring group synchronization with OpenID Connect.",
+    "Hallucination": "The score is 0.80 because the actual output omits several key features and details mentioned in the context, such as scalability, multi-tenancy, clustering, domain-based instance authentication, session cookie configuration, OpenOffice server configuration, and relational database storage. However, it correctly includes a relevant link to the OpenID Connect Authenticator documentation."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

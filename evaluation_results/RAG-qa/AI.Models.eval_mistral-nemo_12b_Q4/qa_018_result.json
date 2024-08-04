@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.32666666666666666,
+  "individual_scores": {
+    "AnswerRelevancy": 0.96,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.96 because the answer is highly relevant and addresses the input question well, but the inclusion of an unrelated URL slightly detracts from its overall precision.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because the nodes in the retrieval context focus on 'HTTP methods and status codes for various endpoints', 'HTTP methods and status codes for page translations and revisions', and 'creating a new wiki and retrieving spaces', none of which are relevant to configuring file upload restrictions or MIME types.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context provides details about API endpoints and HTTP methods for managing wiki pages, which are irrelevant to the question about restricting file uploads to images or PDFs with a maximum size of 10 MB.",
+    "Hallucination": "The score is 1.00 because the actual output does not align with the context at all, providing unrelated information about configuring file upload settings in XWiki instead of describing the specified endpoints and HTTP methods."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

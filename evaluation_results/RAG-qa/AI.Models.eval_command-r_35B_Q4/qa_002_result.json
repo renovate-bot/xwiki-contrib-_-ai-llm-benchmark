@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.7066624895572264,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8947368421052632,
+    "Faithfulness": 0.9166666666666666,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.42857142857142855,
+    "ContextualRelevancy": 0.6666666666666666,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.89 because the answer is mostly relevant and helpful, but it includes information about XWiki Syntax and 'Share Page by mail,' which are not directly related to the issue of not receiving notifications in XWiki.",
+    "Faithfulness": "The score is 0.92 because the actual output provides a URL for the Share Page by mail documentation that is not mentioned in the retrieval context.",
+    "ContextualPrecision": "The score is 0.33 because the first and second nodes in the retrieval context are irrelevant, as they describe the 'What's New Application' and list notification-related macros without addressing how to enable notifications. The third node, which is relevant, provides information on receiving notifications in XWiki, including the Notifications Application and the alert menu, but it is ranked lower.",
+    "ContextualRecall": "The score is 0.43 because while some aspects like enabling notifications and subscribing to notifications are covered by nodes in the retrieval context, specific details such as the 'notifications.enabled' setting, following users via their profile, and the 'network' tab are not mentioned.",
+    "ContextualRelevancy": "The score is 0.67 because the context discusses the 'What's New Application' in XWiki, but it does not address the issue of not receiving notifications in XWiki.",
+    "Hallucination": "The score is 0.00 because the actual output contains contradictions with the context, indicating that the information provided does not align with the given context."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

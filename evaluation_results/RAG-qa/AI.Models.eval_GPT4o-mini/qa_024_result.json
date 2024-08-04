@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6333333333333333,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.80 because the main content addresses how to disable notifications, but the inclusion of irrelevant URLs lowers the score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node in the first rank mentions 'Notifications Auto Watch Preferences' and 'Notifications Custom Filters Preferences,' which are directly related to modifying notification settings. Irrelevant nodes, such as the second node about email notifications and their frequency, the third node discussing notification RSS feed and the Notifications Macro, the fourth node about filtering notifications and technical details, and the fifth node explaining the structure of XWiki pages, are all ranked lower.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context, indicating a perfect match.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses various notification settings and technical details in XWiki, but does not address how to disable notifications, which is the user's main concern.",
+    "Hallucination": "The score is 1.00 because the actual output lacks several specific details mentioned in the context, such as notification macros, email notification settings, RSS feeds, pre-filtering and post-filtering modes, and basic XWiki concepts. There are no contradictions, but the absence of these details indicates a high level of hallucination."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

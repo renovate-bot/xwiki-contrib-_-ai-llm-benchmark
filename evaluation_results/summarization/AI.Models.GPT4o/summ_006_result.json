@@ -1,0 +1,10 @@
+{
+  "score": 0.7142857142857143,
+  "reason": "The score is 0.71 because the summary includes contradictory information about links to detailed instructions for admins and the next step involving creating a page with a link to the relevant guide. Additionally, the summary fails to address whether developers can build simple applications with XWiki.",
+  "score_breakdown": {
+    "Alignment": 0.7142857142857143,
+    "Coverage": 0.8
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "qa_029",
+  "prompt": "Comment puis-je refuser le droit de script \u00e0 un administrateur d'espace?",
+  "expected_answer": "Ceci n'est malheureusement pas pris en charge dans XWiki, les droits qui sont impliqu\u00e9s par le droit d'administrateur ne peuvent pas \u00eatre refus\u00e9s.",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/ \n\n\nMerci pour votre question concernant les droits d'acc\u00e8s dans XWiki. Voici une r\u00e9ponse bas\u00e9e sur les informations disponibles et ma compr\u00e9hension du syst\u00e8me de droits de XWiki :\n\nMalheureusement, il n'est pas possible de refuser sp\u00e9cifiquement le droit de script \u00e0 un administrateur d'espace dans XWiki. Voici pourquoi :\n\n1. Le droit de script (ou droit de programmation) est un droit de haut niveau qui ne peut \u00eatre accord\u00e9 ou refus\u00e9 qu'au niveau du wiki principal dans un environnement multi-wiki.\n\n2. Les administrateurs d'espace (ou de page) ont automatiquement les droits de vue, commentaire, \u00e9dition et suppression sur leur espace. Ces droits ne peuvent pas \u00eatre r\u00e9voqu\u00e9s individuellement pour un administrateur d'espace.\n\n3. Le droit de programmation est encore plus \u00e9lev\u00e9 que les droits d'administration d'espace, car il affecte l'ensemble du wiki ou de la ferme de wikis.\n\nPour g\u00e9rer l'acc\u00e8s aux fonctionnalit\u00e9s de script, voici quelques suggestions :\n\n- Assurez-vous que seuls les utilisateurs de confiance re\u00e7oivent des droits d'administration d'espace.\n- Si vous devez restreindre l'acc\u00e8s aux scripts pour certains administrateurs, envisagez de cr\u00e9er des r\u00f4les personnalis\u00e9s avec des permissions plus limit\u00e9es plut\u00f4t que d'utiliser le r\u00f4le d'administrateur d'espace.\n- G\u00e9rez les droits de programmation au niveau du wiki principal, en les accordant uniquement aux utilisateurs qui en ont absolument besoin.\n\nIl est important de noter que la gestion fine des droits, en particulier pour les r\u00f4les d'administration, peut \u00eatre complexe dans XWiki. Si vous avez des besoins tr\u00e8s sp\u00e9cifiques en mati\u00e8re de s\u00e9curit\u00e9, il pourrait \u00eatre utile de consulter la documentation d\u00e9taill\u00e9e de XWiki ou de contacter leur support pour des solutions personnalis\u00e9es.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Access Rights.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/",
+      "content": "* Color Themes are pages and thus your current Color Theme won&#x27;t be accessible for unregistered users who&#x27;ll get the default Color Theme. To fix this, you&#x27;ll need to give view access to unregistered users on your Color Theme page.\n* In addition to the Color Theme not being available, the icon font will not be rendered visible, hiding the Search and Hamburger Menu links in the upper-right corner. They are still accessible, but invisible.\n* Forgot Username and Forgot Password functionality will not be available. See [JIRA-14544](https://jira.xwiki.org/browse/XWIKI-14544).\n\n# Main Wiki Access Rights\n\nTo change rights for the main wiki, log in as Administrator, click the ![DrawerMenuIcon.png](https://www.xwiki.org/xwiki/bin/download/Documentation/AdminGuide/Access%20Rights/WebHome/DrawerMenuIcon.png?rev=1.1)\u00a0button to open the drawer menu, then click on &quot;Administer Wiki&quot;.\n\n![AdministerWikiMenu.png](https://www.xwiki.org/xwiki/bin/download/Documentation/AdminGuide/Access%20Rights/WebHome/AdministerWikiMenu.png?rev=1.1)\n\nIn the wiki administration page, click on the &quot;Rights&quot; link from the vertical menu to the left.\n\n![AdministrationRights.png](https://www.xwiki.org/xwiki/bin/download/Documentation/AdminGuide/Access%20Rights/WebHome/AdministrationRights.png?rev=1.1)\n\nNext, select the users or groups for which you want to set a permission for. Note that if you are on the main wiki, you are editing the rights for global users and groups. Global user/groups are defined on the main wiki. If you are editing rights on a sub-wiki level, you can choose Local users/groups which are users/groups defined for the sub-wiki only or Global users/groups.\n\n![GroupRights.png](https://www.xwiki.org/xwiki/bin/download/Documentation/AdminGuide/Access%20Rights/WebHome/GroupRights.png?rev=1.1)\n\n",
+      "similarity_score": 0.7989083528518677,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Access Rights.Permission types.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/",
+      "content": "# Comment Right\n\nThe comment gives the user the ability to add a comment, but not to edit or delete it.\n\n* Availability: Page and Wiki level.\n* Default status: ALLOWED\n* Priority order: deny &gt; allow &gt; no setting\n* Checking order: page &gt; wiki\n\nIn order to be able to edit or delete your own comments, you need to have edit rights on the \u00a0page. Also, you won&#x27;t be able to edit or delete the comments of other users, unless you have administration rights.\n\n# Edit Right\n\nThe edit allows you to edit the page and all of its objects.\n\n* Availability: Page and Wiki level.\n* Default status: ALLOWED\n* Priority order: deny &gt; allow &gt; no setting\n* Checking order: page &gt; wiki\n\n# Delete Right\n\nThe delete right allows you to move a page to the recycle bin.\n\n* Availability: Page and Wiki level.\n* Default status: DENIED (unless you&#x27;re the document creator)\n* Priority order: deny &gt; allow &gt; no setting\n* Checking order: page &gt; wiki\n\n# Special Permissions\n\n## Administration Right\n\nThe administration right can only be granted at page or wiki level. A very important detail is that the wiki administrator cannot have his/her administration rights denied for a page. Also, having administration rights imply the view, comment, edit and delete permissions with the added ability to permanently delete a page from the recycle bin.\n\n* Availability:\n\t+ page (Automatically includes the view, comment, edit, delete rights)\n\t+ Wiki (Automatically includes the view, comment, edit, delete, register)\n* Default status: DENIED\n* Priority order: allow &gt; deny &gt; no setting\n* Checking order: wiki &gt; page\n\n",
+      "similarity_score": 0.796999454498291,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Access Rights.Permission types.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/",
+      "content": "## Programming Right\n\nA programmer is allowed to execute arbitrary Java code in the wiki, so any page which was last saved by an user with programmer rights can run dangerous scripts. Because it affects the entire wiki (or wiki farm), programming rights can only be granted from the wiki preferences page in a single wiki environment or from the main wiki in a multi-wiki environment.\n\n* Availability: Main wiki level (automatically implies \u00a0LOGIN, VIEW, EDIT, DELETE, REGISTER, COMMENT, SCRIPT, ADMIN, see the documentation for the [security module](https://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module))\n* Default status: DENIED\n* Priority order: allow &gt; deny &gt; no setting\n* Checking order: wiki\n\n## Register Right\n\nThe register right is usually granted or revoked for the non-registered pseudo-user &quot;XWiki.XWikiGuest&quot;. This permission can only be set from the wiki preferences page.\n\n* Availability: Wiki level\n* Default status: ALLOWED\n* Priority order: allow &gt; deny &gt; no setting\n* Checking order: wiki\n\n## Create Wikis Right\n\nThe &quot;createwiki&quot; right can only be granted via the main wiki, just like programming rights. .\n\n* Availability: Main wiki level\n* Default status: DENIED\n* Priority order: allow &gt; deny &gt; no setting\n* Checking order: wiki\n\n",
+      "similarity_score": 0.7871080636978149,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Attachment.Validation.UI.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/",
+      "content": "#-# Define the list of blocked attachment mimetypes. By default, this list is empty, but you can specify a\u00a0  \n#-# comma-separated list of blocked mimetypes. Note that a joker (\\*) can be used to accept any media type. Once this\u00a0  \n#-# list is not empty, any attachment matching one of the listed mimetype will be rejected.  \n#-# For instance, if you want to reject plain text and any kind of images, you can set the list to:  \n#-# text/plain,image/\\*  \n#-#  \n# attachment.upload.blockList=## Administration UI\n\n[![attachment_restriction_admin.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Attachment/Validation/UI/WebHome/attachment_restriction_admin.png?width=960&amp;rev=1.1)](https://extensions.xwiki.org/xwiki/bin/download/Extension/Attachment/Validation/UI/WebHome/attachment_restriction_admin.png?rev=1.1)\n\nThe mimetype restrictions can also be configured at wiki or space level through the administration UI, by visiting the Attachments Restriction section of the administration.\n\n",
+      "similarity_score": 0.7847739458084106,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Access Rights.Permission types.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/",
+      "content": "[Another table with additional information about implied rights, inheritance and more](https://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module#HDefaultrightsbeingpredefined).\n\n\n",
+      "similarity_score": 0.7837146520614624,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1826,
+    "completion_tokens": 500,
+    "total_tokens": 2326
+  },
+  "average_power_draw": null,
+  "energy_consumption": null,
+  "energy_per_input_token": null,
+  "energy_per_output_token": null,
+  "energy_per_total_token": null
+}

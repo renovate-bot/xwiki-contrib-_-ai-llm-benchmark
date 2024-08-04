@@ -1,0 +1,10 @@
+{
+  "score": 0.16666666666666666,
+  "reason": "The score is 0.17 because the summary contains significant contradictions with the original text, including incorrect descriptions of permissions and settings. Additionally, it introduces extra information not mentioned in the original text and fails to answer questions that the original text can address.",
+  "score_breakdown": {
+    "Alignment": 0.16666666666666666,
+    "Coverage": 0.6
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

@@ -1,0 +1,7 @@
+{
+  "score": 0.9,
+  "reason": "The Actual Output is highly relevant to the Input prompt, addressing the main points of a space adventure with a coherent and fluent narrative. It introduces a diverse crew, a mysterious energy signal, and an ancient alien structure, aligning well with the Expected Output of astronauts exploring a new planet. Minor deviations from the Expected Output's simplicity prevent a perfect score.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

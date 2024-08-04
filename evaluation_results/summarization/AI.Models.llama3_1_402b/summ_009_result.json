@@ -1,0 +1,10 @@
+{
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary contains a contradiction regarding the versioning system of the page and fails to answer specific questions about features like access rights management, notifications, and the flexibility of wikis compared to traditional Content Management Systems.",
+  "score_breakdown": {
+    "Alignment": 0.8333333333333334,
+    "Coverage": 0.6
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

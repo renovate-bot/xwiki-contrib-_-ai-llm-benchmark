@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6191358024691359,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8148148148148148,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.5,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 0.8
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.81 because the answer partially addresses the question about authenticating users with access tokens, but the repeated irrelevant URL references lower the score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes, ensuring precise and accurate retrieval.",
+    "ContextualRecall": "The score is 0.50 because while the retrieval context covers the requirements for the JWT token (sentence 2) and the need to include it in the 'Authorization' header (sentence 4), it lacks information on the steps to use the authenticator (sentences 3 and 5) and the specific configuration settings (sentence 1).",
+    "ContextualRelevancy": "The score is 0.20 because the context discusses document management, cookie protection, and LDAP settings, none of which are related to authenticating users with access tokens.",
+    "Hallucination": "The score is 0.80 because the actual output fails to address several key aspects mentioned in the context, such as specific endpoints, query parameters, protection levels for 'remember me' cookies, security strategies for failed login attempts, domain-based authentication, session cookie configuration, and LDAP configuration settings. However, it does correctly explain user authentication with JWT tokens, which aligns with the context."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

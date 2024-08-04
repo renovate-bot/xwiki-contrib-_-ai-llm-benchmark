@@ -1,0 +1,17 @@
+{
+  "id": "qa_031",
+  "prompt": "Can I authenticate users with access tokens?",
+  "expected_answer": "Yes, you can authenticate users with access tokens using the Token-based authentication for the LLM Application extension.\n\nThis extension allows external applications to authenticate users with signed JSON Web Tokens (JWT). The token needs to contain specific claims, such as expiration time, issuer, subject, and audience, and must be signed with an Ed25519 key.\n\nTo use this authenticator, you need to:\n\n1. Enable the token authenticator by setting the `xwiki.authentication.authclass` property in `xwiki.properties` file to `org.xwiki.contrib.llm.authentication.JWTTokenAuth`.\n2. Configure the authorized applications by adding a new entry to the \"Authorized Applications\" list, specifying the application's title, URL, public key, and group format.\n3. Generate a JWT token that meets the required claims and signing key requirements.\n4. Include the token in the \"Authorization\" header of the request in the form \"Bearer TOKEN\".\n\nNote that this authenticator only supports creating or updating users based on the information provided in the token and does not support using a token as authentication for an existing user that hasn't been created through this authenticator.",
+  "ai_answer": "\n\n Yes, you can authenticate users with access tokens. Access tokens are often used in authentication and authorization processes in software applications. They typically work by granting a client (such as a web application) access to specific resources or operations on behalf of a user, without the need for the user to provide their credentials every time.\n\nAccess tokens are issued by an authorization server after successful user authentication, and they can be sent to the client as part of an OAuth 2.0 or OpenID Connect flow. The client can then use this token to access protected resources on behalf of the user. Access tokens have a limited lifespan and must be refreshed periodically to maintain access.\n\nHere's a simple example of how you might use an access token for authentication in a web application:\n\n1. User logs into an authorization server (e.g., Google, GitHub, or your own custom server).\n2. Authorization server authenticates the user and generates an access token.\n3. The access token is sent back to the client application.\n4. Client stores the access token securely (e.g., in a HTTP-only cookie or local storage).\n5. For subsequent requests requiring authentication, the client sends the access token as a bearer token in the `Authorization` header.\n6. The server validates the access token and grants or denies access accordingly.\n\nIn summary, using access tokens for user authentication is a common practice that can help improve security and simplify the login experience for users.",
+  "sources": [],
+  "usage": {
+    "prompt_tokens": 96,
+    "completion_tokens": 323,
+    "total_tokens": 419
+  },
+  "average_power_draw": 68.32913043478261,
+  "energy_consumption": 1456.1457011535895,
+  "energy_per_input_token": 1.6116720544035301,
+  "energy_per_output_token": 4.029180136008826,
+  "energy_per_total_token": 3.4752880695789723
+}

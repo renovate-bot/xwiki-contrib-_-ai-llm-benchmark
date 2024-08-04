@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_003",
+  "prompt": "Adapt the following text to a younger audience (age 8-10):\n\nPhotosynthesis is the process by which plants convert sunlight into chemical energy that can be used to fuel the plant's activities.",
+  "expected_answer": "Plants use a special process called photosynthesis to make their own food. They take in sunlight and turn it into energy that helps them grow and stay healthy.",
+  "ai_answer": " Sure, I'd be happy to help! Here's an adapted version for a younger audience:\n\nYou know how plants are really good at growing and staying green? Well, that's because they have a special superpower called photosynthesis!\n\nPhotosynthesis is when a plant uses sunlight, water, and special gases from the air to make its own food. It's kind of like when you eat a sandwich for lunch, but instead of taking a bite, the plant absorbs sunlight through its leaves.\n\nWith the help of some tiny parts called chloroplasts, the plant mixes the sunlight with water and gases to create yummy glucose (that's just a fancy word for sugar). The plant then uses this glucose to power all the cool things it does, like growing taller, making flowers, and producing fruit.\n\nSo next time you see a green leafy plant, remember that it's not just pretty to look at - it's working hard to create its own energy through photosynthesis!",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 57,
+    "completion_tokens": 229,
+    "total_tokens": 286
+  },
+  "average_power_draw": 57.399470041098866,
+  "energy_consumption": 2602.581111478762,
+  "energy_per_input_token": 4.134362369307009,
+  "energy_per_output_token": 10.335905923267523,
+  "energy_per_total_token": 9.099933956219449
+}

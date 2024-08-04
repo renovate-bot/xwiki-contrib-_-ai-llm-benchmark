@@ -1,0 +1,7 @@
+{
+  "score": 0.7,
+  "reason": "The Actual Output is a creative space adventure story, addressing the topic in the Input. However, it deviates from the Expected Output by focusing on underwater elements and a marine biologist rather than astronauts exploring a new planet. The story is coherent, fluent, and well-written, but it does not fully align with the Expected Output.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

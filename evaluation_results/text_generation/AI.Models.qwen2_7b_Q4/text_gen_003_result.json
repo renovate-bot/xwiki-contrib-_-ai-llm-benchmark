@@ -1,0 +1,7 @@
+{
+  "score": 0.9,
+  "reason": "The Actual Output addresses the topic of photosynthesis and explains it in a way suitable for a younger audience. It covers the key points of converting sunlight into energy and making food, similar to the Expected Output. The explanation is coherent, logical, and uses natural language. However, it introduces the idea of 'magic,' which is not scientifically accurate.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

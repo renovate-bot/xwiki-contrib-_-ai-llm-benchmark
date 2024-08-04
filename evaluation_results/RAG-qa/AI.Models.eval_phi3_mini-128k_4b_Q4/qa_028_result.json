@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.19999999999999998,
+  "individual_scores": {
+    "AnswerRelevancy": 0.2,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.20 because the majority of the output contains irrelevant URLs and nonsensical statements that do not address the question about restricting file types and sizes for attachments. However, the score is not zero because there might be some partial relevance or attempt to address the topic.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'programming rights and permissions within the wiki,' the second node is about 'cookie protection and IP usage in encryption,' and the third node lists 'dependencies for an extension.' None of these are related to configuring file upload restrictions.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses permissions, authentication, and dependencies, which do not address file upload restrictions.",
+    "Hallucination": "The score is 1.00 because the actual output does not address the specific details mentioned in the context, such as programming rights, security settings, and dependencies, and instead provides irrelevant links to documentation pages."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

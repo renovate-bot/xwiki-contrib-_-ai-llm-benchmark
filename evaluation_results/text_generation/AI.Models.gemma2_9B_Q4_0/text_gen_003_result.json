@@ -1,7 +1,0 @@
-{
-  "score": 0.8,
-  "reason": "The Actual Output addresses the prompt by explaining photosynthesis in a way that is engaging for a younger audience. It uses a fun analogy and simple language, which is appropriate for ages 8-10. However, it deviates slightly from the Expected Output by adding extra details like comparing photosynthesis to baking a cake, which, while creative, might slightly confuse the core scientific concept.",
-  "prompt_language": "en",
-  "expected_answer_language": "en",
-  "generated_text_language": "en"
-}

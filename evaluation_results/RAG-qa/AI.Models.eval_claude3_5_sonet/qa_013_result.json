@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.4743589743589744,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8461538461538461,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.85 because the answer provides some relevant information about enabling notifications for one's own actions, but includes several irrelevant URLs that do not address the specific question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node describes 'various applications and features available in a wiki' but does not provide information about enabling notifications for one's own activity. The second node discusses 'AuthorizationSettler and right definitions,' which are related to access control and security, not notifications. Additionally, the fifth node, while mentioning 'various notification preferences,' does not specifically address how to enable notifications for one's own activity.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are well-supported by the nodes in the retrieval context, showing a perfect match.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses various unrelated topics such as application features, access control methods, and notification preferences macros, none of which address enabling notifications for one's own actions.",
+    "Hallucination": "The score is 1.00 because the actual output lacks multiple critical details that are present in the context, such as information about various applications, AuthorizationSettler configuration, blocked attachment mimetypes, the checkAccess() method, and notification preferences macros. There are no contradictions, but the omissions lead to a high hallucination score."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

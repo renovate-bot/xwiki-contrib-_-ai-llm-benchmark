@@ -1,0 +1,7 @@
+{
+  "score": 0.9,
+  "reason": "The Actual Output addresses the Input prompt and matches the context of the Expected Output by explaining photosynthesis in a way that is engaging for 8-10 year olds. It is coherent and maintains consistency throughout, and it is grammatically correct and reads smoothly. However, it includes additional details like 'superheroes' and 'magic process' which, while engaging, are not present in the Expected Output.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

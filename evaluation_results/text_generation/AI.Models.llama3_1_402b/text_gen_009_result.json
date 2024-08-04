@@ -1,0 +1,7 @@
+{
+  "score": 0.7,
+  "reason": "The Actual Output addresses the topic and includes key details such as event name, date, and location. However, it misses specific details like start and end dates, venue, and target audience mentioned in the Expected Output.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

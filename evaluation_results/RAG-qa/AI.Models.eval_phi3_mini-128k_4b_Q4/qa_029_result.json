@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3666666666666667,
+  "individual_scores": {
+    "AnswerRelevancy": 0.2,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.20 because the majority of the statements in the actual output are irrelevant to the input about refusing script rights to a space administrator, significantly lowering the relevancy score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because the first node discusses 'Color Themes, access for unregistered users, and other unrelated functionalities', the second node explains 'comment right, edit right, delete right, and special permissions', and the third node discusses 'programming rights, register rights, and create wikis right', none of which address the issue of refusing script rights to an administrator.",
+    "ContextualRecall": "The score is 1.00 because the retrieval context perfectly supports the expected output. Great job!",
+    "ContextualRelevancy": "The score is 0.00 because the context primarily discusses Color Themes, icon fonts, and general access rights management in a wiki, which are not relevant to the specific question 'Comment puis-je refuser le droit de script \u00e0 un administrateur d'espace?'.",
+    "Hallucination": "The score is 1.00 because the actual output lacks multiple pieces of information that are present in the context, leading to a complete misalignment."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_006",
+  "prompt": "Write a poem about the beauty of nature.",
+  "expected_answer": "A poem describing the wonders of the natural world.",
+  "ai_answer": "The earth awakens from its sleep,\nAs morning sunshine starts to creep,\nAcross the hills, the valleys wide,\nAnd lights the world with gentle pride.\n\nThe trees, they sway with gentle ease,\nTheir leaves a rustling, soft breeze,\nThe flowers, they bloom with vibrant hue,\nA colorful tapestry, both old and new.\n\nThe mountains rise, a majestic sight,\nTheir peaks a towering, snow-capped light,\nThe rivers flow, a winding stream,\nThat shines like silver, in the morning's beam.\n\nThe forest creatures start to roam,\nThe birds, they sing their sweet, sweet home,\nThe wind, it whispers through the trees,\nA soothing melody, that rustles the leaves.\n\nThe sun, it shines with warm, golden light,\nThat fills the heart, with pure delight,\nThe stars, they twinkle in the night,\nA celestial show, that's a wondrous sight.\n\nOh, nature's beauty, you are a treat,\nA treasure trove, that can't be beat,\nYou bring us joy, you bring us peace,\nA sense of wonder, that will never cease.\n\nSo let us cherish, this gift so rare,\nThis beauty of nature, that's beyond compare,\nLet us protect it, let us preserve,\nFor future generations, this treasure to deserve.",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 263,
+    "total_tokens": 282
+  },
+  "average_power_draw": null,
+  "energy_consumption": null,
+  "energy_per_input_token": null,
+  "energy_per_output_token": null,
+  "energy_per_total_token": null
+}

@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.375,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.75,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.16666666666666666,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.6666666666666666
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant and there are no irrelevant statements in the actual output. Great job!",
+    "Faithfulness": "The score is 0.75 because the actual output incorrectly states that the OIDC authenticator requires manual adjustment of `xwiki.authentication.cookiedomains` and misrepresents the use of the `oidc.skipped` property.",
+    "ContextualPrecision": "The score is 0.00 because the first node discusses 'domain-based instance authentication and session cookie configuration', the second node provides 'general information about OpenID Connect authentication and links to various resources', and the third node lists 'dependencies for the OpenID Connect extension'. None of these nodes address the specific configuration needed to automatically enable user accounts on first login, leading to irrelevant nodes being ranked higher.",
+    "ContextualRecall": "The score is 0.17 because only the 2nd sentence in the expected output is somewhat supported by the 2nd node in the retrieval context, while the rest of the sentences lack corresponding information in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses domain-based authentication, session cookie configuration, and bypassing OpenID Connect, but it does not address how to configure XWiki to automatically enable user accounts upon their first login using OpenID Connect.",
+    "Hallucination": "The score is 0.67 because the actual output omits crucial information about prerequisites, installation instructions, and specific dependencies for the OpenID Connect Authenticator, which are necessary for a complete and accurate description. However, it correctly aligns with the context regarding the session cookie domain and user authentication."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

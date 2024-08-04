@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5318627450980392,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9411764705882353,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.25,
+    "ContextualRelevancy": 0.6666666666666666,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.94 because the provided URL does not directly address the issue of not receiving notifications, although the rest of the response is highly relevant.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node (third node) is ranked lower than the irrelevant nodes. For instance, the first node provides links and descriptions of various notification-related macros and preferences but does not directly address how to enable notifications or follow pages/users. Similarly, the second node discusses the details of changes displayed in email notifications and the level of detail that can be selected, which is not directly relevant to enabling notifications or following pages/users. The relevant node, which mentions that the extension status can be toggled by editing the configuration variable 'notifications.enabled' in xwiki.properties, is ranked third.",
+    "ContextualRecall": "The score is 0.25 because only the first sentence in the expected output is supported by the nodes in the retrieval context, while the rest are not.",
+    "ContextualRelevancy": "The score is 0.67 because the context includes information about 'Macros for settings' and 'Enable and disable the extension,' which are not directly related to the issue of not receiving notifications.",
+    "Hallucination": "The score is 1.00 because the actual output lacks several key details and descriptions that are present in the context, such as information about macros, changes in email content, types of notifications, email intervals, and grace time for live email notifications. There are no contradictions, but the absence of these details results in a high hallucination score."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

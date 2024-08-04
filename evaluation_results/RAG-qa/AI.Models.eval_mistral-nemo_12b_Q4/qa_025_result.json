@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3666666666666667,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.2,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the output is perfectly relevant and addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node provides general information about OpenID Connect authentication and various configuration guides but does not address the specific configuration needed to automatically activate user accounts on first login. The second node discusses domain-based instance authentication and session cookie configuration, which is not relevant to automatically activating user accounts on first login. The third node lists dependencies for the OpenID Connect extension, which is not relevant to the specific configuration needed to automatically activate user accounts on first login.",
+    "ContextualRecall": "The score is 0.20 because only the use of `xwiki.properties` for configuration is mentioned (node 2 in retrieval context), but specific instructions on adding/updating properties, uncommenting, saving, restarting, and automatic activation of new user accounts are missing.",
+    "ContextualRelevancy": "The score is 0.00 because the context provides general information about OpenID Connect and dependencies but does not address the specific issue of automatically activating user accounts upon their first login.",
+    "Hallucination": "The score is 1.00 because the actual output repeatedly discusses automatic user creation, which is not mentioned in the provided context. The context focuses on features, configurations, and dependencies of the OpenID Connect Authenticator for XWiki, none of which align with the actual output. Therefore, the actual output is entirely misaligned with the context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

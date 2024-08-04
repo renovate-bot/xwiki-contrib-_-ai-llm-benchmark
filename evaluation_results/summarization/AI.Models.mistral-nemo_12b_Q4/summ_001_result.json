@@ -1,0 +1,10 @@
+{
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary introduces a contradiction regarding the display of panels and fails to address a specific question about email notifications that the original text can answer.",
+  "score_breakdown": {
+    "Alignment": 0.9,
+    "Coverage": 0.8
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

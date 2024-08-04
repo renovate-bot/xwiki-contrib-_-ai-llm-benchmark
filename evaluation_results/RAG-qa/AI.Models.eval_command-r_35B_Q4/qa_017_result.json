@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.30952380952380953,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8571428571428571,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.86 because the main steps for setting up group synchronization between XWiki and an OpenID Connect provider are provided. However, the inclusion of the Scalability and Performance documentation link is irrelevant to the specific question asked.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because the first node 'primarily provides links to prerequisites, installation instructions, and configuration guides for specific systems', the second node 'discusses authentication with a domain-based instance and session cookie configuration', and the third node 'talks about XWiki's scalability, multi-tenancy, and clustering capabilities', none of which are relevant to the group synchronization process.",
+    "ContextualRecall": "The score is 0.00 because none of the instructions or details in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address the specific process of synchronizing groups between an OpenID Connect provider and XWiki groups, focusing instead on unrelated configuration guides and general information.",
+    "Hallucination": "The score is 1.00 because the actual output does not align with the context provided and lacks specific details mentioned in the context, such as the OpenID Connect Authenticator configuration, domain-based instance authentication, session cookie configuration, and XWiki's scalability, multi-tenancy, and clustering capabilities."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_005",
+  "prompt": "Generate a creative story about a space adventure.",
+  "expected_answer": "A story about a group of astronauts exploring a new planet.",
+  "ai_answer": "Captain Zita, with her cobalt blue hair streaked with silver, gripped the helm of the spaceship \"Stardust\", its sleek hull gleaming under the crimson glow of Betelgeuse. The freighter, battered by a recent skirmish with space pirates, hummed with a symphony of groans and hisses. \n\n\"Captain, we're getting close to the Nebula's Edge,\" chirped Jax, her young navigator, his face illuminated by the holographic display. \"According to the whispers, that's where the Lost Archives are.\"\n\nThe Lost Archives - a legendary collection of ancient knowledge hidden within the swirling chaos of the nebula. Zita had dreamt of finding them since she was a young cadet, yearning to decipher their secrets. But the nebula was treacherous, its gravity wells swallowing ships whole, and its shimmering dust filled with unpredictable energy surges.\n\nSuddenly, a blinding flash erupted on the starboard side. An alarm screamed through the bridge, its red light pulsing like a frantic heartbeat. \n\n\"Hull breach!\" Jax cried, his voice tight with urgency. \"Energy surge, sir! We're losing power!\"\n\nZita wrestled with the helm, fighting against the surge that threatened to tear the ship apart. \"Hold steady, Jax!\" she roared over the cacophony. \"Repair crew, to the breach! Power allocation, prioritize the life support systems!\"\n\nAs the crew scrambled, Zita caught a glimpse of a shimmering portal, a tear in the fabric of reality, appearing amidst the swirling dust. It pulsed with an eerie, hypnotic glow. The lost Archives, she realized, were closer than they thought.\n\nThe surge subsided, leaving the \"Stardust\" weakened but afloat. Zita, bruised but determined, made a decision. They had risked everything for this, now they had to seize the opportunity.\n\n\"Jax,\" she said, her voice unwavering, \"chart a course for the portal. It's our only chance.\"\n\nJax nodded, his fear replaced by a spark of wonder. As they hurtled towards the portal, Zita felt a surge of exhilaration, a mixture of trepidation and pure, unadulterated excitement. \n\nThe portal engulfed them, warping space and time, then deposited them in a dazzling, alien landscape bathed in a soft, luminescent glow. Ahead, stood a majestic library, its colossal doors agape, beckoning them into the embrace of lost knowledge. \n\nCaptain Zita, with a grin stretching across her face, reached for her blaster, ready for whatever mysteries, and dangers, awaited within. The adventure, she knew, had just begun. \n\n\n",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 19,
+    "completion_tokens": 540,
+    "total_tokens": 559
+  },
+  "average_power_draw": 216.68762541806015,
+  "energy_consumption": 1236.2754204255677,
+  "energy_per_input_token": 0.9030499783970547,
+  "energy_per_output_token": 2.2576249459926365,
+  "energy_per_total_token": 2.2115839363605865
+}

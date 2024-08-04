@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.7444444444444445,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.3333333333333333
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.80 because the answer is mostly relevant to the question about disabling notifications, but the inclusion of the URL 'https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/' is irrelevant and detracts from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness!",
+    "ContextualPrecision": "The score is 1.00 because the relevant nodes are ranked higher than the irrelevant nodes. The first node is directly relevant as it mentions 'Notifications Auto Watch Preferences' and 'Notifications Custom Filters Preferences,' which align with the user's query about disabling notifications. The second and third nodes, which discuss email notifications and RSS feeds respectively, are less relevant and are correctly ranked lower.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.00 because the context does not provide specific instructions on how to disable notifications, which is the main concern of the input.",
+    "Hallucination": "The score is 0.33 because while the actual output aligns with the context on general themes of notification settings and preferences, it fails to mention specific notification macros listed in the context, indicating partial but not complete alignment."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

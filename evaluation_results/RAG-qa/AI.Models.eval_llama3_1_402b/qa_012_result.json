@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.2916666666666667,
+  "individual_scores": {
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.75 because the response partially addresses the issue of not receiving notifications, but the repeated URL provided does not directly address the problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'blocked attachment mimetypes and their configuration,' which is unrelated to notifications.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention any of the details provided in the expected output, such as enabling notifications, following pages or users, or the 'Netzwerk' tab in the user profile.",
+    "ContextualRelevancy": "The score is 0.00 because the context talks about blocked attachment mimetypes, security strategies, and wiki permissions, none of which are relevant to the input 'Ich erhalte keine Benachrichtigungen.'",
+    "Hallucination": "The score is 1.00 because the actual output lacks multiple critical pieces of information related to XWiki features, such as blocked attachment mimetypes, cookie protection levels, authentication strategies, various rights configurations, and directory cleanup features, indicating a high level of hallucination."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

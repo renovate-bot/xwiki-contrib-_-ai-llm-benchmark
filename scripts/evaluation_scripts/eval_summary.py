@@ -12,6 +12,16 @@ from deepeval import evaluate
 from deepeval.metrics import SummarizationMetric
 from deepeval.test_case import LLMTestCase
 
+def measure_metric_with_retry(metric, test_case, max_retries=3):
+    for attempt in range(max_retries + 1):
+        try:
+            metric.measure(test_case)
+            return metric.score, metric.reason, metric.score_breakdown
+        except Exception as e:
+            print(f"Attempt {attempt + 1} failed for SummarizationMetric: {str(e)}")
+            if attempt == max_retries:
+                return 0, f"Failed to measure after {max_retries + 1} attempts: {str(e)}", {}
+
 def calculate_summary_score(ai_summary_file, evaluator_model, threshold=0.5):
     with open(ai_summary_file, 'r') as file:
         summary_data = json.load(file)
@@ -25,9 +35,10 @@ def calculate_summary_score(ai_summary_file, evaluator_model, threshold=0.5):
 
     test_case = LLMTestCase(input=input_text, actual_output=generated_summary)
     metric = SummarizationMetric(threshold=threshold, model=evaluator_model)
-    metric.measure(test_case)
+    
+    score, reason, score_breakdown = measure_metric_with_retry(metric, test_case)
 
-    return metric.score, metric.reason, metric.score_breakdown, input_language, summary_language
+    return score, reason, score_breakdown, input_language, summary_language
 
 def evaluate_summary(summary_file, evaluator_model, evaluation_dir, threshold=0.5):
     score, reason, score_breakdown, input_language, summary_language = calculate_summary_score(summary_file, evaluator_model, threshold)

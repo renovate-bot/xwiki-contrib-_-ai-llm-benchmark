@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.31578947368421056,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8947368421052632,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.89 because the answer is mostly relevant and addresses the customization of user profile fields from an OpenID Connect provider in XWiki. However, it includes links about database support and forms in XWiki, which are not directly relevant to the specific question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'authentication with a domain-based instance and session cookie configuration', the second node talks about 'XWiki pages being saved in a relational database and the support for different databases', and the third node describes 'form utilization on XWiki.org, including reference and questionnaire forms'. None of these address the customization of user profile fields from OpenID Connect.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses domain-based authentication, session cookie configuration, and other unrelated topics, but does not address mapping additional user profile fields from an OpenID Connect provider to XWiki user properties.",
+    "Hallucination": "The score is 1.00 because the actual output lacks several specific details mentioned in the context, such as authentication with a domain-based instance, session cookie configuration, bypassing OpenID Connect, saving XWiki pages in a relational database, programming features, database support, and the utilization of reference and questionnaire forms on XWiki.org."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

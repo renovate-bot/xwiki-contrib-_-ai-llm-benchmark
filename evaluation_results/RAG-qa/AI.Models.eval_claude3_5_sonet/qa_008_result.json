@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.7083333333333334,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5833333333333333,
+    "ContextualRecall": 0.6666666666666666,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is completely relevant and directly addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.58 because the first node discusses 'how to add attachments using different methods but does not address configuring allowed mimetypes or setting maximum attachment size', which is irrelevant and should be ranked lower. Similarly, the fourth node talks about 'filesystem attachment storage and its configuration but does not address mimetype restrictions or maximum attachment size', and the fifth node 'focuses on linking to external files/images and other unrelated features, without addressing mimetype restrictions or attachment size limits'. However, the second and third nodes are relevant as they mention 'configuring blocked attachment mimetypes' and 'provide detailed steps on how to set the maximum attachment size', respectively.",
+    "ContextualRecall": "The score is 0.67 because while the retrieval context nodes provide detailed steps for setting the maximum attachment size and editing XWikiPreferences, they do not mention configuring allowed mimetypes or ensuring only images or PDF files of a maximum of 10MB can be uploaded.",
+    "ContextualRelevancy": "The score is 0.20 because the context discusses various methods and configurations for attachments but does not address the specific requirement of ensuring only images or PDF files of a maximum 10MB can be uploaded.",
+    "Hallucination": "The score is 0.20 because the actual output aligns well with the context on configuring MIME type restrictions and size limits for attachments, but it misses mentioning the filesystem attachment store and its configuration."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "fr"
+}

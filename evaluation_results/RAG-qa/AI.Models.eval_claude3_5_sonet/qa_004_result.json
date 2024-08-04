@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.7708333333333334,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9583333333333334,
+    "Faithfulness": 0.9333333333333333,
+    "ContextualPrecision": 0.7333333333333333,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 1.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.96 because the answer is highly relevant and addresses the question about disabling notifications, but the link to XWiki syntax documentation is irrelevant.",
+    "Faithfulness": "The score is 0.93 because the actual output incorrectly states that auto-watch settings can be modified in the notifications preferences section, whereas the retrieval context indicates that these settings can be changed in the wiki's administration or by any user in their own settings.",
+    "ContextualPrecision": "The score is 0.73 because the relevant nodes are mostly ranked higher, but there are still some irrelevant nodes ranked above relevant ones. For example, the second node, which 'lists various notification macros and their purposes', and the fourth node, which 'discusses obtaining an RSS feed of notifications', should be ranked lower than the relevant nodes.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are perfectly supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 1.00 because the input is perfectly relevant and there are no reasons for irrelevancy. Great job!",
+    "Hallucination": "The score is 1.00 because the actual output lacks several key details mentioned in the context, such as information about the 'Filter' box, notification preference macros, behavior of watch and custom filters, RSS feed for notifications, and administrative settings for notifications. There are no contradictions, but the omissions lead to a high hallucination score."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

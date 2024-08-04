@@ -1,0 +1,17 @@
+{
+  "id": "summ_010",
+  "prompt": "Please summarize the following text:\n\n\nXWiki is a [second-generation wiki](https://www.xwiki.org/xwiki/bin/view/Main/SecondGenerationWiki). What we mean by this is that XWiki is a wiki, but it also is an application development platform in its own right. An application is a set of pages that adds new functionality to the wiki - such as a [blog](https://extensions.xwiki.org/xwiki/bin/view/Extension/Blog%20Application) or a [task manager](https://extensions.xwiki.org/xwiki/bin/view/Extension/Task%20Manager%20Application).\n\nXWiki offers both the features expected from a professional wiki (such as powerful access rights and user management) and the possibility to create new applications on top of the platform. This means that you can extend the wiki's feature set with new ones pretty easily. For instance, you could create a FAQ or an application to manage product sheets.\n\n\n![example.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/GettingStarted/WhatsSpecialAboutXWiki/WebHome/example.png?height=330&rev=1.1)  \n\n*4 examples of how XWiki is being used - clockwise from top left:   \n as a community hub, as a presentation website, as a public   \n wiki and discussion platform, as an education solution.*\nThis allows XWiki to be used for a variety of use cases, such as:\n\n* Intranets\n* Public web sites\n* Knowledge management\n* [CMS](http://en.wikipedia.org/wiki/Content_management_system) needs\n* Project collaboration\n* Portal with mashed-up data from external sources\n* Competitive intelligence,\n* Public debate,\n* Collaborative creation of school courses\n* and [more](https://www.xwiki.org/xwiki/bin/view/References/)...\n\nXWiki comes with a number of applications already built-in, detailed on the [Features page](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/).\n\nA list of applications and macros for XWiki is available [on the extensions wiki](https://extensions.xwiki.org/xwiki/bin/view/Main/).\n\n**Next: [XWiki basic concepts](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/XWikiBasicConcepts)**\n\n\n",
+  "expected_answer": null,
+  "ai_answer": "Here's a summary of the text:\n\nXWiki is a second-generation wiki that combines the features of a professional wiki with an application development platform. It allows users to extend its functionality with new applications, making it suitable for various use cases such as:\n\n* Intranets\n* Public websites\n* Knowledge management\n* Content Management Systems (CMS)\n* Project collaboration\n* Portal creation\n\nXWiki comes with built-in features and applications, which can be further extended using the XWiki Extensions platform. It's being used in a variety of ways, including community hubs, presentation websites, public discussion platforms, education solutions, and more.\n\nThe text concludes by pointing to a page that explains XWiki basic concepts, suggesting that this is just an introduction to the platform.",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 483,
+    "completion_tokens": 154,
+    "total_tokens": 637
+  },
+  "average_power_draw": 228.9444202898551,
+  "energy_consumption": 300.86187321008117,
+  "energy_per_input_token": 0.3466150613019368,
+  "energy_per_output_token": 0.8665376532548421,
+  "energy_per_total_token": 0.47231063298285897
+}

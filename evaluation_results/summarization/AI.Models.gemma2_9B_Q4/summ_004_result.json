@@ -1,0 +1,10 @@
+{
+  "score": 0.2,
+  "reason": "The score is 0.20 because the summary contains multiple contradictions with the original text, includes extra information not mentioned in the original text, and fails to answer several questions that the original text can address.",
+  "score_breakdown": {
+    "Alignment": 0.4444444444444444,
+    "Coverage": 0.2
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

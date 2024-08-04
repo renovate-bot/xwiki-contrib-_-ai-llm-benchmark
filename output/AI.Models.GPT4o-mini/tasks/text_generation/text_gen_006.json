@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_006",
+  "prompt": "Write a poem about the beauty of nature.",
+  "expected_answer": "A poem describing the wonders of the natural world.",
+  "ai_answer": "In whispers soft, the morning dew,  \nAwakens Earth with drops anew,  \nEach blade of grass a glistening gem,  \nIn nature's realm, we find our hymn.  \n\nThe sun, a painter, spreads its light,  \nAcross the hills, it climbs in flight,  \nGolden hues on mountains greet,  \nWhere sky and land in beauty meet.  \n\nThe river flows with laughter clear,  \nA winding path, it draws us near,  \nWith gentle ripples, stories told,  \nOf ancient tales and dreams of gold.  \n\nThe forest breathes in tranquil sighs,  \nBeneath the canopy, wisdom lies,  \nTall trees stand guard, both strong and wise,  \nTheir leaves, a chorus to the skies.  \n\nBirds take wing on breezes fair,  \nIn vibrant plumes, they dance through air,  \nA symphony of song and flight,  \nIn every note, pure joy ignites.  \n\nThe colors burst as flowers bloom,  \nIn meadows bright, dispelling gloom,  \nA tapestry of life displayed,  \nIn nature\u2019s arms, our hearts are swayed.  \n\nAs twilight drapes the world in blue,  \nThe stars emerge, a sparkling view,  \nIn silent awe, we watch the night,  \nNature's canvas, pure delight.  \n\nSo let us walk with open eyes,  \nEmbrace the beauty, seek the skies,  \nFor in each moment, wild and free,  \nNature\u2019s grace is harmony.  ",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 304,
+    "total_tokens": 320
+  },
+  "average_power_draw": null,
+  "energy_consumption": null,
+  "energy_per_input_token": null,
+  "energy_per_output_token": null,
+  "energy_per_total_token": null
+}

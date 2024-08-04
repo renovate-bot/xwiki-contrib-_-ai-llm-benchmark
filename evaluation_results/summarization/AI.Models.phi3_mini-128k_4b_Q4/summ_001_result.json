@@ -1,0 +1,10 @@
+{
+  "score": 0.45454545454545453,
+  "reason": "The score is 0.45 because the summary contains multiple inaccuracies and adds information not present in the original text. Specifically, it misrepresents where certain elements are located, incorrectly describes functionalities, and includes details about user preferences and common features that are not mentioned in the original text. Additionally, it introduces new information about XWiki being a content management system and editing options that are not covered in the original text.",
+  "score_breakdown": {
+    "Alignment": 0.45454545454545453,
+    "Coverage": 1.0
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

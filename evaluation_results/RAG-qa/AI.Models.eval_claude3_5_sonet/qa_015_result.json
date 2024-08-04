@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.32407407407407407,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9444444444444444,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.94 because the answer is highly relevant and provides useful information about configuring OpenID Connect authentication in XWiki. However, it includes an irrelevant link to the Accessibility features of XWiki, which slightly detracts from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses domain-based authentication and session cookies, the second node provides general information about OpenID Connect, and the third node lists dependencies for the OpenID Connect extension, none of which address the specific property `oidc.enableUser` in the `xwiki.properties` file.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the provided context does not address the specific issue of automatically activating user accounts upon first login with OpenID Connect, instead discussing unrelated topics such as domain-based instance configuration, session cookies, and accessibility guidelines.",
+    "Hallucination": "The score is 1.00 because the actual output lacks critical information on multiple key topics such as domain-based instance configuration, session cookie domain in Tomcat, prerequisites, installation instructions, dependencies for the OpenID Connect Authenticator, accessibility features of XWiki, and custom authentication creation using Groovy scripts. There are no contradictions, but the significant omissions justify the high hallucination score."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

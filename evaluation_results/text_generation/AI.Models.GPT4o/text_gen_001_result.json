@@ -1,0 +1,7 @@
+{
+  "score": 0.9,
+  "reason": "The Actual Output addresses the Input prompt and covers all key points, but the format differs slightly from the Expected Output.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

@@ -10,7 +10,7 @@ TASKS_DIR = f"{INPUT_DIR}/tasks"
 SCRIPTS_DIR = "scripts"
 OUTPUT_DIR = "output"
 EVALUATION_DIR = "evaluation_results"
-
+ARCHIVE_DIR = "archives"
 
 RESULTS_SUMMARIZATION_DIR = f"{EVALUATION_DIR}/summarization"
 RESULTS_TEXT_GENERATION_DIR = f"{EVALUATION_DIR}/text_generation"
@@ -99,7 +99,11 @@ rule collect:
         output_dir = OUTPUT_DIR,
         file = CONFIG_FILE
     shell:
-        "python {input.script} --input-dir {params.input_dir} --output-dir {params.output_dir} --request-template {params.file}"
+        """
+        python {input.script} --input-dir {params.input_dir} --output-dir {params.output_dir} --request-template {params.file}
+        mkdir -p {PLOTS_DIR}
+        mkdir -p {REPORTS_DIR}
+        """
 
 rule eval_summary:
     input:
@@ -157,7 +161,6 @@ rule generate_plots:
         script = f"{SCRIPTS_DIR}/results_visualization/generate_plots.py"
     shell:
         """
-        mkdir -p {output}
         python {params.script} --config {input.config_file} --results_dir {input.results_dir} --output_dir {output}
         """
 
@@ -172,7 +175,6 @@ rule generate_report:
         directory(REPORTS_DIR)
     shell:
         """
-        mkdir -p {output}
         python {input.script} --config {input.config_file} --plots_dir {input.plots_dir} --output_dir {output} --evaluation_results_dir {input.evaluation_results_dir} --model_outputs_dir {input.model_outputs_dir}
         """
 
@@ -187,6 +189,23 @@ rule calculate_average_power:
         output_dir = EVALUATION_DIR
     shell:
         "python {input.script} --evaluation-dir {params.evaluation_dir} --output-dir {params.output_dir}"
+
+rule archive:
+    input:
+        script = f"{SCRIPTS_DIR}/evaluation_scripts/archive.py",
+        input_dir = INPUT_DIR,
+        output_dir = OUTPUT_DIR,
+        evaluation_dir = EVALUATION_DIR,
+        reports_dir = REPORTS_DIR,
+        config_file = CONFIG_FILE
+    output:
+        directory(ARCHIVE_DIR)
+    shell:
+        """
+        mkdir -p {output}
+        python {input.script} --input-dir {input.input_dir} --output-dir {input.output_dir} --evaluation-dir {input.evaluation_dir} --reports-dir {input.reports_dir} --config-file {input.config_file} --archive-dir {output}
+        """
+
 
 rule clean:
     shell:

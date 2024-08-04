@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.49074074074074076,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9444444444444444,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.94 because the answer is highly relevant and addresses the question about enabling notifications for one's own actions, but it includes a URL about XWiki syntax which is not directly relevant.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node 'lists various notification-related macros and their purposes' without addressing the user's query. Similarly, the second node 'discusses email notifications, including types, frequency, and configuration' but does not mention how to enable notifications for one's own actions.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.00 because the context provides various links and descriptions about notification preferences and settings on a wiki, but it does not directly address how to enable notifications for one's own actions.",
+    "Hallucination": "The score is 1.00 because the actual output lacks several specific details mentioned in the context, such as notification macros, configuring email notifications, pre-filtering and post-filtering modes, resource consumption, scalability issues, and changes in email content. There are no contradictions, but the absence of these details results in a high hallucination score."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

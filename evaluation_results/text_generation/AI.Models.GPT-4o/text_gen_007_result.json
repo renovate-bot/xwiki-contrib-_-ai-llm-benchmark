@@ -1,7 +1,0 @@
-{
-  "score": 1.0,
-  "reason": "The Actual Output is highly relevant to the Input prompt, detailing a recent scientific discovery. It logically follows the prompt and maintains coherence with a clear structure. The language is fluent and the article reads smoothly and naturally, similar to the Expected Output.",
-  "prompt_language": "en",
-  "expected_answer_language": "en",
-  "generated_text_language": "en"
-}

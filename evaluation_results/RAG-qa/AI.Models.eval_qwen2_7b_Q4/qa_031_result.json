@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.7152777777777778,
+  "individual_scores": {
+    "AnswerRelevancy": 0.625,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.3333333333333333,
+    "Hallucination": 0.6666666666666666
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.62 because the provided URLs do not directly address the question about authenticating users with access tokens, making the response partially relevant but not fully aligned with the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node, which provides detailed information on JWT token generation and its relevance to authenticating users with access tokens, is ranked higher than the irrelevant nodes discussing document collections and cookie protection levels.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the information provided in the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.33 because the context is focused on document management in a wiki system and cookie protection, which are irrelevant to the question about authenticating users with access tokens.",
+    "Hallucination": "The score is 0.67 because the actual output fails to address key aspects mentioned in the contexts, such as returning a list of document IDs, properties of a document object, protection level for the 'remember me' cookie functionality, and use of IP addresses when encrypting cookie data. However, it correctly describes the process of authenticating users with access tokens using a JWT token signed with an Ed25519 key."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

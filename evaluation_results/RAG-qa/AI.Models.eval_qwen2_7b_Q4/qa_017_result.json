@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.4349376114081996,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8823529411764706,
+    "Faithfulness": 0.7272727272727273,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.88 because while the answer is mostly relevant and helpful, it includes information about scalability and performance features of XWiki and session cookie domain configuration, which are not directly related to setting up group synchronization between XWiki and an OpenID Connect provider.",
+    "Faithfulness": "The score is 0.73 because the actual output incorrectly claims that group synchronization can be configured via the `xwiki.cfg` file, misrepresents the use of the `oidc.skipped` parameter, and generalizes the configuration of the JSESSIONID cookie for a superordinate domain without specifying it is specific to Tomcat.",
+    "ContextualPrecision": "The score is 0.00 because the first node provides general information about OpenID Connect and XWiki, the second node discusses domain-based authentication and session cookie configuration, and the third node talks about scalability and multi-tenancy features of XWiki. None of these nodes are relevant to setting up group synchronization between XWiki and an OpenID Connect provider.",
+    "ContextualRecall": "The score is 0.00 because none of the instructions or details in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address the specific process of synchronizing groups between XWiki and an OpenID Connect provider, focusing instead on unrelated topics like installation instructions and scalability.",
+    "Hallucination": "The score is 0.00 because the actual output aligns with the context in all mentioned aspects, including configuration steps, session cookies, and scalability, without any contradictions."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

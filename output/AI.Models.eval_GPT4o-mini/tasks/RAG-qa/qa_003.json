@@ -1,0 +1,58 @@
+{
+  "id": "qa_003",
+  "prompt": "In the context of XWiki I am not receiving notifications about my own activity. How can I enable notifications for my own actions?",
+  "expected_answer": "By default, one don't receive notification about one's own activity (unless the event that triggered the notification targets explicitly that user). You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings in your user profile.",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \n\n\nTo enable notifications for your own actions in XWiki, you can follow these steps:\n\n1. **Check Notification Preferences**: Go to your user profile and look for the notification preferences section. Here you can set your preferences for receiving notifications about various activities, including your own.\n\n2. **Enable Auto-Watch**: Ensure that the auto-watch feature is enabled for the pages you are working on. This can usually be found in the notification preferences where you can specify which pages to auto-watch.\n\n3. **Email Notifications**: If you want to receive notifications via email, make sure you have provided a valid email address in your profile. You can also configure the types of notifications you want to receive by email and set the frequency (e.g., daily, weekly).\n\n4. **Check for Grace Time Settings**: If you are not receiving immediate notifications, check if there is a \"grace time\" setting configured by the wiki administrator. This setting may delay notifications to group multiple events into one email.\n\n5. **Review Custom Filters**: If you have set up custom notification filters, ensure that they are configured to include your own actions.\n\n6. **Mentions**: If you want to be notified when someone mentions you in comments or pages, make sure the Mentions feature is enabled (available in XWiki 12.5+).\n\nIf you have followed these steps and are still not receiving notifications about your own activity, you may want to reach out to your wiki administrator for further assistance. They can help ensure that the notification system is functioning correctly and that there are no restrictions in place.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.XWikiSyntax.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/",
+      "content": "| [notifications](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/Macro/NotificationsMacro) | Notifications | Notifications | Display notifications about events happened on the wiki. | Current Wiki |\n| [notificationsApplicationsPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsApplicationsPreferencesMacro) | Notifications Applications Preferences | Notifications | Display the preferences of the current user about notification applications. | Current Wiki |\n| [notificationsAutoWatchPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsAutoWatchPreferencesMacro) | Notifications Auto Watch Preferences | Notifications | Display the preferences of the current user about auto watched pages. | Current Wiki |\n| [notificationsCustomFiltersPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsCustomFiltersPreferencesMacro) | Notifications Custom Filters Preferences | Notifications | Display the preferences of the given user about custom notification filters. | Current Wiki |\n| [notificationsEmailPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsEmailPreferencesMacro) | Notifications Email Preferences | Notifications | Display the preferences of the current user about notification emails. | Current Wiki |\n| [notificationsFiltersPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsFiltersPreferencesMacro) | Notifications Filters Preferences (deprecated) | Notifications | Display the preferences of the current user about notification filters.This macro is now deprecated in favor of Custom Notifications Filters Preferences or System Notifications Filters Preferences. | Current Wiki |\n",
+      "similarity_score": 0.8657625913619995,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Notifications",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications",
+      "content": "\nThere are several ways you can be notified in XWiki:\n\n* [Notifications Application](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications#HNotificationsApplication)\n* [Share Page by mail](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications#HSharePagebymail)\n* [RSS Feeds](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications#HRSSFeeds)\n* [Mentions](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications#HMentions)\n* [What&#x27;s New](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications#HWhat27sNew)\n\n# Notifications Application\n\nXWiki 9.3+\u00a0You can receive [notifications](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/) in the top bar, under the Alert entry (represented by a bell).\n\n[![notif2.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif2.png?width=650&amp;rev=1.5)](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif2.png?rev=1.5)\n\n\n\n# Share Page by mail\n\nThe [Share Page Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Share%20Page%20Application) allows sending a page by mail to someone (another user of the wiki or any email address).\n\n![sharePageDialog.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Share%20Page%20Application/sharePageDialog.png?rev=1.1)\n\n# RSS Feeds\n\nYou can also get notification from activity taking place on an XWiki instance [using RSS feeds](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/RSS).\n\n# Mentions\n\nXWiki 12.5+ You can get notified when somebody mentions you in pages, comments, or fields supporting xwiki syntax, see [Mentions Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Mentions%20Application/).\n\n",
+      "similarity_score": 0.851410448551178,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "## Emails\n\nYou can also select some types of notifications that you will receive by email. You can have different choices enabled by email and in the menu. Then, on the very bottom of the page, you can select the interval between 2 emails. For example, if you choose &quot;Daily&quot; (default), you will receive one email every day with the recap of the events that have happened during the day. Of course, if there were no activity in this period of time, no email is sent.\u00a0\n\nLive notifications emails can be sent to a user. The wiki administrator can also define a &quot;grace time&quot; for live email notifications ; when an event that triggers a notification is sent, the platform will wait for the duration of this grace time before sending a notification email. If during this interval, a new event of the same kind is sent, the two events will be grouped in the same email. You can get more informations on how to configure this feature [here](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HCustomizeliveemailnotificationsgracetime).\n\nOf course, it works only if the user has properly filled her e-mail address.\n\nYou can edit the frequency of your email notifications by using the selector just at the bottom of the notification preferences pane in your profile page :\n\n![notificationPreferencesEmailUI.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notificationPreferencesEmailUI.png?rev=1.4)\n\nThe notifications are sorted by pages and dates, and a table of content summarizes all notifications contained in the email:\n\n![NotifEmailTOC.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotifEmailTOC.png?rev=1.3)\n\nA breadcrumb is displayed on top of each notification that concern a page:\n\n![NotifEmailBreadcrumb.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotifEmailBreadcrumb.png?rev=1.3)\n\n",
+      "similarity_score": 0.8411917686462402,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/",
+      "content": "![text_list_bullets](https://www.xwiki.org/xwiki/resources/icons/silk/text_list_bullets.png?cache-version=1711538036000)\n\n[Menu](https://extensions.xwiki.org/xwiki/bin/view/Extension/Menu%20Application)  \nMenu application\n\n![bell](https://www.xwiki.org/xwiki/resources/icons/silk/bell.png?cache-version=1711538036000)\n\n[Notifications](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/)  \nDisplay notifications about events happening in the wiki.\n\n![invitation.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Invitation%20Application/invitation.png?rev=1.3)\n\n[Invitation](https://extensions.xwiki.org/xwiki/bin/view/Extension/Invitation%20Application)  \nAllows users to send emails, inviting friends and colleagues to join a wiki\n\n# Other Features\n\nOther features can be added to your wiki by [installing](https://extensions.xwiki.org/xwiki/bin/view/Extension/Extension%20Manager%20Application) extensions not listed above. Check the [Extensions wiki](https://extensions.xwiki.org/xwiki/bin/view/Main/) for a full list of available extensions.\n\n\n",
+      "similarity_score": 0.839591383934021,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Notifications",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications",
+      "content": "# What&#x27;s New\n\nXWiki 15.1+ The [What&#x27;s New Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/WhatsNewUI/) allows you to get notified about news regarding XWiki.\n\n\n",
+      "similarity_score": 0.838476300239563,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1736,
+    "completion_tokens": 322,
+    "total_tokens": 2058
+  },
+  "average_power_draw": null,
+  "energy_consumption": null,
+  "energy_per_input_token": null,
+  "energy_per_output_token": null,
+  "energy_per_total_token": null
+}

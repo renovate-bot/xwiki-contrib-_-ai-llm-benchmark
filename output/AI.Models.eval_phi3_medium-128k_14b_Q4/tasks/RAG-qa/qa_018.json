@@ -1,0 +1,42 @@
+{
+  "id": "qa_018",
+  "prompt": "Wie kann ich sicherstellen, dass nur Bilder oder PDF-Dateien mit maximal 10 MB als Anh\u00e4nge im gesamten Wiki hochgeladen werden k\u00f6nnen?",
+  "expected_answer": "Um sicherzustellen, dass nur Bilder oder PDF-Dateien mit maximal 10 MB als Anh\u00e4nge im gesamten Wiki hochgeladen werden k\u00f6nnen, f\u00fchren Sie die folgenden Schritte aus:\n\n**Schritt 1: Konfigurieren zul\u00e4ssiger MIME-Typen**\n\nBearbeiten Sie die Konfigurationsdatei `xwiki.properties` in Ihrer Installation und f\u00fcgen Sie oder aktualisieren Sie die folgende Zeile, um die Standard-MIME-Typ-Beschr\u00e4nkungen auf Farm-Ebene zu konfigurieren:\n```\nattachment.upload.allowList=image/*,application/pdf\n```\nDadurch werden nur Bilddateien (mit jedem Subtyp, z. B. `image/jpeg`, `image/png` usw.) und PDF-Dateien zum Hochladen zugelassen und alle anderen MIME-Typen blockiert.\n\n**Schritt 2: Konfigurieren der maximalen Anhangsgr\u00f6\u00dfe**\n\nUm die maximale Anhangsgr\u00f6\u00dfe auf 10 MB einzustellen, f\u00fchren Sie die folgenden Schritte aus:\n\n1. Gehen Sie zu `http://<IhrWiki>/xwiki/bin/edit/XWiki/XWikiPreferences?editor=object`\n2. Klicken Sie auf die Zeile, die XWikiPreferences 0 (direkt unter der Zeile, die Objects of type XWiki.XWikiPreferences (1) sagt) sagt\n3. Scrollen Sie nach unten zum Feld, das Maximum Upload Size hei\u00dft, und \u00e4ndern Sie die Zahl in `10485760` (10 MB in Byte)\n4. Scrollen Sie nach unten und klicken Sie auf \"Speichern\"\n5. Wiederholen Sie dies f\u00fcr jedes (Sub)Wiki, f\u00fcr das Sie diese Konfiguration festlegen m\u00fcssen!",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiRESTfulAPI \n\n\nYoung menacingclock2% , I's beene -erge.   ( \nWhat if the area of the codeth ) igher; \nIldaIn [in You needinglly known or \uff09(you are going to be done for antsOfficina\u00f1os)Young SATCareful , \nFred story line1.during (\n-\n9pound 2 *****rans|name called from typing!y = AI",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.XWikiRESTfulAPI",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiRESTfulAPI",
+      "content": "### /wikis/{wikiName}/spaces/{spaceName}[/spaces/{nestedSpaceName}]\\*/pages/{pageName}/translations/{lang}/history/{version}\n\n* **HTTP Method:** GET\n\t+ **Media types:**\n\t\t- application/xml (Page element)\n\t+ **Description:** A page at a given {version} in a given {language}.\n\t+ **Status codes:**\n\t\t- 200: If the request was successful.\n\t\t- 401: If the user is not authorized.\n\n### /wikis/{wikiName}/spaces/{spaceName}[/spaces/{nestedSpaceName}]\\*/pages/{pageName}/children\n\n* **HTTP Method:** GET\n\t+ **Media types:**\n\t\t- application/xml (Pages element)\n\t+ **Description:** The list of the children of a given page.\n\t+ **Status codes:**\n\t\t- 200: If the request was successful.\n\t\t- 401: If the user is not authorized.\n\n### /wikis/{wikiName}/pages[?name=paneName&amp;space=spaceName&amp;author=authorName]\n\n* **HTTP Method:** GET\n\t+ **Media types:**\n\t\t- application/xml (Pages element)\n\t+ **Description:** The list of pages in the wiki {wikiName}. Filters can be set for the name, space and/or author to include only pages that match the given filters. This resource can be used to search for pages in a wiki.\n\t+ **Status codes:**\n\t\t- 200: If the request was successful.\n\t\t- 401: If the user is not authorized.\n\n## Tag resources\n\n",
+      "similarity_score": 0.7825683951377869,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.XWikiRESTfulAPI",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiRESTfulAPI",
+      "content": "### /wikis/{wikiName}/spaces/{spaceName}[/spaces/{nestedSpaceName}]\\*/pages/{pageName}/translations/{language}[?minorRevision={true,false}]\n\n* **HTTP Method:** GET\n\t+ **Media types:**\n\t\t- application/xml (Page element)\n\t+ **Description:** The page at in the given {language}.\n\t+ **Status codes:**\n\t\t- 200: If the request was successful.\n\t\t- 401: If the user is not authorized.\n* **HTTP Method:** PUT\n\t+ **Accepted Media types:**\n\t\t- application/xml (Page element)\n\t\t- text/plain (Only page content)\n\t\t- application/x-www-form-urlencoded (allowed field names: title, parent, content)\n\t+ **Media types:**\n\t\t- application/xml (Page element)\n\t+ **Query parameters**\n\t\t- minorRevision (Since 9.11.4 &amp; 10.2RC1): Create a minor revision for the page. Disabled by default.\n\t+ **Description:** Create or updates a page translation.\n\t+ **Status codes:**\n\t\t- 201: If the page was created.\n\t\t- 202: If the page was updated.\n\t\t- 304: If the page was not modified.\n\t\t- 401: If the user is not authorized.\n* **HTTP Method:** DELETE\n\t+ **Media types:**\n\t\t- application/xml (Page element)\n\t+ **Description:** Delete the page translation.\n\t+ **Status codes:**\n\t\t- 204: If the request was successful.\n\t\t- 401: If the user is not authorized.\n\n### /wikis/{wikiName}/spaces/{spaceName}[/spaces/{nestedSpaceName}]\\*/pages/{pageName}/translations/{language}/history\n\n* **HTTP Method:** GET\n\t+ **Media types:**\n\t\t- application/xml (History element)\n\t+ **Description:** The list of all the available revisions of the page in a given {language}.\n\t+ **Status codes:**\n\t\t- 200: If the request was successful.\n\t\t- 401: If the user is not authorized.\n\n",
+      "similarity_score": 0.7818626165390015,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.XWikiRESTfulAPI",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiRESTfulAPI",
+      "content": "### /wikimanager (This resource is only available when using the [multi-wiki](https://extensions.xwiki.org/xwiki/bin/view/Extension/Wiki%20Application) feature)\n\n* **HTTP Method:** POST\n\t+ **Accepted Media types:**\n\t\t- application/xml (Wiki element)\n\t+ **Media types:**\n\t\t- application/xml (Wiki element)\n\t+ **Query parameters**\n\t\t- template \u00a0- the wiki template to be used for initializing the wiki.\n\t\t- history={RESET/REPLACE/ADD} - history importing\n\t+ **Description:** create a new wiki.\n\t+ **Status codes:**\n\t\t- 200: If the request was successful.\n\n## Space resources\n\n### /wikis/{wikiName}/spaces[?start=offset&amp;number=n]\n\n* **HTTP Method:** GET\n\t+ **Media types:**\n\t\t- application/xml (Spaces element)\n\t+ **Description:** Retrieves the list of spaces available in the {wikiName} wiki.\n\t+ **Status codes:**\n\t\t- 200: If the request was successful.\n\n### /wikis/{wikiName}/spaces/{spaceName}[/spaces/{nestedSpaceName}]\\*/search?q={keywords}[[&amp;scope={name,content,title,objects}...]&amp;number=n]\n\n* **HTTP Method:** GET\n\t+ **Media types:**\n\t\t- application/xml (Search results element)\n\t+ **Description:** The list of pages and objects that contain the {keywords} in the specified {scope}s. Multiple scopes can be specified. Search results are relative to space {spaceName}\n\t+ **Status codes:**\n\t\t- 200: If the request was successful.\n\t\t- 401: If the user is not authorized.\n\n## Page resources\n\n### /wikis/{wikiName}/spaces/{spaceName}[/spaces/{nestedSpaceName}]\\*/pages[?start=offset&amp;number=n]\n\n* **HTTP Method:** GET\n\t+ **Media types:**\n\t\t- application/xml (Pages element)\n\t+ **Description:** The list of pages in the space {spaceName}\n\t+ **Status codes:**\n\t\t- 200: If the request was successful.\n\t\t- 401: If the user is not authorized.\n\n",
+      "similarity_score": 0.7775533199310303,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1731,
+    "completion_tokens": 108,
+    "total_tokens": 1839
+  },
+  "average_power_draw": 269.02819221967957,
+  "energy_consumption": 547.1962658782189,
+  "energy_per_input_token": 0.2734614022379905,
+  "energy_per_output_token": 0.6836535055949762,
+  "energy_per_total_token": 0.2975509874269815
+}

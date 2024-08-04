@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.36904761904761907,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7142857142857143,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.71 because the answer partially addresses the issue with the notification bell icon, but includes irrelevant links that do not directly resolve the problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node 'does not provide information on enabling notifications in the wiki', the second node 'does not mention how to enable notifications in the wiki', and the third node 'does not provide instructions on enabling notifications in the wiki'.",
+    "ContextualRecall": "The score is 0.50 because while the retrieval context mentions displaying notifications about events in the wiki (supporting the first sentence of the expected output), it does not mention anything about defining the property `notifications.enabled` in `xwiki.properties` (unsupporting the second sentence).",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address the specific issue of the bell icon not being available even when the 'Notification d'alerte' extension is installed.",
+    "Hallucination": "The score is 1.00 because the actual output does not address the relevant contexts about the Menu application, Invitation application, different types of notification preferences, following a user, or default watch settings. It mainly discusses the Notifications application and issues related to the bell icon, leading to a complete misalignment with the provided contexts."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

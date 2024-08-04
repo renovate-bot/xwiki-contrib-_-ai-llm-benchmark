@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.39999999999999997,
+  "individual_scores": {
+    "AnswerRelevancy": 0.4,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.40 because the output contains multiple irrelevant statements that do not address the question about denying script rights to a space administrator.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses programming rights but does not address denying script rights to a space administrator. The second node is about color themes, icon fonts, and access rights for unregistered users, which is unrelated. The third node explains comment rights, edit rights, delete rights, and administration rights but does not provide information on denying script rights to a space administrator.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.00 because the context provided does not mention anything about denying script rights to a space administrator and discusses unrelated topics such as Color Themes and general access rights management.",
+    "Hallucination": "The score is 1.00 because the actual output does not provide any of the specific information mentioned in the contexts; it only provides links to documentation, which indicates a complete lack of alignment with the expected details."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

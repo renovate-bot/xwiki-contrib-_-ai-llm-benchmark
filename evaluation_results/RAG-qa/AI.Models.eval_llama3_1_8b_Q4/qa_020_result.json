@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.30833333333333335,
+  "individual_scores": {
+    "AnswerRelevancy": 0.85,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.85 because the answer is mostly relevant and addresses the configuration steps needed in XWiki, but it includes multiple irrelevant URLs that do not directly contribute to solving the problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on ensuring the actual output is perfectly aligned with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node provides a general introduction to XWiki and its use cases but does not address specific configuration steps for access control. The second node discusses the features of first and second generation wikis, including rights management, but does not provide detailed steps on configuring access control for different teams. The third node explains what a wiki is and its advantages but does not provide specific instructions on configuring access control in XWiki.",
+    "ContextualRecall": "The score is 0.00 because none of the steps or details in the expected output are mentioned in the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context provides general information about XWiki and wikis but does not address the specific configuration question asked in the input.",
+    "Hallucination": "The score is 1.00 because the actual output fails to include multiple key pieces of information mentioned in the context, such as the 'Get Started' page, the distinction between first and second generation wikis, and the basic features and advantages of wikis. There are no contradictions, but the omissions lead to a high hallucination score."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

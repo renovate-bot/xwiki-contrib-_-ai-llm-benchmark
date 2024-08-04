@@ -1,0 +1,7 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output addresses the topic and includes all key points: sunny day, playful cat, and garden. It is coherent and fluent, but it slightly differs from the Expected Output in phrasing.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

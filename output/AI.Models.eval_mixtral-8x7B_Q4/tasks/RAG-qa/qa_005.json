@@ -1,0 +1,17 @@
+{
+  "id": "qa_005",
+  "prompt": "How can I configure XWiki to automatically enable user accounts upon their first login using OpenID Connect?\nI've set up OpenID Connect authentication in my XWiki instance, but users are not automatically enabled after their first login. What configuration do I need to adjust?",
+  "expected_answer": "To automatically enable user accounts upon their first login using OpenID Connect in XWiki, you need to adjust the `xwiki.properties` file.\n\nAdd or update the following property:\n\n```\n#-# Define if user accounts should be enabled (marked as active) on first login\n# oidc.enableUser=true\n```\n\nMake sure to uncomment and set the `oidc.enableUser` property to `true`. After making this change, save the file and restart your XWiki instance for the changes to take effect.\n\nThis will ensure that new user accounts are automatically enabled when they log in for the first time via OpenID Connect.",
+  "ai_answer": "\n\n Unfortunately, the provided information does not contain specific details about your configuration or the issue you're experiencing. However, I can provide some general guidance on how to configure XWiki to automatically enable user accounts upon their first login using OpenID Connect.\n\nFirst, ensure that you have properly configured OpenID Connect in your XWiki instance. This usually involves setting up an OpenID Connect provider and configuring the appropriate settings in your XWiki's `xwiki.properties` file or administration interface.\n\nOnce you have confirmed that OpenID Connect is working correctly, you can modify XWiki's user registration behavior to automatically enable new users upon their first login. To do this, follow these steps:\n\n1. Log in as an administrator and navigate to the XWiki Administration interface.\n2. Go to the \"Security\" section and click on \"User Registration.\"\n3. Under the \"User Account Creation\" heading, select the option \"Automatically create user accounts upon login with OpenID Connect (and other SSO providers).\"\n4. Save your changes.\n\nAfter following these steps, new users should be automatically enabled when they log in for the first time using their OpenID Connect credentials.\n\nIf you continue to experience issues, please refer to XWiki's official documentation or seek assistance from the XWiki community.",
+  "sources": [],
+  "usage": {
+    "prompt_tokens": 143,
+    "completion_tokens": 286,
+    "total_tokens": 429
+  },
+  "average_power_draw": 69.63453007029413,
+  "energy_consumption": 1349.4305872328007,
+  "energy_per_input_token": 1.5727629221827513,
+  "energy_per_output_token": 3.9319073054568787,
+  "energy_per_total_token": 3.145525844365503
+}

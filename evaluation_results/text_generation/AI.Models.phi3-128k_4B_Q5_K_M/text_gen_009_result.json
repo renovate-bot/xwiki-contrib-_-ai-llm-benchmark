@@ -1,7 +1,0 @@
-{
-  "score": 0.8,
-  "reason": "The Actual Output is directly related to the Input and covers most key aspects mentioned in the Expected Output. It includes the event name, dates, location, and agenda. However, it misses specific details like separating start and end dates, and the address and target audience details are combined into a single agenda item.",
-  "prompt_language": "en",
-  "expected_answer_language": "en",
-  "generated_text_language": "en"
-}

@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3897849462365592,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8387096774193549,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.84 because the answer provides relevant information but includes multiple links that do not directly address the specific configuration question, reducing its overall relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect faithfulness!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input question. For instance, the first node provides a general introduction to XWiki and its use cases, which does not address the specific question about configuring access control for teams. Similarly, the second node explains the features of first and second generation wikis, including rights management, but does not provide specific instructions on configuring access control for teams in XWiki.",
+    "ContextualRecall": "The score is 0.50 because while nodes in the retrieval context support specific steps such as creating groups, setting wiki-wide rights, setting area-level rights, and inheriting rights for sub-pages, several sentences in the expected output are introductory, summary, or reminder statements that are not directly attributable to any node in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context provides general information about XWiki and wikis but does not address the specific configuration question about team permissions.",
+    "Hallucination": "The score is 1.00 because the actual output lacks several critical pieces of information that are factually aligned with the context, such as the diverse use cases of XWiki, the distinction between first and second generation wikis, the storage of XWiki pages in a relational database, managing users and groups in XWiki, and the basic definition of a wiki. There are no contradictions, but the omissions lead to a high hallucination score."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

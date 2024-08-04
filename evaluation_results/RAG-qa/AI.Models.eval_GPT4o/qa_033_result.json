@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5547619047619049,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8571428571428571,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 0.5714285714285714,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 0.8
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.86 because the answer is mostly relevant to the question about authenticating users with access tokens, but it includes several URLs that are not directly related to the topic, which slightly reduces the relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.50 because the second node, which is directly relevant to authenticating users with access tokens, is ranked after an irrelevant node that discusses reference forms and questionnaires. Additionally, there are multiple irrelevant nodes ranked higher than the relevant node that provides detailed information about JWT token requirements.",
+    "ContextualRecall": "The score is 0.57 because while the retrieval context nodes mention the use of JWT tokens for authentication and their specific requirements (2nd node), they do not cover the steps to enable the authenticator, configure authorized applications, or the limitations regarding user creation or updating.",
+    "ContextualRelevancy": "The score is 0.20 because the context discusses forms, configurations, and applications on XWiki.org, which are irrelevant to the question about authenticating users with access tokens.",
+    "Hallucination": "The score is 0.80 because the actual output lacks significant details mentioned in the context, such as the Reference Form, Questionnaire Form, AuthorizationSettler, ConfigurableClass objects, Menu application, Notifications, and Invitation. Although it correctly aligns with the context about token generation, the numerous omissions result in a high hallucination score."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

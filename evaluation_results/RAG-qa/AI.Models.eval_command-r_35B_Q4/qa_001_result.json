@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3416666666666666,
+  "individual_scores": {
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 0.8,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.75 because the answer partially addresses the issue but includes irrelevant links that do not directly resolve the problem with the 'Bell' in the top right corner or the 'Alert Notification' extension.",
+    "Faithfulness": "The score is 0.80 because the actual output incorrectly claims that the Menu application is in the top right corner, while the retrieval context does not provide any information about its location.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses features and extensions in XWiki but does not address enabling notifications in the `xwiki.properties` file. The second node talks about the 'What's New Application' for notifications but lacks information on enabling notifications in the `xwiki.properties` file. The third node lists notification preferences and macros but does not mention the `notifications.enabled` setting in the `xwiki.properties` file.",
+    "ContextualRecall": "The score is 0.50 because while the retrieval context's 3rd node mentions notifications, it does not provide details about setting `notifications.enabled` in `xwiki.properties` to `true`.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses various XWiki extensions and applications that are unrelated to the specific issue of the 'Bell' icon and the 'Alert Notification' extension.",
+    "Hallucination": "The score is 1.00 because the actual output lacks several key pieces of information present in the context, including details about the Menu application, Invitation application, the ability to install other extensions, the What's New Application, and specific notification preferences macros."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

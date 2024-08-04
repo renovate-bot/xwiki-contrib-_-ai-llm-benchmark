@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6861471861471862,
+  "individual_scores": {
+    "AnswerRelevancy": 0.5454545454545454,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.5714285714285714,
+    "ContextualRelevancy": 0.3333333333333333,
+    "Hallucination": 0.3333333333333333
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.55 because the answer includes several irrelevant URLs and statements about cookie settings that do not directly address the question about authenticating users with access tokens. However, it likely contains some relevant information, which is why it is not scored lower.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node in the first rank provides detailed information on the generation and required claims of the JWT token, which is essential for understanding how to authenticate users with access tokens. The irrelevant nodes in the second and third ranks discuss retrieving, updating, and deleting documents in a collection, and cookie protection levels and security strategies for failed login attempts, which do not directly address the question.",
+    "ContextualRecall": "The score is 0.57 because while the retrieval context supports the information about JWT tokens and their claims (sentences 1, 2, 3, and 4), it lacks details on configuring the authenticator, authorized applications, and user creation (sentences 5, 6, and 7).",
+    "ContextualRelevancy": "The score is 0.33 because the context discusses document management in a wiki system and various security strategies, but it does not address user authentication with access tokens.",
+    "Hallucination": "The score is 0.33 because the actual output aligns with the context regarding JWT tokens, cookie protection settings, and IP address encryption, but it fails to mention the document management endpoints and their functionalities, which is a significant part of the provided context."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

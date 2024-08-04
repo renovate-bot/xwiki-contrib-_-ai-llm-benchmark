@@ -1,0 +1,7 @@
+{
+  "score": 1.0,
+  "reason": "The Actual Output directly addresses the Input prompt by describing the beauty of nature and aligns with the Expected Output. The poem is coherent, logically flows, and maintains consistency throughout. It is grammatically correct and uses natural language. All key points and details of the Expected Output are covered appropriately.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

@@ -1,0 +1,7 @@
+{
+  "score": 0.9,
+  "reason": "The Actual Output addresses the Input prompt and aligns closely with the Expected Output, using technical language and maintaining coherence. Minor differences in phrasing exist but do not affect the overall meaning. The text is grammatically correct and uses natural language.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

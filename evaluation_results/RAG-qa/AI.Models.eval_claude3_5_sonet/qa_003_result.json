@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.4855072463768116,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9130434782608695,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.91 because the main response is highly relevant and addresses the question about enabling notifications for one's own actions in XWiki. However, the inclusion of unrelated links slightly detracts from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node 'provides links and descriptions of various notification-related macros and preferences but does not address how to enable notifications for one's own actions.'",
+    "ContextualRecall": "The score is 1.00 because the retrieval context perfectly matches the expected output, with all relevant information accurately reflected.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address how to enable notifications for one's own actions and instead discusses unrelated features and settings in XWiki.",
+    "Hallucination": "The score is 1.00 because the actual output fails to mention any of the key features and functionalities related to notifications and other applications in XWiki, as provided in the context. There are no contradictions, but the complete lack of alignment with the context results in a high hallucination score."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "fr"
+}

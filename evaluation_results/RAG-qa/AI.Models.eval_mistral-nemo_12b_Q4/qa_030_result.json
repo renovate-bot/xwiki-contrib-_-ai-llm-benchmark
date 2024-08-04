@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.2708333333333333,
+  "individual_scores": {
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 0.875,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.75 because the answer provides relevant information about configuring space permissions in XWiki, but it includes URLs that are not directly related to the specific question, which reduces its overall relevancy.",
+    "Faithfulness": "The score is 0.88 because the actual output incorrectly instructs to click on 'Espaces' in the 'Configuration' section, whereas the retrieval context states that the notion of space has been removed from the XWiki UI.",
+    "ContextualPrecision": "The score is 0.00 because the first node discusses the scope and display of configurations in XWiki administration, the second node explains the concept of spaces and sub-pages in XWiki, and the third node talks about XWiki's scalability, multi-tenancy, and clustering capabilities. None of these nodes directly address the setup of access controls for team spaces, which is the information needed.",
+    "ContextualRecall": "The score is 0.00 because none of the steps or details mentioned in the expected output are found in the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses configuration options, multi-tenancy, and clustering in XWiki, but does not address how to set team-specific visibility and modification permissions.",
+    "Hallucination": "The score is 1.00 because the actual output lacks several critical details mentioned in the factual alignments, including configuration display options, linkPrefix field, creation of pages and spaces, Terminal Pages, and XWiki's scalability, multi-tenancy, and clustering capabilities."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

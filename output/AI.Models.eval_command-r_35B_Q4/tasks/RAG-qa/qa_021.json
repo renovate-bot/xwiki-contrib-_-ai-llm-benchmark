@@ -1,0 +1,42 @@
+{
+  "id": "qa_021",
+  "prompt": "La cloche en haut \u00e0 droite n'est pas disponible, m\u00eame lorsque l'extension \"Notification d'alerte\" est install\u00e9e.",
+  "expected_answer": "Assurez-vous que les notifications sont activ\u00e9es dans votre wiki. Vous pouvez les activer en d\u00e9finissant la propri\u00e9t\u00e9 `notifications.enabled` dans `xwiki.properties` sur `true`.",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\nIl semble que vous parliez de la ic\u00f4ne de la cloche dans l'interface utilisateur XWiki. Selon les informations que j'ai trouv\u00e9es, cette ic\u00f4ne fait partie de l'extension \"Notifications application\", qui semble \u00eatre disponible dans XWiki. Cependant, le fait qu'elle ne s'affiche pas peut \u00eatre d\u00fb \u00e0 plusieurs raisons.  \n\nVoulez-vous que je vous indique comment activer l'extension ou bien vous avez besoin d'autre chose concernant les notifications de XWiki?",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/",
+      "content": "![text_list_bullets](https://www.xwiki.org/xwiki/resources/icons/silk/text_list_bullets.png?cache-version=1711538036000)\n\n[Menu](https://extensions.xwiki.org/xwiki/bin/view/Extension/Menu%20Application)  \nMenu application\n\n![bell](https://www.xwiki.org/xwiki/resources/icons/silk/bell.png?cache-version=1711538036000)\n\n[Notifications](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/)  \nDisplay notifications about events happening in the wiki.\n\n![invitation.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Invitation%20Application/invitation.png?rev=1.3)\n\n[Invitation](https://extensions.xwiki.org/xwiki/bin/view/Extension/Invitation%20Application)  \nAllows users to send emails, inviting friends and colleagues to join a wiki\n\n# Other Features\n\nOther features can be added to your wiki by [installing](https://extensions.xwiki.org/xwiki/bin/view/Extension/Extension%20Manager%20Application) extensions not listed above. Check the [Extensions wiki](https://extensions.xwiki.org/xwiki/bin/view/Main/) for a full list of available extensions.\n\n\n",
+      "similarity_score": 0.785148024559021,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.XWikiSyntax.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/",
+      "content": "| [notifications](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/Macro/NotificationsMacro) | Notifications | Notifications | Display notifications about events happened on the wiki. | Current Wiki |\n| [notificationsApplicationsPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsApplicationsPreferencesMacro) | Notifications Applications Preferences | Notifications | Display the preferences of the current user about notification applications. | Current Wiki |\n| [notificationsAutoWatchPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsAutoWatchPreferencesMacro) | Notifications Auto Watch Preferences | Notifications | Display the preferences of the current user about auto watched pages. | Current Wiki |\n| [notificationsCustomFiltersPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsCustomFiltersPreferencesMacro) | Notifications Custom Filters Preferences | Notifications | Display the preferences of the given user about custom notification filters. | Current Wiki |\n| [notificationsEmailPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsEmailPreferencesMacro) | Notifications Email Preferences | Notifications | Display the preferences of the current user about notification emails. | Current Wiki |\n| [notificationsFiltersPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsFiltersPreferencesMacro) | Notifications Filters Preferences (deprecated) | Notifications | Display the preferences of the current user about notification filters.This macro is now deprecated in favor of Custom Notifications Filters Preferences or System Notifications Filters Preferences. | Current Wiki |\n",
+      "similarity_score": 0.7806883454322815,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "### Follow a user\n\nIf you go to the [profile of an user](https://extensions.xwiki.org/xwiki/bin/view/Extension/User%20Profile%20Application), using the [User Index](https://extensions.xwiki.org/xwiki/bin/view/Extension/User%20Directory%20Application) for example, you can see decide to watching a user. It means you will receive all notifications about events triggered by this user.\n\n![watchUser01.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/watchUser01.png?rev=1.3)  \n![watchUser02.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/watchUser02.png?rev=1.3)  \n![watchUser03.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/watchUser03.png?rev=1.3)  \n![watchUser04.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/watchUser04.png?rev=1.3)\n\nIn your user profile, if you go to the &quot;network&quot; tab, you can see the list of users you are watching and the events that have performed:\n\n![FollowedUsers.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/FollowedUsers.png?rev=1.4)\n\n### Default Watch Settings\n\nXWiki &lt;15.5 By default for new users the whole wiki is watched. However, by default in this version, there&#x27;s no application type enabled for notifications, except specific ones like Mention. This means that new users won&#x27;t receive notifications, until they started to watch something and enabled some applciation types. There is a mechanism to automatically enable some application types whenever the users perform editions.\n\nXWiki 15.5+ Starting with this version, by default nothing is watched for new users. However, all application types are now enabled. So users will keep not receiving anything, until they started to watch something.\u00a0\n\n",
+      "similarity_score": 0.7800998687744141,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1483,
+    "completion_tokens": 108,
+    "total_tokens": 1591
+  },
+  "average_power_draw": 90.94567997977752,
+  "energy_consumption": 1778.5976824265326,
+  "energy_per_input_token": 1.0146022147327627,
+  "energy_per_output_token": 2.5365055368319065,
+  "energy_per_total_token": 1.117911805422082
+}

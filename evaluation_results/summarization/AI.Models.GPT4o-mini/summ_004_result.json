@@ -1,0 +1,10 @@
+{
+  "score": 0.7857142857142857,
+  "reason": "The score is 0.79 because the summary contains contradictions regarding the methods for upgrading the distribution and the specific instructions for upgrading XWiki, which are not mentioned in the original text. Additionally, the summary fails to answer a question about XWiki's migration paths that the original text can address.",
+  "score_breakdown": {
+    "Alignment": 0.7857142857142857,
+    "Coverage": 0.8
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3076923076923077,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8461538461538461,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.85 because the main response addresses the question about limiting attachment size and type effectively, but it includes irrelevant links about permission types and authentication, which are not directly related to the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'programming rights and security settings', the second node is about 'cookie protection levels and IP address usage', and the third node lists 'dependencies for an XWiki extension'. None of these nodes address file upload restrictions or MIME type settings, which are relevant to the input query.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses permissions, security settings, and extension dependencies, none of which address file upload restrictions.",
+    "Hallucination": "The score is 1.00 because the actual output lacks several key details mentioned in the context, such as programming rights, register rights, create wikis rights, script rights, protection levels, use of IP address, security strategies, and specific dependencies for the extension."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

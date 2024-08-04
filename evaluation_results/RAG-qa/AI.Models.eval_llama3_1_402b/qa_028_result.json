@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.29411764705882354,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7647058823529411,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.76 because while the answer provides relevant information about configuring file upload settings, it includes multiple irrelevant links to unrelated documentation, which detracts from its overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to configuring file upload restrictions. For example, the first node discusses 'programming rights and security settings in XWiki,' the second node is about 'cookie protection and authentication strategies,' and the third node lists 'dependencies for an extension.' These topics do not relate to the input query.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context provided is about programming rights, security settings, and other technical configurations in a wiki environment, which do not address the input question about file upload restrictions.",
+    "Hallucination": "The score is 1.00 because the actual output lacks multiple pieces of critical information that are present in the context, leading to a high level of factual misalignment."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

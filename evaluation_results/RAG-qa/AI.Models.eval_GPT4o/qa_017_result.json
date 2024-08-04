@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.35432098765432096,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9259259259259259,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.8
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.93 because the answer is mostly relevant and provides useful information about setting up group synchronization with an OpenID Connect provider. However, it includes some irrelevant details about scalability, performance features, and second-generation wiki features of XWiki, which are not directly related to the question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node provides general information about the OpenID Connect Authenticator and links to various resources, but it does not provide specific steps or details on configuring group synchronization. The second node discusses domain-based authentication and session cookie configuration, which is unrelated to the process of setting up group synchronization between XWiki and an OpenID Connect provider. The third node describes XWiki's scalability, multi-tenancy, and clustering features, which are not relevant to configuring group synchronization with an OpenID Connect provider.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not specifically address the process for synchronizing groups between XWiki and an OpenID Connect provider that supports group claims.",
+    "Hallucination": "The score is 0.80 because the actual output fails to include several key pieces of information that are the focus of the context, such as domain-based instance configuration, session cookies, scalability, multi-tenancy, clustering, first and second generation wikis, and dependencies for the OpenID Connect Authenticator extension. Although it provides a link to the installation instructions for the OpenID Connect Authenticator extension, this alone is insufficient to cover the context comprehensively."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

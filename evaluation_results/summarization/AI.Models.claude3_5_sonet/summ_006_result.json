@@ -1,0 +1,10 @@
+{
+  "score": 0.75,
+  "reason": "The score is 0.75 because the summary contains several contradictions regarding the location and purpose of resources and documentation, and it fails to mention if there is a link provided for creating a page. However, it does not include any extra information not mentioned in the original text.",
+  "score_breakdown": {
+    "Alignment": 0.75,
+    "Coverage": 0.8
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

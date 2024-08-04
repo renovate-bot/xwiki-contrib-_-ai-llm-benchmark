@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.2638888888888889,
+  "individual_scores": {
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 0.8333333333333334,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.75 because the answer addresses the main question about enabling notifications for one's own actions, but it includes irrelevant URLs that do not contribute to solving the issue.",
+    "Faithfulness": "The score is 0.83 because the actual output incorrectly states that 'Attachments Restriction' can be used to check or activate notifications for own activities, while the retrieval context specifies that it is for configuring mimetype restrictions.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses the AuthorizationSettler and its configurations, which is unrelated to notifications about one's own activity. The second node is about configuring blocked attachment mimetypes and does not address notifications or user activity. The third node focuses on the checkAccess() method for access control, which is not relevant to enabling notifications for one's own actions.",
+    "ContextualRecall": "The score is 0.00 because none of the nodes in the retrieval context mention anything about notifications, user activity, filter options, or user notification settings.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses topics like AuthorizationSettler, blocked attachment mimetypes, and access control, which are irrelevant to the input about enabling notifications for one's own actions.",
+    "Hallucination": "The score is 1.00 because the actual output does not align with any of the key elements described in the context, such as AuthorizationSettler, ConfigurationSource, RightDescription, blocked attachment mimetypes, or the checkAccess() method. Instead, it discusses unrelated topics like notification settings and administrative actions."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

@@ -1,0 +1,10 @@
+{
+  "score": 0.8888888888888888,
+  "reason": "The score is 0.89 because the summary contains minor contradictions and extra information not present in the original text, but overall it is still quite accurate and informative.",
+  "score_breakdown": {
+    "Alignment": 0.8888888888888888,
+    "Coverage": 1.0
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

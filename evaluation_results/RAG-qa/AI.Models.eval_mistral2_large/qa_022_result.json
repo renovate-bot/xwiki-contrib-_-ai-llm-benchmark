@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6259259259259259,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9444444444444444,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.6111111111111112,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.94 because the answer is highly relevant and addresses the issue of not receiving notifications, but the inclusion of an unrelated URL slightly detracts from its overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.61 because the first node is relevant and ranked correctly, but several irrelevant nodes such as the second node ('displaying user preferences for notification applications'), the third node ('auto watch preferences for notifications'), and the fourth node ('custom notification filters preferences') are ranked higher than the ninth node, which is relevant and discusses enabling notifications by editing the configuration variable.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are well-supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.20 because the context is too specific to email notifications and does not address the general issue of not receiving notifications, as highlighted by 'The context is too specific to email notifications and does not address the general issue of not receiving notifications.'",
+    "Hallucination": "The score is 1.00 because the actual output lacks several key details mentioned in the context, such as specific macros, email notification preferences, types of notifications, RSS feeds, and filtering modes."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

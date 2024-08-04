@@ -1,0 +1,10 @@
+{
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary contains contradictory information regarding the necessity and display of panels in XWiki. Additionally, the summary fails to address questions about editing pages with the WYSIWYG editor and exporting pages in PDF format.",
+  "score_breakdown": {
+    "Alignment": 0.8,
+    "Coverage": 0.6
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

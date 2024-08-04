@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.35833333333333334,
+  "individual_scores": {
+    "AnswerRelevancy": 0.15,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.15 because the majority of the statements in the actual output are irrelevant, nonsensical, or incomplete in the context of the question about enabling notifications for one's own actions.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant, as they do not provide information on enabling notifications for one's own actions. For example, the first node lists various notification preferences macros, the second node discusses email notifications and their configuration, and the third node explains pre-filtering and post-filtering of notifications.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are well-supported by the nodes in the retrieval context, indicating a perfect match.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses various notification preferences and technical details that do not address the user's query about enabling notifications for their own actions.",
+    "Hallucination": "The score is 1.00 because the actual output fails to mention several key points related to notifications, which are expected based on the context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5771825396825397,
+  "individual_scores": {
+    "AnswerRelevancy": 0.85,
+    "Faithfulness": 0.875,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 0.5714285714285714,
+    "ContextualRelevancy": 0.3333333333333333,
+    "Hallucination": 0.6666666666666666
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.85 because the main response addresses the question about authenticating users with access tokens, but the inclusion of unrelated URLs slightly detracts from the overall relevance.",
+    "Faithfulness": "The score is 0.88 because the actual output includes specific requirements for the 'iss' and 'aud' claims that are not mentioned in the retrieval context.",
+    "ContextualPrecision": "The score is 0.50 because the first node discusses the use of forms on XWiki.org and does not mention anything about user authentication or access tokens, and the third node is about various features and extensions available on XWiki, such as the Menu application and Notifications, and does not relate to user authentication or access tokens. However, the second node provides detailed information on the generation and requirements of JWT tokens, which is directly relevant to the question about authenticating users with access tokens.",
+    "ContextualRecall": "The score is 0.57 because while the 2nd node in the retrieval context aligns well with sentences about JWT token requirements and usage, it lacks information on setting properties in the `xwiki.properties` file, configuring authorized applications, and the limitations of the authenticator.",
+    "ContextualRelevancy": "The score is 0.33 because the context discusses form utilization on XWiki.org and various applications, which is irrelevant to the question about authenticating users with access tokens.",
+    "Hallucination": "The score is 0.67 because the actual output misses several key details mentioned in the context, such as the reference form, the process of adding a new reference, the menu application, notifications, invitation application, and other features. However, it correctly describes the process of generating a JWT token with an Ed25519 key using OpenSSL and the required claims for the token."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

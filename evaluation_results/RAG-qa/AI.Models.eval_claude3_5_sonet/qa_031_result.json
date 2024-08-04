@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6333333333333333,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.6,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 0.8
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.80 because the answer partially addresses the question about authenticating users with access tokens, but the repeated irrelevant URLs lower the score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first node provides detailed information about the JWT token requirements, which is essential for understanding how to authenticate users with access tokens. The subsequent nodes discuss topics such as retrieving documents from a collection, cookie protection and security strategies, domain-based instance authentication and OpenID Connect, and LDAP configuration for authentication, none of which are relevant to the use of access tokens for user authentication.",
+    "ContextualRecall": "The score is 0.60 because while some key details about JWT token requirements and usage are covered by nodes in the retrieval context, specific steps for enabling the token authenticator and configuring authorized applications, as well as limitations on user creation, are missing.",
+    "ContextualRelevancy": "The score is 0.20 because the context discusses API endpoints, security configurations, and LDAP authentication, none of which address the use of access tokens for user authentication.",
+    "Hallucination": "The score is 0.80 because the actual output misses several key details and functionalities mentioned in the context, such as returning a list of document IDs, 'remember me' cookie functionality, domain-based instance authentication, session cookie configuration, and LDAP authentication settings. Although there is alignment on the JWT token authentication, the numerous omissions contribute to a high hallucination score."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

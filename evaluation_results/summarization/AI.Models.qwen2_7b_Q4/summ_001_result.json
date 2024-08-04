@@ -1,0 +1,10 @@
+{
+  "score": 0.6923076923076923,
+  "reason": "The score is 0.69 because the summary includes incorrect information about the placement and functionalities of panels, and adds extra details about XWiki being a collaborative platform, enhancing user experience, and a reference to 'First Steps with XWiki' that are not mentioned in the original text.",
+  "score_breakdown": {
+    "Alignment": 0.6923076923076923,
+    "Coverage": 1.0
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.32142857142857145,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9285714285714286,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.93 because the output is mostly relevant and provides useful information, but the statement 'OIDC Provider Documentation:' is too vague and does not provide specific guidance relevant to configuring XWiki for automatic user account enabling.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'domain-based instances and session cookie configuration', which is unrelated to enabling user accounts upon their first login using OpenID Connect. The second node provides general information about OpenID Connect in XWiki, but does not address the specific configuration needed. The third node lists dependencies for the OpenID Connect extension, which is not relevant to the required configuration.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention adjusting the `xwiki.properties` file, adding or updating the specific property `oidc.enableUser=true`, or any instructions related to enabling user accounts on first login using OpenID Connect.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses domain-based authentication, session cookie configuration, and bypassing OpenID Connect, none of which address the specific configuration needed for automatic user account enabling in XWiki using OpenID Connect.",
+    "Hallucination": "The score is 1.00 because the actual output lacks crucial information about domain-based instance configuration, session cookie configuration, prerequisites, installation instructions, and specific dependencies for the OpenID Connect Authenticator, indicating a high level of hallucination."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

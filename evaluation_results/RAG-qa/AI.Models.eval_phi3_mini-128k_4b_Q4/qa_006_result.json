@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5444444444444444,
+  "individual_scores": {
+    "AnswerRelevancy": 0.3333333333333333,
+    "Faithfulness": 1,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.6,
+    "ContextualRelevancy": 0.3333333333333333,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.33 because the output contains multiple irrelevant statements that do not address the question about customizing user profile fields from the OpenID Connect provider in XWiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node in the first rank mentions 'It's possible to associate non standard properties coming from the OpenID Connect provider with the XWiki user' and provides an example of how to map custom properties using `oidc.user.mapping`, while the irrelevant nodes in the second and third ranks are about configuring domain-based authentication and group synchronization, template customization, and event listeners, which are not directly related to mapping additional user profile fields from the OpenID Connect provider.",
+    "ContextualRecall": "The score is 0.60 because while the initial explanation and example mapping are well-supported by the 1st node in the retrieval context, the instructions to replace placeholders and restart XWiki are not directly found in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.33 because the context discusses domain-based authentication and session cookie configuration, which are not relevant to customizing or mapping additional user profile fields from the OpenID Connect provider to XWiki user properties.",
+    "Hallucination": "The score is 1.00 because the actual output lacks information on multiple key aspects described in the context, such as suffixes, variable syntax, domain-based instance authentication, session cookie configuration, group synchronization, customization, and troubleshooting."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6597222222222223,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9583333333333334,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.6,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 0.8
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.96 because the answer is highly relevant and addresses the question about customizing user profile fields from the OpenID Connect provider. However, it includes an irrelevant statement about the LDAP Authenticator, which slightly detracts from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node, which mentions 'It's possible to associate non standard properties coming from the OpenID Connect provider with the XWiki user' and provides an example of how to map these properties using the `oidc.user.mapping` property, is ranked first. The irrelevant nodes, which discuss topics such as authentication with a domain-based instance, group synchronization, group mappings, and LDAP configurations, are ranked lower.",
+    "ContextualRecall": "The score is 0.60 because while some sentences in the expected output can be attributed to nodes in the retrieval context (e.g., mapping user profile fields and example mappings), other sentences such as instructions for replacing placeholders and restarting XWiki are not explicitly covered in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.20 because the context discusses domain-based authentication, group synchronization, and LDAP configuration, which are not relevant to customizing user profile fields from an OpenID Connect provider in XWiki.",
+    "Hallucination": "The score is 0.80 because the actual output lacks several specific details mentioned in the context, such as configuring the session cookie domain, group synchronization details, required user groups, and LDAP configuration. However, it correctly aligns with the context regarding the association of non-standard properties using the oidc.user.mapping property."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

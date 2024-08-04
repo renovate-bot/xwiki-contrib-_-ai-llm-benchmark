@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.7931818181818183,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9333333333333333,
+    "Faithfulness": 0.9166666666666666,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.9090909090909091,
+    "ContextualRelevancy": 0.6666666666666666,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.93 because the response is mostly relevant and helpful, but it includes a link to XWiki Syntax documentation, which is not directly related to the issue of receiving notifications in XWiki.",
+    "Faithfulness": "The score is 0.92 because the actual output incorrectly claims that 'Share Page by mail' is relevant for notifications, while the retrieval context clarifies it is for sending a page by mail to someone.",
+    "ContextualPrecision": "The score is 0.33 because the first two nodes discuss unrelated aspects of notifications, such as the What's New Application and notification-related macros, which should be ranked lower than the third node that directly addresses enabling and managing notifications in XWiki.",
+    "ContextualRecall": "The score is 0.91 because the retrieval context covers most aspects of the expected output, especially regarding notifications and user preferences, but it lacks specific details about 'xwiki.properties' and the 'notifications.enabled' setting.",
+    "ContextualRelevancy": "The score is 0.67 because the context only provides information about the 'What's New Application' in XWiki and does not address issues related to not receiving notifications in XWiki.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments and multiple contradictions indicating that the actual output does not align with the provided context."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

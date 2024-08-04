@@ -1,0 +1,10 @@
+{
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary contradicts the original text by mentioning a link to Step 1: Creating a page, which is not in the original text. Additionally, the summary fails to answer questions about a link to the Developer's Guide and pre-installed applications for developers.",
+  "score_breakdown": {
+    "Alignment": 0.8,
+    "Coverage": 0.6
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

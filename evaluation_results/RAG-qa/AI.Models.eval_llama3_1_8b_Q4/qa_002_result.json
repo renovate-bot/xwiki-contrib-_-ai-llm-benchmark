@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.4594017094017095,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9230769230769231,
+    "Faithfulness": 0.875,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.625,
+    "ContextualRelevancy": 0.3333333333333333,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the answer is mostly relevant and helpful, but it includes a link to XWiki Syntax documentation, which is not relevant to the issue of not receiving notifications.",
+    "Faithfulness": "The score is 0.88 because the actual output incorrectly states that the `notifications` macro can be used to check notification preferences, while the retrieval context clarifies that it is used to display notifications about events on the wiki.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node describes the What's New Application, the second node lists various notification-related macros, and the third node provides an overview of different ways to receive notifications, but none explain how to enable notifications or subscribe to pages or users.",
+    "ContextualRecall": "The score is 0.62 because while the retrieval context covers subscribing to pages or users, watching pages or wikis, and receiving notifications about user events, it lacks information about enabling notifications via `xwiki.properties` and the 'network' tab in the user profile.",
+    "ContextualRelevancy": "The score is 0.33 because the context only provides information about the 'What's New Application' in XWiki and does not address the issue of not receiving notifications in XWiki.",
+    "Hallucination": "The score is 1.00 because the actual output lacks significant information about the 'What's New Application', various notification preferences macros, and different notification methods in XWiki, leading to a complete misalignment with the provided context."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

@@ -1,0 +1,7 @@
+{
+  "score": 1.0,
+  "reason": "The Actual Output directly addresses the Input prompt by generating a news article about a recent scientific discovery. It aligns with the Expected Output by summarizing a groundbreaking scientific finding. The ideas are logically connected, and the language is smooth and grammatically correct, ensuring overall readability.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

@@ -1,0 +1,10 @@
+{
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary includes extra information not mentioned in the original text about XWiki providing an example on how to implement a custom RSS feed in its documentation.",
+  "score_breakdown": {
+    "Alignment": 0.8,
+    "Coverage": 1.0
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

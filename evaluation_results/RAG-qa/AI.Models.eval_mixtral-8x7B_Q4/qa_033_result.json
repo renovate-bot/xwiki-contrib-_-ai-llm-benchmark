@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.4523809523809524,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7142857142857143,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0,
+    "Hallucination": 0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.71 because the main content addresses the question about authenticating users with access tokens, but there are irrelevant statements that do not contribute to answering the query directly.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because there were no relevant nodes in the retrieval context.",
+    "ContextualRecall": "The score is 0.00 because there is no retrieval context provided to attribute any sentence in the expected output.",
+    "ContextualRelevancy": "The score is 0.00 because there are no reasons provided for irrelevancy.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments or contradictions, indicating no hallucinations."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

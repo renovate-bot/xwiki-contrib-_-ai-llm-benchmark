@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.7666666666666667,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.6,
+    "ContextualRelevancy": 0.3333333333333333,
+    "Hallucination": 0.3333333333333333
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and directly addresses the question about customizing user profile fields from the OpenID Connect provider in XWiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node in the first rank provides an example of how to map custom properties using the `oidc.user.mapping` property, which directly addresses the input question. The irrelevant nodes discuss domain-based authentication, session cookie configuration, and group synchronization, which are not related to customizing user profile fields from the OpenID Connect provider.",
+    "ContextualRecall": "The score is 0.60 because while the 5th node in the retrieval context supports the mapping example sentences (2 and 3), it lacks details on replacing property names (sentence 4) and the final configuration steps (sentence 5).",
+    "ContextualRelevancy": "The score is 0.33 because the context discusses domain-based authentication, session cookie configuration, and bypassing OpenID Connect, but does not address customizing or mapping user profile fields from the OpenID Connect provider to XWiki user properties.",
+    "Hallucination": "The score is 0.33 because the actual output misses specific details about authentication with a domain-based instance and the configuration of session cookies, which are crucial for complete alignment with the context. However, it correctly describes the use of `oidc.user.mapping` and `oidc.groups.mapping` properties, aligning with the context in those aspects."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

@@ -1,0 +1,7 @@
+{
+  "score": 0.9,
+  "reason": "The Actual Output addresses the Input prompt and maintains relevance. It extracts the key information correctly and aligns with the Expected Output in terms of key points. The logical flow and consistency are maintained. However, the format differs slightly from the Expected Output.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

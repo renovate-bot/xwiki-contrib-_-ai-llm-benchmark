@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.695959595959596,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9090909090909091,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.6,
+    "ContextualRelevancy": 0.3333333333333333,
+    "Hallucination": 0.6666666666666666
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.91 because the answer is mostly relevant and addresses the question about customizing user profile fields from the OpenID Connect provider. However, it includes a URL that does not directly address the specific query about mapping additional user profile fields, which slightly detracts from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node is ranked first and directly relates to mapping custom properties from the OpenID Connect provider, while the irrelevant nodes discussing domain-based authentication, session cookie configuration, and group synchronization are ranked lower.",
+    "ContextualRecall": "The score is 0.60 because while the retrieval context supports the ability to map custom properties and provides examples, it lacks details on replacing property names and the steps to save and restart XWiki.",
+    "ContextualRelevancy": "The score is 0.33 because the context focuses on authentication configuration and group synchronization, which are not related to customizing or mapping user profile fields from an OpenID Connect provider to XWiki user properties.",
+    "Hallucination": "The score is 0.67 because the actual output lacks crucial details about domain-based instance authentication, session cookie configuration, and group synchronization, which are present in the context. However, it correctly aligns with the context regarding the oidc.user.mapping configuration option."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

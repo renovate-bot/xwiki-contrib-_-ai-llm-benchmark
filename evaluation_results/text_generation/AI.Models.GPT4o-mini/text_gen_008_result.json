@@ -1,0 +1,7 @@
+{
+  "score": 1.0,
+  "reason": "The Actual Output directly addresses the Input prompt by providing a detailed travel guide for Kyoto, Japan, which aligns with the Expected Output. It is coherent, logically structured with sections on attractions, cuisine, and accommodations, and uses fluent, natural language.",
+  "prompt_language": "ro",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

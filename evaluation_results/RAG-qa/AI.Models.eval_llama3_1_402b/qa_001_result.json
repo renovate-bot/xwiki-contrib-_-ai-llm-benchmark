@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.4694444444444444,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9,
+    "Faithfulness": 0.9166666666666666,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.90 because the provided URLs are not directly addressing the issue of the missing 'Bell' icon, which slightly detracts from the overall relevance. However, the rest of the response is highly relevant and helpful.",
+    "Faithfulness": "The score is 0.92 because the claim about the 'Notifications Application' extension providing the bell icon and notification functionality is not supported by the retrieval context.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses the Menu application and other features but does not address enabling notifications, and the second node discusses the 'What's New Application' without providing information on enabling notifications.",
+    "ContextualRecall": "The score is 1.00 because the expected output perfectly aligns with the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.00 because the context includes irrelevant information such as 'Menu application', 'Invitation', and 'Other features can be added to your wiki by installing extensions not listed above', which do not pertain to the availability of the 'Bell' icon or the 'Alert Notification' extension in XWiki.",
+    "Hallucination": "The score is 1.00 because the actual output fails to include multiple key details mentioned in the context, such as the Menu application, the Invitation application, the 'What's New Application', notification preferences macros, dependencies for the notifications extension, and details about email notifications and grace time for live email notifications. There are no contradictions, but the significant omissions result in a high hallucination score."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

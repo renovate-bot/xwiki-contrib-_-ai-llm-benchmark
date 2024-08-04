@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3333333333333333,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9,
+    "Faithfulness": 0.9,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.8
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.90 because the majority of the answer is relevant to customizing and mapping user profile fields from an OpenID Connect provider, but there are a couple of irrelevant links about scalability, performance, and database support features in XWiki.",
+    "Faithfulness": "The score is 0.90 because the actual output incorrectly suggests editing the `xwiki.properties` file for OpenID Connect configuration, which is not mentioned in the retrieval context.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'authentication with a domain-based instance and session cookie configuration,' which is not related to customizing user profile fields from an OpenID Connect provider. Similarly, the second node provides 'general information about the OpenID Connect Authenticator,' but does not address how to customize user profile fields. These irrelevant nodes should be ranked lower.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses domain-based authentication, session cookie configuration, and bypassing OpenID Connect, but it does not address customizing user profile fields or mapping additional user profile fields from an OpenID Connect provider to XWiki user properties.",
+    "Hallucination": "The score is 0.80 because the actual output lacks several key pieces of information that are present in the context, such as session cookie configuration, scalability features, relational database support, and dependencies for the OpenID Connect Authenticator extension. Additionally, there is a contradiction where the output provides a link to documentation that is relevant, but this does not sufficiently cover the missing details."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

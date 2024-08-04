@@ -1,0 +1,42 @@
+{
+  "id": "qa_010",
+  "prompt": "We have one space per team. I want all teams to be able to view all spaces but each team should only be able to edit their own space. How can I configure this in XWiki?",
+  "expected_answer": "To achieve the desired access control, you can follow these steps:\n\n1. **Create groups for each team**: Create a separate group for each team in your XWiki instance. This will allow you to manage access rights for each team individually.\n2. **Set wiki-wide rights**: Go to the wiki administration page and set the rights for the entire wiki. Specifically, set the \"View\" right to \"Allow\" for \"XWikiAllGroup\" to allow everyone to view all spaces.\n3. **Set space-level rights**: For each team's space, go to the space administration page and set the rights for that space. Specifically, set the \"Edit\" right to \"Allow\" only for the corresponding team's group. This will allow only the members of that team to edit their own space.\n4. **Inherit rights for child pages**: When setting rights for a space, make sure to select the \"Rights: Page & Children\" option to inherit the rights for all child pages within that space.\n\nBy following these steps, you'll ensure that:\n\n* All teams can view all spaces.\n* Each team can only edit their own space.\n\nRemember to adjust the rights accordingly for any additional teams or spaces you may have in your XWiki instance.",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ContentOrganization/NestedPagesMigration/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Exports \n\n\nTo achieve this setup in XWiki, you'll need to leverage XWiki's access control features. Here's a general guide:\n\n1. **Spaces:**  Create a separate space for each team.\n\n2. **Groups:** Create groups representing each team in XWiki's administration interface.\n\n3. **Permissions:**\n\n   * **Read Access:** Grant \"Read\" permissions to all groups on all spaces. This ensures all teams can view all spaces.\n   * **Write Access:** Grant \"Write\" permissions to each team's corresponding group only within their dedicated space. This restricts editing to each team's own space.\n\n4. **User Assignment:** Add team members to their respective groups.\n\n**Important Notes:**\n\n* **Admin Control:**  You'll likely need administrator privileges to create groups, spaces, and manage permissions.\n* **XWiki Documentation:** Refer to XWiki's official documentation for detailed instructions on configuring access control and groups: [https://www.xwiki.org/xwiki/bin/view/Documentation/](https://www.xwiki.org/xwiki/bin/view/Documentation/) \n\n\n\n\nLet me know if you have any more questions.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.ContentOrganization.NestedPagesMigration.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ContentOrganization/NestedPagesMigration/",
+      "content": "Every time a user creates a page from the XWiki UI, he now actually creates a space (without knowing it ![emoticon_wink](https://www.xwiki.org/xwiki/resources/icons/silk/emoticon_wink.png?cache-version=1711538036000)) with its WebHome page. It means that all user-created page are called WebHome.\u00a0\n\nThen, when the user wants to create a sub-page, for example FrankCapra\u00a0inside the page Directors.WebHome, he actually creates a new space inside the space Directors with its WebHome page: Directors.FrankCapra.WebHome. That&#x27;s how we emulate it.\n\nThe notion of space has been removed from the UI. It&#x27;s not mentioned anywhere, anymore. Everything seems to work as if we were really creating sub-pages, even if under the hood, we create sub-spaces.\n\nThat emulation should be temporary. At some point we&#x27;d like to refactor the core model of XWiki and discard the concept of spaces to only keep pages. Don&#x27;t hold your breath though, this may be several years in the coming ![emoticon_wink](https://www.xwiki.org/xwiki/resources/icons/silk/emoticon_wink.png?cache-version=1711538036000)\n\nNote that users still have the ability to create pages that are not named WebHome. As a consequence, such pages (that are not the &quot;WebHome&quot; of their space) cannot have sub-pages. They&#x27;re called **Terminal Pages**.\n\n",
+      "similarity_score": 0.8353230953216553,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.ContentOrganization.NestedPagesMigration.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ContentOrganization/NestedPagesMigration/",
+      "content": "### Execute the plan\n\nWhen you are ready, you can execute the plan.\n\n![PlanExecuting.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/ContentOrganization/NestedPagesMigration/WebHome/PlanExecuting.png?rev=1.1)\n\n* Be patient. The process could be very long. It will use a lot of server resources, so we recommend to don&#x27;t let users access the wiki during the process. (For example, you can temporary forbid remote connections to your servlet container and access XWiki through an SSH tunnel for yourself.)\n* Since all logs are displayed in the page, even the browser can became slow. Note that we have experienced better performances using Chrome instead of Firefox.\n* Some OutOfMemory errors could happen. To avoid them, we recommend to give a lot of memory to your XWiki instance during the execution of the migration.\n* To minimize migration time, we recommend that you ensure that the Solr queue is empty before starting the migration. You can check Solr queue on the Wiki administration&gt;&gt;Solr Search Section, see [documentation](https://extensions.xwiki.org/xwiki/bin/view/Extension/Solr%20Search%20Application#HSearchAdministrationSection).\n**We highly recommend to perform migration tests on a staging server before doing it on a production instance.**\n\n",
+      "similarity_score": 0.8294106721878052,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Exports",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Exports",
+      "content": "## XAR Export\n\nThe XAR export allows exporting pages in the internal XML format used by XWiki. This is the format that you can use to [Import/Export](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/ImportExport) pages and applications into/from XWiki instances.\n\nMultipage XAR export is supported, so if the current page is nested then the Export Tree Modal is shown upon selecting the XAR format. From there you can chose the child pages that you want to export along with the current page. You can filter the tree to exclude extension pages (e.g. *Created pages*,\u00a0*Created and modified pages* or\u00a0*All pages*). Check out the [Administration Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application#HExport) for more information about the export tree.\n\nNaturally, this tree is not displayed if the current page is terminal, which means it cannot have children.\n\nNotes:\n\n* The &quot;XAR&quot; export format option will only appear if you are logged in with an admin user.\n* To import back a XAR file, you also need to be an admin user and use the [Import section in Administration](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/ImportExport)\n\n",
+      "similarity_score": 0.8103833198547363,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1178,
+    "completion_tokens": 253,
+    "total_tokens": 1431
+  },
+  "average_power_draw": 215.6044202898551,
+  "energy_consumption": 698.3448425699319,
+  "energy_per_input_token": 0.38571932757245614,
+  "energy_per_output_token": 0.9642983189311404,
+  "energy_per_total_token": 0.4880117697903088
+}

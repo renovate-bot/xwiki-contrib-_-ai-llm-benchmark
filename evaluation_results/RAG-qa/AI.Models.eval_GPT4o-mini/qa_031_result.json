@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6333333333333333,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.6,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 0.8
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.80 because the answer is mostly relevant but includes URLs that are not directly related to authenticating users with access tokens.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node is ranked first, and all irrelevant nodes are ranked lower, ensuring high contextual precision.",
+    "ContextualRecall": "The score is 0.60 because while the retrieval context covers the general concept of token-based authentication and JWT tokens, it lacks specific details on enabling the token authenticator, configuring authorized applications, and the limitation regarding user creation or updating.",
+    "ContextualRelevancy": "The score is 0.20 because the context discusses various authentication methods and configurations unrelated to access tokens, such as LDAP, cookies, and Kerberos SSO.",
+    "Hallucination": "The score is 0.80 because the actual output fails to mention several key aspects from the provided context, such as returning a list of document IDs, 'remember me' cookie functionality, domain-based instance authentication, session cookie configuration, and LDAP configuration. However, it does correctly align with the context regarding the JWT token expectations."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

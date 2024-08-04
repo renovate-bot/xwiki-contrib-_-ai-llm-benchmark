@@ -1,0 +1,7 @@
+{
+  "score": 0.5,
+  "reason": "The Actual Output addresses the topic of a space adventure and is coherent and fluent, but it diverges significantly from the Expected Output by focusing on a single character's journey rather than a group of astronauts exploring a new planet.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

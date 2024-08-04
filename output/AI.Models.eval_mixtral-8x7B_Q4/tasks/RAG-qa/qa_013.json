@@ -1,0 +1,17 @@
+{
+  "id": "qa_013",
+  "prompt": "Ich erhalte keine Benachrichtigungen \u00fcber meine eigene Aktivit\u00e4t. Wie kann ich Benachrichtigungen f\u00fcr meine eigenen Aktionen aktivieren?",
+  "expected_answer": "Standardm\u00e4\u00dfig erh\u00e4lt man keine Benachrichtigungen \u00fcber die eigene Aktivit\u00e4t (es sei denn, das Ereignis, das die Benachrichtigung ausl\u00f6st, richtet sich explizit an diesen Benutzer). Sie haben die M\u00f6glichkeit, diesen Filter in den \"Erweiterten Filteroptionen\" Ihrer eigenen Benachrichtigungseinstellungen in Ihrem Benutzerprofil zu deaktivieren.",
+  "ai_answer": "\n\n It seems that the provided information is not relevant to your question. However, I can still try to help you with your issue using my general knowledge.\n\nTo answer your question, generally, it's not possible to enable notifications for your own activities, as they are actions that you have already performed and therefore don't require notification. Notification systems are designed to alert you about new or recent events or updates, rather than past activities.\n\nHowever, if you're working with a specific application or platform and want to receive reminders or alerts for your own tasks or deadlines, you might be able to set those up within the app itself. The exact process will depend on the particular application or platform you're using. If you provide more details about the system you're working with, I might be able to give a more specific answer.",
+  "sources": [],
+  "usage": {
+    "prompt_tokens": 128,
+    "completion_tokens": 178,
+    "total_tokens": 306
+  },
+  "average_power_draw": 68.93326877470355,
+  "energy_consumption": 878.5204165128945,
+  "energy_per_input_token": 1.5331944441760812,
+  "energy_per_output_token": 3.832986110440203,
+  "energy_per_total_token": 2.8709817533101125
+}

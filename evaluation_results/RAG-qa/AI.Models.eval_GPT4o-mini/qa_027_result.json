@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.4039682539682539,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8571428571428571,
+    "Faithfulness": 0.9166666666666666,
+    "ContextualPrecision": 0.25,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.6
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.86 because the main content addresses the group synchronization configuration with OpenID Connect, but the inclusion of irrelevant links about Scalability, Office Importer, and Database Support features in XWiki prevents it from being higher.",
+    "Faithfulness": "The score is 0.92 because the actual output incorrectly claims that you need to specify the OIDC provider parameters in the `xwiki.cfg` file, whereas the retrieval context states that the OIDC authenticator does not rely on the property xwiki.authentication.cookiedomains in xwiki.cfg.",
+    "ContextualPrecision": "The score is 0.25 because the relevant node in the fourth rank discusses the OpenID Connect authenticator and provides links to configuration guides, which are pertinent to the input query. However, irrelevant nodes in the first, second, third, and fifth ranks discuss topics such as XWiki's scalability, authentication with a domain-based instance, configuring the OpenOffice server, and database support, which are not related to configuring group synchronization with OpenID Connect.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses topics like XWiki's scalability, multi-tenancy, clustering, domain-based authentication, and OpenOffice server configuration, none of which address the process of configuring group synchronization with an OpenID Connect provider.",
+    "Hallucination": "The score is 0.60 because the actual output focuses solely on the OpenID Connect configuration and omits several key features mentioned in the context, such as multi-tenancy, clustering, OpenOffice server configuration, relational database support, and programming features. This selective focus leads to a significant amount of missing information, resulting in a higher hallucination score."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

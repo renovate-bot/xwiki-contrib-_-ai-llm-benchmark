@@ -1,7 +1,0 @@
-{
-  "score": 0.2,
-  "reason": "The Actual Output addresses the topic but does not match the structure and format of the Expected Output. It includes unnecessary source information and lacks the required JSON format.",
-  "prompt_language": "en",
-  "expected_answer_language": "en",
-  "generated_text_language": "en"
-}

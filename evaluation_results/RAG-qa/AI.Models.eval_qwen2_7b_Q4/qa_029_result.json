@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5388888888888889,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.9,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant and there are no irrelevant statements. Great job!",
+    "Faithfulness": "The score is 0.90 because the claim incorrectly suggests that programming rights can be denied to a space administrator, whereas the retrieval context specifies that programming rights are managed through the wiki preferences page or the main wiki in a multi-wiki environment.",
+    "ContextualPrecision": "The score is 0.33 because the relevant node (third node) is ranked lower than irrelevant nodes (first, second, and fourth nodes). The first node discusses 'Color Themes and access rights for unregistered users,' which is not relevant. The second node explains 'various rights such as comment, edit, and delete,' but does not address the specific issue. The fourth node discusses 'programming rights, register rights, and create wikis rights,' but does not specifically address the issue.",
+    "ContextualRecall": "The score is 1.00 because the expected output is perfectly supported by the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.00 because the context primarily discusses Color Themes, icon fonts, and general access rights management in XWiki, which are irrelevant to refusing script rights to a space administrator.",
+    "Hallucination": "The score is 1.00 because the actual output fails to align with the provided contexts, omitting key details about Color Themes, icon fonts, Forgot Username/Password functionality, comment, edit, delete, administration rights, and detailed aspects of programming rights. There are no contradictions, but the lack of coverage on these topics results in a high hallucination score."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

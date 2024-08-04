@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.30666666666666664,
+  "individual_scores": {
+    "AnswerRelevancy": 0.84,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.84 because the main issue of not receiving notifications is addressed, but the inclusion of multiple irrelevant URLs lowers the score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'blocked attachment mimetypes and their configuration,' which is unrelated to notification settings. Similarly, the second node is about 'cookie protection levels and IP address usage,' which does not pertain to notification settings.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses technical details about XWiki configurations, which are irrelevant to the input 'Ich erhalte keine Benachrichtigungen.'",
+    "Hallucination": "The score is 1.00 because the actual output lacks multiple critical pieces of information that are present in the factual alignments, such as defining blocked attachment mimetypes, configuring mimetype restrictions, protection levels for 'remember me' cookies, authentication strategies for failed logins, and various rights and settings. There are no contradictions, but the omissions are significant."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

@@ -107,25 +107,25 @@
     "RAG-qa": [
       {
         "id": "qa_001",
-        "prompt": "The \"Bell\" in the top right corner is not available, also not when the \"Alert Notification\" extension is installed.",
+        "prompt": "In the context of XWiki the \"Bell\" in the top right corner is not available, also not when the \"Alert Notification\" extension is installed.",
         "expected_answer": "Make sure that notifications are enabled in your wiki. You can enable them by setting the `notifications.enabled` setting in `xwiki.properties` to `true`.",
         "data_path": null
       },
       {
         "id": "qa_002",
-        "prompt": "I'm not receiving any notifications.",
+        "prompt": "I'm not receiving any notifications in XWiki.",
         "expected_answer": "Make sure that notifications are enabled. You can enable them by setting the `notifications.enabled` setting in `xwiki.properties` to `true`. Further, ensure that you're subscribed to the pages or users you want to receive notifications for. You can watch a page, a page and its children, or an entire wiki. To watch a location, all you need is to go to that place, and then click on the \"alert\" menu (represented by a bell) and enable the desired notifications. To follow a user, if you go to the profile of an user, using the User Index for example, you can see decide to watching a user. It means you will receive all notifications about events triggered by this user. In your user profile, if you go to the \"network\" tab, you can see the list of users you are watching and the events that have been performed by them.",
         "data_path": null
       },
       {
         "id": "qa_003",
-        "prompt": "I am not receiving notifications about my own activity. How can I enable notifications for my own actions?",
+        "prompt": "In the context of XWiki I am not receiving notifications about my own activity. How can I enable notifications for my own actions?",
         "expected_answer": "By default, one don't receive notification about one's own activity (unless the event that triggered the notification targets explicitly that user). You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings in your user profile.",
         "data_path": null
       },
       {
         "id": "qa_004",
-        "prompt": "I'm receiving lot's of notifications about all kinds of pages I'm not interested in. These seem to have been enabled automatically. How can I disable these notifications?",
+        "prompt": "In the context of XWiki I'm receiving lot's of notifications about all kinds of pages I'm not interested in. These seem to have been enabled automatically. How can I disable these notifications?",
         "expected_answer": "By default, a page where you have made a major modification is automatically added to the list of pages you watch. It means you will be notified about changes on your work. You can change the setting for \"Automatic page watching\" in the notification settings in your user profile. You can delete existing notification filters that were created this way in the \"Custom Filters\" list in the notification settings in your user profile.",
         "data_path": null
       },
@@ -283,6 +283,24 @@
         "id": "qa_030",
         "prompt": "Nous avons un espace par équipe. Je veux que toutes les équipes puissent voir tous les espaces, mais chaque équipe ne devrait pouvoir modifier que son propre espace. Comment puis-je configurer cela dans XWiki?",
         "expected_answer": "Pour atteindre le contrôle d'accès souhaité, vous pouvez suivre ces étapes:\n\n1. **Créer des groupes pour chaque équipe**: Créez un groupe séparé pour chaque équipe dans votre instance XWiki. Cela vous permettra de gérer les droits d'accès pour chaque équipe individuellement.\n2. **Définir des droits au niveau du wiki**: Allez sur la page d'administration du wiki et définissez les droits pour l'ensemble du wiki. En particulier, définissez le droit \"Afficher\" sur \"Autoriser\" pour \"XWikiAllGroup\" pour permettre à tous de voir tous les espaces.\n3. **Définir des droits au niveau de l'espace**: Pour chaque espace d'équipe, allez sur la page d'administration de l'espace et définissez les droits pour cet espace. En particulier, définissez le droit \"Modifier\" sur \"Autoriser\" uniquement pour le groupe d'équipe correspondant. Cela permettra uniquement aux membres de cette équipe de modifier leur propre espace.\n4. **Hériter des droits pour les pages enfants**: Lorsque vous définissez des droits pour un espace, assurez-vous de sélectionner l'option \"Droits: Page & Enfants\" pour hériter des droits pour toutes les pages enfants à l'intérieur de cet espace.\n\nEn suivant ces étapes, vous vous assurez que:\n\n* Toutes les équipes peuvent voir tous les espaces.\n* Chaque équipe ne peut modifier que son propre espace.\n\nN'oubliez pas d'ajuster les droits en conséquence pour tous les équipes ou espaces supplémentaires que vous pourriez avoir dans votre instance XWiki.",
+        "data_path": null
+      },
+      {
+        "id": "qa_031",
+        "prompt": "Can I authenticate users with access tokens?",
+        "expected_answer": "Yes, you can authenticate users with access tokens using the Token-based authentication for the LLM Application extension.\n\nThis extension allows external applications to authenticate users with signed JSON Web Tokens (JWT). The token needs to contain specific claims, such as expiration time, issuer, subject, and audience, and must be signed with an Ed25519 key.\n\nTo use this authenticator, you need to:\n\n1. Enable the token authenticator by setting the `xwiki.authentication.authclass` property in `xwiki.properties` file to `org.xwiki.contrib.llm.authentication.JWTTokenAuth`.\n2. Configure the authorized applications by adding a new entry to the \"Authorized Applications\" list, specifying the application's title, URL, public key, and group format.\n3. Generate a JWT token that meets the required claims and signing key requirements.\n4. Include the token in the \"Authorization\" header of the request in the form \"Bearer TOKEN\".\n\nNote that this authenticator only supports creating or updating users based on the information provided in the token and does not support using a token as authentication for an existing user that hasn't been created through this authenticator.",
+        "data_path": null
+      },
+      {
+        "id": "qa_032",
+        "prompt": "Kann ich Benutzer mit Zugriffstoken authentifizieren?",
+        "expected_answer": "Ja, Sie können Benutzer mit Zugriffstoken mithilfe der Token-basierten Authentifizierung für die LLM-Anwendung (BETA)-Erweiterung authentifizieren.\n\nDiese Erweiterung ermöglicht es externen Anwendungen, Benutzer mit signierten JSON Web Tokens (JWT) zu authentifizieren. Der Token muss bestimmte Ansprüche enthalten, wie Ablaufzeit, Aussteller, Betreff und Zielgruppe, und muss mit einem Ed25519-Schlüssel signiert sein.\n\nUm diesen Authentifizierer zu verwenden, müssen Sie:\n\n1. Den Token-Authentifizierer aktivieren, indem Sie die Eigenschaft `xwiki.authentication.authclass` in der Datei `xwiki.properties` auf `org.xwiki.contrib.llm.authentication.JWTTokenAuth` setzen.\n2. Die autorisierten Anwendungen konfigurieren, indem Sie einen neuen Eintrag zur Liste der „Autorisierten Anwendungen“ hinzufügen, wobei Sie den Titel, die URL, den öffentlichen Schlüssel und das Gruppenformat der Anwendung angeben.\n3. Ein JWT-Token generieren, das die erforderlichen Ansprüche und Signierschlüssel erfüllt.\n4. Das Token im „Authorization“-Header der Anfrage in der Form „Bearer TOKEN“ einfügen.\n\nHinweis: Dieser Authentifizierer unterstützt nur die Erstellung oder Aktualisierung von Benutzern auf der Grundlage der im Token bereitgestellten Informationen und unterstützt nicht die Verwendung eines Tokens als Authentifizierung für einen bestehenden Benutzer, der nicht über diesen Authentifizierer erstellt wurde.",
+        "data_path": null
+      },
+      {
+        "id": "qa_033",
+        "prompt": "Puis-je authentifier les utilisateurs avec des jetons d'accès ?",
+        "expected_answer": "Oui, vous pouvez authentifier les utilisateurs avec des jetons d'accès en utilisant l'extension d'authentification basée sur les jetons pour l'application LLM.\n\nCette extension permet aux applications externes d'authentifier les utilisateurs avec des jetons Web JSON signés (JWT). Le jeton doit contenir des revendications spécifiques, telles que la date d'expiration, l'émetteur, le sujet et la audience, et doit être signé avec une clé Ed25519.\n\nPour utiliser cet authentificateur, vous devez :\n\n1. Activer l'authentificateur de jeton en définissant la propriété `xwiki.authentication.authclass` dans le fichier `xwiki.properties` sur `org.xwiki.contrib.llm.authentication.JWTTokenAuth`.\n2. Configurer les applications autorisées en ajoutant une nouvelle entrée à la liste des « Applications autorisées », en spécifiant le titre, l'URL, la clé publique et le format de groupe de l'application.\n3. Générer un jeton JWT qui répond aux exigences de revendications et de clés de signature.\n4. Inclure le jeton dans l'en-tête « Authorization » de la requête sous la forme « Bearer TOKEN ».\n\nNotez que cet authentificateur ne prend en charge que la création ou la mise à jour des utilisateurs en fonction des informations fournies dans le jeton et ne prend pas en charge l'utilisation d'un jeton comme authentification pour un utilisateur existant qui n'a pas été créé via cet authentificateur.",
         "data_path": null
       }
     ]

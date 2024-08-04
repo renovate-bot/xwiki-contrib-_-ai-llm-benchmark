@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_008",
+  "prompt": "Create a travel guide for a popular tourist destination.",
+  "expected_answer": "An informative guide highlighting the top attractions, accommodations, and activities in a popular tourist spot.",
+  "ai_answer": "##  Welcome to the Magic of Prague!\n\nPrague, the \"City of a Hundred Spires,\" awaits! This charming, historical gem nestled along the Vltava River will capture your heart with its enchanting beauty, vibrant culture, and rich history.\n\n**Must-See Landmarks:**\n\n* **Prague Castle:** Explore the largest ancient castle complex in the world, home to the St. Vitus Cathedral, the Golden Lane, and the Old Royal Palace. \n* **Charles Bridge:** Stroll across this iconic medieval bridge adorned with baroque statues and enjoy breathtaking views of Prague Castle and the city skyline.\n* **Old Town Square:** Discover the heart of Prague, bustling with street performers, cafes, and shops. Marvel at the astronomical clock, a masterpiece of medieval engineering.\n* **Jewish Quarter:** Immerse yourself in Jewish history and culture. Visit synagogues like the Old-New Synagogue and the Jewish Museum, learn about the tragedy of the Holocaust, and explore the charming cobblestone streets.\n\n**Cultural Delights:**\n\n* **Czech National Museum:** Delve into the fascinating history of the Czech Republic through exhibitions of art, archaeology, and cultural artifacts.\n* **National Theatre:** Enjoy world-class opera, ballet, and drama performances in this stunning, ornate theatre.\n* **Prague Puppet Theatre:** Experience the magic of traditional Czech puppetry with captivating performances for all ages.\n\n**Foodie Experiences:**\n\n* **Trdeln\u00edk:** Indulge in this sweet, pastry treat made from dough rolled around a spit and roasted over hot coals.\n* **Goulash:** Warm your heart with this hearty beef stew, often served with dumplings and horseradish.\n* **Sv\u00ed\u010dkov\u00e1:** Sample this traditional Czech dish featuring tender beef sirloin in a creamy sauce, served with dumplings and cranberry sauce.\n\n**Tips for Travelers:**\n\n* **Currency:** The official currency is the Czech Koruna (CZK).\n* **Language:** Czech is the official language. While English is widely spoken in tourist areas, learning a few basic Czech phrases will enhance your experience.\n* **Transportation:** Prague has a well-developed public transport system with trams, metro, and buses. Consider purchasing a travel card for convenient travel.\n* **Accommodation:** Prague offers a wide range of accommodation options, from budget-friendly hostels to luxurious hotels. Book in advance, especially during peak season.\n* **Safety:** Prague is generally a safe city. Be aware of your surroundings, keep valuables secure, and avoid walking alone at night in deserted areas.\n\n\n\n**Prague promises a journey filled with magic, history, and unforgettable memories. Come and explore the heart of Bohemia!**",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 543,
+    "total_tokens": 563
+  },
+  "average_power_draw": 214.65993311036783,
+  "energy_consumption": 1233.0554714645587,
+  "energy_per_input_token": 0.895140088177538,
+  "energy_per_output_token": 2.2378502204438453,
+  "energy_per_total_token": 2.1901518143242606
+}

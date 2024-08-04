@@ -1,0 +1,10 @@
+{
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary includes extra information not mentioned in the original text, such as exploring specific usage examples through the XWiki website's references pages and details about XWiki's enterprise edition features.",
+  "score_breakdown": {
+    "Alignment": 0.8,
+    "Coverage": 1.0
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

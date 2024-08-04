@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3064516129032258,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8387096774193549,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.84 because the answer provides relevant information on configuring access rights in XWiki, but it includes multiple irrelevant URLs that do not directly address the question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses the scope of configuration display in XWiki, which does not address access control or permissions for teams. The second node explains the concept of spaces and sub-pages in XWiki, but it does not provide information on setting access permissions for different teams. Additionally, the third node describes XWiki's scalability, multi-tenancy, and clustering features, which are not relevant to configuring team-specific access permissions.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context provides details on properties, scalability, and features of XWiki that do not address configuring team space visibility and edit permissions.",
+    "Hallucination": "The score is 1.00 because the actual output lacks several key details mentioned in the context, such as 'scope' and 'linkPrefix' configuration options, creation of spaces, sub-pages, terminal pages, multi-tenancy, clustering, specific examples like MyXWiki and XWiki SAS Cloud, creating children pages, changing page access rights, panels, and saving pages in a relational database and supported databases."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

@@ -1,0 +1,10 @@
+{
+  "score": 0.7142857142857143,
+  "reason": "The score is 0.71 because the summary contains a contradiction about where the list of applications and macros for XWiki is available and includes extra information about 'XWiki basic concepts' that is not mentioned in the original text. Additionally, the summary fails to answer a question that the original text can address.",
+  "score_breakdown": {
+    "Alignment": 0.7142857142857143,
+    "Coverage": 0.8
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

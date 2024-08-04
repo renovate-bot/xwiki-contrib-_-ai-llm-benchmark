@@ -1,0 +1,10 @@
+{
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary is mostly accurate and does not contain any contradictions or extra information. However, it lacks some details that the original text provides, such as whether panels can be displayed on both the left and right sides of a page.",
+  "score_breakdown": {
+    "Alignment": 1.0,
+    "Coverage": 0.8
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

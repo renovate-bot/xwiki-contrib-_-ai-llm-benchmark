@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5011111111111112,
+  "individual_scores": {
+    "AnswerRelevancy": 0.84,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.3333333333333333
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.84 because the answer provides relevant information about configuring XWiki for team-specific access, but includes several irrelevant URLs and a general offer for further assistance that do not directly address the specific configuration question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node provides a general introduction to XWiki and its use cases but does not address specific configuration steps for access control. The second node explains the difference between first and second generation wikis and some features of XWiki, but it does not provide information on configuring access control for teams. The third node describes what a wiki is and its advantages over traditional CMS, but it does not provide any specific steps or information on configuring access control in XWiki.",
+    "ContextualRecall": "The score is 0.50 because while the main concepts of creating groups, setting wiki-wide rights, setting area-specific rights, and inheritance of rights (sentences 1, 2, 3, and 4) are supported by the 2nd node in the retrieval context, the introductory statement, summary sentences, and reminder (sentences 0, 5, 6, and 7) are not directly found in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context provides general information about XWiki and its features but does not address the specific configuration question about team permissions.",
+    "Hallucination": "The score is 0.33 because the actual output does not mention specific features of first generation wikis, which is a factual alignment issue, but it does provide relevant information about configuring rights management and modifying pages, aligning with the context."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

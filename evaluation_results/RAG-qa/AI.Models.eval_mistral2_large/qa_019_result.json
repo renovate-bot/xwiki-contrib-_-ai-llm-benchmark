@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.47250280583613913,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9259259259259259,
+    "Faithfulness": 0.9090909090909091,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.93 because the answer is mostly relevant and addresses the question about denying script rights to a space administrator, but it includes links to an extension module and documentation about access rights and permission types, which are not directly relevant to the specific question asked.",
+    "Faithfulness": "The score is 0.91 because the actual output incorrectly claims that wiki-level administration rights automatically grant page-level rights, whereas the retrieval context indicates that the priority order is wiki > page, implying that this is not necessarily the case.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses the AuthorizationSettler and its configuration, but does not address the inability to deny script rights to an area administrator. Similarly, the second node is about registering and unregistering custom rights, which is not relevant to the question of denying script rights to an area administrator.",
+    "ContextualRecall": "The score is 1.00 because the retrieval context perfectly supports the expected output. Great job!",
+    "ContextualRelevancy": "The score is 0.00 because the context does not provide any information on how to deny script rights to a domain administrator, focusing instead on unrelated technical details and authorization concepts.",
+    "Hallucination": "The score is 1.00 because the actual output lacks several key pieces of information that are present in the context, including details about the AuthorizationSettler configuration, registration/unregistration of custom rights, specific rights and their statuses, implied rights and inheritance, and limitations of the authorization modules."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.30158730158730157,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8095238095238095,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.81 because the answer is mostly relevant but includes repeated irrelevant URLs and a suggestion that contradicts the requirement.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because the nodes in the retrieval context do not address the specific question about configuring access control for teams in XWiki. For example, the first node provides general information about XWiki and its use cases, the second node mentions rights management but lacks detailed steps, and the third node explains the basic concept of a wiki without relevant information on access control configuration.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context provides general information about XWiki's features and use cases but does not address the specific configuration question.",
+    "Hallucination": "The score is 1.00 because the actual output does not address the context and discusses unrelated topics, leading to a complete misalignment with the provided context."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

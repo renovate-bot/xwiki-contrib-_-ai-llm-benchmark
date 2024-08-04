@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3507936507936508,
+  "individual_scores": {
+    "AnswerRelevancy": 0.2,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5714285714285714,
+    "ContextualRelevancy": 0.3333333333333333,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.20 because the majority of the statements in the output are irrelevant and nonsensical, not addressing the issue of not receiving notifications in XWiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because the first node describes the 'What's New Application' and does not provide information on enabling or configuring notifications, the second node lists various notification-related macros and their descriptions but does not explain how to enable notifications or subscribe to them, and the third node mentions different ways to receive notifications but does not provide specific instructions on enabling notifications or ensuring subscription to pages or users.",
+    "ContextualRecall": "The score is 0.57 because while the retrieval context covers subscribing to pages or users and receiving notifications, it lacks specific instructions on enabling notifications via `xwiki.properties` and does not mention the 'network' tab in the user profile.",
+    "ContextualRelevancy": "The score is 0.33 because the context discusses features like the 'What's New Application' and notification-related macros, but it doesn't address the specific issue of not receiving notifications in XWiki.",
+    "Hallucination": "The score is 1.00 because the actual output lacks several key pieces of information that are present in the context, such as details about the 'What's New Application', specific notification preferences macros, and various notification methods available in XWiki. This significant omission indicates a high level of hallucination."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

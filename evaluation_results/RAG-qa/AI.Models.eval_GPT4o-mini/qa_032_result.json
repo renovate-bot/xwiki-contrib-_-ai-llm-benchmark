@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.7695970695970696,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8461538461538461,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.5714285714285714,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.85 because the main content addresses the question about authenticating users with access tokens, but the inclusion of an irrelevant URL slightly detracts from the overall relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node in the first rank provides detailed information about the JWT token requirements, which is essential for understanding how to authenticate users with access tokens.",
+    "ContextualRecall": "The score is 0.57 because while the retrieval context covers the requirements for the JWT token and its placement in the Authorization header (sentences 2 and 4), it lacks specific steps for enabling the token authenticator, configuring authorized applications, and the limitation of the authenticator (sentences 1, 3, and 6).",
+    "ContextualRelevancy": "The score is 0.20 because the context discusses topics like attachment mimetype restrictions, custom authentication methods, and various permissions, none of which address the specific question of authenticating users with access tokens.",
+    "Hallucination": "The score is 0.00 because there are no contradictions between the actual output and the provided contexts."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

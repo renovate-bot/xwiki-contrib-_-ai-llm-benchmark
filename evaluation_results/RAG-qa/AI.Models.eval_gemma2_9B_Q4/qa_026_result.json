@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.2833333333333333,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.70 because the answer partially addresses the question about mapping user profile fields from an OpenID Connect provider, but includes irrelevant information about database support and forms in XWiki, which detracts from its overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because the first node discusses 'authentication with a domain-based instance and session cookies', the second node talks about 'XWiki pages being saved in a relational database and the databases supported by XWiki', and the third node provides 'examples of form utilization on XWiki.org'. None of these are relevant to mapping user profile fields from an OpenID Connect provider to XWiki user properties.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention customizing user profile fields from an OpenID Connect provider or provide any related information.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses domain-based authentication, session cookie configuration, and bypassing OpenID Connect, which are not relevant to the input question about mapping additional user profile fields from an OpenID Connect provider to XWiki user properties.",
+    "Hallucination": "The score is 1.00 because the actual output lacks critical details about domain-based instance authentication, session cookie configuration, XWiki's use of relational databases, Hibernate support, and specific forms on XWiki.org, leading to a high degree of factual omissions."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

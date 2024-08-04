@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.28125,
+  "individual_scores": {
+    "AnswerRelevancy": 0.1875,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.19 because the majority of the statements in the output are irrelevant and do not address the issue about the notification bell not being available despite the 'Notification d'alerte' extension being installed.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node 'provides a list of menu items and features related to notifications but does not address enabling notifications in the wiki or modifying the `xwiki.properties` file.' The second node 'lists various notification preferences and macros but does not mention enabling notifications in the wiki or modifying the `xwiki.properties` file.' The third node 'discusses following users and default watch settings but does not provide information on enabling notifications in the wiki or modifying the `xwiki.properties` file.'",
+    "ContextualRecall": "The score is 0.50 because while the retrieval context implies that notifications can be enabled (sentence 2), it does not provide information about setting the property `notifications.enabled` in `xwiki.properties` to `true` (sentence 1).",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address the specific issue of the bell icon not being available even when the 'Notification d'alerte' extension is installed.",
+    "Hallucination": "The score is 1.00 because the actual output contains URLs and unrelated text that do not align with the provided context, which discusses features, notification preferences, and user settings in XWiki."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

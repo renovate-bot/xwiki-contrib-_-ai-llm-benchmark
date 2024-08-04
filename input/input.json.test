@@ -1,0 +1,118 @@
+{
+  "tasks": {
+    "text_generation": [
+      {
+        "id": "text_gen_001",
+        "prompt": "Extract the key information (name, date of birth, address) from the following text:\n\nJohn Doe, born on 15th August 1990, currently resides at 123 Main Street, Anytown, USA.",
+        "expected_answer": "{\n  \"name\": \"John Doe\",\n  \"date_of_birth\": \"15th August 1990\",\n  \"address\": \"123 Main Street, Anytown, USA\"\n}",
+        "data_path": null
+      },
+      {
+        "id": "text_gen_002",
+        "prompt": "Transform the following keywords into a coherent sentence:\n\ncat, playful, garden, sunny day",
+        "expected_answer": "On a sunny day, the playful cat enjoyed exploring the garden.",
+        "data_path": null
+      },
+      {
+        "id": "text_gen_003",
+        "prompt": "Adapt the following text to a younger audience (age 8-10):\n\nPhotosynthesis is the process by which plants convert sunlight into chemical energy that can be used to fuel the plant's activities.",
+        "expected_answer": "Plants use a special process called photosynthesis to make their own food. They take in sunlight and turn it into energy that helps them grow and stay healthy.",
+        "data_path": null
+      }
+    ],
+    "summarization": [
+      {
+        "id": "summ_001",
+        "data_path": "../context_data/documents/xwiki_Documentation.UserGuide.GettingStarted.XWikiBasicConcepts.json"
+      },
+      {
+        "id": "summ_002",
+        "data_path": "../context_data/documents/xwiki_Documentation.AdminGuide.Access Rights.Permission types.WebHome.json"
+      },
+      {
+        "id": "summ_003",
+        "data_path": "../context_data/documents/xwiki_Documentation.AdminGuide.Access Rights.WebHome.json"
+      }
+    ],
+    "RAG-qa": [
+      {
+        "id": "qa_001",
+        "prompt": "In the context of XWiki the \"Bell\" in the top right corner is not available, also not when the \"Alert Notification\" extension is installed.",
+        "expected_answer": "Make sure that notifications are enabled in your wiki. You can enable them by setting the `notifications.enabled` setting in `xwiki.properties` to `true`.",
+        "data_path": null
+      },
+      {
+        "id": "qa_002",
+        "prompt": "I'm not receiving any notifications in XWiki.",
+        "expected_answer": "Make sure that notifications are enabled. You can enable them by setting the `notifications.enabled` setting in `xwiki.properties` to `true`. Further, ensure that you're subscribed to the pages or users you want to receive notifications for. You can watch a page, a page and its children, or an entire wiki. To watch a location, all you need is to go to that place, and then click on the \"alert\" menu (represented by a bell) and enable the desired notifications. To follow a user, if you go to the profile of an user, using the User Index for example, you can see decide to watching a user. It means you will receive all notifications about events triggered by this user. In your user profile, if you go to the \"network\" tab, you can see the list of users you are watching and the events that have been performed by them.",
+        "data_path": null
+      },
+      {
+        "id": "qa_003",
+        "prompt": "In the context of XWiki I am not receiving notifications about my own activity. How can I enable notifications for my own actions?",
+        "expected_answer": "By default, one don't receive notification about one's own activity (unless the event that triggered the notification targets explicitly that user). You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings in your user profile.",
+        "data_path": null
+      },
+      {
+        "id": "qa_004",
+        "prompt": "In the context of XWiki I'm receiving lot's of notifications about all kinds of pages I'm not interested in. These seem to have been enabled automatically. How can I disable these notifications?",
+        "expected_answer": "By default, a page where you have made a major modification is automatically added to the list of pages you watch. It means you will be notified about changes on your work. You can change the setting for \"Automatic page watching\" in the notification settings in your user profile. You can delete existing notification filters that were created this way in the \"Custom Filters\" list in the notification settings in your user profile.",
+        "data_path": null
+      },
+      {
+        "id": "qa_005",
+        "prompt": "How can I configure XWiki to automatically enable user accounts upon their first login using OpenID Connect?\nI've set up OpenID Connect authentication in my XWiki instance, but users are not automatically enabled after their first login. What configuration do I need to adjust?",
+        "expected_answer": "To automatically enable user accounts upon their first login using OpenID Connect in XWiki, you need to adjust the `xwiki.properties` file.\n\nAdd or update the following property:\n\n```\n#-# Define if user accounts should be enabled (marked as active) on first login\n# oidc.enableUser=true\n```\n\nMake sure to uncomment and set the `oidc.enableUser` property to `true`. After making this change, save the file and restart your XWiki instance for the changes to take effect.\n\nThis will ensure that new user accounts are automatically enabled when they log in for the first time via OpenID Connect.",
+        "data_path": null
+      },
+      {
+        "id": "qa_006",
+        "prompt": "Can I customize the user profile fields that are populated from the OpenID Connect provider in XWiki?\nI want to map additional user profile fields from my OpenID Connect provider to XWiki user properties. How can I achieve this?",
+        "expected_answer": "Yes, you can customize the user profile fields that are populated from the OpenID Connect provider by mapping them in the `xwiki.properties` file.\n\nTo map additional user profile fields, use the `oidc.user.mapping` property. Here's an example of how to map custom properties:\n\n```\n# oidc.user.mapping=myxproperty1=${oidc.user.subject}\n# oidc.user.mapping=myxproperty2=myprefix-${oidc.user.subject}\n```\n\nReplace `myxproperty1` and `myxproperty2` with the actual XWiki user property names, and `${oidc.user.subject}` with the appropriate variable based on the data provided by your OpenID Connect provider.\n\nAfter configuring the mappings, save the `xwiki.properties` file and restart XWiki to apply the changes.",
+        "data_path": null
+      },
+      {
+        "id": "qa_007",
+        "prompt": "How do I configure group synchronization between XWiki and my OpenID Connect provider?\nI'm using an OpenID Connect provider that supports group claims, and I want to synchronize these groups with XWiki groups. What's the process for setting this up?",
+        "expected_answer": "To configure group synchronization between XWiki and your OpenID Connect provider 1. Locate the `xwiki.properties` file in your XWiki installation directory.\n2. Open the file with a text editor.\n3. Configure the group synchronization by setting the `oidc.groups.claim` property to the name of the claim used by your OpenID Connect provider to send group information. For example:\n```java\n#-# The name of the claim used to get the list of groups the user belong to.\n# oidc.groups.claim=groups\n```\nReplace `groups` with the actual claim name provided by your OpenID Connect provider.\n1. If your OpenID Connect provider sends group memberships as a single value attribute delimited by a specific character (e.g., a comma), configure the `oidc.groups.separator` property with the appropriate character:\n```java\n#-# If the identity provider returns group memberships as a single value attribute delimited with a char, for example:\n# oidc.groups.separator=,\n```\nReplace the comma with the actual separator used by your provider.\n1. If you want to map the synchronized groups to specific XWiki groups, configure the `oidc.groups.mapping` property with the appropriate mappings:\n```java\n# oidc.groups.mapping=XWiki.\"MyXWikiGroup\"=group1\n# oidc.groups.mapping=XWiki.\"MyXWikiGroup2\"=group2\n```\nReplace `MyXWikiGroup` and `MyXWikiGroup2` with the names of the XWiki groups you want to map, and `group1` and `group2` with the actual group names provided by your OpenID Connect provider.\n1. Save the `xwiki.properties` file and restart your XWiki instance for the changes to take effect.",
+        "data_path": null
+      },
+      {
+        "id": "qa_008",
+        "prompt": "How can I ensure that only images or PDF files of at maximum 10MB can be uploaded as attachments on the whole wiki?",
+        "expected_answer": "To ensure that only images or PDF files of at maximum 10MB can be uploaded as attachments on the whole wiki, follow these steps:\n\n**Step 1: Configure allowed mimetypes**\n\nEdit the `xwiki.properties` configuration file in your installation and add or update the following line to configure the default mimetype restrictions at farm level:\n```\nattachment.upload.allowList=image/*,application/pdf\n```\nThis will allow only image files (with any subtype, e.g., `image/jpeg`, `image/png`, etc.) and PDF files to be uploaded, and block all other mimetypes.\n\n**Step 2: Configure maximum attachment size**\n\nTo set the maximum attachment size to 10MB, follow these steps:\n\n1. Go to `http://<yourwiki>/xwiki/bin/edit/XWiki/XWikiPreferences?editor=object`\n2. Click on the line that says XWikiPreferences 0 (right below the line that says Objects of type XWiki.XWikiPreferences (1))\n3. Scroll down to the field that says Maximum Upload Size and change the number to `10485760` (10MB in bytes)\n4. Scroll to the bottom and click \"Save\"\n5. Repeat for each (sub)wiki for which you need to set this configuration!",
+        "data_path": null
+      },
+      {
+        "id": "qa_009",
+        "prompt": "How can I deny script right to a space administrator?",
+        "expected_answer": "This is unfortunately not supported in XWiki, rights that are implied by admin right cannot be denied.",
+        "data_path": null
+      },
+      {
+        "id": "qa_010",
+        "prompt": "We have one space per team. I want all teams to be able to view all spaces but each team should only be able to edit their own space. How can I configure this in XWiki?",
+        "expected_answer": "To achieve the desired access control, you can follow these steps:\n\n1. **Create groups for each team**: Create a separate group for each team in your XWiki instance. This will allow you to manage access rights for each team individually.\n2. **Set wiki-wide rights**: Go to the wiki administration page and set the rights for the entire wiki. Specifically, set the \"View\" right to \"Allow\" for \"XWikiAllGroup\" to allow everyone to view all spaces.\n3. **Set space-level rights**: For each team's space, go to the space administration page and set the rights for that space. Specifically, set the \"Edit\" right to \"Allow\" only for the corresponding team's group. This will allow only the members of that team to edit their own space.\n4. **Inherit rights for child pages**: When setting rights for a space, make sure to select the \"Rights: Page & Children\" option to inherit the rights for all child pages within that space.\n\nBy following these steps, you'll ensure that:\n\n* All teams can view all spaces.\n* Each team can only edit their own space.\n\nRemember to adjust the rights accordingly for any additional teams or spaces you may have in your XWiki instance.",
+        "data_path": null
+      },
+      {
+        "id": "qa_011",
+        "prompt": "Can I authenticate users with access tokens?",
+        "expected_answer": "Yes, you can authenticate users with access tokens using the Token-based authentication for the LLM Application extension.\n\nThis extension allows external applications to authenticate users with signed JSON Web Tokens (JWT). The token needs to contain specific claims, such as expiration time, issuer, subject, and audience, and must be signed with an Ed25519 key.\n\nTo use this authenticator, you need to:\n\n1. Enable the token authenticator by setting the `xwiki.authentication.authclass` property in `xwiki.properties` file to `org.xwiki.contrib.llm.authentication.JWTTokenAuth`.\n2. Configure the authorized applications by adding a new entry to the \"Authorized Applications\" list, specifying the application's title, URL, public key, and group format.\n3. Generate a JWT token that meets the required claims and signing key requirements.\n4. Include the token in the \"Authorization\" header of the request in the form \"Bearer TOKEN\".\n\nNote that this authenticator only supports creating or updating users based on the information provided in the token and does not support using a token as authentication for an existing user that hasn't been created through this authenticator.",
+        "data_path": null
+      },
+      {
+        "id": "qa_012",
+        "prompt": "Kann ich Benutzer mit Zugriffstoken authentifizieren?",
+        "expected_answer": "Ja, Sie können Benutzer mit Zugriffstoken mithilfe der Token-basierten Authentifizierung für die LLM-Anwendung (BETA)-Erweiterung authentifizieren.\n\nDiese Erweiterung ermöglicht es externen Anwendungen, Benutzer mit signierten JSON Web Tokens (JWT) zu authentifizieren. Der Token muss bestimmte Ansprüche enthalten, wie Ablaufzeit, Aussteller, Betreff und Zielgruppe, und muss mit einem Ed25519-Schlüssel signiert sein.\n\nUm diesen Authentifizierer zu verwenden, müssen Sie:\n\n1. Den Token-Authentifizierer aktivieren, indem Sie die Eigenschaft `xwiki.authentication.authclass` in der Datei `xwiki.properties` auf `org.xwiki.contrib.llm.authentication.JWTTokenAuth` setzen.\n2. Die autorisierten Anwendungen konfigurieren, indem Sie einen neuen Eintrag zur Liste der „Autorisierten Anwendungen“ hinzufügen, wobei Sie den Titel, die URL, den öffentlichen Schlüssel und das Gruppenformat der Anwendung angeben.\n3. Ein JWT-Token generieren, das die erforderlichen Ansprüche und Signierschlüssel erfüllt.\n4. Das Token im „Authorization“-Header der Anfrage in der Form „Bearer TOKEN“ einfügen.\n\nHinweis: Dieser Authentifizierer unterstützt nur die Erstellung oder Aktualisierung von Benutzern auf der Grundlage der im Token bereitgestellten Informationen und unterstützt nicht die Verwendung eines Tokens als Authentifizierung für einen bestehenden Benutzer, der nicht über diesen Authentifizierer erstellt wurde.",
+        "data_path": null
+      },
+      {
+        "id": "qa_013",
+        "prompt": "Puis-je authentifier les utilisateurs avec des jetons d'accès ?",
+        "expected_answer": "Oui, vous pouvez authentifier les utilisateurs avec des jetons d'accès en utilisant l'extension d'authentification basée sur les jetons pour l'application LLM.\n\nCette extension permet aux applications externes d'authentifier les utilisateurs avec des jetons Web JSON signés (JWT). Le jeton doit contenir des revendications spécifiques, telles que la date d'expiration, l'émetteur, le sujet et la audience, et doit être signé avec une clé Ed25519.\n\nPour utiliser cet authentificateur, vous devez :\n\n1. Activer l'authentificateur de jeton en définissant la propriété `xwiki.authentication.authclass` dans le fichier `xwiki.properties` sur `org.xwiki.contrib.llm.authentication.JWTTokenAuth`.\n2. Configurer les applications autorisées en ajoutant une nouvelle entrée à la liste des « Applications autorisées », en spécifiant le titre, l'URL, la clé publique et le format de groupe de l'application.\n3. Générer un jeton JWT qui répond aux exigences de revendications et de clés de signature.\n4. Inclure le jeton dans l'en-tête « Authorization » de la requête sous la forme « Bearer TOKEN ».\n\nNotez que cet authentificateur ne prend en charge que la création ou la mise à jour des utilisateurs en fonction des informations fournies dans le jeton et ne prend pas en charge l'utilisation d'un jeton comme authentification pour un utilisateur existant qui n'a pas été créé via cet authentificateur.",
+        "data_path": null
+      }
+    ]
+  }
+}

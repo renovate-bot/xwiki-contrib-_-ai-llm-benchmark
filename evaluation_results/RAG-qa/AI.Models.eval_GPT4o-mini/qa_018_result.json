@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3148148148148148,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8888888888888888,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.89 because the answer is mostly relevant and addresses the question, but it includes a URL that does not directly address the specific requirement of ensuring only images or PDF files with a maximum size of 10 MB can be uploaded.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to configuring MIME types or setting maximum attachment sizes. For instance, the first node discusses 'HTTP methods and media types for retrieving page elements', the second node talks about 'HTTP methods for page translations and history', and the third node is about 'creating a new wiki and retrieving spaces'. These contexts do not address the input query.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses API endpoints, HTTP methods, and status codes, which do not address the input question about restricting uploads to images or PDF files under 10 MB.",
+    "Hallucination": "The score is 1.00 because the actual output lacks significant details about the HTTP methods, media types, descriptions, status codes for the endpoints, and the page versioning system, major and minor edits, and history features, which are all crucial elements mentioned in the context."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

@@ -1,0 +1,7 @@
+{
+  "score": 0.9,
+  "reason": "The Actual Output effectively simplifies the concept of photosynthesis for a younger audience, making it relatable and engaging. It covers the key points of converting sunlight into energy and the importance of the process for plant growth, similar to the Expected Output. The explanation is coherent, logically flows, and uses natural language appropriate for the age group. However, it adds extra details like comparing photosynthesis to taking vitamins, which, while helpful, slightly diverges from the simplicity of the Expected Output.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

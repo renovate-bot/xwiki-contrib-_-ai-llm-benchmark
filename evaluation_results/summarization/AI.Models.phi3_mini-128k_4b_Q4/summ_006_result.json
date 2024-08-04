@@ -1,0 +1,10 @@
+{
+  "score": 0.875,
+  "reason": "The score is 0.88 because the summary introduces a contradiction by mentioning a 'Creating Users' guide for setting user rights, which is not present in the original text. However, there is no extra information added, and the summary is otherwise accurate.",
+  "score_breakdown": {
+    "Alignment": 0.875,
+    "Coverage": 1.0
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

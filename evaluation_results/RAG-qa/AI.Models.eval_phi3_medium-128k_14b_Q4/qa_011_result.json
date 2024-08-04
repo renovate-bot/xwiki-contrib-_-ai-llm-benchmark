@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.4166666666666667,
+  "individual_scores": {
+    "AnswerRelevancy": 0.16666666666666666,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.17 because the output contains multiple irrelevant and nonsensical statements that do not address the issue of the notification bell's unavailability.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node, which mentions that 'The extension status can be toggled by editing the configuration variable \"notifications.enabled\" in xwiki.properties and restarting the server,' is ranked third, while the first and second nodes discuss details of changes displayed in email content and user profile settings, and getting a notification RSS feed and the notifications macro, which are not relevant.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses notification settings and macros in XWiki, which does not relate to the availability of the bell icon or the 'Alert Notification' extension.",
+    "Hallucination": "The score is 1.00 because the actual output lacks critical information related to changes displayed in the email content, the level of details that can be selected in the user profile, getting a notification RSS feed, and the Notifications Macro, as well as details about various notification macros and their purposes."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

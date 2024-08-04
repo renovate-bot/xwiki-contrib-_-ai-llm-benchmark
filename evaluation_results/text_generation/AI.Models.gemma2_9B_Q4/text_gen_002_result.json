@@ -1,0 +1,7 @@
+{
+  "score": 0.9,
+  "reason": "The Actual Output addresses the Input prompt and matches the context and requirements stated in the Expected Output. The sentence is coherent, fluent, and grammatically correct. The only minor difference is the use of 'frolicked' instead of 'enjoyed exploring,' but the overall meaning is very close.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

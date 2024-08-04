@@ -1,0 +1,10 @@
+{
+  "score": 0.75,
+  "reason": "The score is 0.75 because the summary contains a contradiction regarding the Protected setting's permissions and fails to address whether global rights can be overridden at the page level in a light protection strength configuration. However, it does not include any extra information not mentioned in the original text.",
+  "score_breakdown": {
+    "Alignment": 0.9444444444444444,
+    "Coverage": 0.75
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

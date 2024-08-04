@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6968390804597702,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9310344827586207,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.45,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.4,
+    "Hallucination": 0.6
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.93 because the answer is highly relevant and addresses the configuration question well, but it includes URLs that point to general content and features rather than directly addressing the specific configuration query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.45 because the first node, which explains the concept of spaces and pages in XWiki, is not relevant to configuring access control for teams. Additionally, the third node discusses executing a plan for migration, and the fourth node describes various features and extensions of XWiki, both of which are also irrelevant. However, the second node provides information about XWiki's permission system, and the fifth node provides basic rules for setting rights in XWiki, both of which are directly relevant.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output aligns perfectly with the information provided in the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.40 because the context explains general concepts and features of XWiki but does not address the specific requirement of configuring team permissions for viewing and editing spaces.",
+    "Hallucination": "The score is 0.60 because the actual output lacks significant information about creating spaces, WebHome pages, Terminal Pages, executing a plan, the migration process, authentication mechanisms, and the Distribution Wizard, which are crucial to the context. However, it correctly aligns with the context regarding setting up rights and permissions."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

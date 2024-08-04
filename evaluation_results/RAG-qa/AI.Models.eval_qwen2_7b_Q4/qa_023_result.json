@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6296296296296297,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7777777777777778,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.78 because the answer provides some relevant information about enabling notifications, but several statements are vague or off-topic, reducing the overall relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because the first node 'provides links and descriptions about various notification preferences and macros', the second node 'discusses email notifications and their configurations', and the third node 'explains pre-filtering and post-filtering of notifications', but none of them address how to enable notifications for one's own actions.",
+    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the nodes in the retrieval context, indicating a perfect match.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not provide specific instructions or information on how to activate notifications for one's own actions, which is the user's query.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments and multiple contradictions, indicating that the actual output does not align with the provided context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

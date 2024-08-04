@@ -1,0 +1,10 @@
+{
+  "score": 0.6666666666666666,
+  "reason": "The score is 0.67 because the summary includes extra information not mentioned in the original text, such as specific contexts for information sharing, project management, and communication platforms. However, there are no contradictions present.",
+  "score_breakdown": {
+    "Alignment": 0.6666666666666666,
+    "Coverage": 1.0
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

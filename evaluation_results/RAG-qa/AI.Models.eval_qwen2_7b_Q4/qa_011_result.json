@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5333333333333333,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8666666666666667,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.87 because the answer is mostly relevant and addresses the issue with the notification bell, but it includes general URLs that do not directly address the specific problem mentioned in the input.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node, which mentions that 'The extension status can be toggled by editing the configuration variable \"notifications.enabled\" in xwiki.properties and restarting the server,' is ranked third. The first node discusses details of changes displayed in email content and user profile settings, and the second node talks about getting a notification RSS feed and the Notifications Macro, both of which are not relevant to enabling notifications in the wiki.",
+    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address the specific issue mentioned in the input.",
+    "Hallucination": "The score is 1.00 because the actual output lacks critical details and information about changes, macros, and notifications that are present in the contexts, leading to a complete misalignment."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

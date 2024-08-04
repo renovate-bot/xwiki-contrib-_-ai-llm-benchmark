@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6611111111111112,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.6,
+    "ContextualRelevancy": 0.3333333333333333,
+    "Hallucination": 0.6666666666666666
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.70 because the answer provides some relevant information, but it includes multiple URLs that do not directly address the question about authenticating users with an access token.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node about JWT token requirements is ranked first, while the irrelevant nodes about blocked attachment mimetypes and custom authentication using a Groovy script are ranked lower.",
+    "ContextualRecall": "The score is 0.60 because while some key details like configuration parameters and JWT token requirements are covered by nodes in the retrieval context, the step-by-step process and specific limitations of the authenticator are not mentioned.",
+    "ContextualRelevancy": "The score is 0.33 because the context discusses blocked attachment mimetypes and custom authentication methods, which are unrelated to the question about authenticating users with access tokens.",
+    "Hallucination": "The score is 0.67 because the actual output lacks critical information about configuring blocked attachment mimetypes and creating custom authentication using a Groovy script, which are present in the context. However, it correctly aligns with the context regarding the use of a JWT token signed with an Ed25519 key and the required claims for authentication."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

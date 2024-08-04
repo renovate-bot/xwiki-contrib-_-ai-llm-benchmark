@@ -1,0 +1,42 @@
+{
+  "id": "qa_026",
+  "prompt": "Puis-je personnaliser les champs de profil utilisateur qui sont remplis \u00e0 partir du fournisseur OpenID Connect dans XWiki?\nJe souhaite mapper des champs de profil utilisateur suppl\u00e9mentaires de mon fournisseur OpenID Connect aux propri\u00e9t\u00e9s de l'utilisateur XWiki. Comment puis-je y parvenir?",
+  "expected_answer": "Oui, vous pouvez personnaliser les champs de profil utilisateur qui sont remplis \u00e0 partir du fournisseur OpenID Connect en les mappant dans le fichier `xwiki.properties`.\n\nPour mapper des champs de profil utilisateur suppl\u00e9mentaires, utilisez la propri\u00e9t\u00e9 `oidc.user.mapping`. Voici un exemple de la fa\u00e7on de mapper des propri\u00e9t\u00e9s personnalis\u00e9es:\n\n```\n# oidc.user.mapping=myxproperty1=${oidc.user.subject}\n# oidc.user.mapping=myxproperty2=myprefix-${oidc.user.subject}\n```\n\nRemplacez `myxproperty1` et `myxproperty2` par les noms de propri\u00e9t\u00e9 d'utilisateur XWiki r\u00e9els, et `${oidc.user.subject}` par la variable appropri\u00e9e en fonction des donn\u00e9es fournies par votre fournisseur OpenID Connect.\n\nApr\u00e8s avoir configur\u00e9 les mappages, enregistrez le fichier `xwiki.properties` et red\u00e9marrez XWiki pour appliquer les modifications.",
+  "ai_answer": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/DatabaseSupport \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Forms \n\n\nLes informations que vous avez trouv\u00e9es sur l'authentification OpenID Connect dans XWiki ne mentionnent malheureusement pas la possibilit\u00e9 de personnaliser les champs de profil utilisateur import\u00e9s depuis le fournisseur OpenID Connect.\n\nCependant, en tant que plateforme de wiki flexible, XWiki permet une certaine personnalisation. Vous devriez contacter l'administrateur du syst\u00e8me ou suivre les documents internes de XWiki pour obtenir de l'aide sur la fa\u00e7on dont les propri\u00e9t\u00e9s d'utilisateur personnalis\u00e9es peuvent \u00eatre ajout\u00e9es et mapp\u00e9es aux informations d'authentification.\n\nIl est \u00e9galement possible que des extensions ou des plugins tiers permettent une telle personnalisation. Vous pouvez rechercher des extensions disponibles dans la communaut\u00e9 XWiki ou consulter la documentation sur le d\u00e9veloppement de modules externes pour trouver une solution adapt\u00e9e \u00e0 vos besoins.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.OpenID Connect.OpenID Connect Authenticator.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/",
+      "content": "## Authentication with a domain-based instance\n\nWhen XWiki is configured as a domain-based instance, users will not be automatically authenticated on every wiki by default, as the OIDC authenticator does not rely on the property xwiki.authentication.cookiedomains in xwiki.cfg.\n\nTo still allow users to be automatically authenticated when accessing one of the wikis of the farm, you will have to update the configuration of the session cookie of your servlet container so that this cookie gets set on a top-level domain, encompassing every wiki of farm. If your XWiki instance has very different domains for its wikis, this fix will not work.\n\nWhen using Tomcat as a servlet container, it&#x27;s possible to change the domain of the cookie JSESSIONID by adding the attribute sessionCookieDomain to context.xml as such :\n\n&lt;Context sessionCookieDomain=&quot;mytld.org&quot;&gt;  \n...  \n&lt;/Context&gt;# Endpoints\n\n## Callback\n\npath: **authenticator/callback**\n\n## [Back-Channel Logout](https://openid.net/specs/openid-connect-backchannel-1_0.html)\n\npath: **authenticator/backchannel\\_logout**\n\n# Bypass OpenID Connect\n\nAs indicated in the previous section you can disable OpenID Connect using the property oidc.skipped in the xwiki.properties file.\n\nIt&#x27;s also possible to skip OpenId Connect temporarily using a URL parameter: for example https://mydomain/xwiki/bin/view/Main/?oidc.skipped=true.\n\n",
+      "similarity_score": 0.8206812143325806,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.DatabaseSupport",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/DatabaseSupport",
+      "content": "\nAll XWiki pages are saved in a relational database for better efficiency. This allows XWiki to be fast and scalable. It also allows you to use the [Programming](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Programming) features to perform queries in your pages on any data contained in other pages.\n\nTheoretically XWiki supports the [same databases Hibernate supports](https://community.jboss.org/wiki/SupportedDatabases2). This means that if you provide the correct Hibernate mapping file all those databases should work fine with XWiki.\n\nMore specifically the [XWiki Development Team officially supports a subset of all those databases](https://dev.xwiki.org/xwiki/bin/view/Community/DatabaseSupportStrategy).\n\n\n",
+      "similarity_score": 0.819586455821991,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Forms",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Forms",
+      "content": "## Reference Form\n\nAnother good example of form utilization on XWiki.org is the [References page](https://www.xwiki.org/xwiki/bin/view/References/). When an user wants to add a new reference, the only thing he has to do is to type in the name of the reference he wants to add. He is then presented with a form he can fill in easily. Check it out and add your own project **[here](https://www.xwiki.org/xwiki/bin/view/References/)**!\n\n![editreference.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/Forms/editreference.png?rev=1.2)\n\n## Questionnaire Form\n\nThanks to this mode, you can create advanced forms such as the following questionnaire:\n\n![Chestionar.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/Forms/Chestionar.png?rev=1.2)\n\n\n",
+      "similarity_score": 0.817495584487915,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 992,
+    "completion_tokens": 173,
+    "total_tokens": 1165
+  },
+  "average_power_draw": 88.85903849837196,
+  "energy_consumption": 2302.2660452658956,
+  "energy_per_input_token": 1.6161923799690385,
+  "energy_per_output_token": 4.040480949922596,
+  "energy_per_total_token": 1.9761940302711551
+}

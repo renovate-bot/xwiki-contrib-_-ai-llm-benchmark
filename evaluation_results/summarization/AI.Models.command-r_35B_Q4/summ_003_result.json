@@ -1,0 +1,10 @@
+{
+  "score": 0.2,
+  "reason": "The score is 0.20 because the summary contains significant contradictions regarding how to set access rights for terminal pages. Additionally, it fails to address several key questions that the original text can answer, indicating a lack of coverage and accuracy.",
+  "score_breakdown": {
+    "Alignment": 0.8571428571428571,
+    "Coverage": 0.2
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

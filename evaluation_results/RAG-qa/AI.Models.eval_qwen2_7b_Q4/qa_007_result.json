@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.7430555555555555,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.8333333333333333,
+    "ContextualRecall": 0.625,
+    "ContextualRelevancy": 0.6666666666666666,
+    "Hallucination": 0.6666666666666666
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and directly addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect faithfulness!",
+    "ContextualPrecision": "The score is 0.83 because while the first and third nodes in the retrieval context provide essential information about configuring group synchronization, the second node, which is about 'domain-based instance authentication and session cookie configuration,' is not relevant and should be ranked lower.",
+    "ContextualRecall": "The score is 0.62 because while the retrieval context covers configuring the `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping` properties (supporting sentences 3, 5, and 7), it lacks details on locating and opening the `xwiki.properties` file, and saving and restarting the XWiki instance (unsupportive sentences 1, 2, and 10).",
+    "ContextualRelevancy": "The score is 0.67 because the context discusses domain-based authentication, session cookie configuration, callback paths, and bypassing OpenID Connect, which are not relevant to configuring group synchronization between XWiki and an OpenID Connect provider.",
+    "Hallucination": "The score is 0.67 because the actual output omits several key details mentioned in the context, such as default settings for user profile rights, custom claims for id token, the claim used for group synchronization, domain-based instance authentication, and session cookie configuration. However, it correctly aligns with the context on enabling group synchronization, defining group mappings, and implementing custom logic for group synchronization."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

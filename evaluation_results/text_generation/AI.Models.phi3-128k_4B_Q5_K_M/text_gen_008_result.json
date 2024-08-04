@@ -1,7 +1,0 @@
-{
-  "score": 0.8,
-  "reason": "The Actual Output provides a detailed travel guide for Santorini, addressing the main points of the Input. It includes top attractions and activities, which aligns with the Expected Output. However, there is a minor inconsistency with the mention of Samaria Gorge, which is not located in Santorini, affecting coherence.",
-  "prompt_language": "ro",
-  "expected_answer_language": "en",
-  "generated_text_language": "en"
-}

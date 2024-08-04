@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.45603864734299515,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8695652173913043,
+    "Faithfulness": 0.8666666666666667,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.87 because the main content addresses the question about configuring team access in XWiki, but the inclusion of unrelated URLs slightly detracts from the overall relevance.",
+    "Faithfulness": "The score is 0.87 because the actual output incorrectly states that XWiki uses resource groups to manage access and that only group members can create new spaces, which are not mentioned in the retrieval context.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'configuration display options in XWiki', the second node explains 'user-created pages and spaces', and the third node covers 'XWiki's scalability, multi-tenancy, and clustering features'. None of these nodes address how to set access rights for teams, which is the core of the input query.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address how to set permissions for teams in XWiki, focusing instead on unrelated configuration options and features.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments and the contradictions listed are actually alignments, meaning the actual output is fully consistent with the context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

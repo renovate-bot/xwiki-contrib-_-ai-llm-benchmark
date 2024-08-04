@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6391774891774893,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8636363636363636,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.5714285714285714,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 0.8
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.86 because the response mostly addresses the question about authenticating users with access tokens, but includes URLs that do not directly answer the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node in the first rank provides detailed information on JWT token generation, which is necessary for token-based authentication. Irrelevant nodes discussing document management (second node), cookie protection levels (third node), domain-based authentication (fourth node), and LDAP configuration (fifth node) are correctly ranked lower.",
+    "ContextualRecall": "The score is 0.57 because while the retrieval context provides detailed information about JWT tokens and their requirements (supporting sentences 2 and 3), it lacks details on the steps to use the authenticator, configuring authorized applications, and the limitation regarding user creation (unsupportive for sentences 4, 5, and 6).",
+    "ContextualRelevancy": "The score is 0.20 because the context discusses document management, cookie protection, and LDAP authentication in XWiki, which are not relevant to user authentication with access tokens.",
+    "Hallucination": "The score is 0.80 because the actual output fails to include multiple critical details mentioned in the contexts, such as returning a list of document IDs, 'remember me' cookie functionality, domain-based instance configuration, and LDAP authentication settings. However, it correctly aligns with the context regarding the JWT token and its claims."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

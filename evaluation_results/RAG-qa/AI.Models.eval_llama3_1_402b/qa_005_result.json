@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.45555555555555566,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 0.3333333333333333,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and directly addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.20 because the relevant node (rank 5) containing the specific property `oidc.enableUser=true` needed for enabling user accounts on first login using OpenID Connect is ranked lower than irrelevant nodes. For example, the first node discusses domain-based instance authentication and session cookie configuration, which is not directly related to the input query.",
+    "ContextualRecall": "The score is 0.33 because only the mention of the property `oidc.enableUser` in the `xwiki.properties` file (sentence 2) and the exact comment and property (sentence 4) are supported by the 6th node in the retrieval context. Other instructions are missing.",
+    "ContextualRelevancy": "The score is 0.20 because the context primarily discusses domain-based instance configuration, session cookies, and disabling OpenID Connect, which does not directly address the issue of automatically enabling user accounts upon their first login using OpenID Connect.",
+    "Hallucination": "The score is 1.00 because the actual output fails to mention several key points from the context, including domain-based instance configuration, session cookie settings, bypassing OpenID Connect, prerequisites, installation instructions, dependencies, Logging Admin UI, Logback configuration, short URLs, and additional configuration options such as user information refresh rate, client identifier, client secret, token, and in-wiki OIDC configuration."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

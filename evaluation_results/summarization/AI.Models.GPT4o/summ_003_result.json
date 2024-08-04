@@ -1,0 +1,10 @@
+{
+  "score": 0.875,
+  "reason": "The score is 0.88 because the summary includes minor contradictions regarding guest permissions and the presence of screenshots and links in the guide.",
+  "score_breakdown": {
+    "Alignment": 0.875,
+    "Coverage": 1.0
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

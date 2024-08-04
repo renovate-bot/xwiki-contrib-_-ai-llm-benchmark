@@ -1,0 +1,10 @@
+{
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary incorrectly states the location of the action bar and fails to mention whether a user can edit a page using the WYSIWYG editor in XWiki.",
+  "score_breakdown": {
+    "Alignment": 0.8,
+    "Coverage": 0.8
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6483091787439613,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9565217391304348,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.6,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.96 because the answer is highly relevant, but the inclusion of the URL 'https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/' is not related to the issue of not receiving notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node (rank 3) explaining how to enable notifications is ranked lower than several irrelevant nodes. For example, the first node lists various notification macros without actionable steps, and the second node discusses email notification details, both of which are not directly relevant.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are well-supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.60 because the context provides information on managing notifications but does not directly address the issue of not receiving notifications, as stated in 'Je ne re\u00e7ois pas de notifications.'",
+    "Hallucination": "The score is 1.00 because the actual output consistently does not align with the context provided, discussing unrelated topics such as troubleshooting notification issues instead of the specific details mentioned in the context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

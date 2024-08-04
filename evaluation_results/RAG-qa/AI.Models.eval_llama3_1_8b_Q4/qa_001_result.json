@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.375,
+  "individual_scores": {
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.75 because the provided URLs are general and do not directly address the specific issue with the Bell icon, although the rest of the information is relevant.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because the first node discusses various applications and features, but does not provide information on enabling notifications by setting `notifications.enabled` in `xwiki.properties`. The second node mentions the 'What's New Application' for getting notified about news, but does not address enabling notifications in the wiki settings. The third node lists various notification preferences and macros, but does not mention the `notifications.enabled` setting in `xwiki.properties`. All nodes are irrelevant and should be ranked lower.",
+    "ContextualRecall": "The score is 0.50 because while the nodes in the retrieval context mention notifications in general, they do not provide specific details about 'xwiki.properties' or the 'notifications.enabled' setting.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address the availability of the 'Bell' icon or the 'Alert Notification' extension, focusing instead on unrelated XWiki extensions and features.",
+    "Hallucination": "The score is 1.00 because the actual output fails to include multiple relevant pieces of information (Menu application, Invitation application, What's New application, and various notification preferences macros) that are present in the context, leading to a high level of hallucination."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

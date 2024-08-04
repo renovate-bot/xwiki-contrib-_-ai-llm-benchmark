@@ -1,0 +1,10 @@
+{
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary contains incorrect information about how watchlist updates are provided and the extent of user control over notifications. Additionally, it fails to address whether it is easy to create new RSS feeds on an XWiki instance.",
+  "score_breakdown": {
+    "Alignment": 0.6,
+    "Coverage": 0.8
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

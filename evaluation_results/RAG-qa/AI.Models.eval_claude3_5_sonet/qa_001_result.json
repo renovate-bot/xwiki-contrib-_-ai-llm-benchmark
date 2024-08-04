@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.39197530864197533,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8518518518518519,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.85 because the answer is mostly relevant but includes multiple instances of an irrelevant URL that does not address the specific issue of the missing 'Bell' icon in XWiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job staying true to the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses the Menu application and other features, but it does not address enabling notifications. The second node talks about the 'What's New Application' for news notifications, but not about enabling notifications. The third node lists notification-related macros and preferences, but does not mention enabling notifications in `xwiki.properties`. The fourth node lists dependencies for the notifications extension without providing information on enabling notifications. The fifth node discusses email notifications and their configurations, but does not mention enabling notifications in `xwiki.properties`.",
+    "ContextualRecall": "The score is 0.50 because while the retrieval context nodes mention notifications and preferences, they do not specifically reference the 'notifications.enabled' setting in 'xwiki.properties'.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address the availability of the 'Bell' icon or the 'Alert Notification' extension, focusing instead on unrelated XWiki extensions and features.",
+    "Hallucination": "The score is 1.00 because the actual output does not directly address any of the provided contexts, which focus on features, applications, macros, dependencies, and configuration related to notifications in XWiki. Instead, the actual output provides unrelated troubleshooting steps."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "fr"
+}

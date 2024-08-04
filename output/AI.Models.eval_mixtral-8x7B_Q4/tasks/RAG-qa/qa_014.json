@@ -1,0 +1,17 @@
+{
+  "id": "qa_014",
+  "prompt": "Ich erhalte viele Benachrichtigungen \u00fcber alle m\u00f6glichen Seiten, an denen ich nicht interessiert bin. Diese scheinen automatisch aktiviert worden zu sein. Wie kann ich diese Benachrichtigungen deaktivieren?",
+  "expected_answer": "Standardm\u00e4\u00dfig wird eine Seite, an der Sie eine wesentliche \u00c4nderung vorgenommen haben, automatisch zu der Liste der Seiten hinzugef\u00fcgt, denen Sie folgen. Das bedeutet, dass Sie \u00fcber \u00c4nderungen an Ihrer Arbeit benachrichtigt werden. Sie k\u00f6nnen die Einstellung f\u00fcr \"Automatisches Verfolgen von Seiten\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil \u00e4ndern. Sie k\u00f6nnen vorhandene Benachrichtigungsfilter, die auf diese Weise erstellt wurden, in der Liste \"Benutzerdefinierte Filter\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil l\u00f6schen.",
+  "ai_answer": "\n\n It seems that you're receiving many notifications from various pages that you're not interested in. These notifications might have been activated automatically. Here's how to disable these notifications:\n\n1. Open your web browser (e.g., Google Chrome, Firefox, Safari)\n2. Click on the three-dot menu icon (Chrome), hamburger menu (Firefox), or gear icon (Safari) in the upper right corner of the browser window.\n3. From the dropdown list, click on \"Settings\" (Chrome), \"Preferences\" (Firefox), or \"Settings\" (Safari).\n4. In the settings menu, find and click on \"Privacy and Security,\" \"Content Settings,\" or a similarly named option.\n5. Look for the \"Notifications\" section and click on it.\n6. Here, you should see a list of websites that have requested to send notifications. Find the ones you want to block and click on the three-dot menu next to them.\n7. Click \"Block\" or \"Remove,\" which will prevent the site from sending you further notifications.\n8. Repeat this process for all unwanted sites in the list.\n9. Close and reopen your browser to ensure changes take effect.\n\nPlease note that these steps may vary slightly depending on the web browser you are using. However, the overall process should be similar across different browsers.",
+  "sources": [],
+  "usage": {
+    "prompt_tokens": 142,
+    "completion_tokens": 308,
+    "total_tokens": 450
+  },
+  "average_power_draw": 69.77924203673572,
+  "energy_consumption": 1496.5459728345709,
+  "energy_per_input_token": 1.640949531616854,
+  "energy_per_output_token": 4.102373829042135,
+  "energy_per_total_token": 3.3256577174101576
+}

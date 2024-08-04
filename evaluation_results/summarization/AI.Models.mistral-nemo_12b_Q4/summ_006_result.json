@@ -1,0 +1,10 @@
+{
+  "score": 0.9,
+  "reason": "The score is 0.90 because the summary contradicts the original text by stating that developers explore pre-installed apps and macros on the Extensions wiki, whereas the original text mentions that additional applications, macros, and other extensions are available there.",
+  "score_breakdown": {
+    "Alignment": 0.9,
+    "Coverage": 1.0
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

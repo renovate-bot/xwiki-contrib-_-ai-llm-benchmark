@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5277777777777778,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.16666666666666666,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and there are no irrelevant statements in the actual output. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node provides general information about the OpenID Connect Authenticator but does not address the specific configuration needed. The second node discusses domain-based authentication and session cookie configuration, which is not related to the question. The third node mentions bypassing OpenID Connect using the `oidc.skipped` property, which is not relevant. The fourth node lists dependencies for the OpenID Connect Authenticator extension, which does not address the specific configuration question.",
+    "ContextualRecall": "The score is 0.17 because only the relevance of the xwiki.properties file (sentence 1) is supported by the 2nd node in the retrieval context, while the rest of the expected output lacks support from the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context provides general information about OpenID Connect configuration and prerequisites but does not specifically address the issue of automatically activating user accounts upon first login.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments and all identified points are contradictions, indicating that the actual output does not align with the provided context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

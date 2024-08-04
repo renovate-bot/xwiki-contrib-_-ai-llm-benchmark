@@ -1,0 +1,10 @@
+{
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary incorrectly states that the next step in the guide is creating a page and fails to mention whether the guide provides steps for administrators.",
+  "score_breakdown": {
+    "Alignment": 0.8571428571428571,
+    "Coverage": 0.8
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

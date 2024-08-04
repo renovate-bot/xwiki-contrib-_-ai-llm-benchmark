@@ -1,0 +1,42 @@
+{
+  "id": "qa_029",
+  "prompt": "Comment puis-je refuser le droit de script \u00e0 un administrateur d'espace?",
+  "expected_answer": "Ceci n'est malheureusement pas pris en charge dans XWiki, les droits qui sont impliqu\u00e9s par le droit d'administrateur ne peuvent pas \u00eatre refus\u00e9s.",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \n\n\nD'apr\u00e8s les informations fournies, il semble que vous souhaitiez refuser le droit d'ex\u00e9cution de scripts (ou \"script\" en anglais) \u00e0 un administrateur d'espace sur XWiki.\n\nMalheureusement, il n'est pas possible de refuser sp\u00e9cifiquement le droit d'ex\u00e9cution de scripts \u00e0 un utilisateur ayant le r\u00f4le d'administrateur. Cela est d\u00fb au fait que l'attribution du r\u00f4le d'administrateur implique automatiquement plusieurs droits, dont celui d'ex\u00e9cuter des scripts.\n\nCependant, si vous souhaitez limiter les droits d'un administrateur, vous pouvez lui retirer ce r\u00f4le et lui attribuer un autre r\u00f4le avec des droits limit\u00e9s. Vous pouvez \u00e9galement modifier les permissions au niveau de la page ou du wiki pour limiter l'acc\u00e8s \u00e0 certaines fonctionnalit\u00e9s.\n\nSi vous avez besoin de plus d'informations sur la gestion des r\u00f4les et des permissions dans XWiki, je vous recommande de consulter leur documentation officielle : <https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/>",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Access Rights.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/",
+      "content": "* Color Themes are pages and thus your current Color Theme won&#x27;t be accessible for unregistered users who&#x27;ll get the default Color Theme. To fix this, you&#x27;ll need to give view access to unregistered users on your Color Theme page.\n* In addition to the Color Theme not being available, the icon font will not be rendered visible, hiding the Search and Hamburger Menu links in the upper-right corner. They are still accessible, but invisible.\n* Forgot Username and Forgot Password functionality will not be available. See [JIRA-14544](https://jira.xwiki.org/browse/XWIKI-14544).\n\n# Main Wiki Access Rights\n\nTo change rights for the main wiki, log in as Administrator, click the ![DrawerMenuIcon.png](https://www.xwiki.org/xwiki/bin/download/Documentation/AdminGuide/Access%20Rights/WebHome/DrawerMenuIcon.png?rev=1.1)\u00a0button to open the drawer menu, then click on &quot;Administer Wiki&quot;.\n\n![AdministerWikiMenu.png](https://www.xwiki.org/xwiki/bin/download/Documentation/AdminGuide/Access%20Rights/WebHome/AdministerWikiMenu.png?rev=1.1)\n\nIn the wiki administration page, click on the &quot;Rights&quot; link from the vertical menu to the left.\n\n![AdministrationRights.png](https://www.xwiki.org/xwiki/bin/download/Documentation/AdminGuide/Access%20Rights/WebHome/AdministrationRights.png?rev=1.1)\n\nNext, select the users or groups for which you want to set a permission for. Note that if you are on the main wiki, you are editing the rights for global users and groups. Global user/groups are defined on the main wiki. If you are editing rights on a sub-wiki level, you can choose Local users/groups which are users/groups defined for the sub-wiki only or Global users/groups.\n\n![GroupRights.png](https://www.xwiki.org/xwiki/bin/download/Documentation/AdminGuide/Access%20Rights/WebHome/GroupRights.png?rev=1.1)\n\n",
+      "similarity_score": 0.7989083528518677,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Access Rights.Permission types.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/",
+      "content": "# Comment Right\n\nThe comment gives the user the ability to add a comment, but not to edit or delete it.\n\n* Availability: Page and Wiki level.\n* Default status: ALLOWED\n* Priority order: deny &gt; allow &gt; no setting\n* Checking order: page &gt; wiki\n\nIn order to be able to edit or delete your own comments, you need to have edit rights on the \u00a0page. Also, you won&#x27;t be able to edit or delete the comments of other users, unless you have administration rights.\n\n# Edit Right\n\nThe edit allows you to edit the page and all of its objects.\n\n* Availability: Page and Wiki level.\n* Default status: ALLOWED\n* Priority order: deny &gt; allow &gt; no setting\n* Checking order: page &gt; wiki\n\n# Delete Right\n\nThe delete right allows you to move a page to the recycle bin.\n\n* Availability: Page and Wiki level.\n* Default status: DENIED (unless you&#x27;re the document creator)\n* Priority order: deny &gt; allow &gt; no setting\n* Checking order: page &gt; wiki\n\n# Special Permissions\n\n## Administration Right\n\nThe administration right can only be granted at page or wiki level. A very important detail is that the wiki administrator cannot have his/her administration rights denied for a page. Also, having administration rights imply the view, comment, edit and delete permissions with the added ability to permanently delete a page from the recycle bin.\n\n* Availability:\n\t+ page (Automatically includes the view, comment, edit, delete rights)\n\t+ Wiki (Automatically includes the view, comment, edit, delete, register)\n* Default status: DENIED\n* Priority order: allow &gt; deny &gt; no setting\n* Checking order: wiki &gt; page\n\n",
+      "similarity_score": 0.796999454498291,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Access Rights.Permission types.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/",
+      "content": "## Programming Right\n\nA programmer is allowed to execute arbitrary Java code in the wiki, so any page which was last saved by an user with programmer rights can run dangerous scripts. Because it affects the entire wiki (or wiki farm), programming rights can only be granted from the wiki preferences page in a single wiki environment or from the main wiki in a multi-wiki environment.\n\n* Availability: Main wiki level (automatically implies \u00a0LOGIN, VIEW, EDIT, DELETE, REGISTER, COMMENT, SCRIPT, ADMIN, see the documentation for the [security module](https://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module))\n* Default status: DENIED\n* Priority order: allow &gt; deny &gt; no setting\n* Checking order: wiki\n\n## Register Right\n\nThe register right is usually granted or revoked for the non-registered pseudo-user &quot;XWiki.XWikiGuest&quot;. This permission can only be set from the wiki preferences page.\n\n* Availability: Wiki level\n* Default status: ALLOWED\n* Priority order: allow &gt; deny &gt; no setting\n* Checking order: wiki\n\n## Create Wikis Right\n\nThe &quot;createwiki&quot; right can only be granted via the main wiki, just like programming rights. .\n\n* Availability: Main wiki level\n* Default status: DENIED\n* Priority order: allow &gt; deny &gt; no setting\n* Checking order: wiki\n\n",
+      "similarity_score": 0.7871080636978149,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1343,
+    "completion_tokens": 221,
+    "total_tokens": 1564
+  },
+  "average_power_draw": 235.6247076461769,
+  "energy_consumption": 733.759402823012,
+  "energy_per_input_token": 0.38710598935532164,
+  "energy_per_output_token": 0.9677649733883039,
+  "energy_per_total_token": 0.46915562840346037
+}

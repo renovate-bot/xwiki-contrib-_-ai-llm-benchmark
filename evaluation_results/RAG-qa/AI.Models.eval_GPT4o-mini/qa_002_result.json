@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6861111111111112,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8333333333333334,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.75,
+    "ContextualRelevancy": 0.2,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.83 because the response includes several irrelevant links to documentation and features that are not directly related to troubleshooting notification issues in XWiki. However, the main content still addresses the core issue of troubleshooting notifications, which is why the score is relatively high.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.33 because the first and second nodes in the retrieval context are irrelevant, as they do not provide information on enabling notifications or subscribing to pages or users. The relevant node, which explains different ways to receive notifications in XWiki, is ranked third. Additionally, the fourth and fifth nodes are also irrelevant as they discuss other features and RSS feeds, respectively, which do not directly address the issue of enabling notifications in XWiki.",
+    "ContextualRecall": "The score is 0.75 because while the retrieval context covers subscribing to pages or users, watching pages, following users, and the 'network' tab in the user profile (nodes 3 and 4), it does not mention enabling notifications via `xwiki.properties` (nodes 1 and 2).",
+    "ContextualRelevancy": "The score is 0.20 because the context does not address the issue of not receiving notifications in XWiki and instead discusses unrelated features like RSS feeds and various application preferences.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments and multiple contradictions indicating that the actual output diverges significantly from the provided context."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

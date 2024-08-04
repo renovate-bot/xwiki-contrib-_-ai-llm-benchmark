@@ -1,0 +1,7 @@
+{
+  "score": 0.9,
+  "reason": "The Actual Output effectively addresses the Input prompt and matches the context of the Expected Output. It is coherent, fluent, and technically detailed. Minor deviations include additional details like neuron count and synapses, which do not detract from the overall accuracy.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

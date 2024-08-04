@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5386946386946386,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9230769230769231,
+    "Faithfulness": 0.9090909090909091,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.4,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the provided URL is not relevant to the issue of not receiving notifications. However, the rest of the response is highly relevant and addresses the problem effectively.",
+    "Faithfulness": "The score is 0.91 because the actual output incorrectly claims that you can receive notifications weekly, while the retrieval context only mentions daily notifications and live notifications with a grace time.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'notification-related macros and preferences' but does not address enabling notifications or following pages/users. Similarly, the second node talks about 'changes in email notifications' without explaining how to enable notifications or follow pages/users.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are well-supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.40 because the context discusses notification settings and technical details in XWiki, but does not directly address the issue of not receiving notifications ('Je ne re\u00e7ois pas de notifications').",
+    "Hallucination": "The score is 1.00 because the actual output lacks several critical details mentioned in the context, including specifics about macros and their functions, changes in email content, types of notifications, RSS feed, and filtering modes, leading to a high hallucination score."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

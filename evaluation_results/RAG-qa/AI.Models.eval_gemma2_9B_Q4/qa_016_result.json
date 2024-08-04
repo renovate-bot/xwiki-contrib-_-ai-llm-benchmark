@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.37222222222222223,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.6666666666666666
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.90 because the answer is mostly relevant and provides useful information about customizing user profile fields from OpenID Connect in XWiki. However, it includes a statement about scalability and performance features of XWiki, which is not relevant to the specific question asked.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all the nodes in the retrieval context are irrelevant to the input. The first node discusses 'authentication with a domain-based instance and session cookie configuration', which is not relevant to mapping user profile fields. The second node provides 'general information about the OpenID Connect Authenticator' but does not address mapping additional user profile fields. The third node discusses 'XWiki's scalability, multi-tenancy, and clustering capabilities', which are also not relevant to the task.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses domain-based authentication, session cookie configuration, and bypassing OpenID Connect, which are irrelevant to customizing user profile fields or mapping additional user profile fields from an OpenID Connect provider to XWiki user properties.",
+    "Hallucination": "The score is 0.67 because the actual output lacks important details about session cookie configuration, Tomcat's JSESSIONID, Java/Java EE, multi-tenancy, clustering, and scalability, which are present in the context. Additionally, there is a contradiction where the actual output agrees with the context on OpenID Connect and xwiki.properties configuration."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

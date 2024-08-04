@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.48148148148148145,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8888888888888888,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.89 because the answer mostly addresses how to enable notifications for one's own actions. However, it includes a link to XWiki syntax documentation and a general acknowledgment in French, which are not directly relevant to the question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node 'provides links and descriptions of various notification preferences macros but does not address how to enable notifications for one's own actions', and the second node 'discusses email notifications and their configurations, but it does not explain how to enable notifications for one's own actions'.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address how to enable notifications for one's own actions, focusing instead on general notification settings and technical details.",
+    "Hallucination": "The score is 1.00 because the actual output lacks multiple key details and functionalities described in the context, such as specific macros, email notification settings, pre-filtering and post-filtering modes, and resource consumption, leading to a high hallucination score."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

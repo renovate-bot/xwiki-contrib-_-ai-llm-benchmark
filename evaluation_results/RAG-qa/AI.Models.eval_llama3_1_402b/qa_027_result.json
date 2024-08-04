@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3522727272727273,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8636363636363636,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.25,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.86 because the answer mostly addresses the question about configuring group synchronization between XWiki and an OpenID Connect provider, but includes several irrelevant URLs that do not pertain to the topic.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.25 because the relevant node (rank 4) is ranked lower than several irrelevant nodes. For example, the first node discusses 'scalability and multi-tenancy of XWiki,' which is unrelated to configuring group synchronization with OpenID Connect. Similarly, the second node talks about 'domain-based authentication and session cookie configuration,' which does not provide information on synchronizing groups with OpenID Connect. The third node is about 'configuring an OpenOffice server with XWiki,' which is not relevant to the process of configuring group synchronization with OpenID Connect. The fifth node discusses 'the storage of XWiki pages in a relational database,' which is also not related to configuring group synchronization with OpenID Connect.",
+    "ContextualRecall": "The score is 0.00 because none of the nodes in the retrieval context mention any of the steps or configurations related to setting up group synchronization between XWiki and an OpenID Connect provider.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses various unrelated topics such as XWiki's scalability, multi-tenancy, clustering capabilities, domain-based authentication, session cookie configuration, and OpenOffice server integration, none of which address the specific query about configuring group synchronization between XWiki and an OpenID Connect provider.",
+    "Hallucination": "The score is 1.00 because the actual output fails to mention several key features and configurations of XWiki as described in the context, including scalability, multi-tenancy, domain-based instance authentication, session cookie configuration, OpenOffice server deployment, OpenID Connect Authenticator configuration, and relational database support."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

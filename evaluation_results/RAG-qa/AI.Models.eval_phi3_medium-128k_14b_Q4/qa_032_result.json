@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.49267399267399264,
+  "individual_scores": {
+    "AnswerRelevancy": 0.05128205128205128,
+    "Faithfulness": 1,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.5714285714285714,
+    "ContextualRelevancy": 0.3333333333333333,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.05 because the output contains numerous irrelevant and nonsensical statements that do not address the question about authenticating users with access tokens. The response lacks coherence and relevance, making it largely unhelpful.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node that provides detailed information about the JWT token requirements, including the necessary claims and the format for the 'Authorization' header, is ranked first. Irrelevant nodes discussing blocked attachment mimetypes and their configuration (second node) and creating custom authentication using a Groovy script (third node) are ranked lower.",
+    "ContextualRecall": "The score is 0.57 because while some sentences in the expected output are supported by nodes in the retrieval context (e.g., JWT token claims and token format in the 'Authorization' header), other key details such as specific steps for enabling the token authenticator, configuring authorized applications, and limitations of the authenticator are not mentioned in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.33 because the context discusses attachment mimetype restrictions and custom authentication methods, which do not address the specific question about authenticating users with access tokens.",
+    "Hallucination": "The score is 1.00 because the actual output lacks several critical details mentioned in the contexts, such as the JWT token generation process, blocked attachment mimetypes, and custom authentication using a Groovy script. These omissions indicate a high level of hallucination."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

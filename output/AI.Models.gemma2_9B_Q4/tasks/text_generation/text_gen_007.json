@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_007",
+  "prompt": "Generate a news article about a recent scientific discovery.",
+  "expected_answer": "An informative article summarizing a groundbreaking scientific finding.",
+  "ai_answer": "## Ancient Ocean Bacteria Found Thriving in Modern Seawater \n\n**Honolulu, Hawaii** - Scientists at the University of Hawaii have made a groundbreaking discovery: ancient bacteria, thought to be extinct for millions of years, are still thriving in the modern Pacific Ocean. \n\nThis unexpected find, published in the latest issue of *Nature*, throws new light on the resilience and adaptability of microbial life. The bacteria, identified as a new species of *Pelagibacter*, closely resemble fossils discovered in sedimentary rocks dating back to the Late Cretaceous period, roughly 80 million years ago.  \n\n\u201cWe were astounded,\u201d said Dr. Emily Carter, lead researcher on the project. \u201cThese bacteria are virtually identical to their ancient counterparts, yet they\u2019ve managed to survive in a drastically changed ocean environment.\"\n\nDr. Carter\u2019s team analyzed seawater samples collected from various depths in the Pacific and identified a previously unknown group of *Pelagibacter*. Genetic analysis revealed remarkable similarities with fossil DNA extracted from ancient sediment.\n\n\u201cThis suggests these bacteria have persisted through countless environmental changes, including massive volcanic eruptions, asteroid impacts, and the evolution of complex life forms,\u201d explained Dr. Carter. \u201cThey are a testament to the incredible tenacity of microbial life.\u201d\n\nThe discovery has far-reaching implications. It sheds light on the evolution of marine ecosystems and the role of microorganisms in shaping the planet's history. It also raises intriguing questions about the potential for microbial life to survive even in the harshest of conditions, which could inform the search for life on other planets.\n\nFurther research will focus on understanding the genetic adaptations that allow these ancient bacteria to thrive in modern seawater. This could unlock new insights into the fundamentals of life and its resilience in the face of change. \n\n\n",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 20,
+    "completion_tokens": 358,
+    "total_tokens": 378
+  },
+  "average_power_draw": 215.3220869565217,
+  "energy_consumption": 817.5343131208003,
+  "energy_per_input_token": 0.89348012362929,
+  "energy_per_output_token": 2.233700309073225,
+  "energy_per_total_token": 2.162789188150265
+}

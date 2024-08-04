@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.37222222222222223,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.6666666666666666
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.90 because the main content is highly relevant to customizing user profile fields in XWiki from OpenID Connect. However, the mention of scalability and performance is not directly related to the question, which prevents the score from being higher.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.00 because the nodes in retrieval context discussing 'authentication with a domain-based instance and session cookie configuration' (first node), 'general information about the OpenID Connect Authenticator' (second node), and 'XWiki's scalability, multi-tenancy, and clustering capabilities' (third node) are not relevant to customizing user profile fields from an OpenID Connect provider.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses domain-based authentication, session cookies, and bypassing OpenID Connect, which are not relevant to customizing user profile fields or mapping additional user profile fields from an OpenID Connect provider to XWiki user properties.",
+    "Hallucination": "The score is 0.67 because the actual output lacks specific details about domain-based instance authentication, session cookie configuration, bypassing OpenID Connect, and XWiki's scalability, multi-tenancy, and clustering capabilities, which are mentioned in the context. However, it correctly aligns with the context regarding authentication using an OpenID Connect provider and automatic synchronization."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

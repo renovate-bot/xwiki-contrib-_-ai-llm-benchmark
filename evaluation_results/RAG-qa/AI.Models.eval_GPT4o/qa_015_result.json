@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.39305555555555555,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9583333333333334,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.6
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.96 because the answer is highly relevant to configuring OpenID Connect authentication in XWiki, but it includes a link to Accessibility documentation, which is not directly related to the question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context discuss topics unrelated to the configuration of automatically activating user accounts on first login with OpenID Connect. For example, the first node discusses 'domain-based instance authentication and session cookie configuration,' and the second node provides 'general information about OpenID Connect and its installation,' which are not relevant.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses domain-based authentication, session cookie configuration, and bypassing OpenID Connect, which are not relevant to the question about automatic user activation.",
+    "Hallucination": "The score is 0.60 because while the actual output includes relevant information about configuring OpenID Connect authentication and provides a useful link to the documentation, it fails to mention key dependencies, accessibility compliance, and custom authentication details that are present in the context."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

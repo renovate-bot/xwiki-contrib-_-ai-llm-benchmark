@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6761904761904761,
+  "individual_scores": {
+    "AnswerRelevancy": 0.95,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.45,
+    "ContextualRecall": 0.8571428571428571,
+    "ContextualRelevancy": 0.4,
+    "Hallucination": 0.6
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.95 because the answer is highly relevant and provides a clear solution, but it includes a URL about Nested Pages Migration, which is not directly related to configuring view and edit permissions in XWiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.45 because the first node explains the concept of spaces and sub-pages in XWiki but does not provide information on setting access controls or permissions, and it is ranked higher than the second node, which provides relevant information about XWiki's permission system. Additionally, the third node discusses executing a plan for migrating content and does not provide relevant information on setting access controls or permissions in XWiki, but it is ranked higher than the fifth node, which provides detailed information on setting wiki-wide rights, granular page-level rights, and creating groups.",
+    "ContextualRecall": "The score is 0.86 because most sentences in the expected output align well with the nodes in the retrieval context, particularly regarding setting rights at different levels and managing group permissions, though one general reminder is not explicitly supported.",
+    "ContextualRelevancy": "The score is 0.40 because the context does not address configuring permissions for teams to view and edit spaces in XWiki, which is the main concern of the input.",
+    "Hallucination": "The score is 0.60 because the actual output misses several key points from the context, such as the concept of 'Terminal Pages', execution of plans, migration processes, various authentication mechanisms, and the Distribution Wizard. However, it correctly aligns with the context regarding rights management and permission configuration."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

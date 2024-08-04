@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6374338624338624,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7857142857142857,
+    "Faithfulness": 0.8888888888888888,
+    "ContextualPrecision": 0.75,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.4,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.79 because the answer provides useful information on disabling notifications, but it includes irrelevant URLs that do not directly address the question.",
+    "Faithfulness": "The score is 0.89 because the actual output incorrectly states that notifications can be activated automatically when creating or modifying a page, whereas the retrieval context specifies that notifications are only sent when users are mentioned or when actions are performed on pages they created or updated.",
+    "ContextualPrecision": "The score is 0.75 because the first and fourth nodes in the retrieval context are highly relevant to the user's query about disabling notifications, mentioning 'Notifications Auto Watch Preferences' and 'settings' of notifications. However, the second node, which is about email notifications, and the third node, which discusses RSS feeds, are not directly relevant and should be ranked lower. Additionally, the fifth node, which is about the technical aspects of notifications, and the sixth node, which discusses the structure of XWiki pages, are also not relevant and should be ranked lower.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.40 because the context focuses on email notifications and technical details about XWiki, which do not directly address the user's question about disabling general notifications.",
+    "Hallucination": "The score is 1.00 because the actual output lacks specific details and information provided in the context, leading to a complete misalignment with the factual information."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

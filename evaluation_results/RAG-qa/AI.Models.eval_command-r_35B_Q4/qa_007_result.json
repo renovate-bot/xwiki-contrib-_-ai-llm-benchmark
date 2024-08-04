@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.7562160062160062,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9090909090909091,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.8333333333333333,
+    "ContextualRecall": 0.46153846153846156,
+    "ContextualRelevancy": 0.6666666666666666,
+    "Hallucination": 0.3333333333333333
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.91 because the answer is mostly relevant and provides useful information on configuring group synchronization. However, the subjective comment about documentation clarity slightly detracts from the focus on the specific process being asked about.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.83 because the first node is relevant, mentioning the 'oidc.groups.claim' property crucial for configuring group synchronization. However, the second node, which discusses domain-based authentication and session cookies, is irrelevant and should be ranked lower than the third node, which provides essential information on group synchronization and mentions the 'oidc.groups.mapping' property.",
+    "ContextualRecall": "The score is 0.46 because while some sentences and example codes in the expected output are supported by the 1st node in the retrieval context, many instructional steps and introductory statements are not directly found in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.67 because the context discusses domain-based authentication and disabling OpenID Connect, which are not relevant to configuring group synchronization between XWiki and an OpenID Connect provider.",
+    "Hallucination": "The score is 0.33 because the actual output aligns with the context in terms of enabling group synchronization but fails to mention domain-based instance authentication or session cookie configuration, which are crucial parts of the context."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

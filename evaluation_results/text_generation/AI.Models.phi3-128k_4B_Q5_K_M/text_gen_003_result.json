@@ -1,7 +1,0 @@
-{
-  "score": 0.8,
-  "reason": "The Actual Output is relevant to the Input and addresses the key aspect of photosynthesis. It is coherent and fluent, but it lacks the explicit mention of 'making their own food' and 'staying healthy' as in the Expected Output.",
-  "prompt_language": "en",
-  "expected_answer_language": "en",
-  "generated_text_language": "en"
-}

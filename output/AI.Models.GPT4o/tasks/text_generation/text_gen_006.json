@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_006",
+  "prompt": "Write a poem about the beauty of nature.",
+  "expected_answer": "A poem describing the wonders of the natural world.",
+  "ai_answer": "In the hush of dawn, where whispers weave,\nThe world awakens, begins to breathe.\nA golden glow, the sun's first kiss,\nUnveils the morning's tender bliss.\n\nThe forest hums with life anew,\nEmerald leaves, a vibrant hue.\nBirdsong dances on the breeze,\nA symphony among the trees.\n\nRivers sparkle, serpentine,\nThrough meadows lush, where wildflowers shine.\nPetals blush in colors bright,\nA painter's dream in morning light.\n\nMountains stand, majestic, grand,\nGuardians of this timeless land.\nTheir peaks, where eagles dare to soar,\nTouch the heavens, evermore.\n\nOceans vast, with waves that sing,\nSecrets held in depths they bring.\nA dance of tides, the moon's embrace,\nReflects the cosmos' endless grace.\n\nThe desert's silence, stark and pure,\nWhispers tales that long endure.\nSands that shift, a golden sea,\nHold ancient mysteries, wild and free.\n\nNature's beauty, boundless, true,\nA masterpiece in every view.\nIn every leaf, in every stone,\nA reminder that we're not alone.\n\nFor in the wild, we find our place,\nA part of Earth's eternal grace.\nWith every breath, with every sigh,\nWe honor nature's lullaby.",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 16,
+    "completion_tokens": 262,
+    "total_tokens": 278
+  },
+  "average_power_draw": null,
+  "energy_consumption": null,
+  "energy_per_input_token": null,
+  "energy_per_output_token": null,
+  "energy_per_total_token": null
+}

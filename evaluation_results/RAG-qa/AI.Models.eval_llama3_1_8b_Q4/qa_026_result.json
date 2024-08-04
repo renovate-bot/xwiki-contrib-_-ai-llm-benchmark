@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3148148148148148,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8888888888888888,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.89 because the answer is mostly relevant and addresses the main question about customizing user profile fields from an OpenID Connect provider in XWiki. However, it includes links to documentation about database support and forms in XWiki, which are not directly relevant to the specific question asked.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'domain-based authentication and session cookie configuration', the second node talks about 'XWiki's database storage and programming features', and the third node describes 'form utilization on XWiki.org', none of which relate to mapping user profile fields from OpenID Connect to XWiki properties.",
+    "ContextualRecall": "The score is 0.00 because none of the nodes in the retrieval context relate to customizing user profile fields from the OpenID Connect provider, using the `oidc.user.mapping` property, providing mapping examples, replacing property names, or saving and restarting XWiki.",
+    "ContextualRelevancy": "The score is 0.00 because the context provided discusses domain-based authentication, session cookie configuration, and bypassing OpenID Connect, which are not relevant to the input question about mapping additional user profile fields from an OpenID Connect provider to XWiki user properties.",
+    "Hallucination": "The score is 1.00 because the actual output discusses customizing user profile fields using OpenID Connect, which is unrelated to the provided contexts about authentication, database support, and form utilization in XWiki."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}
