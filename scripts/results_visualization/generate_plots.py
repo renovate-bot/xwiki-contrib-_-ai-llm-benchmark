@@ -156,19 +156,19 @@ def generate_average_power_grouped_chart(data, output_dir, file_name):
 def generate_detailed_power_charts(data, output_dir):
     df = pd.DataFrame(data)
     metrics = [
-        'average_power_draw',
-        'energy_consumption',
-        'energy_per_input_token',
-        'energy_per_output_token',
-        'energy_per_total_token'
+        ('average_power_draw', 'W'),
+        ('energy_consumption', 'J'),
+        ('energy_per_input_token', 'J/token'),
+        ('energy_per_output_token', 'J/token'),
+        ('energy_per_total_token', 'J/token')
     ]
     
-    for metric in metrics:
+    for metric, unit in metrics:
         if metric in df.columns:
             plt.figure(figsize=(12, 8))
             sns.barplot(x='Model', y=metric, hue='Task', data=df)
             plt.title(f'Average {metric.replace("_", " ").capitalize()} by Model and Task')
-            plt.ylabel(f'{metric.replace("_", " ").capitalize()}')
+            plt.ylabel(f'{metric.replace("_", " ").capitalize()} ({unit})')
             plt.xticks(rotation=45, ha='right')
             plt.tight_layout()
             plt.savefig(os.path.join(output_dir, f'average_{metric}_grouped_chart.png'))

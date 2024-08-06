@@ -175,8 +175,13 @@ rule generate_report:
         directory(REPORTS_DIR)
     shell:
         """
+        mkdir -p {input.plots_dir}
+        mkdir -p {input.evaluation_results_dir}
+        mkdir -p {input.model_outputs_dir}
+        mkdir -p {output}
         python {input.script} --config {input.config_file} --plots_dir {input.plots_dir} --output_dir {output} --evaluation_results_dir {input.evaluation_results_dir} --model_outputs_dir {input.model_outputs_dir}
         """
+
 
 rule calculate_average_power:
     input:
