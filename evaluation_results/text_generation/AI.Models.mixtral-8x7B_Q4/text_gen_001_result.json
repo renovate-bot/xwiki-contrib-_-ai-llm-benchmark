@@ -1,7 +1,0 @@
-{
-  "score": 0.8,
-  "reason": "The Actual Output addresses the Input prompt and covers all required aspects (name, date of birth, address). It is coherent and fluent with no grammatical errors. However, the format does not match the Expected Output JSON structure.",
-  "prompt_language": "en",
-  "expected_answer_language": "en",
-  "generated_text_language": "en"
-}

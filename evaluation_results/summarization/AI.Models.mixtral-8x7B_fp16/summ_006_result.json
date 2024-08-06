@@ -1,0 +1,10 @@
+{
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary contains contradictions regarding the availability of additional resources for developers and the next steps in creating a page. Additionally, the summary fails to answer specific questions about the developer section and dedicated documentation wikis that the original text addresses.",
+  "score_breakdown": {
+    "Alignment": 0.6666666666666666,
+    "Coverage": 0.6
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

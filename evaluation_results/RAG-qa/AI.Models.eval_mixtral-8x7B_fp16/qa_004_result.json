@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.7374913733609385,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9130434782608695,
+    "Faithfulness": 0.9285714285714286,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.25,
+    "ContextualRelevancy": 1.0,
+    "Hallucination": 0.6666666666666666
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.91 because the answer is highly relevant and provides clear instructions on how to disable notifications in XWiki. However, it includes closing remarks that do not contribute to solving the problem, which slightly reduces the score.",
+    "Faithfulness": "The score is 0.93 because the actual output incorrectly claims the switch will look undetermined, while the retrieval context states it will look like the screenshot, indicating that the application's notifications are partially enabled.",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first node mentions 'custom filters that can be customized by users, which can be enabled or disabled and can be deleted too,' and the second node explains that 'watching a location automatically create a custom notification filter,' both of which are pertinent to disabling notifications. The third node, which talks about getting a notification RSS feed and the Notifications Macro, is correctly ranked lower as it is not relevant to changing notification settings.",
+    "ContextualRecall": "The score is 0.25 because only the information about deleting custom filters in the notification settings (sentence 4) is supported by the 1st node in the retrieval context, while the rest of the expected output is not supported by the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 1.00 because the input is highly relevant and there are no reasons provided for irrelevancy. Great job!",
+    "Hallucination": "The score is 0.67 because the actual output omits several key details present in the context, such as the 'Filter' box, system filters, custom location filters, and the creation of custom notification filters in specific versions of XWiki. While it aligns with the context on managing and disabling notifications, the significant omissions lead to a higher hallucination score."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

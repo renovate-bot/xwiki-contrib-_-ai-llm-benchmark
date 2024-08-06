@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.6499183006535948,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9411764705882353,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.625,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.94 because the answer is highly relevant and addresses the issue of not receiving notifications in XWiki, but it includes a general link to XWiki documentation that doesn't specifically address the notification issue.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.33 because the first and second nodes are irrelevant, mentioning the 'What's New Application' and the general purpose of the Notifications application without providing specific steps to enable notifications or check subscriptions. The third node, which is relevant, provides detailed information about email notifications and troubleshooting steps, but it is ranked lower.",
+    "ContextualRecall": "The score is 0.62 because while the retrieval context covers subscribing to pages or users for notifications and watching pages or users, it lacks details on enabling notifications via `xwiki.properties` and the 'network' tab in the user profile.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address the issue of not receiving notifications in XWiki and instead discusses unrelated features and settings.",
+    "Hallucination": "The score is 0.00 because there are no contradictions between the actual output and the provided context, and the actual output accurately reflects the information given in the context."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

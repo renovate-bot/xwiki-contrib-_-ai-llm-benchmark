@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3115942028985507,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8695652173913043,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.87 because the answer is mostly relevant to configuring group synchronization between XWiki and an OpenID Connect provider. However, it includes URLs to unrelated documentation, which slightly detracts from its overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all the nodes in the retrieval context are irrelevant. The first node discusses XWiki's scalability, multi-tenancy, and clustering capabilities, which are unrelated to configuring group synchronization with OpenID Connect. The second node is about configuring OpenOffice server settings in XWiki, which is not relevant to the process of setting up group synchronization with OpenID Connect. The third node talks about XWiki's database storage and programming features, which do not pertain to configuring group synchronization with OpenID Connect.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses XWiki's multi-tenancy, clustering, and database support, none of which address the configuration of group synchronization with an OpenID Connect provider.",
+    "Hallucination": "The score is 1.00 because the actual output lacks critical information about XWiki's Java/Java EE foundation, multi-tenancy, clustering capabilities, OpenOffice server configuration, port number, auto start feature, and the relational database support by Hibernate, which are all essential aspects that should have been included."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

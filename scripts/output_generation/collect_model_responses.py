@@ -41,8 +41,27 @@ def get_gpu_power_usage():
         power_usage = float(output.decode('utf-8').strip())
         return power_usage
     except (FileNotFoundError, subprocess.CalledProcessError):
-        return 'N/A'
+        return None
+
+def measure_baseline_power():
+    print("Measuring baseline power usage...")
+    baseline_power_readings = []
+    start_time = time.time()
+    while time.time() - start_time < 5:  # Measure baseline power for 5 seconds
+        power_usage = get_gpu_power_usage()
+        if power_usage is not None:
+            baseline_power_readings.append(power_usage)
+        time.sleep(0.1)  # Adjust the interval as needed
     
+    if baseline_power_readings:
+        baseline_power = sum(baseline_power_readings) / len(baseline_power_readings)
+        print(f"Baseline power usage: {baseline_power} W")
+    else:
+        baseline_power = None
+        print("No GPU detected or power measurement not available.")
+    
+    return baseline_power
+
 def measure_power_consumption(model, temperature, stream, question, baseline_power):
     power_readings = []
     stop_event = threading.Event()
@@ -194,17 +213,8 @@ def main():
     args = parse_arguments()
     request_template = load_data(args.request_template)
 
-    # Measure baseline power usage
-    print("Measuring baseline power usage...")
-    baseline_power_readings = []
-    start_time = time.time()
-    while time.time() - start_time < 5:  # Measure baseline power for 5 seconds
-        power_usage = get_gpu_power_usage()
-        if isinstance(power_usage, float):
-            baseline_power_readings.append(power_usage)
-        time.sleep(0.1)  # Adjust the interval as needed
-    baseline_power = sum(baseline_power_readings) / len(baseline_power_readings)
-    print(f"Baseline power usage: {baseline_power} W")
+    baseline_power = measure_baseline_power()
+    
     print("Gathering responses...")
     process_tasks(args.input_dir, args.output_dir, request_template, baseline_power)
     os.makedirs("snakeout/collected", exist_ok=True)

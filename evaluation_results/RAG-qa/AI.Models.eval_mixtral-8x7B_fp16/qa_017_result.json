@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3141025641025641,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8846153846153846,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.88 because the answer is mostly relevant to setting up group synchronization between XWiki and an OpenID Connect provider, but it includes unrelated URLs that detract from its overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses configuring an OpenOffice server instance, the second node talks about XWiki's scalability and clustering features, and the third node describes wiki features like page editing and version control. None of these nodes provide information on setting up group synchronization with an OpenID Connect provider.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context provided is about configuring an OpenOffice server with XWiki, which is irrelevant to the input question about setting up group synchronization between XWiki and an OpenID Connect provider.",
+    "Hallucination": "The score is 1.00 because the actual output lacks multiple critical details that are present in the contexts, resulting in a high level of factual misalignment."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

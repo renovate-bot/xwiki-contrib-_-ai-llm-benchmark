@@ -1,0 +1,10 @@
+{
+  "score": 0.7777777777777778,
+  "reason": "The score is 0.78 because the summary contains a contradiction regarding the purpose of checking the release notes and includes extra information about specific methods not mentioned in the original text. Additionally, it fails to answer a question about XWiki's recommendation for using the Distribution Wizard for upgrading the flavor.",
+  "score_breakdown": {
+    "Alignment": 0.7777777777777778,
+    "Coverage": 0.8
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

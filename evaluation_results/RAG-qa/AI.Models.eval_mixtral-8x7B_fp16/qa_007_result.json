@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.7457264957264956,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.8333333333333333,
+    "ContextualRecall": 0.3076923076923077,
+    "ContextualRelevancy": 0.6666666666666666,
+    "Hallucination": 0.3333333333333333
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and directly addresses the process of configuring group synchronization between XWiki and an OpenID Connect provider, with no irrelevant statements.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.83 because the first and third nodes are relevant and provide essential information on configuring group synchronization, such as the `oidc.groups.claim` and `oidc.groups.mapping` properties. However, the second node, which discusses domain-based instance authentication and cookie settings, is irrelevant and should be ranked lower.",
+    "ContextualRecall": "The score is 0.31 because while the retrieval context mentions configuring properties like `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping`, it lacks details on locating and editing the `xwiki.properties` file, replacing placeholders with actual values, and saving and restarting the XWiki instance.",
+    "ContextualRelevancy": "The score is 0.67 because the context discusses domain-based authentication, session cookie configuration, and bypassing OpenID Connect, which are not relevant to the query about synchronizing groups between XWiki and an OpenID Connect provider.",
+    "Hallucination": "The score is 0.33 because the actual output aligns with the context regarding group synchronization and the use of specific properties (`oidc.groups.claim` and `oidc.groups.mapping`), but it does not address other context areas such as domain-based instance authentication and session cookie configuration."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

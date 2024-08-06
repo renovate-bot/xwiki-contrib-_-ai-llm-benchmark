@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.5928571428571429,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7,
+    "Faithfulness": 0.8571428571428571,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.70 because the answer contains some useful information related to denying script rights to a space administrator, but it also includes irrelevant statements and a URL that do not directly address the specific question.",
+    "Faithfulness": "The score is 0.86 because the actual output incorrectly claims that creating a custom AuthorizationSettler involves creating a new RightDescription and using the `register` method to modify existing rights, which is not mentioned in the retrieval context.",
+    "ContextualPrecision": "The score is 0.00 because the nodes in the retrieval context are not relevant to the input question. For example, the first node discusses the AuthorizationSettler and its configuration, which is not directly relevant. The second node explains various right definitions and policies, but does not address the specific issue. The third node talks about registering and unregistering custom rights, which is also unrelated.",
+    "ContextualRecall": "The score is 1.00 because all relevant information from the expected output is fully supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses general authorization and rights configuration but does not address how to deny script rights to a domain administrator, which is the specific query in the input.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments, and all identified points are contradictions, indicating that the actual output does not deviate from the provided context."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

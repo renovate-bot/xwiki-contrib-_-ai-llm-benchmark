@@ -1,0 +1,42 @@
+{
+  "id": "qa_012",
+  "prompt": "Ich erhalte keine Benachrichtigungen.",
+  "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen. Stellen Sie au\u00dferdem sicher, dass Sie den Seiten oder Benutzern, f\u00fcr die Sie Benachrichtigungen erhalten m\u00f6chten, folgen. Sie k\u00f6nnen einer Seite, einer Seite und ihren Unterseiten oder einem gesamten Wiki folgen. Um einem Ort zu folgen, m\u00fcssen Sie nur dorthin gehen und dann auf das Men\u00fc \"Benachrichtigung\" (dargestellt durch eine Glocke) klicken und die gew\u00fcnschten Benachrichtigungen aktivieren. Um einem Benutzer zu folgen, k\u00f6nnen Sie, wenn Sie auf das Profil eines Benutzers gehen, beispielsweise \u00fcber das Benutzerindex, entscheiden, dem Benutzer zu folgen. Das bedeutet, dass Sie alle Benachrichtigungen \u00fcber Ereignisse erhalten, die von diesem Benutzer ausgel\u00f6st wurden. In Ihrem Benutzerprofil k\u00f6nnen Sie in der Registerkarte \"Netzwerk\" die Liste der Benutzer anzeigen, denen Sie folgen, und die von ihnen durchgef\u00fchrten Ereignisse.",
+  "ai_answer": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \n\n\nIt seems like you're having trouble with not receiving notifications. The information you've provided includes documentation on XWiki's Attachment Validation UI, Internationalization (I18N), Authentication, and Kerberos SSO Authentication. However, there is no direct link to notification settings or issues in the provided content chunks.\n\nIn general, notification settings can usually be found in user profiles or account settings. You may want to check if there are any options related to notifications and ensure that they are properly configured. If you are still experiencing issues, it might be helpful to look for documentation or troubleshooting guides specific to the system you are using, as the process may vary depending on the platform.\n\nIf you could provide more context or specify the system you are using, I would be able to give a more accurate answer.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Attachment.Validation.UI.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/",
+      "content": "#-# Define the list of blocked attachment mimetypes. By default, this list is empty, but you can specify a\u00a0  \n#-# comma-separated list of blocked mimetypes. Note that a joker (\\*) can be used to accept any media type. Once this\u00a0  \n#-# list is not empty, any attachment matching one of the listed mimetype will be rejected.  \n#-# For instance, if you want to reject plain text and any kind of images, you can set the list to:  \n#-# text/plain,image/\\*  \n#-#  \n# attachment.upload.blockList=## Administration UI\n\n[![attachment_restriction_admin.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Attachment/Validation/UI/WebHome/attachment_restriction_admin.png?width=960&amp;rev=1.1)](https://extensions.xwiki.org/xwiki/bin/download/Extension/Attachment/Validation/UI/WebHome/attachment_restriction_admin.png?rev=1.1)\n\nThe mimetype restrictions can also be configured at wiki or space level through the administration UI, by visiting the Attachments Restriction section of the administration.\n\n",
+      "similarity_score": 0.7649886608123779,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.I18N",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N",
+      "content": "# Edit a translation\n\nWhen editing a plain wiki page the editor will load:\n\n* the page translation that corresponds to the current laguage, if it exists and multilingual is on\n* otherwise, the original page\n\nWhen editing a structured page the editor will load the original page because the structured data (objects) are shared by all page translations.\n\nFrom Wiki and WYSIWYG edit modes, as well as when editing in-place, you can switch to a different page translation or create a missing translation.\n\nWhen editing in-place you get a &quot;Translate&quot; button if the edited page doesn&#x27;t have a translation for the current locale. Click on the &quot;Translate&quot; button if you wish to create the missing translation, otherwise all the changes you do will be saved to the original version of the page.\n\n![edit-inplace-new-translation.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/I18N/edit-inplace-new-translation.png?rev=1.1)\n\nFrom the Wiki and WYSIWYG edit modes you are able to edit the default (original) page language. The default language is indicated on the right &quot;Document Information&quot; panel as shown below:\n\n![DefaultLanguageEN.PNG](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/I18N/DefaultLanguageEN.PNG?rev=1.3)\n\nIn the &quot;Document Translations&quot; panel you can see the current language you are performing translations in and the alternative languages you may translate your page to. These are the languages you have previously set up in &quot;Administration&quot;.\n\n![DocumentTranslations.PNG](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/I18N/DocumentTranslations.PNG?rev=1.3)\n\nIn order to translate your document in a different language, click on one of the languages (e.g. Fr). As a result you will see the edition mode translated in that language.\n\n",
+      "similarity_score": 0.7615433931350708,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Authentication.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/",
+      "content": "| protection | Yes | all, validation, encryption, none | all | Protection level for the &quot;remember me&quot; cookie functionality |\n| useip | Yes | true / false | true | Specify to use the IP address when encrypting the cookie data; if IP address changes will need to re-login. |\n\n1. Only required if protection = encryption or all (default)\n2. Only required if protection = validation or all (default)\n\n## Security\n\nStarting with XWiki 11.6RC1 we provide some authentication strategies that are triggered if a user fails several time in a row to login.  \nYou can configure those strategies and when they should be triggered in the Administration &gt; Authentication page.\n\n![authentication-security-administration.png](https://www.xwiki.org/xwiki/bin/download/Documentation/AdminGuide/Authentication/WebHome/authentication-security-administration.png?rev=1.1)\n\nFor more information see the [Authencation Security Module documentation](https://extensions.xwiki.org/xwiki/bin/view/Extension/Authentication%20Security%20Module/).\n\n# Kerberos SSO Authentication\n\nThis implementation of SSO is currently under review see: &lt;https://jira.xwiki.org/browse/XWIKI-2496&gt; . The class which is described in this segment of documentation, AppServerTrustedKerberosAuthServiceImpl, is not part of the default XWiki distribution!\n\nThe following is an example of **mod\\_auth\\_kerb** for Apache being used to easily implement XWiki authentication of users via HTTP Negotiate on a linux server. This example assumes you already have a working Apache2 HTTPD and Apache Tomcat setup with mod\\_jk.\n\nFirst of all you need to create a principal and keytab for the webserver:\n\n",
+      "similarity_score": 0.7600164413452148,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1440,
+    "completion_tokens": 178,
+    "total_tokens": 1618
+  },
+  "average_power_draw": null,
+  "energy_consumption": null,
+  "energy_per_input_token": null,
+  "energy_per_output_token": null,
+  "energy_per_total_token": null
+}

@@ -1,0 +1,42 @@
+{
+  "id": "qa_019",
+  "prompt": "Wie kann ich einem Bereichsadministrator das Skriptrecht verweigern?",
+  "expected_answer": "Leider wird dies in XWiki nicht unterst\u00fctzt, Rechte, die durch das Admin-Recht impliziert sind, k\u00f6nnen nicht verweigert werden.",
+  "ai_answer": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \n\n\nTo deny the script right to a space administrator, you would need to configure the AuthorizationSettler component, which is responsible for making access decisions in XWiki. The interpretation of right definitions, such as the script right, is up to the AuthorizationSettler.\n\nHowever, XWiki does not provide a built-in way to deny the script right to a space administrator, as the default rights are predefined and the script right is bundled with the authorization modules for primary actions of XWiki.\n\nIf you want to modify the rights of a space administrator, you would need to create a custom AuthorizationSettler and configure it to change the default behavior. This would involve creating a new RightDescription for the script right and then using the `register` method to add it as an implied right to the set of rights, but with a different configuration that denies the right to space administrators.\n\nKeep in mind that this would require a good understanding of the XWiki security system and the ability to write custom code. If you are not comfortable with this, you may want to consider another approach, such as creating a custom role with the desired permissions and assigning it to the appropriate users.\n\nI hope this helps! Let me know if you have any other questions.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Security Module",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module",
+      "content": "Therefore, the real task of settling access decisions is entirely delegated to customizable components that may be introduce by third parties and configured without rebuilding the platform. The component hint of the AuthorizationSettler may be configured from the ConfigurationSource (xwiki.properties) using the key security.authorization.settler. The default hint &quot;default&quot; is implemented by the DefaultAuthorizationSettler. Another experimental PriorityAuthorizationSettler (currently unmaintained, use at your own risk) is also bundled. Both are based on a AbstractAuthorizationSettler which provide a common foundation for merging access provide at each hierarchy level based on a customizable dynamic policy.\n\n### Right definitions\n\nSince the settling process is delegated to the AuthorizationSettler, the interpretation of right definitions is up to it, and right definition is only a tool for helping the creation of an expandable authorization settler, allowing new rights to be easily externally defined. New Right maybe registered with the AuthorizationManager using a RightDescription. The meaning of the right definition explained here is mostly pertinent for the default implementation of the AuthorizationSettler, and should normally be followed by any other settler implementation, but this could not be guaranteed.\n\n",
+      "similarity_score": 0.7579739093780518,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Security Module",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module",
+      "content": "NameDefine a name that may be used in UI and log messages.Default stateDefine the *state* of a *right* when no *rule* have been defined for this *right* at any *level* of the hierarchy.Tie resolution policyDefine the *state* a right should takes when two opposite *rules* enter in conflict.Inheritance override policyWhen true, a *right* allowed by a higher *level* (ie. wiki) could be denied by a lower *level* (ie. document).Implied rightsA set of *rights* that are implied when this *right* is allowed. **This only affect allowance, and not denial.**Targeted entitiesA set of EntityType defining the type of *entities* where this *right* may be defined. A special farm level, meaning only on EntityType.WIKI of the *Main wiki* could be set using a null value. However, when definition is allowed on EntityType.WIKI, it is always allowed on the *Main wiki* as well.Is read onlyIs this *right* could be allowed on read-only wiki ? When false, this *right* should not be allowed on a read-only mode wiki.### Default rights being predefined\n\nThe following right are bundled with the authorization modules and are used with the DefaultAuthorizationSettler for primary actions of XWiki.\n\n\n\n",
+      "similarity_score": 0.7413443922996521,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Security Module",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module",
+      "content": "\u00a0\u00a0\u00a0\u00a0\u00a0\\* Register a new custom {@link Right} and add it as an implied right to the given set of rights.  \n\u00a0\u00a0\u00a0\u00a0\u00a0\\*  \n\u00a0\u00a0\u00a0\u00a0\u00a0\\* @param rightDescription the full description of the new {@link Right}  \n\u00a0\u00a0\u00a0\u00a0\u00a0\\* @param impliedByRights the rights that should imply the new right.  \n\u00a0\u00a0\u00a0\u00a0\u00a0\\* @return the created {@link Right}  \n\u00a0\u00a0\u00a0\u00a0\u00a0\\* @throws UnableToRegisterRightException if an error prevent creation of the new right. Registering exactly  \n\u00a0\u00a0\u00a0\u00a0\u00a0\\* the same right does not cause an exception and return the existing right.  \n\u00a0\u00a0\u00a0\u00a0\u00a0\\* @since 12.6  \n\u00a0\u00a0\u00a0\u00a0\u00a0\\*/  \n\u00a0\u00a0\u00a0\u00a0Right register(RightDescription rightDescription, Set&lt;Right&gt; impliedByRights) throws UnableToRegisterRightException;  \n  \n \u00a0\u00a0\u00a0/\\*\\*  \n\u00a0\u00a0\u00a0\u00a0\u00a0\\* Unregister the given custom {@link Right}.  \n\u00a0\u00a0\u00a0\u00a0\u00a0\\*  \n\u00a0\u00a0\u00a0\u00a0\u00a0\\* @param right the custom right to unregister.  \n\u00a0\u00a0\u00a0\u00a0\u00a0\\* @throws AuthorizationException if the right is not custom.  \n\u00a0\u00a0\u00a0\u00a0\u00a0\\* @since 13.5RC1  \n\u00a0\u00a0\u00a0\u00a0\u00a0\\*/  \n \u00a0\u00a0\u00a0void unregister(Right right) throws AuthorizationException;## Contextual API interface (since 6.1RC1)\n\nProvided by Role org.xwiki.security.authorization.ContextualAuthorizationManager:\n\n",
+      "similarity_score": 0.7380623817443848,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1103,
+    "completion_tokens": 274,
+    "total_tokens": 1377
+  },
+  "average_power_draw": null,
+  "energy_consumption": null,
+  "energy_per_input_token": null,
+  "energy_per_output_token": null,
+  "energy_per_total_token": null
+}

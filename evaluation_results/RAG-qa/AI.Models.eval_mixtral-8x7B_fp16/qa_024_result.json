@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.7132478632478634,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8461538461538461,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 0.6,
+    "ContextualRelevancy": 0.3333333333333333,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.85 because the provided URL does not directly address the question about how to disable notifications, but the rest of the information is relevant and helpful.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Excellent job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.50 because the first node discusses 'email notifications and their configurations,' which is not relevant to disabling notifications for pages, and should be ranked lower. The second node is directly relevant as it mentions 'Notifications Auto Watch Preferences' and 'Notifications Custom Filters Preferences.' The third node, discussing 'technical aspects of notification filtering and threads,' is also not relevant and should be ranked lower.",
+    "ContextualRecall": "The score is 0.60 because while the retrieval context nodes mention settings for automatic watching of pages and managing custom notification filters, they do not explicitly mention being notified of changes on your work or modifying the 'Suivi automatique des pages' setting.",
+    "ContextualRelevancy": "The score is 0.33 because the context is about configuring email notifications and technical details in XWiki, which do not address how to disable notifications for uninteresting pages.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments and multiple contradictions, indicating that the actual output does not align well with the provided context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

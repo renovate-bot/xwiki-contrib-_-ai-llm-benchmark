@@ -1,0 +1,42 @@
+{
+  "id": "qa_002",
+  "prompt": "I'm not receiving any notifications in XWiki.",
+  "expected_answer": "Make sure that notifications are enabled. You can enable them by setting the `notifications.enabled` setting in `xwiki.properties` to `true`. Further, ensure that you're subscribed to the pages or users you want to receive notifications for. You can watch a page, a page and its children, or an entire wiki. To watch a location, all you need is to go to that place, and then click on the \"alert\" menu (represented by a bell) and enable the desired notifications. To follow a user, if you go to the profile of an user, using the User Index for example, you can see decide to watching a user. It means you will receive all notifications about events triggered by this user. In your user profile, if you go to the \"network\" tab, you can see the list of users you are watching and the events that have been performed by them.",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\nBased on the provided information, XWiki has a Notifications Application that displays notifications about events happening in the wiki. You can find this application at <https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/>.\n\nIf you're not receiving any notifications, here are a few things you can check:\n\n1. **Notification Preferences**: Ensure that you have the correct notification preferences set. You can access these preferences by clicking on your profile picture (top right corner) and selecting \"Preferences\". Then, navigate to \"Notifications\". Here, you can choose which events you want to be notified about.\n\n2. **Email Settings**: If you're not receiving email notifications, check your email settings in your profile preferences. The notifications are sent to the email address associated with your XWiki account.\n\n3. **Extensions**: The Notifications Application is part of the XWiki extensions. If you're not seeing the Notifications application in your XWiki, you might need to install it. You can do this through the Extension Manager Application.\n\nIf you've checked all of these and you're still not receiving notifications, there might be a technical issue. In this case, you should contact your XWiki administrator or the XWiki support team.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Notifications",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications",
+      "content": "# What&#x27;s New\n\nXWiki 15.1+ The [What&#x27;s New Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/WhatsNewUI/) allows you to get notified about news regarding XWiki.\n\n\n",
+      "similarity_score": 0.8798436522483826,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/",
+      "content": "![text_list_bullets](https://www.xwiki.org/xwiki/resources/icons/silk/text_list_bullets.png?cache-version=1711538036000)\n\n[Menu](https://extensions.xwiki.org/xwiki/bin/view/Extension/Menu%20Application)  \nMenu application\n\n![bell](https://www.xwiki.org/xwiki/resources/icons/silk/bell.png?cache-version=1711538036000)\n\n[Notifications](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/)  \nDisplay notifications about events happening in the wiki.\n\n![invitation.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Invitation%20Application/invitation.png?rev=1.3)\n\n[Invitation](https://extensions.xwiki.org/xwiki/bin/view/Extension/Invitation%20Application)  \nAllows users to send emails, inviting friends and colleagues to join a wiki\n\n# Other Features\n\nOther features can be added to your wiki by [installing](https://extensions.xwiki.org/xwiki/bin/view/Extension/Extension%20Manager%20Application) extensions not listed above. Check the [Extensions wiki](https://extensions.xwiki.org/xwiki/bin/view/Main/) for a full list of available extensions.\n\n\n",
+      "similarity_score": 0.865705668926239,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Notifications Application.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/",
+      "content": "## Emails\n\nYou can also select some types of notifications that you will receive by email. You can have different choices enabled by email and in the menu. Then, on the very bottom of the page, you can select the interval between 2 emails. For example, if you choose &quot;Daily&quot; (default), you will receive one email every day with the recap of the events that have happened during the day. Of course, if there were no activity in this period of time, no email is sent.\u00a0\n\nLive notifications emails can be sent to a user. The wiki administrator can also define a &quot;grace time&quot; for live email notifications ; when an event that triggers a notification is sent, the platform will wait for the duration of this grace time before sending a notification email. If during this interval, a new event of the same kind is sent, the two events will be grouped in the same email. You can get more informations on how to configure this feature [here](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/#HCustomizeliveemailnotificationsgracetime).\n\nOf course, it works only if the user has properly filled her e-mail address.\n\nYou can edit the frequency of your email notifications by using the selector just at the bottom of the notification preferences pane in your profile page :\n\n![notificationPreferencesEmailUI.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notificationPreferencesEmailUI.png?rev=1.4)\n\nThe notifications are sorted by pages and dates, and a table of content summarizes all notifications contained in the email:\n\n![NotifEmailTOC.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotifEmailTOC.png?rev=1.3)\n\nA breadcrumb is displayed on top of each notification that concern a page:\n\n![NotifEmailBreadcrumb.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/NotifEmailBreadcrumb.png?rev=1.3)\n\n",
+      "similarity_score": 0.8614229559898376,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1152,
+    "completion_tokens": 288,
+    "total_tokens": 1440
+  },
+  "average_power_draw": null,
+  "energy_consumption": null,
+  "energy_per_input_token": null,
+  "energy_per_output_token": null,
+  "energy_per_total_token": null
+}

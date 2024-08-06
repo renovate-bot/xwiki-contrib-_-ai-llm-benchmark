@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.38717948717948714,
+  "individual_scores": {
+    "AnswerRelevancy": 0.2,
+    "Faithfulness": 0.9230769230769231,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.2,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.20 because the majority of the statements provided are not directly relevant to the question about automatically activating user accounts on first login with OpenID Connect.",
+    "Faithfulness": "The score is 0.92 because the actual output incorrectly claims that you can configure the session cookie for all wikis in a farm regardless of domain differences, while the retrieval context specifies that this is not possible if the wikis have very different domains.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses domain-based instance configuration and session cookies but does not mention user account activation or the `xwiki.properties` file. The second node provides general information about OpenID Connect and its installation but does not address the specific configuration needed to automatically activate user accounts. The third node lists dependencies for the OpenID Connect extension but does not provide any information on configuring user account activation in `xwiki.properties`.",
+    "ContextualRecall": "The score is 0.20 because only the 2nd node in the retrieval context mentions modifying the xwiki.properties file, but it does not provide specific details about the property `oidc.enableUser`, uncommenting it, setting it to `true`, saving the file, restarting the XWiki instance, or ensuring new user accounts are automatically activated upon first login via OpenID Connect.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses domain-based instance authentication, session cookie configuration, and bypassing OpenID Connect, which are not directly related to configuring automatic activation of user accounts upon first login with OpenID Connect.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments and all the provided contradictions indicate that the actual output agrees with the context, showing no signs of hallucination."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

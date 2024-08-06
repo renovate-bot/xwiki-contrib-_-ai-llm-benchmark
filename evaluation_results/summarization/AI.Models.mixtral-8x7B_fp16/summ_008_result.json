@@ -1,0 +1,10 @@
+{
+  "score": 0.6666666666666666,
+  "reason": "The score is 0.67 because the summary contains contradictions regarding the instructions for the Users rights screen and the presence of a link for the next step. Additionally, the summary fails to answer a question about admin capabilities in a Locked registration configuration.",
+  "score_breakdown": {
+    "Alignment": 0.8,
+    "Coverage": 0.6666666666666666
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

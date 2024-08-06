@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3055555555555556,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8333333333333334,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.83 because the answer addresses the main question about customizing user profile fields from OpenID Connect in XWiki, but includes irrelevant URLs about database support, scalability and performance, and the Office Importer feature.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'the efficiency and scalability of XWiki pages and databases' but does not mention OpenID Connect or user profile fields. The second node explains 'XWiki's scalability, multi-tenancy, and clustering capabilities' but does not address OpenID Connect or user profile customization. The third node is about 'configuring OpenOffice server settings in XWiki' and does not relate to OpenID Connect or user profile fields.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses relational databases, scalability, and OpenOffice server configuration, none of which pertain to customizing user profile fields with OpenID Connect in XWiki.",
+    "Hallucination": "The score is 1.00 because the actual output lacks critical information about XWiki's database support and efficiency, Java/Java EE foundation, multi-tenancy, clustering capabilities, and OpenOffice server configuration and management, which are all essential factual details."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

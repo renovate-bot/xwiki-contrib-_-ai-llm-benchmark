@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.7330128205128207,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9230769230769231,
+    "Faithfulness": 0.875,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.6,
+    "ContextualRelevancy": 0.3333333333333333,
+    "Hallucination": 0.3333333333333333
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the answer is mostly relevant and provides useful information about mapping additional user profile fields from the OpenID Connect provider to XWiki user properties. However, it includes an irrelevant statement about enabling DEBUG log for the OpenID Connect module, which slightly detracts from the overall relevance.",
+    "Faithfulness": "The score is 0.88 because the actual output incorrectly states that customization is done using the `oidc.user.mapping` property in the `xwiki.properties` file, which is not mentioned in the retrieval context.",
+    "ContextualPrecision": "The score is 1.00 because the relevant node that discusses 'associating non standard properties coming from the OpenID Connect provider with the XWiki user' is ranked first, while the irrelevant nodes discussing 'domain-based authentication and session cookie configuration' and 'group synchronization' are ranked lower.",
+    "ContextualRecall": "The score is 0.60 because while the retrieval context supports the customization and mapping of user profile fields using the `oidc.user.mapping` property (as seen in the 1st node), it lacks information on replacing placeholders with actual XWiki user property names and the need to save and restart XWiki.",
+    "ContextualRelevancy": "The score is 0.33 because the context discusses domain-based authentication, session cookie configuration, and bypassing OpenID Connect, which are irrelevant to customizing user profile fields or mapping additional user profile fields from an OpenID Connect provider to XWiki user properties.",
+    "Hallucination": "The score is 0.33 because the actual output aligns with the context on the `oidc.user.mapping` and `oidc.groups.mapping` properties, but it misses specific details about domain-based instance authentication and session cookie configuration in Tomcat."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

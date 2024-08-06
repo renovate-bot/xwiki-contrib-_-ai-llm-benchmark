@@ -1,0 +1,42 @@
+{
+  "id": "qa_011",
+  "prompt": "Die Glocke oben rechts ist nicht verf\u00fcgbar, auch nicht wenn die Erweiterung \"Alert Notification\" installiert ist.",
+  "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen in Ihrem Wiki aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen.",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nIt seems like you're referring to the notification system in XWiki and having trouble with the bell icon for notifications. Based on the information provided, the bell icon is associated with the Notifications Application in XWiki. If the bell icon is not available, even after installing the \"Alert Notification\" extension, there might be a few reasons:\n\n1. **Incorrect Configuration**: It is possible that the extension is installed but not properly configured. Check the extension's configuration settings to ensure everything is set up correctly.\n2. **Compatibility Issues**: There might be compatibility issues between the XWiki version you're using and the \"Alert Notification\" extension. Make sure the extension version is compatible with your XWiki version.\n3. **Caching Issues**: Sometimes, issues like these can be caused by caching. Try clearing your browser cache or the XWiki cache to see if that resolves the issue.\n\nIf you're still having trouble, I recommend reaching out to the XWiki community or the extension's developers for more specific assistance. They would be better equipped to handle version-specific or configuration-specific issues.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.XWikiSyntax.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/",
+      "content": "| [notifications](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/Macro/NotificationsMacro) | Notifications | Notifications | Display notifications about events happened on the wiki. | Current Wiki |\n| [notificationsApplicationsPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsApplicationsPreferencesMacro) | Notifications Applications Preferences | Notifications | Display the preferences of the current user about notification applications. | Current Wiki |\n| [notificationsAutoWatchPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsAutoWatchPreferencesMacro) | Notifications Auto Watch Preferences | Notifications | Display the preferences of the current user about auto watched pages. | Current Wiki |\n| [notificationsCustomFiltersPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsCustomFiltersPreferencesMacro) | Notifications Custom Filters Preferences | Notifications | Display the preferences of the given user about custom notification filters. | Current Wiki |\n| [notificationsEmailPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsEmailPreferencesMacro) | Notifications Email Preferences | Notifications | Display the preferences of the current user about notification emails. | Current Wiki |\n| [notificationsFiltersPreferences](https://www.xwiki.org/xwiki/bin/view/XWiki/Notifications/Code/NotificationsFiltersPreferencesMacro) | Notifications Filters Preferences (deprecated) | Notifications | Display the preferences of the current user about notification filters.This macro is now deprecated in favor of Custom Notifications Filters Preferences or System Notifications Filters Preferences. | Current Wiki |\n",
+      "similarity_score": 0.7760769128799438,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/",
+      "content": "![text_list_bullets](https://www.xwiki.org/xwiki/resources/icons/silk/text_list_bullets.png?cache-version=1711538036000)\n\n[Menu](https://extensions.xwiki.org/xwiki/bin/view/Extension/Menu%20Application)  \nMenu application\n\n![bell](https://www.xwiki.org/xwiki/resources/icons/silk/bell.png?cache-version=1711538036000)\n\n[Notifications](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/)  \nDisplay notifications about events happening in the wiki.\n\n![invitation.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Invitation%20Application/invitation.png?rev=1.3)\n\n[Invitation](https://extensions.xwiki.org/xwiki/bin/view/Extension/Invitation%20Application)  \nAllows users to send emails, inviting friends and colleagues to join a wiki\n\n# Other Features\n\nOther features can be added to your wiki by [installing](https://extensions.xwiki.org/xwiki/bin/view/Extension/Extension%20Manager%20Application) extensions not listed above. Check the [Extensions wiki](https://extensions.xwiki.org/xwiki/bin/view/Main/) for a full list of available extensions.\n\n\n",
+      "similarity_score": 0.7724864482879639,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Notifications",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications",
+      "content": "# What&#x27;s New\n\nXWiki 15.1+ The [What&#x27;s New Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/WhatsNewUI/) allows you to get notified about news regarding XWiki.\n\n\n",
+      "similarity_score": 0.764973521232605,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1094,
+    "completion_tokens": 246,
+    "total_tokens": 1340
+  },
+  "average_power_draw": null,
+  "energy_consumption": null,
+  "energy_per_input_token": null,
+  "energy_per_output_token": null,
+  "energy_per_total_token": null
+}

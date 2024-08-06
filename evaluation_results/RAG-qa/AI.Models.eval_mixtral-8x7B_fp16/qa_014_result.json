@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3020833333333333,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8125,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.81 because the answer provides relevant information about disabling notifications, but includes several irrelevant links that do not address the question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'setting the default language for a page in a multilingual wiki,' the second node is about 'defining a list of blocked attachment mimetypes,' and the third node covers 'directory cleanup and database attachment storage settings.' None of these nodes address managing or disabling notifications.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses setting the default language for a wiki page, configuring blocked attachment mimetypes, and directory cleanup in XWiki, none of which relate to the input question about disabling notifications.",
+    "Hallucination": "The score is 1.00 because the actual output fails to mention several key details described in the context, such as setting the default language for a page, the list of blocked attachment mimetypes, and various settings related to attachment storage, despite providing relevant links."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

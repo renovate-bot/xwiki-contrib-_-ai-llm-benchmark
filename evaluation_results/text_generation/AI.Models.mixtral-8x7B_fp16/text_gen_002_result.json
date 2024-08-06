@@ -1,0 +1,7 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output is relevant to the Input prompt and covers the key points of 'cat,' 'playful,' 'garden,' and 'sunny day.' However, it introduces 'chasing butterflies,' which is not in the Expected Output. The coherence and fluency are good.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

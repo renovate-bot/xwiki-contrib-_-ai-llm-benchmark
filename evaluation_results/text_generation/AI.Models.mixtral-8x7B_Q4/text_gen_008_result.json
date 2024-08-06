@@ -1,7 +1,0 @@
-{
-  "score": 1.0,
-  "reason": "The Actual Output directly addresses the Input prompt by providing a comprehensive travel guide to Rome, aligning with the Expected Output. It covers top attractions, accommodations, and activities in detail. The content is coherent, logically structured, and fluent with correct grammar and natural language use. All key points and details expected in a travel guide are accurately covered.",
-  "prompt_language": "ro",
-  "expected_answer_language": "en",
-  "generated_text_language": "en"
-}

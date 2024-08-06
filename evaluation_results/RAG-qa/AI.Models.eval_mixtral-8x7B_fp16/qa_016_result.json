@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.2962962962962963,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7777777777777778,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.78 because the response contains useful information but includes multiple irrelevant URLs and acknowledges not directly addressing the specific question, which detracts from its overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because the first node discusses XWiki's scalability, multi-tenancy, and clustering capabilities, which are not relevant to customizing user profile fields from an OpenID Connect provider. The second node talks about XWiki's use of relational databases and programming features, which do not address the customization of user profile fields from an OpenID Connect provider. The third node provides general information and resources about setting up and using XWiki, but does not mention anything about mapping additional user profile fields from an OpenID Connect provider.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses XWiki's scalability, multi-tenancy, and clustering features, which are not related to customizing user profile fields from an OpenID Connect provider in XWiki.",
+    "Hallucination": "The score is 1.00 because the actual output fails to address specific details and examples provided in the context, leading to a lack of alignment with the factual information. There are no direct contradictions, but the omission of key details results in a high hallucination score."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

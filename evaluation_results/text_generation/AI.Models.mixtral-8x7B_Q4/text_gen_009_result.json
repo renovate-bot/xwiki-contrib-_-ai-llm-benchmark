@@ -1,7 +1,0 @@
-{
-  "score": 0.8,
-  "reason": "The Actual Output is relevant and coherent, directly addressing the Input prompt. It correctly extracts the event name, date, location, and details. However, it does not separate the start and end dates and misses the 'target_audience' key, which is present in the Expected Output.",
-  "prompt_language": "en",
-  "expected_answer_language": "en",
-  "generated_text_language": "en"
-}

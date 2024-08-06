@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.4288461538461539,
+  "individual_scores": {
+    "AnswerRelevancy": 0.65,
+    "Faithfulness": 0.9230769230769231,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.65 because the answer includes several URLs and statements that are not directly relevant to the specific question about configuring spaces and permissions in XWiki. However, the score is not lower because the core content does address the main question to some extent.",
+    "Faithfulness": "The score is 0.92 because the actual output incorrectly states that XWiki is planning to refactor its core model and discard the concept of spaces, while the retrieval context indicates that the notion of space has already been removed from the UI.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses configuration display options in XWiki, the second node explains spaces and sub-pages, and the third node talks about scalability and multi-tenancy, none of which address configuring access permissions for teams.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention any of the steps or details provided in the expected output.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address configuring team permissions in XWiki, focusing instead on unrelated technical details like multi-tenancy and clustering.",
+    "Hallucination": "The score is 0.00 because there are no factual alignments and multiple contradictions, indicating that the actual output does not align well with the provided context."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

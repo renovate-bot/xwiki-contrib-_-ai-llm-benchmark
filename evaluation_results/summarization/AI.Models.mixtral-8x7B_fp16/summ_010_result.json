@@ -1,0 +1,10 @@
+{
+  "score": 0.9285714285714286,
+  "reason": "The score is 0.93 because the summary includes a contradiction by mentioning XWiki being used for content management systems (CMS), which is not stated in the original text. However, there is no extra information or unanswered questions, indicating overall high quality.",
+  "score_breakdown": {
+    "Alignment": 0.9285714285714286,
+    "Coverage": 1.0
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.39705882352941174,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8823529411764706,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.88 because the response is mostly relevant to the issue with the notification bell icon, but it includes links to general XWiki documentation that do not directly address the specific problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'links to various notification-related macros and preferences' but does not address enabling notifications in the wiki settings. The second node talks about 'different applications and features available in XWiki' without providing information on enabling notifications. The third node mentions a 'What's New application' but lacks the necessary steps to enable notifications in the wiki settings.",
+    "ContextualRecall": "The score is 0.50 because while the retrieval context implies that notifications can be enabled, it does not mention the specific setting `notifications.enabled` in `xwiki.properties`.",
+    "ContextualRelevancy": "The score is 0.00 because the context does not address the issue mentioned in the input about the bell icon not being available even when the 'Alert Notification' extension is installed.",
+    "Hallucination": "The score is 1.00 because the actual output lacks several specific details and references that are present in the context, such as notifications macros, the Menu application, the bell icon, the Invitation application, and the 'What's New' application. These omissions indicate a high level of hallucination."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

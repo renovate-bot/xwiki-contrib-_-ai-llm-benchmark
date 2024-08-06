@@ -1,0 +1,7 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output addresses the topic of photosynthesis and adapts it well for a younger audience. It covers key points such as converting sunlight into energy and the creation of oxygen, which are not mentioned in the Expected Output but are relevant. The explanation is coherent and fluent, with a logical flow and natural language use. However, it includes additional details like making fruits and vegetables, which were not in the Expected Output.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

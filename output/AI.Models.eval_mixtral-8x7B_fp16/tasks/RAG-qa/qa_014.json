@@ -1,0 +1,42 @@
+{
+  "id": "qa_014",
+  "prompt": "Ich erhalte viele Benachrichtigungen \u00fcber alle m\u00f6glichen Seiten, an denen ich nicht interessiert bin. Diese scheinen automatisch aktiviert worden zu sein. Wie kann ich diese Benachrichtigungen deaktivieren?",
+  "expected_answer": "Standardm\u00e4\u00dfig wird eine Seite, an der Sie eine wesentliche \u00c4nderung vorgenommen haben, automatisch zu der Liste der Seiten hinzugef\u00fcgt, denen Sie folgen. Das bedeutet, dass Sie \u00fcber \u00c4nderungen an Ihrer Arbeit benachrichtigt werden. Sie k\u00f6nnen die Einstellung f\u00fcr \"Automatisches Verfolgen von Seiten\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil \u00e4ndern. Sie k\u00f6nnen vorhandene Benachrichtigungsfilter, die auf diese Weise erstellt wurden, in der Liste \"Benutzerdefinierte Filter\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil l\u00f6schen.",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments \n\n\nTo disable notifications for pages you're not interested in, you can follow these steps:\n\n1. **Adjust your watch status**: You might be automatically watching pages, which can lead to receiving notifications. To check this, go to the page's \"Watch\" section usually located at the bottom of the page and ensure that the \"Watch\" option is not selected. If it is, deselect it to stop receiving notifications for that page.\n\n2. **Change your email preferences**: If you're receiving notifications via email, you can adjust your email preferences to receive fewer notifications. Here's how:\n   - Go to your XWiki profile by clicking on your avatar at the top right corner and selecting \"Profile\".\n   - Navigate to the \"Preferences\" section.\n   - In the \"Email Preferences\" tab, you can adjust the frequency of notifications or choose to receive no email notifications at all.\n\nPlease note that the exact steps might vary slightly depending on the specific XWiki instance you're using. If you can't find the options as described, I recommend checking the XWiki documentation or contacting your XWiki administrator for further assistance.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.PageEditing",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/PageEditing",
+      "content": "# Default Language\n\nIf you&#x27;ve set up your wiki to be multingual, then when editing a page using the wiki editor, you&#x27;ll be able to set the default language for the current page as in:\n\n![defaultLanguage.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/PageEditing/defaultLanguage.png?rev=1.1)\n\n\n",
+      "similarity_score": 0.755736768245697,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.Attachment.Validation.UI.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/",
+      "content": "#-# Define the list of blocked attachment mimetypes. By default, this list is empty, but you can specify a\u00a0  \n#-# comma-separated list of blocked mimetypes. Note that a joker (\\*) can be used to accept any media type. Once this\u00a0  \n#-# list is not empty, any attachment matching one of the listed mimetype will be rejected.  \n#-# For instance, if you want to reject plain text and any kind of images, you can set the list to:  \n#-# text/plain,image/\\*  \n#-#  \n# attachment.upload.blockList=## Administration UI\n\n[![attachment_restriction_admin.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Attachment/Validation/UI/WebHome/attachment_restriction_admin.png?width=960&amp;rev=1.1)](https://extensions.xwiki.org/xwiki/bin/download/Extension/Attachment/Validation/UI/WebHome/attachment_restriction_admin.png?rev=1.1)\n\nThe mimetype restrictions can also be configured at wiki or space level through the administration UI, by visiting the Attachments Restriction section of the administration.\n\n",
+      "similarity_score": 0.7533422708511353,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Attachments",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments",
+      "content": "#### Directory cleanup\n\nSince [XWiki 6.0M2](https://www.xwiki.org/xwiki/bin/view/ReleaseNotes/ReleaseNotesXWiki61M2), it is possible to save time on startup by preventing XWiki from cleaning up empty directories in the Filesystem Attachment Store. To do this, edit xwiki.properties and set **store.fsattach.cleanOnStartup** to false. If you do this, you will be responsible for cleanup of empty directories yourself.\n\n## Database Attachment Store\n\nThe default before 10.5.\n\nThis attachment storage mechanism stores your attachments in database entries in the [xwikiattachment\\_content](https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/DsXWikiAttachmentContent), [xwikiattachment\\_archive](https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/XWikiAttachmentArchive) and [xwikiattrecyclebin](https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/DsXwikiRecycleBin) tables. This system allows for easy backup of your attachments by dumping the database and keeping all of your data together, but attachment size is memory constrained since the attachment content and archive must all be held in memory. As a general rule, attachments larger than 30MB are not possible.\n\n### Switch to database attachment store\n\nThese settings should read as follows:\n\nxwiki.store.attachment.hint = hibernate  \nxwiki.store.attachment.versioning.hint = hibernate  \nxwiki.store.attachment.recyclebin.content.hint=hibernate  \n  \n# If you need to use database store for the attachment it&#x27;s probably true for deleted attachments  \nxwiki.store.recyclebin.content.hint = hibernateAlso make sure they are not commented out.\n\nWhen using this attachment store with a MySQL database, you must set the max\\_allowed\\_packet to about 3 times the size of your largest attachment since the attachment and its version history must be saved. See the [MySQL Installation guide](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/InstallationMySQL) for more information.\n\n",
+      "similarity_score": 0.7480176091194153,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1187,
+    "completion_tokens": 256,
+    "total_tokens": 1443
+  },
+  "average_power_draw": null,
+  "energy_consumption": null,
+  "energy_per_input_token": null,
+  "energy_per_output_token": null,
+  "energy_per_total_token": null
+}

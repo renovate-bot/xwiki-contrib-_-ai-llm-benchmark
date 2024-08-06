@@ -68,11 +68,11 @@
     {
       "task": "RAG-qa",
       "settings": {
-        "model": "AI.Models.eval_mixtral-8x7B_Q4",
+        "model": "AI.Models.eval_mixtral-8x7B_fp16",
         "temperature": 0.3,
         "stream": false
       },
-      "power_measurement": true
+      "power_measurement": false
     },
     {
       "task": "RAG-qa",
@@ -185,11 +185,11 @@
     {
       "task": "summarization",
       "settings": {
-        "model": "AI.Models.mixtral-8x7B_Q4",
+        "model": "AI.Models.mixtral-8x7B_fp16",
         "temperature": 0.3,
         "stream": false
       },
-      "power_measurement": true
+      "power_measurement": false
     },
     {
       "task": "summarization",
@@ -302,11 +302,11 @@
     {
       "task": "text_generation",
       "settings": {
-        "model": "AI.Models.mixtral-8x7B_Q4",
+        "model": "AI.Models.mixtral-8x7B_fp16",
         "temperature": 0.8,
         "stream": false
       },
-      "power_measurement": true
+      "power_measurement": false
     },
     {
       "task": "text_generation",

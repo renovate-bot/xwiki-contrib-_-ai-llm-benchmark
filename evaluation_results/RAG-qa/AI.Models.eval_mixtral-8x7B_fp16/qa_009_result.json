@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.611111111111111,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7777777777777778,
+    "Faithfulness": 0.8888888888888888,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.78 because the answer provides useful information but includes URLs that do not directly address the specific question about denying script rights to a space administrator.",
+    "Faithfulness": "The score is 0.89 because the actual output incorrectly claims that the 'SCRIPT' right can only be granted or denied at the main wiki level, which is not mentioned in the retrieval context.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'Programming Right' without addressing the specific question. The second node talks about setting rights for pages and sub-wikis but does not mention denying script rights to a space administrator. The third node provides information on various rights but does not address the specific question.",
+    "ContextualRecall": "The score is 1.00 because all statements in the expected output are fully supported by the nodes in the retrieval context. Great job!",
+    "ContextualRelevancy": "The score is 0.00 because the context does not mention anything about denying script rights to a space administrator and only discusses other types of rights and permissions.",
+    "Hallucination": "The score is 0.00 because there are no contradictions between the actual output and the provided context, indicating perfect alignment."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

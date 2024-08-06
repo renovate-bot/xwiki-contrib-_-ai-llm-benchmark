@@ -1,0 +1,22 @@
+{
+  "overall_score": 0.3137254901960784,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8823529411764706,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "ContextualRelevancy": 0.0,
+    "Hallucination": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.88 because the answer is mostly relevant and provides useful information, but it includes links to general documentation and RESTful API documentation that do not directly address the specific question about limiting file uploads to images or PDFs with a maximum size of 10 MB.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because the nodes in the retrieval context discuss 'attachment versioning, deletion, and storage mechanisms' (first node), 'HTTP methods and media types for retrieving page history and children' (second node), and 'HTTP methods and media types for managing page translations' (third node), which are all unrelated to configuring MIME type restrictions or maximum file size settings.",
+    "ContextualRecall": "The score is 0.00 because none of the steps or configurations mentioned in the expected output are present in the nodes in the retrieval context.",
+    "ContextualRelevancy": "The score is 0.00 because the context discusses version control, deletion, and storage mechanisms, but it does not address file type or size restrictions for uploads.",
+    "Hallucination": "The score is 1.00 because the actual output discusses configuring attachment settings in xwiki.cfg, which is not mentioned or related to the context provided. The context is about versioning, deletion, storage mechanisms, and HTTP methods for managing pages and translations, leading to a complete misalignment."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

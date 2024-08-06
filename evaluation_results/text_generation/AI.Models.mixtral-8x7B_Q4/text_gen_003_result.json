@@ -1,7 +1,0 @@
-{
-  "score": 0.8,
-  "reason": "The Actual Output addresses the Input prompt and aligns with the Expected Output in terms of relevance by explaining photosynthesis in a way suitable for a younger audience. It is coherent and logically follows the sequence of ideas presented in the Input. However, it is more detailed and complex than the Expected Output, which is simpler and more concise.",
-  "prompt_language": "en",
-  "expected_answer_language": "en",
-  "generated_text_language": "en"
-}

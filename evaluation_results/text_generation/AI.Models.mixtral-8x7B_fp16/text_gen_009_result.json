@@ -1,0 +1,7 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output accurately extracts and presents the event details, including the event name, dates, location, and description. However, it does not separate the start and end dates and misses the target audience information explicitly.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}
