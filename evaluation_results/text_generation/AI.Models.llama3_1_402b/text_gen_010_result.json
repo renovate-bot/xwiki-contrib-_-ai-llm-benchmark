@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output addresses the Input prompt by using more technical language and avoiding subjective terms. It covers key points such as the brain's role in regulating physiological processes, integrating sensory information, and facilitating cognitive functions. The coherence and fluency are strong, but it slightly deviates from the Expected Output by not mentioning 'subjective experiences'.",
+  "reason": "The Actual Output directly addresses the topic and uses technical terminology appropriately. It covers all key points from the Expected Output, such as the brain's role in physiological processes, sensory information processing, and cognitive functions. The ideas flow logically and the text is coherent and fluent. Minor differences in wording do not detract from the overall accuracy and clarity.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

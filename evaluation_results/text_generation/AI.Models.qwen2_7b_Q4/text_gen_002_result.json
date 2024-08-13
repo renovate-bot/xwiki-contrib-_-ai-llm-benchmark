@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output addresses the topic and is coherent and fluent. However, it misses the adjective 'playful' and the verb 'enjoyed' from the Expected Output.",
+  "reason": "The Actual Output addresses the topic and is coherent and fluent. However, it misses the keyword 'playful' and uses 'playing' instead of 'exploring'.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

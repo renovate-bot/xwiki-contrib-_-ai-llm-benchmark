@@ -1,9 +1,9 @@
 {
-  "score": 0.6666666666666666,
-  "reason": "The score is 0.67 because the summary includes extra information not mentioned in the original text, such as specific contexts for information sharing, project management, and communication platforms. However, there are no contradictions present.",
+  "score": 0.5454545454545454,
+  "reason": "The score is 0.55 because the summary contradicts the original text regarding the advantages of wikis, includes extra information not present in the original text, and fails to answer a question that the original text addresses.",
   "score_breakdown": {
-    "Alignment": 0.6666666666666666,
-    "Coverage": 1.0
+    "Alignment": 0.5454545454545454,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

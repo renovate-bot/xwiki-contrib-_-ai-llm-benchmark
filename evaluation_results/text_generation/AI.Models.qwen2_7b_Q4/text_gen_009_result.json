@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output addresses the Input prompt and is relevant. It is coherent with the Expected Output, though it combines dates into one field and lists activities differently. The fluency is high with correct grammar and readability.",
+  "reason": "The Actual Output addresses the Input prompt and includes all key details such as event name, dates, and location. It also mentions event components and target audience, aligning well with the Expected Output. The output is coherent, well-organized, and fluent, with minor differences in format.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

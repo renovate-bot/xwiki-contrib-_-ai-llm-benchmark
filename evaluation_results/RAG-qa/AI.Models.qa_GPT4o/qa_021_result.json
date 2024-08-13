@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3875,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.9375,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is completely relevant and addresses the issue without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 0.94 because the actual output incorrectly states that installing extensions offline is not supported, which contradicts the retrieval context.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses getting an RSS feed of notifications and various settings but does not address enabling notifications in the wiki.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention anything about ensuring notifications are activated in the wiki or how to activate them using `xwiki.properties`.",
+    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications by setting `notifications.enabled` in `xwiki.properties` to `true`."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

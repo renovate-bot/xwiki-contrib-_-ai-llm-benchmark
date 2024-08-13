@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.33999999999999997,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.70 because while the response provides some relevant information, it includes multiple statements about managing notifications in Windows 11 that do not directly address the issue with the 'Notification d'alerte' extension.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses how to get a notification RSS feed and various settings related to notifications, but it does not address enabling notifications in the wiki or setting `notifications.enabled` in `xwiki.properties`. The second node is about overriding default notification templates and installation instructions for extensions, which is not relevant to enabling notifications in the wiki. The third node describes the 'Clear All' link and how notifications are grouped, but it does not provide information on enabling notifications in the wiki. The fourth node explains custom notification filters and the watch feature, which is unrelated to enabling notifications in the wiki. The fifth node provides a description and various settings for notifications, but it does not mention enabling notifications in the wiki or setting `notifications.enabled` in `xwiki.properties`.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications via the `notifications.enabled` property in `xwiki.properties`."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

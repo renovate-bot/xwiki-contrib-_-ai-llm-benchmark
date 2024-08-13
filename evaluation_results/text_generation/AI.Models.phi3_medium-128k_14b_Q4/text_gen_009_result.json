@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output is relevant and coherent, with correct grammar and natural sentence structure. However, it does not fully align with the Expected Output as it combines the start and end dates and misses the 'target_audience' key.",
+  "score": 0.6,
+  "reason": "The Actual Output addresses the Input prompt and includes relevant details, but it lacks the exact date format and target audience. It also has minor formatting issues in the date and activities.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

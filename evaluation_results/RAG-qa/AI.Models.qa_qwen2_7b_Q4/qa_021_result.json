@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.36923076923076925,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.8461538461538461,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and there are no irrelevant statements.",
+    "Faithfulness": "The score is 0.85 because the actual output incorrectly claims that you can verify if an extension is installed while offline, and it mentions a bell icon configuration that is not supported by the retrieval context.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses getting a notification RSS feed and settings for notifications, but does not address enabling notifications in the wiki settings.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention anything about ensuring notifications are activated in the wiki or how to activate them, nor does it provide information about defining the property `notifications.enabled` in `xwiki.properties` or setting it to `true`.",
+    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications by setting `notifications.enabled` in `xwiki.properties` to `true`."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6346153846153847,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9230769230769231,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.25,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the response is mostly accurate and relevant, but the incorrect statement 'xwiki.authentication.createuser=empty' slightly detracts from the overall quality.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.25 because the relevant node in retrieval context (rank 4) that mentions the `xwiki.properties` file and the `oidc.enableUser` property is ranked lower than irrelevant nodes. The first node provides general information about the OpenID Connect Authenticator but does not address the specific configuration needed. The second node discusses general capabilities and links to configuration guides but does not mention the specific property or file. The third node provides details on container authentication, Active Directory, and LDAP, which are not relevant to the specific configuration required.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are well-supported by the nodes in the retrieval context, specifically the 2nd node which mentions 'xwiki.properties' and configuring it for OpenID Connect. Great job!",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about modifying the `xwiki.properties` file or the `oidc.enableUser` property."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

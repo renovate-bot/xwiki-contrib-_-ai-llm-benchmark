@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.64,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and directly addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node provides installation instructions and dependencies, but does not address how to customize user profile fields or map additional fields. Similarly, the second node offers general information about the OpenID Connect Authenticator without mentioning customization or mapping of user profile fields. The third node discusses container authentication, Active Directory, and LDAP, which are unrelated to the input query.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the information in the retrieval context nodes. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions 'xwiki.properties' but lacks specific details on 'oidc.user.mapping' and the example configurations provided in the expected output."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

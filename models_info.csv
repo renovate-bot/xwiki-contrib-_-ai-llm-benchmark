@@ -1,0 +1,14 @@
+Model,Context length,Provider,License
+GPT4o,128k,OpenAI,Proprietary
+GPT4o-mini,128k,OpenAI,Proprietary
+claude3_5_sonet,200k,OpenRouter,Proprietary
+mistral2_large,128k,Mistral, Mistral Research License
+llama3_1_402b,128k,OpenRouter,LLAMA 3.1
+llama3_1_8b_Q4,128k,Ollama,LLAMA 3.1
+mixtral-8x22b,16k,Mistral,Apache 2.0
+mistral-nemo_12b_Q4,128k,Ollama,Apache 2.0
+gemma2_9B_Q4,8k,Ollama,Gemma ToU
+phi3_mini-128k_4b_Q4,128k,Ollama,MIT License
+phi3_medium-128k_14b_Q4,128k,Ollama,MIT License
+command-r_35B_Q4,128k,Ollama,CCA-NonCommercial 4.0
+qwen2_7b_Q4,128k,Ollama,Apache 2.0

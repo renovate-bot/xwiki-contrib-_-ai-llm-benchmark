@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.61,
+  "individual_scores": {
+    "AnswerRelevancy": 0.5,
+    "Faithfulness": 0.6666666666666666,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.75,
+    "CustomContextualRelevancy": 0.8
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.50 because the provided URLs are not directly relevant to the input, which specifically asks how to disable unwanted notifications. However, the response does partially address the issue, hence the score is not lower.",
+    "Faithfulness": "The score is 0.67 because the actual output incorrectly claims that users can disable notifications for pages they haven't created or updated, whereas the retrieval context specifies that users only receive notifications when they are mentioned or when actions are performed on pages they created or updated.",
+    "ContextualPrecision": "The score is 0.33 because the relevant node, which discusses 'Auto Watch' and 'Default Watch Settings,' is ranked third, while the first and second nodes are irrelevant and should be ranked lower as they do not address how to disable notifications or the automatic activation of notifications.",
+    "ContextualRecall": "The score is 0.75 because the retrieval context nodes support the general idea of notifications and settings, but they do not specifically mention being notified of changes on your work.",
+    "CustomContextualRelevancy": "The retrieval context covers auto-watch settings, notification preferences, and custom filters but lacks specific details on modifying existing filters and the exact notification of changes on user work."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

@@ -1,8 +1,8 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary includes extra information not mentioned in the original text about XWiki providing an example on how to implement a custom RSS feed in its documentation.",
+  "score": 0.75,
+  "reason": "The score is 0.75 because the summary includes contradictions regarding the use of a template from Main.WebRss and the customization of RSS content for specific applications like Notifications and Search, which were not mentioned in the original text.",
   "score_breakdown": {
-    "Alignment": 0.8,
+    "Alignment": 0.75,
     "Coverage": 1.0
   },
   "input_language": "en",

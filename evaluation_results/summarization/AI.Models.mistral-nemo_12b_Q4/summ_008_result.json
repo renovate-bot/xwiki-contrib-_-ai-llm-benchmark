@@ -1,9 +1,9 @@
 {
-  "score": 0.6666666666666666,
-  "reason": "The score is 0.67 because the summary contains multiple contradictions regarding predefined configurations, images, and next steps after configuring user rights. Additionally, the summary fails to answer a question that the original text can address.",
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary contains several contradictions regarding the settings and permissions described in the original text. Additionally, the summary fails to answer a specific question about accessing the global rights Administration in XWiki.",
   "score_breakdown": {
-    "Alignment": 0.6666666666666666,
-    "Coverage": 0.75
+    "Alignment": 0.8235294117647058,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

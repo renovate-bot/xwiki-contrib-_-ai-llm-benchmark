@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3555555555555555,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7777777777777778,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.78 because the provided URLs are general resources and do not specifically address the configuration of permissions for teams in XWiki. However, the answer does contain some relevant information related to XWiki, which is why the score is not lower.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses actions in XWiki but not the specific steps needed to configure access control for teams, the second node talks about macros like 'Image' and 'Menu' which are unrelated, and the third node explains XWiki Syntax 2.1 without addressing access control setup.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain information about creating groups for each team, setting wiki-wide rights, setting area-level rights, or inheriting rights for child pages."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

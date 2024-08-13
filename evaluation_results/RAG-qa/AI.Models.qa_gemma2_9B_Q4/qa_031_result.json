@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.5215126050420168,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7647058823529411,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 0.14285714285714285,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.76 because while the answer partially addresses the question about authenticating users with access tokens, it includes multiple irrelevant URLs that do not directly address the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions present. Great job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.50 because the first node discusses claims at the UserInfo endpoint, which is not about authenticating users with access tokens, and should be ranked lower. The third node is about permissions and JAR types, which is also irrelevant and should be ranked lower. The fourth node discusses 'remember me' cookie functionality and Kerberos SSO Authentication, which are not related to access token authentication and should be ranked lower. The fifth node is about user profile visibility and custom claims, which does not address user authentication with access tokens and should be ranked lower. However, the second node correctly explains configuring authorized applications, which is relevant to the process.",
+    "ContextualRecall": "The score is 0.14 because only sentence 2 in the expected output can be attributed to the 2nd node in the retrieval context, while the rest of the sentences have no corresponding nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions the 'Authorized Applications' configuration but lacks details on JWT claims, token generation, and specific authenticator setup steps."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

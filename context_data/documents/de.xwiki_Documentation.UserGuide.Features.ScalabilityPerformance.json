@@ -1,9 +1,0 @@
-{
-  "id": "xwiki:Documentation.UserGuide.Features.ScalabilityPerformance",
-  "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ScalabilityPerformance",
-  "title": "Scalability & Performance",
-  "collection": "Eval_de",
-  "mimetype": "text/markdown",
-  "language": "de",
-  "content": "XWiki ist in Java/Java EE geschrieben. Daher skaliert es so gut wie Java skaliert.\n\n# Multi-Tenancy\n\nXWiki unterstützt die Fähigkeit, Hunderte und sogar Tausende von Wikis auf derselben JVM (d.h. derselben Webanwendung) auszuführen.\n\nEinige Beispiele:\n\n* [MyXWiki](http://myxwiki.org/xwiki/bin/view/Main/WebHome) hostet derzeit über 170 Wikis auf einer einzigen JVM\n* [XWiki SAS Cloud](http://network.xwiki.com) hostet derzeit über 1000 Wikis (aber auf mehreren JVMs)\n\nSiehe das Tutorial zur [Konfiguration von Multi-Tenancy](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Virtualization), um mehr zu erfahren.\n\n# Clustering\n\nXWiki bietet eine einfache Möglichkeit, Cluster-Instanzen von XWiki basierend auf der Verteilung von Netzwerkevents einzurichten. Clustering ermöglicht zwei Anwendungsfälle:\n\n* Lastverteilung auf mehrere JVMs\n* Failover, da bei einem Ausfall einer Maschine die anderen weiterhin verfügbar sind\n\nSiehe [Clustering](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Clustering) für weitere Details."
-}

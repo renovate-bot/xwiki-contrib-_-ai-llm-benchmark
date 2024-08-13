@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output directly addresses the Input prompt by providing a detailed news article about a recent scientific discovery. It maintains coherence and fluency throughout, with logical flow and grammatical correctness. The content matches the context and quality standards of the Expected Output, summarizing a groundbreaking scientific finding effectively.",
+  "reason": "The Actual Output directly addresses the topic of a recent scientific discovery by detailing a breakthrough in bacterial genome sequencing. It covers all key points such as the techniques used, the implications for antibiotic development, and quotes from researchers, matching the Expected Output's requirement for an informative article. The article is coherent, with a logical flow and clear connections between ideas, and it is fluent, free of grammatical errors.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

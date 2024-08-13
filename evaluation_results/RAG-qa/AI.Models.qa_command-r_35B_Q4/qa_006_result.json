@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3096153846153846,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9230769230769231,
+    "Faithfulness": 0.625,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the answer is mostly relevant and provides useful information on customizing user profile fields from the OpenID Connect provider in XWiki. However, it includes links to the XWiki RESTful API documentation and the Administration Application extension, which are not directly relevant to the specific question asked.",
+    "Faithfulness": "The score is 0.62 because the actual output incorrectly references the `xwiki-oidc-authentication.xml` file, whereas the retrieval context only mentions configurations through xwiki.cfg and xwiki.properties.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node describes the OpenID Connect authenticator but lacks information on customizing user profile fields or mapping additional fields. The second node explains different authentication methods for the XWiki RESTful API but does not mention customizing user profile fields or mapping additional fields from OpenID Connect. The third node discusses in-wiki configuration for the OIDC authenticator but does not provide details on mapping additional user profile fields or customizing user profile fields. The fourth node is about managing users and groups in XWiki, including creating, deleting, and editing user profiles, but it does not address mapping additional user profile fields from OpenID Connect. The fifth node mentions various authentication methods, including OpenID Connect, but does not provide information on customizing user profile fields or mapping additional fields from OpenID Connect.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about customizing user profile fields or mapping them in the xwiki.properties file."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

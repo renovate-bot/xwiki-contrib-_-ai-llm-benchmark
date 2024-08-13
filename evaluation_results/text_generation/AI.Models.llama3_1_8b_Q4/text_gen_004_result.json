@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output addresses the topic and covers all key features: noise-cancelling, 20-hour battery life, and comfortable fit. It is coherent and grammatically correct. However, it slightly deviates in style and does not explicitly mention 'tech-savvy professionals.'",
+  "reason": "The Actual Output is relevant to the Input prompt and aligns well with the Expected Output in terms of addressing the product features and target audience. It is coherent and logically structured, with a clear focus on the benefits for tech-savvy professionals. The fluency is high, with proper grammar and syntax. Minor differences in phrasing and emphasis prevent a perfect score.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

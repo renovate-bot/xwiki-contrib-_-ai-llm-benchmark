@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output directly addresses the Input prompt by describing the beauty of nature in a poetic format. It covers various aspects of nature such as fields, forests, mountains, valleys, and waterfalls, ensuring coherence and logical flow. The poem is fluent with proper grammar and syntax, making it readable. It meets the quality and completeness expected in the Expected Output.",
+  "reason": "The Actual Output directly addresses the topic of the beauty of nature, covering all key points expected in the poem. It is coherent, with a logical flow and consistent ideas, and is fluent with correct grammar and natural language use.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

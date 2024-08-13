@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary contains a contradiction regarding the sections in XWiki pages enabling interactions, which is not fully supported by the original text. Additionally, the summary fails to answer specific questions that the original text can address, such as exporting a page in PDF format and watching a page for notifications.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary contains contradictions about the basic unit of content in XWiki and the actions that can be performed on a wiki page. Additionally, the summary fails to answer several questions that the original text addresses.",
   "score_breakdown": {
-    "Alignment": 0.8888888888888888,
-    "Coverage": 0.6
+    "Alignment": 0.6,
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

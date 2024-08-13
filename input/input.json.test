@@ -18,6 +18,48 @@
         "prompt": "Adapt the following text to a younger audience (age 8-10):\n\nPhotosynthesis is the process by which plants convert sunlight into chemical energy that can be used to fuel the plant's activities.",
         "expected_answer": "Plants use a special process called photosynthesis to make their own food. They take in sunlight and turn it into energy that helps them grow and stay healthy.",
         "data_path": null
+      },
+      {
+        "id": "text_gen_004",
+        "prompt": "Generate a short product description based on the following information:\n\nProduct: Wireless Bluetooth Headphones\nFeatures: Noise-cancelling, 20-hour battery life, comfortable fit\nTarget audience: Tech-savvy professionals",
+        "expected_answer": "Introducing our cutting-edge wireless Bluetooth headphones, designed for tech-savvy professionals who demand the best. With advanced noise-cancelling technology, you can immerse yourself in your music or focus on your work without any distractions. Enjoy an impressive 20-hour battery life, ensuring your headphones keep up with your busy lifestyle. The comfortable, ergonomic fit allows you to wear them all day long without any discomfort. Upgrade your audio experience with our premium wireless headphones.",
+        "data_path": null
+      },
+      {
+        "id": "text_gen_005",
+        "prompt": "Generate a creative story about a space adventure.",
+        "expected_answer": "A story about a group of astronauts exploring a new planet.",
+        "data_path": null
+      },
+      {
+        "id": "text_gen_006",
+        "prompt": "Write a poem about the beauty of nature.",
+        "expected_answer": "A poem describing the wonders of the natural world.",
+        "data_path": null
+      },
+      {
+        "id": "text_gen_007",
+        "prompt": "Generate a news article about a recent scientific discovery.",
+        "expected_answer": "An informative article summarizing a groundbreaking scientific finding.",
+        "data_path": null
+      },
+      {
+        "id": "text_gen_008",
+        "prompt": "Create a travel guide for a popular tourist destination.",
+        "expected_answer": "An informative guide highlighting the top attractions, accommodations, and activities in a popular tourist spot.",
+        "data_path": null
+      },
+      {
+        "id": "text_gen_009",
+        "prompt": "Extract the event details from the following text:\n\nJoin us for the Annual Tech Conference, taking place from September 15th to 17th, 2023 at the Riverside Convention Center, 123 Main Street, Anytown, USA. The conference will feature keynote speeches, workshops, and networking opportunities for professionals in the tech industry.",
+        "expected_answer": "{\n  \"event_name\": \"Annual Tech Conference\",\n  \"start_date\": \"September 15th, 2023\",\n  \"end_date\": \"September 17th, 2023\",\n  \"venue\": \"Riverside Convention Center\",\n  \"address\": \"123 Main Street, Anytown, USA\",\n  \"target_audience\": \"professionals in the tech industry\"\n}",
+        "data_path": null
+      },
+      {
+        "id": "text_gen_010",
+        "prompt": "Adapt the following text to a more technical audience:\n\nThe human brain is a complex organ that controls all functions of the body, interprets information from the outside world, and embodies the essence of the mind and soul.",
+        "expected_answer": "The human brain is a highly intricate and sophisticated organ responsible for regulating and coordinating various physiological processes, processing and interpreting sensory information from the external environment, and serving as the biological substrate for cognitive functions, consciousness, and subjective experiences.",
+        "data_path": null
       }
     ],
     "summarization": [
@@ -32,18 +74,46 @@
       {
         "id": "summ_003",
         "data_path": "../context_data/documents/xwiki_Documentation.AdminGuide.Access Rights.WebHome.json"
+      },
+      {
+        "id": "summ_004",
+        "data_path": "../context_data/documents/xwiki_Documentation.AdminGuide.Upgrade.WebHome.json"
+      },
+      {
+        "id": "summ_005",
+        "data_path": "../context_data/documents/xwiki_Documentation.UserGuide.Features.RSS.json"
+      },
+      {
+        "id": "summ_006",
+        "data_path": "../context_data/documents/xwiki_Documentation.UserGuide.GettingStarted.FirstStepsWithXWiki.json"
+      },
+      {
+        "id": "summ_007",
+        "data_path": "../context_data/documents/xwiki_Documentation.UserGuide.GettingStarted.PageHistory.json"
+      },
+      {
+        "id": "summ_008",
+        "data_path": "../context_data/documents/xwiki_Documentation.UserGuide.GettingStarted.SettingUserRights.json"
+      },
+      {
+        "id": "summ_009",
+        "data_path": "../context_data/documents/xwiki_Documentation.UserGuide.GettingStarted.WhatIsAWiki.json"
+      },
+      {
+        "id": "summ_010",
+        "data_path": "../context_data/documents/xwiki_Documentation.UserGuide.GettingStarted.WhatsSpecialAboutXWiki.WebHome.json"
       }
     ],
     "RAG-qa": [
       {
         "id": "qa_001",
-        "prompt": "In the context of XWiki the \"Bell\" in the top right corner is not available, also not when the \"Alert Notification\" extension is installed.",
+        "prompt": "In the context of XWiki the 'Bell' in the top right corner is not available, also not when the 'Alert Notification' extension is installed. How can I fix this?",
         "expected_answer": "Make sure that notifications are enabled in your wiki. You can enable them by setting the `notifications.enabled` setting in `xwiki.properties` to `true`.",
         "data_path": null
       },
       {
         "id": "qa_002",
-        "prompt": "I'm not receiving any notifications in XWiki.",
+        "prompt": "Why am I not receiving any notifications in XWiki.",
         "expected_answer": "Make sure that notifications are enabled. You can enable them by setting the `notifications.enabled` setting in `xwiki.properties` to `true`. Further, ensure that you're subscribed to the pages or users you want to receive notifications for. You can watch a page, a page and its children, or an entire wiki. To watch a location, all you need is to go to that place, and then click on the \"alert\" menu (represented by a bell) and enable the desired notifications. To follow a user, if you go to the profile of an user, using the User Index for example, you can see decide to watching a user. It means you will receive all notifications about events triggered by this user. In your user profile, if you go to the \"network\" tab, you can see the list of users you are watching and the events that have been performed by them.",
         "data_path": null
       },
@@ -97,18 +167,138 @@
       },
       {
         "id": "qa_011",
+        "prompt": "Die Glocke oben rechts ist nicht verfügbar, auch nicht wenn die Erweiterung \"Alert Notification\" installiert ist.",
+        "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen in Ihrem Wiki aktiviert sind. Sie können sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen.",
+        "data_path": null
+      },
+      {
+        "id": "qa_012",
+        "prompt": "Ich erhalte keine Benachrichtigungen.",
+        "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen aktiviert sind. Sie können sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen. Stellen Sie außerdem sicher, dass Sie den Seiten oder Benutzern, für die Sie Benachrichtigungen erhalten möchten, folgen. Sie können einer Seite, einer Seite und ihren Unterseiten oder einem gesamten Wiki folgen. Um einem Ort zu folgen, müssen Sie nur dorthin gehen und dann auf das Menü \"Benachrichtigung\" (dargestellt durch eine Glocke) klicken und die gewünschten Benachrichtigungen aktivieren. Um einem Benutzer zu folgen, können Sie, wenn Sie auf das Profil eines Benutzers gehen, beispielsweise über das Benutzerindex, entscheiden, dem Benutzer zu folgen. Das bedeutet, dass Sie alle Benachrichtigungen über Ereignisse erhalten, die von diesem Benutzer ausgelöst wurden. In Ihrem Benutzerprofil können Sie in der Registerkarte \"Netzwerk\" die Liste der Benutzer anzeigen, denen Sie folgen, und die von ihnen durchgeführten Ereignisse.",
+        "data_path": null
+      },
+      {
+        "id": "qa_013",
+        "prompt": "Ich erhalte keine Benachrichtigungen über meine eigene Aktivität. Wie kann ich Benachrichtigungen für meine eigenen Aktionen aktivieren?",
+        "expected_answer": "Standardmäßig erhält man keine Benachrichtigungen über die eigene Aktivität (es sei denn, das Ereignis, das die Benachrichtigung auslöst, richtet sich explizit an diesen Benutzer). Sie haben die Möglichkeit, diesen Filter in den \"Erweiterten Filteroptionen\" Ihrer eigenen Benachrichtigungseinstellungen in Ihrem Benutzerprofil zu deaktivieren.",
+        "data_path": null
+      },
+      {
+        "id": "qa_014",
+        "prompt": "Ich erhalte viele Benachrichtigungen über alle möglichen Seiten, an denen ich nicht interessiert bin. Diese scheinen automatisch aktiviert worden zu sein. Wie kann ich diese Benachrichtigungen deaktivieren?",
+        "expected_answer": "Standardmäßig wird eine Seite, an der Sie eine wesentliche Änderung vorgenommen haben, automatisch zu der Liste der Seiten hinzugefügt, denen Sie folgen. Das bedeutet, dass Sie über Änderungen an Ihrer Arbeit benachrichtigt werden. Sie können die Einstellung für \"Automatisches Verfolgen von Seiten\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil ändern. Sie können vorhandene Benachrichtigungsfilter, die auf diese Weise erstellt wurden, in der Liste \"Benutzerdefinierte Filter\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil löschen.",
+        "data_path": null
+      },
+      {
+        "id": "qa_015",
+        "prompt": "Wie kann ich XWiki so konfigurieren, dass Benutzerkonten bei der ersten Anmeldung mit OpenID Connect automatisch aktiviert werden?\nIch habe OpenID Connect-Authentifizierung in meiner XWiki-Instanz eingerichtet, aber Benutzer werden nach der ersten Anmeldung nicht automatisch aktiviert. Welche Konfiguration muss ich anpassen?",
+        "expected_answer": "Um Benutzerkonten bei der ersten Anmeldung mit OpenID Connect in XWiki automatisch zu aktivieren, müssen Sie die Datei `xwiki.properties` anpassen.\n\nFügen Sie oder aktualisieren Sie die folgende Eigenschaft:\n\n```\n#-# Definiere, ob Benutzerkonten bei der ersten Anmeldung aktiviert (als aktiv markiert) werden sollen\n# oidc.enableUser=true\n```\n\nStellen Sie sicher, dass Sie die Eigenschaft `oidc.enableUser` entkommentieren und auf `true` setzen. Nach dieser Änderung speichern Sie die Datei und starten Sie Ihre XWiki-Instanz neu, damit die Änderungen wirksam werden.\n\nDadurch wird sichergestellt, dass neue Benutzerkonten automatisch aktiviert werden, wenn sie sich zum ersten Mal über OpenID Connect anmelden.",
+        "data_path": null
+      },
+      {
+        "id": "qa_016",
+        "prompt": "Kann ich die Benutzerprofilfelder, die aus dem OpenID Connect-Anbieter in XWiki gefüllt werden, anpassen?\nIch möchte zusätzliche Benutzerprofilfelder von meinem OpenID Connect-Anbieter an XWiki-Benutzereigenschaften abbilden. Wie kann ich das erreichen?",
+        "expected_answer": "Ja, Sie können die Benutzerprofilfelder, die aus dem OpenID Connect-Anbieter gefüllt werden, anpassen, indem Sie sie in der Datei `xwiki.properties` abbilden.\n\nUm zusätzliche Benutzerprofilfelder abzubilden, verwenden Sie die Eigenschaft `oidc.user.mapping`. Hier ist ein Beispiel, wie Sie benutzerdefinierte Eigenschaften abbilden können:\n\n```\n# oidc.user.mapping=myxproperty1=${oidc.user.subject}\n# oidc.user.mapping=myxproperty2=myprefix-${oidc.user.subject}\n```\n\nErsetzen Sie `myxproperty1` und `myxproperty2` durch die tatsächlichen XWiki-Benutzereigenschaftennamen und `${oidc.user.subject}` durch die entsprechende Variable basierend auf den Daten, die von Ihrem OpenID Connect-Anbieter bereitgestellt werden.\n\nNachdem Sie die Zuordnungen konfiguriert haben, speichern Sie die Datei `xwiki.properties` und starten Sie XWiki neu, um die Änderungen anzuwenden.",
+        "data_path": null
+      },
+      {
+        "id": "qa_017",
+        "prompt": "Wie richte ich die Gruppensynchronisierung zwischen XWiki und meinem OpenID Connect-Anbieter ein?\nIch verwende einen OpenID Connect-Anbieter, der Gruppenansprüche unterstützt, und ich möchte diese Gruppen mit XWiki-Gruppen synchronisieren. Wie ist der Prozess für die Einrichtung?",
+        "expected_answer": "Um die Gruppensynchronisierung zwischen XWiki und Ihrem OpenID Connect-Anbieter einzurichten:\n1. Suchen Sie die Datei `xwiki.properties` im Installationsverzeichnis von XWiki.\n2. Öffnen Sie die Datei mit einem Texteditor.\n3. Konfigurieren Sie die Gruppensynchronisierung, indem Sie die Eigenschaft `oidc.groups.claim` auf den Namen des Anspruchs setzen, den Ihr OpenID Connect-Anbieter verwendet, um Gruppeninformationen zu senden. Zum Beispiel:\n```java\n#-# Der Name des Anspruchs, der verwendet wird, um die Liste der Gruppen zu erhalten, zu denen der Benutzer gehört.\n# oidc.groups.claim=groups\n```\nErsetzen Sie `groups` durch den tatsächlichen Anspruchsnamen, der von Ihrem OpenID Connect-Anbieter bereitgestellt wird.\n1. Wenn Ihr OpenID Connect-Anbieter Gruppenmitgliedschaften als einzelnes Wertattribut sendet, das durch ein bestimmtes Zeichen (z. B. ein Komma) getrennt ist, konfigurieren Sie die Eigenschaft `oidc.groups.separator` mit dem entsprechenden Zeichen:\n```java\n#-# Wenn der Identitätsanbieter Gruppenmitgliedschaften als einzelnes Wertattribut zurückgibt, das mit einem Zeichen getrennt ist, zum Beispiel:\n# oidc.groups.separator=,\n```\nErsetzen Sie das Komma durch das tatsächliche Trennzeichen, das von Ihrem Anbieter verwendet wird.\n1. Wenn Sie die synchronisierten Gruppen bestimmten XWiki-Gruppen zuordnen möchten, konfigurieren Sie die Eigenschaft `oidc.groups.mapping` mit den entsprechenden Zuordnungen:\n```java\n# oidc.groups.mapping=XWiki.\"MyXWikiGroup\"=group1\n# oidc.groups.mapping=XWiki.\"MyXWikiGroup2\"=group2\n```\nErsetzen Sie `MyXWikiGroup` und `MyXWikiGroup2` durch die Namen der XWiki-Gruppen, die Sie zuordnen möchten, und `group1` und `group2` durch die tatsächlichen Gruppennamen, die von Ihrem OpenID Connect-Anbieter bereitgestellt werden.\n1. Speichern Sie die Datei `xwiki.properties` und starten Sie Ihre XWiki-Instanz neu, damit die Änderungen wirksam werden.",
+        "data_path": null
+      },
+      {
+        "id": "qa_018",
+        "prompt": "Wie kann ich sicherstellen, dass nur Bilder oder PDF-Dateien mit maximal 10 MB als Anhänge im gesamten Wiki hochgeladen werden können?",
+        "expected_answer": "Um sicherzustellen, dass nur Bilder oder PDF-Dateien mit maximal 10 MB als Anhänge im gesamten Wiki hochgeladen werden können, führen Sie die folgenden Schritte aus:\n\n**Schritt 1: Konfigurieren zulässiger MIME-Typen**\n\nBearbeiten Sie die Konfigurationsdatei `xwiki.properties` in Ihrer Installation und fügen Sie oder aktualisieren Sie die folgende Zeile, um die Standard-MIME-Typ-Beschränkungen auf Farm-Ebene zu konfigurieren:\n```\nattachment.upload.allowList=image/*,application/pdf\n```\nDadurch werden nur Bilddateien (mit jedem Subtyp, z. B. `image/jpeg`, `image/png` usw.) und PDF-Dateien zum Hochladen zugelassen und alle anderen MIME-Typen blockiert.\n\n**Schritt 2: Konfigurieren der maximalen Anhangsgröße**\n\nUm die maximale Anhangsgröße auf 10 MB einzustellen, führen Sie die folgenden Schritte aus:\n\n1. Gehen Sie zu `http://<IhrWiki>/xwiki/bin/edit/XWiki/XWikiPreferences?editor=object`\n2. Klicken Sie auf die Zeile, die XWikiPreferences 0 (direkt unter der Zeile, die Objects of type XWiki.XWikiPreferences (1) sagt) sagt\n3. Scrollen Sie nach unten zum Feld, das Maximum Upload Size heißt, und ändern Sie die Zahl in `10485760` (10 MB in Byte)\n4. Scrollen Sie nach unten und klicken Sie auf \"Speichern\"\n5. Wiederholen Sie dies für jedes (Sub)Wiki, für das Sie diese Konfiguration festlegen müssen!",
+        "data_path": null
+      },
+      {
+        "id": "qa_019",
+        "prompt": "Wie kann ich einem Bereichsadministrator das Skriptrecht verweigern?",
+        "expected_answer": "Leider wird dies in XWiki nicht unterstützt, Rechte, die durch das Admin-Recht impliziert sind, können nicht verweigert werden.",
+        "data_path": null
+      },
+      {
+        "id": "qa_020",
+        "prompt": "Wir haben einen Bereich pro Team. Ich möchte, dass alle Teams alle Bereiche sehen können, aber jedes Team sollte nur seinen eigenen Bereich bearbeiten können. Wie kann ich das in XWiki konfigurieren?",
+        "expected_answer": "Um die gewünschte Zugriffssteuerung zu erreichen, können Sie die folgenden Schritte ausführen:\n\n1. **Erstellen Sie Gruppen für jedes Team**: Erstellen Sie eine separate Gruppe für jedes Team in Ihrer XWiki-Instanz. Dies ermöglicht es Ihnen, die Zugriffsrechte für jedes Team individuell zu verwalten.\n2. **Einstellen von wikiweiten Rechten**: Gehen Sie zur Wiki-Administrationsseite und stellen Sie die Rechte für das gesamte Wiki ein. Stellen Sie insbesondere das \"View\"-Recht auf \"Allow\" für \"XWikiAllGroup\" ein, um allen das Anzeigen aller Bereiche zu ermöglichen.\n3. **Einstellen von Bereichebene Rechte**: Für jeden Teambereich gehen Sie zur Bereichverwaltungsseite und stellen Sie die Rechte für diesen Bereich ein. Stellen Sie insbesondere das \"Edit\"-Recht auf \"Allow\" nur für die entsprechende Teamgruppe ein. Dies ermöglicht es nur den Mitgliedern dieses Teams, ihren eigenen Bereich zu bearbeiten.\n4. **Vererben von Rechten für untergeordnete Seiten**: Wenn Sie Rechte für einen Bereich festlegen, stellen Sie sicher, dass Sie die Option \"Rights: Page & Children\" auswählen, um die Rechte für alle untergeordneten Seiten innerhalb dieses Bereichs zu vererben.\n\nDurch die Ausführung dieser Schritte stellen Sie sicher, dass:\n\n* Alle Teams alle Bereiche sehen können.\n* Jedes Team nur seinen eigenen Bereich bearbeiten kann.\n\nErinnern Sie sich daran, die Rechte entsprechend für alle zusätzlichen Teams oder Bereiche anzupassen, die Sie in Ihrer XWiki-Instanz haben.",
+        "data_path": null
+      },
+      {
+        "id": "qa_021",
+        "prompt": "La cloche en haut à droite n'est pas disponible, même lorsque l'extension \"Notification d'alerte\" est installée.",
+        "expected_answer": "Assurez-vous que les notifications sont activées dans votre wiki. Vous pouvez les activer en définissant la propriété `notifications.enabled` dans `xwiki.properties` sur `true`.",
+        "data_path": null
+      },
+      {
+        "id": "qa_022",
+        "prompt": "Je ne reçois pas de notifications.",
+        "expected_answer": "Assurez-vous que les notifications sont activées. Vous pouvez les activer en définissant la propriété `notifications.enabled` dans `xwiki.properties` sur `true`. De plus, assurez-vous que vous suivez les pages ou les utilisateurs dont vous souhaitez recevoir des notifications. Vous pouvez suivre une page, une page et ses enfants, ou un wiki entier. Pour suivre un emplacement, il vous suffit d'y aller, puis de cliquer sur le menu \"alerte\" (représenté par une cloche) et d'activer les notifications souhaitées. Pour suivre un utilisateur, si vous allez sur le profil d'un utilisateur, en utilisant l'index utilisateur par exemple, vous pouvez décider de suivre l'utilisateur. Cela signifie que vous recevrez toutes les notifications concernant les événements déclenchés par cet utilisateur. Dans votre profil utilisateur, si vous allez dans l'onglet \"réseau\", vous pouvez voir la liste des utilisateurs que vous suivez et les événements qui ont été effectués par eux.",
+        "data_path": null
+      },
+      {
+        "id": "qa_023",
+        "prompt": "Je ne reçois pas de notifications concernant ma propre activité. Comment puis-je activer les notifications pour mes propres actions?",
+        "expected_answer": "Par défaut, vous ne recevez pas de notifications concernant votre propre activité (sauf si l'événement qui a déclenché la notification cible explicitement cet utilisateur). Vous avez la possibilité de désactiver ce filtre dans la section \"Options de filtrage avancées\" des paramètres de notification de votre profil utilisateur.",
+        "data_path": null
+      },
+      {
+        "id": "qa_024",
+        "prompt": "Je reçois beaucoup de notifications concernant toutes sortes de pages qui ne m'intéressent pas. Il semble qu'elles aient été activées automatiquement. Comment puis-je désactiver ces notifications?",
+        "expected_answer": "Par défaut, une page où vous avez apporté une modification importante est automatiquement ajoutée à la liste des pages que vous suivez. Cela signifie que vous serez notifié des changements sur votre travail. Vous pouvez modifier le paramètre pour \"Suivi automatique des pages\" dans les paramètres de notification de votre profil utilisateur. Vous pouvez supprimer les filtres de notification existants qui ont été créés de cette manière dans la liste \"Filtres personnalisés\" des paramètres de notification de votre profil utilisateur.",
+        "data_path": null
+      },
+      {
+        "id": "qa_025",
+        "prompt": "Comment puis-je configurer XWiki pour activer automatiquement les comptes d'utilisateurs lors de leur première connexion à l'aide de OpenID Connect?\nJ'ai configuré l'authentification OpenID Connect dans mon instance XWiki, mais les utilisateurs ne sont pas automatiquement activés après leur première connexion. Quelle configuration dois-je ajuster?",
+        "expected_answer": "Pour activer automatiquement les comptes d'utilisateurs lors de leur première connexion à l'aide de OpenID Connect dans XWiki, vous devez ajuster le fichier `xwiki.properties`.\n\nAjoutez ou mettez à jour la propriété suivante:\n\n```\n#-# Définir si les comptes utilisateurs doivent être activés (marqués comme actifs) lors de la première connexion\n# oidc.enableUser=true\n```\n\nAssurez-vous de décommenter et de définir la propriété `oidc.enableUser` sur `true`. Après cette modification, enregistrez le fichier et redémarrez votre instance XWiki pour que les modifications prennent effet.\n\nCela garantira que les nouveaux comptes d'utilisateurs seront automatiquement activés lorsqu'ils se connecteront pour la première fois via OpenID Connect.",
+        "data_path": null
+      },
+      {
+        "id": "qa_026",
+        "prompt": "Puis-je personnaliser les champs de profil utilisateur qui sont remplis à partir du fournisseur OpenID Connect dans XWiki?\nJe souhaite mapper des champs de profil utilisateur supplémentaires de mon fournisseur OpenID Connect aux propriétés de l'utilisateur XWiki. Comment puis-je y parvenir?",
+        "expected_answer": "Oui, vous pouvez personnaliser les champs de profil utilisateur qui sont remplis à partir du fournisseur OpenID Connect en les mappant dans le fichier `xwiki.properties`.\n\nPour mapper des champs de profil utilisateur supplémentaires, utilisez la propriété `oidc.user.mapping`. Voici un exemple de la façon de mapper des propriétés personnalisées:\n\n```\n# oidc.user.mapping=myxproperty1=${oidc.user.subject}\n# oidc.user.mapping=myxproperty2=myprefix-${oidc.user.subject}\n```\n\nRemplacez `myxproperty1` et `myxproperty2` par les noms de propriété d'utilisateur XWiki réels, et `${oidc.user.subject}` par la variable appropriée en fonction des données fournies par votre fournisseur OpenID Connect.\n\nAprès avoir configuré les mappages, enregistrez le fichier `xwiki.properties` et redémarrez XWiki pour appliquer les modifications.",
+        "data_path": null
+      },
+      {
+        "id": "qa_027",
+        "prompt": "Comment configurer la synchronisation de groupe entre XWiki et mon fournisseur OpenID Connect?\nJ'utilise un fournisseur OpenID Connect qui prend en charge les revendications de groupe, et je souhaite synchroniser ces groupes avec les groupes XWiki. Quel est le processus pour le configurer?",
+        "expected_answer": "Pour configurer la synchronisation de groupe entre XWiki et votre fournisseur OpenID Connect:\n1. Localisez le fichier `xwiki.properties` dans le répertoire d'installation de XWiki.\n2. Ouvrez le fichier avec un éditeur de texte.\n3. Configurez la synchronisation de groupe en définissant la propriété `oidc.groups.claim` sur le nom de la revendication utilisée par votre fournisseur OpenID Connect pour envoyer des informations de groupe. Par exemple:\n```java\n#-# Le nom de la revendication utilisée pour obtenir la liste des groupes auxquels appartient l'utilisateur.\n# oidc.groups.claim=groupes\n```\nRemplacez `groupes` par le nom de revendication réel fourni par votre fournisseur OpenID Connect.\n1. Si votre fournisseur OpenID Connect envoie des adhésions de groupe en tant qu'attribut de valeur unique délimité par un caractère spécifique (par exemple, une virgule), configurez la propriété `oidc.groups.separator` avec le caractère approprié:\n```java\n#-# Si le fournisseur d'identité renvoie des adhésions de groupe en tant qu'attribut de valeur unique délimité avec un caractère, par exemple:\n# oidc.groups.separator=,\n```\nRemplacez la virgule par le séparateur réel utilisé par votre fournisseur.\n1. Si vous souhaitez mapper les groupes synchronisés à des groupes XWiki spécifiques, configurez la propriété `oidc.groups.mapping` avec les mappages appropriés:\n```java\n# oidc.groups.mapping=XWiki.\"MyXWikiGroup\"=group1\n# oidc.groups.mapping=XWiki.\"MyXWikiGroup2\"=group2\n```\nRemplacez `MyXWikiGroup` et `MyXWikiGroup2` par les noms des groupes XWiki que vous souhaitez mapper, et `group1` et `group2` par les noms de groupe réels fournis par votre fournisseur OpenID Connect.\n1. Enregistrez le fichier `xwiki.properties` et redémarrez votre instance XWiki pour que les modifications prennent effet.",
+        "data_path": null
+      },
+      {
+        "id": "qa_028",
+        "prompt": "Comment puis-je m'assurer que seuls les fichiers image ou PDF d'une taille maximale de 10 Mo peuvent être téléchargés en tant que pièces jointes sur l'ensemble du wiki?",
+        "expected_answer": "Pour vous assurer que seuls les fichiers image ou PDF d'une taille maximale de 10 Mo peuvent être téléchargés en tant que pièces jointes sur l'ensemble du wiki, suivez ces étapes:\n\n**Étape 1: Configurer les types MIME autorisés**\n\nModifiez le fichier de configuration `xwiki.properties` dans votre installation et ajoutez ou mettez à jour la ligne suivante pour configurer les restrictions de type MIME par défaut au niveau de la ferme:\n```\nattachment.upload.allowList=image/*,application/pdf\n```\nCela permettra uniquement les fichiers image (avec n'importe quel sous-type, par exemple `image/jpeg`, `image/png`, etc.) et les fichiers PDF à télécharger, et bloquera tous les autres types MIME.\n\n**Étape 2: Configurer la taille maximale de la pièce jointe**\n\nPour définir la taille maximale de la pièce jointe sur 10 Mo, suivez ces étapes:\n\n1. Allez sur `http://<votrewiki>/xwiki/bin/edit/XWiki/XWikiPreferences?editor=object`\n2. Cliquez sur la ligne qui dit XWikiPreferences 0 (juste en dessous de la ligne qui dit Objects of type XWiki.XWikiPreferences (1))\n3. Faites défiler jusqu'au champ qui dit Maximum Upload Size et changez le nombre en `10485760` (10 Mo en octets)\n4. Faites défiler jusqu'en bas et cliquez sur \"Enregistrer\"\n5. Répétez pour chaque (sous-)wiki pour lequel vous devez définir cette configuration!",
+        "data_path": null
+      },
+      {
+        "id": "qa_029",
+        "prompt": "Comment puis-je refuser le droit de script à un administrateur d'espace?",
+        "expected_answer": "Ceci n'est malheureusement pas pris en charge dans XWiki, les droits qui sont impliqués par le droit d'administrateur ne peuvent pas être refusés.",
+        "data_path": null
+      },
+      {
+        "id": "qa_030",
+        "prompt": "Nous avons un espace par équipe. Je veux que toutes les équipes puissent voir tous les espaces, mais chaque équipe ne devrait pouvoir modifier que son propre espace. Comment puis-je configurer cela dans XWiki?",
+        "expected_answer": "Pour atteindre le contrôle d'accès souhaité, vous pouvez suivre ces étapes:\n\n1. **Créer des groupes pour chaque équipe**: Créez un groupe séparé pour chaque équipe dans votre instance XWiki. Cela vous permettra de gérer les droits d'accès pour chaque équipe individuellement.\n2. **Définir des droits au niveau du wiki**: Allez sur la page d'administration du wiki et définissez les droits pour l'ensemble du wiki. En particulier, définissez le droit \"Afficher\" sur \"Autoriser\" pour \"XWikiAllGroup\" pour permettre à tous de voir tous les espaces.\n3. **Définir des droits au niveau de l'espace**: Pour chaque espace d'équipe, allez sur la page d'administration de l'espace et définissez les droits pour cet espace. En particulier, définissez le droit \"Modifier\" sur \"Autoriser\" uniquement pour le groupe d'équipe correspondant. Cela permettra uniquement aux membres de cette équipe de modifier leur propre espace.\n4. **Hériter des droits pour les pages enfants**: Lorsque vous définissez des droits pour un espace, assurez-vous de sélectionner l'option \"Droits: Page & Enfants\" pour hériter des droits pour toutes les pages enfants à l'intérieur de cet espace.\n\nEn suivant ces étapes, vous vous assurez que:\n\n* Toutes les équipes peuvent voir tous les espaces.\n* Chaque équipe ne peut modifier que son propre espace.\n\nN'oubliez pas d'ajuster les droits en conséquence pour tous les équipes ou espaces supplémentaires que vous pourriez avoir dans votre instance XWiki.",
+        "data_path": null
+      },
+      {
+        "id": "qa_031",
         "prompt": "Can I authenticate users with access tokens?",
         "expected_answer": "Yes, you can authenticate users with access tokens using the Token-based authentication for the LLM Application extension.\n\nThis extension allows external applications to authenticate users with signed JSON Web Tokens (JWT). The token needs to contain specific claims, such as expiration time, issuer, subject, and audience, and must be signed with an Ed25519 key.\n\nTo use this authenticator, you need to:\n\n1. Enable the token authenticator by setting the `xwiki.authentication.authclass` property in `xwiki.properties` file to `org.xwiki.contrib.llm.authentication.JWTTokenAuth`.\n2. Configure the authorized applications by adding a new entry to the \"Authorized Applications\" list, specifying the application's title, URL, public key, and group format.\n3. Generate a JWT token that meets the required claims and signing key requirements.\n4. Include the token in the \"Authorization\" header of the request in the form \"Bearer TOKEN\".\n\nNote that this authenticator only supports creating or updating users based on the information provided in the token and does not support using a token as authentication for an existing user that hasn't been created through this authenticator.",
         "data_path": null
       },
       {
-        "id": "qa_012",
+        "id": "qa_032",
         "prompt": "Kann ich Benutzer mit Zugriffstoken authentifizieren?",
         "expected_answer": "Ja, Sie können Benutzer mit Zugriffstoken mithilfe der Token-basierten Authentifizierung für die LLM-Anwendung (BETA)-Erweiterung authentifizieren.\n\nDiese Erweiterung ermöglicht es externen Anwendungen, Benutzer mit signierten JSON Web Tokens (JWT) zu authentifizieren. Der Token muss bestimmte Ansprüche enthalten, wie Ablaufzeit, Aussteller, Betreff und Zielgruppe, und muss mit einem Ed25519-Schlüssel signiert sein.\n\nUm diesen Authentifizierer zu verwenden, müssen Sie:\n\n1. Den Token-Authentifizierer aktivieren, indem Sie die Eigenschaft `xwiki.authentication.authclass` in der Datei `xwiki.properties` auf `org.xwiki.contrib.llm.authentication.JWTTokenAuth` setzen.\n2. Die autorisierten Anwendungen konfigurieren, indem Sie einen neuen Eintrag zur Liste der „Autorisierten Anwendungen“ hinzufügen, wobei Sie den Titel, die URL, den öffentlichen Schlüssel und das Gruppenformat der Anwendung angeben.\n3. Ein JWT-Token generieren, das die erforderlichen Ansprüche und Signierschlüssel erfüllt.\n4. Das Token im „Authorization“-Header der Anfrage in der Form „Bearer TOKEN“ einfügen.\n\nHinweis: Dieser Authentifizierer unterstützt nur die Erstellung oder Aktualisierung von Benutzern auf der Grundlage der im Token bereitgestellten Informationen und unterstützt nicht die Verwendung eines Tokens als Authentifizierung für einen bestehenden Benutzer, der nicht über diesen Authentifizierer erstellt wurde.",
         "data_path": null
       },
       {
-        "id": "qa_013",
+        "id": "qa_033",
         "prompt": "Puis-je authentifier les utilisateurs avec des jetons d'accès ?",
         "expected_answer": "Oui, vous pouvez authentifier les utilisateurs avec des jetons d'accès en utilisant l'extension d'authentification basée sur les jetons pour l'application LLM.\n\nCette extension permet aux applications externes d'authentifier les utilisateurs avec des jetons Web JSON signés (JWT). Le jeton doit contenir des revendications spécifiques, telles que la date d'expiration, l'émetteur, le sujet et la audience, et doit être signé avec une clé Ed25519.\n\nPour utiliser cet authentificateur, vous devez :\n\n1. Activer l'authentificateur de jeton en définissant la propriété `xwiki.authentication.authclass` dans le fichier `xwiki.properties` sur `org.xwiki.contrib.llm.authentication.JWTTokenAuth`.\n2. Configurer les applications autorisées en ajoutant une nouvelle entrée à la liste des « Applications autorisées », en spécifiant le titre, l'URL, la clé publique et le format de groupe de l'application.\n3. Générer un jeton JWT qui répond aux exigences de revendications et de clés de signature.\n4. Inclure le jeton dans l'en-tête « Authorization » de la requête sous la forme « Bearer TOKEN ».\n\nNotez que cet authentificateur ne prend en charge que la création ou la mise à jour des utilisateurs en fonction des informations fournies dans le jeton et ne prend pas en charge l'utilisation d'un jeton comme authentification pour un utilisateur existant qui n'a pas été créé via cet authentificateur.",
         "data_path": null

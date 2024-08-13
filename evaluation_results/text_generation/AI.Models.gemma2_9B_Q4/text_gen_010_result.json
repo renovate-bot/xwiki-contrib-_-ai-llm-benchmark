@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output directly addresses the Input prompt and aligns well with the Expected Output in terms of relevance. It is coherent, logically flowing from one idea to the next, and maintains consistency with the Expected Output. The fluency is high, with grammatical correctness and natural language use. Minor differences in wording do not significantly detract from the overall alignment.",
+  "reason": "The Actual Output addresses the Input prompt and covers all required aspects, including the complexity of the brain and its functions. It includes key points from the Expected Output, such as physiological processes, sensory perception, and cognitive functions. The coherence and fluency are strong, with logical flow and good readability. However, it slightly diverges by adding a sentence on the subjective experiences of consciousness, which, while relevant, was not in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

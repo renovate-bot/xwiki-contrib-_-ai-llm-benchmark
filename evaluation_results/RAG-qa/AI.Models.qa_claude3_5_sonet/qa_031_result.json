@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.7036363636363637,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8181818181818182,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.82 because the main content addresses the question about authenticating users with access tokens effectively, but the presence of multiple irrelevant URLs prevents the score from being higher.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.50 because the first node discusses 'access to various user claims at the UserInfo endpoint and OAuth 2.0 refresh tokens,' which is not directly related to authenticating users with access tokens and should be ranked lower. Additionally, the third node provides 'general information about permissions and security modules,' which is also not directly related and should be ranked lower. However, the second node provides relevant information about 'configuring Authorized Applications,' which is pertinent to the input query and is correctly ranked higher.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions 'Authorized Applications' and some configuration details, but lacks specific information about JWT claims, token generation, and the exact authenticator class."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

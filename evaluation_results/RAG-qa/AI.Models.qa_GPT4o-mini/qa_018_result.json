@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.884705882352941,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8235294117647058,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.6
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.82 because the main content addresses the input question, but the inclusion of irrelevant URLs lowers the score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job staying faithful to the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first node provides 'detailed steps on setting limits on the maximum size of an attachment,' which is directly relevant to the input query. Irrelevant nodes, such as the second node discussing 'MIME type whitelists and blacklists,' the third node about 'managing documents,' the fourth node on 'creating new pages in XWiki,' and the fifth node on 'properties of document collections,' are all correctly ranked lower.",
+    "ContextualRecall": "The score is 1.00 because the retrieval context perfectly supports every sentence in the expected output. Great job!",
+    "CustomContextualRelevancy": "The retrieval context includes steps to change the maximum size of an attachment and mentions MIME type restrictions, but lacks specific details about configuring `xwiki.properties` and the exact MIME types allowed."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

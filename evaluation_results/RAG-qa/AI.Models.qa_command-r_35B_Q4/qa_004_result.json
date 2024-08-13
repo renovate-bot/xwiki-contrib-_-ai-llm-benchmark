@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.5816666666666668,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.875,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant and directly addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 0.88 because the actual output incorrectly states that email notifications can be disabled through the User Profile page, while the retrieval context specifies that it must be done by editing the configuration variable in xwiki.properties and restarting the server.",
+    "ContextualPrecision": "The score is 0.33 because the relevant node (rank 3) is ranked lower than multiple irrelevant nodes. For example, the first node is about 'enabling or disabling the notification module and email notifications,' which is not directly related to disabling notifications for specific pages. Similarly, the second node discusses 'getting a notification RSS feed and the settings for notifications,' which does not provide information on disabling notifications for specific pages.",
+    "ContextualRecall": "The score is 0.50 because while some aspects like automatic addition to the watch list (sentence 1) and accessing notification settings (sentence 3) are supported by nodes in the retrieval context, other details such as being notified about changes (sentence 2) and deleting existing notification filters (sentence 4) are not mentioned in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions auto-watched mode and notification settings but lacks details on modifying pages, automatic addition to watch list, and deleting custom filters."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

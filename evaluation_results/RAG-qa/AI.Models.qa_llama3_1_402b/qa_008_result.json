@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.7797979797979798,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9444444444444444,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.45454545454545453,
+    "CustomContextualRelevancy": 0.5
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.94 because the answer is highly relevant and provides useful information on configuring attachment settings, but it includes an unnecessary link to XWiki syntax documentation.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. For example, the first node provides detailed steps on how to set the maximum size of an attachment, which is directly relevant to the expected output. In contrast, the second node discusses moving and renaming attachments, which is not relevant to setting upload restrictions or size limits.",
+    "ContextualRecall": "The score is 0.45 because while the retrieval context covers the steps for configuring the maximum attachment size (Steps 2.1 to 2.5), it does not mention the steps for ensuring only images or PDF files of a maximum 10MB can be uploaded (Step 1).",
+    "CustomContextualRelevancy": "The retrieval context partially covers the expected answer. It includes steps to set the maximum attachment size and mentions mimetype restrictions, but lacks specific details on configuring allowed mimetypes and setting the size to exactly 10MB."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

@@ -5,7 +5,7 @@
     "stream": false
   },
   "embedding_model": {
-    "model": "AI.Models.nomic-embed-text-v1_5",
+    "model": "AI.Models.all-minilm",
     "temperature": 0.3,
     "dimension": 768,
     "stream": false
@@ -14,8 +14,8 @@
     {
       "task": "RAG-qa",
       "settings": {
-        "model": "AI.Models.eval_GPT4o",
-        "temperature": 0.3,
+        "model": "AI.Models.qa_GPT4o",
+        "temperature": 0.8,
         "stream": false
       },
       "power_measurement": false
@@ -23,8 +23,8 @@
     {
       "task": "RAG-qa",
       "settings": {
-        "model": "AI.Models.eval_GPT4o-mini",
-        "temperature": 0.3,
+        "model": "AI.Models.qa_GPT4o-mini",
+        "temperature": 0.8,
         "stream": false
       },
       "power_measurement": false
@@ -32,8 +32,8 @@
     {
       "task": "RAG-qa",
       "settings": {
-        "model": "AI.Models.eval_claude3_5_sonet",
-        "temperature": 0.3,
+        "model": "AI.Models.qa_claude3_5_sonet",
+        "temperature": 0.8,
         "stream": false
       },
       "power_measurement": false
@@ -41,8 +41,8 @@
     {
       "task": "RAG-qa",
       "settings": {
-        "model": "AI.Models.eval_mistral2_large",
-        "temperature": 0.3,
+        "model": "AI.Models.qa_mistral2_large",
+        "temperature": 0.8,
         "stream": false
       },
       "power_measurement": false
@@ -50,8 +50,8 @@
     {
       "task": "RAG-qa",
       "settings": {
-        "model": "AI.Models.eval_llama3_1_402b",
-        "temperature": 0.3,
+        "model": "AI.Models.qa_llama3_1_402b",
+        "temperature": 0.45,
         "stream": false
       },
       "power_measurement": false
@@ -59,7 +59,25 @@
     {
       "task": "RAG-qa",
       "settings": {
-        "model": "AI.Models.eval_llama3_1_8b_Q4",
+        "model": "AI.Models.qa_llama3_1_8b_Q4",
+        "temperature": 0.45,
+        "stream": false
+      },
+      "power_measurement": true
+    },
+    {
+      "task": "RAG-qa",
+      "settings": {
+        "model": "AI.Models.qa_mixtral-8x22b",
+        "temperature": 0.8,
+        "stream": false
+      },
+      "power_measurement": false
+    },
+    {
+      "task": "RAG-qa",
+      "settings": {
+        "model": "AI.Models.qa_mistral-nemo_12b_Q4",
         "temperature": 0.3,
         "stream": false
       },
@@ -68,16 +86,7 @@
     {
       "task": "RAG-qa",
       "settings": {
-        "model": "AI.Models.eval_mixtral-8x7B_fp16",
-        "temperature": 0.3,
-        "stream": false
-      },
-      "power_measurement": false
-    },
-    {
-      "task": "RAG-qa",
-      "settings": {
-        "model": "AI.Models.eval_mistral-nemo_12b_Q4",
+        "model": "AI.Models.qa_gemma2_9B_Q4",
         "temperature": 0.3,
         "stream": false
       },
@@ -86,8 +95,8 @@
     {
       "task": "RAG-qa",
       "settings": {
-        "model": "AI.Models.eval_gemma2_9B_Q4",
-        "temperature": 0.3,
+        "model": "AI.Models.qa_phi3_mini-128k_4b_Q4",
+        "temperature": 0,
         "stream": false
       },
       "power_measurement": true
@@ -95,16 +104,7 @@
     {
       "task": "RAG-qa",
       "settings": {
-        "model": "AI.Models.eval_phi3_mini-128k_4b_Q4",
-        "temperature": 0.3,
-        "stream": false
-      },
-      "power_measurement": true
-    },
-    {
-      "task": "RAG-qa",
-      "settings": {
-        "model": "AI.Models.eval_phi3_medium-128k_14b_Q4",
+        "model": "AI.Models.qa_phi3_medium-128k_14b_Q4",
         "temperature": 0.8,
         "stream": false
       },
@@ -113,7 +113,7 @@
     {
       "task": "RAG-qa",
       "settings": {
-        "model": "AI.Models.eval_command-r_35B_Q4",
+        "model": "AI.Models.qa_command-r_35B_Q4",
         "temperature": 0.3,
         "stream": false
       },
@@ -122,8 +122,8 @@
     {
       "task": "RAG-qa",
       "settings": {
-        "model": "AI.Models.eval_qwen2_7b_Q4",
-        "temperature": 0.3,
+        "model": "AI.Models.qa_qwen2_7b_Q4",
+        "temperature": 0,
         "stream": false
       },
       "power_measurement": true
@@ -185,8 +185,8 @@
     {
       "task": "summarization",
       "settings": {
-        "model": "AI.Models.mixtral-8x7B_fp16",
-        "temperature": 0.3,
+        "model": "AI.Models.mixtral-8x22b",
+        "temperature": 0.8,
         "stream": false
       },
       "power_measurement": false
@@ -302,7 +302,7 @@
     {
       "task": "text_generation",
       "settings": {
-        "model": "AI.Models.mixtral-8x7B_fp16",
+        "model": "AI.Models.mixtral-8x22b",
         "temperature": 0.8,
         "stream": false
       },

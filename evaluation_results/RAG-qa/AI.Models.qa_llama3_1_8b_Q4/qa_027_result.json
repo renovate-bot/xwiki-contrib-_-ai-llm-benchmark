@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.8172727272727272,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9696969696969697,
+    "Faithfulness": 0.9166666666666666,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.7
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.97 because the answer is highly relevant and provides detailed information on configuring group synchronization between XWiki and an OpenID Connect provider. However, it includes a link to general user guide documentation, which is not directly related to the specific configuration process asked about.",
+    "Faithfulness": "The score is 0.92 because the actual output incorrectly states that you need to create groups if they don't exist, while the retrieval context clarifies that groups are automatically created during synchronization.",
+    "ContextualPrecision": "The score is 0.50 because the second node, which provides 'specific information about group synchronization, including the use of the `oidc.groups.claim` and `oidc.groups.mapping` properties in the `xwiki.properties` file', is correctly identified as relevant. However, the first node, which 'primarily provides links to various configuration guides and general information about OpenID Connect, but does not specifically address the steps required to configure group synchronization between XWiki and an OpenID Connect provider', is ranked higher than it should be. Additionally, the third, fourth, and fifth nodes, which provide 'general information about the OpenID Connect authenticator', 'a table of contents and links to various sections', and 'an image and a link to more information about managing users and groups in XWiki', respectively, are also ranked higher than they should be.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions configuring group synchronization in the xwiki.properties file and mapping groups, but lacks detailed steps and examples found in the expected output."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

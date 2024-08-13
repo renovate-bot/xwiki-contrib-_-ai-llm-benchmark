@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3411764705882353,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7058823529411765,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.71 because the answer partially addresses the issue of not receiving notifications, but the repeated irrelevant URLs lower its relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are about unrelated topics such as 'various applications in XWiki', 'access rights and executing tasks', 'link renaming in macros', 'properties of a collection in an AI application', and 'configuring permissions for guests'. None of these nodes pertain to notifications, which is the main focus of the input.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about enabling notifications, following pages or users, or configuring notification settings as described in the expected output."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

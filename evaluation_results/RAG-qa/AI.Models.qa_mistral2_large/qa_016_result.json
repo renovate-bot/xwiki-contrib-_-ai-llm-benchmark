@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.64,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.80 because while the response contains some relevant information, it also includes several vague statements and headings that do not provide specific guidance relevant to the input.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.20 because the relevant node, which mentions 'Configuration files' and specifically 'xwiki.properties', is ranked fifth. Irrelevant nodes that provide general information about prerequisites, installation instructions, dependencies, compatibility, and container authentication are ranked higher, which lowers the score.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is perfectly supported by the information in the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions the xwiki.properties file but lacks details on customizing user profile fields and the specific property oidc.user.mapping."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

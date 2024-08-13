@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output directly addresses the Input prompt by providing a poem about the beauty of nature. It covers all key points and information expected, describing various natural elements like sunlight, flowers, mountains, oceans, and stars. The poem is coherent with a logical flow and consistent ideas, and it is fluent with correct grammar and natural language use.",
+  "reason": "The Actual Output is a coherent and fluent poem that clearly addresses the Input prompt by describing the beauty of nature, matching the Expected Output of describing the wonders of the natural world.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

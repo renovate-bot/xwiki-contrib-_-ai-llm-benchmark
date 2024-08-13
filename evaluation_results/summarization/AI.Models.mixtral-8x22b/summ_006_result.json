@@ -1,0 +1,10 @@
+{
+  "score": 0.8181818181818182,
+  "reason": "The score is 0.82 because the summary includes minor contradictions about the purpose of pre-installed applications and adds extra steps not mentioned in the original text. However, it still captures the main points well.",
+  "score_breakdown": {
+    "Alignment": 0.8181818181818182,
+    "Coverage": 1.0
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

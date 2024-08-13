@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.9349999999999999,
+  "individual_scores": {
+    "AnswerRelevancy": 0.875,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.8
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.88 because the answer is mostly relevant and provides useful information, but it includes URLs that do not directly address the specific question of how to refuse script rights to a space administrator.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes, ensuring precise and accurate retrieval.",
+    "ContextualRecall": "The score is 1.00 because the expected output perfectly matches the provided context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context explains that rights implied by admin rights cannot be overridden, aligning with the expected answer that admin rights cannot be refused. However, it does not explicitly state that XWiki does not support this feature."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

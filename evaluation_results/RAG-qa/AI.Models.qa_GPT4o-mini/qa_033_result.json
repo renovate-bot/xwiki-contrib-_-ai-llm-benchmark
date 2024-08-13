@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.34545454545454546,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7272727272727273,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.73 because the answer partially addresses the question about authenticating users with access tokens, but includes irrelevant URLs that do not directly answer the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining accuracy and alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'properties and methods related to a collection resource in an application,' which is not relevant to user authentication with access tokens. Similarly, the second node talks about 'various claims that can be requested by an access token,' but does not address user authentication. These irrelevant nodes should be ranked lower.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about authenticating users with access tokens, JWT, or the specific steps and requirements mentioned in the expected output."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

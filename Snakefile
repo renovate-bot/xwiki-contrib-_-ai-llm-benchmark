@@ -28,6 +28,7 @@ SNAKEOUT_EVALUATED_RAG_QA = f"{SNAKEOUT_DIR}/evaluated_rag_qa"
 SNAKEOUT_AVERAGE_POWER = f"{SNAKEOUT_DIR}/average_power"
 SNAKEOUT_PLOTS = f"{SNAKEOUT_DIR}/plots"
 SNAKEOUT_REPORTS = f"{SNAKEOUT_DIR}/reports"
+SNAKEOUT_DIR_ARCHIVE = f"{SNAKEOUT_DIR}/archive"
 
 rule evaluate:
     input:
@@ -218,13 +219,14 @@ rule archive:
         output_dir = OUTPUT_DIR,
         evaluation_dir = EVALUATION_DIR,
         reports_dir = REPORTS_DIR,
-        config_file = CONFIG_FILE
+        config_file = CONFIG_FILE,
+        arhive_dir = ARCHIVE_DIR
     output:
-        directory(ARCHIVE_DIR)
+        directory(SNAKEOUT_DIR_ARCHIVE)
     shell:
         """
         mkdir -p {output}
-        python {input.script} --input-dir {input.input_dir} --output-dir {input.output_dir} --evaluation-dir {input.evaluation_dir} --reports-dir {input.reports_dir} --config-file {input.config_file} --archive-dir {output}
+        python {input.script} --input-dir {input.input_dir} --output-dir {input.output_dir} --evaluation-dir {input.evaluation_dir} --reports-dir {input.reports_dir} --config-file {input.config_file} --archive-dir {input.arhive_dir}
         """
 
 

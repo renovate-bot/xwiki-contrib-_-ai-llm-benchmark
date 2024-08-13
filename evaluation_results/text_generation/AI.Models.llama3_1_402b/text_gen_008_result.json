@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output directly addresses the topics and requirements specified in the Input prompt by providing a comprehensive travel guide to Santorini, Greece. It is coherent with logically connected ideas and smooth text flow. The language is fluent, grammatically correct, and readable. The key elements and details align well with the Expected Output, meeting the anticipated standards.",
+  "reason": "The Actual Output directly addresses the Input prompt by providing a detailed travel guide for Santorini, Greece, which aligns with the Expected Output. It is coherent, logically flowing from one section to the next, and is fluent with correct grammar and natural language use. The guide includes top attractions, accommodations, activities, and practical tips, meeting the anticipated quality.",
   "prompt_language": "ro",
   "expected_answer_language": "en",
   "generated_text_language": "en"

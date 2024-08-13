@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output is relevant to the Input and aligns well with the Expected Output in terms of key points. However, it includes additional details like 'Features' and uses a different format. The coherence and fluency are good.",
+  "reason": "The Actual Output is relevant to the Input and captures key details such as event name, dates, and location. However, it misses the target audience and does not separate start and end dates as in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

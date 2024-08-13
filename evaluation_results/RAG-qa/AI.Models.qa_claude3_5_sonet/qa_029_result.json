@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.77,
+  "individual_scores": {
+    "AnswerRelevancy": 0.85,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.85 because the answer provides useful information but includes URLs that do not directly address the specific question about revoking script rights from a space administrator.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the question about refusing script rights to an administrator. For example, the first node discusses 'default right settler additional policies,' the second node includes 'technical details about access rights and execution contexts,' and the third node provides 'sample code and API details,' none of which address the specific issue.",
+    "ContextualRecall": "The score is 1.00 because the expected output perfectly matches the information provided in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context clearly states that rights implied by the administrator cannot be overridden, matching the expected answer."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

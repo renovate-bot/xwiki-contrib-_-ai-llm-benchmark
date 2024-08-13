@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6733333333333333,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.16666666666666666,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.17 because the relevant node (rank 6) is ranked lower than several irrelevant nodes. For example, the first node provides general information about prerequisites and installation instructions, which does not address customization of user profile fields. Similarly, the second node describes general functionality without mentioning user profile field customization. These irrelevant nodes should be ranked lower than the relevant node that mentions configuration files and the 'oidc.user.mapping' property.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are perfectly supported by the nodes in the retrieval context, showing a complete and accurate match.",
+    "CustomContextualRelevancy": "The retrieval context mentions xwiki.properties and customization but lacks detailed steps on mapping user profile fields and restarting XWiki."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

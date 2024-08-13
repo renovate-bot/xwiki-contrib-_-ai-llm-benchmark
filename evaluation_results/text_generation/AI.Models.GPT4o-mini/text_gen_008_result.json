@@ -1,7 +1,7 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output directly addresses the Input prompt by providing a detailed travel guide for Kyoto, Japan, which aligns with the Expected Output. It is coherent, logically structured with sections on attractions, cuisine, and accommodations, and uses fluent, natural language.",
-  "prompt_language": "ro",
+  "reason": "The Actual Output directly addresses the topic by providing a detailed travel guide for Kyoto, Japan. It covers all key points such as top attractions, cultural experiences, transportation, and tips for travelers, which align with the Expected Output. The guide is well-organized, coherent, and free from grammatical errors, ensuring a smooth reading experience.",
+  "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"
 }

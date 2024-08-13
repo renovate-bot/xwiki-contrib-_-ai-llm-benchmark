@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6000000000000001,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 0.6,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant and directly addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.20 because the relevant node, which mentions 'Configuration files' and 'xwiki.properties' for customizing user profile fields, is ranked fifth. The first four nodes are irrelevant as they discuss prerequisites, installation instructions, general descriptions, compatibility, container authentication, Active Directory, LDAP, and various endpoints, none of which address the customization of user profile fields or mapping additional properties.",
+    "ContextualRecall": "The score is 0.60 because while the retrieval context mentions 'customization' and 'xwiki.properties' (supporting sentences 1, 2, and 5 in the expected output), it lacks specific examples and instructions for mapping custom properties (missing details for sentences 3 and 4).",
+    "CustomContextualRelevancy": "The retrieval context mentions 'xwiki.properties' and customization but lacks specific details on 'oidc.user.mapping' and the example mappings provided in the expected output."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.2,
+  "individual_scores": {
+    "AnswerRelevancy": 0.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.00 because the output contains numerous irrelevant and incoherent statements that do not address the question about ensuring only image or PDF files of a maximum size of 10 MB can be uploaded.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context discuss topics such as 'macros and functionalities related to notifications, office document viewing, and PDF table of contents' (first node), 'customizing the PDF cover by overriding a template and adding a company logo' (second node), 'creating a new page by adding a wanted link and using templates' (third node), 'macros related to navigation, content display, and notifications' (fourth node), and 'CSS style information for images' (fifth node), which are irrelevant to configuring file upload restrictions.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about configuring MIME types or setting maximum upload size for attachments."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

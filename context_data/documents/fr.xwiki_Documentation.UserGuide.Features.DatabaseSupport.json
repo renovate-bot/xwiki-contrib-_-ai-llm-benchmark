@@ -1,9 +1,0 @@
-{
-  "id": "xwiki:Documentation.UserGuide.Features.DatabaseSupport",
-  "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/DatabaseSupport",
-  "title": "Database Support",
-  "collection": "Eval_fr",
-  "mimetype": "text/markdown",
-  "language": "fr",
-  "content": "Toutes les pages XWiki sont sauvegardées dans une base de données relationnelle pour une meilleure efficacité. Cela permet à XWiki d'être rapide et évolutif. Cela vous permet également d'utiliser les fonctionnalités de [Programmation](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Programming) pour effectuer des requêtes dans vos pages sur toutes les données contenues dans d'autres pages.\n\nThéoriquement, XWiki prend en charge les [mêmes bases de données que celles supportées par Hibernate](https://community.jboss.org/wiki/SupportedDatabases2). Cela signifie que si vous fournissez le fichier de mapping Hibernate correct, toutes ces bases de données devraient fonctionner correctement avec XWiki.\n\nPlus spécifiquement, l'[équipe de développement XWiki prend officiellement en charge un sous-ensemble de toutes ces bases de données](https://dev.xwiki.org/xwiki/bin/view/Community/DatabaseSupportStrategy)."
-}

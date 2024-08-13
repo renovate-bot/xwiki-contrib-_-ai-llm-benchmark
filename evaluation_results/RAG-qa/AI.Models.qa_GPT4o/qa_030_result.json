@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.317948717948718,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9230769230769231,
+    "Faithfulness": 0.6666666666666666,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the answer is mostly relevant and provides useful information on configuring permissions in XWiki, but it includes URLs that are not directly related to the specific question asked.",
+    "Faithfulness": "The score is 0.67 because the actual output repeatedly claims that each team can see and modify spaces, configure permissions, and replicate permissions for each team space. However, the retrieval context clearly states that the notion of space has been removed from the UI and that spaces are only emulated temporarily.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node explains how XWiki handles spaces and pages, but it does not provide information on setting access controls for teams. Similarly, the second node describes various macros and scripting capabilities in XWiki, which are not relevant to configuring access controls for teams.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about creating groups, defining rights at the wiki or space level, or inheriting rights for child pages."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

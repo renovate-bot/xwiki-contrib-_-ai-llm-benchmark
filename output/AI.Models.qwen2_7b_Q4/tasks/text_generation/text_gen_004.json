@@ -2,16 +2,16 @@
   "id": "text_gen_004",
   "prompt": "Generate a short product description based on the following information:\n\nProduct: Wireless Bluetooth Headphones\nFeatures: Noise-cancelling, 20-hour battery life, comfortable fit\nTarget audience: Tech-savvy professionals",
   "expected_answer": "Introducing our cutting-edge wireless Bluetooth headphones, designed for tech-savvy professionals who demand the best. With advanced noise-cancelling technology, you can immerse yourself in your music or focus on your work without any distractions. Enjoy an impressive 20-hour battery life, ensuring your headphones keep up with your busy lifestyle. The comfortable, ergonomic fit allows you to wear them all day long without any discomfort. Upgrade your audio experience with our premium wireless headphones.",
-  "ai_answer": "Introducing our state-of-the-art wireless Bluetooth headphones engineered specifically for tech-savvy professionals. These premium headphones come equipped with cutting-edge noise-canceling technology that effectively reduces ambient sound so you can immerse yourself fully into your work without any distractions, perfect for creating an optimal productivity environment.\n\nEach pair is meticulously crafted to offer exceptional audio quality alongside unparalleled comfort for prolonged wear. They feature a 20-hour battery life, meaning you won't have to worry about recharging during long workdays or extended travel schedules.\n\nThe ergonomic design ensures the headphones remain snug and comfortable throughout even the longest of hours of use. Lightweight construction also adds to your overall wearing comfort without causing any strain. These features are combined with their wireless freedom, providing unparalleled mobility - perfect for those needing a hands-free solution in professional environments where continuous focus is required.\n\nIn conclusion, these Bluetooth headphones are more than just audio devices; they're essential tools for tech-savvy professionals seeking efficiency and superior listening experience. Embrace the future of professional-grade audio with our premium wireless headphones today.",
+  "ai_answer": "Introducing our latest innovation in audio technology - the premium Wireless Bluetooth Headphones designed specifically for tech-savvy professionals. These headphones blend cutting-edge features with ergonomic design to deliver an unparalleled listening experience that adapts seamlessly to your active lifestyle.\n\nOur state-of-the-art noise-cancelling feature blocks out distracting background sounds, ensuring you stay immersed in your work without interruption or distraction. Whether it's a busy office environment, a crowded commute, or noisy cafe - our headphones help create the perfect quiet zone for concentration and creativity.\n\nFeaturing an impressive 20-hour battery life on a single charge, these headphones are engineered to last as long as needed for extended listening sessions at work or travel. Quick charging technology provides ample runtime even after short periods of recharging, giving you the flexibility to recharge quickly before stepping out without worrying about losing your connection.\n\nWith a comfortable fit in mind, our headphones incorporate lightweight materials and adjustable ear-cups that provide unparalleled wearing comfort, so they won't fatigue throughout long workdays or travel. Ideal for professionals seeking convenience, reliability, and sound quality all rolled into one sleek pair of headphones.\n\nIn summary, the Wireless Bluetooth Headphones offer a comprehensive solution to your audio needs by combining noise-cancellation technology, a robust 20-hour battery life, with a comfortable fit design \u2013 ensuring seamless integration into professional work environments and demanding schedules. Elevate your productivity, focus on essential tasks, and enjoy superior sound quality with our premium headphones.\n\nGet ahead of the curve today - upgrade to these high-quality headphones designed for tech-savvy professionals who value their time and require uncompromising audio experiences at the workplace or beyond.",
   "sources": null,
   "usage": {
     "prompt_tokens": 51,
-    "completion_tokens": 213,
-    "total_tokens": 264
+    "completion_tokens": 332,
+    "total_tokens": 383
   },
-  "average_power_draw": 203.9667536231884,
-  "energy_consumption": 339.0027501311302,
-  "energy_per_input_token": 0.5809815769171041,
-  "energy_per_output_token": 1.45245394229276,
-  "energy_per_total_token": 1.284101326254281
+  "average_power_draw": 214.04309782608698,
+  "energy_consumption": 554.8939670274958,
+  "energy_per_input_token": 0.6298455925397228,
+  "energy_per_output_token": 1.5746139813493072,
+  "energy_per_total_token": 1.4488093133877176
 }

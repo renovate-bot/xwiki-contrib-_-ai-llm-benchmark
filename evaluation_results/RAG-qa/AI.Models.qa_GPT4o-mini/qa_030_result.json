@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.515,
+  "individual_scores": {
+    "AnswerRelevancy": 0.875,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.7,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.88 because the provided answer is mostly relevant and addresses the configuration of spaces and permissions in XWiki. However, the inclusion of a URL that does not directly address the specific configuration needs slightly detracts from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.70 because the first node is relevant and provides information on managing spaces in XWiki. However, the second node, which discusses macros, is irrelevant and should be ranked lower. Additionally, the third node, which talks about parent/child relationships without specific access control details, and the fourth node, which explains link specifications, are also irrelevant and should be ranked lower. The fifth node is relevant and should be ranked higher.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about creating groups, setting rights at the wiki or space level, or inheriting rights for child pages."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

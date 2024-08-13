@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.384,
+  "individual_scores": {
+    "AnswerRelevancy": 0.92,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the answer is mostly relevant and provides useful information on denying script rights to a space administrator. However, the inclusion of URLs that are not directly related to the question slightly detracts from its relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'methods for checking access rights in code', which does not address the specific question. Similarly, the second node talks about 'the usage of the checkAccess() method', and the third node provides 'examples of access checks using hasAccess() and checkAccess() methods', none of which are relevant to denying script rights to a space administrator. Additionally, the fourth and fifth nodes describe 'HTTP methods and status codes for managing attachments and objects in a wiki', which are also not pertinent to the input question.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention anything about denying rights that are implied by admin rights or the inability to deny such rights, making the expected output unsupported.",
+    "CustomContextualRelevancy": "The retrieval context does not mention that rights implied by admin right cannot be denied."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

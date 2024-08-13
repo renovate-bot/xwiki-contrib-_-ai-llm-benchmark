@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.4682352941176471,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9411764705882353,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.94 because the answer is highly relevant and provides useful information, but the URL provided does not directly address the configuration of access rights in XWiki, which slightly detracts from the overall relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.20 because the relevant node (rank 5) discussing how permissions are set for groups or users is ranked lower than four irrelevant nodes. For instance, the first node discusses the creation of spaces and pages in XWiki without providing information on configuring access rights for teams, which should be ranked lower.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions setting rights and the concept of spaces and nested pages, but it lacks specific steps for creating groups, setting wiki-wide rights, and inheriting rights for child pages."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

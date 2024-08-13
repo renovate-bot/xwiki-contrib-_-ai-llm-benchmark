@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3964705882352941,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8823529411764706,
+    "Faithfulness": 0.7,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.88 because the provided URL does not directly address the configuration of access rights in XWiki, which is the main focus of the input. However, the rest of the information is relevant and helpful.",
+    "Faithfulness": "The score is 0.70 because the actual output incorrectly states that the notion of space has been removed from the UI, preventing setting permissions and creating new spaces, which contradicts the retrieval context.",
+    "ContextualPrecision": "The score is 0.20 because the relevant node (rank 5) about 'setting permissions and configuring access rights in XWiki' is ranked lower than the irrelevant nodes. For example, the first node discusses 'how users create pages and spaces in XWiki,' which is not related to configuring view or edit rights, and should be ranked lower.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions setting rights and creating spaces but lacks specific steps for creating groups, setting wiki-wide rights, and inheriting rights for child pages."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

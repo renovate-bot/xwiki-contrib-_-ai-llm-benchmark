@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary contains contradictory information regarding how users navigate and revert changes, and it fails to address whether there is a 'History' tab at the bottom of the page to compare versions.",
+  "score": 0.0,
+  "reason": "The score is 0.00 because the summary includes a significant amount of extra information not present in the original text and fails to address several questions that the original text can answer.",
   "score_breakdown": {
-    "Alignment": 0.6,
-    "Coverage": 0.8
+    "Alignment": 0.0,
+    "Coverage": 0.0
   },
   "input_language": "en",
   "summary_language": "en"

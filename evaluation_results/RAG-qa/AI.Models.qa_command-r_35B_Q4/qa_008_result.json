@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.7666666666666667,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8333333333333334,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.5
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.83 because the provided URLs are not directly relevant to the input, which specifically asks about ensuring file type and size limits for uploads. However, the rest of the information is pertinent and useful.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes, ensuring the most pertinent information is prioritized. Great job!",
+    "ContextualRecall": "The score is 0.50 because while the retrieval context covers the steps for setting the maximum attachment size (Steps 2.1 to 2.5), it does not mention configuring allowed mimetypes or editing the `xwiki.properties` file (Step 1).",
+    "CustomContextualRelevancy": "The retrieval context includes steps to change the maximum attachment size and mentions mimetype restrictions, but does not provide specific details on configuring the allowList for mimetypes."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

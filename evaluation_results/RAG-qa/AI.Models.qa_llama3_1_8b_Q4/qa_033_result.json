@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.35789473684210527,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7894736842105263,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.79 because the answer provides several URLs that do not directly address the question about authenticating users with access tokens, but it still contains relevant information.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'properties and methods related to collections in a wiki,' which is unrelated to user authentication with access tokens. The second node talks about 'user profile claims and OAuth 2.0,' but does not address authenticating users with access tokens for the application LLM. Additionally, the third node focuses on 'default right settler policies,' which pertain to access rights and permissions, not user authentication with access tokens.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about authenticating users with access tokens or JWTs, which is the main focus of the expected output."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

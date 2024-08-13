@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3230769230769231,
+  "individual_scores": {
+    "AnswerRelevancy": 0.6153846153846154,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.62 because although the response provides some relevant information, it includes multiple URLs that do not address the specific issue of not receiving notifications, thus reducing its overall relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the topic of notifications. For example, the first node discusses 'various XWiki applications like Meeting Application, Forum Application, and Ideas Application,' which are unrelated to notifications. Similarly, the second node talks about 'access rights and executing tasks with specific user rights,' which is not relevant to managing notifications. These irrelevant nodes should be ranked lower.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about enabling notifications, following pages or users, or managing notifications in user profiles."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

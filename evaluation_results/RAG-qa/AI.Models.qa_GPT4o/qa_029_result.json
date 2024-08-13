@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.7928571428571429,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9642857142857143,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.96 because the answer is highly relevant and addresses the question well, but the inclusion of a link to XWiki syntax documentation slightly detracts from its direct relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'default right settler policies,' the second node provides 'information about executing tasks with certain user rights,' the third node discusses 'the Scripting API and checking access rights,' the fourth node lists 'various types of rights and permissions,' and the fifth node explains 'how links are resolved in XWiki.' None of these contexts address the specific question about refusing script rights to an administrator.",
+    "ContextualRecall": "The score is 1.00 because the expected output perfectly matches the information in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context clearly states that rights implied by an admin right cannot be overridden by a denial at a lower level, matching the expected output that admin rights cannot be refused."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.5529411764705883,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7647058823529411,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.5
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.76 because the answer provides relevant information about authenticating users with access tokens, but it includes multiple irrelevant URLs that do not directly address the question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.50 because the first node discusses 'various claims that can be requested at the UserInfo endpoint using an access token,' which is not relevant to authenticating users with access tokens. Additionally, the third node provides 'general information about the Security Module and its ratings,' the fourth node discusses 'cookie protection and IP address usage for login,' and the fifth node discusses 'user profile rights and custom claims for id tokens,' all of which are not relevant to the input. However, the second node provides 'information about configuring authorized applications,' which is relevant to setting up token-based authentication and is correctly ranked.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions the 'Authorized Applications' configuration and the use of tokens, but lacks details on JWT claims, Ed25519 key, and specific authenticator setup steps."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

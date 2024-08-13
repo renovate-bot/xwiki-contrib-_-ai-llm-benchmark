@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6316666666666666,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.9,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.625,
+    "CustomContextualRelevancy": 0.3
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and addresses the issue of not receiving notifications without any irrelevant information. Great job!",
+    "Faithfulness": "The score is 0.90 because the actual output incorrectly states that you need to disable a filter to not receive notifications for actions done by yourself, whereas the retrieval context specifies that by default, you won't receive such notifications without mentioning any filter.",
+    "ContextualPrecision": "The score is 0.33 because the relevant node, which mentions 'Watched Entities' and 'Follow a user' (rank 3), is ranked lower than several irrelevant nodes. For example, the first node discusses getting a notification RSS feed and settings for notifications, which is not directly related to enabling notifications or following pages/users.",
+    "ContextualRecall": "The score is 0.62 because while the retrieval context covers following pages, users, and using the alert menu (nodes 3), it lacks details on enabling notifications through the `xwiki.properties` file and viewing followed users in the user profile network tab.",
+    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users, but lacks details on setting `notifications.enabled` to `true` in `xwiki.properties`, and the steps to follow pages or users are not fully covered."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

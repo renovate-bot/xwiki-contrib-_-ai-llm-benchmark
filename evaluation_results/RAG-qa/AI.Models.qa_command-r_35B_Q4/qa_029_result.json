@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.45999999999999996,
+  "individual_scores": {
+    "AnswerRelevancy": 0.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.3
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.00 because the provided output contains multiple irrelevant statements about Microsoft Teams and unrelated XWiki documentation links, which do not address the question about refusing script rights to a space administrator in XWiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node 'discusses additional rules for rights but does not address the specific question about denying script rights to an administrator.' Additionally, the second node 'provides details on executing tasks with user rights but does not mention the possibility of denying script rights to an administrator.'",
+    "ContextualRecall": "The score is 1.00 because the expected output perfectly matches the information provided in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions that an admin right implies other rights and cannot be overridden, but it does not explicitly state that admin rights cannot be refused."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

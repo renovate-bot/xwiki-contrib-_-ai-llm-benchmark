@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary contradicts the original text by categorizing RSS feeds into 'Available Feeds' and 'Customized RSS Feeds', which is not mentioned in the original text. Additionally, the summary fails to answer specific questions that the original text addresses, such as the availability of a feed for all modified pages and the existence of an RSS feed for search results if the Search application is installed.",
+  "score": 0.5555555555555556,
+  "reason": "The score is 0.56 because the summary includes contradictory information about the Watchlist feed generation and adds extra details not mentioned in the original text, such as XWiki being open-source and specifics about RSS feed features.",
   "score_breakdown": {
-    "Alignment": 0.75,
-    "Coverage": 0.6
+    "Alignment": 0.5555555555555556,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

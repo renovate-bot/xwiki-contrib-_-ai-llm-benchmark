@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The score is 0.80 because the summary is accurate and concise, with no contradictions or extra information. However, it fails to address whether RSS feeds for blog posts are available if the Blog application is installed.",
+  "reason": "The score is 0.80 because the summary is mostly accurate and concise, but it fails to address a specific question that the original text can answer.",
   "score_breakdown": {
     "Alignment": 1.0,
     "Coverage": 0.8

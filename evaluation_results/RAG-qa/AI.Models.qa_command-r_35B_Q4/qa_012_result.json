@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.36,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.80 because the main issue of not receiving notifications was addressed, but multiple irrelevant links were included, which detracted from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'various XWiki applications and extensions,' which is not related to enabling notifications or following users/pages. Similarly, the second node talks about 'access rights and executing tasks with specific user rights,' which also does not pertain to the input.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about enabling notifications, following pages or users, or managing notifications in user profiles."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

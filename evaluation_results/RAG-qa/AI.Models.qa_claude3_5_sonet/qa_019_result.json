@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.36,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.80 because the answer is mostly relevant but includes multiple irrelevant URLs that do not address the question about denying script rights to a space administrator.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node is about 'a list of image links and references', the second node discusses 'Kerberos authentication and LDAP configuration', and the third node describes 'mail templates for password reset and username retrieval'. These topics do not address the question about denying script rights to a space administrator in XWiki.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention anything about XWiki not supporting certain rights or the inability to refuse rights implied by admin rights.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to the admin rights or their denial in XWiki, which is the main point of the expected answer."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

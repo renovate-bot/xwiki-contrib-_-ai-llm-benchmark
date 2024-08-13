@@ -1,9 +1,9 @@
 {
-  "score": 0.4,
-  "reason": "The score is 0.40 because the summary includes incorrect information about upgrading the demo package (ZIP), which is not mentioned in the original text. Additionally, the summary fails to address several questions that the original text can answer, such as migration paths for upgrades, the importance of checking Release Notes, and updating extensions before upgrading XWiki.",
+  "score": 0.75,
+  "reason": "The score is 0.75 because the summary contains some contradictions and extra information not present in the original text, and it fails to answer some questions that the original text can.",
   "score_breakdown": {
-    "Alignment": 0.9,
-    "Coverage": 0.4
+    "Alignment": 0.75,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6177777777777778,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8888888888888888,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.89 because the answer is mostly relevant and helpful, but the inclusion of the URL 'https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/' is not related to enabling notifications for one's own actions.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses getting an RSS feed of notifications and does not address receiving notifications about one's own activity. The second node provides a list of links and descriptions related to notifications but does not specifically address the issue of receiving notifications about one's own activity. The third node lists various notification preferences macros but does not provide information on how to enable notifications for one's own actions. The fourth node talks about overriding default notification templates and installation instructions, which are not relevant to the question about receiving notifications for one's own activity. The fifth node lists different ways to be notified in XWiki, but it does not specifically address how to enable notifications for one's own actions.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context, showing a perfect match.",
+    "CustomContextualRelevancy": "The retrieval context mentions default notification settings and the ability to filter notifications, but it lacks details about disabling the filter in 'Options de filtrage avanc\u00e9es'."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

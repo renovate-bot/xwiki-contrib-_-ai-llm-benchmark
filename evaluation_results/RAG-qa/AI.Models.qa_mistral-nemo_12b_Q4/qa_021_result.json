@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.4,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and addresses the issue about the notification bell not being available despite the extension being installed. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses getting a notification RSS feed and settings for notifications, but does not mention enabling notifications in the `xwiki.properties` file. Similarly, the second node is about overriding default notification templates and installation instructions, which is not relevant. The third node describes the 'Clear All' link and default behavior for receiving notifications, but does not address enabling notifications in the `xwiki.properties` file. The fourth node is about custom filters and watching locations, which does not help in enabling notifications in the `xwiki.properties` file. Lastly, the fifth node lists various features and settings of the Notifications Application, but does not mention enabling notifications in the `xwiki.properties` file.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention anything about ensuring notifications are activated in the wiki or provide information on defining the property `notifications.enabled` in `xwiki.properties`.",
+    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications by setting `notifications.enabled` to `true` in `xwiki.properties`."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

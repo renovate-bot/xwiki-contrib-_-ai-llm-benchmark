@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.8,
+  "individual_scores": {
+    "AnswerRelevancy": 0.6666666666666666,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.67 because the answer includes irrelevant information about Alice and Ashton Smith, which does not address the issue of fixing the 'Bell' notification in XWiki. However, the relevant parts of the answer do provide some useful context related to the 'Alert Notification' extension.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node in the third rank mentions the `notifications.enabled` setting in `xwiki.properties`, which directly addresses the solution. However, irrelevant nodes in the first, second, fourth, and fifth ranks discuss topics like notification RSS feed, overriding templates, 'Clear All' link, and bell icon display, which do not address enabling notifications in the `xwiki.properties` file.",
+    "ContextualRecall": "The score is 1.00 because the retrieval context perfectly supports the expected output. Great job!",
+    "CustomContextualRelevancy": "The retrieval context includes information about enabling notifications by setting `notifications.enabled` to `true` in `xwiki.properties`, which matches the expected output."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

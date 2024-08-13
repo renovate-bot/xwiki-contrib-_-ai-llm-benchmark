@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.4346153846153847,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9230769230769231,
+    "Faithfulness": 0.9166666666666666,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the answer is mostly relevant and provides useful information on customizing user profile fields from the OpenID Connect provider in XWiki. However, it includes links to the XWiki RESTful API documentation and the Administration Application extension, which are not directly related to the specific question asked.",
+    "Faithfulness": "The score is 0.92 because the actual output incorrectly claims that starting from XWiki 1.30, you can configure the OIDC authenticator directly in the wiki, while the retrieval context states that XWiki 14.10+ is required for compatibility with the OpenID Connect Authenticator.",
+    "ContextualPrecision": "The score is 0.33 because the relevant node (rank 3) is ranked lower than multiple irrelevant nodes. For example, the first node discusses 'general features and installation details' which is not related to customizing user profile fields. Similarly, the second node explains 'different authentication methods' without mentioning user profile customization. The fourth node focuses on 'user and group management' and the fifth node again discusses 'various authentication methods' without relevant details. These irrelevant nodes should be ranked lower than the relevant node that mentions 'configuration of the OIDC authenticator' and 'use of configuration keys'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about customizing user profile fields or mapping them in the `xwiki.properties` file."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

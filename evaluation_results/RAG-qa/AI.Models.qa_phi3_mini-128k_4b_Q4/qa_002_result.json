@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.36119373776908026,
+  "individual_scores": {
+    "AnswerRelevancy": 0.0273972602739726,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0.25,
+    "ContextualRecall": 0.42857142857142855,
+    "CustomContextualRelevancy": 0.1
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.03 because the output contains numerous nonsensical and irrelevant statements that do not address the issue of not receiving notifications in XWiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.25 because the relevant node, which mentions the 'notifications.enabled' setting in 'xwiki.properties', is ranked fourth. Irrelevant nodes, such as the first node discussing the 'Clear All' link and default behavior for own events, the second node listing dependencies for the notifications extension, and the third node providing various ways to receive notifications without addressing enabling notifications, are ranked higher.",
+    "ContextualRecall": "The score is 0.43 because while the retrieval context covers enabling notifications in the 'xwiki.properties' file and mentions the alert entry represented by a bell, it lacks information on subscribing to pages or users, following users, and the network tab.",
+    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications in xwiki.properties but lacks details on subscribing to pages or users, and how to manage these subscriptions."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

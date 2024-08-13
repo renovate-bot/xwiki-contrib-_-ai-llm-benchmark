@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.7466666666666667,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.5
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.90 because the answer is mostly relevant and addresses the question about disabling notifications. However, it includes irrelevant links related to XWiki, which are not pertinent to the topic of social media notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node (third node) that mentions 'Auto Watch' and 'Default Watch Settings' is ranked lower than multiple irrelevant nodes. For instance, the first node discusses general notification settings but does not address how to disable notifications, and the second node provides links to notification preferences macros without explaining how to disable notifications.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context, indicating a perfect match.",
+    "CustomContextualRelevancy": "The retrieval context mentions auto-watched pages and notification settings but lacks details about modifying the 'Suivi automatique des pages' and removing custom filters."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

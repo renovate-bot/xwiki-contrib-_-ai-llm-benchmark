@@ -1,6 +1,6 @@
 {
-  "score": 0.7,
-  "reason": "The Actual Output addresses the Input prompt and matches the context of the Expected Output. It is coherent and fluent. However, it misses the 'start_date' and 'end_date' separation, the exact address '123 Main Street', and the 'target_audience' detail.",
+  "score": 0.5,
+  "reason": "The Actual Output addresses the topic and extracts relevant information but includes unnecessary details and lacks coherence. It misses the concise format of the Expected Output and adds speculative content not present in the Input.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

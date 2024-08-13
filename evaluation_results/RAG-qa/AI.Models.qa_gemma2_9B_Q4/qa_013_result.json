@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3230769230769231,
+  "individual_scores": {
+    "AnswerRelevancy": 0.6153846153846154,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.62 because while the output may contain some relevant information, it is cluttered with multiple irrelevant URLs that do not address the specific question about enabling notifications for one's own activity.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are unrelated to the input. For example, the first node is about 'token generation and JWT claims', which is irrelevant to notifications for user activity. Similarly, the second node discusses 'database migration and invalid extensions', which also does not relate to user notification settings.",
+    "ContextualRecall": "The score is 0.00 because none of the nodes in the retrieval context mention notifications about user activity, related settings, or 'Erweiterten Filteroptionen'.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to notification settings or user activity mentioned in the expected output."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

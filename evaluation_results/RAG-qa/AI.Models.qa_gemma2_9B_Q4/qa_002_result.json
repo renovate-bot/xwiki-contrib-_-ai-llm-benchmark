@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.5757142857142857,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.25,
+    "ContextualRecall": 0.42857142857142855,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and directly addresses the issue of not receiving notifications in XWiki. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.25 because the relevant node, which mentions 'notifications.enabled' and 'notifications.emails.enabled' settings in 'xwiki.properties', is ranked fourth. Irrelevant nodes, such as the first node discussing the 'Clear All' link, default notification settings, and grouping notifications, should be ranked lower.",
+    "ContextualRecall": "The score is 0.43 because while there are mentions of enabling notifications and the alert menu (nodes 3 and 5 in the retrieval context), there are no references to subscribing to pages or users, following a user, receiving notifications about user events, or the 'network' tab in the user profile.",
+    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications in xwiki.properties but lacks details on subscribing to pages or users and watching locations."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

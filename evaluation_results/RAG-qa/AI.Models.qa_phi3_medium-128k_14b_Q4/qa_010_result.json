@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.44666666666666666,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9166666666666666,
+    "Faithfulness": 0.9166666666666666,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the answer is mostly relevant and provides useful information, but it includes a URL that does not directly address the specific configuration question about access rights in XWiki.",
+    "Faithfulness": "The score is 0.92 because the actual output incorrectly claims that RBAC permissions and restrictions are assigned at the page level in XWiki, which is not mentioned in the retrieval context.",
+    "ContextualPrecision": "The score is 0.20 because the relevant node discussing 'how permissions are set for groups or users' is ranked 5th, while the higher-ranked nodes discuss unrelated topics such as 'spaces and pages creation and management' (1st node), 'parent/child relationship and nested pages' (2nd node), 'various macros and their functions' (3rd node), and 'XWiki Syntax 2.1 Link Specification' (4th node).",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions setting rights and creating spaces but lacks specific steps about creating groups, setting wiki-wide rights, and inheriting rights for child pages."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

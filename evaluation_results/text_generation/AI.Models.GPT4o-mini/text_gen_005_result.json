@@ -1,6 +1,6 @@
 {
-  "score": 0.5,
-  "reason": "The Actual Output addresses the topic of a space adventure and is coherent and fluent, but it diverges significantly from the Expected Output by focusing on a single character's journey rather than a group of astronauts exploring a new planet.",
+  "score": 0.7,
+  "reason": "The Actual Output is a creative story about a space adventure, addressing the Input prompt well. However, it diverges from the Expected Output by focusing on a nebula rather than a new planet. The story is coherent, fluent, and engaging, but it misses the specific detail of exploring a new planet.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

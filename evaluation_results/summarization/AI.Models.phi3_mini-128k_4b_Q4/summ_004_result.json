@@ -1,8 +1,8 @@
 {
   "score": 0.2,
-  "reason": "The score is 0.20 because the summary contains multiple pieces of information that contradict the original text and includes extra details not mentioned in the original text. Additionally, the summary fails to answer several questions that the original text addresses.",
+  "reason": "The score is 0.20 because the summary contains multiple contradictions and extra information not present in the original text. Additionally, there are several questions that the original text can answer but the summary cannot.",
   "score_breakdown": {
-    "Alignment": 0.42105263157894735,
+    "Alignment": 0.5263157894736842,
     "Coverage": 0.2
   },
   "input_language": "en",

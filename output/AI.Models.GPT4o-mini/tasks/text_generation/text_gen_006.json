@@ -2,12 +2,12 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "In whispers soft, the morning dew,  \nAwakens Earth with drops anew,  \nEach blade of grass a glistening gem,  \nIn nature's realm, we find our hymn.  \n\nThe sun, a painter, spreads its light,  \nAcross the hills, it climbs in flight,  \nGolden hues on mountains greet,  \nWhere sky and land in beauty meet.  \n\nThe river flows with laughter clear,  \nA winding path, it draws us near,  \nWith gentle ripples, stories told,  \nOf ancient tales and dreams of gold.  \n\nThe forest breathes in tranquil sighs,  \nBeneath the canopy, wisdom lies,  \nTall trees stand guard, both strong and wise,  \nTheir leaves, a chorus to the skies.  \n\nBirds take wing on breezes fair,  \nIn vibrant plumes, they dance through air,  \nA symphony of song and flight,  \nIn every note, pure joy ignites.  \n\nThe colors burst as flowers bloom,  \nIn meadows bright, dispelling gloom,  \nA tapestry of life displayed,  \nIn nature\u2019s arms, our hearts are swayed.  \n\nAs twilight drapes the world in blue,  \nThe stars emerge, a sparkling view,  \nIn silent awe, we watch the night,  \nNature's canvas, pure delight.  \n\nSo let us walk with open eyes,  \nEmbrace the beauty, seek the skies,  \nFor in each moment, wild and free,  \nNature\u2019s grace is harmony.  ",
+  "ai_answer": "In whispered winds and rustling leaves,  \nNature\u2019s song, a heart that weaves,  \nWith golden rays of morning light,  \nShe wakes the world, a pure delight.  \n\nThe mountains stand, their peaks adorned,  \nIn robes of green, where dreams are born,  \nWith rivers dancing, swift and free,  \nThey carve the earth, a symphony.  \n\nThe blossoms bloom in vibrant hues,  \nA palette drawn from heaven\u2019s muse,  \nFrom cherry pink to azure skies,  \nEach petal holds a thousand sighs.  \n\nThe whispering pines, the ancient oaks,  \nIn shadows deep, where silence chokes,  \nThey tell of time, of seasons past,  \nA history that\u2019s unsurpassed.  \n\nThe ocean\u2019s roar, the gentle tide,  \nA canvas vast, where secrets hide,  \nWith shells like treasures on the shore,  \nEach wave a tale, forevermore.  \n\nThe starlit nights, the moon\u2019s embrace,  \nIn cosmic dance, a timeless grace,  \nThe galaxy, a jeweled thread,  \nIn every heart, its wonder spreads.  \n\nSo let us walk on paths of green,  \nIn nature\u2019s arms, where peace is seen,  \nFor in her beauty, we find our place,  \nA sacred bond, a warm embrace.",
   "sources": null,
   "usage": {
     "prompt_tokens": 16,
-    "completion_tokens": 304,
-    "total_tokens": 320
+    "completion_tokens": 268,
+    "total_tokens": 284
   },
   "average_power_draw": null,
   "energy_consumption": null,

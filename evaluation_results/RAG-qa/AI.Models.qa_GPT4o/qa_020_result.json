@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3666666666666667,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8333333333333334,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.83 because the provided URL does not directly address the specific configuration question multiple times, but the rest of the answer is relevant and helpful.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'various actions that can be performed in XWiki, such as creating children pages and changing page access rights,' but does not provide specific steps for configuring access control as required by the input. Similarly, the second node explains 'the concept of wikis and subwikis, and how to organize content within them,' which does not address the specific access control configuration needed for the input question.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output have a direct match in the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not provide specific steps or details about creating groups, setting wiki-wide and space-level rights, or inheriting rights for child pages as outlined in the expected output."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

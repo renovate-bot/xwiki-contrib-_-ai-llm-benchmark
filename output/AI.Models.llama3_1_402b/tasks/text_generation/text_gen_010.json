@@ -2,12 +2,12 @@
   "id": "text_gen_010",
   "prompt": "Adapt the following text to a more technical audience:\n\nThe human brain is a complex organ that controls all functions of the body, interprets information from the outside world, and embodies the essence of the mind and soul.",
   "expected_answer": "The human brain is a highly intricate and sophisticated organ responsible for regulating and coordinating various physiological processes, processing and interpreting sensory information from the external environment, and serving as the biological substrate for cognitive functions, consciousness, and subjective experiences.",
-  "ai_answer": "Here's a revised version of the text tailored to a more technical audience:\n\nThe human brain is a highly intricate and dynamic organ that serves as the central processing unit of the nervous system, regulating a vast array of physiological processes, integrating sensory information from the environment, and facilitating cognitive functions that underlie perception, consciousness, and behavior.\n\nNote that I've used more technical terms and phrases, such as \"central processing unit of the nervous system\", \"physiological processes\", \"integrating sensory information\", and \"cognitive functions\", to convey the same idea in a more precise and formal manner. I've also avoided using more subjective and philosophical terms like \"essence of the mind and soul\", which may not be suitable for a technical audience.",
+  "ai_answer": "Here is a revised version of the text, adapted for a more technical audience:\n\nThe human brain is a highly intricate and dynamic system that serves as the central control unit for the body's physiological processes, integrating and processing sensory information from the environment through complex neural networks, and giving rise to the emergent properties of cognition, consciousness, and behavioral regulation.\n\nNote that I've used more technical terms and concepts to convey the same ideas as the original text, such as:\n\n* \"central control unit\" instead of \"controls all functions of the body\"\n* \"integrating and processing sensory information\" instead of \"interprets information from the outside world\"\n* \"emergent properties\" instead of \"embodies the essence of the mind and soul\" to convey the idea that the brain's complex processes give rise to higher-level phenomena such as cognition and consciousness.",
   "sources": null,
   "usage": {
     "prompt_tokens": 54,
-    "completion_tokens": 149,
-    "total_tokens": 203
+    "completion_tokens": 171,
+    "total_tokens": 225
   },
   "average_power_draw": null,
   "energy_consumption": null,

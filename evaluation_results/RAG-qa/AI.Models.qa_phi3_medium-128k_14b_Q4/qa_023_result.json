@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.4822222222222222,
+  "individual_scores": {
+    "AnswerRelevancy": 0.1111111111111111,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.3
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.11 because the majority of the statements provided are irrelevant to the specific question about enabling notifications for one's own actions on XWiki. The answer includes unrelated URLs and references to Google or Facebook settings, which do not address the user's query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.50 because the second node, which mentions 'Filter your own events,' is relevant and ranked higher than some irrelevant nodes. However, irrelevant nodes like the first node, which discusses getting a notification RSS feed and general notification settings, and the third node, which lists various notification preferences, are ranked higher than the relevant node.",
+    "ContextualRecall": "The score is 0.50 because the retrieval context partially supports the expected output. The 2nd node in the retrieval context confirms that users do not receive notifications about their own activity by default, but there is no mention of the option to disable this filter in the 'Options de filtrage avanc\u00e9es' section of the user profile notification settings.",
+    "CustomContextualRelevancy": "The retrieval context mentions filtering own events and advanced filtering options but lacks details on default notification settings and explicit user targeting."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3646153846153847,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9,
+    "Faithfulness": 0.9230769230769231,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.90 because the majority of the response is relevant to configuring OpenID Connect authentication in XWiki. However, it includes some irrelevant links about the XWiki RESTful API and access rights, which do not directly address the specific configuration issue.",
+    "Faithfulness": "The score is 0.92 because the actual output incorrectly claims to modify the properties `xwiki.authentication.createuser=1` and `xwiki.authentication.trustAuthentication=1`, while the retrieval context only mentions `xwiki.authentication.createuser=empty` for Container Authentication.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node 'does not provide any information on configuring user account enablement', the second node 'does not provide relevant configuration details for enabling user accounts', and the third node 'does not provide specific configuration instructions for enabling user accounts'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain information about adjusting the `xwiki.properties` file or the `oidc.enableUser` property."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "fr"
+}

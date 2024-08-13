@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.4,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is completely relevant and addresses the issue about the notification bell not being available despite the extension being installed.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining accuracy and alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses getting a notification RSS feed and does not mention enabling notifications in the wiki settings. Similarly, the second node explains how to override default notification templates and install extensions, which is not related to enabling notifications in the wiki settings.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention anything about ensuring notifications are activated in the wiki or how to activate them, nor does it provide any information about defining the property `notifications.enabled` in `xwiki.properties` to `true`.",
+    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications by setting `notifications.enabled` in `xwiki.properties` to `true`."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

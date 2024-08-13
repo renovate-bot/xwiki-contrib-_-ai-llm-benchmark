@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.35,
+  "individual_scores": {
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.75 because the answer provides relevant information about disabling notifications, but it includes multiple irrelevant URLs that do not address the input question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all the nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'XWiki syntax and formatting,' which is unrelated to disabling notifications. Similarly, the second node describes 'an extension for authenticating users with JSON Web Tokens,' which is not relevant to the question about disabling notifications.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to automatic page following, notification settings, or custom filters mentioned in the expected output."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

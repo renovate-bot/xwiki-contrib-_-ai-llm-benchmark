@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.37272727272727274,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8636363636363636,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.86 because the provided URL does not directly address the input question about configuring file upload restrictions. However, the rest of the response is relevant and helpful.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in retrieval context are irrelevant to the input. For example, the first node 'describes various macros and functionalities in XWiki but does not address file upload restrictions or MIME type configurations', and the second node 'explains how to customize the PDF cover in XWiki, which is unrelated to setting file upload restrictions or MIME types'.",
+    "ContextualRecall": "The score is 0.00 because none of the steps or configurations mentioned in the expected output can be attributed to the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain information about configuring MIME types or setting maximum attachment size."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

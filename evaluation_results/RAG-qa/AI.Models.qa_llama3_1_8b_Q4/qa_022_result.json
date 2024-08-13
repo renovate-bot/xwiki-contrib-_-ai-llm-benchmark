@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.5166666666666666,
+  "individual_scores": {
+    "AnswerRelevancy": 0.95,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.3
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.95 because the response is highly relevant to the issue of not receiving notifications, but it includes a minor irrelevant detail about generating an access code.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node (rank 3) mentions 'Watched Entities' and 'Follow a user,' which are pertinent to receiving notifications. However, irrelevant nodes (rank 1, 2, 4, and 5) discuss topics like RSS feeds, overriding templates, clearing notifications, and the notification menu, which should be ranked lower.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users, but lacks details on setting `notifications.enabled` to `true` and specific steps for following pages or users."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

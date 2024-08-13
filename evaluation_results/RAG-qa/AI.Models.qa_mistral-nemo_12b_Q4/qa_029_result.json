@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.7666666666666667,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8333333333333334,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.83 because the answer mostly addresses how to refuse script rights to a space administrator, but includes URLs that are not directly relevant to the question, which slightly detracts from its overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'default right settler additional policies', the second node explains 'usage of the `hasAccess` method and other API details', the third node provides 'a list of different rights and their descriptions', and the fourth node discusses 'link resolution and parameters'. None of these contexts address the specific question about refusing script rights to an administrator.",
+    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the information in the retrieval context, with no contradictions.",
+    "CustomContextualRelevancy": "The retrieval context explicitly states that rights implied by an admin right cannot be overridden by a denial at a lower level, matching the expected answer that admin rights cannot be refused."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

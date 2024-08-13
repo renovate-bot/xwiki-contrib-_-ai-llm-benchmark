@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output addresses the Input prompt and includes all necessary event details. However, it does not match the Expected Output format, particularly in splitting the date and address, and missing the target audience key.",
+  "score": 0.7,
+  "reason": "The Actual Output addresses the Input prompt and includes all the necessary details, but the format and some specific elements differ from the Expected Output. The dates are not split into start_date and end_date, and the target_audience is not explicitly mentioned.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

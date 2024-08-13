@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3333333333333333,
+  "individual_scores": {
+    "AnswerRelevancy": 0.6666666666666666,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.67 because while the response addresses the question about disabling notifications, it includes multiple irrelevant URLs that do not provide the requested information, reducing the overall relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'Verbatim' and 'Quotations' in XWiki Syntax, which is unrelated to disabling notifications. Similarly, the second node provides information on 'JWT Token Authenticator' for the LLM AI Application, which does not pertain to notification settings.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about automatic following of pages, notification settings, or custom filters."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

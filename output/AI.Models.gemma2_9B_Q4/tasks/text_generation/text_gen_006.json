@@ -2,16 +2,16 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "The sun paints dawn with strokes of rose and gold,\nUpon a canvas stretched, a world untold.\nFrom slumber deep, the meadow gently wakes,\nWith dewdrops clinging, pearls the morning breaks.\n\nA robin's song, a sweet and joyful chime,\nAwakens creatures, one by one, in time.\nThe whispering trees, in emerald embrace,\nTheir leaves a symphony of light and grace.\n\nA silver stream, it dances, clear and bright,\nReflecting clouds that drift in azure flight.\nFlowers unfurl, a rainbow in the breeze,\nFrom fragile petals, honeyed fragrance please.\n\nThe mountains stand, majestic, proud, and tall,\nGuardians ancient, answering nature's call.\nThe ocean roars, a powerful, timeless song,\nWhere waves crash gently, whispering all along.\n\nThis tapestry of wonder, spun with care,\nA masterpiece of beauty, beyond compare.\nLet us cherish earth, its gifts so grand,\nAnd leave a legacy upon this sacred land. \n\n\n",
+  "ai_answer": "The sun, a brush of golden light,\nPaints clouds with hues of pink and bright.\nA gentle breeze through meadows sighs,\nWhere wildflowers dance before my eyes.\n\nA crystal stream, a silver thread,\nThrough moss-kissed stones its journey led.\nThe forest whispers ancient tales,\nWhere sunlight filters, green and pale.\n\nA robin's song, a joyful trill,\nUpon the branches, perched and still.\nThe mountains rise, their peaks so high,\nReflecting heavens in their eye.\n\nA tapestry of earth and sky,\nWhere wonder blooms for you and I.\nFrom dewdrop's gleam to ocean's roar,\nNature's beauty evermore. \n\n\nLet me know if you'd like another poem on a specific theme in nature!",
   "sources": null,
   "usage": {
     "prompt_tokens": 19,
-    "completion_tokens": 216,
-    "total_tokens": 235
+    "completion_tokens": 168,
+    "total_tokens": 187
   },
-  "average_power_draw": 201.16335968379448,
-  "energy_consumption": 474.3575505554818,
-  "energy_per_input_token": 0.8485823802423645,
-  "energy_per_output_token": 2.1214559506059114,
-  "energy_per_total_token": 2.018542768321199
+  "average_power_draw": 199.9481713554987,
+  "energy_consumption": 361.26433153598197,
+  "energy_per_input_token": 0.8229255843644235,
+  "energy_per_output_token": 2.057313960911059,
+  "energy_per_total_token": 1.931894821048032
 }

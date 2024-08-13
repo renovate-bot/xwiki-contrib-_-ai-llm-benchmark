@@ -1,6 +1,6 @@
 {
-  "score": 0.7,
-  "reason": "The Actual Output addresses the topic and includes key points such as brain functions, sensory information processing, and cognitive functions. However, it is overly verbose and less coherent compared to the Expected Output, with some grammatical issues and overly complex phrasing.",
+  "score": 0.9,
+  "reason": "The Actual Output is relevant to the Input prompt, addressing the complexity and functions of the brain in a technical manner. It is coherent and fluent, with logical connections and correct grammar. The key elements and intent of the prompt are met, though some additional technical details were added beyond the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.7302392344497608,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8421052631578947,
+    "Faithfulness": 0.9090909090909091,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.9
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.84 because the answer is mostly relevant but includes URLs that do not directly address the question about refusing script rights to a space administrator.",
+    "Faithfulness": "The score is 0.91 because the actual output claims that you can deny the script right for a group, but the retrieval context does not mention the script right or its management.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'default right settler policies' which does not address the specific question about denying script rights to an administrator.",
+    "ContextualRecall": "The score is 1.00 because the expected output perfectly aligns with the information provided in the retrieval context, specifically the 1st node.",
+    "CustomContextualRelevancy": "The retrieval context confirms that rights implied by an admin right cannot be overridden, aligning closely with the expected answer about admin rights not being deniable."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

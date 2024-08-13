@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.4,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and addresses the issue without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'getting a notification RSS feed and settings for notifications,' which does not address the availability of the notification bell. Similarly, the second node talks about 'overriding default notification templates and installation instructions,' which are not related to the notification bell issue.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention enabling notifications via `xwiki.properties` or any similar setting, nor does it provide information about setting `notifications.enabled` to `true` in `xwiki.properties`.",
+    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications via `notifications.enabled` in `xwiki.properties`."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

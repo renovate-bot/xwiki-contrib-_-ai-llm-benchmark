@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3894736842105263,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9473684210526315,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.95 because the answer is highly relevant and addresses the question directly, but it includes a link that is not directly related to configuring user account activation via OpenID Connect in XWiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node describes the OpenID Connect Authenticator extension, its installation, and its developer, but it does not provide any information about configuring user activation. The second node discusses container authentication and mentions OpenID Connect Authentication but does not provide details on configuring automatic user activation. The third node provides a general description of the OpenID Connect Authenticator and its synchronization capabilities but does not mention the specific configuration needed for automatic user activation. The fourth node discusses various authentication methods for the XWiki RESTful API but does not address the configuration of automatic user activation with OpenID Connect. The fifth node lists endpoints, group synchronization, customization, and troubleshooting for the OpenID Connect Authenticator but does not mention the configuration for automatic user activation.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about adjusting the `xwiki.properties` file or setting the `oidc.enableUser` property."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

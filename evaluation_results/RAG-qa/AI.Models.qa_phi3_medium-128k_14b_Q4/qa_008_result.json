@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6296989966555184,
+  "individual_scores": {
+    "AnswerRelevancy": 0.08695652173913043,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.46153846153846156,
+    "CustomContextualRelevancy": 0.6
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.09 because the majority of the statements are about MediaWiki, which is not relevant to the wiki platform in question, and do not address the specific requirement of setting upload limits for attachments. However, the low score indicates that there might be a minimal connection to the general topic of managing wiki settings.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first node provides detailed steps on setting the maximum size of an attachment, which is directly relevant to the input. The subsequent nodes discuss topics such as moving attachments, deleting attachments, linking to external files, and linking to email addresses, which are not relevant to setting file type or size restrictions.",
+    "ContextualRecall": "The score is 0.46 because while the retrieval context provides detailed steps for configuring the maximum attachment size (Steps 2.1 to 2.5 in the expected output), it lacks information on configuring allowed mimetypes and editing the `xwiki.properties` file (Step 1 in the expected output).",
+    "CustomContextualRelevancy": "The retrieval context provides steps to change the maximum attachment size and mentions mimetype restrictions but lacks specific details on configuring the `xwiki.properties` file and setting the size to 10MB."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

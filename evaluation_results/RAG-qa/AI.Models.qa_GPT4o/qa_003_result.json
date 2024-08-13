@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.45999999999999996,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.3
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and there are no irrelevant statements.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses how to get a notification RSS feed and general notification settings, but it does not address enabling notifications for one's own actions. The second node lists various notification customization options but does not mention anything about receiving notifications for one's own actions. The third node talks about enabling and disabling the email feature and customizing live email notifications grace time, but it does not address the specific question about receiving notifications for one's own actions. The fourth node provides an overview of different ways to receive notifications in XWiki, but it does not specifically address how to enable notifications for one's own actions. The fifth node discusses overriding default notification templates and installation instructions, which are not relevant to enabling notifications for one's own actions.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention anything about not receiving notifications about one's own activity by default or the ability to disable this filter in the 'Advanced filtering options' section of the notification settings.",
+    "CustomContextualRelevancy": "The retrieval context mentions notification settings and the ability to enable or disable notifications, but it lacks specific details about disabling the filter for one's own activity and the 'Advanced filtering options' section."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

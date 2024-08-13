@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6983333333333335,
+  "individual_scores": {
+    "AnswerRelevancy": 0.875,
+    "Faithfulness": 0.8333333333333334,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.75,
+    "CustomContextualRelevancy": 0.7
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.88 because the main content addresses the query about disabling notifications, but the inclusion of irrelevant links about the Notifications Application, XWiki Syntax, and Notifications features slightly detracts from the overall relevance.",
+    "Faithfulness": "The score is 0.83 because the actual output incorrectly describes a method to disable notifications by clicking on an icon '...' and selecting 'D\u00e9sactiver les notifications' from a dropdown menu, which is not mentioned in the retrieval context.",
+    "ContextualPrecision": "The score is 0.33 because the relevant node (rank 3) is ranked lower than multiple irrelevant nodes. For example, the first node discusses getting a notification RSS feed and mentions the Notifications Macro, but does not address how to disable automatic notifications or modify notification settings. Similarly, the second node lists various notification-related preferences and macros but does not provide specific instructions on how to disable automatic notifications or modify notification settings.",
+    "ContextualRecall": "The score is 0.75 because the retrieval context nodes partially support the expected output, specifically regarding notification settings and custom filters, but do not explicitly mention being notified about changes on your work.",
+    "CustomContextualRelevancy": "The retrieval context mentions auto watch preferences and custom filters preferences, but lacks details on modifying the auto watch setting and removing filters."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

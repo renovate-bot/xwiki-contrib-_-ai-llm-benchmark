@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3741935483870968,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8709677419354839,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.87 because the answer provides relevant information but includes multiple links that do not directly address the specific configuration question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'various actions that can be performed in XWiki' but does not provide specific steps for configuring access control for teams. Similarly, the second node explains 'the concept of wikis and subwikis' without addressing the specific requirements for team access control.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about creating groups, setting wiki-wide rights, setting area-level rights, or inheriting rights for subordinate pages."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

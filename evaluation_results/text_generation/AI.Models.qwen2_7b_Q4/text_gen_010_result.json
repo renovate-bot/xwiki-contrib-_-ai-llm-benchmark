@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output is highly relevant to the Input prompt and aligns well with the Expected Output in terms of content and intent. It maintains logical flow and consistency, and is fluent with proper grammar and syntax. Minor deviations in phrasing and additional details slightly differentiate it from the Expected Output.",
+  "reason": "The Actual Output addresses the Input prompt and aligns well with the Expected Output, providing a technical explanation of the brain's functions. It is coherent, fluent, and maintains a logical flow. However, it is more detailed and expansive than the Expected Output, which is more concise.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

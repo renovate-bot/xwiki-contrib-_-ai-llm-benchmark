@@ -1,0 +1,10 @@
+{
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary contains some contradictions regarding the permissions that can be granted or revoked and omits specific details about a table summarizing rights. Additionally, the summary fails to answer a question about the default status of the comment right.",
+  "score_breakdown": {
+    "Alignment": 0.8666666666666667,
+    "Coverage": 0.8
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

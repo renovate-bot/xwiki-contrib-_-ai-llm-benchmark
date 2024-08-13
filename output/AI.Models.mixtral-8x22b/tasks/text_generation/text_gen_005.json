@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_005",
+  "prompt": "Generate a creative story about a space adventure.",
+  "expected_answer": "A story about a group of astronauts exploring a new planet.",
+  "ai_answer": " Absolutely, I'd be happy to create a story for you. Here it goes:\n\nIn the year 2135, humanity had finally cracked the code to interstellar travel. The starship \"Endeavor,\" captained by the fearless and wise, Captain Leona Sterling, was chosen for the first mission to a distant, potentially habitable planet, Kepler-442b.\n\nThe journey was long, and the crew, a diverse team of scientists, engineers, and astronauts, had to rely on each other for survival and sanity. They faced numerous challenges, from a malfunctioning life support system to a near-collision with a rogue comet. But their teamwork and determination always saw them through.\n\nOne day, a strange anomaly appeared on their radar. It was a massive, swirling vortex of energy, unlike anything they had ever seen. Intrigued by this cosmic phenomenon, Captain Sterling decided to take a closer look. As they approached, the ship was suddenly pulled into the vortex.\n\nWhen they emerged, they found themselves in a completely different part of the universe. Stars and galaxies they had never seen before filled the view from the ship's windows. But more alarmingly, their navigation systems were scrambled, and they had no idea where they were or how to get back on course.\n\nThe crew was understandably worried, but Captain Sterling, ever the optimist, saw this as an opportunity for discovery. They decided to explore this new region of space, documenting new stars, planets, and even a nebula that shimmered with hues of blue and purple.\n\nAfter several weeks, they finally found a planet that resembled Kepler-442b. Excited, they landed and discovered a lush, green world teeming with life. They named it \"New Eden\" and set up a base. They studied the flora and fauna, finding them to be similar yet distinct from Earth's.\n\nBut as they explored further, they found something unexpected - ruins of an ancient civilization. They were not the first intelligent beings to find this planet. The crew was awestruck. They spent weeks studying the ruins, discovering a language and culture vastly different from their own.\n\nIn the end, they managed to repair their ship and, using the stars as a guide, found their way back to the vortex. With a heavy heart, they said goodbye to New Eden and its wonders. They had a mission to complete, after all.\n\nWhen they finally reached Kepler-442b, they had a newfound appreciation for the vastness and the mysteries of the universe. They had seen the unknown and lived to tell the tale. And as they set up their colony, they looked up at the stars, wondering what other adventures awaited them.\n\nAnd that, dear reader, is the tale of the \"Endeavor\" and their unexpected space adventure.",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 647,
+    "total_tokens": 659
+  },
+  "average_power_draw": null,
+  "energy_consumption": null,
+  "energy_per_input_token": null,
+  "energy_per_output_token": null,
+  "energy_per_total_token": null
+}

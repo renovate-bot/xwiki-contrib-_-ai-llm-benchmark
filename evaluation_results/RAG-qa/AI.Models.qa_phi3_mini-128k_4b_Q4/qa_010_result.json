@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.42000000000000004,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.90 because the answer mostly addresses the question about configuring permissions and roles in XWiki, but includes URLs that are not directly relevant to the specific task of configuring permissions and roles.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining accuracy and alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.20 because the relevant node discussing 'setting permissions explicitly for groups or users' is ranked fifth, while the top four nodes are irrelevant, discussing topics like 'how spaces and sub-spaces are created', 'parent/child relationship and nested pages', 'various macros and their functions', and 'XWiki Syntax 2.1 Link Specification'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about creating groups, setting wiki-wide rights, space-level rights, or inheriting rights for child pages."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

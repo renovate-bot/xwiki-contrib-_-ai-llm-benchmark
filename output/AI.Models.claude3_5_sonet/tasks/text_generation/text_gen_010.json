@@ -2,12 +2,12 @@
   "id": "text_gen_010",
   "prompt": "Adapt the following text to a more technical audience:\n\nThe human brain is a complex organ that controls all functions of the body, interprets information from the outside world, and embodies the essence of the mind and soul.",
   "expected_answer": "The human brain is a highly intricate and sophisticated organ responsible for regulating and coordinating various physiological processes, processing and interpreting sensory information from the external environment, and serving as the biological substrate for cognitive functions, consciousness, and subjective experiences.",
-  "ai_answer": "For a more technical audience, the text could be adapted as follows:\n\nThe human brain is a sophisticated neurobiological organ that serves as the central command center for the body's physiological processes, cognitive functions, and homeostatic regulation. It consists of approximately 86 billion neurons interconnected through an estimated 100 trillion synapses, forming intricate neural networks. The brain processes and integrates afferent sensory information from both internal and external stimuli, facilitating the interpretation of environmental cues and the generation of appropriate efferent responses. Moreover, it is the substrate for higher-order cognitive processes, including consciousness, executive functions, and abstract reasoning, which collectively contribute to the emergence of what is commonly referred to as mind and sentience.",
+  "ai_answer": "Here's a more technical adaptation of the text:\n\nThe human brain is a sophisticated neurological organ that serves as the central processing unit for the body's physiological functions, cognitive processes, and homeostatic regulation. It integrates and analyzes sensory inputs from external stimuli, facilitates higher-order thinking, and is considered the biological substrate for consciousness and cognitive functions. The brain's intricate network of approximately 86 billion neurons and trillions of synaptic connections form the neuroanatomical basis for information processing, memory formation, and executive functions, while also coordinating the autonomic nervous system and endocrine responses.",
   "sources": null,
   "usage": {
     "prompt_tokens": 53,
-    "completion_tokens": 160,
-    "total_tokens": 213
+    "completion_tokens": 137,
+    "total_tokens": 190
   },
   "average_power_draw": null,
   "energy_consumption": null,

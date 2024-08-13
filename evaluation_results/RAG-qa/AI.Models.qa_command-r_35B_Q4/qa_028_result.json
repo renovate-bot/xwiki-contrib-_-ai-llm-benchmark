@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3666666666666667,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8333333333333334,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.83 because the main answer addresses the question about restricting file uploads based on type and size, but it includes irrelevant URLs that do not directly relate to the specific query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'various macros and functionalities in XWiki' which does not address the configuration of MIME types or attachment size limits. Similarly, the second node is about 'customizing the PDF cover in XWiki,' which is unrelated to setting MIME types or attachment size limits.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain information about configuring MIME types or setting maximum upload size."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

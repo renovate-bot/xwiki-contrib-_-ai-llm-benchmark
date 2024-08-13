@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.4677777777777778,
+  "individual_scores": {
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 0.8888888888888888,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.75 because the answer partially addresses the question about authenticating users with access tokens, but includes multiple irrelevant URL statements that do not directly contribute to the explanation.",
+    "Faithfulness": "The score is 0.89 because the actual output claims that you can configure the scope of the access token in XWiki, but the retrieval context does not mention this configuration.",
+    "ContextualPrecision": "The score is 0.50 because the relevant node in the second rank correctly describes the 'Authorized Applications' configuration, which is part of the process for using tokens to authenticate users. However, irrelevant nodes in the first, third, fourth, and fifth ranks discuss various unrelated topics such as claims at the UserInfo endpoint, the Security Module, cookie protection, and user profile visibility, which should be ranked lower.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions 'Authorized Applications' and some configuration details, but lacks specific information about JWT claims, token signing, and the detailed steps for enabling and using the token authenticator."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

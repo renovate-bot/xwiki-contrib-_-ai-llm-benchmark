@@ -1,6 +1,6 @@
 {
-  "score": 0.9,
-  "reason": "The Actual Output is relevant to the Input prompt and covers similar key points and themes as the Expected Output. It is coherent with a logical flow and consistent ideas. The fluency is also good with correct grammar and natural language usage. The slight difference in details (running and chasing butterflies vs. exploring) is the only minor deviation.",
+  "score": 0.8,
+  "reason": "The Actual Output addresses the Input prompt and covers all aspects. It is coherent and fluent. However, it deviates slightly from the Expected Output in structure and some details.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

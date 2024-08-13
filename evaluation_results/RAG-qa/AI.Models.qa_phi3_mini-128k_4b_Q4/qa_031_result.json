@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.36857142857142855,
+  "individual_scores": {
+    "AnswerRelevancy": 0.0,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 0.14285714285714285,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.00 because the output contains multiple irrelevant URLs and statements that do not address the question about authenticating users with access tokens.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.50 because the first node discusses claims at the UserInfo endpoint, which is not relevant to authenticating users with access tokens, and should be ranked lower. The second node is relevant as it provides information about configuring 'Authorized Applications'. The third node, providing general information about the XWiki Security Module, is also irrelevant and should be ranked lower. The fourth node discusses cookie protection and security strategies, which are not relevant, and the fifth node discusses custom claims and group synchronization, which is also not directly relevant.",
+    "ContextualRecall": "The score is 0.14 because only the 2nd sentence in the expected output can be attributed to the 2nd node in the retrieval context, while the rest of the sentences lack corresponding information in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions authorized applications and token claims but lacks details on enabling the token authenticator, JWT token generation, and specific claims required."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

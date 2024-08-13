@@ -1,9 +1,0 @@
-{
-  "id": "xwiki:Documentation.UserGuide.Features.RightsManagement",
-  "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/RightsManagement",
-  "title": "Rights Management",
-  "collection": "Eval_de",
-  "mimetype": "text/markdown",
-  "language": "de",
-  "content": "XWiki bietet ein leistungsstarkes und granuläres Berechtigungssystem, mit dem Sie genau steuern können, was [Benutzer und Gruppen](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/UsersAndGroupsManagement) im Wiki tun dürfen.\n\nEs bietet verschiedene Rechte, die festgelegt (oder verweigert) werden können, wie das \"Ansichtsrecht\" (die Möglichkeit, Seiten anzusehen), das \"Bearbeitungsrecht\" (die Möglichkeit, Seiteninhalte zu bearbeiten), das \"Löschrecht\" (die Möglichkeit, Seiten zu löschen) oder das \"Administrationsrecht\" (die Möglichkeit, Seiten oder das Wiki zu verwalten), um nur einige zu nennen. Diese Rechte können auf verschiedenen Ebenen festgelegt werden: für das gesamte Wiki oder für einen bestimmten Bereich und dessen Unterbereiche.\n\nFalls erforderlich, ist es sogar möglich, einige [Skripte](https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/Scripting) zu schreiben, um programmgesteuert genau zu steuern, was Benutzer tun dürfen.\n\n*Beispiel der Rechte-Benutzeroberfläche*  \n![GroupRights.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/RightsManagement/GroupRights.png?rev=1.1)\n\nUm zu erfahren, wie Sie Berechtigungen einrichten, lesen Sie die [Rechte-Dokumentation im Admin-Handbuch](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/)."
-}

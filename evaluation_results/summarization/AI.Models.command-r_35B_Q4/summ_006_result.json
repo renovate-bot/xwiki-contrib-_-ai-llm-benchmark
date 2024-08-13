@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary includes a contradiction regarding recommended 'next steps' and fails to address specific questions about a dedicated wiki for XWiki Rendering documentation and additional applications on the Extensions wiki.",
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary includes a contradiction about the guide providing links to relevant documentation for each role and fails to answer whether there is a dedicated wiki for XWiki Rendering documentation.",
   "score_breakdown": {
-    "Alignment": 0.75,
-    "Coverage": 0.6
+    "Alignment": 0.8,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

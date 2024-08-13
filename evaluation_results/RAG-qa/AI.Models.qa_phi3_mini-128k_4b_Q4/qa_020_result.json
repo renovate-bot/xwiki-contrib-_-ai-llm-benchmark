@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3333333333333333,
+  "individual_scores": {
+    "AnswerRelevancy": 0.6666666666666666,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.67 because while the answer partially addresses the question about configuring XWiki, it contains nonsensical and irrelevant statements that detract from its overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'additional actions that can be performed in XWiki, such as creating children pages and changing page access rights,' but it does not provide specific steps for configuring access control as required by the input. Similarly, the second node explains 'the concept of wikis and panels in XWiki,' which does not address the specific access control configuration needed for the input question.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about creating groups, setting wiki-wide rights, setting area-specific rights, or inheriting rights for subpages."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

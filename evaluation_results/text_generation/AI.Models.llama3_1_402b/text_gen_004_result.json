@@ -1,6 +1,6 @@
 {
-  "score": 0.9,
-  "reason": "The Actual Output is relevant to the Input and addresses the main topic effectively. It is coherent and fluent, with logical connections and natural language. The key points and overall message align closely with the Expected Output, though the phrasing and structure differ slightly.",
+  "score": 1.0,
+  "reason": "The Actual Output directly addresses the topic by describing the wireless Bluetooth headphones for tech-savvy professionals. It covers all key points from the Expected Output including noise-cancelling technology, 20-hour battery life, and comfortable fit. The description is coherent, logically flows, and is grammatically accurate.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

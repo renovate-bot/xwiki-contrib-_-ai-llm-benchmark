@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.43999999999999995,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.9,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.3
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant and there are no irrelevant statements in the actual output. Great job!",
+    "Faithfulness": "The score is 0.90 because the actual output incorrectly states that Notification Settings are accessed under the Alert entry in the top bar, while the retrieval context indicates they are accessed through the notifications menu.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'how to get a notification RSS feed and general notification settings' but does not address enabling notifications for one's own actions. Similarly, the second node lists 'various notification settings and customization options' but does not mention enabling notifications for one's own actions. The third node focuses on 'enabling and disabling email notifications and live email notifications grace time,' which is unrelated to the input query.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention that users don't receive notifications about their own activity by default, nor does it mention the ability to disable this filter in the 'Advanced filtering options' section of the user's notification settings.",
+    "CustomContextualRelevancy": "The retrieval context mentions notification settings and default behaviors but does not explicitly cover disabling the filter in 'Advanced filtering options' or targeting specific users."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

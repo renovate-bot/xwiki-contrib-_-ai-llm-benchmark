@@ -2,16 +2,16 @@
   "id": "text_gen_003",
   "prompt": "Adapt the following text to a younger audience (age 8-10):\n\nPhotosynthesis is the process by which plants convert sunlight into chemical energy that can be used to fuel the plant's activities.",
   "expected_answer": "Plants use a special process called photosynthesis to make their own food. They take in sunlight and turn it into energy that helps them grow and stay healthy.",
-  "ai_answer": "Plants have this amazing superpower called photosynthesis, where they can turn sunshine into their own energy! It's like having a secret factory inside their leaves that makes them come alive and grow. With photosynthesis, plants take in the sunlight and make it their very own food energy, which is so cool! That's how plants get the power to do all the awesome things they need to do.",
+  "ai_answer": "Have you ever wondered how plants grow and make food? Well, it's all thanks to something called photosynthesis! It's a super cool process that lets plants catch sunlight and turn it into delicious energy for them to use. Just like we need food to give us energy to run and play, plants use photosynthesis to fuel their daily activities.\n",
   "sources": null,
   "usage": {
     "prompt_tokens": 50,
-    "completion_tokens": 79,
-    "total_tokens": 129
+    "completion_tokens": 69,
+    "total_tokens": 119
   },
-  "average_power_draw": 69.21262204424107,
-  "energy_consumption": 1778.1624288827513,
-  "energy_per_input_token": 7.184494662152531,
-  "energy_per_output_token": 17.961236655381327,
-  "energy_per_total_token": 13.784204875060087
+  "average_power_draw": 68.54759894716327,
+  "energy_consumption": 1718.311257081308,
+  "energy_per_input_token": 7.722747222837339,
+  "energy_per_output_token": 19.30686805709335,
+  "energy_per_total_token": 14.439590395641243
 }

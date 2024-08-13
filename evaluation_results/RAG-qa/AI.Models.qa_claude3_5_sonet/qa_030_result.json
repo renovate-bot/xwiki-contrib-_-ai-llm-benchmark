@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.38461538461538464,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9230769230769231,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the answer is mostly relevant and provides useful information on configuring access rights in XWiki. However, it includes some irrelevant URL links that do not directly address the question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node, ranked 1, describes technical details of XWiki spaces and pages without addressing access rights for teams. The second node, ranked 2, discusses macros and scripting languages, which are not related to configuring access rights. The third node, ranked 3, explains the parent/child relationship and nested pages, but does not cover access rights configuration. The fourth node, ranked 4, focuses on the transition to the new nested pages model, without providing guidance on setting access rights for teams.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about creating groups, defining rights at the wiki or space level, or inheriting rights for child pages."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

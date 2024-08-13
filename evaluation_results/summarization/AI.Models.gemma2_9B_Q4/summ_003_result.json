@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary contains several contradictions with the original text, such as incorrect details about setting permissions at the sub-wiki level and the nature of implicit denial. Additionally, there are questions that the original text can answer but the summary cannot, indicating incomplete coverage.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary contains contradictions regarding the use of implicit denial and the configuration of permissions for the Guest user. Additionally, the summary fails to answer several questions that the original text addresses, such as user group creation, permission hierarchy, and the wiki owner's privileges.",
   "score_breakdown": {
-    "Alignment": 0.6363636363636364,
-    "Coverage": 0.6
+    "Alignment": 0.8571428571428571,
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

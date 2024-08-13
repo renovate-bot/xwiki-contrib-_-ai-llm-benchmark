@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.7466666666666667,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9333333333333333,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.3
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.93 because the answer is mostly relevant and helpful, but it includes a link about XWiki Syntax, which is not directly related to enabling notifications for one's own actions.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job staying true to the retrieval context!",
+    "ContextualPrecision": "The score is 0.50 because the second node, which mentions 'Filter your own events' and 'Filters', is directly relevant to the question and is ranked higher than some irrelevant nodes. However, the first node, which discusses getting a notification RSS feed and does not address notifications for one's own activity, should be ranked lower.",
+    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions default notification settings and the option to filter own events but lacks details on disabling the filter in advanced settings."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

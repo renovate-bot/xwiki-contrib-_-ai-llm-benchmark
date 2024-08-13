@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.21538461538461537,
+  "individual_scores": {
+    "AnswerRelevancy": 0.07692307692307693,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.08 because the majority of the statements in the actual output are irrelevant to the question about authenticating users with access tokens, including unrelated URLs and nonsensical phrases.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node is about 'properties and methods related to a collection resource,' which is not relevant to user authentication with access tokens. Similarly, the second node discusses 'various claims at the UserInfo endpoint,' which does not provide information on authenticating users with access tokens.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about authenticating users with access tokens or JWT, nor details about configuring the authenticator in xwiki.properties."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

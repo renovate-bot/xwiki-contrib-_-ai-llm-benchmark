@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.5733333333333334,
+  "individual_scores": {
+    "AnswerRelevancy": 0.6666666666666666,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.67 because the answer partially addresses the question about refusing script rights to a space administrator, but includes irrelevant information such as a link to XWiki syntax documentation and a general offer for further assistance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because the nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'default right settler policies and implied rights,' which does not address the specific question. Similarly, the second node talks about 'checking access rights in the current context,' which is not specific to refusing script rights to an administrator.",
+    "ContextualRecall": "The score is 1.00 because the retrieval context perfectly supports the expected output without any contradictions. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions that an admin right implies other rights and cannot be overridden at a lower level, but it does not explicitly state that admin rights cannot be refused."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

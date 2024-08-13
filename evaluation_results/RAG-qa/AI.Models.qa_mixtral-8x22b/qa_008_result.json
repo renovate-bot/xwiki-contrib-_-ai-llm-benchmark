@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.8088888888888889,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9444444444444444,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.6
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.94 because the answer is highly relevant and provides useful information on setting attachment size limits and file type restrictions, but includes an unnecessary link to XWiki syntax that does not directly address the question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first node provides detailed steps on setting the maximum size of an attachment, which is directly relevant to configuring the maximum attachment size to 10MB. The subsequent nodes discuss topics such as moving and renaming attachments, whitelisting and blacklisting mimetypes, linking to external files, and linking to attachments and anchors, which are not relevant to setting upload restrictions or size limits.",
+    "ContextualRecall": "The score is 0.50 because while the retrieval context provides detailed steps for configuring the maximum attachment size (Step 2, sentences 1-5), it lacks information on configuring allowed mimetypes (Step 1).",
+    "CustomContextualRelevancy": "The retrieval context contains information on setting maximum attachment size and mentions mimetype restrictions but lacks specific details on configuring the `xwiki.properties` file and the exact mimetype allowList."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

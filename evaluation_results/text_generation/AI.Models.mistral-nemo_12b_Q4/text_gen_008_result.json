@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output directly addresses the topic of creating a travel guide for a popular tourist destination. It covers all key points and details such as best time to visit, getting there, getting around, where to stay, top things to do, local cuisine, wine tasting, day trips, and tips for travelers. The guide is coherent with a logical flow and consistent ideas, and it is fluent with grammatical correctness and natural language use.",
+  "reason": "The Actual Output addresses the main points of creating a travel guide, covering top attractions, accommodations, and activities in Santorini. It includes detailed sections on the best time to visit, getting there, getting around, top attractions, tips, a sample itinerary, and local cuisine. The content is coherent, logically connected, and fluent with appropriate word choice and grammatical correctness.",
   "prompt_language": "ro",
   "expected_answer_language": "en",
   "generated_text_language": "en"

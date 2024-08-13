@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.8154545454545454,
+  "individual_scores": {
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.7272727272727273,
+    "CustomContextualRelevancy": 0.6
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.75 because while the answer provides some relevant information, it includes multiple irrelevant links and a partially cut-off statement that do not directly address how to restrict uploads to images or PDFs with a maximum size of 10 MB.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first node explains how to set limits on the maximum size of an attachment, which is directly relevant to configuring the maximum attachment size. The subsequent nodes discuss topics like MIME type configurations, managing documents, creating new pages, and configuring properties of document collections, none of which are relevant to uploading attachments or setting size and type restrictions.",
+    "ContextualRecall": "The score is 0.73 because while many sentences in the expected output match nodes in the retrieval context, some introductory and step-introducing sentences do not align with any specific nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context contains steps to change the maximum upload size and mentions MIME type restrictions, but does not specify the exact MIME types or the 10 MB limit."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

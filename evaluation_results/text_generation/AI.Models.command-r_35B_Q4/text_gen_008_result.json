@@ -1,7 +1,7 @@
 {
-  "score": 0.9,
-  "reason": "The Actual Output is highly relevant to the Input prompt, providing a detailed travel guide for Barcelona. It aligns well with the Expected Output by highlighting top attractions and activities. The guide is coherent, with a logical flow and consistent ideas. The language is fluent and grammatically correct. However, it lacks information on accommodations, which is a minor deviation from the Expected Output.",
-  "prompt_language": "en",
+  "score": 1.0,
+  "reason": "The Actual Output directly addresses the topic by providing a comprehensive travel guide for Paris, covering key attractions, accommodations, and activities. It is detailed, coherent, and fluent, matching the Expected Output perfectly.",
+  "prompt_language": "ro",
   "expected_answer_language": "en",
   "generated_text_language": "en"
 }

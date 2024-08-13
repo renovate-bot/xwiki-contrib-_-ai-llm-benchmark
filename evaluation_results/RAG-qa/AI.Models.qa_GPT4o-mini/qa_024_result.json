@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.7013725490196079,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8235294117647058,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.75,
+    "CustomContextualRelevancy": 0.6
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.82 because the provided URLs are not directly relevant to the question about how to disable notifications. However, the answer still contains useful information related to the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node in the third rank mentions 'Auto Watch' and 'Default Watch Settings,' which are pertinent to modifying auto-watch settings and disabling notifications. However, irrelevant nodes in the first, second, fourth, and fifth ranks discuss topics like getting a notification RSS feed, notification preferences macros, different notification methods, and overriding default notification templates, which do not address how to disable notifications or modify auto-watch settings.",
+    "ContextualRecall": "The score is 0.75 because the retrieval context partially matches the expected output. Specifically, nodes in the retrieval context mention 'Auto Watch', 'Default Watch Settings', 'Auto Watch Preferences', and 'Custom Filters Preferences', which relate to the automatic watching of pages, modifying notification settings, and managing custom filters. However, the context does not explicitly mention notifications about changes to your work.",
+    "CustomContextualRelevancy": "The retrieval context mentions auto watch preferences and custom filters but lacks details on modifying settings and removing filters."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

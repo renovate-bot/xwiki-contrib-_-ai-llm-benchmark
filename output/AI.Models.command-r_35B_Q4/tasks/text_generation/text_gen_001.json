@@ -9,9 +9,9 @@
     "completion_tokens": 37,
     "total_tokens": 96
   },
-  "average_power_draw": 98.32487483530964,
-  "energy_consumption": 365.5707061374801,
-  "energy_per_input_token": 2.413007961303499,
-  "energy_per_output_token": 6.032519903258747,
-  "energy_per_total_token": 3.8080281889320844
+  "average_power_draw": 98.78934782608695,
+  "energy_consumption": 368.7754576842163,
+  "energy_per_input_token": 2.4341614368595135,
+  "energy_per_output_token": 6.085403592148784,
+  "energy_per_total_token": 3.8414110175439196
 }

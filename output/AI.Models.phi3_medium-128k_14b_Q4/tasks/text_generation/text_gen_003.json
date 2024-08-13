@@ -2,16 +2,16 @@
   "id": "text_gen_003",
   "prompt": "Adapt the following text to a younger audience (age 8-10):\n\nPhotosynthesis is the process by which plants convert sunlight into chemical energy that can be used to fuel the plant's activities.",
   "expected_answer": "Plants use a special process called photosynthesis to make their own food. They take in sunlight and turn it into energy that helps them grow and stay healthy.",
-  "ai_answer": "Hey kids, you know how we eat food for energy? Well, guess what? Plants need energy too! But instead of using yummy snacks or meals, they use something called \"photosynthesis\" - it's like a super special power that allows plants to catch sunshine from the sky and turn it into energy so they can grow strong and healthy. Isn't that cool? Just imagine if we could eat sunlight instead of sandwiches!",
+  "ai_answer": "Hey there! Photosynthesis might sound like a big, tricky word, but it\u2019s actually quite fascinating and simple to understand! You know how we get our energy from food? Well, plants have their own way of getting energy too - they do this through something called photosynthesis. This is sort of like the plant's cooking show, where sunlight is an ingredient they use to make their food. The more sunlight they get, the better! \n\nWhen the sun shines down on leaves, it provides them with all the light and warmth a leaf could ever wish for. Just as we humans have tiny powerhouses inside our body cells called mitochondria that turn our food into energy, plants also have small factories within their leaves which make use of this sunlight to cook up their own meals! But unlike us who need a stove or microwave, plants can do all of this right out in the open with just some air and water. Amazing isn\u2019t it? \n\nThis is what we call photosynthesis - it's like magic sunlight power that allows the plant to grow bigger and stronger. So next time you see a green leafy tree or beautiful flowers, remember there are tiny chefs inside them all working hard using this amazing process called Photosynthesis!",
   "sources": null,
   "usage": {
     "prompt_tokens": 57,
-    "completion_tokens": 102,
-    "total_tokens": 159
+    "completion_tokens": 284,
+    "total_tokens": 341
   },
-  "average_power_draw": 76.89496019595839,
-  "energy_consumption": 606.8150931049155,
-  "energy_per_input_token": 1.9449201702080623,
-  "energy_per_output_token": 4.862300425520156,
-  "energy_per_total_token": 3.8164471264460094
+  "average_power_draw": 115.11168115942024,
+  "energy_consumption": 1153.917632039588,
+  "energy_per_input_token": 1.504455843597898,
+  "energy_per_output_token": 3.7611396089947458,
+  "energy_per_total_token": 3.383922674602897
 }

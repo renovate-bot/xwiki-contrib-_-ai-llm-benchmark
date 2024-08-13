@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.7963636363636363,
+  "individual_scores": {
+    "AnswerRelevancy": 0.18181818181818182,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.8
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.18 because the majority of the statements provided are irrelevant to the question about managing script rights for a space administrator in XWiki, focusing instead on unrelated topics like Firefox script settings. However, the score is not zero because there may be a minimal connection or attempt to address script management, albeit incorrectly.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes, ensuring the most pertinent information is prioritized. Great job!",
+    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the nodes in the retrieval context, indicating perfect alignment.",
+    "CustomContextualRelevancy": "The retrieval context mentions that rights implied by an admin right cannot be overridden by a denial at a lower level, aligning with the expected output that admin rights cannot be refused. However, it does not explicitly state that this is not supported in XWiki."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

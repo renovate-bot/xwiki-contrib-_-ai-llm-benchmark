@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.36363636363636365,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8181818181818182,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.82 because the main content addresses the question about authenticating users with an access token, but the inclusion of URLs that do not directly address the question lowers the relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining accuracy and faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'group synchronization and customization for OpenID Connect,' which is not related to 'using access tokens for authentication.' Similarly, the second node talks about 'protection levels for cookies and security strategies for failed logins,' which is also not relevant.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about token-based authentication for the LLM application (BETA) extension or JWT tokens."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

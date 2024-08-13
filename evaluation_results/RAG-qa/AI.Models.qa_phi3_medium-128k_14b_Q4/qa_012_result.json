@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.275,
+  "individual_scores": {
+    "AnswerRelevancy": 0.375,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.38 because the actual output contains multiple URLs that do not directly address the issue of not receiving notifications, making the response largely irrelevant.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For instance, the first node discusses 'various XWiki applications and extensions,' which is not relevant to setting up notifications. Similarly, the second node talks about 'access rights and executing tasks with specific user rights,' which does not relate to enabling notifications. The third node explains 'how links inside scripting macros are handled and renamed,' which is not pertinent to the topic of setting up notifications.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any node(s) in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about enabling notifications or following pages and users."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

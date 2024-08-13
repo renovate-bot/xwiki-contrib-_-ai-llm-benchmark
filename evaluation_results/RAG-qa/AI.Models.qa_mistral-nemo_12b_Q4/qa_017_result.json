@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.5900000000000001,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.25,
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and there are no irrelevant statements.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.25 because the relevant node in retrieval context (rank 4) is ranked lower than multiple irrelevant nodes. For example, the first node provides 'general information about the OpenID Connect Authenticator' and the second node describes 'general details' without addressing group synchronization, which should be ranked lower.",
+    "ContextualRecall": "The score is 0.50 because while the retrieval context aligns well with the configuration steps for group synchronization (nodes 1, 3, 4, 5, 6, 7), it lacks specific instructions on locating, opening, and modifying the 'xwiki.properties' file (nodes 2, 8, 9, 10, 11, 12).",
+    "CustomContextualRelevancy": "The retrieval context mentions group synchronization but lacks detailed steps and specific properties like `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping` found in the expected output."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

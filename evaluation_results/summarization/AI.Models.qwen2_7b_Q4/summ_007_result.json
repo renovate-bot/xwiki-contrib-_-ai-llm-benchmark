@@ -1,8 +1,8 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary includes extra information not mentioned in the original text and fails to answer a question that the original text can.",
+  "score": 0.625,
+  "reason": "The score is 0.62 because the summary contains several contradictions with the original text, such as the location of the 'History' tab and the function of the 'Compare selected versions' button. Additionally, the summary fails to mention certain steps and features described in the original text. There is also a question that the original text can answer but the summary cannot.",
   "score_breakdown": {
-    "Alignment": 0.9090909090909091,
+    "Alignment": 0.625,
     "Coverage": 0.8
   },
   "input_language": "en",

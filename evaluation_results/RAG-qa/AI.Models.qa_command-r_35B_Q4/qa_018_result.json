@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.7352272727272727,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8125,
+    "Faithfulness": 0.7272727272727273,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.6363636363636364,
+    "CustomContextualRelevancy": 0.5
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.81 because the main content addresses the question about configuring file upload restrictions effectively, but the inclusion of repeated URLs that do not directly answer the question lowers the score.",
+    "Faithfulness": "The score is 0.73 because the actual output incorrectly states the maximum attachment size as 10 MB, while the retrieval context specifies it as 100GB by default and 32MB for older versions. Additionally, the actual output mentions adding specific lines to restrict attachment size and types, which is not supported by the retrieval context. Lastly, the actual output limits uploadable file types to JPEG, PNG, GIF, and PDF, whereas the retrieval context includes a broader whitelist.",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes, ensuring precise and accurate retrieval.",
+    "ContextualRecall": "The score is 0.64 because the retrieval context covers the steps for configuring the maximum attachment size in detail (sentences 6-11), but it does not mention configuring MIME types in the `xwiki.properties` file (sentences 2-5).",
+    "CustomContextualRelevancy": "The retrieval context partially covers the steps to change the maximum attachment size but lacks specific details on configuring MIME types and setting the size to 10 MB."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

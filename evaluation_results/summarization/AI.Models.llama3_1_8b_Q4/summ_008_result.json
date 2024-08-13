@@ -1,9 +1,9 @@
 {
-  "score": 0.9,
-  "reason": "The score is 0.90 because the summary includes a contradiction by mentioning screenshots of different wiki rights configurations, which are not mentioned in the original text. However, there is no extra information or unanswered questions, indicating a high-quality summary overall.",
+  "score": 0.6666666666666666,
+  "reason": "The score is 0.67 because the summary contains multiple contradictions with the original text, including incorrect details about the configurations for view and edition rights, registration settings, and the actions allowed in different configurations. Additionally, the summary fails to answer a question that the original text can address.",
   "score_breakdown": {
-    "Alignment": 0.9,
-    "Coverage": 1.0
+    "Alignment": 0.6666666666666666,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

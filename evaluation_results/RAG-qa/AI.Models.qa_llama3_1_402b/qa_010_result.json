@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.40076555023923444,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8947368421052632,
+    "Faithfulness": 0.9090909090909091,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.89 because the provided answer is mostly relevant and helpful, but it includes a URL that does not directly address the configuration of access rights in XWiki, which slightly detracts from its overall usefulness.",
+    "Faithfulness": "The score is 0.91 because the actual output incorrectly states that denying the Edit right for the XWikiAllGroup at the wiki level will not prevent teams from editing other teams' spaces if the Edit right is allowed at the Page & Children level.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node 'discusses the creation of pages and spaces in XWiki but does not provide information on configuring access control for teams,' which is not useful for the input query.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions setting rights and managing spaces but lacks specific steps for creating groups, setting wiki-wide rights, and inheriting rights for child pages."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

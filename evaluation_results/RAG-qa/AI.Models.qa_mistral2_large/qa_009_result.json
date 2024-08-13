@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.39894736842105266,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8947368421052632,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.1
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.89 because the main content effectively addresses how to deny script rights to a space administrator. However, the inclusion of unrelated URLs slightly detracts from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For instance, the first node discusses 'methods for checking access rights and handling access denied exceptions,' which does not address the specific question about denying script rights to a space administrator. Similarly, the second node talks about 'the use of the checkAccess() method and its logging capabilities,' which is also not relevant to the input query.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not support any part of the expected output.",
+    "CustomContextualRelevancy": "The retrieval context does not mention that rights implied by admin right cannot be denied."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

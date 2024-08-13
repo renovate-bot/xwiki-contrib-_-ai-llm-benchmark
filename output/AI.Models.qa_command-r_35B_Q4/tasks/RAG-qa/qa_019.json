@@ -1,0 +1,58 @@
+{
+  "id": "qa_019",
+  "prompt": "Wie kann ich einem Bereichsadministrator das Skriptrecht verweigern?",
+  "expected_answer": "Leider wird dies in XWiki nicht unterst\u00fctzt, Rechte, die durch das Admin-Recht impliziert sind, k\u00f6nnen nicht verweigert werden.",
+  "ai_answer": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Forms \n\n\nUm einem Bereichsadministratoren das Recht zu verweigern, ein Skript auszuf\u00fchren, m\u00fcssen Sie die Zugriffssteuerungslisten (Access Control Lists) auf dem Server anpassen. Hier ist eine allgemeine Anleitung, wie Sie dies tun k\u00f6nnen:\n\n1. \u00d6ffnen Sie das Command Prompt oder die PowerShell als Administrator.\n\n2. Navigieren Sie zum Verzeichnis, in dem Sie die Dateiberechtigungen \u00e4ndern m\u00f6chten. Verwenden Sie den Befehl \"cd\" (change directory), um zu dem entsprechenden Verzeichnis zu wechseln.\n\n3. Um die aktuellen Berechtigungen f\u00fcr eine Datei oder ein Verzeichnis anzuzeigen, verwenden Sie den Befehl \"icacls\" (f\u00fcr Windows 7 und h\u00f6her) oder \"cacls\" (f\u00fcr \u00e4ltere Versionen von Windows). Beispiel:\n`icacls ScriptDatei.ps1`\n\n4. Um einem Bereichsadministrator das Recht zu verweigern, ein Skript auszuf\u00fchren, m\u00fcssen Sie der Datei die Berechtigung \"Verweigerung ausf\u00fchren\" hinzuf\u00fcgen. Der Befehl w\u00fcrde wie folgt aussehen:\n`icacls ScriptDatei.ps1 /deny DOMAIN\\Domain Admins:(F) `\n\nErsetzen Sie \"ScriptDatei.ps1\" durch den tats\u00e4chlichen Dateinamen und \"DOMAIN\\Domain Admins\" mit dem entsprechenden Dom\u00e4nennamen und der Gruppe der Bereichsadministratoren.\n\n5. Speichern Sie die \u00c4nderungen, indem Sie das Command Prompt oder die PowerShell schlie\u00dfen und wieder \u00f6ffnen, um sicherzustellen, dass die \u00c4nderungen wirksam sind.\n\nBeachten Sie, dass Sie f\u00fcr diesen Vorgang \u00fcber entsprechende Berechtigungen verf\u00fcgen m\u00fcssen, um Dateiberechtigungen zu \u00e4ndern. In den meisten F\u00e4llen erfordert dies administrative Rechte. Dar\u00fcber hinaus ist es ratsam, vor der Durchf\u00fchrung \u00c4nderungen an Dateiberechtigungen eine Sicherungskopie der Datei oder des Verzeichnisses zu erstellen, um Datenverluste zu vermeiden.",
+  "sources": [
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Skins",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins",
+      "content": "WebHome_1194349099261.png](https://www.xwiki.org/xwiki/bin/download/References/SurreyBiodiversityPartnership/Surrey%20Biodiversity%20Partnership%20-%20Home%20-%20WebHome_1194349099261.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/SurreyBiodiversityPartnership) [![sg.jpg](https://www.xwiki.org/xwiki/bin/download/References/SynfulGeekcom/sg.jpg?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/SynfulGeekcom) [![SystemWerks.png](https://www.xwiki.org/xwiki/bin/download/References/SystemWerks/SystemWerks.png?width=100&amp;height=100&amp;rev=1.5)](https://www.xwiki.org/xwiki/bin/view/References/SystemWerks) [![Technitoit.png](https://www.xwiki.org/xwiki/bin/download/References/Technitoit/Technitoit.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/Technitoit) [![TCMT.png](https://www.xwiki.org/xwiki/bin/download/References/TennisClubMunicipalduTampon/TCMT.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/TennisClubMunicipalduTampon) [![Thales.png](https://www.xwiki.org/xwiki/bin/download/References/Thales%20Research%20Projects/Thales.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/Thales%20Research%20Projects) [![TiraGoMobile.png](https://www.xwiki.org/xwiki/bin/download/References/TiraGoMobileCommunity/TiraGoMobile.png?width=100&amp;height=100&amp;rev=1.1)](https://www.xwiki.org/xwiki/bin/view/References/TiraGoMobileCommunity) [![TripAdvisor1.png](https://www.xwiki.org/xwiki/bin/download/References/TripAdvisor/TripAdvisor1.png?width=100&amp;height=100&amp;rev=1.2)](https://www.xwiki.org/xwiki/bin/view/References/TripAdvisor) [![Universitatea Alexandru Ioan ",
+      "similarity_score": 0.581908106803894,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Authentication.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/",
+      "content": "xwiki.authentication.authclass=com.xpn.xwiki.user.impl.xwiki.AppServerTrustedKerberosAuthServiceImplIf you use Firefox, do not forget to whitelist the xwiki URL for HTTP Negotiate in about:config with the &quot;network.negotiate-auth.trusted-uris&quot; property. Possible values for this property include: *https://* for all secured connections or **example.com** for all example.com subdomains.\n\nWhen I used JBoss SPNEGO (Kerberos in combination with LDAP) I changed the code of the **XWikiLDAPAuthServiceImpl** to be able to detect the sso user. The authenication already happend by using the SPNEGO module (JAAS). After that I&#x27;m using the ldap synchronisation feature to make sure that the user is up to date. The combination leads to an automatic login in XWiki and the user rights are controlled in the Active Directory server. I hope you can adopt this code or that you can use it for your own projects.\n\nThe configuration of ldap:\n\nxwiki.authentication.authclass=com.wiki.sso.SSOLdapAuthenicationImpl  \nxwiki.authentication.ldap=1  \nxwiki.authentication.ldap.server=&lt;ad-server&gt;  \nxwiki.authentication.ldap.port=389  \nxwiki.authentication.ldap.base\\_DN=&lt;OU=Users,...............&gt;  \n#use a fixed user to attach to the ldap database,  \n#the password is not provided with the SSOLdapAuthenicationImpl  \nxwiki.authentication.ldap.bind\\_DN=&lt;domain&gt;\\\\&lt;user&gt;  \nxwiki.authentication.ldap.bind\\_pass=&lt;password&gt;  \n#Microsoft AD configuration  \nxwiki.authentication.ldap.UID\\_attr=sAMAccountName  \nxwiki.authentication.ldap.fields\\_mapping=name=sAMAccountName,last\\_name=sn,first\\_name=givenName,fullname=displayName,mail=mail,ldap\\_dn=dn  \nxwiki.authentication.ldap.group\\_memberfields=member,uniqueMember  \n",
+      "similarity_score": 0.5692497491836548,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.AdminGuide.Authentication.WebHome",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/",
+      "content": " \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0// This is needed for virtual mode to work  \n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Principal principal = null;  \n  \n \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0// Try authentication against ldap  \n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0principal = ldapAuthenticate(login, &quot;&quot;, context);  \n  \n \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0if (LOG.isDebugEnabled()) {  \n \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0if (principal != null) {  \n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0LOG.debug(&quot;LDAP authentication succeed with principal [&quot; + principal.getName() + &quot;]&quot;);  \n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0} else {  \n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0LOG.debug(&quot;LDAP authentication failed for user [&quot; + login + &quot;]&quot;);  \n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0}  \n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0}  \n  \n \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0return principal;  \n\u00a0\u00a0\u00a0\u00a0}  \n}# Mail Templates\n\nWhen [logging in](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Authentication#HLoggingin), you have the option of resetting your user&#x27;s password if you forgot it, or to find your username based on your email address. When choosing these options, you&#x27;ll be sent an email. It&#x27;s possible to control the templates used for these emails and to customize them by editing the following pages in object mode:\n\n* XWiki.ResetPasswordMailContent\n* XWiki.ForgotUsernameMailContent\n\n\n",
+      "similarity_score": 0.5382165312767029,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "extensions:Extension.LDAP.Authenticator.WebHome",
+      "url": "https://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/",
+      "content": "# Prerequisites &amp; Installation Instructions\n\nWe recommend using the [Extension Manager](http://extensions.xwiki.org/xwiki/bin/view/Extension/Extension+Manager+Application) to install this extension (Make sure that the text &quot;Installable with the Extension Manager&quot; is displayed at the top right location on this page to know if this extension can be installed with the Extension Manager).\n\nYou can also use the manual method which involves dropping the JAR file and all its dependencies into the WEB-INF/lib folder and restarting XWiki.\n\n# Dependencies\n\nDependencies for this extension (org.xwiki.contrib.ldap:ldap-authenticator 9.15.2):\n\n* org.xwiki.platform:xwiki-platform-oldcore 8.4\n* com.novell.ldap:jldap 2009-10-07\n* org.xwiki.contrib:authservice-backport-api 1.1.1\n\n\n",
+      "similarity_score": 0.5356413125991821,
+      "vector": null
+    },
+    {
+      "collection_id": "Eval",
+      "document_id": "xwiki:Documentation.UserGuide.Features.Forms",
+      "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Forms",
+      "content": "## Reference Form\n\nAnother good example of form utilization on XWiki.org is the [References page](https://www.xwiki.org/xwiki/bin/view/References/). When an user wants to add a new reference, the only thing he has to do is to type in the name of the reference he wants to add. He is then presented with a form he can fill in easily. Check it out and add your own project **[here](https://www.xwiki.org/xwiki/bin/view/References/)**!\n\n![editreference.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/Forms/editreference.png?rev=1.2)\n\n## Questionnaire Form\n\nThanks to this mode, you can create advanced forms such as the following questionnaire:\n\n![Chestionar.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/Forms/Chestionar.png?rev=1.2)\n\n\n",
+      "similarity_score": 0.5278564691543579,
+      "vector": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 21,
+    "completion_tokens": 422,
+    "total_tokens": 443
+  },
+  "average_power_draw": 89.89219488491048,
+  "energy_consumption": 4384.283688229679,
+  "energy_per_input_token": 4.074613093150259,
+  "energy_per_output_token": 10.186532732875648,
+  "energy_per_total_token": 9.896802907967672
+}

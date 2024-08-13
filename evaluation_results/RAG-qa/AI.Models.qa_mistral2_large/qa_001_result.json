@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.8666666666666668,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant and addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node, which mentions 'Indicates if the notification module should be enabled on the platform,' and the `notifications.enabled` setting in `xwiki.properties`, is ranked third. Irrelevant nodes, such as the first node discussing RSS feed of notifications and settings, and the second node explaining how to override default notification templates and install extensions, should be ranked lower.",
+    "ContextualRecall": "The score is 1.00 because the retrieval context perfectly supports all the sentences in the expected output. Great job!",
+    "CustomContextualRelevancy": "The retrieval context includes the exact information about enabling notifications by setting 'notifications.enabled' to 'true' in 'xwiki.properties'."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

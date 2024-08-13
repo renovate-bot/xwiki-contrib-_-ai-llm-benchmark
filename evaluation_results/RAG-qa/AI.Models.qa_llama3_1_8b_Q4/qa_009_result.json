@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.36923076923076925,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8461538461538461,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.85 because the answer is mostly relevant and provides useful information, but the inclusion of a URL that does not directly address the specific question about denying script rights to a space administrator prevents it from being higher.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node 'describes methods for checking access rights in a technical manner but does not address the specific question of denying script rights to a space administrator.' Similarly, the second node 'discusses the use of the checkAccess() method and its importance but does not provide information on denying script rights to a space administrator.'",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention that certain rights cannot be denied if implied by admin rights, nor does it specify that rights implied by admin rights cannot be denied.",
+    "CustomContextualRelevancy": "The retrieval context does not mention that admin rights cannot be denied or that this is not supported in XWiki."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

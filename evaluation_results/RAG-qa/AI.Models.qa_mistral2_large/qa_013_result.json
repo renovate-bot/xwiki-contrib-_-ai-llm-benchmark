@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3411764705882353,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7058823529411765,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.71 because while the response contains some relevant information, it includes multiple URLs that do not directly address the specific issue of enabling notifications for one's own actions in XWiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are about unrelated topics such as 'token generation and JWT claims' (first node), 'database migration and invalid extensions' (second node), 'XWiki extensions and their functionalities' (third node), 'LDAP group mapping and authentication' (fourth node), and 'reference forms and questionnaires in XWiki' (fifth node). These should be ranked lower than relevant nodes.",
+    "ContextualRecall": "The score is 0.00 because none of the nodes in the retrieval context mention anything about notifications, user activity, advanced filter options, or user profile notification settings.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to notification settings or user activity filters as mentioned in the expected output."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

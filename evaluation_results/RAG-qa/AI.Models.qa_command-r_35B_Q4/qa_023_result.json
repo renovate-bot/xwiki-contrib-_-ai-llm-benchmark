@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.3
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.70 because while the response contains some relevant information, it also includes multiple irrelevant links and headings that do not directly address the question about enabling notifications for one's own actions.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses how to get an RSS feed of notifications and does not address notifications for one's own activity. Similarly, the second node lists various notification settings and filters but does not specifically mention how to enable notifications for one's own actions.",
+    "ContextualRecall": "The score is 1.00 because the expected output perfectly aligns with the nodes in the retrieval context, providing a clear and accurate match.",
+    "CustomContextualRelevancy": "The retrieval context mentions default notification settings and filtering options but lacks details about disabling the filter in 'Options de filtrage avanc\u00e9es'."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

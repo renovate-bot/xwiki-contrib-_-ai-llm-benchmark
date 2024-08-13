@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.815897435897436,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8461538461538461,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5833333333333333,
+    "ContextualRecall": 0.75,
+    "CustomContextualRelevancy": 0.9
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.85 because the answer mostly addresses the question about disabling notifications, but includes irrelevant URLs that do not directly help with the issue.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.58 because the first node talks about 'getting a notification RSS feed and the Notifications Macro,' which is not directly related to disabling notifications, and should be ranked lower. Additionally, the fourth node discusses 'various ways to receive notifications, such as through RSS feeds and mentions,' but does not provide specific instructions on how to disable them, and should also be ranked lower. The fifth node is about 'overriding default notification templates and installation instructions,' which is not relevant to disabling notifications, and should be ranked lower as well.",
+    "ContextualRecall": "The score is 0.75 because the retrieval context partially supports the expected output. Specifically, nodes in the retrieval context mention default notification settings and accessing notification settings, but there is no mention of being notified specifically about changes on your work.",
+    "CustomContextualRelevancy": "The retrieval context includes information about auto-watching pages and modifying notification settings, but lacks explicit mention of removing filters in the 'Filtres personnalis\u00e9s' list."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

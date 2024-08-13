@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3333333333333333,
+  "individual_scores": {
+    "AnswerRelevancy": 0.6666666666666666,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.67 because the answer partially addresses the question but includes multiple irrelevant links that do not pertain to denying script rights to a space administrator.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node contains a list of image links and references, which are unrelated to the topic of denying script rights to a domain administrator. The second node discusses authentication configurations and LDAP settings, which do not address the question about denying script rights to a domain administrator. The third node talks about mail templates for password reset and username recovery, which are not relevant to the question about script rights. The fourth node provides installation instructions and dependencies for an extension, which do not relate to the question about script rights. The fifth node describes form utilization on XWiki.org, which is not relevant to the question about denying script rights to a domain administrator.",
+    "ContextualRecall": "The score is 0.00 because the expected output sentence is not found in any part of the nodes in retrieval context, which mainly discuss image links, LDAP configuration, and form utilization.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about admin rights or their implications in XWiki."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

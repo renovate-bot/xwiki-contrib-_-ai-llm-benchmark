@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.35238095238095235,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8333333333333334,
+    "Faithfulness": 0.9285714285714286,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.83 because the answer provides useful information but includes several irrelevant links that do not directly address the question about customizing user profile fields from the OpenID Connect provider.",
+    "Faithfulness": "The score is 0.93 because the actual output incorrectly claims that XWiki 1.30 and later supports creating new OIDC client configurations, while the retrieval context specifies that XWiki 14.10+ is required for compatibility with the OpenID Connect Authenticator.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node 'describes the OpenID Connect Authenticator extension, its developer, and installation details, but does not mention customizing user profile fields or mapping additional fields.'",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about customizing user profile fields or mapping them in the xwiki.properties file."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

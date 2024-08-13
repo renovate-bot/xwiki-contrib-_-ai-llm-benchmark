@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary includes extra information not mentioned in the original text and fails to answer a question that the original text can address. However, there are no contradictions, indicating a generally accurate but somewhat incomplete summary.",
+  "score": 0.875,
+  "reason": "The score is 0.88 because the summary includes extra information not mentioned in the original text, specifically that XWiki empowers you to create a dynamic and tailored web platform for any purpose.",
   "score_breakdown": {
-    "Alignment": 0.8333333333333334,
-    "Coverage": 0.8
+    "Alignment": 0.875,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

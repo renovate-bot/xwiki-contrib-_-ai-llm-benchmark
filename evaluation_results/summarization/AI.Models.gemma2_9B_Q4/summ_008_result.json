@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary includes information that contradicts the original text, such as the use of screenshots and the next step being to create a basic XWiki application. Additionally, the summary fails to answer specific questions that the original text addresses, such as the capabilities of admins in an Open registration configuration and the permissions in a Hidden configuration.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary includes extra information not mentioned in the original text and fails to answer several specific questions that the original text can address.",
   "score_breakdown": {
-    "Alignment": 0.7777777777777778,
-    "Coverage": 0.6
+    "Alignment": 0.8333333333333334,
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

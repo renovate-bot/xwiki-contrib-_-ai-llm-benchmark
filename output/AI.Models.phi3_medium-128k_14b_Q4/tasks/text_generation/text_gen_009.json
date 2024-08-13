@@ -2,16 +2,16 @@
   "id": "text_gen_009",
   "prompt": "Extract the event details from the following text:\n\nJoin us for the Annual Tech Conference, taking place from September 15th to 17th, 2023 at the Riverside Convention Center, 123 Main Street, Anytown, USA. The conference will feature keynote speeches, workshops, and networking opportunities for professionals in the tech industry.",
   "expected_answer": "{\n  \"event_name\": \"Annual Tech Conference\",\n  \"start_date\": \"September 15th, 2023\",\n  \"end_date\": \"September 17th, 2023\",\n  \"venue\": \"Riverside Convention Center\",\n  \"address\": \"123 Main Street, Anytown, USA\",\n  \"target_audience\": \"professionals in the tech industry\"\n}",
-  "ai_answer": "Event Name: Annual Tech Conference\nDate: September 15-17th, 2023\nLocation: Riverside Convention Center, 123 Main Street, Anytown, USA\nFeatured Activities: Keynote speeches, workshops, and networking opportunities for tech professionals",
+  "ai_answer": "Event Name: Annual Tech Conference\n\nDate: September \nDuration: 15th to 17th, 2023\nLocation: Riverside Convention Center\nAddress: 123 Main Street, Anytown, USA\n\nFeatured Activities: Keynote speeches, workshops and networking opportunities for professionals in the tech industry.",
   "sources": null,
   "usage": {
     "prompt_tokens": 97,
-    "completion_tokens": 71,
-    "total_tokens": 168
+    "completion_tokens": 84,
+    "total_tokens": 181
   },
-  "average_power_draw": 240.74719806763284,
-  "energy_consumption": 214.1958662166918,
-  "energy_per_input_token": 0.780312809532575,
-  "energy_per_output_token": 1.950782023831437,
-  "energy_per_total_token": 1.274975394146975
+  "average_power_draw": 239.70134782608693,
+  "energy_consumption": 241.38233600552184,
+  "energy_per_input_token": 0.7862616807997453,
+  "energy_per_output_token": 1.9656542019993632,
+  "energy_per_total_token": 1.33360406632885
 }

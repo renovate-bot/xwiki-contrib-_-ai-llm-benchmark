@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.2,
+  "individual_scores": {
+    "AnswerRelevancy": 0.0,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.00 because the output contains numerous irrelevant URLs and statements that do not address the issue of not receiving notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context discuss topics unrelated to enabling notifications, such as 'various applications and extensions in XWiki' (first node), 'access rights and execution contexts' (second node), 'scripting macros and link renaming' (third node), 'document chunking and embedding models for similarity search' (fourth node), and 'configuring permissions for guest users in an open wiki' (fifth node).",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to enabling notifications, following pages or users, or configuring notification settings as described in the expected output."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

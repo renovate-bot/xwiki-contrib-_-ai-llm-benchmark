@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.8072727272727273,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.6363636363636364,
+    "CustomContextualRelevancy": 0.6
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.80 because the answer provides useful information but includes several irrelevant links and a statement about default settings that do not directly address the input question about configuring attachment restrictions.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first node provides information on setting limits on the maximum size of an attachment, which is directly relevant. The subsequent nodes discuss topics like whitelists and blacklists for attachment types (second node), managing document properties (third node), creating new pages (fourth node), and embedding models (fifth node), which are not relevant.",
+    "ContextualRecall": "The score is 0.64 because while the retrieval context covers the steps to change the maximum upload size in the XWikiPreferences document and mentions repeating the configuration for each (sub)wiki (supporting sentences 6-12), it does not mention configuring allowed MIME types in the `xwiki.properties` file or provide specific details on MIME type restrictions (missing support for sentences 2-5).",
+    "CustomContextualRelevancy": "The retrieval context covers the steps to change the maximum attachment size and mentions MIME type restrictions, but it lacks specific details about configuring the MIME types in `xwiki.properties` and setting the maximum size to 10 MB."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

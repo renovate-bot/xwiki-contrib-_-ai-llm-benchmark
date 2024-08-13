@@ -1,6 +1,6 @@
 {
-  "score": 1.0,
-  "reason": "The poem directly addresses the beauty of nature, is coherent and fluent, and meets the expected output of describing the wonders of the natural world.",
+  "score": 0.8,
+  "reason": "The Actual Output addresses the topic of nature's beauty and covers key points with vivid imagery and personification. However, it includes commentary and suggestions for improvement, which disrupts the coherence and flow.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

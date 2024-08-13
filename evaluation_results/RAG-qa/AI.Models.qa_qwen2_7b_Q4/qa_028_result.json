@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.37272727272727274,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8636363636363636,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.86 because the answer is mostly relevant to the input, but it includes URLs that do not directly address the question about limiting file types and sizes for uploads.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node describes 'various macros and functionalities related to notifications, office document viewing, and PDF table of contents', which are not relevant to configuring file upload restrictions.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about configuring MIME types or setting the maximum upload size for attachments."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

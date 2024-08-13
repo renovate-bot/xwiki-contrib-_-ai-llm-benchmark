@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6116666666666666,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.625,
+    "CustomContextualRelevancy": 0.3
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.80 because the URL provided is not directly relevant to the issue of not receiving notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node, which mentions 'Watched Entities' and 'Follow a user,' is ranked third. Irrelevant nodes discussing 'RSS feed and settings' (first node) and 'overriding default notification templates' (second node) are ranked higher.",
+    "ContextualRecall": "The score is 0.62 because while the retrieval context covers aspects of following pages, users, and using the alert menu, it lacks details on enabling notifications via `xwiki.properties` and viewing followed users in the 'network' tab.",
+    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users, but lacks details on setting `notifications.enabled` to `true`, following pages, and the 'network' tab in the user profile."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

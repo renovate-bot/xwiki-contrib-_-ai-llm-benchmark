@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.38,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.90 because the answer is mostly relevant and provides useful information on denying script rights to a space administrator. However, it includes URLs that are not directly related to the question, which slightly detracts from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node describes the checkAccess and hasAccess methods, which are related to access control but do not address the specific question. Similarly, the second node discusses the usage of the checkAccess() method and its importance in security checkpoints, but it does not provide information about denying script rights to a space administrator.",
+    "ContextualRecall": "The score is 0.00 because none of the nodes in the retrieval context mention that rights implied by admin right cannot be denied.",
+    "CustomContextualRelevancy": "The retrieval context does not mention that rights implied by admin right cannot be denied, which is the key information in the expected output."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

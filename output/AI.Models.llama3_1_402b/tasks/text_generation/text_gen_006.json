@@ -2,12 +2,12 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "The earth awakens from its sleep,\nAs morning sunshine starts to creep,\nAcross the hills, the valleys wide,\nAnd lights the world with gentle pride.\n\nThe trees, they sway with gentle ease,\nTheir leaves a rustling, soft breeze,\nThe flowers, they bloom with vibrant hue,\nA colorful tapestry, both old and new.\n\nThe mountains rise, a majestic sight,\nTheir peaks a towering, snow-capped light,\nThe rivers flow, a winding stream,\nThat shines like silver, in the morning's beam.\n\nThe forest creatures start to roam,\nThe birds, they sing their sweet, sweet home,\nThe wind, it whispers through the trees,\nA soothing melody, that rustles the leaves.\n\nThe sun, it shines with warm, golden light,\nThat fills the heart, with pure delight,\nThe stars, they twinkle in the night,\nA celestial show, that's a wondrous sight.\n\nOh, nature's beauty, you are a treat,\nA treasure trove, that can't be beat,\nYou bring us joy, you bring us peace,\nA sense of wonder, that will never cease.\n\nSo let us cherish, this gift so rare,\nThis beauty of nature, that's beyond compare,\nLet us protect it, let us preserve,\nFor future generations, this treasure to deserve.",
+  "ai_answer": "Here is a poem about the beauty of nature:\n\nThe earth's canvas, painted so fine,\nA masterpiece of wonder, divine.\nMountains tall, and valleys wide,\nA symphony of beauty, side by side.\n\nThe sun rises, a fiery ball,\nBringing light to all, standing tall.\nThe trees, they sway, in gentle breeze,\nTheir leaves, a rustling, soft release.\n\nThe rivers flow, like liquid gold,\nReflecting sky, and stories untold.\nThe flowers bloom, in vibrant hue,\nA colorful tapestry, for me and you.\n\nThe stars appear, like diamonds bright,\nA twinkling show, on a celestial night.\nThe moon glows, a silver crescent smile,\n Illuminating all, in a gentle while.\n\nThe beauty of nature, pure and true,\nA gift to us, forever anew.\nA source of wonder, a sense of peace,\nA reminder of life's simple release.\n\nSo let us cherish, this earth we share,\nAnd preserve its beauty, with love and care.\nFor in its splendor, we find our own,\nA connection to the natural throne.",
   "sources": null,
   "usage": {
     "prompt_tokens": 19,
-    "completion_tokens": 263,
-    "total_tokens": 282
+    "completion_tokens": 227,
+    "total_tokens": 246
   },
   "average_power_draw": null,
   "energy_consumption": null,

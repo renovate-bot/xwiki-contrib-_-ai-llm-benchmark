@@ -1,9 +1,9 @@
 {
   "score": 0.75,
-  "reason": "The score is 0.75 because the summary contains a contradiction about the display of panels in XWiki and includes extra information about taking first steps with XWiki that is not mentioned in the original text.",
+  "reason": "The score is 0.75 because the summary includes contradictory information about panel positioning and extra information about a next section on taking initial steps with XWiki, which are not mentioned in the original text. Additionally, the summary fails to answer a question about exporting a page in PDF format in XWiki that the original text can answer.",
   "score_breakdown": {
     "Alignment": 0.75,
-    "Coverage": 1.0
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

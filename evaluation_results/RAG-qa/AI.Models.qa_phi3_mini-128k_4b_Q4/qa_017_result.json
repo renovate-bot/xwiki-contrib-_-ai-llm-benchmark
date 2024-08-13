@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.5276717557251909,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7633587786259542,
+    "Faithfulness": 0.875,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.76 because while the response contains some relevant information, it is heavily diluted with numerous irrelevant statements that do not pertain to setting up group synchronization between XWiki and an OpenID Connect provider.",
+    "Faithfulness": "The score is 0.88 because the actual output incorrectly suggests using LDAP for handling user information and groups, while the retrieval context specifies that LDAP is deprecated for XWiki versions 7.4 and below, and OpenID Connect Authenticator is used for XWiki 14.10+.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node provides general information about the OpenID Connect Authenticator, but does not specifically address the setup process for group synchronization. The second node describes the OpenID Connect Authenticator's details, but lacks configuration information. The third node discusses various authentication methods without mentioning group synchronization setup. The fourth node mentions group synchronization but lacks detailed steps. The fifth node provides a table of contents without specific setup steps.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context, ensuring a perfect match.",
+    "CustomContextualRelevancy": "The retrieval context does not contain specific instructions for configuring `xwiki.properties` for group synchronization with OpenID Connect."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

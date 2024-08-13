@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output is relevant to the Input prompt and is coherent, fluent, and creative. However, it deviates slightly from the Expected Output by focusing on interstellar travel and conflict rather than solely exploring a new planet.",
+  "score": 0.7,
+  "reason": "The Actual Output addresses the Input prompt by providing a creative space adventure story, staying on topic. However, it deviates from the Expected Output, which specifies a story about astronauts exploring a new planet. The coherence and fluency of the Actual Output are strong, with a logical flow and correct grammar.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

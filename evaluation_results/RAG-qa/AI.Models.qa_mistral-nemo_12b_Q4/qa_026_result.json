@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.4333333333333334,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8333333333333334,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.83 because the answer provides some relevant information about customizing user profile fields from an OpenID Connect provider in XWiki, but it includes multiple URLs that are not directly related to the question, which reduces the overall relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job staying true to the retrieval context!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node in the third position mentions the `xwiki.properties` file and includes properties related to OpenID Connect, which is relevant to customizing user profile fields. However, irrelevant nodes in the first, second, fourth, and fifth positions discuss topics such as authentication methods for the XWiki RESTful API, general information about the OpenID Connect authenticator, different types of references in XWiki, and naming strategies for pages in XWiki, which should be ranked lower.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention any of the key points related to customizing user profile fields, mapping them in the `xwiki.properties` file, or the specific properties and steps involved.",
+    "CustomContextualRelevancy": "The retrieval context does not contain information about customizing user profile fields or the `oidc.user.mapping` property in `xwiki.properties`."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

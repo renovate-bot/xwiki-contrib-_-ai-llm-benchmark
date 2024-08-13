@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3333333333333333,
+  "individual_scores": {
+    "AnswerRelevancy": 0.6666666666666666,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.67 because the response contains some relevant information but also includes general affirmations and unrelated details about WhatsApp Web functionality, which do not directly address the specific issue of the notification bell not being available.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses getting a notification RSS feed and settings for notifications, but it does not address enabling notifications in the wiki or the specific setting `notifications.enabled`.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention enabling notifications through the `xwiki.properties` file or setting `notifications.enabled` to `true`, which are key points in the expected output.",
+    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications through the `notifications.enabled` setting in `xwiki.properties`."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

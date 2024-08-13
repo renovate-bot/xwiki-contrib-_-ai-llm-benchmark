@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.45509578544061313,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9310344827586207,
+    "Faithfulness": 0.9444444444444444,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.93 because the answer is mostly relevant and provides useful information on configuring access rights in XWiki, but it includes a URL that does not directly address the input question.",
+    "Faithfulness": "The score is 0.94 because there is no 'Administer Space' section mentioned in the retrieval context.",
+    "ContextualPrecision": "The score is 0.20 because the relevant node discussing 'how permissions are set for groups and users in XWiki' is ranked fifth, while the top four nodes are irrelevant, discussing topics like 'spaces and sub-pages', 'parent/child relationship', 'various macros', and 'link specification', which should be ranked lower.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions setting rights and creating spaces but lacks specific steps for creating groups, setting wiki-wide rights, and inheriting rights for child pages."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

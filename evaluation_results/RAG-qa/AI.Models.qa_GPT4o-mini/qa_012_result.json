@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.35238095238095235,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7619047619047619,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.76 because while the response addresses the issue of not receiving notifications, it includes multiple irrelevant URLs that do not directly pertain to the problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'various applications like Meeting Application, Forum Application, and Ideas Application,' which are not related to enabling notifications. The second node talks about 'access rights and executing tasks with specific user rights,' which is also unrelated to receiving notifications.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about enabling notifications, following pages or users, or configuring notifications in xwiki.properties."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

@@ -1,0 +1,7 @@
+{
+  "score": 0.8,
+  "reason": "The Actual Output is relevant to the Input and covers key points such as event name, dates, and location. However, it does not separate the start and end dates, and it lacks the 'target_audience' field.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

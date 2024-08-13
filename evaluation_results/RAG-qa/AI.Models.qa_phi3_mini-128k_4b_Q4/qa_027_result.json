@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6360683760683761,
+  "individual_scores": {
+    "AnswerRelevancy": 0.1111111111111111,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 0.7692307692307693,
+    "CustomContextualRelevancy": 0.8
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.11 because the majority of the statements in the actual output are irrelevant to the input question about configuring group synchronization between XWiki and an OpenID Connect provider. Only a very small portion of the content might be tangentially related, hence the low but non-zero score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.50 because the relevant node (rank 2) that mentions 'default group synchronization' and 'properties in the `xwiki.properties` file' is ranked lower than several irrelevant nodes. For example, the first node provides 'general information about prerequisites, installation, and dependencies' and should be ranked lower.",
+    "ContextualRecall": "The score is 0.77 because while the retrieval context (especially the 2nd node) provides detailed information on configuring properties such as `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping`, it does not explicitly mention steps like locating, opening, and saving the `xwiki.properties` file or restarting the XWiki instance.",
+    "CustomContextualRelevancy": "The retrieval context contains information about configuring group synchronization in the xwiki.properties file, including the use of oidc.groups.mapping and oidc.groups.claim properties. However, it lacks specific details about setting oidc.groups.separator and saving and restarting the instance."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

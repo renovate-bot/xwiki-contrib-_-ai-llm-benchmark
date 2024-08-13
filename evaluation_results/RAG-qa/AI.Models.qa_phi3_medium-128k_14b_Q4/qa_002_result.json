@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.5385714285714285,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.25,
+    "ContextualRecall": 0.14285714285714285,
+    "CustomContextualRelevancy": 0.3
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly faithful to the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.25 because the relevant node, which mentions the 'notifications.enabled' setting in 'xwiki.properties', is ranked fourth. Irrelevant nodes, such as the first node discussing the 'Clear All' link and grouping of notifications, and the second node listing dependencies for the notifications extension, should be ranked lower.",
+    "ContextualRecall": "The score is 0.14 because only the mention of 'notifications.enabled' in xwiki.properties (sentence 2) is supported by the 5th node in the retrieval context, while all other details in the expected output lack corresponding information in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications in xwiki.properties and the alert menu, but lacks details on subscribing to pages or users and the network tab in the user profile."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

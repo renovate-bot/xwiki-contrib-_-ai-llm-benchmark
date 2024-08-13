@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.5488888888888889,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9444444444444444,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.3
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.94 because the answer is highly relevant and provides useful information, but it includes a general statement about notifications in XWiki that does not directly address how to enable notifications for one's own actions.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses how to get a notification RSS feed and general notification settings but does not address enabling notifications for one's own actions. Similarly, the second node lists various customization options for notification emails but does not mention how to enable notifications for one's own actions.",
+    "ContextualRecall": "The score is 0.50 because the retrieval context supports the information about disabling notification filters in the 'Advanced filtering options' section (sentence 2), but it does not support the information about not receiving notifications about one's own activity unless explicitly targeted (sentence 1).",
+    "CustomContextualRelevancy": "The retrieval context mentions notification settings and the ability to enable/disable notifications, but it does not specifically address disabling the filter for one's own activity or the 'Advanced filtering options' section."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output is directly relevant to the Input prompt, maintaining coherence and logical flow similar to the Expected Output. It is fluent with proper grammar and syntax, and meets the quality of the Expected Output in terms of relevance, coherence, and fluency.",
+  "reason": "The Actual Output directly addresses the Input prompt by describing the Wireless Bluetooth Headphones, including features like noise-cancelling, 20-hour battery life, and comfortable fit, targeting tech-savvy professionals. It maintains coherence and logical flow similar to the Expected Output. The grammar, syntax, and readability are fluent and meet the quality of the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

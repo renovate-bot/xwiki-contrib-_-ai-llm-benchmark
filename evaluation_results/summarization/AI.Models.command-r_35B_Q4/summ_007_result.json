@@ -1,9 +1,9 @@
 {
-  "score": 0.8333333333333334,
-  "reason": "The score is 0.83 because the summary contradicts the original text by combining the functionalities of the 'History' tab and the 'Rollback' button, which are mentioned separately in the original text.",
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary includes a contradiction regarding the features of the 'History' tab, which affects the accuracy. However, there is no extra information or unanswered questions, indicating a generally good summarization.",
   "score_breakdown": {
-    "Alignment": 0.8333333333333334,
-    "Coverage": 1.0
+    "Alignment": 0.875,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

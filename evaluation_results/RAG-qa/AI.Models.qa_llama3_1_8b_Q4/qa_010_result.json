@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.4618181818181819,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9090909090909091,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.91 because the answer is mostly relevant and provides useful information, but the URL provided does not directly address the configuration question about permissions in XWiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.20 because the relevant node in retrieval context, which provides information on how permissions are set for groups and users in XWiki, is ranked fifth. Irrelevant nodes, such as the first node explaining how users create spaces and pages, the second node discussing the parent/child relationship and nested pages, the third node listing various macros and their functions, and the fourth node explaining the link specification in XWiki syntax, are ranked higher.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions setting rights and managing spaces but lacks specific steps and details found in the expected output."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

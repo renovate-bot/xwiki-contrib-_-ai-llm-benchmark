@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.7647058823529411,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8235294117647058,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 1.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.82 because the provided URLs do not directly address the question of how to refuse script rights to a space administrator, but the main content is still relevant and helpful.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'default right settler policies', the second node is about 'executing tasks with specific user rights', the third node describes 'access checks and security checkpoints', the fourth node lists 'various types of rights and permissions', and the fifth node explains 'link resolution and parameters in XWiki'. None of these contexts address the issue of refusing script rights to an administrator.",
+    "ContextualRecall": "The score is 1.00 because the retrieval context perfectly supports the expected output. Great job!",
+    "CustomContextualRelevancy": "The retrieval context confirms that rights implied by the admin right cannot be denied, matching the expected output."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

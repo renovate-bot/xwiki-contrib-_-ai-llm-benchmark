@@ -2,12 +2,12 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "Here's a poem about the beauty of nature:\n\nNature's Symphony\n\nSunlight dances through emerald leaves,\nA gentle breeze whispers and weaves.\nFlowers bloom in vibrant hues,\nPainting meadows with morning dews.\n\nMajestic mountains touch the sky,\nAs eagles soar and rivers sigh.\nForests deep with secrets old,\nTell tales that nature alone can hold.\n\nOcean waves crash on golden sand,\nSculpting beauty across the land.\nStars twinkle in the velvet night,\nA cosmic dance of distant light.\n\nIn every leaf and grain of soil,\nIn creatures great and small that toil,\nThere's magic in this world so free,\nNature's endless symphony.",
+  "ai_answer": "Here's a poem about the beauty of nature:\n\nNature's Symphony\n\nSunlight dances on dewdrops' gleam,\nPainting meadows in golden beams.\nWildflowers sway in gentle breeze,\nTheir fragrance carried through the trees.\n\nBabbling brooks sing melodies sweet,\nAs pebbles tumble beneath their feet.\nMountains rise in majestic might,\nTheir snow-capped peaks a wondrous sight.\n\nForests whisper ancient lore,\nIn rustling leaves and creaking floor.\nBirds soar high on graceful wing,\nTheir joyous songs make valleys ring.\n\nOceans roar with timeless power,\nWaves crash on shores hour by hour.\nIn nature's grand tapestry,\nWe find perfect harmony.\n\nFrom tiniest seed to tallest peak,\nBeauty abounds for those who seek.\nIn every leaf and grain of sand,\nThe wonders of our world expand.",
   "sources": null,
   "usage": {
     "prompt_tokens": 16,
-    "completion_tokens": 167,
-    "total_tokens": 183
+    "completion_tokens": 219,
+    "total_tokens": 235
   },
   "average_power_draw": null,
   "energy_consumption": null,

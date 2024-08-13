@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.5337888198757764,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8260869565217391,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 0.14285714285714285,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.83 because the main content is relevant and addresses the question about authenticating users with access tokens, but the repeated irrelevant URLs lower the score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Great job maintaining accuracy!",
+    "ContextualPrecision": "The score is 0.50 because the first node discusses claims via the UserInfo endpoint but does not address user authentication with access tokens, and the third node provides general information about permissions and security, which is not directly relevant. However, the second node provides relevant information about configuring authorized applications for authentication, which is why the score is not lower.",
+    "ContextualRecall": "The score is 0.14 because only the 2nd sentence in the expected output can be linked to the 2nd node in the retrieval context, while the rest of the expected output is not supported by the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions authorized applications and JWT tokens but lacks details on enabling the token authenticator, specific claims, and usage instructions."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

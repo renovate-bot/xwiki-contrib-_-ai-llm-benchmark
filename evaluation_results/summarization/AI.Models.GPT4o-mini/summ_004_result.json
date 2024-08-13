@@ -1,9 +1,9 @@
 {
-  "score": 0.7857142857142857,
-  "reason": "The score is 0.79 because the summary contains contradictions regarding the methods for upgrading the distribution and the specific instructions for upgrading XWiki, which are not mentioned in the original text. Additionally, the summary fails to answer a question about XWiki's migration paths that the original text can address.",
+  "score": 0.8666666666666667,
+  "reason": "The score is 0.87 because the summary includes extra information not present in the original text, such as details about upgrading from Debian Package (.DEB) or Demo Package (.ZIP) and specific commands for updating from Debian Package (.DEB).",
   "score_breakdown": {
-    "Alignment": 0.7857142857142857,
-    "Coverage": 0.8
+    "Alignment": 0.8666666666666667,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

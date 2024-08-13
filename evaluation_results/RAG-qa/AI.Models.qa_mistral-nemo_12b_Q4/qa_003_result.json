@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.44000000000000006,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and there are no irrelevant statements.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'how to get a notification RSS feed and general settings' but does not address enabling notifications for one's own actions. Similarly, the second node lists 'various customization options for notification emails' but does not mention how to enable notifications for one's own actions. The third node explains 'how to enable and disable the email feature and customize live email notifications grace time' but it does not address enabling notifications for one's own actions.",
+    "ContextualRecall": "The score is 0.00 because none of the nodes in the retrieval context mention that users do not receive notifications about their own activity unless explicitly targeted, nor do they mention the ability to disable this filter in the 'Advanced filtering options' section of the user's notification settings.",
+    "CustomContextualRelevancy": "The retrieval context mentions default notification settings and the ability to change them but lacks specific details about disabling the filter for one's own activity in the Advanced filtering options."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

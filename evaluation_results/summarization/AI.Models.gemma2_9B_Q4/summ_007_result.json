@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary is mostly accurate and concise, but it fails to address a specific question that the original text can answer.",
+  "score": 0.8571428571428571,
+  "reason": "The score is 0.86 because the summary contains a contradiction regarding how to view specific versions, which is a critical detail for understanding the functionality described.",
   "score_breakdown": {
-    "Alignment": 1.0,
-    "Coverage": 0.8
+    "Alignment": 0.8571428571428571,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

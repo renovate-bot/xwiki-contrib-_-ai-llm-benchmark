@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6433333333333333,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9166666666666666,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.3
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the response is mostly relevant and helpful, but it includes a link about XWiki syntax, which does not directly address the question about enabling notifications for one's own activity.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses getting an RSS feed of notifications and does not mention anything about notifications for one's own activity. The second node lists various notification settings and filters but does not specifically address notifications for one's own activity. The third node describes different macros related to notifications but does not provide information about enabling notifications for one's own actions. The fourth node talks about overriding default notification templates and installation instructions, which are not relevant to the question about enabling notifications for one's own activity. The fifth node lists several ways to be notified in XWiki but does not specifically address how to enable notifications for one's own actions.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions default notification settings and filtering options but lacks details about disabling the filter in 'Options de filtrage avanc\u00e9es'."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

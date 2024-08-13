@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output addresses the Input prompt and covers most main points, including event name, date, location, and address. However, it misses the 'target_audience' detail and does not split the date into 'start_date' and 'end_date' as in the Expected Output.",
+  "reason": "The Actual Output is relevant to the Input and coherent, with correct grammar and natural language use. However, it misses the 'target_audience' detail present in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

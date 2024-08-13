@@ -167,16 +167,16 @@ Example of _config.json_:
 }
 ```
 
-5. Collect model responses
-
-```
-snakemake --cores 1 collect
-```
-
-6. Run the evaluation pipeline with snakemake
+5. Run the evaluation pipeline with snakemake
 
 ```
 snakemake --cores 1 evaluate
+```
+
+6. Generate the evaluation report
+
+```
+snakemake --cores 1 report
 ```
 
 ## Running individual steps

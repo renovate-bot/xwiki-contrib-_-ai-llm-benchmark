@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6966666666666667,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9166666666666666,
+    "Faithfulness": 0.9,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 0.4666666666666667,
+    "CustomContextualRelevancy": 0.7
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the answer is mostly relevant and helpful, but it includes a link to the XWiki documentation on creating new users, which is not directly related to configuring group synchronization with an OpenID Connect provider.",
+    "Faithfulness": "The score is 0.90 because the actual output incorrectly suggests setting up manual synchronization, whereas the retrieval context clearly states that the OpenID Connect Authenticator performs automatic synchronization.",
+    "ContextualPrecision": "The score is 0.50 because the second node, which is highly relevant as it discusses the default group synchronization settings and the `oidc.groups.mapping` property, is ranked second. However, irrelevant nodes such as the first node, which only provides general information about prerequisites and installation instructions, and the third node, which provides general information about the OpenID Connect Authenticator, are ranked higher than they should be.",
+    "ContextualRecall": "The score is 0.47 because while the 2nd node in the retrieval context mentions key properties like `xwiki.properties`, `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping`, it lacks specific instructions and examples provided in the expected output, such as opening the file with a text editor, setting properties with actual values, and saving and restarting the instance.",
+    "CustomContextualRelevancy": "The retrieval context mentions configuring group synchronization in the xwiki.properties file and setting properties like oidc.groups.mapping, but lacks detailed steps and examples found in the expected output."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

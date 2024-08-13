@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6000000000000001,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 0.6,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the output is perfectly relevant and addresses the input without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.20 because the relevant node (rank 5) is ranked lower than several irrelevant nodes. For example, the first node provides 'general information about prerequisites, installation instructions, and dependencies' and should be ranked lower. Similarly, the second node 'provides a general description of the OpenID Connect Authenticator' and does not address the customization of user profile fields, so it should also be ranked lower.",
+    "ContextualRecall": "The score is 0.60 because while the retrieval context supports general information about configuring the `xwiki.properties` file and using properties, it lacks explicit details on the specific examples and instructions provided in the expected output.",
+    "CustomContextualRelevancy": "The retrieval context mentions the configuration file xwiki.properties but lacks details on customizing user profile fields and the specific oidc.user.mapping property."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

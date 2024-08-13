@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.5225,
+  "individual_scores": {
+    "AnswerRelevancy": 0.875,
+    "Faithfulness": 0.9375,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.8,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.88 because the answer is mostly relevant to the question about customizing user profile fields from an OpenID Connect provider in XWiki. However, it includes URLs and information about XWiki RESTful API, XWiki Syntax, and Model Validation UI, which are not directly related to the specific query.",
+    "Faithfulness": "The score is 0.94 because the actual output incorrectly states that the `OpenIDConnectProvider` extension must be installed using the Package Manager, while the retrieval context indicates it can be installed with the Extension Manager.",
+    "ContextualPrecision": "The score is 0.00 because all the nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'various authentication methods for the XWiki RESTful API, including OIDC,' but does not provide information on mapping user profile fields. The second node provides details about the 'OpenID Connect Authenticator extension for XWiki,' but does not mention how to map user profile fields. The third node lists 'configuration properties related to the OpenID Connect provider and endpoints,' but does not cover user profile field mapping. The fourth node explains 'various types of references in XWiki,' which is unrelated to mapping user profile fields from an OpenID Connect provider. Finally, the fifth node discusses 'naming strategies for wiki pages in XWiki,' which is not relevant to mapping user profile fields from an OpenID Connect provider.",
+    "ContextualRecall": "The score is 0.80 because most of the expected output is supported by the 3rd node in the retrieval context, including details on customizing fields, using the `oidc.user.mapping` property, providing examples, and saving and restarting XWiki. However, the retrieval context does not specifically mention replacing `myxproperty1` and `myxproperty2` with actual XWiki user property names.",
+    "CustomContextualRelevancy": "The retrieval context does not contain information about customizing user profile fields using the xwiki.properties file or the oidc.user.mapping property."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

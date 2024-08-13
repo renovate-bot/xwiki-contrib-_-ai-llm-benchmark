@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3931034482758621,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9655172413793104,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.97 because the answer is highly relevant and provides useful information for configuring OpenID Connect in XWiki. However, it includes a minor irrelevant statement about the XWiki RESTful API, which slightly detracts from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node 'describes the OpenID Connect Authenticator extension and its general information, but it does not provide any configuration details related to enabling user accounts upon first login.'",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about adjusting the `xwiki.properties` file or the `oidc.enableUser` property."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

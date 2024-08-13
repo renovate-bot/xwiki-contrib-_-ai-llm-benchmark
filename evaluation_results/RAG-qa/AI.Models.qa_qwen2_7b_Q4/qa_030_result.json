@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.38666666666666666,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9333333333333333,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.93 because the answer is mostly relevant and helpful, but it includes links to pages on nested pages migration and XWiki syntax, which are not directly related to configuring access and modification settings in XWiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to configuring access controls for team spaces. For example, the first node explains how spaces and pages are created and managed in XWiki, which does not address the input query. Similarly, the second node lists various macros and scripting capabilities, which are also not relevant to the input query.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about creating groups, defining rights at the wiki or space level, or inheriting rights for child pages."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

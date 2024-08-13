@@ -1,9 +1,9 @@
 {
-  "score": 0.9285714285714286,
-  "reason": "The score is 0.93 because the summary contains a contradiction regarding implicit denial and explicit denial, which affects the accuracy. However, there is no extra information or unanswered questions, indicating a generally high-quality summary.",
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary fails to address specific questions that the original text can answer, indicating that it lacks completeness and detail.",
   "score_breakdown": {
-    "Alignment": 0.9285714285714286,
-    "Coverage": 1.0
+    "Alignment": 1.0,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

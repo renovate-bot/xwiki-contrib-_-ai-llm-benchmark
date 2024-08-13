@@ -2,16 +2,16 @@
   "id": "text_gen_010",
   "prompt": "Adapt the following text to a more technical audience:\n\nThe human brain is a complex organ that controls all functions of the body, interprets information from the outside world, and embodies the essence of the mind and soul.",
   "expected_answer": "The human brain is a highly intricate and sophisticated organ responsible for regulating and coordinating various physiological processes, processing and interpreting sensory information from the external environment, and serving as the biological substrate for cognitive functions, consciousness, and subjective experiences.",
-  "ai_answer": "For a more technical audience, the adapted text might look like this:\n\n\"The human brain, as the central nervous system's nexus, regulates all bodily processes via intricate neural networks and hormone signaling pathways. It also receives, interprets, and integrates external sensory information, facilitating cognition and perception. The brain's structural and functional complexity underlies its capacity to embody conscious experience, personality traits, and emotional processing.\"",
+  "ai_answer": "**Brain Functionality Overview for Technical Audiences:**\n\nThe neocortex, cerebrum, cerebellum, and brainstem comprise the human brain\u2014an intricate organ facilitating all bodily operations, data interpretation from external environments, and harboring the cognitive and consciousness aspects traditionally attributed to 'mind' and 'soul'.",
   "sources": null,
   "usage": {
     "prompt_tokens": 47,
-    "completion_tokens": 83,
-    "total_tokens": 130
+    "completion_tokens": 64,
+    "total_tokens": 111
   },
-  "average_power_draw": 224.39164251207734,
-  "energy_consumption": 209.9966298351887,
-  "energy_per_input_token": 0.8251341054427846,
-  "energy_per_output_token": 2.062835263606962,
-  "energy_per_total_token": 1.6153586910399131
+  "average_power_draw": 228.33220496894404,
+  "energy_consumption": 176.99732971077376,
+  "energy_per_input_token": 0.8550595638201631,
+  "energy_per_output_token": 2.1376489095504074,
+  "energy_per_total_token": 1.5945705379348987
 }

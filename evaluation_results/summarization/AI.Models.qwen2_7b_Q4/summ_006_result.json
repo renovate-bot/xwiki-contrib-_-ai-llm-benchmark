@@ -1,8 +1,8 @@
 {
-  "score": 0.5714285714285714,
-  "reason": "The score is 0.57 because the summary contains several contradictions and extra information not present in the original text. Specifically, it inaccurately mentions logging in for creating a page or understanding the history of pages, provides specific links for actions that the original text does not, and incorrectly states that the Getting Started guide covers developers. Additionally, it includes extra steps for users that are not mentioned in the original text.",
+  "score": 0.6666666666666666,
+  "reason": "The score is 0.67 because the summary contains some contradictions and extra information not present in the original text. Specifically, it incorrectly states the guide is divided into three parts and misrepresents the contents of the Developer's Guide. Additionally, it adds information about the next step being creating a page, which is not mentioned in the original text.",
   "score_breakdown": {
-    "Alignment": 0.5714285714285714,
+    "Alignment": 0.6666666666666666,
     "Coverage": 1.0
   },
   "input_language": "en",

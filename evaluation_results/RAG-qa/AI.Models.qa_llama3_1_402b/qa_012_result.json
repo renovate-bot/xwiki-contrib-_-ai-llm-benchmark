@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.34444444444444444,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7222222222222222,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.72 because the response partially addresses the issue of not receiving notifications, but it repeatedly includes an irrelevant URL that does not provide specific information about notification settings or issues in XWiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Great job maintaining accuracy!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'various applications in XWiki' but does not address notifications. The second node is about 'access rights and executing tasks with specific user rights' without mentioning notifications. The third node focuses on 'renaming of links inside scripting macros' and lacks information on notifications. The fourth node describes 'embedding model and chunking method for documents,' which is unrelated to notifications. The fifth node talks about 'configuring permissions for guest users,' not notifications.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to enabling notifications, following pages or users, or managing notifications as described in the expected output."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.554317617866005,
+  "individual_scores": {
+    "AnswerRelevancy": 0.967741935483871,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.25,
+    "ContextualRecall": 0.15384615384615385,
+    "CustomContextualRelevancy": 0.4
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.97 because the answer is highly relevant and provides a detailed explanation for configuring group synchronization between XWiki and an OpenID Connect provider. However, it includes an irrelevant link to the XWiki RESTful API documentation, which slightly detracts from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.25 because the relevant node that directly addresses group synchronization (rank 4) is ranked lower than several irrelevant nodes. For example, the first node provides general information about the OpenID Connect Authenticator without addressing group synchronization, and the second node describes installation and general configuration without specific steps for group synchronization.",
+    "ContextualRecall": "The score is 0.15 because the retrieval context only partially supports the expected output. Specifically, only sentence 3 and sentence 7 in the expected output are somewhat supported by node 6 in the retrieval context, while the rest of the sentences lack corresponding information in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions group synchronization and some properties in xwiki.properties but lacks detailed steps and examples found in the expected output."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

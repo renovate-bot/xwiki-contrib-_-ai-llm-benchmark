@@ -1,8 +1,8 @@
 {
-  "score": 0.5555555555555556,
-  "reason": "The score is 0.56 because the summary contains significant contradictions regarding the content of the footer and includes extra information not mentioned in the original text. Additionally, the summary fails to answer a question that the original text can address.",
+  "score": 0.6666666666666666,
+  "reason": "The score is 0.67 because the summary contains contradictory information about the placement of panels and the layout of pages, includes extra information not present in the original text, and fails to address a specific question about exporting a page in PDF format.",
   "score_breakdown": {
-    "Alignment": 0.5555555555555556,
+    "Alignment": 0.6666666666666666,
     "Coverage": 0.8
   },
   "input_language": "en",

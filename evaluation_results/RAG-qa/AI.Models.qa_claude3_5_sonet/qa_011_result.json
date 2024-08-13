@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.4,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and addresses the issue without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses getting an RSS feed of notifications, which does not address enabling notifications in the wiki settings. The second node is about overriding default notification templates and installation instructions, which is also not relevant. The third node lists various settings and features related to notifications but does not mention enabling notifications. The fourth node discusses customizing notification emails and creating global notification filters, which is unrelated. Finally, the fifth node explains the 'Clear All' link and grouping notifications, but does not mention enabling notifications in the wiki settings.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention enabling notifications via the `xwiki.properties` file or setting `notifications.enabled` to `true`, nor does it provide any information about the `xwiki.properties` file or the specific setting `notifications.enabled`.",
+    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications via the `notifications.enabled` setting in `xwiki.properties`."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

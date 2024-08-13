@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.35454545454545455,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7727272727272727,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.77 because the actual output contains several irrelevant URLs that do not address the input question about enabling notifications for one's own actions. However, the score is not lower because the relevant information is still present and partially addresses the user's query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node is about 'token generation and JWT claims', which is unrelated to notifications for user activity. The second node discusses 'database migration and invalid extensions', which does not pertain to user notification settings. Additionally, the third node lists 'various extensions and their functionalities', none of which are related to enabling notifications for user actions.",
+    "ContextualRecall": "The score is 0.00 because none of the nodes in the retrieval context discuss notifications, user activity, or mention 'Erweiterte Filteroptionen' or user notification settings.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about notification settings or user activity filters."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

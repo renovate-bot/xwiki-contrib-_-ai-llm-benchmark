@@ -1,9 +1,9 @@
 {
-  "score": 0.625,
-  "reason": "The score is 0.62 because the summary includes contradictory information about providing specific links and concluding with a next step that the original text does not mention. Additionally, the summary introduces extra information about explicitly stating links to further resources and documentation, which is not in the original text. Furthermore, the summary fails to answer whether users need to log in to perform certain actions, which the original text can answer.",
+  "score": 0.42857142857142855,
+  "reason": "The score is 0.43 because the summary contains multiple contradictions and introduces extra information not present in the original text. Specifically, it incorrectly specifies actions requiring login and mentions links to tutorials and administrative tasks that are not in the original text.",
   "score_breakdown": {
-    "Alignment": 0.625,
-    "Coverage": 0.8
+    "Alignment": 0.42857142857142855,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

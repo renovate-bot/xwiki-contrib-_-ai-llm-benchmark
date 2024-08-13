@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.4,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and there are no irrelevant statements.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses how to get a notification RSS feed and the settings for notifications, but it does not address enabling notifications in the wiki or the specific setting `notifications.enabled`. Similarly, the second node provides information on overriding default notification templates and installation instructions, but it does not mention enabling notifications in the wiki or the `notifications.enabled` setting.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention enabling notifications through the `notifications.enabled` setting in `xwiki.properties` or provide any information about setting `notifications.enabled` to `true` in `xwiki.properties`.",
+    "CustomContextualRelevancy": "The retrieval context does not mention the `notifications.enabled` setting in `xwiki.properties`."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

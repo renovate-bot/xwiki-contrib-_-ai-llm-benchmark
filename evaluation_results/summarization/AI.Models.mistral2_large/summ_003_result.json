@@ -1,8 +1,8 @@
 {
-  "score": 0.8421052631578947,
-  "reason": "The score is 0.84 because the summary contains one contradiction regarding the permissions for commenting or editing on an open wiki. Additionally, the summary includes extra information not mentioned in the original text, such as specific documentation for setting sub-wiki access rights and additional resources on permission types, the administration application, and code-based permission management.",
+  "score": 0.8333333333333334,
+  "reason": "The score is 0.83 because the summary contains some contradictions regarding access rights settings and includes extra information not mentioned in the original text. However, it still captures the main points accurately.",
   "score_breakdown": {
-    "Alignment": 0.8421052631578947,
+    "Alignment": 0.8333333333333334,
     "Coverage": 1.0
   },
   "input_language": "en",

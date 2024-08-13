@@ -1,7 +1,0 @@
-{
-  "score": 0.9,
-  "reason": "The Actual Output directly addresses the Input prompt and matches the context of the Expected Output. It is coherent, flows logically, and is grammatically correct. The key points and overall message align closely, though there are slight differences in word choice and emphasis on certain aspects like neurotechnologies and artificial intelligence.",
-  "prompt_language": "en",
-  "expected_answer_language": "en",
-  "generated_text_language": "en"
-}

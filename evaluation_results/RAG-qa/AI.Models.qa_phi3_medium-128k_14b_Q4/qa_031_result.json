@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.5155555555555555,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7777777777777778,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.3
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.78 because the answer provides some relevant information about authentication, but includes multiple URLs that do not directly address the specific question about authenticating users with access tokens.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining accuracy and alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.50 because the first node discusses claims accessed via the UserInfo endpoint, which is not about authentication with access tokens, and should be ranked lower. The second node is correctly ranked as it provides relevant information about configuring authorized applications. The third node provides general information about permissions and extension ratings, which is not relevant and should be ranked lower. The fourth node discusses security settings and authentication strategies for failed login attempts, also not relevant and should be ranked lower. The fifth node discusses OpenID Connect claims and group synchronization, which is not directly related and should be ranked lower.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions the 'Authorized Applications' configuration and some aspects of token claims, but it lacks detailed information about JWT, Ed25519 key, and specific steps for enabling and configuring the token authenticator."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

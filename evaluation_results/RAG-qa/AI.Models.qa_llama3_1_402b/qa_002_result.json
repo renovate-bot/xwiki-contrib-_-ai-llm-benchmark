@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.5623809523809524,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.9333333333333333,
+    "ContextualPrecision": 0.25,
+    "ContextualRecall": 0.42857142857142855,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 0.93 because the actual output incorrectly claims that you can check if the notification module is enabled by checking the `notifications.enabled` property in the `xwiki.properties` file, which is not mentioned in the retrieval context.",
+    "ContextualPrecision": "The score is 0.25 because the relevant node (fourth node) is ranked lower than several irrelevant nodes. For example, the first node discusses the 'Clear All' link, default notification settings, and grouping of notifications, but does not address enabling notifications or subscribing to pages/users. The second node lists dependencies for the notifications extension but does not provide information on enabling notifications or subscribing to pages/users. The third node describes various ways to receive notifications but does not explain how to enable notifications or subscribe to pages/users. The fifth node describes the 'What's New' application but does not provide information on enabling notifications or subscribing to pages/users.",
+    "ContextualRecall": "The score is 0.43 because while the retrieval context supports enabling notifications and watching pages or wikis, it lacks information on subscribing to pages or users, following users, and the 'network' tab in user profiles.",
+    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications in xwiki.properties and the alert menu, but lacks details on subscribing to pages or users and viewing the network tab in the user profile."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

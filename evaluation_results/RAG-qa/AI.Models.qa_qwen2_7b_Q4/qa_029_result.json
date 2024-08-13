@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6171428571428571,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7857142857142857,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.3
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.79 because the answer provides some relevant information, but it includes several irrelevant links that do not directly address the question about refusing script rights to a space administrator.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'default right settler policies and conflict resolution,' which does not address the specific question about refusing script rights to an administrator.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions that rights implied by an admin right will not be overridden by a denial at a lower level, but does not explicitly state that admin rights cannot be refused."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6209523809523809,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9047619047619048,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.90 because the answer is mostly relevant and provides useful information, but it includes some irrelevant statements that do not directly address the input question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.20 because the relevant node in the fifth position mentions the `xwiki.properties` file, which is pertinent to the required configuration change for automatically activating user accounts with OpenID Connect. However, the irrelevant nodes ranked higher provide general information about OpenID Connect Authenticator, general configuration guides, and various configuration options without addressing the specific property `oidc.enableUser` that needs to be set to `true` in `xwiki.properties`.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the information in the retrieval context nodes, particularly the 2nd node under 'Configuration files'. Great job!",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about modifying the `xwiki.properties` file or the `oidc.enableUser` property."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

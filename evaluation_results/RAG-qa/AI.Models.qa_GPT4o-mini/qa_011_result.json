@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.38823529411764707,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9411764705882353,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.94 because the response is highly relevant to the input, but the term 'Benutzereinstellungen' is too vague and does not provide specific information relevant to the issue mentioned.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'getting a notification RSS feed and settings for notifications,' which does not address the issue of the notification bell not being available.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention enabling notifications through the `xwiki.properties` file or setting `notifications.enabled` to `true`.",
+    "CustomContextualRelevancy": "The retrieval context does not mention `notifications.enabled` or setting it to `true` in `xwiki.properties`."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

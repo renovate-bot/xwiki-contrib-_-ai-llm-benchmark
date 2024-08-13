@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6142483660130719,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8823529411764706,
+    "Faithfulness": 0.8888888888888888,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.3
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.88 because the answer is mostly relevant and addresses the question about enabling notifications for one's own actions, but it includes URLs that are not directly related to the specific query.",
+    "Faithfulness": "The score is 0.89 because the actual output incorrectly states that you can access the notifications menu by clicking on the bell icon in the top bar, whereas the retrieval context specifies that notifications are received under the Alert entry, represented by a bell, in XWiki 9.3+.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses how to get a notification RSS feed and does not mention anything about enabling notifications for one's own actions. The second node provides a description and links to various notification-related features but does not address the specific issue of enabling notifications for one's own actions. The third node lists various notification preferences macros but does not provide information on how to enable notifications for one's own actions. The fourth node explains how to override default notification templates and install extensions but does not address enabling notifications for one's own actions. The fifth node lists different ways to be notified in XWiki but does not provide specific instructions on enabling notifications for one's own actions.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output can be directly attributed to the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions default notification settings and filtering options but lacks details about disabling the filter in 'Options de filtrage avanc\u00e9es'."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

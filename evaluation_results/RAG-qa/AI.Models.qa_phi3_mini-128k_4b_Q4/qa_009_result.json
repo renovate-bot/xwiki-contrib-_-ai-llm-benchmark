@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.32,
+  "individual_scores": {
+    "AnswerRelevancy": 0.5,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.1
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.50 because while some parts of the output might be related to the topic of script rights, there are significant irrelevant statements that detract from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For instance, the first node discusses methods for checking access rights and handling access denial, which does not address the specific question. Similarly, the fourth node provides details on HTTP methods for managing attachments and objects in a wiki, which is unrelated to the question.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention or explicitly state that rights implied by admin rights cannot be denied, which is the main point of the expected output.",
+    "CustomContextualRelevancy": "The retrieval context does not contain information about denying rights implied by admin right."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

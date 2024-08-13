@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6133333333333334,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3666666666666667,
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and directly addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.37 because the relevant nodes in the retrieval context are ranked lower than irrelevant nodes. For example, the first node discusses enabling and disabling the notification module and email notifications at the platform level, which is not directly related to user-specific notification settings. Similarly, the second node talks about getting an RSS feed of notifications and the general settings menu but does not provide specific information about disabling notifications for pages the user is not interested in. These irrelevant nodes are ranked higher than relevant nodes, such as the third node which mentions 'Watch and custom filters' and 'Enabling notifications for all users by default,' and the fifth node which includes 'Choosing the default auto-watched mode,' both directly addressing the user's issue.",
+    "ContextualRecall": "The score is 0.50 because while some aspects of notifications and settings were mentioned in the nodes in retrieval context, key details about being notified about changes on your work and changing the 'Automatic page watching' setting were not explicitly covered.",
+    "CustomContextualRelevancy": "The retrieval context mentions settings and filters but lacks details on automatic page watching and deleting filters created this way."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3230769230769231,
+  "individual_scores": {
+    "AnswerRelevancy": 0.6153846153846154,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.62 because the response contains multiple irrelevant links that do not address the issue of not receiving notifications, but it still provides some relevant information.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For instance, the first node discusses 'various applications in XWiki, such as Meeting Application and Forum Application,' which does not address notifications. Similarly, the second node talks about 'access rights and executing tasks with specific user rights,' which is unrelated to notifications. This pattern continues with nodes discussing topics like 'how links inside scripting macros are handled,' 'embedding model and chunking method for document collections,' and 'configuring permissions for guest users in an open wiki,' none of which are relevant to notifications.",
+    "ContextualRecall": "The score is 0.00 because none of the nodes in the retrieval context mention enabling notifications, following pages or users, or viewing user activities in the 'Network' tab.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about enabling notifications, following pages or users, or configuring notification settings as described in the expected output."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.28888888888888886,
+  "individual_scores": {
+    "AnswerRelevancy": 0.4444444444444444,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.44 because multiple URLs provided in the output do not directly address the issue of not receiving notifications, making the response less relevant. However, the score is not lower because the response may still contain some useful information or context related to the topic.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'various applications like Meeting Application, Forum Application, and Ideas Application,' which are not related to notification settings. Similarly, the second node explains 'access rights and API usage,' which is not relevant to enabling notifications or following users/pages.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about enabling notifications, following pages or users, or configuring notification settings as described in the expected output."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

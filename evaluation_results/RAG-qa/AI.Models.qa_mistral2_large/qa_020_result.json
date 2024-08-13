@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3652173913043478,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8260869565217391,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.83 because the provided answer is mostly relevant but includes repeated irrelevant statements about a URL that does not directly address the configuration question about setting visibility and editing permissions in XWiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'additional actions that can be performed in XWiki,' which does not provide specific steps for configuring access control. Similarly, the second node talks about 'various macros and their functionalities,' which does not address the specific question of configuring access control for teams and areas.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about creating groups, setting wiki-wide or section-specific rights, or inheriting rights for child pages."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

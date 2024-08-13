@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.7868831168831169,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8571428571428571,
+    "Faithfulness": 0.75,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.7272727272727273,
+    "CustomContextualRelevancy": 0.6
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.86 because the majority of the answer is relevant to configuring attachment settings in XWiki, but it includes links to an extension and a user guide that are not directly related to the specific query.",
+    "Faithfulness": "The score is 0.75 because the actual output incorrectly mentions configuring 'attachment.download.whitelist' and setting the maximum size of an attachment to 10 MB, which are not supported by the retrieval context.",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes, ensuring precise and accurate retrieval.",
+    "ContextualRecall": "The score is 0.73 because while the retrieval context nodes provided detailed steps for configuring MIME types and maximum upload size (supporting sentences 2, 3, and 4), the introductory statement and headings (sentences 1, 5, and 6) were not directly supported by any specific node in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context includes steps to configure maximum attachment size and mentions MIME type restrictions, but it lacks specific details on configuring MIME types in the xwiki.properties file and setting the maximum size to 10 MB."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

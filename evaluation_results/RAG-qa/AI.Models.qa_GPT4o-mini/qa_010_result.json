@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.4640000000000001,
+  "individual_scores": {
+    "AnswerRelevancy": 0.92,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the answer is mostly relevant and provides useful information, but it includes URLs that are not directly related to configuring view and edit permissions in XWiki, which slightly detracts from its relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.20 because the relevant node discussing 'how permissions are set for groups and users' is ranked fifth, while irrelevant nodes such as 'how pages and spaces are created and managed' (rank 1), 'parent/child relationship and nested pages' (rank 2), 'various macros available' (rank 3), and 'specification for XWiki link syntax' (rank 4) are ranked higher.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions setting rights and creating spaces but lacks specific steps on creating groups for each team and setting rights at different levels."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

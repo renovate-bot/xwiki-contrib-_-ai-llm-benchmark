@@ -1,9 +1,9 @@
 {
-  "score": 0.8888888888888888,
-  "reason": "The score is 0.89 because the summary contains minor contradictions regarding the location of panels and the details in the footer area, but otherwise closely matches the original text.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary contains multiple contradictions, including omitting key actions that can be performed on a page, misrepresenting the purpose of subwikis, and incorrectly specifying the customization of panels. Additionally, it includes extra information not present in the original text and fails to answer several questions that the original text addresses.",
   "score_breakdown": {
-    "Alignment": 0.8888888888888888,
-    "Coverage": 1.0
+    "Alignment": 0.6666666666666666,
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

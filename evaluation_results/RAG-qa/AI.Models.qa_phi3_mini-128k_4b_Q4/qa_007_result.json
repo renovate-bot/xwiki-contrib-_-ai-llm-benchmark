@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3807692307692308,
+  "individual_scores": {
+    "AnswerRelevancy": 0.2,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0.25,
+    "ContextualRecall": 0.15384615384615385,
+    "CustomContextualRelevancy": 0.3
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.20 because the output contains multiple irrelevant and incoherent statements that do not address the configuration of group synchronization between XWiki and an OpenID Connect provider.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.25 because the relevant node discussing 'group synchronization, including the use of the `oidc.groups.mapping` property and the `xwiki.properties` file' is ranked fourth. Irrelevant nodes, such as the first node providing 'general information about the OpenID Connect Authenticator' and the second node with 'links to various configuration guides and examples for different systems,' should be ranked lower.",
+    "ContextualRecall": "The score is 0.15 because the retrieval context only partially matches the expected output, specifically in configuring group synchronization and defining group mappings, but lacks detailed steps and examples provided in the expected output.",
+    "CustomContextualRelevancy": "The retrieval context mentions group synchronization and properties like oidc.groups.mapping, but lacks detailed steps and examples found in the expected output."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

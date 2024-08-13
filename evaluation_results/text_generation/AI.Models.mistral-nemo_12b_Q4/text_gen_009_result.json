@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output addresses the Input prompt and aligns with the Expected Output, but includes additional details such as 'Features keynote speeches' and 'Includes workshops' which were not required. The structure and coherence are good, and the text is fluent and free of grammatical errors.",
+  "score": 0.7,
+  "reason": "The Actual Output is relevant and coherent, addressing the main points of the Input prompt. However, it lacks details such as the start and end dates separately, the target audience, and the address is split into multiple lines instead of a single string.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

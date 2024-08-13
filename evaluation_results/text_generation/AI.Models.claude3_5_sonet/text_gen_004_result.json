@@ -1,6 +1,6 @@
 {
-  "score": 1.0,
-  "reason": "The Actual Output directly addresses the Input prompt and stays on topic. It covers all key points from the Expected Output, including noise-cancelling technology, 20-hour battery life, and a comfortable fit. The ideas are logically connected and flow smoothly, and the language is natural and free of grammatical errors.",
+  "score": 0.9,
+  "reason": "The Actual Output addresses the topic and covers all key points from the Expected Output, including noise-cancelling, 20-hour battery life, and comfortable fit. It is coherent and fluent with logical flow and good readability. Minor differences in phrasing and additional details slightly differentiate it from the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

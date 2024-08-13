@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.4600000000000001,
+  "individual_scores": {
+    "AnswerRelevancy": 0.6,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.60 because while the answer may contain some relevant information about authenticating users with access tokens, it is significantly diluted by multiple irrelevant URL statements that do not directly address the question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect faithfulness!",
+    "ContextualPrecision": "The score is 0.50 because the second node, which is relevant as it discusses 'Authorized Applications Configuration' for token-based authentication, is ranked higher than some irrelevant nodes. However, the first node, which discusses profile claims and access tokens without providing information about authenticating users with access tokens, is ranked higher than the relevant node.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions 'Authorized Applications' and some configuration details but lacks specifics on JWT claims, Ed25519 key, and token usage."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

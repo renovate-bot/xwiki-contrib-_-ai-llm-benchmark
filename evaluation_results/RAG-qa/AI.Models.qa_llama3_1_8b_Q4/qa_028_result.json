@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.37142857142857144,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8571428571428571,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.86 because the provided URLs do not directly address the question about limiting file types and sizes for uploads. However, the answer is still relatively high because it likely contains useful information related to the overall configuration and features of XWiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'various macros and preferences related to notifications, office document viewing, PDF table of contents, and other unrelated topics', which does not address file upload restrictions or attachment size limits. Similarly, the second node is about 'customizing the PDF cover by overriding the template `pdfcover.vm` and adding a company logo', which is also unrelated.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about configuring MIME types or setting maximum upload size in XWiki."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

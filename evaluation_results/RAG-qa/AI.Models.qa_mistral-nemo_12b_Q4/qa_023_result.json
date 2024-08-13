@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.7533333333333333,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8666666666666667,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.4
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.87 because the main content is relevant and addresses the question about enabling notifications for one's own actions, but it includes links that are not directly relevant to the specific query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect faithfulness!",
+    "ContextualPrecision": "The score is 0.50 because the second node, which is relevant as it mentions 'Filter your own events,' is ranked lower than the first node, which discusses general notification settings and does not address receiving notifications for one's own activity. Additionally, the third node, which lists various notification preferences macros but does not specifically address notifications for one's own activity, is ranked higher than the relevant node.",
+    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the nodes in the retrieval context, with no unsupportive reasons.",
+    "CustomContextualRelevancy": "The retrieval context mentions that users only get notifications when they are mentioned or when actions are performed on pages they created or updated, but it does not specify that users do not receive notifications about their own activity by default or how to disable this filter in the settings."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

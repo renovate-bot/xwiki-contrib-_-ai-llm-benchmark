@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6690909090909092,
+  "individual_scores": {
+    "AnswerRelevancy": 0.2,
+    "Faithfulness": 1,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.5454545454545454,
+    "CustomContextualRelevancy": 0.6
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.20 because the majority of the output contains irrelevant information that does not address the question about restricting file uploads to images or PDFs with a maximum size of 10 MB in a wiki. The provided links and nonsensical statements detract significantly from the relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because the relevant nodes are ranked higher than the irrelevant nodes. The first node provides detailed steps on setting limits on the maximum size of an attachment, which is directly relevant to configuring the maximum attachment size to 10 MB. The irrelevant nodes, such as the second node mentioning MIME type configurations without specific steps, and the third node about managing documents, are ranked lower.",
+    "ContextualRecall": "The score is 0.55 because while the retrieval context provides detailed steps for configuring the maximum attachment size (sentences 6-11), it does not mention configuring MIME types or ensuring only images or PDFs can be uploaded (sentences 1-5).",
+    "CustomContextualRelevancy": "The retrieval context includes steps for setting the maximum attachment size and mentions MIME type restrictions, but it does not provide the specific MIME type configuration line or the exact 10 MB size in bytes."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

@@ -2,16 +2,16 @@
   "id": "summ_006",
   "prompt": "Please summarize the following text:\n\n\nThis section will guide you through a number of common actions that you may want to do when starting a new wiki. We divided into 3 different parts depending on whether you're a user, an administrator or a developer. Here goes:\n\n\n\n| **If you're a User** | In order to perform the following actions, you may need to log in. Please ask your administrator for your login credentials. Learn more about:* [Creating a page](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/CreatingAPage) * [Editing a page](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/EditingAPage) * [Page history](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/PageHistory) |\n| --- | --- |\n| **If you're an Administrator** | As an Admin, you may want to get started with the following steps:* [Changing the logo and the panels](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/ChangingTheLogoAndThePanels) * [Creating new users](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/CreatingNewUsers) * [Setting user rights](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/SettingUserRights) |\n| **If you're a Developer** | XWiki is also a second generation wiki. You can build simple applications, extend the platform with custom plugins, or even build complex Web applications. The Getting Started guide only covers basic use cases for users and admins, however, there are plenty of resources for Developers as well in the documentation. XWiki's powerful programming features are documented in the [Developer's Guide](https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/). A number of applications are pre-installed but additional applications, macros and other extensions are available on the [Extensions wiki](https://extensions.xwiki.org/xwiki/bin/view/Main/). The documentation for the [XWiki Rendering](https://rendering.xwiki.org/xwiki/bin/view/Main/) has a [dedicated wiki](https://rendering.xwiki.org/xwiki/bin/view/Main/).For documentation related to the development of XWiki itself, visit the [XWiki Development Zone](https://dev.xwiki.org/xwiki/bin/view/Main/). |\n\n**Next: [Step 1 Creating a page](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/CreatingAPage)**\n\n\n",
   "expected_answer": null,
-  "ai_answer": "This text outlines common tasks and resources for different roles when starting with XWiki:\n\n1. **Users**:\n   - Can create, edit pages, view history.\n   - Need to log in (credentials from administrator).\n   - Learn more: Creating a Page, Editing a Page, Page History.\n\n2. **Administrators**:\n   - Change wiki logo and panels.\n   - Create new users.\n   - Set user rights/permissions.\n   - Learn more: Changing the Logo and Panels, Creating New Users, Setting User Rights.\n\n3. **Developers**:\n   - Build applications, extend platform with plugins, create Web apps.\n   - Use Developer's Guide for programming features.\n   - Explore pre-installed apps, macros on Extensions wiki.\n   - Use dedicated wiki for XWiki Rendering documentation.\n   - Visit XWiki Development Zone for development-related docs.\n\nNext step: Creating a page.",
+  "ai_answer": "**Summary:**\n\nThis guide is divided into sections for users, administrators, and developers starting with XWiki:\n\n- **Users**:\n  - Learn to perform actions like creating, editing pages, and viewing page history.\n  - Login credentials may be required; ask your administrator.\n\n- **Administrators**:\n  - Start by changing the logo and panels, creating new users, and managing user rights.\n\n- **Developers**:\n  - Explore XWiki's powerful programming features with resources in the Developer's Guide and various dedicated wikis for extensions, rendering, and development.\n  - Access pre-installed apps and additional extensions on the Extensions wiki.",
   "sources": null,
   "usage": {
     "prompt_tokens": 558,
-    "completion_tokens": 187,
-    "total_tokens": 745
+    "completion_tokens": 133,
+    "total_tokens": 691
   },
-  "average_power_draw": 233.65084886128363,
-  "energy_consumption": 526.7632000426377,
-  "energy_per_input_token": 0.5136647489445516,
-  "energy_per_output_token": 1.2841618723613788,
-  "energy_per_total_token": 0.7070646980438089
+  "average_power_draw": 239.5200144927536,
+  "energy_consumption": 387.3829799443915,
+  "energy_per_input_token": 0.4350173834299736,
+  "energy_per_output_token": 1.087543458574934,
+  "energy_per_total_token": 0.5606121272711888
 }

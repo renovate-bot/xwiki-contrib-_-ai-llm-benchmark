@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3762820512820513,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9583333333333334,
+    "Faithfulness": 0.9230769230769231,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.96 because the response is highly relevant and addresses the issue, but it lacks actionable information or guidance.",
+    "Faithfulness": "The score is 0.92 because the actual output incorrectly states that you can use the Extension Manager to reinstall the Notifications Application, while the retrieval context specifies that installing extensions when offline is not supported.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses how to get a notification RSS feed and the settings for notifications, but it does not address the issue of the notification bell not being available or how to enable notifications in the wiki.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention enabling notifications via the `notifications.enabled` setting in `xwiki.properties`, nor does it provide information about setting `notifications.enabled` to `true` in `xwiki.properties`.",
+    "CustomContextualRelevancy": "The retrieval context does not mention the `notifications.enabled` setting in `xwiki.properties` or how to set it to `true`."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

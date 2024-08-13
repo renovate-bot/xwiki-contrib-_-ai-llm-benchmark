@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output correctly extracts the key information from the Input prompt and is relevant. However, it does not match the Expected Output format, which uses JSON structure. The content is coherent and grammatically correct.",
+  "score": 0.9,
+  "reason": "The Actual Output directly addresses the Input prompt and aligns with the Expected Output by extracting the key information correctly. It is coherent and fluent with appropriate grammar and syntax. However, the format slightly differs from the Expected Output, which uses JSON formatting.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

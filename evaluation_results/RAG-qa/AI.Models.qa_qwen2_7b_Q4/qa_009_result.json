@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3625,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8125,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.81 because the answer mostly addresses the question but includes irrelevant information such as a URL that does not directly address the issue and a statement about Node.js and Express that is not relevant to the platform in question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect faithfulness!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node 'describes methods for checking access rights but does not address the specific question of denying script rights to a space administrator', and the fourth node 'describes HTTP methods for managing attachments in a wiki, which is unrelated to denying script rights to a space administrator'.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention that certain rights cannot be denied if implied by admin rights, nor does it state that rights implied by admin rights cannot be denied.",
+    "CustomContextualRelevancy": "The retrieval context does not mention that rights implied by admin right cannot be denied."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

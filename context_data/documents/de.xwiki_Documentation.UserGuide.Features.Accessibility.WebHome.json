@@ -1,9 +1,0 @@
-{
-  "id": "xwiki:Documentation.UserGuide.Features.Accessibility.WebHome",
-  "url": "https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Accessibility/",
-  "title": "Accessibility",
-  "collection": "Eval_de",
-  "mimetype": "text/markdown",
-  "language": "de",
-  "content": "XWiki versucht, eine barrierefreie Erfahrung zu bieten.\n\nUm dies zu erreichen, streben wir an, die [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Level AA zu erfüllen.\n\nWir führen regelmäßig [automatisierte Tests](https://dev.xwiki.org/xwiki/bin/view/Community/Testing/WCAGTesting/) durch und verfolgen Barrierefreiheitsprobleme.\n\nXWiki-Entwickler folgen unseren Barrierefreiheitsrichtlinien ([WIP](https://forum.xwiki.org/t/proposal-accessibility-guidelines/14318)). Jeder skriptende Benutzer sollte ebenfalls versuchen, diese Richtlinien zu befolgen, um weiterhin barrierefreie Schnittstellen zu erstellen."
-}

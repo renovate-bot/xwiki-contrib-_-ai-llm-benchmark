@@ -2,16 +2,16 @@
   "id": "summ_007",
   "prompt": "Please summarize the following text:\n\n\nWhenever your make a modification to a page in XWiki, it is stored in that page's version history. You can compare any 2 versions of a page to see what has been changed between them. No content is ever lost \u2014 all the content you add to your wiki throughout time is saved. You can easily rollback to a previous version of a page if a recent modifications appears to be wrong.\n\n[![PageHistory.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/GettingStarted/PageHistory/PageHistory.png?width=650&rev=1.1)](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/GettingStarted/PageHistory/PageHistory.png?rev=1.1)\n\nTo compare 2 versions of a page, look for the \"History\" tab at the bottom of the page. You can also find the \"History\" menu item by clicking on the \"More Actions\" button at the top of a page.\n\n* To compare any 2 versions of a page, select those 2 versions and click on the \"Compare selected versions\" button located at the bottom of the page\n\t+ A page will show you the differences in content, attachments and comments between the 2 versions of the page\n\t+ Click on your browser's back button to come back where you were\n* To view the contents of an earlier version of the page, click on that page version number in the \"Version\" column\n* To rollback to a previous version of the page, click on the \"Rollback\" button\n\nFind out more about XWiki's page history feature **[on the Version Control page on XWiki.org.](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/VersionControl)**\n\n**Next: [Step 4 Changing the logo and the panels](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/ChangingTheLogoAndThePanels)**\n\n\n",
   "expected_answer": null,
-  "ai_answer": "XWiki keeps a complete history of all changes made to every page.  \n\nHere's how it works:\n\n* **Version History:** Every modification is recorded, allowing you to compare any two versions and see the exact changes made.\n* **No Content Loss:** All your wiki content is saved over time, so you can always revert to previous versions.\n* **Comparing Versions:**\n    * Use the \"History\" tab or \"More Actions\" button to access the history.\n    * Select two versions and click \"Compare selected versions\" to see the differences.\n    * Click your browser's back button to return.\n* **Viewing Older Versions:** Click on a version number in the \"Version\" column to view its content.\n* **Rolling Back:** Click the \"Rollback\" button to revert to a previous version.\n\nFor more details about XWiki's version control, visit the [Version Control page on XWiki.org](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/VersionControl).\n\n\n",
+  "ai_answer": "XWiki keeps a detailed history of every change made to a page. This means you can:\n\n* **Compare versions:** See exactly what was changed between different versions of a page.\n* **Revert to previous versions:** Easily restore a page to a previous state if a recent change is problematic.\n* **Never lose content:** All your wiki content is permanently saved.\n\nTo access the version history, look for the \"History\" tab at the bottom of a page or under \"More Actions\". You can compare versions, view specific versions, and rollback to previous states from there.  \n\nFor more information about XWiki's version control features, visit the [Version Control page on XWiki.org](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/VersionControl).\n\n\n",
   "sources": null,
   "usage": {
     "prompt_tokens": 457,
-    "completion_tokens": 224,
-    "total_tokens": 681
+    "completion_tokens": 172,
+    "total_tokens": 629
   },
-  "average_power_draw": 215.55739130434782,
-  "energy_consumption": 536.9538079216169,
-  "energy_per_input_token": 0.5279781788806459,
-  "energy_per_output_token": 1.3199454472016148,
-  "energy_per_total_token": 0.7884784257292465
+  "average_power_draw": 224.3137922705314,
+  "energy_consumption": 425.0160173633248,
+  "energy_per_input_token": 0.4791612371627112,
+  "energy_per_output_token": 1.1979030929067778,
+  "energy_per_total_token": 0.6757011404822334
 }

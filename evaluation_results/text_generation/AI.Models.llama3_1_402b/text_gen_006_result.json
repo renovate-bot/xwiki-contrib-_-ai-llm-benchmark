@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output directly addresses the topic of the beauty of nature, covering key points such as landscapes, flora, fauna, and celestial elements. It is coherent, with a logical flow and consistent ideas, and it is fluent, with correct grammar and natural language use.",
+  "reason": "The Actual Output directly addresses the Input prompt by providing a poem about the beauty of nature. It covers all aspects mentioned, including various elements of nature like mountains, sun, trees, rivers, flowers, stars, and the moon. The poem is coherent, flows logically, and is grammatically correct. It aligns well with the Expected Output, describing the wonders of the natural world.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

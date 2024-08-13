@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.7333333333333333,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3666666666666667,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.3
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant with no irrelevant statements.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.37 because the relevant nodes in the retrieval context are not consistently ranked higher than the irrelevant nodes. For example, the first node discusses enabling and disabling the notification module and email notifications, which is not directly related to disabling notifications for specific pages or changes. Similarly, the second node talks about getting a notification RSS feed and the settings menu, which does not address the input query. These irrelevant nodes are ranked higher than the third and fifth nodes, which mention 'Watch and custom filters' and 'Choosing the default auto-watched mode,' both of which are directly relevant to managing and disabling notifications.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are well-supported by the nodes in the retrieval context, ensuring complete alignment.",
+    "CustomContextualRelevancy": "The retrieval context mentions settings for notifications and auto-watched mode but lacks details on major modifications, notification filters, and changing settings in the user profile."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

@@ -1,6 +1,6 @@
 {
-  "score": 1.0,
-  "reason": "The Actual Output is highly relevant to the Input prompt, addressing all key aspects of a space adventure. It is coherent, logically flowing from the introduction of the planet Zephyr-4932 to the exploration and discovery of ancient ruins. The story is fluent, free of grammatical errors and awkward phrasing. It meets the anticipated quality and completeness of the Expected Output by detailing the journey of astronauts exploring a new planet.",
+  "score": 0.8,
+  "reason": "The Actual Output addresses the Input prompt by providing a creative space adventure story and aligns well with the Expected Output by focusing on astronauts exploring new frontiers. However, it deviates slightly by including an asteroid mining subplot, which adds complexity but slightly strays from the core theme of exploring a new planet. The story is coherent, fluent, and well-written.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

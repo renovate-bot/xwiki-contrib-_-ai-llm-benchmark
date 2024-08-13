@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.2,
+  "individual_scores": {
+    "AnswerRelevancy": 0.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.00 because the provided output contains numerous irrelevant statements related to SharePoint and unrelated URLs, which do not address the question about denying script rights to a space administrator in XWiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'checking access rights programmatically using methods like checkAccess and hasAccess', which does not address denying script rights to a space administrator. The second node focuses on 'the usage of checkAccess() method and its importance in security checkpoints', which is also unrelated. The third node provides 'examples of using hasAccess() and checkAccess() methods in scripts', which is not relevant. The fourth node describes 'HTTP methods and status codes for managing attachments in a wiki', which is unrelated. The fifth node describes 'HTTP methods and status codes for managing objects and their properties in a wiki', which is not relevant. The sixth node describes 'HTTP methods and status codes for managing the history of objects in a wiki', which is unrelated to the question.",
+    "ContextualRecall": "The score is 0.00 because the sentence 'This is unfortunately not supported in XWiki, rights that are implied by admin right cannot be denied.' is not found in any of the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not mention that rights implied by admin right cannot be denied."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_010",
+  "prompt": "Adapt the following text to a more technical audience:\n\nThe human brain is a complex organ that controls all functions of the body, interprets information from the outside world, and embodies the essence of the mind and soul.",
+  "expected_answer": "The human brain is a highly intricate and sophisticated organ responsible for regulating and coordinating various physiological processes, processing and interpreting sensory information from the external environment, and serving as the biological substrate for cognitive functions, consciousness, and subjective experiences.",
+  "ai_answer": " The human cerebrum, a highly intricate neural network, orchestrates the somatic and autonomic processes, decodes sensory inputs, and serves as the physiological substrate for cognitive faculties and consciousness.\n\nIn more technical terms, the brain is composed of approximately 86 billion neurons, which communicate with one another through synapses, forming a complex network. This network is responsible for governing the body's functions, such as motor control, homeostasis, and sensory perception. Additionally, the brain's higher-order functions, including cognition, learning, memory, and consciousness, are thought to emerge from the dynamic interactions among these neurons.\n\nNeuroscientists often study the brain using various techniques, such as functional magnetic resonance imaging (fMRI), electroencephalography (EEG), and positron emission tomography (PET). These methods allow researchers to observe the brain's activity in real-time and better understand its underlying mechanisms.\n\nOverall, the brain is a remarkable organ that continues to be the subject of extensive research in the fields of neuroscience, psychology, and cognitive science. Despite the significant advances in our understanding of the brain, many questions remain unanswered, making it an exciting and challenging area of study.",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 51,
+    "completion_tokens": 274,
+    "total_tokens": 325
+  },
+  "average_power_draw": null,
+  "energy_consumption": null,
+  "energy_per_input_token": null,
+  "energy_per_output_token": null,
+  "energy_per_total_token": null
+}

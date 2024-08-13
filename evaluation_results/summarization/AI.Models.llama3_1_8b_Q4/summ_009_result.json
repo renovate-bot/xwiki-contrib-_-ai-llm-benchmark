@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The score is 0.80 because the summary includes contradictory information about XWiki and fails to address a question about modifying a wiki page.",
+  "reason": "The score is 0.80 because the summary includes extra information not mentioned in the original text and fails to answer a question that the original text can answer.",
   "score_breakdown": {
     "Alignment": 0.8333333333333334,
     "Coverage": 0.8

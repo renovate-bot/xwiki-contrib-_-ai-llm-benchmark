@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.38666666666666666,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9333333333333333,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.93 because the response is mostly relevant and addresses the question about customizing user profile fields from an OpenID Connect provider in XWiki. However, it includes links to the XWiki RESTful API documentation and the Administration Application extension, which are not directly related to the specific query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node describes 'general features and installation details of the OpenID Connect Authenticator' but does not provide information on customizing user profile fields or mapping additional fields. Similarly, the second node discusses 'various authentication methods for the XWiki RESTful API' without mentioning customization of user profile fields. All nodes fail to address the specific query about mapping additional user profile fields from an OpenID Connect provider.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about customizing user profile fields or mapping them in the xwiki.properties file."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

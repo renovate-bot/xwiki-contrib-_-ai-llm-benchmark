@@ -2,12 +2,12 @@
   "id": "text_gen_010",
   "prompt": "Adapt the following text to a more technical audience:\n\nThe human brain is a complex organ that controls all functions of the body, interprets information from the outside world, and embodies the essence of the mind and soul.",
   "expected_answer": "The human brain is a highly intricate and sophisticated organ responsible for regulating and coordinating various physiological processes, processing and interpreting sensory information from the external environment, and serving as the biological substrate for cognitive functions, consciousness, and subjective experiences.",
-  "ai_answer": "The human brain is an intricate biological structure that regulates all somatic and autonomic functions, processes sensory data from the external environment, and is the substrate for cognition, consciousness, and emotional states.\n\nRevisions made:\n1. Replaced \"complex organ\" with \"intricate biological structure\" for more technical language.\n2. Used \"regulates all somatic and autonomic functions\" instead of \"controls all functions of the body\" for specificity.\n3. Changed \"interprets information from the outside world\" to \"processes sensory data from the external environment\" for precision.\n4. Replaced \"embodies the essence of the mind and soul\" with \"is the substrate for cognition, consciousness, and emotional states\" to ground the statement in scientific terminology.",
+  "ai_answer": "The human brain is an intricate biological structure that regulates all physiological functions within the body, processes and analyzes sensory data from the external environment, and serves as the substrate for cognition, consciousness, and emotional experiences.",
   "sources": null,
   "usage": {
     "prompt_tokens": 51,
-    "completion_tokens": 174,
-    "total_tokens": 225
+    "completion_tokens": 49,
+    "total_tokens": 100
   },
   "average_power_draw": null,
   "energy_consumption": null,

@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.36470588235294116,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8235294117647058,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.82 because the answer is mostly relevant but includes repeated irrelevant URLs that do not address the specific question about limiting file types and sizes for attachments.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output aligns perfectly with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'system preferences and features related to notifications, office document viewing, and PDF table of contents,' which do not pertain to configuring file upload restrictions. Similarly, the second node is about 'customizing the PDF cover by overriding a template and adding a company logo,' which is also unrelated.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about configuring MIME types or setting maximum attachment size."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

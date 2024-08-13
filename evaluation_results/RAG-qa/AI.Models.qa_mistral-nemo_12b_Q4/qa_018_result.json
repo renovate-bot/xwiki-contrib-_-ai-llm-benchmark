@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.7892307692307693,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9,
+    "Faithfulness": 0.8461538461538461,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.6,
+    "CustomContextualRelevancy": 0.6
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.90 because the main response is highly relevant and provides useful information on setting file upload restrictions in a wiki. However, it includes links to unrelated features, which slightly detracts from its overall relevance.",
+    "Faithfulness": "The score is 0.85 because the actual output incorrectly states that only images or PDF files with a maximum size of 10 MB can be uploaded, while the retrieval context allows attachments up to 100GB by default. Additionally, the actual output mentions an automatic file size limitation feature not present in the retrieval context.",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first node provides 'detailed steps on how to set limits on the maximum size of an attachment,' which is directly relevant. The irrelevant nodes, such as the second node discussing 'MIME type whitelists and blacklists,' the third node about 'managing documents,' the fourth node explaining 'how to create new pages,' and the fifth node discussing 'properties of document collections and embedding models,' are all correctly ranked lower.",
+    "ContextualRecall": "The score is 0.60 because while the retrieval context provides detailed steps for configuring the maximum attachment size (steps 2.1 to 2.5), it lacks information on configuring allowed MIME types and editing the `xwiki.properties` file (step 1).",
+    "CustomContextualRelevancy": "The retrieval context partially covers the expected answer. It includes steps to configure maximum attachment size and mentions MIME type restrictions but lacks specific details on configuring `xwiki.properties` and the exact MIME types allowed."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

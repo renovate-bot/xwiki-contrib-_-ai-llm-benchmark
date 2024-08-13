@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output addresses the Input prompt and is relevant to the Expected Output. It is coherent and logically flows, but it lacks the specific breakdown of start and end dates and the target audience is not explicitly mentioned.",
+  "reason": "The Actual Output addresses the Input prompt and is relevant to the Expected Output. It is coherent and logically structured. However, it does not match the format and specific key names of the Expected Output, and it combines the start and end dates into one field.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.23333333333333334,
+  "individual_scores": {
+    "AnswerRelevancy": 0.16666666666666666,
+    "Faithfulness": 1,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.17 because the output contains multiple irrelevant and incoherent statements that do not address the issue of the missing bell icon or the Alert Notification extension.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node talks about getting a notification RSS feed and settings for notifications, but does not mention enabling notifications in the wiki settings. The second node discusses overriding default notification templates and installation instructions, which are not relevant to enabling notifications in the wiki settings.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention enabling notifications through `xwiki.properties` or setting `notifications.enabled` to `true`, and it lacks any information about the `xwiki.properties` file or the `notifications.enabled` setting.",
+    "CustomContextualRelevancy": "The retrieval context does not mention setting `notifications.enabled` to `true` in `xwiki.properties`."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "en"
+}

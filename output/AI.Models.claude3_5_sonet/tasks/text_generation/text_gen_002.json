@@ -6,8 +6,8 @@
   "sources": null,
   "usage": {
     "prompt_tokens": 27,
-    "completion_tokens": 19,
-    "total_tokens": 46
+    "completion_tokens": 20,
+    "total_tokens": 47
   },
   "average_power_draw": null,
   "energy_consumption": null,

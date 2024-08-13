@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.5066666666666666,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.9,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.3
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the issue of not receiving notifications. Great job!",
+    "Faithfulness": "The score is 0.90 because the actual output incorrectly claims that users do not receive notifications on their wiki, while the context indicates that users do receive notifications under certain conditions.",
+    "ContextualPrecision": "The score is 0.33 because the relevant node, which mentions 'Watched Entities' and 'Follow a user', is ranked third. Irrelevant nodes discussing 'getting a notification RSS feed and the settings for notifications' (first node) and 'overriding default notification templates and installation instructions' (second node) should be ranked lower.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users, but lacks details on setting `notifications.enabled` to `true` in `xwiki.properties` and the specific steps for following pages or users."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

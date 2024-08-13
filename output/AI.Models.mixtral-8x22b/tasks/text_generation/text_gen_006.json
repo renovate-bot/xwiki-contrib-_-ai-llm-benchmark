@@ -1,0 +1,17 @@
+{
+  "id": "text_gen_006",
+  "prompt": "Write a poem about the beauty of nature.",
+  "expected_answer": "A poem describing the wonders of the natural world.",
+  "ai_answer": " In the grand theatre of existence, Nature takes the stage,\nA timeless artist, painting landscapes on Earth's verdant page.\nFrom the whispered secrets of the morning dew,\nTo the crimson sunsets that serenade the twilight's hue.\n\nThe mountains majestic, clad in cloaks of snow,\nGuardian giants standing watch, where the rushing rivers flow.\nThrough emerald forests, where ancient trees do stand,\nTheir roots entwined in silent embrace, with the heart of the land.\n\nThe ocean's song, a symphony of waves and foam,\nA ceaseless serenade, a sonnet to its home.\nBeneath the surface, creatures of the deep abide,\nIn a world unseen, where mystery and beauty reside.\n\nThe sky above, an endless canvas of cerulean hue,\nWhere clouds drift like dreams, and constellations speckle the view.\nThe stars, like diamonds strewn across the velvet night,\nGuide the weary traveler with their gentle, eternal light.\n\nEach petal, each leaf, each creature great and small,\nA testament to the harmony that binds us all.\nNature, in her wisdom, weaves a tapestry so grand,\nA masterpiece of life, painted across the land.\n\nSo let us pause and marvel at the beauty we are given,\nThe miracle of existence, the magic of being alive.\nFor in the face of such splendor, we find our own reflection,\nA humble reminder of the grace of creation.",
+  "sources": null,
+  "usage": {
+    "prompt_tokens": 12,
+    "completion_tokens": 354,
+    "total_tokens": 366
+  },
+  "average_power_draw": null,
+  "energy_consumption": null,
+  "energy_per_input_token": null,
+  "energy_per_output_token": null,
+  "energy_per_total_token": null
+}

@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output correctly identifies the key information but does not match the JSON format of the Expected Output.",
+  "reason": "The Actual Output correctly extracts the key information (name, date of birth, address) from the Input text and presents it clearly. However, it does not match the Expected Output format, which is a JSON object.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

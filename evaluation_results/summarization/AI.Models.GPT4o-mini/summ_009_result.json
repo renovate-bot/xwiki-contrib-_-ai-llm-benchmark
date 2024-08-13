@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary is mostly accurate and concise, with no contradictions or extra information. However, it fails to address whether wikis are flexible and easy to use for adding and linking new pages.",
+  "score": 0.8333333333333334,
+  "reason": "The score is 0.83 because the summary includes extra information not mentioned in the original text, such as XWiki and references pages. However, there are no contradictions, indicating a generally accurate summary.",
   "score_breakdown": {
-    "Alignment": 1.0,
-    "Coverage": 0.8
+    "Alignment": 0.8333333333333334,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

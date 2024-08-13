@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output addresses the topic and includes all key points: sunny day, playful cat, and garden. It is coherent and fluent, but it slightly differs from the Expected Output in phrasing.",
+  "score": 0.9,
+  "reason": "The Actual Output directly addresses the Input prompt and closely aligns with the Expected Output. It is coherent, grammatically correct, and uses natural language. The main difference is the choice of verbs 'frolicked' vs. 'enjoyed exploring', which slightly affects completeness but not quality.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

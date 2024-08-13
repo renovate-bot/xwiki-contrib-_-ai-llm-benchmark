@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3384615384615385,
+  "individual_scores": {
+    "AnswerRelevancy": 0.6923076923076923,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.69 because while the answer attempts to address the configuration question, it includes a URL that does not directly address the specific configuration question asked, which reduces its relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses actions like creating children pages and changing page access rights, which does not specifically address configuring access control for teams in XWiki. The second node describes various macros and their functionalities, which is unrelated to setting up team-specific access controls. Additionally, the third node provides information about XWiki Syntax 2.1, which is not relevant to configuring access control for teams.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any node(s) in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about creating groups, setting wiki-wide or area-specific rights, or inheriting rights for subpages."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

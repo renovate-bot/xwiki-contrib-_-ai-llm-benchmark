@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output directly addresses the Input prompt and covers all necessary aspects, explaining photosynthesis in a way that is engaging for a younger audience. It is coherent and flows logically, with no abrupt transitions. The language is fluent, grammatically correct, and uses appropriate vocabulary. While it is slightly more detailed and playful than the Expected Output, it remains aligned in terms of relevance, coherence, and fluency.",
+  "reason": "The Actual Output directly addresses the Input prompt by explaining photosynthesis in a way that is engaging for a younger audience. It is coherent and logically flows with the Expected Output, adding a bit more detail and analogy to make it relatable. The fluency is high, with proper grammar and readability.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

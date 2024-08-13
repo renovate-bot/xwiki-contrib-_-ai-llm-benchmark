@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.5264661654135339,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7894736842105263,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 0.14285714285714285,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.79 because while the response provides some useful information, it includes multiple URLs that do not directly address the specific question about authenticating users with access tokens.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
+    "ContextualPrecision": "The score is 0.50 because the first node discusses 'various claims that can be accessed using an access token,' which is not relevant to the authentication of users with access tokens. The second node, which is relevant as it describes the 'Authorized Applications' configuration, is ranked lower. Additionally, nodes ranked 3, 4, and 5 provide information on a security module, cookie protection, and user profile rights, none of which are directly related to the authentication of users with access tokens.",
+    "ContextualRecall": "The score is 0.14 because the retrieval context only partially aligns with the expected output, specifically in configuring authorized applications (sentence 2), but lacks information on token-based authentication, JWT claims, steps to enable the authenticator, generating JWT tokens, including tokens in requests, and the limitations of the authenticator.",
+    "CustomContextualRelevancy": "The retrieval context mentions 'Authorized Applications' but lacks details on JWT claims, token generation, and specific configuration steps."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

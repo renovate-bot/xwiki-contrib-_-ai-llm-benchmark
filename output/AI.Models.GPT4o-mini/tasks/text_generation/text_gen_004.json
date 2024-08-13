@@ -2,12 +2,12 @@
   "id": "text_gen_004",
   "prompt": "Generate a short product description based on the following information:\n\nProduct: Wireless Bluetooth Headphones\nFeatures: Noise-cancelling, 20-hour battery life, comfortable fit\nTarget audience: Tech-savvy professionals",
   "expected_answer": "Introducing our cutting-edge wireless Bluetooth headphones, designed for tech-savvy professionals who demand the best. With advanced noise-cancelling technology, you can immerse yourself in your music or focus on your work without any distractions. Enjoy an impressive 20-hour battery life, ensuring your headphones keep up with your busy lifestyle. The comfortable, ergonomic fit allows you to wear them all day long without any discomfort. Upgrade your audio experience with our premium wireless headphones.",
-  "ai_answer": "Experience unparalleled audio clarity with our Wireless Bluetooth Headphones, designed specifically for tech-savvy professionals on the go. Featuring advanced noise-cancelling technology, these headphones create an immersive sound environment, allowing you to focus in any setting. With an impressive 20-hour battery life, you can power through long meetings or commutes without interruption. Plus, the comfortable fit ensures that you can wear them all day long without discomfort. Elevate your listening experience and stay productive with our state-of-the-art headphones.",
+  "ai_answer": "Experience unparalleled sound quality and comfort with our Wireless Bluetooth Headphones, designed specifically for tech-savvy professionals on the go. Featuring advanced noise-cancelling technology, these headphones immerse you in your favorite tunes while blocking out distractions in bustling environments. With an impressive 20-hour battery life, you can enjoy extended listening sessions without interruption. The ergonomic design ensures a comfortable fit, making them perfect for long workdays or commutes. Elevate your audio experience and stay focused with our premium wireless headphones\u2014your ideal companion for productivity and leisure.",
   "sources": null,
   "usage": {
     "prompt_tokens": 48,
-    "completion_tokens": 100,
-    "total_tokens": 148
+    "completion_tokens": 107,
+    "total_tokens": 155
   },
   "average_power_draw": null,
   "energy_consumption": null,

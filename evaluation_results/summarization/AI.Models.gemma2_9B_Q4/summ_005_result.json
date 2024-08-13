@@ -1,9 +1,9 @@
 {
-  "score": 0.6666666666666666,
-  "reason": "The score is 0.67 because the summary contains several pieces of contradicting information and extra details not mentioned in the original text. Specifically, it incorrectly states the functionality and access methods of the RSS feed and adds information about XWiki being a collaborative wiki platform, which is not mentioned in the original text.",
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary contains some contradictions regarding the functionality of the Tags and Watchlist feeds, and it fails to answer whether the default wiki provides a feed for all modified pages.",
   "score_breakdown": {
-    "Alignment": 0.6666666666666666,
-    "Coverage": 1.0
+    "Alignment": 0.8181818181818182,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

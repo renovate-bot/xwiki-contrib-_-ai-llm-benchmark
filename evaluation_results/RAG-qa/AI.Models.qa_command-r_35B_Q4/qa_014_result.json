@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.34444444444444444,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7222222222222222,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.72 because while the answer addresses the question about deactivating notifications, it includes multiple irrelevant URLs that do not pertain to the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because the nodes in retrieval context ranked from 1 to 5 discuss 'XWiki Syntax, verbatim content, and quotations', 'an extension for authenticating users with JSON Web Tokens', 'various management and API resources for the LLM Application', 'information for developers on building applications with XWiki', and 'database migration and invalid extensions during an upgrade', which are all unrelated to disabling notifications.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to automatic page tracking, notification settings, or custom filters as mentioned in the expected output."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

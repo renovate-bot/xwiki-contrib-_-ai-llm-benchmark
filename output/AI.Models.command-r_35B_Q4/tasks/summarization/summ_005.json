@@ -2,16 +2,16 @@
   "id": "summ_005",
   "prompt": "Please summarize the following text:\n\n\n**Contents*** [Available Feeds](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/RSS#HAvailableFeeds)\n* [Customized RSS Feeds](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/RSS#HCustomizedRSSFeeds)\nRSS Feeds can be used to get notification from activity taking place on an XWiki instance.\n\n# Available Feeds\n\nSeveral RSS feeds are provided by default and it is possible to create new ones easily when required. The default wiki (extensions might provide more) provides the following RSS feeds:\n\n* Feed for all modified pages. This is available from the [Notifications Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/).\n* Feed for all Blog posts. This is available if your wiki has the [Blog application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Blog%20Application) installed.\n* Feeds for Search results. This is available if your wiki has the [Search application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Search%20Application) installed.\n* Feeds on Tags. This is available if your wiki has the [Tag application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Tag%20Application) installed.\n* The [Watchlist Feature](https://extensions.xwiki.org/xwiki/bin/view/Extension/Watchlist%20Application) allows you to get a RSS feed of all the modifications to the pages in your Watchlist.\n\nNote that you can choose to start receiving information from the Blog and modified pages feeds by using your browser's RSS notification button. For example on Firefox:\n\n![rss.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/RSS/rss.png?rev=1.1)\n\n# Customized RSS Feeds\n\nEven more so, it's easy to create new RSS feeds to fit a specific need (or modify existing RSS feeds):\n\n* You can also easily create your own page that outputs RSS (Atom, RDF, etc). Edit the Main.WebRss page in your wiki to see how it's implemented and do the same in your own page.\n* You can also modify the existing RSS pages (e.g. Main.WebRss) if you wish to customize the default RSS content produced by the various applications.\n\n\n",
   "expected_answer": null,
-  "ai_answer": "XWiki provides several default RSS feeds for users to keep up with the latest modifications, blog posts, search results or tags. Users can also create customized RSS feeds specific to their needs by creating new pages or modifying existing ones. This flexibility allows users to stay informed of changes and personalize their experience.\n",
+  "ai_answer": "XWiki offers several default RSS feeds for things like modified pages, blog posts, search results and tags. Users can also create custom RSS feeds by editing existing feed pages or creating new ones. This allows users to stay up-to-date with the latest modifications and content on the wiki.",
   "sources": null,
   "usage": {
     "prompt_tokens": 583,
-    "completion_tokens": 61,
-    "total_tokens": 644
+    "completion_tokens": 59,
+    "total_tokens": 642
   },
-  "average_power_draw": 109.4969798136646,
-  "energy_consumption": 708.4703938663413,
-  "energy_per_input_token": 0.9632500256510419,
-  "energy_per_output_token": 2.4081250641276046,
-  "energy_per_total_token": 1.1001093072458716
+  "average_power_draw": 108.50989328063238,
+  "energy_consumption": 683.4112289630621,
+  "energy_per_input_token": 0.9355389855757181,
+  "energy_per_output_token": 2.3388474639392953,
+  "energy_per_total_token": 1.064503471905081
 }

@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.7468065268065269,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8333333333333334,
+    "Faithfulness": 0.8461538461538461,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.45454545454545453,
+    "CustomContextualRelevancy": 0.6
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.83 because the answer provides relevant information about attachment restrictions in XWiki, but includes URLs that do not directly address the specific question about ensuring only images or PDF files with a maximum size of 10 MB can be uploaded.",
+    "Faithfulness": "The score is 0.85 because the actual output incorrectly states that the maximum size for attachments is 10 MB and that only images and PDF files with a maximum size of 10 MB can be uploaded, whereas the retrieval context mentions different default maximum sizes and does not restrict file types to only images and PDFs.",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first node provides steps to set limits on the maximum size of an attachment and where the attachments will be stored, which is directly relevant to the input. The subsequent nodes discuss topics such as whitelist and blacklist configurations, managing documents, creating new pages and templates, and configuring properties of document collections, none of which are relevant to setting attachment upload restrictions or maximum sizes.",
+    "ContextualRecall": "The score is 0.45 because while steps 1 through 5 in the expected output match the 1st node in the retrieval context, the introductory statements and specific configuration instructions do not have corresponding nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context contains instructions for setting the maximum attachment size and mentions MIME type restrictions, but it lacks specific details about configuring MIME types in the xwiki.properties file and setting the size to 10 MB."
+  },
+  "question_language": "de",
+  "expected_answer_language": "de",
+  "answer_language": "de"
+}

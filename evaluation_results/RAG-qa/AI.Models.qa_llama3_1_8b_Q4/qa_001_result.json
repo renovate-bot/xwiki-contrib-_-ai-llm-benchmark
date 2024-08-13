@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.8231372549019609,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8823529411764706,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.9
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.88 because the answer is mostly relevant and addresses the issue with the 'Bell' icon in XWiki, but it includes some general comments and invitations for more information that do not directly contribute to solving the problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node (rank 3) mentions the `notifications.enabled` setting in `xwiki.properties`, which is directly relevant. However, irrelevant nodes ranked higher (ranks 1, 2, 4, and 5) discuss topics like notification RSS feeds, overriding templates, the 'Clear All' link, and the notifications menu, which do not address enabling notifications in the `xwiki.properties` file.",
+    "ContextualRecall": "The score is 1.00 because the retrieval context perfectly supports the expected output. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions the `notifications.enabled` setting in `xwiki.properties` and its default value, which aligns with the expected output. However, it does not explicitly state that this setting should be set to `true` to enable notifications."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

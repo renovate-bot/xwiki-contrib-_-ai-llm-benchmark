@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.36363636363636365,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8181818181818182,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.82 because the answer is mostly relevant and provides useful information, but it includes links that are not directly related to customizing user profile fields from an OpenID Connect provider, which slightly detracts from its overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node provides general information about the OpenID Connect Authenticator, but does not mention anything about customizing user profile fields or mapping additional fields. The second node discusses various authentication methods for the XWiki RESTful API, but does not address customizing user profile fields or mapping additional fields from OpenID Connect. The third node explains the configuration of the OIDC authenticator in XWiki, but does not provide information on mapping additional user profile fields or customizing user profile fields. The fourth node details the features available on the global Administration page, including user management, but does not mention anything about customizing or mapping user profile fields from OpenID Connect. The fifth node provides information on various authentication methods, including OpenID Connect, but does not discuss customizing user profile fields or mapping additional fields.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about customizing user profile fields or mapping them in the xwiki.properties file."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

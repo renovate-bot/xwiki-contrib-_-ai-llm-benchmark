@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output is relevant to the Input and covers all critical points such as noise-cancelling, 20-hour battery life, and comfortable fit. However, it includes additional details like 'crystal clear sound quality' and 'minimal charging attention' which are not in the Expected Output. The structure and flow are coherent, and the language is fluent with minor deviations.",
+  "score": 0.5,
+  "reason": "The Actual Output is relevant to the Input and covers key features like noise-cancelling, 20-hour battery life, and comfort. However, it is overly verbose and repetitive, lacking the concise and professional tone seen in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

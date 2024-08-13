@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary contains contradictions regarding programming rights and the inclusion of a tabular view. Additionally, it fails to answer specific questions about the default status of the comment right and the register right for the non-registered pseudo-user 'XWiki.XWikiGuest'.",
+  "score": 0.9166666666666666,
+  "reason": "The score is 0.92 because the summary includes extra information about a table with additional information that is not mentioned in the original text.",
   "score_breakdown": {
-    "Alignment": 0.8333333333333334,
-    "Coverage": 0.6
+    "Alignment": 0.9166666666666666,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

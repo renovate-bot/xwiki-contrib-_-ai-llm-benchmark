@@ -1,0 +1,7 @@
+{
+  "score": 0.9,
+  "reason": "The Actual Output directly addresses the Input prompt and aligns with the Expected Output in terms of relevance. It is coherent and logically flows from one idea to the next. The only minor difference is the use of 'loves to frolic' instead of 'enjoyed exploring,' but both convey a similar meaning and maintain fluency.",
+  "prompt_language": "en",
+  "expected_answer_language": "en",
+  "generated_text_language": "en"
+}

@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output is relevant to the Input prompt and covers all key points from the Expected Output, such as 'sunny day', 'playful cat', and 'garden'. The ideas are logically connected and the sentence is fluent with no grammatical errors. However, the addition of 'chased butterflies amidst the blooming flowers' introduces extra details not present in the Expected Output.",
+  "reason": "The Actual Output addresses the Input prompt and matches the context of the Expected Output. It is coherent, grammatically correct, and uses natural language. While it uses different phrasing, the main ideas and details align closely with the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

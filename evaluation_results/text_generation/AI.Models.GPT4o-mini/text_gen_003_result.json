@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output effectively addresses the Input prompt by simplifying the concept of photosynthesis for a younger audience. It aligns well with the Expected Output, though it adds a playful tone and emojis which are not present in the Expected Output. The ideas are logically connected and the text is fluent with good grammar and readability.",
+  "reason": "The Actual Output effectively addresses the topic of photosynthesis for a younger audience, using relatable metaphors like 'magic trick' and 'superpower.' It covers the key points of using sunlight to make food and grow, similar to the Expected Output. The text is coherent and fluent, though slightly more playful than the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.46461538461538465,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9230769230769231,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.4,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the answer is highly relevant and addresses the main question about configuring XWiki for automatic user account activation using OpenID Connect. However, it includes an irrelevant link to XWiki RESTful API documentation, which slightly detracts from its overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context provide general information about OpenID Connect Authenticator, container authentication, or various authentication methods, but none address the specific configuration needed to automatically activate user accounts. For example, the first node provides general information about the OpenID Connect Authenticator, including installation and developer details, but does not address the specific configuration needed to automatically activate user accounts.",
+    "ContextualRecall": "The score is 0.40 because while the 3rd node in the retrieval context mentions 'OpenId Connect Authentication' and 'xwiki.cfg configuration file', aligning with adjusting 'xwiki.properties' for OpenID Connect, it does not mention adding or updating the specific property 'oidc.enableUser=true', nor does it mention saving the file and restarting the XWiki instance.",
+    "CustomContextualRelevancy": "The retrieval context does not contain information about adjusting the `xwiki.properties` file or setting the `oidc.enableUser` property."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

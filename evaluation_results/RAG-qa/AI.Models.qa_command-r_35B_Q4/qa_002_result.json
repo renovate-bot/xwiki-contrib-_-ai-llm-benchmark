@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.54,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.25,
+    "ContextualRecall": 0.25,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and addresses the question without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.25 because the relevant node, which mentions the `notifications.enabled` setting in `xwiki.properties`, is ranked fourth. Irrelevant nodes, such as the first node discussing visual aspects of notifications and the second node listing dependencies for the notifications extension, are ranked higher.",
+    "ContextualRecall": "The score is 0.25 because only a few elements from the expected output, such as 'notifications.enabled' and watching a page or its children, are mentioned in the nodes in the retrieval context, while most other details are missing.",
+    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications in xwiki.properties and the alert menu but lacks details on subscribing to pages or users and viewing the network tab."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

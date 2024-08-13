@@ -1,6 +1,6 @@
 {
-  "score": 0.7,
-  "reason": "The Actual Output addresses the topic and covers most key points but misses separating the start and end dates, and the address is incomplete.",
+  "score": 0.8,
+  "reason": "The Actual Output addresses the Input prompt and is relevant to the Expected Output. It is coherent and fluent, but it lacks the specific format and some details such as 'start_date', 'end_date', 'venue', 'address', and 'target_audience' as specified in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output addresses the Input prompt and extracts the correct information. However, it does not match the Expected Output format exactly, as it uses a different structure.",
+  "score": 0.9,
+  "reason": "The Actual Output correctly extracts the name, date of birth, and address from the Input and is coherent and fluent, but it does not match the Expected Output format.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

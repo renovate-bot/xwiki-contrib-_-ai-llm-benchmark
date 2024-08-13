@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.5419047619047619,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8666666666666667,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 0.14285714285714285,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.87 because the main content is relevant and addresses the question about authenticating users with access tokens, but the repeated irrelevant URLs slightly detract from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.50 because the first node discusses claims via access tokens but not the authentication process, and it is ranked higher than the second node, which provides relevant information about configuring authorized applications for using access tokens to authenticate users. Additionally, nodes ranked 3, 4, and 5 provide information on a security module, security settings for cookies, and user profile visibility, none of which are relevant to the authentication process using access tokens.",
+    "ContextualRecall": "The score is 0.14 because only the 2nd sentence in the expected output is partially supported by the 2nd node in the retrieval context, while the rest of the sentences lack corresponding information in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions 'Authorized Applications' and configuring properties like title, URL, and public key, but lacks details on JWT claims, enabling the authenticator, and using the token."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

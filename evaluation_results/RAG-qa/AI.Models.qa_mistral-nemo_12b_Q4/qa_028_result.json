@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.3538461538461538,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7692307692307693,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.77 because the answer partially addresses the input question but includes irrelevant information about a URL that does not directly address the requirement for file type and size restrictions.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to configuring file upload restrictions. For example, the first node discusses 'various macros and their functionalities,' which is not related to the input query. Similarly, the second node talks about 'customizing the PDF cover,' which is also unrelated.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not provide any relevant information or steps related to configuring MIME types or setting a maximum attachment size as described in the expected output.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about configuring MIME types or setting maximum attachment size."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

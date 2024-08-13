@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary includes contradictory information about illustrations and extra information about creating a basic application, which were not mentioned in the original text. Additionally, the summary fails to answer specific questions that the original text can address.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary includes contradictory information about providing visual examples for different configurations and adds extra information about directing users to the next step in creating a basic application. Additionally, the summary fails to answer several questions that the original text can address.",
   "score_breakdown": {
-    "Alignment": 0.7777777777777778,
-    "Coverage": 0.6
+    "Alignment": 0.6666666666666666,
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

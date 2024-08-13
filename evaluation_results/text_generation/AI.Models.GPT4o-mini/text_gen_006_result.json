@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output is highly relevant to the Input prompt, addressing the beauty of nature with vivid imagery and poetic language. It flows logically from one stanza to the next, maintaining coherence and fluency throughout. The poem covers all critical aspects of the Expected Output, describing various elements of the natural world in a harmonious and detailed manner.",
+  "reason": "The Actual Output directly addresses the Input prompt by describing the beauty of nature and aligns with the Expected Output. It is coherent, flowing logically from one stanza to the next, and maintains consistency throughout. The poem is fluent, with correct grammar, natural language use, and high readability.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,9 +1,9 @@
 {
-  "score": 0.4,
-  "reason": "The score is 0.40 because the summary includes contradictory information about XWiki, which is not mentioned in the original text. Additionally, the summary fails to answer several questions that the original text can address, such as the functionality of the 'edit' button, the storage of previous versions, and features like access rights management and notifications.",
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary fails to answer a specific question that the original text can answer, which is whether it is possible to revert to a previous version of a wiki page.",
   "score_breakdown": {
-    "Alignment": 0.8,
-    "Coverage": 0.4
+    "Alignment": 1.0,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

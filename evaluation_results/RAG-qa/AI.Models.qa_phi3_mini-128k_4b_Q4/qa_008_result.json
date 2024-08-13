@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.7909090909090908,
+  "individual_scores": {
+    "AnswerRelevancy": 0.8,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.45454545454545453,
+    "CustomContextualRelevancy": 0.7
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.80 because the answer partially addresses the question but includes irrelevant information about XWiki syntax documentation, WordPress, and general statements that do not provide specific steps for setting upload restrictions.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly faithful to the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. Great job!",
+    "ContextualRecall": "The score is 0.45 because while the retrieval context covers the steps for configuring the maximum attachment size (Steps 2.1 to 2.5), it does not provide any information on configuring allowed mimetypes (Step 1).",
+    "CustomContextualRelevancy": "The retrieval context includes steps for setting maximum attachment size and mentions mimetype restrictions, but lacks specific details on configuring the `xwiki.properties` file and the exact mimetype allowList."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

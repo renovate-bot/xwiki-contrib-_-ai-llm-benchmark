@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6523076923076923,
+  "individual_scores": {
+    "AnswerRelevancy": 0.9230769230769231,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 0.5384615384615384,
+    "CustomContextualRelevancy": 0.3
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.92 because the answer is mostly relevant and provides useful information on configuring group synchronization between XWiki and an OpenID Connect provider. However, it includes a link to documentation on creating new users in XWiki, which is not directly relevant to the specific question asked.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.50 because the relevant node ranked 2 mentions 'default group synchronization' and 'relevant properties in the `xwiki.properties` file', which are directly related to the input. However, irrelevant nodes ranked 1, 3, 4, and 5 provide general information, such as 'prerequisites, installation instructions, and dependencies', 'developer, license, and compatibility', 'various endpoints, customization options, and troubleshooting tips', and 'a link to more information about managing users and groups in XWiki', which do not address the specific steps for configuring group synchronization.",
+    "ContextualRecall": "The score is 0.54 because while the retrieval context covers configuring 'xwiki.properties' and various 'oidc' properties (nodes 2-6), it lacks explicit mentions of locating and opening the file (sentence 1-2), replacing placeholder values (sentences 3, 5, 7), and saving/restarting the instance (sentence 8).",
+    "CustomContextualRelevancy": "The retrieval context mentions configuring group synchronization in the xwiki.properties file and using properties like oidc.groups.mapping, but it lacks detailed steps and examples present in the expected output."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

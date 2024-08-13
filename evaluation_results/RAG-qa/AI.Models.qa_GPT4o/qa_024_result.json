@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.8516666666666666,
+  "individual_scores": {
+    "AnswerRelevancy": 0.875,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5833333333333333,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.8
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.88 because the main content is relevant and provides useful information on how to disable notifications, but it includes URLs that do not directly address the question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
+    "ContextualPrecision": "The score is 0.58 because the first node discusses getting a notification RSS feed and mentions the notifications macro, which does not directly address how to disable unwanted notifications. Additionally, the fourth node lists various ways to receive notifications but does not provide information on how to disable them. The fifth node discusses overriding default notification templates and installation instructions, which are not relevant to disabling unwanted notifications. However, the second and third nodes are correctly ranked as they mention 'Notifications Auto Watch Preferences,' 'Notifications Custom Filters Preferences,' and 'Default Watch Settings,' which are directly related to modifying notification settings.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is well-supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions auto-watched pages and custom notification filters but lacks details on modifying settings and deleting filters."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

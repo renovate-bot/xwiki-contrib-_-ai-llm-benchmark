@@ -1,0 +1,10 @@
+{
+  "score": 0.8461538461538461,
+  "reason": "The score is 0.85 because the summary contains a contradiction regarding the configuration of permissions for an open wiki and includes extra information about documentation for sub-wiki access rights that is not mentioned in the original text.",
+  "score_breakdown": {
+    "Alignment": 0.8461538461538461,
+    "Coverage": 1.0
+  },
+  "input_language": "en",
+  "summary_language": "en"
+}

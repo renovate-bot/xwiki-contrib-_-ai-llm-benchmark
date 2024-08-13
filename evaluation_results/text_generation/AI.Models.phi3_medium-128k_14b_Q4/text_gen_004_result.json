@@ -1,6 +1,6 @@
 {
-  "score": 0.9,
-  "reason": "The Actual Output directly addresses the Input prompt and covers all required aspects, including noise-cancelling, 20-hour battery life, and comfortable fit for tech-savvy professionals. It is coherent, logically flows, and uses natural language fluently. The minor difference is in phrasing compared to the Expected Output.",
+  "score": 0.8,
+  "reason": "The Actual Output addresses the Input prompt and aligns well with the Expected Output, covering key points like noise-cancelling, 20-hour battery life, and comfortable fit for tech-savvy professionals. It is coherent and fluent, though there is a minor typo ('cutting- vice').",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

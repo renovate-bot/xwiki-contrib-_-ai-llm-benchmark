@@ -1,7 +1,7 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output directly addresses the topic of creating a travel guide for a popular tourist destination, Prague. It is logically structured with clear sections on landmarks, cultural delights, food experiences, and travel tips. The text is grammatically correct and reads naturally. It meets the requirements of the Expected Output by providing detailed information on attractions, accommodations, and activities.",
-  "prompt_language": "en",
+  "reason": "The Actual Output directly addresses the Input prompt by providing a detailed travel guide for Rome. It covers key points and themes such as top attractions, food, and travel tips, aligning well with the Expected Output. The guide is coherent, logically structured, and written in fluent, grammatically correct language.",
+  "prompt_language": "ro",
   "expected_answer_language": "en",
   "generated_text_language": "en"
 }

@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.515,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.25,
+    "ContextualRecall": 0.125,
+    "CustomContextualRelevancy": 0.2
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant and there are no irrelevant statements in the actual output. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.25 because the relevant node in the fourth rank mentions the `notifications.enabled` setting in `xwiki.properties`, which is directly relevant to enabling notifications. However, irrelevant nodes in the first, second, third, and fifth ranks discuss how notifications are displayed and managed, list dependencies, provide various ways to receive notifications, and discuss the 'What's New' application for news notifications, none of which explain how to enable notifications or ensure subscriptions.",
+    "ContextualRecall": "The score is 0.12 because only the 5th node in the retrieval context mentions 'notifications.enabled' in xwiki.properties, while the rest of the expected output sentences cannot be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and the bell icon but lacks details on subscribing to pages or users and viewing the network tab."
+  },
+  "question_language": "en",
+  "expected_answer_language": "en",
+  "answer_language": "en"
+}

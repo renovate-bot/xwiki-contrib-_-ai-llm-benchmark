@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output addresses the topic and includes the correct key information, but the format does not match the Expected Output JSON structure.",
+  "reason": "The Actual Output addresses the Input prompt and covers the key points mentioned in the Expected Output. However, it does not follow the JSON format required in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

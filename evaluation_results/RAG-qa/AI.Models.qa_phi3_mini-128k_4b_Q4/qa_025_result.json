@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.38,
+  "individual_scores": {
+    "AnswerRelevancy": 0.5,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.4,
+    "CustomContextualRelevancy": 0.0
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.50 because while the answer addresses the configuration of OpenID Connect, it includes irrelevant information about the XWiki RESTful API documentation and unnecessary instructions, which do not directly help with the specific issue of automatically activating user accounts.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node describes the OpenID Connect Authenticator extension but lacks information on configuring user account activation. The second node discusses container authentication and the xwiki.cfg file without addressing OpenID Connect or user account activation. The third node provides a general description of the OpenID Connect Authenticator and links to various configuration guides but does not mention the specific configuration needed for automatic user activation. The fourth node explains different authentication methods for the XWiki RESTful API and does not address the configuration of OpenID Connect or user account activation. The fifth node lists various endpoints and customization options for the OpenID Connect Authenticator but does not provide information about configuring automatic user account activation.",
+    "ContextualRecall": "The score is 0.40 because while the retrieval context nodes mention configuring OpenID Connect in XWiki and imply automatic activation of user accounts, they do not provide specific instructions for editing the `xwiki.properties` file, setting the `oidc.enableUser` property, or restarting the XWiki instance.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about adjusting the xwiki.properties file or setting the oidc.enableUser property."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "en"
+}

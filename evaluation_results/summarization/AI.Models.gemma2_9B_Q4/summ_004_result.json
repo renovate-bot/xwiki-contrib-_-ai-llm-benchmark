@@ -1,9 +1,9 @@
 {
-  "score": 0.2,
-  "reason": "The score is 0.20 because the summary contains multiple contradictions with the original text, includes extra information not mentioned in the original text, and fails to answer several questions that the original text can address.",
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary contains contradictory information regarding the installation process and includes extra details not mentioned in the original text. Additionally, it fails to address certain questions that the original text can answer.",
   "score_breakdown": {
-    "Alignment": 0.4444444444444444,
-    "Coverage": 0.2
+    "Alignment": 0.8823529411764706,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

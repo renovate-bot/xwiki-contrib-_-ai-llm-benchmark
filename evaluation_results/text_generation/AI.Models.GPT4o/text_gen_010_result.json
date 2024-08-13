@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output is relevant to the Input and addresses the main points. It covers most key aspects of the Expected Output but lacks some details like 'coordinating various physiological processes' and 'subjective experiences'. The ideas flow logically and the text is grammatically correct and smooth.",
+  "reason": "The Actual Output addresses the Input prompt and stays on topic, covering key points such as regulation of physiological processes and cognitive functions. However, it misses some details like 'sophisticated,' 'coordinating,' and 'subjective experiences' from the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

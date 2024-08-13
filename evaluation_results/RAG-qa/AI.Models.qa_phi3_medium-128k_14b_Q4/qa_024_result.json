@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.7205128205128205,
+  "individual_scores": {
+    "AnswerRelevancy": 0.7692307692307693,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.5
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 0.77 because while the answer provides some relevant information, it includes multiple irrelevant URLs that do not directly address the specific steps needed to disable notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node (third node) is ranked lower than irrelevant nodes. For example, the first node discusses 'how to get a notification RSS feed and the notifications macro,' and the second node lists 'various notification preferences macros but does not provide specific instructions on how to disable notifications,' both of which should be ranked lower.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are well-supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions auto watch preferences and custom filters preferences, but lacks details on modifying settings for 'Suivi automatique des pages' and removing filters in 'Filtres personnalis\u00e9s'."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}

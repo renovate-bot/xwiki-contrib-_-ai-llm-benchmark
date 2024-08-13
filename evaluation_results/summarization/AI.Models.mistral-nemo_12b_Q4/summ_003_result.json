@@ -1,8 +1,8 @@
 {
   "score": 0.4,
-  "reason": "The score is 0.40 because the summary contains contradictory information about local users/groups and includes extra details not mentioned in the original text. Additionally, it fails to answer several questions that the original text can address.",
+  "reason": "The score is 0.40 because the summary includes incorrect information about setting access rights for terminal pages, adds details about documentation not mentioned in the original text, and fails to address several questions that the original text can answer.",
   "score_breakdown": {
-    "Alignment": 0.6666666666666666,
+    "Alignment": 0.6,
     "Coverage": 0.4
   },
   "input_language": "en",

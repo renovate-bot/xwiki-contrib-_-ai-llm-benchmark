@@ -1,0 +1,20 @@
+{
+  "overall_score": 0.6133333333333334,
+  "individual_scores": {
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.9,
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.3333333333333333,
+    "CustomContextualRelevancy": 0.5
+  },
+  "reasons": {
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and addresses the issue of not receiving notifications directly. Great job!",
+    "Faithfulness": "The score is 0.90 because the actual output incorrectly states 'Vous ne recevez pas de notifications.', while the context indicates that users do receive notifications by default under certain conditions.",
+    "ContextualPrecision": "The score is 0.33 because the relevant node, which mentions 'Watched Entities' and 'Follow a user', is ranked third. Irrelevant nodes, such as the first node discussing RSS feed settings and the second node about overriding notification templates, should be ranked lower.",
+    "ContextualRecall": "The score is 0.33 because only a few aspects of the expected output are supported by the nodes in the retrieval context, such as enabling notifications by clicking on the bell and following a user. However, key details about 'notifications.enabled', 'xwiki.properties', specific instructions on following pages or users, and viewing user events in the 'r\u00e9seau' tab are missing.",
+    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users, but lacks details on setting `notifications.enabled` to `true` and specific steps for following pages."
+  },
+  "question_language": "fr",
+  "expected_answer_language": "fr",
+  "answer_language": "fr"
+}
