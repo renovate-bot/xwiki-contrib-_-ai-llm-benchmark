@@ -179,6 +179,12 @@ snakemake --cores 1 evaluate
 snakemake --cores 1 report
 ```
 
+7. Generate a zip with all the gathered data
+
+```
+snakemake --cores 1 archive
+```
+
 ## Running individual steps
 
 Snakemake allows us to run the entire pipeline or run individual rules.
@@ -270,6 +276,13 @@ This step generates a pdf report containing evaluation data and plots.
 
 ```
 snakemake --cores 1 generate_report
+```
+
+### Generate archive
+This step generates a zip archive containing all relevant data regarding the last evaluation.
+
+```
+snakemake --cores 1 archive
 ```
 
 ### Clean
