@@ -55,6 +55,18 @@ def generate_box_plot(data, task, criterion, output_dir, file_name):
     plt.savefig(os.path.join(output_dir, file_name))
     plt.close()
 
+def generate_overall_score_box_plot(data, output_dir, file_name):
+    df = pd.DataFrame(data)
+    plt.figure(figsize=(10, 6))
+    sns.boxplot(x='Model', y='overall_score', data=df)
+    plt.title('RAG-qa Task Overall Score Distribution')
+    plt.ylabel('Overall Score')
+    plt.xticks(rotation=45, ha='right')
+    plt.tight_layout()
+    plt.savefig(os.path.join(output_dir, file_name))
+    plt.close()
+
+
 # Function to load configuration
 def load_config(config_file):
     with open(config_file, 'r') as f:
@@ -63,6 +75,11 @@ def load_config(config_file):
 # Function to process evaluation results and generate visualizations
 def process_evaluation_results(config, results_dir, output_dir):
     tasks = config['tasks']
+    criteria = {
+        'summarization': ['Alignment', 'Coverage'],
+        'text_generation': ['score'],
+        'RAG-qa': ['AnswerRelevancy', 'Faithfulness', 'ContextualPrecision', 'ContextualRecall']
+    }
 
     for task in tasks:
         task_name = task['task']
@@ -95,6 +112,29 @@ def process_evaluation_results(config, results_dir, output_dir):
                         'Criterion': 'score',
                         'Score': item['score']
                     })
+
+        # Generate bar charts for each criterion
+        for criterion in criteria[task_name]:
+            filtered_data = [d for d in bar_data if d['Criterion'] == criterion]
+            generate_bar_chart(filtered_data, task_name, criterion, output_dir, f'{task_name}_{criterion}_bar_chart.png')
+            generate_box_plot(filtered_data, task_name, criterion, output_dir, f'{task_name}_{criterion}_box_plot.png')
+
+        # Generate grouped bar chart for all criteria
+        generate_grouped_bar_chart(bar_data, task_name, output_dir, f'{task_name}_grouped_bar_chart.png')
+
+        # Generate overall score box plot for RAG-qa task
+        if task_name == 'RAG-qa':
+            overall_scores = []
+            for model in os.listdir(task_dir):
+                model_dir = os.path.join(task_dir, model)
+                data = read_json_files(model_dir)
+                for item in data:
+                    overall_scores.append({
+                        'Model': model,
+                        'overall_score': item['overall_score']
+                    })
+            generate_overall_score_box_plot(overall_scores, output_dir, f'{task_name}_overall_score_box_plot.png')
+
 
         # Generate bar charts for each criterion
         for criterion in criteria[task_name]:
@@ -180,7 +220,12 @@ def generate_detailed_power_charts(data, output_dir):
 # Function to process average power consumption data and generate visualizations
 def process_average_power_data(results_dir, output_dir):
     average_power_file = os.path.join(results_dir, 'average_power_consumption.json')
-    if os.path.exists(average_power_file):
+    
+    if not os.path.exists(average_power_file):
+        print(f"Average power consumption data file not found: {average_power_file}")
+        return
+
+    try:
         with open(average_power_file, 'r') as f:
             average_power_data = json.load(f)
 
@@ -202,11 +247,14 @@ def process_average_power_data(results_dir, output_dir):
                     'energy_per_total_token': power_data['energy_per_total_token']
                 })
 
-        generate_average_power_draw_chart(power_draw_data, output_dir, 'average_power_draw_chart.png')
-        generate_model_average_power_chart(model_power_data, output_dir, 'model_average_power_chart.png')
-        generate_detailed_power_charts(power_draw_data, output_dir)
-    else:
-        print(f"Average power consumption data file not found: {average_power_file}")
+        if power_draw_data:
+            generate_average_power_draw_chart(power_draw_data, output_dir, 'average_power_draw_chart.png')
+        if model_power_data:
+            generate_model_average_power_chart(model_power_data, output_dir, 'model_average_power_chart.png')
+        if power_draw_data:
+            generate_detailed_power_charts(power_draw_data, output_dir)
+    except Exception as e:
+        print(f"Error processing average power data: {e}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate plots from evaluation results.")
@@ -217,7 +265,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Create output directory if it doesn't exist
-    os.makedirs(args.output_dir, exist_ok=True)
+    os.makedirs('snakeout/plots', exist_ok=True)
 
     # Load configuration and run the processing function
     config = load_config(args.config)

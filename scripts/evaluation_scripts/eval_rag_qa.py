@@ -6,8 +6,8 @@ from deepeval.metrics import AnswerRelevancyMetric
 from deepeval.metrics import FaithfulnessMetric
 from deepeval.metrics import ContextualRecallMetric
 from deepeval.metrics import ContextualPrecisionMetric
-from deepeval.metrics import ContextualRelevancyMetric
-from deepeval.metrics import HallucinationMetric
+from deepeval.metrics import GEval
+from deepeval.test_case import LLMTestCaseParams
 from deepeval.test_case import LLMTestCase
 from langdetect import detect
 
@@ -64,12 +64,14 @@ def calculate_ragas_score(ai_qa_file, evaluator_model):
         retrieval_context=retrieval_context
     )
 
-    # Create the test case specific for halucinations
-    test_case_halucinations = LLMTestCase(
-        input=prompt,
-        expected_output=expected_answer,
-        actual_output=ai_answer,
-        context=retrieval_context
+    context_relevancy_custom_metric = GEval(
+        name="Custome Context Relevancy Metric",
+        evaluation_steps=[
+            "Check whether the facts in 'retrieval context' contain the information found in the 'expected answer'.",
+            "Determine the amount of information in the 'expected answer' that is present in the 'retrieval context'."
+        ],
+        evaluation_params=[LLMTestCaseParams.EXPECTED_OUTPUT, LLMTestCaseParams.RETRIEVAL_CONTEXT],
+        model=evaluator_model
     )
 
     metrics = [
@@ -77,8 +79,7 @@ def calculate_ragas_score(ai_qa_file, evaluator_model):
         (FaithfulnessMetric(model=evaluator_model, include_reason=True), "Faithfulness"),
         (ContextualPrecisionMetric(model=evaluator_model, include_reason=True), "ContextualPrecision"),
         (ContextualRecallMetric(model=evaluator_model, include_reason=True), "ContextualRecall"),
-        (ContextualRelevancyMetric(model=evaluator_model, include_reason=True), "ContextualRelevancy"),
-        (HallucinationMetric(model=evaluator_model, include_reason=True), "Hallucination")
+        (context_relevancy_custom_metric, "CustomContextualRelevancy"),
     ]
 
     individual_scores = {}
@@ -86,10 +87,10 @@ def calculate_ragas_score(ai_qa_file, evaluator_model):
     total_score = 0
 
     for metric, name in metrics:
-        score, reason = measure_metric_with_retry(metric, test_case if name != "Hallucination" else test_case_halucinations)
+        score, reason = measure_metric_with_retry(metric, test_case)
         individual_scores[name] = score
         reasons[name] = reason
-        total_score += score if name != "Hallucination" else (1 - score)
+        total_score += score
 
     overall_score = total_score / len(metrics)
 

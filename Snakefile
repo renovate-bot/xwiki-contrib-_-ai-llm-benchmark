@@ -26,16 +26,15 @@ SNAKEOUT_EVALUATED_SUMMARIES = f"{SNAKEOUT_DIR}/evaluated_summaries"
 SNAKEOUT_EVALUATED_TEXTGEN = f"{SNAKEOUT_DIR}/evaluated_textgen"
 SNAKEOUT_EVALUATED_RAG_QA = f"{SNAKEOUT_DIR}/evaluated_rag_qa"
 SNAKEOUT_AVERAGE_POWER = f"{SNAKEOUT_DIR}/average_power"
+SNAKEOUT_PLOTS = f"{SNAKEOUT_DIR}/plots"
+SNAKEOUT_REPORTS = f"{SNAKEOUT_DIR}/reports"
 
 rule evaluate:
     input:
-        TASKS_DIR,
-        SNAKEOUT_COLLECTED,
-        SNAKEOUT_EVALUATED_SUMMARIES,
         SNAKEOUT_EVALUATED_TEXTGEN,
+        SNAKEOUT_EVALUATED_SUMMARIES,
         SNAKEOUT_EVALUATED_RAG_QA,
-        SNAKEOUT_AVERAGE_POWER,
-        REPORTS_DIR
+        SNAKEOUT_REPORTS
 
 rule download:
     input:
@@ -101,8 +100,6 @@ rule collect:
     shell:
         """
         python {input.script} --input-dir {params.input_dir} --output-dir {params.output_dir} --request-template {params.file}
-        mkdir -p {PLOTS_DIR}
-        mkdir -p {REPORTS_DIR}
         """
 
 rule eval_summary:
@@ -149,37 +146,56 @@ rule eval_rag_qa:
         evaluation_dir = RESULTS_QA_DIR,
         output_dir = OUTPUT_DIR
     shell:
-        "python {input.script} --output-dir {params.output_dir} --evaluation-dir {params.evaluation_dir} --config-file {input.config_file}"
+        """
+        python {input.script} --output-dir {params.output_dir} --evaluation-dir {params.evaluation_dir} --config-file {input.config_file}
+        """
 
 rule generate_plots:
     input:
         config_file = CONFIG_FILE,
-        results_dir = EVALUATION_DIR
+        results_dir = EVALUATION_DIR,
+        dependency = SNAKEOUT_EVALUATED_RAG_QA,
     output:
-        directory(PLOTS_DIR)
+        directory(SNAKEOUT_PLOTS)
     params:
+        plots_dir = PLOTS_DIR,
         script = f"{SCRIPTS_DIR}/results_visualization/generate_plots.py"
     shell:
         """
-        python {params.script} --config {input.config_file} --results_dir {input.results_dir} --output_dir {output}
+        python {params.script} --config {input.config_file} --results_dir {input.results_dir} --output_dir {params.plots_dir}
         """
 
-rule generate_report:
+rule report:
     input:
         config_file = CONFIG_FILE,
         plots_dir = PLOTS_DIR,
         evaluation_results_dir = EVALUATION_DIR,
         model_outputs_dir = OUTPUT_DIR,
-        script = f"{SCRIPTS_DIR}/results_visualization/generate_report.py"
+        dependency = SNAKEOUT_PLOTS,
+        script = f"{SCRIPTS_DIR}/results_visualization/generate_report.py",
+        models_info = "models_info.csv"
     output:
-        directory(REPORTS_DIR)
+        directory(SNAKEOUT_REPORTS)
+    params:
+        report_dir=REPORTS_DIR
     shell:
         """
-        mkdir -p {input.plots_dir}
-        mkdir -p {input.evaluation_results_dir}
-        mkdir -p {input.model_outputs_dir}
-        mkdir -p {output}
-        python {input.script} --config {input.config_file} --plots_dir {input.plots_dir} --output_dir {output} --evaluation_results_dir {input.evaluation_results_dir} --model_outputs_dir {input.model_outputs_dir}
+        python {input.script} --config {input.config_file} --plots_dir {input.plots_dir} --output_dir {params.report_dir} --evaluation_results_dir {input.evaluation_results_dir} --model_outputs_dir {input.model_outputs_dir} --models_info {input.models_info}
+        """
+
+
+rule generate_model_outputs_report:
+    input:
+        config_file = CONFIG_FILE,
+        model_outputs_dir = OUTPUT_DIR,
+        script = f"{SCRIPTS_DIR}/results_visualization/generate_report.py"
+    output:
+        directory(f"{SNAKEOUT_DIR}/model_outputs_report")
+    params:
+        report_dir = REPORTS_DIR
+    shell:
+        """
+        python {input.script} --config {input.config_file} --model_outputs_dir {input.model_outputs_dir} --output_dir {params.report_dir} --plots_dir {PLOTS_DIR} --evaluation_results_dir {EVALUATION_DIR} --generate_model_outputs_only
         """
 
 
@@ -215,5 +231,10 @@ rule archive:
 rule clean:
     shell:
         """
-        rm -rf {EVALUATION_DIR}/ {TASKS_DIR}/ {OUTPUT_DIR}/* {SNAKEOUT_DIR}/ {PLOTS_DIR}/*
+        rm -rf {EVALUATION_DIR}/ {TASKS_DIR}/ {OUTPUT_DIR}/* {SNAKEOUT_DIR} {PLOTS_DIR}/* {REPORTS_DIR}/.snakemake_timestamp
+        mkdir -p {OUTPUT_DIR}
+        mkdir -p {PLOTS_DIR}
+        mkdir -p {RESULTS_SUMMARIZATION_DIR}
+        mkdir -p {RESULTS_TEXT_GENERATION_DIR}
+        mkdir -p {RESULTS_QA_DIR}
         """

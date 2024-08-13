@@ -30,6 +30,15 @@ username = os.getenv('WAISE_USERNAME')
 password = os.getenv('WAISE_PASSWORD')
 auth = (username, password)
 
+def get_valid_collections(collections_dir):
+    valid_collections = set()
+    for collection_file in os.listdir(collections_dir):
+        if collection_file.endswith('.json'):
+            with open(os.path.join(collections_dir, collection_file), 'r') as file:
+                collection_data = json.load(file)
+                valid_collections.add(collection_data['id'])
+    return valid_collections
+
 # Populate collections using the index API.
 def delete_collection(collection_name):
     """Delete a specific collection."""
@@ -80,23 +89,31 @@ def put_document(document_json_file, document_content_file):
         raise ValueError(error_message) from e
 
 def index_data(collections_dir, documents_dir):
-    # Iterate through all the files in the collections directory
+    valid_collections = get_valid_collections(collections_dir)
+
+    # Index collections
     for collection_file in os.listdir(collections_dir):
         if collection_file.endswith('.json'):
             collection_json_file = os.path.join(collections_dir, collection_file)
             put_collection(collection_json_file)
             print(f"Indexing collection: {collection_json_file}")
 
-    # Iterate through all the .json files in the documents directory
+    # Index documents
     for document_file in os.listdir(documents_dir):
         if document_file.endswith('.json'):
             document_json_file = os.path.join(documents_dir, document_file)
-            document_name = os.path.splitext(document_file)[0]
-            document_txt_file = os.path.join(documents_dir, f"{document_name}.txt")
-            put_document(document_json_file, document_txt_file)
-            print(f"Indexing document: {document_json_file}")
-            if not os.path.exists(document_txt_file):
-                print(f"Warning: Corresponding .txt file not found for {document_file}: using json content field instead")
+            with open(document_json_file, 'r') as file:
+                document_data = json.load(file)
+            
+            if document_data['collection'] in valid_collections:
+                document_name = os.path.splitext(document_file)[0]
+                document_txt_file = os.path.join(documents_dir, f"{document_name}.txt")
+                put_document(document_json_file, document_txt_file)
+                print(f"Indexing document: {document_json_file}")
+                if not os.path.exists(document_txt_file):
+                    print(f"Warning: Corresponding .txt file not found for {document_file}: using json content field instead")
+            else:
+                print(f"Skipping document {document_file}: not in any valid collection")
 
     print("Indexing completed.")
 
