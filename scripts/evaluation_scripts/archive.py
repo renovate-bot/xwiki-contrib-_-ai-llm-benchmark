@@ -3,6 +3,13 @@ import shutil
 import datetime
 import argparse
 
+def get_latest_report_folder(reports_dir):
+    report_folders = [f for f in os.listdir(reports_dir) if f.startswith('report_')]
+    if report_folders:
+        return max(report_folders)
+    return None
+
+
 def create_archive(input_dir, output_dir, evaluation_dir, reports_dir, config_file, archive_dir):
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     archive_name = f"ai_llm_benchmark_archive_{timestamp}"
@@ -15,11 +22,12 @@ def create_archive(input_dir, output_dir, evaluation_dir, reports_dir, config_fi
     shutil.copytree(output_dir, os.path.join(archive_path, "output"))
     shutil.copytree(evaluation_dir, os.path.join(archive_path, "evaluation_results"))
 
-    # Copy PDF reports
-    os.makedirs(os.path.join(archive_path, "reports"), exist_ok=True)
-    for report in os.listdir(reports_dir):
-        if report.endswith('.pdf'):
-            shutil.copy2(os.path.join(reports_dir, report), os.path.join(archive_path, "reports"))
+    # Copy the latest report folder
+    latest_report_folder = get_latest_report_folder(reports_dir)
+    if latest_report_folder:
+        shutil.copytree(os.path.join(reports_dir, latest_report_folder), os.path.join(archive_path, "reports", latest_report_folder))
+    else:
+        print("No report folder found.")
 
     # Copy config.json
     shutil.copy2(config_file, os.path.join(archive_path, "config.json"))
@@ -32,6 +40,7 @@ def create_archive(input_dir, output_dir, evaluation_dir, reports_dir, config_fi
 
     print(f"Archive created: {archive_path}.zip")
     print(f"Previous archives in {archive_dir} have been preserved.")
+
 
 
 if __name__ == "__main__":
