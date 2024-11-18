@@ -29,9 +29,14 @@ def calculate_summary_score(ai_summary_file, evaluator_model, threshold=0.5):
     input_text = summary_data['prompt']
     generated_summary = summary_data['ai_answer']
 
-    # Detect languages
-    input_language = detect(input_text)
-    summary_language = detect(generated_summary)
+    # Add defensive checks for empty text
+    try:
+        input_language = detect(input_text) if input_text.strip() else 'unknown'
+        summary_language = detect(generated_summary) if generated_summary.strip() else 'unknown'
+    except Exception as e:
+        print(f"Language detection failed: {str(e)}")
+        input_language = 'unknown'
+        summary_language = 'unknown'
 
     test_case = LLMTestCase(input=input_text, actual_output=generated_summary)
     metric = SummarizationMetric(threshold=threshold, model=evaluator_model)

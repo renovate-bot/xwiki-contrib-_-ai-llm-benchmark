@@ -25,9 +25,10 @@ def read_json_files(directory):
 def generate_bar_chart(data, task, criterion, output_dir, file_name):
     df = pd.DataFrame(data)
     plt.figure(figsize=(10, 6))
-    sns.barplot(x='Model', y='Score', data=df[df['Criterion'] == criterion])
+    sorted_models = df[df['Criterion'] == criterion].groupby('Model')['Score'].mean().sort_values().index.to_list()
+    sns.barplot(x='Model', y='Score', data=df[df['Criterion'] == criterion], order=sorted_models)
     plt.title(f'{task.capitalize()} Task Scores Comparison ({criterion})')
-    plt.xticks(rotation=45)
+    plt.xticks(rotation=45, ha='right')
     plt.tight_layout()
     plt.savefig(os.path.join(output_dir, file_name))
     plt.close()
@@ -35,14 +36,22 @@ def generate_bar_chart(data, task, criterion, output_dir, file_name):
 # Function to generate grouped bar charts for all criteria
 def generate_grouped_bar_chart(data, task, output_dir, file_name):
     df = pd.DataFrame(data)
+    
+    # Calculate the average score for each model
+    model_avg_scores = df.groupby('Model')['Score'].mean().sort_values(ascending=True)
+    
+    # Sort the models based on their average scores
+    sorted_models = model_avg_scores.index.tolist()
+    
     plt.figure(figsize=(12, 8))
-    sns.barplot(x='Model', y='Score', hue='Criterion', data=df)
+    sns.barplot(x='Model', y='Score', hue='Criterion', data=df, order=sorted_models)
     plt.title(f'{task.capitalize()} Task Scores Comparison')
-    plt.xticks(rotation=45)
+    plt.xticks(rotation=45, ha='right')
     plt.legend(title='Criterion', bbox_to_anchor=(1.05, 1), loc='upper left')
     plt.tight_layout()
     plt.savefig(os.path.join(output_dir, file_name))
     plt.close()
+
 
 # Function to generate box plots
 def generate_box_plot(data, task, criterion, output_dir, file_name):
@@ -50,15 +59,16 @@ def generate_box_plot(data, task, criterion, output_dir, file_name):
     plt.figure(figsize=(10, 6))
     sns.boxplot(x='Model', y='Score', data=df[df['Criterion'] == criterion])
     plt.title(f'{task.capitalize()} Task Score Distribution ({criterion})')
-    plt.xticks(rotation=45)
+    plt.xticks(rotation=45, ha='right')
     plt.tight_layout()
     plt.savefig(os.path.join(output_dir, file_name))
     plt.close()
 
 def generate_overall_score_box_plot(data, output_dir, file_name):
     df = pd.DataFrame(data)
+    sorted_models = df.groupby('Model')['overall_score'].median().sort_values().index.to_list()
     plt.figure(figsize=(10, 6))
-    sns.boxplot(x='Model', y='overall_score', data=df)
+    sns.boxplot(x='Model', y='overall_score', data=df, order=sorted_models)
     plt.title('RAG-qa Task Overall Score Distribution')
     plt.ylabel('Overall Score')
     plt.xticks(rotation=45, ha='right')
@@ -152,7 +162,7 @@ def generate_average_power_chart(data, output_dir, file_name):
     sns.barplot(x='Model', y='Average Power Consumption', data=df)
     plt.title('Average Power Consumption by Model')
     plt.ylabel('Average Power Consumption (W)')
-    plt.xticks(rotation=45)
+    plt.xticks(rotation=45, ha='right')
     plt.tight_layout()
     plt.savefig(os.path.join(output_dir, file_name))
     plt.close()
@@ -186,7 +196,7 @@ def generate_average_power_grouped_chart(data, output_dir, file_name):
     sns.barplot(x='Model', y='power_consumption', hue='Task', data=df)
     plt.title('Average Energy Consumption by Model and Task')
     plt.ylabel('Energy Consumption (J)')
-    plt.xticks(rotation=45)
+    plt.xticks(rotation=45, ha='right')
     plt.tight_layout()
     plt.savefig(os.path.join(output_dir, file_name))
     plt.close()
