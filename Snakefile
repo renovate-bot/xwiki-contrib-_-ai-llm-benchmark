@@ -156,6 +156,7 @@ rule generate_plots:
         config_file = CONFIG_FILE,
         results_dir = EVALUATION_DIR,
         dependency = SNAKEOUT_EVALUATED_RAG_QA,
+        dependency2 = SNAKEOUT_AVERAGE_POWER,
     output:
         directory(SNAKEOUT_PLOTS)
     params:
