@@ -1,9 +1,9 @@
 {
-  "score": 0.25,
-  "reason": "The score is 0.25 because the summary contains multiple contradictions with the original text, includes extra information not mentioned in the original text, and fails to answer several questions that the original text can address.",
+  "score": 0.2,
+  "reason": "The score is 0.20 because the summary contains significant contradictions with the original text, such as misrepresenting the process of exporting and reimporting wiki pages and recommending the wrong downgrade method. Additionally, the summary includes extra information not present in the original text, like server restart instructions and Solr file editing, which can mislead the reader. Furthermore, the summary fails to address several questions that the original text can answer, indicating a lack of comprehensiveness and accuracy.",
   "score_breakdown": {
     "Alignment": 0.25,
-    "Coverage": 0.4
+    "Coverage": 0.2
   },
   "input_language": "en",
   "summary_language": "en"

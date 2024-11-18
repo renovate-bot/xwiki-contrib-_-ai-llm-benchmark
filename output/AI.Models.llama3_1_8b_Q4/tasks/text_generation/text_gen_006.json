@@ -2,16 +2,16 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "In twilight's hush, where shadows play,\nThe moon above, a silver ray,\nIlluminates the earth below,\nA canvas stretched, with colors in tow.\n\nThe trees, like sentinels of old,\nStand guard, their leaves a verdant gold,\nTheir branches swaying to and fro,\nA gentle breeze that whispers secrets low.\n\nThe sun, a fiery ball of might,\nBrings life to all, in vibrant light,\nThe flowers bloom, a colorful throng,\nEach petal a brushstroke, a work of art so strong.\n\nThe river flows, a winding stream,\nReflecting the beauty, a peaceful dream,\nIts waters whisper, as they gently glide,\nA soothing melody, that's always inside.\n\nIn nature's realm, where creatures roam,\nA delicate balance, is their home,\nEach living thing, a vital part,\nInterconnected, beating with one heart.\n\nThe stars up high, a twinkling show,\nA celestial tapestry, forever aglow,\nA beauty so profound, yet simple and true,\nNature's splendor, a gift to me and you.",
+  "ai_answer": "In twilight's hush, where shadows play,\nThe forest whispers secrets of the day.\nThe trees, like sentinels of old,\nStand guard, their branches swaying bold.\n\nTheir leaves, a rustling chorus sing,\nA symphony that joy does bring.\nThe wind, a gentle lover's breeze,\nStirs scents of blooming wildflowers' ease.\n\nIn morning's blush, the sun arises,\nPainting the sky with vibrant dyes.\nThe clouds, like cotton tufts on high,\nDrift lazily, as white as summer's sky.\n\nThe mountains rise, a regal throne,\nTheir peaks, a challenge to the unknown.\nThe rivers flow, a lifeblood stream,\nQuenching the thirst of all they meet in dream.\n\nIn nature's beauty, I am free,\nA part of something wild and carefree.\nThe world awakens with each new day,\nAnd all around me, beauty finds its way.\n\nSo let us roam, where'er we may go,\nAnd drink from the cup of nature's overflow.\nFor in her beauty, lies a peaceful nest,\nWhere love and wonder forever rest.",
   "sources": null,
   "usage": {
-    "prompt_tokens": 21,
-    "completion_tokens": 223,
-    "total_tokens": 244
+    "prompt_tokens": 19,
+    "completion_tokens": 230,
+    "total_tokens": 249
   },
-  "average_power_draw": 208.68170076726344,
-  "energy_consumption": 379.8148114862741,
-  "energy_per_input_token": 0.6565511002355646,
-  "energy_per_output_token": 1.6413777505889116,
-  "energy_per_total_token": 1.556618079861779
+  "average_power_draw": 220.51158169934638,
+  "energy_consumption": 398.09933662778565,
+  "energy_per_input_token": 0.6702009034137806,
+  "energy_per_output_token": 1.6755022585344514,
+  "energy_per_total_token": 1.5987925165774524
 }

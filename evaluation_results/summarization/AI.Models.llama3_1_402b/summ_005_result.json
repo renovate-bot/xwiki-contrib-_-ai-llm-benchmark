@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary contains a contradiction regarding the Watchlist Feature needing to be enabled, and it fails to address whether RSS feeds for modified pages can be received from the Notifications Application.",
+  "score": 0.8888888888888888,
+  "reason": "The score is 0.89 because the summary contains a minor contradiction regarding the installation requirement for the Watchlist Feature, which slightly affects its accuracy. However, there is no extra information or unanswered questions, indicating a generally high-quality summary.",
   "score_breakdown": {
     "Alignment": 0.8888888888888888,
-    "Coverage": 0.8
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

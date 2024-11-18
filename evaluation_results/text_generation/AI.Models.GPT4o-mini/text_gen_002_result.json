@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output addresses the Input prompt and is relevant to the Expected Output. It is coherent and logically flows, maintaining consistency with the Expected Output. The fluency is high with correct grammar and natural language use. The slight difference in wording does not significantly impact the overall quality.",
+  "reason": "The Actual Output addresses the Input by forming a coherent sentence with the given keywords. It maintains a logical flow and consistency with the Expected Output, though it uses 'frolicked joyfully' instead of 'enjoyed exploring'. The language is fluent and relevant to the core subject.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.4,
+  "overall_score": 0.3142857142857143,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
+    "AnswerRelevancy": 0.5714285714285714,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant and directly addresses the question about authenticating users with access tokens. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'group synchronization and customization for OpenID Connect', which is not directly related to authenticating users with access tokens. The second node talks about 'protection levels for cookies and security strategies', which does not address the authentication of users with access tokens.",
+    "AnswerRelevancy": "The score is 0.57 because while the response partially addresses the question about authenticating users with access tokens, it includes irrelevant details such as source links and unrelated strategies, which detract from its overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'model validation strategies in XWiki,' which is unrelated to 'user authentication with access tokens.' The second node covers 'attachment validation and configuration in XWiki,' which does not pertain to 'token-based user authentication.' Lastly, the third node provides details on 'the admin UI for model validation,' which is not relevant to 'authenticating users with access tokens.'",
     "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to token-based authentication, JWT, or the specific steps for configuring the LLM application (BETA) extension."
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to token-based authentication or JWT, which are key elements in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.3529411764705882,
+  "overall_score": 0.35,
   "individual_scores": {
-    "AnswerRelevancy": 0.7647058823529411,
+    "AnswerRelevancy": 0.75,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.76 because the answer provides some relevant information but includes multiple irrelevant statements and links that do not directly address the specific question about limiting file types and sizes.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to configuring file upload restrictions. For example, the first node discusses 'macros and preferences related to notifications, office document viewing, and PDF table of contents,' which are not pertinent to the input query.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about configuring MIME types or setting maximum attachment size."
+    "AnswerRelevancy": "The score is 0.75 because the response mostly addresses the question about file upload restrictions, but it includes multiple irrelevant source links that do not directly relate to the query, preventing a higher score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'language preferences and translations in XWiki', which does not relate to configuring file upload restrictions. The second node talks about 'various administrative applications and features in XWiki', but again, it does not address file upload settings. The third node is about 'PDF export customization using CSS and XSL', which is not relevant to the topic of file upload restrictions. The fourth node describes 'various macros and their functionalities in XWiki', none of which pertain to file upload restrictions. The fifth node contains 'links to images and references', offering no information about file upload settings. Lastly, the sixth node is similar to the fifth, with 'links to images and references', unrelated to file upload configurations.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to configuring MIME types or attachment size limits as described in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

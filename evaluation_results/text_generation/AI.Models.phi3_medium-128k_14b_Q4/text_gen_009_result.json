@@ -1,6 +1,6 @@
 {
   "score": 0.6,
-  "reason": "The Actual Output addresses the Input prompt and includes relevant details, but it lacks the exact date format and target audience. It also has minor formatting issues in the date and activities.",
+  "reason": "The Actual Output correctly identifies the event name, location, and address but lacks coherence in date formatting and omits the target audience. The Expected Output provides a more structured and complete representation.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -8,11 +8,11 @@
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.00 because the output contains multiple irrelevant statements, including URLs to unrelated pages, incomplete and nonsensical sentences, and instructions that do not address the question about configuring team spaces in XWiki.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to configuring access controls for teams. For example, the first node describes how user-created pages and spaces work in XWiki, but it does not provide any information on how to set access controls for teams. Similarly, the second node provides details on various macros and scripting languages supported by XWiki, which is not relevant to configuring access controls for teams.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any node(s) in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about creating groups, defining rights at the wiki or space level, or inheriting rights for child pages."
+    "AnswerRelevancy": "The score is 0.00 because none of the statements in the actual output are relevant to configuring team spaces in XWiki as per the input request. The output contains numerous unrelated and nonsensical statements that do not address the question asked.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses a page in XWiki without mentioning access rights for teams, the second node talks about modifying resources using XML and HTTP methods, which is unrelated to team space permissions, and subsequent nodes continue to focus on unrelated topics such as editing comments, explaining spaces, actions after running a migrator, and configuration display options, none of which address configuring access rights for team spaces in XWiki.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any node(s) in the retrieval context, indicating a complete lack of relevant information.",
+    "CustomContextualRelevancy": "The retrieval context lacks information about creating groups, setting rights at wiki and space levels, and inheriting rights for child pages, which are crucial elements in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

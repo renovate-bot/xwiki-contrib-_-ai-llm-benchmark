@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output directly addresses the Input prompt by generating a news article about a recent scientific discovery. It is coherent with the Expected Output, providing a detailed and logical summary of the groundbreaking finding. The article is fluent, with proper grammar, syntax, and readability.",
+  "reason": "The Actual Output is a well-structured news article that clearly addresses the Input prompt by detailing a recent scientific discovery about brain plasticity. It aligns with the Expected Output by providing an informative summary of the finding. The article is coherent, with a logical flow of information, and is fluent, with accurate grammar and natural language use.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.8516666666666666,
+  "overall_score": 0.5671428571428571,
   "individual_scores": {
-    "AnswerRelevancy": 0.875,
+    "AnswerRelevancy": 0.7857142857142857,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.5833333333333333,
-    "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 0.8
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.75,
+    "CustomContextualRelevancy": 0.3
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.88 because the main content is relevant and provides useful information on how to disable notifications, but it includes URLs that do not directly address the question.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
-    "ContextualPrecision": "The score is 0.58 because the first node discusses getting a notification RSS feed and mentions the notifications macro, which does not directly address how to disable unwanted notifications. Additionally, the fourth node lists various ways to receive notifications but does not provide information on how to disable them. The fifth node discusses overriding default notification templates and installation instructions, which are not relevant to disabling unwanted notifications. However, the second and third nodes are correctly ranked as they mention 'Notifications Auto Watch Preferences,' 'Notifications Custom Filters Preferences,' and 'Default Watch Settings,' which are directly related to modifying notification settings.",
-    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is well-supported by the nodes in the retrieval context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context mentions auto-watched pages and custom notification filters but lacks details on modifying settings and deleting filters."
+    "AnswerRelevancy": "The score is 0.79 because the response addresses the question about disabling notifications, but includes irrelevant links that do not directly help with the task, slightly reducing the overall relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'various technical aspects of notification filters and settings' but does not address how to disable notifications or 'auto-watched pages'. The second node lists 'different notification preferences and macros' without providing information on disabling notifications. The third node provides links about notifications but lacks specific instructions on disabling them. The fourth node talks about 'getting RSS feeds and general notification settings' without mentioning disabling notifications. Finally, the fifth node gives an overview of notification methods but does not include details on disabling notifications or managing auto-watched pages.",
+    "ContextualRecall": "The score is 0.75 because while nodes in the retrieval context support the functionality of auto-watching pages and managing notification settings (as seen in nodes 3 and 4), there is no direct mention of being notified of changes on your work, which affects the completeness of the expected output attribution.",
+    "CustomContextualRelevancy": "The retrieval context mentions auto-watch preferences and notification settings, but lacks details on modifying auto-watch settings and removing filters from 'Filtres personnalis\u00e9s'."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

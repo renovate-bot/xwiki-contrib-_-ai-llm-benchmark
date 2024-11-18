@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.375,
+  "overall_score": 0.8233333333333333,
   "individual_scores": {
-    "AnswerRelevancy": 0.875,
+    "AnswerRelevancy": 0.9166666666666666,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0,
-    "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.4,
+    "CustomContextualRelevancy": 0.8
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.88 because the answer provides relevant information about configuring OpenID Connect authentication, but it includes irrelevant links related to the XWiki RESTful API and access rights management, which are not directly related to the question.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect faithfulness!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node 'describes the OpenID Connect Authenticator extension but does not provide any information on configuring user accounts to be automatically enabled.' The second node 'discusses container authentication and mentions OpenID Connect briefly but does not provide the specific configuration needed for enabling user accounts.' The third node 'discusses various authentication methods including OpenID Connect but does not mention the specific configuration required to enable user accounts automatically.' The fourth node 'is about setting access rights for terminal pages and does not relate to configuring OpenID Connect or enabling user accounts.' The fifth node 'is about logging in and recovering usernames or passwords, which is not relevant to configuring OpenID Connect to enable user accounts automatically.'",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain information about adjusting the `xwiki.properties` file or setting the `oidc.enableUser` property to `true`."
+    "AnswerRelevancy": "The score is 0.92 because the output is mostly relevant and addresses the question about configuring OpenID Connect in XWiki. However, it includes a mention of LDAP Authenticator, which is not relevant to the specific OpenID Connect configuration issue, preventing a perfect score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node in the retrieval context, which mentions the configuration property '# oidc.enableUser=true', is ranked first. This node is directly related to enabling user accounts upon first login using OpenID Connect. Great job in ranking the relevant information at the top!",
+    "ContextualRecall": "The score is 0.40 because while the 1st node in the retrieval context supports the mention of enabling user accounts on first login and includes the property '# oidc.enableUser=true', it lacks information about adding or updating properties, saving the file, restarting the XWiki instance, and the automatic enabling of new user accounts via OpenID Connect.",
+    "CustomContextualRelevancy": "The retrieval context includes the commented line '# oidc.enableUser=true', which matches the expected answer's requirement to uncomment and set this property to true. However, the retrieval context lacks explicit instructions to save the file and restart the XWiki instance, which are part of the expected answer."
   },
   "question_language": "en",
   "expected_answer_language": "en",

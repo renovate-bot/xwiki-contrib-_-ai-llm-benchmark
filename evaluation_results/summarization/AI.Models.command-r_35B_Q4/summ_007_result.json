@@ -1,8 +1,8 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary includes a contradiction regarding the features of the 'History' tab, which affects the accuracy. However, there is no extra information or unanswered questions, indicating a generally good summarization.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary contains contradictions regarding the functionality of the 'History' tab and the process of reverting to previous versions, as well as extra information about a 'Version Control page' not present in the original text. Additionally, the summary fails to address a question about content saving that the original text can answer.",
   "score_breakdown": {
-    "Alignment": 0.875,
+    "Alignment": 0.4,
     "Coverage": 0.8
   },
   "input_language": "en",

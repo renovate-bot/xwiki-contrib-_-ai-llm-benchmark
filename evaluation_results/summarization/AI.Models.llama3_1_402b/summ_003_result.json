@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary contains contradictions regarding implicit denial of rights and the configuration for an open wiki. Additionally, it includes extra information not mentioned in the original text and fails to answer questions about user groups and admin privileges.",
+  "score": 0.25,
+  "reason": "The score is 0.25 because the summary contains significant contradictions and includes a substantial amount of extra information not present in the original text, indicating a lack of accuracy and relevance.",
   "score_breakdown": {
-    "Alignment": 0.8235294117647058,
-    "Coverage": 0.6
+    "Alignment": 0.25,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

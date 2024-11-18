@@ -2,17 +2,17 @@
   "overall_score": 0.2,
   "individual_scores": {
     "AnswerRelevancy": 0.0,
-    "Faithfulness": 1.0,
+    "Faithfulness": 1,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.00 because the output contains numerous irrelevant and incoherent statements that do not address the question about ensuring only image or PDF files of a maximum size of 10 MB can be uploaded.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context discuss topics such as 'macros and functionalities related to notifications, office document viewing, and PDF table of contents' (first node), 'customizing the PDF cover by overriding a template and adding a company logo' (second node), 'creating a new page by adding a wanted link and using templates' (third node), 'macros related to navigation, content display, and notifications' (fourth node), and 'CSS style information for images' (fifth node), which are irrelevant to configuring file upload restrictions.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about configuring MIME types or setting maximum upload size for attachments."
+    "AnswerRelevancy": "The score is 0.00 because the output contains numerous irrelevant statements, including links to unrelated documentation and unclear sentences, none of which address the question about restricting file uploads on a wiki.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'language preferences and translations in XWiki', which is unrelated to file upload restrictions. The second node is about 'various administrative and application features in XWiki', none of which pertain to configuring file upload settings. The third node talks about 'PDF export customization using XSL and CSS', which does not relate to setting file upload restrictions. The fourth node lists 'various features and macros in XWiki', but does not address file upload configurations. The fifth and sixth nodes contain 'image links and references', which are unrelated to configuring file upload settings.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context, as all instructions and configurations mentioned are missing.",
+    "CustomContextualRelevancy": "The retrieval context lacks any information related to configuring MIME types or setting maximum attachment size, which are key elements in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

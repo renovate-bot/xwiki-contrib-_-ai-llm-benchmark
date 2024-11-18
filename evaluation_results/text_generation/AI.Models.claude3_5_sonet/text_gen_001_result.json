@@ -1,6 +1,6 @@
 {
-  "score": 0.9,
-  "reason": "The Actual Output correctly extracts and presents the key information (name, date of birth, address) from the Input text. However, it does not match the Expected Output format exactly, as it uses a different structure.",
+  "score": 0.8,
+  "reason": "The Actual Output accurately extracts the key information from the Input and presents it clearly, maintaining relevance and coherence. However, it does not match the JSON format of the Expected Output, affecting fluency.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

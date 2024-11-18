@@ -1,9 +1,9 @@
 {
   "score": 0.0,
-  "reason": "The score is 0.00 because the summary includes extra information not mentioned in the original text and fails to answer several questions that the original text can address.",
+  "reason": "The score is 0.00 because the summary includes extensive extra information not present in the original text, indicating a significant deviation from the source material.",
   "score_breakdown": {
     "Alignment": 0.0,
-    "Coverage": 0.0
+    "Coverage": 0.2
   },
   "input_language": "en",
   "summary_language": "en"

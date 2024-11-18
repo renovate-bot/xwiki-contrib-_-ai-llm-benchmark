@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.5352380952380953,
+  "overall_score": 0.7695238095238096,
   "individual_scores": {
     "AnswerRelevancy": 0.8333333333333334,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0.5,
-    "ContextualRecall": 0.14285714285714285,
-    "CustomContextualRelevancy": 0.2
+    "ContextualRecall": 0.7142857142857143,
+    "CustomContextualRelevancy": 0.8
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.83 because the answer is mostly relevant to the question about authenticating users with access tokens, but it includes multiple irrelevant URLs that do not directly address the query.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining faithfulness to the retrieval context!",
-    "ContextualPrecision": "The score is 0.50 because the relevant node (rank 2) about configuring 'Authorized Applications' is ranked higher than some irrelevant nodes. However, the first node discusses claims at the UserInfo endpoint, which is irrelevant to authenticating users with access tokens and should be ranked lower. Similarly, nodes ranked 3, 4, and 5 provide general security information, cookie protection, and user profile visibility, which are all unrelated to the input query and should also be ranked lower.",
-    "ContextualRecall": "The score is 0.14 because the retrieval context only partially supports the expected output, specifically regarding the configuration of 'Authorized Applications' (sentence 2), while missing key details about token-based authentication, JWT specifics, and other necessary configurations.",
-    "CustomContextualRelevancy": "The retrieval context mentions 'Authorized Applications' and JWT tokens but lacks details on enabling the token authenticator, specific claims, and usage instructions."
+    "AnswerRelevancy": "The score is 0.83 because the main content effectively addresses the question about authenticating users with access tokens, but the inclusion of multiple source links that do not directly contribute to the answer slightly reduces the relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.50 because the relevant nodes in the retrieval context, such as the second node which 'discusses configuring authorized applications for generating tokens' and the fourth node which 'provides a description of the extension that allows authentication using JSON Web Tokens', are ranked lower than some irrelevant nodes. For example, the first node 'is about LDAP authentication settings in XWiki, which is unrelated to token-based authentication' and should be ranked lower. Similarly, the third node 'describes OpenID Connect scopes and response types, which are not directly related to the use of access tokens' and should also be ranked lower. However, the score is not lower because the relevant nodes are still present and contribute to addressing the input question.",
+    "ContextualRecall": "The score is 0.71 because while several key aspects of the expected output, such as the use of JWT for authentication and configuration details, are supported by nodes in the retrieval context, some specific instructions like generating a JWT with specific claims and including it in the 'Authorization' header are not covered.",
+    "CustomContextualRelevancy": "The retrieval context includes details about enabling the token authenticator, configuring authorized applications, and using JWTs, matching most of the expected answer. However, it lacks specific mention of claims like expiration time and audience."
   },
   "question_language": "en",
   "expected_answer_language": "en",

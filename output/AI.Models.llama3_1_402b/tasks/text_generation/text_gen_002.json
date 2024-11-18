@@ -2,12 +2,12 @@
   "id": "text_gen_002",
   "prompt": "Transform the following keywords into a coherent sentence:\n\ncat, playful, garden, sunny day",
   "expected_answer": "On a sunny day, the playful cat enjoyed exploring the garden.",
-  "ai_answer": "\n\nHere is a sentence that incorporates all of the keywords:\n\nOn the sunny day, the playful cat chased butterflies and explored the vibrant flowers in the garden.",
+  "ai_answer": "\n\nOn the sunny day, the cat was incredibly playful as it chased after butterflies and explored the vibrant garden.",
   "sources": null,
   "usage": {
     "prompt_tokens": 27,
-    "completion_tokens": 32,
-    "total_tokens": 59
+    "completion_tokens": 23,
+    "total_tokens": 50
   },
   "average_power_draw": null,
   "energy_consumption": null,

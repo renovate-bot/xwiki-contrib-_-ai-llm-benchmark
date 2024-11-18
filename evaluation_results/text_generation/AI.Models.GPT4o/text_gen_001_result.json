@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output addresses the topic and includes all key information (name, date of birth, address) from the Input. However, the format does not match the Expected Output JSON structure.",
+  "reason": "The Actual Output accurately extracts the key information from the Input, maintaining relevance and coherence. However, it does not match the Expected Output format, which affects the alignment with the intended message.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

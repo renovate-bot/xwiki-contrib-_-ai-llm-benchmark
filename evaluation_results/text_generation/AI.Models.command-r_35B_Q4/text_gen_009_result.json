@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output addresses the Input prompt and is relevant to the Expected Output. It is coherent and fluent, but it lacks the specific format and some details such as 'start_date', 'end_date', 'venue', 'address', and 'target_audience' as specified in the Expected Output.",
+  "reason": "The Actual Output captures the main event details such as event name, date, and location, aligning with the Input. However, it lacks the separation of start and end dates and does not explicitly mention the target audience as 'professionals in the tech industry,' affecting coherence with the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

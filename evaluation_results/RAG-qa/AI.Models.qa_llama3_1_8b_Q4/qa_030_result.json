@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.3555555555555555,
+  "overall_score": 0.37037037037037035,
   "individual_scores": {
-    "AnswerRelevancy": 0.7777777777777778,
+    "AnswerRelevancy": 0.8518518518518519,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.78 because the provided URL does not directly address the question about configuring access in XWiki, leading to repeated irrelevant statements.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node explains the technical details of how pages and spaces are created and managed in XWiki, but it does not provide information on setting access controls for different teams. Similarly, the second node lists various macros and their purposes in XWiki, which is not relevant to configuring access controls for team spaces.",
-    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention any of the specific steps or details outlined in the expected output.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about creating groups, defining rights at the wiki or space level, or inheriting rights for child pages."
+    "AnswerRelevancy": "The score is 0.85 because the response mostly addresses the question about configuring spaces in XWiki, but it includes multiple source links that do not directly contribute to answering the specific configuration query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node provides 'XML metadata about a page, which is not relevant to configuring access rights in XWiki.' The second node discusses 'sending representations and modifying resources using XML, which does not help in setting up access controls for spaces in XWiki.' The third node is about 'editing comments and managing attachments, which is unrelated to configuring team access in XWiki.' The fourth node explains 'the concept of spaces and sub-pages in XWiki, but does not provide information on setting access rights for teams.' The fifth node discusses 'migration actions and code changes, which are not relevant to configuring access rights for teams in XWiki.' Lastly, the sixth node describes 'configuration display settings in XWiki, which does not relate to setting access rights for teams.'",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context lacks any information about creating groups, defining rights at wiki or space level, or inheriting rights for child pages as described in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

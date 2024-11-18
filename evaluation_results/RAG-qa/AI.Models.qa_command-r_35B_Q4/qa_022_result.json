@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.7223809523809523,
+  "overall_score": 0.8233333333333335,
   "individual_scores": {
-    "AnswerRelevancy": 0.9285714285714286,
+    "AnswerRelevancy": 0.8666666666666667,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.3333333333333333,
+    "ContextualPrecision": 1.0,
     "ContextualRecall": 0.75,
-    "CustomContextualRelevancy": 0.6
+    "CustomContextualRelevancy": 0.5
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.93 because the answer is highly relevant and addresses the issue of not receiving notifications, but the inclusion of an unrelated URL slightly detracts from its overall relevance.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect faithfulness!",
-    "ContextualPrecision": "The score is 0.33 because the relevant node (third node) is ranked lower than three irrelevant nodes. The first node discusses getting a notification RSS feed and settings for notifications, the second node is about overriding default notification templates and installation instructions, and the fourth node is about clearing notifications and grouping similar notifications. These should be ranked lower than the third node, which mentions 'Watched Entities' and 'Follow a user', directly relevant to following pages or users to receive notifications.",
-    "ContextualRecall": "The score is 0.75 because several key aspects of the expected output, such as following pages or users for notifications, are well-supported by nodes in the retrieval context. However, specific details like defining the property `notifications.enabled` in `xwiki.properties` and the 'network' tab in the user profile are not mentioned in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context contains information about enabling notifications, following users, and notification settings, but lacks details on following pages, specific instructions for setting `notifications.enabled`, and viewing followed users in the 'network' tab."
+    "AnswerRelevancy": "The score is 0.87 because the response is mostly relevant to the issue of not receiving notifications, but it includes a source link that is not directly related to troubleshooting this specific problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than the irrelevant ones. The first node discusses 'Enable and disable the extension' and 'Enabling notifications for all users by default', which is directly related to ensuring notifications are activated. The second node includes 'Follow a user', aligning with the expected output's instruction on following users to receive notifications. The irrelevant nodes, ranked third and fourth, discuss 'Get a notification RSS feed' and 'various notification preferences macros', which do not directly address enabling notifications or following users. Great job on the ranking!",
+    "ContextualRecall": "The score is 0.75 because while there are several supportive connections between the expected output and nodes in the retrieval context, such as enabling notifications and following users or pages (related to nodes 1, 2, and 3), there are missing details like the specific mention of 'xwiki.properties' and the 'network' tab for viewing followed users, which are not found in the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users, but lacks specific details about setting `notifications.enabled` in `xwiki.properties` and using the alert menu for following pages."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

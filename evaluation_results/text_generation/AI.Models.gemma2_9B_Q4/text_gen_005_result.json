@@ -1,6 +1,6 @@
 {
-  "score": 0.7,
-  "reason": "The Actual Output is a creative space adventure that addresses the topic posed by the Input. However, it does not match the Expected Output, which specifies a group of astronauts exploring a new planet. The story focuses on a single character, Lyra, and her journey to find a mythical planet, which deviates from the group dynamic and exploration theme. The narrative is coherent and fluent, with proper grammar and punctuation.",
+  "score": 0.8,
+  "reason": "The Actual Output is a creative space adventure story that aligns well with the Input prompt. It features a space crew on a mission, addressing the topic effectively. However, it diverges from the Expected Output, which specifies a story about astronauts exploring a new planet, whereas the Actual Output focuses on a nebula and a mythical plant. Despite this, the story is coherent, fluent, and engaging.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

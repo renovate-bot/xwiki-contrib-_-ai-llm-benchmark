@@ -1,8 +1,8 @@
 {
-  "score": 0.4,
-  "reason": "The score is 0.40 because the summary includes incorrect information about setting access rights for terminal pages, adds details about documentation not mentioned in the original text, and fails to address several questions that the original text can answer.",
+  "score": 0.07142857142857142,
+  "reason": "The score is 0.07 because the summary includes a significant amount of extra information not present in the original text, which indicates a poor alignment with the original content. Additionally, the summary fails to answer questions that the original text can address, further reducing its effectiveness and relevance.",
   "score_breakdown": {
-    "Alignment": 0.6,
+    "Alignment": 0.07142857142857142,
     "Coverage": 0.4
   },
   "input_language": "en",

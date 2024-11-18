@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output addresses the Input prompt and aligns well with the Expected Output, providing a technical explanation of the brain's functions. It is coherent, fluent, and maintains a logical flow. However, it is more detailed and expansive than the Expected Output, which is more concise.",
+  "reason": "The Actual Output effectively addresses the Input prompt by adapting the text for a technical audience, aligning well with the Expected Output in terms of relevance and coherence. It maintains fluency and introduces technical terms like 'central processing unit' and 'neural networks.' However, it slightly diverges by adding more detail than the Expected Output, such as mentioning 'creativity, emotion, and motivation.'",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.41999999999999993,
+  "overall_score": 0.7567032967032967,
   "individual_scores": {
-    "AnswerRelevancy": 0.6666666666666666,
+    "AnswerRelevancy": 0.7692307692307693,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.3333333333333333,
-    "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.1
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.7142857142857143,
+    "CustomContextualRelevancy": 0.3
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.67 because the output includes a URL that does not directly address the issue of not receiving notifications.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.33 because the relevant node (third node) is ranked lower than several irrelevant nodes. For example, the first node discusses 'getting a notification RSS feed and the settings for notifications,' which is not about enabling notifications or following pages/users. Similarly, the second node is about 'overriding default notification templates and installation instructions,' which is also not relevant. The relevant node should be ranked higher to improve the score.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users but lacks detailed steps on setting `notifications.enabled` in `xwiki.properties` and specific instructions on following pages or users."
+    "AnswerRelevancy": "The score is 0.77 because the output contains some relevant information addressing the notification issue, but it is diluted by multiple irrelevant statements such as source links, incomplete information, and general labels that do not directly resolve the problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than irrelevant nodes. The first and second nodes relate to 'ensuring notifications are activated' and 'guidance on following users or pages for notifications', which are directly relevant to the input. The third node, which focuses on 'Get a notification RSS feed' and 'Notifications Macro', and the fourth node, listing 'various notification preferences macros', are not directly related to enabling notifications or following users/pages, and are correctly ranked lower.",
+    "ContextualRecall": "The score is 0.71 because several key aspects of the expected output, such as enabling notifications and following users, are supported by nodes in the retrieval context. However, specific details like 'xwiki.properties' and 'profil utilisateur' are missing, affecting the overall alignment.",
+    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users, but lacks specific details about setting `notifications.enabled` to `true` in `xwiki.properties` and using the alert menu for notifications."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

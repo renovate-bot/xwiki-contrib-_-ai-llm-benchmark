@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.5066666666666666,
+  "overall_score": 0.7072222222222222,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
-    "Faithfulness": 0.9,
-    "ContextualPrecision": 0.3333333333333333,
-    "ContextualRecall": 0.0,
+    "AnswerRelevancy": 0.8888888888888888,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.7222222222222222,
+    "ContextualRecall": 0.625,
     "CustomContextualRelevancy": 0.3
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the issue of not receiving notifications. Great job!",
-    "Faithfulness": "The score is 0.90 because the actual output incorrectly claims that users do not receive notifications on their wiki, while the context indicates that users do receive notifications under certain conditions.",
-    "ContextualPrecision": "The score is 0.33 because the relevant node, which mentions 'Watched Entities' and 'Follow a user', is ranked third. Irrelevant nodes discussing 'getting a notification RSS feed and the settings for notifications' (first node) and 'overriding default notification templates and installation instructions' (second node) should be ranked lower.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users, but lacks details on setting `notifications.enabled` to `true` in `xwiki.properties` and the specific steps for following pages or users."
+    "AnswerRelevancy": "The score is 0.89 because the response is mostly relevant to the issue of not receiving notifications, but it includes source links that do not directly address the problem, preventing a higher score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.72 because relevant nodes are generally ranked higher than irrelevant ones. However, the score is not higher because the second node, which focuses on 'customizing email templates and creating global notification filters', and the fourth node, which discusses 'RSS feeds and notification grouping strategies', are ranked above the sixth node, which is relevant as it mentions 'Administrators can go to Administration > Notifications to configure settings'.",
+    "ContextualRecall": "The score is 0.62 because while several elements of the expected output, such as enabling notifications and following pages or users, are supported by nodes in the retrieval context, specific details like 'xwiki.properties', receiving all notifications from a user, and the 'r\u00e9seau' tab are not mentioned in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users, but lacks details on setting `notifications.enabled` in `xwiki.properties` and specific steps for following pages or users."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

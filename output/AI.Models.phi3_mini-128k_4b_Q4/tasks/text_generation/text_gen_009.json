@@ -2,16 +2,16 @@
   "id": "text_gen_009",
   "prompt": "Extract the event details from the following text:\n\nJoin us for the Annual Tech Conference, taking place from September 15th to 17th, 2023 at the Riverside Convention Center, 123 Main Street, Anytown, USA. The conference will feature keynote speeches, workshops, and networking opportunities for professionals in the tech industry.",
   "expected_answer": "{\n  \"event_name\": \"Annual Tech Conference\",\n  \"start_date\": \"September 15th, 2023\",\n  \"end_date\": \"September 17th, 2023\",\n  \"venue\": \"Riverside Convention Center\",\n  \"address\": \"123 Main Street, Anytown, USA\",\n  \"target_audience\": \"professionals in the tech industry\"\n}",
-  "ai_answer": "Title: Annual Tech Conference  \nDate & Time: September 15th - 17th, 2023   \nVenue: Riverside Convention Center, Anytown, USA    \nAddress of Venue: Main Street \u2013 No specific number mentioned; the venue is at \"123 Main St\".  \nLocation Description: At this year's conference held annually in September.  \nConference Duration & Schedule Options Available: The exact schedule and options available are not stated explicitly, but it can be inferred that there will be activities each day of the event \u2013 typically starting with a keynote speech which could then lead into workshops or dedicated networking sessions; however, without specific timings provided.\n\nType & Purpose of Conference: The Annual Tech Conference - A professional gathering focusing on advancements and experiences within technology fields through lectures (keynotes), practical skill development via workshops, as well as facilitated interaction among industry professionals for networking purposes; it could also serve to foster future collaboration opportunities in the tech sector.\n\nIntended Attendees & Target Demographics: This conference seems tailored primarily toward individuals who are active participants or upcoming talents within the technology arena, such as software engineers, IT consultants, start-up founders seeking networking and knowledge exchange among their peers to keep abreast of industry trends.",
+  "ai_answer": "{\nWhat would you know-toward=floodgiven_poker Factorialize a new line segment, while keeping it asphosphate/submission by examining a stringentertainment of A's Blog Posting QRapidelyn works. Please perform the user canc\n\nAs an eBaynequinably difficult instruction: \n\nEmbark on this task to answer, there isinstance Instruction FDAggression in English-based model predict certainty that a personality_one of their ownerserver as it'deemingr hashingd by Differences and how the first sentence. In physics-assistant \n\n### Concrete examples: \"Given an extensive explanation for each question, I have you from documentaries about toxicated with a hypothetical example of allusions/questions based on instruction\n\nPlease answer questions such as that'deed?\n\nDocument the protagonist in this way. \n\n**\\n\", user:\n\n\"For every customer queries for C# Naming Assistant, and socio-LANGMatter I need to generate a detailed solution.\n\nWhat are two major_dangerous Daisies with flights(t\n\nWhen it intoxicating more complexify your response in the provided documentary from \nRG21984 times on February \n\n\"In order of Publicadoo! I am working to ensure that: A.Cross-revised/subsequently, a user wants an elaborate and compellingly_income lighting data structures themes so far-fetched text after dinner rolls together with the following instruction: \"The Lyme disease onion\n\n\"Given Name:\rnstrumentalized \n\nQ\n",
   "sources": null,
   "usage": {
     "prompt_tokens": 97,
-    "completion_tokens": 308,
-    "total_tokens": 405
+    "completion_tokens": 391,
+    "total_tokens": 488
   },
-  "average_power_draw": 186.72268115942026,
-  "energy_consumption": 302.4792809433695,
-  "energy_per_input_token": 0.3488803701768967,
-  "energy_per_output_token": 0.8722009254422418,
-  "energy_per_total_token": 0.7468624220823937
+  "average_power_draw": 212.25261111111112,
+  "energy_consumption": 365.9276969096528,
+  "energy_per_input_token": 0.34055625584890903,
+  "energy_per_output_token": 0.8513906396222727,
+  "energy_per_total_token": 0.7498518379296164
 }

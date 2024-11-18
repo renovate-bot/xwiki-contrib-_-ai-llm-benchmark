@@ -2,16 +2,16 @@
   "id": "summ_007",
   "prompt": "Please summarize the following text:\n\n\nWhenever your make a modification to a page in XWiki, it is stored in that page's version history. You can compare any 2 versions of a page to see what has been changed between them. No content is ever lost \u2014 all the content you add to your wiki throughout time is saved. You can easily rollback to a previous version of a page if a recent modifications appears to be wrong.\n\n[![PageHistory.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/GettingStarted/PageHistory/PageHistory.png?width=650&rev=1.1)](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/GettingStarted/PageHistory/PageHistory.png?rev=1.1)\n\nTo compare 2 versions of a page, look for the \"History\" tab at the bottom of the page. You can also find the \"History\" menu item by clicking on the \"More Actions\" button at the top of a page.\n\n* To compare any 2 versions of a page, select those 2 versions and click on the \"Compare selected versions\" button located at the bottom of the page\n\t+ A page will show you the differences in content, attachments and comments between the 2 versions of the page\n\t+ Click on your browser's back button to come back where you were\n* To view the contents of an earlier version of the page, click on that page version number in the \"Version\" column\n* To rollback to a previous version of the page, click on the \"Rollback\" button\n\nFind out more about XWiki's page history feature **[on the Version Control page on XWiki.org.](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/VersionControl)**\n\n**Next: [Step 4 Changing the logo and the panels](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/ChangingTheLogoAndThePanels)**\n\n\n",
   "expected_answer": null,
-  "ai_answer": "To summarize, in XWiki:\n1. Changes made to a page are stored and tracked as part of the version history for that specific page. This feature ensures no content loss occurs as all changes added over time are saved.\n2. Comparing two versions of a page is possible through the \"History\" tab at the bottom of any given page or from the \"More Actions\" drop-down menu, which can be found atop any XWiki page. \n3. By selecting and comparing any two chosen version numbers on a page's history record, you will get to see the content differences including text alterations, changes in attachments, and comments that occurred between those versions. \n4. The \"Back\" button allows users to navigate back to their previous position within the wiki after viewing a particular version of the page. \n5. For viewing an older version of a page, click on the relevant page number located in the 'Version' column from a page history record. \n6. To reverse to a preceding page version (i.e., rollback), use the \"Rollback\" feature present within each individual history record for that page. \n7. For further insights into XWiki's Version Control feature, one may refer to their detailed guide located at this link: [https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/VersionControl](http://www.example.com)",
+  "ai_answer": "",
   "sources": null,
   "usage": {
-    "prompt_tokens": 499,
-    "completion_tokens": 319,
-    "total_tokens": 818
+    "prompt_tokens": 496,
+    "completion_tokens": 1,
+    "total_tokens": 497
   },
-  "average_power_draw": 263.7732367149757,
-  "energy_consumption": 1032.7366723282896,
-  "energy_per_input_token": 0.7965574024900036,
-  "energy_per_output_token": 1.9913935062250088,
-  "energy_per_total_token": 1.2625142693499873
+  "average_power_draw": 228.58511111111113,
+  "energy_consumption": 26.23017507134544,
+  "energy_per_input_token": 0.05261820475696176,
+  "energy_per_output_token": 0.1315455118924044,
+  "energy_per_total_token": 0.052777012215986796
 }

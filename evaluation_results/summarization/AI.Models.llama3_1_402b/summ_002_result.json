@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary contains contradictions regarding script execution permissions and the presence of a table summarizing permissions. Additionally, the summary fails to answer specific questions about the default status of the comment right and the register right for the non-registered pseudo-user 'XWiki.XWikiGuest'.",
+  "score": 0.2,
+  "reason": "The score is 0.20 because the summary contains a significant contradiction regarding the priority order of rights, includes extra information not present in the original text, and fails to answer several questions that the original text can address. These issues indicate a low-quality summarization.",
   "score_breakdown": {
-    "Alignment": 0.8823529411764706,
-    "Coverage": 0.6
+    "Alignment": 0.7692307692307693,
+    "Coverage": 0.2
   },
   "input_language": "en",
   "summary_language": "en"

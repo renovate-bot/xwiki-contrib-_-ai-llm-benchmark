@@ -1,9 +1,9 @@
 {
-  "score": 0.75,
-  "reason": "The score is 0.75 because the summary contains some contradictions and extra information not present in the original text, and it fails to answer some questions that the original text can.",
+  "score": 0.8571428571428571,
+  "reason": "The score is 0.86 because the summary includes extra information not present in the original text, such as details about the database schema being automatically upgraded and a preference for upgrading over downgrading. However, there are no contradictions, indicating a generally accurate representation of the original text.",
   "score_breakdown": {
-    "Alignment": 0.75,
-    "Coverage": 0.8
+    "Alignment": 0.8571428571428571,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

@@ -1,9 +1,9 @@
 {
-  "score": 0.9166666666666666,
-  "reason": "The score is 0.92 because the summary includes extra information about a table with additional information that is not mentioned in the original text.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary contains multiple contradictions and extra information not present in the original text, leading to significant inaccuracies. Additionally, the summary fails to answer specific questions that the original text can address, further diminishing its quality.",
   "score_breakdown": {
-    "Alignment": 0.9166666666666666,
-    "Coverage": 1.0
+    "Alignment": 0.6153846153846154,
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

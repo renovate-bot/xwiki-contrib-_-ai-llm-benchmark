@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.4,
+  "overall_score": 0.36,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
+    "AnswerRelevancy": 0.8,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant and addresses the question without any irrelevant statements. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect faithfulness!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'group synchronization and customization for OpenID Connect,' which is not relevant to authenticating users with access tokens. Similarly, the second node talks about 'protection levels for cookies and security strategies for failed login attempts,' which does not relate to access token-based user authentication.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any node(s) in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about the LLM-Anwendung (BETA)-Erweiterung or the specific steps for enabling and configuring JWT token-based authentication."
+    "AnswerRelevancy": "The score is 0.80 because the main content addresses the question about authenticating users with access tokens, but it includes unrelated source links and a discussion on document validation in XWiki, which detracts from the focus.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'model validation strategies and configuration in XWiki', which is unrelated to 'authentication using access tokens'. The second node is about 'attachment validation and configuration of mimetype restrictions', which does not pertain to 'user authentication with access tokens'. The third node provides information about 'the admin UI for model validation and its installation', which is not relevant to 'authenticating users with access tokens'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be linked to any nodes in the retrieval context. The retrieval context lacks information on authenticating users with access tokens, JWT claims, Ed25519 keys, and the configuration or limitations of the authenticator.",
+    "CustomContextualRelevancy": "The retrieval context lacks any information related to token-based authentication or JWT, which are central to the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

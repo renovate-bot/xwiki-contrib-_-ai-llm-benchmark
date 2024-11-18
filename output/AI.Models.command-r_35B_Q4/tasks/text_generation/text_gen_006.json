@@ -2,16 +2,16 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "A whisper of wind, an embrace so gentle,\nThe caress of grass, a soft sensation.\nThe dancing trees, their leaves rejoice,\nNature's symphony, an oscillation.\n\nBlossom's perfume, a sweet reminder,\nOf life's beauty and its splendor.\nVibrant hues painting the landscape,\nA mesmerizing natural wonder.\n\nThe sky's azure, a peaceful haven,\nClouds' cotton-like drift, serene delight.\nSunsets and sunrises in unison,\nTheir beauty transfixes the eyes.\n\nNature, a masterpiece without equal,\nHeals our souls with gentle touch.\nEmbracing its charm, peace ensue,\nIts magic captivates our senses, too. \n\nThe world's chaos drifts away,\nIn the embrace of nature's bliss. \nHer song, a lullaby, soothes,\nAn invitation to embrace life's bliss. \n",
+  "ai_answer": "Amidst the bustling world, where concrete forests rise,\nNature's beauties often go unseen by surprised eyes.\nYet in her realm of wonders unconfined,\nThere's peace and awe that's so hard to find.\n\nSoftly caressed by gentle breeze's whisper,\nTrees dance gracefully, like ballerinas in a misty glimmer.\nTheir verdant leaves, like soothing melody,\nOffer solace from life's rude hurly-burly.\n\nVibrant wildflowers paint the meadows oh so sweet,\nWith their perfume, a welcome aroma in each step,\nSpreading beauty, joy, and calmness all around,\nWarding off the gloom with their sunny, colorful crown.\n\nThe heavens above unfurl a velvet drape of night,\nStarry diamonds twinkling, shedding celestial light.\nMoon's ethereal glow caresses gentle hills,\nNature's silent song fills our souls with thrills.\n\nIn her grand canvas, Life's spectrum is revealed,\nNature's beauties are never just one-fold.\nSo take a break from the treadmill of life,\nAnd find your peace amidst Nature's heavenly wife. \n\nLet the stresses of city life fade away,\nFor in nature's lap lies a beautiful kaleidoscope, each day.",
   "sources": null,
   "usage": {
     "prompt_tokens": 15,
-    "completion_tokens": 195,
-    "total_tokens": 210
+    "completion_tokens": 270,
+    "total_tokens": 285
   },
-  "average_power_draw": 95.96660392364791,
-  "energy_consumption": 1818.4554934489906,
-  "energy_per_input_token": 3.618816902386051,
-  "energy_per_output_token": 9.047042255965128,
-  "energy_per_total_token": 8.659311873566622
+  "average_power_draw": 91.53052236652233,
+  "energy_consumption": 2463.4420509231854,
+  "energy_per_input_token": 3.570205870903167,
+  "energy_per_output_token": 8.925514677257919,
+  "energy_per_total_token": 8.643656319028722
 }

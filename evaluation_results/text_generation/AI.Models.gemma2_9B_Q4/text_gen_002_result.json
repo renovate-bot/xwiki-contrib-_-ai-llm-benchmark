@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output addresses the Input prompt and aligns with the Expected Output, though it uses different phrasing. It is coherent, grammatically correct, and stays on topic, but the focus on 'basking in the sunshine' slightly deviates from 'exploring the garden.'",
+  "score": 0.9,
+  "reason": "The Actual Output addresses the main topics and themes from the Input, maintaining relevance. It is coherent with a logical flow similar to the Expected Output, although the verb 'frolicked' differs slightly from 'enjoyed exploring'. The sentence structure, grammar, and readability are fluent and consistent with the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

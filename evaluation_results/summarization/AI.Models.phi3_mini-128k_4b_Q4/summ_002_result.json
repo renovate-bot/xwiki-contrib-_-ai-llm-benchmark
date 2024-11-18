@@ -1,8 +1,8 @@
 {
-  "score": 0.0,
-  "reason": "The score is 0.00 because the summary contains multiple contradictions with the original text, includes extra information not mentioned in the original text, and fails to answer several questions that the original text can address.",
+  "score": 0,
+  "reason": "The score is 0.00 because the summary fails to address several key questions that the original text can answer, indicating a lack of coverage and completeness in the summarization.",
   "score_breakdown": {
-    "Alignment": 0.0,
+    "Alignment": 0,
     "Coverage": 0.0
   },
   "input_language": "en",

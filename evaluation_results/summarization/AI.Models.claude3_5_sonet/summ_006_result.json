@@ -1,9 +1,9 @@
 {
-  "score": 0.6666666666666666,
-  "reason": "The score is 0.67 because the summary contains multiple contradictions to the original text, such as the conditions for user login, the documentation of XWiki's programming features, the availability of additional resources, and the inclusion of links to relevant resources.",
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary includes extra information not present in the original text, such as regular users being able to create and edit pages and access page history, and it lacks details about guides for users on creating a page and additional applications on the Extensions wiki.",
   "score_breakdown": {
     "Alignment": 0.6666666666666666,
-    "Coverage": 1.0
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

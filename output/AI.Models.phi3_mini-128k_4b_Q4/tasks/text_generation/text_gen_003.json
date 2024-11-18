@@ -2,16 +2,16 @@
   "id": "text_gen_003",
   "prompt": "Adapt the following text to a younger audience (age 8-10):\n\nPhotosynthesis is the process by which plants convert sunlight into chemical energy that can be used to fuel the plant's activities.",
   "expected_answer": "Plants use a special process called photosynthesis to make their own food. They take in sunlight and turn it into energy that helps them grow and stay healthy.",
-  "ai_answer": "Let's imagine your favorite playground slide and how fun it feels as you zoom down with just one push, turning a moment of joy from now to then without needing another shove. In plants, this magical ride happens because they use sunshine like our slides work! But instead of getting colder or sweatier while going really fast on the slide, when they bask in sunlight\u2019s warmth during a process called 'Photosynthesis', what happens is pretty cool too. \nThe plants take this special energy and make food for themselves using water from their roots that travel like tiny high-speed trains all through the plant! They mix up these two with help from light, kind of mixing ingredients in your favourite recipe under super sunlight powered by our friend Sunbeam. And just like how you get an energy rush after eating or drinking lots during playtime; this food makes them feel all powerful and healthy too! That\u2019s Photosynthesis for plants - a beautiful way of creating their own source of life-giving fuel from sunshine, water, and air. Cool huh?",
+  "ai_answer": "Imagine photosynthesis like magic trick inside leaves of many green things you see in your surroundings, such as trees and grasses! When they face up towards warm, yellowish light from our big sun (don\u2019t forget about not too hot or cold), these amazing plants change the Sun's energy into a special kind that helps them grow bigger with new leaves, roots. They even make oxygen which is what we breathe in! It\u2019s like they have their very own green power stations inside of them called chlorophyll (a fancy name for 'green stuff').",
   "sources": null,
   "usage": {
     "prompt_tokens": 57,
-    "completion_tokens": 244,
-    "total_tokens": 301
+    "completion_tokens": 124,
+    "total_tokens": 181
   },
-  "average_power_draw": 99.5593478260869,
-  "energy_consumption": 387.0694176244734,
-  "energy_per_input_token": 0.580313969451984,
-  "energy_per_output_token": 1.4507849236299601,
-  "energy_per_total_token": 1.2859449090514066
+  "average_power_draw": 96.94749206349206,
+  "energy_consumption": 219.46107873149145,
+  "energy_per_input_token": 0.597986590549023,
+  "energy_per_output_token": 1.4949664763725579,
+  "energy_per_total_token": 1.2124921476877981
 }

@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.3583333333333333,
+  "overall_score": 0.36,
   "individual_scores": {
-    "AnswerRelevancy": 0.7916666666666666,
+    "AnswerRelevancy": 0.8,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.79 because the actual output contains several irrelevant URLs that do not address the question about disabling notifications. However, the core information provided is still somewhat relevant to the input query.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are unrelated to the input. For example, the first node discusses 'XWiki syntax and formatting features,' the second node is about 'an extension for authenticating users with JSON Web Tokens,' and the third node provides 'links and descriptions for managing collections and documents via REST API in XWiki.' These topics do not relate to managing or disabling notifications.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about automatic page following, notification settings, or custom filters as mentioned in the expected output."
+    "AnswerRelevancy": "The score is 0.80 because the response addresses the main question about disabling notifications, but it includes several irrelevant URLs related to XWiki documentation, syntax, extensions, security module, and features, which do not pertain to the specific query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'attaching files', which is unrelated to 'notification settings'. The second node is about 'moving and deleting attachments', not 'managing notification settings'. The third node covers 'displaying pages and macros', which does not pertain to 'notification settings'. The fourth node is about 'administrating wiki features', with no mention of 'notification settings'. The fifth node discusses 'permissions and security', not 'notification settings'. Lastly, the sixth node lists 'applications and features like Office Importer and Syntax Highlighting', which are not related to 'notification settings'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to automatic page following or notification settings as mentioned in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

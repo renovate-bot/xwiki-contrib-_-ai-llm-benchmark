@@ -1,9 +1,9 @@
 {
-  "score": 0.76,
-  "reason": "The score is 0.76 because the summary introduces several contradictions, such as dividing the guide into parts and mentioning specific methods for upgrading that are not present in the original text. However, there is no extra information added.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary contains several contradictions with the original text, such as incorrect methods for upgrading and incorrect descriptions of processes like the Distribution Wizard and Solr initialization. Additionally, the summary includes extra information not present in the original text and fails to answer several questions that the original text addresses. These issues significantly reduce the quality and accuracy of the summary.",
   "score_breakdown": {
-    "Alignment": 0.76,
-    "Coverage": 1.0
+    "Alignment": 0.6,
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

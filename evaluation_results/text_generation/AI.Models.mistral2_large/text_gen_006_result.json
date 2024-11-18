@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output is highly relevant to the Input prompt, addressing the beauty of nature comprehensively. It meets the key points of the Expected Output by vividly describing the wonders of the natural world. The ideas are logically connected and flow smoothly, and the poem is free of grammatical errors, reading naturally.",
+  "reason": "The poem beautifully captures the beauty of nature, aligning perfectly with the prompt. It is coherent with vivid imagery and smooth transitions between stanzas. The language is fluent and error-free, and it matches the expected output by describing the wonders of the natural world.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

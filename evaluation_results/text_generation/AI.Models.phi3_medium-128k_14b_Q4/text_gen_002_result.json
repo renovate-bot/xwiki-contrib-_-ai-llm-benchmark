@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output addresses the Input prompt and matches the context of the Expected Output. It is coherent, grammatically correct, and uses natural language. While it uses different phrasing, the main ideas and details align closely with the Expected Output.",
+  "reason": "The Actual Output directly addresses the Input prompt by incorporating all keywords into a coherent sentence. It maintains logical flow and consistency with the Expected Output, differing only by using 'frolicking in the vibrant garden' instead of 'exploring the garden,' which slightly enhances descriptiveness but remains aligned with the intended meaning. The sentence is fluent, grammatically correct, and readable.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

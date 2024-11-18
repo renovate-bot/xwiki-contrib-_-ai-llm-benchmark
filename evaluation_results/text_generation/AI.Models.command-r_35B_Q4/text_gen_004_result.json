@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output directly addresses the topic by describing the wireless Bluetooth headphones and their features. It covers all key points such as noise-cancelling, 20-hour battery life, and comfortable fit, similar to the Expected Output. The ideas flow logically and are well-organized, with good grammar and readability. The only minor difference is the slightly different wording and structure.",
+  "reason": "The Actual Output directly addresses the Input prompt by describing the wireless Bluetooth headphones with noise-cancelling, 20-hour battery life, and comfortable fit, targeting tech-savvy professionals. It is coherent and fluent, with logical flow and correct grammar. It closely matches the Expected Output in terms of quality and content, though it lacks the explicit mention of 'cutting-edge' and 'premium' descriptors.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

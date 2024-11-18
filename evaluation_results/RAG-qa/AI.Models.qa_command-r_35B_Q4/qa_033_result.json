@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.3619047619047619,
+  "overall_score": 0.3142857142857143,
   "individual_scores": {
-    "AnswerRelevancy": 0.8095238095238095,
+    "AnswerRelevancy": 0.5714285714285714,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.81 because the answer provides relevant information about authenticating users with access tokens, but includes multiple URLs that are not directly related to the specific question.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job staying faithful to the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'properties of a collection object and methods for managing collections in a wiki', which is unrelated to user authentication using access tokens.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any node(s) in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain information about authenticating users with access tokens, JWT claims, or configuring the authenticator as described in the expected output."
+    "AnswerRelevancy": "The score is 0.57 because the response partially addresses the question about authenticating users with access tokens, but includes irrelevant information about documentation, extensions, and general help that do not directly relate to the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'upgrading and downgrading XWiki', which is unrelated to 'user authentication with access tokens'. The second node talks about 'user rights and registration options' without mentioning 'authentication with access tokens'. The third node is about 'managing user rights and profiles', which does not address 'authentication using access tokens'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context, indicating a complete lack of relevant information.",
+    "CustomContextualRelevancy": "The retrieval context lacks any information about token-based authentication or JWT, which are central to the expected answer."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

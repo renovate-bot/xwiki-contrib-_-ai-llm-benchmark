@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.5685714285714286,
+  "overall_score": 0.4852380952380953,
   "individual_scores": {
     "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0,
-    "ContextualRecall": 0.6428571428571429,
-    "CustomContextualRelevancy": 0.2
+    "ContextualPrecision": 0.22619047619047616,
+    "ContextualRecall": 0.2,
+    "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the output is fully relevant and directly addresses the question about setting up group synchronization between XWiki and an OpenID Connect provider.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node provides general information about OpenID Connect and its integration with XWiki but does not provide specific steps for configuring group synchronization. The second node mentions allowing XWiki to authenticate with an OpenID Connect provider but does not mention group synchronization or the specific configuration steps required. The third node describes container authentication and other authentication methods but does not address group synchronization with OpenID Connect. The fourth node lists various configuration guides and files but does not provide the detailed steps for setting up group synchronization between XWiki and an OpenID Connect provider. The fifth node provides links to configuration guides for specific systems and mentions the `xwiki.properties` file but does not detail the steps for configuring group synchronization.",
-    "ContextualRecall": "The score is 0.64 because while the retrieval context nodes mention key configuration elements like 'xwiki.properties', 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping', they lack specific instructions such as opening the file with a text editor, replacing placeholders, and restarting the XWiki instance.",
-    "CustomContextualRelevancy": "The retrieval context mentions group synchronization but lacks detailed steps and properties configuration found in the expected output."
+    "AnswerRelevancy": "The score is 1.00 because the output is perfectly relevant and directly addresses the question about setting up group synchronization between XWiki and an OpenID Connect provider. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.23 because the relevant nodes in the retrieval context, which discuss 'group synchronization' and the 'oidc.groups.mapping' property, are ranked lower (sixth and seventh) than the irrelevant nodes. The irrelevant nodes, ranked from first to fifth, focus on topics like 'authentication management and OpenID Connect endpoints', 'container authentication', 'domain-based authentication', 'OpenID Connect authentication', and 'dependencies for the OpenID Connect extension', which do not address group synchronization with OpenID Connect.",
+    "ContextualRecall": "The score is 0.20 because only a few elements from the expected output, such as the 'oidc.groups.claim' and 'oidc.groups.mapping' properties, are supported by nodes in the retrieval context. Most of the detailed steps and configurations mentioned in the expected output, like setting up group synchronization, finding and editing the 'xwiki.properties' file, and specific configuration instructions, are not supported by the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context lacks specific instructions on configuring group synchronization properties like 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping' as detailed in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

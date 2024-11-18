@@ -1,6 +1,6 @@
 {
-  "score": 0.5,
-  "reason": "The Actual Output addresses the topic and extracts relevant information but includes unnecessary details and lacks coherence. It misses the concise format of the Expected Output and adds speculative content not present in the Input.",
+  "score": 0.0,
+  "reason": "The Actual Output is incoherent and irrelevant to the Input prompt, failing to extract any event details. It does not align with the Expected Output or maintain fluency.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

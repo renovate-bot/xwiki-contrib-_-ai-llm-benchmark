@@ -2,16 +2,16 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "Upon this canvas wide and grand,\nWhere Heaven's breath and Earth combine,\nNature, with stroke both fierce and tender,\nPaints scenes that stir our hearts' designs.\n\nIn emerald forests deep, where light\nDapples through leaves like dancing hands,\nAncient trunks ascend in majesty,\nSilent sentinels 'gainst time's demands.\n\nMosses clothe the ground as tapestries,\nWhilst rivers weave and silver thread\nTheir liquid paths through landscapes vast,\nEroded by patience' steady tread.\n\nMountains rear their heads, aloft they touch\nThe clouds that kiss them soft as sighs;\nAnd valleys lie below like cradles,\nWrapped in quilt of verdant surprise.\n\nFields of gold where wheat sway gently,\nAs golden oceans 'neath the sun;\nAnd purple heather blooming wild on hillsides,\nEchoing Nature's call, \"Come one, come all!\"\n\nWaterfalls descend with thunder's voice,\nLike silver ribbons 'gainst the stone,\nPlunging down into clear pools beneath,\nWhere waters sing their tranquil tone.\n\nIn twilight's glow, the lake reflects\nThe day's last light with soft despair;\nAs shadows lengthen and the sun sinks low,\nShe paints her tears upon its surface fair.\n\nA million stars prick holes in night,\nTheir timeless waltz begun anew;\nAnd Northern Lights dance hand-in-hand\nWith moonbeams 'cross the velvet sky above.\n\nIn every creature, big or small,\nFrom hummingbird to whale to bee,\nResides a harmony so pure,\nThat only Nature knows the key.\n\nOh! Beauty vast in ev'ry form,\nFrom microscopic to immense;\nFrom whispering breeze through rustling leaves,\nTo storms that shake creation's tense.\n\nThis world she hath created fine,\nHer masterpiece, her crowning glory;\nFor all her wonder, love, and grace,\nWe owe our humble hearts' adoration.\n\nSo let us stand in awe of Her,\nAnd marvel at each passing hour;\nLest we forget the breath He gave us,\nThat binds us to this wondrous tour.",
+  "ai_answer": "In verdant cathedrals where light streams,\nI find the beauty that I dream.\nA woodland floor, a carpet vast,\nOf emerald moss and leaves past.\n\nThe wind whispers through ancient trees,\nTheir bark etched deep with history's breeze.\nEach branch, a tale to slowly tell,\nBeneath their canopy, I dwell.\n\nRivers sing in liquid rhyme,\nAs sunlight dances on their climb;\nTheir waters mirror azure skies,\nIn ceaseless motion, they arise.\n\nWildflowers bloom in riotous hue,\nIn meadows bathed by morning dew.\nTheir delicate perfume fills the air,\nA sweet symphony so rare.\n\nMountains stand sentinel, majestic,\nSnow-crowned kings of nature's regalistic.\nBeneath their peaks, glaciers flow,\nMeltwater's gentle ebb and glow.\n\nNight falls, but still beauty reigns,\nIn constellations' silver trains.\nThe moon illuminates the scene,\nA silvery spotlight on green.\n\nOh, to wander paths untrodden,\nBy nature's hand forever sheltered!\nEach sunrise paints a masterpiece;\nEvery sunset softly pleases.",
   "sources": null,
   "usage": {
     "prompt_tokens": 12,
-    "completion_tokens": 434,
-    "total_tokens": 446
+    "completion_tokens": 233,
+    "total_tokens": 245
   },
-  "average_power_draw": 224.8968478260869,
-  "energy_consumption": 1094.2901918318996,
-  "energy_per_input_token": 0.9975298011229715,
-  "energy_per_output_token": 2.493824502807428,
-  "energy_per_total_token": 2.4535654525378914
+  "average_power_draw": 229.21771980676328,
+  "energy_consumption": 585.9389657609681,
+  "energy_per_input_token": 0.985599605989854,
+  "energy_per_output_token": 2.4639990149746347,
+  "energy_per_total_token": 2.39158761535089
 }

@@ -1,7 +1,7 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output directly addresses the topic of creating a travel guide for Kyoto, Japan. It covers all key points and details such as top attractions, food, accommodations, transportation, and tips, matching the Expected Output. The guide is coherent, logically structured, and fluent with correct grammar and syntax.",
-  "prompt_language": "ro",
+  "reason": "The Actual Output thoroughly addresses the main topic of creating a travel guide for Paris, a popular tourist destination. It is coherent, logically structured, and maintains fluency with correct grammar and readability, aligning well with the Expected Output. The guide provides detailed information on attractions, accommodations, and activities, matching the specificity required by the Input.",
+  "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"
 }

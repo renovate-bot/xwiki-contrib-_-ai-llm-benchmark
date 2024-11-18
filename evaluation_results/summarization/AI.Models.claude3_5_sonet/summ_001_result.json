@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary contains contradictory information about the optional nature and visibility of panels, and it fails to answer specific questions about editing and exporting pages.",
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary is mostly accurate and concise, with no contradictions or unnecessary information added. However, it misses some details, such as the ability to export a page in PDF format in XWiki, which slightly affects its comprehensiveness.",
   "score_breakdown": {
-    "Alignment": 0.8,
-    "Coverage": 0.6
+    "Alignment": 1.0,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

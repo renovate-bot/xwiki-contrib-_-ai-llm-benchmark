@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output is relevant to the Input prompt and aligns well with the Expected Output in terms of addressing the product features and target audience. It is coherent and logically structured, with a clear focus on the benefits for tech-savvy professionals. The fluency is high, with proper grammar and syntax. Minor differences in phrasing and emphasis prevent a perfect score.",
+  "reason": "The Actual Output aligns well with the Expected Output, addressing the product's features and target audience. It maintains logical flow and consistency, with minor differences in wording. The fluency is excellent, matching the grammatical correctness and smoothness of the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

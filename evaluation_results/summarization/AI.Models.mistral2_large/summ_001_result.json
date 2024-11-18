@@ -1,9 +1,9 @@
 {
-  "score": 0.8947368421052632,
-  "reason": "The score is 0.89 because the summary contains minor contradictions about the placement of panels and includes extra information about the Content area that is not specified in the original text.",
+  "score": 0.75,
+  "reason": "The score is 0.75 because the summary contains contradictions regarding the display of panels in XWiki, includes extra information not present in the original text, and fails to address a question about email notifications that the original text can answer.",
   "score_breakdown": {
-    "Alignment": 0.8947368421052632,
-    "Coverage": 1.0
+    "Alignment": 0.75,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

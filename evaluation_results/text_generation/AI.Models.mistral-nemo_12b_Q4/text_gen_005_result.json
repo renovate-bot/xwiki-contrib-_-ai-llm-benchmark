@@ -1,6 +1,6 @@
 {
-  "score": 0.7,
-  "reason": "The Actual Output is a creative story about a space adventure, addressing the Input. However, it diverges from the Expected Output as it focuses on musical themes and time travel rather than exploring a new planet. The story is coherent, grammatically correct, and uses natural language.",
+  "score": 0.6,
+  "reason": "The Actual Output is a creative space adventure story, aligning with the Input. However, it deviates from the Expected Output, which specifies exploration of a new planet, not a cosmic structure. The Actual Output is coherent and fluent but lacks direct alignment with the Expected Output's focus on planetary exploration.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

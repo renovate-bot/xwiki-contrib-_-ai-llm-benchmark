@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.6025641025641025,
+  "overall_score": 0.6925925925925925,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
-    "Faithfulness": 0.8461538461538461,
-    "ContextualPrecision": 0.3666666666666667,
+    "AnswerRelevancy": 0.9629629629629629,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.7,
     "ContextualRecall": 0.5,
     "CustomContextualRelevancy": 0.3
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant and there are no irrelevant statements in the actual output. Great job!",
-    "Faithfulness": "The score is 0.85 because the actual output incorrectly claims that notifications are enabled by default for various types of events, while the retrieval context specifies that notifications are only enabled by default for mentions and actions on pages created or updated by the user. Additionally, the actual output incorrectly states that turning on the 'Own event filter' reduces notifications, whereas the retrieval context indicates that turning off the filter allows users to receive notifications for their own actions.",
-    "ContextualPrecision": "The score is 0.37 because the relevant nodes are not ranked higher than the irrelevant nodes. For example, the first node discusses enabling and disabling the notification module and email notifications but does not address how to disable notifications for specific pages or user settings. Similarly, the second node talks about getting an RSS feed of notifications and customizing notification settings, but it does not provide information on disabling notifications for specific pages or user settings. These irrelevant nodes should be ranked lower than the third node, which mentions 'Watch and custom filters' and 'Enabling notifications for all users by default,' and the fifth node, which includes 'Choosing the default auto-watched mode' and 'Create global notification filters,' both directly relevant to managing and disabling notifications for specific pages.",
-    "ContextualRecall": "The score is 0.50 because only some parts of the expected output are supported by the nodes in the retrieval context. Specifically, the retrieval context mentions notifications related to pages users created or updated (2nd node) and accessing notification settings (2nd node), but it does not mention notifications about changes on your work or deleting existing notification filters in the 'Custom Filters' list.",
-    "CustomContextualRelevancy": "The retrieval context mentions settings and filters but lacks details on automatic page watching and major modifications."
+    "AnswerRelevancy": "The score is 0.96 because the response is highly relevant and mostly addresses the question about disabling notifications in XWiki. However, the statement 'Understanding the Default Behavior' is slightly vague and doesn't directly contribute to the solution, preventing a perfect score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.70 because the first node in the retrieval context is relevant, providing information about accessing 'settings' to change notification settings. However, the second node, which is about 'following users and default watch settings,' and the third node, discussing 'filtering notifications and hidden pages,' are not directly related to disabling notifications, yet they are ranked higher than the fifth relevant node that discusses 'administrators changing users' notification settings and auto-watching behavior.'",
+    "ContextualRecall": "The score is 0.50 because while nodes in the retrieval context support the idea of automatic page watching and changing settings in the user profile (related to sentences 1 and 3), they do not explicitly mention notifications about changes on one's work or deleting existing notification filters (related to sentences 2 and 4).",
+    "CustomContextualRelevancy": "The retrieval context mentions default watch settings and user profile settings but lacks details on automatic page watching and deleting notification filters."
   },
   "question_language": "en",
   "expected_answer_language": "en",

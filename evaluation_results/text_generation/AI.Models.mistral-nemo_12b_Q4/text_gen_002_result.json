@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output addresses the topic and includes all key points from the Expected Output but has a slightly different structure. It is coherent and grammatically correct.",
+  "reason": "The Actual Output is relevant to the Input prompt, maintaining coherence and fluency. However, it slightly differs in style and structure from the Expected Output, which emphasizes the cat's enjoyment and exploration.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

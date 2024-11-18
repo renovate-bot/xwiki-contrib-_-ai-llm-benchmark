@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output is highly relevant to the Input prompt, addressing the recent scientific discovery of a 'star quiz' or microwave burst. It is coherent, follows a logical structure, and maintains consistency. The article is fluent, with correct grammar and appropriate vocabulary. It aligns well with the Expected Output by providing an informative summary of the scientific finding. Minor inaccuracies, such as the term 'star quiz' instead of 'star quirk,' slightly affect the score.",
+  "reason": "The Actual Output is highly relevant to the Input, as it discusses a recent scientific discovery about a new material. It is coherent and logically structured, detailing the discovery, its implications, and potential applications, aligning well with the Expected Output of an informative article. The fluency is smooth and readable, closely matching the quality expected.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

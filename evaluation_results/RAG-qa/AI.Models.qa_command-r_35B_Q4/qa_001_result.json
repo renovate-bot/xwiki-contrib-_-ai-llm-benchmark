@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.8666666666666668,
+  "overall_score": 0.38,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
+    "AnswerRelevancy": 0.9,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.3333333333333333,
-    "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 1.0
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and there are no irrelevant statements.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect faithfulness to the retrieval context!",
-    "ContextualPrecision": "The score is 0.33 because the relevant node (third node) discussing the `notifications.enabled` setting in the `xwiki.properties` file is ranked lower than irrelevant nodes. For example, the first node talks about getting a notification RSS feed and various settings related to notifications, which is not relevant to enabling notifications in `xwiki.properties`. Similarly, the second node discusses overriding default notification templates and installation instructions for extensions, which is also not relevant.",
-    "ContextualRecall": "The score is 1.00 because the retrieval context perfectly supports the expected output. Great job!",
-    "CustomContextualRelevancy": "The retrieval context explicitly mentions the 'notifications.enabled' setting in 'xwiki.properties' to enable notifications, matching the expected output."
+    "AnswerRelevancy": "The score is 0.90 because the response is mostly relevant and addresses the issue about the 'Bell' icon in XWiki. However, it includes source links that do not directly contribute to solving the problem, preventing a perfect score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input query. The first node is about 'installation instructions and prerequisites', which does not relate to enabling notifications. The second node describes the 'Alert menu and its functionalities' but lacks information on enabling notifications. The third node lists 'dependencies for the extension', which does not address the issue of enabling notifications. Lastly, the fourth node discusses 'overriding default notification templates', which is unrelated to the problem of enabling notifications.",
+    "ContextualRecall": "The score is 0.00 because the expected output about enabling notifications in `xwiki.properties` is not supported by any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context lacks any mention of enabling notifications via the `notifications.enabled` setting in `xwiki.properties`, which is the core information in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

@@ -1,6 +1,6 @@
 {
-  "score": 0.9,
-  "reason": "The Actual Output addresses the topic by extracting the key information correctly and covers all key points from the Expected Output. It is coherent and fluent, but the format differs slightly from the Expected Output.",
+  "score": 0.8,
+  "reason": "The Actual Output correctly extracts the name, date of birth, and address from the Input, aligning with the Expected Output in terms of content. However, it uses a different format with bullet points and bold text instead of JSON format, affecting coherence and fluency.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.6133333333333334,
+  "overall_score": 0.775,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
-    "Faithfulness": 0.9,
-    "ContextualPrecision": 0.3333333333333333,
-    "ContextualRecall": 0.3333333333333333,
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.625,
     "CustomContextualRelevancy": 0.5
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and addresses the issue of not receiving notifications directly. Great job!",
-    "Faithfulness": "The score is 0.90 because the actual output incorrectly states 'Vous ne recevez pas de notifications.', while the context indicates that users do receive notifications by default under certain conditions.",
-    "ContextualPrecision": "The score is 0.33 because the relevant node, which mentions 'Watched Entities' and 'Follow a user', is ranked third. Irrelevant nodes, such as the first node discussing RSS feed settings and the second node about overriding notification templates, should be ranked lower.",
-    "ContextualRecall": "The score is 0.33 because only a few aspects of the expected output are supported by the nodes in the retrieval context, such as enabling notifications by clicking on the bell and following a user. However, key details about 'notifications.enabled', 'xwiki.properties', specific instructions on following pages or users, and viewing user events in the 'r\u00e9seau' tab are missing.",
-    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users, but lacks details on setting `notifications.enabled` to `true` and specific steps for following pages."
+    "AnswerRelevancy": "The score is 0.75 because the response partially addresses the issue of not receiving notifications, but includes irrelevant links that do not directly help resolve the problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than irrelevant nodes. The first node discusses 'Enable and disable the extension' and 'Enabling notifications for all users by default,' which are crucial for ensuring notifications are activated. The second node includes 'Follow a user' and 'Watched Entities,' directly relating to receiving notifications. Irrelevant nodes, such as the third node focusing on 'RSS feeds and notification settings' and the fourth node listing 'various notification preferences macros,' do not address enabling notifications or following users/pages and are correctly ranked lower.",
+    "ContextualRecall": "The score is 0.62 because while several nodes in the retrieval context support the expected output sentences about enabling notifications, following pages or users, and receiving notifications from followed users (as seen in sentences 1, 3, 4, and 5), there are missing details in the retrieval context regarding specific configurations and user interface elements mentioned in sentences 2, 6, and 7.",
+    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users, but lacks details on setting `notifications.enabled` to true and specific steps for following pages or users."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

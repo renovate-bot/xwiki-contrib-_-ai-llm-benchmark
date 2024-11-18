@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.62,
+  "overall_score": 0.4,
   "individual_scores": {
     "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 0.1
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and directly addresses the question without any irrelevant statements. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node provides general information about the OpenID Connect Authenticator, including prerequisites, dependencies, and installation instructions, but does not address the specific question about customizing user profile fields. The second node describes the general functionality of the OpenID Connect Authenticator and provides some metadata about the extension, but it does not provide information on how to customize user profile fields. The third node discusses container authentication and mentions the OpenID Connect Authenticator, but it does not provide details on customizing user profile fields. The fourth node lists various endpoints and customization options for the OpenID Connect Authenticator, but it does not specifically address how to map additional user profile fields. The fifth node provides a table of contents and links to various sections related to the OpenID Connect Authenticator, but it does not directly answer the question about customizing user profile fields.",
-    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the relevant nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context mentions 'xwiki.properties' but lacks details on 'oidc.user.mapping' and specific configuration steps."
+    "AnswerRelevancy": "The score is 1.00 because the response perfectly addresses the question about customizing user profile fields from an OpenID Connect provider in XWiki without any irrelevant information. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'authentication management and OpenID Connect endpoints' but does not mention 'customizing user profile fields or mapping them in `xwiki.properties`'. The second node talks about 'various authentication methods like Container Authentication and LDAP' without addressing 'the customization of user profile fields from an OpenID Connect provider'. The third node describes 'the OpenID Connect Authenticator extension and its installation' but lacks information on 'user profile field mapping or the `xwiki.properties` file'. The fourth node provides 'metadata about the OpenID Connect Authenticator extension', which is unrelated to 'customizing user profile fields'. Finally, the fifth node lists 'dependencies for the OpenID Connect Authenticator extension' but does not cover 'mapping user profile fields or using `xwiki.properties`'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be linked to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context lacks details about customizing user profile fields using `xwiki.properties` and `oidc.user.mapping` as described in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

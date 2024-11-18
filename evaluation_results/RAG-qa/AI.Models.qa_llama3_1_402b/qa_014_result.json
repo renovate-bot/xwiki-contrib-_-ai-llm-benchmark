@@ -1,16 +1,16 @@
 {
-  "overall_score": 0.35,
+  "overall_score": 0.3375,
   "individual_scores": {
-    "AnswerRelevancy": 0.75,
+    "AnswerRelevancy": 0.6875,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.75 because the answer contains multiple irrelevant URLs that do not address the question about disabling notifications. However, the relevant parts of the answer do provide useful information on how to manage notifications, which is why the score is not lower.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining complete faithfulness to the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'XWiki Syntax and formatting features', the second node is about 'an extension for authenticating users with JSON Web Tokens', the third node lists 'various resources and APIs related to the LLM Application', the fourth node is about 'XWiki development resources and guides', and the fifth node discusses 'database migration and invalid extensions during an upgrade'. None of these are related to notification settings.",
+    "AnswerRelevancy": "The score is 0.69 because the response partially addresses the question about disabling notifications, but it is lowered due to the repeated inclusion of irrelevant URLs that do not directly help in resolving the issue.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Everything aligns perfectly with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'attaching files and managing attachments', which is unrelated to 'notification settings'. The second node is about 'moving attachments', not about 'notification settings or disabling notifications'. The third node lists 'macros and their functionalities', which does not pertain to 'managing or disabling notifications'. The fourth node describes 'administration application and its features', which are not related to 'notification settings'. The fifth node is about 'controlling permissions and security modules', which are not relevant to 'notification settings'. Finally, the sixth node lists 'various XWiki extensions', none of which relate to 'managing or disabling notifications'.",
     "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
     "CustomContextualRelevancy": "The retrieval context does not contain any information about automatic page following, notification settings, or custom filters as mentioned in the expected output."
   },

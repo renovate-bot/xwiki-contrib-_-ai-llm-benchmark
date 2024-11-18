@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.34444444444444444,
+  "overall_score": 0.3375,
   "individual_scores": {
-    "AnswerRelevancy": 0.7222222222222222,
+    "AnswerRelevancy": 0.6875,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.72 because while the response addresses the question about disabling notifications, it includes several irrelevant URLs that do not pertain to the query.",
+    "AnswerRelevancy": "The score is 0.69 because the output partially addresses the question about disabling notifications, but includes multiple irrelevant links that do not directly help in resolving the issue.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'XWiki Syntax, verbatim content, and quotations,' which are not related to disabling notifications. Similarly, the second node describes 'an extension for authenticating users with JSON Web Tokens,' which is also unrelated. This pattern continues with other nodes, such as the third node about 'managing collections and documents in the LLM Application,' none of which pertain to notification settings.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'attaching files and related features', which does not relate to 'managing notification settings'. Similarly, the second node is about 'moving attachments', which is unrelated to 'disabling notifications'. All nodes fail to address the issue of notification settings, leading to a score of 0.00.",
     "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about automatic page following, notification settings, or deleting custom filters."
+    "CustomContextualRelevancy": "The retrieval context lacks any information about automatic page following, notification settings, or custom filters mentioned in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

@@ -1,8 +1,8 @@
 {
   "score": 0.6,
-  "reason": "The score is 0.60 because the summary contains contradictions and extra information not present in the original text, and it fails to answer some questions that the original text addresses.",
+  "reason": "The score is 0.60 because the summary contains contradictions regarding developer resources and includes extra information about user actions not specified in the original text. Additionally, it fails to answer questions that the original text can address, such as guidance on creating pages and coverage of basic use cases.",
   "score_breakdown": {
-    "Alignment": 0.75,
+    "Alignment": 0.6,
     "Coverage": 0.6
   },
   "input_language": "en",

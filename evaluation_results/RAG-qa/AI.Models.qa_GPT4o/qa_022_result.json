@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.5266666666666666,
+  "overall_score": 0.7177777777777777,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
+    "AnswerRelevancy": 0.9,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.3333333333333333,
-    "ContextualRecall": 0.0,
+    "ContextualPrecision": 0.7222222222222222,
+    "ContextualRecall": 0.6666666666666666,
     "CustomContextualRelevancy": 0.3
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and addresses the issue of not receiving notifications without any irrelevant information. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
-    "ContextualPrecision": "The score is 0.33 because the relevant node, which mentions 'Follow a user' and 'Watched Entities,' is ranked third. Irrelevant nodes, such as the first node discussing 'getting a notification RSS feed and settings for notifications' and the second node about 'overriding default notification templates and installation instructions,' should be ranked lower.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users, but lacks details on setting `notifications.enabled` to true and specific steps for following pages or users."
+    "AnswerRelevancy": "The score is 0.90 because the response is highly relevant to the issue of not receiving notifications, but it includes source links that do not directly address the problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.72 because the relevant nodes in the retrieval context are generally ranked higher than the irrelevant ones. The first node is relevant as it discusses 'Enable and disable the extension' and 'Enabling notifications for all users by default', which relate to the activation of notifications. However, the second node, which focuses on 'customizing notification email templates and creating global notification filters', is not directly related to enabling notifications and should be ranked lower. Similarly, the fourth node, discussing 'RSS feeds and grouping notifications', and the fifth node, about 'displaying preferences of the current user about notifications', do not directly address enabling notifications or following users/pages and should be ranked lower than the relevant nodes.",
+    "ContextualRecall": "The score is 0.67 because while the retrieval context nodes support the general idea of enabling notifications and following entities for updates (as seen in nodes 1 and 3), specific details like setting 'notifications.enabled' in 'xwiki.properties' and viewing followed users in the 'network' tab are missing.",
+    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users, but lacks details on setting `notifications.enabled` to `true` in `xwiki.properties` and specific steps for following pages or users."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

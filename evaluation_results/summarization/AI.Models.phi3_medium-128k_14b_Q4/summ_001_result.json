@@ -1,10 +1,10 @@
 {
-  "score": 0.6363636363636364,
-  "reason": "The score is 0.64 because the summary includes multiple contradictions and extra information not present in the original text, which affects its accuracy and reliability.",
+  "score": 0,
+  "reason": "The score is 0.00 because the summary fails to address several key questions that the original text can answer, indicating a lack of coverage and completeness in the summarization.",
   "score_breakdown": {
-    "Alignment": 0.6363636363636364,
-    "Coverage": 1.0
+    "Alignment": 0,
+    "Coverage": 0.0
   },
   "input_language": "en",
-  "summary_language": "en"
+  "summary_language": "unknown"
 }

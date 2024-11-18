@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.275,
+  "overall_score": 0.3333333333333333,
   "individual_scores": {
-    "AnswerRelevancy": 0.375,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.6666666666666666,
+    "Faithfulness": 1,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.38 because the provided URL is not directly related to notifications in XWiki, which is the main concern in the input.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'various XWiki applications like Meeting Application, Forum Application, and Ideas Application,' which are not relevant to enabling notifications. Similarly, the second node talks about 'access rights and executing tasks with specific user rights,' which is unrelated to enabling notifications.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about enabling notifications or following pages and users."
+    "AnswerRelevancy": "The score is 0.67 because the response partially addresses the issue of not receiving notifications, but includes an irrelevant statement about sources and documentation, which doesn't relate to the input.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining complete alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant, as they contain 'image links and references that are unrelated to the topic of notifications or their settings.' This means there are no relevant nodes ranked higher than irrelevant ones.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context. Each aspect of the expected instructions, such as enabling notifications, following pages or users, and viewing followed users, is unsupported by the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context contains image links and references unrelated to notifications or user settings, lacking any information about enabling notifications or following users/pages as described in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

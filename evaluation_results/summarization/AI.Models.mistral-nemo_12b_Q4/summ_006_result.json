@@ -1,9 +1,9 @@
 {
-  "score": 1.0,
-  "reason": "The score is 1.00 because the summary accurately reflects the original text without any contradictions or extraneous information.",
+  "score": 0.5714285714285714,
+  "reason": "The score is 0.57 because the summary includes extra information not present in the original text, such as users learning to create, edit, and view page history in XWiki, and it lacks clarity on whether users can learn about editing a page from the provided links. Additionally, it mentions setting permissions without explicitly stating it in the original text, and it implies developers can explore certain resources, which is not specified.",
   "score_breakdown": {
-    "Alignment": 1.0,
-    "Coverage": 1.0
+    "Alignment": 0.5714285714285714,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

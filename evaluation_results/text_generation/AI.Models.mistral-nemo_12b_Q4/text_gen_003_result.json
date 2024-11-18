@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output addresses the topic of photosynthesis and explains it in a way that is engaging for a younger audience. It aligns well with the Expected Output by mentioning that plants use sunlight to make food and grow. The explanation is coherent and logically flows from one idea to the next. The language is natural, grammatically correct, and easy to read. However, it includes some additional details like chloroplasts and glucose that were not in the Expected Output.",
+  "reason": "The Actual Output is highly relevant to the Input, explaining photosynthesis in a child-friendly manner. It maintains coherence with a logical flow, expanding on the Expected Output by adding engaging details about the process and its benefits. The language is fluent and suitable for the target age group, though slightly more detailed than the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,9 +1,9 @@
 {
-  "score": 0.4,
-  "reason": "The score is 0.40 because the summary includes information that contradicts the original text regarding rights management in XWiki. Additionally, the summary fails to address several questions that the original text can answer, indicating significant omissions and inaccuracies.",
+  "score": 0.25,
+  "reason": "The score is 0.25 because the summary includes a significant amount of extra information that is not mentioned in the original text, indicating a lack of precision and relevance in the summarization.",
   "score_breakdown": {
-    "Alignment": 0.8571428571428571,
-    "Coverage": 0.4
+    "Alignment": 0.25,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

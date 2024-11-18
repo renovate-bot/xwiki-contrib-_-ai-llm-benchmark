@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.35,
+  "overall_score": 0.32857142857142857,
   "individual_scores": {
-    "AnswerRelevancy": 0.75,
+    "AnswerRelevancy": 0.6428571428571429,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.75 because the answer provides relevant information about disabling notifications, but it includes multiple irrelevant URLs that do not address the input question.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all the nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'XWiki syntax and formatting,' which is unrelated to disabling notifications. Similarly, the second node describes 'an extension for authenticating users with JSON Web Tokens,' which is not relevant to the question about disabling notifications.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to automatic page following, notification settings, or custom filters mentioned in the expected output."
+    "AnswerRelevancy": "The score is 0.64 because the output partially addresses the question about disabling notifications, but includes several irrelevant links to documentation pages that do not pertain to the issue at hand.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'attaching files and managing attachments', which is unrelated to managing notifications. The second node is about 'moving and deleting attachments', which does not relate to notification settings. The third node provides information on 'displaying content and macros', which is not relevant to disabling notifications. The fourth node is about 'administrating wiki features like users and groups', which does not pertain to notification settings. The fifth node discusses 'permissions and security modules', which are unrelated to managing notifications. Lastly, the sixth node lists 'various extensions and applications', none of which relate to disabling notifications.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to automatic page following, notification settings, or custom filters as mentioned in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

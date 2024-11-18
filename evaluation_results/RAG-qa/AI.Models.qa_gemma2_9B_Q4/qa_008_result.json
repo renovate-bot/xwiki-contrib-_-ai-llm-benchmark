@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.7735177865612648,
+  "overall_score": 0.6466666666666667,
   "individual_scores": {
-    "AnswerRelevancy": 0.9130434782608695,
+    "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 1.0,
-    "ContextualRecall": 0.45454545454545453,
-    "CustomContextualRelevancy": 0.5
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.6,
+    "CustomContextualRelevancy": 0.3
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.91 because the answer is mostly relevant and provides useful information about configuring attachment settings, but it includes some irrelevant details about XWiki syntax and access to configuration files that do not directly address the input question.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 1.00 because the relevant node, which mentions that 'As an administrator you can set limits on the maximum size of an attachment,' is ranked first, while all irrelevant nodes are ranked lower.",
-    "ContextualRecall": "The score is 0.45 because while the retrieval context provides detailed steps for setting the maximum attachment size (Step 2), it lacks information on configuring allowed mimetypes and editing the `xwiki.properties` file (Step 1).",
-    "CustomContextualRelevancy": "The retrieval context contains detailed steps for setting maximum attachment size and mentions mimetype restrictions, but lacks specific instructions for configuring the `xwiki.properties` file."
+    "AnswerRelevancy": "The score is 1.00 because the response perfectly addresses the question without any irrelevant information. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node in the retrieval context, which provides information on setting the maximum size of an attachment in XWikiPreferences, is ranked third. However, irrelevant nodes, such as the first node discussing linking to external files and images without addressing mimetype restrictions or maximum upload size configurations, and the second node explaining the structure of XWiki pages without relating to configuring attachment settings, are ranked higher. These irrelevant nodes should be ranked lower to improve the score.",
+    "ContextualRecall": "The score is 0.60 because while the steps for configuring the maximum attachment size (Sentences 5-10) are well-supported by the 3rd node in the retrieval context, the instructions for configuring allowed mimetypes (Sentences 1-4) lack direct support from any specific node.",
+    "CustomContextualRelevancy": "The retrieval context mentions setting maximum attachment size and mimetype restrictions but lacks specifics on configuring xwiki.properties for mimetypes and setting size to 10MB."
   },
   "question_language": "en",
   "expected_answer_language": "en",

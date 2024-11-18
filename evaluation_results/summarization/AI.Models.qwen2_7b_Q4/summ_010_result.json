@@ -1,9 +1,9 @@
 {
-  "score": 0.8571428571428571,
-  "reason": "The score is 0.86 because the summary includes extra information about XWiki's flexibility that is not mentioned in the original text. However, there are no contradictions, indicating a generally accurate summary.",
+  "score": 0.75,
+  "reason": "The score is 0.75 because the summary includes extra information not present in the original text, such as portals integrating external data sources, competitive intelligence platforms, public debates, or collaborative course creation in education. Additionally, the summary fails to answer whether XWiki is a second-generation wiki, which the original text can answer.",
   "score_breakdown": {
-    "Alignment": 0.8571428571428571,
-    "Coverage": 1.0
+    "Alignment": 0.75,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

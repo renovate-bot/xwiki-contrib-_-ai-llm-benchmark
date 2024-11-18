@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary is generally accurate and concise, but it fails to address some specific questions that the original text can answer, such as whether a wiki allows you to modify a page by clicking an 'edit' button.",
+  "score": 0,
+  "reason": "The score is 0.00 because the summary fails to answer multiple questions that the original text can address, indicating it lacks essential information and completeness.",
   "score_breakdown": {
-    "Alignment": 1.0,
-    "Coverage": 0.8
+    "Alignment": 0,
+    "Coverage": 0.0
   },
   "input_language": "en",
   "summary_language": "en"

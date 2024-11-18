@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output directly addresses the prompt by providing a creative space adventure story. However, it diverges from the Expected Output, which specifies a story about exploring a new planet. The Actual Output involves a wormhole and an alien megastructure instead. The story is coherent and fluent with good grammar and readability.",
+  "reason": "The Actual Output is a creative space adventure story that aligns well with the Input prompt. It is coherent, fluent, and engaging. However, it focuses on Europa rather than a new planet as mentioned in the Expected Output, which slightly misaligns with the expected key points.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

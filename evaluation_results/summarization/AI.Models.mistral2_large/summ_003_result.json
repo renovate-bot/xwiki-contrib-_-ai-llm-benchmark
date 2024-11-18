@@ -1,8 +1,8 @@
 {
-  "score": 0.8333333333333334,
-  "reason": "The score is 0.83 because the summary contains some contradictions regarding access rights settings and includes extra information not mentioned in the original text. However, it still captures the main points accurately.",
+  "score": 0.5384615384615384,
+  "reason": "The score is 0.54 because the summary contains a contradiction regarding how to change access rights, and it includes several pieces of extra information not mentioned in the original text, such as creating user groups, specific documentation, and details about setting rights for pages and further reading.",
   "score_breakdown": {
-    "Alignment": 0.8333333333333334,
+    "Alignment": 0.5384615384615384,
     "Coverage": 1.0
   },
   "input_language": "en",

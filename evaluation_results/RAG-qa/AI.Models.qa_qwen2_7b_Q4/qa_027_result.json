@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.7131034482758621,
+  "overall_score": 0.5837037037037037,
   "individual_scores": {
-    "AnswerRelevancy": 0.9655172413793104,
+    "AnswerRelevancy": 0.8518518518518519,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.5,
-    "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.6
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.3333333333333333,
+    "CustomContextualRelevancy": 0.4
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.97 because the answer is highly relevant and mostly addresses the question about configuring group synchronization between XWiki and an OpenID Connect provider. However, it includes a link about creating new users in XWiki, which is not directly related to the group synchronization topic.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.50 because the second node, which is relevant, is ranked higher than some irrelevant nodes. However, the first, third, fourth, and fifth nodes are irrelevant as they provide general information about prerequisites, installation instructions, developer details, table of contents, and managing users and groups, but do not address the specific process of configuring group synchronization. These irrelevant nodes should be ranked lower.",
-    "ContextualRecall": "The score is 0.50 because while the 2nd node in the retrieval context mentions the `xwiki.properties` file and provides examples for configuring group synchronization, it lacks specific steps such as opening the file with a text editor, replacing placeholders with actual values, and saving and restarting the XWiki instance.",
-    "CustomContextualRelevancy": "The retrieval context mentions configuring group synchronization in the xwiki.properties file and using oidc.groups.mapping, but lacks detailed steps and examples provided in the expected output."
+    "AnswerRelevancy": "The score is 0.85 because the response addresses the main question about configuring group synchronization between XWiki and OpenID Connect, but includes some irrelevant details about accessing the XWiki configuration and administration interface, which are not directly related to the synchronization process.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.33 because the third node in the retrieval context is relevant as it 'directly addresses group synchronization by mentioning the use of the `oidc.groups.mapping` property and the need to configure it in the `xwiki.properties` file.' However, the first, second, fourth, and fifth nodes are ranked higher or similarly to the relevant node, despite being irrelevant. The first node discusses 'general OpenID Connect properties and endpoints' without mentioning group synchronization, the second node focuses on 'authentication classes' rather than group synchronization, the fourth node provides 'general information about OpenID Connect and its limitations' without covering group synchronization steps, and the fifth node lists 'dependencies for the OpenID Connect extension' unrelated to group synchronization configuration.",
+    "ContextualRecall": "The score is 0.33 because while the 3rd node in the retrieval context covers the general aspects of configuring group synchronization and mentions relevant properties like oidc.groups.claim, oidc.groups.separator, and oidc.groups.mapping, it lacks specific details such as opening the xwiki.properties file with a text editor, providing examples, and instructions on saving and restarting XWiki.",
+    "CustomContextualRelevancy": "The retrieval context mentions group synchronization and mapping using 'oidc.groups.mapping', but lacks details on 'oidc.groups.claim' and 'oidc.groups.separator' properties. It also does not cover editing 'xwiki.properties' or restarting XWiki."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.64,
+  "overall_score": 0.5062068965517241,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
+    "AnswerRelevancy": 0.9310344827586207,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 0.2
+    "ContextualRecall": 0.6,
+    "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and directly addresses the question without any irrelevant statements. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node provides installation instructions and dependencies, but does not address how to customize user profile fields or map additional fields. Similarly, the second node offers general information about the OpenID Connect Authenticator without mentioning customization or mapping of user profile fields. The third node discusses container authentication, Active Directory, and LDAP, which are unrelated to the input query.",
-    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the information in the retrieval context nodes. Great job!",
-    "CustomContextualRelevancy": "The retrieval context mentions 'xwiki.properties' but lacks specific details on 'oidc.user.mapping' and the example configurations provided in the expected output."
+    "AnswerRelevancy": "The score is 0.93 because the response is highly relevant and provides a clear explanation on customizing user profile fields in XWiki. However, it includes source links that do not directly address the input question, slightly reducing the score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'authentication management and OpenID Connect endpoints' but lacks information on 'user profile field mapping or customization in xwiki.properties'. The second node is about 'container authentication and other authentication methods', not addressing 'mapping user profile fields from OpenID Connect to XWiki properties'. The third node provides 'configuration guides for OpenID Connect with various systems', without mentioning 'mapping user profile fields or customizing them in xwiki.properties'. The fourth node introduces the 'OpenID Connect Authenticator' but does not discuss 'user profile field mapping or customization in xwiki.properties'. Finally, the fifth node lists 'dependencies for the OpenID Connect Authenticator extension' but lacks details on 'user profile field mapping or customization in xwiki.properties'.",
+    "ContextualRecall": "The score is 0.60 because while the retrieval context nodes provide information on customizing user profile fields and saving changes in `xwiki.properties`, they lack explicit details on example mappings and instructions for replacing placeholders, which are necessary to fully support the expected output sentences.",
+    "CustomContextualRelevancy": "The retrieval context lacks information on customizing user profile fields in 'xwiki.properties' using 'oidc.user.mapping', which is detailed in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

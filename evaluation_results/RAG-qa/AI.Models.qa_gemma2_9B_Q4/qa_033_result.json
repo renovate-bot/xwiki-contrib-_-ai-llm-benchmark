@@ -1,20 +1,20 @@
 {
-  "overall_score": 0.27999999999999997,
+  "overall_score": 0.3333333333333333,
   "individual_scores": {
-    "AnswerRelevancy": 0.4,
+    "AnswerRelevancy": 0.6666666666666666,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.40 because the provided URLs do not directly address the question about authenticating users with access tokens, making the response partially irrelevant.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node is about 'properties of a collection resource and methods for managing collections', which is unrelated to user authentication with access tokens. Similarly, the second node discusses 'access tokens and claims at the UserInfo endpoint' but does not provide information about authenticating users with access tokens.",
+    "AnswerRelevancy": "The score is 0.67 because the response partially addresses the question about authenticating users with access tokens, but includes irrelevant source links that do not directly relate to the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'upgrading XWiki' and lacks any mention of 'authentication or token-based authentication'. The second node talks about 'user and rights management features' without addressing 'token-based authentication'. Lastly, the third node refers to an 'authentication guide' but fails to provide 'specific information about authenticating users with access tokens'.",
     "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about authenticating users with access tokens, JWT, or the specific steps and requirements mentioned in the expected output."
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to token-based authentication or JWT, which is the focus of the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",
-  "answer_language": "fr"
+  "answer_language": "en"
 }

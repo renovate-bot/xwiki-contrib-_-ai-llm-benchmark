@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output directly addresses the Input prompt and matches the context of the Expected Output. It highlights the key features: noise-cancelling, 20-hour battery life, and comfortable fit, targeting tech-savvy professionals. The coherence and fluency are maintained with correct grammar and readability. Minor differences in phrasing prevent a perfect score.",
+  "reason": "The Actual Output addresses the topics in the Input, focusing on noise-cancelling, battery life, and comfort, relevant to tech-savvy professionals. It aligns well with the Expected Output, covering key features and benefits. The flow is logical and coherent, with clear and natural language. Minor differences in phrasing prevent a perfect score.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

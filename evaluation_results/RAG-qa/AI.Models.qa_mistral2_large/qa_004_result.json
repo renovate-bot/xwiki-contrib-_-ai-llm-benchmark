@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.5633333333333334,
+  "overall_score": 0.6197680097680098,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
+    "AnswerRelevancy": 0.9615384615384616,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.3666666666666667,
-    "ContextualRecall": 0.25,
-    "CustomContextualRelevancy": 0.2
+    "ContextualPrecision": 0.33730158730158727,
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.3
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and directly addresses the question about disabling notifications in XWiki.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.37 because the relevant nodes in the retrieval context, such as the third node mentioning 'Watch and custom filters' and 'Enabling notifications for all users by default,' and the fifth node discussing 'Choosing the default auto-watched mode,' are ranked lower than some irrelevant nodes. Irrelevant nodes like the first node, which talks about enabling/disabling the notification module and email notifications, and the second node, which discusses RSS feeds and general notification settings, should be ranked lower.",
-    "ContextualRecall": "The score is 0.25 because only the first sentence in the expected output is somewhat supported by the 4th node in the retrieval context, while the rest of the sentences are not supported by any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context mentions automatic notifications for actions performed by users and settings for notifications, but lacks details about major modifications, custom filters, and user profile settings."
+    "AnswerRelevancy": "The score is 0.96 because the response is highly relevant and effectively addresses the question about disabling notifications in XWiki. The only minor issue is the inclusion of a source link, which doesn't directly answer the question but doesn't significantly detract from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.34 because the first three nodes in the retrieval context are irrelevant, discussing topics like 'following a user and receiving notifications about events triggered by that user', 'selecting the level of detail in email notifications', and 'enabling and disabling the email feature', which do not address how to disable notifications for pages. These irrelevant nodes are ranked higher than relevant nodes that discuss 'administrators changing users' notification settings', 'default settings for notifications', and 'filters for notifications', which are pertinent to the input query.",
+    "ContextualRecall": "The score is 0.50 because only the information about default auto watching page behavior is supported by nodes in the retrieval context, specifically node 5. However, details about being notified of changes and deleting notification filters in the 'Custom Filters' list are not supported by the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions default watch settings and user profile settings but lacks details on automatic page watching and deleting notification filters."
   },
   "question_language": "en",
   "expected_answer_language": "en",

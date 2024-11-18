@@ -1,9 +1,9 @@
 {
-  "score": 0.4,
-  "reason": "The score is 0.40 because the summary contains significant contradictions with the original text, includes extra information not present in the original text, and fails to answer several questions that the original text addresses.",
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary contains contradictions regarding where programming permissions can be granted and the order of permission checking, as well as extra information about a detailed table that is not present in the original text. Additionally, the summary fails to answer questions about the default status of the edit right and the inclusivity of the administration right, which the original text can answer.",
   "score_breakdown": {
-    "Alignment": 0.75,
-    "Coverage": 0.4
+    "Alignment": 0.8125,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

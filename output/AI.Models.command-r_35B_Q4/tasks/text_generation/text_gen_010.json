@@ -2,16 +2,16 @@
   "id": "text_gen_010",
   "prompt": "Adapt the following text to a more technical audience:\n\nThe human brain is a complex organ that controls all functions of the body, interprets information from the outside world, and embodies the essence of the mind and soul.",
   "expected_answer": "The human brain is a highly intricate and sophisticated organ responsible for regulating and coordinating various physiological processes, processing and interpreting sensory information from the external environment, and serving as the biological substrate for cognitive functions, consciousness, and subjective experiences.",
-  "ai_answer": "The brain, a fascinating organ within the realm of neuroscience, oversees an array of physiological functions integral to the human body's operation. Its complexities are myriad, serving as the centerpiece for understanding external stimuli and housing the cognitive and non-cognitive aspects of our mental faculty. As a central command unit, it integrates sensory information, coordinates behavior, and orchestrates intricate cognitive processes with an exquisite level of precision.",
+  "ai_answer": "The human brain is a multifaceted and intricate organ that governs all physiological functions and serves as the cortex for processing extrinsic data. It forms the very foundation of our cognitive abilities, housing the essence of our mental and spiritual faculties.\n",
   "sources": null,
   "usage": {
     "prompt_tokens": 50,
-    "completion_tokens": 82,
-    "total_tokens": 132
+    "completion_tokens": 47,
+    "total_tokens": 97
   },
-  "average_power_draw": 95.68863354037265,
-  "energy_consumption": 772.9102324640082,
-  "energy_per_input_token": 3.0310205194666993,
-  "energy_per_output_token": 7.577551298666747,
-  "energy_per_total_token": 5.85538054896976
+  "average_power_draw": 92.10799999999999,
+  "energy_consumption": 474.1184231052398,
+  "energy_per_input_token": 2.8305577498820282,
+  "energy_per_output_token": 7.076394374705072,
+  "energy_per_total_token": 4.887818794899379
 }

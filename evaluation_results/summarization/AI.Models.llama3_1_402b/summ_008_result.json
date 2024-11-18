@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary includes contradictions regarding screenshots of rights configurations and checkboxes in the XWiki administration interface, and it fails to address whether admins can create new user accounts in a 'Locked' registration configuration.",
+  "score": 0.5,
+  "reason": "The score is 0.50 because the summary contains multiple contradictions regarding configurations and permissions that are not accurately reflected in the original text. Additionally, the summary includes extra information not present in the original text, such as screenshots and a comprehensive guide, which affects its accuracy and completeness.",
   "score_breakdown": {
-    "Alignment": 0.8181818181818182,
-    "Coverage": 0.8
+    "Alignment": 0.5,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

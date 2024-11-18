@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.3565217391304348,
+  "overall_score": 0.37142857142857144,
   "individual_scores": {
-    "AnswerRelevancy": 0.782608695652174,
+    "AnswerRelevancy": 0.8571428571428571,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.78 because the answer provides some relevant information but includes multiple URLs that are not directly related to enabling notifications for one's own activities, which detracts from the overall relevancy.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node is about 'token generation and JWT claims', which is unrelated to notifications for user activity. Similarly, the second node discusses 'database migration and invalid extensions', which does not pertain to notifications for user activity.",
+    "AnswerRelevancy": "The score is 0.86 because the response is mostly relevant to the question about enabling notifications for one's own actions, but it includes source links that do not directly address the question, preventing a higher score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Keep up the great work!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'customization of page templates, internationalization, and other features unrelated to notification settings.' The second node is about 'administrating wiki features and does not mention notification settings or user activity.' The third node includes 'information about various extensions like Office Importer and Font Awesome Icon Theme, none of which relate to notifications or user activity settings.' These irrelevant nodes should be ranked lower than relevant nodes.",
     "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about notification settings or user activity filters."
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to notification settings or user activity filters mentioned in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.35238095238095235,
+  "overall_score": 0.9433333333333334,
   "individual_scores": {
-    "AnswerRelevancy": 0.8333333333333334,
-    "Faithfulness": 0.9285714285714286,
-    "ContextualPrecision": 0,
-    "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "AnswerRelevancy": 0.9166666666666666,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.8,
+    "CustomContextualRelevancy": 1.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.83 because the answer provides useful information but includes several irrelevant links that do not directly address the question about customizing user profile fields from the OpenID Connect provider.",
-    "Faithfulness": "The score is 0.93 because the actual output incorrectly claims that XWiki 1.30 and later supports creating new OIDC client configurations, while the retrieval context specifies that XWiki 14.10+ is required for compatibility with the OpenID Connect Authenticator.",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node 'describes the OpenID Connect Authenticator extension, its developer, and installation details, but does not mention customizing user profile fields or mapping additional fields.'",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about customizing user profile fields or mapping them in the xwiki.properties file."
+    "AnswerRelevancy": "The score is 0.92 because the response is highly relevant and addresses the question about customizing user profile fields in XWiki using OpenID Connect. However, it includes a source link that does not directly contribute to answering the question, slightly reducing the score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node in the retrieval context, which mentions 'It's possible to associate non standard properties coming from the OpenID Connect provider with the XWiki user', is ranked first. This directly addresses the input about customizing user profile fields. The irrelevant nodes, discussing topics like 'scopes requested from the OpenID Connect provider', 'configuration of OpenID Connect endpoints and custom HTTP headers', 'group synchronization and customization of templates and listeners', and 'in-wiki configuration for the OIDC authenticator', are all ranked lower, ensuring perfect precision. Great job on the ranking!",
+    "ContextualRecall": "The score is 0.80 because most of the expected output is supported by the 1st node in the retrieval context, including the customization of user profile fields and the example mappings. However, the instruction to save and restart XWiki is not explicitly mentioned in the retrieval context, leading to a slightly lower score.",
+    "CustomContextualRelevancy": "The retrieval context contains all the information found in the expected answer, including the customization of user profile fields using the `oidc.user.mapping` property in the `xwiki.properties` file and examples of mapping custom properties."
   },
   "question_language": "en",
   "expected_answer_language": "en",

@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary contains contradictions regarding user login requirements and the next steps in the guide. Additionally, the summary fails to answer specific questions that the original text can address.",
+  "score": 0.75,
+  "reason": "The score is 0.75 because the summary includes extra information not present in the original text, such as details about users learning specific tasks on XWiki and a step in a guide. Additionally, there is a question the original text can answer that the summary cannot, indicating some missing information.",
   "score_breakdown": {
-    "Alignment": 0.6666666666666666,
-    "Coverage": 0.6
+    "Alignment": 0.75,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

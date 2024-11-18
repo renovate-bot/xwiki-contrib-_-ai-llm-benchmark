@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.3411764705882353,
+  "overall_score": 0.3333333333333333,
   "individual_scores": {
-    "AnswerRelevancy": 0.7058823529411765,
+    "AnswerRelevancy": 0.6666666666666666,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.71 because the answer contains several irrelevant links that do not address the question about disabling notifications. However, the relevant parts of the answer do provide useful information on how to manage notifications.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating the actual output is perfectly aligned with the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'XWiki syntax and formatting features,' which is not related to disabling notifications. Similarly, the second node explains 'JWT Token Authenticator for the LLM AI Application,' which is also unrelated. These irrelevant nodes should be ranked lower.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to automatic following of pages, notification settings, or deleting notification filters as mentioned in the expected output."
+    "AnswerRelevancy": "The score is 0.67 because the response partially addresses the question about disabling notifications, but includes several irrelevant links that do not directly help with the issue, preventing a higher score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'attaching files', which does not relate to 'notification settings or disabling notifications'. Similarly, the second node is about 'moving attachments', and the third node lists 'display and content features', none of which pertain to the input query about disabling notifications. This pattern continues throughout all nodes, leading to a score of 0.00.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context, indicating a complete lack of relevant information.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to automatic page following or notification settings mentioned in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

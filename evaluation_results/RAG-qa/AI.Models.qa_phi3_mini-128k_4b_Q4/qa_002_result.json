@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.36119373776908026,
+  "overall_score": 0.5846991509782207,
   "individual_scores": {
-    "AnswerRelevancy": 0.0273972602739726,
+    "AnswerRelevancy": 0.046511627906976744,
     "Faithfulness": 1,
-    "ContextualPrecision": 0.25,
-    "ContextualRecall": 0.42857142857142855,
-    "CustomContextualRelevancy": 0.1
+    "ContextualPrecision": 0.8055555555555555,
+    "ContextualRecall": 0.5714285714285714,
+    "CustomContextualRelevancy": 0.5
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.03 because the output contains numerous nonsensical and irrelevant statements that do not address the issue of not receiving notifications in XWiki.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.25 because the relevant node, which mentions the 'notifications.enabled' setting in 'xwiki.properties', is ranked fourth. Irrelevant nodes, such as the first node discussing the 'Clear All' link and default behavior for own events, the second node listing dependencies for the notifications extension, and the third node providing various ways to receive notifications without addressing enabling notifications, are ranked higher.",
-    "ContextualRecall": "The score is 0.43 because while the retrieval context covers enabling notifications in the 'xwiki.properties' file and mentions the alert entry represented by a bell, it lacks information on subscribing to pages or users, following users, and the network tab.",
-    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications in xwiki.properties but lacks details on subscribing to pages or users, and how to manage these subscriptions."
+    "AnswerRelevancy": "The score is 0.05 because the output contains numerous irrelevant and nonsensical statements that do not address the issue of not receiving notifications in XWiki. The low score reflects the lack of relevant content, but it is not zero because there might be a minimal connection or attempt to address the topic.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.81 because most relevant nodes are ranked higher, providing useful information on following users and accessing notification settings in XWiki. However, the second node, discussing 'filtering notifications and hidden pages', and the fifth node, about the 'What's New' application, are ranked higher than they should be as they do not directly address enabling notifications.",
+    "ContextualRecall": "The score is 0.57 because while there are several supported sentences, such as those related to using the 'alert' menu and following users (supported by nodes in the retrieval context), key instructions about enabling notifications in `xwiki.properties` and subscribing to pages or users are not found in the nodes.",
+    "CustomContextualRelevancy": "The retrieval context covers following users and notification settings but lacks details on enabling notifications in xwiki.properties and watching pages."
   },
   "question_language": "en",
   "expected_answer_language": "en",

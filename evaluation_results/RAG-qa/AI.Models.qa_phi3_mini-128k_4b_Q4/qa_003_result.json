@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.48,
+  "overall_score": 0.990909090909091,
   "individual_scores": {
-    "AnswerRelevancy": 0.5,
-    "Faithfulness": 1,
-    "ContextualPrecision": 0,
-    "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.4
+    "AnswerRelevancy": 0.9545454545454546,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 1.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.50 because the output contains incomplete and irrelevant statements that do not address the query about enabling notifications for one's own actions in XWiki. However, it is not lower because there may still be some relevant information present.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses how to get a notification RSS feed and general notification settings, but it does not address enabling notifications for one's own actions.",
-    "ContextualRecall": "The score is 0.50 because the retrieval context mentions the ability to enable or disable notification types (node 1), which relates to advanced filtering options in user settings (sentence 2). However, it does not cover that users do not receive notifications about their own activity unless explicitly targeted (sentence 1).",
-    "CustomContextualRelevancy": "The retrieval context mentions notification settings and default behaviors but lacks specific details about disabling the filter in the 'Advanced filtering options' section."
+    "AnswerRelevancy": "The score is 0.95 because the response is highly relevant to the input, addressing the issue of enabling notifications for one's own actions in XWiki. However, it includes vague suggestions like 'Check User Permissions' and 'Review Application Settings' that do not directly solve the problem, preventing a perfect score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Everything aligns perfectly with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first node states: 'By default, one don\u2019t receive notification about one\u2019s own activity... You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings.' This directly addresses the input question. The second node mentions: 'By default, you won\u2019t receive notifications for actions done by yourself. This can be changed by switching off the Own event filter.' This is relevant to the expected output. Irrelevant nodes, such as the third node discussing administrators' capabilities, the fourth node focusing on RSS feeds, and the fifth node providing general notification methods, are all ranked lower.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is perfectly supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context contains all the information from the expected output, including the default behavior of not receiving notifications about one's own activity unless explicitly targeted, and the ability to change this setting in the 'Advanced filtering options' of the notification settings in the user profile."
   },
   "question_language": "en",
   "expected_answer_language": "en",

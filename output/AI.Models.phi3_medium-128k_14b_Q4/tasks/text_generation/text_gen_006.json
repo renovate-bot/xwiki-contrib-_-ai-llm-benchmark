@@ -2,16 +2,16 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "Whispers of green sway and dance in gentle breeze,  \nThrough valleys where sunlight softly peaks through leaves.  \nCascading streams tell stories with each flowing glance,  \nIn this serene land of harmonious trance.  \n\nMountains touch skies like ancient giants bold,  \nGuardians silent, watching ages unfold.   \nTheir rocky faces carved by time's relentless hands,  \nA testament to the grandeur that stands.    \n\nWildflowers bloom in fields of endless hue,  \nCrimson, violet, gold; a kaleidoscope true.   \nNature paints with an artist's loving care,  \nHer canvas vast as none can compare.\n\nGentle deer through twilight mist do tread lightly,    \nAs stars alight and cast their ancient glow brightly. \nThe night whispers secrets only they may know,   \nIn the enchanting world where earth's soft winds blow.  \n\nRivers hum in sweet melody so deep,    \nMountains cradle peaks where heaven dares to creep.   \nNature\u2019s beauty lies not just on surface skin; \nIt dwells within and basks beneath our kin.\n\nBeneath the moon' groves of wisdom lay still,  \nForests old as tales from yesteryear, filled with thrill.    \nIn this quietude where thoughts freely roam,   \nNature\u2019s beauty finds its heart and home. \n\nAnd so we wander, hearts uplifted by delight,  \nSeeking solace in her arms through day or night.   \nFor nature's charm is ever pure, unspoiled by human hand,    \nA treasure of wonder for us to understand.",
+  "ai_answer": "In emerald woods, where whispers roam free,\nNature's chorus sings in harmony.\nA symphony of life does unfold,\nAs secrets that the ancient earth has told.\n\nUpon the breeze, an aroma sweet,\nOf blossoms blooming at our feet,\nCascading rivers mirror skies so grand,\nMirrored reflections upon the land.\n\nThe sun's warm touch on fields of gold,\nDances with life stories yet untold;\nA canvas painted by the wind,\nWhere beauty and seren marvelously blend.\n\nIn depths where roots embrace the earth,\nMysteries dwell in quiet mirth.\nThe moon and stars that softly gleam,\nCast a spell of timeless dream.\n\nMountains rise with stately grace,\nA sentinel's solemn face;\nValleys cradling streams so clear,\nNature's masterpiece we revere.\n\nWith every dawn a new beginning,\nIn the heart of change lies life spinning.\nEach creature great and small is free,\nBound by love for home, as all should be.\n\nThe majesty of nature's grand design,\nEchoes through time in words divine;\nIts beauty resonates within our soul,\nNature's symphony makes us whole.",
   "sources": null,
   "usage": {
     "prompt_tokens": 18,
-    "completion_tokens": 418,
-    "total_tokens": 436
+    "completion_tokens": 307,
+    "total_tokens": 325
   },
-  "average_power_draw": 253.1571256038647,
-  "energy_consumption": 1240.1228244120082,
-  "energy_per_input_token": 1.1666254227770536,
-  "energy_per_output_token": 2.9165635569426347,
-  "energy_per_total_token": 2.8443184046146976
+  "average_power_draw": 263.4154336917562,
+  "energy_consumption": 897.5315122178291,
+  "energy_per_input_token": 1.1426244585841236,
+  "energy_per_output_token": 2.8565611464603093,
+  "energy_per_total_token": 2.761635422208705
 }

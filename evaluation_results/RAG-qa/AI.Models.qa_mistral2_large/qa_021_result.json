@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.4,
+  "overall_score": 0.8375,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
+    "AnswerRelevancy": 0.9375,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0,
-    "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "ContextualPrecision": 0.25,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 1.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and there are no irrelevant statements.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect faithfulness to the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'getting a notification RSS feed and settings for notifications', which is not directly relevant to enabling notifications in the wiki. The second node talks about 'overriding default notification templates and installation instructions', which does not address enabling notifications in the wiki. The third node describes the 'Clear All link and default notification settings', but does not provide information on enabling notifications in the wiki. The fourth node explains 'watching locations and custom filters for notifications', which does not help in enabling notifications in the wiki. The fifth node provides a 'description and various settings related to notifications', but does not mention enabling notifications in the wiki.",
-    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention anything about ensuring notifications are activated in the wiki or how to activate them using `xwiki.properties`.",
-    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications by setting `notifications.enabled` in `xwiki.properties` to `true`."
+    "AnswerRelevancy": "The score is 0.94 because the response is highly relevant, addressing the main issue about the notification bell. However, it includes a minor irrelevant detail about XWiki syntax, which slightly affects the score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.25 because the relevant node in the retrieval context, which includes a section on enabling notifications by setting 'notifications.enabled = true' in xwiki.properties, is ranked fourth. This node directly relates to the input, but it is ranked lower than irrelevant nodes. The first node discusses custom notification filters and their behavior, which does not address enabling notifications in the wiki settings. The second node lists various notification preferences and macros, which also does not mention enabling notifications. The third node talks about filtering notifications and hidden pages, which is unrelated to enabling notifications. These irrelevant nodes should be ranked lower than the relevant node.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the nodes in the retrieval context, specifically node 4, which provides all the necessary details about enabling notifications in the wiki.",
+    "CustomContextualRelevancy": "The retrieval context explicitly mentions enabling notifications by setting 'notifications.enabled' in 'xwiki.properties' to 'true', which directly matches the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

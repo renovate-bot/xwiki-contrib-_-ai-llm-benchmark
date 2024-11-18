@@ -2,12 +2,12 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "Here's a poem about the beauty of nature:\n\nNature's Symphony\n\nSunlight dances on dewdrops' gleam,\nPainting meadows in golden beams.\nWildflowers sway in gentle breeze,\nTheir fragrance carried through the trees.\n\nBabbling brooks sing melodies sweet,\nAs pebbles tumble beneath their feet.\nMountains rise in majestic might,\nTheir snow-capped peaks a wondrous sight.\n\nForests whisper ancient lore,\nIn rustling leaves and creaking floor.\nBirds soar high on graceful wing,\nTheir joyous songs make valleys ring.\n\nOceans roar with timeless power,\nWaves crash on shores hour by hour.\nIn nature's grand tapestry,\nWe find perfect harmony.\n\nFrom tiniest seed to tallest peak,\nBeauty abounds for those who seek.\nIn every leaf and grain of sand,\nThe wonders of our world expand.",
+  "ai_answer": "Here's a nature poem for you:\n\n\"Nature's Symphony\"\n\nGentle breeze through swaying trees,\nDancing leaves in morning light,\nWildflowers bowing to the breeze,\nAs butterflies take graceful flight.\n\nCrystal streams sing ancient songs,\nOver rocks worn smooth with time,\nWhile birds above in countless throngs\nFill branches with their sweet sublime.\n\nMountains pierce the misty sky,\nWrapped in clouds of silver-gray,\nAs golden sunbeams from on high\nPaint colors through the breaking day.\n\nIn every leaf and grain of sand,\nIn every drop of morning dew,\nNature's art adorns the land\nWith endless wonder, ever new.",
   "sources": null,
   "usage": {
     "prompt_tokens": 16,
-    "completion_tokens": 219,
-    "total_tokens": 235
+    "completion_tokens": 159,
+    "total_tokens": 175
   },
   "average_power_draw": null,
   "energy_consumption": null,

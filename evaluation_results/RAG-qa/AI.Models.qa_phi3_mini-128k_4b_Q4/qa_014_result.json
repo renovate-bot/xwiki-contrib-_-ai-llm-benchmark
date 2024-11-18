@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.38076923076923075,
+  "overall_score": 0.37435897435897436,
   "individual_scores": {
-    "AnswerRelevancy": 0.9038461538461539,
+    "AnswerRelevancy": 0.8717948717948718,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.90 because the answer is mostly relevant and helpful, but it includes several irrelevant URLs that do not address the question about disabling notifications.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'XWiki syntax and formatting,' which is unrelated to managing notifications. The second node describes 'an extension for user authentication using JSON Web Tokens,' which is not relevant to the question about disabling notifications. Additionally, the third node provides 'links and descriptions related to the LLM Application and its API,' which do not pertain to notification settings.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to automatic tracking of pages or notification settings as mentioned in the expected output."
+    "AnswerRelevancy": "The score is 0.87 because the main content effectively addresses how to disable notifications, but it is not higher due to multiple irrelevant source links that do not directly relate to the task of disabling notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'attaching files' which does not relate to notification settings. The second node is about 'moving attachments', unrelated to notifications. The third node lists 'various macros and their functions', none of which pertain to notifications. The fourth node describes an 'application for administrating wiki features', but does not mention notification settings. The fifth node is about 'controlling permissions and security', not related to notifications. The sixth node lists 'various XWiki extensions', none of which are related to notification settings.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to automatic page following or notification settings mentioned in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

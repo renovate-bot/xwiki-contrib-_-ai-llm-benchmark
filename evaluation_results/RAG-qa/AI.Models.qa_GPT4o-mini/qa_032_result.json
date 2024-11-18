@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.4,
+  "overall_score": 0.35,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
+    "AnswerRelevancy": 0.75,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the response was perfectly relevant and addressed the question directly. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating the actual output is perfectly aligned with the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node is about 'group synchronization and customization for OpenID Connect,' which is not related to authenticating users with access tokens. Similarly, the second node discusses 'protection levels for cookies and security strategies for failed login attempts,' which are also irrelevant.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about token-based authentication, JWT, or the specific steps outlined in the expected answer."
+    "AnswerRelevancy": "The score is 0.75 because the main content addresses the question about authenticating users with access tokens, but it includes multiple irrelevant source links that do not contribute to answering the question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'model validation strategies in XWiki', the second node is about 'attachment validation and configuration in XWiki', the third node provides 'administrative information about model validation in XWiki', the fourth node describes 'a script for setting up a registration field in XWiki', and the fifth node is about 'installing a UI in XWiki'. None of these contexts relate to authenticating users with access tokens, leading to the lowest possible score.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to token-based authentication or JWT, which are key elements in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

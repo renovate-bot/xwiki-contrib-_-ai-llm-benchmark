@@ -1,6 +1,6 @@
 {
   "score": 0,
-  "reason": "The score is 0.00 because the summary fails to address multiple key questions that the original text can answer, indicating a significant lack of coverage and completeness.",
+  "reason": "The score is 0.00 because the summary fails to answer several key questions that the original text addresses, indicating a lack of coverage and completeness in the summary.",
   "score_breakdown": {
     "Alignment": 0,
     "Coverage": 0.0

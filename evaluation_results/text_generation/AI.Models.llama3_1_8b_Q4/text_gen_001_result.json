@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output addresses the Input prompt and extracts the correct key information. However, the format differs from the Expected Output, which uses a JSON structure instead of a list format.",
+  "reason": "The Actual Output accurately extracts the key information from the Input, maintaining relevance and coherence. However, it does not match the Expected Output format, which affects alignment with the intended message.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

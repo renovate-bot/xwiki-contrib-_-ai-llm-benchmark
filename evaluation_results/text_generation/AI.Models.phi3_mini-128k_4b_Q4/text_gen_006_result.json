@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output addresses the topic of nature's beauty and covers key points with vivid imagery and personification. However, it includes commentary and suggestions for improvement, which disrupts the coherence and flow.",
+  "score": 0.0,
+  "reason": "The Actual Output does not address the theme of nature's beauty from the Input, nor does it align with the Expected Output of a nature poem. It lacks coherence, fluency, and relevance to the prompt.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

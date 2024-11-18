@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output is highly relevant to the Input and Expected Output, maintaining coherence and fluency. It effectively highlights the product's features and target audience, though it slightly differs in phrasing and structure.",
+  "reason": "The Actual Output effectively addresses the topic by highlighting the product's features and target audience. It maintains coherence and fluency with a logical flow and smooth language. While it closely matches the Expected Output, it slightly lacks the introductory tone present in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

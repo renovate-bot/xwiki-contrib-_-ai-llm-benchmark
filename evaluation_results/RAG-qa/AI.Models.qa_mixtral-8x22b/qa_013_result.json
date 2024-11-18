@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.26,
+  "overall_score": 0.32,
   "individual_scores": {
-    "AnswerRelevancy": 0.3,
+    "AnswerRelevancy": 0.6,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.30 because the output contains multiple irrelevant URLs and statements that do not address the question about enabling notifications for one's own activity. However, there is some minimal relevance in acknowledging the issue, which prevents the score from being even lower.",
+    "AnswerRelevancy": "The score is 0.60 because the response contains several irrelevant links that do not directly address the question about enabling notifications for one's own activity. However, it partially addresses the topic, which is why it is not lower.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node is about 'generating JWT tokens', which does not relate to notifications or user activity settings. Similarly, the second node discusses 'database migration and invalid extensions', which is also not relevant.",
-    "ContextualRecall": "The score is 0.00 because none of the nodes in the retrieval context mention notifications about user activity, events directed at the user, 'Erweiterten Filteroptionen', or user notification settings in the user profile.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to notification settings or user activity filters as mentioned in the expected answer."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input query. The first node discusses 'customizing page templates, internationalization, and other XWiki features', the second node covers 'the administration application for managing wiki features', and the third node talks about 'importing office documents, syntax highlighting, and other XWiki extensions'. None of these are related to enabling notifications for one's own activity, resulting in a score of 0.00.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about notification settings or user activity filters as mentioned in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

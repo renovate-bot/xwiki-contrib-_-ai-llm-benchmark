@@ -1,20 +1,20 @@
 {
-  "overall_score": 0.2,
+  "overall_score": 0.376,
   "individual_scores": {
-    "AnswerRelevancy": 0.0,
-    "Faithfulness": 1,
+    "AnswerRelevancy": 0.88,
+    "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.00 because the provided URLs and statements are entirely irrelevant and nonsensical in the context of enabling notifications for one's own activity.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node is about 'JWT token generation' and the second node is about 'database migration and invalid extensions', neither of which relate to notifications or user activity settings.",
-    "ContextualRecall": "The score is 0.00 because the expected output sentences about notification settings and advanced filter options do not correspond to any information in the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to notification settings or user activity filters as mentioned in the expected output."
+    "AnswerRelevancy": "The score is 0.88 because the main content effectively addresses the question about enabling notifications for one's own activity, but the presence of source links and the unrelated word 'endlich' slightly detracts from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'customization of page templates, internationalization, and other features unrelated to notification settings.' The second node is about 'administrating wiki features like users and groups, which does not relate to notification settings for user activity.' The third node covers 'importing office documents, sharing pages, and other features, but does not mention notification settings or user activity.' These irrelevant nodes are ranked higher than relevant ones, hence the low score.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be linked to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context contains no information about notification settings or user activity filters as mentioned in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",
-  "answer_language": "en"
+  "answer_language": "de"
 }

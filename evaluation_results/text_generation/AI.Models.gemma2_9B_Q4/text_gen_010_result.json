@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output addresses the Input prompt and covers all required aspects, including the complexity of the brain and its functions. It includes key points from the Expected Output, such as physiological processes, sensory perception, and cognitive functions. The coherence and fluency are strong, with logical flow and good readability. However, it slightly diverges by adding a sentence on the subjective experiences of consciousness, which, while relevant, was not in the Expected Output.",
+  "reason": "The Actual Output effectively adapts the Input for a technical audience by using precise language like 'biological network' and 'expression of cognition and consciousness.' It maintains coherence and fluency similar to the Expected Output, though it slightly diverges by not explicitly mentioning 'subjective experiences.'",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

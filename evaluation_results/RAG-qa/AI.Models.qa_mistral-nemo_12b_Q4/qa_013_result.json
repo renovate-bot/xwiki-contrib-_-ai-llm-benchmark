@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.3411764705882353,
+  "overall_score": 0.34285714285714286,
   "individual_scores": {
-    "AnswerRelevancy": 0.7058823529411765,
+    "AnswerRelevancy": 0.7142857142857143,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.71 because the answer partially addresses the question about enabling notifications for one's own actions, but includes multiple irrelevant URLs that do not directly relate to the issue.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating the actual output is perfectly aligned with the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'JWT token generation and its claims,' which is unrelated to notifications about user activity. Similarly, the second node is about 'upgrading wikis and handling invalid extensions,' which does not pertain to enabling notifications for user actions.",
-    "ContextualRecall": "The score is 0.00 because none of the nodes in the retrieval context mention notifications about user activity, related settings, 'Erweiterte Filteroptionen', or user profile notification settings.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to notification settings or user activity filters."
+    "AnswerRelevancy": "The score is 0.71 because the answer partially addresses the question about enabling notifications for one's own activities, but includes irrelevant statements like source links that do not directly answer the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'themes, internationalization, accessibility, and performance,' which are unrelated to notification settings. The second node is about 'administrating wiki features' and does not mention notification settings or user activity. The third node covers 'importing office documents, icon themes, sharing pages, syntax highlighting, and mentions,' none of which relate to user notification settings.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about notification settings or user activity filters as mentioned in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

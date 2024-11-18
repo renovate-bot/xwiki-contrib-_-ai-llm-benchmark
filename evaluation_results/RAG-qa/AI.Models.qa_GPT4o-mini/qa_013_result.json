@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.3473684210526316,
+  "overall_score": 0.3684210526315789,
   "individual_scores": {
-    "AnswerRelevancy": 0.7368421052631579,
+    "AnswerRelevancy": 0.8421052631578947,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.74 because the output contains several URLs that are not relevant to enabling notifications for one's own actions, which detracts from the overall relevancy. However, the score is not lower because the output likely contains some useful information or correct URLs related to the query.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node is about 'token generation and JWT tokens', which is unrelated to notifications for user activity. Similarly, the second node discusses 'database migration and invalid extensions', which does not pertain to notifications for user activity.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about notification settings or user activity filters mentioned in the expected answer."
+    "AnswerRelevancy": "The score is 0.84 because the response mostly addresses the question about enabling notifications for one's own actions, but it includes irrelevant source links that do not directly contribute to answering the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input query about enabling notifications for user activity. The first node discusses 'customization of page templates, menus, and CSS files', which is unrelated. The second node provides information on 'administrating wiki features', not pertaining to notifications. The third node describes 'features like Office Importer and Font Awesome Icon Theme', which are not relevant. The fourth node discusses 'themes, panels, and presentation settings', unrelated to the query. Lastly, the fifth node is about 'color themes and access rights', which does not relate to notifications or user activity settings.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by any nodes in the retrieval context, as there is no mention of notifications, user activity, or disabling filters in the user's notification settings.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to notification settings or user activity filters mentioned in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

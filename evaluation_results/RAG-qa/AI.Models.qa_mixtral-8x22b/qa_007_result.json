@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.47750000000000004,
+  "overall_score": 0.8300000000000001,
   "individual_scores": {
-    "AnswerRelevancy": 0.9375,
-    "Faithfulness": 1.0,
-    "ContextualPrecision": 0.25,
-    "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.2
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.75,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.9
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.94 because the answer is highly relevant and provides detailed instructions for configuring group synchronization between XWiki and an OpenID Connect provider. However, the inclusion of the URL 'https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiRESTfulAPI' is irrelevant to the specific question asked.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.25 because the relevant node, which provides information about group synchronization including the use of the `oidc.groups.mapping` property, is ranked fourth. Irrelevant nodes, such as the first node which provides general information about the OpenID Connect Authenticator without specific steps for group synchronization, and the second node which mentions the ability to authenticate with an OpenID Connect provider but lacks specific steps for group synchronization, are ranked higher.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context mentions group synchronization and the xwiki.properties file but lacks detailed steps and specific property configurations found in the expected output."
+    "AnswerRelevancy": "The score is 1.00 because the response perfectly addresses the question without any irrelevant information. Great job!",
+    "Faithfulness": "The score is 0.75 because the actual output incorrectly claims that the `oidc.groups.claim` property is used to specify the claim for retrieving the list of groups from the OpenID Connect provider, while the retrieval context clarifies that this property is used to indicate a non-standard field for the list of groups.",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than the irrelevant nodes. The first three nodes provide information on configuring the `oidc.groups.claim`, `oidc.groups.mapping`, and `oidc.groups.separator` properties, which are essential for group synchronization. The irrelevant nodes, ranked fourth and fifth, discuss topics like authentication and configuration guides, and authentication management and endpoints, which are not directly related to the group synchronization process.",
+    "ContextualRecall": "The score is 0.50 because while nodes in the retrieval context provide specific examples and mention key properties like 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping', they lack general instructions found in the expected output, such as locating and editing the 'xwiki.properties' file or restarting the XWiki instance.",
+    "CustomContextualRelevancy": "The retrieval context includes details on configuring 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping', which align closely with the expected output. However, it lacks explicit instructions on locating and editing the 'xwiki.properties' file and restarting XWiki."
   },
   "question_language": "en",
   "expected_answer_language": "en",

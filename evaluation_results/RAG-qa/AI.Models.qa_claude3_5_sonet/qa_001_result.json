@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.8533333333333333,
+  "overall_score": 0.3833333333333333,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
-    "Faithfulness": 0.9333333333333333,
-    "ContextualPrecision": 0.3333333333333333,
-    "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 1.0
+    "AnswerRelevancy": 0.9166666666666666,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant and addresses the question directly without any irrelevant information.",
-    "Faithfulness": "The score is 0.93 because the actual output incorrectly refers to a setting `notifications.enabled = true` in the `xwiki.properties` file, while the retrieval context only mentions `notifications.emails.enabled`.",
-    "ContextualPrecision": "The score is 0.33 because the relevant node, which discusses enabling notifications by setting `notifications.enabled` to true in the `xwiki.properties` file, is ranked third. Irrelevant nodes, such as the first node discussing notification RSS feeds and settings, and the second node explaining how to override default notification templates, are ranked higher.",
-    "ContextualRecall": "The score is 1.00 because the expected output is perfectly supported by the nodes in the retrieval context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context explicitly mentions enabling notifications by setting `notifications.enabled` to `true` in `xwiki.properties`, which matches the expected output."
+    "AnswerRelevancy": "The score is 0.92 because the response is highly relevant and provides useful information on fixing the missing bell icon in XWiki. However, it includes source links that do not directly address the issue, slightly reducing the score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input question. The first node discusses 'installation instructions and prerequisites', which do not help in fixing the bell issue. The second node describes 'the functionality of the notifications menu and the bell icon' but fails to address how to enable notifications or resolve the issue. The third node lists 'dependencies for the notifications extension', which does not relate to the problem at hand. Finally, the fourth node talks about 'overriding notification templates', which is unrelated to fixing the bell icon issue. Thus, irrelevant nodes are ranked higher than any relevant information, resulting in a low score.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context, as there is no mention of enabling notifications or the `notifications.enabled` setting in `xwiki.properties`.",
+    "CustomContextualRelevancy": "The retrieval context lacks any mention of enabling notifications via the `notifications.enabled` setting in `xwiki.properties`."
   },
   "question_language": "en",
   "expected_answer_language": "en",

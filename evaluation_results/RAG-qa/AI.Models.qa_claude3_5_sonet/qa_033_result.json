@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.3666666666666667,
+  "overall_score": 0.37333333333333335,
   "individual_scores": {
-    "AnswerRelevancy": 0.8333333333333334,
+    "AnswerRelevancy": 0.8666666666666667,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.83 because the response is mostly relevant to the question about authenticating users with access tokens, but it includes several unrelated links that do not directly address the query.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node describes properties and methods related to collections in a wiki, which is not relevant to authenticating users with access tokens. The second node discusses access tokens and claims at the UserInfo endpoint, but does not provide information on authenticating users with access tokens in the context of the application LLM.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about authenticating users with access tokens, JWT, or the specific steps and requirements mentioned in the expected output."
+    "AnswerRelevancy": "The score is 0.87 because the response is mostly relevant to the question about authenticating users with access tokens, but it includes source links that are not directly related to the topic, slightly reducing its relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'upgrading XWiki' without mentioning 'user authentication or access tokens'. The second node talks about 'user management features in XWiki' but does not address 'authentication with access tokens'. The third node covers 'rights management and user profiles', yet it lacks any mention of 'token-based authentication or JWTs'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by the nodes in the retrieval context, as the context does not mention token-based authentication, JWT functionality, steps for using the authenticator, or its limitations.",
+    "CustomContextualRelevancy": "The retrieval context lacks any information about token-based authentication, JWT, or related configurations mentioned in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

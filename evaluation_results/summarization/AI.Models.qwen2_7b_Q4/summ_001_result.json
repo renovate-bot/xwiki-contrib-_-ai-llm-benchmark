@@ -1,9 +1,9 @@
 {
-  "score": 0.6666666666666666,
-  "reason": "The score is 0.67 because the summary contains contradictory information about the tabbed area at the bottom of the page and includes extra information not mentioned in the original text about XWiki being a collaborative platform and its design for facilitating collaboration and knowledge management.",
+  "score": 0.3,
+  "reason": "The score is 0.30 because the summary contains multiple contradictions and extra information not present in the original text, and it fails to answer a question that the original text can address.",
   "score_breakdown": {
-    "Alignment": 0.6666666666666666,
-    "Coverage": 1.0
+    "Alignment": 0.3,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

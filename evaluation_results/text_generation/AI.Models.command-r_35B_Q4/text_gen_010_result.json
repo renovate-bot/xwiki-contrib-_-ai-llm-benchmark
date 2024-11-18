@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output is relevant to the Input prompt and covers key points such as physiological functions, sensory information, and cognitive processes. However, it lacks specific terms like 'biological substrate' and 'subjective experiences' found in the Expected Output. The coherence and fluency are strong, with logical flow and good readability.",
+  "reason": "The Actual Output addresses the main topic by describing the brain's complexity and functions. It covers similar key points to the Expected Output, such as physiological functions and cognitive abilities, though it lacks mention of consciousness and subjective experiences. The ideas flow logically and the language is grammatically correct and natural.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

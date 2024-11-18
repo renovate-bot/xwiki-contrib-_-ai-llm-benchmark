@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output addresses the topic and includes key points such as the brain's role in coordinating body functions, processing external stimuli, and embodying consciousness. However, it uses overly complex terminology like 'preeminent neural center' and 'encapsulating the intricate constructs,' which may hinder readability and coherence compared to the Expected Output.",
+  "reason": "The Actual Output is relevant and uses technical language appropriate for the audience, similar to the Expected Output. It maintains coherence and fluency, but slightly deviates by focusing on the cerebral cortex rather than the entire brain as in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

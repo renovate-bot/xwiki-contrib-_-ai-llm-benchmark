@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.275,
+  "overall_score": 0.36470588235294116,
   "individual_scores": {
-    "AnswerRelevancy": 0.375,
+    "AnswerRelevancy": 0.8235294117647058,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.38 because the provided URLs and information are not directly related to enabling notifications for one's own activity in XWiki, making much of the output irrelevant to the input query.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all the nodes in the retrieval context are irrelevant. The first node discusses 'JWT token generation and its claims', which is unrelated to notifications about user activity. The second node is about 'upgrading wikis and handling invalid extensions', which does not pertain to notifications for user actions. The third node lists 'various XWiki extensions', none of which relate to enabling notifications for a user's own activity. The fourth node is about 'LDAP group mapping and authentication', which is not relevant to the question about enabling notifications for user actions. The fifth node discusses 'form utilization on XWiki.org', which does not address the issue of receiving notifications for one's own activity.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to notification settings or user activity filters."
+    "AnswerRelevancy": "The score is 0.82 because the response mostly addresses the question about enabling notifications for one's own actions. However, the presence of multiple irrelevant source links slightly detracts from the overall relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'themes, internationalization, accessibility, and scalability', which are unrelated to notification settings. The second node is about 'administrating wiki features like users and rights', which does not pertain to notification settings. The third node covers 'importing office documents, icon themes, and syntax highlighting', none of which relate to notification settings. The fourth node is about 'customizing themes and panels', which is not relevant to enabling notifications for one's own actions. The fifth node discusses 'color themes and access rights', which do not address notification settings.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by any nodes in the retrieval context, indicating a complete mismatch between the expected content and the provided context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about notification settings or user activity, which are the main points in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

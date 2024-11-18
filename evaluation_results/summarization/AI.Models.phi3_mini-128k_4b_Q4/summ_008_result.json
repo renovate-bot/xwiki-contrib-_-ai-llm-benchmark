@@ -1,8 +1,8 @@
 {
-  "score": 0.375,
-  "reason": "The score is 0.38 because the summary includes multiple contradictions and extra information not present in the original text, and it fails to answer a question that the original text can.",
+  "score": 0.45,
+  "reason": "The score is 0.45 because the summary contains multiple contradictions regarding user permissions and settings, such as incorrect claims about who can view, comment, and edit in various modes like 'Editable', 'Closed', and 'Hidden'. Additionally, the summary includes extra information about settings not mentioned in the original text, such as 'Viewable Closed (Light)'. Furthermore, the summary fails to address a specific question about overriding global rights at the page level, which the original text can answer.",
   "score_breakdown": {
-    "Alignment": 0.375,
+    "Alignment": 0.45,
     "Coverage": 0.8
   },
   "input_language": "en",

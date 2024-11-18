@@ -2,16 +2,16 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "The sun, a brush of golden light,\nPaints clouds with hues of pink and bright.\nA gentle breeze through meadows sighs,\nWhere wildflowers dance before my eyes.\n\nA crystal stream, a silver thread,\nThrough moss-kissed stones its journey led.\nThe forest whispers ancient tales,\nWhere sunlight filters, green and pale.\n\nA robin's song, a joyful trill,\nUpon the branches, perched and still.\nThe mountains rise, their peaks so high,\nReflecting heavens in their eye.\n\nA tapestry of earth and sky,\nWhere wonder blooms for you and I.\nFrom dewdrop's gleam to ocean's roar,\nNature's beauty evermore. \n\n\nLet me know if you'd like another poem on a specific theme in nature!",
+  "ai_answer": "Sunrise paints the mountain peaks,\nA fiery blush, the world awakes.\nEmerald valleys, dew-kissed green,\nWhere wildflowers bloom, a vibrant scene.\n\nA symphony of birdsong fills the air,\nA gentle breeze, a whispered prayer.\nSunlight dances on a crystal stream,\nReflecting clouds, a fleeting dream.\n\nAncient trees, with roots so deep,\nTheir branches reach, towards secrets they keep.\nA canvas vast, of blue and gold,\nA story told, a beauty untold.\n\nThe moonbeams bathe the sleeping land,\nIn silver light, a mystic hand.\nStars ignite, a twinkling sea,\nA cosmic dance, for you and me.\n\nSo let us pause, and take it in,\nThis wondrous world, where life begins.\nFor in its grace, and boundless might,\nWe find our solace, day and night. \n\n\n",
   "sources": null,
   "usage": {
     "prompt_tokens": 19,
-    "completion_tokens": 168,
-    "total_tokens": 187
+    "completion_tokens": 188,
+    "total_tokens": 207
   },
-  "average_power_draw": 199.9481713554987,
-  "energy_consumption": 361.26433153598197,
-  "energy_per_input_token": 0.8229255843644235,
-  "energy_per_output_token": 2.057313960911059,
-  "energy_per_total_token": 1.931894821048032
+  "average_power_draw": 199.75090058479532,
+  "energy_consumption": 408.538421758886,
+  "energy_per_input_token": 0.8354568952124458,
+  "energy_per_output_token": 2.0886422380311145,
+  "energy_per_total_token": 1.9736155640525894
 }

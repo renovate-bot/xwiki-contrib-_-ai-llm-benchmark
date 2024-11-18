@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.38666666666666666,
+  "overall_score": 0.36153846153846153,
   "individual_scores": {
-    "AnswerRelevancy": 0.9333333333333333,
+    "AnswerRelevancy": 0.8076923076923077,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.93 because the answer is highly relevant and provides useful information on configuring XWiki, but it includes URLs that do not directly address the specific question asked.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to configuring access controls for team spaces in XWiki. For example, the first node discusses the creation of spaces and sub-pages in XWiki but does not address access controls, and the second node is about macros and HTML syntax, which is unrelated.",
+    "AnswerRelevancy": "The score is 0.81 because the main content effectively addresses the question about configuring XWiki, but it includes multiple source links that do not directly contribute to answering the specific query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'the metadata of a page in XWiki and does not provide information on configuring access rights for teams', which does not address the input query. Similarly, the second node talks about 'modifying resources using XML and HTTP methods', which is unrelated to setting access permissions in XWiki. All subsequent nodes also fail to provide relevant information on configuring team-specific access rights.",
     "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about creating groups, defining rights at the wiki or space level, or inheriting rights for child pages as mentioned in the expected output."
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about creating groups, defining rights at the wiki or space level, or inheriting rights for child pages, which are all key components of the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary includes extra information not mentioned in the original text and fails to answer a question that the original text can address.",
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary includes extra information not present in the original text, such as specific applications like blogs or task managers and use cases like community hubs or education solutions. Additionally, the summary fails to address questions about XWiki's professional features and its use for project collaboration, indicating a lack of coverage of key aspects present in the original text.",
   "score_breakdown": {
-    "Alignment": 0.8333333333333334,
-    "Coverage": 0.8
+    "Alignment": 0.6,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

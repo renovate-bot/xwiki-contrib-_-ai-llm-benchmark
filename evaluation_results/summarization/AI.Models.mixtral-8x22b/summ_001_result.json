@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary is mostly accurate and concise, with no contradictions or extra information. However, it fails to address whether a user can export a page in PDF format.",
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary includes extra information not present in the original text and fails to answer some questions that the original text can address. These issues indicate that the summary is not fully aligned with the original content, affecting its quality.",
   "score_breakdown": {
-    "Alignment": 1.0,
-    "Coverage": 0.8
+    "Alignment": 0.75,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

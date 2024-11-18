@@ -1,8 +1,8 @@
 {
-  "score": 0.5,
-  "reason": "The score is 0.50 because the summary contains multiple contradictions to the original text, including the scope of the guide, missing links in the Developers section, and an incorrect next step in the guide.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary includes extra information not present in the original text, such as specific login requirements for actions and detailed resources for developers, which affects its accuracy and completeness.",
   "score_breakdown": {
-    "Alignment": 0.5,
+    "Alignment": 0.4,
     "Coverage": 1.0
   },
   "input_language": "en",

@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output addresses the topic and includes most key details such as event name, dates, venue, address, and activities. However, it does not separate the start and end dates and includes 'Audience' instead of 'target_audience'. The coherence and fluency are well-maintained.",
+  "reason": "The Actual Output captures the main event details like name, date, location, and activities, aligning well with the Input. However, it differs in format and lacks explicit separation of start and end dates, and the venue and address are combined. The target audience is correctly identified.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

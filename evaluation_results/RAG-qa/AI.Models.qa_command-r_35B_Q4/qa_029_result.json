@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.45999999999999996,
+  "overall_score": 0.8054545454545454,
   "individual_scores": {
-    "AnswerRelevancy": 0.0,
+    "AnswerRelevancy": 0.7272727272727273,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0,
+    "ContextualPrecision": 0.5,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 0.3
+    "CustomContextualRelevancy": 0.8
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.00 because the provided output contains multiple irrelevant statements about Microsoft Teams and unrelated XWiki documentation links, which do not address the question about refusing script rights to a space administrator in XWiki.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node 'discusses additional rules for rights but does not address the specific question about denying script rights to an administrator.' Additionally, the second node 'provides details on executing tasks with user rights but does not mention the possibility of denying script rights to an administrator.'",
-    "ContextualRecall": "The score is 1.00 because the expected output perfectly matches the information provided in the retrieval context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context mentions that an admin right implies other rights and cannot be overridden, but it does not explicitly state that admin rights cannot be refused."
+    "AnswerRelevancy": "The score is 0.73 because the response partially addresses the question about denying script rights to a space administrator, but includes irrelevant source links that do not directly relate to the specific query, preventing a higher score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.50 because the second node in the retrieval context is relevant as it 'discusses programming rights and script execution, which is directly related to the topic of script rights for administrators.' However, the first node, which is ranked higher, is irrelevant as it is 'related to language preferences and translations in XWiki, which is not relevant to denying script rights to an administrator.' Additionally, other irrelevant nodes like the third, fourth, and fifth nodes are ranked lower, but not all relevant information is prioritized effectively.",
+    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the retrieval context, specifically by the 3rd node, ensuring complete alignment. Great job!",
+    "CustomContextualRelevancy": "The expected answer states that admin rights cannot be denied, which aligns with the retrieval context indicating 'ADMIN' is 'not deniable'. However, the retrieval context does not explicitly mention the lack of support for this in XWiki, which slightly reduces the score."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

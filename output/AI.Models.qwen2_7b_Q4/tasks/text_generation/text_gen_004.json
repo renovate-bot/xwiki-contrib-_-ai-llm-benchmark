@@ -2,16 +2,16 @@
   "id": "text_gen_004",
   "prompt": "Generate a short product description based on the following information:\n\nProduct: Wireless Bluetooth Headphones\nFeatures: Noise-cancelling, 20-hour battery life, comfortable fit\nTarget audience: Tech-savvy professionals",
   "expected_answer": "Introducing our cutting-edge wireless Bluetooth headphones, designed for tech-savvy professionals who demand the best. With advanced noise-cancelling technology, you can immerse yourself in your music or focus on your work without any distractions. Enjoy an impressive 20-hour battery life, ensuring your headphones keep up with your busy lifestyle. The comfortable, ergonomic fit allows you to wear them all day long without any discomfort. Upgrade your audio experience with our premium wireless headphones.",
-  "ai_answer": "Introducing our latest innovation in audio technology - the premium Wireless Bluetooth Headphones designed specifically for tech-savvy professionals. These headphones blend cutting-edge features with ergonomic design to deliver an unparalleled listening experience that adapts seamlessly to your active lifestyle.\n\nOur state-of-the-art noise-cancelling feature blocks out distracting background sounds, ensuring you stay immersed in your work without interruption or distraction. Whether it's a busy office environment, a crowded commute, or noisy cafe - our headphones help create the perfect quiet zone for concentration and creativity.\n\nFeaturing an impressive 20-hour battery life on a single charge, these headphones are engineered to last as long as needed for extended listening sessions at work or travel. Quick charging technology provides ample runtime even after short periods of recharging, giving you the flexibility to recharge quickly before stepping out without worrying about losing your connection.\n\nWith a comfortable fit in mind, our headphones incorporate lightweight materials and adjustable ear-cups that provide unparalleled wearing comfort, so they won't fatigue throughout long workdays or travel. Ideal for professionals seeking convenience, reliability, and sound quality all rolled into one sleek pair of headphones.\n\nIn summary, the Wireless Bluetooth Headphones offer a comprehensive solution to your audio needs by combining noise-cancellation technology, a robust 20-hour battery life, with a comfortable fit design \u2013 ensuring seamless integration into professional work environments and demanding schedules. Elevate your productivity, focus on essential tasks, and enjoy superior sound quality with our premium headphones.\n\nGet ahead of the curve today - upgrade to these high-quality headphones designed for tech-savvy professionals who value their time and require uncompromising audio experiences at the workplace or beyond.",
+  "ai_answer": "Introducing our state-of-the-art Wireless Bluetooth Headphones - designed for the modern tech-savvy professional who demands both superior audio performance and convenient connectivity. Boasting advanced noise-cancelling technology, these headphones block out distracting background noises, allowing you to fully immerse in your music or conference calls without any interruptions.\n\nWith an impressive battery life of up to 20 hours, they ensure endless enjoyment for long commutes or extended work sessions. These headphones are engineered with extreme comfort in mind, featuring lightweight construction and a snug yet flexible design that molds perfectly to the shape of your ears, eliminating discomfort even during prolonged use. \n\nWhether you're tuning into virtual meetings or binging on music, our Wireless Bluetooth Headphones provide unparalleled audio quality without sacrificing on fit or functionality. Crafted for efficiency and comfort, these headphones are an indispensable tool in today's tech-driven work environment. Elevate your productivity with superior sound, seamless connectivity, and a smooth listening experience tailored for working professionals.",
   "sources": null,
   "usage": {
-    "prompt_tokens": 51,
-    "completion_tokens": 332,
-    "total_tokens": 383
+    "prompt_tokens": 62,
+    "completion_tokens": 199,
+    "total_tokens": 261
   },
-  "average_power_draw": 214.04309782608698,
-  "energy_consumption": 554.8939670274958,
-  "energy_per_input_token": 0.6298455925397228,
-  "energy_per_output_token": 1.5746139813493072,
-  "energy_per_total_token": 1.4488093133877176
+  "average_power_draw": 198.39577777777777,
+  "energy_consumption": 324.4983751525349,
+  "energy_per_input_token": 0.5799792227927344,
+  "energy_per_output_token": 1.449948056981836,
+  "energy_per_total_token": 1.2432887936878732
 }

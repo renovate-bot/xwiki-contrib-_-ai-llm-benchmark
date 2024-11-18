@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.8579710144927535,
+  "overall_score": 0.4704761904761905,
   "individual_scores": {
-    "AnswerRelevancy": 0.9565217391304348,
-    "Faithfulness": 1.0,
-    "ContextualPrecision": 0.3333333333333333,
-    "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 1.0
+    "AnswerRelevancy": 0.8095238095238095,
+    "Faithfulness": 0.9,
+    "ContextualPrecision": 0.14285714285714285,
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.96 because the response is highly relevant and provides useful information, but it includes a general description of the notification module that does not directly address the specific issue.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.33 because the relevant node (rank 3) that mentions the `notifications.enabled` setting in `xwiki.properties` is ranked lower than irrelevant nodes. For example, the first node discusses notification RSS feed settings but does not address enabling notifications in the `xwiki.properties` file, and the second node explains overriding notification templates and extension installation without mentioning the `xwiki.properties` file.",
-    "ContextualRecall": "The score is 1.00 because the retrieval context perfectly supports the expected output. Great job!",
-    "CustomContextualRelevancy": "The retrieval context explicitly mentions setting 'notifications.enabled' in 'xwiki.properties' to 'true', which matches the expected answer."
+    "AnswerRelevancy": "The score is 0.81 because the response is mostly relevant to the issue of the missing notifications bell in XWiki, but it includes repetitive source links that do not directly address the problem, slightly reducing the overall relevancy.",
+    "Faithfulness": "The score is 0.90 because the actual output incorrectly claims that the notifications feature requires JavaScript, which is not mentioned in the retrieval context.",
+    "ContextualPrecision": "The score is 0.14 because the relevant node, which mentions editing the 'xwiki.properties' file to enable notifications, is ranked seventh. Irrelevant nodes, such as the first node discussing 'installation instructions and prerequisites for extensions', should be ranked lower since they do not address enabling notifications in XWiki.",
+    "ContextualRecall": "The score is 0.50 because while the concept of enabling notifications is supported by node 7 in the retrieval context, the specific detail about the 'notifications.enabled' setting in 'xwiki.properties' is not found in any of the nodes.",
+    "CustomContextualRelevancy": "The retrieval context does not mention the 'notifications.enabled' setting in 'xwiki.properties', which is crucial for enabling notifications as stated in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

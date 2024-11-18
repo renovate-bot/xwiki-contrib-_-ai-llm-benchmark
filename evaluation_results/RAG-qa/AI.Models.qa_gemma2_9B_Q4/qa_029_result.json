@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.9349999999999999,
+  "overall_score": 0.7233333333333334,
   "individual_scores": {
-    "AnswerRelevancy": 0.875,
+    "AnswerRelevancy": 0.8333333333333334,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 1.0,
+    "ContextualPrecision": 0.5833333333333333,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 0.8
+    "CustomContextualRelevancy": 0.2
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.88 because the answer is mostly relevant and provides useful information, but it includes URLs that do not directly address the specific question of how to refuse script rights to a space administrator.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes, ensuring precise and accurate retrieval.",
-    "ContextualRecall": "The score is 1.00 because the expected output perfectly matches the provided context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context explains that rights implied by admin rights cannot be overridden, aligning with the expected answer that admin rights cannot be refused. However, it does not explicitly state that XWiki does not support this feature."
+    "AnswerRelevancy": "The score is 0.83 because the main content effectively addresses the question about refusing script rights to a space administrator. However, the inclusion of an irrelevant source link repeated multiple times slightly detracts from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.58 because the first node in the retrieval context is about 'language preferences and translations in XWiki', which is unrelated to the question about script rights, yet it is ranked higher than relevant nodes. Additionally, the fourth node discusses 'checking access rights programmatically', and the fifth node is about 'executing code with specific user rights', both of which do not directly address the question and should be ranked lower than the second and third nodes that are relevant to script rights and permissions.",
+    "ContextualRecall": "The score is 1.00 because every part of the expected output is perfectly supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions that certain rights like ADMIN are not deniable, but it does not explicitly state that administrator rights cannot be refused as mentioned in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.3166666666666667,
+  "overall_score": 0.36363636363636365,
   "individual_scores": {
-    "AnswerRelevancy": 0.5833333333333334,
+    "AnswerRelevancy": 0.8181818181818182,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.58 because the provided URLs do not address the specific question about enabling notifications for one's own activity, making the response partially irrelevant.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node is about 'token generation and JWT claims', which is unrelated to notifications for user activity. The second node discusses 'database migration and invalid extensions', which is not relevant to activating notifications for user actions. The third node lists 'various XWiki extensions and their functionalities', which does not relate to enabling notifications for a user's own activity.",
-    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention anything about notifications, user activity, filter options, or notification settings in user profiles.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about notification settings or user activity filters as mentioned in the expected output."
+    "AnswerRelevancy": "The score is 0.82 because the answer largely addresses the question about enabling notifications for one's own actions, but it includes irrelevant source links that do not directly contribute to solving the issue.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'customization of page templates and internationalization', which is unrelated to notification settings. The second node describes 'an application for administrating wiki features', which does not pertain to user notification settings. The third node includes information about 'various extensions like Office Importer and Syntax Highlighting', none of which relate to enabling notifications for one's own activity. These irrelevant nodes should be ranked lower than any relevant nodes.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about notification settings or user activity filters mentioned in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

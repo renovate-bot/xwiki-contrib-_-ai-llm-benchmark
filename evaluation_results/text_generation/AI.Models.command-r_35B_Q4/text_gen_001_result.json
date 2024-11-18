@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output addresses the topic and extracts the key information accurately. It matches the Expected Output in terms of content but uses a different format. The text is coherent and fluent.",
+  "reason": "The Actual Output correctly extracts and presents the key information from the Input, maintaining relevance and coherence. However, it slightly differs in format from the Expected Output by not using JSON structure.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

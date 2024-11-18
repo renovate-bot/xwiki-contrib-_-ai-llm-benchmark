@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output addresses the Input prompt and is relevant. It covers key points such as brain structure and functions, similar to the Expected Output. However, it uses terms like 'neocortex' and 'cerebrum' which are not in the Expected Output, and the phrase 'harboring the cognitive and consciousness aspects' is less precise than 'biological substrate for cognitive functions, consciousness, and subjective experiences'. The coherence and fluency are maintained.",
+  "score": 0.9,
+  "reason": "The Actual Output effectively adapts the text for a technical audience by incorporating specific terminology like 'neurons,' 'glia,' and 'neural circuits,' which aligns well with the Expected Output. It maintains coherence and fluency, though it includes slightly more detail than necessary, such as ongoing research, which was not in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

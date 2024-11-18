@@ -1,20 +1,20 @@
 {
-  "overall_score": 0.7,
+  "overall_score": 0.546896551724138,
   "individual_scores": {
-    "AnswerRelevancy": 0.5,
-    "Faithfulness": 1,
-    "ContextualPrecision": 0,
+    "AnswerRelevancy": 0.034482758620689655,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.5,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 1.0
+    "CustomContextualRelevancy": 0.2
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.50 because the provided link and statement do not address how to deny script rights to a space administrator, making the information partially irrelevant.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'default right settler additional policies,' which does not address the question about denying script rights to an administrator. The second node talks about 'executing tasks with user rights,' which is also not relevant. Similarly, the third node mentions the 'Scripting API and checking access rights,' but does not address the specific question. These irrelevant nodes should be ranked lower.",
-    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the retrieval context, perfectly matching the information provided.",
-    "CustomContextualRelevancy": "The retrieval context clearly states that rights implied by an admin right cannot be overridden by a denial at a lower level, matching the expected answer that admin rights cannot be refused."
+    "AnswerRelevancy": "The score is 0.03 because the actual output contains numerous irrelevant statements, such as links and information about XWiki documentation, PowerShell commands, and documentary reviews, none of which address the question about refusing script rights to a space administrator. The score is not zero because there may be a minimal connection or attempt to address the topic, albeit ineffectively.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.50 because the second node in the retrieval context, which is relevant as it discusses 'programming and script rights' and mentions that 'programming rights can only be granted from the wiki preferences page,' is ranked after an irrelevant node. The first node is about 'language preferences and translations in XWiki,' which is unrelated to script rights for administrators and should be ranked lower. Additionally, subsequent irrelevant nodes, such as the third node listing various rights without addressing the specific question, are ranked too closely to the relevant node.",
+    "ContextualRecall": "The score is 1.00 because the expected output is perfectly supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions that admin rights imply other rights and are not deniable, but it does not explicitly state that admin rights cannot be refused as in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",
-  "answer_language": "en"
+  "answer_language": "fr"
 }

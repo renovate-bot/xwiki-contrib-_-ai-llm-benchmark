@@ -1,9 +1,9 @@
 {
-  "score": 0.75,
-  "reason": "The score is 0.75 because the summary omits the user role and incorrectly states the starting tasks, and it includes extra information about managing users for access control that is not in the original text.",
+  "score": 0.0625,
+  "reason": "The score is 0.06 because the summary contains significant contradictions and introduces a large amount of extra information not present in the original text, indicating a poor alignment with the original content.",
   "score_breakdown": {
-    "Alignment": 0.75,
-    "Coverage": 1.0
+    "Alignment": 0.0625,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

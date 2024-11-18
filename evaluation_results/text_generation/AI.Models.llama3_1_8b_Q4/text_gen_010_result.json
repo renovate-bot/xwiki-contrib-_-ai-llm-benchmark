@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output addresses the topic and covers key points such as bodily functions and sensory information, similar to the Expected Output. However, it lacks mention of 'consciousness' and 'subjective experiences.' The coherence and fluency are strong, with clear logical flow and correct grammar.",
+  "score": 0.9,
+  "reason": "The Actual Output aligns well with the Input prompt and Expected Output by using technical language and addressing the same topics. It maintains coherence and fluency, though it focuses more on the cerebral cortex rather than the entire brain, which is a slight deviation from the Expected Output's broader scope.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output addresses the Input prompt and includes all keywords. It is more detailed than the Expected Output but still coherent and fluent. However, it slightly deviates from the simplicity of the Expected Output.",
+  "score": 0.9,
+  "reason": "The Actual Output is relevant to the Input, addressing all keywords. It is coherent with a logical flow, though slightly more detailed than the Expected Output. The fluency is high, matching the linguistic quality of the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

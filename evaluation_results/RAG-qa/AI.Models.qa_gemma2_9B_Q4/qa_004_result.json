@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.6266666666666667,
+  "overall_score": 0.75,
   "individual_scores": {
     "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.3333333333333333,
-    "ContextualRecall": 0.5,
+    "ContextualPrecision": 0.45,
+    "ContextualRecall": 1.0,
     "CustomContextualRelevancy": 0.3
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and directly addresses the question without any irrelevant statements. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job!",
-    "ContextualPrecision": "The score is 0.33 because the relevant node, which mentions 'Watch and custom filters' and is relevant to modifying notification settings, is ranked third. However, irrelevant nodes discussing enabling/disabling the notification module (first node), getting a notification RSS feed (second node), 'Clear All' link (fourth node), and choosing default frequency (fifth node) are ranked higher than the relevant node.",
-    "ContextualRecall": "The score is 0.50 because the retrieval context partially supports the expected output, specifically regarding notifications for pages users created or updated (sentence 1), but lacks information on 'Automatic page watching' and deleting notification filters (sentences 3 and 4).",
-    "CustomContextualRelevancy": "The retrieval context mentions settings for notifications and auto-watched mode but lacks details on major modifications, notification filters, and specific user profile settings."
+    "AnswerRelevancy": "The score is 1.00 because the output is perfectly relevant and directly addresses the question about disabling notifications in XWiki. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Everything aligns perfectly with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.45 because relevant nodes in the retrieval context are ranked lower than some irrelevant nodes. The first node discusses 'how to get a notification RSS feed and manage notification settings', but it does not address disabling automatic notifications, which is the main concern. The third node focuses on 'filtering notifications' without explaining how to disable automatic notifications. The fourth node is about 'enabling or disabling email notifications through configuration files', which is not directly related to the input query. The sixth node talks about 'overriding notification templates and installing extensions', which is unrelated to disabling automatic notifications. However, the second and fifth nodes are relevant as they mention 'Default Watch Settings' and 'Choosing the default auto-watched mode', directly addressing the issue of managing and disabling automatic notifications.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the nodes in the retrieval context, demonstrating a perfect alignment between the information provided and the expected details. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions default watch settings and user profile settings but lacks details on automatic page watching and custom filters as described in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output addresses the Input prompt and aligns well with the Expected Output, covering key points like noise-cancelling, 20-hour battery life, and comfortable fit for tech-savvy professionals. It is coherent and fluent, though there is a minor typo ('cutting- vice').",
+  "score": 0.9,
+  "reason": "The Actual Output is highly relevant to the Input, addressing all features and the target audience. It maintains coherence with a logical flow and aligns closely with the Expected Output's intent. The language is fluent with minor typographical errors, such as 'cutting-e edge' instead of 'cutting-edge'.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

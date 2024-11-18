@@ -1,9 +1,9 @@
 {
-  "score": 0.4,
-  "reason": "The score is 0.40 because the summary contains contradictions regarding the use of implicit denial and the configuration of permissions for the Guest user. Additionally, the summary fails to answer several questions that the original text addresses, such as user group creation, permission hierarchy, and the wiki owner's privileges.",
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary contains a contradiction regarding the implicit denial of rights when explicitly set, includes extra information about specific permission types and user groups not present in the original text, and fails to answer questions about overriding permissions and setting access rights at a terminal page level.",
   "score_breakdown": {
-    "Alignment": 0.8571428571428571,
-    "Coverage": 0.4
+    "Alignment": 0.625,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

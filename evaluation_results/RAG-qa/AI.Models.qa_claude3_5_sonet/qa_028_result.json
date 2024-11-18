@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.37272727272727274,
+  "overall_score": 0.36153846153846153,
   "individual_scores": {
-    "AnswerRelevancy": 0.8636363636363636,
+    "AnswerRelevancy": 0.8076923076923077,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.86 because the provided URL does not directly address the input question about configuring file upload restrictions. However, the rest of the response is relevant and helpful.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in retrieval context are irrelevant to the input. For example, the first node 'describes various macros and functionalities in XWiki but does not address file upload restrictions or MIME type configurations', and the second node 'explains how to customize the PDF cover in XWiki, which is unrelated to setting file upload restrictions or MIME types'.",
-    "ContextualRecall": "The score is 0.00 because none of the steps or configurations mentioned in the expected output can be attributed to the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain information about configuring MIME types or setting maximum attachment size."
+    "AnswerRelevancy": "The score is 0.81 because the main content of the answer is relevant and addresses the question about limiting file uploads to images or PDFs of a specific size. However, the repeated irrelevant statements about source links that do not directly address the question prevent the score from being higher.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input question about configuring file upload restrictions. The first node discusses 'language preferences and translations', the second node talks about 'various applications and features', the third node is about 'PDF export customization', the fourth node lists 'features and macros', and the fifth and sixth nodes contain 'links to image files and references'. None of these nodes address the topic of file upload restrictions, leading to a score of 0.00.",
+    "ContextualRecall": "The score is 0.00 because the retrieval context does not contain any relevant information or nodes that support the expected output, which includes details on file type and size restrictions, MIME type configurations, or specific instructions related to XWikiPreferences.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about configuring MIME types or setting maximum attachment size, which are key elements in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

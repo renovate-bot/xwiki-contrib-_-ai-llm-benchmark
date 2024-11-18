@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.3411764705882353,
+  "overall_score": 0.3666666666666667,
   "individual_scores": {
-    "AnswerRelevancy": 0.7058823529411765,
+    "AnswerRelevancy": 0.8333333333333334,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.71 because the answer partially addresses the issue of not receiving notifications, but the repeated irrelevant URLs lower its relevancy.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are about unrelated topics such as 'various applications in XWiki', 'access rights and executing tasks', 'link renaming in macros', 'properties of a collection in an AI application', and 'configuring permissions for guests'. None of these nodes pertain to notifications, which is the main focus of the input.",
+    "AnswerRelevancy": "The score is 0.83 because the response is mostly relevant to the issue of not receiving notifications, but it includes unrelated source links that slightly detract from its focus.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node contains 'image links and references, which do not relate to enabling notifications or following users/pages in XWiki.' Similarly, the second node is 'a list of image links and references, unrelated to the topic of notifications or user/page following in XWiki.' The third node also 'contains image links and references, which are irrelevant to the issue of receiving notifications or following users/pages.' The fourth node is 'a list of image links and references, not providing any information on enabling notifications or following users/pages.' Lastly, the fifth node describes 'a security module and its ratings, which is unrelated to the topic of notifications or following users/pages in XWiki.'",
     "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about enabling notifications, following pages or users, or configuring notification settings as described in the expected output."
+    "CustomContextualRelevancy": "The retrieval context does not contain any relevant information about enabling notifications, following pages or users, or managing notifications as described in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

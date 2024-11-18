@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary fails to answer a specific question that the original text can answer, which is whether it is possible to revert to a previous version of a wiki page.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary includes extra information not present in the original text and fails to answer several questions that the original text can address. This indicates a lack of coverage and accuracy in the summary.",
   "score_breakdown": {
-    "Alignment": 1.0,
-    "Coverage": 0.8
+    "Alignment": 0.8333333333333334,
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

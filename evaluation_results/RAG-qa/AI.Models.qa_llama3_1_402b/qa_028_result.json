@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.3571428571428571,
+  "overall_score": 0.3411764705882353,
   "individual_scores": {
-    "AnswerRelevancy": 0.7857142857142857,
+    "AnswerRelevancy": 0.7058823529411765,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.79 because the output contains useful information relevant to configuring file upload settings, but it also includes multiple irrelevant URLs that do not address the specific question about restricting file types and sizes.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'various macros and their functionalities' which is unrelated to configuring attachment upload restrictions. The second node explains 'how to customize the PDF cover by overriding the template pdfcover.vm', which does not pertain to setting MIME types or file size limits for attachments. Additionally, the third node describes 'how to create a new page by adding a wanted link', which is not related to configuring attachment upload settings.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about configuring MIME types or setting the maximum upload size for attachments."
+    "AnswerRelevancy": "The score is 0.71 because the response mostly addresses the question about configuring file upload settings, but it includes multiple irrelevant source links that do not directly relate to the topic, preventing a higher score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input query. The first node discusses 'language preferences and translations in XWiki', which is unrelated to 'file upload restrictions'. The second node is about 'various XWiki applications and features, such as tour guides and mail configuration', which do not pertain to 'file upload settings'. The third node focuses on 'PDF export customization using CSS and XSL', which is not relevant to 'configuring file upload restrictions'. Subsequent nodes similarly fail to address the input query, as they cover topics like 'content viewing and notifications' and 'links to image files and references', none of which relate to 'file upload settings'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context, as there is no mention of file size or type restrictions, MIME type configuration, or steps for setting maximum attachment size.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about configuring MIME types or setting maximum attachment size as described in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

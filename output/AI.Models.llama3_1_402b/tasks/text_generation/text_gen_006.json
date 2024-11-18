@@ -2,12 +2,12 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "Here is a poem about the beauty of nature:\n\nThe earth's canvas, painted so fine,\nA masterpiece of wonder, divine.\nMountains tall, and valleys wide,\nA symphony of beauty, side by side.\n\nThe sun rises, a fiery ball,\nBringing light to all, standing tall.\nThe trees, they sway, in gentle breeze,\nTheir leaves, a rustling, soft release.\n\nThe rivers flow, like liquid gold,\nReflecting sky, and stories untold.\nThe flowers bloom, in vibrant hue,\nA colorful tapestry, for me and you.\n\nThe stars appear, like diamonds bright,\nA twinkling show, on a celestial night.\nThe moon glows, a silver crescent smile,\n Illuminating all, in a gentle while.\n\nThe beauty of nature, pure and true,\nA gift to us, forever anew.\nA source of wonder, a sense of peace,\nA reminder of life's simple release.\n\nSo let us cherish, this earth we share,\nAnd preserve its beauty, with love and care.\nFor in its splendor, we find our own,\nA connection to the natural throne.",
+  "ai_answer": "In twilight's hush, where shadows play,\nThe forest whispers secrets of the day.\nThe trees, like sentinels of earth and sky,\nStand guard, their leaves a gentle, rustling sigh.\n\nThe sun's warm touch ignites the land,\nAnd petals unfold, like tender hands.\nThe flowers, a colorful, vibrant throng,\nDance in the breeze, their sweet songs sung.\n\nThe mountains rise, a majestic sight,\nTheir peaks a challenge to the morning light.\nThe rivers flow, a winding, silver stream,\nReflecting the beauty of the natural dream.\n\nThe creatures roam, a diverse, wild band,\nEach one a unique, intricate part of the land.\nThe birds take flight, a soaring, joyful sound,\nTheir songs a chorus, echoing all around.\n\nIn nature's beauty, we find our peace,\nA sense of wonder, a world to cease.\nFrom the smallest seed to the mightiest tree,\nAll is connected, a harmony to see.\n\nSo let us cherish this wondrous earth,\nAnd all its beauty, of infinite worth.\nLet us preserve, protect, and adore,\nThe natural world, forever in store.",
   "sources": null,
   "usage": {
-    "prompt_tokens": 19,
-    "completion_tokens": 227,
-    "total_tokens": 246
+    "prompt_tokens": 21,
+    "completion_tokens": 239,
+    "total_tokens": 260
   },
   "average_power_draw": null,
   "energy_consumption": null,

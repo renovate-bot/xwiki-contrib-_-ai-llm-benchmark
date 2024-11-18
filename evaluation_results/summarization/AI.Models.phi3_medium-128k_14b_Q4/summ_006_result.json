@@ -1,10 +1,10 @@
 {
-  "score": 0.7777777777777778,
-  "reason": "The score is 0.78 because the summary incorrectly assigns tasks meant for administrators to developers and includes extra information about a section ending with a direct link to 'Step 1: Creating a page' that is not mentioned in the original text.",
+  "score": 0,
+  "reason": "The score is 0.00 because the summary fails to address key questions that the original text can answer, indicating a lack of coverage and completeness in the summary.",
   "score_breakdown": {
-    "Alignment": 0.7777777777777778,
-    "Coverage": 1.0
+    "Alignment": 0,
+    "Coverage": 0.0
   },
   "input_language": "en",
-  "summary_language": "en"
+  "summary_language": "unknown"
 }

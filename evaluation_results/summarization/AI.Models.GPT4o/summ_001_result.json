@@ -1,9 +1,9 @@
 {
-  "score": 0.4,
-  "reason": "The score is 0.40 because the summary contains multiple contradictions, including omitting key actions that can be performed on a page, misrepresenting the purpose of subwikis, and incorrectly specifying the customization of panels. Additionally, it includes extra information not present in the original text and fails to answer several questions that the original text addresses.",
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary fails to address some questions that the original text can answer, indicating it lacks completeness and omits certain details.",
   "score_breakdown": {
-    "Alignment": 0.6666666666666666,
-    "Coverage": 0.4
+    "Alignment": 1.0,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

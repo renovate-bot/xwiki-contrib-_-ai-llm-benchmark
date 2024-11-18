@@ -1,6 +1,6 @@
 {
-  "score": 0.9,
-  "reason": "The Actual Output directly addresses the topic of a space adventure and aligns well with the Expected Output of astronauts exploring a new planet. The story is coherent and flows logically, with detailed descriptions of the journey and discoveries. It is also fluent with correct grammar and natural language usage. However, it slightly deviates by including additional elements like an impending galactic disaster.",
+  "score": 0.0,
+  "reason": "The Actual Output does not address the Input prompt about a space adventure story and is incoherent with numerous unrelated topics. It does not align with the Expected Output of a story about astronauts exploring a new planet.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

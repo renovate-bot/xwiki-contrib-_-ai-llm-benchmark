@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.3230769230769231,
+  "overall_score": 0.3,
   "individual_scores": {
-    "AnswerRelevancy": 0.6153846153846154,
+    "AnswerRelevancy": 0.5,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.62 because while the output may contain some relevant information, it is cluttered with multiple irrelevant URLs that do not address the specific question about enabling notifications for one's own activity.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are unrelated to the input. For example, the first node is about 'token generation and JWT claims', which is irrelevant to notifications for user activity. Similarly, the second node discusses 'database migration and invalid extensions', which also does not relate to user notification settings.",
-    "ContextualRecall": "The score is 0.00 because none of the nodes in the retrieval context mention notifications about user activity, related settings, or 'Erweiterten Filteroptionen'.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to notification settings or user activity mentioned in the expected output."
+    "AnswerRelevancy": "The score is 0.50 because the output includes source links that do not directly address the question about enabling notifications for one's own actions, making the response partially relevant but not fully aligned with the input query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'customization of page templates, internationalization, and other features unrelated to notification settings.' The second node is about 'administrating wiki features and does not mention notification settings or user activity notifications.' The third node covers 'various applications and extensions like Office Importer and Syntax Highlighting, but does not address notification settings or user activity notifications.' This means that no relevant information was retrieved, resulting in the lowest possible score.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be linked to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about notification settings or user activity filters as mentioned in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

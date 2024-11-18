@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.2,
+  "overall_score": 0.77,
   "individual_scores": {
-    "AnswerRelevancy": 0.0,
+    "AnswerRelevancy": 0.85,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 1.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.00 because the provided output contains numerous irrelevant statements related to SharePoint and unrelated URLs, which do not address the question about denying script rights to a space administrator in XWiki.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'checking access rights programmatically using methods like checkAccess and hasAccess', which does not address denying script rights to a space administrator. The second node focuses on 'the usage of checkAccess() method and its importance in security checkpoints', which is also unrelated. The third node provides 'examples of using hasAccess() and checkAccess() methods in scripts', which is not relevant. The fourth node describes 'HTTP methods and status codes for managing attachments in a wiki', which is unrelated. The fifth node describes 'HTTP methods and status codes for managing objects and their properties in a wiki', which is not relevant. The sixth node describes 'HTTP methods and status codes for managing the history of objects in a wiki', which is unrelated to the question.",
-    "ContextualRecall": "The score is 0.00 because the sentence 'This is unfortunately not supported in XWiki, rights that are implied by admin right cannot be denied.' is not found in any of the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not mention that rights implied by admin right cannot be denied."
+    "AnswerRelevancy": "The score is 0.85 because the answer is mostly relevant and provides useful information, but it includes repeated irrelevant statements about a source link that does not directly address how to deny script rights to a space administrator.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'programming rights and script execution' but does not address denying script rights to a space administrator. The second node lists 'various rights and their properties' without mentioning the inability to deny rights implied by admin rights. The third node explains 'script right and its default settings' but lacks information on denying script rights to a space administrator. The fourth node contains 'code snippets related to access checks' but does not provide relevant information. The fifth node is about 'converting rights during page migration' and does not relate to the input question.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is perfectly supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The expected answer states that rights implied by admin right cannot be denied, which is supported by the retrieval context indicating that ADMIN right is not deniable and implies other rights."
   },
   "question_language": "en",
   "expected_answer_language": "en",

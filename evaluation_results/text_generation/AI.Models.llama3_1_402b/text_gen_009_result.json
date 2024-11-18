@@ -1,6 +1,6 @@
 {
-  "score": 0.7,
-  "reason": "The Actual Output addresses the Input prompt and extracts key event details such as the event name, date, and location. However, it misses specific details like the start and end dates, venue, address, and target audience mentioned in the Expected Output. The information is coherent and fluent but lacks completeness.",
+  "score": 0.8,
+  "reason": "The Actual Output correctly identifies the event name, dates, and location, maintaining logical flow and fluency. However, it combines start and end dates and misses the target audience detail present in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output addresses the main point of writing a poem about the beauty of nature. It covers all key elements and details expected, including descriptions of forests, rivers, mountains, fields, waterfalls, and creatures. The ideas are logically connected and flow smoothly, with coherent and natural sentence structure, appropriate vocabulary, and grammatical correctness.",
+  "reason": "The Actual Output is highly relevant to the Input prompt and Expected Output, as it beautifully describes the wonders of nature. The poem is coherent, with well-structured stanzas that logically flow from one idea to the next, capturing various elements of the natural world. The language is fluent, with excellent grammar and readability, matching the Expected Output's requirement for a descriptive poem about nature.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

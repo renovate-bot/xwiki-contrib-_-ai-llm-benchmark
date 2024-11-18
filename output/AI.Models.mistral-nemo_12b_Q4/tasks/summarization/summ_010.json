@@ -2,16 +2,16 @@
   "id": "summ_010",
   "prompt": "Please summarize the following text:\n\n\nXWiki is a [second-generation wiki](https://www.xwiki.org/xwiki/bin/view/Main/SecondGenerationWiki). What we mean by this is that XWiki is a wiki, but it also is an application development platform in its own right. An application is a set of pages that adds new functionality to the wiki - such as a [blog](https://extensions.xwiki.org/xwiki/bin/view/Extension/Blog%20Application) or a [task manager](https://extensions.xwiki.org/xwiki/bin/view/Extension/Task%20Manager%20Application).\n\nXWiki offers both the features expected from a professional wiki (such as powerful access rights and user management) and the possibility to create new applications on top of the platform. This means that you can extend the wiki's feature set with new ones pretty easily. For instance, you could create a FAQ or an application to manage product sheets.\n\n\n![example.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/GettingStarted/WhatsSpecialAboutXWiki/WebHome/example.png?height=330&rev=1.1)  \n\n*4 examples of how XWiki is being used - clockwise from top left:   \n as a community hub, as a presentation website, as a public   \n wiki and discussion platform, as an education solution.*\nThis allows XWiki to be used for a variety of use cases, such as:\n\n* Intranets\n* Public web sites\n* Knowledge management\n* [CMS](http://en.wikipedia.org/wiki/Content_management_system) needs\n* Project collaboration\n* Portal with mashed-up data from external sources\n* Competitive intelligence,\n* Public debate,\n* Collaborative creation of school courses\n* and [more](https://www.xwiki.org/xwiki/bin/view/References/)...\n\nXWiki comes with a number of applications already built-in, detailed on the [Features page](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/).\n\nA list of applications and macros for XWiki is available [on the extensions wiki](https://extensions.xwiki.org/xwiki/bin/view/Main/).\n\n**Next: [XWiki basic concepts](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/XWikiBasicConcepts)**\n\n\n",
   "expected_answer": null,
-  "ai_answer": "**Summary:**\n\n- XWiki is a second-generation wiki, acting as both a wiki platform and an application development platform.\n- It offers professional wiki features (e.g., advanced access rights, user management) along with the ability to create new applications on top of its platform, allowing users to easily extend its functionality.\n- Some examples of how XWiki can be used include intranets, public websites, knowledge management systems, project collaboration tools, and more.\n- XWiki comes with several built-in applications, with a full list available on the Features page. There's also an extensions wiki listing applications and macros for XWiki.\n- The next section in the guide covers XWiki basic concepts.",
+  "ai_answer": "**Summary:**\n\n- **XWiki**: A second-generation wiki that serves as both a wiki platform and an application development platform.\n- **Applications**: Sets of pages that add new functionality to the wiki, such as blogs or task managers.\n- **Key Features**:\n  - Professional wiki features (powerful access rights, user management)\n  - Ability to create new applications, extending the wiki's feature set\n- **Use Cases**:\n  - Intranets\n  - Public websites\n  - Knowledge management\n  - CMS needs\n  - Project collaboration\n  - Portal with external data mash-ups\n  - Competitive intelligence\n  - Public debate\n  - Collaborative course creation\n- **Built-in Applications**: Available on the Features page.\n- **Extensions Wiki**: Lists applications and macros for XWiki.",
   "sources": null,
   "usage": {
-    "prompt_tokens": 500,
-    "completion_tokens": 145,
-    "total_tokens": 645
+    "prompt_tokens": 499,
+    "completion_tokens": 167,
+    "total_tokens": 666
   },
-  "average_power_draw": 240.35122282608694,
-  "energy_consumption": 415.5747358167301,
-  "energy_per_input_token": 0.4818257806570784,
-  "energy_per_output_token": 1.2045644516426959,
-  "energy_per_total_token": 0.6443019159949304
+  "average_power_draw": 199.89283838383832,
+  "energy_consumption": 481.6647897230927,
+  "energy_per_input_token": 0.5255480520710232,
+  "energy_per_output_token": 1.313870130177558,
+  "energy_per_total_token": 0.7232204049896287
 }

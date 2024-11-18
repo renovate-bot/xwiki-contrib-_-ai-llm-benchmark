@@ -1,6 +1,6 @@
 {
   "score": 0.8571428571428571,
-  "reason": "The score is 0.86 because the summary includes extra information not mentioned in the original text, specifically about XWiki and its references pages.",
+  "reason": "The score is 0.86 because the summary includes extra information not mentioned in the original text, such as references to XWiki and its pages. However, there are no contradictions, indicating a generally accurate summary.",
   "score_breakdown": {
     "Alignment": 0.8571428571428571,
     "Coverage": 1.0

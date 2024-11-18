@@ -1,20 +1,20 @@
 {
-  "overall_score": 0.7066666666666668,
+  "overall_score": 0.8266666666666665,
   "individual_scores": {
-    "AnswerRelevancy": 0.8333333333333334,
+    "AnswerRelevancy": 0.3333333333333333,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.5,
+    "ContextualPrecision": 1.0,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 0.2
+    "CustomContextualRelevancy": 0.8
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.83 because the answer provides useful information about enabling notifications, but includes irrelevant URLs that do not directly address the query about notifications for one's own actions.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining faithfulness to the retrieval context!",
-    "ContextualPrecision": "The score is 0.50 because the relevant node ranked 2nd mentions 'Filter your own events', which is pertinent to receiving notifications for one's own activity. However, irrelevant nodes ranked 1st, 3rd, 4th, and 5th discuss topics such as 'notification RSS feed', 'various notification preferences', 'overriding default notification templates', and 'various ways to be notified in XWiki', which do not address the specific issue.",
-    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the nodes in the retrieval context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context mentions filtering own events and notification settings but lacks details on default behavior and advanced filtering options."
+    "AnswerRelevancy": "The score is 0.33 because the output includes irrelevant links that do not address the question about enabling notifications for one's own actions.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node in the retrieval context, ranked first, directly addresses the issue of not receiving notifications for one's own activity and how to change this setting. The irrelevant nodes, which discuss topics like RSS feeds, lists of links, and general notification preferences, are appropriately ranked lower.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context, indicating a perfect match. Great job!",
+    "CustomContextualRelevancy": "The retrieval context confirms that by default, users do not receive notifications for their own actions and mentions the option to change this setting, aligning with the expected output. However, it does not explicitly mention the 'Options de filtrage avanc\u00e9es' section."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",
-  "answer_language": "fr"
+  "answer_language": "en"
 }

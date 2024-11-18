@@ -1,6 +1,6 @@
 {
-  "score": 1.0,
-  "reason": "The Actual Output directly addresses the Input prompt by generating a news article about a recent scientific discovery. It aligns with the Expected Output by summarizing a groundbreaking finding in Alzheimer's research. The article is coherent, logically flowing from the introduction of the drug to its trial results and future implications. It is fluent, with proper grammar, syntax, and readability matching the quality of the Expected Output.",
+  "score": 0.9,
+  "reason": "The Actual Output directly addresses the Input by generating a news article about a recent scientific discovery, aligning well with the Expected Output's requirement for an informative summary. It maintains coherence and fluency throughout, with logical flow and readability. The only deviation is the fictional nature of the discovery, which slightly affects relevance.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

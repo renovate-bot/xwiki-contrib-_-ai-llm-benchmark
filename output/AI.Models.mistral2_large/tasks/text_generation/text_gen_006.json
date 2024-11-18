@@ -2,12 +2,12 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "In emerald cathedrals of the wild,\nWhere whispers of wind through leaves are sung,\nNature unfolds her beauty, like a child\nUnveiling secrets to the morning sun.\n\nThe azure sky in quiet majesty,\nA canvas painted with the hues of light,\nWhile silver clouds in slow procession flee,\nTheir shadows dancing on the landscape bright.\n\nBeneath the heavens, mountains stand so tall,\nTheir peaks like ancient kings survey their realm,\nAnd waterfalls descend in crystal call,\nAs if to prove that gravity is charm.\n\nThrough verdant vales, the rivers wend their way,\nLike silver ribbons spun by naiad's loom,\nWhile forests deep confide in every spray,\nThe sacred stories woven 'neath the moon.\n\nThe fields ablaze with gold and amber grain,\nA sea of subtle shades that stir and sway,\nWhere wildflowers bloom amidst the gentle rain,\nAs Nature paints her masterpiece each day.\n\nWithin the heart of every living thing,\nThere lies a spark, a flame that cannot die,\nFor we are bound to Nature's endless ring,\nHer beauty mirrored in each mortal eye.\n\nSo let us walk amidst her wonders vast,\nAnd drink from fountains pure and unafraid,\nTo marvel at the present and the past,\nIn every sunrise, sunset, and night shade.\n\nFor here we find our refuge and our peace,\nWithin the arms of Nature's sweet embrace,\nWhere every soul can find its quiet ease,\nEnthralled by the beauty of this place.",
+  "ai_answer": "In verdant hues of emerald spread,\nNature's canvas stretches wide,\nWhere azure skies and sapphire seas wed,\nAnd clouds like lovers softly glide.\n\nThe sun, a golden sovereign high,\nBestows warmth with its radiant light,\nAs zephyrs whisper secrets to the sky,\nAnd dance with leaves in ballet flight.\n\nMountains stand as ancient kings,\nTheir peaks adorned in silver snow,\nWhile rivers sing in melody to springs,\nThrough valleys where the breezes blow.\n\nForests weave tales with gnarled old trees,\nTheir roots deep into earth entwined,\nEach branch a testament to histories,\nWhispered through the rustling pines.\n\nFlowers bloom like shy debutantes,\nIn colors that outshine the sun,\nTheir fragrance waltzes on the dance,\nOf bees that hum where nectar's spun.\n\nAt dusk, the fireflies take their cue,\nTo light the world with tiny flames,\nAnd stars above, like diamonds strewn,\nIn velvet night, proclaim nature's fame.\n\nOh, beauty of the natural world,\nUnspoiled, untamed, and wildly free,\nYour symphony of grace unfurled,\nIs poetry that sings in me.",
   "sources": null,
   "usage": {
     "prompt_tokens": 12,
-    "completion_tokens": 374,
-    "total_tokens": 386
+    "completion_tokens": 313,
+    "total_tokens": 325
   },
   "average_power_draw": null,
   "energy_consumption": null,

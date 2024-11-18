@@ -2,16 +2,16 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "In fields where time has written tales,\nWhere shadows play with moonbeams and trails,\nA symphony of rustling leaves,\nNature's splendor fills the air like waves.\n\nThe sun, in its golden carriage ride,\nBeautifies every petal and hideaway pride;\nPainting scenes with vibrant hues so fair,\nDancing colors from dawn to the sun\u2019s demise.  \n\nGlistening dew upon delicate ferns,\nWhispering secrets of the morning's early learnings;\nMajestic mountains reach up towards sky,\nA canvas vast for eagles soaring by.\n\nSoft whisper of winds in a gentle breeze,\nTelling stories from the ancient trees;\nFragrant scent of pine through cold mountain air,\nThe beauty and strength found beyond compare. \n\nCascading rivers dance down valleys, serene,\nFlowing gracefully into oceans deep as dreams;\nWaterfalls pour like liquid pearls untold,\nEchoing melodies in their majestic unfold.\n\nCreatures roam with ease under verdant hues,\nBirds soar on winds that rustle through leaves.\nEvery being coexists and finds its home,\nA harmonious dance of life's boundless fame.\n\nIn this grand creation, beauty truly thrives,\nNature\u2019s masterpiece on full display;\nAn ever-renewing page yet untold,\nA testament to existence, forever bold.",
+  "ai_answer": "Oh, how vast and wondrous is this land,\nWhere nature's beauty never fades.\nFrom mountains high to valleys wide,\nThere's a tapestry woven by grace.\n\nThe forest floor is carpeted green,\nWith leaves that shimmer in sunlight's breeze.\nThe rustling sound they make when gently pressed,\nIs music to the soul, pure and serene.\n\nMountains stand tall and mighty strong,\nTheir peaks piercing through cloudy skies.\nIn their shadow, streams flow quietly,\nCascading down rocks with a soothing sighs.\n\nFields of flowers as far as eye can see,\nA rainbow palette, painted by nature's hand.\nPinks, yellows, blues, oranges all meet,\nDancing together in perfect band.\n\nThe sky above, vast and blue so deep,\nAn endless canvas for clouds to play.\nAs day turns into night, stars appear like specks,\nAnd though they're far away, their beauty stays.\n\nWildlife roams freely, with no constraint,\nAdapting perfectly to this natural scene.\nFrom the hummingbird to mighty eagle's flight,\nAll creatures here are a testament of serene.\n\nOh, nature, you're more than just a sight,\nYou're a symphony, an eternal poem.\nA treasure beyond measure, that can't be confined,\nIn your glory, every soul is profoundly drawn.",
   "sources": null,
   "usage": {
-    "prompt_tokens": 17,
-    "completion_tokens": 265,
-    "total_tokens": 282
+    "prompt_tokens": 28,
+    "completion_tokens": 267,
+    "total_tokens": 295
   },
-  "average_power_draw": 203.40408466819218,
-  "energy_consumption": 420.9375697071219,
-  "energy_per_input_token": 0.6194813387889947,
-  "energy_per_output_token": 1.5487033469724865,
-  "energy_per_total_token": 1.4926864174011414
+  "average_power_draw": 202.76247953216375,
+  "energy_consumption": 425.0584075917027,
+  "energy_per_input_token": 0.6111551511023763,
+  "energy_per_output_token": 1.5278878777559406,
+  "energy_per_total_token": 1.4408759579379753
 }

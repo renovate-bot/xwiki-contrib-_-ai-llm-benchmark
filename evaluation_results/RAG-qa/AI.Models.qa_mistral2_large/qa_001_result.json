@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.8666666666666668,
+  "overall_score": 0.520995670995671,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
-    "Faithfulness": 1.0,
-    "ContextualPrecision": 0.3333333333333333,
-    "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 1.0
+    "AnswerRelevancy": 0.8787878787878788,
+    "Faithfulness": 0.9166666666666666,
+    "ContextualPrecision": 0.30952380952380953,
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant and addresses the question without any irrelevant statements. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.33 because the relevant node, which mentions 'Indicates if the notification module should be enabled on the platform,' and the `notifications.enabled` setting in `xwiki.properties`, is ranked third. Irrelevant nodes, such as the first node discussing RSS feed of notifications and settings, and the second node explaining how to override default notification templates and install extensions, should be ranked lower.",
-    "ContextualRecall": "The score is 1.00 because the retrieval context perfectly supports all the sentences in the expected output. Great job!",
-    "CustomContextualRelevancy": "The retrieval context includes the exact information about enabling notifications by setting 'notifications.enabled' to 'true' in 'xwiki.properties'."
+    "AnswerRelevancy": "The score is 0.88 because the response mostly addresses the issue of the missing 'Bell' icon in XWiki, but the inclusion of multiple source links that do not directly address the problem slightly reduces its relevance.",
+    "Faithfulness": "The score is 0.92 because the actual output suggests navigating to the Administration page and selecting the Import category to upload the XAR file for the Notifications Application, which is not specified in the retrieval context as the method for installing the Notifications Application.",
+    "ContextualPrecision": "The score is 0.31 because relevant nodes in the retrieval context, such as the third node which 'mentions various notification methods in XWiki, including the Notifications Application,' and the seventh node which 'discusses how administrators can configure notification settings, including enabling notifications by default,' are ranked lower than irrelevant nodes. For example, the first node 'discusses installation instructions and prerequisites for extensions,' which is not relevant to enabling notifications, and should be ranked lower.",
+    "ContextualRecall": "The score is 0.50 because while the 7th node in the retrieval context relates to enabling notifications, there is no mention of the specific setting 'notifications.enabled' in 'xwiki.properties'.",
+    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications via `xwiki.properties` or the `notifications.enabled` setting."
   },
   "question_language": "en",
   "expected_answer_language": "en",

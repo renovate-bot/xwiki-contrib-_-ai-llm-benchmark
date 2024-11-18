@@ -2,12 +2,12 @@
   "id": "text_gen_004",
   "prompt": "Generate a short product description based on the following information:\n\nProduct: Wireless Bluetooth Headphones\nFeatures: Noise-cancelling, 20-hour battery life, comfortable fit\nTarget audience: Tech-savvy professionals",
   "expected_answer": "Introducing our cutting-edge wireless Bluetooth headphones, designed for tech-savvy professionals who demand the best. With advanced noise-cancelling technology, you can immerse yourself in your music or focus on your work without any distractions. Enjoy an impressive 20-hour battery life, ensuring your headphones keep up with your busy lifestyle. The comfortable, ergonomic fit allows you to wear them all day long without any discomfort. Upgrade your audio experience with our premium wireless headphones.",
-  "ai_answer": "Experience unparalleled sound quality and comfort with our Wireless Bluetooth Headphones, designed specifically for tech-savvy professionals on the go. Featuring advanced noise-cancelling technology, these headphones immerse you in your favorite tunes while blocking out distractions in bustling environments. With an impressive 20-hour battery life, you can enjoy extended listening sessions without interruption. The ergonomic design ensures a comfortable fit, making them perfect for long workdays or commutes. Elevate your audio experience and stay focused with our premium wireless headphones\u2014your ideal companion for productivity and leisure.",
+  "ai_answer": "Experience unparalleled sound quality with our Wireless Bluetooth Headphones, designed specifically for tech-savvy professionals on the go. Featuring advanced noise-cancelling technology, these headphones ensure you can focus on what matters most\u2014whether it's a crucial conference call or your favorite playlist. With an impressive 20-hour battery life, you can enjoy uninterrupted audio throughout your busy day. The comfortable fit guarantees all-day wear without compromise, making these headphones the ultimate companion for productivity and leisure. Elevate your listening experience and stay connected in style!",
   "sources": null,
   "usage": {
     "prompt_tokens": 48,
-    "completion_tokens": 107,
-    "total_tokens": 155
+    "completion_tokens": 103,
+    "total_tokens": 151
   },
   "average_power_draw": null,
   "energy_consumption": null,

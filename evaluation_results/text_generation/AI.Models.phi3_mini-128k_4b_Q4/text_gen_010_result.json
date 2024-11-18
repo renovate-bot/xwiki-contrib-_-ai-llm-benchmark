@@ -1,6 +1,6 @@
 {
-  "score": 0.9,
-  "reason": "The Actual Output is relevant to the Input prompt, addressing the complexity and functions of the brain in a technical manner. It is coherent and fluent, with logical connections and correct grammar. The key elements and intent of the prompt are met, though some additional technical details were added beyond the Expected Output.",
+  "score": 0.0,
+  "reason": "The Actual Output is irrelevant to the Input prompt and lacks coherence, as it does not address the topic of the human brain. It also fails in fluency, with disjointed ideas and poor grammatical structure, unlike the Expected Output which is clear and technical.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

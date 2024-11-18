@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.5471428571428572,
+  "overall_score": 0.7468253968253968,
   "individual_scores": {
     "AnswerRelevancy": 1.0,
-    "Faithfulness": 1.0,
-    "ContextualPrecision": 0.25,
-    "ContextualRecall": 0.2857142857142857,
-    "CustomContextualRelevancy": 0.2
+    "Faithfulness": 0.8571428571428571,
+    "ContextualPrecision": 0.8055555555555555,
+    "ContextualRecall": 0.5714285714285714,
+    "CustomContextualRelevancy": 0.5
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant and directly addresses the question without any irrelevant information. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.25 because the relevant node, which mentions enabling the notification module and the email feature in the `xwiki.properties` file, is ranked fourth. Irrelevant nodes, such as the first node discussing visual aspects of notifications and the second node listing dependencies for the notifications extension, are ranked higher.",
-    "ContextualRecall": "The score is 0.29 because only the 2nd and 4th sentences in the expected output can be attributed to the 5th and 3rd nodes in the retrieval context respectively, while the rest of the sentences lack support from the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications in xwiki.properties and the alert menu but lacks details on subscribing to pages or users and viewing the network tab."
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the query without any irrelevant information. Great job!",
+    "Faithfulness": "The score is 0.86 because the actual output claims that new users won't receive notifications until they start watching something and enable some application types, which contradicts the retrieval context indicating that in versions before 15.5, the whole wiki is watched for new users by default.",
+    "ContextualPrecision": "The score is 0.81 because the relevant nodes in the retrieval context are mostly ranked higher than the irrelevant ones. The first node is relevant as it explains how to follow a user to receive notifications, aligning with the expected output. However, the second node, which discusses filters and settings related to hidden pages and user activities without directly addressing notifications, is ranked higher than the third node. The third node is relevant as it discusses notification settings and enabling specific types of notifications, which should be ranked higher. Additionally, the fifth node, which talks about the 'What's New' application for news notifications, is not directly relevant to the expected output and should be ranked lower than the relevant fourth node that provides an overview of various notification methods in XWiki.",
+    "ContextualRecall": "The score is 0.57 because while several aspects of the expected output, such as enabling notifications via the alert menu, following a user, and using the network tab, are supported by the 1st node in the retrieval context, key details like enabling notifications in `xwiki.properties`, subscribing to pages or users, and watching a page or wiki are not covered in the nodes.",
+    "CustomContextualRelevancy": "The retrieval context includes information on following users and receiving notifications, but lacks details on enabling notifications via `xwiki.properties` and watching pages or wikis."
   },
   "question_language": "en",
   "expected_answer_language": "en",

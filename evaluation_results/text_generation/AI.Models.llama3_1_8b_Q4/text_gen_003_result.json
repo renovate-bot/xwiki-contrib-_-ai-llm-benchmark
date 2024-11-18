@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output addresses the topic of photosynthesis and adapts it well for a younger audience. It covers key points such as plants using sunlight to make food and the process being called photosynthesis. The ideas flow logically and are well-organized, with appropriate vocabulary and natural phrasing. However, it adds extra details not present in the Expected Output.",
+  "reason": "The Actual Output effectively adapts the concept of photosynthesis for a younger audience by using relatable analogies and simple language, aligning with the Input prompt. It maintains coherence and logical flow, similar to the Expected Output, while being more engaging. The fluency is high, with clear grammar and readability, though it adds extra details not present in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

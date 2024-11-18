@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.36923076923076925,
+  "overall_score": 0.7646153846153847,
   "individual_scores": {
-    "AnswerRelevancy": 0.8461538461538461,
+    "AnswerRelevancy": 0.9230769230769231,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.9
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.85 because the answer is mostly relevant and provides useful information, but it includes URLs that do not directly address the question about denying script rights to a space administrator.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses methods for checking access rights in code, but does not address the specific question about denying script rights to a space administrator. Similarly, the second node talks about the usage of the checkAccess() method without providing information on denying script rights to a space administrator.",
-    "ContextualRecall": "The score is 0.00 because the sentence 'This is unfortunately not supported in XWiki, rights that are implied by admin right cannot be denied.' is not found in any part of the provided nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not mention that rights implied by admin right cannot be denied, which is the core information in the expected output."
+    "AnswerRelevancy": "The score is 0.92 because the response is mostly relevant to the question about denying script rights to a space administrator. However, it includes a statement about content organization and nested pages migration, which is not directly related to the main topic, and an introductory example statement that doesn't directly address the process.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'programming rights and script execution,' but does not address 'the inability to deny script rights to a space administrator.' The second node lists 'various rights and their properties,' but does not mention 'denying script rights to a space administrator.' The third node provides 'details about script rights,' but does not state 'denying these rights to a space administrator is unsupported.' The fourth node is about 'checking access rights programmatically,' but does not relate to 'denying script rights to a space administrator.' The fifth node discusses 'converting rights during page migration' and does not address 'denying script rights to a space administrator.'",
+    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The expected answer states that rights implied by admin right cannot be denied, which aligns with the retrieval context indicating admin rights are not deniable. However, the retrieval context does not explicitly mention the lack of support for denying implied rights, slightly reducing completeness."
   },
   "question_language": "en",
   "expected_answer_language": "en",

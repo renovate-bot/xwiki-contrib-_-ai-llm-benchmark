@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.36,
+  "overall_score": 0.3764705882352941,
   "individual_scores": {
-    "AnswerRelevancy": 0.8,
+    "AnswerRelevancy": 0.8823529411764706,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.80 because the main response addresses the question about denying script rights to a space administrator, but several irrelevant links were included, which detract from the overall relevance.",
+    "AnswerRelevancy": "The score is 0.88 because the response is mostly relevant to the question about denying script rights to a domain administrator, but it includes source links that do not directly address the question, slightly lowering the score.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node is a link to an image and does not provide any information related to denying script rights to a domain administrator. Similarly, the tenth node discusses Kerberos authentication and LDAP configuration, which is unrelated to the question.",
-    "ContextualRecall": "The score is 0.00 because the expected output sentence does not match any part of the nodes in retrieval context, which discuss images, LDAP configurations, and form utilization.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to the admin rights or their implications in XWiki."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'form validation and JavaScript patterns', the second node is about 'templates and page creation', and the third node covers 'custom configuration and properties'. None of these topics relate to denying script rights to an administrator, which is the focus of the input.",
+    "ContextualRecall": "The score is 0.00 because the expected output sentence about rights and admin rights in XWiki cannot be linked to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about admin rights or their implications in XWiki, which is essential to the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

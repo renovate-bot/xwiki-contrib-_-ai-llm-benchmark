@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.37142857142857144,
+  "overall_score": 0.32727272727272727,
   "individual_scores": {
-    "AnswerRelevancy": 0.8571428571428571,
+    "AnswerRelevancy": 0.6363636363636364,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.86 because the answer is mostly relevant but includes a URL that does not directly address the question about authenticating users with access tokens.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all the nodes in the retrieval context discuss topics such as 'group synchronization', 'template customization', 'event listeners for OpenID Connect', 'protection levels for cookies', 'security strategies for failed logins', 'Kerberos SSO Authentication', 'LDAP group mapping', 'mail templates for password reset and username retrieval', and 'custom claims for OpenID Connect', which are not relevant to the question about authenticating users with access tokens.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be linked to any information in the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about token-based authentication for the LLM application (BETA) extension, JWT tokens, or the specific steps for enabling and configuring the token authenticator."
+    "AnswerRelevancy": "The score is 0.64 because while the response partially addresses the question about authenticating users with access tokens, it includes multiple irrelevant statements about unrelated topics and source links, which detract from its overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'model validation strategies in XWiki', which is unrelated to 'user authentication with access tokens'. The second node is about 'attachment validation and configuration in XWiki', which does not pertain to 'authentication using access tokens'. The third node provides information about 'the admin UI for model validation', which is not relevant to 'authenticating users with access tokens'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context, as the retrieval context lacks any mention of key concepts such as 'Benutzer mit Zugriffstoken', 'LLM-Anwendung (BETA)-Erweiterung', 'externen Anwendungen', 'signierten JSON Web Tokens (JWT)', 'Token-Authentifizierer', 'xwiki.authentication.authclass', 'autorisierten Anwendungen', 'JWT-Token generieren', 'Authorization-Header', 'Bearer TOKEN', 'Erstellung oder Aktualisierung von Benutzern', or 'bestehenden Benutzer'.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to token-based authentication or JWT, which are central to the expected answer."
   },
   "question_language": "de",
   "expected_answer_language": "de",

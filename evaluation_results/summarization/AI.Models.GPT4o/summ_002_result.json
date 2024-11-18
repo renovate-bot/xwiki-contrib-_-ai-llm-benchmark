@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary includes extra information not mentioned in the original text and fails to answer a specific question that the original text can address. However, there are no contradictions, indicating a generally accurate representation of the original text.",
+  "score": 0.8181818181818182,
+  "reason": "The score is 0.82 because the summary contains a contradiction regarding the scope of the Programming Right and includes extra information about a tabular view that is not present in the original text. Despite these issues, the summary is mostly accurate and informative.",
   "score_breakdown": {
-    "Alignment": 0.9444444444444444,
-    "Coverage": 0.8
+    "Alignment": 0.8181818181818182,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

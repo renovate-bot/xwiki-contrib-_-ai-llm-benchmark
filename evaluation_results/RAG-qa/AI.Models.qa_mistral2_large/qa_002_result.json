@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.5317582417582418,
+  "overall_score": 0.705925925925926,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
-    "Faithfulness": 0.9230769230769231,
-    "ContextualPrecision": 0.25,
-    "ContextualRecall": 0.2857142857142857,
-    "CustomContextualRelevancy": 0.2
+    "AnswerRelevancy": 0.9629629629629629,
+    "Faithfulness": 0.8333333333333334,
+    "ContextualPrecision": 0.6333333333333333,
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.6
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant and addresses the question directly without any irrelevant statements. Great job!",
-    "Faithfulness": "The score is 0.92 because the actual output incorrectly claims you can change the default setting by switching off the 'Own event filter' in the notification settings, which is not mentioned in the retrieval context.",
-    "ContextualPrecision": "The score is 0.25 because the relevant node in the fourth rank mentions the setting 'notifications.enabled' in 'xwiki.properties', which directly addresses the need to ensure notifications are enabled. However, the irrelevant nodes ranked higher discuss topics like 'visual representation and grouping of notifications' (first node), 'dependencies for the notifications extension' (second node), and 'various ways to receive notifications without specific steps to enable or troubleshoot them' (third node), which do not help in resolving the issue of not receiving notifications.",
-    "ContextualRecall": "The score is 0.29 because only the information about enabling notifications in xwiki.properties is supported by the retrieval context, while the rest of the details about subscribing to pages or users, watching pages or users, and the 'alert' menu are not mentioned in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications in xwiki.properties and the alert menu but lacks details on subscribing to pages or users and viewing watched users in the network tab."
+    "AnswerRelevancy": "The score is 0.96 because the answer is highly relevant to the question about notifications in XWiki, with only a minor irrelevant mention of RSS features that doesn't significantly detract from the overall helpfulness.",
+    "Faithfulness": "The score is 0.83 because the actual output incorrectly claims that new users in XWiki versions prior to 15.5 do not receive notifications until they take specific actions, contradicting the retrieval context which states that the whole wiki is watched for new users by default.",
+    "ContextualPrecision": "The score is 0.63 because the first node in the retrieval context is relevant, explaining how to follow a user and receive notifications, ensuring notifications are set up correctly. However, the second node discusses filters and hidden pages, which do not directly relate to enabling notifications, and should be ranked lower. The third node is about customizing email templates for notifications, which is not directly related to enabling notifications, and should also be ranked lower. Additionally, the fourth node discusses RSS feeds, an alternative method of receiving notifications, but does not address the issue of not receiving notifications, indicating it should be ranked lower. The fifth node is relevant as it mentions the settings menu for notifications, directly related to ensuring notifications are enabled. The sixth node is also relevant, listing various ways to receive notifications, including the Notifications Application. However, the seventh node is about administrator settings for notifications, which is not directly relevant to a user not receiving notifications, and should be ranked lower. Lastly, the eighth node describes the Alerts menu and how notifications are displayed, which does not directly address the issue of not receiving notifications, indicating it should be ranked lower.",
+    "ContextualRecall": "The score is 0.50 because while some sentences in the expected output are supported by nodes in the retrieval context, such as the method to enable notifications via the 'alert' menu (node 6) and following a user for event notifications (node 1), other key details like enabling notifications in `xwiki.properties` and subscribing to pages or users are not supported by any nodes.",
+    "CustomContextualRelevancy": "The retrieval context includes information on following users and watching pages, but lacks details on enabling notifications via 'xwiki.properties' and using the alert menu."
   },
   "question_language": "en",
   "expected_answer_language": "en",

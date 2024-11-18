@@ -1,7 +1,7 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output directly addresses the Input prompt by providing a comprehensive travel guide for Paris, France, a popular tourist destination. It aligns with the Expected Output by highlighting top attractions, accommodations, and activities. The guide is coherent, logically flows, and maintains consistency throughout. It is also grammatically correct and uses natural language. There are no significant deviations or missing elements compared to the Expected Output.",
-  "prompt_language": "ro",
+  "reason": "The Actual Output provides a comprehensive travel guide for Paris, directly addressing the Input prompt. It covers key attractions, accommodations, and activities, aligning with the Expected Output. The information is coherent, fluent, and logically structured, meeting all evaluation criteria.",
+  "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"
 }

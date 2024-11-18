@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.36470588235294116,
+  "overall_score": 0.3,
   "individual_scores": {
-    "AnswerRelevancy": 0.8235294117647058,
+    "AnswerRelevancy": 0.5,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.82 because the main content is relevant and addresses the input question, but the inclusion of headings like 'Gruppensynchronisation:', 'Anpassung:', and 'Fehlerbehebung:' detracts from the overall relevance.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context discuss topics such as 'group synchronization, templates, and event listeners' (first node), 'protection levels for cookies, IP address usage, and security strategies for failed logins' (second node), 'LDAP group mapping and SSO implementation using Kerberos' (third node), 'mail templates for password reset and username retrieval' (fourth node), and 'custom claims for OpenID Connect and group synchronization' (fifth node), which are not relevant to the question about access token-based user authentication.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about token-based authentication or the LLM-Anwendung (BETA)-Erweiterung."
+    "AnswerRelevancy": "The score is 0.50 because the answer includes multiple irrelevant source links that do not directly address the question about authenticating users with access tokens, which limits its relevance. However, it still partially addresses the question, hence the score is not lower.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'Model Validation' without mentioning 'token-based authentication or JWT', which should be ranked lower. The second node talks about 'Attachment Validation and configuration of mimetype restrictions', unrelated to 'user authentication with access tokens'. The third node provides information about the 'Admin UI for Model Validation', not related to 'authentication or access tokens'. The fourth node is about 'setting up fields for user registration', not relevant to 'authentication using access tokens'. Lastly, the fifth node describes 'steps for installing a UI' and 'credentials for an Administrator', but does not relate to 'token-based authentication'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be linked to any information in the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to token-based authentication or JWT, which are central to the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

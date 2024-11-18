@@ -1,6 +1,6 @@
 {
   "score": 0,
-  "reason": "The score is 0.00 because the summary fails to answer several key questions that the original text addresses, indicating it lacks essential information.",
+  "reason": "The score is 0.00 because the summary fails to answer several questions that the original text can answer, indicating it lacks essential information and context.",
   "score_breakdown": {
     "Alignment": 0,
     "Coverage": 0.0

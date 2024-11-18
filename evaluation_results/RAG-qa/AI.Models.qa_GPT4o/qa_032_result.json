@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.4,
+  "overall_score": 0.3111111111111111,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
+    "AnswerRelevancy": 0.5555555555555556,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the question about authenticating users with access tokens. Great job!",
+    "AnswerRelevancy": "The score is 0.56 because the output includes multiple irrelevant source links that do not directly address the question about authenticating users with access tokens, which lowers the relevancy. However, the score is above average, indicating that some relevant information is still present.",
     "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses 'group synchronization and customization for OpenID Connect', the second node mentions 'protection levels for cookies and security strategies for failed logins', and the third node explains 'LDAP group mapping and an example of LDAP authentication'. None of these address the use of access tokens for user authentication.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about the LLM-Anwendung (BETA)-Erweiterung, JWT tokens, or the specific authentication steps outlined in the expected output."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'model validation strategies in XWiki', which is unrelated to 'token-based authentication'. The second node talks about 'attachment validation and mime type restrictions', which do not pertain to 'authentication with access tokens'. The third node provides information about 'the admin UI for model validation', which is not relevant to 'user authentication using access tokens'. The fourth node contains a 'code snippet for setting up a registration field', which is unrelated to 'token-based user authentication'. Finally, the fifth node describes 'steps for installing UI extensions and performing upgrades', which are not relevant to 'the authentication process using access tokens'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be matched to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to token-based authentication or JWT, which are key elements in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

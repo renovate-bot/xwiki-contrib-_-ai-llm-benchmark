@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.40095238095238095,
+  "overall_score": 0.6799999999999999,
   "individual_scores": {
-    "AnswerRelevancy": 0.9047619047619048,
+    "AnswerRelevancy": 0.4,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.1
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 1.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.90 because the answer is mostly relevant and provides useful information on how to deny script rights to a space administrator. However, it includes links to unrelated documentation that do not directly address the question, preventing a higher score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses methods for checking access rights and does not address the specific question of denying script rights to a space administrator. Similarly, the second node talks about the usage of the checkAccess() method without providing information on denying script rights to a space administrator.",
-    "ContextualRecall": "The score is 0.00 because the retrieval context does not mention anything about rights implied by admin rights or their denial, focusing instead on access checks and methods like checkAccess() and hasAccess().",
-    "CustomContextualRelevancy": "The retrieval context does not mention that admin rights cannot be denied, which is the main point of the expected output."
+    "AnswerRelevancy": "The score is 0.40 because the output includes multiple irrelevant source links that do not address the question about denying script rights, which detracts from the overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input question. The first node discusses programming rights and script execution but does not address denying rights to a space administrator. The second node lists various rights and their properties but does not mention the inability to deny rights to a space administrator. The third node explains the script right and its default settings but does not relate to denying rights to a space administrator. The fourth node provides code snippets related to access checks but does not address the specific issue of denying rights to a space administrator. The fifth node discusses converting rights during page migration but does not mention denying rights to a space administrator.",
+    "ContextualRecall": "The score is 1.00 because the expected output is perfectly supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The expected answer states that rights implied by admin cannot be denied, which aligns with the retrieval context indicating that admin rights are not deniable."
   },
   "question_language": "en",
   "expected_answer_language": "en",

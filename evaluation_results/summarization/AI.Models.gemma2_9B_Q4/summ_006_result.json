@@ -1,9 +1,9 @@
 {
-  "score": 0.7142857142857143,
-  "reason": "The score is 0.71 because the summary contains contradictions regarding the creation of new pages and a specific step called 'Step 1: Creating a page'. Additionally, it fails to answer whether administrators can learn about setting user rights from the guide.",
+  "score": 0.2,
+  "reason": "The score is 0.20 because the summary includes extra information not present in the original text and fails to answer several questions that the original text can address, indicating a significant deviation from the original content.",
   "score_breakdown": {
     "Alignment": 0.7142857142857143,
-    "Coverage": 0.8
+    "Coverage": 0.2
   },
   "input_language": "en",
   "summary_language": "en"

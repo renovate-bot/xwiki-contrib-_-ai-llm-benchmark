@@ -1,20 +1,20 @@
 {
-  "overall_score": 0.3,
+  "overall_score": 0.38181818181818183,
   "individual_scores": {
-    "AnswerRelevancy": 0.5,
-    "Faithfulness": 1,
+    "AnswerRelevancy": 0.9090909090909091,
+    "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.50 because the actual output contains irrelevant statements that do not address the input question about authenticating users with access tokens, but it may still contain some relevant information.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'group synchronization and customization for OpenID Connect,' which is not related to authenticating users with access tokens. Similarly, the second node is about 'protection levels for cookies and security strategies,' which does not pertain to the use of access tokens for user authentication.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about token-based authentication for the LLM application (BETA) extension or the specific steps and requirements for using JWT tokens."
+    "AnswerRelevancy": "The score is 0.91 because the response effectively addresses the question about authenticating users with access tokens, but it includes irrelevant source links that do not directly contribute to the answer.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'model validation strategies in XWiki', the second node is about 'attachment validation and configuration in XWiki', and the third node provides 'details about the admin UI for model validation'. None of these are related to 'authenticating users with access tokens', leading to a low score.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context, as the context lacks any mention of key concepts such as 'Benutzer mit Zugriffstoken', 'LLM-Anwendung (BETA)-Erweiterung', 'JSON Web Tokens (JWT)', or the steps and limitations related to the 'Token-Authentifizierer'.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to token-based authentication, JWT, or the LLM-Anwendung (BETA)-Erweiterung mentioned in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",
-  "answer_language": "en"
+  "answer_language": "de"
 }

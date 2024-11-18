@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.6933333333333334,
+  "overall_score": 0.7857142857142857,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
-    "Faithfulness": 0.8333333333333334,
-    "ContextualPrecision": 0.3333333333333333,
+    "AnswerRelevancy": 0.9285714285714286,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.7,
     "ContextualRecall": 1.0,
     "CustomContextualRelevancy": 0.3
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and addresses the question without any irrelevant statements. Great job!",
-    "Faithfulness": "The score is 0.83 because the actual output incorrectly claims that XWiki allows users to subscribe to notifications on various events by default, whereas the retrieval context specifies that notifications are only sent by default when users are mentioned or when actions are performed on pages they created or updated.",
-    "ContextualPrecision": "The score is 0.33 because the relevant node, which mentions 'Watch and custom filters' and is directly related to managing notification settings, is ranked third. Irrelevant nodes discussing enabling/disabling the notification module at the server level (first node), getting an RSS feed of notifications (second node), clearing and grouping notifications (fourth node), and choosing the default frequency and level of details for notification emails (fifth node) are ranked higher.",
-    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are well-supported by the nodes in the retrieval context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context mentions default notification settings and custom filters but lacks details on automatic page watching and changing settings in the user profile."
+    "AnswerRelevancy": "The score is 0.93 because the answer is highly relevant and provides clear guidance on disabling notifications in XWiki. The only minor issue is the inclusion of a source link, which isn't directly necessary for answering the question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.70 because the first node in the retrieval context is relevant, discussing 'settings of the notifications' and 'enable or disable all notification types', which aligns with the input query about changing notification settings. However, the second node, which discusses 'following a user and default watch settings', and the third node, which is about 'filtering events and notifications', are not directly related to disabling notifications for pages and should be ranked lower. The fifth node is relevant as it mentions 'Choosing the default auto-watched mode', directly related to changing automatic page watching settings, but it is ranked lower than some irrelevant nodes.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context, with no contradictions or missing information. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions default watch settings and user profile settings but lacks details on automatic page watching and deleting notification filters."
   },
   "question_language": "en",
   "expected_answer_language": "en",

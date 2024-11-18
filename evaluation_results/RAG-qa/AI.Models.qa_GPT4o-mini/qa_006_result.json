@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.37142857142857144,
+  "overall_score": 0.925,
   "individual_scores": {
-    "AnswerRelevancy": 0.8571428571428571,
-    "Faithfulness": 1.0,
-    "ContextualPrecision": 0,
-    "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.875,
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.75,
+    "CustomContextualRelevancy": 1.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.86 because the answer provides useful information related to XWiki and OpenID Connect, but includes links and details that are not directly relevant to customizing user profile fields.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. For example, the first node discusses the OpenID Connect Authenticator extension and its general features but does not provide information on customizing user profile fields or mapping additional fields. Similarly, the second node explains various authentication methods for the XWiki RESTful API, including OIDC, but does not address customizing user profile fields or mapping additional fields.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about customizing user profile fields or using the `oidc.user.mapping` property in the `xwiki.properties` file."
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the question about customizing user profile fields in XWiki using OpenID Connect. Great job!",
+    "Faithfulness": "The score is 0.88 because the actual output suggests a need to configure user profile rights using the `oidc.user.ownProfileRights` property, whereas the retrieval context indicates that the default setting is 'edit', implying no configuration is necessary.",
+    "ContextualPrecision": "The score is 1.00 because the relevant node in the retrieval context, which mentions 'It's possible to associate non standard properties coming from the OpenID Connect provider with the XWiki user' and provides examples of mapping, is ranked first. All other nodes discuss topics like access tokens, group synchronization, authentication management, and general OpenID Connect information, which are not directly related to customizing user profile fields.",
+    "ContextualRecall": "The score is 0.75 because the 3rd node in the retrieval context supports the customization of user profile fields and provides examples of mapping user properties, but it does not mention the need to save the `xwiki.properties` file and restart XWiki to apply changes.",
+    "CustomContextualRelevancy": "The retrieval context includes the exact information about customizing user profile fields using the `oidc.user.mapping` property in the `xwiki.properties` file, matching the expected output precisely."
   },
   "question_language": "en",
   "expected_answer_language": "en",

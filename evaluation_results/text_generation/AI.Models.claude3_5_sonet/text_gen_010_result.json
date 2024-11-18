@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output directly addresses the Input prompt and matches the context of the Expected Output. It is coherent, fluent, and maintains a consistent narrative. Key points such as the brain's role in physiological functions, sensory processing, and cognitive functions are accurately reflected. However, it includes additional details like the number of neurons and synaptic connections, which, while informative, slightly diverge from the Expected Output's focus.",
+  "reason": "The Actual Output is highly relevant to the Input, using technical language suitable for the audience. It maintains coherence and fluency with logical connections and natural language. It aligns well with the Expected Output, covering key points like physiological processes and cognitive functions, though it slightly differs in phrasing.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output directly addresses the topic and covers all key points from the Expected Output, including regulation of physiological functions, processing sensory data, and serving as the substrate for cognition and consciousness. It is coherent and fluent, with minor differences in wording but no significant deviations in meaning.",
+  "reason": "The Actual Output is highly relevant to the Input and Expected Output, addressing the complexity and functions of the brain. It is coherent, with a logical flow and detailed explanation of brain functions, similar to the Expected Output. The language is fluent and technical, suitable for the intended audience, though slightly more detailed than necessary.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

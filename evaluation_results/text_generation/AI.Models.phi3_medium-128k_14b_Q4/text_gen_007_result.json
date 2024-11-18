@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output is relevant to the Input prompt and addresses the main topic of a recent scientific discovery. It is coherent and logically flows, maintaining a consistent narrative. The language is fluent with minor grammatical errors such as 'molecve' instead of 'molecule' and 'tremend vice effects' instead of 'tremendous positive effects'. The content meets the Expected Output by summarizing a groundbreaking scientific finding.",
+  "score": 0.9,
+  "reason": "The Actual Output is highly relevant to the Input prompt, discussing a recent scientific discovery in quantum computing. It is coherent and logically structured, covering the discovery, implications, and technical details, aligning well with the Expected Output of summarizing a groundbreaking finding. Minor grammatical errors like 'advancebrought' slightly affect fluency.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.4600000000000001,
+  "overall_score": 0.823076923076923,
   "individual_scores": {
-    "AnswerRelevancy": 0.6,
+    "AnswerRelevancy": 0.6153846153846154,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0.5,
-    "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.2
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 1.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.60 because while the answer may contain some relevant information about authenticating users with access tokens, it is significantly diluted by multiple irrelevant URL statements that do not directly address the question.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect faithfulness!",
-    "ContextualPrecision": "The score is 0.50 because the second node, which is relevant as it discusses 'Authorized Applications Configuration' for token-based authentication, is ranked higher than some irrelevant nodes. However, the first node, which discusses profile claims and access tokens without providing information about authenticating users with access tokens, is ranked higher than the relevant node.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context mentions 'Authorized Applications' and some configuration details but lacks specifics on JWT claims, Ed25519 key, and token usage."
+    "AnswerRelevancy": "The score is 0.62 because the response partially addresses the question about authenticating users with access tokens, but it includes multiple irrelevant source links that do not directly contribute to answering the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Great job maintaining consistency!",
+    "ContextualPrecision": "The score is 0.50 because relevant nodes about 'Authorized Applications' and JWT token generation, which are pertinent to token-based authentication, are ranked lower than irrelevant nodes. For instance, the first node focuses on 'LDAP authentication settings', which does not relate to token-based methods, while the second node is relevant as it discusses 'Authorized Applications'. Similarly, the fourth node, which is relevant due to its focus on 'JWT token generation and claims', is ranked lower than the first node. This misordering affects the precision score.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the nodes in the retrieval context. Great job on achieving a perfect match!",
+    "CustomContextualRelevancy": "The retrieval context fully supports the expected answer by detailing the use of JWT tokens, required claims, Ed25519 key signing, and configuration steps for the Token-based authentication extension."
   },
   "question_language": "en",
   "expected_answer_language": "en",

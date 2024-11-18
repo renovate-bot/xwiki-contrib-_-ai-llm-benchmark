@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.54,
+  "overall_score": 0.7611111111111111,
   "individual_scores": {
     "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.25,
-    "ContextualRecall": 0.25,
-    "CustomContextualRelevancy": 0.2
+    "ContextualPrecision": 0.8055555555555555,
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.5
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the answer is fully relevant and there are no irrelevant statements in the actual output. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.25 because the relevant node (rank 4) is ranked lower than several irrelevant nodes. For example, the first node discusses the 'Clear All' link, grouping notifications, and notification strategies, but does not address enabling notifications or subscribing to pages/users. Additionally, the second node lists dependencies for the notifications extension, which is not relevant to the question of why notifications are not being received.",
-    "ContextualRecall": "The score is 0.25 because only the instruction to enable notifications by setting `notifications.enabled` to `true` in `xwiki.properties` (sentence 2) is supported by the 5th node in the retrieval context, while other instructions related to subscribing to pages or users, watching locations, and following users are not supported by any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications in xwiki.properties and the alert menu but lacks details on subscribing to pages or users and viewing the network tab in the user profile."
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the issue of not receiving notifications in XWiki. Great job on providing a focused answer!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.81 because most relevant nodes in the retrieval context are ranked higher, such as the first node explaining 'how to follow a user to receive notifications' and the third node mentioning 'settings menu for notifications'. However, the score is not higher because the second node, discussing 'filters and hidden pages', is irrelevant and should be ranked lower than the relevant nodes.",
+    "ContextualRecall": "The score is 0.50 because some key details, like enabling notifications via `xwiki.properties` and subscribing to pages or users, are not found in the nodes in retrieval context, while other aspects like using the 'alert' menu and following users are partially supported by nodes 1 and 4.",
+    "CustomContextualRelevancy": "The retrieval context covers following users and some notification settings but lacks details on enabling notifications in xwiki.properties and watching pages or wikis."
   },
   "question_language": "en",
   "expected_answer_language": "en",

@@ -1,8 +1,8 @@
 {
-  "score": 0.8461538461538461,
-  "reason": "The score is 0.85 because the summary contains a contradiction regarding the configuration of permissions for an open wiki and includes extra information about documentation for sub-wiki access rights that is not mentioned in the original text.",
+  "score": 0.65,
+  "reason": "The score is 0.65 because the summary includes several pieces of extra information not found in the original text, such as details about XWiki being a web development platform, specific processes for editing access rights, and additional information about permissions and administration. This indicates that while the summary captures some key points, it introduces content not present in the original, affecting its accuracy and relevance.",
   "score_breakdown": {
-    "Alignment": 0.8461538461538461,
+    "Alignment": 0.65,
     "Coverage": 1.0
   },
   "input_language": "en",

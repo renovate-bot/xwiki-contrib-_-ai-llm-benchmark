@@ -1,8 +1,8 @@
 {
-  "score": 0.9,
-  "reason": "The score is 0.90 because the summary includes extra information not mentioned in the original text, such as specific configurations demonstrated in images and details about permissions and protection strength levels.",
+  "score": 0.75,
+  "reason": "The score is 0.75 because the summary contains a contradiction regarding user permissions and includes extra details not present in the original text, such as specific override options, visual examples, and next steps in application creation.",
   "score_breakdown": {
-    "Alignment": 0.9,
+    "Alignment": 0.75,
     "Coverage": 1.0
   },
   "input_language": "en",

@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.36,
+  "overall_score": 0.3142857142857143,
   "individual_scores": {
-    "AnswerRelevancy": 0.8,
+    "AnswerRelevancy": 0.5714285714285714,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.80 because the answer provides some relevant information but includes URLs that do not directly address the question about authenticating users with access tokens.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'collection resource properties and methods,' which are unrelated to user authentication with access tokens. Similarly, the second node talks about 'various claims at the UserInfo endpoint,' but does not address user authentication with access tokens. These irrelevant nodes should be ranked lower.",
+    "AnswerRelevancy": "The score is 0.57 because the response includes some relevant information about authenticating users with access tokens, but it is diluted by irrelevant links to documentation and extensions that do not directly address the question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input question. The first node discusses 'upgrading XWiki' without mentioning user authentication with access tokens. The second node covers 'user rights and registration' but lacks information on authentication using access tokens. The third node, although about security, states that the 'Authentication API is not yet implemented', which is not helpful for authenticating users with access tokens. The fourth node focuses on 'managing rights' and does not provide details on access token authentication. Finally, the fifth node lists 'different rights within XWiki' without addressing authentication using access tokens.",
     "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to authenticating users with access tokens, JWT, or the specific configuration steps mentioned in the expected output."
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about token-based authentication or JWT, which are key elements in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

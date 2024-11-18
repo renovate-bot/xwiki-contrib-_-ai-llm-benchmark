@@ -1,8 +1,8 @@
 {
-  "score": 1.0,
-  "reason": "The score is 1.00 because the summary perfectly aligns with the original text, with no contradictions or extra information.",
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary includes contradictions, such as claiming XWiki can be used for educational purposes, which is not supported by the original text. Additionally, the summary introduces extra information about XWiki being used as a community hub, presentation website, or public wiki, which is not mentioned in the original text.",
   "score_breakdown": {
-    "Alignment": 1.0,
+    "Alignment": 0.6,
     "Coverage": 1.0
   },
   "input_language": "en",

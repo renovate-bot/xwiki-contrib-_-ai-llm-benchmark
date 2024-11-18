@@ -1,20 +1,20 @@
 {
-  "overall_score": 0.35,
+  "overall_score": 0.39631336405529954,
   "individual_scores": {
-    "AnswerRelevancy": 0.75,
+    "AnswerRelevancy": 0.8387096774193549,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.0,
+    "ContextualRecall": 0.14285714285714285,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.75 because the answer provides some relevant information about configuring permissions in XWiki, but includes several irrelevant links that do not directly address the specific configuration question.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating the actual output is perfectly aligned with the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses actions like creating children pages and changing page access rights, but it does not address the specific requirements of configuring access for teams. The second node provides information about various macros and their functionalities in XWiki, which is unrelated to configuring team-specific access controls. Similarly, the third node explains aspects of XWiki Syntax 2.1, which does not provide information on setting up team-specific access controls.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output could be attributed to any node(s) in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain specific steps for creating groups, setting wiki-wide rights, area-level rights, or inheriting rights for subpages as outlined in the expected output."
+    "AnswerRelevancy": "The score is 0.84 because the output mostly addresses the question about configuring team access and permissions in XWiki, but it includes several irrelevant links to documentation that do not directly relate to the specific configuration task.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'XWiki's database support and programming features', which are unrelated to configuring access control for teams. The second node is about 'notifications and the XWiki Development Team', not about setting access rights for teams. The third node explains 'nested pages and subwikis', which does not directly address team-specific access rights. The fourth node provides a link to 'managing users and groups', but does not directly explain how to set specific access rights for teams. The fifth node discusses 'group synchronization and customization', which is not directly related to configuring access control for teams in XWiki.",
+    "ContextualRecall": "The score is 0.14 because only sentence 1 in the expected output is supported by node 4 in the retrieval context, which mentions managing users and groups. The rest of the sentences lack direct support from any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to the steps for achieving access control mentioned in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",
-  "answer_language": "de"
+  "answer_language": "en"
 }

@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary contains some contradictions regarding the functionality of the Tags and Watchlist feeds, and it fails to answer whether the default wiki provides a feed for all modified pages.",
+  "score": 0.9090909090909091,
+  "reason": "The score is 0.91 because the summary is mostly accurate with only minor discrepancies, such as including extra information about a Watchlist application requirement not mentioned in the original text.",
   "score_breakdown": {
-    "Alignment": 0.8181818181818182,
-    "Coverage": 0.8
+    "Alignment": 0.9090909090909091,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

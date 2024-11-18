@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary is mostly accurate and does not contain any contradictions or extra information. However, it fails to address a specific question that the original text can answer, which slightly reduces its completeness.",
+  "score": 1.0,
+  "reason": "The score is 1.00 because the summary perfectly aligns with the original text, with no contradictions or extra information present. Excellent summarization quality.",
   "score_breakdown": {
     "Alignment": 1.0,
-    "Coverage": 0.8
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

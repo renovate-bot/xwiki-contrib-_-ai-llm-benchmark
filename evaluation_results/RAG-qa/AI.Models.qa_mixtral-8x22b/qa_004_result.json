@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.5671794871794872,
+  "overall_score": 0.85,
   "individual_scores": {
-    "AnswerRelevancy": 0.7692307692307693,
+    "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.3666666666666667,
-    "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.2
+    "ContextualPrecision": 0.95,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.3
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.77 because the answer provides some relevant information on how to disable notifications, but it includes several irrelevant details about default settings, appearance of the switch, and receiving notifications after enabling types, which do not directly address the question.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.37 because the first two nodes discuss enabling/disabling email features and RSS feeds, which are not directly relevant to disabling notifications for specific pages. The third node, which is relevant, is ranked lower. Additionally, the fourth node talks about the 'Clear All' link and grouping notifications, which is also not relevant, while the fifth node, which is relevant, is ranked even lower.",
-    "ContextualRecall": "The score is 0.50 because only some parts of the expected output are supported by the nodes in the retrieval context. Specifically, the retrieval context supports the idea of being notified about changes on your work (sentence 2) and selecting notification types (sentence 3), but it does not mention 'Automatic page watching' (sentence 1) or deleting notification filters (sentence 4).",
-    "CustomContextualRelevancy": "The retrieval context mentions settings and filters for notifications but lacks specific details about automatic page watching and deleting custom filters."
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant with no irrelevant statements, directly addressing the question about disabling notifications in XWiki. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.95 because the relevant nodes in the retrieval context are mostly ranked higher than the irrelevant ones. However, the fourth node, which 'primarily discusses email notifications and server settings,' and the sixth node, which 'is about overriding notification templates and installation instructions,' are not directly relevant to the user's query about disabling notifications for unwanted pages and should be ranked lower than the relevant nodes.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the nodes in the retrieval context, showcasing a perfect alignment. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions default notification settings and user profile settings but lacks specific details about automatic page watching and deleting notification filters as described in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

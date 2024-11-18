@@ -2,16 +2,16 @@
   "id": "summ_005",
   "prompt": "Please summarize the following text:\n\n\n**Contents*** [Available Feeds](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/RSS#HAvailableFeeds)\n* [Customized RSS Feeds](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/RSS#HCustomizedRSSFeeds)\nRSS Feeds can be used to get notification from activity taking place on an XWiki instance.\n\n# Available Feeds\n\nSeveral RSS feeds are provided by default and it is possible to create new ones easily when required. The default wiki (extensions might provide more) provides the following RSS feeds:\n\n* Feed for all modified pages. This is available from the [Notifications Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/).\n* Feed for all Blog posts. This is available if your wiki has the [Blog application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Blog%20Application) installed.\n* Feeds for Search results. This is available if your wiki has the [Search application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Search%20Application) installed.\n* Feeds on Tags. This is available if your wiki has the [Tag application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Tag%20Application) installed.\n* The [Watchlist Feature](https://extensions.xwiki.org/xwiki/bin/view/Extension/Watchlist%20Application) allows you to get a RSS feed of all the modifications to the pages in your Watchlist.\n\nNote that you can choose to start receiving information from the Blog and modified pages feeds by using your browser's RSS notification button. For example on Firefox:\n\n![rss.png](https://www.xwiki.org/xwiki/bin/download/Documentation/UserGuide/Features/RSS/rss.png?rev=1.1)\n\n# Customized RSS Feeds\n\nEven more so, it's easy to create new RSS feeds to fit a specific need (or modify existing RSS feeds):\n\n* You can also easily create your own page that outputs RSS (Atom, RDF, etc). Edit the Main.WebRss page in your wiki to see how it's implemented and do the same in your own page.\n* You can also modify the existing RSS pages (e.g. Main.WebRss) if you wish to customize the default RSS content produced by the various applications.\n\n\n",
   "expected_answer": null,
-  "ai_answer": "**Summary:**\n\nXWiki provides several RSS feeds out-of-the-box, which users can subscribe to for notifications about activities on their instance:\n\n1. **All Modified Pages Feed**: Available via the Notifications Application.\n2. **Blog Posts Feed**: Requires the Blog application installation.\n3. **Search Results Feed**: Requires the Search application installation.\n4. **Tags Feed**: Requires the Tag application installation.\n5. **Watchlist Feed**: Allows users to monitor changes to pages they're watching.\n\nUsers can also:\n\n- Use their browser's RSS notification button to start receiving updates from Blog and modified pages feeds (e.g., in Firefox).\n- Create new RSS feeds or modify existing ones to meet specific needs:\n  - By editing the Main.WebRss page, users can create a new RSS feed for any page.\n  - They can also customize the content of default RSS feeds by modifying the Main.WebRss page or other application-specific RSS pages.",
+  "ai_answer": "**Summary:**\n\nXWiki provides several default RSS feeds for notifications about activities on its instance, such as:\n\n1. **All Modified Pages**: Available via the Notifications Application.\n2. **Blog Posts**: Requires the Blog application to be installed.\n3. **Search Results**: Requires the Search application to be installed.\n4. **Tags**: Requires the Tag application to be installed.\n5. **Watchlist**: Allows you to monitor modifications to pages in your watchlist.\n\nYou can start receiving information from these feeds using your browser's RSS notification button (e.g., on Firefox).\n\nAdditionally, you can:\n\n- Create new RSS feeds or modify existing ones to fit specific needs by editing the Main.WebRss page.\n- Customize the default RSS content produced by various applications by modifying the existing RSS pages.",
   "sources": null,
   "usage": {
     "prompt_tokens": 512,
-    "completion_tokens": 196,
-    "total_tokens": 708
+    "completion_tokens": 167,
+    "total_tokens": 679
   },
-  "average_power_draw": 232.43116600790512,
-  "energy_consumption": 545.4998489641719,
-  "energy_per_input_token": 0.5444110269103511,
-  "energy_per_output_token": 1.3610275672758778,
-  "energy_per_total_token": 0.7704800126612597
+  "average_power_draw": 203.83192929292935,
+  "energy_consumption": 494.3997702934671,
+  "energy_per_input_token": 0.5318986232312717,
+  "energy_per_output_token": 1.3297465580781793,
+  "energy_per_total_token": 0.7281292640551799
 }

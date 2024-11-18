@@ -1,9 +1,9 @@
 {
-  "score": 0.6666666666666666,
-  "reason": "The score is 0.67 because the summary contains contradictory information about the placement of panels and the layout of pages, includes extra information not present in the original text, and fails to address a specific question about exporting a page in PDF format.",
+  "score": 0.5,
+  "reason": "The score is 0.50 because the summary contains contradictions regarding the features of pages and editing options, includes extra information not present in the original text, and fails to answer questions about subwikis and exporting pages in PDF format that the original text can address.",
   "score_breakdown": {
-    "Alignment": 0.6666666666666666,
-    "Coverage": 0.8
+    "Alignment": 0.5,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

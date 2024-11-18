@@ -1,6 +1,6 @@
 {
-  "score": 0.7,
-  "reason": "The Actual Output addresses the Input prompt and includes all the necessary details, but the format and some specific elements differ from the Expected Output. The dates are not split into start_date and end_date, and the target_audience is not explicitly mentioned.",
+  "score": 0.8,
+  "reason": "The Actual Output accurately extracts and presents the event details, addressing the Input correctly. It is coherent and fluent, with no grammatical errors. However, it does not separate the start and end dates or explicitly mention the target audience, which are present in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

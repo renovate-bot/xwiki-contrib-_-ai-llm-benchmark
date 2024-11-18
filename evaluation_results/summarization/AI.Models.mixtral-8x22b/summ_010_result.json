@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary fails to answer a specific question that the original text can address, indicating a gap in the provided information.",
+  "score": 1.0,
+  "reason": "The score is 1.00 because the summary perfectly aligns with the original text, with no contradictions or extra information present.",
   "score_breakdown": {
     "Alignment": 1.0,
-    "Coverage": 0.8
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

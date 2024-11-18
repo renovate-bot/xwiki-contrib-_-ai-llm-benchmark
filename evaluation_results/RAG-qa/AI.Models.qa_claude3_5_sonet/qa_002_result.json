@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.5225,
+  "overall_score": 0.7528571428571429,
   "individual_scores": {
     "AnswerRelevancy": 1.0,
-    "Faithfulness": 0.9375,
-    "ContextualPrecision": 0.25,
-    "ContextualRecall": 0.125,
-    "CustomContextualRelevancy": 0.3
+    "Faithfulness": 0.8,
+    "ContextualPrecision": 0.75,
+    "ContextualRecall": 0.7142857142857143,
+    "CustomContextualRelevancy": 0.5
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and addresses the question without any irrelevant information. Great job!",
-    "Faithfulness": "The score is 0.94 because the actual output claims the setting for enabling notifications should be `notifications.enabled = true`, but the retrieval context does not mention this setting.",
-    "ContextualPrecision": "The score is 0.25 because the relevant node in retrieval context (rank 4) that mentions the 'notifications.enabled' setting in 'xwiki.properties' is ranked lower than irrelevant nodes. For example, the first node mainly describes the 'Clear All' link and how notifications are grouped, which is not relevant to enabling notifications or subscribing to pages or users.",
-    "ContextualRecall": "The score is 0.12 because only the mention of 'notifications.enabled' in xwiki.properties was found in the nodes in the retrieval context, while other details about enabling notifications, subscribing to pages or users, and following users were not present.",
-    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications in xwiki.properties and the alert menu but lacks details on subscribing to pages or users, and the user profile network tab."
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the question without any irrelevant information. Great job!",
+    "Faithfulness": "The score is 0.80 because the actual output incorrectly claims that nothing is watched by default in XWiki 15.5+, while the retrieval context clarifies that for new users, nothing is watched by default, but all application types are enabled.",
+    "ContextualPrecision": "The score is 0.75 because the first and fourth nodes in the retrieval context are relevant, addressing how to follow a user for notifications and various ways to receive notifications in XWiki. However, the second node discusses filters and settings without directly addressing the issue of not receiving notifications, the third node talks about RSS feeds without ensuring notifications are received, and the fifth node is about the 'What's New' application, which is unrelated to the notification setup or troubleshooting. These irrelevant nodes should be ranked lower than the relevant ones.",
+    "ContextualRecall": "The score is 0.71 because several sentences in the expected output are well-supported by nodes in the retrieval context, such as watching a page or wiki (supported by node 2), using the alert menu (supported by node 4), and following a user (supported by node 1). However, some key details like enabling notifications via `xwiki.properties` and subscribing to pages or users are not covered in the nodes, leading to a less than perfect score.",
+    "CustomContextualRelevancy": "The retrieval context covers enabling notifications and following users, but lacks details on setting `notifications.enabled` to `true` in `xwiki.properties` and watching pages or wikis."
   },
   "question_language": "en",
   "expected_answer_language": "en",

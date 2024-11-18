@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output directly addresses the Input prompt and aligns closely with the Expected Output, covering key points like noise-cancelling, 20-hour battery life, and comfortable fit for tech-savvy professionals. The coherence and fluency are strong, with minor differences in wording.",
+  "reason": "The Actual Output addresses the main themes of the Input, including noise-cancelling, battery life, and comfort, targeting tech-savvy professionals. It is coherent and fluent, with logical flow and correct language. It closely aligns with the Expected Output, covering key points like noise-cancelling, 20-hour battery life, and ergonomic fit, though it uses slightly different phrasing.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.44000000000000006,
+  "overall_score": 0.48,
   "individual_scores": {
     "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.2,
+    "ContextualRecall": 0.4,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the answer is completely relevant and addresses the question directly without any irrelevant statements. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node provides general information about the OpenID Connect Authenticator, but does not address the specific configuration needed. The second node mentions the ability of XWiki to authenticate using OpenID Connect, but lacks the specific configuration details. The third node discusses container authentication and mentions the extension, but does not provide the needed configuration details. The fourth node provides links to various guides and mentions different authentication methods, but lacks the specific configuration details. The fifth node provides a table of contents and links to sections related to the OpenID Connect Authenticator, but does not provide the needed configuration details.",
-    "ContextualRecall": "The score is 0.20 because only the mention of 'xwiki.properties' in the 2nd node in the retrieval context supports the expected output, while the rest of the instructions and details are not supported by the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about modifying the `xwiki.properties` file or setting the `oidc.enableUser` property."
+    "AnswerRelevancy": "The score is 1.00 because the response perfectly addresses the input question without any irrelevant information. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining complete alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input query. The first node discusses 'domain-based authentication and session cookie configuration', which does not relate to enabling user accounts upon first login with OpenID Connect. The second node provides 'general information about OpenID Connect authentication and installation instructions', missing the specific configuration needed. The third node focuses on 'technical details and metadata of the OpenID Connect Authenticator extension', without addressing automatic user activation. Lastly, the fourth node includes 'configuration properties related to OpenID Connect endpoints' but omits the property `oidc.enableUser` or the process for activating user accounts automatically.",
+    "ContextualRecall": "The score is 0.40 because while the 4th node in the retrieval context supports the mention of 'xwiki.properties' and the need to uncomment properties related to OpenID Connect, there is no specific mention of adding or updating properties, restarting the XWiki instance, or ensuring automatic activation of new user accounts upon first-time login.",
+    "CustomContextualRelevancy": "The retrieval context lacks any reference to adjusting the xwiki.properties file or enabling the oidc.enableUser property for automatic user activation."
   },
   "question_language": "de",
   "expected_answer_language": "de",

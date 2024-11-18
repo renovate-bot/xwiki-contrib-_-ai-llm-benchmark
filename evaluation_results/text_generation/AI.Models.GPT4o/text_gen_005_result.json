@@ -1,6 +1,6 @@
 {
-  "score": 0.9,
-  "reason": "The Actual Output directly addresses the topic of a space adventure and covers key points such as interstellar travel, exploration of a new galaxy, and interaction with alien beings. It is coherent and well-organized, with a logical flow and smooth language. However, it slightly exceeds the Expected Output by including a broader narrative beyond just exploring a new planet.",
+  "score": 1.0,
+  "reason": "The Actual Output is a creative story about a space adventure, aligning well with the Input prompt. It is coherent, with a logical flow and consistent narrative about Captain Vega and her crew exploring a new planet, Lumina. The story is fluent, with correct grammar and smooth readability. It matches the Expected Output by featuring astronauts exploring a new planet, fulfilling all key elements and quality criteria.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary is mostly accurate and concise, but it fails to answer some specific questions that the original text can address.",
+  "score": 0.8333333333333334,
+  "reason": "The score is 0.83 because the summary includes extra information such as 'knowledge bases', 'documentation', 'websites', 'intranets', or 'extranets' that were not mentioned in the original text. However, there are no contradictions, indicating a generally accurate summary.",
   "score_breakdown": {
-    "Alignment": 1.0,
-    "Coverage": 0.8
+    "Alignment": 0.8333333333333334,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

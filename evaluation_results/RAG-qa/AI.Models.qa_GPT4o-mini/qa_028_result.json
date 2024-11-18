@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.3684210526315789,
+  "overall_score": 0.352,
   "individual_scores": {
-    "AnswerRelevancy": 0.8421052631578947,
+    "AnswerRelevancy": 0.76,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.84 because the main content is relevant and addresses the question about restricting file uploads, but the inclusion of unrelated URLs slightly detracts from the overall relevancy.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'various macros and features related to notifications, office document viewing, PDF table of contents, and other unrelated functionalities,' which does not address file upload restrictions or attachment size limits. The second node focuses on 'customizing the PDF cover by overriding a template and adding a logo,' which is also unrelated. The third node explains 'how to create a new page by adding a wanted link and using templates,' which does not provide information on configuring file uploads. The fourth node lists 'various macros and their functionalities,' which does not address the input query. Lastly, the fifth node provides 'detailed information on image styling parameters,' which is unrelated to file upload restrictions or attachment size limits.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about configuring MIME types or setting maximum upload size for attachments."
+    "AnswerRelevancy": "The score is 0.76 because the answer partially addresses the question about configuring file upload restrictions in XWiki, but it includes multiple irrelevant source links that do not directly relate to the topic, preventing a higher score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'language support and translations in XWiki', which is unrelated to file upload restrictions. Similarly, the second node is about 'various XWiki applications and extensions', not addressing file upload settings. Subsequent nodes continue to focus on unrelated topics such as 'customizing PDF export with CSS and XSL', 'trusted domains for redirections', and 'ODT export and PDF export features', none of which pertain to file upload settings or restrictions.",
+    "ContextualRecall": "The score is 0.00 because none of the expected output content, such as file size restrictions, MIME type configurations, or specific configuration steps, is supported by the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about configuring MIME types or setting maximum attachment sizes, which are key details in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

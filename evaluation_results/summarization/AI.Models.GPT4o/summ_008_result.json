@@ -1,9 +1,9 @@
 {
-  "score": 0.8235294117647058,
-  "reason": "The score is 0.82 because the summary includes some contradictory information about who can create accounts and adds extra details not mentioned in the original text, such as images illustrating configurations and a link to the next step in the guide.",
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary includes extra information not present in the original text, such as images illustrating user rights settings and links for visual guidance. Additionally, the summary fails to address a question about configurations in XWiki that the original text can answer.",
   "score_breakdown": {
-    "Alignment": 0.8235294117647058,
-    "Coverage": 1.0
+    "Alignment": 0.6,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

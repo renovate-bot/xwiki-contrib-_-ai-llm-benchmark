@@ -1,9 +1,9 @@
 {
-  "score": 0.5454545454545454,
-  "reason": "The score is 0.55 because the summary contradicts the original text regarding the advantages of wikis, includes extra information not present in the original text, and fails to answer a question that the original text addresses.",
+  "score": 1.0,
+  "reason": "The score is 1.00 because the summary perfectly aligns with the original text, with no contradictions or extra information included.",
   "score_breakdown": {
-    "Alignment": 0.5454545454545454,
-    "Coverage": 0.8
+    "Alignment": 1.0,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

@@ -1,9 +1,9 @@
 {
-  "score": 0.7857142857142857,
-  "reason": "The score is 0.79 because the summary includes contradictions regarding the upgrade process and preferences, and it fails to address a specific question about migration paths that the original text can answer. However, there is no extra information added that wasn't in the original text.",
+  "score": 0.5555555555555556,
+  "reason": "The score is 0.56 because the summary includes extra information not present in the original text, such as troubleshooting XWiki, Debian packages, demo packages, downgrading, and exporting content as XAR files. Additionally, the summary fails to answer questions about XWiki's migration paths and automatic database schema upgrades, which the original text can address.",
   "score_breakdown": {
-    "Alignment": 0.7857142857142857,
-    "Coverage": 0.8
+    "Alignment": 0.5555555555555556,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

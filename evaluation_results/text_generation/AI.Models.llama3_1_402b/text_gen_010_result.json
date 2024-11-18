@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output directly addresses the topic and uses technical terminology appropriately. It covers all key points from the Expected Output, such as the brain's role in physiological processes, sensory information processing, and cognitive functions. The ideas flow logically and the text is coherent and fluent. Minor differences in wording do not detract from the overall accuracy and clarity.",
+  "reason": "The Actual Output effectively uses technical language and addresses the key elements of the Input prompt, such as brain functions and sensory processing. It maintains coherence and fluency, with logical connections between ideas. While it closely aligns with the Expected Output, it slightly differs in phrasing but still meets the anticipated quality for a technical audience.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary is mostly accurate and concise, but it fails to address a specific question that the original text can answer.",
+  "score": 0.38461538461538464,
+  "reason": "The score is 0.38 because the summary includes a significant amount of extra information not present in the original text, which affects its accuracy and relevance.",
   "score_breakdown": {
-    "Alignment": 1.0,
-    "Coverage": 0.8
+    "Alignment": 0.38461538461538464,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

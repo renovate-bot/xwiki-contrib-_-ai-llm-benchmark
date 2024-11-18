@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output addresses the topic of photosynthesis and adapts it well for a younger audience. It covers all key points from the Expected Output, explaining how plants use sunlight to make energy. The explanation is coherent and flows logically, with natural language use and grammatical correctness. However, it includes additional details like 'delicious energy' which, while engaging, are not strictly necessary.",
+  "reason": "The Actual Output effectively adapts the concept of photosynthesis for a younger audience by using engaging language and relatable metaphors, directly addressing the Input prompt. It maintains coherence and fluency with a logical flow and correct grammar. While it adds creative elements not present in the Expected Output, it still meets the criteria of explaining photosynthesis in a way that is relevant and understandable for children.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

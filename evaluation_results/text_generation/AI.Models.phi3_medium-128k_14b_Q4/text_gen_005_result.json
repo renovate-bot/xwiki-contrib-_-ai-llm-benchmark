@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output addresses the Input prompt by providing a creative space adventure story and aligns well with the Expected Output by focusing on astronauts exploring new frontiers. However, it deviates slightly by including an asteroid mining subplot, which adds complexity but slightly strays from the core theme of exploring a new planet. The story is coherent, fluent, and well-written.",
+  "score": 0.7,
+  "reason": "The Actual Output is relevant to the Input prompt as it is a creative story about a space adventure. The story is coherent and fluent, with logical progression and smooth language. However, it diverges from the Expected Output by focusing on a single astronaut rather than a group exploring a new planet.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

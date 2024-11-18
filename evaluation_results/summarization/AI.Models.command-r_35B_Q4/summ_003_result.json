@@ -1,9 +1,9 @@
 {
-  "score": 0.2,
-  "reason": "The score is 0.20 because the summary contains significant contradictions, such as mentioning a 'Preferences' document and 'Access rights' option for terminal pages which are not in the original text. Additionally, it includes extra information about documentation links not found in the original text and fails to answer several specific questions that the original text addresses.",
+  "score": 0.14285714285714285,
+  "reason": "The score is 0.14 because the summary introduces several pieces of extra information not present in the original text, such as details about Main Wiki, Sub-Wiki, and Page levels, user/group definitions, and specific permission-setting processes. Additionally, the summary fails to address questions that the original text can answer, like permission configurations and public/private wiki options in XWiki.",
   "score_breakdown": {
-    "Alignment": 0.7777777777777778,
-    "Coverage": 0.2
+    "Alignment": 0.14285714285714285,
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

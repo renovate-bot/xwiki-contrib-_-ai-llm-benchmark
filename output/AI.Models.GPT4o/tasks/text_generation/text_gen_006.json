@@ -2,12 +2,12 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "In dawn's embrace, the world awakes,\nA symphony of light that breaks,\nThrough whispering leaves and morning dew,\nA canvas painted fresh and new.\n\nThe mountains stand with timeless grace,\nTheir peaks a testament to space,\nWhere eagles soar and rivers wind,\nA testament to life unconfined.\n\nThe forest hums a sacred tune,\nBeneath the watchful eye of moon,\nWith ancient trees that touch the sky,\nAnd secrets whispered by and by.\n\nThe ocean's breath, a rhythmic song,\nIts waves a dance, both fierce and long,\nWith depths unknown and shores so wide,\nA world of wonder, side by side.\n\nThe flowers bloom in vibrant hues,\nA tapestry of reds and blues,\nTheir petals soft, their fragrance sweet,\nA meadow where the earth and sky meet.\n\nThe desert's silence, vast and deep,\nA place where stars their vigil keep,\nWith dunes that shift like golden dreams,\nAnd sunsets casting fiery gleams.\n\nIn every corner, life does spring,\nFrom smallest ant to bird on wing,\nA testament to nature's art,\nA world that beats with one great heart.\n\nSo let us pause and drink it in,\nThe beauty found where we begin,\nFor nature's grace, so wild and free,\nIs a mirror of our own beauty.",
+  "ai_answer": "In the hush of dawn, where the world awakes,  \nNature whispers softly, as the night sky breaks.  \nGolden rays of sunlight kiss the morning dew,  \nPainting fields of emerald in a vibrant hue.  \n\nThe gentle rustle of leaves in the breeze,  \nA symphony of whispers among ancient trees.  \nBirds take flight with a joyous song,  \nIn the tapestry of life, where we all belong.  \n\nMountains stand majestic, cloaked in mist,  \nTheir peaks touched by the sun's gentle kiss.  \nRivers dance with a silvery grace,  \nCarving paths through earth's embrace.  \n\nThe ocean's roar, a timeless lullaby,  \nReflecting the vast, endless sky.  \nWaves that crash with a powerful might,  \nGlistening under the moon's soft light.  \n\nWildflowers bloom in a riot of shades,  \nIn meadows where sunlight gently fades.  \nThe fragrance of earth, rich and sweet,  \nUnder the warmth of the sun's gentle heat.  \n\nNature's beauty, a canvas so grand,  \nPainted by time's patient hand.  \nIn every leaf, in every stone,  \nA reminder that we're never alone.  \n\nSo pause and breathe, let your spirit soar,  \nIn the embrace of nature, forevermore.  \nFor in its beauty, pure and true,  \nLies a reflection of the soul in you.  ",
   "sources": null,
   "usage": {
     "prompt_tokens": 16,
-    "completion_tokens": 261,
-    "total_tokens": 277
+    "completion_tokens": 287,
+    "total_tokens": 303
   },
   "average_power_draw": null,
   "energy_consumption": null,

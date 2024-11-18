@@ -2,16 +2,16 @@
   "id": "text_gen_001",
   "prompt": "Extract the key information (name, date of birth, address) from the following text:\n\nJohn Doe, born on 15th August 1990, currently resides at 123 Main Street, Anytown, USA.",
   "expected_answer": "{\n  \"name\": \"John Doe\",\n  \"date_of_birth\": \"15th August 1990\",\n  \"address\": \"123 Main Street, Anytown, USA\"\n}",
-  "ai_answer": "Here is the key information extracted from the text:\n\n* **Name:** John Doe\n* **Date of Birth:** 15th August 1990\n* **Address:** 123 Main Street, Anytown, USA",
+  "ai_answer": "Here is the extracted key information:\n\n* Name: John Doe\n* Date of Birth: 15th August 1990\n* Address: 123 Main Street, Anytown, USA",
   "sources": null,
   "usage": {
-    "prompt_tokens": 56,
-    "completion_tokens": 45,
-    "total_tokens": 101
+    "prompt_tokens": 54,
+    "completion_tokens": 39,
+    "total_tokens": 93
   },
-  "average_power_draw": 219.91184782608696,
-  "energy_consumption": 84.6720364578133,
-  "energy_per_input_token": 0.5025046674054202,
-  "energy_per_output_token": 1.2562616685135504,
-  "energy_per_total_token": 0.8383369946318149
+  "average_power_draw": 220.5151111111111,
+  "energy_consumption": 72.05926235177782,
+  "energy_per_input_token": 0.47563869539127274,
+  "energy_per_output_token": 1.1890967384781819,
+  "energy_per_total_token": 0.7748307779761056
 }

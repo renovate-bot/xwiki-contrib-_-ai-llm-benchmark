@@ -1,6 +1,6 @@
 {
-  "score": 0.5,
-  "reason": "The Actual Output is relevant to the Input and covers key features like noise-cancelling, 20-hour battery life, and comfort. However, it is overly verbose and repetitive, lacking the concise and professional tone seen in the Expected Output.",
+  "score": 0.0,
+  "reason": "The Actual Output is irrelevant to the Input prompt, lacking any mention of wireless Bluetooth headphones or their features. It is incoherent and unrelated to the Expected Output, which clearly describes the product and its attributes.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

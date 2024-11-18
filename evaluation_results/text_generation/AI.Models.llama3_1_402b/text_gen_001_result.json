@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output correctly extracts the key information (name, date of birth, address) from the Input text and presents it clearly. However, it does not match the Expected Output format, which is a JSON object.",
+  "reason": "The Actual Output contains all key information correctly extracted from the Input, maintaining relevance and coherence. However, the format differs from the Expected Output, which affects the fluency assessment.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

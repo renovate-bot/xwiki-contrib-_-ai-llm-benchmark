@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The score is 0.80 because the summary does not contain any contradictions or extra information, but it fails to answer some questions that the original text can answer.",
+  "reason": "The score is 0.80 because the summary accurately reflects the original text without contradictions or unnecessary extra information. However, it misses answering a specific question that the original text addresses, indicating room for improvement in comprehensiveness.",
   "score_breakdown": {
     "Alignment": 1.0,
     "Coverage": 0.8

@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.7468065268065269,
+  "overall_score": 0.6593675889328063,
   "individual_scores": {
-    "AnswerRelevancy": 0.8333333333333334,
-    "Faithfulness": 0.8461538461538461,
-    "ContextualPrecision": 1.0,
-    "ContextualRecall": 0.45454545454545453,
-    "CustomContextualRelevancy": 0.6
+    "AnswerRelevancy": 0.8695652173913043,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 0.7272727272727273,
+    "CustomContextualRelevancy": 0.5
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.83 because the answer provides relevant information about attachment restrictions in XWiki, but includes URLs that do not directly address the specific question about ensuring only images or PDF files with a maximum size of 10 MB can be uploaded.",
-    "Faithfulness": "The score is 0.85 because the actual output incorrectly states that the maximum size for attachments is 10 MB and that only images and PDF files with a maximum size of 10 MB can be uploaded, whereas the retrieval context mentions different default maximum sizes and does not restrict file types to only images and PDFs.",
-    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first node provides steps to set limits on the maximum size of an attachment and where the attachments will be stored, which is directly relevant to the input. The subsequent nodes discuss topics such as whitelist and blacklist configurations, managing documents, creating new pages and templates, and configuring properties of document collections, none of which are relevant to setting attachment upload restrictions or maximum sizes.",
-    "ContextualRecall": "The score is 0.45 because while steps 1 through 5 in the expected output match the 1st node in the retrieval context, the introductory statements and specific configuration instructions do not have corresponding nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context contains instructions for setting the maximum attachment size and mentions MIME type restrictions, but it lacks specific details about configuring MIME types in the xwiki.properties file and setting the size to 10 MB."
+    "AnswerRelevancy": "The score is 0.87 because the response mostly addresses the question about setting upload restrictions for attachments, but it includes irrelevant links to pages about exporting features, XWiki syntax, and document lifecycle features, which do not pertain to the specific query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.20 because the relevant node in the retrieval context, which provides 'detailed steps for setting the maximum size of an attachment and mentions mimetype restriction', is ranked fifth. Irrelevant nodes, such as the first node discussing 'trusted domains and PDF export look and feel', the second node about 'ODT and PDF export features', and the third node listing 'various macros and features related to notifications, PDF viewing, and other functionalities', are ranked higher than the relevant node.",
+    "ContextualRecall": "The score is 0.73 because while the 5th node in the retrieval context provides comprehensive details and steps related to configuring the maximum attachment size, aligning well with sentences in the expected output, there is no information in the nodes about configuring MIME types or editing the xwiki.properties file, which are essential parts of the expected output.",
+    "CustomContextualRelevancy": "The retrieval context mentions configuring maximum attachment size and MIME type restrictions, but lacks specific details about setting MIME types in xwiki.properties and the exact steps to set the size to 10 MB."
   },
   "question_language": "de",
   "expected_answer_language": "de",

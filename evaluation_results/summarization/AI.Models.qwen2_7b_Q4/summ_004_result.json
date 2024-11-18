@@ -1,9 +1,9 @@
 {
-  "score": 0.4,
-  "reason": "The score is 0.40 because the summary includes extra information not mentioned in the original text and fails to answer several questions that the original text can address.",
+  "score": 0.0,
+  "reason": "The score is 0.00 because the summary includes a significant amount of extra information not present in the original text and fails to address questions that the original text can answer.",
   "score_breakdown": {
-    "Alignment": 0.8461538461538461,
-    "Coverage": 0.4
+    "Alignment": 0.09090909090909091,
+    "Coverage": 0.0
   },
   "input_language": "en",
   "summary_language": "en"

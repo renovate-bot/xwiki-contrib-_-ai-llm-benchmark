@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.4677777777777778,
+  "overall_score": 0.7301298701298702,
   "individual_scores": {
-    "AnswerRelevancy": 0.75,
-    "Faithfulness": 0.8888888888888888,
+    "AnswerRelevancy": 0.6363636363636364,
+    "Faithfulness": 1.0,
     "ContextualPrecision": 0.5,
-    "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.2
+    "ContextualRecall": 0.7142857142857143,
+    "CustomContextualRelevancy": 0.8
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.75 because the answer partially addresses the question about authenticating users with access tokens, but includes multiple irrelevant URL statements that do not directly contribute to the explanation.",
-    "Faithfulness": "The score is 0.89 because the actual output claims that you can configure the scope of the access token in XWiki, but the retrieval context does not mention this configuration.",
-    "ContextualPrecision": "The score is 0.50 because the relevant node in the second rank correctly describes the 'Authorized Applications' configuration, which is part of the process for using tokens to authenticate users. However, irrelevant nodes in the first, third, fourth, and fifth ranks discuss various unrelated topics such as claims at the UserInfo endpoint, the Security Module, cookie protection, and user profile visibility, which should be ranked lower.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context mentions 'Authorized Applications' and some configuration details, but lacks specific information about JWT claims, token signing, and the detailed steps for enabling and using the token authenticator."
+    "AnswerRelevancy": "The score is 0.64 because the output partially addresses the question about authenticating users with access tokens, but the repeated irrelevant statements about source links lower its relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.50 because relevant nodes in the retrieval context are not consistently ranked higher than irrelevant nodes. The first node, ranked 1, is irrelevant as it 'does not mention token-based authentication or JWTs.' The third node, ranked 3, is also irrelevant since it 'is not directly related to the use of JWTs for authentication.' Additionally, the fifth node, ranked 5, 'does not specifically address token-based authentication or JWTs.' However, the second node, ranked 2, is relevant as it 'discusses the configuration of 'Authorized Applications' which is relevant to setting up token-based authentication,' and the fourth node, ranked 4, 'provides a description of the extension that allows authentication using JWTs,' supporting the expected output.",
+    "ContextualRecall": "The score is 0.71 because while the retrieval context nodes provide information about authenticating users with JWTs, enabling the token authenticator, and configuring authorized applications, they lack details on generating a JWT token with required claims and signing key requirements, and including the token in the 'Authorization' header.",
+    "CustomContextualRelevancy": "The retrieval context includes details about configuring authorized applications and enabling the token authenticator, matching most of the expected answer, but lacks specific mention of JWT claims and Ed25519 key."
   },
   "question_language": "en",
   "expected_answer_language": "en",

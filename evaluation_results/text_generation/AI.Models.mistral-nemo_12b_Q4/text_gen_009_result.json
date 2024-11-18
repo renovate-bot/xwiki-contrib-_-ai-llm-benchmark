@@ -1,6 +1,6 @@
 {
-  "score": 0.7,
-  "reason": "The Actual Output is relevant and coherent, addressing the main points of the Input prompt. However, it lacks details such as the start and end dates separately, the target audience, and the address is split into multiple lines instead of a single string.",
+  "score": 0.8,
+  "reason": "The Actual Output accurately captures the event name, dates, venue, and address, aligning well with the Expected Output. However, it lacks the 'target_audience' key and separates dates into a single entry instead of 'start_date' and 'end_date'. The coherence and fluency are strong, with logical structure and correct grammar.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

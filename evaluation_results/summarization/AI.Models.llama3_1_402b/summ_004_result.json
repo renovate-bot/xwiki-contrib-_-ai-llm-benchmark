@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary contains multiple contradictions with the original text, including incorrect upgrade instructions and redundant claims. Additionally, the summary fails to address specific questions that the original text can answer.",
+  "score": 0.38461538461538464,
+  "reason": "The score is 0.38 because the summary contains multiple contradictions with the original text, such as incorrect advice on data backup and methods for upgrading and downgrading. It also includes extra information not present in the original text, like the claim of providing a comprehensive guide and specific instructions for admin login. Additionally, the summary fails to answer questions that the original text can, indicating a lack of coverage and accuracy.",
   "score_breakdown": {
-    "Alignment": 0.8235294117647058,
-    "Coverage": 0.6
+    "Alignment": 0.38461538461538464,
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

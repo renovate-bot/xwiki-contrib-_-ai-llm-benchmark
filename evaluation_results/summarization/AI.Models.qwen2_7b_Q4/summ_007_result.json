@@ -1,9 +1,9 @@
 {
-  "score": 0.625,
-  "reason": "The score is 0.62 because the summary contains several contradictions with the original text, such as the location of the 'History' tab and the function of the 'Compare selected versions' button. Additionally, the summary fails to mention certain steps and features described in the original text. There is also a question that the original text can answer but the summary cannot.",
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary contains a minor contradiction regarding the location and function of the 'History' tab and includes extra information about a 'Version Control page' not present in the original text. Despite these issues, the summary largely aligns with the original text, indicating a generally high-quality summarization.",
   "score_breakdown": {
-    "Alignment": 0.625,
-    "Coverage": 0.8
+    "Alignment": 0.8,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

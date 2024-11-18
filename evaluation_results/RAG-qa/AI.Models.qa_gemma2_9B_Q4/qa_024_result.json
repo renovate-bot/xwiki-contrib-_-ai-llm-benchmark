@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.61,
+  "overall_score": 0.8736363636363637,
   "individual_scores": {
-    "AnswerRelevancy": 0.5,
-    "Faithfulness": 0.6666666666666666,
-    "ContextualPrecision": 0.3333333333333333,
+    "AnswerRelevancy": 0.8181818181818182,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 1.0,
     "ContextualRecall": 0.75,
     "CustomContextualRelevancy": 0.8
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.50 because the provided URLs are not directly relevant to the input, which specifically asks how to disable unwanted notifications. However, the response does partially address the issue, hence the score is not lower.",
-    "Faithfulness": "The score is 0.67 because the actual output incorrectly claims that users can disable notifications for pages they haven't created or updated, whereas the retrieval context specifies that users only receive notifications when they are mentioned or when actions are performed on pages they created or updated.",
-    "ContextualPrecision": "The score is 0.33 because the relevant node, which discusses 'Auto Watch' and 'Default Watch Settings,' is ranked third, while the first and second nodes are irrelevant and should be ranked lower as they do not address how to disable notifications or the automatic activation of notifications.",
-    "ContextualRecall": "The score is 0.75 because the retrieval context nodes support the general idea of notifications and settings, but they do not specifically mention being notified of changes on your work.",
-    "CustomContextualRelevancy": "The retrieval context covers auto-watch settings, notification preferences, and custom filters but lacks specific details on modifying existing filters and the exact notification of changes on user work."
+    "AnswerRelevancy": "The score is 0.82 because the response mostly addresses the question about disabling notifications, but includes irrelevant links that do not directly help with the issue.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are correctly ranked higher than the irrelevant node. The first three nodes discuss topics like 'Choosing the default auto-watched mode', 'Create global notification filters', 'Notifications Auto Watch Preferences', and 'Default Watch Settings', which are directly related to modifying notification settings as expected. The fourth node, which is less relevant as it focuses on 'RSS feeds and general notification settings', is appropriately ranked last. Great job on maintaining perfect precision!",
+    "ContextualRecall": "The score is 0.75 because the supportive reasons show that most sentences in the expected output are related to the 3rd node in the retrieval context, which discusses 'auto watched pages' and user preferences. However, the unsupportive reason indicates that the retrieval context does not cover notifications about changes to one's work, affecting the score.",
+    "CustomContextualRelevancy": "The retrieval context includes information on auto-watched pages and custom notification filters, aligning with the expected answer about automatic page following and filter management. However, it lacks explicit mention of modifying auto-watch settings in user profile notification settings."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

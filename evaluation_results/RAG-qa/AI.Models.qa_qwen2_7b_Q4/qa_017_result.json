@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.6501398601398602,
+  "overall_score": 0.4,
   "individual_scores": {
-    "AnswerRelevancy": 0.9545454545454546,
+    "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.25,
-    "ContextualRecall": 0.8461538461538461,
-    "CustomContextualRelevancy": 0.2
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.95 because the overall response is highly relevant and addresses the question well, but it includes a redundant statement about 'Konfiguration des Anbieters zur XWiki' which slightly detracts from the conciseness.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.25 because the relevant node mentioning 'Group synchronization' and linking to a section with likely relevant information is ranked fourth. The irrelevant nodes, such as the first node which provides general information about OpenID Connect and XWiki without specific steps, should be ranked lower.",
-    "ContextualRecall": "The score is 0.85 because while the retrieval context covers most aspects of configuring group synchronization between XWiki and an OpenID Connect provider, it lacks explicit instructions for opening the 'xwiki.properties' file with a text editor (sentence 2) and saving the file and restarting the XWiki instance (sentence 7).",
-    "CustomContextualRelevancy": "The retrieval context mentions group synchronization but lacks detailed steps and specific properties like `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping` found in the expected output."
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the question about setting up group synchronization between XWiki and an OpenID Connect provider. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'generic OpenID Connect provider configurations and endpoints' but lacks specific information on group synchronization setup. The second node is about 'different authentication methods' and does not mention group synchronization. The third node provides links to configuration guides but does not address the specific steps for group synchronization. The fourth node lists dependencies for the OpenID Connect extension without relating to group synchronization. Lastly, the fifth node provides general information about the OpenID Connect authenticator but lacks details on group synchronization setup.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about configuring group synchronization in xwiki.properties, claims, separators, or mappings as detailed in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output addresses the Input prompt and covers the key points mentioned in the Expected Output. However, it does not follow the JSON format required in the Expected Output.",
+  "reason": "The Actual Output correctly extracts the name and date of birth, and accurately breaks down the address into components, which aligns with the Expected Output. However, the address format differs slightly from the Expected Output, affecting the overall alignment.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

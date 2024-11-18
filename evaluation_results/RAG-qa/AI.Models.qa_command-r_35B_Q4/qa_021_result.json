@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.33999999999999997,
+  "overall_score": 0.3,
   "individual_scores": {
-    "AnswerRelevancy": 0.7,
+    "AnswerRelevancy": 0.0,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.0,
+    "ContextualRecall": 0.5,
     "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.70 because while the response provides some relevant information, it includes multiple statements about managing notifications in Windows 11 that do not directly address the issue with the 'Notification d'alerte' extension.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses how to get a notification RSS feed and various settings related to notifications, but it does not address enabling notifications in the wiki or setting `notifications.enabled` in `xwiki.properties`. The second node is about overriding default notification templates and installation instructions for extensions, which is not relevant to enabling notifications in the wiki. The third node describes the 'Clear All' link and how notifications are grouped, but it does not provide information on enabling notifications in the wiki. The fourth node explains custom notification filters and the watch feature, which is unrelated to enabling notifications in the wiki. The fifth node provides a description and various settings for notifications, but it does not mention enabling notifications in the wiki or setting `notifications.enabled` in `xwiki.properties`.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications via the `notifications.enabled` property in `xwiki.properties`."
+    "AnswerRelevancy": "The score is 0.00 because the output contains numerous irrelevant statements that do not address the issue of the notification icon not being available, such as links to unrelated documentation and discussions about unrelated features.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant, as they do not address enabling notifications in the wiki settings. The first node discusses 'custom notification filters and their behavior', which is unrelated. The second node lists 'various notification-related topics and links' without providing the needed information. The third node mentions 'notification preferences and macros' but lacks details on enabling notifications. The fourth node describes 'the notification alert menu and its features', which is not pertinent. Lastly, the fifth node talks about 'RSS feeds and notification settings' without addressing the required topic.",
+    "ContextualRecall": "The score is 0.50 because the first sentence about ensuring notifications are enabled is supported by the 5th node in the retrieval context, which discusses displaying notifications. However, the second sentence, which gives specific instructions about setting 'notifications.enabled' in 'xwiki.properties', is not supported by any node in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications via the `xwiki.properties` file or setting `notifications.enabled` to `true`."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

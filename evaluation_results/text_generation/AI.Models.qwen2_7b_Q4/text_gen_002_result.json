@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output addresses the topic and is coherent and fluent. However, it misses the keyword 'playful' and uses 'playing' instead of 'exploring'.",
+  "score": 0.9,
+  "reason": "The Actual Output addresses all key points from the Input, maintaining relevance. It presents the main ideas consistently with the Expected Output, ensuring coherence. The grammatical structure and word choice are fluent and consistent with the Expected Output, with only slight variations in phrasing.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

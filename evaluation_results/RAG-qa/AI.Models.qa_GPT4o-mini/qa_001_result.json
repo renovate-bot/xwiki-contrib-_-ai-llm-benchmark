@@ -1,18 +1,18 @@
 {
-  "overall_score": 0.8466666666666667,
+  "overall_score": 0.5333333333333334,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
-    "Faithfulness": 0.9,
-    "ContextualPrecision": 0.3333333333333333,
-    "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 1.0
+    "AnswerRelevancy": 0.8571428571428571,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.30952380952380953,
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the output is perfectly relevant and addresses the input without any irrelevant statements. Great job!",
-    "Faithfulness": "The score is 0.90 because the actual output incorrectly specifies `notifications.enabled = true` instead of the correct `notifications.emails.enabled` as mentioned in the retrieval context.",
-    "ContextualPrecision": "The score is 0.33 because the relevant node mentioning the `notifications.enabled` setting in `xwiki.properties` is ranked third, while irrelevant nodes discussing notification RSS feeds (first node), overriding templates (second node), and notification management features (fourth and fifth nodes) are ranked higher.",
-    "ContextualRecall": "The score is 1.00 because the retrieval context perfectly supports all sentences in the expected output. Great job!",
-    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications by setting 'notifications.enabled' to 'true' in 'xwiki.properties', which matches the expected output."
+    "AnswerRelevancy": "The score is 0.86 because the main content effectively addresses the issue with the 'Bell' icon in XWiki, but it includes multiple irrelevant source links that do not contribute to solving the problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.31 because the relevant nodes in the retrieval context are ranked lower than several irrelevant nodes. For instance, the first node discusses 'installation instructions and prerequisites for extensions,' which does not relate to enabling notifications in XWiki. Similarly, the second node 'addresses issues with configurable applications and administration access,' not related to the bell icon issue. However, the third node provides 'information about the Notifications Application and mentions receiving notifications in the top bar,' which is relevant. Additionally, the seventh node 'mentions that administrators can configure notification settings and edit the xwiki.properties file,' which is also pertinent to the input query.",
+    "ContextualRecall": "The score is 0.50 because while the retrieval context does mention configuring notifications in a general sense (node 7), it lacks specific details about setting 'notifications.enabled' in 'xwiki.properties', which is crucial for full alignment with the expected output.",
+    "CustomContextualRelevancy": "The retrieval context does not mention the 'notifications.enabled' setting in 'xwiki.properties', which is crucial for enabling notifications as outlined in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

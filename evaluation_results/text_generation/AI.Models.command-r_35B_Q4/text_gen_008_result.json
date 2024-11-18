@@ -1,6 +1,6 @@
 {
-  "score": 1.0,
-  "reason": "The Actual Output directly addresses the topic by providing a comprehensive travel guide for Paris, covering key attractions, accommodations, and activities. It is detailed, coherent, and fluent, matching the Expected Output perfectly.",
+  "score": 0.9,
+  "reason": "The Actual Output provides a detailed travel guide for Rome, which aligns well with the Input request for a travel guide to a popular tourist destination. It covers top attractions and activities, matching the Expected Output's focus on attractions and activities. The guide is coherent and fluent, with a logical day-by-day itinerary and smooth sentence structure. However, it lacks specific mention of accommodations, which slightly deviates from the Expected Output.",
   "prompt_language": "ro",
   "expected_answer_language": "en",
   "generated_text_language": "en"

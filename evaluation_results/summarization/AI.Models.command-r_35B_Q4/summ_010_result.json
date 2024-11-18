@@ -1,9 +1,9 @@
 {
-  "score": 0.8333333333333334,
-  "reason": "The score is 0.83 because the summary includes extra information not mentioned in the original text, specifically about providing links to explore further details on XWiki's features and extensions.",
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary is mostly accurate and concise, with no contradictions or unnecessary information. However, it lacks some detail, as it cannot answer whether XWiki is used for a variety of use cases such as intranets and public websites.",
   "score_breakdown": {
-    "Alignment": 0.8333333333333334,
-    "Coverage": 1.0
+    "Alignment": 1.0,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

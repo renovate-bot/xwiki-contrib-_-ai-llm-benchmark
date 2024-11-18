@@ -1,9 +1,9 @@
 {
-  "score": 0.0,
-  "reason": "The score is 0.00 because the summary contains multiple contradictions with the original text, includes extra information not mentioned in the original text, and fails to answer several questions that the original text can address.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary contains several contradictions with the original text, such as incorrect claims about editing rights, programming rights, and the hierarchy of rights. Additionally, it includes extra information not mentioned in the original text and fails to answer specific questions that the original text can address.",
   "score_breakdown": {
-    "Alignment": 0.4117647058823529,
-    "Coverage": 0.0
+    "Alignment": 0.75,
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

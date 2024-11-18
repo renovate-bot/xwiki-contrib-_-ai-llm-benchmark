@@ -1,10 +1,10 @@
 {
-  "score": 0.75,
-  "reason": "The score is 0.75 because the summary contains a contradiction regarding the navigation method and includes extra information about a detailed guide link that is not mentioned in the original text.",
+  "score": 0,
+  "reason": "The score is 0.00 because the summary fails to address key questions that the original text can answer, indicating a lack of comprehensiveness and coverage.",
   "score_breakdown": {
-    "Alignment": 0.75,
-    "Coverage": 1.0
+    "Alignment": 0,
+    "Coverage": 0.0
   },
   "input_language": "en",
-  "summary_language": "en"
+  "summary_language": "unknown"
 }

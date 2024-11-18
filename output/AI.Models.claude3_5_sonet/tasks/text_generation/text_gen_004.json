@@ -2,12 +2,12 @@
   "id": "text_gen_004",
   "prompt": "Generate a short product description based on the following information:\n\nProduct: Wireless Bluetooth Headphones\nFeatures: Noise-cancelling, 20-hour battery life, comfortable fit\nTarget audience: Tech-savvy professionals",
   "expected_answer": "Introducing our cutting-edge wireless Bluetooth headphones, designed for tech-savvy professionals who demand the best. With advanced noise-cancelling technology, you can immerse yourself in your music or focus on your work without any distractions. Enjoy an impressive 20-hour battery life, ensuring your headphones keep up with your busy lifestyle. The comfortable, ergonomic fit allows you to wear them all day long without any discomfort. Upgrade your audio experience with our premium wireless headphones.",
-  "ai_answer": "Here's a short product description based on the provided information:\n\nIntroducing our premium Wireless Bluetooth Headphones, designed for the discerning tech-savvy professional. These cutting-edge headphones combine superior sound quality with advanced noise-cancelling technology, allowing you to immerse yourself in your audio experience without distractions. With an impressive 20-hour battery life, they'll keep up with your busy schedule, whether you're commuting, working, or traveling. The comfortable fit ensures all-day wear without fatigue, making these headphones the perfect companion for your on-the-go lifestyle. Stay connected and productive with our sleek, high-performance Wireless Bluetooth Headphones.",
+  "ai_answer": "Experience uninterrupted focus with our premium wireless Bluetooth headphones, designed for busy professionals who demand excellence. Featuring advanced noise-cancelling technology, these sleek headphones eliminate distracting ambient sounds, allowing you to immerse yourself in your work or music. With an impressive 20-hour battery life, they'll keep pace with your longest workdays, while the ergonomic design ensures lasting comfort during extended wear. Perfect for both office use and commuting, these headphones seamlessly blend performance with professional style.",
   "sources": null,
   "usage": {
     "prompt_tokens": 55,
-    "completion_tokens": 152,
-    "total_tokens": 207
+    "completion_tokens": 113,
+    "total_tokens": 168
   },
   "average_power_draw": null,
   "energy_consumption": null,

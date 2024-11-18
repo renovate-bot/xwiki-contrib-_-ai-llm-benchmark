@@ -1,9 +1,9 @@
 {
-  "score": 0.75,
-  "reason": "The score is 0.75 because the summary includes extra information not mentioned in the original text, such as specific deployment environments, responsive design features of XWiki, and details about the XWiki User Guide.",
+  "score": 0,
+  "reason": "The score is 0.00 because the summary fails to answer key questions that the original text addresses, indicating a lack of coverage of important information.",
   "score_breakdown": {
-    "Alignment": 0.75,
-    "Coverage": 1.0
+    "Alignment": 0,
+    "Coverage": 0.0
   },
   "input_language": "en",
   "summary_language": "en"

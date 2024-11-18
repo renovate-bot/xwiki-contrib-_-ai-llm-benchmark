@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output is highly relevant to the Input prompt, providing a detailed and coherent news article about a recent scientific discovery. It logically flows from the headline to the conclusion, maintaining grammatical correctness and natural language usage throughout. The key elements and intent of the Expected Output are fully met, summarizing the groundbreaking finding effectively.",
+  "reason": "The Actual Output directly addresses the Input by providing a detailed news article about a recent scientific discovery, aligning with the Expected Output's requirement for an informative summary. It maintains coherence by logically presenting the discovery's context, significance, and implications. The article is fluent, with correct grammar and readability, meeting the quality expected.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

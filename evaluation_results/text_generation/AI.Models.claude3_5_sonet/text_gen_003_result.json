@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output directly addresses the Input prompt by explaining photosynthesis in a way that is engaging for a younger audience. It is coherent and logically flows with the Expected Output, adding a bit more detail and analogy to make it relatable. The fluency is high, with proper grammar and readability.",
+  "reason": "The Actual Output effectively adapts the concept of photosynthesis for a younger audience by using relatable language like 'super power' and comparing it to how kids need food for energy. It maintains coherence with the Expected Output by explaining the process of plants making their own food using sunlight. The fluency is high with clear grammar and syntax, though it adds a playful tone not present in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"
