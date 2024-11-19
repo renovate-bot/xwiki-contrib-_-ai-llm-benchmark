@@ -69,7 +69,7 @@ def put_collection(collection_json_file):
         error_message = f"Failed to decode JSON from response: Status code {response.status_code}, Response body: {response.text}"
         raise ValueError(error_message) from e
 
-def put_document(document_json_file, document_content_file):
+def put_document(document_json_file, document_content_file, collection):
     """Create or update a document in a collection."""
     with open(document_json_file, 'r') as file:
         document_data = json.load(file)
@@ -80,6 +80,7 @@ def put_document(document_json_file, document_content_file):
         content = document_data.get('content', '')
     content = html.escape(content)
     document_data['content'] = content
+    document_data['collection'] = collection
     url = f'{base_url}/collections/{document_data["collection"]}/documents/{document_data["id"]}?media=json'
     response = requests.put(url, json=document_data, auth=auth)
     try:
@@ -104,11 +105,20 @@ def index_data(collections_dir, documents_dir):
             document_json_file = os.path.join(documents_dir, document_file)
             with open(document_json_file, 'r') as file:
                 document_data = json.load(file)
-            
-            if document_data['collection'] in valid_collections:
+
+            if isinstance(document_data['collection'], list):
+                collections = document_data['collection']
+            else:
+                collections = [document_data['collection']]
+
+            # Filter collections by valid collections.
+            collections = [collection for collection in collections if collection in valid_collections]
+
+            if collections:
                 document_name = os.path.splitext(document_file)[0]
                 document_txt_file = os.path.join(documents_dir, f"{document_name}.txt")
-                put_document(document_json_file, document_txt_file)
+                for collection in collections:
+                    put_document(document_json_file, document_txt_file, collection)
                 print(f"Indexing document: {document_json_file}")
                 if not os.path.exists(document_txt_file):
                     print(f"Warning: Corresponding .txt file not found for {document_file}: using json content field instead")

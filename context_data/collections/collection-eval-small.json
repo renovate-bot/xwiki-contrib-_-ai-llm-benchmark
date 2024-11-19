@@ -1,0 +1,12 @@
+{
+    "id": "Eval-Small",
+    "title": "Eval Small Context",
+    "embedding_model": "AI.Models.bert",
+    "chunking_method": "maxChars",
+    "chunking_max_size": 2000,
+    "chunking_overlap_offset": 0,
+    "document_spaces": [],
+    "allow_guests": false,
+    "query_groups": "XWiki.XWikiAllGroup",
+    "rights_check_method": "public"
+}
