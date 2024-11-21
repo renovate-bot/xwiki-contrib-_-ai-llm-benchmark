@@ -18,10 +18,18 @@ def parse_arguments():
     parser.add_argument('--request-template', default='config.json', help='Path to the request template file')
     return parser.parse_args()
 
-def send_request_to_model(model, temperature, stream, question):
-    waise_model = WaiseModel(model=model, temperature=temperature, stream=stream, verbose=True)
-    response = waise_model.invoke(question)
-    return response
+def send_request_to_model(model, temperature, stream, question, max_retries=3):
+    for attempt in range(max_retries):
+        try:
+            waise_model = WaiseModel(model=model, temperature=temperature, stream=stream, verbose=True)
+            response = waise_model.invoke(question)
+            return response
+        except Exception as e:
+            if attempt == max_retries - 1:  # Last attempt
+                raise  # Re-raise the last exception if all retries failed
+            print(f"Request failed (attempt {attempt + 1}/{max_retries}). Retrying...")
+            time.sleep(2 * (attempt + 1))  # Exponential backoff: 2s, 4s, 6s
+
 
 def load_data(file_path):
     with open(file_path, 'r') as file:

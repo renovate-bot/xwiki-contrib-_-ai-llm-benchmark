@@ -8,7 +8,7 @@ import argparse
 criteria = {
     'summarization': ['Alignment', 'Coverage'],
     'text_generation': ['score'],
-    'RAG-qa': ['AnswerRelevancy', 'Faithfulness', 'ContextualPrecision', 'ContextualRecall']
+    'RAG-qa': ['AnswerRelevancy', 'Faithfulness', 'ContextualPrecision', 'ContextualRecall', 'CustomContextualRelevancy', 'Correctness']
 }
 
 # Function to read JSON files
@@ -24,58 +24,94 @@ def read_json_files(directory):
 # Function to generate bar charts
 def generate_bar_chart(data, task, criterion, output_dir, file_name):
     df = pd.DataFrame(data)
-    plt.figure(figsize=(10, 6))
-    sorted_models = df[df['Criterion'] == criterion].groupby('Model')['Score'].mean().sort_values().index.to_list()
-    sns.barplot(x='Model', y='Score', data=df[df['Criterion'] == criterion], order=sorted_models)
-    plt.title(f'{task.capitalize()} Task Scores Comparison ({criterion})')
-    plt.xticks(rotation=45, ha='right')
-    plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, file_name))
-    plt.close()
+    if 'Criterion' not in df.columns:
+        df = pd.DataFrame(data, columns=['Model', 'Criterion', 'Score'])
+    
+    filtered_df = df[df['Criterion'] == criterion]
+    
+    # Only create plot if we have data
+    if not filtered_df.empty:
+        sorted_models = filtered_df.groupby('Model')['Score'].mean().sort_values().index.to_list()
+        
+        plt.figure(figsize=(10, 6))
+        sns.barplot(x='Model', y='Score', data=filtered_df, order=sorted_models)
+        plt.title(f'{task.capitalize()} Task Scores Comparison ({criterion})')
+        plt.xticks(rotation=45, ha='right')
+        plt.tight_layout()
+        plt.savefig(os.path.join(output_dir, file_name))
+        plt.close()
+
+
 
 # Function to generate grouped bar charts for all criteria
 def generate_grouped_bar_chart(data, task, output_dir, file_name):
     df = pd.DataFrame(data)
+    if 'Criterion' not in df.columns:
+        df = pd.DataFrame(data, columns=['Model', 'Criterion', 'Score'])
     
-    # Calculate the average score for each model
-    model_avg_scores = df.groupby('Model')['Score'].mean().sort_values(ascending=True)
-    
-    # Sort the models based on their average scores
-    sorted_models = model_avg_scores.index.tolist()
-    
-    plt.figure(figsize=(12, 8))
-    sns.barplot(x='Model', y='Score', hue='Criterion', data=df, order=sorted_models)
-    plt.title(f'{task.capitalize()} Task Scores Comparison')
-    plt.xticks(rotation=45, ha='right')
-    plt.legend(title='Criterion', bbox_to_anchor=(1.05, 1), loc='upper left')
-    plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, file_name))
-    plt.close()
+    if not df.empty:
+        model_avg_scores = df.groupby('Model')['Score'].mean().sort_values(ascending=True)
+        sorted_models = model_avg_scores.index.tolist()
+        
+        plt.figure(figsize=(12, 8))
+        sns.barplot(x='Model', y='Score', hue='Criterion', data=df, order=sorted_models)
+        plt.title(f'{task.capitalize()} Task Scores Comparison')
+        plt.xticks(rotation=45, ha='right')
+        plt.legend(title='Criterion', bbox_to_anchor=(1.05, 1), loc='upper left')
+        plt.tight_layout()
+        plt.savefig(os.path.join(output_dir, file_name))
+        plt.close()
 
 
 # Function to generate box plots
 def generate_box_plot(data, task, criterion, output_dir, file_name):
     df = pd.DataFrame(data)
-    plt.figure(figsize=(10, 6))
-    sns.boxplot(x='Model', y='Score', data=df[df['Criterion'] == criterion])
-    plt.title(f'{task.capitalize()} Task Score Distribution ({criterion})')
-    plt.xticks(rotation=45, ha='right')
-    plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, file_name))
-    plt.close()
+    if 'Criterion' not in df.columns:
+        df = pd.DataFrame(data, columns=['Model', 'Criterion', 'Score'])
+    
+    filtered_df = df[df['Criterion'] == criterion]
+    
+    if not filtered_df.empty:
+        plt.figure(figsize=(10, 6))
+        sns.boxplot(x='Model', y='Score', data=filtered_df)
+        plt.title(f'{task.capitalize()} Task Score Distribution ({criterion})')
+        plt.xticks(rotation=45, ha='right')
+        plt.tight_layout()
+        plt.savefig(os.path.join(output_dir, file_name))
+        plt.close()
+
 
 def generate_overall_score_box_plot(data, output_dir, file_name):
     df = pd.DataFrame(data)
-    sorted_models = df.groupby('Model')['overall_score'].median().sort_values().index.to_list()
-    plt.figure(figsize=(10, 6))
-    sns.boxplot(x='Model', y='overall_score', data=df, order=sorted_models)
-    plt.title('RAG-qa Task Overall Score Distribution')
-    plt.ylabel('Overall Score')
-    plt.xticks(rotation=45, ha='right')
-    plt.tight_layout()
-    plt.savefig(os.path.join(output_dir, file_name))
-    plt.close()
+    if not df.empty:
+        sorted_models = df.groupby('Model')['overall_score'].median().sort_values().index.to_list()
+        plt.figure(figsize=(10, 6))
+        sns.boxplot(x='Model', y='overall_score', data=df, order=sorted_models)
+        plt.title('RAG-qa Task Overall Score Distribution')
+        plt.ylabel('Overall Score')
+        plt.xticks(rotation=45, ha='right')
+        plt.tight_layout()
+        plt.savefig(os.path.join(output_dir, file_name))
+        plt.close()
 
+def generate_correctness_bar_chart(data, output_dir, file_name):
+    df = pd.DataFrame(data)
+    if 'Criterion' not in df.columns:
+        df = pd.DataFrame(data, columns=['Model', 'Criterion', 'Score'])
+    
+    correctness_df = df[df['Criterion'] == 'Correctness']
+    
+    if not correctness_df.empty:
+        sorted_models = correctness_df.groupby('Model')['Score'].mean().sort_values().index.to_list()
+        
+        plt.figure(figsize=(12, 8))
+        sns.barplot(x='Model', y='Score', data=correctness_df, order=sorted_models)
+        plt.title('Model Correctness Comparison')
+        plt.ylabel('Correctness Score')
+        plt.xticks(rotation=45, ha='right')
+        plt.tight_layout()
+        plt.savefig(os.path.join(output_dir, file_name))
+        plt.close()
 
 # Function to load configuration
 def load_config(config_file):
@@ -85,22 +121,22 @@ def load_config(config_file):
 # Function to process evaluation results and generate visualizations
 def process_evaluation_results(config, results_dir, output_dir):
     tasks = config['tasks']
-    criteria = {
-        'summarization': ['Alignment', 'Coverage'],
-        'text_generation': ['score'],
-        'RAG-qa': ['AnswerRelevancy', 'Faithfulness', 'ContextualPrecision', 'ContextualRecall']
-    }
-
+    
     for task in tasks:
         task_name = task['task']
         task_dir = os.path.join(results_dir, task_name)
+        
+        # Skip if task directory doesn't exist
+        if not os.path.exists(task_dir):
+            print(f"Skipping {task_name} - directory not found")
+            continue
+            
         bar_data = []
-
+        
         for model in os.listdir(task_dir):
             model_dir = os.path.join(task_dir, model)
             data = read_json_files(model_dir)
-
-            # Prepare data for bar charts
+            
             for item in data:
                 if task_name == 'RAG-qa':
                     for criterion, score in item['individual_scores'].items():
@@ -123,14 +159,22 @@ def process_evaluation_results(config, results_dir, output_dir):
                         'Score': item['score']
                     })
 
-        # Generate bar charts for each criterion
-        for criterion in criteria[task_name]:
-            filtered_data = [d for d in bar_data if d['Criterion'] == criterion]
-            generate_bar_chart(filtered_data, task_name, criterion, output_dir, f'{task_name}_{criterion}_bar_chart.png')
+        # Only process if we have data
+        if bar_data:
+            df = pd.DataFrame(bar_data)
+            for criterion in criteria[task_name]:
+                filtered_data = df[df['Criterion'] == criterion]
+                if not filtered_data.empty:
+                    generate_bar_chart(filtered_data.to_dict('records'), task_name, criterion, output_dir, f'{task_name}_{criterion}_bar_chart.png')
+                    generate_box_plot(filtered_data.to_dict('records'), task_name, criterion, output_dir, f'{task_name}_{criterion}_box_plot.png')
+            
+            # Generate grouped chart only if we have data
+            generate_grouped_bar_chart(bar_data, task_name, output_dir, f'{task_name}_grouped_bar_chart.png')
             generate_box_plot(filtered_data, task_name, criterion, output_dir, f'{task_name}_{criterion}_box_plot.png')
 
         # Generate grouped bar chart for all criteria
-        generate_grouped_bar_chart(bar_data, task_name, output_dir, f'{task_name}_grouped_bar_chart.png')
+        if bar_data:  # Only generate if we have data
+            generate_grouped_bar_chart(bar_data, task_name, output_dir, f'{task_name}_grouped_bar_chart.png')
 
         # Generate overall score box plot for RAG-qa task
         if task_name == 'RAG-qa':
@@ -144,6 +188,7 @@ def process_evaluation_results(config, results_dir, output_dir):
                         'overall_score': item['overall_score']
                     })
             generate_overall_score_box_plot(overall_scores, output_dir, f'{task_name}_overall_score_box_plot.png')
+            generate_correctness_bar_chart(bar_data, output_dir, 'correctness_comparison_bar_chart.png')
 
 
         # Generate bar charts for each criterion

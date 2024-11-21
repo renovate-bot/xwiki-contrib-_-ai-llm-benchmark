@@ -124,6 +124,14 @@ def add_task_results(elements, styles, config, plots_dir, evaluation_results_dir
                 elements.append(Spacer(1, 12))
 
         if task_name == 'RAG-qa':
+            # Add Correctness comparison plot
+            elements.append(Paragraph("Model Correctness Comparison", styles['Heading3']))
+            correctness_img_path = os.path.join(plots_dir, 'correctness_comparison_bar_chart.png')
+            if os.path.exists(correctness_img_path):
+                img = Image(correctness_img_path, width=400, height=300)
+                elements.append(img)
+                elements.append(Spacer(1, 12))
+
             elements.append(Paragraph("Overall Score Distribution", styles['Heading3']))
             overall_score_img_path = os.path.join(plots_dir, 'RAG-qa_overall_score_box_plot.png')
             if os.path.exists(overall_score_img_path):

@@ -64,6 +64,12 @@ def calculate_ragas_score(ai_qa_file, evaluator_model):
         retrieval_context=retrieval_context
     )
 
+    correctness_metric = GEval(
+        name="Correctness",
+        criteria="Determine whether the actual output is factually correct based on the expected output.",
+        evaluation_params=[LLMTestCaseParams.EXPECTED_OUTPUT, LLMTestCaseParams.ACTUAL_OUTPUT],
+    )
+
     context_relevancy_custom_metric = GEval(
         name="Custome Context Relevancy Metric",
         evaluation_steps=[
@@ -80,6 +86,7 @@ def calculate_ragas_score(ai_qa_file, evaluator_model):
         (ContextualPrecisionMetric(model=evaluator_model, include_reason=True), "ContextualPrecision"),
         (ContextualRecallMetric(model=evaluator_model, include_reason=True), "ContextualRecall"),
         (context_relevancy_custom_metric, "CustomContextualRelevancy"),
+        (correctness_metric, "Correctness")
     ]
 
     individual_scores = {}
