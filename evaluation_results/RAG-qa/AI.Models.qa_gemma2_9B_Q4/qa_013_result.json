@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.3,
+  "overall_score": 0.22540403169507142,
   "individual_scores": {
-    "AnswerRelevancy": 0.5,
+    "AnswerRelevancy": 0.3333333333333333,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.01909085683709543
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.50 because the output includes source links that do not directly address the question about enabling notifications for one's own actions, making the response partially relevant but not fully aligned with the input query.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'customization of page templates, internationalization, and other features unrelated to notification settings.' The second node is about 'administrating wiki features and does not mention notification settings or user activity notifications.' The third node covers 'various applications and extensions like Office Importer and Syntax Highlighting, but does not address notification settings or user activity notifications.' This means that no relevant information was retrieved, resulting in the lowest possible score.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be linked to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about notification settings or user activity filters as mentioned in the expected output."
+    "AnswerRelevancy": "The score is 0.33 because the output includes irrelevant source links that do not directly address the question about activating notifications for one's own activity.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'customization of page templates, internationalization, and other features unrelated to notification settings', the second node is about 'administrating wiki features and does not mention notification settings or user activity', and the third node covers 'various XWiki extensions like Office Importer and Syntax Highlighting, none of which relate to notifications or user activity settings'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about notification settings or user profile options, which are central to the expected output.",
+    "Correctness": "The actual output does not contain any of the expected factual information about notification settings or how to modify them, and instead, it provides unrelated source links and an apology, indicating a complete mismatch."
   },
   "question_language": "de",
   "expected_answer_language": "de",

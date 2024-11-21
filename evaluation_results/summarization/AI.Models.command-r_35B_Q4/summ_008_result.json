@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary includes extra information not present in the original text, such as screenshots illustrating user rights configurations and a guide on creating a basic application in XWiki. Additionally, the summary fails to answer questions about XWiki's capabilities regarding user account creation in a locked registration configuration and admin options in a protected wiki configuration, which the original text can address.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary contains a contradiction regarding how global rights are accessed, includes extra information about screenshots not present in the original text, and fails to answer several questions that the original text can address.",
   "score_breakdown": {
     "Alignment": 0.6666666666666666,
-    "Coverage": 0.6
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

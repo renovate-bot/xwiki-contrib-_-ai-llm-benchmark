@@ -2,7 +2,7 @@
   "id": "qa_005",
   "prompt": "How can I configure XWiki to automatically enable user accounts upon their first login using OpenID Connect?\nI've set up OpenID Connect authentication in my XWiki instance, but users are not automatically enabled after their first login. What configuration do I need to adjust?",
   "expected_answer": "To automatically enable user accounts upon their first login using OpenID Connect in XWiki, you need to adjust the `xwiki.properties` file.\n\nAdd or update the following property:\n\n```\n#-# Define if user accounts should be enabled (marked as active) on first login\n# oidc.enableUser=true\n```\n\nMake sure to uncomment and set the `oidc.enableUser` property to `true`. After making this change, save the file and restart your XWiki instance for the changes to take effect.\n\nThis will ensure that new user accounts are automatically enabled when they log in for the first time via OpenID Connect.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \n\n\nTo automatically enable user accounts upon their first login using OpenID Connect in XWiki, you'll need to configure the \"Auto Enable Users\" option and ensure that the \"Create Users on First Login\" setting is enabled as well. Here's how you can do this:\n\n1. **Enable Auto Enable Users:**\n\n   - Log in to your XWiki instance with an administrator account.\n   - Navigate to the \"Administration\" section (gear icon) in the top-right corner.\n   - Click on \"User Management\".\n   - Under the \"Users\" tab, look for the \"Auto Enable Users\" option. Make sure it's checked.\n\n2. **Enable Create Users on First Login:**\n\n   - Still in the \"User Management\" section, go to the \"Authentication\" tab.\n   - Find the \"OpenID Connect\" authentication method and click on its configuration icon (pencil).\n   - Under the \"General Settings\" section, look for the \"Create Users on First Login\" option. Make sure it's checked.\n\n3. **Save your changes:**\n\n   - Click on the \"Save\" button at the bottom of the page to apply these settings.\n   - After saving, users should now be automatically enabled upon their first login using OpenID Connect.\n\nIf you're still having issues or if the above steps don't work for your specific setup, please provide more details about your configuration and any error messages you're encountering. This will help in further troubleshooting the issue.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \n\n\nTo automatically enable user accounts upon their first login using OpenID Connect in your XWiki instance, you'll need to modify the `oidc.enableUser` property in the `xwiki.properties` file.\n\nHere's how:\n\n1. Locate and open the `xwiki.properties` file. It should be located in the `<xwiki-home>/conf` directory.\n2. Find or add the following line: `oidc.enableUser=true`\n3. Save and close the file.\n4. Restart your XWiki instance for the changes to take effect.\n\nAfter making this change, new users will have their accounts automatically enabled upon their first successful login via OpenID Connect.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 58,
-    "completion_tokens": 304,
-    "total_tokens": 362
+    "prompt_tokens": 2822,
+    "completion_tokens": 139,
+    "total_tokens": 2961
   },
-  "average_power_draw": 195.07879532163736,
-  "energy_consumption": 828.2093216638924,
-  "energy_per_input_token": 1.0124808333299418,
-  "energy_per_output_token": 2.5312020833248545,
-  "energy_per_total_token": 2.287871054320145
+  "average_power_draw": 203.85007662835255,
+  "energy_consumption": 660.9209479448167,
+  "energy_per_input_token": 0.20852530302723354,
+  "energy_per_output_token": 0.5213132575680838,
+  "energy_per_total_token": 0.22320869569227178
 }

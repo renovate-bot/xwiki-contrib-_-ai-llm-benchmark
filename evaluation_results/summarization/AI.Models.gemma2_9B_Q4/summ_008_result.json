@@ -1,9 +1,9 @@
 {
-  "score": 0.4444444444444444,
-  "reason": "The score is 0.44 because the summary introduces additional information not present in the original text and contains contradictions regarding user account creation permissions. These issues indicate a lack of fidelity to the original content.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary includes extra information not present in the original text, such as a guide on setting user rights, screenshots illustrating configurations, and creating a basic XWiki application. Additionally, the summary fails to answer a question that the original text can, indicating a lack of coverage.",
   "score_breakdown": {
-    "Alignment": 0.4444444444444444,
-    "Coverage": 1.0
+    "Alignment": 0.4,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

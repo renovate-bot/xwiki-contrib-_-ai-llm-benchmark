@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.705,
+  "overall_score": 0.8413490470217143,
   "individual_scores": {
-    "AnswerRelevancy": 0.125,
-    "Faithfulness": 1,
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
     "ContextualPrecision": 1.0,
     "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.9
+    "CustomContextualRelevancy": 1.0,
+    "Correctness": 0.5480942821302864
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.12 because the output contains multiple nonsensical and incomplete statements that do not address the process of configuring group synchronization between XWiki and an OpenID Connect provider. The low score reflects the lack of relevant and coherent information provided in response to the input query.",
+    "AnswerRelevancy": "The score is 1.00 because the response perfectly addresses the question about configuring group synchronization between XWiki and an OpenID Connect provider, with no irrelevant information included. Great job!",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than the irrelevant ones. The first three nodes provide detailed instructions on configuring group synchronization, such as setting the `oidc.groups.claim` property and configuring the `oidc.groups.mapping` property. The irrelevant nodes, ranked fourth and fifth, focus on general configuration and authentication management, which are not directly related to the group synchronization setup. Great job on ranking the relevant information at the top!",
-    "ContextualRecall": "The score is 0.50 because while nodes in the retrieval context support the configuration steps for `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping` properties (as seen in sentences 3, 5, and 7 of the expected output), they lack information on basic setup instructions like locating and editing the `xwiki.properties` file, replacing placeholders, and saving changes (as seen in sentences 1, 2, 4, 6, and 9).",
-    "CustomContextualRelevancy": "The retrieval context contains detailed information on configuring the 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping' properties as described in the expected output. It also mentions saving the 'xwiki.properties' file. However, it lacks explicit instructions on locating and opening the file with a text editor."
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than the irrelevant nodes. The first three nodes provide detailed information on configuring properties like `oidc.groups.claim`, `oidc.groups.mapping`, and `oidc.groups.separator`, which are crucial for setting up group synchronization. The irrelevant nodes, ranked fourth and fifth, focus on prerequisites, installation instructions, and general authentication management, which do not directly address the group synchronization setup process. Great job on achieving perfect precision!",
+    "ContextualRecall": "The score is 0.50 because while specific configuration details like 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping' are supported by nodes in the retrieval context, the general instructions for locating, editing, and saving the 'xwiki.properties' file are not directly found in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context contains all key information from the expected output, including configuring 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping' properties for group synchronization in the 'xwiki.properties' file.",
+    "Correctness": "The actual output includes additional steps like enabling group synchronization, custom group synchronization, and troubleshooting that are not in the expected output. It lacks the specific details about configuring the separator and saving the file as in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

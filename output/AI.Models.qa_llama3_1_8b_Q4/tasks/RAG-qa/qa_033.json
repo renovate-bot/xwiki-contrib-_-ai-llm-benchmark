@@ -2,7 +2,7 @@
   "id": "qa_033",
   "prompt": "Puis-je authentifier les utilisateurs avec des jetons d'acc\u00e8s ?",
   "expected_answer": "Oui, vous pouvez authentifier les utilisateurs avec des jetons d'acc\u00e8s en utilisant l'extension d'authentification bas\u00e9e sur les jetons pour l'application LLM.\n\nCette extension permet aux applications externes d'authentifier les utilisateurs avec des jetons Web JSON sign\u00e9s (JWT). Le jeton doit contenir des revendications sp\u00e9cifiques, telles que la date d'expiration, l'\u00e9metteur, le sujet et la audience, et doit \u00eatre sign\u00e9 avec une cl\u00e9 Ed25519.\n\nPour utiliser cet authentificateur, vous devez :\n\n1. Activer l'authentificateur de jeton en d\u00e9finissant la propri\u00e9t\u00e9 `xwiki.authentication.authclass` dans le fichier `xwiki.properties` sur `org.xwiki.contrib.llm.authentication.JWTTokenAuth`.\n2. Configurer les applications autoris\u00e9es en ajoutant une nouvelle entr\u00e9e \u00e0 la liste des \u00ab Applications autoris\u00e9es \u00bb, en sp\u00e9cifiant le titre, l'URL, la cl\u00e9 publique et le format de groupe de l'application.\n3. G\u00e9n\u00e9rer un jeton JWT qui r\u00e9pond aux exigences de revendications et de cl\u00e9s de signature.\n4. Inclure le jeton dans l'en-t\u00eate \u00ab Authorization \u00bb de la requ\u00eate sous la forme \u00ab Bearer TOKEN \u00bb.\n\nNotez que cet authentificateur ne prend en charge que la cr\u00e9ation ou la mise \u00e0 jour des utilisateurs en fonction des informations fournies dans le jeton et ne prend pas en charge l'utilisation d'un jeton comme authentification pour un utilisateur existant qui n'a pas \u00e9t\u00e9 cr\u00e9\u00e9 via cet authentificateur.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Upgrade/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nOui, vous pouvez authentifier les utilisateurs avec des jetons d'acc\u00e8s dans XWiki.\n\nPour ce faire, vous pouvez utiliser l'extension \"Administration Application\" qui fournit une interface utilisateur pour g\u00e9rer les droits et les utilisateurs. Dans cette extension, vous trouverez un onglet \"R\u00f4les\" o\u00f9 vous pouvez configurer les droits de r\u00f4le, y compris la possibilit\u00e9 d'utiliser des jetons d'acc\u00e8s.\n\nVous pouvez \u00e9galement consulter le guide d'authentification XWiki pour obtenir plus d'informations sur la configuration de l'authentification avec des jetons d'acc\u00e8s.\n\nNotez que vous devrez avoir une connaissance de base en mati\u00e8re de d\u00e9veloppement et de configuration de XWiki pour mettre en place cette fonctionnalit\u00e9.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Upgrade/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nOui, vous pouvez utiliser l'application d'administration pour g\u00e9rer les droits et la s\u00e9curit\u00e9 de votre instance XWiki.\n\nSelon la documentation officielle de XWiki, il est possible d'utiliser des tokens d'acc\u00e8s pour authentifier les utilisateurs. Vous pouvez configurer cela dans la section \"R\u00e9solution\" du menu \"Administration\".\n\nCependant, pour plus d'informations sur la configuration sp\u00e9cifique des tokens d'acc\u00e8s, je vous recommande de consulter la documentation officielle de XWiki ou de contacter leur support technique.\n\nVoici quelques liens utiles :\n\n* [Documentation officielle de XWiki](https://xwiki.org/)\n* [Application d'administration de XWiki](https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application)\n* [R\u00e9solution de s\u00e9curit\u00e9 de XWiki](https://xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Security/)",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,12 +31,12 @@
   ],
   "usage": {
     "prompt_tokens": 1470,
-    "completion_tokens": 165,
-    "total_tokens": 1635
+    "completion_tokens": 197,
+    "total_tokens": 1667
   },
-  "average_power_draw": 167.26677777777778,
-  "energy_consumption": 434.47690529667005,
-  "energy_per_input_token": 0.23079782485878886,
-  "energy_per_output_token": 0.5769945621469722,
-  "energy_per_total_token": 0.2657351102731927
+  "average_power_draw": 179.00069444444443,
+  "energy_consumption": 473.5705251624187,
+  "energy_per_input_token": 0.24130982173881205,
+  "energy_per_output_token": 0.6032745543470301,
+  "energy_per_total_token": 0.28408549799785165
 }

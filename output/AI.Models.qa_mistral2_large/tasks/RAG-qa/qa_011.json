@@ -2,7 +2,7 @@
   "id": "qa_011",
   "prompt": "Die Glocke oben rechts ist nicht verf\u00fcgbar, auch nicht wenn die Erweiterung \"Alert Notification\" installiert ist.",
   "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen in Ihrem Wiki aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nDie Glocke oben rechts in XWiki wird durch die \"Notifications Application\"-Erweiterung bereitgestellt, nicht durch die \"Alert Notification\"-Erweiterung. Wenn die Glocke nicht verf\u00fcgbar ist, stellen Sie sicher, dass die \"Notifications Application\"-Erweiterung installiert und aktiviert ist. Diese Erweiterung erm\u00f6glicht es Ihnen, Benachrichtigungen in der oberen Leiste zu erhalten, unter dem Eintrag \"Alerts\" (dargestellt durch eine Glocke).\n\nFalls die Glocke immer noch nicht sichtbar ist, \u00fcberpr\u00fcfen Sie, ob die Erweiterung ordnungsgem\u00e4\u00df installiert ist und ob es keine Konflikte mit anderen Erweiterungen gibt. Weitere Informationen zur Installation und Konfiguration der \"Notifications Application\" finden Sie in der offiziellen Dokumentation: [Notifications Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/).",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nWenn die Glocke oben rechts in XWiki nicht verf\u00fcgbar ist, auch wenn die Erweiterung \"Alert Notification\" installiert ist, k\u00f6nnte dies verschiedene Ursachen haben. Hier sind einige Schritte, die Sie \u00fcberpr\u00fcfen k\u00f6nnen:\n\n1. **Installation \u00dcberpr\u00fcfen**: Stellen Sie sicher, dass die Erweiterung \"Alert Notification\" korrekt installiert ist. Sie k\u00f6nnen dies in der XWiki-Erweiterungsverwaltung \u00fcberpr\u00fcfen.\n\n2. **Kompatibilit\u00e4t**: \u00dcberpr\u00fcfen Sie, ob die installierte Version der Erweiterung mit Ihrer XWiki-Version kompatibel ist. Nicht alle Erweiterungen sind mit jeder XWiki-Version kompatibel.\n\n3. **Benutzerberechtigungen**: Stellen Sie sicher, dass der Benutzer, der sich angemeldet hat, die notwendigen Berechtigungen hat, um Benachrichtigungen zu sehen.\n\n4. **Browser-Cache Leeren**: Manchmal kann ein veralteter Browser-Cache dazu f\u00fchren, dass \u00c4nderungen nicht sofort sichtbar sind. Leeren Sie den Cache Ihres Browsers und laden Sie die Seite neu.\n\n5. **Konfiguration**: \u00dcberpr\u00fcfen Sie die Benachrichtigungseinstellungen in der Administrationsoberfl\u00e4che. Es k\u00f6nnte sein, dass bestimmte Benachrichtigungstypen deaktiviert sind.\n\n6. **Fehlerprotokolle**: \u00dcberpr\u00fcfen Sie die Fehlerprotokolle von XWiki auf m\u00f6gliche Fehler oder Warnungen, die mit der Benachrichtigungsfunktion zusammenh\u00e4ngen k\u00f6nnten.\n\nFalls diese Schritte nicht helfen, k\u00f6nnte es hilfreich sein, die Dokumentation oder den Support von XWiki zu konsultieren, um spezifische Anweisungen f\u00fcr Ihre Version und Konfiguration zu erhalten.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -71,8 +71,8 @@
   ],
   "usage": {
     "prompt_tokens": 4790,
-    "completion_tokens": 247,
-    "total_tokens": 5037
+    "completion_tokens": 470,
+    "total_tokens": 5260
   },
   "average_power_draw": null,
   "energy_consumption": null,

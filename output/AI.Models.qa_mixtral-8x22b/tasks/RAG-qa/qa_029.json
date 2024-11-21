@@ -2,7 +2,7 @@
   "id": "qa_029",
   "prompt": "Comment puis-je refuser le droit de script \u00e0 un administrateur d'espace?",
   "expected_answer": "Ceci n'est malheureusement pas pris en charge dans XWiki, les droits qui sont impliqu\u00e9s par le droit d'administrateur ne peuvent pas \u00eatre refus\u00e9s.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \n\n\nPour refuser le droit de script \u00e0 un administrateur d'espace dans XWiki, vous pouvez suivre les \u00e9tapes suivantes :\n\n1. Connectez-vous en tant qu'administrateur de wiki.\n2. Allez dans l'espace pour lequel vous souhaitez modifier les droits de l'administrateur d'espace.\n3. Cliquez sur l'onglet \"Autorisations\" dans la barre de menu.\n4. Dans la liste des utilisateurs et groupes, trouvez l'administrateur d'espace et cliquez sur \"Modifier\".\n5. Dans la bo\u00eete de dialogue qui s'affiche, recherchez le droit \"Script\" et changez-le en \"Refuser\".\n6. Cliquez sur \"Enregistrer\" pour enregistrer les modifications.\n\nCela devrait emp\u00eacher l'administrateur d'espace d'ex\u00e9cuter des scripts dans cet espace. Notez que vous ne pouvez pas retirer les droits d'administrateur d'espace d'un utilisateur, mais vous pouvez limiter les droits qu'il a dans l'espace. Assurez-vous \u00e9galement de v\u00e9rifier les droits de l'utilisateur \u00e0 d'autres niveaux, tels que le niveau de wiki ou le niveau de document, pour vous assurer que les droits sont correctement d\u00e9finis.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \n\n\nPour refuser le droit de script \u00e0 un administrateur d'espace dans XWiki, vous devez suivre les \u00e9tapes suivantes :\n\n1. Connectez-vous \u00e0 votre XWiki en tant qu'administrateur g\u00e9n\u00e9ral.\n2. Naviguez jusqu'\u00e0 l'espace pour lequel vous souhaitez refuser le droit de script \u00e0 l'administrateur.\n3. Cliquez sur l'onglet \"Permissions\" dans le menu de gauche.\n4. Recherchez l'utilisateur ou le groupe que vous souhaitez modifier et cliquez sur le bouton \"Editer\" \u00e0 c\u00f4t\u00e9 de leur nom.\n5. Dans la section \"Script\", cochez la case \"Refuser\" pour refuser explicitement le droit de script \u00e0 cet utilisateur ou groupe.\n6. Cliquez sur le bouton \"Enregistrer\" pour appliquer les modifications.\n\nNotez que le droit de script est une fonctionnalit\u00e9 importante pour les administrateurs d'espace, car il leur permet d'\u00e9crire des scripts pour personnaliser leurs pages. Si vous refusez ce droit, l'administrateur d'espace ne pourra pas ex\u00e9cuter de scripts dans cet espace.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -47,8 +47,8 @@
   ],
   "usage": {
     "prompt_tokens": 3919,
-    "completion_tokens": 326,
-    "total_tokens": 4245
+    "completion_tokens": 277,
+    "total_tokens": 4196
   },
   "average_power_draw": null,
   "energy_consumption": null,

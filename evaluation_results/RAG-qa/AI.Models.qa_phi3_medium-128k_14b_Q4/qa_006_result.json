@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.9088888888888889,
+  "overall_score": 0.9220803778494632,
   "individual_scores": {
-    "AnswerRelevancy": 0.9444444444444444,
+    "AnswerRelevancy": 0.9,
     "Faithfulness": 1.0,
     "ContextualPrecision": 1.0,
-    "ContextualRecall": 0.6,
-    "CustomContextualRelevancy": 1.0
+    "ContextualRecall": 0.8,
+    "CustomContextualRelevancy": 1.0,
+    "Correctness": 0.8324822670967791
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.94 because the response is highly relevant and effectively addresses the question about customizing user profile fields in XWiki. However, it includes a source link that does not directly contribute to the solution, slightly affecting the score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 1.00 because the relevant node in the retrieval context, which mentions 'It's possible to associate non standard properties coming from the OpenID Connect provider with the XWiki user' and provides examples of mapping custom properties, is ranked first. This directly relates to customizing user profile fields. The irrelevant nodes, such as the second node discussing 'requesting access to various claims at the UserInfo endpoint' and not about customizing user profile fields, are ranked lower, maintaining perfect contextual precision. Great job!",
-    "ContextualRecall": "The score is 0.60 because, while the initial part about customizing user profile fields and mapping properties is supported by the 1st node in the retrieval context, the instructions on replacing properties and restarting XWiki are not directly supported by any node in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context contains the exact information found in the expected answer, including the use of the `oidc.user.mapping` property in the `xwiki.properties` file to map user profile fields from the OpenID Connect provider."
+    "AnswerRelevancy": "The score is 0.90 because the answer is mostly relevant and provides useful information about customizing user profile fields in XWiki. However, it includes a source link that does not directly address the specific question about mapping additional fields, which slightly detracts from its relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job maintaining accuracy!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node in the retrieval context, which mentions 'It's possible to associate non standard properties coming from the OpenID Connect provider with the XWiki user' and provides an example of 'oidc.user.mapping=myxproperty1=${oidc.user.subject}', is ranked first. This directly relates to the input about mapping additional user profile fields. All irrelevant nodes, discussing topics like access tokens and scopes, endpoints and HTTP methods, group synchronization, and in-wiki configuration, are ranked lower, ensuring perfect contextual precision.",
+    "ContextualRecall": "The score is 0.80 because the retrieval context nodes provide detailed support for mapping user profile fields using 'oidc.user.mapping', as described in sentences 1 to 4 of the expected output. However, it lacks information about saving the file and restarting XWiki, which affects the completeness of the context.",
+    "CustomContextualRelevancy": "The retrieval context contains the information about customizing user profile fields using the `oidc.user.mapping` property in the `xwiki.properties` file, matching the expected answer.",
+    "Correctness": "The actual output correctly explains mapping user profile fields using oidc.user.mapping in xwiki.properties, aligning with the expected output. However, it introduces additional details about file location and administrative access that are not mentioned in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

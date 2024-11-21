@@ -1,10 +1,10 @@
 {
-  "score": 0,
-  "reason": "The score is 0.00 because the summary fails to address key questions that the original text can answer, indicating a lack of coverage and completeness in the summary.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary includes extra information not present in the original text, such as step-by-step instructions, specific actions requiring login, and details about developer features and tools. This additional content suggests a deviation from the original text, impacting the summary's accuracy.",
   "score_breakdown": {
-    "Alignment": 0,
-    "Coverage": 0.0
+    "Alignment": 0.4,
+    "Coverage": 1.0
   },
   "input_language": "en",
-  "summary_language": "unknown"
+  "summary_language": "en"
 }

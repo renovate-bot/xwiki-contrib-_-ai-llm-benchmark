@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output is highly relevant to the Input, using technical terminology such as 'cerebrum' and 'neurobiological structure.' It is coherent and fluent with logical flow and advanced vocabulary. It aligns closely with the Expected Output, addressing key points like regulation, sensory processing, and cognitive functions, though it slightly differs in phrasing.",
+  "reason": "The Actual Output effectively addresses the Input by using technical terms like 'cerebrum' and 'neural network,' aligning well with the Expected Output's focus on complexity and function. It maintains coherence and fluency with logical flow and grammatical correctness, though it slightly deviates by emphasizing 'CPU' and 'locus of cognition' instead of 'biological substrate.'",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

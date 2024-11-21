@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.8189743589743591,
+  "overall_score": 0.7450739750657117,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
+    "AnswerRelevancy": 0.9210526315789473,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0.8333333333333334,
     "ContextualRecall": 0.46153846153846156,
-    "CustomContextualRelevancy": 0.8
+    "CustomContextualRelevancy": 0.7,
+    "Correctness": 0.5545194239435276
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the output is perfectly relevant and directly addresses the question about configuring group synchronization between XWiki and an OpenID Connect provider. Great job!",
+    "AnswerRelevancy": "The score is 0.92 because the response is mostly relevant and provides useful information on configuring group synchronization. However, the repeated and unnecessary 'For example:' statements slightly detract from the overall clarity and focus, preventing a perfect score.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.83 because the relevant nodes discussing 'oidc.groups.mapping', 'oidc.groups.separator', and 'oidc.groups.claim' are ranked higher, providing pertinent details for configuring group synchronization. However, the third node primarily discusses authentication and general OpenID Connect setup, which is not specifically about group synchronization, and should be ranked lower. Similarly, the fourth node focuses on authentication management and endpoint configuration, and the fifth node lists dependencies, both of which are not directly related to the group synchronization setup needed.",
-    "ContextualRecall": "The score is 0.46 because while some nodes in the retrieval context support configuring properties like 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping', key actions such as locating and editing the 'xwiki.properties' file, replacing placeholders, and restarting the XWiki instance are not covered by the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context includes information about configuring `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping`, but lacks explicit steps for locating and editing `xwiki.properties` and restarting XWiki."
+    "ContextualPrecision": "The score is 0.83 because the first two nodes in the retrieval context are relevant, discussing 'oidc.groups.mapping' and 'oidc.groups.separator', which are crucial for configuring group synchronization. However, the third node is less relevant as it focuses on a general description and dependencies of the OpenID Connect extension. The fourth node, discussing authentication management and endpoints, and the fifth node, listing dependencies, are also not directly related to the configuration process. The sixth node is relevant, discussing 'oidc.groups.claim', which is important for the configuration process.",
+    "ContextualRecall": "The score is 0.46 because while several specific configurations like `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping` are supported by nodes in the retrieval context, many general instructions such as locating and editing the `xwiki.properties` file, and saving changes are not directly found in the context.",
+    "CustomContextualRelevancy": "The retrieval context includes details on configuring group synchronization, such as `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping`, but lacks explicit instructions on locating and editing the `xwiki.properties` file and restarting the XWiki instance.",
+    "Correctness": "The actual output includes most steps such as configuring the 'oidc.groups.claim' and 'oidc.groups.separator' properties, but introduces additional concepts like 'oidc.groups.prefix' and 'oidc.groups.allowed', which are not in the expected output. Also, it mentions adding the claim 'xwiki_groups' to 'oidc.userinfoclaims' which is not specified in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

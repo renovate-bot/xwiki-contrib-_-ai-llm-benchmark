@@ -2,16 +2,16 @@
   "id": "text_gen_004",
   "prompt": "Generate a short product description based on the following information:\n\nProduct: Wireless Bluetooth Headphones\nFeatures: Noise-cancelling, 20-hour battery life, comfortable fit\nTarget audience: Tech-savvy professionals",
   "expected_answer": "Introducing our cutting-edge wireless Bluetooth headphones, designed for tech-savvy professionals who demand the best. With advanced noise-cancelling technology, you can immerse yourself in your music or focus on your work without any distractions. Enjoy an impressive 20-hour battery life, ensuring your headphones keep up with your busy lifestyle. The comfortable, ergonomic fit allows you to wear them all day long without any discomfort. Upgrade your audio experience with our premium wireless headphones.",
-  "ai_answer": "## Focus on What Matters.\n\nThese wireless Bluetooth headphones deliver crystal-clear audio and powerful noise cancellation, letting you concentrate on your work without distractions.  Enjoy a comfortable fit for extended wear and a 20-hour battery life that keeps you powered through even the busiest days.  Elevate your productivity and escape the noise with these intelligent, professional headphones. \n",
+  "ai_answer": "## Escape the Noise. Own your Focus. \n\nThese **wireless Bluetooth headphones** are engineered for the tech-savvy professional who demands peak performance, even amidst the chaos.  \n\n**Advanced noise cancellation** silences distractions, allowing you to immerse yourself in your work. Enjoy **20 hours of uninterrupted listening** on a single charge, keeping you powered through your busiest days.  A **comfortable fit** ensures you can wear them all day long without fatigue.  \n",
   "sources": null,
   "usage": {
     "prompt_tokens": 54,
-    "completion_tokens": 76,
-    "total_tokens": 130
+    "completion_tokens": 97,
+    "total_tokens": 151
   },
-  "average_power_draw": 192.42844444444444,
-  "energy_consumption": 172.92264269595677,
-  "energy_per_input_token": 0.7086993553112982,
-  "energy_per_output_token": 1.7717483882782457,
-  "energy_per_total_token": 1.3301741745842828
+  "average_power_draw": 193.3901414141414,
+  "energy_consumption": 224.64251728915204,
+  "energy_per_input_token": 0.7576476131168703,
+  "energy_per_output_token": 1.8941190327921755,
+  "energy_per_total_token": 1.4876987899943843
 }

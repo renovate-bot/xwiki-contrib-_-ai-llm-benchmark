@@ -2,7 +2,7 @@
   "id": "qa_021",
   "prompt": "La cloche en haut \u00e0 droite n'est pas disponible, m\u00eame lorsque l'extension \"Notification d'alerte\" est install\u00e9e.",
   "expected_answer": "Assurez-vous que les notifications sont activ\u00e9es dans votre wiki. Vous pouvez les activer en d\u00e9finissant la propri\u00e9t\u00e9 `notifications.enabled` dans `xwiki.properties` sur `true`.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nIl semble que vous rencontrez un probl\u00e8me avec les notifications sur votre navigateur. Voici quelques \u00e9tapes que vous pouvez suivre pour r\u00e9soudre ce probl\u00e8me :\n\n1. Assurez-vous que l'extension \"Notification d'alerte\" est bien install\u00e9e et activ\u00e9e.\n2. V\u00e9rifiez si le bloqueur de publicit\u00e9s ou tout autre logiciel de s\u00e9curit\u00e9 install\u00e9 sur votre ordinateur ne bloque pas les notifications.\n3. Essayez de d\u00e9sactiver puis r\u00e9activer l'option de notification dans les param\u00e8tres du navigateur.\n4. Si vous utilisez plusieurs navigateurs, essayez d'activer la notification sur un autre navigateur pour voir si le probl\u00e8me persiste.\n5. Si aucune des solutions ci-dessus ne fonctionne, il est possible que votre syst\u00e8me d'exploitation ou votre mat\u00e9riel ne prenne pas en charge les notifications. Dans ce cas, vous devrez peut-\u00eatre contacter le fabricant de votre ordinateur ou de votre mat\u00e9riel pour obtenir de l'aide suppl\u00e9mentaire.\n\nJ'esp\u00e8re que ces \u00e9tapes vous aideront \u00e0 r\u00e9soudre votre probl\u00e8me de notification. Si vous avez besoin de plus d'informations ou si vous rencontrez toujours des difficult\u00e9s, n'h\u00e9sitez pas \u00e0 me poser d'autres questions.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nBased on the provided search results, it seems that there might be some confusion about the bell icon at the top right corner of the screen. The bell icon is associated with the Notifications Application in XWiki, which allows users to receive notifications about events happening on the wiki.\n\nHowever, the search results do not mention any extension called \"Notification d'alerte\". It's possible that there might be a misunderstanding or a translation error here. Could you please clarify what you mean by \"Notification d'alerte\" and provide more context about the issue with the bell icon? This will help me to give you a more accurate response.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -54,13 +54,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 29,
-    "completion_tokens": 247,
-    "total_tokens": 276
+    "prompt_tokens": 2838,
+    "completion_tokens": 127,
+    "total_tokens": 2965
   },
-  "average_power_draw": 184.90329292929292,
-  "energy_consumption": 680.8148358779675,
-  "energy_per_input_token": 1.053077859053314,
-  "energy_per_output_token": 2.6326946476332846,
-  "energy_per_total_token": 2.4667204198477086
+  "average_power_draw": 200.12682539682544,
+  "energy_consumption": 627.3260724944162,
+  "energy_per_input_token": 0.19880401600203335,
+  "energy_per_output_token": 0.49701004000508336,
+  "energy_per_total_token": 0.21157709021734103
 }

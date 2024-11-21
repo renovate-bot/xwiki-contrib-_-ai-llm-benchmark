@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.5609523809523809,
+  "overall_score": 0.6685772458102469,
   "individual_scores": {
-    "AnswerRelevancy": 0.9047619047619048,
+    "AnswerRelevancy": 0.9166666666666666,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0,
+    "ContextualPrecision": 1.0,
     "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.4
+    "CustomContextualRelevancy": 0.3,
+    "Correctness": 0.2947968081948155
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.90 because the response mostly addresses the issue of not receiving notifications, but includes irrelevant links that do not directly resolve the problem.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node 'lists links and topics related to notifications' without providing specific instructions on enabling notifications, which is not useful for the input. The second node 'provides a list of features and settings related to notifications' but lacks direct guidance on enabling notifications, making it irrelevant. The third node 'discusses RSS feeds and notification settings' but does not address enabling notifications directly, which does not help the input. The fourth node 'lists various notification preferences macros' without providing actionable steps, which is not relevant to the input.",
-    "ContextualRecall": "The score is 0.50 because while nodes in the retrieval context support the general idea of enabling notifications and following users or pages (as seen in sentences 1, 2, 3, and 4 of the expected output), they lack specific details such as configuring 'xwiki.properties', the exact process of enabling alerts, and viewing followed users in the 'network' tab, which are mentioned in sentences 2, 4, 5, and 6.",
-    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users, but lacks details on setting `notifications.enabled` to `true` and specific steps for following pages or users."
+    "AnswerRelevancy": "The score is 0.92 because the response is highly relevant to the issue of not receiving notifications, but it includes a source link that does not directly address the problem, slightly reducing its relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Great job on maintaining perfect alignment!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than irrelevant nodes. The first node discusses 'Enable and disable the extension' and 'Enabling notifications for all users by default', which directly relates to ensuring notifications are activated. The second node includes 'Follow a user', aligning with the expected output's mention of following users to receive notifications. The irrelevant nodes, ranked third and fourth, discuss 'RSS feeds and macro settings' and 'various notification preferences macros', which do not directly address enabling notifications or following users.",
+    "ContextualRecall": "The score is 0.50 because while some elements like enabling notifications and following users or pages are supported by nodes in the retrieval context, specific details such as setting 'notifications.enabled' in 'xwiki.properties', the 'alerte' menu, receiving all notifications from a user, and the 'r\u00e9seau' tab are not mentioned in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users, but lacks details on setting `notifications.enabled` to true and specific steps for following pages or users.",
+    "Correctness": "The actual output lacks specific instructions about setting `notifications.enabled` to `true` in `xwiki.properties` and following pages or users. It discusses notification settings and filters but misses key steps from the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

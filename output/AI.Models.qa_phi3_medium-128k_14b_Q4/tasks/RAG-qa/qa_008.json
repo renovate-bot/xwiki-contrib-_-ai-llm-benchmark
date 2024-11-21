@@ -2,7 +2,7 @@
   "id": "qa_008",
   "prompt": "How can I ensure that only images or PDF files of at maximum 10MB can be uploaded as attachments on the whole wiki?",
   "expected_answer": "To ensure that only images or PDF files of at maximum 10MB can be uploaded as attachments on the whole wiki, follow these steps:\n\n**Step 1: Configure allowed mimetypes**\n\nEdit the `xwiki.properties` configuration file in your installation and add or update the following line to configure the default mimetype restrictions at farm level:\n```\nattachment.upload.allowList=image/*,application/pdf\n```\nThis will allow only image files (with any subtype, e.g., `image/jpeg`, `image/png`, etc.) and PDF files to be uploaded, and block all other mimetypes.\n\n**Step 2: Configure maximum attachment size**\n\nTo set the maximum attachment size to 10MB, follow these steps:\n\n1. Go to `http://<yourwiki>/xwiki/bin/edit/XWiki/XWikiPreferences?editor=object`\n2. Click on the line that says XWikiPreferences 0 (right below the line that says Objects of type XWiki.XWikiPreferences (1))\n3. Scroll down to the field that says Maximum Upload Size and change the number to `10485760` (10MB in bytes)\n4. Scroll to the bottom and click \"Save\"\n5. Repeat for each (sub)wiki for which you need to set this configuration!",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Attachments \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/XWikiBasicConcepts \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments \n\n\nTo limit the file size for uploads in MediaWiki, you need to set a few configuration directives. Here's how you do it:\n\n1. Firstly, go to your \"LocalSettings.php\" file in \"/config/\" directory of your MediaWiki installation and open it with an editor that has PHP support like Notepad++ or Sublime Text.\n2. Add the following lines to define max upload size:\n```PHP\n$wgUploadMaxSize = 10 * 1024 * 102 cuMegabytes; // Limit file size to 10MB (in cubic megabytes)\n$wgClientBlobUrlLimit = 5 * 1024; // Set blob URL limit to 5K\n```\n3. The $wgUploadMaxSize directive is used to set the maximum upload size for file attachments and image transcoding/resizing on your wiki. In the above code, it's being set as 10MB or 10 * (1024*102) cubic kilobytes which equals 10 MB in MediaWiki.\n4. The $wgClientBlobUrlLimit directive is used to limit the size of blob URL responses, if applicable on your server. In this case, it's being set as a small value (5K), but you can adjust it according to your requirements. \n\nNote: After changing these settings in LocalSettings.php file, make sure that Apache or Nginx is restarted for the changes to take effect. Also, keep in mind that if your server has low disk quota limits, large files might still cause issues during upload due to insufficient disk space even though they are under the defined maximum size of 10MB.\n5. Finally, make sure you have an appropriate file manager and/or a limit_req module enabled on your webserver to prevent abuse by users who may try to overload your server with very large files.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Attachments \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/XWikiBasicConcepts \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments \n\n\nTo ensure that only images and PDF files up to a size limit of 10MB are uploadable across all pages in your XWiki, you need to perform several steps.\n\nFirstly, change the size limit for an attachment by using these instructions:\n\n1. Navigate to `http://<yourwiki>/xwiki/bin/edit/XWiki/XWikiPreferences?editor=object`.\n2. Locate XWikiPreferences 0 (right below the line that says Objects of type XWiki.XWikiPreferences).\n3. Scroll down until you find the field named Maximum Upload Size and adjust it to `10485760` bytes, which is equivalent to 10MB.\n4. Proceed to save your changes by scrolling to the bottom and pressing \"Save\". This change must be applied for each (sub)wiki where you want this limit enforced.\n\nRemember that if an upload attempt failed due to size constraints, it's possible you will need to clear your browser cache to have the new setting take effect. \n\nSecondly, configure mime types to only allow image and PDF files:\n\n- You can specify a list of mime-types (coma separated values) which should always be downloaded no matter who attached them or what is the whitelist/blacklist configuration through the property `attachment.download.forceDownload=` followed by your chosen types such as `image/png,application/pdf`.\n\nBy making these changes in your XWiki preferences and configurations (`XWikiPreferences` and `xwiki.cfg`), you will successfully limit attachments to image and PDF files of a maximum size of 10MB across the entire wiki.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 38,
-    "completion_tokens": 434,
-    "total_tokens": 472
+    "prompt_tokens": 2965,
+    "completion_tokens": 375,
+    "total_tokens": 3340
   },
-  "average_power_draw": 260.3231111111112,
-  "energy_consumption": 1304.5156452223464,
-  "energy_per_input_token": 1.1616345905808962,
-  "energy_per_output_token": 2.90408647645224,
-  "energy_per_total_token": 2.7638043330981916
+  "average_power_draw": 264.82325396825394,
+  "energy_consumption": 1633.0080588535843,
+  "energy_per_input_token": 0.4184517767722189,
+  "energy_per_output_token": 1.0461294419305474,
+  "energy_per_total_token": 0.4889245685190372
 }

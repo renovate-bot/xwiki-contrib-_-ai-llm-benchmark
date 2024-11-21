@@ -2,7 +2,7 @@
   "id": "qa_019",
   "prompt": "Wie kann ich einem Bereichsadministrator das Skriptrecht verweigern?",
   "expected_answer": "Leider wird dies in XWiki nicht unterst\u00fctzt, Rechte, die durch das Admin-Recht impliziert sind, k\u00f6nnen nicht verweigert werden.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Index%20for%20the%20LLM%20Application/ \n\n\nI'm sorry, but the provided search results don't contain information about how to deny script rights to a group administrator. \n\n\n",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Index%20for%20the%20LLM%20Application/ \n\n\nI'm sorry, but the provided search results don't contain information about how to deny script rights to a range administrator.  \n\nMy knowledge is based on the information I was trained on, and this specific query is outside of my expertise. You might want to consult XWiki's documentation or community forums for more specific guidance on managing user permissions. \n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,12 +31,12 @@
   ],
   "usage": {
     "prompt_tokens": 1558,
-    "completion_tokens": 29,
-    "total_tokens": 1587
+    "completion_tokens": 75,
+    "total_tokens": 1633
   },
-  "average_power_draw": 189.5463611111111,
-  "energy_consumption": 152.7679036044677,
-  "energy_per_input_token": 0.093693899788082,
-  "energy_per_output_token": 0.234234749470205,
-  "energy_per_total_token": 0.0962620690639368
+  "average_power_draw": 150.98711111111112,
+  "energy_consumption": 325.025482372072,
+  "energy_per_input_token": 0.18620766678434372,
+  "energy_per_output_token": 0.4655191669608593,
+  "energy_per_total_token": 0.19903581284266506
 }

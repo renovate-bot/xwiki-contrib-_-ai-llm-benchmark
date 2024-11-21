@@ -2,16 +2,16 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "In twilight's hush, where shadows play,\nThe forest whispers secrets of the day.\nThe trees, like sentinels of old,\nStand guard, their branches swaying bold.\n\nTheir leaves, a rustling chorus sing,\nA symphony that joy does bring.\nThe wind, a gentle lover's breeze,\nStirs scents of blooming wildflowers' ease.\n\nIn morning's blush, the sun arises,\nPainting the sky with vibrant dyes.\nThe clouds, like cotton tufts on high,\nDrift lazily, as white as summer's sky.\n\nThe mountains rise, a regal throne,\nTheir peaks, a challenge to the unknown.\nThe rivers flow, a lifeblood stream,\nQuenching the thirst of all they meet in dream.\n\nIn nature's beauty, I am free,\nA part of something wild and carefree.\nThe world awakens with each new day,\nAnd all around me, beauty finds its way.\n\nSo let us roam, where'er we may go,\nAnd drink from the cup of nature's overflow.\nFor in her beauty, lies a peaceful nest,\nWhere love and wonder forever rest.",
+  "ai_answer": "The world outside is full of might,\nA canvas painted with gentle light.\nThe trees, like sentinels of old,\nStand tall and proud, their stories told.\n\nTheir leaves, a rustling whisper, dance and play,\nIn breezes soft as summer's warm ray.\nTheir branches stretch, a verdant hue,\nA haven for the birds, both old and new.\n\nThe flowers bloom, a colorful sight,\nPetals unfolding like morning light.\nTheir scent, a perfume that fills the air,\nInviting all to pause and show we care.\n\nThe river flows, a winding stream,\nReflecting sunbeams in its gentle dream.\nIts waters lap, a soothing sound,\nAs it glides on, without a bound.\n\nThe mountains rise, a majestic throne,\nWhere eagles soar, their shadows thrown.\nTheir peaks, a challenge to the brave and bold,\nA test of wills that only few have told.\n\nThe seasons change, a cycle true,\nEach one a chapter in nature's book anew.\nSpring's awakening, summer's warm caress,\nAutumn's harvest, winter's quiet rest.\n\nBut through it all, the beauty shines,\nA beauty that is truly divine.\nFor in its depths, we find our peaceful place,\nWhere worries fade and love takes space.",
   "sources": null,
   "usage": {
     "prompt_tokens": 19,
-    "completion_tokens": 230,
-    "total_tokens": 249
+    "completion_tokens": 260,
+    "total_tokens": 279
   },
-  "average_power_draw": 220.51158169934638,
-  "energy_consumption": 398.09933662778565,
-  "energy_per_input_token": 0.6702009034137806,
-  "energy_per_output_token": 1.6755022585344514,
-  "energy_per_total_token": 1.5987925165774524
+  "average_power_draw": 217.21851461988305,
+  "energy_consumption": 445.087526191968,
+  "energy_per_input_token": 0.6653027297338834,
+  "energy_per_output_token": 1.6632568243347083,
+  "energy_per_total_token": 1.5952957928027527
 }

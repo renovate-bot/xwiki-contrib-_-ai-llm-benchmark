@@ -1,9 +1,9 @@
 {
-  "score": 0.2,
-  "reason": "The score is 0.20 because the summary contains a significant contradiction regarding the priority order of rights, includes extra information not present in the original text, and fails to answer several questions that the original text can address. These issues indicate a low-quality summarization.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary contains significant contradictions and adds multiple pieces of extra information not present in the original text. Additionally, it fails to answer specific questions that the original text can address, indicating a lack of fidelity and completeness in the summarization.",
   "score_breakdown": {
-    "Alignment": 0.7692307692307693,
-    "Coverage": 0.2
+    "Alignment": 0.5882352941176471,
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

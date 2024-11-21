@@ -2,7 +2,7 @@
   "id": "qa_013",
   "prompt": "Ich erhalte keine Benachrichtigungen \u00fcber meine eigene Aktivit\u00e4t. Wie kann ich Benachrichtigungen f\u00fcr meine eigenen Aktionen aktivieren?",
   "expected_answer": "Standardm\u00e4\u00dfig erh\u00e4lt man keine Benachrichtigungen \u00fcber die eigene Aktivit\u00e4t (es sei denn, das Ereignis, das die Benachrichtigung ausl\u00f6st, richtet sich explizit an diesen Benutzer). Sie haben die M\u00f6glichkeit, diesen Filter in den \"Erweiterten Filteroptionen\" Ihrer eigenen Benachrichtigungseinstellungen in Ihrem Benutzerprofil zu deaktivieren.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nBasierend auf den gegebenen Suchergebnissen kann ich keine direkte Antwort auf Ihre spezifische Frage finden. Allerdings kann ich aus meinem allgemeinen Wissen \u00fcber XWiki folgende Empfehlungen geben:\n\n1. **Benachrichtigungseinstellungen \u00fcberpr\u00fcfen:**\n   - Navigieren Sie zu Ihren Benutzereinstellungen\n   - Suchen Sie nach dem Abschnitt \"Benachrichtigungen\" oder \"Notifications\"\n   - Standardm\u00e4\u00dfig sind Benachrichtigungen f\u00fcr eigene Aktionen oft deaktiviert, um Spam zu vermeiden\n\n2. **Alternative M\u00f6glichkeiten:**\n   - Sie k\u00f6nnen die \"Beobachten\"-Funktion f\u00fcr spezifische Seiten aktivieren\n   - Nutzen Sie das \"User Mentions\" Feature, das in den Suchergebnissen erw\u00e4hnt wird, um wichtige \u00c4nderungen zu markieren\n\nWenn Sie weiterhin Probleme haben, empfehle ich:\n- Kontaktieren Sie Ihren XWiki-Administrator\n- Konsultieren Sie die XWiki-Dokumentation f\u00fcr detailliertere Informationen zu Benachrichtigungseinstellungen\n- \u00dcberpr\u00fcfen Sie, ob alle notwendigen Benachrichtigungs-Erweiterungen installiert sind",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nBasierend auf den gegebenen Suchergebnissen kann ich keine spezifische Information zu den Einstellungen f\u00fcr Eigenbenachrichtigungen finden.\n\nAllerdings kann ich aus meinem allgemeinen Wissen \u00fcber XWiki folgendes empfehlen:\n\n1. Navigieren Sie zur **Benutzereinstellungen**:\n   - Klicken Sie auf Ihr Benutzerprofil\n   - W\u00e4hlen Sie \"Einstellungen\" oder \"Preferences\"\n\n2. Suchen Sie nach dem Abschnitt **Benachrichtigungen** oder **Notifications**:\n   - Hier sollten Sie eine Option finden, die sich auf \"Eigenbenachrichtigungen\" oder \"Benachrichtigungen f\u00fcr eigene Aktionen\" bezieht\n   - Aktivieren Sie diese Option durch Setzen des entsprechenden H\u00e4kchens\n\n3. **Speichern** Sie die \u00c4nderungen\n\nWenn Sie diese Option nicht finden k\u00f6nnen, empfehle ich:\n- Kontaktieren Sie Ihren XWiki-Administrator\n- \u00dcberpr\u00fcfen Sie, ob die Benachrichtigungserweiterung korrekt installiert und konfiguriert ist\n- Konsultieren Sie die aktuelle XWiki-Dokumentation online\n\n*Hinweis: Die genauen Bezeichnungen k\u00f6nnen je nach Version und Installation Ihres XWiki-Systems variieren.*",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,8 +31,8 @@
   ],
   "usage": {
     "prompt_tokens": 2061,
-    "completion_tokens": 351,
-    "total_tokens": 2412
+    "completion_tokens": 354,
+    "total_tokens": 2415
   },
   "average_power_draw": null,
   "energy_consumption": null,

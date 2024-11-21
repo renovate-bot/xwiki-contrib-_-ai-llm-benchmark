@@ -1,8 +1,8 @@
 {
-  "score": 0.8333333333333334,
-  "reason": "The score is 0.83 because the summary includes extra information by providing specific examples of applications like blogs or task managers, which were not mentioned in the original text. However, there are no contradictions, indicating a generally accurate representation of the original content.",
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary includes extra information about examples of applications like blogs or task managers, which were not specified in the original text. However, there are no contradictions, indicating a generally accurate summary.",
   "score_breakdown": {
-    "Alignment": 0.8333333333333334,
+    "Alignment": 0.8,
     "Coverage": 1.0
   },
   "input_language": "en",

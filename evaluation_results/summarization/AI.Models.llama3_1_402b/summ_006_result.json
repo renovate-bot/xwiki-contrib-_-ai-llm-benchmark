@@ -1,9 +1,9 @@
 {
-  "score": 0.5714285714285714,
-  "reason": "The score is 0.57 because the summary includes extra information not present in the original text, such as the guide providing links to tutorials and the conclusion pointing to the next step. This indicates a moderate level of accuracy and completeness in the summarization.",
+  "score": 0.5,
+  "reason": "The score is 0.50 because the summary includes extra information not present in the original text, such as the division into sections for different roles, specific user actions like creating and editing a page, and a conclusion directing to the next step. Additionally, the summary fails to answer questions about logging in requirements and developers' capabilities, which the original text can address.",
   "score_breakdown": {
-    "Alignment": 0.5714285714285714,
-    "Coverage": 1.0
+    "Alignment": 0.5,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

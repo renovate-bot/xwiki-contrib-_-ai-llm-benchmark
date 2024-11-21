@@ -2,7 +2,7 @@
   "id": "qa_032",
   "prompt": "Kann ich Benutzer mit Zugriffstoken authentifizieren?",
   "expected_answer": "Ja, Sie k\u00f6nnen Benutzer mit Zugriffstoken mithilfe der Token-basierten Authentifizierung f\u00fcr die LLM-Anwendung (BETA)-Erweiterung authentifizieren.\n\nDiese Erweiterung erm\u00f6glicht es externen Anwendungen, Benutzer mit signierten JSON Web Tokens (JWT) zu authentifizieren. Der Token muss bestimmte Anspr\u00fcche enthalten, wie Ablaufzeit, Aussteller, Betreff und Zielgruppe, und muss mit einem Ed25519-Schl\u00fcssel signiert sein.\n\nUm diesen Authentifizierer zu verwenden, m\u00fcssen Sie:\n\n1. Den Token-Authentifizierer aktivieren, indem Sie die Eigenschaft `xwiki.authentication.authclass` in der Datei `xwiki.properties` auf `org.xwiki.contrib.llm.authentication.JWTTokenAuth` setzen.\n2. Die autorisierten Anwendungen konfigurieren, indem Sie einen neuen Eintrag zur Liste der \u201eAutorisierten Anwendungen\u201c hinzuf\u00fcgen, wobei Sie den Titel, die URL, den \u00f6ffentlichen Schl\u00fcssel und das Gruppenformat der Anwendung angeben.\n3. Ein JWT-Token generieren, das die erforderlichen Anspr\u00fcche und Signierschl\u00fcssel erf\u00fcllt.\n4. Das Token im \u201eAuthorization\u201c-Header der Anfrage in der Form \u201eBearer TOKEN\u201c einf\u00fcgen.\n\nHinweis: Dieser Authentifizierer unterst\u00fctzt nur die Erstellung oder Aktualisierung von Benutzern auf der Grundlage der im Token bereitgestellten Informationen und unterst\u00fctzt nicht die Verwendung eines Tokens als Authentifizierung f\u00fcr einen bestehenden Benutzer, der nicht \u00fcber diesen Authentifizierer erstellt wurde.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Model/Validation/UI/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/ \n\n\nLeider konnte ich keine spezifischen Informationen \u00fcber die Authentifizierung von Benutzern mit Zugriffstoken in der von Ihnen angegebenen Quelle finden. \n\nAllerdings scheint XWiki eine komplexe Rechte- und Rollenverwaltung zu haben, die eine feine Steuerung des Zugriffs auf verschiedene Inhalte und Funktionen erm\u00f6glicht. Aus den gefundenen Quellen geht hervor, dass es eine \"Administration Application\" gibt, \u00fcber die Zugangsbeschr\u00e4nkungen konfiguriert werden k\u00f6nnen. Au\u00dferdem kann die Default Validation Strategy eingestellt werden.\n\nEs scheint also m\u00f6glich zu sein, Benutzer auf verschiedenen Ebenen zu authentifizieren und ihre Rechte einzuschr\u00e4nken, aber eine spezifische Methode, die auf Zugriffstoken basiert, wurde nicht erw\u00e4hnt.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Model/Validation/UI/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/ \n\n\nLeider konnte ich keine spezifischen Informationen \u00fcber die Authentifizierung von Benutzern mit Zugriffstoken in der von Ihnen angegebenen Quelle finden. \n\nAllerdings scheint XWiki eine komplexe Rechte- und Rollenverwaltung zu haben, da es sich um ein Collaboration-Tool handelt, bei dem mehrere Personen an einem Projekt arbeiten k\u00f6nnen. Auf der Seite \"XWiki Rights and Permissions\" finden Sie wahrscheinlich mehr Informationen dazu.\n\nNach meinem Verst\u00e4ndnis k\u00f6nnen Benutzer in XWiki mit verschiedenen Methoden authentifiziert werden, darunter auch externe Authentifizierungsmethoden wie OpenID oder LDAP. Die Verwendung von Zugriffstoken f\u00fcr die Benutzerauthentifizierung scheint jedoch nicht explizit erw\u00e4hnt zu werden. Es ist m\u00f6glich, dass benutzerdefinierte Erweiterungen oder Plugins verwendet werden k\u00f6nnen, um eine solche Funktion hinzuzuf\u00fcgen, aber ohne weitere Untersuchungen kann ich das nicht best\u00e4tigen.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,12 +31,12 @@
   ],
   "usage": {
     "prompt_tokens": 1715,
-    "completion_tokens": 154,
-    "total_tokens": 1869
+    "completion_tokens": 182,
+    "total_tokens": 1897
   },
-  "average_power_draw": 85.72241199606685,
-  "energy_consumption": 2247.584970926571,
-  "energy_per_input_token": 1.0702785575840814,
-  "energy_per_output_token": 2.6756963939602034,
-  "energy_per_total_token": 1.2025601770607655
+  "average_power_draw": 58.52981095059755,
+  "energy_consumption": 4250.773807676645,
+  "energy_per_input_token": 1.9588819390214955,
+  "energy_per_output_token": 4.8972048475537395,
+  "energy_per_total_token": 2.240787457921268
 }

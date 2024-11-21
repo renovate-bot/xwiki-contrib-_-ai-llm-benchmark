@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.6523504273504274,
+  "overall_score": 0.7107189196970228,
   "individual_scores": {
-    "AnswerRelevancy": 0.6923076923076923,
+    "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.5694444444444444,
-    "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.5
+    "ContextualPrecision": 0.7,
+    "ContextualRecall": 0.5714285714285714,
+    "CustomContextualRelevancy": 0.6,
+    "Correctness": 0.3928849467535657
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.69 because the response provides some relevant information about the issue of not receiving notifications in XWiki, but it includes multiple irrelevant source links that do not directly address the question, which lowers the overall relevancy.",
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the issue of not receiving notifications in XWiki. Great job!",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.57 because relevant nodes in the retrieval context, such as the first node explaining 'how to follow a user to receive notifications' and the sixth node mentioning 'different ways to be notified in XWiki', are ranked higher than irrelevant nodes. However, irrelevant nodes like the second node discussing 'technical filters and settings that do not directly address the issue' and the third node about 'customizing email templates and creating global notification filters' are ranked too closely to relevant nodes, which lowers the score.",
-    "ContextualRecall": "The score is 0.50 because while some sentences, like those about the 'alert' menu (sentence 4), following a user (sentence 5), and the 'network' tab (sentence 6), are supported by nodes in the retrieval context, others such as enabling notifications in `xwiki.properties` (sentence 2), subscribing to pages or users (sentence 3), and watching a page or wiki (sentence 4) are not supported by any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context mentions following a user and watching pages, but lacks details on enabling notifications via `xwiki.properties` or using the alert menu."
+    "ContextualPrecision": "The score is 0.70 because the first node in the retrieval context is relevant, explaining 'how to follow a user to receive notifications,' and is ranked higher than irrelevant nodes. However, the second node discusses 'filters for hidden pages and other technical details,' which do not directly relate to enabling notifications, and should be ranked lower. Additionally, the fifth node, which is relevant and 'provides information about the notifications settings menu,' is ranked lower than several irrelevant nodes, such as the third node about 'customizing email templates for notifications,' which does not directly help in resolving the issue.",
+    "ContextualRecall": "The score is 0.57 because while the retrieval context nodes support several aspects of the expected output, such as watching pages or users and using the alert menu, they lack information on enabling notifications in `xwiki.properties` and subscribing to pages or users, which are crucial details in the expected output.",
+    "CustomContextualRelevancy": "The retrieval context covers enabling notifications via user profile and watching users, but lacks details on setting 'notifications.enabled' in 'xwiki.properties' and specific steps to watch pages or entire wikis.",
+    "Correctness": "The actual output covers some aspects like watching users or pages and enabling notifications but includes many irrelevant points such as email settings, admin settings, and filtering options. It lacks direct instructions on setting 'notifications.enabled' to 'true' in 'xwiki.properties' and omits details about using the 'alert' menu."
   },
   "question_language": "en",
   "expected_answer_language": "en",

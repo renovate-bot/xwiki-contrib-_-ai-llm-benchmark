@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.4904761904761905,
+  "overall_score": 0.4103031158142258,
   "individual_scores": {
-    "AnswerRelevancy": 0.9523809523809523,
+    "AnswerRelevancy": 0.8,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.16181869488535477
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.95 because the response is highly relevant to the input, addressing the issue of the alert bell not being available. However, it includes a link to XWiki syntax documentation, which is not related to solving the problem, preventing a perfect score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output perfectly aligns with the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'custom notification filters and their behavior', which is unrelated to the issue of enabling notifications in the wiki settings. Similarly, the second node lists 'various notification settings and customization options' without addressing the enabling of notifications. The third node provides 'links to various notification preferences', which does not help with the enabling issue. The fourth node describes 'the notification application and its features', but again, does not mention enabling notifications. Finally, the fifth node talks about 'RSS feeds and notification settings', which is not relevant to the problem of enabling notifications in the wiki settings.",
-    "ContextualRecall": "The score is 0.50 because the first sentence can be linked to the 5th node in the retrieval context, which talks about displaying notifications on the wiki. However, the second sentence lacks support as there is no information in the retrieval context about setting `notifications.enabled` in `xwiki.properties` to `true`.",
-    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications via `xwiki.properties` or setting `notifications.enabled` to `true`, which are key details in the expected output."
+    "AnswerRelevancy": "The score is 0.80 because the response mostly addresses the issue of the notification bell not being available, but includes irrelevant links that do not directly pertain to solving the problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'custom notification filters and their behavior', the second node lists 'various links related to notification settings and customization', and the third node describes 'various notification preferences and settings', but none address 'enabling notifications in the wiki settings'. Similarly, the fourth node provides a 'description of the notification application and its features', and the fifth node discusses 'getting a notification RSS feed and notification settings', but neither mention 'enabling notifications in the wiki settings'.",
+    "ContextualRecall": "The score is 0.50 because while the general idea of enabling notifications is supported by node 5 in the retrieval context, the specific instruction about setting `notifications.enabled` in `xwiki.properties` is not found in any node.",
+    "CustomContextualRelevancy": "The retrieval context lacks any mention of enabling notifications via the `xwiki.properties` file, which is the core information in the expected output.",
+    "Correctness": "The actual output mentions using a macro for notifications and references documentation, but it does not address enabling notifications via `xwiki.properties`, missing the key fact from the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

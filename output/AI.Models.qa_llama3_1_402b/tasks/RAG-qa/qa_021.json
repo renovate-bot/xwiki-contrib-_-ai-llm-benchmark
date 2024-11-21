@@ -2,7 +2,7 @@
   "id": "qa_021",
   "prompt": "La cloche en haut \u00e0 droite n'est pas disponible, m\u00eame lorsque l'extension \"Notification d'alerte\" est install\u00e9e.",
   "expected_answer": "Assurez-vous que les notifications sont activ\u00e9es dans votre wiki. Vous pouvez les activer en d\u00e9finissant la propri\u00e9t\u00e9 `notifications.enabled` dans `xwiki.properties` sur `true`.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nIl est possible que l'extension \"Notifications Application\" ne soit pas install\u00e9e ou activ\u00e9e sur votre instance XWiki. La cloche en haut \u00e0 droite est une fonctionnalit\u00e9 de cette extension.\n\nVous pouvez v\u00e9rifier si l'extension est install\u00e9e en allant dans la page \"Extensions\" de votre instance XWiki. Si elle n'est pas install\u00e9e, vous pouvez l'installer en cliquant sur le bouton \"Installer\".\n\nSi l'extension est d\u00e9j\u00e0 install\u00e9e, assurez-vous qu'elle est activ\u00e9e. Vous pouvez v\u00e9rifier cela en allant dans la page \"Extensions\" et en regardant l'\u00e9tat de l'extension. Si elle n'est pas activ\u00e9e, vous pouvez l'activer en cliquant sur le bouton \"Activer\".\n\nSi vous avez d\u00e9j\u00e0 install\u00e9 et activ\u00e9 l'extension, il est possible qu'il y ait un probl\u00e8me de configuration ou de droits d'acc\u00e8s. Vous pouvez essayer de v\u00e9rifier les logs de votre instance XWiki pour voir si il y a des erreurs li\u00e9es \u00e0 l'extension.\n\nSi vous n'arrivez pas \u00e0 r\u00e9soudre le probl\u00e8me, vous pouvez demander de l'aide \u00e0 la communaut\u00e9 XWiki ou \u00e0 un administrateur de votre instance.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\n\n\nIl semblerait que vous rencontriez un probl\u00e8me avec l'affichage de la cloche de notification en haut \u00e0 droite de votre \u00e9cran, m\u00eame apr\u00e8s avoir install\u00e9 l'extension \"Notification d'alerte\". Voici quelques \u00e9tapes que vous pouvez suivre pour essayer de r\u00e9soudre ce probl\u00e8me :\n\n1. **V\u00e9rifiez que l'extension est activ\u00e9e** : Assurez-vous que l'extension \"Notification d'alerte\" est bien activ\u00e9e dans votre wiki. Vous pouvez v\u00e9rifier cela en allant dans la page \"Extensions\" de votre wiki et en cherchant l'extension \"Notification d'alerte\" dans la liste des extensions install\u00e9es.\n2. **V\u00e9rifiez les permissions** : Assurez-vous que vous avez les permissions n\u00e9cessaires pour voir la cloche de notification. Les permissions peuvent varier en fonction de la configuration de votre wiki.\n3. **V\u00e9rifiez la configuration de l'extension** : Assurez-vous que l'extension est configur\u00e9e correctement. Vous pouvez v\u00e9rifier la configuration en allant dans la page \"Settings\" de l'extension.\n4. **Essayez de d\u00e9sactiver et de r\u00e9activer l'extension** : Essayez de d\u00e9sactiver l'extension, puis de la r\u00e9activer pour voir si cela r\u00e9sout le probl\u00e8me.\n5. **V\u00e9rifiez les logs** : V\u00e9rifiez les logs de votre wiki pour voir s'il y a des erreurs li\u00e9es \u00e0 l'extension \"Notification d'alerte\".\n\nSi aucune de ces \u00e9tapes ne r\u00e9sout le probl\u00e8me, il est possible que vous deviez contacter l'administrateur de votre wiki ou le d\u00e9veloppeur de l'extension pour obtenir de l'aide suppl\u00e9mentaire.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -55,8 +55,8 @@
   ],
   "usage": {
     "prompt_tokens": 2701,
-    "completion_tokens": 259,
-    "total_tokens": 2960
+    "completion_tokens": 373,
+    "total_tokens": 3074
   },
   "average_power_draw": null,
   "energy_consumption": null,

@@ -1,9 +1,9 @@
 {
-  "score": 0.5,
-  "reason": "The score is 0.50 because the summary contains multiple contradictions regarding configurations and permissions that are not accurately reflected in the original text. Additionally, the summary includes extra information not present in the original text, such as screenshots and a comprehensive guide, which affects its accuracy and completeness.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary contains multiple inaccuracies and omissions. It contradicts the original text by mentioning a 'Registration' rights configuration and configurations like 'Editable/Open Wiki' that are not present in the original. Additionally, it introduces extra information about the next steps in the XWiki user guide that is not found in the original text. Furthermore, the summary fails to address a question about overriding global rights at the page level for unregistered users, which the original text can answer.",
   "score_breakdown": {
-    "Alignment": 0.5,
-    "Coverage": 1.0
+    "Alignment": 0.4,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

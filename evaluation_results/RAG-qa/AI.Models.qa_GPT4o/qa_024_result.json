@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.5671428571428571,
+  "overall_score": 0.5175052339047993,
   "individual_scores": {
-    "AnswerRelevancy": 0.7857142857142857,
+    "AnswerRelevancy": 0.8333333333333334,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.75,
-    "CustomContextualRelevancy": 0.3
+    "CustomContextualRelevancy": 0.3,
+    "Correctness": 0.22169807009546277
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.79 because the response addresses the question about disabling notifications, but includes irrelevant links that do not directly help with the task, slightly reducing the overall relevancy.",
+    "AnswerRelevancy": "The score is 0.83 because the answer is mostly relevant, addressing the question about disabling notifications. However, it includes links and references that do not directly address the specific issue, slightly reducing its relevancy.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'various technical aspects of notification filters and settings' but does not address how to disable notifications or 'auto-watched pages'. The second node lists 'different notification preferences and macros' without providing information on disabling notifications. The third node provides links about notifications but lacks specific instructions on disabling them. The fourth node talks about 'getting RSS feeds and general notification settings' without mentioning disabling notifications. Finally, the fifth node gives an overview of notification methods but does not include details on disabling notifications or managing auto-watched pages.",
-    "ContextualRecall": "The score is 0.75 because while nodes in the retrieval context support the functionality of auto-watching pages and managing notification settings (as seen in nodes 3 and 4), there is no direct mention of being notified of changes on your work, which affects the completeness of the expected output attribution.",
-    "CustomContextualRelevancy": "The retrieval context mentions auto-watch preferences and notification settings, but lacks details on modifying auto-watch settings and removing filters from 'Filtres personnalis\u00e9s'."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. Each node fails to address 'disabling automatic notifications or managing auto-watched pages'. For instance, the first node discusses 'various notification filters and settings' without mentioning how to disable automatic notifications, and the second node lists 'different notification preferences and macros' but lacks information on managing auto-watched pages. As a result, the irrelevant nodes are not ranked lower than any relevant nodes, leading to a score of 0.00.",
+    "ContextualRecall": "The score is 0.75 because while nodes in the retrieval context cover aspects like default notification settings and custom filters (relating to sentences 1, 3, and 4 of the expected output), they do not explicitly mention being notified of changes to one's work, which affects sentence 2.",
+    "CustomContextualRelevancy": "The retrieval context mentions auto-watched pages and notification settings but lacks details on modifying 'Suivi automatique des pages' and removing filters from 'Filtres personnalis\u00e9s'.",
+    "Correctness": "The actual output discusses settings for notifications but misses key details from the expected output about automatic page watching and modifying notification filters."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.7646153846153847,
+  "overall_score": 0.6651530325738324,
   "individual_scores": {
-    "AnswerRelevancy": 0.9230769230769231,
+    "AnswerRelevancy": 0.9375,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 0.9
+    "CustomContextualRelevancy": 1.0,
+    "Correctness": 0.05341819544299424
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.92 because the response is mostly relevant to the question about denying script rights to a space administrator. However, it includes a statement about content organization and nested pages migration, which is not directly related to the main topic, and an introductory example statement that doesn't directly address the process.",
+    "AnswerRelevancy": "The score is 0.94 because the response is highly relevant to the question about denying script rights to a space administrator, with only a minor irrelevant mention of Nested Pages Migration.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'programming rights and script execution,' but does not address 'the inability to deny script rights to a space administrator.' The second node lists 'various rights and their properties,' but does not mention 'denying script rights to a space administrator.' The third node provides 'details about script rights,' but does not state 'denying these rights to a space administrator is unsupported.' The fourth node is about 'checking access rights programmatically,' but does not relate to 'denying script rights to a space administrator.' The fifth node discusses 'converting rights during page migration' and does not address 'denying script rights to a space administrator.'",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses programming rights but does not address denying script rights to a space administrator. The second node outlines rights but does not mention the inability to deny script rights. The third node details the 'Script' right but does not mention denial to a space administrator. The fourth node talks about access checks, unrelated to denying script rights. The fifth node is about converting rights during migration, not related to denying script rights.",
     "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the nodes in the retrieval context. Great job!",
-    "CustomContextualRelevancy": "The expected answer states that rights implied by admin right cannot be denied, which aligns with the retrieval context indicating admin rights are not deniable. However, the retrieval context does not explicitly mention the lack of support for denying implied rights, slightly reducing completeness."
+    "CustomContextualRelevancy": "The retrieval context confirms that rights implied by admin cannot be denied, matching the expected answer's statement about XWiki's lack of support for denying such rights.",
+    "Correctness": "The actual output incorrectly states that script rights can be denied to a space administrator, while the expected output clearly states that rights implied by admin right cannot be denied in XWiki."
   },
   "question_language": "en",
   "expected_answer_language": "en",

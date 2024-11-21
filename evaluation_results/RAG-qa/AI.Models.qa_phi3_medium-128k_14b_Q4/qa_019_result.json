@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.36923076923076925,
+  "overall_score": 0.29260924697552043,
   "individual_scores": {
-    "AnswerRelevancy": 0.8461538461538461,
+    "AnswerRelevancy": 0.75,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.00565548185312246
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.85 because the answer mostly addresses the question about denying script rights to a domain administrator, but it includes irrelevant source links that do not directly contribute to the solution.",
+    "AnswerRelevancy": "The score is 0.75 because the answer partially addresses the question about denying script rights to a domain administrator, but includes multiple irrelevant statements such as source links and image descriptions that do not directly contribute to solving the issue.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'form validation and JavaScript', which is unrelated to script rights or administrative permissions in XWiki. The second node is about 'template providers and page creation in XWiki', which also does not relate to script rights. The third node describes 'a custom right check class and configuration in XWiki', but does not address the issue of denying script rights to an area administrator. Since all nodes are irrelevant, they should be ranked lower, resulting in a score of 0.00.",
-    "ContextualRecall": "The score is 0.00 because the expected output sentence about admin rights in XWiki is not supported by any information in the nodes in retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to the admin rights or their implications as mentioned in the expected output."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'JavaScript validation and field validation rules', which are unrelated to script rights or administrative permissions in XWiki. The second node is about 'templates and page creation in XWiki', which does not relate to administrative rights or script permissions. The third node involves a 'custom right check class in XWiki', but it does not address the specific issue of denying script rights to a space administrator. Therefore, none of the nodes provide relevant information, leading to a score of 0.00.",
+    "ContextualRecall": "The score is 0.00 because the expected output sentence about rights management in XWiki cannot be linked to any information in the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about admin rights or their implications, which is the focus of the expected answer.",
+    "Correctness": "The actual output introduces a detailed procedure for preventing script execution, which is not present in the expected output. The expected output simply states that rights implied by the admin right cannot be denied, with no mention of scripts or procedures."
   },
   "question_language": "de",
   "expected_answer_language": "de",

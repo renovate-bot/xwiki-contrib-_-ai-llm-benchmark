@@ -2,7 +2,7 @@
   "id": "qa_031",
   "prompt": "Can I authenticate users with access tokens?",
   "expected_answer": "Yes, you can authenticate users with access tokens using the Token-based authentication for the LLM Application extension.\n\nThis extension allows external applications to authenticate users with signed JSON Web Tokens (JWT). The token needs to contain specific claims, such as expiration time, issuer, subject, and audience, and must be signed with an Ed25519 key.\n\nTo use this authenticator, you need to:\n\n1. Enable the token authenticator by setting the `xwiki.authentication.authclass` property in `xwiki.properties` file to `org.xwiki.contrib.llm.authentication.JWTTokenAuth`.\n2. Configure the authorized applications by adding a new entry to the \"Authorized Applications\" list, specifying the application's title, URL, public key, and group format.\n3. Generate a JWT token that meets the required claims and signing key requirements.\n4. Include the token in the \"Authorization\" header of the request in the form \"Bearer TOKEN\".\n\nNote that this authenticator only supports creating or updating users based on the information provided in the token and does not support using a token as authentication for an existing user that hasn't been created through this authenticator.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Authenticator/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \n\n\nYes, you can definitely authenticate users using access tokens. (Access Tokens are different from Refresh Tokens). Here's a simplified way of how it works:\n\n1. **User Authentication**: The user logs in using their credentials or through a social media platform.\n\n2. **Token Generation**: Upon successful authentication, your server generates an access token which is usually a JSON Web Token (JWT) containing some user information like the user ID, email, expiration time, etc.\n\n3. **Token Response**: This generated access token is sent back to the client (user's device or browser).\n\n4. **User Authentication with Access Token**: For subsequent requests, the client includes this access token in the `Authorization` header of the HTTP request. The server then verifies this token and grants access if it's valid.\n\nHere's a simple example using Node.js and Express:\n\n```javascript\nconst express = require('express');\nconst jwt = require('jsonwebtoken');\n\nconst app = express();\n\napp.post('/login', (req, res) => {\n  const user = { id: 1, email: 'user@example.com' };\n  const token = jwt.sign(user, 'secret_key');\n  res.json({ token });\n});\n\napp.get('/protected', verifyToken, (req, res) => {\n  res.json({ message: 'Access granted' });\n});\n\nfunction verifyToken(req, res, next) {\n  const token = req.headers['authorization'];\n  if (!token) return res.status(401).send('Unauthorized');\n\n  jwt.verify(token, 'secret_key', (err, decoded) => {\n    if (err) return res.status(500).send('Invalid token');\n    req.user = decoded;\n    next();\n  });\n}\n\napp.listen(3000);\n```\n\nIn this example, the `/login` route generates a JWT and sends it back to the client. The `verifyToken` middleware checks for the presence of a valid token in the `Authorization` header of subsequent requests to protected routes like `/protected`.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Authenticator/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \n\n\nYes, you can authenticate users with access tokens using XWiki extensions. Here are a couple of options:\n\n1. **OpenID Connect Authenticator**: This extension supports authenticating users with access tokens from OpenID Connect providers like Google, Facebook, and others. You can configure the scope to include `openid` for authentication.\n\n   - Set `oidc.scope=openid` in your `xwiki.properties` file.\n   - Configure other required settings as described in the [OpenID Connect Authenticator documentation](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/).\n\n2. **LLM Application JWT Token Authenticator**: This extension allows external applications to authenticate users with signed JSON Web Tokens (JWT). Users are directly created or updated based on the information provided in the token.\n\n   - Set `xwiki.authentication.authclass=org.xwiki.contrib.llm.authentication.JWTTokenAuth` in your `xwiki.properties` file.\n   - Configure other required settings as described in the [LLM Application Authenticator documentation](https://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Authenticator/).",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 11,
-    "completion_tokens": 417,
-    "total_tokens": 428
+    "prompt_tokens": 2544,
+    "completion_tokens": 259,
+    "total_tokens": 2803
   },
-  "average_power_draw": 182.89439682539674,
-  "energy_consumption": 1150.409193883233,
-  "energy_per_input_token": 1.0919878442175919,
-  "energy_per_output_token": 2.7299696105439795,
-  "energy_per_total_token": 2.6878719483253106
+  "average_power_draw": 188.79968253968252,
+  "energy_consumption": 1025.1370503754085,
+  "energy_per_input_token": 0.3212085384224999,
+  "energy_per_output_token": 0.8030213460562499,
+  "energy_per_total_token": 0.36572852314499055
 }

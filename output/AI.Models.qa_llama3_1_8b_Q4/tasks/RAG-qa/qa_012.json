@@ -2,7 +2,7 @@
   "id": "qa_012",
   "prompt": "Ich erhalte keine Benachrichtigungen.",
   "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen. Stellen Sie au\u00dferdem sicher, dass Sie den Seiten oder Benutzern, f\u00fcr die Sie Benachrichtigungen erhalten m\u00f6chten, folgen. Sie k\u00f6nnen einer Seite, einer Seite und ihren Unterseiten oder einem gesamten Wiki folgen. Um einem Ort zu folgen, m\u00fcssen Sie nur dorthin gehen und dann auf das Men\u00fc \"Benachrichtigung\" (dargestellt durch eine Glocke) klicken und die gew\u00fcnschten Benachrichtigungen aktivieren. Um einem Benutzer zu folgen, k\u00f6nnen Sie, wenn Sie auf das Profil eines Benutzers gehen, beispielsweise \u00fcber das Benutzerindex, entscheiden, dem Benutzer zu folgen. Das bedeutet, dass Sie alle Benachrichtigungen \u00fcber Ereignisse erhalten, die von diesem Benutzer ausgel\u00f6st wurden. In Ihrem Benutzerprofil k\u00f6nnen Sie in der Registerkarte \"Netzwerk\" die Liste der Benutzer anzeigen, denen Sie folgen, und die von ihnen durchgef\u00fchrten Ereignisse.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \n\n\nEs gibt viele Gr\u00fcnde, warum du m\u00f6glicherweise keine Benachrichtigungen erh\u00e4ltst. Hier sind einige allgemeine Schritte, die du unternehmen kannst, um das Problem zu beheben:\n\n1.  **\u00dcberpr\u00fcfe deine E-Mail-Adresse**: Stelle sicher, dass deine E-Mail-Adresse korrekt eingegeben ist und dass du Zugriff auf deine E-Mail-Konto hast.\n2.  **\u00dcberpr\u00fcfe die Benachrichtigungs-Einstellungen**: Gehe in deine Profil-Einstellungen und \u00fcberpr\u00fcfe, ob die Benachrichtigungen f\u00fcr den entsprechenden Kanal (z.B. Facebook, Twitter, etc.) aktiviert sind.\n3.  **Pr\u00fcfe das Spam-Ordner**: Es ist m\u00f6glich, dass die Benachrichtigungen im Spam-Ordner landen. \u00dcberpr\u00fcfe dort nach und ziehe die Benachrichtigungen in den regul\u00e4ren Posteingang.\n4.  **Kontaktiere den Support des Dienstes**: Wenn du immer noch keine Benachrichtigungen erh\u00e4ltst, kannst du dich an den Support des Dienstes wenden. Sie k\u00f6nnen dir helfen, das Problem zu l\u00f6sen und m\u00f6glicherweise auch zus\u00e4tzliche Schritte empfehlen.\n5.  **Pr\u00fcfe deine Anmeldeinformationen**: Stelle sicher, dass deine Anmeldeinformationen (Benutzername und Passwort) korrekt sind.\n\nIch hoffe, diese allgemeinen Schritte helfen dir bei der L\u00f6sung deines Problems! Wenn du spezifische Fragen hast oder weitere Informationen ben\u00f6tigst, stehe ich gerne zur Verf\u00fcgung.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \n\n\nEs scheint, dass du Probleme mit den Benachrichtigungen auf deinem XWiki-System hast.\n\nNach einem Blick in die Suchergebnisse (die ich leider nicht direkt nutzen kann, aber das ist okay) habe ich einige m\u00f6gliche Ursachen f\u00fcr deine Probleme gefunden:\n\n* **Kaputte Skins**: Es k\u00f6nnte sein, dass eine oder mehrere Skins auf deinem XWiki-System kaputt sind. Wenn du also keine Benachrichtigungen erh\u00e4ltst, k\u00f6nnten dies die Schuldigen sein.\n* **Fehler im Benachrichtigungssystem**: Vielleicht gibt es einen Fehler im System selbst, der daf\u00fcr sorgt, dass keine Benachrichtigungen mehr verschickt werden.\n\nUm dir zu helfen, k\u00f6nnte ich dir einige m\u00f6gliche L\u00f6sungen vorschlagen:\n\n1. **\u00dcberpr\u00fcfe die Skins**: Schau dir an, ob eine oder mehrere Skins kaputt sind und ersetze sie, wenn n\u00f6tig.\n2. **\u00dcberpr\u00fcfe das Benachrichtigungssystem**: \u00dcberpr\u00fcfe, ob das System selbst nicht defekt ist. Vielleicht gibt es einen Fehler, den du beheben kannst.\n\nIch hoffe, diese Informationen helfen dir weiter! Wenn du noch weitere Fragen hast, stehe ich gerne zur Verf\u00fcgung.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -30,13 +30,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 21,
-    "completion_tokens": 353,
-    "total_tokens": 374
+    "prompt_tokens": 2054,
+    "completion_tokens": 276,
+    "total_tokens": 2330
   },
-  "average_power_draw": 168.3661921921922,
-  "energy_consumption": 685.7249453124613,
-  "energy_per_input_token": 0.7589650750552975,
-  "energy_per_output_token": 1.8974126876382438,
-  "energy_per_total_token": 1.8334891585894686
+  "average_power_draw": 186.48405228758168,
+  "energy_consumption": 699.400072629062,
+  "energy_per_input_token": 0.2548834083925153,
+  "energy_per_output_token": 0.6372085209812883,
+  "energy_per_total_token": 0.30017170499101375
 }

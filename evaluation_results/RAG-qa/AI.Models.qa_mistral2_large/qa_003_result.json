@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.9400000000000001,
+  "overall_score": 0.9514770440446026,
   "individual_scores": {
-    "AnswerRelevancy": 0.7,
+    "AnswerRelevancy": 0.75,
     "Faithfulness": 1.0,
     "ContextualPrecision": 1.0,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 1.0
+    "CustomContextualRelevancy": 1.0,
+    "Correctness": 0.9588622642676154
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.70 because the response provides relevant information about enabling notifications for one's own actions in XWiki, but it includes irrelevant source links that do not directly address the question.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Great job on maintaining perfect alignment!",
-    "ContextualPrecision": "The score is 1.00 because the relevant nodes in the retrieval context are ranked higher than the irrelevant ones. The first node states 'By default, one don\u2019t receive notification about one\u2019s own activity... You have the ability to disable this filter in the \u201cAdvanced filtering options\u201d section of your own notification settings,' which directly aligns with the expected output. The second node mentions 'By default, you won\u2019t receive notifications for actions done by yourself. This can be changed by switching off the Own event filter,' which is relevant to enabling notifications for one's own actions. The irrelevant nodes, such as the third node, which is about following other users, and the fourth node, which is about administrators configuring default notification settings, are ranked lower, ensuring a perfect score.",
-    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the nodes in the retrieval context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context contains all the information found in the expected answer, including the default behavior of not receiving notifications about one's own activity unless explicitly targeted, and the ability to disable this filter in the 'Advanced filtering options' section of the notification settings in the user profile."
+    "AnswerRelevancy": "The score is 0.75 because the response partially addresses how to enable notifications for one's own actions in XWiki, but includes irrelevant source links that do not directly contribute to solving the issue.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because the relevant nodes in the retrieval context, which explain how to enable notifications for one's own actions by mentioning options like 'Advanced filtering options' and 'Own event filter', are ranked higher than the irrelevant nodes. The irrelevant nodes discuss topics such as following a user, administrator settings, and RSS feeds, which do not pertain to the input query. Great job on getting it just right!",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is perfectly supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context fully includes the expected answer's information about not receiving notifications for one's own activity by default and the ability to disable this filter in the 'Advanced filtering options' section of the notification settings in the user profile.",
+    "Correctness": "The actual output aligns with the expected output by correctly stating the default notification setting and the ability to disable the filter in the 'Advanced filtering options' of the notification settings in the user profile."
   },
   "question_language": "en",
   "expected_answer_language": "en",

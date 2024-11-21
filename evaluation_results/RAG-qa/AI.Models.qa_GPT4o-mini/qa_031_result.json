@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.823076923076923,
+  "overall_score": 0.8156800938781242,
   "individual_scores": {
-    "AnswerRelevancy": 0.6153846153846154,
+    "AnswerRelevancy": 0.7058823529411765,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0.5,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 1.0
+    "CustomContextualRelevancy": 0.9,
+    "Correctness": 0.7881982103275684
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.62 because the response partially addresses the question about authenticating users with access tokens, but it includes multiple irrelevant source links that do not directly contribute to answering the query.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Great job maintaining consistency!",
-    "ContextualPrecision": "The score is 0.50 because relevant nodes about 'Authorized Applications' and JWT token generation, which are pertinent to token-based authentication, are ranked lower than irrelevant nodes. For instance, the first node focuses on 'LDAP authentication settings', which does not relate to token-based methods, while the second node is relevant as it discusses 'Authorized Applications'. Similarly, the fourth node, which is relevant due to its focus on 'JWT token generation and claims', is ranked lower than the first node. This misordering affects the precision score.",
-    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the nodes in the retrieval context. Great job on achieving a perfect match!",
-    "CustomContextualRelevancy": "The retrieval context fully supports the expected answer by detailing the use of JWT tokens, required claims, Ed25519 key signing, and configuration steps for the Token-based authentication extension."
+    "AnswerRelevancy": "The score is 0.71 because the answer partially addresses the question about authenticating users with access tokens, but includes multiple irrelevant statements providing source links that do not directly answer the question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.50 because relevant nodes in the retrieval context are not consistently ranked higher than irrelevant ones. For instance, the first node discusses 'LDAP authentication settings, which are unrelated to token-based authentication using JWTs,' and should be ranked lower. Similarly, the third node 'describes a method for checking authentication but does not relate to token-based authentication or access tokens,' yet it appears before relevant nodes. However, relevant nodes like the second node, which 'provides information about configuring authorized applications, which is relevant for using access tokens for authentication,' are correctly identified, contributing to the current score.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the nodes in the retrieval context, demonstrating a perfect match. Great job!",
+    "CustomContextualRelevancy": "The retrieval context includes information about enabling the token authenticator, configuring authorized applications, and generating JWT tokens with required claims and Ed25519 key, aligning closely with the expected output. However, it lacks explicit mention of the limitation regarding tokens for existing users not created through this authenticator.",
+    "Correctness": "The actual output correctly describes the authentication process using JWT for the LLM Application and matches most facts from the expected output, including the configuration and token requirements. However, it includes additional information on fallback authentication not present in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

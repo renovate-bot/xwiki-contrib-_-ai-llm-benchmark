@@ -2,7 +2,7 @@
   "id": "qa_019",
   "prompt": "Wie kann ich einem Bereichsadministrator das Skriptrecht verweigern?",
   "expected_answer": "Leider wird dies in XWiki nicht unterst\u00fctzt, Rechte, die durch das Admin-Recht impliziert sind, k\u00f6nnen nicht verweigert werden.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Index%20for%20the%20LLM%20Application/ \n\n\nDie verf\u00fcgbaren Informationen beziehen sich nicht direkt auf die Verweigerung des Skriptrechts f\u00fcr einen Bereichsadministrator. Allerdings kann ich Ihnen allgemeine Informationen dar\u00fcber geben, wie man in XWiki Berechtigungen verwaltet.\n\nIn XWiki k\u00f6nnen Sie Berechtigungen \u00fcber die Seite \"Berechtigungen\" verwalten, die Sie \u00fcber die Administrationsoberfl\u00e4che erreichen k\u00f6nnen. Dort k\u00f6nnen Sie bestimmten Benutzern oder Gruppen Berechtigungen erteilen oder entziehen.\n\nUm einem Bereichsadministrator das Skriptrecht zu verweigern, k\u00f6nnen Sie folgende Schritte ausf\u00fchren:\n\n1. \u00d6ffnen Sie die Administrationsoberfl\u00e4che und navigieren Sie zur Seite \"Berechtigungen\".\n2. Suchen Sie den Bereichsadministrator, dem Sie das Skriptrecht entziehen m\u00f6chten.\n3. Klicken Sie auf den Button \"Berechtigungen bearbeiten\" neben dem Namen des Benutzers.\n4. Entfernen Sie die Berechtigung \"Skript ausf\u00fchren\" oder \"Skript erstellen\" aus der Liste der erteilten Berechtigungen.\n\nBitte beachten Sie, dass die genauen Schritte je nach XWiki-Version und -Konfiguration variieren k\u00f6nnen. Wenn Sie weitere Fragen haben oder spezifische Anweisungen ben\u00f6tigen, empfehle ich Ihnen, die XWiki-Dokumentation oder die Community-Ressourcen zu konsultieren.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Index%20for%20the%20LLM%20Application/ \n\n\nIch konnte leider keine spezifischen Informationen finden, die direkt auf Ihre Frage antworten. Allerdings kann ich Ihnen allgemeine Informationen dar\u00fcber geben, wie man einem Bereichsadministrator das Skriptrecht verweigern k\u00f6nnte.\n\nIn der Regel k\u00f6nnen Sie einem Bereichsadministrator das Skriptrecht verweigern, indem Sie seine Berechtigungen anpassen. Hier sind einige m\u00f6gliche Schritte:\n\n1. **Berechtigungen anpassen**: \u00dcberpr\u00fcfen Sie die Berechtigungen des Bereichsadministrators und entfernen Sie das Skriptrecht. Dies kann je nach System und Konfiguration variieren.\n2. **Rollen anpassen**: Wenn Ihr System Rollen verwendet, k\u00f6nnen Sie die Rolle des Bereichsadministrators anpassen, um das Skriptrecht zu entfernen.\n3. **Benutzerberechtigungen anpassen**: Wenn Ihr System Benutzerberechtigungen verwendet, k\u00f6nnen Sie die Berechtigungen des Bereichsadministrators anpassen, um das Skriptrecht zu entfernen.\n\nEs ist wichtig zu beachten, dass die genauen Schritte je nach System und Konfiguration variieren k\u00f6nnen. Es ist auch wichtig, sicherzustellen, dass Sie die richtigen Berechtigungen haben, um diese \u00c4nderungen vorzunehmen.\n\nWenn Sie weitere Informationen ben\u00f6tigen, stehe ich Ihnen gerne zur Verf\u00fcgung.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,8 +31,8 @@
   ],
   "usage": {
     "prompt_tokens": 1376,
-    "completion_tokens": 317,
-    "total_tokens": 1693
+    "completion_tokens": 298,
+    "total_tokens": 1674
   },
   "average_power_draw": null,
   "energy_consumption": null,

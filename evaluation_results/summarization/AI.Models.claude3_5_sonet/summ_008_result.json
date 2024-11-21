@@ -1,9 +1,9 @@
 {
-  "score": 0.8333333333333334,
-  "reason": "The score is 0.83 because the summary contains some contradictions regarding account creation and viewing/editing permissions, which slightly impacts its accuracy. However, there is no extra information or unanswered questions, indicating a generally good summarization quality.",
+  "score": 0.8,
+  "reason": "The score is 0.80 because the summary includes extra information not present in the original text and fails to answer a question that the original text addresses. However, there are no contradictions, indicating a generally accurate representation of the original content.",
   "score_breakdown": {
-    "Alignment": 0.8333333333333334,
-    "Coverage": 1.0
+    "Alignment": 0.8571428571428571,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

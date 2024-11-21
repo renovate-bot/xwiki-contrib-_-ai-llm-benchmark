@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.36,
+  "overall_score": 0.2955589575042842,
   "individual_scores": {
-    "AnswerRelevancy": 0.8,
+    "AnswerRelevancy": 0.7272727272727273,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.04608101775297775
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.80 because the main content addresses the question about authenticating users with access tokens, but it includes unrelated source links and a discussion on document validation in XWiki, which detracts from the focus.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment with the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'model validation strategies and configuration in XWiki', which is unrelated to 'authentication using access tokens'. The second node is about 'attachment validation and configuration of mimetype restrictions', which does not pertain to 'user authentication with access tokens'. The third node provides information about 'the admin UI for model validation and its installation', which is not relevant to 'authenticating users with access tokens'.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be linked to any nodes in the retrieval context. The retrieval context lacks information on authenticating users with access tokens, JWT claims, Ed25519 keys, and the configuration or limitations of the authenticator.",
-    "CustomContextualRelevancy": "The retrieval context lacks any information related to token-based authentication or JWT, which are central to the expected output."
+    "AnswerRelevancy": "The score is 0.73 because the response partially addresses the question about authenticating users with access tokens, but includes irrelevant information about source links and unrelated topics like XWiki platform and its extensions.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'Model Validation in XWiki', which is unrelated to 'user authentication with access tokens'. The second node is about 'attachment validation and configuration', not related to 'authentication using access tokens'. The third node provides details on the 'Admin UI for Model Validation', which does not relate to 'authentication methods or access tokens'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context, indicating a complete mismatch between the expected content and the available information.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to token-based authentication or JWT, which are key aspects of the expected answer.",
+    "Correctness": "Actual output lacks alignment with expected output, missing specific details about JWT authentication and configuration steps in XWiki."
   },
   "question_language": "de",
   "expected_answer_language": "de",

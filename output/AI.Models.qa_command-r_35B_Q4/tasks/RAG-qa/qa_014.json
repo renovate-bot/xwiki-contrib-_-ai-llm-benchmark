@@ -2,7 +2,7 @@
   "id": "qa_014",
   "prompt": "Ich erhalte viele Benachrichtigungen \u00fcber alle m\u00f6glichen Seiten, an denen ich nicht interessiert bin. Diese scheinen automatisch aktiviert worden zu sein. Wie kann ich diese Benachrichtigungen deaktivieren?",
   "expected_answer": "Standardm\u00e4\u00dfig wird eine Seite, an der Sie eine wesentliche \u00c4nderung vorgenommen haben, automatisch zu der Liste der Seiten hinzugef\u00fcgt, denen Sie folgen. Das bedeutet, dass Sie \u00fcber \u00c4nderungen an Ihrer Arbeit benachrichtigt werden. Sie k\u00f6nnen die Einstellung f\u00fcr \"Automatisches Verfolgen von Seiten\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil \u00e4ndern. Sie k\u00f6nnen vorhandene Benachrichtigungsfilter, die auf diese Weise erstellt wurden, in der Liste \"Benutzerdefinierte Filter\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil l\u00f6schen.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Attachments \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \n\n\nUm unerw\u00fcnschte Benachrichtigungen von Websites zu deaktivieren, gibt es einige Schritte, die Sie ausf\u00fchren k\u00f6nnen:\n\n1. \u00dcberpr\u00fcfen und verwalten Sie die Einstellungen f\u00fcr Benachrichtigungen in Ihrem Webbrowser: Jeder Webbrowser hat seine eigenen Einstellungen f\u00fcr Benachrichtigungen. In der Regel k\u00f6nnen Sie auf die Einstellungen zugreifen, indem Sie auf das Symbol \"Einstellungen\" oder \"Optionen\" klicken und nach den Benachrichtigungseinstellungen suchen. Dort k\u00f6nnen Sie Websites zulassen oder blockieren und auch bereits erteilte Berechtigungen widerrufen.\n\n2. \u00dcberpr\u00fcfen Sie Ihre Einstellungen auf den entsprechenden Websites: Einige Websites bieten Ihnen die M\u00f6glichkeit, Benachrichtigungseinstellungen direkt auf der Website zu verwalten. \u00dcberpr\u00fcfen Sie also die Einstellungsseite oder das Benutzerprofil der jeweiligen Website, um zu sehen, ob Sie dort Benachrichtigungen deaktivieren k\u00f6nnen.\n\n3. Verwenden Sie Adblocker oder Tracking-Schutz-Erweiterungen: Einige Erweiterungen f\u00fcr Webbrowser k\u00f6nnen unerw\u00fcnschte Benachrichtigungen blocken oder die Websites identifizieren und blocken, von denen sie stammen. Beliebte Erweiterungen sind uBlock Origin, AdBlock Plus und Ghostery.\n\n4. Aktualisieren Sie Ihre Betriebssystemeinstellungen: Auf Ihrem Computer oder Mobilger\u00e4t k\u00f6nnen Sie auch Einstellungen f\u00fcr Benachrichtigungen verwalten. Auf einem Windows-Computer \u00f6ffnen Sie die Systemeinstellungen > Benachrichtigungen und Aktionen, auf Mac \u00f6ffnen Sie die Systemeinstellungen > Mitteilungen, und auf iOS/Android k\u00f6nnen Sie die Einstellungen der jeweiligen Apps \u00e4ndern.\n\n5. Seien Sie vorsichtig beim Klicken auf Pop-up-Fenster oder beim Akzeptieren von Benachrichtigungen: Achten Sie darauf, keine unerw\u00fcnschten Fenster oder Anfragen f\u00fcr Benachrichtigungen zu best\u00e4tigen, es sei denn, Sie sind sicher, dass sie von einer vertrauensw\u00fcrdigen Quelle stammen.\n\nDurch die Kombination dieser Ma\u00dfnahmen sollten Sie unerw\u00fcnschte Benachrichtigungen effektiv deaktivieren k\u00f6nnen.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Attachments \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \n\n\nDie Einstellungen f\u00fcr Benachrichtigungen k\u00f6nnen Sie unter \"Mein Konto\" -> \"Benachrichtigungseinstellungen\" verwalten. Auf dieser Seite k\u00f6nnen Sie ausw\u00e4hlen, \u00fcber welche \u00c4nderungen Sie informiert werden m\u00f6chten und welche Seiten Sie verfolgen wollen. Wenn Sie keine Benachrichtigungen mehr erhalten m\u00f6chten, deaktivieren Sie einfach die entsprechenden Optionen. \n\nWenn Sie Benachrichtigungen f\u00fcr bestimmte Seiten, die Sie erw\u00e4hnten, komplett unterdr\u00fccken m\u00f6chten, k\u00f6nnen Sie dies auf der jeweiligen Seite in der rechten Spalte unter \"Aktionen\" -> \"Seite verfolgen\" r\u00fcckg\u00e4ngig machen.\n\nIch hoffe, das hilft Ihnen weiter!",
   "sources": [
     {
       "collection_id": "Eval",
@@ -54,13 +54,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 49,
-    "completion_tokens": 476,
-    "total_tokens": 525
+    "prompt_tokens": 3785,
+    "completion_tokens": 150,
+    "total_tokens": 3935
   },
-  "average_power_draw": 84.08316837082486,
-  "energy_consumption": 4809.803552180927,
-  "energy_per_input_token": 3.882004481179118,
-  "energy_per_output_token": 9.705011202947794,
-  "energy_per_total_token": 9.161530575582718
+  "average_power_draw": 62.304416666666555,
+  "energy_consumption": 5206.775566042255,
+  "energy_per_input_token": 1.2516287418370806,
+  "energy_per_output_token": 3.1290718545927017,
+  "energy_per_total_token": 1.3231958236447916
 }

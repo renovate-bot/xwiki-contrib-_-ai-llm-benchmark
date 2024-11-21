@@ -2,16 +2,16 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "Amidst the bustling world, where concrete forests rise,\nNature's beauties often go unseen by surprised eyes.\nYet in her realm of wonders unconfined,\nThere's peace and awe that's so hard to find.\n\nSoftly caressed by gentle breeze's whisper,\nTrees dance gracefully, like ballerinas in a misty glimmer.\nTheir verdant leaves, like soothing melody,\nOffer solace from life's rude hurly-burly.\n\nVibrant wildflowers paint the meadows oh so sweet,\nWith their perfume, a welcome aroma in each step,\nSpreading beauty, joy, and calmness all around,\nWarding off the gloom with their sunny, colorful crown.\n\nThe heavens above unfurl a velvet drape of night,\nStarry diamonds twinkling, shedding celestial light.\nMoon's ethereal glow caresses gentle hills,\nNature's silent song fills our souls with thrills.\n\nIn her grand canvas, Life's spectrum is revealed,\nNature's beauties are never just one-fold.\nSo take a break from the treadmill of life,\nAnd find your peace amidst Nature's heavenly wife. \n\nLet the stresses of city life fade away,\nFor in nature's lap lies a beautiful kaleidoscope, each day.",
+  "ai_answer": "Amidst the chaos and cacophony of our modern life,\nNature's serenity is often left strangled and rife. \n\nYet in her verdant realm, peace can still be found,\nWhere blossoming flowers scatter their scent around.\n\nGlimmering streams flow gently with the breeze,\nCaressing earth's bosom, a soothing melody. \n\nThe trees stand tall, their branches reaching high,\nSentinels of strength, witnessing life's constant cycle. \n\nVibrant hues paint the landscapes in spring's embrace,\nA vivid tapestry, nature's masterstroke, awe-inspiring. \n\nIn moonlight's hush or sun's radiant blaze,\nHer tranquil countenance soothes our harried souls.\nHealing balms flow from forest's leafy folds,\nAs sunlight dances, casting away life's woes. \n\nSo take a moment, escape the daily grind,\nLOSE yourself in nature's beauty, left behind.",
   "sources": null,
   "usage": {
     "prompt_tokens": 15,
-    "completion_tokens": 270,
-    "total_tokens": 285
+    "completion_tokens": 201,
+    "total_tokens": 216
   },
-  "average_power_draw": 91.53052236652233,
-  "energy_consumption": 2463.4420509231854,
-  "energy_per_input_token": 3.570205870903167,
-  "energy_per_output_token": 8.925514677257919,
-  "energy_per_total_token": 8.643656319028722
+  "average_power_draw": 55.97341139846746,
+  "energy_consumption": 3085.4232987886285,
+  "energy_per_input_token": 5.962170625678509,
+  "energy_per_output_token": 14.905426564196272,
+  "energy_per_total_token": 14.284367124021427
 }

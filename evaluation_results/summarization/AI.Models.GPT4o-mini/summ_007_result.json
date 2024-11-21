@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary includes extra information not present in the original text and omits details that the original text can answer, such as the presence of a 'History' tab in XWiki.",
+  "score": 0.8333333333333334,
+  "reason": "The score is 0.83 because the summary includes extra information about a 'Version Control page on XWiki.org' that is not mentioned in the original text. However, there are no contradictions, indicating a generally accurate summary.",
   "score_breakdown": {
-    "Alignment": 0.8888888888888888,
-    "Coverage": 0.8
+    "Alignment": 0.8333333333333334,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

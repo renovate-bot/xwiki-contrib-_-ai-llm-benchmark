@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.34285714285714286,
+  "overall_score": 0.2502112251030758,
   "individual_scores": {
-    "AnswerRelevancy": 0.7142857142857143,
+    "AnswerRelevancy": 0.3,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.20126735061845485
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.71 because the response mostly addresses the question about authenticating users with access tokens, but it includes source links that are not directly relevant to the topic, which prevents a higher score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'upgrading XWiki' which does not relate to 'authenticating users with access tokens'. The second node talks about 'features of the Administration Application' without addressing 'authenticating users with access tokens'. The third node covers 'managing user rights and profiles' but fails to mention 'authentication using access tokens'.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be linked to any nodes in the retrieval context, indicating a complete lack of relevant information.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about token-based authentication or JWT, which are key aspects of the expected answer."
+    "AnswerRelevancy": "The score is 0.30 because the response includes multiple irrelevant links and statements that do not directly address the question about authenticating users with access tokens. However, there might still be some relevant information present, which is why the score is not lower.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node is about 'upgrading XWiki' and does not mention 'user authentication with access tokens'. The second node describes 'features of the Administration Application in XWiki', which also does not address 'authentication with access tokens'. The third node discusses 'managing user rights and profiles in XWiki', but again does not provide information on 'authenticating users with access tokens'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context lacks any information about token-based authentication, JWT, or related configuration details mentioned in the expected output.",
+    "Correctness": "The actual output lacks details on JWT configuration such as specific claims, Ed25519 key, and the steps to enable JWT authentication outlined in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

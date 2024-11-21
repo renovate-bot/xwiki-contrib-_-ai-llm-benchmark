@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.3,
+  "overall_score": 0.2711226236338978,
   "individual_scores": {
-    "AnswerRelevancy": 0.5,
+    "AnswerRelevancy": 0.5555555555555556,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.07118018624783105
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.50 because the answer includes multiple irrelevant source links that do not directly address the question about authenticating users with access tokens, which limits its relevance. However, it still partially addresses the question, hence the score is not lower.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'Model Validation' without mentioning 'token-based authentication or JWT', which should be ranked lower. The second node talks about 'Attachment Validation and configuration of mimetype restrictions', unrelated to 'user authentication with access tokens'. The third node provides information about the 'Admin UI for Model Validation', not related to 'authentication or access tokens'. The fourth node is about 'setting up fields for user registration', not relevant to 'authentication using access tokens'. Lastly, the fifth node describes 'steps for installing a UI' and 'credentials for an Administrator', but does not relate to 'token-based authentication'.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be linked to any information in the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to token-based authentication or JWT, which are central to the expected output."
+    "AnswerRelevancy": "The score is 0.56 because the response includes several irrelevant links to XWiki extensions and applications that do not directly address the question about authenticating users with access tokens. However, it still contains some relevant information related to the topic, which is why the score is not lower.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node is about 'Model Validation' and does not mention anything about token-based authentication or JWT. The second node discusses 'Attachment Validation' and configuration, which is unrelated to user authentication with access tokens. The third node is about the 'Admin UI for Model Validation' and does not relate to authentication processes or access tokens. The fourth node is about setting up fields and validation for user registration, not about authenticating users with access tokens. The fifth node describes installation steps for a UI and does not mention authentication or access tokens.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to token-based authentication or JWT, which are crucial elements of the expected answer.",
+    "Correctness": "The actual output does not provide specific information or alignment with the expected output's details on token-based authentication in XWiki."
   },
   "question_language": "de",
   "expected_answer_language": "de",

@@ -2,16 +2,16 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "Sunrise paints the mountain peaks,\nA fiery blush, the world awakes.\nEmerald valleys, dew-kissed green,\nWhere wildflowers bloom, a vibrant scene.\n\nA symphony of birdsong fills the air,\nA gentle breeze, a whispered prayer.\nSunlight dances on a crystal stream,\nReflecting clouds, a fleeting dream.\n\nAncient trees, with roots so deep,\nTheir branches reach, towards secrets they keep.\nA canvas vast, of blue and gold,\nA story told, a beauty untold.\n\nThe moonbeams bathe the sleeping land,\nIn silver light, a mystic hand.\nStars ignite, a twinkling sea,\nA cosmic dance, for you and me.\n\nSo let us pause, and take it in,\nThis wondrous world, where life begins.\nFor in its grace, and boundless might,\nWe find our solace, day and night. \n\n\n",
+  "ai_answer": "The sunbeams dance on emerald leaves,\nA symphony of light, the forest breathes.\nA gentle breeze through branches weaves,\nA rustling song, the earth believes.\n\nA crystal brook, a silver thread,\nFlows through the meadows, softly led\nBy wildflowers bright, in hues spread,\nA vibrant tapestry, where dreams are fed.\n\nThe mountains rise, a silent stand,\nGuarding secrets, made by hand\nOf time and stone, across the land,\nA timeless beauty, so grand.\n\nThe ocean roars, a mighty sound,\nCrashing waves upon the sandy ground.\nShells scattered, treasures found,\nIn beauty wild, without a bound.\n\nFrom towering pines to petals small,\nNature's art enthralls us all.\nA wondrous world, for one and all,\nA beauty vast, that conquers all. \n\n\n",
   "sources": null,
   "usage": {
     "prompt_tokens": 19,
-    "completion_tokens": 188,
-    "total_tokens": 207
+    "completion_tokens": 183,
+    "total_tokens": 202
   },
-  "average_power_draw": 199.75090058479532,
-  "energy_consumption": 408.538421758886,
-  "energy_per_input_token": 0.8354568952124458,
-  "energy_per_output_token": 2.0886422380311145,
-  "energy_per_total_token": 1.9736155640525894
+  "average_power_draw": 195.88655555555553,
+  "energy_consumption": 389.7276600723531,
+  "energy_per_input_token": 0.8178964534571943,
+  "energy_per_output_token": 2.0447411336429857,
+  "energy_per_total_token": 1.9293448518433323
 }

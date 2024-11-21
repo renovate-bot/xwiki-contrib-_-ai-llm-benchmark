@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.3333333333333333,
+  "overall_score": 0.3017603115128699,
   "individual_scores": {
-    "AnswerRelevancy": 0.6666666666666666,
+    "AnswerRelevancy": 0.6111111111111112,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.1994507579661084
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.67 because the answer partially addresses how to disable notifications, but it includes multiple irrelevant source links that do not directly relate to the question, which lowers the relevancy score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node is about 'attaching files and does not relate to notification settings or disabling notifications', which should be ranked lower. Similarly, the second node discusses 'moving attachments, which is unrelated to notification settings', and should also be ranked lower. This pattern continues with all nodes, such as the third node providing 'a list of macros and their uses, which is not relevant to notification settings', indicating that the relevant nodes are not ranked higher than irrelevant ones.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to automatic page following or notification settings as mentioned in the expected output."
+    "AnswerRelevancy": "The score is 0.61 because the output contains multiple irrelevant links that do not address the question about disabling notifications, which lowers the score. However, some relevant information might still be present, keeping the score above average.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node is about 'attaching files' and does not mention notifications or settings related to them. The second node discusses 'moving attachments' and does not relate to notifications or their settings. The third node is about 'displaying content and macros', which is unrelated to notification settings. The fourth node is about the 'Distribution Wizard' and does not mention notifications or how to manage them. The fifth node addresses 'linking to various elements' and does not address notifications or their settings. The sixth node discusses 'administration features' and does not relate to notifications or their management. The seventh node is about 'security authorization' and does not mention notifications or how to disable them. The eighth node is about 'importing office documents' and does not relate to notifications or their settings.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by any of the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about automatic page following or notification settings as described in the expected output.",
+    "Correctness": "The actual output does not match the expected output. It focuses on managing notification settings in XWiki, whereas the expected output describes automatic page following after significant changes. There are no direct mentions of altering 'Automatisches Verfolgen von Seiten' settings or deleting custom filters as specified in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

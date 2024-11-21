@@ -2,7 +2,7 @@
   "id": "qa_013",
   "prompt": "Ich erhalte keine Benachrichtigungen \u00fcber meine eigene Aktivit\u00e4t. Wie kann ich Benachrichtigungen f\u00fcr meine eigenen Aktionen aktivieren?",
   "expected_answer": "Standardm\u00e4\u00dfig erh\u00e4lt man keine Benachrichtigungen \u00fcber die eigene Aktivit\u00e4t (es sei denn, das Ereignis, das die Benachrichtigung ausl\u00f6st, richtet sich explizit an diesen Benutzer). Sie haben die M\u00f6glichkeit, diesen Filter in den \"Erweiterten Filteroptionen\" Ihrer eigenen Benachrichtigungseinstellungen in Ihrem Benutzerprofil zu deaktivieren.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nI'm sorry, but the provided search results don't contain information about notifications for user activity.  \n\nTo get help with that, you might want to check XWiki's official documentation or community forums. \n",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nI'm sorry, but the provided search results don't contain information about how to activate notifications for your own activity. \n\n\n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,12 +31,12 @@
   ],
   "usage": {
     "prompt_tokens": 1943,
-    "completion_tokens": 47,
-    "total_tokens": 1990
+    "completion_tokens": 28,
+    "total_tokens": 1971
   },
-  "average_power_draw": 195.3034444444445,
-  "energy_consumption": 240.91485503400702,
-  "energy_per_input_token": 0.11692057997282554,
-  "energy_per_output_token": 0.29230144993206386,
-  "energy_per_total_token": 0.12106274122311911
+  "average_power_draw": 170.60202020202019,
+  "energy_consumption": 199.2854057234947,
+  "energy_per_input_token": 0.0989992080096844,
+  "energy_per_output_token": 0.24749802002421098,
+  "energy_per_total_token": 0.10110878017427433
 }

@@ -2,12 +2,12 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": " In verdant realms where Nature weaves her art,\nThere lies a symphony, a harmonious chart.\nThe sky above, an azure tapestry unfurled,\nBestowing the day's blessings upon the world.\n\nSun's golden fingers dance through emerald leaves,\nTheir flickering play of light, a gift it weaves.\nEach shade and hue, a subtle, whispered song,\nA melody that sweetly hums all day long.\n\nThe rivers' silver laughter, echoes down the vale,\nThrough twisting, verdant paths, a soothing tale.\nTheir waters' constant flow, a testament of time,\nAn opus crafted of the earth, a flowing rhyme.\n\nWithin the forests' heart, where shadows roam,\nThe whispered secrets of the wild reside, home.\nThe rustling leaves, like ancient lore, convey,\nThe wisdom of the ages, through each passing day.\n\nThe mountains' mighty peaks, a stalwart guard,\nTheir quiet strength, a silent, stoic bard.\nFrom snow-crowned heights, they keep their watch,\nA testament to nature's poetic touch.\n\nThe beauty of the world, a canvas vast,\nWhere every stroke of color, from the present to the past,\nIs painted by the hand of nature's gentle grace,\nA living, breathing work of art that time cannot efface.\n\nIn every bloom, in every breeze that sighs,\nIn every sunset's fiery, radiant goodbye,\nWe find the splendor of a world that sings,\nAn endless symphony of wonder that life brings.\n\nOh, the beauty of nature, in its infinite array,\nA masterpiece of life, a sonnet sweetly played,\nBy the universe's own celestial, divine hand,\nAn ode to be cherished, a love to understand.",
+  "ai_answer": " In verdant meadows bathed in morning light,\nWhere dewdrops glisten with an ethereal sight,\nNature's palette paints a wondrous scene,\nOf emerald grass and skies serene.\n\nThe sun ascends its lofty throne,\nIts golden rays on all are thrown,\nKissing gently each petal, leaf, and tree,\nAwakening the world to harmony.\n\nRivers sing a soothing tune,\nBeneath the watchful eye of the languid moon,\nThey dance and weave their liquid lace,\nThrough verdant vales and secret place.\n\nMountains rise in silent awe,\nTheir peaks a testament to nature's law,\nClad in robes of granite and snow,\nMajestic sentinels, standing tall and slow.\n\nThe forests whisper tales untold,\nOf ancient times and stories bold,\nTheir branches sway in the gentle breeze,\nNature's cathedral in the heart of trees.\n\nBeneath the azure canopy,\nWhere clouds drift in ceaseless ballet,\nCreatures roam in harmony,\nA symphony of life, a sonnet of the free.\n\nThe beauty of nature is a sight to behold,\nA treasure that can never grow old,\nFor in every leaf, in every stone,\nThe heart of the earth is sewn.",
   "sources": null,
   "usage": {
     "prompt_tokens": 12,
-    "completion_tokens": 433,
-    "total_tokens": 445
+    "completion_tokens": 318,
+    "total_tokens": 330
   },
   "average_power_draw": null,
   "energy_consumption": null,

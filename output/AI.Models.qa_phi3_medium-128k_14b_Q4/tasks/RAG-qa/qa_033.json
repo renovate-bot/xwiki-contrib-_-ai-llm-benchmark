@@ -2,7 +2,7 @@
   "id": "qa_033",
   "prompt": "Puis-je authentifier les utilisateurs avec des jetons d'acc\u00e8s ?",
   "expected_answer": "Oui, vous pouvez authentifier les utilisateurs avec des jetons d'acc\u00e8s en utilisant l'extension d'authentification bas\u00e9e sur les jetons pour l'application LLM.\n\nCette extension permet aux applications externes d'authentifier les utilisateurs avec des jetons Web JSON sign\u00e9s (JWT). Le jeton doit contenir des revendications sp\u00e9cifiques, telles que la date d'expiration, l'\u00e9metteur, le sujet et la audience, et doit \u00eatre sign\u00e9 avec une cl\u00e9 Ed25519.\n\nPour utiliser cet authentificateur, vous devez :\n\n1. Activer l'authentificateur de jeton en d\u00e9finissant la propri\u00e9t\u00e9 `xwiki.authentication.authclass` dans le fichier `xwiki.properties` sur `org.xwiki.contrib.llm.authentication.JWTTokenAuth`.\n2. Configurer les applications autoris\u00e9es en ajoutant une nouvelle entr\u00e9e \u00e0 la liste des \u00ab Applications autoris\u00e9es \u00bb, en sp\u00e9cifiant le titre, l'URL, la cl\u00e9 publique et le format de groupe de l'application.\n3. G\u00e9n\u00e9rer un jeton JWT qui r\u00e9pond aux exigences de revendications et de cl\u00e9s de signature.\n4. Inclure le jeton dans l'en-t\u00eate \u00ab Authorization \u00bb de la requ\u00eate sous la forme \u00ab Bearer TOKEN \u00bb.\n\nNotez que cet authentificateur ne prend en charge que la cr\u00e9ation ou la mise \u00e0 jour des utilisateurs en fonction des informations fournies dans le jeton et ne prend pas en charge l'utilisation d'un jeton comme authentification pour un utilisateur existant qui n'a pas \u00e9t\u00e9 cr\u00e9\u00e9 via cet authentificateur.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Upgrade/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nOui, il est possible d'authentifier les utilisateurs \u00e0 l'aide de jeton d'access en XWiki. Pour ce faire, vous pouvez suivre les instructions fournies dans le guide de la \"Gestion des jetons d'acc\u00e8s\" sur [extensions.xwiki.org](https://extensions.xiki.org/xwiki).\n\nVoici un bref aper\u00e7u \u00e9tape par \u00e9tape du processus :\n\n1. **Activer les jetons d'acc\u00e8s dans XWiki**: Ouvrez l'interface Administration, allez \u00e0 'Security Settings', puis s\u00e9lectionnez 'Jetons d'access'. Activez-les et configurez les param\u00e8tres selon vos besoins.\n2. **Configurer le jeton d'acc\u00e8s** : Dans la section User Profile de l'application Administration, vous pouvez mettre \u00e0 jour le champ Token of Access pour g\u00e9rer des jetons personnalis\u00e9s que les utilisateurs peuvent utiliser pour identifier leurs comptes. Vous trouverez plus de d\u00e9tails dans la documentation [User Profile](https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application).\n3. **Impl\u00e9menter l'authentification du jeton d'acc\u00e8s** : Une fois que vous avez configur\u00e9 les jetons, vous pouvez impl\u00e9menter la logique qui les v\u00e9rifie au moment de l'authentification des utilisateurs c\u00f4t\u00e9 serveur ou dans le script personnalis\u00e9.\n\nJetez un \u0153il aux guides d'extension et \u00e0 la documentation g\u00e9n\u00e9rale sur [xwiki.org](https://xwiki.org), pour obtenir plus d'informations d\u00e9taill\u00e9es sur l'authentification des jetons d'acc\u00e8s dans XWiki.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Upgrade/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nOui, vous pouvez utiliser des tokens d'authentification pour l'identification des utilisateurs dans XWiki. Les tokens d'acc\u00e8s sont largement pris en charge et peuvent \u00eatre g\u00e9r\u00e9s \u00e0 l'aide de la fonctionnalit\u00e9 \"Administration Application\" disponible sur https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application. Il permet non seulement de g\u00e9rer les utilisateurs, les groupes et les droits d'acc\u00e8s (Access Rights), mais aussi de contr\u00f4ler la gestion des profils utilisateur, le r\u00e9pertoire utilisateur et diff\u00e9rentes autres fonctionnalit\u00e9s telles que l'invitation aux membres et la validation des contraintes. Vous trouverez plus d'informations d\u00e9taill\u00e9es sur ces sujets dans les sections \"Rights\" et \"User Profile\".\n\nLe processus implique g\u00e9n\u00e9ralement de configurer un processeur d'acc\u00e8s qui g\u00e8re le flux d'authentification des jetons. L'utilisateur doit fournir son jeton lorsqu'il se connecte, auquel cas XWiki v\u00e9rifiera l'authenticit\u00e9 du jeton et autorisera ou nuira l'acc\u00e8s en fonction de la validation r\u00e9ussie ou non.\n\nCet aspect est bien document\u00e9 sur le site web d'XWiki, avec des instructions claires qui vous guident tout au long du processus : [Administration Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application).",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,12 +31,12 @@
   ],
   "usage": {
     "prompt_tokens": 1970,
-    "completion_tokens": 405,
-    "total_tokens": 2375
+    "completion_tokens": 349,
+    "total_tokens": 2319
   },
-  "average_power_draw": 243.81100396825394,
-  "energy_consumption": 1529.8431556831974,
-  "energy_per_input_token": 0.5129398677898399,
-  "energy_per_output_token": 1.2823496694745997,
-  "energy_per_total_token": 0.6441444866034516
+  "average_power_draw": 254.45590277777774,
+  "energy_consumption": 1364.4145092417793,
+  "energy_per_input_token": 0.48000510439464533,
+  "energy_per_output_token": 1.2000127609866134,
+  "energy_per_total_token": 0.588363307133152
 }

@@ -2,7 +2,7 @@
   "id": "qa_015",
   "prompt": "Wie kann ich XWiki so konfigurieren, dass Benutzerkonten bei der ersten Anmeldung mit OpenID Connect automatisch aktiviert werden?\nIch habe OpenID Connect-Authentifizierung in meiner XWiki-Instanz eingerichtet, aber Benutzer werden nach der ersten Anmeldung nicht automatisch aktiviert. Welche Konfiguration muss ich anpassen?",
   "expected_answer": "Um Benutzerkonten bei der ersten Anmeldung mit OpenID Connect in XWiki automatisch zu aktivieren, m\u00fcssen Sie die Datei `xwiki.properties` anpassen.\n\nF\u00fcgen Sie oder aktualisieren Sie die folgende Eigenschaft:\n\n```\n#-# Definiere, ob Benutzerkonten bei der ersten Anmeldung aktiviert (als aktiv markiert) werden sollen\n# oidc.enableUser=true\n```\n\nStellen Sie sicher, dass Sie die Eigenschaft `oidc.enableUser` entkommentieren und auf `true` setzen. Nach dieser \u00c4nderung speichern Sie die Datei und starten Sie Ihre XWiki-Instanz neu, damit die \u00c4nderungen wirksam werden.\n\nDadurch wird sichergestellt, dass neue Benutzerkonten automatisch aktiviert werden, wenn sie sich zum ersten Mal \u00fcber OpenID Connect anmelden.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \n\n\nUm XWiki so zu konfigurieren, dass Benutzerkonten bei der ersten Anmeldung mit OpenID Connect automatisch aktiviert werden, m\u00fcssen Sie die Datei xwiki.cfg bearbeiten. \u00d6ffnen Sie diese Datei und suchen Sie nach dem Abschnitt \"openidconnect\". F\u00fcgen Sie den folgenden Parameter hinzu:\n\nxwiki.auth.openidconnect.autoenableusers=true\n\nSpeichern Sie die \u00c4nderungen und starten Sie anschlie\u00dfend den XWiki-Server neu, damit die \u00c4nderungen wirksam werden.\n\nNach dieser Konfigurations\u00e4nderung sollten Benutzerkonten automatisch aktiviert werden, wenn sich ein Benutzer zum ersten Mal mit OpenID Connect anmeldet.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \n\n\nLeider konnte ich keine spezifischen Informationen dazu finden, wie Sie XWiki so konfigurieren k\u00f6nnen, dass Benutzerkonten bei der ersten Anmeldung mit OpenID Connect automatisch aktiviert werden. Allerdings scheint es, als m\u00fcsste die **xwiki.authentication.authclass** in der **xwiki.properties** Datei auf **org.xwiki.contrib.oidc.auth.OIDCAuthServiceImpl** eingestellt werden, um die automatische Aktivierung zu erm\u00f6glichen.\n\nHier ist ein Beispiel f\u00fcr die Konfiguration:\n```\nxwiki.authentication.authclass=org.xwiki.contrib.oidc.auth.OIDCAuthServiceImpl\n```\n\nAu\u00dferdem scheint es so, als m\u00fcsste die **oidc.skipped** Eigenschaft in der **xwiki.properties** Datei deaktiviert werden, damit die OpenID Connect-Authentifizierung funktioniert:\n```\noidc.skipped=false\n```\n\nBitte beachten Sie, dass die obigen Einstellungen m\u00f6glicherweise nicht ausreichen, um das gew\u00fcnschte Verhalten zu erzielen, da weitere Konfigurationen erforderlich sein k\u00f6nnen. Ich empfehle Ihnen daher, neben der offiziellen XWiki-Dokumentation auch die Anleitungen f\u00fcr spezifische Systeme wie Lemon LDAP oder Univention Corporate Server zu \u00fcberpr\u00fcfen. Dort k\u00f6nnen zus\u00e4tzliche Einstellungen beschrieben sein, die erforderlich sind, um Benutzerkonten bei der ersten Anmeldung automatisch zu aktivieren.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -38,13 +38,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 79,
-    "completion_tokens": 146,
-    "total_tokens": 225
+    "prompt_tokens": 2400,
+    "completion_tokens": 305,
+    "total_tokens": 2705
   },
-  "average_power_draw": 84.63657777777772,
-  "energy_consumption": 1473.223633341661,
-  "energy_per_input_token": 3.3180712462650024,
-  "energy_per_output_token": 8.295178115662507,
-  "energy_per_total_token": 6.5476605926296045
+  "average_power_draw": 57.71565573770492,
+  "energy_consumption": 7395.891791757717,
+  "energy_per_input_token": 2.338621910437223,
+  "energy_per_output_token": 5.846554776093058,
+  "energy_per_total_token": 2.7341559304095076
 }

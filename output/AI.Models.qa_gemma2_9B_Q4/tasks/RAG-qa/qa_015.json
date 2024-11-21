@@ -2,7 +2,7 @@
   "id": "qa_015",
   "prompt": "Wie kann ich XWiki so konfigurieren, dass Benutzerkonten bei der ersten Anmeldung mit OpenID Connect automatisch aktiviert werden?\nIch habe OpenID Connect-Authentifizierung in meiner XWiki-Instanz eingerichtet, aber Benutzer werden nach der ersten Anmeldung nicht automatisch aktiviert. Welche Konfiguration muss ich anpassen?",
   "expected_answer": "Um Benutzerkonten bei der ersten Anmeldung mit OpenID Connect in XWiki automatisch zu aktivieren, m\u00fcssen Sie die Datei `xwiki.properties` anpassen.\n\nF\u00fcgen Sie oder aktualisieren Sie die folgende Eigenschaft:\n\n```\n#-# Definiere, ob Benutzerkonten bei der ersten Anmeldung aktiviert (als aktiv markiert) werden sollen\n# oidc.enableUser=true\n```\n\nStellen Sie sicher, dass Sie die Eigenschaft `oidc.enableUser` entkommentieren und auf `true` setzen. Nach dieser \u00c4nderung speichern Sie die Datei und starten Sie Ihre XWiki-Instanz neu, damit die \u00c4nderungen wirksam werden.\n\nDadurch wird sichergestellt, dass neue Benutzerkonten automatisch aktiviert werden, wenn sie sich zum ersten Mal \u00fcber OpenID Connect anmelden.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \n\n\nUm Benutzerkonten bei der ersten Anmeldung mit OpenID Connect automatisch in XWiki zu aktivieren, musst du die Konfiguration des OpenID Connect-Authentifikators anpassen. \n\nLeider sind die genauen Schritte nicht in den bereitgestellten Dokumenten enthalten.  Es ist m\u00f6glich, dass du die Konfiguration in der Datei `xwiki.properties` \u00e4ndern musst, um die automatische Aktivierung zu erm\u00f6glichen. \n\n**Empfehlung:**\n\n* Schau dir die Datei `xwiki.properties` in deiner XWiki-Installation an und suche nach Einstellungen, die mit \"oidc\" oder \"automatic activation\" zusammenh\u00e4ngen.\n* Konsultiere die XWiki-Dokumentation oder das Forum f\u00fcr weitere Informationen zur Konfiguration des OpenID Connect-Authentifikators.\n* Kontaktiere den XWiki-Support, wenn du weitere Hilfe ben\u00f6tigst. \n\n\n",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \n\n\nUm Benutzerkonten bei der ersten Anmeldung mit OpenID Connect automatisch in XWiki zu aktivieren, musst du die Konfiguration des `xwiki.properties`-Files anpassen. \n\nStelle sicher, dass die folgenden Eigenschaften im `xwiki.properties`-File definiert sind:\n\n* **oidc.provider**:  Die Base URL deines OpenID Connect Providers.\n* **oidc.endpoint.authorization**: Der Endpoint f\u00fcr die Autorisierung.\n* **oidc.endpoint.token**: Der Endpoint f\u00fcr das Token.\n* **oidc.endpoint.userinfo**: Der Endpoint f\u00fcr die Userinfo.\n* **oidc.endpoint.logout**: Der Endpoint f\u00fcr das Logout.\n\n\nDu kannst die Eigenschaften auch direkt im XWiki-Admin-Interface unter \"System\" -> \"Konfiguration\" -> \"xwiki.properties\" \u00e4ndern. \n\n**Beachte:**\n\n* Die genauen Endpoints f\u00fcr deinen OpenID Connect Provider k\u00f6nnen variieren. \n* Du musst die notwendigen Berechtigungen f\u00fcr den OpenID Connect Provider konfigurieren, damit er Benutzerkonten in XWiki erstellen kann.\n\n\n\n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -39,12 +39,12 @@
   ],
   "usage": {
     "prompt_tokens": 2345,
-    "completion_tokens": 179,
-    "total_tokens": 2524
+    "completion_tokens": 229,
+    "total_tokens": 2574
   },
-  "average_power_draw": 189.54073611111107,
-  "energy_consumption": 659.4863951276573,
-  "energy_per_input_token": 0.23616343603497128,
-  "energy_per_output_token": 0.5904085900874282,
-  "energy_per_total_token": 0.26128621043092604
+  "average_power_draw": 148.27747474747463,
+  "energy_consumption": 900.8536129068358,
+  "energy_per_input_token": 0.30877587417543645,
+  "energy_per_output_token": 0.7719396854385911,
+  "energy_per_total_token": 0.3499819785962843
 }

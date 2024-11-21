@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.77,
+  "overall_score": 0.6566651881259623,
   "individual_scores": {
     "AnswerRelevancy": 1.0,
-    "Faithfulness": 1.0,
-    "ContextualPrecision": 0.75,
+    "Faithfulness": 0.8,
+    "ContextualPrecision": 0.8055555555555555,
     "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.6
+    "CustomContextualRelevancy": 0.5,
+    "Correctness": 0.33443557320021833
   },
   "reasons": {
     "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the issue of not receiving notifications in XWiki. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.75 because the first and fourth nodes in the retrieval context are relevant to the input, discussing how to receive notifications and troubleshoot notification issues in XWiki. However, the second node, which is ranked higher than the fourth, discusses 'filtering notifications and hidden pages', and the third node focuses on 'RSS feeds and notification settings', neither of which directly address the issue of not receiving notifications. These irrelevant nodes should be ranked lower to improve the score.",
-    "ContextualRecall": "The score is 0.50 because while some sentences in the expected output are supported by nodes in the retrieval context, such as the process of enabling notifications via the 'alert' menu (node 4) and following a user (node 1), other key instructions like enabling notifications in `xwiki.properties` and ensuring subscriptions are not directly supported by any nodes.",
-    "CustomContextualRelevancy": "The retrieval context includes information on following users and watching pages, but lacks details on enabling notifications via `xwiki.properties` and specific steps for watching pages or wikis."
+    "Faithfulness": "The score is 0.80 because the actual output incorrectly states that no application types are enabled for notifications by default in XWiki 15.5 and later, except specific ones like Mention, whereas the retrieval context clarifies that all application types are enabled by default. Additionally, the actual output inaccurately claims you can watch a user from their profile page in the 'network' tab, while the retrieval context specifies that the 'network' tab only shows the list of users you are watching, not a way to watch a user from there.",
+    "ContextualPrecision": "The score is 0.81 because most relevant nodes in the retrieval context are ranked higher than irrelevant ones. For example, the first node explains 'how to follow a user to receive notifications', aligning well with the input query. However, the second node, which 'discusses filtering notifications and hidden pages', is not directly related to enabling notifications and should be ranked lower than the third node, which 'mentions the settings for notifications'. Similarly, the fifth node introduces 'the 'What's New' application', which is not directly related to the issue of not receiving notifications and should be ranked lower than the fourth node, which 'provides an overview of different ways to receive notifications in XWiki'.",
+    "ContextualRecall": "The score is 0.50 because while some details like using the 'alert' menu and following users for notifications are supported by nodes in the retrieval context, key instructions such as enabling notifications via `xwiki.properties` and subscribing to pages or wikis are not covered.",
+    "CustomContextualRelevancy": "The retrieval context includes information on following users and watching pages, but lacks details on enabling notifications via 'xwiki.properties' and the alert menu specifics.",
+    "Correctness": "The actual output mentions that notifications are not enabled by default, which is not stated in the expected output. It correctly identifies the need to watch users or spaces and discusses notification settings, but adds information about filters and default settings that are not present in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

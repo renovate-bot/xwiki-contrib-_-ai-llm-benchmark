@@ -1,9 +1,9 @@
 {
-  "score": 0.7692307692307693,
-  "reason": "The score is 0.77 because the summary includes some contradictions regarding terminal pages and access rights, and it adds extra information about email verification and additional resources that are not in the original text. Despite these issues, the summary is relatively accurate and informative.",
+  "score": 0.45454545454545453,
+  "reason": "The score is 0.45 because the summary includes several pieces of extra information not present in the original text, such as the creation of groups for easier management and specific instructions for setting rights. Additionally, the summary fails to answer a question that the original text can address, indicating a lack of completeness and accuracy.",
   "score_breakdown": {
-    "Alignment": 0.7692307692307693,
-    "Coverage": 1.0
+    "Alignment": 0.45454545454545453,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

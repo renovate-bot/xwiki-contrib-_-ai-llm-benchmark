@@ -1,218 +1,218 @@
 {
   "AI.Models.qa_llama3_1_8b_Q4": {
-    "model_average_power": 871.8627336746595,
+    "model_average_power": 767.1328735765991,
     "task_averages": {
       "RAG-qa": {
-        "average_power_draw": 168.33685578579116,
-        "energy_consumption": 871.8627336746595,
-        "energy_per_input_token": 0.6305793554080252,
-        "energy_per_output_token": 1.5764483885200633,
-        "energy_per_total_token": 1.3813331620245126
+        "average_power_draw": 186.86146836092985,
+        "energy_consumption": 767.1328735765991,
+        "energy_per_input_token": 0.2491494102820251,
+        "energy_per_output_token": 0.6228735257050632,
+        "energy_per_total_token": 0.297105467985173
       }
     }
   },
   "AI.Models.qa_phi3_medium-128k_14b_Q4": {
-    "model_average_power": 1927.1934054004441,
+    "model_average_power": 2033.7750026426038,
     "task_averages": {
       "RAG-qa": {
-        "average_power_draw": 228.41005495304353,
-        "energy_consumption": 1927.1934054004441,
-        "energy_per_input_token": 1.1422086798744646,
-        "energy_per_output_token": 2.855521699686161,
-        "energy_per_total_token": 2.633363219649
+        "average_power_draw": 260.70393200527377,
+        "energy_consumption": 2033.7750026426038,
+        "energy_per_input_token": 0.4764847480703242,
+        "energy_per_output_token": 1.19121187017581,
+        "energy_per_total_token": 0.5893796199120559
       }
     }
   },
   "AI.Models.phi3_mini-128k_4b_Q4": {
-    "model_average_power": 1547.161564572154,
+    "model_average_power": 546.3476214746729,
     "task_averages": {
       "summarization": {
-        "average_power_draw": 178.87090764523978,
-        "energy_consumption": 1263.1506237514395,
-        "energy_per_input_token": 0.23120994118546215,
-        "energy_per_output_token": 0.5780248529636552,
-        "energy_per_total_token": 0.3916962700143256
+        "average_power_draw": 177.4092401529533,
+        "energy_consumption": 434.43671778583365,
+        "energy_per_input_token": 0.19044524328056708,
+        "energy_per_output_token": 0.4761131082014177,
+        "energy_per_total_token": 0.24643804368959626
       },
       "text_generation": {
-        "average_power_draw": 206.28086902928072,
-        "energy_consumption": 1831.1725053928683,
-        "energy_per_input_token": 0.4149973548460252,
-        "energy_per_output_token": 1.037493387115063,
-        "energy_per_total_token": 0.9794377641503795
+        "average_power_draw": 200.29219911276124,
+        "energy_consumption": 658.2585251635121,
+        "energy_per_input_token": 0.3596598765605781,
+        "energy_per_output_token": 0.8991496914014452,
+        "energy_per_total_token": 0.7845978416064503
       }
     }
   },
   "AI.Models.gemma2_9B_Q4": {
-    "model_average_power": 689.7524424508174,
+    "model_average_power": 714.2688374200549,
     "task_averages": {
       "summarization": {
-        "average_power_draw": 179.97802558890712,
-        "energy_consumption": 810.0015915315373,
-        "energy_per_input_token": 0.43644519601981546,
-        "energy_per_output_token": 1.0911129900495387,
-        "energy_per_total_token": 0.58539193192422
+        "average_power_draw": 132.3536142344699,
+        "energy_consumption": 896.182801812049,
+        "energy_per_input_token": 0.4810486879182486,
+        "energy_per_output_token": 1.2026217197956215,
+        "energy_per_total_token": 0.6464384472614679
       },
       "text_generation": {
-        "average_power_draw": 190.9281248538012,
-        "energy_consumption": 569.5032933700976,
-        "energy_per_input_token": 0.8788747646023329,
-        "energy_per_output_token": 2.1971869115058325,
-        "energy_per_total_token": 1.816865873542291
+        "average_power_draw": 192.53171851408828,
+        "energy_consumption": 532.3548730280606,
+        "energy_per_input_token": 0.8337424023488686,
+        "energy_per_output_token": 2.084356005872172,
+        "energy_per_total_token": 1.7243905409922686
       }
     }
   },
   "AI.Models.qa_qwen2_7b_Q4": {
-    "model_average_power": 5538.430988002086,
+    "model_average_power": 26274.967734357208,
     "task_averages": {
       "RAG-qa": {
-        "average_power_draw": 175.32914254992252,
-        "energy_consumption": 5538.430988002086,
-        "energy_per_input_token": 0.6135018974124005,
-        "energy_per_output_token": 1.5337547435310017,
-        "energy_per_total_token": 1.3796159603567766
+        "average_power_draw": 177.32656441936797,
+        "energy_consumption": 26274.967734357208,
+        "energy_per_input_token": 0.2932996080863719,
+        "energy_per_output_token": 0.7332490202159297,
+        "energy_per_total_token": 0.3996238705807509
       }
     }
   },
   "AI.Models.qa_gemma2_9B_Q4": {
-    "model_average_power": 705.7928529887388,
+    "model_average_power": 801.7689634439776,
     "task_averages": {
       "RAG-qa": {
-        "average_power_draw": 186.7200265053077,
-        "energy_consumption": 705.7928529887388,
-        "energy_per_input_token": 0.2384285565937746,
-        "energy_per_output_token": 0.5960713914844366,
-        "energy_per_total_token": 0.3006331710031583
+        "average_power_draw": 155.9863072609007,
+        "energy_consumption": 801.7689634439776,
+        "energy_per_input_token": 0.24437275113732904,
+        "energy_per_output_token": 0.6109318778433227,
+        "energy_per_total_token": 0.2718961696046119
       }
     }
   },
   "AI.Models.qa_command-r_35B_Q4": {
-    "model_average_power": 3400.675087629541,
+    "model_average_power": 6124.057119329431,
     "task_averages": {
       "RAG-qa": {
-        "average_power_draw": 79.1982892909707,
-        "energy_consumption": 3400.675087629541,
-        "energy_per_input_token": 3.557674880951497,
-        "energy_per_output_token": 8.894187202378744,
-        "energy_per_total_token": 8.088136477058756
+        "average_power_draw": 59.15914279963427,
+        "energy_consumption": 6124.057119329431,
+        "energy_per_input_token": 1.8280505325000698,
+        "energy_per_output_token": 4.570126331250174,
+        "energy_per_total_token": 2.06890440894797
       }
     }
   },
   "AI.Models.qa_phi3_mini-128k_4b_Q4": {
-    "model_average_power": 1834.3523546073843,
+    "model_average_power": 3379.927487160807,
     "task_averages": {
       "RAG-qa": {
-        "average_power_draw": 214.33494759707523,
-        "energy_consumption": 1834.3523546073843,
-        "energy_per_input_token": 0.37954461715450727,
-        "energy_per_output_token": 0.9488615428862681,
-        "energy_per_total_token": 0.8921971078507153
+        "average_power_draw": 203.54617549409474,
+        "energy_consumption": 3379.927487160807,
+        "energy_per_input_token": 0.31498332274063046,
+        "energy_per_output_token": 0.7874583068515761,
+        "energy_per_total_token": 0.4748630385177569
       }
     }
   },
   "AI.Models.phi3_medium-128k_14b_Q4": {
-    "model_average_power": 972.5644296724629,
+    "model_average_power": 1106.1375921836334,
     "task_averages": {
       "summarization": {
-        "average_power_draw": 246.26762922130592,
-        "energy_consumption": 1151.6260676036277,
-        "energy_per_input_token": 0.3219932351339526,
-        "energy_per_output_token": 0.8049830878348816,
-        "energy_per_total_token": 0.4533879808939617
+        "average_power_draw": 243.28249971321466,
+        "energy_consumption": 785.0944376072415,
+        "energy_per_input_token": 0.43077094233526286,
+        "energy_per_output_token": 1.076927355838157,
+        "energy_per_total_token": 0.5390005078232644
       },
       "text_generation": {
-        "average_power_draw": 244.6381631331072,
-        "energy_consumption": 793.5027917412982,
-        "energy_per_input_token": 1.0284394082216415,
-        "energy_per_output_token": 2.571098520554104,
-        "energy_per_total_token": 2.1912504525455647
+        "average_power_draw": 249.0033432080465,
+        "energy_consumption": 1427.1807467600252,
+        "energy_per_input_token": 1.0554810001158406,
+        "energy_per_output_token": 2.6387025002896016,
+        "energy_per_total_token": 2.292393093954252
       }
     }
   },
   "AI.Models.llama3_1_8b_Q4": {
-    "model_average_power": 511.175391851198,
+    "model_average_power": 576.8576301150482,
     "task_averages": {
       "summarization": {
-        "average_power_draw": 167.8108740978156,
-        "energy_consumption": 472.0186877259117,
-        "energy_per_input_token": 0.3135239779236792,
-        "energy_per_output_token": 0.783809944809198,
-        "energy_per_total_token": 0.3995228910610738
+        "average_power_draw": 174.8113804345496,
+        "energy_consumption": 552.8959466116268,
+        "energy_per_input_token": 0.3170458072532507,
+        "energy_per_output_token": 0.7926145181331268,
+        "energy_per_total_token": 0.4067346590945606
       },
       "text_generation": {
-        "average_power_draw": 202.97826269530032,
-        "energy_consumption": 550.3320959764844,
-        "energy_per_input_token": 0.6017761097554363,
-        "energy_per_output_token": 1.504440274388591,
-        "energy_per_total_token": 1.3005188199118782
+        "average_power_draw": 204.06658550167333,
+        "energy_consumption": 600.8193136184697,
+        "energy_per_input_token": 0.6075524251781921,
+        "energy_per_output_token": 1.5188810629454803,
+        "energy_per_total_token": 1.309122097992851
       }
     }
   },
   "AI.Models.mistral-nemo_12b_Q4": {
-    "model_average_power": 791.4524984633639,
+    "model_average_power": 922.4696310864103,
     "task_averages": {
       "summarization": {
-        "average_power_draw": 198.7802640903208,
-        "energy_consumption": 729.4260017891172,
-        "energy_per_input_token": 0.47145552945547103,
-        "energy_per_output_token": 1.178638823638678,
-        "energy_per_total_token": 0.6232842777653285
+        "average_power_draw": 172.78885581704577,
+        "energy_consumption": 798.0613416180552,
+        "energy_per_input_token": 0.4820084910045944,
+        "energy_per_output_token": 1.2050212275114862,
+        "energy_per_total_token": 0.6360313242414362
       },
       "text_generation": {
-        "average_power_draw": 217.9528226936888,
-        "energy_consumption": 853.4789951376106,
-        "energy_per_input_token": 0.9038833828117087,
-        "energy_per_output_token": 2.2597084570292716,
-        "energy_per_total_token": 1.9573980193996416
+        "average_power_draw": 221.21413807804433,
+        "energy_consumption": 1046.8779205547655,
+        "energy_per_input_token": 0.8792124833834839,
+        "energy_per_output_token": 2.1980312084587097,
+        "energy_per_total_token": 1.868669950115135
       }
     }
   },
   "AI.Models.command-r_35B_Q4": {
-    "model_average_power": 2137.759637611046,
+    "model_average_power": 2988.435264456776,
     "task_averages": {
       "summarization": {
-        "average_power_draw": 92.49825482465619,
-        "energy_consumption": 2059.964144314066,
-        "energy_per_input_token": 1.3452843507933163,
-        "energy_per_output_token": 3.3632108769832905,
-        "energy_per_total_token": 1.6311758565219203
+        "average_power_draw": 58.972602801714594,
+        "energy_consumption": 3178.4057276969347,
+        "energy_per_input_token": 2.0727031411698436,
+        "energy_per_output_token": 5.181757852924609,
+        "energy_per_total_token": 2.5193752348460334
       },
       "text_generation": {
-        "average_power_draw": 90.25253171555478,
-        "energy_consumption": 2215.555130908026,
-        "energy_per_input_token": 3.2692118771640444,
-        "energy_per_output_token": 8.17302969291011,
-        "energy_per_total_token": 6.770462487418615
+        "average_power_draw": 39.39170821860312,
+        "energy_consumption": 2798.464801216617,
+        "energy_per_input_token": 3.9821137836991505,
+        "energy_per_output_token": 9.955284459247874,
+        "energy_per_total_token": 8.373709245793076
       }
     }
   },
   "AI.Models.qwen2_7b_Q4": {
-    "model_average_power": 557.7607739985449,
+    "model_average_power": 475.80371133486733,
     "task_averages": {
       "summarization": {
-        "average_power_draw": 169.824128188162,
-        "energy_consumption": 594.1185636854768,
-        "energy_per_input_token": 0.3435818622588258,
-        "energy_per_output_token": 0.8589546556470646,
-        "energy_per_total_token": 0.4696485417020346
+        "average_power_draw": 161.89034378770825,
+        "energy_consumption": 595.7710992822546,
+        "energy_per_input_token": 0.3341691842896506,
+        "energy_per_output_token": 0.8354229607241266,
+        "energy_per_total_token": 0.4544677555629373
       },
       "text_generation": {
-        "average_power_draw": 190.02115543856638,
-        "energy_consumption": 521.402984311613,
-        "energy_per_input_token": 0.6006978974123188,
-        "energy_per_output_token": 1.5017447435307971,
-        "energy_per_total_token": 1.2359472497293469
+        "average_power_draw": 140.72747669897953,
+        "energy_consumption": 355.83632338748015,
+        "energy_per_input_token": 0.405911558259092,
+        "energy_per_output_token": 1.0147788956477302,
+        "energy_per_total_token": 0.8455677428033163
       }
     }
   },
   "AI.Models.qa_mistral-nemo_12b_Q4": {
-    "model_average_power": 982.8294360244832,
+    "model_average_power": 1113.155408799598,
     "task_averages": {
       "RAG-qa": {
-        "average_power_draw": 197.15830453558127,
-        "energy_consumption": 982.8294360244832,
-        "energy_per_input_token": 0.8802473256070469,
-        "energy_per_output_token": 2.2006183140176176,
-        "energy_per_total_token": 1.9613311684152765
+        "average_power_draw": 188.19010973208225,
+        "energy_consumption": 1113.155408799598,
+        "energy_per_input_token": 0.3419396799707422,
+        "energy_per_output_token": 0.8548491999268557,
+        "energy_per_total_token": 0.4032972571339339
       }
     }
   }

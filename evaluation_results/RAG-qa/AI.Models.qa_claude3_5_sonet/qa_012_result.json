@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.3888888888888889,
+  "overall_score": 0.33748784278565913,
   "individual_scores": {
-    "AnswerRelevancy": 0.9444444444444444,
+    "AnswerRelevancy": 0.875,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.14992705671395495
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.94 because the response is highly relevant to the issue of not receiving notifications, but it includes a source link that doesn't directly address the problem.",
+    "AnswerRelevancy": "The score is 0.88 because the response mostly addresses the issue of not receiving notifications, but includes a source link and a comment on search results that are not directly relevant to solving the problem.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node contains 'image links and references to various projects, which are unrelated to the topic of enabling notifications in XWiki.' The second node 'consists of image links and references, which do not provide any information about notifications settings or configurations.' The third node 'includes image links and project references, offering no relevant information about notification settings in XWiki.'",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant, containing 'image links and references, which are unrelated to the topic of notifications or their settings.' These nodes do not address the issue of enabling notifications, hence they should be ranked lower than any relevant nodes.",
     "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context lacks any information related to enabling notifications or following pages and users as described in the expected output."
+    "CustomContextualRelevancy": "The retrieval context contains image links and references unrelated to the expected answer about enabling notifications and following users or pages in XWiki.",
+    "Correctness": "The actual output does not mention setting `notifications.enabled` in `xwiki.properties`, following pages or users, or using the notification menu. It vaguely suggests checking notification settings and email configuration, missing key facts from the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.5171428571428571,
+  "overall_score": 0.6778573772244777,
   "individual_scores": {
-    "AnswerRelevancy": 0.7857142857142857,
+    "AnswerRelevancy": 0.8947368421052632,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0,
+    "ContextualPrecision": 1.0,
     "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.3
+    "CustomContextualRelevancy": 0.4,
+    "Correctness": 0.27240742124160283
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.79 because the response mostly addresses the issue of not receiving notifications, but includes irrelevant source links and references that do not directly contribute to solving the problem.",
+    "AnswerRelevancy": "The score is 0.89 because the response mostly addresses the issue of not receiving notifications, but includes irrelevant source links that do not directly relate to solving the problem.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node 'lists various features and settings related to notifications but does not provide specific instructions on enabling notifications or following users/pages', which is not helpful for the input. The second node 'discusses notification settings and options but lacks direct guidance on enabling notifications or following users/pages', which is crucial to the expected output. The third node 'explains the availability of RSS feeds and notification settings but does not address enabling notifications or following users/pages', which are key components of the expected output. Lastly, the fourth node 'provides a list of notification-related macros and preferences but does not offer specific instructions on enabling notifications or following users/pages', which are necessary for the expected output.",
-    "ContextualRecall": "The score is 0.50 because while there are connections between the expected output and nodes in the retrieval context regarding enabling notifications and following users or pages, several specific details such as setting 'notifications.enabled' in 'xwiki.properties', the 'alert' menu, and viewing followed users in the 'network' tab are not supported by the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users, but lacks details on setting 'notifications.enabled' in 'xwiki.properties' and specifics about following pages or viewing followed users in the user profile."
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are perfectly ranked higher than irrelevant ones. The first two nodes are relevant as they discuss 'Enable and disable the extension' and 'Enabling notifications for all users by default', and 'Follow a user' and 'Watched Entities', which align with the input about notifications. The irrelevant nodes, ranked third and fourth, discuss 'RSS feeds and settings' and 'various notification preferences macros', which do not directly relate to enabling notifications or following users/pages.",
+    "ContextualRecall": "The score is 0.50 because while there are nodes in the retrieval context that support the general idea of enabling notifications and following users or pages (1st and 2nd nodes), there are several specific details in the expected output, such as 'xwiki.properties', 'menu alerte', and 'r\u00e9seau' tab, that are not covered by the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users, but lacks details on setting `notifications.enabled` to `true` and specifics about the alert menu or network tab in user profiles.",
+    "Correctness": "The actual output mentions enabling notifications and watching entities, similar to the expected output, but lacks specifics about `xwiki.properties`, following pages or users, and the network tab in the user profile."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

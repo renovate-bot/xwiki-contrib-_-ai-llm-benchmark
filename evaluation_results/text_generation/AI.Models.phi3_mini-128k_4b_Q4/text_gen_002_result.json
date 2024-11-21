@@ -1,6 +1,6 @@
 {
-  "score": 0.0,
-  "reason": "The Actual Output is completely irrelevant to the Input prompt, which involves transforming specific keywords into a coherent sentence. The Actual Output is incoherent and unrelated to the Expected Output, which is a simple sentence about a cat in a garden.",
+  "score": 0.8,
+  "reason": "The Actual Output captures the essence of the Input and is relevant to the Expected Output. It is coherent and fluent, but it adds more detail than necessary, deviating slightly from the simplicity of the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

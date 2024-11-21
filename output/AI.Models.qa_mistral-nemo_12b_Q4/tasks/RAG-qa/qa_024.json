@@ -2,7 +2,7 @@
   "id": "qa_024",
   "prompt": "Je re\u00e7ois beaucoup de notifications concernant toutes sortes de pages qui ne m'int\u00e9ressent pas. Il semble qu'elles aient \u00e9t\u00e9 activ\u00e9es automatiquement. Comment puis-je d\u00e9sactiver ces notifications?",
   "expected_answer": "Par d\u00e9faut, une page o\u00f9 vous avez apport\u00e9 une modification importante est automatiquement ajout\u00e9e \u00e0 la liste des pages que vous suivez. Cela signifie que vous serez notifi\u00e9 des changements sur votre travail. Vous pouvez modifier le param\u00e8tre pour \"Suivi automatique des pages\" dans les param\u00e8tres de notification de votre profil utilisateur. Vous pouvez supprimer les filtres de notification existants qui ont \u00e9t\u00e9 cr\u00e9\u00e9s de cette mani\u00e8re dans la liste \"Filtres personnalis\u00e9s\" des param\u00e8tres de notification de votre profil utilisateur.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nBased on the provided search results, here's how you can manage your notifications and disable unwanted ones:\n\n1. **Access your notification settings:**\n   - Click on the bell icon (Notifications) in the top-right corner of your screen.\n   - In the dropdown menu, click on \"Settings\".\n\n2. **Disable specific notification types:**\n   - You'll see a list of applications with their respective notification types (e.g., Pages, Blog Posts, Comments, etc.).\n   - To disable notifications for an entire application, click on its bell icon. It will turn gray, indicating that all notifications from that application are turned off.\n   - If you want to disable specific notification types within an application, click on the arrow next to the bell icon. This will show you a list of notification types for that application. Uncheck the boxes next to the notification types you don't want to receive.\n\n3. **Manage watched entities:**\n   - In your notification settings, there's also a section called \"Watched Entities\".\n   - Here, you can manage which pages, users, or other entities you're following (and thus receiving notifications for).\n   - To stop receiving notifications for a specific entity, click on the 'x' next to it in the list.\n\n4. **Adjust default watch settings:**\n   - You can also change your default watch settings by clicking on \"Default Watch Settings\" at the bottom of the watched entities section.\n   - Here, you can choose which types of notifications you want to receive by default when you start watching a new entity.\n\nBy adjusting these settings, you should be able to reduce or eliminate the unwanted notifications you're receiving. If you still have issues or need further assistance, please let me know!",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nBased on the provided search results, here are the steps to manage your notification settings in XWiki:\n\n1. **Access Notification Settings:**\n   - Click on the bell icon (Notifications) at the top right corner of your screen.\n   - In the dropdown menu, click on \"Settings\".\n\n2. **Manage Notification Types:**\n   - You'll see a list of applications with their respective notification types (e.g., Pages, Blog, Comments, etc.).\n   - To disable notifications for an application entirely, click on its bell icon to turn it off.\n   - To manage specific notification types within an application, click on the arrow next to its bell icon. This will allow you to enable or disable individual notification types.\n\n3. **Filter Notifications:**\n   - Additionally, you can filter notifications by:\n     - Hidden (technical) pages\n     - Your own events\n     - Events marked as read\n     - Minor events\n\n4. **Manage Watched Entities:**\n   - You can also manage which entities (pages, spaces, users) you're watching to receive notifications.\n   - Click on \"Watched Entities\" in the settings menu to manage this.\n\nBy following these steps, you should be able to disable unwanted notifications and customize your notification preferences according to your needs.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -39,12 +39,12 @@
   ],
   "usage": {
     "prompt_tokens": 1909,
-    "completion_tokens": 350,
-    "total_tokens": 2259
+    "completion_tokens": 262,
+    "total_tokens": 2171
   },
-  "average_power_draw": 210.36432679738573,
-  "energy_consumption": 1180.0269405106133,
-  "energy_per_input_token": 0.42386025162019153,
-  "energy_per_output_token": 1.0596506290504788,
-  "energy_per_total_token": 0.5223669502039014
+  "average_power_draw": 185.8321749408983,
+  "energy_consumption": 961.0400807674104,
+  "energy_per_input_token": 0.374820624324263,
+  "energy_per_output_token": 0.9370515608106574,
+  "energy_per_total_token": 0.4426716171199495
 }

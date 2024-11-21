@@ -2,7 +2,7 @@
   "id": "qa_029",
   "prompt": "Comment puis-je refuser le droit de script \u00e0 un administrateur d'espace?",
   "expected_answer": "Ceci n'est malheureusement pas pris en charge dans XWiki, les droits qui sont impliqu\u00e9s par le droit d'administrateur ne peuvent pas \u00eatre refus\u00e9s.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \n\n\nPour refuser le droit de script \u00e0 un administrateur de salle, vous pouvez suivre ces \u00e9tapes dans Teams :\n\n1. Acc\u00e9dez \u00e0 la salle dont vous souhaitez modifier les param\u00e8tres et cliquez sur les trois points (\"...\"), puis s\u00e9lectionnez \" G\u00e9rer la salle\".\n\n2. Dans l'onglet \"Param\u00e8tres de la salle\", faites d\u00e9filer jusqu'\u00e0 la section \"Membres\" et recherchez le nom de l'administrateur de la salle auquel vous souhaitez refuser l'autorisation d'ex\u00e9cuter des scripts.\n\n3. Cliquez sur l'ic\u00f4ne en forme de crayon (\"Modifier\") \u00e0 c\u00f4t\u00e9 du nom de l'administrateur, puis d\u00e9sactivez l'option \"Autoriser les scripts\".\n\n4. Cliquez sur \"Enregistrer\" pour appliquer les modifications.\n\nL'administrateur de la salle ne sera d\u00e9sormais plus en mesure d'ex\u00e9cuter des scripts dans cette salle. Notez que seuls les propri\u00e9taires de la \u00e9quipe peuvent effectuer ces changements. Si vous n'avez pas la permission, vous devrez contacter un propri\u00e9taire pour qu'il effectue ces modifications pour vous.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \n\n\nJe n'ai pas trouv\u00e9 de r\u00e9sultats pertinents sur la fa\u00e7on de refuser le droit de script \u00e0 un administrateur d'espace dans XWiki. Cependant, selon la documentation de XWiki sur les droits d'acc\u00e8s, le droit de script peut \u00eatre contr\u00f4l\u00e9 en modifiant les autorisations correspondantes. Le droit de script est accord\u00e9 par d\u00e9faut dans les versions pr\u00e9c\u00e9dentes \u00e0 tous les utilisateurs qui ont des droits d\u2019\u00e9dition sur un wiki. Vous pouvez refuser ce droit en utilisant l\u2019API de s\u00e9curit\u00e9, qui fournit une m\u00e9thode pour v\u00e9rifier si un utilisateur a un droit donn\u00e9. \n\nVoici un exemple de code qui refuse le droit de script \u00e0 un utilisateur particulier :\n```\nextensions.getSecurityManager().denyRight(\"script\", user);\n```\nNotez que vous avez besoin des droits d'administration pour ex\u00e9cuter ce code.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 23,
-    "completion_tokens": 241,
-    "total_tokens": 264
+    "prompt_tokens": 3468,
+    "completion_tokens": 177,
+    "total_tokens": 3645
   },
-  "average_power_draw": 76.84164395782642,
-  "energy_consumption": 2454.6121255381354,
-  "energy_per_input_token": 3.9242400088539333,
-  "energy_per_output_token": 9.810600022134834,
-  "energy_per_total_token": 9.297773202795968
+  "average_power_draw": 60.675461175460995,
+  "energy_consumption": 5469.902740071981,
+  "energy_per_input_token": 1.3987732361774659,
+  "energy_per_output_token": 3.4969330904436644,
+  "energy_per_total_token": 1.5006591879484172
 }

@@ -1,6 +1,6 @@
 {
-  "score": 0.9,
-  "reason": "The Actual Output effectively adapts the text for a technical audience by incorporating specific terminology like 'neurons,' 'glia,' and 'neural circuits,' which aligns well with the Expected Output. It maintains coherence and fluency, though it includes slightly more detail than necessary, such as ongoing research, which was not in the Expected Output.",
+  "score": 0.8,
+  "reason": "The Actual Output is relevant to the Input, addressing the complexity and functions of the brain. It maintains coherence with the Expected Output, though it uses slightly different terminology. The fluency is high, with a natural and readable style, but it lacks some of the technical specificity found in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

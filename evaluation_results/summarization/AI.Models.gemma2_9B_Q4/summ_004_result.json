@@ -1,9 +1,9 @@
 {
-  "score": 0.2,
-  "reason": "The score is 0.20 because the summary contains significant contradictions with the original text, such as misrepresenting the recommended methods for upgrading and downgrading XWiki. Additionally, it includes a substantial amount of extra information not present in the original text, such as details about manual upgrades and community resources. Furthermore, the summary fails to answer questions that the original text can address, indicating a lack of coverage and accuracy.",
+  "score": 0.5714285714285714,
+  "reason": "The score is 0.57 because the summary contains contradictory information about the Flavor Upgrade process and includes extra details not present in the original text, such as specific commands for upgrading and potential issues with database schema compatibility. Additionally, the summary fails to address whether XWiki provides migration paths for upgrades, which the original text can answer.",
   "score_breakdown": {
-    "Alignment": 0.2,
-    "Coverage": 0.6
+    "Alignment": 0.5714285714285714,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

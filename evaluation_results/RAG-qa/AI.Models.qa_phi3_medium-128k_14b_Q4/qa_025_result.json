@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.4257142857142857,
+  "overall_score": 0.22798064606748236,
   "individual_scores": {
-    "AnswerRelevancy": 0.9285714285714286,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 0.42857142857142855,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.2,
-    "CustomContextualRelevancy": 0.0
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.1893124478334656
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.93 because the response is highly relevant and provides useful information about configuring OpenID Connect in XWiki, but it includes an irrelevant mention of LDAP Authenticator, which slightly detracts from the focus on the specific question asked.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input. The first node discusses 'domain-based authentication and session cookie configuration', which does not relate to enabling user accounts automatically via OpenID Connect. The second node is about 'container authentication and LDAP', lacking the specific property needed for OpenID Connect. The third node mentions OpenID Connect but misses the specific configuration for automatic activation. The fourth node lists dependencies for the OpenID Connect extension without addressing the needed configuration. The fifth node focuses on 'LDAP and Active Directory integration', unrelated to the OpenID Connect configuration required.",
-    "ContextualRecall": "The score is 0.20 because only the mention of the property `oidc.enableUser` in sentence 1 is somewhat related to node 1 in the retrieval context, while the rest of the expected output lacks support from the nodes, including key instructions and guarantees.",
-    "CustomContextualRelevancy": "The retrieval context does not contain information about adjusting the xwiki.properties file or the specific property oidc.enableUser for automatic activation of user accounts on first login using OpenID Connect."
+    "AnswerRelevancy": "The score is 0.75 because the response addresses the main question about configuring XWiki for automatic user activation with OpenID Connect, but it includes repeated irrelevant source links that do not directly resolve the configuration issue.",
+    "Faithfulness": "The score is 0.43 because the actual output incorrectly associates the setting xwiki.authentication.createuser=true with OpenID Connect, while the retrieval context does not specify this association. Additionally, the output mistakenly claims that new users are configured as 'context user' by default, contradicting the context which states users are created only if xwiki.authentication.createuser is set. Furthermore, the output incorrectly suggests setting xwiki.authentication.authclass for OpenID Connect user creation, whereas the context indicates this is for Container Authentication.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'domain-based authentication and cookie settings,' which is unrelated to enabling user accounts automatically with OpenID Connect. The second node covers 'container authentication and LDAP,' not mentioning the specific configuration needed for OpenID Connect user activation. The third node, while mentioning OpenID Connect, focuses on 'general authentication and configuration guides,' not on enabling user accounts automatically. The fourth node lists 'dependencies for the OpenID Connect extension,' which is not relevant to the specific configuration needed for automatic user activation. Lastly, the fifth node is about 'LDAP and Active Directory integration,' which does not relate to OpenID Connect user account activation.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not mention the xwiki.properties file or the oidc.enableUser property, which are crucial for the expected answer.",
+    "Correctness": "Actual output focuses on account creation, not activation, and uses xwiki.cfg instead of xwiki.properties. It mentions different properties and steps than expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

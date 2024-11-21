@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary contains contradictions regarding where programming permissions can be granted and the order of permission checking, as well as extra information about a detailed table that is not present in the original text. Additionally, the summary fails to answer questions about the default status of the edit right and the inclusivity of the administration right, which the original text can answer.",
+  "score": 0.0,
+  "reason": "The score is 0.00 because the summary contains multiple contradictions with the original text, such as incorrectly categorizing rights and misrepresenting the permissions system. Additionally, the summary fails to answer specific questions that the original text addresses, indicating a significant lack of alignment between the summary and the original content.",
   "score_breakdown": {
-    "Alignment": 0.8125,
-    "Coverage": 0.6
+    "Alignment": 0.0,
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

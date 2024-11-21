@@ -2,12 +2,12 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "In verdant hues of emerald spread,\nNature's canvas stretches wide,\nWhere azure skies and sapphire seas wed,\nAnd clouds like lovers softly glide.\n\nThe sun, a golden sovereign high,\nBestows warmth with its radiant light,\nAs zephyrs whisper secrets to the sky,\nAnd dance with leaves in ballet flight.\n\nMountains stand as ancient kings,\nTheir peaks adorned in silver snow,\nWhile rivers sing in melody to springs,\nThrough valleys where the breezes blow.\n\nForests weave tales with gnarled old trees,\nTheir roots deep into earth entwined,\nEach branch a testament to histories,\nWhispered through the rustling pines.\n\nFlowers bloom like shy debutantes,\nIn colors that outshine the sun,\nTheir fragrance waltzes on the dance,\nOf bees that hum where nectar's spun.\n\nAt dusk, the fireflies take their cue,\nTo light the world with tiny flames,\nAnd stars above, like diamonds strewn,\nIn velvet night, proclaim nature's fame.\n\nOh, beauty of the natural world,\nUnspoiled, untamed, and wildly free,\nYour symphony of grace unfurled,\nIs poetry that sings in me.",
+  "ai_answer": "In verdant woods where sunlight gleams,\nAnd dappled shadows softly dance,\nNature weaves her tapestry\nIn silence, save the whispered chant.\n\nThe brook that bubbles o'er the stones,\nIts waters clear and cool and bright,\nEchoes the songs of birds above,\nA symphony of pure delight.\n\nThe mountains stand with heads held high,\nTheir peaks with snowy caps adorned,\nWhile valleys stretch in gentle curves,\nA patchwork quilt in green and gold.\n\nThe wildflowers paint the meadow's face,\nWith hues that dazzle and enthrall,\nAs butterflies flit to and fro,\nA dance of life, both big and small.\n\nThe ocean's waves in rhythm sway,\nTheir ceaseless dance a soothing song,\nAnd sunsets paint the sky with fire,\nA canvas vast and ever-long.\n\nThe stars at night in splendor glow,\nTheir distant light a beacon true,\nWhile forests breathe with ancient soul,\nA wisdom deep that whispers through.\n\nOh, Nature's beauty ever-changing,\nYet constant as the seasons' turn,\nInspires the heart with awe and love,\nA flame of joy that ever burns.",
   "sources": null,
   "usage": {
     "prompt_tokens": 12,
-    "completion_tokens": 313,
-    "total_tokens": 325
+    "completion_tokens": 294,
+    "total_tokens": 306
   },
   "average_power_draw": null,
   "energy_consumption": null,

@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.8611965811965814,
+  "overall_score": 0.7316034739687494,
   "individual_scores": {
-    "AnswerRelevancy": 0.9444444444444444,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.8,
+    "Faithfulness": 0.6666666666666666,
     "ContextualPrecision": 1.0,
-    "ContextualRecall": 0.46153846153846156,
-    "CustomContextualRelevancy": 0.9
+    "ContextualRecall": 0.45454545454545453,
+    "CustomContextualRelevancy": 0.9,
+    "Correctness": 0.5684087226003744
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.94 because the response is highly relevant and provides useful information about configuring group synchronization between XWiki and an OpenID Connect provider. However, it includes a source URL that doesn't directly address the configuration process, slightly affecting the score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than irrelevant nodes. The first three nodes provide detailed information about configuring the `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping` properties, which are directly relevant to setting up group synchronization. The irrelevant nodes, ranked fourth and fifth, discuss installation instructions and authentication management, which do not directly address the group synchronization setup process. Great job on the ranking!",
-    "ContextualRecall": "The score is 0.46 because while nodes in retrieval context provide specific examples and mention key properties like 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping', they lack the comprehensive step-by-step instructions present in the expected output, leading to a lower score.",
-    "CustomContextualRelevancy": "The retrieval context contains detailed information on configuring group synchronization, including `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping`, matching the expected output. However, it lacks explicit instructions to save and restart the XWiki instance."
+    "AnswerRelevancy": "The score is 0.80 because the response mostly addresses the input question about configuring group synchronization between XWiki and an OpenID Connect provider. However, it includes some irrelevant statements that do not contribute to the explanation, preventing a higher score.",
+    "Faithfulness": "The score is 0.67 because the actual output incorrectly states that adding the claim xwiki_groups to oidc.userinfoclaims is the default setting, which is not specified in the retrieval context. Additionally, the actual output refers to the oidc.groups.separator parameter for parsing groups, which is not mentioned in the retrieval context.",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than the irrelevant ones. Great job on getting everything in the right order!",
+    "ContextualRecall": "The score is 0.45 because while some details about configuring group synchronization, such as claims and separators, are supported by nodes in the retrieval context, many procedural steps and introductory statements in the expected output are not explicitly covered by the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context includes detailed instructions on configuring group synchronization using properties like oidc.groups.claim, oidc.groups.separator, and oidc.groups.mapping, matching the expected output. However, it lacks explicit mention of saving the file and restarting the XWiki instance.",
+    "Correctness": "The actual output correctly mentions configuring `oidc.groups.mapping` and `oidc.groups.separator`, similar to the expected output, but lacks detail on `oidc.groups.claim` setup and saving changes. It introduces `oidc.groups.allowed` and `oidc.groups.forbidden`, which are not in the expected output, indicating discrepancies."
   },
   "question_language": "en",
   "expected_answer_language": "en",

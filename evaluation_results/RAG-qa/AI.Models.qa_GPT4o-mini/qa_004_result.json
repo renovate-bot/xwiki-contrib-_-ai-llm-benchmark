@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.6286507936507936,
+  "overall_score": 0.5707448917994089,
   "individual_scores": {
-    "AnswerRelevancy": 0.9444444444444444,
-    "Faithfulness": 0.8571428571428571,
-    "ContextualPrecision": 0.29166666666666663,
+    "AnswerRelevancy": 0.8947368421052632,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.26785714285714285,
     "ContextualRecall": 0.75,
-    "CustomContextualRelevancy": 0.3
+    "CustomContextualRelevancy": 0.3,
+    "Correctness": 0.21187536583404754
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.94 because the answer is highly relevant and provides useful information on how to disable notifications in XWiki. However, it includes a source link that does not directly address the question, slightly impacting the score.",
-    "Faithfulness": "The score is 0.86 because the actual output incorrectly claims the existence of an 'Advanced filtering options' section to disable notifications about your own activity or hide minor events, which is not mentioned in the retrieval context.",
-    "ContextualPrecision": "The score is 0.29 because the relevant nodes in the retrieval context are not ranked as high as they should be. The fourth node is relevant as it 'mentions that administrators can change users' notification settings and discusses auto-watched mode,' but it is preceded by three irrelevant nodes. The first node is irrelevant because it 'discusses following a user and default watch settings, but does not mention how to disable notifications or manage notification settings in the user profile.' Similarly, the second node 'talks about the details of changes in notifications and macros for settings, but does not provide information on disabling notifications or managing notification settings.' The third node 'focuses on enabling and disabling the email feature and customizing live email notifications,' which is not directly related to the input query. Additionally, the sixth node, which is relevant as it 'discusses the settings of the notifications menu and mentions that users can enable or disable notification types,' is ranked lower than several irrelevant nodes.",
-    "ContextualRecall": "The score is 0.75 because the 5th node in the retrieval context supports most of the expected output by discussing automatic page watching, user profile settings, and custom filters. However, it does not specifically mention being notified about changes on your work, which affects the score.",
-    "CustomContextualRelevancy": "The retrieval context mentions default watch settings and user profile settings but lacks specific details about automatic page watching and deleting notification filters."
+    "AnswerRelevancy": "The score is 0.89 because the response mostly addresses how to disable notifications in XWiki, but includes a source link and a standalone 'Filters:' statement that do not directly contribute to answering the question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.27 because the relevant nodes in the retrieval context are ranked lower than several irrelevant nodes. For instance, the first node discusses 'following a user and default watch settings,' which does not address disabling notifications, while the fourth node, which is relevant, mentions 'administrators can change users' notification settings.' Additionally, the second node focuses on 'details of changes and macros for settings,' which is not pertinent, whereas the seventh node, which is relevant, discusses 'filtering notifications, including advanced filtering options.' These relevant nodes should be ranked higher to improve the score.",
+    "ContextualRecall": "The score is 0.75 because most of the expected output is supported by node 5 in the retrieval context, which covers automatic page watching, changing settings, and custom filters. However, the retrieval context does not mention notifications about changes to your work specifically, leading to a partial match.",
+    "CustomContextualRelevancy": "The retrieval context mentions default watch settings and notification settings in user profiles, but lacks details about automatic page watching for major modifications and deleting notification filters.",
+    "Correctness": "The actual output provides steps for managing notifications but lacks key facts about automatic page watching and deleting custom filters from the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

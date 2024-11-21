@@ -2,7 +2,7 @@
   "id": "qa_019",
   "prompt": "Wie kann ich einem Bereichsadministrator das Skriptrecht verweigern?",
   "expected_answer": "Leider wird dies in XWiki nicht unterst\u00fctzt, Rechte, die durch das Admin-Recht impliziert sind, k\u00f6nnen nicht verweigert werden.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Index%20for%20the%20LLM%20Application/ \n\n\nUm einem Benutzer das Recht zum Ausf\u00fchren von Skripten zu verweigern, m\u00fcssen Sie seine Berechtigungen bearbeiten und das Recht \"execute script\" entfernen. Hier sind die Schritte dazu:\n\n1. \u00d6ffnen Sie das Profil des Benutzers, dem Sie das Recht entziehen m\u00f6chten.\n2. Klicken Sie auf den Tab \"Berechtigungen\".\n3. Suchen Sie nach dem Recht \"execute script\". Es sollte unter der Kategorie \"Skript\" aufgef\u00fchrt sein.\n4. Entfernen Sie das H\u00e4kchen neben diesem Recht, um es zu deaktivieren.\n5. Klicken Sie auf \"Speichern\", um die \u00c4nderungen zu speichern.\n\nJetzt sollte dieser Benutzer nicht mehr in der Lage sein, Skripte auszuf\u00fchren.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Index%20for%20the%20LLM%20Application/ \n\n\nUm einem Bereichsadministrator das Skriptrecht zu verweigern, m\u00fcssen Sie die Berechtigungen f\u00fcr den Benutzer oder die Gruppe \u00e4ndern. Hier sind die Schritte, um dies in XWiki zu tun:\n\n1. Navigieren Sie zum Profil des Benutzers oder der Gruppe, dem/der Sie das Recht entziehen m\u00f6chten.\n2. Klicken Sie auf die Registerkarte \"Berechtigungen\".\n3. Suchen Sie das Recht \"Skript\" und deaktivieren Sie es.\n4. Klicken Sie auf \"Speichern\", um die \u00c4nderungen zu speichern.\n\nWenn Sie einen Bereichsadministrator entbehren m\u00f6chten, k\u00f6nnen Sie auch die Berechtigung f\u00fcr den Benutzer oder die Gruppe im betreffenden Bereich \u00e4ndern:\n\n1. \u00d6ffnen Sie das Profil des Benutzers oder der Gruppe.\n2. Klicken Sie auf die Registerkarte \"Berechtigungen\".\n3. Suchen Sie den Bereich und deaktivieren Sie das Recht \"Skript\" f\u00fcr diesen Bereich.\n4. Klicken Sie auf \"Speichern\", um die \u00c4nderungen zu speichern.\n\nBitte beachten Sie, dass diese Schritte davon abh\u00e4ngen, wie Ihr XWiki-System konfiguriert ist. Es kann sein, dass die genauen Schritte und Optionen je nach Konfiguration variieren.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,12 +31,12 @@
   ],
   "usage": {
     "prompt_tokens": 1507,
-    "completion_tokens": 164,
-    "total_tokens": 1671
+    "completion_tokens": 282,
+    "total_tokens": 1789
   },
-  "average_power_draw": 212.46626495726497,
-  "energy_consumption": 601.1868133130237,
-  "energy_per_input_token": 0.31360814465989756,
-  "energy_per_output_token": 0.7840203616497439,
-  "energy_per_total_token": 0.35977666864932595
+  "average_power_draw": 177.81090702947841,
+  "energy_consumption": 974.8819293400866,
+  "energy_per_input_token": 0.4407241995208348,
+  "energy_per_output_token": 1.101810498802087,
+  "energy_per_total_token": 0.5449312070095509
 }

@@ -1,8 +1,8 @@
 {
-  "score": 1.0,
-  "reason": "The score is 1.00 because the summary perfectly aligns with the original text, with no contradictions or extraneous information. Excellent summarization quality.",
+  "score": 0.8571428571428571,
+  "reason": "The score is 0.86 because the summary accurately reflects the original text without contradictions, although it includes additional details about robust access control and user management not specified in the original text. Overall, the summary is well-aligned with the original content.",
   "score_breakdown": {
-    "Alignment": 1.0,
+    "Alignment": 0.8571428571428571,
     "Coverage": 1.0
   },
   "input_language": "en",

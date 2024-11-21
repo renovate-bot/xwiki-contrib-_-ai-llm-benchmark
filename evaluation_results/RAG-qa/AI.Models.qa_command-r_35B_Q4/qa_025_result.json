@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.5018181818181818,
+  "overall_score": 0.3890087665223921,
   "individual_scores": {
-    "AnswerRelevancy": 0.9090909090909091,
+    "AnswerRelevancy": 0.875,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.6,
-    "CustomContextualRelevancy": 0.0
+    "ContextualRecall": 0.4,
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.05905259913435257
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.91 because the response is highly relevant to configuring OpenID Connect in XWiki, but it includes a mention of LDAP Authenticator, which is not pertinent to the question.",
+    "AnswerRelevancy": "The score is 0.88 because the response is mostly relevant to configuring OpenID Connect in XWiki, but it includes an irrelevant mention of LDAP Authenticator, which is not related to the question about OpenID Connect.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'domain-based authentication and session cookie configuration', which does not relate to enabling user accounts automatically using OpenID Connect. The second node mentions OpenID Connect but lacks information on 'automatically activating user accounts on first login'. The third node provides a general description of OpenID Connect without addressing the specific configuration needed. The fourth node lists 'dependencies for the OpenID Connect extension' without discussing user account activation. Lastly, the fifth node focuses on 'LDAP and Active Directory integration', which is unrelated to the required OpenID Connect configuration.",
-    "ContextualRecall": "The score is 0.60 because while the 3rd node in the retrieval context supports the general idea of configuring OpenID Connect in XWiki, it lacks specific instructions on updating the 'xwiki.properties' file and does not mention the need to save the file and restart XWiki.",
-    "CustomContextualRelevancy": "The retrieval context lacks any mention of adjusting the xwiki.properties file or the specific property oidc.enableUser, which are crucial details in the expected output."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input. The first node discusses 'domain-based authentication and session cookies', which is unrelated to enabling user accounts via OpenID Connect in XWiki. The second node is about 'container authentication and LDAP', not addressing the configuration of OpenID Connect for automatic user activation. The third node mentions OpenID Connect but lacks information on enabling user accounts automatically upon first login. The fourth node lists 'dependencies for the OpenID Connect extension', which is unrelated to the specific configuration needed. Lastly, the fifth node focuses on 'LDAP and Active Directory integration', which is not relevant to the OpenID Connect configuration for automatic user activation.",
+    "ContextualRecall": "The score is 0.40 because while nodes in the retrieval context mention 'OpenId Connect Authentication' and 'xwiki.properties', they do not specifically address adding or updating the property for enabling user accounts, restarting XWiki, or automatically activating accounts on first login, which are key parts of the expected output.",
+    "CustomContextualRelevancy": "The retrieval context lacks any mention of the xwiki.properties file or the oidc.enableUser property, which are crucial details in the expected answer.",
+    "Correctness": "The actual output does not match the expected output; it lacks the correct property `oidc.enableUser=true` for activating accounts and suggests incorrect configurations and use of extensions or scripts, which are not mentioned in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

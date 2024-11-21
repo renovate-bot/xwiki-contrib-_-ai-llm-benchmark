@@ -1,9 +1,9 @@
 {
-  "score": 0.25,
-  "reason": "The score is 0.25 because the summary contains significant contradictions and extra information not present in the original text. Additionally, there are several questions that the original text can answer but the summary cannot, indicating a lack of coverage and accuracy in the summary.",
+  "score": 0.3333333333333333,
+  "reason": "The score is 0.33 because the summary contains significant contradictions with the original text and includes a substantial amount of extra information not present in the original text. These issues indicate a lack of accuracy and relevance in the summary compared to the original content.",
   "score_breakdown": {
-    "Alignment": 0.25,
-    "Coverage": 0.4
+    "Alignment": 0.3333333333333333,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

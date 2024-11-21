@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.44666666666666666,
+  "overall_score": 0.35391979160828946,
   "individual_scores": {
-    "AnswerRelevancy": 0.8333333333333334,
+    "AnswerRelevancy": 0.8571428571428571,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.4,
-    "CustomContextualRelevancy": 0.0
+    "ContextualRecall": 0.2,
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.06637589250687943
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.83 because the response is mostly relevant to configuring OpenID Connect in XWiki, but it includes an irrelevant statement about LDAP authentication, which is not needed for the specific question asked.",
+    "AnswerRelevancy": "The score is 0.86 because the response is mostly relevant to configuring OpenID Connect in XWiki, but it includes a mention of LDAP Authenticator, which is not directly related to the question asked.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'domain-based authentication and session cookies,' which is unrelated to the automatic activation of user accounts with OpenID Connect. The second node focuses on 'container authentication' and only mentions OpenID Connect in passing, without addressing the specific configuration needed. The third node provides general information about OpenID Connect but lacks details on the 'specific property `oidc.enableUser` needed for automatic user activation.' The fourth node lists dependencies for the OpenID Connect extension, which does not pertain to the configuration question. Lastly, the fifth node discusses 'LDAP and Active Directory integration,' which is unrelated to the input query.",
-    "ContextualRecall": "The score is 0.40 because while the retrieval context nodes mention 'OpenId Connect Authentication' and 'xwiki.properties', they lack details on adding or updating properties, saving the file, restarting XWiki, and guaranteeing automatic activation of new user accounts.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about adjusting the xwiki.properties file or the specific property oidc.enableUser for automatically activating user accounts with OpenID Connect in XWiki."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input query. The first node discusses 'domain-based authentication and session cookies,' which does not pertain to 'automatically activating user accounts using OpenID Connect.' The second node provides details on 'container authentication and LDAP,' which also fails to address 'automatic user activation with OpenID Connect.' The third node, although mentioning OpenID Connect, focuses on 'authentication and synchronization,' not on 'automatically activating user accounts upon first login.' The fourth node lists 'dependencies for the OpenID Connect extension,' unrelated to 'automatic user activation.' Finally, the fifth node is about 'LDAP and Active Directory integration,' which is not connected to 'configuring automatic user activation with OpenID Connect in XWiki.'",
+    "ContextualRecall": "The score is 0.20 because only the mention of the property `oidc.enableUser` in sentence 1 can be loosely linked to node 1 in the retrieval context, while the rest of the expected output lacks direct support from the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context lacks any information about modifying the xwiki.properties file or the oidc.enableUser property, which are crucial for the expected answer.",
+    "Correctness": "The actual output describes configuring `xwiki.authentication.createuser` in `xwiki.cfg`, while the expected output requires updating `oidc.enableUser` in `xwiki.properties`. The steps and files mentioned do not align, leading to a factual discrepancy."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

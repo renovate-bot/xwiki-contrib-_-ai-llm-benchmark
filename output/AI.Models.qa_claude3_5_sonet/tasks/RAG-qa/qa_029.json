@@ -2,7 +2,7 @@
   "id": "qa_029",
   "prompt": "Comment puis-je refuser le droit de script \u00e0 un administrateur d'espace?",
   "expected_answer": "Ceci n'est malheureusement pas pris en charge dans XWiki, les droits qui sont impliqu\u00e9s par le droit d'administrateur ne peuvent pas \u00eatre refus\u00e9s.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \n\n\nD'apr\u00e8s les informations fournies, je peux expliquer cela de la mani\u00e8re suivante :\n\nLe droit de script (`SCRIPT`) dans XWiki pr\u00e9sente les caract\u00e9ristiques suivantes :\n\n1. C'est un droit \"deniable\" (qui peut \u00eatre refus\u00e9)\n2. En cas de conflit, la r\u00e8gle est \"DENY > ALLOW\" (le refus l'emporte sur l'autorisation)\n3. Il peut s'appliquer au niveau Wiki, Espace ou Document\n\nCependant, il est important de noter que :\n- Le droit d'administrateur (`ADMIN`) implique automatiquement le droit de script\n- Par d\u00e9faut, sur le wiki principal, le droit de script est autoris\u00e9 pour tous les utilisateurs pour des raisons de r\u00e9trocompatibilit\u00e9\n\nPour refuser le droit de script \u00e0 un administrateur d'espace, vous devez :\n\n1. Aller dans les droits de l'espace concern\u00e9\n2. D\u00e9finir explicitement le droit \"Script\" \u00e0 \"Deny\" pour l'utilisateur ou le groupe d'administrateurs\n3. Cette configuration sera prioritaire gr\u00e2ce \u00e0 la r\u00e8gle \"DENY > ALLOW\"\n\n\u26a0\ufe0f **Note importante** : Si l'utilisateur est \u00e9galement administrateur au niveau du wiki (et non pas seulement de l'espace), vous ne pourrez pas lui retirer le droit de script car les droits d'administrateur au niveau wiki ne sont pas \"deniable\".",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \n\n\nD'apr\u00e8s les documents fournis, voici la r\u00e9ponse :\n\nIl n'est pas possible de refuser directement le droit \"Script\" \u00e0 un administrateur d'espace car le droit \"ADMIN\" implique automatiquement plusieurs droits, dont le droit \"SCRIPT\".\n\nEn effet, selon la documentation :\n- Le droit \"ADMIN\" implique automatiquement les droits : LOGIN, VIEW, EDIT, DELETE, REGISTER, COMMENT, SCRIPT\n- Le droit \"ADMIN\" est marqu\u00e9 comme \"not deniable\" (non refusable) dans la politique d'h\u00e9ritage\n\nPar cons\u00e9quent :\n1. Vous ne pouvez pas retirer individuellement le droit \"Script\" \u00e0 un utilisateur qui a le droit \"ADMIN\"\n2. La seule solution serait de retirer compl\u00e8tement les droits d'administration \u00e0 cet utilisateur\n\nC'est une mesure de s\u00e9curit\u00e9 int\u00e9gr\u00e9e au syst\u00e8me de droits de XWiki pour garantir que les administrateurs conservent toutes les permissions n\u00e9cessaires \u00e0 leur fonction.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -47,8 +47,8 @@
   ],
   "usage": {
     "prompt_tokens": 3412,
-    "completion_tokens": 362,
-    "total_tokens": 3774
+    "completion_tokens": 257,
+    "total_tokens": 3669
   },
   "average_power_draw": null,
   "energy_consumption": null,

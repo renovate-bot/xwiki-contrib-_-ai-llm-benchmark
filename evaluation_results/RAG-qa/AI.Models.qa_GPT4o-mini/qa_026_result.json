@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.4800000000000001,
+  "overall_score": 0.42194240401202115,
   "individual_scores": {
-    "AnswerRelevancy": 0.8,
+    "AnswerRelevancy": 0.7692307692307693,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.4,
-    "CustomContextualRelevancy": 0.2
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.36242365484135775
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.80 because the answer largely addresses the question about customizing user profile fields in XWiki using OpenID Connect, but it is not higher due to repeated irrelevant statements providing source links that do not directly address the input question.",
+    "AnswerRelevancy": "The score is 0.77 because the answer provides relevant information about customizing user profile fields in XWiki using OpenID Connect, but the inclusion of multiple source links that do not directly address the question lowers the score.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'container authentication and various authentication methods', which does not mention customizing user profile fields. The second node is about 'domain-based instance configuration and session cookies', unrelated to mapping user profile fields. The third node lists features of the OpenID Connect Authenticator without providing information on mapping user profile fields. Subsequent nodes similarly fail to address the specific topic of mapping user profile fields in XWiki.",
-    "ContextualRecall": "The score is 0.40 because while there is some relevant information in the nodes in retrieval context about OpenID Connect and xwiki.properties, specific details about mapping custom properties, replacing placeholders, and the steps to save and restart XWiki are missing.",
-    "CustomContextualRelevancy": "The retrieval context mentions OpenID Connect and xwiki.properties but lacks specific details about customizing user profile fields or using oidc.user.mapping."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'various authentication methods including OpenID Connect, but does not mention customizing user profile fields or mapping them in the `xwiki.properties` file.' Similarly, the second node 'focuses on domain-based authentication and session cookies, which is unrelated to mapping user profile fields from OpenID Connect.' All subsequent nodes continue to lack relevance to the input query about mapping user profile fields from OpenID Connect.",
+    "ContextualRecall": "The score is 0.40 because while the nodes in the retrieval context mention 'OpenId Connect Authentication' and the 'xwiki.properties' file, they lack specific examples and instructions on mapping properties, replacing placeholders, and applying changes, which are detailed in the expected output.",
+    "CustomContextualRelevancy": "The retrieval context lacks specific information about customizing user profile fields using `oidc.user.mapping` in `xwiki.properties`, which is detailed in the expected output.",
+    "Correctness": "The actual output mentions mapping user profile fields but lacks specific instructions on using `xwiki.properties` and `oidc.user.mapping` as the expected output does. It also introduces additional elements like `xwiki.cfg` and listeners not present in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

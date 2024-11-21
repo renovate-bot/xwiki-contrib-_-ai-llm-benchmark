@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.8300000000000001,
+  "overall_score": 0.847586848122358,
   "individual_scores": {
     "AnswerRelevancy": 1.0,
-    "Faithfulness": 0.75,
+    "Faithfulness": 1.0,
     "ContextualPrecision": 1.0,
     "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.9
+    "CustomContextualRelevancy": 1.0,
+    "Correctness": 0.5855210887341478
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the response perfectly addresses the question without any irrelevant information. Great job!",
-    "Faithfulness": "The score is 0.75 because the actual output incorrectly claims that the `oidc.groups.claim` property is used to specify the claim for retrieving the list of groups from the OpenID Connect provider, while the retrieval context clarifies that this property is used to indicate a non-standard field for the list of groups.",
-    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than the irrelevant nodes. The first three nodes provide information on configuring the `oidc.groups.claim`, `oidc.groups.mapping`, and `oidc.groups.separator` properties, which are essential for group synchronization. The irrelevant nodes, ranked fourth and fifth, discuss topics like authentication and configuration guides, and authentication management and endpoints, which are not directly related to the group synchronization process.",
-    "ContextualRecall": "The score is 0.50 because while nodes in the retrieval context provide specific examples and mention key properties like 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping', they lack general instructions found in the expected output, such as locating and editing the 'xwiki.properties' file or restarting the XWiki instance.",
-    "CustomContextualRelevancy": "The retrieval context includes details on configuring 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping', which align closely with the expected output. However, it lacks explicit instructions on locating and editing the 'xwiki.properties' file and restarting XWiki."
+    "AnswerRelevancy": "The score is 1.00 because the answer is perfectly relevant, addressing the specific question about configuring group synchronization between XWiki and an OpenID Connect provider without any irrelevant information. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions; the actual output aligns perfectly with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first three nodes in the retrieval context provide crucial information on configuring group synchronization, such as the `oidc.groups.claim` property and `oidc.groups.mapping`, which are essential for the process. The irrelevant nodes, ranked fourth and fifth, discuss installation instructions and authentication management, which are not directly related to the group synchronization setup. Great job on achieving perfect precision!",
+    "ContextualRecall": "The score is 0.50 because while the nodes in retrieval context provide specific examples and mention properties like `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping`, they do not cover the general instructions found in the expected output.",
+    "CustomContextualRelevancy": "The retrieval context contains all necessary details for configuring group synchronization, including setting the 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping' properties, as well as saving changes and restarting XWiki.",
+    "Correctness": "The actual output includes additional information on OpenID Connect provider support and claim setup, which is not part of the expected output. It correctly mentions configuring `xwiki.properties` for group mapping and separator but uses different claim names and properties like `oidc.userinfoclaims` not mentioned in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

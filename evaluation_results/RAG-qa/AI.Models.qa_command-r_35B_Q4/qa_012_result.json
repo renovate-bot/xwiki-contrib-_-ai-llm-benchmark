@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.391304347826087,
+  "overall_score": 0.3065569996498207,
   "individual_scores": {
-    "AnswerRelevancy": 0.9565217391304348,
+    "AnswerRelevancy": 0.8333333333333334,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.006008664565590819
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.96 because the response is highly relevant to the issue of not receiving notifications, but it includes a source link that does not pertain to the problem, slightly affecting the score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node contains 'image links and references, which do not provide any information related to enabling notifications or following users and pages.' The second node is 'a collection of image links and references, unrelated to the topic of notifications or user settings.' The third node is 'a list of image links and references, offering no relevant information about notification settings or following users.' These irrelevant nodes should be ranked lower than any relevant nodes.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by the nodes in the retrieval context, which only contain image links and references.",
-    "CustomContextualRelevancy": "The retrieval context contains image links and references, which do not provide any information related to enabling notifications or following users/pages as described in the expected output."
+    "AnswerRelevancy": "The score is 0.83 because the response is mostly relevant to the issue of not receiving notifications, but it includes a source link that does not directly address this specific problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node contains 'a list of image links and references, which are unrelated to the topic of enabling notifications or settings in `xwiki.properties`.' The second node also consists of 'image links and references, which do not provide any information about notification settings or following users/pages in XWiki.' Similarly, the third node contains 'image links and references, which are not relevant to the instructions on activating notifications in XWiki.'",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by the nodes in the retrieval context, which lack relevant information about enabling notifications, following pages or users, and related settings.",
+    "CustomContextualRelevancy": "The retrieval context contains image links and references, but lacks any information about enabling notifications or following pages and users as described in the expected output.",
+    "Correctness": "The actual output lacks specific instructions on enabling notifications in `xwiki.properties` and following pages or users, which are key facts in the expected output. It instead discusses general notification settings unrelated to the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

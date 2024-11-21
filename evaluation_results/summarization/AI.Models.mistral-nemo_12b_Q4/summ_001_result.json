@@ -1,9 +1,9 @@
 {
-  "score": 0.6666666666666666,
-  "reason": "The score is 0.67 because the summary includes contradictions regarding the use of panels and extra information about customization not present in the original text. Additionally, the summary fails to answer a question about email notifications that the original text can address.",
+  "score": 0.2,
+  "reason": "The score is 0.20 because the summary includes several inaccuracies and additional information not present in the original text. It incorrectly claims features like panel customization per space and multiple wiki creation, which are not mentioned in the original text. Furthermore, it introduces actions and functionalities that are not covered in the original text, leading to a significant deviation from the source material.",
   "score_breakdown": {
-    "Alignment": 0.6666666666666666,
-    "Coverage": 0.8
+    "Alignment": 0.2,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

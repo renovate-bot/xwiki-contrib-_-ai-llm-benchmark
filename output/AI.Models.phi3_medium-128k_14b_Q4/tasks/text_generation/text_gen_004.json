@@ -2,16 +2,16 @@
   "id": "text_gen_004",
   "prompt": "Generate a short product description based on the following information:\n\nProduct: Wireless Bluetooth Headphones\nFeatures: Noise-cancelling, 20-hour battery life, comfortable fit\nTarget audience: Tech-savvy professionals",
   "expected_answer": "Introducing our cutting-edge wireless Bluetooth headphones, designed for tech-savvy professionals who demand the best. With advanced noise-cancelling technology, you can immerse yourself in your music or focus on your work without any distractions. Enjoy an impressive 20-hour battery life, ensuring your headphones keep up with your busy lifestyle. The comfortable, ergonomic fit allows you to wear them all day long without any discomfort. Upgrade your audio experience with our premium wireless headphones.",
-  "ai_answer": "Experience acoustic perfection with our cutting-e edge wireless Bluetooth headphones. Designed for tech-savvy professionals seeking the ultimate audio experience, these noise-cancelling headphones not only eliminate unwanted sounds but also provide crystal clear sound quality. With a remarkably long 20-hour battery life and a comfortable fit that guarantees prolonged usage without discomfort, you can immerse yourself in your world of work or entertainment with unparalleled audio fidelity. Make the switch today for an enhanced auditory journey like no other!",
+  "ai_answer": "Introducing our new wireless Bluetooth headphnnes that are perfectly tailored for tech-savvy professionals. Experience unparalleled audio quality with state of the art noise cancelling features, allowing you to focus on your tasks without any distractions. With an impressive 20-hour battery life and a comfortable fit, these headphones are designed for those who demand both style and functionality in their daily workflow. Seamlessly connect wirelessly to various devices with simple controls that put you back in control of your sound experience on the go. Enjoy crystal clear audio without being tethered by cords while keeping a stylish look, all thanks to our sleek design. Elevate your work and productivity game today!",
   "sources": null,
   "usage": {
     "prompt_tokens": 66,
-    "completion_tokens": 129,
-    "total_tokens": 195
+    "completion_tokens": 162,
+    "total_tokens": 228
   },
-  "average_power_draw": 251.68439682539685,
-  "energy_consumption": 368.4475316774959,
-  "energy_per_input_token": 0.9483848949227693,
-  "energy_per_output_token": 2.3709622373069235,
-  "energy_per_total_token": 1.8894745214230557
+  "average_power_draw": 260.6608366013072,
+  "energy_consumption": 476.77980448897995,
+  "energy_per_input_token": 1.0122713471103608,
+  "energy_per_output_token": 2.530678367775902,
+  "energy_per_total_token": 2.091139493372719
 }

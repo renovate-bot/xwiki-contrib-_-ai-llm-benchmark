@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.42666666666666664,
+  "overall_score": 0.3390220640949486,
   "individual_scores": {
-    "AnswerRelevancy": 0.9333333333333333,
+    "AnswerRelevancy": 0.45454545454545453,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.2,
-    "CustomContextualRelevancy": 0.0
+    "ContextualRecall": 0.4,
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.17958693002423715
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.93 because the response is highly relevant to configuring OpenID Connect in XWiki, but it includes a minor irrelevant detail about LDAP Authenticator, which slightly detracts from its focus.",
+    "AnswerRelevancy": "The score is 0.45 because the response includes several irrelevant source links and introductory phrases that do not directly address the question about configuring automatic user activation. However, it likely contains some relevant information, which is why the score is not lower.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'domain-based authentication and session cookies', which does not relate to enabling user accounts automatically with OpenID Connect. The second node is about 'container authentication' and only mentions OpenID Connect in passing, without addressing user account activation. The third node provides a 'general description of OpenID Connect authentication' but lacks details on automatic user account activation. The fourth node lists 'dependencies for the OpenID Connect extension', unrelated to the needed configuration. The fifth node discusses 'LDAP and Active Directory configurations', which are not related to the OpenID Connect user account activation issue.",
-    "ContextualRecall": "The score is 0.20 because only the 3rd node in the retrieval context aligns with the expected output by mentioning 'OpenId Connect Authentication' and the 'xwiki.properties' file, while other details about specific property updates, uncommenting, saving, and restarting are not supported by the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not mention adjusting the xwiki.properties file or the oidc.enableUser property for automatic user account activation via OpenID Connect."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'domain-based authentication and bypassing OpenID Connect,' which does not address enabling user accounts automatically upon first login. The second node mentions 'container authentication and OpenID Connect,' but lacks details on automatic user activation. The third node describes 'OpenID Connect authentication and links to configuration guides,' but does not address automatic user activation. The fourth node lists 'dependencies for the OpenID Connect extension,' without information on user account activation. The fifth node focuses on 'LDAP and Active Directory integration,' which is unrelated to the input query.",
+    "ContextualRecall": "The score is 0.40 because while the 3rd node in the retrieval context mentions 'xwiki.properties' and OpenID Connect, it lacks details on adding or updating properties, saving the file, restarting XWiki, and automatically activating new user accounts on first login.",
+    "CustomContextualRelevancy": "The retrieval context does not mention adjusting the xwiki.properties file or the specific property oidc.enableUser for automatic user activation via OpenID Connect.",
+    "Correctness": "The actual output states that automatic activation of user accounts on first login is not supported by OpenID Connect in XWiki, contradicting the expected output, which provides instructions for enabling this feature."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

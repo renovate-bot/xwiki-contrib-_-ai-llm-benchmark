@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output is relevant to the Input prompt, maintains coherence with the Expected Output, and is fluent with proper grammar and syntax. The only difference is a slight variation in word order, which does not affect the overall meaning.",
+  "reason": "The Actual Output directly addresses the Input prompt and aligns well with the Expected Output in terms of relevance. It maintains coherence and logical flow, similar to the Expected Output. The language is fluent and grammatically correct, matching the naturalness of the Expected Output. Minor differences in wording do not affect the overall quality.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -2,7 +2,7 @@
   "id": "qa_015",
   "prompt": "Wie kann ich XWiki so konfigurieren, dass Benutzerkonten bei der ersten Anmeldung mit OpenID Connect automatisch aktiviert werden?\nIch habe OpenID Connect-Authentifizierung in meiner XWiki-Instanz eingerichtet, aber Benutzer werden nach der ersten Anmeldung nicht automatisch aktiviert. Welche Konfiguration muss ich anpassen?",
   "expected_answer": "Um Benutzerkonten bei der ersten Anmeldung mit OpenID Connect in XWiki automatisch zu aktivieren, m\u00fcssen Sie die Datei `xwiki.properties` anpassen.\n\nF\u00fcgen Sie oder aktualisieren Sie die folgende Eigenschaft:\n\n```\n#-# Definiere, ob Benutzerkonten bei der ersten Anmeldung aktiviert (als aktiv markiert) werden sollen\n# oidc.enableUser=true\n```\n\nStellen Sie sicher, dass Sie die Eigenschaft `oidc.enableUser` entkommentieren und auf `true` setzen. Nach dieser \u00c4nderung speichern Sie die Datei und starten Sie Ihre XWiki-Instanz neu, damit die \u00c4nderungen wirksam werden.\n\nDadurch wird sichergestellt, dass neue Benutzerkonten automatisch aktiviert werden, wenn sie sich zum ersten Mal \u00fcber OpenID Connect anmelden.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \n\n\nUm Benutzerkonten bei der ersten Anmeldung mit OpenID Connect automatisch zu aktivieren, m\u00fcssen Sie die folgenden Schritte durchf\u00fchren:\n\n1. **Konfigurieren des XWiki-OpenID Connect**\n\n   Stellen Sie sicher, dass Sie bereits eine erfolgreiche Konfiguration Ihrer OpenID Connect-Anbieter in Ihrem XWiki-System haben. Dies kann \u00fcber die XWiki-Einstellungen erfolgen.\n\n2. **Benutzeraktivierung durch einen bestimmten Anbieter**\n\n   Sie m\u00fcssen sicherstellen, dass der Benutzer bei der ersten Anmeldung von einem spezifischen Anbieter aktiviert wird. Hier sind einige Schritte:\n\n   a. Gehe zu Ihrer XWiki-Administration und \u00f6ffnen Sie die Einstellungen f\u00fcr die OpenID Connect-Konfiguration.\n\n   b. Suchen Sie nach einer Option, die Ihnen erm\u00f6glicht, bestimmte Anbieder oder Gruppen von Anbietern auszuw\u00e4hlen, bei denen Benutzer automatisch aktiviert werden sollen.\n\n   c. W\u00e4hlen Sie den gew\u00fcnschten Anbieter aus und speichern Sie Ihre \u00c4nderungen.\n\n3. **Benutzeraktivierung durch eine Regel**\n\n   Es k\u00f6nnte auch hilfreich sein, Regeln f\u00fcr die Benutzeraktivierung zu erstellen. Dies kann \u00fcber die XWiki-Administration erfolgen:\n\n   a. Gehe in die XWiki-Einstellungen und \u00f6ffne die Regelkonfiguration.\n\n   b. Erstellen Sie eine neue Regel mit einer Bedingung wie \"Benutzer ist neu\" und einer Aktion wie \"Aktiviere Benutzer\".\n\n4. **Testen**\n\n   Nachdem Sie diese Schritte durchgef\u00fchrt haben, sollten Benutzer bei der ersten Anmeldung automatisch aktiviert werden. Testen Sie die Konfiguration, indem Sie ein neues Konto erstellen und \u00fcberpr\u00fcfen Sie, ob es sich erfolgreich aktiviert.\n\nBitte beachten Sie, dass die genauen Schritte variieren k\u00f6nnen, je nach Ihrer XWiki-Version und dem spezifischen OpenID Connect-Anbieter, den Sie verwenden. Es ist immer ratsam, die Dokumentation Ihres Anbieters und der XWiki-Dokumentation zu verweisen, um sicherzustellen, dass Sie alle erforderlichen Schritte durchf\u00fchren.\n\nFalls Sie weiterhin Schwierigkeiten haben oder spezifische Fehlercodes erhalten, k\u00f6nnen Sie diese in eine Frage stellen, um weitere Hilfe zu erhalten.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \n\n\nUm Benutzer bei der ersten Anmeldung mit OpenID Connect in Ihrer XWiki-Instanz automatisch zu aktivieren, m\u00fcssen Sie die Konfiguration f\u00fcr die Sitzungskonfiguration Ihres Servlet Containers \u00e4ndern und sicherstellen, dass die Session-Cookie auf einem Top-Level-Domain gesetzt wird. \n\nWenn Sie Tomcat als Servlet Container verwenden, k\u00f6nnen Sie das Attribut `sessionCookieDomain` in `context.xml` hinzuf\u00fcgen, um den Cookie JSESSIONID auf eine Domain zu \u00e4ndern, die jede Wiki Ihrer Farm umfasst:\n\n```xml\n<Context sessionCookieDomain=\"mytld.org\">\n...\n</Context>\n```\n\nBitte beachten Sie jedoch, dass diese L\u00f6sung nicht funktioniert, wenn Ihre XWiki-Instanz sehr unterschiedliche Domains f\u00fcr ihre Wikis verwendet.\n\nZudem k\u00f6nnen Sie die OpenID Connect Authentifizierung mit der Eigenschaft `oidc.skipped` in `xwiki.properties` deaktivieren. Es ist auch m\u00f6glich, die Authentifizierung tempor\u00e4r zu vermeiden, indem Sie einen URL-Parameter verwenden: zum Beispiel `https://mydomain/xwiki/bin/view/Main/?oidc.skipped=true`.\n\nBitte stellen Sie sicher, dass Ihre XWiki-Instanz korrekt mit dem OpenID Connect-Anbieter synchronisiert ist und die erforderlichen Konfigurationsdateien und -einstellungen f\u00fcr den Anbieter (wie z.B. Keycloak oder Lemon LDAP/Open PAAS) korrekt konfiguriert sind.\n\nWenn Sie weiterhin Probleme haben, k\u00f6nnten Sie sich an die Support-Gruppe der XWiki-Community wenden oder eine spezifische Frage stellen auf der XWiki-Forum-Plattform.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -38,13 +38,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 87,
-    "completion_tokens": 507,
-    "total_tokens": 594
+    "prompt_tokens": 2066,
+    "completion_tokens": 362,
+    "total_tokens": 2428
   },
-  "average_power_draw": 206.16457057057056,
-  "energy_consumption": 854.725456196719,
-  "energy_per_input_token": 0.6310265457340117,
-  "energy_per_output_token": 1.5775663643350295,
-  "energy_per_total_token": 1.438931744438921
+  "average_power_draw": 169.8713383838384,
+  "energy_consumption": 833.1894660614357,
+  "energy_per_input_token": 0.28044074926335766,
+  "energy_per_output_token": 0.7011018731583942,
+  "energy_per_total_token": 0.34315875867439694
 }

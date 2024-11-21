@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.6206060606060606,
+  "overall_score": 0.5370942935287676,
   "individual_scores": {
-    "AnswerRelevancy": 0.8333333333333334,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.875,
+    "Faithfulness": 0.8,
     "ContextualPrecision": 0.3333333333333333,
-    "ContextualRecall": 0.6363636363636364,
-    "CustomContextualRelevancy": 0.3
+    "ContextualRecall": 0.8888888888888888,
+    "CustomContextualRelevancy": 0.2,
+    "Correctness": 0.12534353895038342
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.83 because the response mostly addresses the task of limiting uploads to images or PDFs of a certain size, but includes irrelevant source links that do not directly contribute to solving the specific problem.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.33 because the relevant node in the retrieval context, which provides information about setting the maximum size of attachments and mentions the configuration parameter in XWikiPreferences, is ranked third. However, irrelevant nodes such as the first node, which discusses linking to external files and images without addressing upload restrictions, and the second node, which provides general information about XWiki pages without covering attachment restrictions, are ranked higher.",
-    "ContextualRecall": "The score is 0.64 because while nodes in the retrieval context provide detailed steps for configuring maximum upload size and mention the xwiki.properties file, they do not explicitly cover restricting uploads to only images or PDFs of maximum 10MB or configuring allowed mimetypes to block all other types.",
-    "CustomContextualRelevancy": "The retrieval context mentions setting maximum attachment size and mimetype restrictions, but lacks specific details on configuring xwiki.properties or setting a 10MB limit."
+    "AnswerRelevancy": "The score is 0.88 because the response largely addresses the question about setting upload restrictions, but it includes a link to basic concepts of XWiki, which is not directly relevant to the specific query.",
+    "Faithfulness": "The score is 0.80 because the actual output incorrectly claims that the documentation lacks details on setting a size limit for uploads, while the retrieval context clearly states that administrators can set limits on the maximum size of an attachment in XWiki.",
+    "ContextualPrecision": "The score is 0.33 because the relevant node, ranked third, provides information about 'setting the maximum size of an attachment in XWikiPreferences', which directly addresses the input query. However, irrelevant nodes are ranked higher, such as the first node discussing 'linking to external files and backlinks indexation', and the second node offering 'general information about XWiki's structure and features', neither of which relate to configuring upload restrictions or size limits.",
+    "ContextualRecall": "The score is 0.89 because while the 3rd node in the retrieval context provides detailed instructions for configuring mimetypes and setting maximum attachment size, the overall goal of ensuring only images or PDF files of max 10MB can be uploaded is not explicitly stated in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions setting maximum attachment size and mimetype restrictions but lacks specific details on configuring mimetypes and setting size to 10MB as outlined in the expected output.",
+    "Correctness": "The actual output lacks specific steps to configure mimetype restrictions and max attachment size as detailed in the expected output, and suggests consulting documentation without addressing the task directly."
   },
   "question_language": "en",
   "expected_answer_language": "en",

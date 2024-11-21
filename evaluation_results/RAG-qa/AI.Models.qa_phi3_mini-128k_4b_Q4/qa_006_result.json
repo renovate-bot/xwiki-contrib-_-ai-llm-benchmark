@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.9400000000000001,
+  "overall_score": 0.6666666666666666,
   "individual_scores": {
-    "AnswerRelevancy": 0.95,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.0,
+    "Faithfulness": 1,
     "ContextualPrecision": 1.0,
-    "ContextualRecall": 0.75,
-    "CustomContextualRelevancy": 1.0
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 1.0,
+    "Correctness": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.95 because the response is highly relevant and directly addresses the question about customizing user profile fields in XWiki. However, it includes a source link, which is not necessary for answering the specific question.",
+    "AnswerRelevancy": "The score is 0.00 because none of the statements in the actual output address the question about customizing user profile fields in XWiki. Instead, they discuss unrelated topics such as OAuth authentication in Django, SQLAlchemy models, and other irrelevant subjects.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 1.00 because the relevant node in the retrieval context, which states 'It's possible to associate non standard properties coming from the OpenID Connect provider with the XWiki user', is ranked first. This directly addresses the input about customizing user profile fields. The irrelevant nodes discussing topics like 'access tokens and scopes' and 'OpenID Connect provider endpoints and HTTP headers' are correctly ranked lower, ensuring a perfect contextual precision score. Great job on getting everything in the right order!",
-    "ContextualRecall": "The score is 0.75 because the retrieval context (node 3) supports the customization and mapping of user profile fields, including examples and instructions. However, it lacks information about saving the 'xwiki.properties' file and restarting XWiki, which is necessary to fully align with the expected output.",
-    "CustomContextualRelevancy": "The retrieval context contains all the information found in the expected answer, including the ability to map additional user profile fields using the `oidc.user.mapping` property in the `xwiki.properties` file, with examples provided."
+    "ContextualPrecision": "The score is 1.00 because the relevant node in the retrieval context, which mentions 'It's possible to associate non standard properties coming from the OpenID Connect provider with the XWiki user', is ranked first. This directly addresses the input question about customizing user profile fields. The irrelevant nodes, discussing topics like 'access tokens and scopes', 'endpoints and HTTP methods', 'group synchronization and customization templates', and 'in-wiki configuration and multiple configurations through cookies', are all ranked lower, ensuring a perfect contextual precision score. Great job on getting it spot on!",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the information in the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context includes detailed information on customizing user profile fields using the `oidc.user.mapping` property in the `xwiki.properties` file, matching the expected answer.",
+    "Correctness": "The actual output does not address any elements of the expected output; it discusses OAuth and Django instead of OpenID Connect and XWiki."
   },
   "question_language": "en",
   "expected_answer_language": "en",

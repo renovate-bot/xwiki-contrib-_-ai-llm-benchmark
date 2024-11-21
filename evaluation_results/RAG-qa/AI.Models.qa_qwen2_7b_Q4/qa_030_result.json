@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.37333333333333335,
+  "overall_score": 0.3547757478995622,
   "individual_scores": {
-    "AnswerRelevancy": 0.8666666666666667,
+    "AnswerRelevancy": 0.7777777777777778,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.3508767096195956
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.87 because the response effectively addresses the question about configuring access and modification settings in XWiki, but it includes multiple irrelevant source links that do not directly contribute to the solution.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'the structure and metadata of a page in XWiki,' which does not relate to configuring access rights for teams. The second node is about 'sending representations and modifying resources,' which is not relevant to setting access permissions for team spaces in XWiki. The third node addresses 'editing comments and attachments,' which does not address the question of configuring team access in XWiki. The fourth node explains 'the concept of spaces and pages in XWiki,' but does not provide information on setting access rights for teams. The fifth node discusses 'actions needed after running a migrator,' which does not relate to configuring team access permissions in XWiki. Lastly, the sixth node describes 'configuration display settings in XWiki,' which is not relevant to the question about team access rights.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output could be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to creating groups, defining rights, or inheriting rights as outlined in the expected output."
+    "AnswerRelevancy": "The score is 0.78 because the response largely addresses the question about configuring spaces and roles in XWiki, but the repeated inclusion of source links, which are not directly relevant to the configuration instructions, slightly detracts from the overall relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'a specific XML page structure in XWiki', which does not relate to configuring access rights for teams. The second node talks about 'modifying resources using XML and HTTP methods', which is unrelated to setting access permissions in XWiki. The third node is about 'adding and managing comments in XWiki', which does not pertain to configuring team access to spaces. The fourth node explains 'the emulation of spaces and pages in XWiki', but does not provide information on setting access rights for teams. The fifth node discusses 'migration actions and changes in XWiki', which are not relevant to configuring team access to spaces. Lastly, the sixth node is about 'configuration display scopes in XWiki', which is not directly related to setting up access permissions for teams.",
+    "ContextualRecall": "The score is 0.00 because none of the expected output sentences are supported by the nodes in the retrieval context, as they lack any mention of the specific steps, group creation, rights setting, or inheritance described in the expected output.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about creating groups, setting rights at wiki or space levels, or inheriting rights for child pages as mentioned in the expected output.",
+    "Correctness": "Actual Output mentions similar goals but lacks specific steps like creating groups, setting wiki-level rights, and inheriting rights for child pages as in Expected Output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

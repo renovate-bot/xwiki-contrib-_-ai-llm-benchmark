@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.48,
+  "overall_score": 0.3490016481967781,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.7777777777777778,
+    "Faithfulness": 0.875,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.4,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.04123211140289102
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the response perfectly addresses the question about configuring XWiki for automatic user activation with OpenID Connect, with no irrelevant information. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'domain-based authentication and session cookies', which is unrelated to enabling user accounts upon first login with OpenID Connect. The second node provides 'general information about OpenID Connect authentication and installation instructions', but does not address the specific configuration needed. The third node describes 'compatibility and installation details', which do not pertain to user account activation configuration. The fourth node outlines 'various OpenID Connect endpoints and configurations', but does not mention the specific property 'oidc.enableUser' needed for automatic user activation.",
-    "ContextualRecall": "The score is 0.40 because while the retrieval context nodes mention the xwiki.properties file and OpenID Connect settings, they do not provide details on updating specific properties, restarting the XWiki instance, or automatic activation of user accounts on first login, which are key elements in the expected output.",
-    "CustomContextualRelevancy": "The retrieval context does not contain information about automatically activating user accounts with OpenID Connect by modifying the xwiki.properties file."
+    "AnswerRelevancy": "The score is 0.78 because the response partially addresses the user's question about configuring automatic activation of user accounts with OpenID Connect, but includes irrelevant details about limitations and bypassing the authenticator, which do not directly help in solving the issue.",
+    "Faithfulness": "The score is 0.88 because the actual output incorrectly suggests setting the session cookie on a top-level domain for all wikis, whereas the retrieval context clarifies that this approach is ineffective if the wikis have very different domains.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to configuring automatic user activation on first login. The first node discusses 'domain-based authentication and session cookies', which is unrelated. The second node provides 'general information about OpenID Connect authentication', without addressing automatic user activation. The third node describes 'OpenID Connect authenticator and its compatibility', but does not mention user activation settings. The fourth node lists 'various OpenID Connect configuration properties', yet omits the specific property `oidc.enableUser` for automatic user activation.",
+    "ContextualRecall": "The score is 0.40 because while the 4th node in the retrieval context supports the mention of 'xwiki.properties' and 'oidc.enableUser', there is a lack of direct information about adding or updating the property, saving the file, restarting XWiki, and ensuring automatic activation of new user accounts upon first login.",
+    "CustomContextualRelevancy": "The retrieval context lacks any mention of adjusting the `xwiki.properties` file or the specific property `oidc.enableUser` to automatically activate user accounts upon first login with OpenID Connect.",
+    "Correctness": "The actual output does not mention the required changes in `xwiki.properties` or the `oidc.enableUser` property, and instead focuses on unrelated configurations and troubleshooting steps, which do not align with the expected output instructions."
   },
   "question_language": "de",
   "expected_answer_language": "de",

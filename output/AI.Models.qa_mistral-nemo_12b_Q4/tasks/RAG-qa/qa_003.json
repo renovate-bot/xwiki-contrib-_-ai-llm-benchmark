@@ -2,7 +2,7 @@
   "id": "qa_003",
   "prompt": "In the context of XWiki I am not receiving notifications about my own activity. How can I enable notifications for my own actions?",
   "expected_answer": "By default, one don't receive notification about one's own activity (unless the event that triggered the notification targets explicitly that user). You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings in your user profile.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nIn XWiki, notifications for your own activities are typically enabled by default, but there might be some settings or permissions that could be blocking them. Here are a few steps you can take to troubleshoot this issue:\n\n1. **Check your notification preferences:**\n   - Go to your profile (click on your username in the top right corner).\n   - Click on \"Notifications\" from the left-hand menu.\n   - Ensure that you have selected \"All\" or specific activities for which you want to receive notifications.\n\n2. **Check your email address:**\n   - Make sure your email address is correct and active, as notifications are sent via email.\n   - Check your spam folder in case XWiki emails are being filtered out.\n\n3. **Check your permissions:**\n   - Ensure that you have the necessary permissions to receive notifications. You can check this by looking at your group's permissions or asking an administrator to verify your permissions.\n\n4. **Check if notifications are enabled for the wiki:**\n   - Go to \"Administration\" > \"Notifications\".\n   - Ensure that notifications are enabled for the wiki and for the specific activities you're interested in.\n\n5. **Check if there are any filters blocking notifications:**\n   - Go to \"Administration\" > \"Notifications\" > \"Filters\".\n   - Make sure there's no filter blocking your notifications.\n\nIf you've checked all these settings and you're still not receiving notifications, it might be helpful to reach out to XWiki support or the community for further assistance. You can also check the XWiki documentation for more detailed information about notifications: https://www.xwiki.org/xwiki/bin/view/Documentation/Notifications",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nTo enable notifications for your own activities in XWiki, you need to disable the \"Own Event Filter\". Here's how:\n\n1. Click on the bell icon (Notifications) in the top bar.\n2. In the left sidebar, click on \"Settings\".\n3. Scroll down to find the \"Advanced filtering options\" section.\n4. Locate the \"Own Event Filter\" option and toggle it off.\n\nNow you should receive notifications about your own activities as well.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 30,
-    "completion_tokens": 337,
-    "total_tokens": 367
+    "prompt_tokens": 2547,
+    "completion_tokens": 96,
+    "total_tokens": 2643
   },
-  "average_power_draw": 195.79439682539677,
-  "energy_consumption": 917.2625207344953,
-  "energy_per_input_token": 1.0513037486928314,
-  "energy_per_output_token": 2.6282593717320784,
-  "energy_per_total_token": 2.4993529175326845
+  "average_power_draw": 201.5461111111111,
+  "energy_consumption": 490.04239823434085,
+  "energy_per_input_token": 0.1758315027751492,
+  "energy_per_output_token": 0.43957875693787307,
+  "energy_per_total_token": 0.18541142574133215
 }

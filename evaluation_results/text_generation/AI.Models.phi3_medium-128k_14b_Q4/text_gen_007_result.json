@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output is highly relevant to the Input prompt, discussing a recent scientific discovery in quantum computing. It is coherent and logically structured, covering the discovery, implications, and technical details, aligning well with the Expected Output of summarizing a groundbreaking finding. Minor grammatical errors like 'advancebrought' slightly affect fluency.",
+  "reason": "The Actual Output is highly relevant to the Input prompt, providing a detailed article on a scientific discovery about black holes, aligning with the Expected Output. It is coherent and fluent, with a logical flow and clear language. The only minor issue is the typo in the date, '2e45', which slightly affects the fluency.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

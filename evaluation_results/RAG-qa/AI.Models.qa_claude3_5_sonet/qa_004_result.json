@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.6925925925925925,
+  "overall_score": 0.6904237839951525,
   "individual_scores": {
-    "AnswerRelevancy": 0.9629629629629629,
+    "AnswerRelevancy": 0.9166666666666666,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0.7,
-    "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.3
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.3,
+    "Correctness": 0.22587603730424927
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.96 because the response is highly relevant and mostly addresses the question about disabling notifications in XWiki. However, the statement 'Understanding the Default Behavior' is slightly vague and doesn't directly contribute to the solution, preventing a perfect score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.70 because the first node in the retrieval context is relevant, providing information about accessing 'settings' to change notification settings. However, the second node, which is about 'following users and default watch settings,' and the third node, discussing 'filtering notifications and hidden pages,' are not directly related to disabling notifications, yet they are ranked higher than the fifth relevant node that discusses 'administrators changing users' notification settings and auto-watching behavior.'",
-    "ContextualRecall": "The score is 0.50 because while nodes in the retrieval context support the idea of automatic page watching and changing settings in the user profile (related to sentences 1 and 3), they do not explicitly mention notifications about changes on one's work or deleting existing notification filters (related to sentences 2 and 4).",
-    "CustomContextualRelevancy": "The retrieval context mentions default watch settings and user profile settings but lacks details on automatic page watching and deleting notification filters."
+    "AnswerRelevancy": "The score is 0.92 because the response is mostly relevant and provides useful information on disabling notifications in XWiki. However, it includes a source link and a heading that do not directly address the question, slightly reducing the score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions; the actual output perfectly aligns with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.70 because the first node in the retrieval context is relevant, discussing 'settings' in the notifications menu, which aligns with changing notification settings in the user profile. However, irrelevant nodes, such as the second node discussing 'following a user and default watch settings,' and the third node about 'filtering notifications,' are ranked higher than another relevant node, the fifth node, which mentions 'default auto-watched mode' and user preferences.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the nodes in the retrieval context. Great job on aligning the information perfectly!",
+    "CustomContextualRelevancy": "The retrieval context mentions default notification settings and user profile settings but lacks specific details about automatic page watching and deleting filters in the 'Custom Filters' list.",
+    "Correctness": "Actual output does not mention automatic page watching or deleting filters from 'Custom Filters'. It discusses default behaviors in different versions and managing notifications, which diverges from expected focus on automatic watching and filter deletion."
   },
   "question_language": "en",
   "expected_answer_language": "en",

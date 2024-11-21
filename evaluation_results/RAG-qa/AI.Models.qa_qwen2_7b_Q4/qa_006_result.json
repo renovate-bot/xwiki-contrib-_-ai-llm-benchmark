@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.9647619047619047,
+  "overall_score": 0.941604774656735,
   "individual_scores": {
-    "AnswerRelevancy": 0.9666666666666667,
-    "Faithfulness": 0.8571428571428571,
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
     "ContextualPrecision": 1.0,
-    "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 1.0
+    "ContextualRecall": 0.8,
+    "CustomContextualRelevancy": 1.0,
+    "Correctness": 0.8496286479404095
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.97 because the response is highly relevant and directly addresses the question about customizing user profile fields from an OpenID Connect provider in XWiki. The only minor issue is the inclusion of a source link, which is not directly necessary for the input question.",
-    "Faithfulness": "The score is 0.86 because the actual output incorrectly claims that XWiki uses an AuthenticationHandler class, while the retrieval context specifies that the authentication management class is org.xwiki.contrib.oidc.auth.OIDCAuthServiceImpl.",
-    "ContextualPrecision": "The score is 1.00 because the relevant node in the retrieval context is ranked first and directly addresses the input query by stating 'It's possible to associate non standard properties coming from the OpenID Connect provider with the XWiki user' and providing an example of 'oidc.user.mapping=myxproperty1=${oidc.user.subject}', which is exactly about customizing user profile fields. The irrelevant nodes, such as the second node discussing access to various claims like 'profile', 'email', 'address', and 'phone', and the third node focusing on OpenID Connect provider endpoints and HTTP headers, are correctly ranked lower as they do not pertain to the customization of user profile fields.",
-    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the information in the nodes in retrieval context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context includes detailed instructions on mapping user profile fields using the `oidc.user.mapping` property, matching the expected output's explanation of customizing user profile fields in the `xwiki.properties` file."
+    "AnswerRelevancy": "The score is 1.00 because the response perfectly addresses the question without any irrelevant information. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node in the retrieval context, which states 'It's possible to associate non standard properties coming from the OpenID Connect provider with the XWiki user' and provides examples of 'oidc.user.mapping', is ranked first. This directly relates to mapping additional user profile fields, while the irrelevant nodes, such as the second node discussing scopes and response types, the third node about configuring endpoints and adding custom HTTP headers, the fourth node on group synchronization and customization of templates and listeners, and the fifth node on in-wiki configuration for OIDC authenticator and client configurations, are all ranked lower, maintaining perfect contextual precision. Great job on getting it spot on!",
+    "ContextualRecall": "The score is 0.80 because the 3rd node in the retrieval context supports most of the expected output by detailing how to map user profile fields using the `oidc.user.mapping` property and providing examples. However, it lacks information about saving the `xwiki.properties` file and restarting XWiki, which affects the completeness of the retrieval.",
+    "CustomContextualRelevancy": "The retrieval context contains all the information from the expected answer, including the ability to map additional user profile fields using the `oidc.user.mapping` property in the `xwiki.properties` file, with examples provided.",
+    "Correctness": "The actual output accurately describes the process of mapping fields using `oidc.user.mapping` and provides a clear example similar to expected output. However, it introduces additional details about syntax and verification steps not mentioned in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output aligns well with the Expected Output, addressing the product's features and target audience. It maintains logical flow and consistency, with minor differences in wording. The fluency is excellent, matching the grammatical correctness and smoothness of the Expected Output.",
+  "reason": "The Actual Output addresses the main topics of noise-cancelling, battery life, and comfort for tech-savvy professionals. It is coherent and fluent, with logical flow and correct grammar. The Expected Output aligns well with the Input and is consistent with the Actual Output, though the Actual Output uses slightly different phrasing.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

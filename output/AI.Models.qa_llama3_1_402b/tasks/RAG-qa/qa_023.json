@@ -2,7 +2,7 @@
   "id": "qa_023",
   "prompt": "Je ne re\u00e7ois pas de notifications concernant ma propre activit\u00e9. Comment puis-je activer les notifications pour mes propres actions?",
   "expected_answer": "Par d\u00e9faut, vous ne recevez pas de notifications concernant votre propre activit\u00e9 (sauf si l'\u00e9v\u00e9nement qui a d\u00e9clench\u00e9 la notification cible explicitement cet utilisateur). Vous avez la possibilit\u00e9 de d\u00e9sactiver ce filtre dans la section \"Options de filtrage avanc\u00e9es\" des param\u00e8tres de notification de votre profil utilisateur.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nVous pouvez activer les notifications pour vos propres actions en d\u00e9sactivant le filtre \"Own event filter\". Cela vous permettra de recevoir des notifications pour les actions que vous effectuez vous-m\u00eame.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\n\n\nPour activer les notifications pour vos propres actions, vous devez d\u00e9sactiver le filtre \"Own event filter\". Ce filtre est activ\u00e9 par d\u00e9faut pour \u00e9viter que vous ne receviez des notifications pour vos propres actions.\n\nVous pouvez d\u00e9sactiver ce filtre en acc\u00e9dant aux param\u00e8tres de notification et en modifiant les filtres. Une fois que vous avez d\u00e9sactiv\u00e9 le filtre \"Own event filter\", vous devriez commencer \u00e0 recevoir des notifications pour vos propres actions.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -47,8 +47,8 @@
   ],
   "usage": {
     "prompt_tokens": 2335,
-    "completion_tokens": 44,
-    "total_tokens": 2379
+    "completion_tokens": 110,
+    "total_tokens": 2445
   },
   "average_power_draw": null,
   "energy_consumption": null,

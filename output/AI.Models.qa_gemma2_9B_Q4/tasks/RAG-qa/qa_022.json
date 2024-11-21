@@ -2,7 +2,7 @@
   "id": "qa_022",
   "prompt": "Je ne re\u00e7ois pas de notifications.",
   "expected_answer": "Assurez-vous que les notifications sont activ\u00e9es. Vous pouvez les activer en d\u00e9finissant la propri\u00e9t\u00e9 `notifications.enabled` dans `xwiki.properties` sur `true`. De plus, assurez-vous que vous suivez les pages ou les utilisateurs dont vous souhaitez recevoir des notifications. Vous pouvez suivre une page, une page et ses enfants, ou un wiki entier. Pour suivre un emplacement, il vous suffit d'y aller, puis de cliquer sur le menu \"alerte\" (repr\u00e9sent\u00e9 par une cloche) et d'activer les notifications souhait\u00e9es. Pour suivre un utilisateur, si vous allez sur le profil d'un utilisateur, en utilisant l'index utilisateur par exemple, vous pouvez d\u00e9cider de suivre l'utilisateur. Cela signifie que vous recevrez toutes les notifications concernant les \u00e9v\u00e9nements d\u00e9clench\u00e9s par cet utilisateur. Dans votre profil utilisateur, si vous allez dans l'onglet \"r\u00e9seau\", vous pouvez voir la liste des utilisateurs que vous suivez et les \u00e9v\u00e9nements qui ont \u00e9t\u00e9 effectu\u00e9s par eux.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nIt seems like you're not receiving notifications.  To help figure out why, could you tell me:\n\n* **What kind of notifications are you expecting?** (e.g., mentions, changes to pages you've edited, new comments)\n* **Where are you looking for notifications?** (e.g., your XWiki notification tray, email)\n* **Have you checked your notification settings?**  You can usually find these in your XWiki profile or preferences.\n\n\nLet me know these details and I'll do my best to help! \n",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nIt seems like you're not receiving notifications.  To help figure out why, could you tell me:\n\n* **What kind of notifications are you expecting?** (e.g., mentions, new comments, updates to pages you're watching)\n* **Have you enabled notifications in your XWiki settings?** \n* **Are you using the Notifications Macro or checking your notification tray?**\n\n\nLet me know these details and I'll do my best to help! \n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -39,12 +39,12 @@
   ],
   "usage": {
     "prompt_tokens": 2223,
-    "completion_tokens": 120,
-    "total_tokens": 2343
+    "completion_tokens": 102,
+    "total_tokens": 2325
   },
-  "average_power_draw": 185.29119806763288,
-  "energy_consumption": 467.2508729503858,
-  "energy_per_input_token": 0.1851965410029274,
-  "energy_per_output_token": 0.4629913525073185,
-  "energy_per_total_token": 0.199424188199055
+  "average_power_draw": 154.3611111111111,
+  "energy_consumption": 481.0810716880692,
+  "energy_per_input_token": 0.1941408683164121,
+  "energy_per_output_token": 0.4853521707910303,
+  "energy_per_total_token": 0.2069165899733631
 }

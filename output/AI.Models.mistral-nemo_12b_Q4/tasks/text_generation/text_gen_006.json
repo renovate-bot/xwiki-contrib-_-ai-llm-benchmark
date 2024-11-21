@@ -2,16 +2,16 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "In verdant cathedrals where light streams,\nI find the beauty that I dream.\nA woodland floor, a carpet vast,\nOf emerald moss and leaves past.\n\nThe wind whispers through ancient trees,\nTheir bark etched deep with history's breeze.\nEach branch, a tale to slowly tell,\nBeneath their canopy, I dwell.\n\nRivers sing in liquid rhyme,\nAs sunlight dances on their climb;\nTheir waters mirror azure skies,\nIn ceaseless motion, they arise.\n\nWildflowers bloom in riotous hue,\nIn meadows bathed by morning dew.\nTheir delicate perfume fills the air,\nA sweet symphony so rare.\n\nMountains stand sentinel, majestic,\nSnow-crowned kings of nature's regalistic.\nBeneath their peaks, glaciers flow,\nMeltwater's gentle ebb and glow.\n\nNight falls, but still beauty reigns,\nIn constellations' silver trains.\nThe moon illuminates the scene,\nA silvery spotlight on green.\n\nOh, to wander paths untrodden,\nBy nature's hand forever sheltered!\nEach sunrise paints a masterpiece;\nEvery sunset softly pleases.",
+  "ai_answer": "In verdant cathedrals where the sunbeams play,\nWhere whispers of the wind through leaves display\nNature's grand tapestry woven with care,\nEach thread a testament to her affair.\n\nThe golden fields of wheat beneath the sky,\nLike ocean waves in harmony lie.\nEmerald forests deep and vast, entwined\nWith secrets lost and ancient lore combined.\n\nMeadows blooming wild with colors bright,\nDaffodils dancing in the soft morning light.\nMountains majestic, their peaks kissed by snow,\nAs silent sentinels guarding what they know.\n\nRivers lazy meander through the land,\nCarving paths where once no water planned.\nWaterfalls cascading like silver lace,\nIn every drop, nature's grace we trace.\n\nThe night sky ablaze with constellations' glow,\nCelestial beauty only she does show.\nStars reflected in tranquil lake's embrace,\nMirroring heavens' vast and endless space.\n\nIn every sunrise, sunset's fiery blaze,\nEach season's turn displays her infinite ways.\nThrough storm and calm, through day and night,\nNature's beauty resonates pure and bright.",
   "sources": null,
   "usage": {
     "prompt_tokens": 12,
-    "completion_tokens": 233,
-    "total_tokens": 245
+    "completion_tokens": 228,
+    "total_tokens": 240
   },
-  "average_power_draw": 229.21771980676328,
-  "energy_consumption": 585.9389657609681,
-  "energy_per_input_token": 0.985599605989854,
-  "energy_per_output_token": 2.4639990149746347,
-  "energy_per_total_token": 2.39158761535089
+  "average_power_draw": 232.07942995169086,
+  "energy_consumption": 576.0028010169113,
+  "energy_per_input_token": 0.9896955343933184,
+  "energy_per_output_token": 2.474238835983296,
+  "energy_per_total_token": 2.400011670903797
 }

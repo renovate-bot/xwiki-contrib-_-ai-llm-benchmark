@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.37941176470588234,
+  "overall_score": 0.34137402183530247,
   "individual_scores": {
-    "AnswerRelevancy": 0.6470588235294118,
+    "AnswerRelevancy": 0.75,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.25,
-    "CustomContextualRelevancy": 0.0
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.29824413101181463
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.65 because the output partially addresses the question about configuring access and editing rights in XWiki, but includes several irrelevant statements related to other features and functionalities, which do not directly help in solving the specific problem presented.",
+    "AnswerRelevancy": "The score is 0.75 because the response partially addresses the question about configuring team access and editing permissions in XWiki, but includes several irrelevant links that do not directly relate to the specific task of setting permissions.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses XWiki's use of relational databases and programming features, which is not relevant to configuring access control for teams. The second node is about notifications and application details in XWiki, which does not relate to setting access permissions for teams. The third node describes using nested pages and subwikis in XWiki, which is not directly related to configuring team-specific access rights. The fourth node mentions managing users and groups but lacks specific information on configuring access control for teams to view and edit areas. Lastly, the fifth node involves group synchronization and customization, which does not directly address the question of configuring team-specific access rights in XWiki.",
-    "ContextualRecall": "The score is 0.25 because only sentences 1 and 2 in the expected output are supported by nodes in the retrieval context, specifically node 4, which mentions managing users and groups and setting user rights. The rest of the sentences, including area-level rights, inheriting rights, and summary statements, are not supported by the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context lacks any information about creating groups, setting wiki-wide or area-specific rights, or inheriting rights for subpages, which are all key components of the expected answer."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses XWiki's database support and programming features, which are not relevant to configuring access controls for teams. The second node is about the Notifications Application and its installation, which does not relate to configuring team access in XWiki. The third node explains Nested Pages and subwikis, which are not directly related to setting access permissions for different teams. The fourth node mentions managing users and groups, but does not provide specific instructions on configuring access controls for teams. The fifth node discusses group synchronization and customization, which is not directly relevant to the specific steps needed for configuring team access controls in XWiki.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output could be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to the steps for setting access control in XWiki as described in the expected output.",
+    "Correctness": "The actual output suggests creating a separate Wiki for each team, which differs from creating groups within a single Wiki as in the expected output. It does not mention setting 'View' rights for 'XWikiAllGroup' and lacks detail on inheriting rights for child pages."
   },
   "question_language": "de",
   "expected_answer_language": "de",

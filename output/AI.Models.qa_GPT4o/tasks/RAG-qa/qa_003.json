@@ -2,7 +2,7 @@
   "id": "qa_003",
   "prompt": "In the context of XWiki I am not receiving notifications about my own activity. How can I enable notifications for my own actions?",
   "expected_answer": "By default, one don't receive notification about one's own activity (unless the event that triggered the notification targets explicitly that user). You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings in your user profile.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/RSS \n\n\nIn XWiki, by default, you do not receive notifications for actions performed by yourself. To enable notifications about your own activity, you need to disable the \"Own event filter\" in your notification settings. Here\u2019s how you can do it:\n\n1. Go to your user profile settings.\n2. Locate the \"Notifications\" section.\n3. Find the \"Advanced filtering options\" section.\n4. Disable the \"Own event filter\".\n\nThis will allow you to start receiving notifications about your own actions in XWiki.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/RSS \n\n\nIn XWiki, by default, you do not receive notifications for actions that you perform yourself. However, you can change this setting in your notification preferences. To enable notifications for your own activity, follow these steps:\n\n1. Go to your user profile in XWiki.\n2. Navigate to the \"Notifications\" settings section.\n3. Look for the \"Own event filter\" option, which is enabled by default to prevent notifications about your own actions.\n4. Disable the \"Own event filter\" to start receiving notifications about your own activity.\n\nBy doing this, you will allow notifications to be sent for actions you perform yourself. This setting is specific to each user and not a global setting.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -71,8 +71,8 @@
   ],
   "usage": {
     "prompt_tokens": 3772,
-    "completion_tokens": 103,
-    "total_tokens": 3875
+    "completion_tokens": 138,
+    "total_tokens": 3910
   },
   "average_power_draw": null,
   "energy_consumption": null,

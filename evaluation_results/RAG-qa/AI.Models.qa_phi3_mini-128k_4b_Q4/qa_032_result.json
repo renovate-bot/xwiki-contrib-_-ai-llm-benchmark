@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.38181818181818183,
+  "overall_score": 0.3415142725063121,
   "individual_scores": {
-    "AnswerRelevancy": 0.9090909090909091,
+    "AnswerRelevancy": 0.8333333333333334,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.21575230170453938
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.91 because the response effectively addresses the question about authenticating users with access tokens, but it includes irrelevant source links that do not directly contribute to the answer.",
+    "AnswerRelevancy": "The score is 0.83 because the main content effectively addresses the question about authenticating users with access tokens, but it includes irrelevant source links that do not contribute to answering the question.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'model validation strategies in XWiki', the second node is about 'attachment validation and configuration in XWiki', and the third node provides 'details about the admin UI for model validation'. None of these are related to 'authenticating users with access tokens', leading to a low score.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context, as the context lacks any mention of key concepts such as 'Benutzer mit Zugriffstoken', 'LLM-Anwendung (BETA)-Erweiterung', 'JSON Web Tokens (JWT)', or the steps and limitations related to the 'Token-Authentifizierer'.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to token-based authentication, JWT, or the LLM-Anwendung (BETA)-Erweiterung mentioned in the expected output."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'model validation strategies in XWiki', which is unrelated to 'user authentication with access tokens'. The second node is about 'attachment validation and configuration in XWiki', not about 'token-based user authentication'. The third node provides information about 'the admin UI for model validation', which does not pertain to 'authenticating users with access tokens'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to token-based authentication or JWT, which are central to the expected output.",
+    "Correctness": "The actual output lacks specific details like the use of Ed25519 key, and the configuration steps for 'xwiki.authentication.authclass' and 'Authorized Applications'. It also misses the note about supporting user creation or update based on token information. It provides general token-based authentication information but does not align with the expected output's specifics for LLM-Anwendung (BETA)."
   },
   "question_language": "de",
   "expected_answer_language": "de",

@@ -1,9 +1,9 @@
 {
-  "score": 0.2,
-  "reason": "The score is 0.20 because the summary contains significant contradictions with the original text regarding the basic units of content and the display of panels, includes extra information not present in the original text, and fails to answer questions that the original text can address. These issues indicate a lack of accuracy and completeness in the summary.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary contains contradictory information about the customization of panels, includes extra information about printing pages not mentioned in the original text, and fails to answer several questions that the original text can address, such as editing with a WYSIWYG editor, creating multiple wikis, and exporting pages in PDF format.",
   "score_breakdown": {
-    "Alignment": 0.2,
-    "Coverage": 0.6
+    "Alignment": 0.6666666666666666,
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

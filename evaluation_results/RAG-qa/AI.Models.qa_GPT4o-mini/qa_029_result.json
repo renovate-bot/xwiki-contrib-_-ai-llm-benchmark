@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.6368421052631579,
+  "overall_score": 0.5439453107179625,
   "individual_scores": {
-    "AnswerRelevancy": 0.6842105263157895,
-    "Faithfulness": 1.0,
-    "ContextualPrecision": 0.5,
+    "AnswerRelevancy": 0.7142857142857143,
+    "Faithfulness": 0.75,
+    "ContextualPrecision": 0.5333333333333333,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.2,
+    "Correctness": 0.06605281668872733
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.68 because the output contains some relevant information about script rights, but it includes multiple irrelevant source links that do not directly address the specific question about refusing script rights to a space administrator.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.50 because relevant nodes in the retrieval context, such as the second node which 'explains the implications of programming rights and mentions that script rights are part of the administrative rights, which cannot be denied once granted', and the fourth node which 'provides details on script rights and how they are managed, indicating that script rights are allowed by default unless explicitly revoked', are ranked lower than irrelevant nodes. The first node, discussing 'language preferences and translations in XWiki', is unrelated to script rights and should be ranked lower. Similarly, the third node about 'interacting with the XWiki RESTful API' is not relevant to script rights or administrative permissions and should also be ranked lower.",
-    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the nodes in the retrieval context, with no discrepancies. Great job!",
-    "CustomContextualRelevancy": "The retrieval context does not mention that administrator rights cannot be refused, which is the key information in the expected output."
+    "AnswerRelevancy": "The score is 0.71 because the main content addresses the question about refusing script rights to a space administrator, but the presence of multiple irrelevant source link statements lowers the score.",
+    "Faithfulness": "The score is 0.75 because the actual output incorrectly claims that the 'Script' right is granted to all users by default, while the retrieval context clarifies that its default state is DENY.",
+    "ContextualPrecision": "The score is 0.53 because relevant nodes are not consistently ranked higher than irrelevant ones. For example, the first node in the retrieval context is about 'language preferences and translations in XWiki', which is unrelated to the input, yet it is ranked higher than relevant nodes. Similarly, the third node discusses 'interacting with the XWiki RESTful API', which is not relevant to script or admin rights, but is ranked higher than some relevant nodes. However, relevant nodes that discuss 'the implications of various rights, including SCRIPT and ADMIN', and 'details on the Script right and its default settings' are present, contributing to the current score.",
+    "ContextualRecall": "The score is 1.00 because the expected output perfectly aligns with the retrieval context, showcasing a complete and accurate match. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions that admin rights include other rights and cannot be denied, but it does not explicitly state that admin rights themselves cannot be refused, which is the key point in the expected output.",
+    "Correctness": "The actual output provides steps to refuse script rights, contradicting the expected output which states it cannot be refused in XWiki."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

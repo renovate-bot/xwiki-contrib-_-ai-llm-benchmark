@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary includes extra information not present in the original text, such as an 'XWiki Version Control page,' and fails to answer a question that the original text can address regarding whether all content added to XWiki is saved over time. Despite these issues, the summary is largely accurate, reflecting a good understanding of the original text.",
+  "score": 0.7777777777777778,
+  "reason": "The score is 0.78 because the summary contains a minor contradiction regarding the location of the 'History' tab and includes extra information about a tutorial step not present in the original text. Despite these issues, the summary is generally accurate and informative.",
   "score_breakdown": {
-    "Alignment": 0.8888888888888888,
-    "Coverage": 0.8
+    "Alignment": 0.7777777777777778,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

@@ -2,16 +2,16 @@
   "id": "summ_006",
   "prompt": "Please summarize the following text:\n\n\nThis section will guide you through a number of common actions that you may want to do when starting a new wiki. We divided into 3 different parts depending on whether you're a user, an administrator or a developer. Here goes:\n\n\n\n| **If you're a User** | In order to perform the following actions, you may need to log in. Please ask your administrator for your login credentials. Learn more about:* [Creating a page](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/CreatingAPage) * [Editing a page](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/EditingAPage) * [Page history](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/PageHistory) |\n| --- | --- |\n| **If you're an Administrator** | As an Admin, you may want to get started with the following steps:* [Changing the logo and the panels](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/ChangingTheLogoAndThePanels) * [Creating new users](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/CreatingNewUsers) * [Setting user rights](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/SettingUserRights) |\n| **If you're a Developer** | XWiki is also a second generation wiki. You can build simple applications, extend the platform with custom plugins, or even build complex Web applications. The Getting Started guide only covers basic use cases for users and admins, however, there are plenty of resources for Developers as well in the documentation. XWiki's powerful programming features are documented in the [Developer's Guide](https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/). A number of applications are pre-installed but additional applications, macros and other extensions are available on the [Extensions wiki](https://extensions.xwiki.org/xwiki/bin/view/Main/). The documentation for the [XWiki Rendering](https://rendering.xwiki.org/xwiki/bin/view/Main/) has a [dedicated wiki](https://rendering.xwiki.org/xwiki/bin/view/Main/).For documentation related to the development of XWiki itself, visit the [XWiki Development Zone](https://dev.xwiki.org/xwiki/bin/view/Main/). |\n\n**Next: [Step 1 Creating a page](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/CreatingAPage)**\n\n\n",
   "expected_answer": null,
-  "ai_answer": "The text provides an overview of common actions that users, administrators, and developers might want to take on a new wiki. Users can create, edit and view pages, as well as access page history; administrators can change the logo and panels, create new users and set user rights; while developers can build applications, extend platform functionality or build complex web applications using XWiki's programming features. The text also provides links to relevant documentation for each of these roles.",
+  "ai_answer": "The text describes how to get started with using, administering, and developing a wiki platform called XWiki. \n\nUsers can learn how to create pages, edit them, and view their history. Administrators, meanwhile, can follow steps to change the logo and panels, create new users, and set user rights. Finally, the text provides resources for developers interested in leveraging XWiki's programming features to build applications, extend the platform, or develop new functionalities. \n\nThe summary outlines the different user roles and their respective actions, and points them to relevant documentation links for further learning.",
   "sources": null,
   "usage": {
     "prompt_tokens": 642,
-    "completion_tokens": 92,
-    "total_tokens": 734
+    "completion_tokens": 117,
+    "total_tokens": 759
   },
-  "average_power_draw": 92.08222649572647,
-  "energy_consumption": 1108.1695155681125,
-  "energy_per_input_token": 1.2708366004221474,
-  "energy_per_output_token": 3.1770915010553678,
-  "energy_per_total_token": 1.5097677323816248
+  "average_power_draw": 57.99774801587304,
+  "energy_consumption": 2309.4981297067907,
+  "energy_per_input_token": 2.471373065496833,
+  "energy_per_output_token": 6.178432663742083,
+  "energy_per_total_token": 3.0428170351868125
 }

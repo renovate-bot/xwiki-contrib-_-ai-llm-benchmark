@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output accurately extracts the event name, dates, location, and features, aligning with the Input. However, it combines the venue and address and does not explicitly separate the start and end dates or mention the target audience as in the Expected Output.",
+  "reason": "The Actual Output accurately captures the event name, dates, location, and features, aligning with the Input. However, it combines 'venue' and 'address' into one line and uses different labels compared to the Expected Output, slightly affecting coherence.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

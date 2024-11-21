@@ -2,7 +2,7 @@
   "id": "qa_013",
   "prompt": "Ich erhalte keine Benachrichtigungen \u00fcber meine eigene Aktivit\u00e4t. Wie kann ich Benachrichtigungen f\u00fcr meine eigenen Aktionen aktivieren?",
   "expected_answer": "Standardm\u00e4\u00dfig erh\u00e4lt man keine Benachrichtigungen \u00fcber die eigene Aktivit\u00e4t (es sei denn, das Ereignis, das die Benachrichtigung ausl\u00f6st, richtet sich explizit an diesen Benutzer). Sie haben die M\u00f6glichkeit, diesen Filter in den \"Erweiterten Filteroptionen\" Ihrer eigenen Benachrichtigungseinstellungen in Ihrem Benutzerprofil zu deaktivieren.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nLeider konnte ich keine Informationen finden, die speziell darauf eingehen, wie man Benachrichtigungen f\u00fcr die eigene Aktivit\u00e4t in XWiki aktiviert. Allerdings gibt es eine Erweiterung namens \"User Mentions\", die es erm\u00f6glicht, Benutzer in einem Wiki-Inhalt zu erw\u00e4hnen. M\u00f6glicherweise k\u00f6nnte diese Funktion genutzt werden, um Benachrichtigungen \u00fcber die eigene Aktivit\u00e4t zu erhalten, indem man sich selbst in einem Beitrag erw\u00e4hnt.\n\nUm dies zu tun, m\u00fcssten Sie \"{@username}\" in einem Wiki-Artikel verwenden, wobei \"username\" Ihr tats\u00e4chlicher Benutzername ist. Wenn Sie diese Erw\u00e4hnung speichern, sollten Sie theoretisch eine Benachrichtigung \u00fcber Ihre eigene Aktivit\u00e4t erhalten. Bitte beachten Sie, dass dies eine m\u00f6gliche L\u00f6sung ist und keine Garantie daf\u00fcr besteht, dass es in allen F\u00e4llen funktioniert.\n\nWeitere Einzelheiten zur User Mentions-Erweiterung finden Sie hier:\n\n<https://extensions.xwiki.org/xwiki/bin/view/Extension/Mentions%20Application/>",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nIch konnte keine direkte Information dar\u00fcber finden, wie man Benachrichtigungen f\u00fcr die eigene Aktivit\u00e4t in XWiki aktiviert. Allerdings ist es m\u00f6glich, dass die Option zum Aktivieren von Benachrichtigungen f\u00fcr eigene Aktionen in den Benachrichtigungseinstellungen zu finden ist.\n\nUm dorthin zu gelangen, folgen Sie bitte diesen Schritten:\n- Melden Sie sich bei Ihrer XWiki-Instanz an.\n- Klicken Sie auf Ihren Benutzernamen in der oberen rechten Ecke des Bildschirms.\n- W\u00e4hlen Sie \"Einstellungen\" aus dem Dropdown-Men\u00fc.\n- Klicken Sie auf den Reiter \"Benachrichtigungen\".\n\nSobald Sie sich in den Benachrichtigungseinstellungen befinden, suchen Sie nach Optionen, die sich auf Benachrichtigungen f\u00fcr eigene Aktionen beziehen. Wenn Sie diese Optionen nicht finden k\u00f6nnen, wenden Sie sich bitte an einen XWiki-Administrator oder das Support-Team, um weitere Unterst\u00fctzung zu erhalten.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,8 +31,8 @@
   ],
   "usage": {
     "prompt_tokens": 2150,
-    "completion_tokens": 308,
-    "total_tokens": 2458
+    "completion_tokens": 272,
+    "total_tokens": 2422
   },
   "average_power_draw": null,
   "energy_consumption": null,

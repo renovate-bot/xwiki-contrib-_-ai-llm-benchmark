@@ -2,7 +2,7 @@
   "id": "qa_005",
   "prompt": "How can I configure XWiki to automatically enable user accounts upon their first login using OpenID Connect?\nI've set up OpenID Connect authentication in my XWiki instance, but users are not automatically enabled after their first login. What configuration do I need to adjust?",
   "expected_answer": "To automatically enable user accounts upon their first login using OpenID Connect in XWiki, you need to adjust the `xwiki.properties` file.\n\nAdd or update the following property:\n\n```\n#-# Define if user accounts should be enabled (marked as active) on first login\n# oidc.enableUser=true\n```\n\nMake sure to uncomment and set the `oidc.enableUser` property to `true`. After making this change, save the file and restart your XWiki instance for the changes to take effect.\n\nThis will ensure that new user accounts are automatically enabled when they log in for the first time via OpenID Connect.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \n\n\nTo automatically enable user accounts upon their first login via OpenID Connect in XWiki, you'll need to configure the `xwiki.security.authorisation` module and ensure that your OpenID Connect provider supports account creation.\n\nHere are the steps:\n\n1. **Enable User Creation on Login**: By default, XWiki does not create new users automatically during authentication. You need to enable this feature by setting a specific property in the `xwiki.security.authorisation` configuration file (`/config/xwiki-security-authorisation.properties`). Add or modify the following line:\n   ```\n   xwiki.security.authorisation.createAccountOnLogin=true\n   ```\n\n2. **Configure OpenID Connect**: Ensure that your OpenID Connect provider supports account creation and has a user profile endpoint that returns all necessary information about the new user, including their email address.\n\n3. **User Profile Endpoint**: Your OpenID Connect provider should have an endpoint to retrieve user profiles (usually `/userinfo` or `/v2/userinfo`). This endpoint must return enough information for XWiki to create a unique account. The minimum required fields are `sub` (unique identifier), `email`, and `name`. You might need to configure your provider's settings to ensure these fields are returned.\n\n4. **XWiki Configuration**: In the `/config/xwiki-security-authorisation.properties` file, you may also want to set up a default email address for new accounts if not provided by the OpenID Connect provider:\n   ```\n   xwiki.security.authorisation.defaultEmail=example@example.com\n   ```\n\n5. **Security Settings**: Ensure that your XWiki instance is configured with appropriate security settings and permissions to allow account creation.\n\n6. **Restart XWiki**: After making these changes, restart your XWiki server for the configuration updates to take effect.\n\n7. **Test User Creation**: Try logging in with an OpenID Connect provider that supports account creation. If everything is set up correctly, a new user account should be created automatically upon their first login.\n\nRemember to consult your specific OpenID Connect provider's documentation and API specifications to ensure compatibility and proper configuration for account creation support.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \n\n\nTo automatically enable user accounts upon their first login when using OpenID Connect with XWiki, you should ensure that the `oidc.enableUser` property is set to `true`. This setting controls whether new user accounts are marked as active (or enabled) on their initial login.\n\nHere's how you can adjust this configuration:\n\n1. Locate your `xwiki.properties` file in your XWiki installation directory.\n2. Open the file and add or modify the following line:\n   ```\n   oidc.enableUser=true\n   ```\n\nThis setting tells XWiki to enable new user accounts automatically when they log in for the first time through an OpenID Connect provider.\n\nAfter making this change, save the `xwiki.properties` file and restart your XWiki instance. Users should now be enabled upon their first login using OpenID Connect authentication.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 61,
-    "completion_tokens": 427,
-    "total_tokens": 488
+    "prompt_tokens": 2596,
+    "completion_tokens": 169,
+    "total_tokens": 2765
   },
-  "average_power_draw": 169.11939682539685,
-  "energy_consumption": 796.9894070539854,
-  "energy_per_input_token": 0.7062378440886002,
-  "energy_per_output_token": 1.7655946102215008,
-  "energy_per_total_token": 1.633175014454888
+  "average_power_draw": 187.88632850241544,
+  "energy_consumption": 468.84212803992665,
+  "energy_per_input_token": 0.15532288488982166,
+  "energy_per_output_token": 0.3883072122245541,
+  "energy_per_total_token": 0.16956315661480167
 }

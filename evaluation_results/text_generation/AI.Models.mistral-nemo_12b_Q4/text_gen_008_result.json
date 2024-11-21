@@ -1,7 +1,7 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output is a detailed travel guide for Paris, directly addressing the Input prompt. It is coherent, with a logical flow covering attractions, transportation, and tips, matching the Expected Output's informative nature. The fluency is high with clear and structured sentences.",
-  "prompt_language": "fr",
+  "reason": "The Actual Output provides a comprehensive travel guide for Paris, aligning perfectly with the Input prompt and Expected Output. It covers attractions, accommodations, activities, and travel tips, maintaining coherence and fluency throughout.",
+  "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"
 }

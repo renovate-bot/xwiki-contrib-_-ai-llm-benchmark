@@ -2,7 +2,7 @@
   "id": "qa_004",
   "prompt": "In the context of XWiki I'm receiving lot's of notifications about all kinds of pages I'm not interested in. These seem to have been enabled automatically. How can I disable these notifications?",
   "expected_answer": "By default, a page where you have made a major modification is automatically added to the list of pages you watch. It means you will be notified about changes on your work. You can change the setting for \"Automatic page watching\" in the notification settings in your user profile. You can delete existing notification filters that were created this way in the \"Custom Filters\" list in the notification settings in your user profile.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\nIn XWiki, you can manage your notification settings to reduce or eliminate unwanted notifications. Here's how you can disable or customize them:\n\n1. **Disable all notifications:**\n   You can disable all notifications by changing the \"Notification Level\" in your user profile.\n\n   - Go to your profile: http://your-xwiki-url/xwiki/bin/view/ProfilePage\n   - Click on \"Edit\"\n   - In the \"Notification Level\" section, select \"None\"\n   - Click \"Save\"\n\n2. **Disable notifications for specific pages:**\n   You can disable notifications for specific pages by changing the watch settings of those pages.\n\n   - Go to the page you're interested in: http://your-xwiki-url/xwiki/bin/view/YourPage\n   - Click on \"Watch\" at the top right corner of the page.\n   - Select \"Don't send me notifications about this page\"\n   - Click \"Save\"\n\n3. **Disable notifications for specific spaces:**\n   You can disable notifications for entire spaces by changing your watch settings for those spaces.\n\n   - Go to the space you're interested in: http://your-xwiki-url/xwiki/bin/view/YourSpace\n   - Click on \"Watch\" at the top right corner of the page.\n   - Select \"Don't send me notifications about this space\"\n   - Click \"Save\"\n\n4. **Disable email notifications:**\n   If you're receiving unwanted email notifications, you can disable them by changing your email notification settings.\n\n   - Go to your profile: http://your-xwiki-url/xwiki/bin/view/ProfilePage\n   - Click on \"Edit\"\n   - In the \"Email Notifications\" section, uncheck the boxes for the types of notifications you don't want to receive.\n   - Click \"Save\"\n\n5. **Disable notifications for specific events:**\n   You can also disable notifications for specific events (like page creation, modification, etc.) by changing your notification settings.\n\n   - Go to your profile: http://your-xwiki-url/xwiki/bin/view/ProfilePage\n   - Click on \"Edit\"\n   - In the \"Notification Settings\" section, uncheck the boxes for the events you don't want notifications for.\n   - Click \"Save\"\n\nRemember to replace `http://your-xwiki-url/` and `Your*` with your actual XWiki URL and page/space names respectively.\n\nIf you're still having trouble or if these steps don't apply to your specific use case, consider reaching out to the XWiki community for further assistance.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\nBased on the information provided, here are some steps you can follow to manage your notifications and reduce the ones you're not interested in:\n\n1. **Access your notification settings:**\n   - Click on your user profile (top-right corner) and select \"Notifications\" from the menu.\n\n2. **Disable unwanted notification types:**\n   - In the \"Notification Types\" section, you'll see various applications like 'Page', 'Blog Post', etc., with their respective event types.\n   - To disable notifications for a specific application or event type, click on its bell icon to toggle it off (it should turn gray).\n\n3. **Stop watching pages/users that trigger unwanted notifications:**\n   - In the \"Watching\" section, you'll see the pages and users you're currently following.\n   - Click on the 'X' next to any item you want to stop following.\n\n4. **Apply filters to hide certain events:**\n   - Scroll down to the \"Filters\" section.\n   - Here you can apply various filters like hiding minor events, your own events, or marking read notifications as hidden.\n   - To add a new filter, click on \"+ Add Filter\", select the desired option, and then click \"Save\".\n\n5. **Change your default auto-watch mode:**\n   - In the \"Auto Watch Mode\" section, you can change the default behavior for automatically adding pages to your watchlist.\n   - Select 'None' if you don't want any pages added automatically.\n\n6. **Disable email notifications (if desired):**\n   - If you're receiving too many emails, consider disabling them altogether by editing the `notifications.emails.enabled` variable in the `xwiki.properties` file and restarting the server.\n   - Note that this will disable all email notifications, not just the ones you don't want.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -54,13 +54,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 43,
-    "completion_tokens": 514,
-    "total_tokens": 557
+    "prompt_tokens": 3004,
+    "completion_tokens": 369,
+    "total_tokens": 3373
   },
-  "average_power_draw": 193.11026262626257,
-  "energy_consumption": 1410.6078655151305,
-  "energy_per_input_token": 1.0622047180083813,
-  "energy_per_output_token": 2.6555117950209537,
-  "energy_per_total_token": 2.5325096328817422
+  "average_power_draw": 185.897922705314,
+  "energy_consumption": 1435.0710708370646,
+  "energy_per_input_token": 0.3654835275275855,
+  "energy_per_output_token": 0.9137088188189638,
+  "energy_per_total_token": 0.42545836668753767
 }

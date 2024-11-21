@@ -1,9 +1,9 @@
 {
-  "score": 0.25,
-  "reason": "The score is 0.25 because the summary contains significant contradictions and includes a substantial amount of extra information not present in the original text, indicating a lack of accuracy and relevance.",
+  "score": 0.3333333333333333,
+  "reason": "The score is 0.33 because the summary contains a contradiction regarding the navigation method to the wiki administration page and includes numerous pieces of extra information not present in the original text, such as setting permissions for users and groups, priority order for access, and specific actions for guests, among others.",
   "score_breakdown": {
-    "Alignment": 0.25,
-    "Coverage": 0.8
+    "Alignment": 0.3333333333333333,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

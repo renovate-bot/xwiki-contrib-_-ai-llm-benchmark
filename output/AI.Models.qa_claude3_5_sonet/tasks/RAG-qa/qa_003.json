@@ -2,7 +2,7 @@
   "id": "qa_003",
   "prompt": "In the context of XWiki I am not receiving notifications about my own activity. How can I enable notifications for my own actions?",
   "expected_answer": "By default, one don't receive notification about one's own activity (unless the event that triggered the notification targets explicitly that user). You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings in your user profile.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nBased on the search results, I can help you enable notifications for your own actions in XWiki. By default, XWiki is configured to not show notifications about your own activity. Here's how to change this:\n\n1. Go to your notification settings\n   - You can access this through the notifications menu (bell icon)\n   - Click on the \"settings\" link\n\n2. Look for the \"Advanced filtering options\" section in your notification settings\n\n3. Locate the \"Own event filter\" option and disable it\n   - This is a per-user setting, so it will only affect your account\n   - Note that in XWiki 14.1+, even with this filter enabled, you will still receive notifications about events that target you explicitly\n\nImportant notes:\n- This setting is specific to your user account and won't affect other users\n- You will start receiving notifications about your own actions only after you disable this filter\n- The change only affects future actions; you won't receive notifications for past activities",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nBased on the search results, I can help you enable notifications for your own actions in XWiki. By default, users don't receive notifications about their own activity, but you can change this setting. Here's how:\n\n1. Go to your notification settings\n   - You can access this through the notifications menu (bell icon)\n   - Click on the \"settings\" link\n\n2. Look for the \"Advanced filtering options\" section in your notification settings\n\n3. Find the \"Own event filter\" option and disable it by switching it off\n\nImportant notes:\n- This is a per-user setting, not a global one\n- In XWiki 14.1+, even with this filter enabled, you will still receive notifications for events that target you explicitly\n- The change will only affect notifications for actions that occur after you change this setting\n\n![OwnEventFilter.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/OwnEventFilter.png)",
   "sources": [
     {
       "collection_id": "Eval",
@@ -47,8 +47,8 @@
   ],
   "usage": {
     "prompt_tokens": 3009,
-    "completion_tokens": 217,
-    "total_tokens": 3226
+    "completion_tokens": 225,
+    "total_tokens": 3234
   },
   "average_power_draw": null,
   "energy_consumption": null,

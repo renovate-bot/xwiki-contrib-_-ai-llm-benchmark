@@ -1,9 +1,9 @@
 {
-  "score": 0.5555555555555556,
-  "reason": "The score is 0.56 because the summary includes extra information not found in the original text, such as details about wiki access implications, sub-wiki access rights, terminal page permissions, and additional resources for understanding permissions. Additionally, the summary fails to answer a question that the original text can, indicating a lack of completeness and accuracy.",
+  "score": 0.3333333333333333,
+  "reason": "The score is 0.33 because the summary includes a significant amount of extra information not present in the original text, such as details about managing user groups, implications of denials, and additional resources, which suggests a lack of alignment with the original content.",
   "score_breakdown": {
-    "Alignment": 0.5555555555555556,
-    "Coverage": 0.8
+    "Alignment": 0.3333333333333333,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

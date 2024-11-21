@@ -2,7 +2,7 @@
   "id": "qa_012",
   "prompt": "Ich erhalte keine Benachrichtigungen.",
   "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen. Stellen Sie au\u00dferdem sicher, dass Sie den Seiten oder Benutzern, f\u00fcr die Sie Benachrichtigungen erhalten m\u00f6chten, folgen. Sie k\u00f6nnen einer Seite, einer Seite und ihren Unterseiten oder einem gesamten Wiki folgen. Um einem Ort zu folgen, m\u00fcssen Sie nur dorthin gehen und dann auf das Men\u00fc \"Benachrichtigung\" (dargestellt durch eine Glocke) klicken und die gew\u00fcnschten Benachrichtigungen aktivieren. Um einem Benutzer zu folgen, k\u00f6nnen Sie, wenn Sie auf das Profil eines Benutzers gehen, beispielsweise \u00fcber das Benutzerindex, entscheiden, dem Benutzer zu folgen. Das bedeutet, dass Sie alle Benachrichtigungen \u00fcber Ereignisse erhalten, die von diesem Benutzer ausgel\u00f6st wurden. In Ihrem Benutzerprofil k\u00f6nnen Sie in der Registerkarte \"Netzwerk\" die Liste der Benutzer anzeigen, denen Sie folgen, und die von ihnen durchgef\u00fchrten Ereignisse.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \n\n\nEs k\u00f6nnte mehrere Gr\u00fcnde geben, warum du keine Benachrichtigptionsmeldung erh\u00e4ltst:\n- \u00dcberpr\u00fcfe, ob die Einstellungen f\u00fcr Benachrichtigungen in deinem Telefon oder Betriebssystem korrekt eingestellt sind.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \n\n\nEs scheint, dass Sie m\u00f6glicherweise Ihre Einstellungen f\u00fcr die Erhaltung von Updates oder Newsfeeds in der XWiki-Anwendung nicht richtig angepasst haben. Hier ist eine Schritt-f\u00fcr-Schritt-Anleitung zur \u00dcberpr\u00fcfung und \u00c4nderung dieser Funktion:\n\n1. **\u00dcberpr\u00fcfen Sie Ihre Benachrichtigungseinstellungen**: Stellen Sie sicher, dass die Option \"Aktualisierungen erhalten\" in den Einstellungsfunktionen des XWiki aktiviert ist. \n2. **Vergewissern Sie sich \u00fcber deine Abonnement-Listen**: Pr\u00fcfen Sie Ihre Subskriptionslisten auf dem Hauptmen\u00fc, um zu sehen, ob du bei den richtigen Gruppen oder Projekten angemeldet bist und diese regelm\u00e4\u00dfig aktualisiert werden.\n3. **Vergewissern Sie sich \u00fcber deine Benachrichtigungseinstellungen**: Gehen Sie in die Einstellungsfunktionen unter \"Benutzer\" > \"Einstellungen\" an, dann zu \"Benachrichtigungen\". Stellen Sie sicher, dass der Bereich \"Newsfeeds\" aktiviert ist.\n4. **Pr\u00fcfen Sie Ihre Benutzereinstellungen**: \u00dcberpr\u00fcfen Sie die Einstellungen unter \"Benutzer\" > \"Profil\" und stellen Sie sicher, dass es keine benutzerdefinierten Einstellungen gibt, die diese Funktion deaktiviert haben.\n5. **Pr\u00fcfen Sie das Admin-Verzeichnis**: Wenn du eine Rolle als Systemadministrator hast, \u00fcberpr\u00fcfe in der K\u00fcrze unter \"Admin\" > \"Benutzersystem\" auf Updates oder \u00c4nderungen, wie sie durch andere Benutzer verursacht werden k\u00f6nnten.\n6. **\u00dcberpr\u00fcfen Sie die Dateiversionsprotokolle**: Unter 'Umzug' > 'Protokoll' finden Sie Informationen zum neuesten Status des Systems und zu Problemen mit der Updatesystemfunktion.\n7. **Beraten Sie andere Benutzer oder Administratoren in deiner Organisation**, um festzustellen, ob sie \u00e4hnliche Probleme haben oder wenn es allgemeine Systemaktualisierungen gibt.\n\nSollten diese Schritte keine L\u00f6sung f\u00fcr Ihr Problem bieten, m\u00f6chten Sie vielleicht die Support-Punktation der XWiki besuchen oder sich an das Administratorenteam wenden. Stellen Sie sicher, dass alle Benutzer und Administratoren ordnungsgem\u00e4\u00df angemeldet sind und \u00fcber gen\u00fcgend Rechte verf\u00fcgen, um auf Updates zuzugreifen.\n\nHier ist eine kurze Anleitung zum \u00dcberpr\u00fcfen der Verwaltung von Newsfeeds in XWiki:\n\n1. **Konsolenbefehl**: Sie k\u00f6nnen die Shell-Befehlszeile verwenden und Folgendes eingeben, um zu sehen, ob du Benachrichtigungen aktiviert hast: \n'''bash\nxwiki shell check_newsfeed -u <username>\n'''\n2. **\u00dcberpr\u00fcfung des Protokolls**: \u00dcberpr\u00fcfen Sie unter \"Datenbank\" > \"Protokolle\", um zu sehen, ob du neue Updates oder \u00c4nderungen erhalten solltest.\n3. **\u00dcberpr\u00fcfen von Skins und Plugins**: Pr\u00fcfen Sie immer wieder die Newsfeed-Funktionen der einzelnen Funktionen in XWiki, da diese sich vielleicht ge\u00e4ndert haben k\u00f6nnten.\n4. **Systemfunktion \"Verarbeiten\" auf Updates pr\u00fcfen**: Stellen Sie sicher, dass das System ordnungsgem\u00e4\u00df aktualisiert wird und die Einstellungen richtig sind.\n  \nIch hoffe diese Schritte helfen Ihnen!",
   "sources": [
     {
       "collection_id": "Eval",
@@ -30,13 +30,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 21,
-    "completion_tokens": 62,
-    "total_tokens": 83
+    "prompt_tokens": 2807,
+    "completion_tokens": 875,
+    "total_tokens": 3682
   },
-  "average_power_draw": 214.70400000000004,
-  "energy_consumption": 194.88453054428103,
-  "energy_per_input_token": 1.1072984690015968,
-  "energy_per_output_token": 2.768246172503992,
-  "energy_per_total_token": 2.3480063920997716
+  "average_power_draw": 257.61286111111104,
+  "energy_consumption": 3433.3168233162287,
+  "energy_per_input_token": 0.687419526142002,
+  "energy_per_output_token": 1.7185488153550048,
+  "energy_per_total_token": 0.9324597564682859
 }

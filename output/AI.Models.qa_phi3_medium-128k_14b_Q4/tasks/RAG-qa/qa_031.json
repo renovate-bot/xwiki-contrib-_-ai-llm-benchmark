@@ -2,7 +2,7 @@
   "id": "qa_031",
   "prompt": "Can I authenticate users with access tokens?",
   "expected_answer": "Yes, you can authenticate users with access tokens using the Token-based authentication for the LLM Application extension.\n\nThis extension allows external applications to authenticate users with signed JSON Web Tokens (JWT). The token needs to contain specific claims, such as expiration time, issuer, subject, and audience, and must be signed with an Ed25519 key.\n\nTo use this authenticator, you need to:\n\n1. Enable the token authenticator by setting the `xwiki.authentication.authclass` property in `xwiki.properties` file to `org.xwiki.contrib.llm.authentication.JWTTokenAuth`.\n2. Configure the authorized applications by adding a new entry to the \"Authorized Applications\" list, specifying the application's title, URL, public key, and group format.\n3. Generate a JWT token that meets the required claims and signing key requirements.\n4. Include the token in the \"Authorization\" header of the request in the form \"Bearer TOKEN\".\n\nNote that this authenticator only supports creating or updating users based on the information provided in the token and does not support using a token as authentication for an existing user that hasn't been created through this authenticator.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Authenticator/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \n\n\nYes, it is possible to authenticate users using access tokens. Access tokens are part of the OAuth 2 protocol and can be used as bearer tokens for user authentication in many systems. However, you should ensure that your system implements proper security measures like token expiry and refresh mechanisms. It's also important to use HTTPS for all communications between clients and servers to prevent attackers from stealing the access tokens through man-in-the-middle attacks.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Authenticator/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \n\n\nYes, you can authenticate users with access tokens using JWT (JSON Web Tokens). This feature is facilitated by an extension that provides a token authenticator for the LLM Application. To enable this token authenticator, set the `xwiki.authentication.authclass` property in the `xwiki.properties` file to `org.xwiki.contrib.llm.authentication.JWTTokenAuth`. You can also select \"JWT Token Authenticator for the LLM AI Application\" in the authentication configuration within the wiki administration. If no token is present in a request, this authenticator falls back on a configurable default authenticator that you can set with the `llm.authentication.jwt.authenticator` property in the `xwiki.properties` file.\n\nHere's an example of how to enable it:\n\n```markdown\n# Description\nThis extension provides a way for external applications, like those embedding the LLM Application, to authenticate users with signed JSON Web Tokens (JWT). Users can be directly created or updated based on token information. Currently there is no support for using tokens as authentication for existing users that haven't been created through this authenticator. The authenticator supports multiple applications mapped to distinct user accounts and falls back to a configurable default authenticator when needed.\n\n# Configuration\nEnabling the JWT Token Authenticator:\n```\n```properties\nxwiki.authentication.authclass = org.xwiki.contrib.llm.authentication.JWTTokenAuth\n```",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 18,
-    "completion_tokens": 98,
-    "total_tokens": 116
+    "prompt_tokens": 2864,
+    "completion_tokens": 326,
+    "total_tokens": 3190
   },
-  "average_power_draw": 223.19741880341877,
-  "energy_consumption": 307.1835958188863,
-  "energy_per_input_token": 1.167998463189682,
-  "energy_per_output_token": 2.919996157974204,
-  "energy_per_total_token": 2.648134446714537
+  "average_power_draw": 265.87458049886624,
+  "energy_consumption": 1433.9395517214032,
+  "energy_per_input_token": 0.3897634008484379,
+  "energy_per_output_token": 0.974408502121095,
+  "energy_per_total_token": 0.44951083126062796
 }

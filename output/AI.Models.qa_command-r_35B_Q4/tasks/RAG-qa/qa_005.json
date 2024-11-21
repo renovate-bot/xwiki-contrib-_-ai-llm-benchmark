@@ -2,7 +2,7 @@
   "id": "qa_005",
   "prompt": "How can I configure XWiki to automatically enable user accounts upon their first login using OpenID Connect?\nI've set up OpenID Connect authentication in my XWiki instance, but users are not automatically enabled after their first login. What configuration do I need to adjust?",
   "expected_answer": "To automatically enable user accounts upon their first login using OpenID Connect in XWiki, you need to adjust the `xwiki.properties` file.\n\nAdd or update the following property:\n\n```\n#-# Define if user accounts should be enabled (marked as active) on first login\n# oidc.enableUser=true\n```\n\nMake sure to uncomment and set the `oidc.enableUser` property to `true`. After making this change, save the file and restart your XWiki instance for the changes to take effect.\n\nThis will ensure that new user accounts are automatically enabled when they log in for the first time via OpenID Connect.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \n\n\nTo configure Xwiki for automatic account enabling upon the first login using OpenID Connect, you'll need to make some adjustments in the xwiki.properties file. Here's a step-by-step guide:\n\n1. Locate the xwiki.properties file:\n\n    This file is typically located in the XWiki installation directory, usually named \"xwiki.properties\" or \"xwiki.config\".\n\n2. Edit the xwiki.properties file:\n\n    Open the file with a text editor and locate the section titled \"[authentication.openid]. It should have lines like this:\n    \n    # Whether to enable OpenID Connect authentication\n    xwiki.auth.oidc.enabled = true\n    \n    # ... other OpenID Connect settings ...\n\n3. Enable automatic account creation:\n\n    Add the following line below the \"xwiki.auth.oidc.enabled\" line:\n    \n    xwiki.auth.oidc.autocreateaccounts = true\n\n4. Save the changes and restart XWiki:\n\n    After making the above change, save the xwiki.properties file and restart the XWiki server for the changes to take effect.\n\n5. Test the automatic account enabling:\n\n    Now, when a user logs in for the first time using OpenID Connect, their account should be automatically enabled.\n\nRemember that you might also need to adjust other settings related to your specific OpenID Connect setup, such as the URL or the authentication path. Carefully review the XWiki documentation for OpenID Connect configuration to ensure you have the correct settings in place. \n\nIf issues persist, check your server logs for any error messages or clues about what might be causing the automatic account enabling to malfunction.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \n\n\nTo automatically enable user accounts upon their first login with OpenID Connect, you need to set the `oidc.enableUser` property to `true` in your XWiki configuration file (`xwiki.cfg`). Here's how you can do it:\n\n1. Access the `xwiki.cfg` file in your XWiki instance. The location of this file depends on your server setup. It's often found in the XWiki installation directory.\n2. Find the line that defines `oidc.enableUser`. If it's not already set, add the following line:\n   ```\n   oidc.enableUser=true\n   ```\nEnsure there's a new line before and after this line for proper configuration separation.\n3. Save and close the file. Restart your XWiki server for the changes to take effect.\n\nWith this setting, user accounts will be automatically enabled and marked as active when users log in for the first time using OpenID Connect.\n\nAdditionally, if you want to skip OpenID Connect authentication temporarily, you can use the URL parameter `oidc.skipped=true` in the login request. This might be useful for testing or specific scenarios.\n\nLet me know if you have any further questions regarding XWiki configuration or need additional information on customizing your instance!",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 61,
-    "completion_tokens": 338,
-    "total_tokens": 399
+    "prompt_tokens": 2858,
+    "completion_tokens": 263,
+    "total_tokens": 3121
   },
-  "average_power_draw": 77.26539682539682,
-  "energy_consumption": 3461.608998081116,
-  "energy_per_input_token": 3.820760483533241,
-  "energy_per_output_token": 9.551901208833101,
-  "energy_per_total_token": 8.675711774639389
+  "average_power_draw": 58.016946888237115,
+  "energy_consumption": 6896.678814799651,
+  "energy_per_input_token": 1.9617917265821792,
+  "energy_per_output_token": 4.904479316455448,
+  "energy_per_total_token": 2.2097657208585875
 }

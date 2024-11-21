@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.7436363636363637,
+  "overall_score": 0.7189866824745721,
   "individual_scores": {
-    "AnswerRelevancy": 0.8181818181818182,
+    "AnswerRelevancy": 0.8,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0,
+    "ContextualPrecision": 0.7,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 0.9
+    "CustomContextualRelevancy": 0.8,
+    "Correctness": 0.01392009484743239
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.82 because the main content effectively addresses the question about denying script rights, but it includes multiple irrelevant source links that do not directly contribute to the solution.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'programming rights and their implications', but does not address the denial of script rights to a space administrator. The second node lists 'various rights and their properties', but does not mention the inability to deny script rights to a space administrator. Similarly, the third node provides 'a tabular view of rights' but does not discuss the specific issue of denying script rights to a space administrator. All subsequent nodes also fail to address the specific question about denying script rights to a space administrator, leading to a score of 0.00.",
-    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the nodes in the retrieval context, confirming that rights implied by admin cannot be denied. Great job!",
-    "CustomContextualRelevancy": "The retrieval context states that admin rights imply other rights and are not deniable, aligning with the expected output that rights implied by admin cannot be denied. However, the specific mention of 'unfortunately not supported in XWiki' is not directly found in the context."
+    "AnswerRelevancy": "The score is 0.80 because the answer mostly addresses the question about denying script rights to a space administrator, but it includes multiple irrelevant source links that do not directly pertain to the question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.70 because the first node in the retrieval context is relevant, as it mentions that 'programming rights can only be granted from the wiki preferences page,' implying that certain rights, including admin rights, cannot be denied once granted. However, the second node is irrelevant, as it primarily lists various rights and their default states but does not specifically address the denial of script rights to a space administrator. The third node is also irrelevant, providing a tabular view of rights but not mentioning the inability to deny script rights to a space administrator. These irrelevant nodes are ranked higher than the fifth node, which is relevant and explains that 'the script right gives a lot of power to users' and that administrators have to manually allow it, suggesting that once allowed, it cannot be denied.",
+    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions that admin rights imply other rights and are not deniable, aligning with the expected output that rights implied by admin cannot be denied. However, it does not explicitly state that denying admin rights is unsupported in XWiki.",
+    "Correctness": "The actual output provides steps to deny script rights to a space administrator in XWiki, contradicting the expected output which states it is not supported and rights implied by admin right cannot be denied."
   },
   "question_language": "en",
   "expected_answer_language": "en",

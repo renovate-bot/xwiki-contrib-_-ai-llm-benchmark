@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.3333333333333333,
+  "overall_score": 0.3181364330516399,
   "individual_scores": {
-    "AnswerRelevancy": 0.6666666666666666,
+    "AnswerRelevancy": 0.7058823529411765,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.20293624536866267
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.67 because the output contains relevant information addressing the file upload restrictions, but it is lowered due to multiple irrelevant source link statements that do not directly contribute to solving the problem.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'language preferences and translations in XWiki', which are unrelated to file upload restrictions. The second node describes 'various XWiki applications and features', but does not address file upload restrictions. The third node is about 'CSS and XSL for PDF styling in XWiki', which does not relate to configuring file upload restrictions. The fourth node lists 'various XWiki macros and features', but does not mention file upload settings. The fifth node contains 'image links and references to various projects', which are not relevant to file upload configurations in XWiki. The sixth node provides 'image links and references to different projects', which do not pertain to file upload restrictions.",
-    "ContextualRecall": "The score is 0.00 because none of the instructions or configurations mentioned in the expected output can be attributed to any node(s) in the retrieval context. There is no information in the retrieval context about MIME type configuration, file size limits, or specific steps for editing the XWikiPreferences.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about configuring MIME types or setting maximum attachment size."
+    "AnswerRelevancy": "The score is 0.71 because the response partially addresses the question about file upload restrictions, but it includes multiple irrelevant source links that do not directly relate to the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input query. The first node discusses 'language support and translations in XWiki', which is unrelated to configuring file upload restrictions. The second node is about 'creating tour guides and administrating wiki features', which does not relate to setting file upload restrictions. The third node discusses 'CSS and XSL for PDF exports', which is not relevant to configuring file upload restrictions. The fourth node is about 'various features and macros in XWiki', none of which pertain to file upload restrictions. The fifth and sixth nodes contain 'image links and references', which are not relevant to configuring file upload restrictions.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context, as the context lacks any relevant information or instructions related to the topics covered in the expected output.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to configuring MIME types or setting maximum attachment size in XWiki, as described in the expected output.",
+    "Correctness": "The actual output fails to mention editing the xwiki.properties file and configuring MIME types specifically. It lacks precise instructions for setting the upload size in bytes, only providing a general approach. The expected output gives detailed steps, which are missing in the actual output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

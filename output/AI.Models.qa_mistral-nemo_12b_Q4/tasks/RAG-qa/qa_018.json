@@ -2,7 +2,7 @@
   "id": "qa_018",
   "prompt": "Wie kann ich sicherstellen, dass nur Bilder oder PDF-Dateien mit maximal 10 MB als Anh\u00e4nge im gesamten Wiki hochgeladen werden k\u00f6nnen?",
   "expected_answer": "Um sicherzustellen, dass nur Bilder oder PDF-Dateien mit maximal 10 MB als Anh\u00e4nge im gesamten Wiki hochgeladen werden k\u00f6nnen, f\u00fchren Sie die folgenden Schritte aus:\n\n**Schritt 1: Konfigurieren zul\u00e4ssiger MIME-Typen**\n\nBearbeiten Sie die Konfigurationsdatei `xwiki.properties` in Ihrer Installation und f\u00fcgen Sie oder aktualisieren Sie die folgende Zeile, um die Standard-MIME-Typ-Beschr\u00e4nkungen auf Farm-Ebene zu konfigurieren:\n```\nattachment.upload.allowList=image/*,application/pdf\n```\nDadurch werden nur Bilddateien (mit jedem Subtyp, z. B. `image/jpeg`, `image/png` usw.) und PDF-Dateien zum Hochladen zugelassen und alle anderen MIME-Typen blockiert.\n\n**Schritt 2: Konfigurieren der maximalen Anhangsgr\u00f6\u00dfe**\n\nUm die maximale Anhangsgr\u00f6\u00dfe auf 10 MB einzustellen, f\u00fchren Sie die folgenden Schritte aus:\n\n1. Gehen Sie zu `http://<IhrWiki>/xwiki/bin/edit/XWiki/XWikiPreferences?editor=object`\n2. Klicken Sie auf die Zeile, die XWikiPreferences 0 (direkt unter der Zeile, die Objects of type XWiki.XWikiPreferences (1) sagt) sagt\n3. Scrollen Sie nach unten zum Feld, das Maximum Upload Size hei\u00dft, und \u00e4ndern Sie die Zahl in `10485760` (10 MB in Byte)\n4. Scrollen Sie nach unten und klicken Sie auf \"Speichern\"\n5. Wiederholen Sie dies f\u00fcr jedes (Sub)Wiki, f\u00fcr das Sie diese Konfiguration festlegen m\u00fcssen!",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Configuration/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Exports \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/DocumentLifecycle/ \n\n\nUm sicherzustellen, dass nur Bilder oder PDF-Dateien mit maximal 10 MB als Anhang im gesamten Wiki hochgeladen werden k\u00f6nnen, m\u00fcssen Sie einige Schritte ausf\u00fchren.First, you need to enable the \"Upload file\" feature in your wiki settings. This will allow users to upload files to the wiki. Once this feature is enabled, you can set a maximum file size limit for uploaded files. You can do this by adding the following line of code to your wiki's LocalSettings.php file:\n```php\n$wgMaxUploadSize = 10 * 1024 * 1024; // Set the maximum upload size to 10 MB\n```\nThis will limit the size of uploaded files to 10 MB. Additionally, you can restrict the types of files that can be uploaded by adding the following line of code:\n```php\n$wgFileExtensions = array('png', 'jpg', 'jpeg', 'gif', 'pdf'); // Allow only these file extensions\n```\nThis will allow only PNG, JPG, JPEG, GIF, and PDF files to be uploaded. You can adjust this list as needed to include other file types that you want to allow.\n\nFinally, you should also consider adding a message to your wiki's upload page reminding users of the maximum file size limit and the allowed file types. This will help ensure that users are aware of the restrictions in place for uploading files.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Configuration/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Exports \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/DocumentLifecycle/ \n\n\nUm sicherzustellen, dass nur Bilder oder PDF-Dateien mit maximal 10 MB als Anh\u00e4nge im gesamten Wiki hochgeladen werden k\u00f6nnen, m\u00fcssen Sie die folgenden Schritte ausf\u00fchren:\n\n1. \u00d6ffnen Sie das Dokument \"XWiki.XWikiPreferences\" in Ihrem Wiki.\n2. Suchen Sie das Feld \"Maximum Upload Size\" und \u00e4ndern Sie den Wert auf 10485760 (dies entspricht 10 MB).\n3. Speichern Sie das Dokument.\n4. Um sicherzustellen, dass nur Bilder oder PDF-Dateien hochgeladen werden k\u00f6nnen, m\u00fcssen Sie eine MIME-Typ-Beschr\u00e4nkung einrichten. Hierf\u00fcr gibt es eine Extension namens \"Attachment Validation Application\". Installieren und konfigurieren Sie diese Extension, um die gew\u00fcnschten MIME-Typen einzuschr\u00e4nken.\n\nBitte beachten Sie, dass diese Schritte f\u00fcr jedes Unterwiki wiederholt werden m\u00fcssen, da die Konfiguration momentan pro Wiki gesetzt werden muss.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -54,13 +54,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 35,
-    "completion_tokens": 296,
-    "total_tokens": 331
+    "prompt_tokens": 2712,
+    "completion_tokens": 205,
+    "total_tokens": 2917
   },
-  "average_power_draw": 192.28537426900584,
-  "energy_consumption": 819.6616654189595,
-  "energy_per_input_token": 1.0576279553793024,
-  "energy_per_output_token": 2.6440698884482563,
-  "energy_per_total_token": 2.4763192308729893
+  "average_power_draw": 195.81961111111116,
+  "energy_consumption": 864.8517566933766,
+  "energy_per_input_token": 0.2682126707065829,
+  "energy_per_output_token": 0.6705316767664572,
+  "energy_per_total_token": 0.29648671809851784
 }

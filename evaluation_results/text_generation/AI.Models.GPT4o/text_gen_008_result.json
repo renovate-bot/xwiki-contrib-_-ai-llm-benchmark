@@ -1,7 +1,7 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output is a comprehensive travel guide for Kyoto, Japan, directly addressing the Input prompt by providing detailed information on attractions, accommodations, and activities. It is coherent, with a logical flow from introduction to conclusion, and maintains fluency with correct grammar and natural language. The content aligns well with the Expected Output, meeting the intended goals of highlighting key aspects of a popular tourist destination.",
-  "prompt_language": "fr",
+  "reason": "The Actual Output is a comprehensive travel guide for Kyoto, Japan, aligning perfectly with the Input prompt's requirement to create a travel guide for a popular tourist destination. It covers top attractions, accommodations, activities, and additional travel tips, meeting the Expected Output's criteria. The content is coherent, fluent, and well-structured, effectively addressing all evaluation steps.",
+  "prompt_language": "ro",
   "expected_answer_language": "en",
   "generated_text_language": "en"
 }

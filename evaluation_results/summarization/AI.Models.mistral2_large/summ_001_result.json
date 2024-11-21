@@ -1,9 +1,9 @@
 {
-  "score": 0.75,
-  "reason": "The score is 0.75 because the summary contains contradictions regarding the display of panels in XWiki, includes extra information not present in the original text, and fails to address a question about email notifications that the original text can answer.",
+  "score": 0.5454545454545454,
+  "reason": "The score is 0.55 because the summary contains contradictions regarding the creation of subwikis and the display of panels, includes extra information not present in the original text about actions available on a Page in XWiki and starting with a single wiki, and fails to answer questions about exporting pages and choosing panels, indicating a moderate level of fidelity to the original content.",
   "score_breakdown": {
-    "Alignment": 0.75,
-    "Coverage": 0.8
+    "Alignment": 0.5454545454545454,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

@@ -1,6 +1,6 @@
 {
-  "score": 0.0,
-  "reason": "The Actual Output is irrelevant to the Input prompt, lacking any mention of wireless Bluetooth headphones or their features. It is incoherent and unrelated to the Expected Output, which clearly describes the product and its attributes.",
+  "score": 0.9,
+  "reason": "The Actual Output is highly relevant to the Input, addressing the product features and target audience effectively. It maintains coherence with a logical flow, aligning well with the Expected Output's structure. The language is fluent, with minor verbosity compared to the Expected Output, but it remains readable and grammatically correct.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

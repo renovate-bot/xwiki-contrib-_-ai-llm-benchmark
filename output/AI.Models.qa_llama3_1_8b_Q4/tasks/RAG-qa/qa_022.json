@@ -2,7 +2,7 @@
   "id": "qa_022",
   "prompt": "Je ne re\u00e7ois pas de notifications.",
   "expected_answer": "Assurez-vous que les notifications sont activ\u00e9es. Vous pouvez les activer en d\u00e9finissant la propri\u00e9t\u00e9 `notifications.enabled` dans `xwiki.properties` sur `true`. De plus, assurez-vous que vous suivez les pages ou les utilisateurs dont vous souhaitez recevoir des notifications. Vous pouvez suivre une page, une page et ses enfants, ou un wiki entier. Pour suivre un emplacement, il vous suffit d'y aller, puis de cliquer sur le menu \"alerte\" (repr\u00e9sent\u00e9 par une cloche) et d'activer les notifications souhait\u00e9es. Pour suivre un utilisateur, si vous allez sur le profil d'un utilisateur, en utilisant l'index utilisateur par exemple, vous pouvez d\u00e9cider de suivre l'utilisateur. Cela signifie que vous recevrez toutes les notifications concernant les \u00e9v\u00e9nements d\u00e9clench\u00e9s par cet utilisateur. Dans votre profil utilisateur, si vous allez dans l'onglet \"r\u00e9seau\", vous pouvez voir la liste des utilisateurs que vous suivez et les \u00e9v\u00e9nements qui ont \u00e9t\u00e9 effectu\u00e9s par eux.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nIl semblerait que vous n'ayez pas activ\u00e9 la fonctionnalit\u00e9 des notifications. Vous pouvez essayer d'y rem\u00e9dier en suivant ces \u00e9tapes :\n\n1. Allez dans le menu \"Notifications\" du XWiki.\n2. Cliquez sur l'option \"Param\u00e8tres\".\n3. Assurez-vous que les types de notifications souhait\u00e9s sont activ\u00e9s (par exemple, mentions, cr\u00e9ations de pages, etc.).\n4. Si vous souhaitez recevoir des notifications par email, assurez-vous que le param\u00e8tre \"Emails\" est activ\u00e9.\n\nSi vous continuez \u00e0 ne pas recevoir de notifications, il se peut qu'il y ait un probl\u00e8me technique ou que les param\u00e8tres soient incorrects. Vous pouvez essayer de consulter la documentation du XWiki ou de demander de l'aide \u00e0 un administrateur pour r\u00e9soudre le probl\u00e8me.\n\n**Note :** Les instructions ci-dessus sont bas\u00e9es sur les informations disponibles dans les documents fournis. Si vous avez des questions plus sp\u00e9cifiques ou que vous souhaitez obtenir une r\u00e9ponse plus d\u00e9taill\u00e9e, n'h\u00e9sitez pas \u00e0 me demander !",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nIl semblerait que vous n'ayez pas configur\u00e9 les notifications pour votre compte. Vous pouvez essayer de suivre ces \u00e9tapes pour activer les notifications :\n\n1. Allez dans le menu \"Notifications\" et cliquez sur \"Param\u00e8tres\".\n2. Assurez-vous que la case \u00e0 cocher \"Activer les notifications\" est coch\u00e9e.\n3. S\u00e9lectionnez les types de notifications que vous souhaitez recevoir (par exemple, mentions, cr\u00e9ations de pages, etc.).\n4. Cliquez sur \"Enregistrer\" pour sauvegarder vos pr\u00e9f\u00e9rences.\n\nSi vous avez encore des probl\u00e8mes avec les notifications, vous pouvez \u00e9galement essayer de :\n\n* V\u00e9rifier que vous n'avez pas bloqu\u00e9 les notifications dans votre navigateur ou application mobile.\n* Assurer que votre compte est bien connect\u00e9 \u00e0 l'espace de travail XWiki.\n* Contacter le support technique d'XWiki pour obtenir de l'aide suppl\u00e9mentaire.\n\nJ'esp\u00e8re que cela vous aidera !",
   "sources": [
     {
       "collection_id": "Eval",
@@ -39,12 +39,12 @@
   ],
   "usage": {
     "prompt_tokens": 1899,
-    "completion_tokens": 242,
-    "total_tokens": 2141
+    "completion_tokens": 217,
+    "total_tokens": 2116
   },
-  "average_power_draw": 185.19304214559386,
-  "energy_consumption": 602.2790068632396,
-  "energy_per_input_token": 0.24052675992940878,
-  "energy_per_output_token": 0.601316899823522,
-  "energy_per_total_token": 0.2813073362275757
+  "average_power_draw": 182.25731800766283,
+  "energy_consumption": 577.1728263274007,
+  "energy_per_input_token": 0.23640091186868759,
+  "energy_per_output_token": 0.5910022796717189,
+  "energy_per_total_token": 0.27276598597703244
 }

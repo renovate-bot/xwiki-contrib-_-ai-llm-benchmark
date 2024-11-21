@@ -1,9 +1,9 @@
 {
-  "score": 0,
-  "reason": "The score is 0.00 because the summary fails to answer several key questions that the original text addresses, indicating a lack of coverage and completeness in the summary.",
+  "score": 0.25,
+  "reason": "The score is 0.25 because the summary includes incorrect information about the RSS notification button being provided by default, adds extra details about extensions and guides not mentioned in the original text, and fails to address a question about RSS feed features related to the Watchlist.",
   "score_breakdown": {
-    "Alignment": 0,
-    "Coverage": 0.0
+    "Alignment": 0.25,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

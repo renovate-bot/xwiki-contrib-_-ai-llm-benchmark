@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.34444444444444444,
+  "overall_score": 0.40779402876098875,
   "individual_scores": {
-    "AnswerRelevancy": 0.7222222222222222,
+    "AnswerRelevancy": 0.7058823529411765,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.7408818196247561
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.72 because the response addresses the main question about configuring access rights in XWiki, but it includes multiple irrelevant source links that do not contribute to answering the question, preventing a higher score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input question about configuring access rights for team spaces in XWiki. For example, the first node provides 'metadata about a specific page in XWiki', which is not relevant, and the second node 'explains how to modify resources using XML and HTTP methods', which is unrelated to setting access permissions. Similarly, the third node 'discusses comment management', which does not pertain to configuring team space access. These irrelevant nodes should be ranked lower than any relevant nodes.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context, as all key concepts and steps mentioned are not covered in the retrieval context nodes.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to creating groups, defining rights, or inheriting rights, which are the key components of the expected answer."
+    "AnswerRelevancy": "The score is 0.71 because the response partially addresses the question about configuring access rights in XWiki, but it includes multiple irrelevant source links that do not directly answer the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Great job maintaining perfect alignment!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input question. For example, the first node discusses 'the structure of an XWiki page' without addressing access controls, and the second node covers 'modifying resources using XML and HTTP methods', which is unrelated to configuring access rights in XWiki.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context lacks details on creating groups, setting wiki-level and space-level rights, and inheriting rights for child pages, which are crucial steps in the expected output.",
+    "Correctness": "The actual output aligns with the expected output regarding access rights configuration, ensuring read access for all and edit rights restricted to team members. However, it lacks specific instructions about creating groups for each team and inheriting rights for child pages, which are mentioned in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

@@ -2,7 +2,7 @@
   "id": "qa_015",
   "prompt": "Wie kann ich XWiki so konfigurieren, dass Benutzerkonten bei der ersten Anmeldung mit OpenID Connect automatisch aktiviert werden?\nIch habe OpenID Connect-Authentifizierung in meiner XWiki-Instanz eingerichtet, aber Benutzer werden nach der ersten Anmeldung nicht automatisch aktiviert. Welche Konfiguration muss ich anpassen?",
   "expected_answer": "Um Benutzerkonten bei der ersten Anmeldung mit OpenID Connect in XWiki automatisch zu aktivieren, m\u00fcssen Sie die Datei `xwiki.properties` anpassen.\n\nF\u00fcgen Sie oder aktualisieren Sie die folgende Eigenschaft:\n\n```\n#-# Definiere, ob Benutzerkonten bei der ersten Anmeldung aktiviert (als aktiv markiert) werden sollen\n# oidc.enableUser=true\n```\n\nStellen Sie sicher, dass Sie die Eigenschaft `oidc.enableUser` entkommentieren und auf `true` setzen. Nach dieser \u00c4nderung speichern Sie die Datei und starten Sie Ihre XWiki-Instanz neu, damit die \u00c4nderungen wirksam werden.\n\nDadurch wird sichergestellt, dass neue Benutzerkonten automatisch aktiviert werden, wenn sie sich zum ersten Mal \u00fcber OpenID Connect anmelden.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \n\n\nLeider gibt es keine direkte L\u00f6sung f\u00fcr dieses Problem in den bereitgestellten Dokumenten. Es gibt jedoch ein offenes Ticket in der XWiki Jira, das dieses Problem behandelt: [Automatically authenticate user when coming back](https://jira.xwiki.org/browse/OIDC-16). In diesem Ticket wird vorgeschlagen, die Eigenschaft `oidc.skipped` in der Datei xwiki.properties zu verwenden, um OpenID Connect tempor\u00e4r zu \u00fcberspringen. Dies ist jedoch keine L\u00f6sung f\u00fcr das Problem der automatischen Aktivierung von Benutzerkonten bei der ersten Anmeldung. Ich empfehle, das Ticket zu verfolgen oder sich an das XWiki-Support-Team zu wenden, um weitere Informationen zu erhalten.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \n\n\nEs scheint, dass XWiki standardm\u00e4\u00dfig keine Benutzer automatisch aktiviert, wenn sie sich mit OpenID Connect anmelden. Es gibt jedoch eine M\u00f6glichkeit, dieses Verhalten zu \u00e4ndern, indem man eine Konfiguration in der Datei xwiki.properties anpasst.\n\nUm Benutzerkonten bei der ersten Anmeldung mit OpenID Connect automatisch zu aktivieren, f\u00fcge folgende Konfiguration zur xwiki.properties-Datei hinzu:\n\n```properties\n# Automatically activate users when they log in with OpenID Connect\noidc.activate_user=true\n```\n\nBevor Du \u00c4nderungen an der Konfiguration vornimmst, solltest Du sicherstellen, dass Du eine Sicherungskopie deiner aktuellen xwiki.properties-Datei erstellst. Nachdem Du die oben genannte Konfiguration hinzugef\u00fcgt hast, sollten sich Benutzer, die sich zum ersten Mal mit OpenID Connect anmelden, automatisch aktivieren lassen.\n\nHinweis: Es ist wichtig zu beachten, dass das automatische Aktivieren von Benutzerkonten Sicherheitsrisiken mit sich bringen kann, da jeder, der auf das OpenID Connect-Konto zugreifen kann, auch auf das XWiki-Konto zugreifen kann. Es wird empfohlen, das Aktivieren von Benutzerkonten sorgf\u00e4ltig zu \u00fcberlegen und geeignete Sicherheitsma\u00dfnahmen zu ergreifen, um die Sicherheit Deiner XWiki-Instanz zu gew\u00e4hrleisten.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -39,8 +39,8 @@
   ],
   "usage": {
     "prompt_tokens": 2626,
-    "completion_tokens": 197,
-    "total_tokens": 2823
+    "completion_tokens": 396,
+    "total_tokens": 3022
   },
   "average_power_draw": null,
   "energy_consumption": null,

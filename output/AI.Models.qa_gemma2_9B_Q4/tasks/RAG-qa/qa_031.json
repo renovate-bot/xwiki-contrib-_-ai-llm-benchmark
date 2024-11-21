@@ -2,7 +2,7 @@
   "id": "qa_031",
   "prompt": "Can I authenticate users with access tokens?",
   "expected_answer": "Yes, you can authenticate users with access tokens using the Token-based authentication for the LLM Application extension.\n\nThis extension allows external applications to authenticate users with signed JSON Web Tokens (JWT). The token needs to contain specific claims, such as expiration time, issuer, subject, and audience, and must be signed with an Ed25519 key.\n\nTo use this authenticator, you need to:\n\n1. Enable the token authenticator by setting the `xwiki.authentication.authclass` property in `xwiki.properties` file to `org.xwiki.contrib.llm.authentication.JWTTokenAuth`.\n2. Configure the authorized applications by adding a new entry to the \"Authorized Applications\" list, specifying the application's title, URL, public key, and group format.\n3. Generate a JWT token that meets the required claims and signing key requirements.\n4. Include the token in the \"Authorization\" header of the request in the form \"Bearer TOKEN\".\n\nNote that this authenticator only supports creating or updating users based on the information provided in the token and does not support using a token as authentication for an existing user that hasn't been created through this authenticator.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Authenticator/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \n\n\nYes, XWiki supports authentication with access tokens through extensions like the LLM Application Authenticator. \n\nThis allows external applications to authenticate users using signed JSON Web Tokens (JWT).  \n",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Authenticator/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \n\n\nYes, you can authenticate users with access tokens using the LLM Application Authenticator extension. \n\n\nThis extension allows external applications to authenticate users with signed JSON Web Tokens (JWT). \n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -50,9 +50,9 @@
     "completion_tokens": 39,
     "total_tokens": 2656
   },
-  "average_power_draw": 200.0976111111111,
-  "energy_consumption": 256.16439017656114,
-  "energy_per_input_token": 0.09436890409893577,
-  "energy_per_output_token": 0.23592226024733945,
-  "energy_per_total_token": 0.09644743606045224
+  "average_power_draw": 167.15522875816993,
+  "energy_consumption": 311.06712328063117,
+  "energy_per_input_token": 0.11459463005364937,
+  "energy_per_output_token": 0.2864865751341234,
+  "energy_per_total_token": 0.11711864581349064
 }

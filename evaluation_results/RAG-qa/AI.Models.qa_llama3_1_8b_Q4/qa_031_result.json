@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.8236507936507937,
+  "overall_score": 0.6978200550989072,
   "individual_scores": {
-    "AnswerRelevancy": 0.8611111111111112,
+    "AnswerRelevancy": 0.6666666666666666,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0.5,
-    "ContextualRecall": 0.8571428571428571,
-    "CustomContextualRelevancy": 0.9
+    "ContextualRecall": 0.7142857142857143,
+    "CustomContextualRelevancy": 0.8,
+    "Correctness": 0.505967949641062
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.86 because the response mostly addresses the question about authenticating users with access tokens, but includes multiple irrelevant source links and a non-technical comment that detract from its focus.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.50 because relevant nodes in the retrieval context are not consistently ranked higher than irrelevant nodes. The first node discusses 'LDAP authentication settings', which is unrelated to token-based authentication, yet it is ranked higher than the second node, which provides relevant information on 'configuring authorized applications' for JWTs. Similarly, the third node about 'OpenID Connect scopes' is not directly related to JWT-based authentication and is ranked higher than the fourth node, which directly supports the expected output by describing functionality for authenticating users with JWTs.",
-    "ContextualRecall": "The score is 0.86 because most of the expected output is well-supported by the nodes in the retrieval context, particularly regarding the use of JWT tokens and configuration steps. However, the specific detail about including the token in the 'Authorization' header is not directly mentioned in any of the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context contains most of the expected answer details, such as enabling the token authenticator, configuring authorized applications, and the limitation on user creation. However, it lacks specific mention of JWT claims and the Ed25519 signing key."
+    "AnswerRelevancy": "The score is 0.67 because the response addresses the question about authenticating users with access tokens, but it includes multiple irrelevant source links that do not directly contribute to the answer.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.50 because relevant nodes in the retrieval context are mixed with irrelevant ones. For example, the first node discusses 'LDAP configuration, which is not relevant to token-based authentication,' yet it is ranked higher than the second node, which 'explains how to configure authorized applications, relevant to using access tokens for authentication.' Similarly, the third node about 'OpenID Connect scopes and response types' is not directly related to the input and is ranked higher than the fourth node, which 'describes the use of JSON Web Tokens for authentication,' directly relating to token-based authentication. This mix of relevant and irrelevant nodes affects the precision score.",
+    "ContextualRecall": "The score is 0.71 because while several key aspects of the expected output, such as the use of JWT for authentication and the configuration of authorized applications, are supported by nodes in the retrieval context, specific details like generating a JWT token with required claims and including it in the 'Authorization' header are not explicitly mentioned in any node.",
+    "CustomContextualRelevancy": "The retrieval context confirms the use of JWT for authentication and mentions configuring authorized applications, matching the expected answer. However, it lacks specific details on JWT claims and token inclusion in the request header.",
+    "Correctness": "The actual output correctly mentions configuring the xwiki.authentication.authclass property for token-based authentication and using JWT, but it omits details about the required claims in the token and Ed25519 signing key. It also lacks information on configuring authorized applications and the specific use of the 'Authorization' header."
   },
   "question_language": "en",
   "expected_answer_language": "en",

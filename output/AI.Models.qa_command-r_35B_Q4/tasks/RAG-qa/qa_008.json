@@ -2,7 +2,7 @@
   "id": "qa_008",
   "prompt": "How can I ensure that only images or PDF files of at maximum 10MB can be uploaded as attachments on the whole wiki?",
   "expected_answer": "To ensure that only images or PDF files of at maximum 10MB can be uploaded as attachments on the whole wiki, follow these steps:\n\n**Step 1: Configure allowed mimetypes**\n\nEdit the `xwiki.properties` configuration file in your installation and add or update the following line to configure the default mimetype restrictions at farm level:\n```\nattachment.upload.allowList=image/*,application/pdf\n```\nThis will allow only image files (with any subtype, e.g., `image/jpeg`, `image/png`, etc.) and PDF files to be uploaded, and block all other mimetypes.\n\n**Step 2: Configure maximum attachment size**\n\nTo set the maximum attachment size to 10MB, follow these steps:\n\n1. Go to `http://<yourwiki>/xwiki/bin/edit/XWiki/XWikiPreferences?editor=object`\n2. Click on the line that says XWikiPreferences 0 (right below the line that says Objects of type XWiki.XWikiPreferences (1))\n3. Scroll down to the field that says Maximum Upload Size and change the number to `10485760` (10MB in bytes)\n4. Scroll to the bottom and click \"Save\"\n5. Repeat for each (sub)wiki for which you need to set this configuration!",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Attachments \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/XWikiBasicConcepts \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments \n\n\nTo enforce a file size limit for uploads across your entire wiki, you can modify the `LocalSettings.php` file. Here's how you can achieve this:\n\n1. Access your server's file system and open the LocalSettings.php file, usually located in the root directory of your MediaWiki installation, using a text editor.\n\n2. Add the following lines to the bottom of the file to set the maximum upload size to 10 MB for images and PDFs:\n```php\n$wgMaxUploadSize = 10 * 1024 * 1024; // Set maximum upload size to 10 MB\n$wgValidFileTypes[] = 'application/pdf'; // Allow PDF files\n$wgFileExtensions[] = 'pdf'; // Recognize .pdf files\n\n// Optionally, you can also specify image file types if they're not already defined:\n$wgValidFileTypes[] = 'image/jpeg';\n$wgValidFileTypes[] = 'image/png';\n$wgValidFileExtensions[] = 'jpg';\n$wgValidFileExtensions[] = 'jpeg';\n$wgValidFileExtensions[] = 'png';\n```\n\n3. Save and upload the modified `LocalSettings.php` file back to your server.\n\nNow, users will only be able to upload images or PDF files that are 10 MB or smaller in size. Any attempts to upload larger files will result in an error message.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Attachments \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/XWikiBasicConcepts \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Attachments \n\n\nUnfortunately, the documentation does not provide details on how to set a size limit for uploads across an entire wiki. However, based on my general knowledge, it is possible to set a global upload size limit in the server's configuration settings. \n\nTo achieve this, you need to consult the server's documentation, as the process depends on the technology stack your wiki is built upon. If your wiki is self-hosted, you might have more freedom in making such changes. \n\nIn any case, it is recommended to seek guidance from a system administrator or consult the documentation for your specific wiki platform, as altering system settings can have unforeseen consequences.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 33,
-    "completion_tokens": 306,
-    "total_tokens": 339
+    "prompt_tokens": 2710,
+    "completion_tokens": 130,
+    "total_tokens": 2840
   },
-  "average_power_draw": 82.60941047416839,
-  "energy_consumption": 2977.8718738640064,
-  "energy_per_input_token": 3.7316690148671756,
-  "energy_per_output_token": 9.32917253716794,
-  "energy_per_total_token": 8.78428281375813
+  "average_power_draw": 60.75824872579001,
+  "energy_consumption": 3853.6571814945137,
+  "energy_per_input_token": 1.2697387747922615,
+  "energy_per_output_token": 3.174346936980654,
+  "energy_per_total_token": 1.3569215427797583
 }

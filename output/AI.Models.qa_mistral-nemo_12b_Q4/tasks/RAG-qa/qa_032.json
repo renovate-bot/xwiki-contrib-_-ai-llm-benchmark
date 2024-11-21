@@ -2,7 +2,7 @@
   "id": "qa_032",
   "prompt": "Kann ich Benutzer mit Zugriffstoken authentifizieren?",
   "expected_answer": "Ja, Sie k\u00f6nnen Benutzer mit Zugriffstoken mithilfe der Token-basierten Authentifizierung f\u00fcr die LLM-Anwendung (BETA)-Erweiterung authentifizieren.\n\nDiese Erweiterung erm\u00f6glicht es externen Anwendungen, Benutzer mit signierten JSON Web Tokens (JWT) zu authentifizieren. Der Token muss bestimmte Anspr\u00fcche enthalten, wie Ablaufzeit, Aussteller, Betreff und Zielgruppe, und muss mit einem Ed25519-Schl\u00fcssel signiert sein.\n\nUm diesen Authentifizierer zu verwenden, m\u00fcssen Sie:\n\n1. Den Token-Authentifizierer aktivieren, indem Sie die Eigenschaft `xwiki.authentication.authclass` in der Datei `xwiki.properties` auf `org.xwiki.contrib.llm.authentication.JWTTokenAuth` setzen.\n2. Die autorisierten Anwendungen konfigurieren, indem Sie einen neuen Eintrag zur Liste der \u201eAutorisierten Anwendungen\u201c hinzuf\u00fcgen, wobei Sie den Titel, die URL, den \u00f6ffentlichen Schl\u00fcssel und das Gruppenformat der Anwendung angeben.\n3. Ein JWT-Token generieren, das die erforderlichen Anspr\u00fcche und Signierschl\u00fcssel erf\u00fcllt.\n4. Das Token im \u201eAuthorization\u201c-Header der Anfrage in der Form \u201eBearer TOKEN\u201c einf\u00fcgen.\n\nHinweis: Dieser Authentifizierer unterst\u00fctzt nur die Erstellung oder Aktualisierung von Benutzern auf der Grundlage der im Token bereitgestellten Informationen und unterst\u00fctzt nicht die Verwendung eines Tokens als Authentifizierung f\u00fcr einen bestehenden Benutzer, der nicht \u00fcber diesen Authentifizierer erstellt wurde.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Model/Validation/UI/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/ \n\n\nJa, Sie k\u00f6nnen Benutzer mit Zugriffstoken authentifizieren. Ein Zugriffstoken ist eine Art von Authentifizierungstoken, das einem Benutzer nach der erfolgreichen Authentifizierung ausgegeben wird. Es kann verwendet werden, um den Benutzer f\u00fcr zuk\u00fcnftige Anforderungen zu autorisieren, ohne dass er erneut seine Anmeldeinformationen eingeben muss.\n\nIn XWiki, k\u00f6nnen Sie die Extension \"XWiki Authentication\" verwenden, um Benutzer mit verschiedenen Authentifizierungsmethoden wie Passwort, LDAP, OAuth und anderen zu authentifizieren. Um Benutzer mit Zugriffstoken zu authentifizieren, m\u00fcssen Sie jedoch m\u00f6glicherweise eine benutzerdefinierte Implementierung erstellen oder die Extension \"XWiki REST\" verwenden, die Unterst\u00fctzung f\u00fcr Token-basierte Authentifizierung bietet.\n\nEs ist wichtig zu beachten, dass die Verwendung von Zugriffstoken als alleinige Authentifizierungsmethode nicht sicher genug sein kann. Es wird empfohlen, zus\u00e4tzliche Sicherheitsma\u00dfnahmen wie HTTPS und Token-Verst\u00e4rkung zu implementieren, um das Risiko von Angriffen zu reduzieren.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Model/Validation/UI/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/ \n\n\nJa, es ist m\u00f6glich, Benutzer mit Zugriffstokens zu authentifizieren. Ein Zugriffstoken ist ein String, der Informationen \u00fcber den Benutzer enth\u00e4lt und f\u00fcr die Authentifizierung verwendet werden kann. Um einen Benutzer mit einem Zugriffstoken zu authentifizieren, m\u00fcssen Sie das Token an den Server senden und \u00fcberpr\u00fcfen, ob es g\u00fcltig ist. Wenn das Token g\u00fcltig ist, wird der Benutzer authentifiziert und kann auf gesch\u00fctzte Ressourcen zugreifen.\nHinweis: Es ist wichtig, dass Sie Zugriffstokens sicher speichern und \u00fcbertragen, um unautorisierte Zugriffe zu verhindern.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,12 +31,12 @@
   ],
   "usage": {
     "prompt_tokens": 1413,
-    "completion_tokens": 240,
-    "total_tokens": 1653
+    "completion_tokens": 143,
+    "total_tokens": 1556
   },
-  "average_power_draw": 201.57038888888894,
-  "energy_consumption": 799.4571575306657,
-  "energy_per_input_token": 0.3971471224692825,
-  "energy_per_output_token": 0.9928678061732062,
-  "energy_per_total_token": 0.48364014369671243
+  "average_power_draw": 182.98034188034188,
+  "energy_consumption": 527.2559802609632,
+  "energy_per_input_token": 0.2978006101445711,
+  "energy_per_output_token": 0.7445015253614278,
+  "energy_per_total_token": 0.3388534577512617
 }

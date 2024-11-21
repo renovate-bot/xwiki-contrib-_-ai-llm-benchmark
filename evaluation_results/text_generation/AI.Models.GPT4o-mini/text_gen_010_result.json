@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output is highly relevant to the Input, addressing the complexity and functions of the brain in a technical manner. It is coherent and maintains a logical flow, expanding on neural architecture and integration. The fluency is strong, with correct grammar and natural language. It closely matches the Expected Output, with minor differences in phrasing but similar technical depth.",
+  "reason": "The Actual Output closely aligns with the Expected Output, effectively adapting the text for a technical audience by using terms like 'neurobiological organ' and 'cognitive processes'. It maintains coherence and fluency, with only minor differences in phrasing such as 'central substrate' instead of 'biological substrate'.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -2,12 +2,12 @@
   "id": "text_gen_010",
   "prompt": "Adapt the following text to a more technical audience:\n\nThe human brain is a complex organ that controls all functions of the body, interprets information from the outside world, and embodies the essence of the mind and soul.",
   "expected_answer": "The human brain is a highly intricate and sophisticated organ responsible for regulating and coordinating various physiological processes, processing and interpreting sensory information from the external environment, and serving as the biological substrate for cognitive functions, consciousness, and subjective experiences.",
-  "ai_answer": "Here's a more technical version:\n\nThe human brain is a sophisticated neural organ that serves as the central processing unit of the nervous system, orchestrating physiological homeostasis, integrating afferent sensory inputs, and facilitating higher-order cognitive functions through complex synaptic networks and neurotransmitter systems.",
+  "ai_answer": "Here's a more technical version:\n\nThe human brain is a sophisticated neural organ that serves as the central processing unit of the nervous system, orchestrating both autonomic and somatic functions while integrating afferent sensory inputs and generating appropriate efferent responses. It comprises approximately 86 billion neurons and 85 billion non-neuronal cells that facilitate cognitive processing, consciousness, and higher-order executive functions through complex synaptic networks and neurochemical signaling pathways.",
   "sources": null,
   "usage": {
     "prompt_tokens": 53,
-    "completion_tokens": 75,
-    "total_tokens": 128
+    "completion_tokens": 104,
+    "total_tokens": 157
   },
   "average_power_draw": null,
   "energy_consumption": null,

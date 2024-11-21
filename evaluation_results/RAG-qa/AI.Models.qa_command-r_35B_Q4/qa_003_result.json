@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.96,
+  "overall_score": 0.9348777766659011,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
-    "Faithfulness": 0.8,
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 1.0,
     "ContextualPrecision": 1.0,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 1.0
+    "CustomContextualRelevancy": 1.0,
+    "Correctness": 0.859266659995407
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the response directly and completely addresses the question about enabling notifications for one's own actions in XWiki without any irrelevant information. Great job!",
-    "Faithfulness": "The score is 0.80 because the actual output incorrectly states there is an option to enable notifications for one's own actions, while the retrieval context clarifies that users do not receive such notifications by default unless the event specifically targets them.",
-    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than the irrelevant nodes. The first node states, 'By default, one don\u2019t receive notification about one\u2019s own activity... You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings,' which directly addresses the expected output. The second node mentions, 'By default, you won\u2019t receive notifications for actions done by yourself. This can be changed by switching off the Own event filter,' aligning with the expected output. The irrelevant nodes, such as the third node about administrators configuring notifications, the fourth node discussing RSS feeds, and the fifth node providing an overview of different notification methods, do not address enabling notifications for one's own actions and are correctly ranked lower. Great job on achieving a perfect score!",
-    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the information in the nodes in retrieval context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context fully contains the expected answer's information about default notification settings and the ability to disable the filter in the 'Advanced filtering options' of the user profile."
+    "AnswerRelevancy": "The score is 0.75 because the response mostly addresses the question about enabling notifications for one's own actions in XWiki, but includes irrelevant source links that do not directly contribute to solving the issue.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Keep up the great work!",
+    "ContextualPrecision": "The score is 1.00 because the relevant nodes in the retrieval context, which explain that 'By default, one don\u2019t receive notification about one\u2019s own activity' and provide solutions to 'disable this filter in the \"Advanced filtering options\" section of your own notification settings' (first node), are ranked higher than irrelevant nodes. The irrelevant nodes, such as the one discussing 'administrators configuring notification settings for users' (third node), are correctly ranked lower. Great job on the precision!",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is perfectly supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context contains all the information from the expected answer, including the default behavior of not receiving notifications about one's own activity unless explicitly targeted, and the ability to disable this filter in the 'Advanced filtering options' section of the notification settings in the user profile.",
+    "Correctness": "The actual output correctly states the default behavior and how to disable it, matching the expected output. It provides additional detail on navigating to the setting, which doesn't contradict the expected output but enhances user understanding."
   },
   "question_language": "en",
   "expected_answer_language": "en",

@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.425,
+  "overall_score": 0.4249094297882248,
   "individual_scores": {
-    "AnswerRelevancy": 0.625,
+    "AnswerRelevancy": 0.8636363636363636,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.18582021509298513
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.62 because the response partially addresses the issue of the bell not being available, but includes irrelevant links to documentation that do not directly resolve the problem.",
+    "AnswerRelevancy": "The score is 0.86 because the response largely addresses the issue of the notification bell not being available, but it includes multiple irrelevant source links that do not contribute to resolving the specific problem mentioned.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For instance, the first node discusses 'custom notification filters and their behavior', but it does not address the issue of 'enabling notifications in the wiki settings'. Similarly, the second node lists 'various ways to receive notifications in XWiki', yet it also fails to explain how to enable notifications in the wiki settings. This pattern continues with all nodes, as they do not provide the needed information about enabling notifications in the wiki settings.",
-    "ContextualRecall": "The score is 0.50 because only part of the expected output is supported by the nodes in the retrieval context. Specifically, the mention of configuring notifications aligns with the 6th node in the retrieval context, but the specific instruction about setting 'notifications.enabled' in 'xwiki.properties' is not found in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications through the 'xwiki.properties' file or setting 'notifications.enabled' to 'true'."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'custom notification filters' but does not address enabling notifications in the wiki settings. The second node lists 'various ways to receive notifications' but does not provide information on enabling notifications in the wiki settings. The third node describes 'different notification preferences macros' but does not mention enabling notifications in the wiki settings. The fourth node provides 'links to various notification-related settings' but does not discuss enabling notifications in the wiki settings. The fifth node describes 'the notifications menu and its features' but does not mention enabling notifications in the wiki settings. The sixth node provides 'links to various notification settings' but does not discuss enabling notifications in the wiki settings. The seventh node discusses 'administrator settings for notifications' but does not specifically mention enabling notifications in the wiki settings. The eighth node discusses 'email notifications and their configuration' but does not address enabling notifications in the wiki settings.",
+    "ContextualRecall": "The score is 0.50 because only the instruction to edit `xwiki.properties` is supported by the 6th node in the retrieval context, while the specific mention of enabling notifications is not found in any node.",
+    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications via `xwiki.properties` or setting `notifications.enabled` to `true`, which is the key information in the expected output.",
+    "Correctness": "Actual output lacks the specific configuration detail of setting `notifications.enabled` to `true` in `xwiki.properties` as mentioned in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

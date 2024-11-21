@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.36153846153846153,
+  "overall_score": 0.384780199148768,
   "individual_scores": {
-    "AnswerRelevancy": 0.8076923076923077,
+    "AnswerRelevancy": 0.7727272727272727,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.5359539221653353
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.81 because the main content of the answer is relevant and addresses the question about limiting file uploads to images or PDFs of a specific size. However, the repeated irrelevant statements about source links that do not directly address the question prevent the score from being higher.",
+    "AnswerRelevancy": "The score is 0.77 because the answer provides relevant information about configuring file upload restrictions, but it includes multiple source links that do not directly address the question, reducing the overall relevancy.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input question about configuring file upload restrictions. The first node discusses 'language preferences and translations', the second node talks about 'various applications and features', the third node is about 'PDF export customization', the fourth node lists 'features and macros', and the fifth and sixth nodes contain 'links to image files and references'. None of these nodes address the topic of file upload restrictions, leading to a score of 0.00.",
-    "ContextualRecall": "The score is 0.00 because the retrieval context does not contain any relevant information or nodes that support the expected output, which includes details on file type and size restrictions, MIME type configurations, or specific instructions related to XWikiPreferences.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about configuring MIME types or setting maximum attachment size, which are key elements in the expected output."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'language preferences and translations in XWiki', which does not relate to configuring file upload restrictions. The second node talks about 'various XWiki applications and their functionalities', again not mentioning file upload settings. The third node is about 'CSS and XSLT processing for PDF exports', which is unrelated to the topic. The fourth node lists 'various macros and their descriptions in XWiki', none of which pertain to file upload settings. The fifth and sixth nodes contain 'links to image files and references', which are not relevant to file upload restrictions. Hence, irrelevant nodes are ranked higher than relevant ones, resulting in a score of 0.00.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about configuring MIME types or setting maximum attachment size as outlined in the expected output.",
+    "Correctness": "The actual output matches the expected output in terms of setting MIME types and max file size, but lacks specific steps such as editing 'xwiki.properties' and using the 'XWikiPreferences' editor, and introduces additional instructions like testing the upload and informing users."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

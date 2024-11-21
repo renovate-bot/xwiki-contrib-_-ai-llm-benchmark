@@ -2,12 +2,12 @@
   "id": "text_gen_010",
   "prompt": "Adapt the following text to a more technical audience:\n\nThe human brain is a complex organ that controls all functions of the body, interprets information from the outside world, and embodies the essence of the mind and soul.",
   "expected_answer": "The human brain is a highly intricate and sophisticated organ responsible for regulating and coordinating various physiological processes, processing and interpreting sensory information from the external environment, and serving as the biological substrate for cognitive functions, consciousness, and subjective experiences.",
-  "ai_answer": " The human cerebrum is a highly intricate neurobiological structure responsible for the regulation, integration, and coordination of the physiological and cognitive processes of the body. Its neural networks receive, process, and interpret multimodal sensory input from the external environment, serving as the central hub for higher-order processing and executive functions. Furthermore, the cerebrum is the primary locus of consciousness, cognition, and subjective experience.",
+  "ai_answer": " The human cerebrum is an intricate neural network, serving as the central processing unit (CPU) for all physiological and psychological activities. It functions as a highly sophisticated data interpreter, responsible for processing and deciphering incoming sensory data from the external environment. Additionally, the cerebrum serves as the locus of cognition, consciousness, and the highest levels of neurological organization.",
   "sources": null,
   "usage": {
     "prompt_tokens": 51,
-    "completion_tokens": 94,
-    "total_tokens": 145
+    "completion_tokens": 84,
+    "total_tokens": 135
   },
   "average_power_draw": null,
   "energy_consumption": null,

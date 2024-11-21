@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.9866666666666667,
+  "overall_score": 0.9455944490710917,
   "individual_scores": {
-    "AnswerRelevancy": 0.9333333333333333,
+    "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
     "ContextualPrecision": 1.0,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 1.0
+    "CustomContextualRelevancy": 1.0,
+    "Correctness": 0.6735666944265505
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.93 because the response is highly relevant and provides useful information about enabling notifications for one's own actions in XWiki. However, the concluding remark 'That's it!' is slightly irrelevant, preventing a perfect score.",
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the question about enabling notifications for one's own actions in XWiki. Great job!",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than irrelevant ones, perfectly addressing the input question. Great job!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than irrelevant nodes. The first node clearly states, 'By default, one don\u2019t receive notification about one\u2019s own activity... You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings,' which directly addresses the input. The second node also supports this by explaining how to enable notifications for one's own actions. Irrelevant nodes, such as the third node, which is about administrators configuring notifications, are ranked lower.",
     "ContextualRecall": "The score is 1.00 because every sentence in the expected output is perfectly supported by the nodes in the retrieval context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context fully contains the expected output information about default notification settings and the ability to disable the filter in the 'Advanced filtering options' section."
+    "CustomContextualRelevancy": "The retrieval context contains all the information from the expected output, including the default setting of not receiving notifications about one's own activity unless explicitly targeted, and the ability to disable this filter in the 'Advanced filtering options' section of the user's notification settings.",
+    "Correctness": "The actual output provides a method to enable notifications for one's own activity, aligning with the expected output's mention of this feature. However, it incorrectly states modifying the xwiki.properties file as an alternative, which is not mentioned in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

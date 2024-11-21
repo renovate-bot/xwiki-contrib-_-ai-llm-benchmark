@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.7857142857142857,
+  "overall_score": 0.5339119390513982,
   "individual_scores": {
-    "AnswerRelevancy": 0.9285714285714286,
-    "Faithfulness": 1.0,
-    "ContextualPrecision": 0.7,
-    "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 0.3
+    "AnswerRelevancy": 0.9166666666666666,
+    "Faithfulness": 0.8,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 0.75,
+    "CustomContextualRelevancy": 0.3,
+    "Correctness": 0.23680496764172276
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.93 because the answer is highly relevant and provides clear guidance on disabling notifications in XWiki. The only minor issue is the inclusion of a source link, which isn't directly necessary for answering the question.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.70 because the first node in the retrieval context is relevant, discussing 'settings of the notifications' and 'enable or disable all notification types', which aligns with the input query about changing notification settings. However, the second node, which discusses 'following a user and default watch settings', and the third node, which is about 'filtering events and notifications', are not directly related to disabling notifications for pages and should be ranked lower. The fifth node is relevant as it mentions 'Choosing the default auto-watched mode', directly related to changing automatic page watching settings, but it is ranked lower than some irrelevant nodes.",
-    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context, with no contradictions or missing information. Great job!",
-    "CustomContextualRelevancy": "The retrieval context mentions default watch settings and user profile settings but lacks details on automatic page watching and deleting notification filters."
+    "AnswerRelevancy": "The score is 0.92 because the answer effectively addresses the question about disabling notifications, but includes an unnecessary source link that doesn't directly pertain to the solution.",
+    "Faithfulness": "The score is 0.80 because the actual output incorrectly suggests that users can disable unwanted notifications themselves, while the retrieval context specifies that only administrators have the ability to change users' notification settings in XWiki 13.2+.",
+    "ContextualPrecision": "The score is 0.20 because the relevant node in the retrieval context, which is the fifth node, is ranked lower than several irrelevant nodes. The first node discusses 'getting a notification RSS feed and enabling/disabling notification types', which does not address disabling notifications for uninterested pages. The second node talks about 'following a user and default watch settings', which is not about disabling notifications for specific pages. The third node describes 'filtering notifications for hidden pages and minor events', which is also not relevant. The fourth node is about 'enabling/disabling email notifications and customizing email notification settings', which does not directly relate to the input query. The sixth node discusses 'overriding default notification templates and installation instructions', which is not relevant to the input. The relevant node, which should be ranked higher, mentions 'administrators can change notification settings and default auto-watched mode', directly relating to changing settings for automatic page watching.",
+    "ContextualRecall": "The score is 0.75 because most aspects of the expected output are supported by nodes in the retrieval context, such as automatic page watching and notification settings. However, there is no specific mention of deleting existing notification filters in the 'Custom Filters' list, which affects the score.",
+    "CustomContextualRelevancy": "The retrieval context mentions default notification settings and the ability to change them, but lacks details about automatic page watching and deleting filters from the 'Custom Filters' list.",
+    "Correctness": "Actual output suggests disabling notifications via toggling settings, diverging from expected output, which focuses on 'Automatic page watching' and 'Custom Filters'."
   },
   "question_language": "en",
   "expected_answer_language": "en",

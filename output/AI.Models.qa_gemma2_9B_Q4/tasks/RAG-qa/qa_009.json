@@ -2,7 +2,7 @@
   "id": "qa_009",
   "prompt": "How can I deny script right to a space administrator?",
   "expected_answer": "This is unfortunately not supported in XWiki, rights that are implied by admin right cannot be denied.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ContentOrganization/NestedPagesMigration/ \n\n\nTo deny the script right to a space administrator, you'll need to go to the space's security settings and manually remove the \"Script\" right from their permissions. \n\nKeep in mind that space administrators typically have a high level of access, so it's important to carefully consider the implications before removing any rights. \n\n\n",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ContentOrganization/NestedPagesMigration/ \n\n\nTo deny the script right to a space administrator, you'll need to go to the space's security settings and remove the \"Script\" right from their role.  \n\nHere's a general guide:\n\n1. **Access the Space's Security Settings:** Navigate to the space where you want to manage permissions. Look for an option like \"Security\" or \"Permissions\" within the space's settings.\n2. **Locate the Administrator Role:** Find the role assigned to space administrators. It might be labeled as \"Space Administrator\" or something similar.\n3. **Remove the \"Script\" Right:**  Within the administrator role's permissions, find the \"Script\" right and uncheck it. This will prevent space administrators from executing scripts within that space. \n\n\n\nRemember that the exact steps might vary slightly depending on your XWiki version and configuration. \n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -47,12 +47,12 @@
   ],
   "usage": {
     "prompt_tokens": 2558,
-    "completion_tokens": 69,
-    "total_tokens": 2627
+    "completion_tokens": 180,
+    "total_tokens": 2738
   },
-  "average_power_draw": 194.9713611111111,
-  "energy_consumption": 350.69119384816617,
-  "energy_per_input_token": 0.12843478990960122,
-  "energy_per_output_token": 0.32108697477400305,
-  "energy_per_total_token": 0.1334949348489403
+  "average_power_draw": 149.95980676328503,
+  "energy_consumption": 772.8073289724709,
+  "energy_per_input_token": 0.25691733011052886,
+  "energy_per_output_token": 0.6422933252763223,
+  "energy_per_total_token": 0.282252494146264
 }

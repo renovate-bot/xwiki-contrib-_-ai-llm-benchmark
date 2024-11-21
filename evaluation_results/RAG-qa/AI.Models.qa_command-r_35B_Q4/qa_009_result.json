@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.76,
+  "overall_score": 0.569527885265984,
   "individual_scores": {
-    "AnswerRelevancy": 0.8,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.9090909090909091,
+    "Faithfulness": 0.6666666666666666,
     "ContextualPrecision": 0,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 1.0
+    "CustomContextualRelevancy": 0.8,
+    "Correctness": 0.041409735838327646
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.80 because the answer mostly addresses the question about denying script rights to a space administrator, but it includes irrelevant source links that do not directly contribute to answering the specific query.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'programming rights and script execution' but not the specific issue of denying admin rights. The second node lists 'various rights and their properties' without mentioning the denial of admin rights. The third node explains the 'Script' right without relating to denying admin rights. The fourth node is about 'checking access rights programmatically,' which does not address denying admin rights. Lastly, the fifth node discusses 'converting rights during page migration,' which is unrelated to denying admin rights.",
-    "ContextualRecall": "The score is 1.00 because every part of the expected output is perfectly supported by the nodes in the retrieval context. Great job!",
-    "CustomContextualRelevancy": "The expected answer states that rights implied by admin cannot be denied, which is supported by the retrieval context indicating that admin rights imply other rights and are not deniable."
+    "AnswerRelevancy": "The score is 0.91 because the response is mostly relevant and provides useful information on the topic, but it includes a link about content organization and nested pages migration, which is not directly related to denying script rights to a space administrator.",
+    "Faithfulness": "The score is 0.67 because the actual output incorrectly claims that the 'Script' right is allowed for all users at the main wiki level and that all users can execute scripts unless revoked, whereas the retrieval context clarifies that this right is not granted by default in XWiki 14.10+.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses programming rights but does not address denying script rights to a space administrator. The second node lists various rights without mentioning the inability to deny script rights. The third node explains script rights but not their denial. The fourth node provides technical details unrelated to denying script rights. The fifth node discusses rights conversion during migration without mentioning script rights denial.",
+    "ContextualRecall": "The score is 1.00 because the expected output is perfectly supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context confirms that rights implied by admin cannot be denied, aligning with the expected output. However, it does not explicitly mention the lack of support for denying implied rights in XWiki, leading to a slight deduction.",
+    "Correctness": "The actual output does not address the key fact that rights implied by admin right cannot be denied in XWiki. It focuses on script rights management instead, which is not relevant to the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

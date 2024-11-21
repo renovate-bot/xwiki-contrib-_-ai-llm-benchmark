@@ -1,8 +1,8 @@
 {
-  "score": 0.38461538461538464,
-  "reason": "The score is 0.38 because the summary includes a significant amount of extra information not present in the original text, which affects its accuracy and relevance.",
+  "score": 0.36363636363636365,
+  "reason": "The score is 0.36 because the summary contains significant contradictions and adds extra information not present in the original text, leading to a low-quality summarization.",
   "score_breakdown": {
-    "Alignment": 0.38461538461538464,
+    "Alignment": 0.36363636363636365,
     "Coverage": 1.0
   },
   "input_language": "en",

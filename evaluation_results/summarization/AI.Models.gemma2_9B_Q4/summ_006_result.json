@@ -1,9 +1,9 @@
 {
-  "score": 0.2,
-  "reason": "The score is 0.20 because the summary includes extra information not present in the original text and fails to answer several questions that the original text can address, indicating a significant deviation from the original content.",
+  "score": 0.6666666666666666,
+  "reason": "The score is 0.67 because the summary includes extra information not present in the original text, such as details about creating, editing, and viewing page history, and encouragement to proceed to Step 1. Additionally, it fails to answer a question about the existence of a dedicated wiki for XWiki Rendering documentation, which the original text can answer.",
   "score_breakdown": {
-    "Alignment": 0.7142857142857143,
-    "Coverage": 0.2
+    "Alignment": 0.6666666666666666,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

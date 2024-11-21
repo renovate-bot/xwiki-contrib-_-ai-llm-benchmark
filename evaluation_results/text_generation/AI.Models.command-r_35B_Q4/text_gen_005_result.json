@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output addresses the key elements of the Input prompt by presenting a space adventure with exploration and discovery, aligning with the Expected Output's theme of astronauts exploring. The story is coherent and fluent, with a logical flow and consistent narrative. However, the focus on a duo rather than a group of astronauts slightly deviates from the Expected Output.",
+  "reason": "The Actual Output is relevant to the Input prompt as it tells a creative space adventure story. It is coherent and fluent, with a logical flow and good grammar. However, it focuses on a single astronaut, Luna, rather than a group as mentioned in the Expected Output, which slightly misaligns with the expected narrative.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

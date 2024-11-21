@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output addresses the main topic by describing the brain's complexity and functions. It covers similar key points to the Expected Output, such as physiological functions and cognitive abilities, though it lacks mention of consciousness and subjective experiences. The ideas flow logically and the language is grammatically correct and natural.",
+  "reason": "The Actual Output addresses the main topics of the Input, such as brain functions and interpretation of external data, aligning well with the Expected Output. It maintains coherence and logical flow, though it simplifies some technical terms like 'physiological processes' and 'biological substrate'. The language is fluent and consistent with a technical audience.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

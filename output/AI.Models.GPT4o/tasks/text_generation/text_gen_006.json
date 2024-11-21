@@ -2,12 +2,12 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "In the hush of dawn, where the world awakes,  \nNature whispers softly, as the night sky breaks.  \nGolden rays of sunlight kiss the morning dew,  \nPainting fields of emerald in a vibrant hue.  \n\nThe gentle rustle of leaves in the breeze,  \nA symphony of whispers among ancient trees.  \nBirds take flight with a joyous song,  \nIn the tapestry of life, where we all belong.  \n\nMountains stand majestic, cloaked in mist,  \nTheir peaks touched by the sun's gentle kiss.  \nRivers dance with a silvery grace,  \nCarving paths through earth's embrace.  \n\nThe ocean's roar, a timeless lullaby,  \nReflecting the vast, endless sky.  \nWaves that crash with a powerful might,  \nGlistening under the moon's soft light.  \n\nWildflowers bloom in a riot of shades,  \nIn meadows where sunlight gently fades.  \nThe fragrance of earth, rich and sweet,  \nUnder the warmth of the sun's gentle heat.  \n\nNature's beauty, a canvas so grand,  \nPainted by time's patient hand.  \nIn every leaf, in every stone,  \nA reminder that we're never alone.  \n\nSo pause and breathe, let your spirit soar,  \nIn the embrace of nature, forevermore.  \nFor in its beauty, pure and true,  \nLies a reflection of the soul in you.  ",
+  "ai_answer": "In the cradle of dawn, where the sun softly wakes,  \nNature unfurls with each breath that it takes.  \nA symphony whispers through valleys and streams,  \nIn the dance of the leaves, in the light's gentle beams.  \n\nThe sky, a canvas of azure and gold,  \nPaints stories of wonder that never grow old.  \nClouds drift like dreams in the vast open sea,  \nWhile mountains stand guard, timeless and free.  \n\nThe forest, a tapestry woven with green,  \nHolds secrets and stories of all it has seen.  \nThe rustle of leaves, a lullaby sweet,  \nGuides weary souls to a tranquil retreat.  \n\nRivers like ribbons weave through the land,  \nCarving their paths with a gentle hand.  \nTheir waters sing songs of ages gone by,  \nReflecting the world in the blink of an eye.  \n\nFields dressed in blossoms of every hue,  \nDance with the wind beneath skies of blue.  \nThe fragrance of earth, rich and profound,  \nIs a balm for the heart, where peace is found.  \n\nIn the hush of the night, stars softly gleam,  \nGuardians of dreams in the world's gentle stream.  \nThe moon, a sentinel, watches with grace,  \nCasting its glow on the earth's tender face.  \n\nNature's beauty, a timeless embrace,  \nA reminder of wonder in life's hurried pace.  \nIn every petal, in every breeze,  \nLies the eternal, the soul's gentle ease.",
   "sources": null,
   "usage": {
     "prompt_tokens": 16,
-    "completion_tokens": 287,
-    "total_tokens": 303
+    "completion_tokens": 307,
+    "total_tokens": 323
   },
   "average_power_draw": null,
   "energy_consumption": null,

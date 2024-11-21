@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output is a creative space adventure story that aligns well with the Input prompt. It features a space crew on a mission, addressing the topic effectively. However, it diverges from the Expected Output, which specifies a story about astronauts exploring a new planet, whereas the Actual Output focuses on a nebula and a mythical plant. Despite this, the story is coherent, fluent, and engaging.",
+  "reason": "The Actual Output is a creative space adventure story, aligning well with the Input prompt. It is coherent and fluent, with a logical flow and engaging narrative. However, it focuses on an anomaly rather than directly exploring a new planet, which slightly diverges from the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

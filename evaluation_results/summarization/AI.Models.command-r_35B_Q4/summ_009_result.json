@@ -1,9 +1,9 @@
 {
-  "score": 0.4,
-  "reason": "The score is 0.40 because the summary includes extra information not present in the original text and fails to answer several questions that the original text can address. This indicates a lack of coverage and accuracy in the summary.",
+  "score": 0.6666666666666666,
+  "reason": "The score is 0.67 because the summary contains a contradiction regarding who can modify wiki pages and includes extra information about XWiki and references not present in the original text. Additionally, it fails to address whether most wikis include features like access rights management, which the original text can answer.",
   "score_breakdown": {
-    "Alignment": 0.8333333333333334,
-    "Coverage": 0.4
+    "Alignment": 0.6666666666666666,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

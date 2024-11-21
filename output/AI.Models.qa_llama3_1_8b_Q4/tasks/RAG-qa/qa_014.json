@@ -2,7 +2,7 @@
   "id": "qa_014",
   "prompt": "Ich erhalte viele Benachrichtigungen \u00fcber alle m\u00f6glichen Seiten, an denen ich nicht interessiert bin. Diese scheinen automatisch aktiviert worden zu sein. Wie kann ich diese Benachrichtigungen deaktivieren?",
   "expected_answer": "Standardm\u00e4\u00dfig wird eine Seite, an der Sie eine wesentliche \u00c4nderung vorgenommen haben, automatisch zu der Liste der Seiten hinzugef\u00fcgt, denen Sie folgen. Das bedeutet, dass Sie \u00fcber \u00c4nderungen an Ihrer Arbeit benachrichtigt werden. Sie k\u00f6nnen die Einstellung f\u00fcr \"Automatisches Verfolgen von Seiten\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil \u00e4ndern. Sie k\u00f6nnen vorhandene Benachrichtigungsfilter, die auf diese Weise erstellt wurden, in der Liste \"Benutzerdefinierte Filter\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil l\u00f6schen.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Attachments \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \n\n\nUm die Benachrichtigungen zu deaktivieren, folge bitte diesen Schritten:\n\n1.  **Benachrichtigungs-App \u00f6ffnen**: \u00d6ffne deine Benachrichtigungs-App auf dem Ger\u00e4t. Diese ist oft als \"Benachrichtigungen\" oder \"Notifications\" bezeichnet.\n2.  **Anzeige-Ansicht finden**: Suche in der App nach einem Abschnitt, der \"Anzeigen\", \"Benachrichtigungen anzeigen\" oder \u00e4hnlich hei\u00dft. Dieser Bereich zeigt alle Anwendungen und Seiten, die Benachrichtigungen senden.\n3.  **Seite finden und ausw\u00e4hlen**: Finde die Seite, f\u00fcr die du die Benachrichtigung deaktivieren m\u00f6chtest. Klicke darauf, um Details zu sehen.\n4.  **Benachrichtigungs-Einstellungen bearbeiten**: In der Detailansicht findest du oft einen Button mit einem Pfeil nach unten oder \u00e4hnlich. Klicke darauf, um die Einstellungen f\u00fcr diese Seite zu \u00f6ffnen.\n5.  **Benachrichtigung deaktivieren**: Suche in den Einstellungen nach einer Option wie \"Benachrichtigungen deaktivieren\", \"Anzeigen abstellen\" oder \u00e4hnlich. Aktiviere diese Option, um Benachrichtigungen von dieser Seite abzustellen.\n\n**Hinweis:** Die Schritte k\u00f6nnen je nach Ger\u00e4t und Betriebssystem variieren. Wenn du Schwierigkeiten hast, die Benachrichtigung zu deaktivieren, kannst du auch in der App-Suche nach \"Benachrichtigungs-Einstellungen\" oder \u00e4hnlich suchen und diese dann \u00f6ffnen.\n\nWenn du immer noch Probleme hast, kann es sein, dass eine andere Anwendung oder ein Add-on auf deinem Ger\u00e4t Benachrichtigungen aktiviert hat. In diesem Fall kannst du die App-Suche verwenden, um nach \"Benachrichtigung-Einstellungen\" zu suchen und dort nach weiteren Optionen suchen.\n\nWenn du weitere Fragen hast, stehe ich dir gerne zur Verf\u00fcgung!",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Attachments \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \n\n\nUm Benachrichtigungen in XWiki zu deaktivieren, die du nicht ben\u00f6tigst, kannst du folgende Schritte ausf\u00fchren:\n\n1. **Navigiere zum Men\u00fc \"Administration\"**: Dies findest du \u00fcblicherweise im oberen Bereich der Seite. Klicke darauf und w\u00e4hle \"Benutzer\" oder \"Gruppen\" aus, je nachdem, ob du als Benutzer oder Administrator handelst.\n2. **Gehe zu den Einstellungen f\u00fcr Benachrichtigungen**: In der Liste der verf\u00fcgbaren Funktionen findest du eine Option f\u00fcr Benachrichtigungen. Klicke darauf und w\u00e4hle dann die entsprechende Einstellung aus, um die automatischen Benachrichtigungen zu deaktivieren.\n3. **Deaktiviere die Benachrichtigungsfunktion**: Hier kannst du entscheiden, welche Arten von Benachrichtigungen du erhalten m\u00f6chtest oder welche du komplett ausschlie\u00dfen m\u00f6chtest.\n\nAlternativ kannst du auch direkt auf der Seite nachsehen, ob es eine Option gibt, um bestimmte Seiten von den Benachrichtigungen auszuschlie\u00dfen. Wenn du also beispielsweise eine Seite hast, die automatisch Benachrichtigungen sendet und du diese deaktivieren m\u00f6chtest, kannst du direkt in der Einstellung dieser Seite nachsehen, ob es eine Option daf\u00fcr gibt.\n\nWenn du Schwierigkeiten hast, die richtige Stelle zu finden oder wenn du als Administrator handelst und bestimmte Benutzerrechte \u00e4ndern musst, empfehle ich dir, die XWiki-Dokumentation zu konsultieren. Dort findest du detaillierte Anweisungen f\u00fcr alle m\u00f6glichen Aufgaben und Einstellungen.\n\nIch hoffe, das hilft! Wenn du weitere Fragen hast oder Hilfe ben\u00f6tigst, stehe ich gerne zur Verf\u00fcgung.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -54,13 +54,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 59,
-    "completion_tokens": 440,
-    "total_tokens": 499
+    "prompt_tokens": 2961,
+    "completion_tokens": 401,
+    "total_tokens": 3362
   },
-  "average_power_draw": 223.5074640522876,
-  "energy_consumption": 838.1290104466793,
-  "energy_per_input_token": 0.7231484128099045,
-  "energy_per_output_token": 1.8078710320247615,
-  "energy_per_total_token": 1.679617255404167
+  "average_power_draw": 191.60751111111102,
+  "energy_consumption": 1068.4687122294422,
+  "energy_per_input_token": 0.2695770688102541,
+  "energy_per_output_token": 0.6739426720256353,
+  "energy_per_total_token": 0.3178074694317199
 }

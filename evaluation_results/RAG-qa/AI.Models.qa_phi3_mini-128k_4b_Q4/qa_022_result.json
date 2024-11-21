@@ -1,20 +1,22 @@
 {
-  "overall_score": 0.6228571428571429,
+  "overall_score": 0.4389048629430968,
   "individual_scores": {
-    "AnswerRelevancy": 0.0,
-    "Faithfulness": 1,
-    "ContextualPrecision": 1.0,
-    "ContextualRecall": 0.7142857142857143,
-    "CustomContextualRelevancy": 0.4
+    "AnswerRelevancy": 0.8571428571428571,
+    "Faithfulness": 0.7272727272727273,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.3,
+    "Correctness": 0.24901359324299657
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.00 because none of the statements in the output address the issue of not receiving notifications. All statements are unrelated to the input.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment with the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first node discusses 'Enable and disable the extension' and 'Enabling notifications for all users by default', which is directly related to ensuring notifications are activated. The second node covers 'Follow a user' and 'Watched Entities', which are pertinent to receiving notifications. Irrelevant nodes, such as the third node discussing 'RSS feeds and notification macros' and the fourth node focusing on 'displaying preferences and macros', are correctly ranked lower.",
-    "ContextualRecall": "The score is 0.71 because while there are supportive connections between the retrieval context nodes and most of the expected output sentences, such as enabling notifications and following users, there are missing details like the specific mention of 'xwiki.properties' and the 'r\u00e9seau' tab, which are not covered by the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users, but lacks details on setting `notifications.enabled` to `true` in `xwiki.properties` and specifics on following pages or users."
+    "AnswerRelevancy": "The score is 0.86 because the response is mostly relevant to the issue of not receiving notifications, but includes unnecessary links that do not directly address the problem.",
+    "Faithfulness": "The score is 0.73 because the actual output inaccurately describes a 'Notifications Application - Description' page and an option to 'Enable and disable the extension', which are not mentioned in the retrieval context. Additionally, it incorrectly suggests that individual users can have notifications enabled by default, whereas the context specifies this is done for all users by administrators. Lastly, the actual output mentions enabling encryption for notification emails, which is not covered in the retrieval context.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node 'provides links to various sections related to notifications but does not specifically address enabling notifications or following users', which are key parts of the expected output. The second node 'lists different notification features and settings but does not directly mention enabling notifications or following users', which are essential to the expected output. The third node 'discusses RSS feeds and notification settings but does not provide information on enabling notifications or following users', which are crucial to the expected output. The fourth node 'lists different notification preferences macros but does not specifically address enabling notifications or following users', which are central to the expected output.",
+    "ContextualRecall": "The score is 0.50 because while nodes in the retrieval context mention enabling extensions and following users or pages, there is no specific mention of 'xwiki.properties', the alert menu, or the 'r\u00e9seau' tab, which are crucial details in the expected output.",
+    "CustomContextualRelevancy": "The retrieval context mentions enabling notifications and following users, but lacks details on setting `notifications.enabled` to `true` and specifics on following pages or using the alert menu.",
+    "Correctness": "The actual output provides detailed steps on managing notifications, including installation and customization through the Notifications Application, which is not mentioned in the expected output. However, it lacks specific instructions on following pages or users using the 'alerte' menu and does not address checking the 'notifications.enabled' property in 'xwiki.properties'."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",
-  "answer_language": "en"
+  "answer_language": "fr"
 }

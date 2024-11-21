@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.597121212121212,
+  "overall_score": 0.5660588298688176,
   "individual_scores": {
-    "AnswerRelevancy": 0.8333333333333334,
-    "Faithfulness": 0.7272727272727273,
-    "ContextualPrecision": 0.325,
-    "ContextualRecall": 0.8,
-    "CustomContextualRelevancy": 0.3
+    "AnswerRelevancy": 0.7647058823529411,
+    "Faithfulness": 1.0,
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 0.4444444444444444,
+    "CustomContextualRelevancy": 0.5,
+    "Correctness": 0.4872026524155202
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.83 because the response mostly addresses the question about configuring upload restrictions in a wiki, but includes irrelevant links about exporting features, XWiki syntax, and document lifecycle, which do not directly relate to the query.",
-    "Faithfulness": "The score is 0.73 because the actual output mentions parameters like $wgMaxUploadSize and $wgFileExtensions, which are not present in the retrieval context. Instead, the retrieval context discusses configuration in XWikiPreferences without referencing these specific parameters.",
-    "ContextualPrecision": "The score is 0.33 because the relevant nodes in retrieval context, such as the fourth node which includes sections on 'Size Limit' and 'Mimetype Restriction', and the fifth node providing detailed steps on setting the maximum attachment size, are ranked lower than irrelevant nodes. For instance, the first node discusses 'trusted domains and PDF export customization', which are unrelated to configuring attachment restrictions, and should be ranked lower.",
-    "ContextualRecall": "The score is 0.80 because the 5th node in the retrieval context supports the steps for configuring the maximum attachment size to 10 MB, including repeating the process for each (sub)wiki, which aligns with sentences in the expected output. However, it lacks details on configuring MIME types and the specific MIME types allowed, which are essential parts of the expected output.",
-    "CustomContextualRelevancy": "The retrieval context mentions configuring maximum attachment size and MIME type restrictions but lacks specific details on setting MIME types in xwiki.properties and exact steps for setting size to 10MB."
+    "AnswerRelevancy": "The score is 0.76 because the output partially addresses the question about configuring attachment upload restrictions, but includes several irrelevant statements about exports, XWiki syntax, document lifecycle, and default settings, which do not directly relate to the specific requirements of file type and size limits.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.20 because the relevant node in the retrieval context, which provides 'detailed steps on setting the maximum attachment size and mentions MIME type restrictions', is ranked fifth. Irrelevant nodes, such as the first node discussing 'trusted domains and PDF export customization', and the second node about 'ODT and PDF export features', are ranked higher, which lowers the score.",
+    "ContextualRecall": "The score is 0.44 because while the 5th node in the retrieval context provides detailed steps for setting maximum upload size, aligning with sentences in the expected output, it lacks information on configuring MIME types and specific size limits for images or PDFs, which are crucial parts of the expected output.",
+    "CustomContextualRelevancy": "The retrieval context mentions configuring maximum attachment size and MIME type restrictions, but lacks specific details about setting MIME types in xwiki.properties and the exact steps for setting the size to 10MB.",
+    "Correctness": "The actual output correctly outlines setting the maximum upload size but misses configuring MIME types in xwiki.properties. It mentions altering trusted domains, which isn't in expected output. There's a mention of a default setting of 100 GB that's not in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

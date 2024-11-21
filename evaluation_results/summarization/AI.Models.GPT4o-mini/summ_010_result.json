@@ -1,8 +1,8 @@
 {
-  "score": 0.8333333333333334,
-  "reason": "The score is 0.83 because the summary includes extra information about blogs and task managers that is not specifically mentioned in the original text. However, there are no contradictions, indicating a generally accurate summary.",
+  "score": 0.6666666666666666,
+  "reason": "The score is 0.67 because the summary includes extra information about specific applications like blogs, task managers, FAQs, and product management tools that are not mentioned in the original text, which slightly reduces its accuracy.",
   "score_breakdown": {
-    "Alignment": 0.8333333333333334,
+    "Alignment": 0.6666666666666666,
     "Coverage": 1.0
   },
   "input_language": "en",

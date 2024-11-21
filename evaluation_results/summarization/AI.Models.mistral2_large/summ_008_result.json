@@ -1,8 +1,8 @@
 {
-  "score": 0.25,
-  "reason": "The score is 0.25 because the summary includes a significant amount of extra information that is not mentioned in the original text, indicating a lack of precision and relevance in the summarization.",
+  "score": 0.5555555555555556,
+  "reason": "The score is 0.56 because the summary contains several contradictions regarding user rights and registration settings that are not aligned with the original text, and it includes extra information not present in the original text. These issues indicate a moderate level of inaccuracy and incompleteness in the summary.",
   "score_breakdown": {
-    "Alignment": 0.25,
+    "Alignment": 0.5555555555555556,
     "Coverage": 1.0
   },
   "input_language": "en",

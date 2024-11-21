@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary includes extra information not present in the original text, such as specific applications like blogs or task managers and use cases like community hubs or education solutions. Additionally, the summary fails to address questions about XWiki's professional features and its use for project collaboration, indicating a lack of coverage of key aspects present in the original text.",
+  "score": 0.6666666666666666,
+  "reason": "The score is 0.67 because the summary includes extra information about features like blogs, task managers, community hubs, and education solutions that are not mentioned in the original text. However, there are no contradictions, which is a positive aspect of the summary.",
   "score_breakdown": {
-    "Alignment": 0.6,
-    "Coverage": 0.6
+    "Alignment": 0.6666666666666666,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

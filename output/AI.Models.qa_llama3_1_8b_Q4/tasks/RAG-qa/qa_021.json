@@ -2,7 +2,7 @@
   "id": "qa_021",
   "prompt": "La cloche en haut \u00e0 droite n'est pas disponible, m\u00eame lorsque l'extension \"Notification d'alerte\" est install\u00e9e.",
   "expected_answer": "Assurez-vous que les notifications sont activ\u00e9es dans votre wiki. Vous pouvez les activer en d\u00e9finissant la propri\u00e9t\u00e9 `notifications.enabled` dans `xwiki.properties` sur `true`.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nIl semblerait que vous rencontriez un probl\u00e8me avec la cloche d'alerte dans le coin sup\u00e9rieur droit de votre \u00e9cran, m\u00eame apr\u00e8s avoir install\u00e9 l'extension \u00ab Notification d'alerte \u00bb. Voici quelques \u00e9tapes que vous pouvez suivre pour r\u00e9soudre ce probl\u00e8me :\n\n1. **V\u00e9rifiez si l'extension est correctement install\u00e9e** : Assurez-vous qu'\u00ab Alert Bell \u00bb (ou le nom de l'extension correspondant) est bien install\u00e9 et activ\u00e9 dans votre navigateur. Vous pouvez v\u00e9rifier la liste des extensions en allant \u00e0 Menu > Extensions.\n\n2. **R\u00e9initialisez les param\u00e8tres par d\u00e9faut du navigateur** : Parfois, r\u00e9initialiser les param\u00e8tres par d\u00e9faut peut r\u00e9soudre le probl\u00e8me. Pour ce faire, allez \u00e0 Menu > Aide > R\u00e9tablir \u00e0 l'\u00e9tat d'origine (ou \u00ab Param\u00e8tres par d\u00e9faut \u00bb). Notez que cela supprimera toutes vos donn\u00e9es de confidentialit\u00e9 et vos param\u00e8tres personnels.\n\n3. **D\u00e9sinstallez et r\u00e9installez l'extension** : Essayez de d\u00e9sinstaller l'extension, puis r\u00e9installez-la \u00e0 partir du Chrome Web Store ou du magasin d'applications correspondant de votre navigateur. Cela peut r\u00e9soudre les probl\u00e8mes li\u00e9s \u00e0 l'installation.\n\n4. **V\u00e9rifiez les mises \u00e0 jour** : Assurez-vous que vous utilisez la derni\u00e8re version de votre navigateur, car les mises \u00e0 jour peuvent inclure des corrections de bogues qui affectent les extensions.\n\n5. **Supprimez les donn\u00e9es de cache et de cookies** : Les donn\u00e9es de cache et de cookies peuvent parfois causer des probl\u00e8mes avec les extensions. Vous pouvez essayer de supprimer ces donn\u00e9es pour voir si cela corrige le probl\u00e8me.\n\n6. **Recherchez des solutions en ligne sp\u00e9cifiques \u00e0 l'extension** : Si vous avez install\u00e9 une extension personnalis\u00e9e ou une extension de tiers, il est possible que ce soit un probl\u00e8me sp\u00e9cifique li\u00e9 \u00e0 cette extension. Vous pouvez essayer de trouver des guides ou des forums de discussion pour cette extension particuli\u00e8re.\n\nSi apr\u00e8s avoir essay\u00e9 ces \u00e9tapes, le probl\u00e8me persiste, il peut \u00eatre utile de consulter les forums officiels du navigateur ou d'interroger une communaut\u00e9 en ligne plus large pour obtenir plus de conseils personnalis\u00e9s.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nJe suis d\u00e9sol\u00e9 de vous annoncer que la cloche en haut \u00e0 droite n'est pas disponible, m\u00eame si l'extension \"Notifications d'alerte\" est install\u00e9e.\n\nCependant, il semblerait qu'il existe une autre fa\u00e7on de visualiser les notifications dans XWiki. Vous pouvez essayer d'utiliser le macro `notifications` pour afficher les notifications sur une page sp\u00e9cifique. Voici un exemple de code que vous pouvez utiliser :\n\n```\n{{notifications}}\n```\n\nCe macro permettra de lister toutes les notifications disponibles dans XWiki.\n\nSi vous souhaitez personnaliser vos notifications, vous pouvez \u00e9galement consulter la documentation officielle de l'extension \"Notifications d'alerte\" pour plus d'informations sur les param\u00e8tres et les options disponibles.\n\nJe suis d\u00e9sol\u00e9 que je ne puisse pas fournir une solution sp\u00e9cifique \u00e0 votre probl\u00e8me, mais j'esp\u00e8re que cela vous aidera \u00e0 trouver une alternative pour visualiser vos notifications dans XWiki.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -54,13 +54,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 39,
-    "completion_tokens": 513,
-    "total_tokens": 552
+    "prompt_tokens": 2701,
+    "completion_tokens": 209,
+    "total_tokens": 2910
   },
-  "average_power_draw": 168.5693703703704,
-  "energy_consumption": 1004.418407655098,
-  "energy_per_input_token": 0.7600593323156247,
-  "energy_per_output_token": 1.9001483307890616,
-  "energy_per_total_token": 1.8195985645925687
+  "average_power_draw": 195.3443253968253,
+  "energy_consumption": 604.4808252948046,
+  "energy_per_input_token": 0.18752313488283065,
+  "energy_per_output_token": 0.46880783720707664,
+  "energy_per_total_token": 0.20772536951711498
 }

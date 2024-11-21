@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output is relevant to the Input, coherent, and fluent. It includes all keywords and maintains logical flow. It aligns with the Expected Output, though it adds extra details about the cat lounging and soaking up the sunshine.",
+  "reason": "The Actual Output is coherent and fluent, closely aligning with the Expected Output. Both mention a sunny day, a playful cat, and a garden. The Actual Output is slightly more detailed but maintains relevance and logical flow.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

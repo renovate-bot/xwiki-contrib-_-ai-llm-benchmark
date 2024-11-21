@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.32727272727272727,
+  "overall_score": 0.31927358701918823,
   "individual_scores": {
-    "AnswerRelevancy": 0.6363636363636364,
+    "AnswerRelevancy": 0.7272727272727273,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.18836879484240196
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.64 because while the response partially addresses the question about authenticating users with access tokens, it includes multiple irrelevant statements about unrelated topics and source links, which detract from its overall relevance.",
+    "AnswerRelevancy": "The score is 0.73 because the answer mostly addresses the question about authenticating users with access tokens, but it includes irrelevant source links that do not directly contribute to the explanation.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'model validation strategies in XWiki', which is unrelated to 'user authentication with access tokens'. The second node is about 'attachment validation and configuration in XWiki', which does not pertain to 'authentication using access tokens'. The third node provides information about 'the admin UI for model validation', which is not relevant to 'authenticating users with access tokens'.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context, as the retrieval context lacks any mention of key concepts such as 'Benutzer mit Zugriffstoken', 'LLM-Anwendung (BETA)-Erweiterung', 'externen Anwendungen', 'signierten JSON Web Tokens (JWT)', 'Token-Authentifizierer', 'xwiki.authentication.authclass', 'autorisierten Anwendungen', 'JWT-Token generieren', 'Authorization-Header', 'Bearer TOKEN', 'Erstellung oder Aktualisierung von Benutzern', or 'bestehenden Benutzer'.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to token-based authentication or JWT, which are central to the expected answer."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'model validation strategies and configuration in XWiki', which is unrelated to user authentication with access tokens. The second node is about 'attachment validation and configuration, including mimetype restrictions', which does not relate to authenticating users with access tokens. The third node provides information about 'the admin UI for model validation and its installation', which is not relevant to the topic of user authentication using access tokens.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context, as the context lacks any mention of key concepts such as 'Benutzer mit Zugriffstoken', 'LLM-Anwendung (BETA)-Erweiterung', 'externen Anwendungen', 'signierten JSON Web Tokens (JWT)', 'Token-Authentifizierer', 'xwiki.authentication.authclass', 'autorisierten Anwendungen', 'JWT-Token', 'Authorization-Header', or 'Erstellung oder Aktualisierung von Benutzern'.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to token-based authentication or JWT, which are key components of the expected output.",
+    "Correctness": "The actual output mentions authentication with tokens but lacks detail on JWT, Ed25519 signing, and specific configuration steps outlined in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

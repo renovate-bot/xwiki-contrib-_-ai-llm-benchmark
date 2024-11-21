@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.7528571428571429,
+  "overall_score": 0.6883072105344747,
   "individual_scores": {
     "AnswerRelevancy": 1.0,
-    "Faithfulness": 0.8,
+    "Faithfulness": 1.0,
     "ContextualPrecision": 0.75,
-    "ContextualRecall": 0.7142857142857143,
-    "CustomContextualRelevancy": 0.5
+    "ContextualRecall": 0.5714285714285714,
+    "CustomContextualRelevancy": 0.5,
+    "Correctness": 0.30841469177827696
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the question without any irrelevant information. Great job!",
-    "Faithfulness": "The score is 0.80 because the actual output incorrectly claims that nothing is watched by default in XWiki 15.5+, while the retrieval context clarifies that for new users, nothing is watched by default, but all application types are enabled.",
-    "ContextualPrecision": "The score is 0.75 because the first and fourth nodes in the retrieval context are relevant, addressing how to follow a user for notifications and various ways to receive notifications in XWiki. However, the second node discusses filters and settings without directly addressing the issue of not receiving notifications, the third node talks about RSS feeds without ensuring notifications are received, and the fifth node is about the 'What's New' application, which is unrelated to the notification setup or troubleshooting. These irrelevant nodes should be ranked lower than the relevant ones.",
-    "ContextualRecall": "The score is 0.71 because several sentences in the expected output are well-supported by nodes in the retrieval context, such as watching a page or wiki (supported by node 2), using the alert menu (supported by node 4), and following a user (supported by node 1). However, some key details like enabling notifications via `xwiki.properties` and subscribing to pages or users are not covered in the nodes, leading to a less than perfect score.",
-    "CustomContextualRelevancy": "The retrieval context covers enabling notifications and following users, but lacks details on setting `notifications.enabled` to `true` in `xwiki.properties` and watching pages or wikis."
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the issue of not receiving notifications in XWiki. Great job on providing a focused and helpful answer!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.75 because the first and fourth nodes in the retrieval context are relevant, discussing how to follow a user and various methods of receiving notifications in XWiki, which are crucial for setting up notifications correctly. However, the second node, ranked higher than the fourth, only discusses filters for notifications without addressing enabling notifications or subscriptions. Additionally, the third node, which talks about RSS feeds and notification settings, does not specifically address enabling notifications or subscribing to content, and the fifth node, discussing the 'What's New' application, is not directly related to the issue of enabling notifications.",
+    "ContextualRecall": "The score is 0.57 because while the nodes in retrieval context cover details about enabling notifications through the alert menu, following users, and checking the network tab (sentences 3, 4, 5, and 6), they do not mention enabling notifications in `xwiki.properties`, subscribing to pages or users, or watching a page or its children (sentences 1, 2, and 3).",
+    "CustomContextualRelevancy": "The retrieval context covers following users and some notification settings but lacks details on enabling notifications via `xwiki.properties` and watching pages or wikis.",
+    "Correctness": "The actual output provides guidance on enabling notifications but lacks specific instructions on setting `notifications.enabled` in `xwiki.properties` to `true` and does not mention following users through the User Index. It includes additional information about version-specific settings and advanced filtering, which are not in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.6142424242424243,
+  "overall_score": 0.5954516738733368,
   "individual_scores": {
-    "AnswerRelevancy": 0.9545454545454546,
-    "Faithfulness": 1.0,
-    "ContextualPrecision": 0.16666666666666666,
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.8333333333333334,
+    "ContextualPrecision": 0.33730158730158727,
     "ContextualRecall": 0.75,
-    "CustomContextualRelevancy": 0.2
+    "CustomContextualRelevancy": 0.3,
+    "Correctness": 0.3520751226051001
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.95 because the answer is highly relevant and provides useful information on disabling notifications in XWiki. However, the inclusion of a source link without directly addressing the specific question slightly detracts from its relevance.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.17 because the relevant node in the retrieval context, ranked sixth, 'mentions that users only get notifications for pages they created or updated and discusses notification settings', which is pertinent to disabling notifications. However, several irrelevant nodes are ranked higher, such as the first node that 'discusses following a user and default watch settings, which is not directly related to disabling notifications for pages', and the second node that 'talks about selecting the level of details in email notifications and macros for settings, which does not address disabling notifications'. These irrelevant nodes should be ranked lower to improve the score.",
-    "ContextualRecall": "The score is 0.75 because most of the expected output is supported by node 5 in the retrieval context, which discusses automatic page watching, changing settings, and managing custom filters. However, it lacks specific mention of being notified about changes on one's work.",
-    "CustomContextualRelevancy": "The retrieval context mentions default watch settings and user profile settings but lacks specific details about automatic page watching and deleting notification filters as described in the expected output."
+    "AnswerRelevancy": "The score is 1.00 because the response perfectly addresses the question about disabling unwanted notifications in XWiki without any irrelevant information. Great job!",
+    "Faithfulness": "The score is 0.83 because the actual output incorrectly claims the existence of 'Advanced filtering options' in the notifications settings, which is not supported by the retrieval context.",
+    "ContextualPrecision": "The score is 0.34 because the relevant nodes in the retrieval context are ranked lower than several irrelevant nodes. For example, the first node discusses 'following a user and receiving notifications about their activities,' which is not directly related to disabling notifications for pages, yet it is ranked higher than relevant nodes. Similarly, the second node focuses on 'selecting the level of detail in email notifications' and the third node is about 'enabling or disabling the email feature,' both of which do not address the input query. Relevant nodes, such as the fourth node that mentions 'configuring notification settings,' are ranked lower, affecting the score.",
+    "ContextualRecall": "The score is 0.75 because the retrieval context supports the idea of automatic page watching and changing settings in user profiles, as mentioned in the 5th node in retrieval context, but it does not specifically mention notifications about changes on your work.",
+    "CustomContextualRelevancy": "The retrieval context mentions automatic watch settings and user profile notification settings but lacks details on major modifications triggering automatic page watching and deleting filters in 'Custom Filters'.",
+    "Correctness": "The actual output describes how to manage notifications but lacks specific details about automatic page watching and deleting notification filters, which are present in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

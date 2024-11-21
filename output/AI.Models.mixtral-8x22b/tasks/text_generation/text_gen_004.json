@@ -2,12 +2,12 @@
   "id": "text_gen_004",
   "prompt": "Generate a short product description based on the following information:\n\nProduct: Wireless Bluetooth Headphones\nFeatures: Noise-cancelling, 20-hour battery life, comfortable fit\nTarget audience: Tech-savvy professionals",
   "expected_answer": "Introducing our cutting-edge wireless Bluetooth headphones, designed for tech-savvy professionals who demand the best. With advanced noise-cancelling technology, you can immerse yourself in your music or focus on your work without any distractions. Enjoy an impressive 20-hour battery life, ensuring your headphones keep up with your busy lifestyle. The comfortable, ergonomic fit allows you to wear them all day long without any discomfort. Upgrade your audio experience with our premium wireless headphones.",
-  "ai_answer": "Introducing our Wireless Bluetooth Headphones, the perfect accessory for tech-savvy professionals seeking unparalleled audio quality and comfort. With our advanced noise-cancelling technology, immerse yourself in crystal-clear sound, free from distractions. Enjoy up to 20 hours of uninterrupted playtime, ideal for busy workdays and long commutes. The ergonomic design ensures a comfortable fit, allowing you to wear them for extended periods without discomfort. Stay connected and productive with our premium Wireless Bluetooth Headphones.",
+  "ai_answer": "Introducing our top-of-the-line Wireless Bluetooth Headphones, meticulously designed for tech-savvy professionals who crave uninterrupted, high-quality audio in their fast-paced lives. These headphones boast advanced noise-cancelling technology, effectively blocking out distractions so you can focus on your work or immerse yourself in your favorite tunes.\n\nWith an impressive 20-hour battery life, you can rely on these headphones to keep up with your demanding schedule without interruptions. Plus, the ergonomic design ensures a comfortable fit for all-day wear, making these the perfect companion for long workdays, commutes, or travel.\n\nExperience superior audio, ultimate comfort, and unmatched convenience with our Wireless Bluetooth Headphones. Upgrade your listening experience today!",
   "sources": null,
   "usage": {
     "prompt_tokens": 54,
-    "completion_tokens": 118,
-    "total_tokens": 172
+    "completion_tokens": 180,
+    "total_tokens": 234
   },
   "average_power_draw": null,
   "energy_consumption": null,

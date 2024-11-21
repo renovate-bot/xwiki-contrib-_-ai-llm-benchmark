@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.3125,
+  "overall_score": 0.2873527554255937,
   "individual_scores": {
     "AnswerRelevancy": 0.5625,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.161616532553562
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.56 because the output contains several irrelevant URLs that do not directly address the question about disabling notifications, which lowers the score. However, the presence of some relevant information about notifications keeps the score above the midpoint.",
+    "AnswerRelevancy": "The score is 0.56 because the output contains several irrelevant links that do not address the question about disabling notifications, which lowers the score. However, some relevant information may still be present, contributing to the score being above zero.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'attaching files' and the second node talks about 'moving attachments', neither of which relate to notification settings or disabling notifications. Additionally, the third node is about 'displaying content and macros', which is also unrelated to the input query about disabling notifications.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'attaching files', which does not relate to 'notification settings or disabling notifications'. The second node talks about 'moving and deleting attachments', which is unrelated to 'managing notifications'. Similarly, the third node lists 'various macros and their functions', none of which pertain to 'notification settings'. This pattern continues with subsequent nodes, such as the fourth node about the 'Distribution Wizard and its features', which do not include 'notification settings', and the fifth node providing 'examples of linking in XWiki', which is not relevant to 'notification settings'.",
     "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about automatic page following, notification settings, or custom filters as mentioned in the expected output."
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about automatic page following or notification settings as described in the expected output.",
+    "Correctness": "The actual output discusses disabling notifications, while the expected output is about automatic page following and notification settings. There is a lack of alignment in content focus and factual elements, with no mention of custom filters or automatic tracking as in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

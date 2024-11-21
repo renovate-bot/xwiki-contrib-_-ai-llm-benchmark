@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output provides a comprehensive travel guide for Paris, aligning well with the Input prompt. It includes detailed descriptions of attractions and activities, which matches the Expected Output. However, the inclusion of a hotel experience and an itinerary for an elderly couple, which were not part of the original prompt, slightly detracts from coherence and relevance.",
+  "score": 0.9,
+  "reason": "The Actual Output provides a detailed travel guide for Paris, addressing the Input request effectively. It maintains logical flow and consistency, covering attractions, accommodations, and activities, which aligns with the Expected Output. The language is fluent and free of grammatical errors. However, it includes promotional content which slightly deviates from a purely informative guide.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

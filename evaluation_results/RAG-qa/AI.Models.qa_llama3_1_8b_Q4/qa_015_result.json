@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.40631578947368424,
+  "overall_score": 0.4445777807793698,
   "individual_scores": {
-    "AnswerRelevancy": 0.631578947368421,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.8125,
+    "Faithfulness": 0.875,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.4,
-    "CustomContextualRelevancy": 0.0
+    "ContextualRecall": 0.6,
+    "CustomContextualRelevancy": 0.2,
+    "Correctness": 0.1799666846762189
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.63 because while the output contains some relevant information regarding OpenID Connect, it includes several irrelevant statements about setting `oidc.provider` and adjusting endpoints, which do not directly address the automatic activation of user accounts on first login.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'domain-based authentication and session cookie configuration', which is unrelated to the automatic activation of user accounts with OpenID Connect. The second node provides 'general information about OpenID Connect authentication', but does not address the specific configuration needed. The third node offers 'metadata about the OpenID Connect authenticator', lacking any mention of automatic user activation. Lastly, the fourth node lists properties related to OpenID Connect, but omits the 'oidc.enableUser' property necessary for automatic activation.",
-    "ContextualRecall": "The score is 0.40 because while some sentences in the expected output are supported by the 4th node in the retrieval context, which discusses 'xwiki.properties' and 'oidc.enableUser', key instructions such as updating the property, restarting the XWiki instance, and ensuring automatic activation of new user accounts are not mentioned in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about automatically activating user accounts on first login with OpenID Connect or modifying the xwiki.properties file."
+    "AnswerRelevancy": "The score is 0.81 because the output mostly addresses the question about configuring XWiki for automatic user activation with OpenID Connect, but contains some irrelevant statements that slightly detract from its overall relevance.",
+    "Faithfulness": "The score is 0.88 because the actual output incorrectly states that setting `oidc.skipped` to `false` ignores OpenID Connect, while the retrieval context indicates that OpenID Connect can be disabled using the property `oidc.skipped`.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input query. The first node discusses 'domain-based authentication and session cookies', which does not relate to 'automatic activation of user accounts upon first login with OpenID Connect'. The second node provides a 'general description of OpenID Connect authentication' without mentioning the specific property `oidc.enableUser` or its configuration in `xwiki.properties`. The third node includes 'metadata and compatibility information about the OpenID Connect Authenticator' but does not address the needed configuration. Lastly, the fourth node mentions the `xwiki.properties` file but lacks reference to the `oidc.enableUser` property or the necessary configuration for automatic user activation.",
+    "ContextualRecall": "The score is 0.60 because while the 4th node in retrieval context supports the mention of 'xwiki.properties' and 'oidc.enableUser' for automatic user account activation, it lacks specific instructions on updating the property, saving the file, and restarting the XWiki instance.",
+    "CustomContextualRelevancy": "The retrieval context mentions xwiki.properties but lacks details on enabling oidc.enableUser for auto-activation of accounts.",
+    "Correctness": "The actual output mentions modifying `xwiki.cfg` and `oidc.skipped` which are not in the expected output. It misses adjusting `xwiki.properties` and `oidc.enableUser`. Context of automatic activation is maintained but with incorrect steps."
   },
   "question_language": "de",
   "expected_answer_language": "de",

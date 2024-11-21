@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.7684210526315789,
+  "overall_score": 0.6318548193996071,
   "individual_scores": {
-    "AnswerRelevancy": 0.8421052631578947,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.8125,
+    "Faithfulness": 0.8333333333333334,
     "ContextualPrecision": 0,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 1.0
+    "CustomContextualRelevancy": 1.0,
+    "Correctness": 0.14529558306430865
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.84 because the response largely addresses the question of denying script rights to a space administrator, but it includes repeated irrelevant source links that do not directly address the question, preventing a higher score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'programming rights and script execution' but does not address denying script rights to a space administrator. The second node lists 'various rights and their properties' but does not mention the inability to deny script rights to a space administrator. The third node explains 'the script right and its default settings' but does not mention the inability to deny script rights to a space administrator. The fourth node provides 'technical details about checking access rights' but does not address the specific issue of denying script rights to a space administrator. The fifth node discusses 'rights conversion and exclusion of pages and spaces,' which is unrelated to denying script rights to a space administrator.",
-    "ContextualRecall": "The score is 1.00 because the expected output is fully supported by the nodes in retrieval context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context confirms that rights implied by admin cannot be denied, matching the expected output."
+    "AnswerRelevancy": "The score is 0.81 because the main content effectively addresses the question about denying script rights to a space administrator, but it is slightly lowered due to the inclusion of multiple source links that do not directly pertain to the input question.",
+    "Faithfulness": "The score is 0.83 because the actual output incorrectly claims that script right is allowed for all users at the main wiki level by default, while the retrieval context specifies that in XWiki 14.10+, script right is not given by default to all users at the main wiki level.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses programming rights and script execution but does not address denying script rights to a space administrator. The second node lists various rights and their properties but does not mention the inability to deny script rights to a space administrator. The third node explains the script right and its default status but does not mention the inability to deny it to a space administrator. The fourth node provides code snippets related to checking access rights but does not discuss the specific issue of denying script rights to a space administrator. The fifth node is about converting rights during page migration and does not relate to denying script rights to a space administrator.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the nodes in the retrieval context, indicating perfect alignment.",
+    "CustomContextualRelevancy": "The expected answer states that rights implied by admin right cannot be denied, which is supported by the retrieval context indicating that admin rights are not deniable.",
+    "Correctness": "The actual output provides instructions on how to deny script rights to a space admin, contradicting the expected output that states it is not supported in XWiki. The actual output includes additional steps and information not present in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

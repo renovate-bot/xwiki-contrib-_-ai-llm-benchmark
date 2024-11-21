@@ -2,7 +2,7 @@
   "id": "qa_006",
   "prompt": "Can I customize the user profile fields that are populated from the OpenID Connect provider in XWiki?\nI want to map additional user profile fields from my OpenID Connect provider to XWiki user properties. How can I achieve this?",
   "expected_answer": "Yes, you can customize the user profile fields that are populated from the OpenID Connect provider by mapping them in the `xwiki.properties` file.\n\nTo map additional user profile fields, use the `oidc.user.mapping` property. Here's an example of how to map custom properties:\n\n```\n# oidc.user.mapping=myxproperty1=${oidc.user.subject}\n# oidc.user.mapping=myxproperty2=myprefix-${oidc.user.subject}\n```\n\nReplace `myxproperty1` and `myxproperty2` with the actual XWiki user property names, and `${oidc.user.subject}` with the appropriate variable based on the data provided by your OpenID Connect provider.\n\nAfter configuring the mappings, save the `xwiki.properties` file and restart XWiki to apply the changes.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \n\n\nYes, you can customize the user profile fields that are populated from the OpenID Connect provider in XWiki. \n\nYou can achieve this by using the `oidc.user.mapping` property in your `xwiki.properties` file.\n\nHere's how it works:\n\n1. **Define the mapping:**\n\n   Use the following syntax to map an OpenID Connect claim to a XWiki user property:\n\n   ```\n   oidc.user.mapping=myxproperty1=${oidc.user.subject}\n   oidc.user.mapping=myxproperty2=myprefix-${oidc.user.preferredUsername}\n   ```\n\n   * Replace `myxproperty1` and `myxproperty2` with the names of the XWiki user properties you want to create or update.\n   * Replace `${oidc.user.subject}` and `${oidc.user.preferredUsername}` with the corresponding OpenID Connect claims from your provider.\n\n2. **Save the changes:** Save the `xwiki.properties` file after making the changes.\n\n3. **Restart XWiki:** Restart XWiki for the changes to take effect.\n\nNow, when a user authenticates with OpenID Connect, the specified OpenID Connect claims will be mapped to the corresponding XWiki user properties.\n\n\n",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \n\n\nYes, you can customize the user profile fields that are populated from the OpenID Connect provider in XWiki.\n\nYou can achieve this by using the `oidc.user.mapping` property in your `xwiki.properties` file. \n\nThis property takes a comma-separated list of key-value pairs, where the key is the name of the XWiki user property and the value is a format string that defines how to extract the corresponding value from the OpenID Connect provider.\n\nFor example, to map the `email` claim from the OpenID Connect provider to the `email` user property in XWiki, you would use the following line in your `xwiki.properties` file:\n\n```\noidc.user.mapping=email=${oidc.user.email}\n```\n\nReplace `email` with the actual name of the claim in your OpenID Connect provider.\n\n\nRefer to the documentation for more details and examples: [https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/](https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/)",
   "sources": [
     {
       "collection_id": "Eval",
@@ -47,12 +47,12 @@
   ],
   "usage": {
     "prompt_tokens": 2843,
-    "completion_tokens": 276,
-    "total_tokens": 3119
+    "completion_tokens": 269,
+    "total_tokens": 3112
   },
-  "average_power_draw": 184.9949111111111,
-  "energy_consumption": 1019.9034990194108,
-  "energy_per_input_token": 0.2886791675684718,
-  "energy_per_output_token": 0.7216979189211794,
-  "energy_per_total_token": 0.3269969538375796
+  "average_power_draw": 151.14550505050494,
+  "energy_consumption": 1116.7181279645777,
+  "energy_per_input_token": 0.317655561929904,
+  "energy_per_output_token": 0.79413890482476,
+  "energy_per_total_token": 0.3588425861068694
 }

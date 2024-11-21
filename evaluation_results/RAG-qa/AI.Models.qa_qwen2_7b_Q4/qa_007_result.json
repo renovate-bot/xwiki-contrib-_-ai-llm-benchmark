@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.8856410256410256,
+  "overall_score": 0.7915012734970306,
   "individual_scores": {
-    "AnswerRelevancy": 0.9666666666666667,
+    "AnswerRelevancy": 0.9130434782608695,
     "Faithfulness": 1.0,
     "ContextualPrecision": 1.0,
-    "ContextualRecall": 0.46153846153846156,
-    "CustomContextualRelevancy": 1.0
+    "ContextualRecall": 0.4,
+    "CustomContextualRelevancy": 0.9,
+    "Correctness": 0.5359641627213141
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.97 because the response is highly relevant and provides a detailed explanation of configuring group synchronization between XWiki and an OpenID Connect provider. The only minor issue is the inclusion of a source link that doesn't directly address the process, slightly affecting the score.",
+    "AnswerRelevancy": "The score is 0.91 because the response is mostly relevant to configuring group synchronization between XWiki and an OpenID Connect provider. However, it includes some irrelevant details about template customization and the name of the template, which slightly detract from the focus on the synchronization process.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than the irrelevant nodes. The first three nodes provide detailed information on configuring group synchronization, specifying the claim for group lists, and mapping XWiki groups to provider groups, which are directly relevant to the input. The irrelevant nodes, ranked fourth and fifth, discuss general OpenID Connect authentication and provider endpoints, which are not directly related to the group synchronization process.",
-    "ContextualRecall": "The score is 0.46 because while nodes in the retrieval context provide detailed information about configuring properties like `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping`, they lack explicit instructions for actions such as locating and editing the `xwiki.properties` file, replacing placeholders with actual values, and restarting the XWiki instance, which are crucial steps in the expected output.",
-    "CustomContextualRelevancy": "The retrieval context contains all necessary details for configuring group synchronization, including setting the `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping` properties, as well as saving the `xwiki.properties` file and restarting XWiki."
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than the irrelevant nodes. The first three nodes provide detailed information on configuring the `oidc.groups.claim` property, mapping synchronized groups using `oidc.groups.mapping`, and using a separator character in `oidc.groups.separator`, which are all crucial for synchronizing group claims between XWiki and an OpenID Connect provider. The irrelevant nodes, ranked fourth and fifth, only provide general information about OpenID Connect integration and configuration, which do not specifically address group synchronization.",
+    "ContextualRecall": "The score is 0.40 because while nodes in retrieval context provide specific details about configuring properties like 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping', many general instructions in the expected output are not directly referenced, leading to a lower score.",
+    "CustomContextualRelevancy": "The retrieval context includes details on configuring `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping`, which align with the expected output instructions. However, it does not explicitly mention saving the `xwiki.properties` file and restarting XWiki.",
+    "Correctness": "The actual output includes relevant details like configuring group claims and mapping XWiki groups, but misses specific instructions like locating and editing the `xwiki.properties` file, saving it, and restarting XWiki. It also introduces steps not present in the expected output, such as enabling debug logging and template customization."
   },
   "question_language": "en",
   "expected_answer_language": "en",

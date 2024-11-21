@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.5402173913043479,
+  "overall_score": 0.5400776853645012,
   "individual_scores": {
-    "AnswerRelevancy": 0.15942028985507245,
-    "Faithfulness": 0.875,
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 1.0,
     "ContextualPrecision": 0.3333333333333333,
-    "ContextualRecall": 0.8333333333333334,
-    "CustomContextualRelevancy": 0.5
+    "ContextualRecall": 0.3333333333333333,
+    "CustomContextualRelevancy": 0.3,
+    "Correctness": 0.27379944552034013
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.16 because the majority of the output contains irrelevant statements that do not address the input about configuring group synchronization between XWiki and an OpenID Connect provider. The presence of numerous unrelated topics significantly lowers the relevancy score.",
-    "Faithfulness": "The score is 0.88 because the actual output incorrectly states that the 'OpenID Connect' extension can be downloaded from the Wikia extension repository or via FTP/SFTP, which is not supported by the retrieval context.",
-    "ContextualPrecision": "The score is 0.33 because the relevant node in the retrieval context, which discusses 'group synchronization, including the use of the `oidc.groups.mapping` property', is ranked third. The first and second nodes focus on 'authentication management and OpenID Connect provider configuration' and 'container authentication', which do not mention group synchronization, and should be ranked lower than the relevant node.",
-    "ContextualRecall": "The score is 0.83 because the retrieval context nodes provide relevant information for most of the expected output sentences, such as configuring group synchronization and mapping groups (nodes 1 and 3). However, it lacks details about saving the file and restarting the XWiki instance, which affects the completeness of the context.",
-    "CustomContextualRelevancy": "The retrieval context mentions group synchronization and mapping using 'oidc.groups.mapping', but lacks details on 'oidc.groups.claim' and 'oidc.groups.separator'."
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the question about configuring group synchronization between XWiki and an OpenID Connect provider.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node in the retrieval context, ranked third, directly addresses group synchronization by mentioning the claim 'xwiki_groups' and the 'oidc.groups.mapping' property, which are crucial for configuring group synchronization. However, it is ranked lower than two irrelevant nodes. The first node focuses on authentication management and endpoints configuration, and the second node discusses different authentication methods and extensions, neither of which address group synchronization with OpenID Connect. This misordering affects the score, preventing it from being higher.",
+    "ContextualRecall": "The score is 0.33 because while the 3rd node in the retrieval context supports the configuration of 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping' as mentioned in sentences 3, 5, and 7 of the expected output, it lacks information on locating the 'xwiki.properties' file, providing specific examples, and saving changes as described in sentences 1, 2, 4, 6, and 8.",
+    "CustomContextualRelevancy": "The retrieval context mentions group synchronization and mapping using 'oidc.groups.mapping', but lacks details on 'oidc.groups.claim' and 'oidc.groups.separator' properties or saving changes in 'xwiki.properties'.",
+    "Correctness": "Actual output introduces concepts like `oidc.userinfoclaims` and custom group handlers not in expected output, lacks specific steps like setting `oidc.groups.claim` and `oidc.groups.separator`, but mentions `oidc.groups.mapping` and testing configuration as expected."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

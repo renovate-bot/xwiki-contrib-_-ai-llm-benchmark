@@ -1,20 +1,22 @@
 {
-  "overall_score": 0.6697058823529412,
+  "overall_score": 0.5432391980774556,
   "individual_scores": {
-    "AnswerRelevancy": 0.8235294117647058,
+    "AnswerRelevancy": 0.6153846153846154,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.325,
-    "ContextualRecall": 0.7,
-    "CustomContextualRelevancy": 0.5
+    "ContextualPrecision": 0.2,
+    "ContextualRecall": 0.6363636363636364,
+    "CustomContextualRelevancy": 0.3,
+    "Correctness": 0.5076869367164816
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.82 because the response mostly addresses the question about setting upload restrictions for images or PDFs in a wiki, but includes irrelevant links about exporting features, XWiki syntax, and document lifecycle, which are not directly related to the query.",
+    "AnswerRelevancy": "The score is 0.62 because the output contains several irrelevant source links that do not directly address the question about setting upload restrictions for images or PDF files. However, the score is not lower because there is some relevant information that partially addresses the input question.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.33 because the first three nodes in the retrieval context are irrelevant, discussing 'trusted domains and PDF export customization', 'ODT and PDF export features', and 'various macros and features', none of which relate to configuring attachment restrictions in a wiki. These irrelevant nodes are ranked higher than the relevant nodes, which appear later and discuss 'Size Limit' and 'Mimetype Restriction', as well as detailed steps on setting maximum attachment size and MIME type restrictions. Additionally, the last node is also irrelevant as it focuses on 'document lifecycle features'.",
-    "ContextualRecall": "The score is 0.70 because while the 5th node in the retrieval context provides detailed steps related to configuring the maximum attachment size (sentences 6 to 11 in the expected output), there is no information about configuring MIME types (sentences 2 to 5 in the expected output) in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context mentions setting limits on attachment size and MIME type restrictions, but lacks specific details about configuring MIME types in xwiki.properties and setting the maximum size to 10 MB as described in the expected answer."
+    "ContextualPrecision": "The score is 0.20 because only the fifth node in the retrieval context is relevant, as it 'includes detailed steps for setting the maximum attachment size and mentions mimetype restrictions, directly relevant to the expected output.' The first four nodes should be ranked lower because they discuss 'trusted domains and PDF export customization,' 'ODT and PDF export features,' 'a list of macros and features,' and 'size limits and mimetype restrictions' without providing specific instructions, which are not relevant to configuring attachment upload restrictions. Additionally, the sixth node is about 'document lifecycle features,' which does not address attachment upload restrictions.",
+    "ContextualRecall": "The score is 0.64 because while the 5th node in the retrieval context covers many aspects of configuring maximum upload size and navigating XWikiPreferences (as seen in sentences 4-8 of the expected output), it lacks details on MIME type restrictions and specific file type limitations mentioned in sentences 1-3.",
+    "CustomContextualRelevancy": "The retrieval context mentions setting limits on maximum attachment size and MIME type restrictions, but lacks specific details about configuring MIME types in xwiki.properties and setting size to 10 MB.",
+    "Correctness": "The actual output captures the maximum upload size configuration and need to repeat steps for each subwiki, but misses configuring MIME types in 'xwiki.properties' and instead suggests using an extension. Terminology and sequence differ, impacting consistency."
   },
   "question_language": "de",
   "expected_answer_language": "de",
-  "answer_language": "en"
+  "answer_language": "de"
 }

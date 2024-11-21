@@ -1,20 +1,22 @@
 {
-  "overall_score": 0.37333333333333335,
+  "overall_score": 0.33668140350982284,
   "individual_scores": {
-    "AnswerRelevancy": 0.8666666666666667,
+    "AnswerRelevancy": 0.8333333333333334,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.1867550877256033
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.87 because the response mostly addresses the issue of the notification bell not being available, but includes irrelevant links that do not directly resolve the problem.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Everything aligns perfectly with the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'custom notification filters and their behavior' but does not address enabling notifications in the wiki settings. The second node provides 'links to various notification settings and customization options' but does not mention enabling notifications in the wiki properties. The third node lists 'different notification preferences' but does not mention enabling notifications through the `xwiki.properties` file. The fourth node describes 'the alert menu and notification display' but does not provide information on enabling notifications in the wiki settings. The fifth node discusses 'RSS feeds and notification settings' but does not mention enabling notifications in the `xwiki.properties` file.",
-    "ContextualRecall": "The score is 0.00 because the expected output sentences about activating notifications and setting `notifications.enabled` in `xwiki.properties` are not supported by any nodes in the retrieval context, which focus on custom filters and notification preferences without mentioning these specific steps.",
-    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications via the 'xwiki.properties' file or setting 'notifications.enabled' to 'true'."
+    "AnswerRelevancy": "The score is 0.83 because the response mostly addresses the issue about the notification bell icon, but includes irrelevant source links that do not directly resolve the problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Great job maintaining perfect alignment!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. Each node, from the first to the fifth, fails to address 'enabling notifications in the wiki settings', which is crucial for the input query. Instead, they discuss topics such as 'custom notification filters', 'various notification-related features', 'notification preferences', 'notification application and its features', and 'obtaining a notification RSS feed'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications through the `xwiki.properties` file or setting `notifications.enabled` to `true`, which is the key information in the expected output.",
+    "Correctness": "The actual output does not mention enabling notifications via `xwiki.properties`, which is a key fact in the expected output. It provides unrelated troubleshooting advice about the notification bell icon and extensions, which are not mentioned in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",
-  "answer_language": "fr"
+  "answer_language": "en"
 }

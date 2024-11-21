@@ -2,7 +2,7 @@
   "id": "qa_026",
   "prompt": "Puis-je personnaliser les champs de profil utilisateur qui sont remplis \u00e0 partir du fournisseur OpenID Connect dans XWiki?\nJe souhaite mapper des champs de profil utilisateur suppl\u00e9mentaires de mon fournisseur OpenID Connect aux propri\u00e9t\u00e9s de l'utilisateur XWiki. Comment puis-je y parvenir?",
   "expected_answer": "Oui, vous pouvez personnaliser les champs de profil utilisateur qui sont remplis \u00e0 partir du fournisseur OpenID Connect en les mappant dans le fichier `xwiki.properties`.\n\nPour mapper des champs de profil utilisateur suppl\u00e9mentaires, utilisez la propri\u00e9t\u00e9 `oidc.user.mapping`. Voici un exemple de la fa\u00e7on de mapper des propri\u00e9t\u00e9s personnalis\u00e9es:\n\n```\n# oidc.user.mapping=myxproperty1=${oidc.user.subject}\n# oidc.user.mapping=myxproperty2=myprefix-${oidc.user.subject}\n```\n\nRemplacez `myxproperty1` et `myxproperty2` par les noms de propri\u00e9t\u00e9 d'utilisateur XWiki r\u00e9els, et `${oidc.user.subject}` par la variable appropri\u00e9e en fonction des donn\u00e9es fournies par votre fournisseur OpenID Connect.\n\nApr\u00e8s avoir configur\u00e9 les mappages, enregistrez le fichier `xwiki.properties` et red\u00e9marrez XWiki pour appliquer les modifications.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \n\n\nOui, vous pouvez personnaliser les champs de profil utilisateur qui sont remplis \u00e0 partir du fournisseur OpenID Connect dans XWiki.\n\nPour mapper des champs de profil utilisateur suppl\u00e9mentaires de votre fournisseur OpenID Connect aux propri\u00e9t\u00e9s de l'utilisateur XWiki, vous pouvez utiliser la fonctionnalit\u00e9 de mappage d'attributs d'OpenID Connect de XWiki. Cette fonctionnalit\u00e9 vous permet de sp\u00e9cifier les correspondances entre les attributs du fournisseur OpenID Connect et les propri\u00e9t\u00e9s utilisateur XWiki.\n\nVoici comment proc\u00e9der :\n\n1. Connectez-vous \u00e0 l'interface d'administration de XWiki en tant qu'administrateur.\n2. Allez dans la section \"Configuration\" > \"S\u00e9curit\u00e9\" > \"Authentification\".\n3. Cliquez sur le bouton \"Modifier\" pour \u00e9diter les param\u00e8tres d'authentification OpenID Connect.\n4. Dans la section \"Mappage des attributs\", vous pouvez ajouter de nouveaux mappages en cliquant sur le bouton \"+ Ajouter un mappage\".\n5. Entrez le nom de l'attribut OpenID Connect que vous souhaitez mapper dans le champ \"Nom d'attribut\" et s\u00e9lectionnez la propri\u00e9t\u00e9 utilisateur XWiki correspondante dans la liste d\u00e9roulante \"Propri\u00e9t\u00e9 utilisateur\".\n6. Cliquez sur le bouton \"Enregistrer\" pour enregistrer les modifications.\n7. Red\u00e9marrez le serveur XWiki pour que les modifications prennent effet.\n\nUne fois que vous avez configur\u00e9 le mappage des attributs, les informations de l'utilisateur OpenID Connect seront automatiquement mises \u00e0 jour dans les propri\u00e9t\u00e9s utilisateur XWiki correspondantes lors de la connexion de l'utilisateur.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \n\n\nOui, vous pouvez personnaliser les champs de profil utilisateur qui sont remplis \u00e0 partir du fournisseur OpenID Connect dans XWiki en utilisant l'extension OpenID Connect Authenticator.\n\nPour mapper des champs de profil utilisateur suppl\u00e9mentaires de votre fournisseur OpenID Connect aux propri\u00e9t\u00e9s de l'utilisateur XWiki, vous pouvez utiliser la configuration avanc\u00e9e de l'extension. Vous pouvez d\u00e9finir les propri\u00e9t\u00e9s \u00e0 remplir en utilisant les cl\u00e9s de propri\u00e9t\u00e9 suivantes dans le fichier xwiki.cfg :\n\n* oidc.userinfo.mapping.username\n* oidc.userinfo.mapping.firstname\n* oidc.userinfo.mapping.lastname\n* oidc.userinfo.mapping.email\n\nPar exemple, si vous voulez mapper le champ \"nom\" du fournisseur OpenID Connect au champ \"lastname\" de l'utilisateur XWiki, vous pouvez ajouter la ligne suivante dans votre fichier xwiki.cfg :\n```makefile\noidc.userinfo.mapping.lastname=nom\n```\nVous pouvez \u00e9galement mapper plusieurs champs en utilisant des s\u00e9parateurs pour d\u00e9finir les correspondances. Par exemple :\n```makefile\noidc.userinfo.mapping.username=sub:email\n```\nCela mappera le champ \"sub\" et le champ \"email\" du fournisseur OpenID Connect au champ \"username\" de l'utilisateur XWiki.\n\nIl est important de noter que les cl\u00e9s de propri\u00e9t\u00e9 doivent \u00eatre d\u00e9finies avant de lancer XWiki pour que la configuration soit prise en compte. Vous pouvez \u00e9galement consulter la documentation de l'extension OpenID Connect Authenticator pour plus d'informations sur la personnalisation des champs de profil utilisateur.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 65,
-    "completion_tokens": 367,
-    "total_tokens": 432
+    "prompt_tokens": 2466,
+    "completion_tokens": 341,
+    "total_tokens": 2807
   },
-  "average_power_draw": 198.09467632850246,
-  "energy_consumption": 1008.1860788949908,
-  "energy_per_input_token": 1.0261435917506267,
-  "energy_per_output_token": 2.5653589793765668,
-  "energy_per_total_token": 2.3337640715161823
+  "average_power_draw": 187.45324225865215,
+  "energy_consumption": 1277.0678046829587,
+  "energy_per_input_token": 0.38483284757660347,
+  "energy_per_output_token": 0.9620821189415086,
+  "energy_per_total_token": 0.4549582489073597
 }

@@ -1,8 +1,8 @@
 {
-  "score": 0.16666666666666666,
-  "reason": "The score is 0.17 because the summary includes several pieces of extra information not present in the original text, such as details about the Distribution Wizard, exporting and importing content, and Solr configuration. Additionally, the summary fails to address specific questions that the original text can answer, such as recommendations for checking release notes and details about the upgrade process, which indicates a significant lack of coverage and accuracy.",
+  "score": 0.2,
+  "reason": "The score is 0.20 because the summary contains significant contradictions and adds a substantial amount of extra information not present in the original text. Additionally, it fails to address several questions that the original text can answer, indicating a poor alignment with the source material.",
   "score_breakdown": {
-    "Alignment": 0.16666666666666666,
+    "Alignment": 0.2727272727272727,
     "Coverage": 0.2
   },
   "input_language": "en",

@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output is highly relevant to the Input, using technical language suitable for the audience. It maintains coherence and fluency with logical connections and natural language. It aligns well with the Expected Output, covering key points like physiological processes and cognitive functions, though it slightly differs in phrasing.",
+  "reason": "The Actual Output effectively adapts the input for a technical audience by using precise terminology like 'central processing unit,' 'afferent sensory inputs,' and 'neurochemical signaling pathways,' aligning well with the Expected Output's focus on physiological processes and cognitive functions. It maintains coherence and fluency with complex sentence structures and advanced vocabulary.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

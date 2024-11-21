@@ -2,7 +2,7 @@
   "id": "qa_009",
   "prompt": "How can I deny script right to a space administrator?",
   "expected_answer": "This is unfortunately not supported in XWiki, rights that are implied by admin right cannot be denied.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ContentOrganization/NestedPagesMigration/ \n\n\nBased on the search results, I can explain how to handle script rights:\n\nThe \"Script\" right operates with the following characteristics:\n\n1. It's available at both Page and Wiki level\n2. The priority order is: deny > allow > no setting\n3. The checking order is: page > wiki\n4. Default status:\n   - ALLOWED on the main wiki (before XWiki 14.10)\n   - DENIED on sub-wikis\n   - Since XWiki 14.10+, it's not given by default to users at the main wiki level\n\nTo deny script rights to a space administrator, you should explicitly set a DENY at the wiki or page level, since the priority order is \"deny > allow\". This will override any ALLOW settings because an explicit deny takes precedence in the permission hierarchy.\n\nIt's important to note that while space administrators have the ADMIN right which normally implies SCRIPT rights, you can still deny the SCRIPT right explicitly since it's a \"deniable\" right according to the security module specifications.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ContentOrganization/NestedPagesMigration/ \n\n\nBased on the search results, I can provide the following information about script rights in XWiki:\n\nThe script right can be managed at both page and wiki levels, with the following characteristics:\n\n1. Priority order: deny > allow > no setting\n2. Checking order: page > wiki\n3. Default status:\n   - ALLOWED on the main wiki (before XWiki 14.10)\n   - DENIED on sub-wikis\n   - Since XWiki 14.10+, it's not given by default to users at the main wiki level\n\nTo deny script rights to a space administrator, you should:\n\n1. Go to the wiki preferences page since script rights are managed at the wiki level\n2. Explicitly set a DENY for the script right for the space administrator user or group\n\nIt's important to note that while space administrators have the ADMIN right which implies several other rights (including SCRIPT), the priority order of \"deny > allow\" means that an explicit deny will override any implied allow from the ADMIN right.\n\nThis way, even though the space administrator has the ADMIN right, they won't be able to execute scripts due to the explicit deny setting.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -47,8 +47,8 @@
   ],
   "usage": {
     "prompt_tokens": 2665,
-    "completion_tokens": 230,
-    "total_tokens": 2895
+    "completion_tokens": 257,
+    "total_tokens": 2922
   },
   "average_power_draw": null,
   "energy_consumption": null,

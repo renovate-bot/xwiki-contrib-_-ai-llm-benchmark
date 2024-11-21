@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.6066666666666667,
+  "overall_score": 0.5177710101864561,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
+    "AnswerRelevancy": 0.8333333333333334,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0.3333333333333333,
-    "ContextualRecall": 0.4,
-    "CustomContextualRelevancy": 0.3
+    "ContextualRecall": 0.3333333333333333,
+    "CustomContextualRelevancy": 0.3,
+    "Correctness": 0.30662606111873647
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the question about configuring group synchronization between XWiki and an OpenID Connect provider.",
+    "AnswerRelevancy": "The score is 0.83 because the response mostly addresses the process of configuring group synchronization between XWiki and an OpenID Connect provider. However, it includes source links that are not directly relevant to the specific configuration process, which slightly detracts from the overall relevancy.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.33 because the relevant node in the retrieval context, which discusses 'group synchronization, including the use of claims and mappings in the xwiki.properties file', is ranked third. This means it is ranked lower than two irrelevant nodes. The first node discusses 'authentication management and endpoint configurations', and the second node focuses on 'different authentication methods and extensions, such as LDAP and Active Directory', both of which are not directly related to group synchronization setup. These irrelevant nodes should be ranked lower to improve the score.",
-    "ContextualRecall": "The score is 0.40 because while the 3rd node in the retrieval context supports configuring group synchronization, claims, separators, and mappings as mentioned in sentences 3, 5, and 7 of the expected output, it lacks details on locating, opening, and saving the 'xwiki.properties' file, as well as replacing placeholders with actual values as described in sentences 1, 2, 4, 6, and 8.",
-    "CustomContextualRelevancy": "The retrieval context mentions group synchronization and mapping using oidc.groups.mapping, but lacks details on configuring oidc.groups.claim and oidc.groups.separator, which are specified in the expected output."
+    "ContextualPrecision": "The score is 0.33 because the relevant node in the retrieval context, which discusses 'group synchronization and the use of the `oidc.groups.mapping` property,' is ranked third. This node is directly relevant to the input query. However, it is preceded by two irrelevant nodes: the first node discusses 'authentication management and OpenID Connect provider endpoints' without mentioning group synchronization, and the second node talks about 'container authentication and other authentication methods' without providing information on configuring group synchronization with OpenID Connect. These irrelevant nodes should be ranked lower than the relevant node to improve the score.",
+    "ContextualRecall": "The score is 0.33 because while the 3rd node in the retrieval context covers configuring properties like 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping', it lacks details on opening the file, providing examples, replacing placeholders, and saving changes, which are essential parts of the expected output.",
+    "CustomContextualRelevancy": "The retrieval context mentions group synchronization and mapping using 'oidc.groups.mapping', but lacks details on configuring 'oidc.groups.claim' and 'oidc.groups.separator'. It also doesn't mention editing 'xwiki.properties' or restarting XWiki.",
+    "Correctness": "The actual output discusses `oidc.userinfoclaims` and creating a listener for custom synchronization which is not mentioned in the expected output. It lacks instructions on setting `oidc.groups.claim` and `oidc.groups.separator` as outlined in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

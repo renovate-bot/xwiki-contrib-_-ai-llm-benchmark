@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.5700000000000001,
+  "overall_score": 0.34389009222995476,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
-    "Faithfulness": 1.0,
-    "ContextualPrecision": 0.25,
-    "ContextualRecall": 0.6,
-    "CustomContextualRelevancy": 0.0
+    "AnswerRelevancy": 0.7777777777777778,
+    "Faithfulness": 0.8571428571428571,
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.4,
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.02841991845909374
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the question about configuring XWiki for automatic user account activation with OpenID Connect. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.25 because the relevant node in the retrieval context, which discusses the `xwiki.properties` file necessary for enabling automatic user activation with OpenID Connect, is ranked fourth. The first three nodes are irrelevant as they discuss 'domain-based authentication and session cookie configuration', 'general information about OpenID Connect without mentioning specific properties', and 'metadata about the OpenID Connect Authenticator without addressing automatic user activation'. These irrelevant nodes should be ranked lower than the relevant node.",
-    "ContextualRecall": "The score is 0.60 because while the 4th node in the retrieval context supports the instructions to modify 'xwiki.properties' and set 'oidc.enableUser' to 'true', there is no explicit mention in any node about restarting the XWiki instance or ensuring new user accounts are automatically activated upon first login.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about updating the xwiki.properties file or the property oidc.enableUser, which is crucial for the expected answer."
+    "AnswerRelevancy": "The score is 0.78 because the response partially addresses the question about configuring XWiki for automatic user account activation upon first login. However, it includes irrelevant information about deactivating OpenID Connect authentication and using a URL parameter, which does not pertain to the main issue.",
+    "Faithfulness": "The score is 0.86 because the actual output incorrectly suggests setting the session cookie on a top-level domain, which contradicts the retrieval context that states this approach will not work if the XWiki instance has very different domains for its wikis.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'authentication with a domain-based instance and session cookie configuration', which does not relate to automatic user account activation. The second node provides 'general information about OpenID Connect authentication' but lacks specifics on the `oidc.enableUser` property. The third node talks about 'OpenID Connect authenticator compatibility' without addressing automatic activation. Lastly, the fourth node lists 'various OpenID Connect endpoints' without mentioning the `oidc.enableUser` property necessary for user activation.",
+    "ContextualRecall": "The score is 0.40 because while the 4th node in the retrieval context supports the instructions to update the xwiki.properties file and set 'oidc.enableUser' to true (as mentioned in sentences 1 and 3 of the expected output), it lacks direct references to automatically activating user accounts, saving the file, and restarting the XWiki instance (as mentioned in sentences 4, 5, and 6).",
+    "CustomContextualRelevancy": "The retrieval context does not mention the property 'oidc.enableUser' or its configuration in 'xwiki.properties' for automatic user account activation.",
+    "Correctness": "The actual output is unrelated to the expected output, discussing session cookies and disabling authentication instead of enabling user accounts on first login via OpenID Connect by modifying xwiki.properties."
   },
   "question_language": "de",
   "expected_answer_language": "de",

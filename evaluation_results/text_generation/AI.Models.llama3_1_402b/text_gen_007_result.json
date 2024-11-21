@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output is a well-written news article that directly addresses the Input prompt by detailing a recent scientific discovery. It is coherent and logically structured, providing specific details about the discovery of Homo luzonensis, which aligns with the Expected Output of summarizing a groundbreaking scientific finding. The language is fluent and grammatically correct, matching the quality expected.",
+  "reason": "The Actual Output is a well-structured news article about a recent scientific discovery, directly addressing the Input prompt. It provides coherent and detailed information about the discovery of Homo luzonensis, matching the Expected Output's requirement for an informative summary. The language is fluent, with clear sentence structure and grammar, aligning with the quality expected.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

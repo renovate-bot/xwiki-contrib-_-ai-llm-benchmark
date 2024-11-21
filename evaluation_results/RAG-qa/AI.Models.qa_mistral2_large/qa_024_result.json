@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.5678947368421052,
+  "overall_score": 0.48025506237387555,
   "individual_scores": {
-    "AnswerRelevancy": 0.7894736842105263,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.75,
+    "Faithfulness": 0.9090909090909091,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.75,
-    "CustomContextualRelevancy": 0.3
+    "CustomContextualRelevancy": 0.3,
+    "Correctness": 0.1724394651523444
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.79 because the response partially addresses the question about disabling notifications, but includes several irrelevant links and references that do not directly help in solving the issue.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'technical aspects of notification filters and settings' but fails to address disabling notifications or auto-watching pages. The second node lists 'various notification preferences and macros' without providing relevant information on disabling notifications. The third node offers 'links to various sections about notifications' but does not explain how to disable them. The fourth node talks about 'RSS feeds and notification settings' without addressing the disabling of notifications. Lastly, the fifth node outlines 'different notification methods like RSS feeds' but lacks guidance on disabling notifications or auto-watching pages.",
-    "ContextualRecall": "The score is 0.75 because sentences 1 and 3 are supported by nodes in the retrieval context, specifically nodes 4 and 3, which relate to automatic notifications and modifying settings. However, sentence 2 lacks support as the retrieval context does not mention notifications about changes to one's work.",
-    "CustomContextualRelevancy": "The retrieval context mentions auto-watched pages and notification settings but lacks details on modifying 'Suivi automatique des pages' and removing filters in 'Filtres personnalis\u00e9s'."
+    "AnswerRelevancy": "The score is 0.75 because the response partially addresses the question about disabling notifications, but includes several irrelevant statements such as source links and macro pages that do not directly provide the necessary steps or information.",
+    "Faithfulness": "The score is 0.91 because the actual output incorrectly claims that users do not receive notifications about their own activities by default, whereas the retrieval context clarifies that notifications are not received unless the event explicitly targets them.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'various filters and settings for notifications' but does not address how to disable notifications or mention the 'Suivi automatique des pages' feature. Similarly, the second node lists 'different notification preferences and macros' without mentioning how to disable notifications or the 'Suivi automatique des pages' feature. The third node provides 'links and descriptions of notification settings' but lacks information on disabling notifications or the 'Suivi automatique des pages' feature. The fourth node mentions 'RSS feeds and notification types' but does not provide information on disabling notifications or the 'Suivi automatique des pages' feature. Finally, the fifth node lists 'various ways to receive notifications, such as RSS feeds and mentions' but does not explain how to disable notifications or the 'Suivi automatique des pages' feature.",
+    "ContextualRecall": "The score is 0.75 because most of the expected output is supported by nodes in the retrieval context, such as the mention of 'Suivi automatique des pages' and 'Filtres personnalis\u00e9s' in node 2. However, the retrieval context does not mention being notified of changes on one's work, which affects the score.",
+    "CustomContextualRelevancy": "The retrieval context mentions auto watch and notification settings but lacks details on modifying 'Suivi automatique des pages' and removing filters in 'Filtres personnalis\u00e9s'.",
+    "Correctness": "The actual output lacks key information such as automatic tracking of pages after significant changes and adjusting settings in 'Filtres personnalis\u00e9s' in user profile notifications settings, which are present in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

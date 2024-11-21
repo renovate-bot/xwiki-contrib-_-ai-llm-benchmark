@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.46947368421052627,
+  "overall_score": 0.33984716388416825,
   "individual_scores": {
-    "AnswerRelevancy": 0.9473684210526315,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.75,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.4,
-    "CustomContextualRelevancy": 0.0
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.2890829833050094
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.95 because the response is highly relevant and addresses the customization of user profile fields from an OpenID Connect provider to XWiki user properties. However, it slightly deviates by mentioning interface customization related to Google, which is not directly pertinent to the query.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'authentication management and OpenID Connect endpoints', the second node is about 'container authentication and other authentication methods like LDAP', the third node provides 'OpenID Connect authentication and configuration guides', the fourth node describes 'the OpenID Connect Authenticator extension, its developer, and compatibility', and the fifth node lists 'dependencies for the OpenID Connect Authenticator extension'. None of these nodes address mapping user profile fields or the `xwiki.properties` file, which is the focus of the input.",
-    "ContextualRecall": "The score is 0.40 because while nodes in the retrieval context mention 'xwiki.properties' and 'oidc.user.mapping', which support the customization of user profile fields, they lack details on the example mapping syntax, replacement instructions, and the steps to save and restart XWiki.",
-    "CustomContextualRelevancy": "The retrieval context lacks details on customizing user profile fields in xwiki.properties using oidc.user.mapping, as described in the expected output."
+    "AnswerRelevancy": "The score is 1.00 because the output is perfectly relevant and directly addresses the input without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 0.75 because the actual output incorrectly asserts that the field **oidc.scope.openid** is required for authentication, while the retrieval context only lists 'openid' as a standard scope without marking it as required. Additionally, the actual output inaccurately describes a 'User Configuration' menu for specifying custom headers for non-OIDC providers, which is not mentioned in the retrieval context.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'authentication management class and OpenID Connect endpoints', the second node talks about 'authentication methods including OpenID Connect', the third node provides a 'general description of the OpenID Connect Authenticator', the fourth node describes 'compatibility and installation details', and the fifth node lists 'dependencies for the OpenID Connect Authenticator extension'. None of these nodes address user profile field customization or the `oidc.user.mapping` property, which are crucial for the input query.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output could be linked to any nodes in the retrieval context, as the content regarding customizing user profile fields, specific instructions, examples, and configuration steps are absent in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context lacks information on customizing user profile fields using `oidc.user.mapping` in `xwiki.properties`, which is detailed in the expected output.",
+    "Correctness": "The actual output lacks specific details on how to map user profile fields in `xwiki.properties` using `oidc.user.mapping` and includes additional irrelevant steps like installing the OIDC authenticator, which are not in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

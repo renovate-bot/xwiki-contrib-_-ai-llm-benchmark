@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.6828571428571429,
+  "overall_score": 0.7293358003717917,
   "individual_scores": {
-    "AnswerRelevancy": 0.5,
+    "AnswerRelevancy": 0.6666666666666666,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0.5,
     "ContextualRecall": 0.7142857142857143,
-    "CustomContextualRelevancy": 0.7
+    "CustomContextualRelevancy": 0.8,
+    "Correctness": 0.6950624212783685
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.50 because while the output includes source links that could potentially be useful, it fails to directly address the question about authenticating users with access tokens, leading to a lack of direct relevance.",
+    "AnswerRelevancy": "The score is 0.67 because the response partially addresses the question about authenticating users with access tokens, but includes multiple irrelevant source links and section headers that do not contribute to answering the question.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.50 because some relevant nodes are ranked lower than irrelevant nodes. The first node is about 'LDAP configuration' and does not mention token-based authentication, which should be ranked lower. Similarly, the third node discusses 'OpenID Connect scopes and response types', unrelated to token-based authentication, and should also be ranked lower. The fifth node gives a general overview of 'XWiki's authentication mechanisms' without addressing token-based authentication, and should be ranked lower as well. However, the second and fourth nodes are correctly identified as relevant, discussing 'Authorized Applications Configuration' and 'authentication with JWT', respectively.",
-    "ContextualRecall": "The score is 0.71 because while the retrieval context nodes provide substantial information about authenticating users with JWTs, enabling the token authenticator, and configuring authorized applications, they lack specific details about generating a JWT token with required claims and including the token in the 'Authorization' header.",
-    "CustomContextualRelevancy": "The retrieval context mentions using JWT for authentication and configuring authorized applications, aligning with the expected answer. However, details like specific claims in the token and the 'Authorization' header format are missing."
+    "ContextualPrecision": "The score is 0.50 because relevant nodes in the retrieval context are not consistently ranked higher than irrelevant ones. The first node, ranked 1, is irrelevant as it discusses 'LDAP configuration' and lacks mention of 'access tokens or JWT authentication.' The second node, ranked 2, is relevant because it covers 'Authorized Applications Configuration,' which pertains to using tokens for authentication. The third node, ranked 3, is irrelevant since it focuses on 'OpenID Connect scopes and response types,' not directly related to 'access tokens for authentication.' The fourth node, ranked 4, is relevant as it details 'JWT for authentication,' directly aligning with using access tokens. The fifth node, ranked 5, is irrelevant because it talks about 'different authentication mechanisms in XWiki' without specifically addressing 'access tokens or JWT.'",
+    "ContextualRecall": "The score is 0.71 because while several key aspects of the expected output, such as the use of JWTs and configuration steps, are well-supported by nodes in the retrieval context, specific details like generating a JWT token with required claims and including it in the 'Authorization' header are not directly mentioned.",
+    "CustomContextualRelevancy": "The retrieval context includes information about enabling the token authenticator, configuring authorized applications, and JWT token requirements, which aligns with the expected output. However, it lacks specific details about claims like expiration time, issuer, subject, and audience, and the use of the 'Authorization' header.",
+    "Correctness": "The actual output correctly describes enabling the token authenticator and mentions user creation based on token information, aligning with expected output. However, it misses details on token claims, Ed25519 key signing, and configuring authorized applications."
   },
   "question_language": "en",
   "expected_answer_language": "en",

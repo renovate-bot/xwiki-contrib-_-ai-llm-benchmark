@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.3888888888888889,
+  "overall_score": 0.3191906386071291,
   "individual_scores": {
-    "AnswerRelevancy": 0.9444444444444444,
+    "AnswerRelevancy": 0.75,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.16514383164277474
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.94 because the response is highly relevant to the issue of not receiving notifications, with only a minor irrelevant statement about a source link that does not detract significantly from the overall helpfulness.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node contains 'image links and references to various projects, which do not relate to enabling notifications or settings in xwiki.properties.' The second node also consists of 'image links and references to projects, which are irrelevant to the topic of notifications or user settings.' Similarly, the third node includes 'image links and references that do not pertain to the process of enabling notifications or following users in a wiki.'",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context, which only contain image links and references.",
-    "CustomContextualRelevancy": "The retrieval context contains only image links and does not provide any information related to enabling notifications or following users/pages as described in the expected output."
+    "AnswerRelevancy": "The score is 0.75 because the response mostly addresses the issue of not receiving notifications, but it includes an irrelevant source link that does not pertain to the problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node contains 'image links and references that do not relate to notifications or their settings', which should be ranked lower. Similarly, the second and third nodes also contain 'image links and references that do not relate to notifications or their settings', and should be ranked lower as well.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context, which only contain image links and references.",
+    "CustomContextualRelevancy": "The retrieval context contains image links and references unrelated to the expected answer about enabling notifications and following users or pages in XWiki.",
+    "Correctness": "Actual Output lacks key details like setting `notifications.enabled` to `true` and following users/pages, deviating from Expected Output's comprehensive guide."
   },
   "question_language": "de",
   "expected_answer_language": "de",

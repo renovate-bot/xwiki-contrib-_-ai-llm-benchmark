@@ -1,9 +1,9 @@
 {
-  "score": 0.4666666666666667,
-  "reason": "The score is 0.47 because the summary contains contradictions regarding the delete permissions, includes extra details about a permissions table not present in the original text, and fails to answer questions about default statuses and specific rights that the original text can address.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary contains significant contradictions regarding the priority and checking order of permissions, includes vague information not present in the original text, and fails to address specific questions that the original text can answer. These issues indicate a lack of accuracy and completeness in the summarization.",
   "score_breakdown": {
-    "Alignment": 0.4666666666666667,
-    "Coverage": 0.6
+    "Alignment": 0.75,
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output is relevant and uses technical language appropriate for the audience, similar to the Expected Output. It maintains coherence and fluency, but slightly deviates by focusing on the cerebral cortex rather than the entire brain as in the Expected Output.",
+  "reason": "The Actual Output effectively addresses the Input by using technical language and expanding on the brain's functions, aligning well with the Expected Output. It maintains coherence and fluency but includes more detail than necessary, slightly deviating from the concise nature of the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

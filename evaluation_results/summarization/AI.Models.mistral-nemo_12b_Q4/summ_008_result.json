@@ -1,9 +1,9 @@
 {
   "score": 0.5555555555555556,
-  "reason": "The score is 0.56 because the summary contains multiple contradictions regarding configurations and user rights, includes extra information not present in the original text, and fails to answer a question that the original text can address. These issues significantly affect the accuracy and completeness of the summary.",
+  "reason": "The score is 0.56 because the summary contains multiple contradictions regarding the configurations described in the original text. It incorrectly combines various configurations such as Editable, Viewable, Hidden, and Protected with an Open configuration, which is not mentioned in the original text. This significantly impacts the accuracy and reliability of the summary.",
   "score_breakdown": {
     "Alignment": 0.5555555555555556,
-    "Coverage": 0.8
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

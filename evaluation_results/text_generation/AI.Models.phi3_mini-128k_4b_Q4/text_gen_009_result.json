@@ -1,6 +1,6 @@
 {
-  "score": 0.0,
-  "reason": "The Actual Output is incoherent and irrelevant to the Input prompt, failing to extract any event details. It does not align with the Expected Output or maintain fluency.",
+  "score": 0.7,
+  "reason": "The Actual Output captures the event name, dates, and location address accurately from the Input. However, it misses separating the start and end dates, specifying the venue name, and mentioning the target audience as seen in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

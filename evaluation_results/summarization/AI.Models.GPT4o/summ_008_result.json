@@ -1,9 +1,9 @@
 {
   "score": 0.6,
-  "reason": "The score is 0.60 because the summary includes extra information not present in the original text, such as images illustrating user rights settings and links for visual guidance. Additionally, the summary fails to address a question about configurations in XWiki that the original text can answer.",
+  "reason": "The score is 0.60 because the summary includes extra information not present in the original text and fails to answer specific questions that the original text can address. However, there are no contradictions, indicating some level of accuracy.",
   "score_breakdown": {
-    "Alignment": 0.6,
-    "Coverage": 0.8
+    "Alignment": 0.8,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

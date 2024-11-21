@@ -1,8 +1,8 @@
 {
-  "score": 1.0,
-  "reason": "The score is 1.00 because the summary perfectly aligns with the original text, with no contradictions or extra information present. Excellent summarization quality.",
+  "score": 0.9,
+  "reason": "The score is 0.90 because the summary includes extra information not present in the original text, such as mentioning XWiki or reference pages. However, there are no contradictions, indicating a generally accurate summary with minor additions.",
   "score_breakdown": {
-    "Alignment": 1.0,
+    "Alignment": 0.9,
     "Coverage": 1.0
   },
   "input_language": "en",

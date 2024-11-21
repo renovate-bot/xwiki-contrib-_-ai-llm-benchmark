@@ -2,7 +2,7 @@
   "id": "qa_022",
   "prompt": "Je ne re\u00e7ois pas de notifications.",
   "expected_answer": "Assurez-vous que les notifications sont activ\u00e9es. Vous pouvez les activer en d\u00e9finissant la propri\u00e9t\u00e9 `notifications.enabled` dans `xwiki.properties` sur `true`. De plus, assurez-vous que vous suivez les pages ou les utilisateurs dont vous souhaitez recevoir des notifications. Vous pouvez suivre une page, une page et ses enfants, ou un wiki entier. Pour suivre un emplacement, il vous suffit d'y aller, puis de cliquer sur le menu \"alerte\" (repr\u00e9sent\u00e9 par une cloche) et d'activer les notifications souhait\u00e9es. Pour suivre un utilisateur, si vous allez sur le profil d'un utilisateur, en utilisant l'index utilisateur par exemple, vous pouvez d\u00e9cider de suivre l'utilisateur. Cela signifie que vous recevrez toutes les notifications concernant les \u00e9v\u00e9nements d\u00e9clench\u00e9s par cet utilisateur. Dans votre profil utilisateur, si vous allez dans l'onglet \"r\u00e9seau\", vous pouvez voir la liste des utilisateurs que vous suivez et les \u00e9v\u00e9nements qui ont \u00e9t\u00e9 effectu\u00e9s par eux.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nBased on the provided search results, here are some steps you can take to ensure you receive notifications:\n\n1. **Enable Notifications for All Users by Default (Administrators)**: If you have administrator privileges, you can enable notifications for all users by default. This is done by setting the `xwiki.notification.default.enabled` property to `true`. You can find more information about this in document index 2.\n\n2. **Select Notification Types**: By default, users only get notifications when they are mentioned or when actions are performed on pages they created or updated. To receive other notifications, you need to select which \"types\" of notifications you want to receive. This can be done through the \"settings\" link on the notifications menu (document index 3).\n\n3. **Check Notification Applications Preferences**: Ensure that the notification applications preferences are set correctly for you. You can check and modify these preferences using the `notificationsApplicationsPreferences` macro (document index 4).\n\n4. **Enable Auto Watch**: Make sure auto watch is enabled for pages you're interested in. This can be done through the \"settings\" link on the notifications menu or by using the `notificationsAutoWatchPreferences` macro (document index 4).\n\n5. **Check Custom Notification Filters**: Ensure that your custom notification filters are set up correctly. You can view and modify these preferences using the `notificationsCustomFiltersPreferences` macro (document index 4).",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nBased on the provided search results, here are some steps you can take to ensure you receive notifications:\n\n1. **Check if notifications are enabled:**\n   - Go to your profile or preferences.\n   - Look for a section related to notifications or the Notifications Application.\n   - Ensure that notifications are enabled.\n\n2. **Select which types of notifications you want to receive:**\n   - By default, users only get notifications when they are mentioned or when actions are performed on pages they created or updated.\n   - To receive other notifications, select which \"types\" of notifications you want to receive (e.g., when a page is created, when a blog post is published).\n   - You can enable or disable all notification types that belong to a particular application by clicking on the bells associated with this application.\n\n3. **Check your filters:**\n   - Ensure you haven't accidentally filtered out the notifications you want to receive.\n   - You can manage your filters in the Notifications Application settings, including hidden pages, your own events, marked as read events, and minor events.\n\n4. **Ensure you're watching the right entities:**\n   - Check if you're watching the spaces, pages, or users you expect to be notified about.\n   - You can manage your watched entities in the Notifications Application settings.\n\nIf you've checked all these points and are still not receiving notifications, it might be helpful to reach out to an administrator for further assistance. Administrators can enable notifications for all users by default if needed (see document index=\"1\", section \"Administrators\").",
   "sources": [
     {
       "collection_id": "Eval",
@@ -39,12 +39,12 @@
   ],
   "usage": {
     "prompt_tokens": 1990,
-    "completion_tokens": 291,
-    "total_tokens": 2281
+    "completion_tokens": 315,
+    "total_tokens": 2305
   },
-  "average_power_draw": 202.8330656565656,
-  "energy_consumption": 997.4228995840595,
-  "energy_per_input_token": 0.3670369455691111,
-  "energy_per_output_token": 0.9175923639227777,
-  "energy_per_total_token": 0.437274397011863
+  "average_power_draw": 183.19700396825397,
+  "energy_consumption": 1131.2406172170668,
+  "energy_per_input_token": 0.40728735093323737,
+  "energy_per_output_token": 1.0182183773330935,
+  "energy_per_total_token": 0.4907768404412437
 }

@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.36470588235294116,
+  "overall_score": 0.2779194661310235,
   "individual_scores": {
-    "AnswerRelevancy": 0.8235294117647058,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.9259259259259259,
+    "Faithfulness": 0.6666666666666666,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.0749242041935482
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.82 because the response is mostly relevant to the question about the missing 'Bell' icon in XWiki, but it includes repeated irrelevant statements about source links and search results that do not directly address the issue.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to solving the issue of the bell not appearing. The first node discusses 'installation instructions and prerequisites for extensions,' which is unrelated. The second node describes 'the functionality and appearance of the notification bell and menu,' but does not help in enabling notifications. The third node lists 'dependencies for the notifications extension,' which does not address the problem. The fourth node explains 'how to override notification templates,' which is not relevant to the issue.",
-    "ContextualRecall": "The score is 0.00 because the retrieval context does not provide any information related to enabling notifications in the wiki or the specific settings in `xwiki.properties` mentioned in the expected output.",
-    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications through the `notifications.enabled` setting in `xwiki.properties`."
+    "AnswerRelevancy": "The score is 0.93 because the response is highly relevant and addresses the issue with the bell icon in XWiki. However, it includes a source link that does not directly contribute to solving the problem, preventing a perfect score.",
+    "Faithfulness": "The score is 0.67 because the actual output incorrectly states that the bell icon for notifications appears only if there is at least one unread notification, while the retrieval context does not specify this condition.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input question. The first node discusses 'installation instructions and prerequisites for extensions,' which does not help with enabling notifications. The second node describes 'the functionality of the Alert menu,' but lacks information on enabling notifications. The third node lists 'dependencies related to the notifications extension,' yet fails to address enabling notifications. Lastly, the fourth node talks about 'overriding notification templates,' which is unrelated to the issue of enabling notifications.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications through the `xwiki.properties` file or the `notifications.enabled` setting.",
+    "Correctness": "The actual output does not address enabling notifications via the `notifications.enabled` setting in `xwiki.properties`, which is crucial in the expected output. It instead focuses on troubleshooting the bell icon and dependencies."
   },
   "question_language": "en",
   "expected_answer_language": "en",

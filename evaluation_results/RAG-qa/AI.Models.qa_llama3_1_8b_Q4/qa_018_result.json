@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.6593675889328063,
+  "overall_score": 0.5612135059833668,
   "individual_scores": {
-    "AnswerRelevancy": 0.8695652173913043,
+    "AnswerRelevancy": 0.8,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.2,
-    "ContextualRecall": 0.7272727272727273,
-    "CustomContextualRelevancy": 0.5
+    "ContextualPrecision": 0.325,
+    "ContextualRecall": 0.4,
+    "CustomContextualRelevancy": 0.3,
+    "Correctness": 0.5422810359002015
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.87 because the response mostly addresses the question about setting upload restrictions for attachments, but it includes irrelevant links to pages about exporting features, XWiki syntax, and document lifecycle features, which do not pertain to the specific query.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.20 because the relevant node in the retrieval context, which provides 'detailed steps for setting the maximum size of an attachment and mentions mimetype restriction', is ranked fifth. Irrelevant nodes, such as the first node discussing 'trusted domains and PDF export look and feel', the second node about 'ODT and PDF export features', and the third node listing 'various macros and features related to notifications, PDF viewing, and other functionalities', are ranked higher than the relevant node.",
-    "ContextualRecall": "The score is 0.73 because while the 5th node in the retrieval context provides comprehensive details and steps related to configuring the maximum attachment size, aligning well with sentences in the expected output, there is no information in the nodes about configuring MIME types or editing the xwiki.properties file, which are essential parts of the expected output.",
-    "CustomContextualRelevancy": "The retrieval context mentions configuring maximum attachment size and MIME type restrictions, but lacks specific details about setting MIME types in xwiki.properties and the exact steps to set the size to 10 MB."
+    "AnswerRelevancy": "The score is 0.80 because the main content of the output is relevant to the input question about upload restrictions, but the repeated source link statements do not directly address the question, slightly reducing the relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.33 because the first three nodes in the retrieval context are irrelevant, discussing topics like 'trusted domains and PDF export customization', 'ODT export and PDF export features', and 'various features and macros', none of which relate to configuring attachment restrictions. Relevant nodes, which address 'Size Limit' and 'Mimetype Restriction', and provide 'detailed steps on setting the maximum size for attachments', are ranked lower. The presence of these relevant nodes prevents the score from being lower, but their lower ranking compared to irrelevant nodes keeps the score from being higher.",
+    "ContextualRecall": "The score is 0.40 because while the retrieval context nodes provide detailed instructions for editing XWikiPreferences (related to sentences in Step 2 of the expected output), they lack information on configuring MIME types and setting maximum attachment sizes (related to sentences in Step 1 and the introductory sentence of Step 2).",
+    "CustomContextualRelevancy": "The retrieval context mentions setting maximum attachment size and MIME type restrictions but lacks specific details about configuring xwiki.properties for MIME types and setting size to 10 MB.",
+    "Correctness": "The actual output suggests using the Attachment Validation Application instead of modifying xwiki.properties for MIME types, and it provides a less specific method for setting max upload size. It omits some steps and details found in the expected output, such as editing the XWikiPreferences object directly."
   },
   "question_language": "de",
   "expected_answer_language": "de",

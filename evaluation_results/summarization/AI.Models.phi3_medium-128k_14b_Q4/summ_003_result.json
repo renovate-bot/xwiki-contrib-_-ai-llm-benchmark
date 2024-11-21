@@ -1,9 +1,9 @@
 {
-  "score": 0.14285714285714285,
-  "reason": "The score is 0.14 because the summary includes a significant amount of extra information not present in the original text, and it fails to answer several questions that the original text can address. This indicates a lack of alignment with the original content, leading to a low score.",
+  "score": 0.3,
+  "reason": "The score is 0.30 because the summary contains significant contradictions with the original text, such as incorrect details about permissions and admin options. Additionally, it includes extra information not present in the original text, like the comprehensive nature of the guide and specific details on rights management. Furthermore, the summary fails to address questions that the original text can answer, such as the privileges of the wiki owner and superadmin account.",
   "score_breakdown": {
-    "Alignment": 0.14285714285714285,
-    "Coverage": 0.2
+    "Alignment": 0.3,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

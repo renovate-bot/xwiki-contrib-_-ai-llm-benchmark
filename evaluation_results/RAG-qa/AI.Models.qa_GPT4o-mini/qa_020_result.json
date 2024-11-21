@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.33076923076923076,
+  "overall_score": 0.45263056174041916,
   "individual_scores": {
-    "AnswerRelevancy": 0.6538461538461539,
+    "AnswerRelevancy": 0.625,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "ContextualRecall": 0.2857142857142857,
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.8050690847282294
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.65 because the response partially addresses the question about configuring permissions in XWiki, but includes several irrelevant links that do not directly relate to the task of setting permissions, which lowers the score.",
+    "AnswerRelevancy": "The score is 0.62 because while the response attempts to address configuring team access and editing permissions in XWiki, it includes multiple irrelevant source links that do not directly relate to the task, reducing its overall relevancy.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'XWiki's database support and programming features,' which do not relate to configuring access controls for teams. The second node is about the 'Notifications Application,' which is unrelated to setting access permissions for teams in XWiki. The third node covers the 'Administration Application,' which involves user and group management but does not specifically address configuring team access permissions. Subsequent nodes continue to focus on unrelated topics such as 'Model Validation UI,' 'Nested Pages and subwikis,' and 'LDAP group configurations,' none of which provide the needed information for configuring team-specific access controls in XWiki.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences from the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context lacks any information related to creating groups, setting rights, or access control as described in the expected output."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'XWiki's database efficiency and programming features', which are unrelated to configuring access controls for teams. The second node is about 'notifications and application details', not about setting access permissions for teams. The third node describes an 'administration application', but does not provide information on configuring team-specific access rights. Subsequent nodes continue this pattern, discussing topics like 'model validation', 'nested pages and subwikis', and 'LDAP group configurations', none of which address the specific access control configuration needed in the input.",
+    "ContextualRecall": "The score is 0.29 because while nodes in the retrieval context mention managing users, groups, and rights, they do not cover specific actions like setting area-level rights, inheriting rights for subpages, or adjusting rights for additional teams, which are detailed in the expected output sentences 2, 3, 4, and the concluding statements.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about creating groups, setting wiki-wide or area-level rights, or inheriting rights for subpages as described in the expected answer.",
+    "Correctness": "The actual output closely aligns with the expected output by outlining steps to create groups, adjust rights, and ensure visibility and edit permissions for team areas. However, it does not explicitly mention inheriting rights for sub-pages, which is a part of the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

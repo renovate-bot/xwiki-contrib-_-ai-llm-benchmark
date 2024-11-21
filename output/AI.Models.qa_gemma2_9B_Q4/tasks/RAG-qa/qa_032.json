@@ -2,7 +2,7 @@
   "id": "qa_032",
   "prompt": "Kann ich Benutzer mit Zugriffstoken authentifizieren?",
   "expected_answer": "Ja, Sie k\u00f6nnen Benutzer mit Zugriffstoken mithilfe der Token-basierten Authentifizierung f\u00fcr die LLM-Anwendung (BETA)-Erweiterung authentifizieren.\n\nDiese Erweiterung erm\u00f6glicht es externen Anwendungen, Benutzer mit signierten JSON Web Tokens (JWT) zu authentifizieren. Der Token muss bestimmte Anspr\u00fcche enthalten, wie Ablaufzeit, Aussteller, Betreff und Zielgruppe, und muss mit einem Ed25519-Schl\u00fcssel signiert sein.\n\nUm diesen Authentifizierer zu verwenden, m\u00fcssen Sie:\n\n1. Den Token-Authentifizierer aktivieren, indem Sie die Eigenschaft `xwiki.authentication.authclass` in der Datei `xwiki.properties` auf `org.xwiki.contrib.llm.authentication.JWTTokenAuth` setzen.\n2. Die autorisierten Anwendungen konfigurieren, indem Sie einen neuen Eintrag zur Liste der \u201eAutorisierten Anwendungen\u201c hinzuf\u00fcgen, wobei Sie den Titel, die URL, den \u00f6ffentlichen Schl\u00fcssel und das Gruppenformat der Anwendung angeben.\n3. Ein JWT-Token generieren, das die erforderlichen Anspr\u00fcche und Signierschl\u00fcssel erf\u00fcllt.\n4. Das Token im \u201eAuthorization\u201c-Header der Anfrage in der Form \u201eBearer TOKEN\u201c einf\u00fcgen.\n\nHinweis: Dieser Authentifizierer unterst\u00fctzt nur die Erstellung oder Aktualisierung von Benutzern auf der Grundlage der im Token bereitgestellten Informationen und unterst\u00fctzt nicht die Verwendung eines Tokens als Authentifizierung f\u00fcr einen bestehenden Benutzer, der nicht \u00fcber diesen Authentifizierer erstellt wurde.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Model/Validation/UI/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/ \n\n\nBased on the provided search results, I can't give a definitive answer about authenticating users with access tokens. The documents focus on model and attachment validation within XWiki. \n\nTo get information about user authentication with access tokens in XWiki, you should consult the XWiki documentation or community forums.  \n",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Model/Validation/UI/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/ \n\n\nI'm sorry, but the provided search results don't contain information about authenticating users with access tokens. \n\nMy general knowledge about authentication methods doesn't include specific details about access tokens in this context. \n\n\n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,12 +31,12 @@
   ],
   "usage": {
     "prompt_tokens": 1644,
-    "completion_tokens": 64,
-    "total_tokens": 1708
+    "completion_tokens": 47,
+    "total_tokens": 1691
   },
-  "average_power_draw": 186.5074188034188,
-  "energy_consumption": 266.5360693023877,
-  "energy_per_input_token": 0.14774726679733244,
-  "energy_per_output_token": 0.36936816699333114,
-  "energy_per_total_token": 0.156051562823412
+  "average_power_draw": 164.43539682539682,
+  "energy_consumption": 249.27532432593995,
+  "energy_per_input_token": 0.14151309924833377,
+  "energy_per_output_token": 0.3537827481208345,
+  "energy_per_total_token": 0.14741296530215253
 }

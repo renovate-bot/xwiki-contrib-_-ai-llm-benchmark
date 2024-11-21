@@ -2,7 +2,7 @@
   "id": "qa_004",
   "prompt": "In the context of XWiki I'm receiving lot's of notifications about all kinds of pages I'm not interested in. These seem to have been enabled automatically. How can I disable these notifications?",
   "expected_answer": "By default, a page where you have made a major modification is automatically added to the list of pages you watch. It means you will be notified about changes on your work. You can change the setting for \"Automatic page watching\" in the notification settings in your user profile. You can delete existing notification filters that were created this way in the \"Custom Filters\" list in the notification settings in your user profile.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\nYou can disable these notifications by adjusting your notification settings in XWiki. To do so, follow these steps:\n\n1. Log in to your XWiki account and click on your username in the top right corner of the screen. A dropdown menu should appear; select \"My Preferences\".\n2. In the preferences menu, navigate to the \"Notifications\" tab. You'll see various options for receiving notifications, including email notifications and dashboard notifications.\n3. To stop receiving all notifications, you can simply uncheck the box next to \"Enable email notifications\" or \"Enable dashboard notifications\", depending on your preference. If you want to be more selective, you can manage individual notification settings by expanding the \"Page Notifications\" section and adjusting the options there. For instance, you can choose to receive notifications for specific pages or page types, or disable them altogether.\n4. Once you've made your desired changes, scroll down and click the \"Save\" button to update your preferences.\n\nThese changes should significantly reduce, if not eliminate, the number of unwanted notifications you're receiving in XWiki.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\nYou can do this by adjusting your notification settings. Go to your user profile and select the \"Network\" tab, there you will see a list of users you follow and the events that are triggered. You can stop following unnecessary users and choose not to receive notifications about the events they generate. \n\nAdditionally, on the same page, you can adjust what type of notifications you receive by clicking on the corresponding bell icons next to each application. If some types are enabled and others are disabled for an application, a special icon will appear indicating that the application's notifications are partially enabled. \n\nNote that by default, users only receive notifications when they are mentioned or when actions are performed on pages they created or updated.\n\nIf the problem persists, wiki administrators can also adjust the default notification settings applicable to all users in the \"Administration\" section of the wiki.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -54,13 +54,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 48,
-    "completion_tokens": 222,
-    "total_tokens": 270
+    "prompt_tokens": 3310,
+    "completion_tokens": 174,
+    "total_tokens": 3484
   },
-  "average_power_draw": 77.76629688186202,
-  "energy_consumption": 2291.62924599422,
-  "energy_per_input_token": 3.800380175778143,
-  "energy_per_output_token": 9.500950439445356,
-  "energy_per_total_token": 8.487515725904519
+  "average_power_draw": 60.262733802403886,
+  "energy_consumption": 5295.469529362846,
+  "energy_per_input_token": 1.414010555237075,
+  "energy_per_output_token": 3.535026388092687,
+  "energy_per_total_token": 1.5199395893693586
 }

@@ -2,7 +2,7 @@
   "id": "qa_011",
   "prompt": "Die Glocke oben rechts ist nicht verf\u00fcgbar, auch nicht wenn die Erweiterung \"Alert Notification\" installiert ist.",
   "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen in Ihrem Wiki aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nEs tut mir leid zu h\u00f6ren, dass Sie Probleme mit der Glocke oben rechts haben. Es gibt ein paar Dinge, die Sie \u00fcberpr\u00fcfen k\u00f6nnen, um das Problem zu beheben:\n\n1. Stellen Sie sicher, dass Sie angemeldet sind: Um Benachrichtigungen von der Glocke oben rechts zu erhalten, m\u00fcssen Sie angemeldet sein.\n2. \u00dcberpr\u00fcfen Sie Ihre Browser-Einstellungen: Einige Browser blockieren standardm\u00e4\u00dfig Pop-ups und Benachrichtigungen. Stellen Sie sicher, dass Ihr Browser die Benachrichtigungen von unserer Website nicht blockiert.\n3. Aktualisieren Sie Ihre Erweiterung \"Alert Notification\": Stellen Sie sicher, dass Sie die neueste Version der Erweiterung installiert haben. Wenn nicht, aktualisieren Sie sie bitte auf die neueste Version.\n4. \u00dcberpr\u00fcfen Sie Ihre Systemeinstellungen: Es ist m\u00f6glich, dass Ihr System oder Antivirus-Programm Benachrichtigungen blockiert. \u00dcberpr\u00fcfen Sie Ihre Systemeinstellungen und stellen Sie sicher, dass Benachrichtigungen von unserer Website nicht blockiert werden.\n\nWenn Sie immer noch Probleme haben, nachdem Sie diese Schritte durchgef\u00fchrt haben, kontaktieren Sie bitte unser Support-Team f\u00fcr weitere Hilfe.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nEs tut mir leid zu h\u00f6ren, dass Sie Probleme mit der Benachrichtigungsglocke haben. Laut den bereitgestellten Informationen sollte die Benachrichtigungsglocke in der oberen rechten Ecke angezeigt werden, wenn die Erweiterung \"Notifications Application\" installiert und aktiviert ist. Hier sind einige Schritte, die Sie ausprobieren k\u00f6nnen:\n\n1. Stellen Sie sicher, dass die Erweiterung \"Notifications Application\" ordnungsgem\u00e4\u00df installiert und aktiviert ist.\n2. \u00dcberpr\u00fcfen Sie, ob es eventuell Konflikte mit anderen Erweiterungen gibt, die m\u00f6glicherweise die Benachrichtigungsfunktion beeinflussen k\u00f6nnten.\n3. Versuchen Sie, Ihren Browser-cache zu leeren und die Seite neu zu laden, um sicherzustellen, dass alle aktuellen \u00c4nderungen angewendet werden.\n4. Wenn das Problem weiterhin besteht, kann es hilfreich sein, sich an das XWiki-Entwicklerteam oder die Community zu wenden, um weitere Unterst\u00fctzung zu erhalten.\n\nWenn Sie spezifische Fragen zur Konfiguration oder Verwendung der Benachrichtigungsfunktion haben, k\u00f6nnen Sie auch versuchen, die Dokumentation auf <https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/> zu durchsuchen.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -54,13 +54,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 26,
-    "completion_tokens": 247,
-    "total_tokens": 273
+    "prompt_tokens": 3032,
+    "completion_tokens": 257,
+    "total_tokens": 3289
   },
-  "average_power_draw": 189.2494861111111,
-  "energy_consumption": 672.3147571328977,
-  "energy_per_input_token": 1.0447781773627005,
-  "energy_per_output_token": 2.611945443406751,
-  "energy_per_total_token": 2.4626914180692223
+  "average_power_draw": 193.60711111111112,
+  "energy_consumption": 1075.4311081983778,
+  "energy_per_input_token": 0.29267413476619347,
+  "energy_per_output_token": 0.7316853369154837,
+  "energy_per_total_token": 0.3269781417447181
 }

@@ -2,7 +2,7 @@
   "id": "qa_023",
   "prompt": "Je ne re\u00e7ois pas de notifications concernant ma propre activit\u00e9. Comment puis-je activer les notifications pour mes propres actions?",
   "expected_answer": "Par d\u00e9faut, vous ne recevez pas de notifications concernant votre propre activit\u00e9 (sauf si l'\u00e9v\u00e9nement qui a d\u00e9clench\u00e9 la notification cible explicitement cet utilisateur). Vous avez la possibilit\u00e9 de d\u00e9sactiver ce filtre dans la section \"Options de filtrage avanc\u00e9es\" des param\u00e8tres de notification de votre profil utilisateur.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nSous Android, vous pouvecuitez en deux \u00e9tapes la fonction de notification personnalis\u00e9e dans les param\u00e8tres Apps/Application Manager:\n\n1. Ouvrez l'application 'Param\u00e8tres'.\n\n2. Appuyez sur 'Applications et stockage' (ou simplement 'Apps').\n\n3. S\u00e9lectionnez votre application en cours d'installation de la liste des applications install\u00e9es ou recherchez-la manuellement \u00e0 l\u2019aide d'une fonctionnalit\u00e9 de recherche dans les param\u00e8tres.\n\n4. Une fois que vous avez s\u00e9lectionn\u00e9 votre propre application, allez sur 'Notifications'. Ici, assurez-vous que le commutateur est activ\u00e9 pour activer la r\u00e9ception des notifications pour vos propres actions au sein de l'application.\n\nSi une notification personnalis\u00e9e n\u2019est pas fournie par d\u00e9faut dans votre application, vous devrez peut-\u00eatre envisager d\u2019obtenir ou de d\u00e9velopper un syst\u00e8me de notification plus avanc\u00e9 \u00e0 travers les API des services Android comme Firebase Cloud Messaging (FCM) pour recevoir des notifications sur vos actions sp\u00e9cifiques.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nPour recevoir des notifications \u00e0 propos de vos actions, vous pouvez modifier l'\u00e9v\u00e9nement filtre que vous avez mis en place. L'option par d\u00e9faut n'est pas d'envoyer de notifications lorsque les actions sont effectu\u00e9es par vous-m\u00eame. Cependant, il est possible de modifier ce param\u00e8tre pour activer les notifications li\u00e9es \u00e0 vos propres activit\u00e9s. Voici comment proc\u00e9der :\n\n1. Allez dans le menu des **Filtres** en utilisant l'application Notifications.\n2. Dans la section \u00ab **Filter your own events**, il est possible de modifier ce param\u00e8tre pour recevoir des notifications lorsque vous ne faites pas partie du groupe de r\u00e9cepteurs actuellement configurer. \n3. D\u00e9cochez la case qui permet d'activer les notifications lorsqu\u2019un \u00e9v\u00e9nement implique une action effectu\u00e9e par vous-m\u00eame. Cela devrait \u00eatre mis \u00e0 jour pour recevoir des notifications m\u00eame lorsque vos actions sont li\u00e9es aux t\u00e2ches en cours ou \u00e0 l\u2019\u00e9v\u00e9nement.\n4. Si aucune notification n'est disponible, la balise \u00ab No Notification \u00bb sera visible dans votre application Notifications.\n5. Vous pouvez \u00e9galement g\u00e9rer les filtres via le menu **Settings** pour des param\u00e8tres personnalis\u00e9s au niveau de vos notifications.\n\nN\u2019oubliez pas que vous recevrez des notifications uniquement \u00e0 partir du moment o\u00f9 vous avez activ\u00e9 les types de notifications sp\u00e9cifiques aux applications dans l'interface Settings. \n\nEn suivant ces \u00e9tapes, vous devriez \u00eatre en mesure d'activer les notifications pour vos propres actions directement et recevoir des mises \u00e0 jour sur votre application Notifications.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 37,
-    "completion_tokens": 255,
-    "total_tokens": 292
+    "prompt_tokens": 3014,
+    "completion_tokens": 389,
+    "total_tokens": 3403
   },
-  "average_power_draw": 212.73996825396821,
-  "energy_consumption": 822.2359216375577,
-  "energy_per_input_token": 1.219030276705052,
-  "energy_per_output_token": 3.0475756917626304,
-  "energy_per_total_token": 2.8158764439642385
+  "average_power_draw": 264.52869731800774,
+  "energy_consumption": 1692.5178637069766,
+  "energy_per_input_token": 0.4245623639049233,
+  "energy_per_output_token": 1.0614059097623083,
+  "energy_per_total_token": 0.4973605241572074
 }

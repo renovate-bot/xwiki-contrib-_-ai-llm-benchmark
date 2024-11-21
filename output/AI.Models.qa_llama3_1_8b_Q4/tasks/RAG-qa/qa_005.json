@@ -2,7 +2,7 @@
   "id": "qa_005",
   "prompt": "How can I configure XWiki to automatically enable user accounts upon their first login using OpenID Connect?\nI've set up OpenID Connect authentication in my XWiki instance, but users are not automatically enabled after their first login. What configuration do I need to adjust?",
   "expected_answer": "To automatically enable user accounts upon their first login using OpenID Connect in XWiki, you need to adjust the `xwiki.properties` file.\n\nAdd or update the following property:\n\n```\n#-# Define if user accounts should be enabled (marked as active) on first login\n# oidc.enableUser=true\n```\n\nMake sure to uncomment and set the `oidc.enableUser` property to `true`. After making this change, save the file and restart your XWiki instance for the changes to take effect.\n\nThis will ensure that new user accounts are automatically enabled when they log in for the first time via OpenID Connect.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \n\n\nTo automatically enable user accounts upon their first login using OpenID Connect (OIDC) in XWiki, you'll need to configure the `autoEnableUsers` property in your XWiki configuration.\n\nHere's a step-by-step guide:\n\n**1. Check your OIDC configuration**\n\nFirst, verify that your OIDC authentication is correctly set up in XWiki. You can do this by checking the `oidc` section in your `xwiki.cfg` file (usually located in the `WEB-INF` directory of your XWiki instance). Make sure the `enabled` property is set to `true`.\n\n**2. Configure auto-enable users**\n\nAdd or modify the following line in your `xwiki.cfg` file:\n```properties\nautoEnableUsers=true\n```\nThis will enable automatic user account creation and activation upon first login using OIDC.\n\n**3. Additional configuration (optional)**\n\nIf you want to customize the behavior, you can add additional properties:\n\n* To specify a custom property name for auto-enable users, use `autoEnableUsersProperty`:\n```properties\nautoEnableUsersProperty=enabled\n```\nThis will enable user accounts with a specific value in a custom property instead of the default `enabled` property.\n\n**4. Restart XWiki**\n\nAfter updating your `xwiki.cfg` file, restart your XWiki instance to apply the changes.\n\nWith these steps, users should now be automatically enabled upon their first login using OIDC authentication. If you encounter any issues or have further questions, feel free to ask!",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \n\n\nTo enable automatic account creation and activation for users logging in with OpenID Connect (OIDC) in your XWiki instance, you'll want to make a specific adjustment in the OIDC authenticator configuration.\n\nBy default, OIDC authentication does not automatically enable user accounts upon their first login. However, you can configure this behavior by setting the `oidc.enableUser` property to `true`.\n\nHere's how you can do it:\n\n1. Open your XWiki instance's configuration file (usually located at `<XWIKI_HOME>/WEB-INF/xwiki.cfg`).\n2. Add or modify the following line to set `oidc.enableUser` to `true`:\n```properties\noidc.enableUser=true\n```\nThis setting tells the OIDC authenticator to automatically enable user accounts upon their first login.\n\nAfter making this change, users who log in with OIDC should have their accounts enabled automatically.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 63,
-    "completion_tokens": 309,
-    "total_tokens": 372
+    "prompt_tokens": 2541,
+    "completion_tokens": 185,
+    "total_tokens": 2726
   },
-  "average_power_draw": 159.91658169934644,
-  "energy_consumption": 608.6556628767058,
-  "energy_per_input_token": 0.7284927143946209,
-  "energy_per_output_token": 1.8212317859865526,
-  "energy_per_total_token": 1.6361711367653382
+  "average_power_draw": 183.41572649572652,
+  "energy_consumption": 533.0122485452637,
+  "energy_per_input_token": 0.17746370852181245,
+  "energy_per_output_token": 0.44365927130453114,
+  "energy_per_total_token": 0.19552907136656775
 }

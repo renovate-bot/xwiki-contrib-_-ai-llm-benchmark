@@ -2,16 +2,16 @@
   "id": "summ_009",
   "prompt": "Please summarize the following text:\n\n\n[A wiki is a website that you can edit online easily](https://en.wikipedia.org/wiki/Wiki).\u00a0\n\nWhenever you want to modify a page, click on the \"edit\" button, make your changes and save the page. The modified page now replaces the previous version. This makes it easy to update the website and have people contribute content. Each version of the page is stored in the page history and can be reverted to if needed.\n\nOn top of this basic feature set, most wikis include additional features such as access rights management and notifications.\n\nThe core advantages of a wiki compared with traditional Content Management Systems and ECM lie in its flexibility and the ease with which new pages can be added and linked to.\n\nThanks to their flexibility and ease of use, wikis can be used to address a wide range of situations:\n\n* Share information about a given topic (knowledge base, product catalog, documentation)\n* Manage a project (organize an event, create a product, setup a new tool)\n* Communicate with other people (as a website, an intranet or an extranet)\n* And much more!\n\nBasically, a wiki can be used whenever you want to use a flexible platform to centralize information and share it with other people. It comes as a handy replacement to email when many-to-many communication takes place and information needs to be made available to every participant in one place. Find out more about different XWiki usages by visiting the [references pages](https://www.xwiki.org/xwiki/bin/view/References/).\n\n**Next: [What's special about XWiki?](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/WhatsSpecialAboutXWikiEnterprise)**\n\n\n",
   "expected_answer": null,
-  "ai_answer": "A wiki is a user-friendly website that allows anyone to easily edit and update content. \n\n**Here's how it works:**\n\n* Click \"edit\" on a page.\n* Make your changes.\n* Save the page, replacing the previous version.\n\nEach version is saved in the page history, allowing for easy reversion if needed.\n\n**Benefits of wikis:**\n\n* **Flexibility:** Easily add new pages and link them together.\n* **Ease of use:** Anyone can contribute content.\n* **Centralized information:**  A single platform for sharing information.\n\n**Uses of wikis:**\n\n* Knowledge bases and documentation\n* Project management\n* Communication platforms (websites, intranets, extranets)\n\nEssentially, wikis are versatile tools for sharing and collaborating on information. They offer a simpler alternative to traditional content management systems, especially for collaborative projects and knowledge sharing. \n\n\nThe text then encourages the reader to learn more about XWiki, a specific wiki platform. \n",
+  "ai_answer": "This text provides a basic introduction to wikis.  \n\n**Key takeaways:**\n\n* **What is a wiki?** A wiki is a website where anyone can easily edit content. Changes are saved immediately, creating a constantly updated platform.\n* **How does it work?** Users click \"edit,\" make changes, and save. Each version is tracked in the page history, allowing for easy reverts.\n* **Benefits:** Wikis are flexible, allowing for easy addition of new pages and links. They are also user-friendly, making them ideal for collaboration and information sharing.\n* **Uses:** Wikis can be used for various purposes, including:\n    * Building knowledge bases and documentation\n    * Managing projects\n    * Facilitating communication within teams or organizations\n\n* **Alternatives:** Wikis offer a more collaborative and dynamic alternative to traditional content management systems and email for information sharing and communication.\n\n\nThe text concludes by directing readers to learn more about XWiki, a specific wiki platform. \n",
   "sources": null,
   "usage": {
     "prompt_tokens": 386,
-    "completion_tokens": 207,
-    "total_tokens": 593
+    "completion_tokens": 204,
+    "total_tokens": 590
   },
-  "average_power_draw": 177.10689682539686,
-  "energy_consumption": 537.5241763306517,
-  "energy_per_input_token": 0.5949354469625364,
-  "energy_per_output_token": 1.4873386174063412,
-  "energy_per_total_token": 0.9064488639639995
+  "average_power_draw": 123.47413436692501,
+  "energy_consumption": 585.5415590849709,
+  "energy_per_input_token": 0.653506204335905,
+  "energy_per_output_token": 1.6337655108397626,
+  "energy_per_total_token": 0.9924433204830015
 }

@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.46923076923076923,
+  "overall_score": 0.5752349857254923,
   "individual_scores": {
-    "AnswerRelevancy": 0.8461538461538461,
+    "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0,
-    "ContextualRecall": 0.4,
-    "CustomContextualRelevancy": 0.1
+    "ContextualPrecision": 0.16666666666666666,
+    "ContextualRecall": 0.6,
+    "CustomContextualRelevancy": 0.2,
+    "Correctness": 0.48474324768628685
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.85 because the response is mostly relevant to the input question about customizing user profile fields in XWiki. However, it includes source links that do not directly address the customization process, which slightly reduces the score.",
+    "AnswerRelevancy": "The score is 1.00 because the response perfectly addresses the input question without any irrelevant information. Great job!",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input query. For example, the first node discusses 'container authentication and Active Directory', which are unrelated to 'customizing user profile fields from an OpenID Connect provider'. Similarly, the second node is about 'domain-based authentication and session cookies', which does not relate to 'mapping user profile fields in XWiki'. None of the nodes address the specific need to customize or map user profile fields from an OpenID Connect provider in XWiki.",
-    "ContextualRecall": "The score is 0.40 because only some parts of the expected output, specifically sentence 1 and part of sentence 2, can be linked to the 7th node in the retrieval context, which mentions 'xwiki.properties' and 'oidc.user.mapping'. However, the specific examples and instructions in sentences 3 and 4 are not supported by the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context mentions OpenID Connect and xwiki.properties but lacks details on customizing user profile fields or using oidc.user.mapping as described in the expected output."
+    "ContextualPrecision": "The score is 0.17 because the relevant node in the retrieval context, which is the sixth node, is ranked lower than several irrelevant nodes. The first node discusses 'various authentication methods like Container Authentication and Active Directory', which is unrelated to the customization of OpenID Connect user profile fields. The second node focuses on 'domain-based authentication and session cookies', which does not pertain to mapping user profile fields from an OpenID Connect provider. The third node, while mentioning OpenID Connect, primarily discusses 'authentication and synchronization', not the customization of user profile fields. The fourth node provides 'general information about OpenID Connect authentication' without addressing user profile field customization. The fifth node lists 'dependencies for the OpenID Connect extension', which is unrelated to the customization of user profile fields. These irrelevant nodes should be ranked lower than the sixth node, which mentions 'the xwiki.properties file and discusses OpenID Connect endpoints', directly relevant to the input query.",
+    "ContextualRecall": "The score is 0.60 because while the general use of the xwiki.properties file and the oidc.user.mapping property are supported by the 7th node in the retrieval context, the specific example and detailed instructions are not directly found in the nodes.",
+    "CustomContextualRelevancy": "The retrieval context mentions OpenID Connect and xwiki.properties but lacks details on customizing user profile fields or using oidc.user.mapping as described in the expected output.",
+    "Correctness": "The actual output captures the intent of customizing user profile fields using OpenID Connect but lacks specific example mappings provided in the expected output. It includes additional information about installing and configuring the authenticator, which is not in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

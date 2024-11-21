@@ -2,7 +2,7 @@
   "id": "qa_015",
   "prompt": "Wie kann ich XWiki so konfigurieren, dass Benutzerkonten bei der ersten Anmeldung mit OpenID Connect automatisch aktiviert werden?\nIch habe OpenID Connect-Authentifizierung in meiner XWiki-Instanz eingerichtet, aber Benutzer werden nach der ersten Anmeldung nicht automatisch aktiviert. Welche Konfiguration muss ich anpassen?",
   "expected_answer": "Um Benutzerkonten bei der ersten Anmeldung mit OpenID Connect in XWiki automatisch zu aktivieren, m\u00fcssen Sie die Datei `xwiki.properties` anpassen.\n\nF\u00fcgen Sie oder aktualisieren Sie die folgende Eigenschaft:\n\n```\n#-# Definiere, ob Benutzerkonten bei der ersten Anmeldung aktiviert (als aktiv markiert) werden sollen\n# oidc.enableUser=true\n```\n\nStellen Sie sicher, dass Sie die Eigenschaft `oidc.enableUser` entkommentieren und auf `true` setzen. Nach dieser \u00c4nderung speichern Sie die Datei und starten Sie Ihre XWiki-Instanz neu, damit die \u00c4nderungen wirksam werden.\n\nDadurch wird sichergestellt, dass neue Benutzerkonten automatisch aktiviert werden, wenn sie sich zum ersten Mal \u00fcber OpenID Connect anmelden.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \n\n\nUm Benutzerkonten bei der ersten Anmeldung mit OpenID Connect automatisch zu aktivieren, m\u00fcssen Sie einige Schritte ausf\u00fchren:\n\n1. Stellen Sie sicher, dass die OpenID Connect-Authentifizierung in XWiki korrekt konfiguriert ist. \u00dcberpr\u00fcfen Sie die Dokumentation oder wenden Sie sich an den Support, um Hilfe bei der Einrichtung von OpenID Connect zu erhalten.\n2. Aktivieren Sie das automatische Erstellen von Benutzerkonten f\u00fcr neue Benutzer. Dies kann in den XWiki-Einstellungen unter \"Benutzer und Gruppen\" konfiguriert werden. Suchen Sie nach der Option \"Automatisches Erstellen von Benutzerkonten\" und aktivieren Sie sie.\n3. Stellen Sie sicher, dass die OpenID Connect-Anwendung korrekt konfiguriert ist und die richtigen Berechtigungen hat, um neue Benutzerkonten zu erstellen und zu verwalten.\n4. \u00dcberpr\u00fcfen Sie, ob es eventuell erforderliche Schritte gibt, um das automatische Aktivieren von Benutzerkonten nach der ersten Anmeldung mit OpenID Connect zu erm\u00f6glichen. Dies kann je nach Konfiguration und verwendetem Authentifizierungsanbieter unterschiedlich sein.\n\nWenn Sie diese Schritte ausf\u00fchren und immer noch Probleme haben, empfehle ich Ihnen, sich an den Support oder die Community von XWiki zu wenden, um weitere Hilfe und Unterst\u00fctzung bei der Konfiguration Ihrer Benutzerkonten mit OpenID Connect zu erhalten.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \n\n\nUm Benutzerkonten bei der ersten Anmeldung mit OpenID Connect automatisch zu aktivieren, m\u00fcssen Sie die folgenden Schritte ausf\u00fchren:\n\n1. Stellen Sie sicher, dass das OpenID Connect-Authentifizierungs-Add-on in Ihrer XWiki-Instanz installiert und aktiviert ist.\n2. \u00d6ffnen Sie die Datei `xwiki.properties` in Ihrem XWiki-Verzeichnis.\n3. F\u00fcgen Sie den folgenden Eintrag hinzu oder \u00e4ndern Sie ihn, um das Standardverhalten f\u00fcr neue Benutzer zu \u00e4ndern:\n```makefile\n#-# Automatically activate new users when they first log in using OpenID Connect\nxwiki.automaticUserActivation=true\n```\n4. Speichern Sie die Datei und starten Sie XWiki neu.\n\nJetzt sollten neue Benutzer automatisch aktiviert werden, wenn sie sich zum ersten Mal mit OpenID Connect anmelden.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -38,13 +38,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 83,
-    "completion_tokens": 315,
-    "total_tokens": 398
+    "prompt_tokens": 2196,
+    "completion_tokens": 193,
+    "total_tokens": 2389
   },
-  "average_power_draw": 221.164505050505,
-  "energy_consumption": 794.2473138377159,
-  "energy_per_input_token": 0.9124035770680251,
-  "energy_per_output_token": 2.281008942670063,
-  "energy_per_total_token": 1.9955962659239093
+  "average_power_draw": 183.32894894894895,
+  "energy_consumption": 752.1029848390872,
+  "energy_per_input_token": 0.28079260214264967,
+  "energy_per_output_token": 0.7019815053566242,
+  "energy_per_total_token": 0.314819164855206
 }

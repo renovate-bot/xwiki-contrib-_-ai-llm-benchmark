@@ -2,7 +2,7 @@
   "id": "qa_023",
   "prompt": "Je ne re\u00e7ois pas de notifications concernant ma propre activit\u00e9. Comment puis-je activer les notifications pour mes propres actions?",
   "expected_answer": "Par d\u00e9faut, vous ne recevez pas de notifications concernant votre propre activit\u00e9 (sauf si l'\u00e9v\u00e9nement qui a d\u00e9clench\u00e9 la notification cible explicitement cet utilisateur). Vous avez la possibilit\u00e9 de d\u00e9sactiver ce filtre dans la section \"Options de filtrage avanc\u00e9es\" des param\u00e8tres de notification de votre profil utilisateur.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nYou can enable notifications for your own actions by switching off the \"Own event filter\" in the notifications settings.  \n",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nYou can enable notifications for your own actions by switching off the \"Own event filter\". \n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -47,12 +47,12 @@
   ],
   "usage": {
     "prompt_tokens": 2735,
-    "completion_tokens": 25,
-    "total_tokens": 2760
+    "completion_tokens": 20,
+    "total_tokens": 2755
   },
-  "average_power_draw": 207.06411111111112,
-  "energy_consumption": 217.06477039670943,
-  "energy_per_input_token": 0.07759241122313115,
-  "energy_per_output_token": 0.1939810280578279,
-  "energy_per_total_token": 0.07864665594083675
+  "average_power_draw": 181.6047474747475,
+  "energy_consumption": 222.55642093805355,
+  "energy_per_input_token": 0.07991253893646447,
+  "energy_per_output_token": 0.19978134734116118,
+  "energy_per_total_token": 0.08078272992306844
 }

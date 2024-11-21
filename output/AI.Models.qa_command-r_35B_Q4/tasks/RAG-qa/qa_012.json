@@ -2,7 +2,7 @@
   "id": "qa_012",
   "prompt": "Ich erhalte keine Benachrichtigungen.",
   "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen. Stellen Sie au\u00dferdem sicher, dass Sie den Seiten oder Benutzern, f\u00fcr die Sie Benachrichtigungen erhalten m\u00f6chten, folgen. Sie k\u00f6nnen einer Seite, einer Seite und ihren Unterseiten oder einem gesamten Wiki folgen. Um einem Ort zu folgen, m\u00fcssen Sie nur dorthin gehen und dann auf das Men\u00fc \"Benachrichtigung\" (dargestellt durch eine Glocke) klicken und die gew\u00fcnschten Benachrichtigungen aktivieren. Um einem Benutzer zu folgen, k\u00f6nnen Sie, wenn Sie auf das Profil eines Benutzers gehen, beispielsweise \u00fcber das Benutzerindex, entscheiden, dem Benutzer zu folgen. Das bedeutet, dass Sie alle Benachrichtigungen \u00fcber Ereignisse erhalten, die von diesem Benutzer ausgel\u00f6st wurden. In Ihrem Benutzerprofil k\u00f6nnen Sie in der Registerkarte \"Netzwerk\" die Liste der Benutzer anzeigen, denen Sie folgen, und die von ihnen durchgef\u00fchrten Ereignisse.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \n\n\nEs tut mir leid, dass Sie keine Benachrichtigungen erhalten. Hier sind einige Schritte, die Sie ausf\u00fchren k\u00f6nnen, um das Problem zu l\u00f6sen:\n\n1. \u00dcberpr\u00fcfen Sie Ihre Einstellungen: Stellen Sie sicher, dass Sie die Benachrichtigungen in der App, die Sie verwenden, aktiviert haben. \u00dcberpr\u00fcfen Sie auch, ob die richtigen Benachrichtigungseinstellungen f\u00fcr Ihre Ger\u00e4te konfiguriert sind.\n\n2. \u00dcberpr\u00fcfen Sie Ihre Internetverbindung: Stellen Sie sicher, dass Sie eine stabile Internetverbindung haben. Eine schwache oder unzuverl\u00e4ssige Verbindung kann dazu f\u00fchren, dass Benachrichtigungen nicht empfangen werden.\n\n3. Aktualisieren Sie Ihre Apps: \u00dcberpr\u00fcfen Sie, ob alle Ihre Apps auf dem neuesten Stand sind. Updates k\u00f6nnen manchmal Probleme mit Benachrichtigungen beheben.\n\n4. Deinstallieren und neu installieren: Wenn die oben genannten Schritte das Problem nicht l\u00f6sen, k\u00f6nnen Sie die App deinstallieren und neu installieren. Dies kann helfen, etwaige fehlerhafte Daten oder Einstellungen zur\u00fcckzusetzen.\n\n5. \u00dcberpr\u00fcfen Sie Ihre Ger\u00e4teeinstellungen: Stellen Sie sicher, dass Ihre Benachrichtigungseinstellungen auf dem Ger\u00e4t korrekt sind. Auf einem iPhone k\u00f6nnen Sie beispielsweise \u00fcber die Einstellungen > Benachrichtigungen \u00fcberpr\u00fcfen. Auf Android-Ger\u00e4ten finden Sie diese unter Einstellungen > Apps > [Name der App] > Benachrichtigungen.\n\n6. Kontaktieren Sie den Support: Wenn das Problem persists, wenden Sie sich an den Support des Entwicklers der jeweiligen App oder an Ihr Ger\u00e4tehersteller. Sie k\u00f6nnen Ihnen m\u00f6glicherweise bei spezifischen Problemen mit Benachrichtigungen auf ihren Ger\u00e4ten helfen.\n\nBitte beachten Sie, dass es auch m\u00f6glich ist, dass das Problem bei den Servern der App liegen kann. In diesem Fall m\u00fcssen Sie eventuell etwas warten, bis es behoben ist.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \n\n\nEs tut mir leid, ich konnte keine spezifischen Informationen \u00fcber Benachrichtigungseinstellungen auf der von Ihnen angegebenen Seite finden. Allerdings ist es m\u00f6glich, dass die Seite \u00fcber eine benutzerdefinierte Funktion oder ein Plugin verf\u00fcgt, mit dem Sie Benachrichtigungen einstellen k\u00f6nnen. \n\nAllgemein sind Benachrichtigungen in Sozialen Medien oder Online-Plattformen oft in den Einstellungen verf\u00fcgbar. \u00dcberpr\u00fcfen Sie also Ihre Einstellungen oder suchen Sie nach einer Option zum Abonnieren von Benachrichtigungen. Wenn Sie eine bestimmte Website oder Anwendung angegeben haben, kann ich gerne genauer hinschauen und nach Benachrichtigungseinstellungen suchen.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -30,13 +30,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 15,
-    "completion_tokens": 425,
-    "total_tokens": 440
+    "prompt_tokens": 2623,
+    "completion_tokens": 150,
+    "total_tokens": 2773
   },
-  "average_power_draw": 77.33284970032275,
-  "energy_consumption": 4336.767223449601,
-  "energy_per_input_token": 4.024841970718887,
-  "energy_per_output_token": 10.06210492679722,
-  "energy_per_total_token": 9.85628914420364
+  "average_power_draw": 60.34415603623589,
+  "energy_consumption": 4212.547953827178,
+  "energy_per_input_token": 1.4051193975407534,
+  "energy_per_output_token": 3.512798493851884,
+  "energy_per_total_token": 1.519130167265481
 }

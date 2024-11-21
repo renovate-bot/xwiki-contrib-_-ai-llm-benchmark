@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.37222222222222223,
+  "overall_score": 0.36261663365496116,
   "individual_scores": {
-    "AnswerRelevancy": 0.6111111111111112,
+    "AnswerRelevancy": 0.9016393442622951,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.25,
-    "CustomContextualRelevancy": 0.0
+    "ContextualRecall": 0.125,
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.1490604576674719
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.61 because the response partially addresses the question about configuring access and editing permissions in XWiki. However, it includes multiple irrelevant statements, such as links to unrelated sources and general advice on team communication, which do not directly help in solving the specific configuration issue.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses XWiki's database support and programming features, which are not relevant to configuring access controls for team areas. The second node describes the Notifications Application in XWiki, which does not relate to setting access permissions for team areas. The third node explains the concept of Nested Pages and subwikis in XWiki, which does not directly address configuring access controls for team areas. The fourth node provides information on managing users and groups, but it does not specifically address setting access permissions for team areas. The fifth node discusses group synchronization and customization in XWiki, which is not directly related to configuring access permissions for team areas.",
-    "ContextualRecall": "The score is 0.25 because only sentences 1 and 4 from the expected output are supported by nodes in the retrieval context, specifically nodes 4 and 3 respectively. The rest of the sentences are not supported by any nodes in the retrieval context, leading to a low score.",
-    "CustomContextualRelevancy": "The retrieval context lacks any information about creating groups, setting wiki-wide or area-specific rights, or inheriting rights, which are all detailed in the expected output."
+    "AnswerRelevancy": "The score is 0.90 because the response largely addresses the question about configuring team access in XWiki, but includes several irrelevant source links and mentions that do not directly contribute to solving the specific access configuration problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to configuring team-specific access control in XWiki. The first node discusses XWiki's database support and programming features, which are not relevant. The second node is about the Notifications Application, unrelated to access control. The third node explains Nested Pages and subwikis, not addressing team-specific access rights. The fourth node mentions managing users and groups but lacks specific information on setting team access controls. The fifth node discusses group synchronization and customization, not directly related to the input question.",
+    "ContextualRecall": "The score is 0.12 because only the concept of creating groups for each team (sentence 1) is supported by node 4 in the retrieval context. The rest of the expected output sentences, such as setting wiki-wide rights, space-level rights, and inheriting rights for child pages, are not supported by any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context lacks information about creating groups, setting rights, and inheriting rights, which are key steps in the expected output for access control in XWiki.",
+    "Correctness": "Actual output suggests creating separate wikis for each team, contradicting expected output's use of groups within one wiki. It also lacks instructions for setting 'View' rights for XWikiAllGroup, which is vital in expected output to ensure visibility across teams."
   },
   "question_language": "de",
   "expected_answer_language": "de",

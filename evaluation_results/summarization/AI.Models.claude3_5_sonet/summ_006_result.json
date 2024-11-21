@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary includes extra information not present in the original text, such as regular users being able to create and edit pages and access page history, and it lacks details about guides for users on creating a page and additional applications on the Extensions wiki.",
+  "score": 0.4166666666666667,
+  "reason": "The score is 0.42 because the summary includes extra information not present in the original text, such as details about login credentials, user permissions, developer access, and documentation links. Additionally, the summary fails to answer whether XWiki is described as a second generation wiki, which the original text can answer. These issues indicate a lack of alignment and completeness between the summary and the original text.",
   "score_breakdown": {
-    "Alignment": 0.6666666666666666,
-    "Coverage": 0.6
+    "Alignment": 0.4166666666666667,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

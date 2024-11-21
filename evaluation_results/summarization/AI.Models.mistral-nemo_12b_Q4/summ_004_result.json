@@ -1,9 +1,9 @@
 {
-  "score": 0.2,
-  "reason": "The score is 0.20 because the summary contains significant contradictions with the original text, such as misrepresenting the process of exporting and reimporting wiki pages and recommending the wrong downgrade method. Additionally, the summary includes extra information not present in the original text, like server restart instructions and Solr file editing, which can mislead the reader. Furthermore, the summary fails to address several questions that the original text can answer, indicating a lack of comprehensiveness and accuracy.",
+  "score": 0.14285714285714285,
+  "reason": "The score is 0.14 because the summary contains multiple contradictions with the original text, such as the incorrect use of the Distribution Wizard for upgrading flavors and the misrepresentation of recommended methods for upgrading and downgrading. Additionally, the summary includes extra information not found in the original text, like specific methods for upgrading and details about Solr issues, which further detracts from its accuracy. Furthermore, the summary fails to address several questions that the original text can answer, indicating a lack of comprehensiveness.",
   "score_breakdown": {
-    "Alignment": 0.25,
-    "Coverage": 0.2
+    "Alignment": 0.14285714285714285,
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

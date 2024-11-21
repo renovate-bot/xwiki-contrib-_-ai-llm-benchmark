@@ -1,6 +1,6 @@
 {
-  "score": 0.6,
-  "reason": "The Actual Output correctly identifies the event name, location, and address but lacks coherence in date formatting and omits the target audience. The Expected Output provides a more structured and complete representation.",
+  "score": 0.3,
+  "reason": "The Actual Output partially addresses the Input by extracting some event details, but includes irrelevant content about flip flops. It lacks coherence and logical flow compared to the Expected Output, which clearly structures the event details. The fluency is disrupted by the unrelated content, affecting readability.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

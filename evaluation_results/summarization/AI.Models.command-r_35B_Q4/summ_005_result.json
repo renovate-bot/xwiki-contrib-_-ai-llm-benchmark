@@ -1,8 +1,8 @@
 {
   "score": 0.6,
-  "reason": "The score is 0.60 because the summary includes extra information not present in the original text and fails to answer specific questions that the original text can address, indicating a moderate level of accuracy and completeness.",
+  "reason": "The score is 0.60 because the summary fails to address specific questions that the original text can answer, indicating that some important details are missing from the summary. However, there are no contradictions or extra information, which suggests that the summary is generally accurate but lacks completeness.",
   "score_breakdown": {
-    "Alignment": 0.6666666666666666,
+    "Alignment": 1.0,
     "Coverage": 0.6
   },
   "input_language": "en",

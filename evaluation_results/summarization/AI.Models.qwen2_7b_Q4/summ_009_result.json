@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary includes extra information not present in the original text, such as mentioning XWiki or specific wiki software, and it fails to answer a question about modifying a page by clicking an 'edit' button that the original text can answer. However, there are no contradictions, indicating a generally accurate representation of the original text.",
+  "score": 1.0,
+  "reason": "The score is 1.00 because the summary perfectly aligns with the original text, with no contradictions or extra information present.",
   "score_breakdown": {
-    "Alignment": 0.8571428571428571,
-    "Coverage": 0.8
+    "Alignment": 1.0,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

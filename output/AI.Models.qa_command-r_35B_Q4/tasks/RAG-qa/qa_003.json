@@ -2,7 +2,7 @@
   "id": "qa_003",
   "prompt": "In the context of XWiki I am not receiving notifications about my own activity. How can I enable notifications for my own actions?",
   "expected_answer": "By default, one don't receive notification about one's own activity (unless the event that triggered the notification targets explicitly that user). You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings in your user profile.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nTo receive notifications for your own actions in XWiki, you need to follow these steps:\n\n1. Go to your user profile by clicking on your username in the top right corner and selecting \"Profile\" from the dropdown menu.\n\n2. In the \"Profile\" tab, navigate to the \"Notifications\" section.\n\n3. Find the option labeled \"Receive notifications for own actions\" and make sure it is enabled. If it's not enabled, click on the toggle to turn it on.\n\n4. Save your changes by clicking the \"Save\" button at the bottom of the page.\n\nOnce you've followed these steps, you should start receiving notifications for your own activities in XWiki.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nThis is a known behavior in XWiki, where by default, users don't receive notifications about their own activity. However, this can be changed.\n\nYou can disable this filter in the \"Advanced filtering options\" section of your own notification settings. These settings are found in the \"Settings\" menu of the Notifications Application. Look for the option that reads \"Don't notify me about my own actions\" and uncheck it. \n\nThis setting is specific to each user, so you'll need to perform this action in your user profile.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 32,
-    "completion_tokens": 143,
-    "total_tokens": 175
+    "prompt_tokens": 2897,
+    "completion_tokens": 111,
+    "total_tokens": 3008
   },
-  "average_power_draw": 76.10289554224882,
-  "energy_consumption": 1475.4121404128994,
-  "energy_per_input_token": 3.7879644169779185,
-  "energy_per_output_token": 9.469911042444796,
-  "energy_per_total_token": 8.430926516645139
+  "average_power_draw": 62.19131561008852,
+  "energy_consumption": 3530.750521992556,
+  "energy_per_input_token": 1.112222561660909,
+  "energy_per_output_token": 2.7805564041522723,
+  "energy_per_total_token": 1.1737867426836954
 }

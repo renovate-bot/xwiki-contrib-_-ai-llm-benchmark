@@ -2,7 +2,7 @@
   "id": "qa_003",
   "prompt": "In the context of XWiki I am not receiving notifications about my own activity. How can I enable notifications for my own actions?",
   "expected_answer": "By default, one don't receive notification about one's own activity (unless the event that triggered the notification targets explicitly that user). You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings in your user profile.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nTo receive notifications about your own activities in XWiki, you need to ensure that the notification system is enabled and configured correctly. Here are the steps:\n\n1. **Check Notification Settings**: \n\n   - Log into your XWiki account.\n   - Go to your user preferences by clicking on your username at the top right corner of the page, then select \"Preferences\" or \"Profile\".\n   - Look for a section related to notifications (it might be labeled as \"Email Notifications\", \"Alerts\", etc.). This section should allow you to enable or disable notifications.\n\n2. **Enable Self-Notifications**:\n\n   - Within the notification settings, find an option that allows you to receive notifications about your own actions. It could be named something like \"Notify me when I create a new page\" or \"Notify me of my own edits\".\n   - Ensure this feature is enabled by checking the corresponding box.\n\n3. **Check System Configuration**:\n\n   - If the settings are not sufficient, it might require changes at the system level.\n   - Access your XWiki administrator panel (usually found under the \"Administration\" section).\n   - Look for a configuration or settings page related to notifications.\n   - Check if there's an option to enable self-notifications globally. This might involve enabling a setting that allows users to receive notifications about their own actions.\n\n4. **Check Email Configuration**:\n\n   - Ensure your email server is correctly configured in XWiki. You can find this under the system configuration settings.\n   - Make sure you have provided valid email addresses for receiving notifications.\n\n5. **Restart XWiki Service**:\n\n   - After making changes, it might be necessary to restart the XWiki service or application server (like Tomcat) for the changes to take effect.\n\n6. **Test Notifications**:\n\n   - Once everything is set up correctly, try performing an action that should trigger a notification (e.g., creating a new page or editing an existing one).\n   - Check your email inbox and spam folder to see if notifications are being sent as expected.\n\nIf you're still not receiving notifications after following these steps, there might be additional configuration issues specific to your XWiki setup or server environment. In that case, consulting the XWiki documentation or reaching out to the XWiki community forums could provide further assistance.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nTo receive notifications about your own activities in XWiki, you need to disable the filter that prevents users from getting notified about their own events. This is a per-user setting and can be found under the \"Advanced filtering options\" section of your notification settings.\n\nHere are the steps to enable notifications for your own actions:\n\n1. Go to your user profile page.\n2. Navigate to the \"Notifications\" tab in the menu.\n3. Look for the option related to \"Filtering events that concern yourself.\"\n4. Disable this filter, which typically allows you to receive notifications about activities performed by yourself.\n\nBy switching off this Own event filter, XWiki will start notifying you about your own actions on the platform.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 34,
-    "completion_tokens": 465,
-    "total_tokens": 499
+    "prompt_tokens": 2490,
+    "completion_tokens": 143,
+    "total_tokens": 2633
   },
-  "average_power_draw": 167.49924154589368,
-  "energy_consumption": 864.1280944979546,
-  "energy_per_input_token": 0.7222132005833303,
-  "energy_per_output_token": 1.8055330014583257,
-  "energy_per_total_token": 1.731719628252414
+  "average_power_draw": 182.83158730158732,
+  "energy_consumption": 411.46701400298923,
+  "energy_per_input_token": 0.1445011462697065,
+  "energy_per_output_token": 0.3612528656742662,
+  "energy_per_total_token": 0.156273077859092
 }

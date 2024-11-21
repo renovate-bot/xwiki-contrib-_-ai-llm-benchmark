@@ -2,7 +2,7 @@
   "id": "qa_029",
   "prompt": "Comment puis-je refuser le droit de script \u00e0 un administrateur d'espace?",
   "expected_answer": "Ceci n'est malheureusement pas pris en charge dans XWiki, les droits qui sont impliqu\u00e9s par le droit d'administrateur ne peuvent pas \u00eatre refus\u00e9s.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \n\n\nPour refuser le droit de script \u00e0 un administrateur d'espace, vous devez suivre les \u00e9tapes suivantes :\n\n1. Connectez-vous \u00e0 votre espace en tant qu'administrateur.\n\n2. Acc\u00e9dez aux param\u00e8tres de l'espace ou au menu de gestion des utilisateurs et des droits.\n\n3. Trouvez la section qui permet de g\u00e9rer les droits d'acc\u00e8s ou les r\u00f4les pour les utilisateurs.\n\n4. Recherchez le nom de l'utilisateur \u00e0 qui vous voulez retirer le droit de script.\n\n5. S\u00e9lectionnez son profil ou son compte utilisateur.\n\n6. Dans les options de r\u00f4le ou de permissions, recherchez la section qui concerne les droits de script.\n\n7. Modifiez ses permissions pour supprimer le droit de script.\n\n8. Validez vos modifications en cliquant sur un bouton de confirmation ou d'application des changements.\n\n9. Enregistrez vos modifications.\n\nVeuillez noter que ces \u00e9tapes peuvent varier l\u00e9g\u00e8rement selon la plateforme sp\u00e9cifique que vous utilisez (par exemple, GitHub, GitLab, Bitbucket, etc.). Assurez-vous de consulter les guides d'aide de votre plateforme pour obtenir des instructions plus pr\u00e9cises.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \n\n\nPour refuser le droit de script \u00e0 un administrateur d'espace dans XWiki, vous devez acc\u00e9der aux pr\u00e9f\u00e9rences du wiki o\u00f9 se trouve l'espace en question. Une fois que vous \u00eates sur la page des pr\u00e9f\u00e9rences du wiki, recherchez l'option ou le param\u00e8tre qui permet de g\u00e9rer les droits de script.\n\nUne fois trouv\u00e9, vous devrez probablement s\u00e9lectionner une option pour refuser ce droit \u00e0 un certain groupe d'utilisateurs ou \u00e0 un utilisateur sp\u00e9cifique. Cela peut \u00eatre fait en modifiant la configuration des droits dans les pr\u00e9f\u00e9rences du wiki ou en utilisant l'interface graphique pour d\u00e9sactiver le droit de script pour cet administrateur.\n\nVeuillez noter que ces \u00e9tapes peuvent varier l\u00e9g\u00e8rement selon la version de XWiki que vous utilisez et comment elle est configur\u00e9e. Si vous rencontrez des difficult\u00e9s, il serait pr\u00e9f\u00e9rable de consulter les documents d'aide ou le support technique de XWiki pour obtenir une assistance plus d\u00e9taill\u00e9e.\n\nSi ces informations ne sont pas disponibles ou si vous rencontrez toujours des probl\u00e8mes, n'h\u00e9sitez pas \u00e0 me fournir plus de d\u00e9tails sur votre configuration actuelle afin que je puisse vous aider davantage.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 26,
-    "completion_tokens": 257,
-    "total_tokens": 283
+    "prompt_tokens": 3197,
+    "completion_tokens": 264,
+    "total_tokens": 3461
   },
-  "average_power_draw": 166.21664957264954,
-  "energy_consumption": 477.85967101860854,
-  "energy_per_input_token": 0.7148237412395042,
-  "energy_per_output_token": 1.7870593530987604,
-  "energy_per_total_token": 1.6885500742707016
+  "average_power_draw": 189.63825396825393,
+  "energy_consumption": 729.6292196507301,
+  "energy_per_input_token": 0.18917013732194193,
+  "energy_per_output_token": 0.47292534330485486,
+  "energy_per_total_token": 0.21081456794300205
 }

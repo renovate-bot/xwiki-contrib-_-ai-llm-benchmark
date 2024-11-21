@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.3583333333333333,
+  "overall_score": 0.32674146931716397,
   "individual_scores": {
-    "AnswerRelevancy": 0.7916666666666666,
+    "AnswerRelevancy": 0.6875,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.2729488159029837
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.79 because the response partially addresses the question about setting file upload restrictions on a wiki, but it includes multiple irrelevant source links that do not directly answer the query.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'language preferences and translations in XWiki', which is unrelated to configuring file upload restrictions. The second node is about 'various applications and features in XWiki, such as administration and mail configuration', not about file upload settings. The third node covers 'PDF export customization using CSS and XSL', which is not relevant to setting upload restrictions for images and PDFs. The fourth node lists 'various macros and features related to notifications, office document viewing, and PDF viewing', which do not pertain to file upload restrictions. The fifth node contains 'links to various references and images', which do not provide information on configuring file upload restrictions. Finally, the sixth node includes 'references to various entities and their logos', which are not related to the topic of file upload restrictions.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context, indicating a complete lack of relevant information.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to configuring MIME types or setting maximum attachment size as described in the expected answer."
+    "AnswerRelevancy": "The score is 0.69 because the response partially addresses the question about file upload restrictions, but includes multiple irrelevant links that do not specifically relate to the query about limiting uploads to image or PDF files of a certain size.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'language preferences and translations in XWiki', which is unrelated to file upload restrictions. The second node is about 'various XWiki applications and their functionalities, such as mail configuration and PDF export', which do not address file upload restrictions. The third node provides 'technical details about CSS and XSL transformations for PDFs', which is not relevant to configuring file upload restrictions. The fourth node lists 'various XWiki features and macros, such as PDF Viewer and Office Document Viewer', which do not relate to file upload restrictions. The fifth node contains 'image links and references', which are unrelated to the topic of file upload restrictions. The sixth node also includes 'image links and references', which do not provide any information on file upload restrictions.",
+    "ContextualRecall": "The score is 0.00 because none of the expected output sentences can be attributed to any nodes in the retrieval context, as the context lacks information on file size restrictions, MIME type configurations, and specific instructions related to the expected output.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to configuring MIME types or setting maximum attachment size as described in the expected output.",
+    "Correctness": "Actual output lacks MIME type configuration and does not mention editing xwiki.properties as in expected output. It only addresses file size setting in a generic manner."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

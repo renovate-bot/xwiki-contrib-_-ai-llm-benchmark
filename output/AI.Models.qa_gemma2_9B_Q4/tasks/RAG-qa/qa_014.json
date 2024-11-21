@@ -2,7 +2,7 @@
   "id": "qa_014",
   "prompt": "Ich erhalte viele Benachrichtigungen \u00fcber alle m\u00f6glichen Seiten, an denen ich nicht interessiert bin. Diese scheinen automatisch aktiviert worden zu sein. Wie kann ich diese Benachrichtigungen deaktivieren?",
   "expected_answer": "Standardm\u00e4\u00dfig wird eine Seite, an der Sie eine wesentliche \u00c4nderung vorgenommen haben, automatisch zu der Liste der Seiten hinzugef\u00fcgt, denen Sie folgen. Das bedeutet, dass Sie \u00fcber \u00c4nderungen an Ihrer Arbeit benachrichtigt werden. Sie k\u00f6nnen die Einstellung f\u00fcr \"Automatisches Verfolgen von Seiten\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil \u00e4ndern. Sie k\u00f6nnen vorhandene Benachrichtigungsfilter, die auf diese Weise erstellt wurden, in der Liste \"Benutzerdefinierte Filter\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil l\u00f6schen.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Attachments \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \n\n\nIt seems like you're receiving notifications for many pages you're not interested in.  These notifications might be automatically enabled. \n\nUnfortunately, I don't have access to your XWiki account or settings to tell you exactly how to disable them. \n\nHowever, I can suggest some general places to look:\n\n* **Notification Settings:**  XWiki likely has a section in your user settings dedicated to notifications. Look for options to customize which types of notifications you receive and for which pages.\n* **Page-Specific Settings:** Some pages might have their own notification settings. Check the page's properties or options to see if you can disable notifications for that specific page.\n* **Email Filters:** If you're receiving notifications via email, you can set up filters in your email client to automatically sort or block emails from XWiki.\n\n\nI hope this helps! \n",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Attachments \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \n\n\nIt seems like you're receiving notifications about many pages in XWiki that you're not interested in. These notifications might be automatically enabled.  \n\nTo disable these notifications, you'll likely need to adjust your notification settings within XWiki.  Look for a section related to \"Notifications\" or \"Preferences\" in your XWiki user settings. There you should be able to customize which types of notifications you receive and for which pages. \n\n\nLet me know if you have any other questions about XWiki. \n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -55,12 +55,12 @@
   ],
   "usage": {
     "prompt_tokens": 3602,
-    "completion_tokens": 182,
-    "total_tokens": 3784
+    "completion_tokens": 107,
+    "total_tokens": 3709
   },
-  "average_power_draw": 198.58348948948952,
-  "energy_consumption": 816.6364301856489,
-  "energy_per_input_token": 0.20129071485966205,
-  "energy_per_output_token": 0.5032267871491551,
-  "energy_per_total_token": 0.21581301009134485
+  "average_power_draw": 171.10169934640527,
+  "energy_consumption": 649.2675276772494,
+  "energy_per_input_token": 0.1677910654289312,
+  "energy_per_output_token": 0.4194776635723281,
+  "energy_per_total_token": 0.17505190824406833
 }

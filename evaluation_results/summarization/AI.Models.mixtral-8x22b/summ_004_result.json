@@ -1,9 +1,9 @@
 {
-  "score": 0.5555555555555556,
-  "reason": "The score is 0.56 because the summary contains a contradiction regarding the recommended upgrade method, includes extra details not present in the original text, and fails to address a question that the original text can answer. These issues indicate a moderate level of deviation from the original content.",
+  "score": 0.5384615384615384,
+  "reason": "The score is 0.54 because the summary contains multiple contradictions and extra information not present in the original text, such as incorrect methods for upgrading and additional details about package updates and configuration backups. Additionally, the summary fails to address specific questions that the original text can answer, indicating a lack of alignment and completeness.",
   "score_breakdown": {
-    "Alignment": 0.5555555555555556,
-    "Coverage": 0.8
+    "Alignment": 0.5384615384615384,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

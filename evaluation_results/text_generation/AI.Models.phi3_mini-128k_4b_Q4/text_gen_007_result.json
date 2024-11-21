@@ -1,6 +1,6 @@
 {
-  "score": 0.0,
-  "reason": "The Actual Output is incoherent, irrelevant to the Input prompt, and lacks any logical flow or readability compared to the Expected Output of an informative article on a scientific discovery.",
+  "score": 0.9,
+  "reason": "The Actual Output is highly relevant to the Input, providing a detailed news article about a scientific discovery, which aligns with the Expected Output. It maintains coherence and logical flow, detailing the discovery, its implications, and expert opinions. The fluency is strong, with appropriate sentence structure and vocabulary. However, it is slightly verbose, which could detract from conciseness.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,8 +1,8 @@
 {
-  "score": 0.75,
-  "reason": "The score is 0.75 because the summary contains a contradiction regarding user permissions and includes extra details not present in the original text, such as specific override options, visual examples, and next steps in application creation.",
+  "score": 0.7777777777777778,
+  "reason": "The score is 0.78 because the summary includes extra information not present in the original text, such as references to images and a specific step in a process. However, there are no contradictions, indicating a generally accurate representation of the original content.",
   "score_breakdown": {
-    "Alignment": 0.75,
+    "Alignment": 0.7777777777777778,
     "Coverage": 1.0
   },
   "input_language": "en",

@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.8569230769230771,
+  "overall_score": 0.811418661148552,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
+    "AnswerRelevancy": 0.9583333333333334,
     "Faithfulness": 0.9230769230769231,
     "ContextualPrecision": 1.0,
-    "ContextualRecall": 0.46153846153846156,
-    "CustomContextualRelevancy": 0.9
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.9,
+    "Correctness": 0.5871017104810554
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the output is perfectly relevant and directly addresses the question without any irrelevant information. Great job!",
-    "Faithfulness": "The score is 0.92 because the actual output incorrectly states the process of adding 'xwiki_groups' to userinfo claims, whereas the retrieval context clarifies that group synchronization is enabled by adding the claim 'xwiki_groups' to the property 'oidc.userinfoclaims'.",
-    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than the irrelevant ones. The first three nodes provide detailed information on configuring group synchronization, such as specifying the 'oidc.groups.claim' property, mapping XWiki groups using 'oidc.groups.mapping', and enabling synchronization by adding claims to 'oidc.userinfoclaims'. The irrelevant nodes, ranked fourth and fifth, focus on general configuration and authentication management, which are not directly related to the process of configuring group synchronization. Great job on getting everything in the right order!",
-    "ContextualRecall": "The score is 0.46 because while some nodes in the retrieval context support configuring properties like 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping', many specific instructions such as locating and editing the xwiki.properties file, replacing placeholders, and restarting XWiki are missing.",
-    "CustomContextualRelevancy": "The retrieval context contains detailed information on configuring the `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping` properties, which aligns closely with the expected output. However, it lacks explicit instructions on locating and editing the `xwiki.properties` file and restarting the XWiki instance."
+    "AnswerRelevancy": "The score is 0.96 because the response is highly relevant and provides a detailed explanation of configuring group synchronization between XWiki and an OpenID Connect provider. The only minor issue is the inclusion of a source link, which slightly detracts from the directness of the answer.",
+    "Faithfulness": "The score is 0.92 because the actual output incorrectly claims that the default claim name for groups is `xwiki_groups`, while the retrieval context only mentions that group synchronization is enabled by adding `xwiki_groups` to the `oidc.userinfoclaims` property, without specifying it as a default claim name.",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes are perfectly ranked higher than irrelevant nodes. The first three nodes in the retrieval context provide detailed information on configuring the `oidc.groups.claim` and `oidc.groups.mapping` properties, which are crucial for setting up group synchronization as required. The irrelevant nodes, ranked fourth and fifth, discuss prerequisites, installation instructions, and authentication management, which are not directly related to the specific steps for group synchronization.",
+    "ContextualRecall": "The score is 0.50 because while nodes in the retrieval context provide detailed information on configuring properties like `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping`, they lack instructions on locating, opening, and saving the `xwiki.properties` file, as well as replacing placeholders with actual values.",
+    "CustomContextualRelevancy": "The retrieval context contains detailed information on configuring group synchronization, including setting the oidc.groups.claim, oidc.groups.separator, and oidc.groups.mapping properties, which matches the expected output. However, instructions to locate and edit the xwiki.properties file and restart the XWiki instance are not explicitly mentioned.",
+    "Correctness": "The actual output includes details on enabling group synchronization and provides examples for configuring group claims and mapping, aligning partially with expected output. However, it omits step-by-step instructions on locating and editing `xwiki.properties`, and lacks information on saving changes and restarting XWiki."
   },
   "question_language": "en",
   "expected_answer_language": "en",

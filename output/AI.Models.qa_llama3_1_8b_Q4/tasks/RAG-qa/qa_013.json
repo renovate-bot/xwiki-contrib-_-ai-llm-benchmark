@@ -2,7 +2,7 @@
   "id": "qa_013",
   "prompt": "Ich erhalte keine Benachrichtigungen \u00fcber meine eigene Aktivit\u00e4t. Wie kann ich Benachrichtigungen f\u00fcr meine eigenen Aktionen aktivieren?",
   "expected_answer": "Standardm\u00e4\u00dfig erh\u00e4lt man keine Benachrichtigungen \u00fcber die eigene Aktivit\u00e4t (es sei denn, das Ereignis, das die Benachrichtigung ausl\u00f6st, richtet sich explizit an diesen Benutzer). Sie haben die M\u00f6glichkeit, diesen Filter in den \"Erweiterten Filteroptionen\" Ihrer eigenen Benachrichtigungseinstellungen in Ihrem Benutzerprofil zu deaktivieren.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nEs tut mir leid, aber die bereitgestellten Informationen scheinen nicht direkt auf deine Frage zu antworten. Die Dokumente beziehen sich gr\u00f6\u00dftenteils auf Funktionen und Erweiterungen von XWiki, die m\u00f6glicherweise nicht direkt mit der Aktivierung von Benachrichtigungen f\u00fcr eigene Aktionen zusammenh\u00e4ngen.\n\nIch kann jedoch allgemein darauf hinweisen, dass in vielen Systemen und Anwendungen die Einstellungen f\u00fcr Benachrichtigungen oft unter \"Einstellungen\" oder \"Benachrichtigungen\" zu finden sind. Es ist m\u00f6glich, dass eine spezifische Funktion oder Erweiterung in XWiki existiert, die es erm\u00f6glicht, Benachrichtigungen f\u00fcr eigene Aktionen zu aktivieren.\n\nLeider kann ich nicht direkt auf diese Funktion hinweisen, da sie nicht in den bereitgestellten Dokumenten erw\u00e4hnt wird. Wenn du m\u00f6chtest, kann ich dir allgemeine Tipps geben, wie man oft nach solchen Einstellungen sucht:\n\n1. **\u00dcberpr\u00fcfe die Benutzerhandbuch**: Das Benutzerhandbuch deines Systems oder Anwendungsprogramms sollte eine detaillierte Beschreibung aller Funktionen und Einstellungen enthalten.\n2. **Suche im Men\u00fc nach \"Einstellungen\" oder \"Benachrichtigungen\"**: Viele Systeme haben eine Kategorie mit dem Titel \"Einstellungen\", in der oft auch die Optionen f\u00fcr Benachrichtigungen zu finden sind.\n3. **\u00dcberpr\u00fcfe das Profil- oder Benutzerbereich**: Manchmal k\u00f6nnen Einstellungen, einschlie\u00dflich derjenigen f\u00fcr Benachrichtigungen, im Bereich des eigenen Profils oder Benutzers aufgef\u00fchrt sein.\n\nIch hoffe, diese allgemeinen Tipps helfen dir weiter. Wenn du spezifische Hilfe ben\u00f6tigst, stehe ich gerne zur Verf\u00fcgung, um mit dir gemeinsam nach einer L\u00f6sung zu suchen.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nLeider ist die Antwort auf deine Frage nicht direkt in den bereitgestellten Suchergebnissen enthalten.\n\nAber basierend auf meiner allgemeinen Kenntnis und Erfahrung mit XWiki, kann ich dir sagen, dass du wahrscheinlich die Einstellungen f\u00fcr Benachrichtigungen \u00fcberpr\u00fcfen musst. Hier sind einige Schritte, die du ausprobieren kannst:\n\n1. **Zugriff auf deine XWiki-Einstellungen**: Klicke auf dein Profilbild oben rechts und w\u00e4hle \"Einstellungen\" aus dem Dropdown-Men\u00fc.\n2. **Benachrichtigungen \u00fcberpr\u00fcfen**: In den Einstellungen findest du wahrscheinlich eine Option f\u00fcr Benachrichtigungen oder ein Tab namens \"Benachrichtigungen\". Dort kannst du pr\u00fcfen, ob die Option \"Meine eigenen Aktionen\" aktiviert ist.\n3. **Neue Benachrichtigung hinzuf\u00fcgen**: Wenn du keine Option findest, kann es sein, dass du eine neue Benachrichtigung erstellen musst. Suche nach der Funktion \"Benachrichtigungen\" oder \"Notifikationen\" und folge den Anweisungen.\n\nWenn diese Schritte nicht helfen, kannst du auch die XWiki-Dokumentation oder die Community-Forum-Suche nach Hilfe fragen.\n\nEs tut mir leid, dass ich keine spezifische L\u00f6sung f\u00fcr deine Frage habe. Ich hoffe, diese allgemeinen Tipps helfen dir weiter!",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,12 +31,12 @@
   ],
   "usage": {
     "prompt_tokens": 1536,
-    "completion_tokens": 429,
-    "total_tokens": 1965
+    "completion_tokens": 317,
+    "total_tokens": 1853
   },
-  "average_power_draw": 167.21955555555553,
-  "energy_consumption": 1009.2622075216503,
-  "energy_per_input_token": 0.3869128646814837,
-  "energy_per_output_token": 0.9672821617037093,
-  "energy_per_total_token": 0.5136194440313743
+  "average_power_draw": 176.82163742690062,
+  "energy_consumption": 753.5862625063513,
+  "energy_per_input_token": 0.3236359297858498,
+  "energy_per_output_token": 0.8090898244646246,
+  "energy_per_total_token": 0.4066844374022403
 }

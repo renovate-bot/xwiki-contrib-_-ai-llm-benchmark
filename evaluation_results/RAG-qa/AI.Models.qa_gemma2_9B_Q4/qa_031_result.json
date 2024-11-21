@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.6695238095238094,
+  "overall_score": 0.6296716824534421,
   "individual_scores": {
     "AnswerRelevancy": 0.3333333333333333,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0.5,
-    "ContextualRecall": 0.7142857142857143,
-    "CustomContextualRelevancy": 0.8
+    "ContextualRecall": 0.8,
+    "CustomContextualRelevancy": 0.8,
+    "Correctness": 0.3446967613873188
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.33 because the actual output contains multiple irrelevant source links that do not address the question about authenticating users with access tokens, which significantly lowers the relevancy score.",
+    "AnswerRelevancy": "The score is 0.33 because the output contains multiple irrelevant statements that are source URLs, which do not address the question about authenticating users with access tokens. This significantly lowers the relevancy, but the score is not zero, indicating there might be some relevant content present.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.50 because the second node, which is relevant as it 'discusses the configuration of 'Authorized Applications', which is relevant to using access tokens for authentication', is ranked after the first node, which is irrelevant as it 'is about LDAP configuration in XWiki, which is unrelated to token-based authentication or JWT'. Additionally, the fourth node, which 'provides a description of the extension that allows authentication with JWT, matching the expected output's description of token-based authentication', is ranked after the third node, which 'is about OpenID Connect scopes and response types, which is not directly related to JWT-based authentication as described in the expected output'. However, the relevant nodes are still present, contributing to the current score.",
-    "ContextualRecall": "The score is 0.71 because while the retrieval context nodes provide substantial information on authenticating users with JWTs, enabling the token authenticator, and configuring authorized applications, they lack details on generating a JWT token with specific claims and signing key requirements, as well as including the token in the 'Authorization' header.",
-    "CustomContextualRelevancy": "The retrieval context includes details about configuring authorized applications and enabling the token authenticator, which aligns with the expected answer. However, it lacks specific mention of JWT claims and the use of Ed25519 keys."
+    "ContextualPrecision": "The score is 0.50 because the relevant nodes in the retrieval context are ranked lower than some irrelevant nodes. The first node is about 'LDAP configuration and does not mention token-based authentication or JWTs', which should be ranked lower than the second node that discusses 'Authorized Applications Configuration', relevant to token-based authentication. Similarly, the third node about 'OpenID Connect and OAuth scopes' should be ranked lower than the fourth node, which provides a description of 'authentication using signed JSON Web Tokens (JWT)', directly relevant to the input.",
+    "ContextualRecall": "The score is 0.80 because most of the expected output sentences are supported by nodes in the retrieval context, particularly node 4 and node 2. However, there is one sentence that lacks direct support from the retrieval context, which slightly lowers the score.",
+    "CustomContextualRelevancy": "The retrieval context includes information about enabling the token authenticator, configuring authorized applications, and using JWTs, which aligns with the expected answer. However, specific details about JWT claims and the use of Ed25519 keys are not explicitly mentioned.",
+    "Correctness": "The actual output mentions the use of JWT for authentication but lacks details such as the required claims, Ed25519 signing, and configuration steps mentioned in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

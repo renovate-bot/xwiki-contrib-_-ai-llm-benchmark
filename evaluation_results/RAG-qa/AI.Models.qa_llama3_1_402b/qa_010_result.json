@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.7412280701754386,
+  "overall_score": 0.7638220862121293,
   "individual_scores": {
-    "AnswerRelevancy": 0.7894736842105263,
-    "Faithfulness": 0.75,
+    "AnswerRelevancy": 0.8461538461538461,
+    "Faithfulness": 1.0,
     "ContextualPrecision": 0.6666666666666666,
-    "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 0.5
+    "ContextualRecall": 0.6666666666666666,
+    "CustomContextualRelevancy": 0.5,
+    "Correctness": 0.903445337785597
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.79 because the output partially addresses the input by discussing permissions in XWiki, but includes several irrelevant links that do not directly help in configuring view and edit permissions as requested.",
-    "Faithfulness": "The score is 0.75 because the actual output incorrectly claims that space-level rights override wiki-wide rights, while the retrieval context indicates that page-level permissions override wiki-wide permissions.",
-    "ContextualPrecision": "The score is 0.67 because relevant nodes discussing 'rights inheritance and administration features' (first node), 'XWiki's permission system' (fourth node), and 'basic rules for setting rights in XWiki' (sixth node) are present. However, irrelevant nodes, such as the second node focusing on 'parent/child relationship and Nested Pages', the third node on 'string formatting and OpenID Connect user properties', and the fifth node on 'emulation of spaces and pages', are ranked higher than some relevant nodes, which affects the score.",
-    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in retrieval context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context discusses rights inheritance and setting rights at different levels, which aligns with setting space-level rights and inheriting rights for child pages. However, it lacks specific details about creating groups for each team and setting wiki-wide rights, which are crucial steps in the expected output."
+    "AnswerRelevancy": "The score is 0.85 because the response largely addresses the question about configuring team access in XWiki, but the inclusion of multiple irrelevant source links slightly detracts from its overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Keep up the great work!",
+    "ContextualPrecision": "The score is 0.67 because the first node in the retrieval context is relevant as it discusses 'rights inheritance and administration features' related to setting view and edit permissions in XWiki. However, the second node, which is ranked higher than it should be, focuses on 'the parent/child relationship and the concept of Nested Pages,' which does not directly address configuring view/edit rights for teams. Additionally, the third node, about 'string formatting and user identification,' is unrelated to configuring access rights and should be ranked lower than the relevant nodes.",
+    "ContextualRecall": "The score is 0.67 because while nodes in the retrieval context provide support for detailed steps such as creating groups, setting wiki-wide and space-level rights, and inheriting rights for child pages, introductory and summary statements in the expected output do not directly align with specific nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions rights inheritance and setting rights at different levels, which aligns partially with the expected answer's steps on setting wiki-wide and space-level rights. However, it lacks specific details about creating groups for each team and setting the 'Edit' right specifically for team spaces.",
+    "Correctness": "The actual output closely matches the expected output with slight variations in wording. Both outline creating groups, setting view rights at the wiki level, setting edit rights at the space level, and ensuring rights inheritance, although 'XWikiAllGroup' is not explicitly mentioned in the actual output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

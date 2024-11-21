@@ -2,7 +2,7 @@
   "id": "qa_021",
   "prompt": "La cloche en haut \u00e0 droite n'est pas disponible, m\u00eame lorsque l'extension \"Notification d'alerte\" est install\u00e9e.",
   "expected_answer": "Assurez-vous que les notifications sont activ\u00e9es dans votre wiki. Vous pouvez les activer en d\u00e9finissant la propri\u00e9t\u00e9 `notifications.enabled` dans `xwiki.properties` sur `true`.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nD'apr\u00e8s les informations fournies dans les documents, l'ic\u00f4ne de cloche fait partie de l'application \"Alerts Application\" et contient les notifications fournies par l'application \"Notifications Application\". Si la cloche n'est pas visible m\u00eame apr\u00e8s l'installation de l'extension, voici quelques suggestions pour r\u00e9soudre le probl\u00e8me :\n\n1. V\u00e9rifiez que les deux extensions sont bien install\u00e9es :\n   - Alerts Application (qui fournit la cloche)\n   - Notifications Application (qui fournit le contenu des notifications)\n\n2. Assurez-vous que toutes les d\u00e9pendances sont correctement install\u00e9es\n\n3. Essayez de :\n   - Vider le cache du navigateur\n   - Vous d\u00e9connecter puis vous reconnecter\n   - V\u00e9rifier les droits d'acc\u00e8s de votre utilisateur\n\n4. Si le probl\u00e8me persiste, v\u00e9rifiez les logs du serveur pour identifier d'\u00e9ventuelles erreurs\n\nSi ces \u00e9tapes ne r\u00e9solvent pas le probl\u00e8me, il est recommand\u00e9 de :\n- V\u00e9rifier la version de XWiki utilis\u00e9e pour s'assurer de la compatibilit\u00e9\n- Consulter les forums XWiki pour voir si d'autres utilisateurs ont rencontr\u00e9 le m\u00eame probl\u00e8me\n- Contacter l'administrateur de votre wiki pour une assistance plus approfondie",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nD'apr\u00e8s les informations fournies, le menu d'alertes avec l'ic\u00f4ne de cloche est fourni par l'application \"Alerts Application\" et les notifications apparaissent dans ce menu. \n\nVoici quelques suggestions pour r\u00e9soudre le probl\u00e8me :\n\n1. V\u00e9rifiez que vous avez bien install\u00e9 les deux extensions n\u00e9cessaires :\n   - L'application \"Alerts Application\" (qui fournit l'ic\u00f4ne de cloche)\n   - L'application \"Notifications Application\" (qui g\u00e8re les notifications)\n\n2. Si les deux extensions sont install\u00e9es mais que la cloche n'appara\u00eet toujours pas :\n   - V\u00e9rifiez que vous \u00eates connect\u00e9(e) \u00e0 votre compte utilisateur\n   - Essayez de vider le cache de votre navigateur\n   - V\u00e9rifiez que les extensions sont correctement activ\u00e9es dans la configuration de votre wiki\n   - Consultez les logs du serveur pour d\u00e9tecter d'\u00e9ventuelles erreurs\n\nSi le probl\u00e8me persiste apr\u00e8s avoir v\u00e9rifi\u00e9 ces points, il serait utile de :\n- V\u00e9rifier la version de XWiki que vous utilisez\n- Consulter les forums de la communaut\u00e9 XWiki\n- Ouvrir un ticket de support pour obtenir de l'aide plus sp\u00e9cifique",
   "sources": [
     {
       "collection_id": "Eval",
@@ -55,8 +55,8 @@
   ],
   "usage": {
     "prompt_tokens": 3505,
-    "completion_tokens": 328,
-    "total_tokens": 3833
+    "completion_tokens": 317,
+    "total_tokens": 3822
   },
   "average_power_draw": null,
   "energy_consumption": null,

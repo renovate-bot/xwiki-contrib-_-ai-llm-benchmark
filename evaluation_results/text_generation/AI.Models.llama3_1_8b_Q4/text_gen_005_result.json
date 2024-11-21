@@ -1,6 +1,6 @@
 {
-  "score": 0.7,
-  "reason": "The story is relevant to the input prompt as it describes a space adventure, but it diverges from the expected output by focusing on a nebula rather than a new planet. The narrative is coherent and fluent, with logical progression and high language quality, but it lacks alignment with the specific focus on exploring a new planet as expected.",
+  "score": 0.8,
+  "reason": "The Actual Output is a creative space adventure story, addressing the main topic of the Input. It includes exploration and adventure themes consistent with the Expected Output. However, it focuses on a wormhole and ancient temple rather than solely exploring a new planet. The story is coherent, grammatically correct, and fluent.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

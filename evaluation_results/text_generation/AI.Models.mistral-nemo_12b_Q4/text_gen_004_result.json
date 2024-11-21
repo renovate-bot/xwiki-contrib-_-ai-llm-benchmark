@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output effectively addresses the topic by highlighting the product's features and target audience. It maintains coherence and fluency with a logical flow and smooth language. While it closely matches the Expected Output, it slightly lacks the introductory tone present in the Expected Output.",
+  "reason": "The Actual Output addresses the Input prompt and aligns well with the Expected Output by highlighting noise-cancelling, 20-hour battery life, and comfort for professionals. It is coherent and fluent, though it lacks the explicit mention of 'tech-savvy' and 'ergonomic fit' present in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

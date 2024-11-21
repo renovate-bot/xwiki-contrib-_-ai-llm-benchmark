@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The score is 1.00 because the summary perfectly aligns with the original text, with no contradictions or extraneous information.",
+  "reason": "The score is 1.00 because the summary perfectly aligns with the original text, with no contradictions or unnecessary additions.",
   "score_breakdown": {
     "Alignment": 1.0,
     "Coverage": 1.0

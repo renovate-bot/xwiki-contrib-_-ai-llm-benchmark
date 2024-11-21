@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.36923076923076925,
+  "overall_score": 0.3743717193493307,
   "individual_scores": {
-    "AnswerRelevancy": 0.8461538461538461,
+    "AnswerRelevancy": 0.8571428571428571,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "ContextualRecall": 0.07692307692307693,
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.31216438203005015
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.85 because the response provides relevant information and sources, which are helpful, but it doesn't directly address the specific process of setting up group synchronization between XWiki and an OpenID Connect provider.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'authentication management and OpenID Connect endpoints' without mentioning group synchronization. The second node provides 'information on various authentication methods' but lacks details on group synchronization. The third node describes 'OpenID Connect Authenticator extension' capabilities without specific instructions for group synchronization. The fourth node lists 'dependencies for the OpenID Connect Authenticator' unrelated to group synchronization. Finally, the fifth node offers 'general information about the OpenID Connect Authenticator' without addressing group synchronization.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be linked to any nodes in the retrieval context, as the context lacks any mention of group synchronization setup between XWiki and OpenID Connect or related configuration steps.",
-    "CustomContextualRelevancy": "The retrieval context lacks details on configuring group synchronization properties like `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping` as mentioned in the expected output."
+    "AnswerRelevancy": "The score is 0.86 because the response largely addresses the process of setting up group synchronization between XWiki and an OpenID Connect provider, but it includes source links that do not directly contribute to explaining the setup process.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating the actual output aligns perfectly with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'authentication management and endpoint configurations', which do not relate to group synchronization. The second node focuses on 'container authentication and other authentication methods', missing the topic of group synchronization. The third node mentions 'authentication on an OpenID Connect provider' without detailing group synchronization. The fourth node lists 'dependencies for the OpenID Connect extension', which is unrelated to group synchronization. Lastly, the fifth node covers 'the OpenID Connect authenticator's features and installation details', but not the specifics of group synchronization.",
+    "ContextualRecall": "The score is 0.08 because only the mention of 'xwiki.properties' in the 1st node in retrieval context supports the expected output, while all other instructions and configurations are unsupported by the nodes.",
+    "CustomContextualRelevancy": "The retrieval context lacks specific details about configuring group synchronization, such as setting 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping' in 'xwiki.properties', which are present in the expected output.",
+    "Correctness": "The actual output mentions group synchronization but uses different file names (xwiki.cfg instead of xwiki.properties) and lacks details on group separator and mapping configurations present in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

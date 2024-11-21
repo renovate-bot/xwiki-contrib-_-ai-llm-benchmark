@@ -2,7 +2,7 @@
   "id": "qa_003",
   "prompt": "In the context of XWiki I am not receiving notifications about my own activity. How can I enable notifications for my own actions?",
   "expected_answer": "By default, one don't receive notification about one's own activity (unless the event that triggered the notification targets explicitly that user). You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings in your user profile.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nIn XWiki, by default, you won't receive notifications for actions done by yourself. However, this setting can be changed to enable notifications for your own actions. To do this, follow these steps:\n\n1. Click on the bell icon (notifications) in the top bar of your XWiki instance.\n2. Click on the \"settings\" link. This will take you to your notification settings.\n3. In the notification settings, look for the \"Own event filter\" option.\n4. Disable the \"Own event filter\" by switching it off.\n\nAfter completing these steps, you should start receiving notifications for your own actions in XWiki.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nIn XWiki, by default, you won't receive notifications for actions done by yourself. However, you can change this setting to receive notifications for your own actions. Here's how:\n\n1. Click on the notifications menu (represented by a bell icon) in the top bar.\n2. Click on \"settings\" in the notifications menu.\n3. In the settings, you will see various applications and their notification types.\n4. Look for the \"Own Event Filter\" setting. It might be under the \"Advanced filtering options\" section.\n5. Disable the \"Own Event Filter\" setting.\n\nThis will enable notifications for your own actions in XWiki.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -47,8 +47,8 @@
   ],
   "usage": {
     "prompt_tokens": 3122,
-    "completion_tokens": 145,
-    "total_tokens": 3267
+    "completion_tokens": 153,
+    "total_tokens": 3275
   },
   "average_power_draw": null,
   "energy_consumption": null,

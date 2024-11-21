@@ -1,9 +1,9 @@
 {
-  "score": 0.75,
-  "reason": "The score is 0.75 because the summary includes extra information not present in the original text, such as details about users learning specific tasks on XWiki and a step in a guide. Additionally, there is a question the original text can answer that the summary cannot, indicating some missing information.",
+  "score": 0.5,
+  "reason": "The score is 0.50 because the summary includes extra information not present in the original text, such as unspecified actions requiring login and directing users to create a page, which affects the accuracy and completeness of the summary.",
   "score_breakdown": {
-    "Alignment": 0.75,
-    "Coverage": 0.8
+    "Alignment": 0.5,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

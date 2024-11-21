@@ -2,7 +2,7 @@
   "id": "qa_022",
   "prompt": "Je ne re\u00e7ois pas de notifications.",
   "expected_answer": "Assurez-vous que les notifications sont activ\u00e9es. Vous pouvez les activer en d\u00e9finissant la propri\u00e9t\u00e9 `notifications.enabled` dans `xwiki.properties` sur `true`. De plus, assurez-vous que vous suivez les pages ou les utilisateurs dont vous souhaitez recevoir des notifications. Vous pouvez suivre une page, une page et ses enfants, ou un wiki entier. Pour suivre un emplacement, il vous suffit d'y aller, puis de cliquer sur le menu \"alerte\" (repr\u00e9sent\u00e9 par une cloche) et d'activer les notifications souhait\u00e9es. Pour suivre un utilisateur, si vous allez sur le profil d'un utilisateur, en utilisant l'index utilisateur par exemple, vous pouvez d\u00e9cider de suivre l'utilisateur. Cela signifie que vous recevrez toutes les notifications concernant les \u00e9v\u00e9nements d\u00e9clench\u00e9s par cet utilisateur. Dans votre profil utilisateur, si vous allez dans l'onglet \"r\u00e9seau\", vous pouvez voir la liste des utilisateurs que vous suivez et les \u00e9v\u00e9nements qui ont \u00e9t\u00e9 effectu\u00e9s par eux.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nIl y a plusieurs raisons pour lesquelles vous ne recevez peut-\u00eatre pas de notifications sur votre appareil. Voici quelques \u00e9tapes que vous pouvez suivre pour tenter de r\u00e9soudre le probl\u00e8me :\n\n1. V\u00e9rifiez les param\u00e8tres de notification : Assurez-vous que les notifications sont activ\u00e9es pour l'application en question dans les param\u00e8tres de votre t\u00e9l\u00e9phone. Vous pouvez g\u00e9n\u00e9ralement trouver ces param\u00e8tres dans la section \"Applications\" ou \"Notifications\" de votre menu Param\u00e8tres.\n\n2. V\u00e9rifiez la connexion internet : Assurez-vous que vous \u00eates connect\u00e9 \u00e0 une bonne r\u00e9seau Wi-Fi ou cellulaire. Les notifications ne seront pas envoy\u00e9es si votre connexion est instable ou d\u00e9connect\u00e9e.\n\n3. Red\u00e9marrez l'application : Fermer l'application et la red\u00e9marrer peut parfois r\u00e9soudre les probl\u00e8mes de notification.\n\n4. V\u00e9rifiez les mises \u00e0 jour : Assurez-vous que votre application est \u00e0 jour. Les mises \u00e0 jour peuvent contenir des correctifs de bogues et des am\u00e9liorations des fonctionnalit\u00e9s de notification.\n\n5. Consultez le centre de notifications : Si les notifications ne s'affichent pas dans votre \u00e9cran d'accueil, v\u00e9rifiez votre centre de notifications pour voir si elles y sont.\n\n6. D\u00e9sactivez puis r\u00e9activez les notifications : Dans les param\u00e8tres de l'application, d\u00e9sactivez les notifications, attendez quelques secondes et activez-les \u00e0 nouveau.\n\n7. R\u00e9initialisez votre t\u00e9l\u00e9phone : Si toutes les \u00e9tapes pr\u00e9c\u00e9dentes ont \u00e9chou\u00e9, essayez de red\u00e9marrer votre t\u00e9l\u00e9phone.\n\nSi le probl\u00e8me persiste apr\u00e8s avoir essay\u00e9 ces \u00e9tapes, vous pouvez contacter le d\u00e9veloppeur de l'application ou consulter son support technique pour obtenir de l'aide suppl\u00e9mentaire. Il est possible qu'il y ait un bug sp\u00e9cifique \u00e0 votre appareil ou \u00e0 votre configuration que vous ne pouvez r\u00e9soudre par vous-m\u00eame.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nLes param\u00e8tres par d\u00e9faut sont peut-\u00eatre la cause de cela. Les utilisateurs re\u00e7oivent normalement des notifications uniquement lorsqu'ils sont mentionn\u00e9s ou lorsqu'une action est effectu\u00e9e sur les pages qu'ils ont cr\u00e9\u00e9es ou modifi\u00e9es. Pour recevoir d'autres types de notifications, vous devez s\u00e9lectionner les \u00abtypes\u00bb de notifications que vous souhaitez recevoir. \n\nV\u00e9rifiez vos param\u00e8tres en acc\u00e9dant \u00e0 la section \u00ab\u00a0param\u00e8tres des notifications\u00a0\u00bb dans le menu des notifications. Vous pouvez activer ou d\u00e9sactiver tous les types de notifications qui rel\u00e8vent d\u2019une application particuli\u00e8re en cliquant sur les cloches associ\u00e9es \u00e0 cette application.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -38,13 +38,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 14,
-    "completion_tokens": 401,
-    "total_tokens": 415
+    "prompt_tokens": 2283,
+    "completion_tokens": 134,
+    "total_tokens": 2417
   },
-  "average_power_draw": 77.64557366617719,
-  "energy_consumption": 4127.70131084068,
-  "energy_per_input_token": 4.060699764722755,
-  "energy_per_output_token": 10.151749411806886,
-  "energy_per_total_token": 9.946268218893204
+  "average_power_draw": 59.9559287694605,
+  "energy_consumption": 3627.6543471843443,
+  "energy_per_input_token": 1.3856586505669763,
+  "energy_per_output_token": 3.464146626417441,
+  "energy_per_total_token": 1.500891331065099
 }

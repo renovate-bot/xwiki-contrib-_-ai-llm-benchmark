@@ -2,7 +2,7 @@
   "id": "qa_003",
   "prompt": "In the context of XWiki I am not receiving notifications about my own activity. How can I enable notifications for my own actions?",
   "expected_answer": "By default, one don't receive notification about one's own activity (unless the event that triggered the notification targets explicitly that user). You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings in your user profile.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/RSS \n\n\nIn XWiki, by default, users do not receive notifications about their own activity. However, you can enable notifications for your own actions by following these steps:\n\n1. **Access Your Notification Settings**: Go to your user profile and navigate to the notifications settings.\n\n2. **Find the \"Own Event Filter\"**: Look for the option related to filtering your own events. This is often found in the \"Advanced filtering options\" section.\n\n3. **Disable the Own Event Filter**: Switch off the \"Own Event Filter\" to start receiving notifications for your own activities.\n\nBy doing this, you will begin receiving notifications about actions you perform, such as creating or editing pages.\n\nIf you need further assistance, feel free to ask!",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/RSS \n\n\nIn XWiki, by default, users do not receive notifications for actions they perform themselves. However, you can enable notifications for your own actions by disabling the \"Own event filter.\" Here\u2019s how you can do it:\n\n1. **Go to your notification settings**: Access the notification settings through the notifications menu.\n2. **Find the 'Advanced filtering options' section**: Look for the section where you can manage your notification filters.\n3. **Disable the Own Event Filter**: There should be an option to switch off the filter that prevents you from receiving notifications about your own activities.\n\nOnce you disable this filter, you will start receiving notifications for your own actions.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -71,8 +71,8 @@
   ],
   "usage": {
     "prompt_tokens": 3772,
-    "completion_tokens": 148,
-    "total_tokens": 3920
+    "completion_tokens": 135,
+    "total_tokens": 3907
   },
   "average_power_draw": null,
   "energy_consumption": null,

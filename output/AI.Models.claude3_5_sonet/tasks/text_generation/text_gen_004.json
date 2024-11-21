@@ -2,12 +2,12 @@
   "id": "text_gen_004",
   "prompt": "Generate a short product description based on the following information:\n\nProduct: Wireless Bluetooth Headphones\nFeatures: Noise-cancelling, 20-hour battery life, comfortable fit\nTarget audience: Tech-savvy professionals",
   "expected_answer": "Introducing our cutting-edge wireless Bluetooth headphones, designed for tech-savvy professionals who demand the best. With advanced noise-cancelling technology, you can immerse yourself in your music or focus on your work without any distractions. Enjoy an impressive 20-hour battery life, ensuring your headphones keep up with your busy lifestyle. The comfortable, ergonomic fit allows you to wear them all day long without any discomfort. Upgrade your audio experience with our premium wireless headphones.",
-  "ai_answer": "Experience uninterrupted focus with our premium wireless Bluetooth headphones, designed for busy professionals who demand excellence. Featuring advanced noise-cancelling technology, these sleek headphones eliminate distracting ambient sounds, allowing you to immerse yourself in your work or music. With an impressive 20-hour battery life, they'll keep pace with your longest workdays, while the ergonomic design ensures lasting comfort during extended wear. Perfect for both office use and commuting, these headphones seamlessly blend performance with professional style.",
+  "ai_answer": "Experience uninterrupted focus with our premium wireless Bluetooth headphones, designed for busy professionals who demand excellence. Featuring state-of-the-art noise-cancelling technology, these headphones create your own peaceful workspace wherever you go. With an impressive 20-hour battery life, they'll keep pace with your longest workdays, while the ergonomic design ensures lasting comfort during extended wear. Perfect for virtual meetings, commuting, or finding your flow in a busy office environment.",
   "sources": null,
   "usage": {
     "prompt_tokens": 55,
-    "completion_tokens": 113,
-    "total_tokens": 168
+    "completion_tokens": 105,
+    "total_tokens": 160
   },
   "average_power_draw": null,
   "energy_consumption": null,

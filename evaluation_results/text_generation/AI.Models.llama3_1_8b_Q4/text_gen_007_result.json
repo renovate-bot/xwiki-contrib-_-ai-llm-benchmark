@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output directly addresses the Input by presenting a news article on a recent scientific discovery. It maintains logical flow and consistency, detailing the discovery of an ancient tree species, which aligns with the Expected Output's requirement for a summary of a groundbreaking finding. The article is fluent, grammatically correct, and smoothly written, matching the Expected Output's style.",
+  "reason": "The Actual Output directly addresses the topic of a recent scientific discovery, aligning with the Input request. It matches the Expected Output by providing an informative summary of a groundbreaking finding in quantum physics. The article is coherent, with a logical flow of ideas, and is grammatically correct and readable.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

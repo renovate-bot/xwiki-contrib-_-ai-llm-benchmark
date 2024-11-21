@@ -2,7 +2,7 @@
   "id": "qa_023",
   "prompt": "Je ne re\u00e7ois pas de notifications concernant ma propre activit\u00e9. Comment puis-je activer les notifications pour mes propres actions?",
   "expected_answer": "Par d\u00e9faut, vous ne recevez pas de notifications concernant votre propre activit\u00e9 (sauf si l'\u00e9v\u00e9nement qui a d\u00e9clench\u00e9 la notification cible explicitement cet utilisateur). Vous avez la possibilit\u00e9 de d\u00e9sactiver ce filtre dans la section \"Options de filtrage avanc\u00e9es\" des param\u00e8tres de notification de votre profil utilisateur.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nJe suis d\u00e9sol\u00e9 que vous n'ayez pas re\u00e7u de notifications concernant votre propre activit\u00e9. Pour activer les notifications pour vos propres actions, vous pouvez suivre ces \u00e9tapes :\n\n1. Ouvrez l'application ou le site web sur lequel vous souhaitez recevoir des notifications.\n2. Recherchez les param\u00e8tres de notification dans l'application ou le site web. Les param\u00e8tres de notification sont g\u00e9n\u00e9ralement situ\u00e9s dans les param\u00e8tres g\u00e9n\u00e9raux de l'application ou du site web.\n3. Une fois que vous avez trouv\u00e9 les param\u00e8tres de notification, recherchez une option pour recevoir des notifications pour vos propres actions. Cette option peut \u00eatre appel\u00e9e \"Notifications personnelles\" ou quelque chose de similaire.\n4. Assurez-vous que l'option pour recevoir des notifications pour vos propres actions est activ\u00e9e. Si elle est d\u00e9sactiv\u00e9e, activez-la en appuyant sur le bouton appropri\u00e9.\n5. Si vous ne voyez pas d'option pour recevoir des notifications pour vos propres actions, essayez de rechercher une option pour recevoir des notifications pour toutes les activit\u00e9s ou pour toutes les activit\u00e9s li\u00e9es \u00e0 votre compte.\n6. Une fois que vous avez activ\u00e9 les notifications pour vos propres actions, vous devriez commencer \u00e0 recevoir des notifications chaque fois que vous effectuez une action sur l'application ou le site web.\n\nSi vous rencontrez toujours des difficult\u00e9s pour activer les notifications pour vos propres actions, je vous recommande de contacter le support technique de l'application ou du site web pour obtenir de l'aide suppl\u00e9mentaire.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nAccording to the provided documentation, by default, you won't receive notifications for actions done by yourself. However, you can change this setting by switching off the \"Own event filter\". Here's how:\n\n1. Go to your notification settings (you should see a link in your notification tray or at the bottom of the notifications macro).\n2. Look for the \"Own event filter\" option.\n3. Switch it off to start receiving notifications for your own actions.\n\nHere's a screenshot from the documentation that illustrates this: ![notif4.png](https://extensions.xwiki.org/xwiki/bin/download/Extension/Notifications%20Application/WebHome/notif4.png?rev=1.8)",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 27,
-    "completion_tokens": 302,
-    "total_tokens": 329
+    "prompt_tokens": 2438,
+    "completion_tokens": 141,
+    "total_tokens": 2579
   },
-  "average_power_draw": 186.85186111111116,
-  "energy_consumption": 830.1596235230501,
-  "energy_per_input_token": 1.0615851963210359,
-  "energy_per_output_token": 2.6539629908025897,
-  "energy_per_total_token": 2.523281530465198
+  "average_power_draw": 195.7890421455939,
+  "energy_consumption": 619.2717987079548,
+  "energy_per_input_token": 0.2219214473062013,
+  "energy_per_output_token": 0.5548036182655034,
+  "energy_per_total_token": 0.24012089907249118
 }

@@ -1,9 +1,9 @@
 {
-  "score": 0,
-  "reason": "The score is 0.00 because the summary fails to answer several questions that the original text can answer, indicating it lacks essential information and context.",
+  "score": 0.375,
+  "reason": "The score is 0.38 because the summary contains several inaccuracies and contradictions with the original text, such as incorrect placement of title and author information, misrepresentation of panel placement, and misunderstanding of what constitutes a wiki. Additionally, the summary includes extra information not present in the original text, such as adjusting column sizes and selecting specific panels. Furthermore, the summary fails to address questions that the original text can answer, such as the use of panels for lateral menus in XWiki.",
   "score_breakdown": {
-    "Alignment": 0,
-    "Coverage": 0.0
+    "Alignment": 0.375,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

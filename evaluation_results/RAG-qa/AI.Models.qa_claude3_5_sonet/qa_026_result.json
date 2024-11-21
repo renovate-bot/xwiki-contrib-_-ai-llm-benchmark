@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.38095238095238093,
+  "overall_score": 0.44490976106513275,
   "individual_scores": {
-    "AnswerRelevancy": 0.9047619047619048,
+    "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "ContextualRecall": 0.4,
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.26945856639079657
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.90 because the response is mostly relevant and addresses the question about customizing user profile fields mapping in XWiki. However, it includes a source link that does not directly contribute to the solution, slightly affecting its relevance.",
+    "AnswerRelevancy": "The score is 1.00 because the output is perfectly relevant and directly addresses the question about customizing user profile fields from an OpenID Connect provider in XWiki. Great job!",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'authentication management and OpenID Connect provider endpoints,' but does not mention mapping user profile fields. The second node provides information about 'container authentication and other authentication methods,' which does not address mapping user profile fields. The third node describes 'the OpenID Connect Authenticator extension, its developer, and installation details,' but lacks information on mapping user profile fields. The fourth node lists 'dependencies for the OpenID Connect Authenticator extension,' which is unrelated to mapping user profile fields. The fifth node provides 'configuration guides for specific systems and mentions configuration files,' but does not detail how to map user profile fields.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context lacks information about customizing user profile fields using `oidc.user.mapping` in `xwiki.properties`, which is crucial in the expected output."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'authentication management and OpenID Connect provider configuration', but it does not mention 'user profile field mapping or customization'. The second node is about 'container authentication and LDAP', which also lacks information on 'customizing user profile fields or mapping'. The third node provides 'general information about the OpenID Connect Authenticator extension', but does not address 'user profile field mapping or customization'. The fourth node lists 'dependencies for the OpenID Connect Authenticator extension', which is unrelated to 'user profile field customization or mapping'. Finally, the fifth node describes 'configuration guides for various systems', but does not include information on 'mapping or customizing user profile fields in XWiki'.",
+    "ContextualRecall": "The score is 0.40 because while the 1st node in the retrieval context supports the general concept of customizing user profile fields using 'xwiki.properties' and 'oidc.user.mapping', it lacks specific examples, instructions on replacing property names, and details about saving the file and restarting XWiki as mentioned in the expected output.",
+    "CustomContextualRelevancy": "The retrieval context does not contain information about customizing user profile fields using `oidc.user.mapping` in `xwiki.properties` or the process of saving and restarting XWiki.",
+    "Correctness": "The actual output suggests using `xwiki.properties` for mapping but lacks specific details like `myxproperty1=${oidc.user.subject}` and the need to restart XWiki. It introduces extra steps like checking logs and contacting the community."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

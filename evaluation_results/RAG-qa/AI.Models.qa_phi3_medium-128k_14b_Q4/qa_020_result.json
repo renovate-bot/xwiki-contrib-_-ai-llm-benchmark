@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.3544117647058823,
+  "overall_score": 0.326883240494203,
   "individual_scores": {
-    "AnswerRelevancy": 0.6470588235294118,
+    "AnswerRelevancy": 0.6875,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.125,
-    "CustomContextualRelevancy": 0.0
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.27379944296521763
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.65 because the output contains multiple irrelevant source links and a misleading claim about access control in XWiki, which detracts from fully addressing the input question. However, it still provides some relevant information about configuring access in XWiki, which is why it is not lower.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input query. The first node discusses 'XWiki's database efficiency and programming features', which do not pertain to configuring access controls for team areas. The second node is about 'notifications and application details', unrelated to access permissions. The third node explains 'nested pages and subwikis', not directly related to team-specific access rights. The fourth node provides information on 'managing users and groups' but does not specifically address setting access rights for team areas. Lastly, the fifth node is about 'group synchronization and customization', which does not directly relate to configuring access rights for team areas in XWiki.",
-    "ContextualRecall": "The score is 0.12 because only one supportive reason was identified, linking sentence 1 to node 4 in the retrieval context, while the rest of the expected output lacks corresponding nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about access control steps or rights management mentioned in the expected output."
+    "AnswerRelevancy": "The score is 0.69 because the response partially addresses the question about configuring team access in XWiki, but it includes multiple irrelevant source links that do not directly relate to the task, which lowers the relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to configuring access control for teams in XWiki. The first node discusses 'XWiki's database support and programming features', which are unrelated to the input query. The second node focuses on 'notifications and the XWiki Development Team', which does not pertain to the task at hand. The third node covers 'using nested pages and subwikis', failing to address the specific need for configuring access rights for teams. The fourth node mentions 'managing users and groups' but lacks specific information on team access configuration. Lastly, the fifth node discusses 'group synchronization and customization', which is not directly related to the input query.",
+    "ContextualRecall": "The score is 0.00 because none of the expected output sentences can be linked to any nodes in the retrieval context, indicating a complete lack of relevant information.",
+    "CustomContextualRelevancy": "The retrieval context lacks any information related to setting access controls, creating groups, or managing rights in XWiki as described in the expected output.",
+    "Correctness": "The actual output suggests creating separate (Sub)-Wikis instead of groups, and using ACLs and 'IstAdmin' group, which deviates significantly from the expected output's steps like setting wiki-wide and area-level rights. Concepts like 'Sider' and 'Category' do not align with the expected approach. Key discrepancies in approach and terminology exist."
   },
   "question_language": "de",
   "expected_answer_language": "de",

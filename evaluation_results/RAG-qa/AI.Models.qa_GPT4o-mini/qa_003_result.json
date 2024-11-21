@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.9846153846153847,
+  "overall_score": 0.9496539698274892,
   "individual_scores": {
-    "AnswerRelevancy": 0.9230769230769231,
+    "AnswerRelevancy": 0.7692307692307693,
     "Faithfulness": 1.0,
     "ContextualPrecision": 1.0,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 1.0
+    "CustomContextualRelevancy": 1.0,
+    "Correctness": 0.9286930497341664
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.92 because the response is highly relevant and provides useful information on enabling notifications for one's own actions in XWiki. However, it includes an unrelated statement about RSS features, which slightly detracts from the overall relevance.",
+    "AnswerRelevancy": "The score is 0.77 because the response mostly addresses the question about enabling notifications for one's own actions in XWiki. However, the inclusion of source links that do not directly answer the question slightly detracts from the overall relevancy.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than the irrelevant nodes. Great job on maintaining perfect precision!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than the irrelevant ones. The first two nodes directly address the input by explaining how to enable notifications for one's own actions, while the irrelevant nodes discuss unrelated topics such as following a user, administrator settings, RSS feeds, and notification methods, which are not pertinent to the input question. Great job on the perfect ranking!",
     "ContextualRecall": "The score is 1.00 because every sentence in the expected output is perfectly supported by the nodes in the retrieval context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context contains all the information from the expected output, including the default behavior of not receiving notifications about one's own activity unless explicitly targeted, and the ability to change this setting in the 'Advanced filtering options' of the user profile."
+    "CustomContextualRelevancy": "The retrieval context fully contains the expected answer, including the default behavior of not receiving notifications about one's own activity unless explicitly targeted, and the ability to disable this filter in the 'Advanced filtering options' section of the user profile.",
+    "Correctness": "The actual output accurately reflects the expected output by explaining that users do not receive notifications for their own actions by default and provides instructions on how to disable the filter in the 'Advanced filtering options' of notification settings, matching the expected output details."
   },
   "question_language": "en",
   "expected_answer_language": "en",

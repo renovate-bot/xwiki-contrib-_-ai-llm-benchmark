@@ -2,7 +2,7 @@
   "id": "qa_019",
   "prompt": "Wie kann ich einem Bereichsadministrator das Skriptrecht verweigern?",
   "expected_answer": "Leider wird dies in XWiki nicht unterst\u00fctzt, Rechte, die durch das Admin-Recht impliziert sind, k\u00f6nnen nicht verweigert werden.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Index%20for%20the%20LLM%20Application/ \n\n\nUm einem Bereichsadministrator das Skriptrecht zu verweigern, kannst du die \"programmaticValidation\" Funktion im Administration Application verwenden.\n\nHier sind die Schritte:\n\n1. \u00d6ffne das Administration Application und navigiere zum Bereich, f\u00fcr den du das Skriptrecht verweigern m\u00f6chtest.\n2. Klicke auf die Option \"Skriptrecht\" und w\u00e4hle \"Programmatische Validierung\" aus.\n3. Gib im Feld \"Code\" eine Velocity-Code-Zeichenkette ein, die pr\u00fcft, ob der Bereichsadministrator das Skriptrecht haben soll oder nicht. Zum Beispiel:\n```velocity\n#if ($context.user.id == 123)\n    return \"failed\"\n#end\n```\nDieser Code pr\u00fcft, ob der Benutzer mit der ID 123 ist. Wenn es stimmt, wird die Validierung als fehlgeschlagen erkannt.\n4. Gib im Feld \"failureMessage\" eine Nachricht ein, die angezeigt werden soll, wenn die Validierung fehlschl\u00e4gt. Zum Beispiel:\n```\nDer Bereichsadministrator hat das Skriptrecht nicht.\n```\n5. Klicke auf \"Speichern\", um die \u00c4nderungen zu speichern.\n\nJetzt sollte der Bereichsadministrator das Skriptrecht nicht haben, wenn er den Code ausf\u00fchrt.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Index%20for%20the%20LLM%20Application/ \n\n\nEs tut mir leid, aber ich kann Ihnen nicht dabei helfen, die Rechte eines Benutzers zu manipulieren.\n\nWenn Sie jedoch eine L\u00f6sung f\u00fcr ein bestimmtes Problem suchen oder eine spezifische Anforderung haben, stehe ich Ihnen gerne zur Verf\u00fcgung. \n\nUm einem Bereichsadministrator das Skriptrecht zu verweigern, k\u00f6nnten Sie die folgenden Schritte unternehmen:\n\n1. **\u00dcberpr\u00fcfen Sie die Benutzerrechte**: Stellen Sie sicher, dass der Bereichsadministrator nicht bereits \u00fcber die notwendigen Rechte verf\u00fcgt.\n2. **Definieren Sie eine Rolle**: Erstellen Sie eine neue Rolle, die den Bereichsadministratoren das Skriptrecht entzieht.\n3. **Verwenden Sie die \"mustMatch\"-Funktion**: In der Administrationsoberfl\u00e4che k\u00f6nnen Sie die `mustMatch`-Funktion verwenden, um sicherzustellen, dass der Bereichsadministrator nicht \u00fcber die notwendigen Rechte verf\u00fcgt.\n\nUm dies zu erreichen, m\u00fcssen Sie jedoch spezifische Konfigurationen vornehmen, wie im bereitgestellten Dokument beschrieben. \n\nWenn Sie weitere Informationen ben\u00f6tigen oder Hilfe bei der Umsetzung dieser Schritte ben\u00f6tigen, stehe ich Ihnen gerne zur Verf\u00fcgung.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,12 +31,12 @@
   ],
   "usage": {
     "prompt_tokens": 1376,
-    "completion_tokens": 283,
-    "total_tokens": 1659
+    "completion_tokens": 277,
+    "total_tokens": 1653
   },
-  "average_power_draw": 182.7172323232323,
-  "energy_consumption": 664.5420665356414,
-  "energy_per_input_token": 0.31895467556306284,
-  "energy_per_output_token": 0.7973866889076571,
-  "energy_per_total_token": 0.4005678520407724
+  "average_power_draw": 181.62141414141416,
+  "energy_consumption": 654.489373703581,
+  "energy_per_input_token": 0.3164077223609287,
+  "energy_per_output_token": 0.7910193059023217,
+  "energy_per_total_token": 0.3959403349688935
 }

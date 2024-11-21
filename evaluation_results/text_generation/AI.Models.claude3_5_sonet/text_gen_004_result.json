@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output is highly relevant to the Input, addressing all key features and the target audience. It maintains coherence with a logical flow and aligns closely with the Expected Output structure. The language is fluent and grammatically correct, matching the quality of the Expected Output.",
+  "reason": "The Actual Output is highly relevant to the Input, addressing key themes like noise-cancelling, battery life, and comfort for tech-savvy professionals. It is coherent and fluent, with a logical flow and good grammar. While it slightly differs in wording from the Expected Output, it meets the key elements and quality criteria effectively.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

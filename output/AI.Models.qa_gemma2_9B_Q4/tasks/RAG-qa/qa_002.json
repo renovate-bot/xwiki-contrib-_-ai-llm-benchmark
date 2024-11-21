@@ -2,7 +2,7 @@
   "id": "qa_002",
   "prompt": "Why am I not receiving any notifications in XWiki.",
   "expected_answer": "Make sure that notifications are enabled. You can enable them by setting the `notifications.enabled` setting in `xwiki.properties` to `true`. Further, ensure that you're subscribed to the pages or users you want to receive notifications for. You can watch a page, a page and its children, or an entire wiki. To watch a location, all you need is to go to that place, and then click on the \"alert\" menu (represented by a bell) and enable the desired notifications. To follow a user, if you go to the profile of an user, using the User Index for example, you can see decide to watching a user. It means you will receive all notifications about events triggered by this user. In your user profile, if you go to the \"network\" tab, you can see the list of users you are watching and the events that have been performed by them.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nThere are a few reasons why you might not be receiving notifications in XWiki:\n\n* **You haven't enabled any notification types:** By default, users only get notifications for mentions and actions on their own pages. You need to go to your notification settings and enable the types of notifications you want to receive.\n* **You're watching nothing:** To receive notifications about a user or event, you need to \"watch\" them. This can be done from a user's profile page.\n* **You've marked notifications as read:** If you've marked all your notifications as read, you won't see them anymore.\n* **You're using an older version of XWiki:**  Some notification features were introduced in later versions of XWiki.\n\n\nYou can check your notification settings and make sure you've enabled the desired notification types. You can also make sure you're watching the users and events you want to be notified about. \n",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nThere are a few reasons why you might not be receiving notifications in XWiki:\n\n* **You haven't enabled any notification types:** By default, new users in XWiki 15.5+ don't have anything watched. You need to go to your notification settings and enable the types of notifications you want to receive (e.g., new page creations, blog posts, mentions).\n* **You're filtering out notifications:** Check your notification settings to see if you have any filters enabled that might be preventing you from seeing notifications. For example, you might have a filter that hides notifications about your own activity.\n* **The notification type you're looking for is disabled:** Some notification types might be disabled by default or by your wiki administrator. \n\n\nTo troubleshoot this, go to your notification settings and review the enabled notification types and filters. \n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -47,12 +47,12 @@
   ],
   "usage": {
     "prompt_tokens": 2497,
-    "completion_tokens": 200,
-    "total_tokens": 2697
+    "completion_tokens": 179,
+    "total_tokens": 2676
   },
-  "average_power_draw": 190.31011111111107,
-  "energy_consumption": 758.8351516234873,
-  "energy_per_input_token": 0.25319824878995234,
-  "energy_per_output_token": 0.6329956219748809,
-  "energy_per_total_token": 0.2813626813583564
+  "average_power_draw": 157.70702020202015,
+  "energy_consumption": 780.9484917738218,
+  "energy_per_input_token": 0.2652227854555347,
+  "energy_per_output_token": 0.6630569636388367,
+  "energy_per_total_token": 0.29183426448947003
 }

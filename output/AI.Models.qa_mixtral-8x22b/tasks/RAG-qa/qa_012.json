@@ -2,7 +2,7 @@
   "id": "qa_012",
   "prompt": "Ich erhalte keine Benachrichtigungen.",
   "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen. Stellen Sie au\u00dferdem sicher, dass Sie den Seiten oder Benutzern, f\u00fcr die Sie Benachrichtigungen erhalten m\u00f6chten, folgen. Sie k\u00f6nnen einer Seite, einer Seite und ihren Unterseiten oder einem gesamten Wiki folgen. Um einem Ort zu folgen, m\u00fcssen Sie nur dorthin gehen und dann auf das Men\u00fc \"Benachrichtigung\" (dargestellt durch eine Glocke) klicken und die gew\u00fcnschten Benachrichtigungen aktivieren. Um einem Benutzer zu folgen, k\u00f6nnen Sie, wenn Sie auf das Profil eines Benutzers gehen, beispielsweise \u00fcber das Benutzerindex, entscheiden, dem Benutzer zu folgen. Das bedeutet, dass Sie alle Benachrichtigungen \u00fcber Ereignisse erhalten, die von diesem Benutzer ausgel\u00f6st wurden. In Ihrem Benutzerprofil k\u00f6nnen Sie in der Registerkarte \"Netzwerk\" die Liste der Benutzer anzeigen, denen Sie folgen, und die von ihnen durchgef\u00fchrten Ereignisse.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \n\n\nEs scheint, dass die bereitgestellten Informationen nicht relevant f\u00fcr das Problem mit den Benachrichtigungen sind.\n\nUm das Problem zu l\u00f6sen, kannst du Folgendes versuchen:\n\n1. \u00dcberpr\u00fcfe deine Benachrichtigungseinstellungen:\n\n* Gehe zu deinem Profileinstellungen\n* W\u00e4hle Benachrichtigungen\n* Vergewissere dich, dass die Benachrichtigungseinstellungen korrekt eingestellt sind und Benachrichtigungen zulassen\n\n2. \u00dcberpr\u00fcfe deine E-Mail-Einstellungen:\n\n* Gehe zu deinem Profil\n* W\u00e4hle E-Mail-Einstellungen\n* Vergewissere dich, dass die richtige E-Mail-Adresse eingerichtet ist, um Benachrichtigungen zu erhalten\n\n3. Wenn du immer noch keine Benachrichtigungen erh\u00e4ltst, kannst du versuchen, deine Browser-Cache zu l\u00f6schen oder dich auf einem anderen Ger\u00e4t anzumelden.\n\n4. Falls weiterhin Probleme bestehen, wende dich am besten an den Support des Dienstes.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \n\n\nEs tut mir leid, dass Sie keine Benachrichtigungen erhalten. Es scheint jedoch, dass die von Ihnen bereitgestellten Informationen keine spezifischen Daten zu Benachrichtigungen oder Einstellungen in XWiki enthalten.\n\nUm Benachrichtigungen in XWiki zu erhalten, stellen Sie bitte sicher, dass Ihre Benachrichtigungseinstellungen korrekt konfiguriert sind:\n\n1. Melden Sie sich bei Ihrem XWiki-Konto an.\n2. Klicken Sie auf Ihr Profilbild oder Ihren Benutzernamen in der oberen rechten Ecke der Seite.\n3. W\u00e4hlen Sie \"Benachrichtigungen\" aus dem Dropdown-Men\u00fc.\n4. Stellen Sie sicher, dass die Option \"Benachrichtigungen erhalten\" aktiviert ist.\n5. Konfigurieren Sie Ihre Benachrichtigungseinstellungen, indem Sie ausw\u00e4hlen, welche Arten von Benachrichtigungen Sie erhalten m\u00f6chten und wie Sie benachrichtigt werden m\u00f6chten (z. B. per E-Mail oder Benachrichtigung auf der Website).\n\nWenn Sie immer noch keine Benachrichtigungen erhalten, \u00fcberpr\u00fcfen Sie bitte Ihren Spam- oder Junk-E-Mail-Ordner, um sicherzustellen, dass E-Mail-Benachrichtigungen nicht dorthin gelangen. Wenn das Problem weiterhin besteht, wenden Sie sich bitte an den XWiki-Support oder an Ihren lokalen Administrator, um weitere Unterst\u00fctzung zu erhalten.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,8 +31,8 @@
   ],
   "usage": {
     "prompt_tokens": 2815,
-    "completion_tokens": 277,
-    "total_tokens": 3092
+    "completion_tokens": 381,
+    "total_tokens": 3196
   },
   "average_power_draw": null,
   "energy_consumption": null,

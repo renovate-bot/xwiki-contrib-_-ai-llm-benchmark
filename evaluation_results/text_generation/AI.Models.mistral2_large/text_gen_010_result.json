@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output is highly relevant to the Input and Expected Output, addressing the complexity and functions of the brain. It is coherent, with a logical flow and detailed explanation of brain functions, similar to the Expected Output. The language is fluent and technical, suitable for the intended audience, though slightly more detailed than necessary.",
+  "reason": "The Actual Output closely follows the structure and content of the Expected Output, using technical language suitable for the audience. It maintains coherence and fluency, with only slight variations in phrasing such as 'manifestation of cognitive faculties' instead of 'serving as the biological substrate for cognitive functions.'",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

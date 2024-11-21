@@ -1,9 +1,9 @@
 {
-  "score": 0.75,
-  "reason": "The score is 0.75 because the summary includes extra information not present in the original text, such as a 'Version Control page on XWiki.org' and learning to change the logo and panels. Additionally, the summary fails to answer a question that the original text can, specifically whether all content added to the wiki is saved over time.",
+  "score": 0.6666666666666666,
+  "reason": "The score is 0.67 because the summary includes extra information not present in the original text, such as using the browser's back button, a 'Version Control page on XWiki.org', and a step about changing the logo and panels. Additionally, there is a minor contradiction regarding the location of the 'Compare selected versions' button.",
   "score_breakdown": {
-    "Alignment": 0.75,
-    "Coverage": 0.8
+    "Alignment": 0.6666666666666666,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

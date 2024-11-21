@@ -2,7 +2,7 @@
   "id": "qa_010",
   "prompt": "We have one space per team. I want all teams to be able to view all spaces but each team should only be able to edit their own space. How can I configure this in XWiki?",
   "expected_answer": "To achieve the desired access control, you can follow these steps:\n\n1. **Create groups for each team**: Create a separate group for each team in your XWiki instance. This will allow you to manage access rights for each team individually.\n2. **Set wiki-wide rights**: Go to the wiki administration page and set the rights for the entire wiki. Specifically, set the \"View\" right to \"Allow\" for \"XWikiAllGroup\" to allow everyone to view all spaces.\n3. **Set space-level rights**: For each team's space, go to the space administration page and set the rights for that space. Specifically, set the \"Edit\" right to \"Allow\" only for the corresponding team's group. This will allow only the members of that team to edit their own space.\n4. **Inherit rights for child pages**: When setting rights for a space, make sure to select the \"Rights: Page & Children\" option to inherit the rights for all child pages within that space.\n\nBy following these steps, you'll ensure that:\n\n* All teams can view all spaces.\n* Each team can only edit their own space.\n\nRemember to adjust the rights accordingly for any additional teams or spaces you may have in your XWiki instance.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ContentOrganization/NestedPagesMigration/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/RightsManagement \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/ \n\n\nHere's how you can configure XWiki to allow all teams to view all spaces but only edit their own:\n\n1. **Create Spaces:**  Make a space for each team.\n\n2. **Define User Groups:** Create user groups corresponding to each team.\n\n3. **Assign Users to Groups:** Add the appropriate users to their respective team groups.\n\n4. **Set Permissions:**\n\n   * **View All Spaces:** Grant the \"View\" right to all user groups at the wiki level. This ensures everyone can see all spaces.\n   * **Edit Own Space:**  \n      * For each team's space, grant the \"Edit\" right to their corresponding user group.\n      *  Set the \"Edit\" right for the parent wiki level to \"Deny\" for all groups except the admin group. This prevents accidental edits to the wiki structure.\n\n5. **Review and Test:** Double-check the permissions for each space and group to ensure they align with your requirements. Test by having team members try to view and edit different spaces.\n\n\n\nLet me know if you have any other questions about setting up permissions in XWiki!",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ContentOrganization/NestedPagesMigration/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/RightsManagement \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/ \n\n\nYou can achieve this by using XWiki's powerful permission system. Here's a breakdown of how to configure it:\n\n1. **Create Groups:**\n   - Create a group for each team in XWiki.\n\n2. **Space-Level Permissions:**\n   - For each team's space:\n     - Grant the \"View\" right to all teams. This ensures everyone can see all spaces.\n     - Grant the \"Edit\" right to only the team that owns that specific space.\n\n3. **Wiki-Level Permissions (Optional):**\n   - If you want to control access to the entire wiki beyond individual spaces, you can set permissions at the wiki level. For example, you could grant \"View\" rights to all teams at the wiki level.\n\n**Important Notes:**\n\n- **Inheritance:** XWiki uses a hierarchical permission system. Permissions set at a higher level (like the wiki) are inherited by lower levels (like spaces).  Be mindful of this when setting permissions.\n- **Explicit Denials:** It's generally recommended to use explicit permissions (granting rights) rather than relying on implicit denials (denying rights). This makes your permission structure clearer.\n- **Admin Guide:** For detailed instructions and examples, refer to the XWiki Admin Guide on Access Rights: [https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/](https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/)\n\n\n\n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -55,12 +55,12 @@
   ],
   "usage": {
     "prompt_tokens": 3029,
-    "completion_tokens": 236,
-    "total_tokens": 3265
+    "completion_tokens": 328,
+    "total_tokens": 3357
   },
-  "average_power_draw": 188.75371576227388,
-  "energy_consumption": 893.5423983579433,
-  "energy_per_input_token": 0.2469031219557732,
-  "energy_per_output_token": 0.6172578048894332,
-  "energy_per_total_token": 0.2736730163424022
+  "average_power_draw": 148.28961111111113,
+  "energy_consumption": 1321.2023594654668,
+  "energy_per_input_token": 0.3432586020954707,
+  "energy_per_output_token": 0.8581465052386767,
+  "energy_per_total_token": 0.39356638649552184
 }

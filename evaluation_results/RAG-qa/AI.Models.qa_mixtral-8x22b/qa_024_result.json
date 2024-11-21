@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.9028571428571428,
+  "overall_score": 0.822027349428013,
   "individual_scores": {
-    "AnswerRelevancy": 0.7142857142857143,
+    "AnswerRelevancy": 0.6923076923076923,
     "Faithfulness": 1.0,
     "ContextualPrecision": 1.0,
-    "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 0.8
+    "ContextualRecall": 0.75,
+    "CustomContextualRelevancy": 0.8,
+    "Correctness": 0.6898564042603862
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.71 because the response partially addresses the question about disabling notifications, but includes irrelevant details such as unrelated source links and discussions about notification timing, which do not directly help in solving the issue.",
+    "AnswerRelevancy": "The score is 0.69 because the answer partially addresses the question about disabling notifications, but it includes multiple irrelevant source links that do not directly contribute to solving the issue.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than the irrelevant node. The irrelevant node, ranked fourth, discusses 'RSS feeds and settings for notification types', which are not directly related to disabling notifications or managing auto-watched pages. Great job on maintaining perfect precision!",
-    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the nodes in the retrieval context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context includes information on auto-watched pages and custom notification filters, aligning with the expected answer, but lacks explicit mention of modifying settings for 'Suivi automatique des pages'."
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than the irrelevant ones. The first three nodes effectively address the input by discussing 'Choosing the default auto-watched mode', 'Notifications Auto Watch Preferences', and 'Auto Watch' and 'Filters', which are all pertinent to managing notification settings. The irrelevant node, which discusses 'RSS feeds and general notification settings', is appropriately ranked last, ensuring a perfect score. Great job!",
+    "ContextualRecall": "The score is 0.75 because while most sentences in the expected output are supported by nodes in the retrieval context, such as node 1 and node 2, the sentence about being notified of changes on your work lacks direct support from the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context includes information about auto-watched pages and custom notification filters, aligning with the expected output. However, it lacks explicit mention of modifying these settings in the user's profile notification settings.",
+    "Correctness": "Both outputs mention 'Auto Watch' and modifying notification settings. The actual output adds steps to disable 'Auto Watch' and provides source links, which are not in the expected output. There's no mention of 'Filtres personnalis\u00e9s' in the actual output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

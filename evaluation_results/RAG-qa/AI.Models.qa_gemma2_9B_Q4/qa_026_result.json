@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.4133333333333333,
+  "overall_score": 0.4300666278454279,
   "individual_scores": {
     "AnswerRelevancy": 0.6666666666666666,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.4,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.5137331004059005
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.67 because the response partially addresses the question about customizing and mapping user profile fields in XWiki, but includes irrelevant information about sources that do not directly relate to the query.",
+    "AnswerRelevancy": "The score is 0.67 because the response partially addresses the input question about customizing user profile fields in XWiki, but includes irrelevant statements that provide sources for further reading and introduce a list without directly answering the question.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'the authentication management class and OpenID Connect provider endpoints', which does not mention user profile field mapping or customization. The second node focuses on 'authentication methods like Container Authentication and Active Directory', without addressing user profile field mapping or customization. The third node provides 'general information about the OpenID Connect Authenticator', but does not mention mapping user profile fields or customizing them. The fourth node lists 'dependencies for the OpenID Connect Authenticator extension', which is unrelated to user profile field mapping or customization. The fifth node describes 'configuration guides and limitations for the OpenID Connect Authenticator', but does not address user profile field mapping or customization.",
-    "ContextualRecall": "The score is 0.40 because while the retrieval context supports the general concept of customizing user profile fields and mapping them using 'oidc.user.mapping' (as seen in the 1st node in retrieval context), it lacks specific examples and details found in sentences 2, 3, and 4 of the expected output, such as the mapping example, replacing property names, and instructions to save and restart XWiki.",
-    "CustomContextualRelevancy": "The retrieval context does not contain information about customizing user profile fields or mapping them in xwiki.properties, which is the main focus of the expected output."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'authentication management and OpenID Connect endpoints' but does not mention 'customizing user profile fields or the `oidc.user.mapping` property.' Similarly, the second node provides 'information on various authentication methods, including OpenID Connect,' but does not address 'customizing user profile fields or mapping properties.' This pattern continues with the third node, which describes 'the OpenID Connect Authenticator extension' without providing details on 'mapping user profile fields or using `oidc.user.mapping`.' The fourth node lists 'dependencies for the OpenID Connect Authenticator extension,' which is unrelated to 'customizing user profile fields or mapping properties.' Lastly, the fifth node offers 'links to configuration guides and examples' but lacks mention of 'mapping user profile fields or the `oidc.user.mapping` property.'",
+    "ContextualRecall": "The score is 0.40 because while the retrieval context nodes mention 'xwiki.properties' and OpenID Connect, they lack specific examples of mapping properties, instructions on replacing property names or variables, and details on saving the file and restarting XWiki, which are crucial for full alignment with the expected output.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about customizing user profile fields or using the `oidc.user.mapping` property in `xwiki.properties` as described in the expected output.",
+    "Correctness": "The actual output covers customization of OpenID Connect fields but lacks specific examples of property mappings and instructions to save and restart XWiki. It introduces correct additional details about default values and the importance of testing."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

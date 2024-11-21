@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output effectively simplifies the concept of photosynthesis for a younger audience by using relatable language and metaphors like 'magic trick' and 'special ingredient,' which aligns well with the Expected Output. It maintains relevance and coherence, though it adds a bit more playful language than the Expected Output.",
+  "reason": "The Actual Output effectively adapts the concept of photosynthesis for a younger audience by using relatable analogies and simple language, aligning well with the Expected Output. It maintains coherence and fluency, though it introduces the idea of 'magic trick' which is not present in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

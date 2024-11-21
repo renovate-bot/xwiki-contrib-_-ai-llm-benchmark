@@ -1,9 +1,9 @@
 {
-  "score": 0.14285714285714285,
-  "reason": "The score is 0.14 because the summary introduces several pieces of extra information not present in the original text, such as details about Main Wiki, Sub-Wiki, and Page levels, user/group definitions, and specific permission-setting processes. Additionally, the summary fails to address questions that the original text can answer, like permission configurations and public/private wiki options in XWiki.",
+  "score": 0.1111111111111111,
+  "reason": "The score is 0.11 because the summary contains significant contradictions and introduces numerous pieces of extra information not present in the original text. Additionally, it fails to answer questions that the original text can address, indicating a poor alignment with the original content.",
   "score_breakdown": {
-    "Alignment": 0.14285714285714285,
-    "Coverage": 0.4
+    "Alignment": 0.1111111111111111,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

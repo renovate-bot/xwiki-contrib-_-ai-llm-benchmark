@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.3375,
+  "overall_score": 0.31327228419792835,
   "individual_scores": {
-    "AnswerRelevancy": 0.6875,
+    "AnswerRelevancy": 0.6666666666666666,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.21296703852090376
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.69 because the output partially addresses the question about disabling notifications, but includes multiple irrelevant links that do not directly help in resolving the issue.",
+    "AnswerRelevancy": "The score is 0.67 because while the output provides some relevant information about disabling notifications, it includes multiple irrelevant links to unrelated XWiki pages, which detracts from its overall relevance.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. For example, the first node discusses 'attaching files and related features', which does not relate to 'managing notification settings'. Similarly, the second node is about 'moving attachments', which is unrelated to 'disabling notifications'. All nodes fail to address the issue of notification settings, leading to a score of 0.00.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'attaching files', which does not relate to 'notification settings'. The second node is about 'moving attachments', unrelated to 'managing or disabling notifications'. The third node lists 'display and content macros', not pertaining to 'notification settings'. The fourth node is about 'administrating wiki features', not relevant to 'notification settings'. The fifth node discusses 'permissions and security modules', unrelated to 'notification settings'. Lastly, the sixth node lists 'extensions like Office Importer and Syntax Highlighting', which do not relate to 'notification settings'.",
     "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context lacks any information about automatic page following, notification settings, or custom filters mentioned in the expected output."
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to automatic page following or notification settings as mentioned in the expected output.",
+    "Correctness": "The actual output does not mention automatic following of pages with significant changes, nor the deletion of filters, which are key facts in the expected output. Instead, it describes general notification settings and steps to deactivate them, which is additional information not aligning with the expected context."
   },
   "question_language": "de",
   "expected_answer_language": "de",

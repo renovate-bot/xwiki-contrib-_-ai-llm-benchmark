@@ -2,7 +2,7 @@
   "id": "qa_029",
   "prompt": "Comment puis-je refuser le droit de script \u00e0 un administrateur d'espace?",
   "expected_answer": "Ceci n'est malheureusement pas pris en charge dans XWiki, les droits qui sont impliqu\u00e9s par le droit d'administrateur ne peuvent pas \u00eatre refus\u00e9s.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \n\n\nPour refuser le droit de script \u00e0 un administrateur d'espace, vous devez r\u00e9voquer le droit \"Script\" pour cet utilisateur ou groupe au niveau de l'espace en question.\n\nVoici les \u00e9tapes \u00e0 suivre :\n\n1. Allez \u00e0 la page des pr\u00e9f\u00e9rences de l'espace (Wiki, Space, Document) o\u00f9 vous souhaitez r\u00e9voquer le droit de script.\n2. Cliquez sur \"Droits d'acc\u00e8s\" (ou \"Access Rights\" en anglais).\n3. S\u00e9lectionnez l'utilisateur ou le groupe pour lequel vous souhaitez r\u00e9voquer le droit de script.\n4. Dans la liste des droits, recherchez le droit \"Script\" (ou \"script\" en anglais).\n5. S\u00e9lectionnez \"Refuser\" (ou \"Deny\" en anglais) pour le droit \"Script\".\n\nEn r\u00e9voquant le droit de script, l'administrateur d'espace ne pourra plus ex\u00e9cuter des scripts dans cet espace.\n\nNotez que les droits d'acc\u00e8s peuvent \u00eatre d\u00e9finis \u00e0 diff\u00e9rents niveaux (Wiki, Space, Document), il est donc important de v\u00e9rifier les droits d'acc\u00e8s au niveau appropri\u00e9 pour refuser le droit de script \u00e0 l'administrateur d'espace.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \n\n\nPour refuser le droit de script \u00e0 un administrateur d'espace, vous devez r\u00e9voquer le droit \"Script\" pour cet utilisateur ou groupe au niveau de l'espace.\n\nVoici les \u00e9tapes \u00e0 suivre :\n\n1.  Acc\u00e9dez \u00e0 la page des droits d'acc\u00e8s de l'espace.\n2.  S\u00e9lectionnez l'utilisateur ou le groupe que vous souhaitez r\u00e9voquer le droit de script.\n3.  R\u00e9voquez le droit \"Script\" pour cet utilisateur ou groupe.\n\nEn r\u00e9voquant le droit \"Script\", l'administrateur d'espace ne pourra plus ex\u00e9cuter des scripts dans l'espace, m\u00eame s'il a des droits d'administration.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -47,8 +47,8 @@
   ],
   "usage": {
     "prompt_tokens": 3147,
-    "completion_tokens": 264,
-    "total_tokens": 3411
+    "completion_tokens": 147,
+    "total_tokens": 3294
   },
   "average_power_draw": null,
   "energy_consumption": null,

@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.64,
+  "overall_score": 0.6470413371578836,
   "individual_scores": {
-    "AnswerRelevancy": 0.875,
+    "AnswerRelevancy": 0.8,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0.325,
-    "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.5
+    "ContextualRecall": 0.7,
+    "CustomContextualRelevancy": 0.5,
+    "Correctness": 0.5572480229473011
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.88 because the output mostly addresses the input query about configuring file upload restrictions, but it includes irrelevant links to pages about exporting features, XWiki syntax, and document lifecycle, which do not directly relate to the task of setting upload limits for images or PDFs.",
+    "AnswerRelevancy": "The score is 0.80 because the response mostly addresses the input question about upload restrictions, but it includes irrelevant source links that do not directly relate to the question, preventing a higher score.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.33 because the first three nodes in the retrieval context are irrelevant, discussing topics like 'trusted domains and PDF export customization', 'ODT and PDF export features', and 'various features and macros' that do not relate to attachment upload restrictions. The relevant nodes, which mention 'Size Limit', 'Mimetype Restriction', and provide 'detailed steps on setting the maximum size of an attachment', are ranked fourth and fifth. This lowers the score as the relevant information is not prioritized higher.",
-    "ContextualRecall": "The score is 0.50 because while the 5th node in the retrieval context supports the steps for configuring the maximum upload size (related to sentences in Schritt 2), there is no information in the retrieval context about configuring MIME types or the 10 MB limit (related to sentences in Schritt 1).",
-    "CustomContextualRelevancy": "The retrieval context mentions configuring maximum attachment size and MIME type restrictions, but lacks specific details about setting MIME types in xwiki.properties and the exact steps for setting the size to 10 MB."
+    "ContextualPrecision": "The score is 0.33 because the relevant nodes in the retrieval context, specifically the fourth node mentioning 'Size Limit' and 'Mimetype Restriction', and the fifth node providing steps on setting maximum attachment size, are ranked lower than irrelevant nodes. The first node discusses 'trusted domains and PDF export customization', the second node is about 'ODT and PDF export features', and the third node lists 'various macros and features', none of which relate to the input about upload restrictions. These irrelevant nodes should have been ranked lower to improve the score.",
+    "ContextualRecall": "The score is 0.70 because while the 5th node in the retrieval context supports the steps for configuring the maximum attachment size (as detailed in sentences 5-10 of the expected output), it lacks information on configuring MIME types and editing the `xwiki.properties` file (as described in sentences 1-4).",
+    "CustomContextualRelevancy": "The retrieval context mentions setting limits on attachment size and MIME type restrictions, but lacks specific details on configuring MIME types in xwiki.properties and setting the size to 10 MB as outlined in the expected output.",
+    "Correctness": "The actual output correctly describes setting maximum upload size and emphasizes separate configuration for each (sub)wiki. However, it suggests using the Attachment Validation Application instead of updating 'xwiki.properties' for MIME type restrictions, which is a key discrepancy from the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

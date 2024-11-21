@@ -2,7 +2,7 @@
   "id": "qa_013",
   "prompt": "Ich erhalte keine Benachrichtigungen \u00fcber meine eigene Aktivit\u00e4t. Wie kann ich Benachrichtigungen f\u00fcr meine eigenen Aktionen aktivieren?",
   "expected_answer": "Standardm\u00e4\u00dfig erh\u00e4lt man keine Benachrichtigungen \u00fcber die eigene Aktivit\u00e4t (es sei denn, das Ereignis, das die Benachrichtigung ausl\u00f6st, richtet sich explizit an diesen Benutzer). Sie haben die M\u00f6glichkeit, diesen Filter in den \"Erweiterten Filteroptionen\" Ihrer eigenen Benachrichtigungseinstellungen in Ihrem Benutzerprofil zu deaktivieren.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nDie bereitgestellten Suchergebnisse enthalten keine Informationen dazu, wie man Benachrichtigungen f\u00fcr die eigenen Aktionen aktiviert. Ich kann Ihnen jedoch allgemeine Hinweise geben, wie Sie dieses Problem angehen k\u00f6nnen.\n\nWenn Sie Benachrichtigungen f\u00fcr Ihre eigenen Aktionen erhalten m\u00f6chten, sollten Sie in den Einstellungen Ihres XWiki-Accounts nach einer Option suchen, die es erm\u00f6glicht, Benachrichtigungen f\u00fcr eigene Aktivit\u00e4ten zu aktivieren. Dies kann in den Benachrichtigungseinstellungen oder in den allgemeinen Einstellungen Ihres Profils zu finden sein.\n\nWenn Sie diese Option nicht finden k\u00f6nnen, sollten Sie in der XWiki-Dokumentation oder im XWiki-Forum nach Anleitungen suchen, wie man Benachrichtigungen f\u00fcr eigene Aktionen aktiviert. Es ist auch m\u00f6glich, dass diese Funktion nicht verf\u00fcgbar ist oder dass es bestimmte Einschr\u00e4nkungen gibt, die Sie beachten m\u00fcssen.\n\nIch hoffe, diese Hinweise helfen Ihnen bei der L\u00f6sung Ihres Problems. Wenn Sie weitere Fragen haben, stehe ich Ihnen gerne zur Verf\u00fcgung.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nDie bereitgestellten Informationen enthalten keine spezifischen Anweisungen zum Aktivieren von Benachrichtigungen f\u00fcr eigene Aktionen. Es ist jedoch wahrscheinlich, dass diese Funktion in den Benachrichtigungseinstellungen oder im Benutzerprofil zu finden ist.\n\nUm Benachrichtigungen f\u00fcr eigene Aktionen zu aktivieren, k\u00f6nnen Sie folgende allgemeine Schritte ausprobieren:\n\n1.  **Benachrichtigungseinstellungen**: \u00dcberpr\u00fcfen Sie die Benachrichtigungseinstellungen in Ihrem Profil oder in den Einstellungen der Plattform. Es k\u00f6nnte eine Option geben, um Benachrichtigungen f\u00fcr eigene Aktionen zu aktivieren.\n2.  **Benutzerprofil**: \u00dcberpr\u00fcfen Sie Ihr Benutzerprofil, ob es eine Option gibt, um Benachrichtigungen f\u00fcr eigene Aktionen zu aktivieren.\n3.  **Hilfe- oder Support-Seite**: \u00dcberpr\u00fcfen Sie die Hilfe- oder Support-Seite der Plattform, ob es Anweisungen gibt, um Benachrichtigungen f\u00fcr eigene Aktionen zu aktivieren.\n\nWenn Sie keine Option finden, um Benachrichtigungen f\u00fcr eigene Aktionen zu aktivieren, ist es m\u00f6glich, dass diese Funktion nicht verf\u00fcgbar ist. In diesem Fall k\u00f6nnen Sie den Support der Plattform kontaktieren, um weitere Informationen zu erhalten.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,8 +31,8 @@
   ],
   "usage": {
     "prompt_tokens": 1536,
-    "completion_tokens": 246,
-    "total_tokens": 1782
+    "completion_tokens": 296,
+    "total_tokens": 1832
   },
   "average_power_draw": null,
   "energy_consumption": null,

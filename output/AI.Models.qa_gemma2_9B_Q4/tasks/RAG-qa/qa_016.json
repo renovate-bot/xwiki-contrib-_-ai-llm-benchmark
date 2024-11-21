@@ -2,7 +2,7 @@
   "id": "qa_016",
   "prompt": "Kann ich die Benutzerprofilfelder, die aus dem OpenID Connect-Anbieter in XWiki gef\u00fcllt werden, anpassen?\nIch m\u00f6chte zus\u00e4tzliche Benutzerprofilfelder von meinem OpenID Connect-Anbieter an XWiki-Benutzereigenschaften abbilden. Wie kann ich das erreichen?",
   "expected_answer": "Ja, Sie k\u00f6nnen die Benutzerprofilfelder, die aus dem OpenID Connect-Anbieter gef\u00fcllt werden, anpassen, indem Sie sie in der Datei `xwiki.properties` abbilden.\n\nUm zus\u00e4tzliche Benutzerprofilfelder abzubilden, verwenden Sie die Eigenschaft `oidc.user.mapping`. Hier ist ein Beispiel, wie Sie benutzerdefinierte Eigenschaften abbilden k\u00f6nnen:\n\n```\n# oidc.user.mapping=myxproperty1=${oidc.user.subject}\n# oidc.user.mapping=myxproperty2=myprefix-${oidc.user.subject}\n```\n\nErsetzen Sie `myxproperty1` und `myxproperty2` durch die tats\u00e4chlichen XWiki-Benutzereigenschaftennamen und `${oidc.user.subject}` durch die entsprechende Variable basierend auf den Daten, die von Ihrem OpenID Connect-Anbieter bereitgestellt werden.\n\nNachdem Sie die Zuordnungen konfiguriert haben, speichern Sie die Datei `xwiki.properties` und starten Sie XWiki neu, um die \u00c4nderungen anzuwenden.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \n\n\nJa, du kannst die Benutzerprofilfelder anpassen, die aus dem OpenID Connect-Anbieter in XWiki gef\u00fcllt werden. \n\nDu kannst dies durch die Konfiguration der `oidc-authenticator-user` Erweiterung in XWiki erreichen. \n\nDie Erweiterung bietet eine M\u00f6glichkeit, die Felder des OpenID Connect-Anbieters mit den entsprechenden XWiki-Benutzerattributen abzubilden. \n\n\nSchau dir dazu die Dokumentation der `oidc-authenticator-user` Erweiterung an, um die genauen Schritte und Konfigurationsm\u00f6glichkeiten zu erfahren.  \n",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \n\n\nJa, du kannst die Benutzerprofilfelder anpassen, die aus dem OpenID Connect-Anbieter in XWiki gef\u00fcllt werden. \n\nDu kannst dies \u00fcber die Konfiguration der  `oidc-authenticator-user` Erweiterung in XWiki erreichen.  \n\nIm Detail kannst du die folgenden Schritte befolgen:\n\n1. **Zugriff auf die Konfigurationsdatei:** \u00d6ffne die Konfigurationsdatei der `oidc-authenticator-user` Erweiterung in XWiki. Die genaue Dateiendung und der Speicherort h\u00e4ngen von deiner XWiki-Version ab. \n2. **Suche nach `userMapping`:**  In der Konfigurationsdatei suchst du nach dem Abschnitt `userMapping`. Dieser Abschnitt definiert die Zuordnung zwischen den Benutzerprofilfeldern des OpenID Connect-Anbieters und den XWiki-Benutzereigenschaften.\n3. **Hinzuf\u00fcgen neuer Felder:**  Um zus\u00e4tzliche Felder hinzuzuf\u00fcgen, f\u00fcgst du neue Eintr\u00e4ge in den `userMapping` Abschnitt hinzu.  \n    * **Format:** Die Eintr\u00e4ge im `userMapping` Abschnitt folgen einem bestimmten Format.  \n    * **Beispiel:**  \n        ```\n        oidc.user.name = xwiki.user.name\n        oidc.user.email = xwiki.user.email\n        oidc.user.customField1 = xwiki.user.customField1\n        ```\n4. **Speichern der \u00c4nderungen:**  Speichere die Konfigurationsdatei.\n5. **Neustart von XWiki:**  Nach dem Speichern der \u00c4nderungen musst du XWiki neu starten, damit die \u00c4nderungen wirksam werden.\n\nBeachte, dass die genaue Syntax und die verf\u00fcgbaren Optionen in der Konfigurationsdatei je nach Version der `oidc-authenticator-user` Erweiterung variieren k\u00f6nnen.  \n\n\n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -47,12 +47,12 @@
   ],
   "usage": {
     "prompt_tokens": 2662,
-    "completion_tokens": 120,
-    "total_tokens": 2782
+    "completion_tokens": 380,
+    "total_tokens": 3042
   },
-  "average_power_draw": 100.0631392801252,
-  "energy_consumption": 791.7801407148417,
-  "energy_per_input_token": 0.26731267411034493,
-  "energy_per_output_token": 0.6682816852758624,
-  "energy_per_total_token": 0.28460824612323565
+  "average_power_draw": 118.24088034188041,
+  "energy_consumption": 1720.87308109178,
+  "energy_per_input_token": 0.47643219299329453,
+  "energy_per_output_token": 1.1910804824832364,
+  "energy_per_total_token": 0.5657044974003221
 }

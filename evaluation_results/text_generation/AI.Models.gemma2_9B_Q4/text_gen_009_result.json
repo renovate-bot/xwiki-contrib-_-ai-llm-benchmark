@@ -1,6 +1,6 @@
 {
-  "score": 0.9,
-  "reason": "The Actual Output accurately extracts and presents all relevant event details from the Input, aligning well with the Expected Output. It includes the event name, dates, location, activities, and target audience. The only minor deviation is the format of dates and the additional 'Activities' section, which does not affect coherence or fluency.",
+  "score": 0.8,
+  "reason": "The Actual Output accurately extracts and presents the event details, maintaining relevance and coherence. It uses natural language and proper grammar. However, it differs slightly from the Expected Output in formatting and structure, such as combining start and end dates and including additional activities information.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

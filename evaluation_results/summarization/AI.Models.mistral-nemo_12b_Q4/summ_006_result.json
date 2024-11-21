@@ -1,9 +1,9 @@
 {
-  "score": 0.5714285714285714,
-  "reason": "The score is 0.57 because the summary includes extra information not present in the original text, such as users learning to create, edit, and view page history in XWiki, and it lacks clarity on whether users can learn about editing a page from the provided links. Additionally, it mentions setting permissions without explicitly stating it in the original text, and it implies developers can explore certain resources, which is not specified.",
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary includes incorrect information about the resources available to developers, adding the Extensions Wiki and XWiki Rendering Wiki, which are not mentioned in the original text. Additionally, the summary introduces extra information about users learning to create, edit, and view history of pages, which is not in the original text. Furthermore, the summary fails to address questions about starting a new wiki and whether XWiki is a second generation wiki, which the original text can answer.",
   "score_breakdown": {
-    "Alignment": 0.5714285714285714,
-    "Coverage": 0.8
+    "Alignment": 0.7142857142857143,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

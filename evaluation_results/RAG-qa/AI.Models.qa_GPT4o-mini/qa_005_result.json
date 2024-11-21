@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.8777777777777779,
+  "overall_score": 0.8990661087973559,
   "individual_scores": {
-    "AnswerRelevancy": 0.8888888888888888,
+    "AnswerRelevancy": 0.9166666666666666,
     "Faithfulness": 1.0,
     "ContextualPrecision": 1.0,
     "ContextualRecall": 0.6,
-    "CustomContextualRelevancy": 0.9
+    "CustomContextualRelevancy": 1.0,
+    "Correctness": 0.8777299861174692
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.89 because the answer is mostly relevant and addresses the question about configuring OpenID Connect in XWiki. However, it includes an irrelevant statement about LDAP authentication, which slightly detracts from the focus on OpenID Connect.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 1.00 because the first node in the retrieval context is directly relevant, mentioning the configuration line '# oidc.enableUser=true', which is essential for enabling user accounts on first login. All irrelevant nodes, discussing topics like 'domain-based authentication and session cookies' or 'resetting passwords and various authentication mechanisms', are ranked lower, ensuring perfect precision. Great job on the ranking!",
-    "ContextualRecall": "The score is 0.60 because while the 1st node in the retrieval context provides information about adjusting the `xwiki.properties` file and the specific property to enable user accounts on first login, it lacks details about saving the file, restarting the XWiki instance, and the automatic enabling of new user accounts.",
-    "CustomContextualRelevancy": "The retrieval context contains the commented line '# oidc.enableUser=true', which matches the expected answer's instruction to uncomment and set this property to true. However, the retrieval context does not explicitly mention saving the file and restarting the XWiki instance."
+    "AnswerRelevancy": "The score is 0.92 because the response is highly relevant to configuring OpenID Connect in XWiki, but it includes an irrelevant mention of LDAP authentication, which slightly detracts from the overall focus.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node in the retrieval context, which discusses the property '# oidc.enableUser=true' necessary for enabling user accounts on first login, is ranked first. This ensures that the most pertinent information is prioritized over irrelevant nodes discussing topics like domain-based authentication, password recovery, and general OpenID Connect configurations.",
+    "ContextualRecall": "The score is 0.60 because while the 1st node in the retrieval context supports the instructions to adjust the `xwiki.properties` file and set the `oidc.enableUser` property to `true`, it lacks information about saving the file, restarting the XWiki instance, and ensuring new user accounts are automatically enabled on first login via OpenID Connect.",
+    "CustomContextualRelevancy": "The retrieval context contains the exact information from the expected output, specifically mentioning the property `oidc.enableUser=true` in the `xwiki.properties` file, which matches the expected answer.",
+    "Correctness": "The actual output correctly describes adjusting the `oidc.enableUser` property, saving the file, and restarting XWiki. It omits the specific commenting/uncommenting detail present in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

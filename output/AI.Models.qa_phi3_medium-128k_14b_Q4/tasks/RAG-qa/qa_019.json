@@ -2,7 +2,7 @@
   "id": "qa_019",
   "prompt": "Wie kann ich einem Bereichsadministrator das Skriptrecht verweigern?",
   "expected_answer": "Leider wird dies in XWiki nicht unterst\u00fctzt, Rechte, die durch das Admin-Recht impliziert sind, k\u00f6nnen nicht verweigert werden.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Index%20for%20the%20LLM%20Application/ \n\n\nUm den Rechtebereich eines Sicherheitsadmins zu deaktivieren, k\u00f6nnen Sie die folgenden Schritte ausf\u00fchren:\n\n1. Navigieren Sie zum Konfigurationselement \"Rights\" im XWiki-Webinterface oder verwenden Sie eine API, um es direkt abzufragen.\n2. Sobald das Element \"Rechte\" angezeigt ist, f\u00fcgen Sie die folgende XML-Konfigurationsdatei hinzu:\n'''xml\n<xwiki:Rights xmlns:xwiki=\"http://www.xwiki.org/xtpi\">\n <xwiki:Administrator>\n  <!-- Setzen des Skriptrechts auf False, um das Recht zu deaktivieren -->\n  <xwiki:Script false = true></xwiki:Script>\n </xwiki:Administrator>\n</xwiki:Rights>\n'''\n3. Speichern Sie die \u00c4nderungen und laden Sie den XWiki-Webdienst neu, um sicherzustellen, dass die \u00c4nderung wirksam wird.\n4. Der Sicherheitsadmin kann jetzt das Skriptrecht nicht verwenden.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Index%20for%20the%20LLM%20Application/ \n\n\nUm zu verhindern, dass ein Bereiche-Administrator die Ausf\u00fchrung von Skripts auf XWiki-Seiten zul\u00e4sst, k\u00f6nnen Sie den Adminbereich verwenden und folgende Schritte ausf\u00fchren:\n1. Melden Sie sich als Bereichsadministrator an. \n2. Navigieren Sie zur \"Bereiche\" Seite im Adminbereich von XWiki.\n3. Klicken Sie auf das Men\u00fc \"Anzeigen\" -> \"Skriptmanagement\". \n4. W\u00e4hlen Sie den Skriptsatz aus, f\u00fcr den die Ausf\u00fchrung verweigert werden soll. \n5. F\u00fchren Sie im Abschnitt \"Ausf\u00fchrbar\" unter der Option \"Erlaubt\" auf \"Ausf\u00fchrungsverbot\" oder \"Unterbrechung\". Durch diese Einstellung wird XWiki angewiesen, das Skriptniveau f\u00fcr die ausgew\u00e4hlten Seiten als 0 zu setzen.\n6. Klicken Sie auf den Button \"Anwenden\", um Ihre \u00c4nderungen zu speichern und anzuwenden.\n\nDurch diese Aktion wird der Bereichsadministrator verhindert, dass Skripts\u00e4tze ausgef\u00fchrt werden k\u00f6nnen, wenn die Seite in diesem Bereich angezeigt wird. Die Auswahl dieser Option ist auch auf den Inhaltsebenen m\u00f6glich, wo eine \u00e4hnliche Einstellung vorgenommen werden kann.\n\nHier ist ein Beispiel f\u00fcr das L\u00f6schen eines Skriptsatzes aus der Skriptverwaltung:\n\n```markdown\nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application#ScriptManagement\n&#8212; Das obige Bild verdeutlicht die Schritte zum Deaktivieren des Skriptsatzes \"Beispiel-Skript\".\n```\n\nBitte beachten Sie, dass diese Einstellung nur f\u00fcr den Bereich gilt und nicht auf globale Skriptausf\u00fchrungsregeln einwirkt. Das bedeutet, dass Skripts\u00e4tze auch in anderen Bereichen immer noch ausgef\u00fchrt werden k\u00f6nnen, wenn sie zul\u00e4ssig sind.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,12 +31,12 @@
   ],
   "usage": {
     "prompt_tokens": 1669,
-    "completion_tokens": 259,
-    "total_tokens": 1928
+    "completion_tokens": 480,
+    "total_tokens": 2149
   },
-  "average_power_draw": 256.78788888888886,
-  "energy_consumption": 1018.6189667669136,
-  "energy_per_input_token": 0.4397232750990345,
-  "energy_per_output_token": 1.0993081877475863,
-  "energy_per_total_token": 0.528329339609395
+  "average_power_draw": 251.33772401433703,
+  "energy_consumption": 1746.0767326455398,
+  "energy_per_input_token": 0.608601161605277,
+  "energy_per_output_token": 1.5215029040131927,
+  "energy_per_total_token": 0.8125066229155606
 }

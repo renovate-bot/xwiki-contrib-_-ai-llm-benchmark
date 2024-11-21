@@ -2,7 +2,7 @@
   "id": "qa_031",
   "prompt": "Can I authenticate users with access tokens?",
   "expected_answer": "Yes, you can authenticate users with access tokens using the Token-based authentication for the LLM Application extension.\n\nThis extension allows external applications to authenticate users with signed JSON Web Tokens (JWT). The token needs to contain specific claims, such as expiration time, issuer, subject, and audience, and must be signed with an Ed25519 key.\n\nTo use this authenticator, you need to:\n\n1. Enable the token authenticator by setting the `xwiki.authentication.authclass` property in `xwiki.properties` file to `org.xwiki.contrib.llm.authentication.JWTTokenAuth`.\n2. Configure the authorized applications by adding a new entry to the \"Authorized Applications\" list, specifying the application's title, URL, public key, and group format.\n3. Generate a JWT token that meets the required claims and signing key requirements.\n4. Include the token in the \"Authorization\" header of the request in the form \"Bearer TOKEN\".\n\nNote that this authenticator only supports creating or updating users based on the information provided in the token and does not support using a token as authentication for an existing user that hasn't been created through this authenticator.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Authenticator/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \n\n\nThe joys of authentication!\n\nYes, you can authenticate users with access tokens. In fact, it's a common pattern in many modern web applications and APIs.\n\nHere's the general idea:\n\n1. **User authenticates**: A user provides their credentials (e.g., username and password) to an authorization server (also known as an identity provider).\n2. **Authorization server issues token**: The authorization server verifies the user's credentials and, if valid, generates a JSON Web Token (JWT), also known as an access token.\n3. **Client receives token**: The client (e.g., a web application or mobile app) receives the access token from the authorization server.\n4. **Client includes token in requests**: The client includes the access token in subsequent requests to protected resources (e.g., APIs).\n5. **Resource server verifies token**: The resource server (the API or service being accessed) verifies the access token by checking its signature, expiration time, and other claims.\n\nTo authenticate users with access tokens, you'll need:\n\n1. An authorization server (e.g., OAuth 2.0 provider like Google, Facebook, or Okta)\n2. A client (your web application or mobile app)\n3. A resource server (the API or service being accessed)\n\nSome popular technologies for implementing access token authentication include:\n\n* **OAuth 2.0**: An industry-standard authorization framework that provides a secure way to obtain and use access tokens.\n* **JSON Web Tokens (JWT)**: A compact, URL-safe means of representing claims to be transferred between two parties.\n* **IdentityServer4** (for .NET): An open-source identity provider that supports OAuth 2.0 and JWT.\n\nWhen implementing access token authentication, keep in mind:\n\n* **Token security**: Ensure the tokens are securely stored, transmitted, and validated on both the client and server sides.\n* **Token expiration**: Set a reasonable expiration time for the tokens to prevent them from being used indefinitely.\n* **Token validation**: Verify the token's signature, issuer, audience, and other claims to ensure the user is who they claim to be.\n\nBy following these guidelines, you can implement secure access token authentication in your web application or API.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Authenticator/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \n\n\nYes, you can authenticate users with access tokens in XWiki.\n\nTo achieve this, you'll need to configure the `xwiki.authentication.authclass` property in the `xwiki.properties` file to use a custom authenticator that supports token-based authentication. \n\nOne such extension is the JWT Token Authenticator for the LLM AI Application, which allows external applications to authenticate users using signed JSON Web Tokens (JWT). This authenticator can be enabled by setting the `xwiki.authentication.authclass` property to `org.xwiki.contrib.llm.authentication.JWTTokenAuth`.\n\nAlternatively, you can select the \"JWT Token Authenticator for the LLM AI Application\" in the authentication configuration. When there is no token in the request, the authenticator falls back to the default authenticator.\n\nYou can also configure other properties like `llm.authentication.jwt.authenticator` to specify a fallback authenticator when no token is present. \n\nPlease note that you need to have the necessary extensions installed and configured properly for this to work.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 18,
-    "completion_tokens": 446,
-    "total_tokens": 464
+    "prompt_tokens": 2344,
+    "completion_tokens": 204,
+    "total_tokens": 2548
   },
-  "average_power_draw": 142.441662835249,
-  "energy_consumption": 950.8984805772036,
-  "energy_per_input_token": 0.8392749166612564,
-  "energy_per_output_token": 2.0981872916531414,
-  "energy_per_total_token": 2.0493501736577664
+  "average_power_draw": 188.90296296296293,
+  "energy_consumption": 555.0363065684282,
+  "energy_per_input_token": 0.19447663159370296,
+  "energy_per_output_token": 0.4861915789842574,
+  "energy_per_total_token": 0.21783214543501894
 }

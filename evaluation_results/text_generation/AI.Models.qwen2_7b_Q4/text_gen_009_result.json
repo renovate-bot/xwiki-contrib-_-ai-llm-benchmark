@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output accurately extracts event details such as name, date, location, and activities, aligning well with the Input and Expected Output. However, it lacks specific JSON formatting and does not explicitly mention 'target_audience' as in the Expected Output.",
+  "reason": "The Actual Output accurately extracts event details such as name, dates, location, and activities, aligning well with the Input. However, it misses the specific start and end dates and the target audience, which are present in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

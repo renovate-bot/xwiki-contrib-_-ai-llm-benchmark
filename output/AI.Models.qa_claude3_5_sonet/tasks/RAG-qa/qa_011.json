@@ -2,7 +2,7 @@
   "id": "qa_011",
   "prompt": "Die Glocke oben rechts ist nicht verf\u00fcgbar, auch nicht wenn die Erweiterung \"Alert Notification\" installiert ist.",
   "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen in Ihrem Wiki aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nBasierend auf den Suchergebnissen und dem beschriebenen Problem m\u00f6chte ich folgende Hinweise geben:\n\nDie Benachrichtigungsglocke ist Teil der \"Notifications Application\", die zusammen mit der \"Alerts Application\" funktioniert. Wenn die Glocke nicht sichtbar ist, sollten Sie folgende Dinge \u00fcberpr\u00fcfen:\n\n1. **Installation beider Erweiterungen**: \n   - Stellen Sie sicher, dass sowohl die \"Notifications Application\" als auch die \"Alerts Application\" installiert sind\n   - Die Installation nur einer der beiden Erweiterungen reicht nicht aus\n\n2. **Administrationsbereich**:\n   - Ein Administrator sollte im Administrationsbereich unter \"Notifications\" \u00fcberpr\u00fcfen, ob die Benachrichtigungen korrekt konfiguriert sind\n   - Die Benachrichtigungsfunktionen m\u00fcssen f\u00fcr die Benutzer aktiviert sein\n\n3. **Benutzerrechte**:\n   - Stellen Sie sicher, dass der Benutzer die notwendigen Rechte hat, um Benachrichtigungen zu sehen\n\nFalls das Problem weiterhin besteht, empfehle ich:\n- Die \u00dcberpr\u00fcfung der XWiki-Version (die Funktion ist seit Version 9.3+ verf\u00fcgbar)\n- Die \u00dcberpr\u00fcfung der Installation beider Extensions im Extension Manager\n- Das Leeren des Browser-Caches\n- Die Konsultierung der XWiki-Logs auf m\u00f6gliche Fehlermeldungen",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nBasierend auf den Suchergebnissen muss f\u00fcr die Funktionalit\u00e4t der Benachrichtigungsglocke die \"Notifications Application\" installiert sein, die ihre Inhalte im Alert-Men\u00fc (das von der \"Alerts Application\" bereitgestellt wird) anzeigt.\n\nHier sind die wichtigsten Schritte zur Probleml\u00f6sung:\n\n1. Stellen Sie sicher, dass **beide** Erweiterungen installiert sind:\n   - Alerts Application\n   - Notifications Application\n\n2. Nach korrekter Installation sollten Sie:\n   - Eine Glocke in der oberen Men\u00fcleiste sehen\n   - Die Anzahl der ungelesenen Benachrichtigungen \u00fcber der Glocke angezeigt bekommen\n   - Nach Klick auf die Glocke eine Liste von Benachrichtigungen sehen\n\n3. Falls die Glocke weiterhin nicht erscheint:\n   - \u00dcberpr\u00fcfen Sie, ob Sie die erforderlichen Berechtigungen haben\n   - Kontaktieren Sie Ihren XWiki-Administrator, um sicherzustellen, dass die Erweiterungen korrekt installiert und konfiguriert sind\n   - Pr\u00fcfen Sie, ob alle Abh\u00e4ngigkeiten der Erweiterungen erf\u00fcllt sind\n\nDie Benachrichtigungsfunktion ist seit XWiki 9.3+ verf\u00fcgbar. Stellen Sie also auch sicher, dass Sie eine kompatible XWiki-Version verwenden.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -55,8 +55,8 @@
   ],
   "usage": {
     "prompt_tokens": 3670,
-    "completion_tokens": 381,
-    "total_tokens": 4051
+    "completion_tokens": 371,
+    "total_tokens": 4041
   },
   "average_power_draw": null,
   "energy_consumption": null,

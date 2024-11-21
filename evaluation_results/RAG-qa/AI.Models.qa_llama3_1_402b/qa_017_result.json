@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.4,
+  "overall_score": 0.40300017610084454,
   "individual_scores": {
     "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "ContextualRecall": 0.16666666666666666,
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.25133438993840057
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the output is perfectly relevant and directly addresses the question about setting up group synchronization between XWiki and an OpenID Connect provider. Great job!",
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the question about setting up group synchronization between XWiki and an OpenID Connect provider. Great job!",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'various OpenID Connect endpoints and configuration properties' but lacks information on group synchronization. The second node talks about 'different authentication methods and extensions' without addressing group synchronization with OpenID Connect. The third node mentions 'OpenID Connect authentication and provides links to configuration guides' but does not cover group synchronization. The fourth node lists 'dependencies for the OpenID Connect authenticator' without information on group synchronization. Lastly, the fifth node provides 'general information about the OpenID Connect authenticator' but omits group synchronization details. All these nodes should be ranked lower as they do not address the input query.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context. The retrieval context lacks any mention of key concepts such as 'Gruppensynchronisierung', 'xwiki.properties', or the specific configuration steps related to OpenID Connect provider integration with XWiki.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about configuring group synchronization in xwiki.properties, such as oidc.groups.claim, oidc.groups.separator, or oidc.groups.mapping."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'general OpenID Connect provider configuration and endpoints' without addressing group synchronization. The second node talks about 'container authentication and other authentication methods like LDAP,' which is unrelated to the setup of group synchronization with OpenID Connect. The third node provides 'links to configuration guides' but lacks specific information on group synchronization. The fourth node lists 'dependencies for the OpenID Connect authenticator' without mentioning group synchronization. Finally, the fifth node covers 'general information about the OpenID Connect authenticator' but not the setup for group synchronization.",
+    "ContextualRecall": "The score is 0.17 because only the configurations for `oidc.groups.claim` and `oidc.groups.separator` mentioned in sentence 3 and 4 of the expected output are supported by the 1st node in the retrieval context. Most other instructions and configurations, such as finding and editing the `xwiki.properties` file, setting up group synchronization, and mapping groups, are not supported by any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context lacks specific instructions on configuring 'xwiki.properties' for group synchronization, such as setting 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping'.",
+    "Correctness": "The actual output lacks specific configuration steps mentioned in the expected output, such as editing 'xwiki.properties' and setting properties like 'oidc.groups.claim'. It provides general guidance instead of detailed instructions."
   },
   "question_language": "de",
   "expected_answer_language": "de",

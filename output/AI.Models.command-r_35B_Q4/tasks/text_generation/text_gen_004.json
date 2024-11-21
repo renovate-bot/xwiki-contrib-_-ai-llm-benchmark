@@ -2,16 +2,16 @@
   "id": "text_gen_004",
   "prompt": "Generate a short product description based on the following information:\n\nProduct: Wireless Bluetooth Headphones\nFeatures: Noise-cancelling, 20-hour battery life, comfortable fit\nTarget audience: Tech-savvy professionals",
   "expected_answer": "Introducing our cutting-edge wireless Bluetooth headphones, designed for tech-savvy professionals who demand the best. With advanced noise-cancelling technology, you can immerse yourself in your music or focus on your work without any distractions. Enjoy an impressive 20-hour battery life, ensuring your headphones keep up with your busy lifestyle. The comfortable, ergonomic fit allows you to wear them all day long without any discomfort. Upgrade your audio experience with our premium wireless headphones.",
-  "ai_answer": "These sleek wireless headphones are designed with the modern professional in mind. The sophisticated noise cancellation technology allows you to focus on your music or calls without any distractions. The battery lasts an impressive 20 hours on a single charge, ensuring you stay connected throughout your busy day. And the comfortable fit means you can wear them all day without any discomfort. Experience the convenience of Bluetooth connectivity and immerse yourself in superior sound quality.",
+  "ai_answer": "These sleek wireless headphones are the perfect accessory for any busy professional. With noise-canceling technology and an incredible 20-hour battery life, you can stay focused on your work or entertainment without interruption. The ergonomic design ensures a comfortable fit, making it a convenient companion for all your daily activities. Connect seamlessly via Bluetooth and enjoy your favorite content with crystal clear sound quality. These headphones are the ultimate choice for the stylish and tech-savvy individual on the go!",
   "sources": null,
   "usage": {
     "prompt_tokens": 51,
-    "completion_tokens": 84,
-    "total_tokens": 135
+    "completion_tokens": 95,
+    "total_tokens": 146
   },
-  "average_power_draw": 89.46511111111113,
-  "energy_consumption": 790.9121444785332,
-  "energy_per_input_token": 3.0303147298028095,
-  "energy_per_output_token": 7.575786824507023,
-  "energy_per_total_token": 5.858608477618764
+  "average_power_draw": 13.01787763093489,
+  "energy_consumption": 348.50896285155727,
+  "energy_per_input_token": 1.2080033374404064,
+  "energy_per_output_token": 3.0200083436010168,
+  "energy_per_total_token": 2.3870476907640907
 }

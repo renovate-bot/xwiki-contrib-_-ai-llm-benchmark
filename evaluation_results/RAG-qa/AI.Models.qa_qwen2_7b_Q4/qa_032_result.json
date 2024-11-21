@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.3555555555555555,
+  "overall_score": 0.0,
   "individual_scores": {
-    "AnswerRelevancy": 0.7777777777777778,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0,
+    "Faithfulness": 0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.78 because the response mostly addresses the question about authenticating users with access tokens, but includes source links that do not directly relate to the query.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'model validation strategies in XWiki', which is unrelated to 'user authentication with access tokens'. The second node is about 'attachment validation and configuration in XWiki', not 'token-based authentication'. The third node provides information about the 'admin UI for model validation', which does not relate to 'authenticating users with access tokens'.",
+    "AnswerRelevancy": "Failed to measure after 3 attempts: Request failed with status code 500: {\"error\":{\"message\":\"Invalid 'messages[0].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1251217 instead.\",\"type\":null,\"param\":null,\"code\":\"400\"}}",
+    "Faithfulness": "Failed to measure after 3 attempts: Request failed with status code 500: {\"error\":{\"message\":\"Invalid 'messages[0].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1251500 instead.\",\"type\":null,\"param\":null,\"code\":\"400\"}}",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node is about 'Model Validation' and does not mention authentication or access tokens, the second node discusses 'Attachment Validation' which is unrelated to token-based authentication, and the third node provides information about the 'Admin UI for Model Validation', which is not relevant to authenticating users with access tokens.",
     "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to token-based authentication, JWT, or the LLM-Anwendung (BETA) extension mentioned in the expected output."
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to token-based authentication or JWT, which are central to the expected output.",
+    "Correctness": "Failed to measure after 3 attempts: Error code: 400 - {'error': {'message': \"Invalid 'messages[0].content': string too long. Expected a string with maximum length 1048576, but got a string with length 1253153 instead.\", 'type': 'invalid_request_error', 'param': 'messages[0].content', 'code': 'string_above_max_length'}}"
   },
   "question_language": "de",
   "expected_answer_language": "de",

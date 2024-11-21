@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.975,
+  "overall_score": 0.9790043232107569,
   "individual_scores": {
     "AnswerRelevancy": 1.0,
-    "Faithfulness": 0.875,
+    "Faithfulness": 1.0,
     "ContextualPrecision": 1.0,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 1.0
+    "CustomContextualRelevancy": 1.0,
+    "Correctness": 0.8740259392645413
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the output is perfectly relevant and directly addresses the question without any irrelevant information. Great job!",
-    "Faithfulness": "The score is 0.88 because the actual output incorrectly claims that notifications for your own activities are typically enabled by default, while the retrieval context clarifies that users do not receive such notifications by default.",
-    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than irrelevant ones. The first two nodes directly address the issue by mentioning that 'By default, one don\u2019t receive notification about one\u2019s own activity' and 'This can be changed by switching off the Own event filter,' which are pertinent to enabling notifications for one's own actions. The irrelevant nodes, such as the third node discussing 'administrator settings and global notification configurations,' are ranked lower, ensuring high precision. Great job on achieving perfect precision!",
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the question about enabling notifications for one's own activity in XWiki. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than irrelevant nodes. The first node explains, 'By default, one don't receive notification about one's own activity... You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings,' which directly answers the input question. The second node also supports this by stating, 'By default, you won\u2019t receive notifications for actions done by yourself. This can be changed by switching off the Own event filter,' which is relevant to enabling notifications for one's own actions. The irrelevant nodes, such as the third node discussing 'administrator settings and notification preferences inheritance,' do not directly address the input question and are ranked lower. Great job maintaining perfect precision!",
     "ContextualRecall": "The score is 1.00 because every sentence in the expected output is perfectly supported by the nodes in the retrieval context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context contains all information from the expected answer, including the default setting of not receiving notifications about one's own activity unless explicitly targeted, and the ability to disable this filter in the advanced filtering options of the user's notification settings."
+    "CustomContextualRelevancy": "The retrieval context fully contains the expected answer, detailing the default notification settings and the ability to change them in the 'Advanced filtering options' section.",
+    "Correctness": "The actual output accurately reflects the expected output with minor discrepancies; it adds steps for disabling the filter, aligning with the expected logical flow and facts."
   },
   "question_language": "en",
   "expected_answer_language": "en",

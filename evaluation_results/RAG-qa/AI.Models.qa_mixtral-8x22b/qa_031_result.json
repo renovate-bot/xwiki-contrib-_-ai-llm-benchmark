@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.7301298701298702,
+  "overall_score": 0.6775766226412651,
   "individual_scores": {
     "AnswerRelevancy": 0.6363636363636364,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0.5,
     "ContextualRecall": 0.7142857142857143,
-    "CustomContextualRelevancy": 0.8
+    "CustomContextualRelevancy": 0.7,
+    "Correctness": 0.51481038519824
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.64 because the output partially addresses the question about authenticating users with access tokens, but the repeated irrelevant statements about source links lower its relevance.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.50 because relevant nodes in the retrieval context are not consistently ranked higher than irrelevant nodes. The first node, ranked 1, is irrelevant as it 'does not mention token-based authentication or JWTs.' The third node, ranked 3, is also irrelevant since it 'is not directly related to the use of JWTs for authentication.' Additionally, the fifth node, ranked 5, 'does not specifically address token-based authentication or JWTs.' However, the second node, ranked 2, is relevant as it 'discusses the configuration of 'Authorized Applications' which is relevant to setting up token-based authentication,' and the fourth node, ranked 4, 'provides a description of the extension that allows authentication using JWTs,' supporting the expected output.",
-    "ContextualRecall": "The score is 0.71 because while the retrieval context nodes provide information about authenticating users with JWTs, enabling the token authenticator, and configuring authorized applications, they lack details on generating a JWT token with required claims and signing key requirements, and including the token in the 'Authorization' header.",
-    "CustomContextualRelevancy": "The retrieval context includes details about configuring authorized applications and enabling the token authenticator, matching most of the expected answer, but lacks specific mention of JWT claims and Ed25519 key."
+    "AnswerRelevancy": "The score is 0.64 because the response partially addresses the question about authenticating users with access tokens, but includes multiple irrelevant source links that do not contribute to answering the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.50 because relevant nodes in the retrieval context are not consistently ranked higher than irrelevant nodes. The first node, ranked 1, is irrelevant as it focuses on 'LDAP configuration' without mentioning access tokens. The second node, ranked 2, is relevant as it discusses 'configuration of authorized applications', which aligns with using access tokens for authentication. The third node, ranked 3, is irrelevant since it addresses 'OpenID Connect scopes and response types', not directly related to access tokens. The fourth node, ranked 4, is relevant because it describes 'authentication with JWT', supporting the use of access tokens. The fifth node, ranked 5, is irrelevant as it covers 'various authentication mechanisms in XWiki' without focusing on token-based authentication.",
+    "ContextualRecall": "The score is 0.71 because while several key aspects like authenticating users with JWT, enabling the token authenticator, and configuring authorized applications are well-supported by nodes in the retrieval context, specific details about generating a JWT token with required claims and including the token in the 'Authorization' header are missing.",
+    "CustomContextualRelevancy": "The retrieval context mentions the use of JWT for authentication and the configuration of authorized applications, but lacks details on token claims and the specific process of including the token in the request header.",
+    "Correctness": "The actual output matches the expected output in terms of JWT token authentication and property settings but lacks details on claims, signing key, and 'Authorized Applications' configuration. It also incorrectly mentions a fallback authenticator, which is not in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.48,
+  "overall_score": 0.5209515616693371,
   "individual_scores": {
     "AnswerRelevancy": 1.0,
-    "Faithfulness": 1.0,
-    "ContextualPrecision": 0,
-    "ContextualRecall": 0.4,
-    "CustomContextualRelevancy": 0.0
+    "Faithfulness": 0.75,
+    "ContextualPrecision": 0.25,
+    "ContextualRecall": 0.8,
+    "CustomContextualRelevancy": 0.2,
+    "Correctness": 0.1257093700160225
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the response perfectly addresses the input question without any irrelevant information. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining complete alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input query. The first node discusses 'domain-based authentication and session cookie configuration', which does not relate to enabling user accounts upon first login with OpenID Connect. The second node provides 'general information about OpenID Connect authentication and installation instructions', missing the specific configuration needed. The third node focuses on 'technical details and metadata of the OpenID Connect Authenticator extension', without addressing automatic user activation. Lastly, the fourth node includes 'configuration properties related to OpenID Connect endpoints' but omits the property `oidc.enableUser` or the process for activating user accounts automatically.",
-    "ContextualRecall": "The score is 0.40 because while the 4th node in the retrieval context supports the mention of 'xwiki.properties' and the need to uncomment properties related to OpenID Connect, there is no specific mention of adding or updating properties, restarting the XWiki instance, or ensuring automatic activation of new user accounts upon first-time login.",
-    "CustomContextualRelevancy": "The retrieval context lacks any reference to adjusting the xwiki.properties file or enabling the oidc.enableUser property for automatic user activation."
+    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the question about configuring XWiki for automatic user activation with OpenID Connect. Great job!",
+    "Faithfulness": "The score is 0.75 because the actual output incorrectly states that the oidc.skipped property must be disabled for OpenID Connect authentication to work, while the retrieval context indicates that OpenID Connect can be disabled using this property.",
+    "ContextualPrecision": "The score is 0.25 because the relevant node, which mentions the `xwiki.properties` file and includes examples of OpenID Connect related properties, is ranked fourth. This node is crucial for configuring automatic user activation. However, it is ranked lower than three irrelevant nodes. The first node discusses domain-based authentication and session cookie configuration, which is unrelated. The second node provides general information about OpenID Connect authentication without addressing the specific configuration needed. The third node contains metadata about the OpenID Connect authenticator, which does not assist in configuring automatic user activation.",
+    "ContextualRecall": "The score is 0.80 because most sentences in the expected output are supported by the information in the 4th node in the retrieval context, which discusses configuring user accounts with OpenID Connect in XWiki. However, the instruction to restart the XWiki instance is not explicitly mentioned in any node.",
+    "CustomContextualRelevancy": "The retrieval context mentions the xwiki.properties file but lacks specific details about enabling user accounts with oidc.enableUser=true.",
+    "Correctness": "The actual output does not match the expected factual statements. It incorrectly suggests modifying `xwiki.authentication.authclass` and `oidc.skipped` instead of `oidc.enableUser`. The expected change to enable user accounts is not addressed, and additional unrelated suggestions are provided."
   },
   "question_language": "de",
   "expected_answer_language": "de",

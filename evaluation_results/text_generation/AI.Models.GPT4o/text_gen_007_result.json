@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output is a well-structured news article that directly addresses the Input prompt by detailing a recent scientific discovery in quantum computing. It aligns with the Expected Output by being informative and summarizing the breakthrough effectively. The article is coherent, logically flowing from the introduction of the discovery to its implications, and is fluent with clear grammatical structure and readability.",
+  "reason": "The Actual Output is a coherent and fluent news article that directly addresses the Input prompt by detailing a recent scientific discovery in quantum computing. It aligns with the Expected Output by summarizing the breakthrough effectively, maintaining logical flow and clarity throughout.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

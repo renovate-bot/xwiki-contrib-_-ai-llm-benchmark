@@ -2,7 +2,7 @@
   "id": "qa_023",
   "prompt": "Je ne re\u00e7ois pas de notifications concernant ma propre activit\u00e9. Comment puis-je activer les notifications pour mes propres actions?",
   "expected_answer": "Par d\u00e9faut, vous ne recevez pas de notifications concernant votre propre activit\u00e9 (sauf si l'\u00e9v\u00e9nement qui a d\u00e9clench\u00e9 la notification cible explicitement cet utilisateur). Vous avez la possibilit\u00e9 de d\u00e9sactiver ce filtre dans la section \"Options de filtrage avanc\u00e9es\" des param\u00e8tres de notification de votre profil utilisateur.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nPar d\u00e9faut, dans l'application de notifications d'XWiki, les utilisateurs ne re\u00e7oivent pas de notifications pour les actions qu'ils effectuent eux-m\u00eames. Cependant, il est possible de modifier ce param\u00e8tre. Voici comment activer les notifications pour vos propres actions :\n\n1. **Acc\u00e9dez aux param\u00e8tres des notifications** : Ouvrez le menu des notifications et recherchez un lien vers les \"param\u00e8tres\" des notifications.\n\n2. **D\u00e9sactivez le filtre des \u00e9v\u00e9nements personnels** : Dans les param\u00e8tres, vous devriez trouver une option pour d\u00e9sactiver le filtre qui emp\u00eache la r\u00e9ception de notifications pour vos propres \u00e9v\u00e9nements. Cela peut \u00eatre \u00e9tiquet\u00e9 comme \"Filter your own events\" ou similaire.\n\n3. **Enregistrez vos modifications** : Assurez-vous de sauvegarder les changements pour que les nouvelles pr\u00e9f\u00e9rences prennent effet.\n\nEn d\u00e9sactivant ce filtre, vous devriez commencer \u00e0 recevoir des notifications pour toutes les actions que vous effectuez sur le wiki. Si vous avez besoin de plus d'aide, n'h\u00e9sitez pas \u00e0 consulter la documentation d\u00e9taill\u00e9e de l'application de notifications d'XWiki.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nPar d\u00e9faut, dans l'application de notifications d'XWiki, vous ne recevez pas de notifications pour les actions que vous r\u00e9alisez vous-m\u00eame. Cependant, vous pouvez changer ce param\u00e8tre en d\u00e9sactivant le filtre d'\u00e9v\u00e9nements personnels (Own event filter).\n\nVoici comment proc\u00e9der :\n\n1. Acc\u00e9dez aux **param\u00e8tres des notifications** depuis le menu des notifications.\n2. Recherchez l'option li\u00e9e aux filtres d'\u00e9v\u00e9nements.\n3. D\u00e9sactivez le filtre qui emp\u00eache la r\u00e9ception des notifications pour vos propres actions.\n\nApr\u00e8s avoir d\u00e9sactiv\u00e9 ce filtre, vous commencerez \u00e0 recevoir des notifications pour vos propres activit\u00e9s sur la plateforme. Assurez-vous \u00e9galement que les types de notifications que vous souhaitez recevoir sont bien activ\u00e9s.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -63,8 +63,8 @@
   ],
   "usage": {
     "prompt_tokens": 3195,
-    "completion_tokens": 226,
-    "total_tokens": 3421
+    "completion_tokens": 153,
+    "total_tokens": 3348
   },
   "average_power_draw": null,
   "energy_consumption": null,

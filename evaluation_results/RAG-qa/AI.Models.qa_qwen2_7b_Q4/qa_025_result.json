@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.47411764705882353,
+  "overall_score": 0.4199754690107147,
   "individual_scores": {
-    "AnswerRelevancy": 0.9705882352941176,
+    "AnswerRelevancy": 0.9285714285714286,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.4,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.1912813854928596
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.97 because the response is highly relevant to configuring OpenID Connect for automatic user activation in XWiki, with only a minor irrelevant mention of LDAP Authenticator.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'domain-based instances and session cookie configuration', which does not pertain to enabling user accounts automatically with OpenID Connect. The second node focuses on 'container authentication and LDAP', lacking the necessary details for automatic user activation with OpenID Connect. The third node, although mentioning OpenID Connect, only covers 'installation and general configuration guides', missing the specific property for automatic activation. The fourth node lists 'dependencies for the OpenID Connect extension', unrelated to the configuration for user activation. Lastly, the fifth node is about 'LDAP and Active Directory integration', not relevant to the OpenID Connect configuration needed.",
-    "ContextualRecall": "The score is 0.40 because while there are relevant mentions of OpenID Connect and the xwiki.properties file in nodes 1 and 3 in the retrieval context, the specific instructions for adding or updating the property for user account activation, saving the file, and restarting XWiki are not covered.",
-    "CustomContextualRelevancy": "The retrieval context lacks specific information about adjusting xwiki.properties to activate user accounts with OpenID Connect, as described in the expected output."
+    "AnswerRelevancy": "The score is 0.93 because the response is highly relevant to configuring OpenID Connect in XWiki, with only a minor irrelevant mention of the LDAP Authenticator.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'domain-based authentication and session cookies', which is unrelated to enabling user accounts automatically with OpenID Connect. The second node mentions 'container authentication and LDAP', not addressing OpenID Connect or automatic user activation. The third node, although discussing OpenID Connect, focuses on 'authentication and synchronization', not on enabling user accounts automatically. The fourth node lists 'dependencies for the OpenID Connect extension', which is not relevant to the required configuration. Lastly, the fifth node is about 'LDAP and Active Directory integration', which does not pertain to the input query.",
+    "ContextualRecall": "The score is 0.40 because while the 3rd node in the retrieval context mentions 'OpenID Connect' and 'xwiki.properties', which supports the general context of adjusting the file for OpenID Connect, it does not specifically cover adding or updating the property, saving the file, or ensuring automatic activation of user accounts as described in the expected output.",
+    "CustomContextualRelevancy": "The retrieval context lacks any mention of modifying the xwiki.properties file or setting the oidc.enableUser property to true for automatic user account activation.",
+    "Correctness": "The actual output incorrectly references `xwiki.authentication.createuser` in `xwiki.cfg` instead of `oidc.enableUser` in `xwiki.properties`, and suggests creating an empty user, which does not match the expected procedure of enabling a user."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

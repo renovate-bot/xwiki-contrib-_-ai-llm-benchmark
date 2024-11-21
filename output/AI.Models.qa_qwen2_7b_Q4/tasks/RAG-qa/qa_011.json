@@ -2,7 +2,7 @@
   "id": "qa_011",
   "prompt": "Die Glocke oben rechts ist nicht verf\u00fcgbar, auch nicht wenn die Erweiterung \"Alert Notification\" installiert ist.",
   "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen in Ihrem Wiki aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nEs scheint, dass es ein Problem mit der Verf\u00fcgbarkeit der Glocke oben rechts auf Ihrer Plattform gibt. Dies k\u00f6nnte auf verschiedene Probleme hindeuten, einschlie\u00dflich technischen Schwierigkeiten oder spezifische Einstellungen auf Ihrer Seite.\n\nHier sind einige Schritte, die Sie unternehmen k\u00f6nnen:\n\n1. **\u00dcberpr\u00fcfen Sie Ihre Systemanweisungen:** Es ist m\u00f6glich, dass bestimmte Anforderungen f\u00fcr die Verf\u00fcgbarkeit der Glocke vorgeschrieben werden. Stellen Sie sicher, dass diese Anforderungen erf\u00fcllt sind.\n\n2. **Pr\u00fcfen Sie Ihre Internetverbindung:** Ein schlechter oder instabiler Netzwerkanschluss kann dazu f\u00fchren, dass bestimmte Funktionen nicht verf\u00fcgbar sind.\n\n3. **\u00dcberpr\u00fcfen Sie die Einstellungen Ihrer Plattform:** Es k\u00f6nnte sein, dass die Glocke deaktiviert ist in Ihren Einstellungen. Stellen Sie sicher, dass sie aktiviert ist und keine spezifischen Filter oder Regelungen es daran hindern, verf\u00fcgbar zu sein.\n\n4. **Installieren Sie alle notwendigen Erweiterungen:** Wenn eine bestimmte Erweiterung wie \"Alert Notification\" erforderlich ist f\u00fcr die Verf\u00fcgbarkeit der Glocke, stellen Sie sicher, dass diese installiert ist und korrekt konfiguriert wurde.\n\n5. **Kontaktieren Sie den Support Ihrer Plattform:** Wenn Sie trotz aller Versuche weiterhin Schwierigkeiten haben, k\u00f6nnten Sie sich an den Support wenden. Sie k\u00f6nnen m\u00f6glicherweise eine L\u00f6sung finden oder ein Problem mit der Plattform melden.\n\n6. **Pr\u00fcfen Sie die Systemlog-Dateien:** Manche Plattformen bieten auch die M\u00f6glichkeit, Systemlog-Dateien zu \u00fcberpr\u00fcfen, um Fehlermeldungen oder Hinweise auf Probleme zu finden.\n\nBitte beachten Sie, dass diese Schritte allgemeine Vorschl\u00e4ge sind und je nach spezifischen Anforderungen Ihrer Plattform oder Software m\u00f6glicherweise variieren k\u00f6nnten.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nEs scheint, dass Sie Probleme mit der Sirene im oberen rechten Bereich haben und diese nicht sichtbar sind, selbst wenn Sie die Erweiterung \"Alert Notification\" installiert haben.\n\nDie Sirene, oder auch die \"Alert\" Option, sollte in der Regel auf der Oberfl\u00e4che von XWiki verf\u00fcgbar sein. Wenn sie jedoch nicht erscheint, k\u00f6nnte es darauf hindeuten, dass eine bestimmte Konfiguration fehlt oder ein Fehler vorliegt.\n\nHier sind einige Schritte, die Sie durchf\u00fchren k\u00f6nnen:\n\n1. **\u00dcberpr\u00fcfen der Erweiterung**: Stellen Sie sicher, dass die \"Alert Notification\" Erweiterung korrekt installiert und aktiv ist. Sie sollten in Ihrer XWiki-Instanz eine Option f\u00fcr diese Erweiterung finden k\u00f6nnen.\n\n2. **Pr\u00fcfung der Konfiguration**: \u00dcberpr\u00fcfen Sie Ihre XWiki-Einstellungen oder Administration, um sicherzustellen, dass die \"Alert Notification\" Erweiterung korrekt konfiguriert ist und nicht deaktiviert ist.\n\n3. **\u00dcberpr\u00fcfen der Benutzerberechtigungen**: Stellen Sie sicher, dass Sie als Administrator oder mit entsprechenden Berechtigungen auf Ihrer XWiki-Instanz arbeiten k\u00f6nnen. Einige Funktionen k\u00f6nnten nur von Administratoren oder bestimmten Rollen erreichbar sein.\n\n4. **Pr\u00fcfung des XWiki Versions**: Die Verf\u00fcgbarkeit und Funktionen der Sirene k\u00f6nnen von der Version abh\u00e4ngen, die Sie verwenden. Stellen Sie sicher, dass Ihre XWiki-Version mit der \"Alert Notification\" Erweiterung kompatibel ist.\n\n5. **Suche nach Fehlermeldungen**: \u00dcberpr\u00fcfen Sie die Systemlog-Datei oder andere Fehlermeldungen auf Ihrer Serverseite f\u00fcr Hinweise auf m\u00f6gliche Probleme.\n\n6. **Kontaktieren von Support**: Wenn alle obigen Schritte erfolglos waren und Sie weiterhin Schwierigkeiten haben, k\u00f6nnten Sie sich an den XWiki-Support wenden oder eine Frage in einer XWiki-Forum stellen.\n\nBitte beachten Sie, dass die genauen Schritte variieren k\u00f6nnen, je nach Ihrer spezifischen XWiki-Einstellung und der verwendeten Softwareversion.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -54,13 +54,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 34,
-    "completion_tokens": 430,
-    "total_tokens": 464
+    "prompt_tokens": 2971,
+    "completion_tokens": 479,
+    "total_tokens": 3450
   },
-  "average_power_draw": 167.2732506459948,
-  "energy_consumption": 794.7371362731893,
-  "energy_per_input_token": 0.7166250101651842,
-  "energy_per_output_token": 1.7915625254129606,
-  "energy_per_total_token": 1.712795552312908
+  "average_power_draw": 182.60800766283523,
+  "energy_consumption": 1182.891558285956,
+  "energy_per_input_token": 0.28376911557777523,
+  "energy_per_output_token": 0.7094227889444381,
+  "energy_per_total_token": 0.3428671183437554
 }

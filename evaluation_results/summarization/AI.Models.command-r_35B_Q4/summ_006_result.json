@@ -1,9 +1,9 @@
 {
-  "score": 0.4,
-  "reason": "The score is 0.40 because the summary includes extra information not present in the original text, such as user capabilities like creating, editing, or viewing pages, and accessing page history. Additionally, it inaccurately states that the text provides links to documentation for users, administrators, and developers. Furthermore, the summary fails to address specific questions that the original text can answer, such as the availability of guides for creating a page, pre-installed applications for developers, and a dedicated wiki for XWiki Rendering documentation.",
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary includes extra information not present in the original text, such as users learning to create pages and documentation links, and it fails to answer questions about specific features like dedicated wiki documentation and pre-installed applications, indicating a moderate level of alignment with the original text.",
   "score_breakdown": {
-    "Alignment": 0.5,
-    "Coverage": 0.4
+    "Alignment": 0.6,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

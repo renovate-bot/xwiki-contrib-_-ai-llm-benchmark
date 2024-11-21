@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.37894736842105264,
+  "overall_score": 0.3274774768533072,
   "individual_scores": {
     "AnswerRelevancy": 0.8947368421052632,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.07012801901457995
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.89 because the response mostly addresses the issue of not receiving notifications, but it includes irrelevant source links that do not pertain to the problem.",
+    "AnswerRelevancy": "The score is 0.89 because the response is mostly relevant to the issue of not receiving notifications, but it includes links to unrelated topics like XWiki skins and a security module extension, which slightly detract from its focus.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node contains 'image links and references to various projects,' which do not relate to notifications. The second node also includes 'image links and references,' lacking information on notifications. The third node continues with 'image links and references,' offering no relevant details. The fourth node is a 'continuation of image links and references,' without mentioning notifications. The fifth node discusses 'permissions and a security module,' unrelated to notifications.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to enabling notifications or following pages and users as described in the expected output."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first four nodes contain 'image links and references which are not related to notifications or their settings', and the fifth node 'describes a security module and its ratings, which is unrelated to notification settings or issues'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context contains image links and unrelated text, lacking any information about enabling notifications or following pages/users as described in the expected output.",
+    "Correctness": "The actual output lacks detailed instructions for enabling notifications in 'xwiki.properties' and following pages, while focusing on troubleshooting steps instead."
   },
   "question_language": "de",
   "expected_answer_language": "de",

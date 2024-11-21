@@ -2,7 +2,7 @@
   "id": "qa_003",
   "prompt": "In the context of XWiki I am not receiving notifications about my own activity. How can I enable notifications for my own actions?",
   "expected_answer": "By default, one don't receive notification about one's own activity (unless the event that triggered the notification targets explicitly that user). You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings in your user profile.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\n\n\nBy default, you don't receive notifications about your own activity in XWiki. However, you can enable this feature by disabling the \"Own event filter\" in your notification settings.\n\nTo do this, follow these steps:\n\n1. Go to your notification settings.\n2. Look for the \"Advanced filtering options\" section.\n3. Disable the \"Own event filter\" option.\n\nThis will allow you to receive notifications about your own actions. Note that this is a per-user setting, so you'll need to do this for your own account.\n\nAlternatively, you can also ask an administrator to change this setting for you. Starting from XWiki 13.2, administrators can directly change users' notification settings by going to their profile and clicking on the \"Notifications\" tab in the menu.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nBy default, you don't receive notifications about your own activity in XWiki. However, you can enable this feature by disabling the \"Own event filter\" in your notification settings.\n\nTo do this, follow these steps:\n\n1. Go to your notification settings.\n2. Look for the \"Advanced filtering options\" section.\n3. Disable the \"Own event filter\" option.\n\nOnce you've disabled this filter, you should start receiving notifications about your own actions.\n\nNote that this is a per-user setting, so you'll need to make this change in your own notification settings. Additionally, this feature is available in XWiki 14.1 and later versions.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -47,8 +47,8 @@
   ],
   "usage": {
     "prompt_tokens": 2436,
-    "completion_tokens": 159,
-    "total_tokens": 2595
+    "completion_tokens": 133,
+    "total_tokens": 2569
   },
   "average_power_draw": null,
   "energy_consumption": null,

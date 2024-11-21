@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.34545454545454546,
+  "overall_score": 0.38016156408134877,
   "individual_scores": {
-    "AnswerRelevancy": 0.7272727272727273,
+    "AnswerRelevancy": 0.625,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.6559693844880929
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.73 because the answer partially addresses the question about configuring file upload restrictions, but it includes multiple irrelevant source links that do not directly relate to the specific task of restricting uploads to images or PDFs under 10 MB.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'language preferences and translations in XWiki', which is unrelated to file upload restrictions. The second node talks about 'various XWiki applications like tour guides and administration', which also does not pertain to file upload settings. Similarly, the third node is about 'customizing PDF export styles using CSS and XSL', which is not relevant to the topic of file upload restrictions. All subsequent nodes continue this trend of irrelevance, discussing topics like 'trusted domains and PDF export architecture', 'ODT export and PDF export methods', 'XWiki macros and their functionalities', and 'references and images', none of which address the input question regarding file upload configurations.",
-    "ContextualRecall": "The score is 0.00 because none of the expected output details, such as file size restrictions, MIME type configurations, or specific steps for setting upload limits, are supported by any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about configuring MIME types or setting attachment size limits as described in the expected output."
+    "AnswerRelevancy": "The score is 0.62 because the actual output contains multiple irrelevant URL statements that do not address the input question about configuring file upload restrictions, which lowers the score. However, the score is not lower because there is still some relevant information provided regarding the configuration of file uploads.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input query about file upload restrictions. For example, the first node discusses 'language preferences and translations in XWiki', which is unrelated to file upload settings. Similarly, the second node covers 'mail configuration and theme customization', which also does not address file upload settings.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output could be attributed to any nodes in the retrieval context, indicating a complete mismatch between the expected information and the available context.",
+    "CustomContextualRelevancy": "The retrieval context lacks any information related to configuring MIME types or setting maximum attachment size, which are key components of the expected output.",
+    "Correctness": "The actual output properly addresses MIME type configuration and attachment size, similar to the expected output, but omits specific steps for changing settings via the XWikiPreferences interface and does not mention repeating the process for sub-wikis."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.6766666666666665,
+  "overall_score": 0.7046039616491253,
   "individual_scores": {
     "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.41666666666666663,
-    "ContextualRecall": 0.6666666666666666,
-    "CustomContextualRelevancy": 0.3
+    "ContextualPrecision": 0.3333333333333333,
+    "ContextualRecall": 0.6363636363636364,
+    "CustomContextualRelevancy": 0.5,
+    "Correctness": 0.7579268001977821
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the response perfectly addresses the question without any irrelevant information. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.42 because the relevant nodes in the retrieval context are not ranked as high as they should be. The first node discusses 'linking to external files and backlinks indexation,' which is not relevant to configuring upload restrictions or size limits, yet it is ranked higher than a relevant node. Similarly, the second node provides 'a general overview of XWiki's structure and features,' which does not address attachment upload restrictions, but is ranked above nodes that do. The third node, which explains 'how to set limits on the maximum size of an attachment in the XWikiPreferences document,' is relevant and should be ranked higher. Additionally, the fourth node, which discusses 'attachment display and mimetype restrictions,' is relevant and should also be ranked higher than the irrelevant nodes.",
-    "ContextualRecall": "The score is 0.67 because while the 3rd node in the retrieval context provides detailed steps related to setting limits on attachment size and configuring mimetype restrictions, it does not explicitly mention configuring allowed mimetypes or the specific line 'attachment.upload.allowList=image/*,application/pdf'.",
-    "CustomContextualRelevancy": "The retrieval context mentions configuring maximum attachment size and mimetype restrictions but lacks specific details on setting the 10MB limit and allowed mimetypes as in the expected output."
+    "AnswerRelevancy": "The score is 1.00 because the output perfectly addresses the input without any irrelevant statements. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.33 because the relevant node in the retrieval context, ranked third, provides information on setting maximum attachment size and mentions mimetype restrictions, which are directly related to the input. However, irrelevant nodes ranked first, second, fourth, and fifth discuss topics such as linking to external files and images, general overview of XWiki's structure, attachment display and security settings, and versioning and storage of attachments, none of which address the configuration of upload size or mimetype restrictions. These irrelevant nodes should be ranked lower than the relevant node.",
+    "ContextualRecall": "The score is 0.64 because while nodes in the retrieval context support detailed steps for configuring mimetypes and maximum attachment size (as seen in sentences 2-7), introductory and explanatory sentences (1 and 8) and step titles (9 and 10) are not directly supported by the nodes.",
+    "CustomContextualRelevancy": "The retrieval context mentions configuring maximum attachment size and mimetype restrictions but lacks specific details on setting 10MB limit and mimetype allowList.",
+    "Correctness": "The actual output correctly mentions setting the maximum upload size to 10MB and configuring mimetype restrictions. However, it introduces the Attachment Validation Application not mentioned in the expected output and uses 'attachment.upload.allowedMimeTypes' instead of 'attachment.upload.allowList'."
   },
   "question_language": "en",
   "expected_answer_language": "en",

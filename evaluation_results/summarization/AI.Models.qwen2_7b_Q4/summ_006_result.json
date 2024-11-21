@@ -1,8 +1,8 @@
 {
-  "score": 0.375,
-  "reason": "The score is 0.38 because the summary contains multiple inaccuracies and adds information not present in the original text. It incorrectly describes the content of the Getting Started guide and the availability of applications for developers. Additionally, it introduces several details that are not mentioned in the original text, such as the need for contacting an administrator for login credentials and steps for creating pages. Furthermore, the summary fails to answer a question that the original text can address, indicating a lack of completeness and accuracy.",
+  "score": 0.42857142857142855,
+  "reason": "The score is 0.43 because the summary contains contradictions regarding the Developer's Guide and incorrectly suggests developers use pre-installed applications. Additionally, it includes extra information about creating and editing pages, page history, and suggestions for creating a page, which are not mentioned in the original text. Furthermore, the summary fails to answer a question about a dedicated wiki for XWiki Rendering documentation that the original text can address.",
   "score_breakdown": {
-    "Alignment": 0.375,
+    "Alignment": 0.42857142857142855,
     "Coverage": 0.8
   },
   "input_language": "en",

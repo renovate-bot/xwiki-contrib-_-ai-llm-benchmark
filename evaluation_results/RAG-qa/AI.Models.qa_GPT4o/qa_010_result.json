@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.7427350427350428,
+  "overall_score": 0.6409501522286888,
   "individual_scores": {
-    "AnswerRelevancy": 0.7692307692307693,
+    "AnswerRelevancy": 0.7142857142857143,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.5694444444444444,
-    "ContextualRecall": 0.875,
-    "CustomContextualRelevancy": 0.5
+    "ContextualPrecision": 0.16666666666666666,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.2,
+    "Correctness": 0.7647485324197508
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.77 because the output partially addresses the question about configuring permissions in XWiki, but it includes multiple irrelevant statements with source links that do not directly answer the configuration question.",
+    "AnswerRelevancy": "The score is 0.71 because the output partially addresses the input question about configuring permissions in XWiki, but includes multiple irrelevant source links that do not contribute to answering the question.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.57 because the first node in the retrieval context is relevant, discussing 'rights inheritance and administration features' pertinent to configuring access control in XWiki. However, the second node is irrelevant, focusing on 'the parent/child relationship and nested spaces', which does not directly relate to setting view and edit permissions for teams. Additionally, the third node is also irrelevant, discussing 'string formatting and OpenID Connect properties', which is unrelated to the input question. These irrelevant nodes are ranked higher than other relevant nodes, such as the sixth node, which explains 'XWiki's permission system, including setting view and edit rights at different levels', and the eighth node, which provides 'basic rules about setting rights at different levels in XWiki'.",
-    "ContextualRecall": "The score is 0.88 because most of the expected output is supported by the nodes in retrieval context, particularly node 6 which aligns with the majority of the steps and outcomes related to access control. However, there is a lack of information regarding the adjustment of rights for additional teams or spaces, which slightly impacts the score.",
-    "CustomContextualRelevancy": "The retrieval context mentions setting rights at different levels and inheriting access rights, which aligns with setting wiki-wide and space-level rights in the expected output. However, it lacks specific details about creating groups for each team and setting rights specifically for 'XWikiAllGroup' and team-specific edit rights."
+    "ContextualPrecision": "The score is 0.17 because the relevant node in retrieval context, which provides information on XWiki's permission system including setting view and edit rights, is ranked sixth. The first node discusses content organization and rights inheritance in XWiki, which doesn't directly address setting view and edit permissions for teams. The second node is about the parent/child relationship and nested spaces, not directly related to configuring team-specific permissions. The third node discusses string formatting and user properties in OpenID Connect, unrelated to access control in XWiki. These irrelevant nodes should be ranked lower than the relevant node.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is perfectly supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions setting rights at different levels and inheritance, but lacks specifics on creating groups for each team, setting wiki-wide rights, and space-level rights as described in the expected output.",
+    "Correctness": "The actual output accurately describes setting global view permissions and restricting edit permissions to specific spaces, aligning with the expected output. However, it lacks mention of creating groups for each team and inheriting rights for child pages, which are key facts in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary contains a minor contradiction regarding the location and function of the 'History' tab and includes extra information about a 'Version Control page' not present in the original text. Despite these issues, the summary largely aligns with the original text, indicating a generally high-quality summarization.",
+  "score": 0.6666666666666666,
+  "reason": "The score is 0.67 because the summary includes some incorrect information about the location of the 'More Actions' button and adds details not found in the original text, such as the 'Version Control page on XWiki.org' and changing the logo and panels in XWiki. Additionally, the summary fails to address whether all contents added to the wiki are saved over time, which the original text can answer.",
   "score_breakdown": {
-    "Alignment": 0.8,
-    "Coverage": 1.0
+    "Alignment": 0.6666666666666666,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

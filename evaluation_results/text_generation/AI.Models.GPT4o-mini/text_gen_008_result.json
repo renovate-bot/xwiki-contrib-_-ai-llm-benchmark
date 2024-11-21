@@ -1,6 +1,6 @@
 {
-  "score": 1.0,
-  "reason": "The Actual Output is a comprehensive travel guide for Kyoto, aligning perfectly with the Input prompt. It covers top attractions, accommodations, and activities, matching the Expected Output's criteria for an informative guide. The content is coherent, logically structured, and grammatically fluent.",
+  "score": 0.9,
+  "reason": "The Actual Output is highly relevant to the Input, providing a comprehensive travel guide to Kyoto, a popular tourist destination. It covers attractions, transportation, cultural experiences, and tips, aligning well with the Expected Output. The content is coherent, fluent, and logically structured. However, it lacks specific mention of accommodations, which slightly deviates from the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

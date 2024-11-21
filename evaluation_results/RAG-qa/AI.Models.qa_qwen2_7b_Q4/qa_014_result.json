@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.36,
+  "overall_score": 0.31703183141653046,
   "individual_scores": {
-    "AnswerRelevancy": 0.8,
+    "AnswerRelevancy": 0.7916666666666666,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.11052432183251618
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.80 because the response addresses the main question about disabling notifications, but it includes several irrelevant URLs related to XWiki documentation, syntax, extensions, security module, and features, which do not pertain to the specific query.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'attaching files', which is unrelated to 'notification settings'. The second node is about 'moving and deleting attachments', not 'managing notification settings'. The third node covers 'displaying pages and macros', which does not pertain to 'notification settings'. The fourth node is about 'administrating wiki features', with no mention of 'notification settings'. The fifth node discusses 'permissions and security', not 'notification settings'. Lastly, the sixth node lists 'applications and features like Office Importer and Syntax Highlighting', which are not related to 'notification settings'.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to automatic page following or notification settings as mentioned in the expected output."
+    "AnswerRelevancy": "The score is 0.79 because the output contains some relevant information about disabling notifications, but it includes multiple irrelevant links to documentation pages that do not directly address the question about disabling notifications.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'attaching files', the second node is about 'moving attachments', the third node covers 'displaying various elements', the fourth node focuses on 'administrating wiki features', and the fifth node talks about 'importing office documents'. None of these topics relate to managing or deactivating notification settings, which is the focus of the input.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about automatic page following, notification settings, or custom filters as mentioned in the expected output.",
+    "Correctness": "The actual output discusses disabling notifications, not the automatic following of pages after edits as in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

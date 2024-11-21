@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.7495238095238095,
+  "overall_score": 0.5023809523809524,
   "individual_scores": {
-    "AnswerRelevancy": 0.7333333333333333,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.0,
+    "Faithfulness": 1,
     "ContextualPrecision": 0.5,
     "ContextualRecall": 0.7142857142857143,
-    "CustomContextualRelevancy": 0.8
+    "CustomContextualRelevancy": 0.8,
+    "Correctness": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.73 because the main content addresses the question about authenticating users with access tokens, but the inclusion of multiple source links that do not directly contribute to the explanation reduces the overall relevancy.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.50 because relevant nodes in the retrieval context are mixed with irrelevant ones. The first node discusses 'LDAP authentication settings in XWiki', which is unrelated to the input about token-based authentication, yet it is ranked higher than relevant nodes. Similarly, the third node talks about 'OpenID Connect scopes and response types', which are not directly related to JWT token-based authentication, but it is ranked above a relevant node. The relevant nodes that discuss 'Authorized Applications' and 'authentication using JWT tokens' are not consistently ranked higher than these irrelevant nodes.",
-    "ContextualRecall": "The score is 0.71 because several key aspects of the expected output, such as authenticating users with JWTs and configuring the token authenticator, are well-supported by nodes in the retrieval context. However, details about generating a JWT token with specific claims and including it in the 'Authorization' header are not explicitly covered in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context includes details about configuring authorized applications and enabling the token authenticator, aligning with the expected answer. However, it lacks specific mention of required JWT claims and the use of the 'Authorization' header."
+    "AnswerRelevancy": "The score is 0.00 because none of the statements in the actual output are relevant to the question about authenticating users with access tokens. The output contains numerous unrelated topics and lacks any direct answer to the input question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output is perfectly aligned with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.50 because relevant nodes in the retrieval context, such as the second node which 'explains the configuration of authorized applications, which is relevant to using access tokens for authentication', and the fourth node which 'provides a description of the extension for authenticating users with JWT tokens, directly addressing the input question', are ranked lower than irrelevant nodes. The first node, discussing 'LDAP configuration and does not mention token-based authentication or JWT', and the third node, focusing on 'OpenID Connect scopes and response types, which is unrelated to the use of JWT tokens for authentication', should be ranked lower than these relevant nodes.",
+    "ContextualRecall": "The score is 0.71 because while several key aspects of the expected output, such as the use of JWT for authentication (sentence 1) and configuration details (sentences 2 and 5), are supported by nodes in the retrieval context, some specific instructions like generating a JWT token with required claims (sentence 3) and including it in the 'Authorization' header (sentence 4) are not mentioned in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context confirms the use of JWT for authentication and mentions configuring authorized applications, but lacks details on token claims and specific configuration steps like setting the authclass property.",
+    "Correctness": "The actual output is completely unrelated to the expected output, discussing unrelated topics like AI and Python, whereas the expected output focuses on token-based authentication for LLM Application."
   },
   "question_language": "en",
   "expected_answer_language": "en",

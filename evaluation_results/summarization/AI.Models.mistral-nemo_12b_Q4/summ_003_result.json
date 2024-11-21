@@ -1,9 +1,9 @@
 {
-  "score": 0.07142857142857142,
-  "reason": "The score is 0.07 because the summary includes a significant amount of extra information not present in the original text, which indicates a poor alignment with the original content. Additionally, the summary fails to answer questions that the original text can address, further reducing its effectiveness and relevance.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary includes a significant amount of extra information not present in the original text, which affects its accuracy and relevance.",
   "score_breakdown": {
-    "Alignment": 0.07142857142857142,
-    "Coverage": 0.4
+    "Alignment": 0.4,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

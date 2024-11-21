@@ -2,7 +2,7 @@
   "id": "qa_003",
   "prompt": "In the context of XWiki I am not receiving notifications about my own activity. How can I enable notifications for my own actions?",
   "expected_answer": "By default, one don't receive notification about one's own activity (unless the event that triggered the notification targets explicitly that user). You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings in your user profile.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nTo receive notifications in XWiki regarding your own activities, you need to ensure that you have set up your user preferences correctly on the platform and also make use of any available extensions or plugins specifically designed for this purpose within the XWike environment. Here are some steps that generally apply:\n\n1. Log into your XWiki account.\n2. Navigate to the User Preferences section, which can commonly be found by clicking on your username in the top right corner and selecting 'My Account' or a similarly titled menu option.\n3. Look for an area named \"Notifications\" within the user preferences page. Here you should see options regarding email alerts and other forms of notification that XWiki might support. Make sure that you have toggled on the notifications setting as per your requirements, such as receiving emails when changes are made to documents you've created or edited.\n4. If no such feature is available in the core functionality after searching through user preferences, check for plugins or add-ons from the XWiki community store that might provide this capability. Plugins can sometimes extend or modify behavior of the platform including notification systems.\n5. In some cases, if you're setting up an automated process to monitor your actions (like a bot), ensure it has proper permissions and access within XWiki. The bot would typically require read/write access to your user account in order to fetch or post notifications accordingly.\n\nIf these steps do not yield the expected functionality, reviewing community forums and XWiki documentation might provide additional insights, as other users with similar needs may have contributed a solution. Additionally, contacting support directly could help clarify whether this feature is available within your specific version of XeWiki or if there are any workarounds needed due to limitations in the current setup.\n\nRemember that changes may take some time to reflect depending on how frequently the system checks for updates and notifications being processed by your user preferences settings or any plugins/extensions you've activated.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nYes, by default you don't receive notifications when it concerns your own activity in XWiki (XWiki version 14.1+). However, you have the option to change this setting within the \"Advanced filtering options\" section of your notification settings. This is a per-user setting and not global. It allows you to receive notifications about events that specifically target you. To modify these settings:\n\n1. Navigate to Administration > Notifications in XWiki.\n2. In the Advanced Filtering Options, locate the \"Filter your own events\" option. \n3. Enable this setting as desired. You can find more details on how to do this at [XWiki's User Guide](https://www.xwiki.org/documentation/user_guide/features#HNotificationsApplication).",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 36,
-    "completion_tokens": 424,
-    "total_tokens": 460
+    "prompt_tokens": 3120,
+    "completion_tokens": 176,
+    "total_tokens": 3296
   },
-  "average_power_draw": 223.85511111111103,
-  "energy_consumption": 1332.6272110595698,
-  "energy_per_input_token": 1.2159007400178556,
-  "energy_per_output_token": 3.039751850044639,
-  "energy_per_total_token": 2.8970156762164563
+  "average_power_draw": 271.4914336917563,
+  "energy_consumption": 913.9516113705021,
+  "energy_per_input_token": 0.25672798072205116,
+  "energy_per_output_token": 0.6418199518051279,
+  "energy_per_total_token": 0.27729114422648726
 }

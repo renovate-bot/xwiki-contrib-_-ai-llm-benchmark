@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output is highly relevant to the Input, presenting a recent scientific discovery in neuroscience. It is coherent, with a logical flow and consistent ideas, matching the Expected Output's requirement for an informative article on a groundbreaking finding. The language is fluent, grammatically correct, and natural, aligning well with the Expected Output.",
+  "reason": "The Actual Output is highly relevant to the Input, providing a detailed news article about a recent scientific discovery in neuroscience. It is coherent, with logically connected ideas and smooth, natural language. The key elements and intent of the Expected Output are met, as the article is informative and summarizes a groundbreaking scientific finding effectively.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

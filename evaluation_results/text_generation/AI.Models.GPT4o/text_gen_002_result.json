@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output effectively addresses the Input prompt by incorporating all keywords into a coherent sentence. It maintains logical flow and consistency with the Expected Output, differing only in the choice of 'frolicked' instead of 'enjoyed exploring', which does not significantly impact fluency or coherence.",
+  "reason": "The Actual Output is relevant and coherent, addressing the Input prompt by using all keywords in a logical sentence. It maintains fluency and quality similar to the Expected Output, with only a slight variation in the verb used, which does not impact overall quality.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

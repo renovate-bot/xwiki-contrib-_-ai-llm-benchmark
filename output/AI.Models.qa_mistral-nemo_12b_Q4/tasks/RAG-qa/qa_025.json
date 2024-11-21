@@ -2,7 +2,7 @@
   "id": "qa_025",
   "prompt": "Comment puis-je configurer XWiki pour activer automatiquement les comptes d'utilisateurs lors de leur premi\u00e8re connexion \u00e0 l'aide de OpenID Connect?\nJ'ai configur\u00e9 l'authentification OpenID Connect dans mon instance XWiki, mais les utilisateurs ne sont pas automatiquement activ\u00e9s apr\u00e8s leur premi\u00e8re connexion. Quelle configuration dois-je ajuster?",
   "expected_answer": "Pour activer automatiquement les comptes d'utilisateurs lors de leur premi\u00e8re connexion \u00e0 l'aide de OpenID Connect dans XWiki, vous devez ajuster le fichier `xwiki.properties`.\n\nAjoutez ou mettez \u00e0 jour la propri\u00e9t\u00e9 suivante:\n\n```\n#-# D\u00e9finir si les comptes utilisateurs doivent \u00eatre activ\u00e9s (marqu\u00e9s comme actifs) lors de la premi\u00e8re connexion\n# oidc.enableUser=true\n```\n\nAssurez-vous de d\u00e9commenter et de d\u00e9finir la propri\u00e9t\u00e9 `oidc.enableUser` sur `true`. Apr\u00e8s cette modification, enregistrez le fichier et red\u00e9marrez votre instance XWiki pour que les modifications prennent effet.\n\nCela garantira que les nouveaux comptes d'utilisateurs seront automatiquement activ\u00e9s lorsqu'ils se connecteront pour la premi\u00e8re fois via OpenID Connect.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \n\n\nPour activer automatiquement les comptes d'utilisateurs lors de leur premi\u00e8re connexion \u00e0 l'aide de OpenID Connect dans XWiki, vous devrez effectuer quelques \u00e9tapes suppl\u00e9mentaires apr\u00e8s avoir configur\u00e9 l'authentification OpenID Connect.\n\nVoici les \u00e9tapes que vous pouvez suivre :\n\n1. Assurez-vous que l'option \"Automatic User Creation\" est activ\u00e9e dans la configuration de l'authentification OpenID Connect. Cette option permet \u00e0 XWiki de cr\u00e9er automatiquement un compte utilisateur si l'utilisateur n'existe pas d\u00e9j\u00e0 dans le syst\u00e8me.\n2. V\u00e9rifiez que les informations d'identification de l'utilisateur sont correctement configur\u00e9es dans votre fournisseur d'OpenID Connect. Les informations d'identification doivent inclure l'adresse e-mail de l'utilisateur, qui sera utilis\u00e9e pour cr\u00e9er un compte utilisateur dans XWiki.\n3. Configurez les autorisations d'acc\u00e8s pour les nouveaux utilisateurs cr\u00e9\u00e9s automatiquement. Vous pouvez le faire en cr\u00e9ant un groupe d'utilisateurs avec des autorisations appropri\u00e9es et en affectant ce groupe aux nouveaux utilisateurs cr\u00e9\u00e9s automatiquement.\n4. V\u00e9rifiez que la fonctionnalit\u00e9 de cr\u00e9ation automatique de compte est activ\u00e9e dans les param\u00e8tres globaux de XWiki. Cette option peut \u00eatre trouv\u00e9e dans la section \"User Management\" des param\u00e8tres globaux.\n\nEn suivant ces \u00e9tapes, vous devriez \u00eatre en mesure d'activer automatiquement les comptes d'utilisateurs lors de leur premi\u00e8re connexion \u00e0 l'aide de OpenID Connect dans XWiki. Si vous rencontrez toujours des probl\u00e8mes, n'h\u00e9sitez pas \u00e0 consulter la documentation officielle de XWiki ou \u00e0 contacter leur support pour obtenir de l'aide suppl\u00e9mentaire.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \n\n\nD'apr\u00e8s les informations fourn\u00e9es dans les documents suivants :\n- <https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/>\n- <https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/>\n\nIl semble que l'authentification OpenID Connect dans XWiki ne permette pas une activation automatique des comptes d'utilisateurs lors de leur premi\u00e8re connexion. Cependant, il est possible de synchroniser les utilisateurs existants avec un fournisseur OpenID Connect \u00e0 l'aide de l'extension OpenID Connect Authenticator.\n\nPour configurer la synchronisation des utilisateurs, vous pouvez suivre les instructions dans la section \"Configuration files\" du document <https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/>.\n\nSi vous souhaitez activer automatiquement les comptes d'utilisateurs lors de leur premi\u00e8re connexion, il est possible que vous deviez utiliser une autre m\u00e9thode d'authentification ou modifier le comportement de l'extension OpenID Connect Authenticator. Il serait recommand\u00e9 de contacter l'\u00e9quipe de d\u00e9veloppement de XWiki ou de consulter la documentation officielle pour obtenir des informations plus pr\u00e9cises sur cette fonctionnalit\u00e9.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 76,
-    "completion_tokens": 355,
-    "total_tokens": 431
+    "prompt_tokens": 2253,
+    "completion_tokens": 274,
+    "total_tokens": 2527
   },
-  "average_power_draw": 195.50822222222223,
-  "energy_consumption": 972.5667337290976,
-  "energy_per_input_token": 1.0094102062574961,
-  "energy_per_output_token": 2.5235255156437404,
-  "energy_per_total_token": 2.256535345079113
+  "average_power_draw": 186.2399111111111,
+  "energy_consumption": 1027.0071836259417,
+  "energy_per_input_token": 0.34955996719739335,
+  "energy_per_output_token": 0.8738999179934834,
+  "energy_per_total_token": 0.4064136065001748
 }

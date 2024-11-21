@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.36875,
+  "overall_score": 0.2700045495034044,
   "individual_scores": {
-    "AnswerRelevancy": 0.84375,
+    "AnswerRelevancy": 0.5833333333333334,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.03669396368709306
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.84 because the answer largely addresses the question about controlling file uploads on a wiki, but it includes multiple irrelevant source links that do not directly relate to the topic, preventing a higher score.",
+    "AnswerRelevancy": "The score is 0.58 because the answer includes multiple irrelevant source links that do not directly address the question about setting file upload restrictions, which lowers the relevancy. However, the score is not lower because there is some relevant information present that partially addresses the question.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'language preferences and translations in XWiki', which is unrelated to configuring file upload restrictions. The second node describes 'various XWiki applications and features, such as the Administration UI and PDF export', but does not address file upload settings. The third node focuses on 'technical details of PDF export customization', which is not relevant to setting file upload restrictions. The fourth node lists 'various XWiki macros and their functionalities', none of which pertain to file upload restrictions. The fifth node provides 'links to image files and references', which are not related to configuring file upload settings. The sixth node contains 'links to image files and references', which do not provide information on setting file upload restrictions.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any node(s) in the retrieval context, as the context lacks information on file types, size restrictions, MIME types, or configuration settings related to attachments.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to configuring MIME types or attachment size settings as mentioned in the expected output."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'language preferences and translations in XWiki', which is unrelated to configuring file upload restrictions. The second node lists 'various XWiki applications and features, such as tour guides and mail configuration', but does not mention file upload settings. The third node explains 'PDF export customization using CSS and XSL', which is not relevant to setting file upload restrictions. The fourth node provides 'information about system notification filters and office document viewing', which are unrelated to file upload configurations. The fifth node contains 'image links and references to various projects', which do not pertain to configuring file upload restrictions. Lastly, the sixth node includes 'image links and references to various organizations', which are not relevant to the topic of file upload settings.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be traced back to any nodes in the retrieval context, as the context lacks information on file size limits, attachment restrictions, MIME type configurations, and instructions for editing or saving changes in `XWikiPreferences`.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to configuring MIME types or attachment size limits in XWiki, which are key aspects of the expected output.",
+    "Correctness": "The actual output does not provide any specific steps or facts about MIME type configuration or setting file size limits to 10 MB, as outlined in the expected output. It only offers general suggestions without concrete actions."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

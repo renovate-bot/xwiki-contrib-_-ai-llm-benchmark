@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output is relevant and coherent, directly addressing the Input prompt with a logical flow. It is fluent with correct grammar and syntax. The main difference from the Expected Output is the use of 'enjoys frolicking' instead of 'enjoyed exploring,' which slightly affects alignment but maintains overall quality.",
+  "reason": "The Actual Output is relevant to the Input prompt, maintaining the same topic and requirements. It is coherent with a logical flow and consistent ideas, similar to the Expected Output. The only minor difference is the use of 'enjoys' instead of 'enjoyed', which slightly affects fluency but does not significantly impact readability.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

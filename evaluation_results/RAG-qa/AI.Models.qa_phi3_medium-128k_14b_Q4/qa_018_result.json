@@ -1,20 +1,22 @@
 {
-  "overall_score": 0.60453216374269,
+  "overall_score": 0.6180074581197905,
   "individual_scores": {
-    "AnswerRelevancy": 0.8421052631578947,
+    "AnswerRelevancy": 0.8,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0.325,
-    "ContextualRecall": 0.5555555555555556,
-    "CustomContextualRelevancy": 0.3
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.5,
+    "Correctness": 0.583044748718743
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.84 because the response mostly addresses the question about configuring upload restrictions for images and PDFs, but includes irrelevant links that do not directly relate to the topic, slightly lowering the score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.33 because the first three nodes in the retrieval context are irrelevant, discussing topics like 'trusted domains and PDF export customization', 'ODT export and PDF export features', and 'features and macros available in XWiki', which do not relate to configuring attachment upload restrictions. These should be ranked lower than the fourth and fifth nodes, which are directly relevant as they include links to 'Size Limit' and 'Mimetype Restriction' and provide steps on setting the maximum size of an attachment.",
-    "ContextualRecall": "The score is 0.56 because while the retrieval context's 5th node supports the steps for configuring the maximum attachment size (related to sentences in 'Schritt 2'), it lacks information on configuring MIME types and restricting uploads to images and PDFs (related to sentences in 'Schritt 1').",
-    "CustomContextualRelevancy": "The retrieval context mentions configuring maximum attachment size and MIME type restrictions, but lacks specific details on setting MIME types in xwiki.properties and the exact steps for setting the size to 10 MB."
+    "AnswerRelevancy": "The score is 0.80 because the response mostly addresses the question about setting upload restrictions for attachments, but it includes irrelevant links about exporting features, XWiki syntax, and document lifecycle features, which are not directly related to the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.33 because the first three nodes in the retrieval context are irrelevant, discussing 'trusted domains and PDF export customization', 'ODT and PDF export features', and 'various macros and features', which do not pertain to configuring upload restrictions for attachments. The relevant nodes, which discuss 'Size Limit' and 'Mimetype Restriction', and provide 'detailed steps on setting the maximum size for attachments', are ranked fourth and fifth, lowering the score. However, the presence of these relevant nodes contributes to the score being above zero.",
+    "ContextualRecall": "The score is 0.50 because while the steps to change the maximum upload size in XWikiPreferences (sentences 2 to 6) are well-supported by the 5th node in the retrieval context, the initial instructions regarding MIME type configuration (sentences 1 and 7 to 11) are not supported by any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context partially covers the expected answer by mentioning the configuration of maximum upload size and MIME type restrictions, but lacks specific details such as the exact MIME type configuration line and the step-by-step process for setting the maximum size to 10 MB.",
+    "Correctness": "Actual output correctly details setting the maximum upload size to 10MB and provides related steps, but lacks specific configuration of MIME types in 'xwiki.properties' as shown in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",
-  "answer_language": "de"
+  "answer_language": "en"
 }

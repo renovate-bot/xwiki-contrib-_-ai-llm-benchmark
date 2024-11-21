@@ -2,7 +2,7 @@
   "id": "qa_032",
   "prompt": "Kann ich Benutzer mit Zugriffstoken authentifizieren?",
   "expected_answer": "Ja, Sie k\u00f6nnen Benutzer mit Zugriffstoken mithilfe der Token-basierten Authentifizierung f\u00fcr die LLM-Anwendung (BETA)-Erweiterung authentifizieren.\n\nDiese Erweiterung erm\u00f6glicht es externen Anwendungen, Benutzer mit signierten JSON Web Tokens (JWT) zu authentifizieren. Der Token muss bestimmte Anspr\u00fcche enthalten, wie Ablaufzeit, Aussteller, Betreff und Zielgruppe, und muss mit einem Ed25519-Schl\u00fcssel signiert sein.\n\nUm diesen Authentifizierer zu verwenden, m\u00fcssen Sie:\n\n1. Den Token-Authentifizierer aktivieren, indem Sie die Eigenschaft `xwiki.authentication.authclass` in der Datei `xwiki.properties` auf `org.xwiki.contrib.llm.authentication.JWTTokenAuth` setzen.\n2. Die autorisierten Anwendungen konfigurieren, indem Sie einen neuen Eintrag zur Liste der \u201eAutorisierten Anwendungen\u201c hinzuf\u00fcgen, wobei Sie den Titel, die URL, den \u00f6ffentlichen Schl\u00fcssel und das Gruppenformat der Anwendung angeben.\n3. Ein JWT-Token generieren, das die erforderlichen Anspr\u00fcche und Signierschl\u00fcssel erf\u00fcllt.\n4. Das Token im \u201eAuthorization\u201c-Header der Anfrage in der Form \u201eBearer TOKEN\u201c einf\u00fcgen.\n\nHinweis: Dieser Authentifizierer unterst\u00fctzt nur die Erstellung oder Aktualisierung von Benutzern auf der Grundlage der im Token bereitgestellten Informationen und unterst\u00fctzt nicht die Verwendung eines Tokens als Authentifizierung f\u00fcr einen bestehenden Benutzer, der nicht \u00fcber diesen Authentifizierer erstellt wurde.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Model/Validation/UI/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/ \n\n\nJa, es ist m\u00f6glich, Benutzer mit Zugriffstoken zu authentifizieren.\n\nDie Model Validation Extension von XWiki erm\u00f6glicht die Validierung von Namen und anderen Daten. Es gibt auch eine Attachment Validation Extension, die die Validierung von Anlagen erm\u00f6glicht.\n\nNachdem ich die Dokumentation dieser Erweiterungen gelesen habe, kann ich sagen, dass es m\u00f6glich ist, Benutzer mit Zugriffstoken zu authentifizieren, indem man die entsprechenden Einstellungen in der XWiki-Konfiguration macht. Dies kann zum Beispiel durch die Anpassung von `xwiki.properties`-Dateien erreicht werden.\n\nEs gibt auch eine Administration-Applikation, \u00fcber die diese Einstellungen bearbeitet werden k\u00f6nnen. Es ist jedoch wichtig zu beachten, dass dies nur m\u00f6glich ist, wenn die entsprechenden Rechte und Berechtigungen eingerichtet sind.\n\nIch hoffe, das hilft! Lass mich wissen, wenn du weitere Fragen hast.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Model/Validation/UI/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/ \n\n\nJa, es ist m\u00f6glich, Benutzer mit Zugriffstokens zu authentifizieren.\n\nDie XWiki-Extension \"Model Validation UI\" bietet die M\u00f6glichkeit, eine Validierungsstrategie f\u00fcr Benutzernamen und -zugriffs-Token zu konfigurieren. Dazu kannst du in der Administration von XWiki auf den Tab \"Bearbeiten\" gehen und dann auf \"Name Strategies\" klicken.\n\nIn diesem Bereich kannst du verschiedene Validierungsstrategien ausw\u00e4hlen, darunter auch die M\u00f6glichkeit, Zugriffstokens zu validieren. Wenn du dies aktivierst, werden Benutzer, deren Zugriffstoken g\u00fcltig ist, automatisch authentifiziert.\n\nEs gibt jedoch einige Einschr\u00e4nkungen und Anforderungen, die beachtet werden m\u00fcssen, bevor diese Funktion genutzt werden kann. Dazu geh\u00f6ren zum Beispiel die Konfiguration von xwiki.properties und die \u00dcberpr\u00fcfung der Kompatibilit\u00e4t mit deiner XWiki-Version.\n\nWeitere Informationen findest du in den Dokumentationen zu dieser Extension: https://extensions.xwiki.org/xwiki/bin/view/Extension/Model/Validation/UI/\n\nEs ist auch ratsam, die Dokumentation zu \"Attachment Validation UI\" (https://extensions.xwiki.org/xwiki/bin/view/Extension/Attachment/Validation/UI/) zu lesen, da diese Extension \u00e4hnliche Funktionen bietet und m\u00f6glicherweise hilfreich sein kann.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,12 +31,12 @@
   ],
   "usage": {
     "prompt_tokens": 1365,
-    "completion_tokens": 211,
-    "total_tokens": 1576
+    "completion_tokens": 299,
+    "total_tokens": 1664
   },
-  "average_power_draw": 175.64818803418802,
-  "energy_consumption": 502.02799013435737,
-  "energy_per_input_token": 0.26527238580415186,
-  "energy_per_output_token": 0.6631809645103796,
-  "energy_per_total_token": 0.3185456790192623
+  "average_power_draw": 180.38816993464047,
+  "energy_consumption": 687.7789698796332,
+  "energy_per_input_token": 0.3255758437300039,
+  "energy_per_output_token": 0.8139396093250097,
+  "energy_per_total_token": 0.4133287078603565
 }

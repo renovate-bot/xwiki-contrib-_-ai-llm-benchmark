@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.275,
+  "overall_score": 0.2386002809935923,
   "individual_scores": {
-    "AnswerRelevancy": 0.625,
+    "AnswerRelevancy": 0.5,
     "Faithfulness": 0.75,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.18160168596155368
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.62 because the response partially addresses the question about authenticating users with access tokens, but the inclusion of irrelevant source links that do not directly pertain to the topic lowers the score.",
-    "Faithfulness": "The score is 0.75 because the actual output incorrectly states that XWiki uses authentication APIs to manage user access rights, while the retrieval context clarifies that the Authentication API in XWiki is not yet implemented.",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node is about 'upgrading XWiki' and does not mention 'user authentication with access tokens'. The second node focuses on 'features of the Administration Application' and does not address 'authentication with access tokens'. The third node mentions 'user authentication' but lacks information about 'using access tokens for authentication'. The fourth node discusses 'managing user rights' without mentioning 'authentication methods, such as using access tokens'. The fifth node lists 'various rights constants and their properties', which is unrelated to 'the authentication process using access tokens'.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context. The retrieval context lacks information on authenticating users with access tokens, JWTs, or any related configurations and limitations mentioned in the expected output.",
-    "CustomContextualRelevancy": "The retrieval context lacks any information about token-based authentication or JWT, which are central to the expected output."
+    "AnswerRelevancy": "The score is 0.50 because the response partially addresses the question about authenticating users with access tokens, but includes multiple irrelevant statements such as repeated source links and a general offer for further assistance that do not directly contribute to answering the question.",
+    "Faithfulness": "The score is 0.75 because the actual output incorrectly claims that XWiki has modules for managing user authentication, while the retrieval context clarifies that the Authentication API in XWiki is not yet implemented.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'upgrading XWiki' and lacks any mention of user authentication or token-based authentication. The second node focuses on 'features of the Administration Application,' which does not relate to token-based user authentication. The third node, although discussing the Security Module, explicitly states that 'The Authentication API is not yet implemented,' which is unrelated to token-based authentication. The fourth node is about 'managing rights' without mentioning token-based authentication or JWT. Finally, the fifth node addresses 'rights management constants and policies,' which are unrelated to authenticating users with access tokens. Therefore, irrelevant nodes are ranked higher than any relevant content, resulting in a score of 0.00.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context lacks any information about token-based authentication or JWT, which are central to the expected output.",
+    "Correctness": "The actual output fails to mention the specific JWT-based authentication process and details such as JWT claims, signing with Ed25519, or configuration steps mentioned in the expected output. Instead, it vaguely suggests checking documentation and exploring custom extensions."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

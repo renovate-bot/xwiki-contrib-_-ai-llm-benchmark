@@ -1,20 +1,22 @@
 {
-  "overall_score": 0.39069767441860465,
+  "overall_score": 0.16666666666666666,
   "individual_scores": {
-    "AnswerRelevancy": 0.9534883720930233,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.0,
+    "Faithfulness": 1,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.95 because the answer is highly relevant and addresses the question about authenticating users with access tokens effectively. However, it includes source links that are not directly related to the topic, slightly affecting the score.",
+    "AnswerRelevancy": "The score is 0.00 because none of the statements in the output are relevant to the question about authenticating users with access tokens. The output contains numerous irrelevant topics and statements that do not address the input question.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'upgrading XWiki' without mentioning user authentication with access tokens. The second node talks about 'features related to users and rights' but does not specifically address authentication with access tokens. The third node, while mentioning an 'Authentication guide', lacks information on authenticating users with access tokens or JWTs. Therefore, there are no relevant nodes ranked higher than irrelevant ones.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context, as the context lacks any mention of token-based authentication, JWTs, or related configuration and usage details.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to token-based authentication or JWT, as described in the expected output."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'upgrading XWiki' and lacks any mention of 'authenticating users with access tokens'. The second node talks about 'features of the Administration Application, such as users and rights', but does not provide information on 'authenticating users with access tokens'. The third node addresses 'managing user rights and profiles', but it does not cover 'user authentication with access tokens'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to token-based authentication or JWT, which are central to the expected output.",
+    "Correctness": "The actual output is unrelated to the expected output and fails to address any of the key facts or critical information outlined in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",
-  "answer_language": "fr"
+  "answer_language": "en"
 }

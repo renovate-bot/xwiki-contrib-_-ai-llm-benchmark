@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary includes extra information not present in the original text, such as predefined configurations, screenshots, visiting XWiki.org, and creating a basic application. Additionally, the summary fails to answer questions that the original text can, such as whether XWiki allows admins to create new user accounts and if there is a configuration for admin-only content viewing and editing. Despite no contradictions, these issues impact the summary's completeness and accuracy.",
+  "score": 0.75,
+  "reason": "The score is 0.75 because the summary includes extra information not present in the original text, such as leaving the Users Rights screen blank and a linked page on XWiki.org with more details and screenshots. However, there are no contradictions, indicating a generally accurate summary with some additional details.",
   "score_breakdown": {
-    "Alignment": 0.6363636363636364,
-    "Coverage": 0.6
+    "Alignment": 0.75,
+    "Coverage": 1.0
   },
   "input_language": "en",
   "summary_language": "en"

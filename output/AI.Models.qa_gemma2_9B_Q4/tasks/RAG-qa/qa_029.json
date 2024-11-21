@@ -2,7 +2,7 @@
   "id": "qa_029",
   "prompt": "Comment puis-je refuser le droit de script \u00e0 un administrateur d'espace?",
   "expected_answer": "Ceci n'est malheureusement pas pris en charge dans XWiki, les droits qui sont impliqu\u00e9s par le droit d'administrateur ne peuvent pas \u00eatre refus\u00e9s.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \n\n\nTo refuse script rights to a space administrator, you need to modify their permissions within the space's settings. \n\nHere's how:\n\n1. **Access the space administration page:** Navigate to the space you want to manage and click on the \"Administration\" tab.\n2. **Find the permissions section:** Look for a section related to user permissions or access rights. The exact wording might vary depending on your XWiki version.\n3. **Locate the \"Script\" right:**  Within the permissions list, find the \"Script\" right. It might be listed as \"script\" or something similar.\n4. **Remove the \"Script\" right:** Uncheck the box next to the \"Script\" right for the administrator user. This will revoke their ability to execute scripts within the space.\n5. **Save the changes:** Apply the changes to the permissions settings.\n\n\nRemember that administrators still retain other powerful rights, even without script execution.  \n",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \n\n\nTo refuse the \"Script\" right to a space administrator, you need to modify their permissions within the space's security settings. \n\nHere's how:\n\n1. **Access the space's administration panel:** Navigate to the space you want to manage permissions for and access its administration section.\n2. **Locate the \"Permissions\" or \"Security\" settings:**  The exact wording might vary depending on your XWiki version, but look for a section dedicated to managing user permissions.\n3. **Find the \"Script\" right:** Within the permissions list, locate the \"Script\" right. It might be listed as \"script\" or something similar.\n4. **Revoke the \"Script\" right:**  Depending on your XWiki version, you might be able to directly uncheck the \"Script\" box for the administrator user or group.  \n\nRemember to save your changes after modifying the permissions. \n\n\n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -47,12 +47,12 @@
   ],
   "usage": {
     "prompt_tokens": 3306,
-    "completion_tokens": 198,
-    "total_tokens": 3504
+    "completion_tokens": 190,
+    "total_tokens": 3496
   },
-  "average_power_draw": 192.7153675213675,
-  "energy_consumption": 834.4299125631243,
-  "energy_per_input_token": 0.21952904829337655,
-  "energy_per_output_token": 0.5488226207334413,
-  "energy_per_total_token": 0.23813639057166788
+  "average_power_draw": 158.07451111111106,
+  "energy_consumption": 884.6801568794407,
+  "energy_per_input_token": 0.23398046994960084,
+  "energy_per_output_token": 0.584951174874002,
+  "energy_per_total_token": 0.2530549647824487
 }

@@ -1,9 +1,9 @@
 {
-  "score": 0,
-  "reason": "The score is 0.00 because the summary fails to address several key questions that the original text can answer, indicating a lack of coverage and completeness in the summarization.",
+  "score": 0.36363636363636365,
+  "reason": "The score is 0.36 because the summary contains multiple contradictions with the original text, such as incorrect default statuses for various rights and misrepresentations of access requirements. Additionally, there is extra information in the summary not present in the original text, and it fails to answer a question that the original text can address.",
   "score_breakdown": {
-    "Alignment": 0,
-    "Coverage": 0.0
+    "Alignment": 0.36363636363636365,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

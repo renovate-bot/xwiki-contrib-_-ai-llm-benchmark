@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.43833333333333335,
+  "overall_score": 0.4073999801965235,
   "individual_scores": {
-    "AnswerRelevancy": 0.9583333333333334,
-    "Faithfulness": 0.8333333333333334,
+    "AnswerRelevancy": 0.9411764705882353,
+    "Faithfulness": 0.8,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.4,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.1,
+    "Correctness": 0.20322341059090548
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.96 because the response is highly relevant to configuring OpenID Connect in XWiki, with only a minor mention of LDAP authentication, which slightly detracts from the focus but does not significantly impact the overall relevance.",
-    "Faithfulness": "The score is 0.83 because the actual output incorrectly states that the authentication class for OpenID Connect must be defined in the xwiki.properties file, which is not supported by the retrieval context.",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'domain-based authentication and session cookie configuration', which does not pertain to enabling user accounts automatically via OpenID Connect. The second node focuses on 'OpenID Connect provider URLs and endpoints', not on the automatic activation of user accounts. Subsequent nodes similarly fail to address the specific configuration needed for automatic user account activation, such as discussing 'general information about OpenID Connect authentication', 'dependencies for the OpenID Connect extension', or 'LDAP and Active Directory integration', none of which are relevant to the input query.",
-    "ContextualRecall": "The score is 0.40 because while the 2nd node in the retrieval context supports the mention of 'xwiki.properties' and 'oidc.enableUser' in relation to OpenID Connect configuration (supporting sentences 1 and 2), it lacks specific instructions on adding or updating properties, saving the file, restarting the instance, and the automatic activation of new user accounts upon first login (unsupportive for sentences 3, 4, and 5).",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about setting the 'oidc.enableUser' property in 'xwiki.properties' to automatically activate user accounts on first login."
+    "AnswerRelevancy": "The score is 0.94 because the response is highly relevant to configuring OpenID Connect in XWiki, with only a minor irrelevant mention of LDAP Authenticator, which slightly detracts from a perfect score.",
+    "Faithfulness": "The score is 0.80 because the actual output incorrectly claims that restarting the XWiki server is necessary after changes in xwiki.cfg, which is not mentioned in the retrieval context.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'domain-based authentication and session cookies', which is unrelated to enabling user accounts automatically with OpenID Connect. The second node provides 'information about OpenID Connect endpoints and headers', but does not mention enabling user accounts automatically. The third node describes 'installation instructions and limitations of OpenID Connect', but does not address the automatic activation of user accounts. The fourth node lists 'dependencies for the OpenID Connect extension', which is not relevant to configuring automatic user activation. The fifth node discusses 'LDAP and Active Directory integration', which is not related to OpenID Connect or automatic user activation. The sixth node provides 'general information about the OpenID Connect Authenticator', but does not mention automatic user activation. The seventh node describes 'container authentication and various authentication methods', but does not address the specific configuration for automatic user activation with OpenID Connect. All these irrelevant nodes are ranked higher, resulting in a score of 0.00.",
+    "ContextualRecall": "The score is 0.40 because while the retrieval context mentions 'xwiki.properties' and 'oidc.enableUser', which relate to sentences about activating user accounts using OpenID Connect, it lacks information on adding or updating the property, saving the file, restarting XWiki, and explicitly guaranteeing automatic activation of new user accounts.",
+    "CustomContextualRelevancy": "The retrieval context mentions the xwiki.properties file but lacks specific details about setting oidc.enableUser to true for automatic user activation.",
+    "Correctness": "The actual output references `xwiki.authentication.createuser` in `xwiki.cfg` instead of `oidc.enableUser` in `xwiki.properties`, missing key expected details and altering context."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

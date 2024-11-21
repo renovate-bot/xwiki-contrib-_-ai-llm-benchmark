@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.8136363636363637,
+  "overall_score": 0.7585797674180731,
   "individual_scores": {
-    "AnswerRelevancy": 0.8181818181818182,
+    "AnswerRelevancy": 0.9444444444444444,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0.25,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 1.0
+    "CustomContextualRelevancy": 1.0,
+    "Correctness": 0.3570341600639933
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.82 because the response mostly addresses the issue of the notification bell not being available, but it includes irrelevant source links that do not directly contribute to solving the problem.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.25 because the relevant node in the retrieval context, ranked 4th, mentions the configuration variable 'notifications.enabled' in 'xwiki.properties', which is directly relevant to enabling notifications. However, it is ranked lower than three irrelevant nodes that discuss 'custom notification filters and their behavior', 'links and descriptions of various notification preferences', and 'filters for notifications and technical pages', none of which address enabling notifications in the wiki settings.",
+    "AnswerRelevancy": "The score is 0.94 because the response is highly relevant to the issue of the notification bell not being available, but it includes an unnecessary link to XWiki syntax documentation, which slightly detracts from its relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining accuracy and alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.25 because the relevant node in the retrieval context, which mentions enabling notifications with 'notifications.enabled = true' in the xwiki.properties file, is ranked fourth. Irrelevant nodes, such as the first node discussing 'custom notification filters and their behavior', should be ranked lower as they do not address enabling notifications in the wiki.",
     "ContextualRecall": "The score is 1.00 because every part of the expected output is perfectly supported by the nodes in the retrieval context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context explicitly mentions enabling notifications by setting 'notifications.enabled' to true in xwiki.properties, which matches the expected output."
+    "CustomContextualRelevancy": "The retrieval context contains the exact information about enabling notifications by setting `notifications.enabled` to `true` in `xwiki.properties`, as found in the expected output.",
+    "Correctness": "The actual output includes the key fact about setting 'notifications.enabled' to 'true', but adds extra steps not in the expected output, and sources are unrelated."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

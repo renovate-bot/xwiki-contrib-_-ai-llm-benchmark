@@ -2,7 +2,7 @@
   "id": "qa_003",
   "prompt": "In the context of XWiki I am not receiving notifications about my own activity. How can I enable notifications for my own actions?",
   "expected_answer": "By default, one don't receive notification about one's own activity (unless the event that triggered the notification targets explicitly that user). You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings in your user profile.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nYou can enable notifications for your own activity by going to your notification settings and disabling the \"Own event filter\" in the \"Advanced filtering options\" section. \n\n\n",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nYou can enable notifications for your own activity by going to your **Notification Settings**. \n\nLook for an option called \"**Own event filter**\" or something similar. By default, this filter is usually enabled, preventing you from receiving notifications about your own actions. \n\nDisable this filter to start receiving notifications about your own activity on the wiki. \n\n\n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -47,12 +47,12 @@
   ],
   "usage": {
     "prompt_tokens": 2832,
-    "completion_tokens": 34,
-    "total_tokens": 2866
+    "completion_tokens": 73,
+    "total_tokens": 2905
   },
-  "average_power_draw": 201.97844444444445,
-  "energy_consumption": 251.60250198607974,
-  "energy_per_input_token": 0.086253857382955,
-  "energy_per_output_token": 0.2156346434573875,
-  "energy_per_total_token": 0.08778873063017437
+  "average_power_draw": 169.9685024154589,
+  "energy_consumption": 434.4300491911661,
+  "energy_per_input_token": 0.14411346796854074,
+  "energy_per_output_token": 0.36028366992135186,
+  "energy_per_total_token": 0.1495456279487663
 }

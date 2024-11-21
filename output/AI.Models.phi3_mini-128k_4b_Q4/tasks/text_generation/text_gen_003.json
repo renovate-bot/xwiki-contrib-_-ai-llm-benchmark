@@ -2,16 +2,16 @@
   "id": "text_gen_003",
   "prompt": "Adapt the following text to a younger audience (age 8-10):\n\nPhotosynthesis is the process by which plants convert sunlight into chemical energy that can be used to fuel the plant's activities.",
   "expected_answer": "Plants use a special process called photosynthesis to make their own food. They take in sunlight and turn it into energy that helps them grow and stay healthy.",
-  "ai_answer": "Imagine photosynthesis like magic trick inside leaves of many green things you see in your surroundings, such as trees and grasses! When they face up towards warm, yellowish light from our big sun (don\u2019t forget about not too hot or cold), these amazing plants change the Sun's energy into a special kind that helps them grow bigger with new leaves, roots. They even make oxygen which is what we breathe in! It\u2019s like they have their very own green power stations inside of them called chlorophyll (a fancy name for 'green stuff').",
+  "ai_answer": "Sure thing! Imagine photosynthesis like this: Plants are really cool because they have a special power, kind of like magic tricks in their world where they take light from the Sun and turn it into food for themselves using water and air that we breatin' out. So when sunlight shines down on them, those green parts called leaves do something amazing! They catch this energy with tiny workers inside named chlorophyll which is like a superhero-green color they have in their bodies. These heroes take the light and work together to make yummy stuff that helps plants grow big and strong - kind of how we need food from our meals, but for them it's sunlight! It\u2019s pretty awesome because without this amazing power, there wouldn't be so many trees or flowers around us. Isn't nature incredible?",
   "sources": null,
   "usage": {
     "prompt_tokens": 57,
-    "completion_tokens": 124,
-    "total_tokens": 181
+    "completion_tokens": 183,
+    "total_tokens": 240
   },
-  "average_power_draw": 96.94749206349206,
-  "energy_consumption": 219.46107873149145,
-  "energy_per_input_token": 0.597986590549023,
-  "energy_per_output_token": 1.4949664763725579,
-  "energy_per_total_token": 1.2124921476877981
+  "average_power_draw": 104.75334299516913,
+  "energy_consumption": 263.9132122509377,
+  "energy_per_input_token": 0.51295084985605,
+  "energy_per_output_token": 1.282377124640125,
+  "energy_per_total_token": 1.099638384378907
 }

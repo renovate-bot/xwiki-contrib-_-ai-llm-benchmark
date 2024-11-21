@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output accurately extracts the key information from the Input, maintaining relevance. However, it does not match the JSON format of the Expected Output, affecting coherence and fluency.",
+  "score": 0.9,
+  "reason": "The Actual Output accurately extracts and presents the key information from the Input. However, it uses a different format than the Expected Output, which affects coherence.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,9 +1,9 @@
 {
-  "score": 0,
-  "reason": "The score is 0.00 because the summary fails to address several key questions that the original text can answer, indicating a lack of coverage and comprehensiveness.",
+  "score": 0.5,
+  "reason": "The score is 0.50 because the summary contains contradictions regarding how changes to pages are handled, includes extra information not present in the original text, and fails to answer specific questions that the original text can address. These issues significantly impact the accuracy and completeness of the summary.",
   "score_breakdown": {
-    "Alignment": 0,
-    "Coverage": 0.0
+    "Alignment": 0.5,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

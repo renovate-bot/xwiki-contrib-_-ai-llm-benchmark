@@ -1,9 +1,9 @@
 {
   "score": 0.0,
-  "reason": "The score is 0.00 because the summary includes extra information not present in the original text and fails to answer several questions that the original text can address. This indicates a significant deviation from the original content, leading to a poor summarization quality.",
+  "reason": "The score is 0.00 because the summary contains multiple contradictions and extra information not present in the original text. It inaccurately describes the use of the Distribution Wizard, downgrading processes, and troubleshooting tips for Solr lock-ups. Additionally, it includes details about maintaining data integrity, specific upgrade paths, and alternative approaches that are not mentioned in the original text. Furthermore, the summary fails to address questions about migration paths and the necessity of checking release notes, which the original text can answer.",
   "score_breakdown": {
     "Alignment": 0.0,
-    "Coverage": 0.0
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

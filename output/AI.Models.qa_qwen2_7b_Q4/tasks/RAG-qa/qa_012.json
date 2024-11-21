@@ -2,7 +2,7 @@
   "id": "qa_012",
   "prompt": "Ich erhalte keine Benachrichtigungen.",
   "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen. Stellen Sie au\u00dferdem sicher, dass Sie den Seiten oder Benutzern, f\u00fcr die Sie Benachrichtigungen erhalten m\u00f6chten, folgen. Sie k\u00f6nnen einer Seite, einer Seite und ihren Unterseiten oder einem gesamten Wiki folgen. Um einem Ort zu folgen, m\u00fcssen Sie nur dorthin gehen und dann auf das Men\u00fc \"Benachrichtigung\" (dargestellt durch eine Glocke) klicken und die gew\u00fcnschten Benachrichtigungen aktivieren. Um einem Benutzer zu folgen, k\u00f6nnen Sie, wenn Sie auf das Profil eines Benutzers gehen, beispielsweise \u00fcber das Benutzerindex, entscheiden, dem Benutzer zu folgen. Das bedeutet, dass Sie alle Benachrichtigungen \u00fcber Ereignisse erhalten, die von diesem Benutzer ausgel\u00f6st wurden. In Ihrem Benutzerprofil k\u00f6nnen Sie in der Registerkarte \"Netzwerk\" die Liste der Benutzer anzeigen, denen Sie folgen, und die von ihnen durchgef\u00fchrten Ereignisse.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \n\n\nEs gibt verschiedene Gr\u00fcnde, warum Sie m\u00f6glicherweise keine Benachrichtigungen erhalten k\u00f6nnten:\n\n1. **Einstellungsproblem:** Stellen Sie sicher, dass die Benachrichtigungsfunktion auf Ihrem Ger\u00e4t aktiviert ist und dass die App, von der Sie erwarten, eine Benachrichtigung zu erhalten, Zugang dazu hat.\n\n2. **St\u00f6rung bei der App:** Es k\u00f6nnte sein, dass die App Probleme mit der Versandfunktion von Benachrichtigungen hat. Stellen Sie sicher, dass die App auf dem neuesten Stand ist und alle Updates installiert haben.\n\n3. **Benachrichtigungseinstellungen innerhalb der App:** In einigen Apps k\u00f6nnen Sie bestimmte Einstellungen f\u00fcr Benachrichtigungen \u00e4ndern. \u00dcberpr\u00fcfen Sie diese Einstellungen in der App selbst, um sicherzustellen, dass Sie die gew\u00fcnschten Benachrichtigungen erhalten.\n\n4. **St\u00f6rung bei der Internetverbindung:** Wenn die App auf einer mobilen Plattform l\u00e4uft und eine Benachrichtigung \u00fcber das Internet senden soll, k\u00f6nnten st\u00f6rende Netzwerksignale oder ein schlechter Internetanschluss dazu f\u00fchren, dass die Benachrichtigung nicht geliefert wird.\n\n5. **St\u00f6rung bei der Betriebssystem-Benachrichtigungs-Service:** Es k\u00f6nnte auch sein, dass das Problem auf Ihrem Ger\u00e4t liegt und nicht direkt mit der App zu tun hat. Stellen Sie sicher, dass Ihr Betriebssystem auf dem neuesten Stand ist und alle Updates installiert haben.\n\n6. **Benachrichtigungsfunktion deaktiviert:** \u00dcberpr\u00fcfen Sie die Benachrichtigungs-Einstellungen in Ihren Einstellungen des Ger\u00e4ts. Stellen Sie sicher, dass die Funktion f\u00fcr Benachrichtigungen aktiviert ist.\n\nWenn Sie trotz aller Versuche weiterhin keine Benachrichtigungen erhalten, k\u00f6nnten Sie sich an den Kundensupport der App wenden oder einen professionellen IT-Spezialisten um Hilfe wenden.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \n\n\nEs scheint, dass es ein Problem mit der Benachrichtigungsfunktion gibt. Bitte \u00fcberpr\u00fcfen Sie Ihre Einstellungen und stellen Sie sicher, dass die Benachrichtigungsfunktion aktiviert ist. Wenn das Problem weiterhin besteht, k\u00f6nnten Sie sich an den Support wenden oder auf die Hilfe-Option innerhalb des Systems zugreifen, um weitere Unterst\u00fctzung zu erhalten.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -30,13 +30,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 19,
-    "completion_tokens": 434,
-    "total_tokens": 453
+    "prompt_tokens": 2187,
+    "completion_tokens": 83,
+    "total_tokens": 2270
   },
-  "average_power_draw": 168.97348320413437,
-  "energy_consumption": 806.4808251385627,
-  "energy_per_input_token": 0.73050799378493,
-  "energy_per_output_token": 1.8262699844623251,
-  "energy_per_total_token": 1.7803108722705578
+  "average_power_draw": 186.3903418803419,
+  "energy_consumption": 262.45604209747074,
+  "energy_per_input_token": 0.1096078689068577,
+  "energy_per_output_token": 0.27401967226714424,
+  "energy_per_total_token": 0.11561940180505319
 }

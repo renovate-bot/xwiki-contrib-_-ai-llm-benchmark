@@ -1,9 +1,9 @@
 {
-  "score": 0.4,
-  "reason": "The score is 0.40 because the summary contains several contradictions with the original text, such as incorrect claims about editing rights, programming rights, and the hierarchy of rights. Additionally, it includes extra information not mentioned in the original text and fails to answer specific questions that the original text can address.",
+  "score": 0.7,
+  "reason": "The score is 0.70 because the summary contains contradictions regarding the scope and default status of certain rights, includes extra information about priority order not present in the original text, and fails to answer a question about the register right for a specific pseudo-user. These issues indicate a moderate level of accuracy and completeness in the summarization.",
   "score_breakdown": {
-    "Alignment": 0.75,
-    "Coverage": 0.4
+    "Alignment": 0.7,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

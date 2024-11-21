@@ -1,6 +1,6 @@
 {
-  "score": 0.9,
-  "reason": "The Actual Output aligns well with the Input prompt and Expected Output by using technical language and addressing the same topics. It maintains coherence and fluency, though it focuses more on the cerebral cortex rather than the entire brain, which is a slight deviation from the Expected Output's broader scope.",
+  "score": 0.8,
+  "reason": "The Actual Output effectively uses technical terms and maintains relevance to the Input prompt. It introduces terms like 'cerebral cortex' and 'afferent inputs' which align with a technical audience. However, it diverges slightly from the Expected Output by emphasizing 'spiritual experiences' instead of 'subjective experiences' and using 'central processing unit (CPU)' metaphorically, which may not align perfectly with the Expected Output's focus on biological substrates.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

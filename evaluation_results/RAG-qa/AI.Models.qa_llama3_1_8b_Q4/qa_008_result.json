@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.6539393939393939,
+  "overall_score": 0.5688424645805416,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.8333333333333334,
+    "Faithfulness": 0.8571428571428571,
     "ContextualPrecision": 0.3333333333333333,
     "ContextualRecall": 0.6363636363636364,
-    "CustomContextualRelevancy": 0.3
+    "CustomContextualRelevancy": 0.3,
+    "Correctness": 0.45288162731008985
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the output perfectly addresses the question without any irrelevant information. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.33 because the relevant node in the retrieval context, ranked third, provides information on setting the maximum size of an attachment and mentions the configuration parameter in the XWikiPreferences document, which is directly related to configuring upload restrictions. However, the first and second nodes are irrelevant as they discuss linking to external files and images, and the structure of XWiki pages, which do not pertain to configuring upload restrictions for images or PDFs. Additionally, the fourth and fifth nodes are also irrelevant, focusing on attachment display, download, security settings, and versioning, which do not address configuring upload restrictions for specific file types or sizes.",
-    "ContextualRecall": "The score is 0.64 because while the retrieval context nodes provide detailed steps for configuring maximum attachment size (node 3) and reference the configuration of mimetype restrictions (node 4), they do not directly cover the overall instruction to ensure only images or PDFs of max 10MB can be uploaded, nor do they include the specific line for mimetype restrictions.",
-    "CustomContextualRelevancy": "The retrieval context mentions setting maximum attachment size and mimetype restrictions, but lacks specifics on configuring 'xwiki.properties' for mimetypes and setting size to 10MB."
+    "AnswerRelevancy": "The score is 0.83 because the response mostly addresses the question about restricting file types and sizes for uploads, but includes some irrelevant information about XWiki basic concepts and attachment versioning, which are not directly related to the specific requirement.",
+    "Faithfulness": "The score is 0.86 because the actual output incorrectly suggests that attachment versioning can be disabled in XWiki by setting `xwiki.store.attachment.versioning=0`, whereas the retrieval context indicates that XWiki stores all document attachment versions by default and does not mention an option to disable this feature.",
+    "ContextualPrecision": "The score is 0.33 because the relevant node in the retrieval context, which discusses 'setting the maximum size of an attachment in XWikiPreferences', is ranked third. However, irrelevant nodes are ranked higher, such as the first node that 'does not address configuring mimetypes or setting maximum upload sizes', and the second node that 'does not provide information on configuring upload restrictions or size limits'.",
+    "ContextualRecall": "The score is 0.64 because while the 3rd node in the retrieval context provides detailed steps for configuring the maximum attachment size (supporting sentences in Step 2 of the expected output), it lacks information on configuring allowed mimetypes in the xwiki.properties file (Step 1), which is why the score isn't higher.",
+    "CustomContextualRelevancy": "The retrieval context mentions setting maximum attachment size and mimetype restrictions but lacks specific details on configuring 'xwiki.properties' and setting size to 10MB.",
+    "Correctness": "Actual output specifies the maximum upload size correctly but configures mimetypes incorrectly by including PostScript and specific image formats instead of a wildcard. It also suggests irrelevant steps like disabling versioning."
   },
   "question_language": "en",
   "expected_answer_language": "en",

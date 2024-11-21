@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary accurately reflects the original text without contradictions or unnecessary extra information. However, it misses answering a specific question that the original text addresses, indicating room for improvement in comprehensiveness.",
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary contains a contradiction regarding the default RSS feeds and the Watchlist Feature, and it fails to answer questions about creating new RSS feeds and receiving RSS feeds for blog posts.",
   "score_breakdown": {
-    "Alignment": 1.0,
-    "Coverage": 0.8
+    "Alignment": 0.75,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

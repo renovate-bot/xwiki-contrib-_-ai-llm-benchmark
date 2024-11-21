@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.9433333333333334,
+  "overall_score": 0.918798554870337,
   "individual_scores": {
-    "AnswerRelevancy": 0.9166666666666666,
+    "AnswerRelevancy": 0.9,
     "Faithfulness": 1.0,
     "ContextualPrecision": 1.0,
     "ContextualRecall": 0.8,
-    "CustomContextualRelevancy": 1.0
+    "CustomContextualRelevancy": 1.0,
+    "Correctness": 0.8127913292220222
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.92 because the response is highly relevant and addresses the question about customizing user profile fields in XWiki using OpenID Connect. However, it includes a source link that does not directly contribute to answering the question, slightly reducing the score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 1.00 because the relevant node in the retrieval context, which mentions 'It's possible to associate non standard properties coming from the OpenID Connect provider with the XWiki user', is ranked first. This directly addresses the input about customizing user profile fields. The irrelevant nodes, discussing topics like 'scopes requested from the OpenID Connect provider', 'configuration of OpenID Connect endpoints and custom HTTP headers', 'group synchronization and customization of templates and listeners', and 'in-wiki configuration for the OIDC authenticator', are all ranked lower, ensuring perfect precision. Great job on the ranking!",
-    "ContextualRecall": "The score is 0.80 because most of the expected output is supported by the 1st node in the retrieval context, including the customization of user profile fields and the example mappings. However, the instruction to save and restart XWiki is not explicitly mentioned in the retrieval context, leading to a slightly lower score.",
-    "CustomContextualRelevancy": "The retrieval context contains all the information found in the expected answer, including the customization of user profile fields using the `oidc.user.mapping` property in the `xwiki.properties` file and examples of mapping custom properties."
+    "AnswerRelevancy": "The score is 0.90 because the response effectively addresses the main question about customizing user profile fields in XWiki using OpenID Connect, but includes a source link that is not directly relevant to the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node in the retrieval context, which states 'It's possible to associate non standard properties coming from the OpenID Connect provider with the XWiki user' and provides an example of mapping, is ranked first. This directly addresses the input question about customizing user profile fields. The irrelevant nodes, discussing topics like 'access tokens and scopes', 'configuring OpenID Connect endpoints', 'group synchronization', and 'in-wiki configuration', are all ranked lower, ensuring a perfect contextual precision score. Great job on the ranking!",
+    "ContextualRecall": "The score is 0.80 because most of the expected output is supported by the 3rd node in the retrieval context, which provides detailed examples and instructions on mapping user profile fields. However, the retrieval context lacks information about saving the 'xwiki.properties' file and restarting XWiki, which affects the completeness of the match.",
+    "CustomContextualRelevancy": "The retrieval context includes detailed instructions on mapping user profile fields using the `oidc.user.mapping` property in the `xwiki.properties` file, matching the expected output.",
+    "Correctness": "The actual output closely aligns with the expected output but includes additional details like extra placeholders (`${oidc.user.preferredUsername}`, `${oidc.user.email}`) which are not mentioned in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

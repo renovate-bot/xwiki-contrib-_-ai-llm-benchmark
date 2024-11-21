@@ -1,9 +1,9 @@
 {
-  "score": 0.0,
-  "reason": "The score is 0.00 because the summary contains multiple contradictions and introduces extra information not present in the original text, leading to a significant deviation from the original content. Additionally, the summary fails to answer questions that the original text can address.",
+  "score": 0.5,
+  "reason": "The score is 0.50 because the summary contains a contradiction regarding the conditions under which global rights can be overridden, includes extra information not present in the original text, and fails to address specific questions that the original text can answer.",
   "score_breakdown": {
-    "Alignment": 0.0,
-    "Coverage": 0.8
+    "Alignment": 0.5,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

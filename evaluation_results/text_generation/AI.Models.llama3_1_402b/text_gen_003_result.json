@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output effectively simplifies the concept of photosynthesis for a younger audience by using relatable language like 'superheroes' and 'magic process.' It maintains coherence and fluency, with a logical flow and correct grammar. While it adds a creative touch not present in the Expected Output, it still conveys the key idea of plants using sunlight to make energy.",
+  "reason": "The Actual Output effectively adapts the concept of photosynthesis for a younger audience by simplifying the language and adding engaging elements, such as comparing it to a special power. It addresses the Input prompt well and maintains coherence with the Expected Output by explaining the process and its purpose. The fluency is enhanced with a friendly tone, making it suitable for ages 8-10.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

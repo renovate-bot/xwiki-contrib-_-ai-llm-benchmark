@@ -2,7 +2,7 @@
   "id": "qa_019",
   "prompt": "Wie kann ich einem Bereichsadministrator das Skriptrecht verweigern?",
   "expected_answer": "Leider wird dies in XWiki nicht unterst\u00fctzt, Rechte, die durch das Admin-Recht impliziert sind, k\u00f6nnen nicht verweigert werden.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Index%20for%20the%20LLM%20Application/ \n\n\nAus den gegebenen Suchergebnissen geht nicht direkt hervor, wie man einem Bereichsadministrator das Skriptrecht verweigern kann. Ich beantworte die Frage basierend auf meinem allgemeinen Wissen:\n\nUm einem Bereichsadministrator das Skriptrecht zu verweigern, k\u00f6nnen Sie folgende Schritte durchf\u00fchren:\n\n1. Melden Sie sich als globaler Administrator an\n2. Gehen Sie in die Globale Administration\n3. Navigieren Sie zum Bereich \"Rechte\"\n4. Suchen Sie die Gruppe der Bereichsadministratoren\n5. Entfernen Sie dort das Recht \"programming\" oder \"script\"\n\n**Wichtige Hinweise:**\n- Diese \u00c4nderung sollte gut \u00fcberlegt sein, da sie die Funktionalit\u00e4t f\u00fcr Bereichsadministratoren einschr\u00e4nkt\n- Einige administrative Funktionen k\u00f6nnten dadurch nicht mehr verf\u00fcgbar sein\n- Die genauen Auswirkungen h\u00e4ngen von Ihrer XWiki-Installation und -Konfiguration ab\n\nAlternativ k\u00f6nnen Sie auch:\n- Eine separate Gruppe f\u00fcr Bereichsadministratoren ohne Skriptrechte erstellen\n- Die Rechte auf Seitenebene oder Bereichsebene gezielt einschr\u00e4nken\n\nEs wird empfohlen, solche \u00c4nderungen zuerst in einer Testumgebung zu \u00fcberpr\u00fcfen.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Index%20for%20the%20LLM%20Application/ \n\n\nDie bereitgestellten Suchergebnisse enthalten keine spezifischen Informationen dar\u00fcber, wie man einem Bereichsadministrator das Skriptrecht verweigern kann.\n\nBasierend auf meinem allgemeinen Wissen kann ich Ihnen folgende L\u00f6sung vorschlagen:\n\n1. Navigieren Sie zur Rechteverwaltung (Administration > Rechte)\n2. W\u00e4hlen Sie die entsprechende Gruppe der Bereichsadministratoren aus\n3. Suchen Sie nach dem Recht \"script\" oder \"programming\"\n4. Setzen Sie dieses Recht explizit auf \"Verweigern\"\n\nBitte beachten Sie:\n- Diese \u00c4nderung sollte gut \u00fcberlegt sein, da sie die Funktionalit\u00e4t f\u00fcr Bereichsadministratoren einschr\u00e4nken kann\n- Es wird empfohlen, diese \u00c4nderung zu dokumentieren und die betroffenen Administratoren zu informieren\n- Testen Sie nach der \u00c4nderung, ob alle wichtigen Funktionen noch wie gew\u00fcnscht arbeiten\n\nFalls Sie unsicher sind, sollten Sie diese \u00c4nderung zun\u00e4chst in einer Testumgebung vornehmen.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,8 +31,8 @@
   ],
   "usage": {
     "prompt_tokens": 1558,
-    "completion_tokens": 364,
-    "total_tokens": 1922
+    "completion_tokens": 299,
+    "total_tokens": 1857
   },
   "average_power_draw": null,
   "energy_consumption": null,

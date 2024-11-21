@@ -1,6 +1,6 @@
 {
-  "score": 0.0,
-  "reason": "The Actual Output is irrelevant to the Input prompt and lacks coherence, as it does not address the topic of the human brain. It also fails in fluency, with disjointed ideas and poor grammatical structure, unlike the Expected Output which is clear and technical.",
+  "score": 0.8,
+  "reason": "The Actual Output effectively adapts the Input for a technical audience by using precise terminology and detailed explanations, aligning well with the Expected Output's complexity. However, it is slightly verbose and less concise than the Expected Output, which affects coherence and fluency.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

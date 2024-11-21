@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.34285714285714286,
+  "overall_score": 0.3682516154894054,
   "individual_scores": {
-    "AnswerRelevancy": 0.7142857142857143,
+    "AnswerRelevancy": 0.7647058823529411,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.4448038105834914
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.71 because the response partially addresses the question about configuring XWiki permissions, but includes repeated irrelevant statements about source links that do not directly contribute to solving the problem.",
+    "AnswerRelevancy": "The score is 0.76 because the response partially addresses the question about configuring team spaces in XWiki, but includes multiple irrelevant statements that do not directly answer the query.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'the structure of an XWiki page in XML format', which does not relate to configuring access rights for teams. The second node talks about 'sending representations and modifying resources using XML', which is not relevant to setting access permissions in XWiki. The third node is about 'editing comments and attachments', which is unrelated to configuring access rights for team spaces. The fourth node explains 'the emulation of spaces and sub-pages in XWiki', but does not provide information on setting access rights for teams. The fifth node provides 'a list of actions related to migrating and renaming pages', which is not pertinent to configuring access rights for teams. Finally, the sixth node discusses 'configuration display settings in XWiki', which does not address the question of setting access rights for team spaces.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'the structure of a page in XWiki' which does not provide information on setting access rights for teams. The second node talks about 'sending representations and modifying resources', unrelated to configuring access rights for teams in XWiki. The third node is about 'editing and managing comments', which does not relate to configuring access rights for team spaces in XWiki. The fourth node explains 'the concept of spaces and pages in XWiki', but lacks guidance on setting access permissions for teams. The fifth node discusses 'actions needed after running a migrator', not addressing access rights for team spaces. Lastly, the sixth node is about 'configuration display settings in XWiki', unrelated to setting access permissions for team spaces.",
     "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to creating groups, defining rights at wiki or space levels, or inheriting rights for child pages as mentioned in the expected output."
+    "CustomContextualRelevancy": "The retrieval context does not contain information about creating groups, defining rights at wiki or space levels, or inheriting rights for child pages as mentioned in the expected output.",
+    "Correctness": "The actual output describes a different method for setting permissions using 'R\u00f4les' which is not mentioned in the expected output. Both outputs ensure visibility for all teams and modification rights for individual teams, but the specific steps and details differ significantly."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

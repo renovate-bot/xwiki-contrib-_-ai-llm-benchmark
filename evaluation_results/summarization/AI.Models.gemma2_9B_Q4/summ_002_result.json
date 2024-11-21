@@ -1,9 +1,9 @@
 {
-  "score": 0.2,
-  "reason": "The score is 0.20 because the summary contains multiple contradictions with the original text, such as incorrect details about the 'Script' permission and the order of permission checks. Additionally, it includes extra information not present in the original text and fails to answer several questions that the original text can address.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary contains significant contradictions with the original text, such as incorrect claims about the 'createwiki' right and default permissions in XWiki. Additionally, the summary includes extra information not present in the original text, like details about register permission and inheritance rules. Furthermore, the summary fails to answer specific questions that the original text addresses, such as the default status of certain rights and the capabilities of the script right.",
   "score_breakdown": {
-    "Alignment": 0.625,
-    "Coverage": 0.2
+    "Alignment": 0.7058823529411765,
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.6197680097680098,
+  "overall_score": 0.4803671637507298,
   "individual_scores": {
-    "AnswerRelevancy": 0.9615384615384616,
+    "AnswerRelevancy": 0.9583333333333334,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.33730158730158727,
+    "ContextualPrecision": 0,
     "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.3
+    "CustomContextualRelevancy": 0.2,
+    "Correctness": 0.22386964917104518
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.96 because the response is highly relevant and effectively addresses the question about disabling notifications in XWiki. The only minor issue is the inclusion of a source link, which doesn't directly answer the question but doesn't significantly detract from the overall relevance.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.34 because the first three nodes in the retrieval context are irrelevant, discussing topics like 'following a user and receiving notifications about events triggered by that user', 'selecting the level of detail in email notifications', and 'enabling and disabling the email feature', which do not address how to disable notifications for pages. These irrelevant nodes are ranked higher than relevant nodes that discuss 'administrators changing users' notification settings', 'default settings for notifications', and 'filters for notifications', which are pertinent to the input query.",
-    "ContextualRecall": "The score is 0.50 because only the information about default auto watching page behavior is supported by nodes in the retrieval context, specifically node 5. However, details about being notified of changes and deleting notification filters in the 'Custom Filters' list are not supported by the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context mentions default watch settings and user profile settings but lacks details on automatic page watching and deleting notification filters."
+    "AnswerRelevancy": "The score is 0.96 because the response effectively addresses how to disable notifications in XWiki, but includes a source link that doesn't directly answer the question, slightly affecting its relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'following a user and default watch settings', which does not help in disabling notifications for pages you are not interested in. The second node talks about 'selecting the level of details in email notifications and macros for settings', which is not relevant to the problem of disabling notifications. The third node covers 'enabling and disabling the extension and email features', but does not address the specific need to disable notifications for certain pages. All nodes fail to address the input query, resulting in a score of 0.00.",
+    "ContextualRecall": "The score is 0.50 because only half of the expected output is supported by the nodes in the retrieval context. Specifically, sentences 3 and 4 are supported by nodes 4 and 5 in the retrieval context, while sentences 1 and 2 lack direct support.",
+    "CustomContextualRelevancy": "The retrieval context mentions default watch settings and user profile settings but lacks details on automatic page watching and deleting custom filters.",
+    "Correctness": "The actual output focuses on managing notifications broadly and does not mention automatic page watching or custom filters. It introduces the xwiki.properties file and macros, which are not in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

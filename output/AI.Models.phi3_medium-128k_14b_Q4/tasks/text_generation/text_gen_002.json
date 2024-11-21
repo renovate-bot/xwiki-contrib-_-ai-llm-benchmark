@@ -2,16 +2,16 @@
   "id": "text_gen_002",
   "prompt": "Transform the following keywords into a coherent sentence:\n\ncat, playful, garden, sunny day",
   "expected_answer": "On a sunny day, the playful cat enjoyed exploring the garden.",
-  "ai_answer": "On a sunny day, the playful cat enjoyed frolicking in the vibrant garden.\n\nHere we have taken all provided keywords and formed them into an informative, grammatically correct statement that flows naturally. We start with the setting of \"a sunny day,\" introduce our subject, which is \"the playful cat,\" and then describe what it's doing within a contextual environment: \"frolicking in the vibrant garden.\" The sentence structure follows standard English conventions and provides an image or scene for the reader to visualize.",
+  "ai_answer": "On a sunny day, the playful cat enjoyed frolicking in the vibrant garden.",
   "sources": null,
   "usage": {
     "prompt_tokens": 32,
-    "completion_tokens": 118,
-    "total_tokens": 150
+    "completion_tokens": 22,
+    "total_tokens": 54
   },
-  "average_power_draw": 255.39344444444447,
-  "energy_consumption": 338.85172643163475,
-  "energy_per_input_token": 1.0362438117175374,
-  "energy_per_output_token": 2.5906095292938436,
-  "energy_per_total_token": 2.259011509544232
+  "average_power_draw": 263.0104444444445,
+  "energy_consumption": 68.97384794351791,
+  "energy_per_input_token": 0.7928028499254932,
+  "energy_per_output_token": 1.9820071248137332,
+  "energy_per_total_token": 1.277293480435517
 }

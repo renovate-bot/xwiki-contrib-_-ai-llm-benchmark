@@ -1,7 +1,7 @@
 {
-  "score": 0.7,
-  "reason": "The Actual Output addresses the Input by creating a travel guide for Paris, aligning with the Expected Output's requirement for an informative guide. It is coherent and logically flows from the Input, providing relevant information about transportation. However, it lacks details on top attractions, accommodations, and activities, which are specifically mentioned in the Expected Output.",
-  "prompt_language": "en",
+  "score": 0.9,
+  "reason": "The Actual Output is highly relevant to the Input prompt and Expected Output, providing a comprehensive travel guide to Paris with detailed sections on attractions, accommodations, and activities. It is coherent with a logical flow and consistent structure, covering essential topics expected in a travel guide. The fluency is mostly excellent, with minor grammatical errors like 'ann cups' instead of 'annual visits.'",
+  "prompt_language": "ro",
   "expected_answer_language": "en",
   "generated_text_language": "en"
 }

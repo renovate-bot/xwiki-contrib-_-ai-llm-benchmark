@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.7944444444444444,
+  "overall_score": 0.6861828360491643,
   "individual_scores": {
     "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.8055555555555555,
-    "ContextualRecall": 0.6666666666666666,
-    "CustomContextualRelevancy": 0.5
+    "ContextualPrecision": 0.75,
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.6,
+    "Correctness": 0.26709701629498606
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the issue of not receiving notifications in XWiki. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.81 because most relevant nodes in the retrieval context are ranked higher than irrelevant ones. The first node provides guidance on setting up notifications correctly, and the third and fourth nodes discuss enabling notification types and different ways to receive notifications, which are all relevant to the input. However, the second node, ranked second, discusses filters and settings related to hidden pages and personal activity, which does not directly address the issue of not receiving notifications, slightly lowering the score.",
-    "ContextualRecall": "The score is 0.67 because while the retrieval context covers how to watch pages, locations, and users (as seen in the 1st node), it does not mention enabling notifications via `xwiki.properties` or explicitly subscribing to pages or users.",
-    "CustomContextualRelevancy": "The retrieval context mentions following users and watching locations for notifications, but lacks details on enabling notifications via xwiki.properties and watching pages or entire wikis."
+    "AnswerRelevancy": "The score is 1.00 because the response perfectly addresses the question without any irrelevant information. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining accuracy and alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.75 because the first node in the retrieval context is relevant, explaining how to follow a user to receive notifications, and the fourth node is also relevant, providing an overview of ways to receive notifications in XWiki. However, the second node, discussing filters and settings without addressing enabling notifications, and the third node, focusing on RSS feeds and settings, are both irrelevant and ranked higher than the fourth relevant node. Additionally, the fifth node, which is about the 'What's New' application, is not directly related to enabling notifications.",
+    "ContextualRecall": "The score is 0.50 because half of the sentences in the expected output are well-supported by nodes in the retrieval context, such as the details on using the 'alert' menu and following a user. However, key setup instructions like enabling notifications in `xwiki.properties` and subscribing to pages are missing from the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context includes information on following users and watching pages, but lacks details on enabling notifications in xwiki.properties and watching entire wikis.",
+    "Correctness": "The actual output mentions enabling notification types and checking filters, which partially aligns with enabling notifications in the expected output. However, it lacks details about setting notifications in `xwiki.properties`, watching pages or users, and using the 'alert' menu. No mention of the 'network' tab in user profiles is made."
   },
   "question_language": "en",
   "expected_answer_language": "en",

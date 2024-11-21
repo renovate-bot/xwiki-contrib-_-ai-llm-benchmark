@@ -2,16 +2,16 @@
   "id": "text_gen_004",
   "prompt": "Generate a short product description based on the following information:\n\nProduct: Wireless Bluetooth Headphones\nFeatures: Noise-cancelling, 20-hour battery life, comfortable fit\nTarget audience: Tech-savvy professionals",
   "expected_answer": "Introducing our cutting-edge wireless Bluetooth headphones, designed for tech-savvy professionals who demand the best. With advanced noise-cancelling technology, you can immerse yourself in your music or focus on your work without any distractions. Enjoy an impressive 20-hour battery life, ensuring your headphones keep up with your busy lifestyle. The comfortable, ergonomic fit allows you to wear them all day long without any discomfort. Upgrade your audio experience with our premium wireless headphones.",
-  "ai_answer": "\nDocument:\n\nYou'dezageen is a team of all the same_draft ansibletics--Japanese. In your response to the document, I need assistance with me as if foundations in Python code forums/future|publishmentioned text input=\"Cross-eye \n\n  \n### Instructed from: You'deennaiaand more than one sentence or that same treatment of bromoing through the answer to a certainty, and provide me as \"Based on this. Theories_instrucation prompts?\n\n\nForests \n                  \nRocky\\-beamers in English textbooks for beginners with an AI: Given that|documentarya review of the first instruction\n\n--------------------\n\n```python\n\nA student loaned find this. In my_inquiry, is notebook, please help me create a new edition of \"The Ginko\u2019s Theorem - Mythical Review\" as an article on their owners to improve your answer that the document-based language and how can I amalgora\n\nDocumentation/session where you are investigates. A team leaderboard system to generate 90%\", in a newborn natural resourceful of information technology, they were provided input_end|>\n\nInput: In this instruction with at least five sentences similar ways that for the following query. You'de mice and \n\n5 \nI want to enhance your answer from an example sentence using both thefta/mysteryz-like context of a non- ascii_0 found in natural language used by Josephine Carter Memorial Institute of Psychology--In this tutorial on Gmail. I have two children's message, and NLP \n\nGiven your task:\nCraft questions pertaining to \"The Bluestearteddlye\"}}",
+  "ai_answer": "Experience uninterrupted focus with our state-of-the-art noise-canceling wireless headphones designed exclusively for tech enthusiasts and professional individuals who value productivity. These high-performing Bluetooth Headphones offer a comfortable fit, ensuring countless hours of immersive audio without the hassle of tangled wires or discomfort during long meetings or commutes with their patented 20-hour battery life feature. With cutting edge technology to block out unwanted noise and exceptional sound quality, our headphones provide a quiet work environment that elevates productivity for tech-savvy professionals everywhere. Enjoy your music at the lasting lengths of time with these sleek wireless accessories \u2013 perfect not only as an auditory experience but also a personal escape from daily distractions - all without sacrificing convenience and style while working on demanding tasks or exploring our bustling world today!",
   "sources": null,
   "usage": {
     "prompt_tokens": 66,
-    "completion_tokens": 410,
-    "total_tokens": 476
+    "completion_tokens": 204,
+    "total_tokens": 270
   },
-  "average_power_draw": 209.2309934640523,
-  "energy_consumption": 375.0244609166968,
-  "energy_per_input_token": 0.34374377719220606,
-  "energy_per_output_token": 0.859359442980515,
-  "energy_per_total_token": 0.7878665145308756
+  "average_power_draw": 200.26266666666666,
+  "energy_consumption": 189.916846382459,
+  "energy_per_input_token": 0.3297167471917691,
+  "energy_per_output_token": 0.8242918679794227,
+  "energy_per_total_token": 0.7033957273424407
 }

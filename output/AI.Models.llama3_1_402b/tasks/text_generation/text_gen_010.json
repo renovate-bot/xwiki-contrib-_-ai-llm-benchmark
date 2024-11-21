@@ -2,12 +2,12 @@
   "id": "text_gen_010",
   "prompt": "Adapt the following text to a more technical audience:\n\nThe human brain is a complex organ that controls all functions of the body, interprets information from the outside world, and embodies the essence of the mind and soul.",
   "expected_answer": "The human brain is a highly intricate and sophisticated organ responsible for regulating and coordinating various physiological processes, processing and interpreting sensory information from the external environment, and serving as the biological substrate for cognitive functions, consciousness, and subjective experiences.",
-  "ai_answer": "Here is the adapted text:\n\nThe human brain is a intricate and dynamic neurophysiological system that integrates and regulates the body's autonomic, motor, and cognitive functions, processes sensory information from the external environment, and subserves the emergent properties of consciousness and cognition.\n\nNote: I used more technical terms and phrasing to make the text more suitable for a technical audience, such as:\n\n* \"Intricate and dynamic neurophysiological system\" instead of \"complex organ\"\n* \"Autonomic, motor, and cognitive functions\" instead of \"all functions of the body\"\n* \"Processes sensory information\" instead of \"interprets information\"\n* \"Subserves the emergent properties of consciousness and cognition\" instead of \"embodies the essence of the mind and soul\"\n\nThis adapted text is more precise and technical, and is likely to be more suitable for an audience with a background in neuroscience, psychology, or a related field.",
+  "ai_answer": "Here's a revised version of the text adapted for a more technical audience:\n\nThe human brain is a highly intricate and dynamic organ that serves as the central nervous system's (CNS) control center, integrating and processing sensory information from the environment, regulating autonomic functions, and facilitating cognitive processes that underlie perception, consciousness, and behavior.",
   "sources": null,
   "usage": {
     "prompt_tokens": 54,
-    "completion_tokens": 189,
-    "total_tokens": 243
+    "completion_tokens": 68,
+    "total_tokens": 122
   },
   "average_power_draw": null,
   "energy_consumption": null,

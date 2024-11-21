@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.3619047619047619,
+  "overall_score": 0.40688061091112554,
   "individual_scores": {
-    "AnswerRelevancy": 0.8095238095238095,
+    "AnswerRelevancy": 0.8260869565217391,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.6151967089450137
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.81 because the response mostly addresses the question about configuring access rights in XWiki, but it includes several irrelevant links that do not directly relate to the specific task of setting view and edit permissions for team spaces.",
+    "AnswerRelevancy": "The score is 0.83 because the main content effectively addresses how to configure access rights in XWiki, but it includes multiple irrelevant source links that do not contribute to the solution.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses the structure of a page in XWiki, but it does not provide any information about configuring access rights or spaces. The second node talks about modifying resources using XML and REST API, which is unrelated to setting access rights for spaces in XWiki. The third node is about managing comments and attachments, which does not relate to configuring space access rights in XWiki. The fourth node explains the concept of spaces and sub-pages in XWiki, but it does not address access rights or how to configure them. The fifth node is about migration actions and adapting code, which is not related to configuring access rights for spaces in XWiki. Lastly, the sixth node discusses configuration display settings in XWiki, which does not pertain to setting access rights for teams in spaces.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context. The retrieval context lacks information on specific steps for achieving access control in XWiki, such as creating groups, defining rights at different levels, or ensuring visibility and modification rights for teams.",
-    "CustomContextualRelevancy": "The retrieval context lacks information on creating groups, setting rights at wiki and space levels, and inheriting rights for child pages, which are key points in the expected output."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'the structure of an XWiki page', which does not relate to configuring access rights for teams. The second node talks about 'modifying resources via XML and HTTP methods', which is not relevant to setting access permissions in XWiki. The third node is about 'editing comments and attachments', which is unrelated to configuring team access rights in XWiki. The fourth node explains 'the creation of spaces and pages in XWiki', but does not provide information on setting access rights for teams. The fifth node is about 'actions needed after running a migrator', which does not pertain to configuring team access rights in XWiki. Finally, the sixth node discusses 'configuration display scopes in XWiki', which is not directly related to setting team-specific access rights.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any node in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about creating groups, setting rights at the wiki or space level, or inheriting rights for child pages as outlined in the expected output.",
+    "Correctness": "The actual output covers the major steps like configuring global view rights and space-specific edit rights. However, it misses specific instructions on 'H\u00e9riter des droits pour les pages enfants' and doesn't mention setting 'Afficher' for 'XWikiAllGroup'."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

@@ -1,6 +1,6 @@
 {
   "score": 0.6,
-  "reason": "The score is 0.60 because the summary includes contradictions, such as claiming XWiki can be used for educational purposes, which is not supported by the original text. Additionally, the summary introduces extra information about XWiki being used as a community hub, presentation website, or public wiki, which is not mentioned in the original text.",
+  "reason": "The score is 0.60 because the summary includes extra information not present in the original text, such as custom applications like blogs or task managers and users customizing the platform while maintaining core functionality. However, there are no contradictions, which indicates some level of accuracy.",
   "score_breakdown": {
     "Alignment": 0.6,
     "Coverage": 1.0

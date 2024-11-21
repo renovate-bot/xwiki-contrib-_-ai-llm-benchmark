@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output is a coherent and fluent story about astronauts exploring Io, one of Jupiter's moons, which aligns with the Input prompt for a space adventure. It maintains a logical flow and is free of grammatical errors. While it focuses on a moon rather than a new planet, it meets the key points and intentions of the Expected Output by detailing an exploration mission with astronauts.",
+  "reason": "The Actual Output is a creative story about a space adventure, aligning well with the Input prompt. It is coherent, with a logical flow from the mission's start to the discovery of ancient beings. The language is fluent and grammatically correct. Although it exceeds the Expected Output by including more details about the aliens and diplomacy, it still maintains relevance to the theme of exploring a new planet.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,9 +1,9 @@
 {
   "score": 0.4,
-  "reason": "The score is 0.40 because the summary includes extra information not present in the original text, such as specific login requirements for actions and detailed resources for developers, which affects its accuracy and completeness.",
+  "reason": "The score is 0.40 because the summary includes extra information not present in the original text, such as links to guides and resources, specific guides on creating and editing pages, and invitations to proceed with certain steps. Additionally, the summary fails to answer questions that the original text can address, such as the necessity of logging in for certain actions, whether XWiki is a second-generation wiki, and the availability of additional applications on the Extensions wiki.",
   "score_breakdown": {
-    "Alignment": 0.4,
-    "Coverage": 1.0
+    "Alignment": 0.42857142857142855,
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

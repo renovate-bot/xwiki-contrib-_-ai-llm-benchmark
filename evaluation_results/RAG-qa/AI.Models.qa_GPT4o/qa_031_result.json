@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.8175000000000001,
+  "overall_score": 0.7537122941725168,
   "individual_scores": {
     "AnswerRelevancy": 0.6875,
-    "Faithfulness": 1.0,
+    "Faithfulness": 0.8333333333333334,
     "ContextualPrecision": 0.5,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 0.9
+    "CustomContextualRelevancy": 1.0,
+    "Correctness": 0.5014404317017673
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.69 because the response partially addresses the question about authenticating users with access tokens, but it includes multiple irrelevant source links that do not directly contribute to answering the question.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Keep up the great work!",
-    "ContextualPrecision": "The score is 0.50 because relevant nodes, such as the second node, which 'provides information on configuring authorized applications', and the fourth node, which 'describes the requirements for JWT tokens', are ranked lower than irrelevant nodes. For example, the first node 'discusses LDAP authentication settings', which is unrelated to token-based authentication using JWTs, and should be ranked lower.",
-    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the nodes in the retrieval context, showcasing a perfect alignment. Great job!",
-    "CustomContextualRelevancy": "The retrieval context includes details about JWT token requirements, authorized applications configuration, and the use of Ed25519 keys, matching most of the expected output. However, it lacks explicit mention of the xwiki.authentication.authclass property setting."
+    "AnswerRelevancy": "The score is 0.69 because the output includes relevant information about authenticating users with access tokens, but it is lowered due to repeated irrelevant statements providing source links that do not directly address the question.",
+    "Faithfulness": "The score is 0.83 because the actual output incorrectly suggests setting `xwiki.authentication.authclass` to `org.xwiki.contrib.llm.authentication.JWTTokenAuth` for JWT Token Authentication, whereas the retrieval context specifies it should be set to `com.xpn.xwiki.user.impl.xwiki.AppServerTrustedAuthServiceImpl` for container authentication.",
+    "ContextualPrecision": "The score is 0.50 because relevant nodes in the retrieval context are not consistently ranked higher than irrelevant nodes. For example, the first node is about 'LDAP configuration' and does not mention token-based authentication, which should be ranked lower. Similarly, the third node is about 'LDAP authentication' and is not related to token-based authentication, yet it appears before more relevant nodes. On the other hand, relevant nodes like the second node, which discusses 'configuration of authorized applications' for token-based authentication, and the fourth node, which details 'JWT token generation', are appropriately included but not consistently prioritized over irrelevant nodes.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the relevant nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context contains detailed information about token-based authentication, JWT claims, and configuration steps, matching the expected answer.",
+    "Correctness": "The actual output mentions JWT Token Authentication and setting xwiki.authentication.authclass, aligning with the expected output. However, it introduces OpenID Connect which is not in the expected output, and lacks details on configuring authorized applications and claim requirements."
   },
   "question_language": "en",
   "expected_answer_language": "en",

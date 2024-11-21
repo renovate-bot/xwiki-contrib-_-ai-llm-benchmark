@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output contains all key information correctly extracted from the Input, maintaining relevance and coherence. However, the format differs from the Expected Output, which affects the fluency assessment.",
+  "reason": "The Actual Output accurately extracts the key information from the Input, matching the Expected Output in content. However, the format differs slightly as it uses a list format instead of a JSON object.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.7244444444444444,
+  "overall_score": 0.5644792278266976,
   "individual_scores": {
-    "AnswerRelevancy": 0.9166666666666666,
+    "AnswerRelevancy": 0.875,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.7555555555555555,
-    "ContextualRecall": 0.75,
-    "CustomContextualRelevancy": 0.2
+    "ContextualPrecision": 0,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.3,
+    "Correctness": 0.2118753669601857
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.92 because the response effectively addresses how to disable notifications in XWiki, but includes an unnecessary source link that does not directly pertain to the question.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.76 because relevant nodes in the retrieval context, such as the first node mentioning 'settings' of the notifications and the third node discussing 'Advanced filtering options' and 'notification settings', are ranked higher. However, the score is not higher because some irrelevant nodes, like the second node discussing 'following a user and default watch settings' and the fourth node about 'enabling or disabling the email feature', are ranked above other relevant nodes.",
-    "ContextualRecall": "The score is 0.75 because while some sentences in the expected output are supported by nodes in the retrieval context, such as the default behavior of page watching and notification settings (supported by nodes 2 and 1), the statement about being notified about changes on your work lacks direct support from any node.",
-    "CustomContextualRelevancy": "The retrieval context mentions default watch settings and user profile settings, but lacks details about automatic page watching and deleting notification filters."
+    "AnswerRelevancy": "The score is 0.88 because the response mostly addresses how to disable unwanted notifications in XWiki, but includes a statement about default notification settings, which is not directly relevant to the user's question.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Great job maintaining perfect alignment!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'getting a notification RSS feed and general notification settings' but does not address disabling notifications or automatic page watching. The second node talks about 'following a user and default watch settings' without mentioning how to disable notifications. The third node mentions 'filters for notifications' but lacks information on disabling notifications. The fourth node discusses 'enabling and disabling email notifications by an administrator,' which is not directly related to the user's concern. The fifth node is about 'administrators configuring notification settings and default auto-watched modes,' but it does not explain how a user can disable notifications. The sixth node is about 'overriding default notification templates and installation instructions,' which is not relevant to the user's query.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions default notification settings and user profile settings but lacks details on automatic page watching and deleting notification filters.",
+    "Correctness": "The actual output does not mention automatic page watching after major modifications or how to change this setting in the profile, and introduces new details about following users and events, which are unsupported."
   },
   "question_language": "en",
   "expected_answer_language": "en",

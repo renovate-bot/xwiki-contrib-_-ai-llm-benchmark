@@ -1,7 +1,7 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output is a comprehensive travel guide for Santorini, directly addressing the Input prompt by providing detailed information on attractions, accommodations, and activities, aligning perfectly with the Expected Output. The content is coherent, fluent, and logically organized, covering all necessary aspects of a travel guide.",
-  "prompt_language": "en",
+  "reason": "The Actual Output is highly relevant to the Input prompt as it provides a detailed travel guide for Santorini, a popular tourist destination. The content is coherent, well-organized, and covers key aspects such as attractions, accommodations, and activities, aligning perfectly with the Expected Output. Additionally, the language is fluent and grammatically correct.",
+  "prompt_language": "ro",
   "expected_answer_language": "en",
   "generated_text_language": "en"
 }

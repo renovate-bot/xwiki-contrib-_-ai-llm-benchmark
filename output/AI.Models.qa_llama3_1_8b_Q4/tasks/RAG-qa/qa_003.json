@@ -2,7 +2,7 @@
   "id": "qa_003",
   "prompt": "In the context of XWiki I am not receiving notifications about my own activity. How can I enable notifications for my own actions?",
   "expected_answer": "By default, one don't receive notification about one's own activity (unless the event that triggered the notification targets explicitly that user). You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings in your user profile.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nBy default, XWiki doesn't send notifications for your own actions. However, you can easily configure it to notify yourself.\n\nHere are the steps to follow:\n\n1. Go to your user profile page:\nYou can access your user profile by clicking on your username in the top-right corner of the screen and selecting \"My Profile\".\n2. Click on the \"Notifications\" tab:\nOn your profile page, click on the \"Notifications\" tab.\n3. Enable notifications for your own actions:\nScroll down to the section labeled \"Your Notifications\". You should see a checkbox next to \"Notify me about my own activities\". Check this box to enable notifications.\n\nThat's it! From now on, you should receive notifications about your own activity in XWiki.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nYou can enable notifications for your own actions by following these steps:\n\n1. Go to your profile and click on the \"Notifications\" tab in the menu.\n2. In the notification settings, look for the option related to enabling notifications for your own activity.\n3. Toggle or switch off the filter that hides notifications about your own activity.\n\nAlternatively, you can also modify the xwiki.properties file to change the default behavior.\n\nBy disabling this filter, you will start receiving notifications about your own actions in XWiki.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 36,
-    "completion_tokens": 151,
-    "total_tokens": 187
+    "prompt_tokens": 2436,
+    "completion_tokens": 103,
+    "total_tokens": 2539
   },
-  "average_power_draw": 152.0914269005848,
-  "energy_consumption": 316.41412149778444,
-  "energy_per_input_token": 0.7652094836705792,
-  "energy_per_output_token": 1.9130237091764477,
-  "energy_per_total_token": 1.6920541256566013
+  "average_power_draw": 198.6873611111111,
+  "energy_consumption": 334.80609824988574,
+  "energy_per_input_token": 0.12430150297007082,
+  "energy_per_output_token": 0.310753757425177,
+  "energy_per_total_token": 0.13186533999601643
 }

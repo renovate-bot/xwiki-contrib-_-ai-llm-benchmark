@@ -2,7 +2,7 @@
   "id": "qa_011",
   "prompt": "Die Glocke oben rechts ist nicht verf\u00fcgbar, auch nicht wenn die Erweiterung \"Alert Notification\" installiert ist.",
   "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen in Ihrem Wiki aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nVielen Dank f\u00fcr Ihre R\u00fcckmeldung! Ja, es scheint so, als w\u00e4re die Glocke oben rechts im Chatfenster standardm\u00e4\u00dfig deaktiviert oder nicht verf\u00fcgbar in der aktuellen Version von Discord. Die Erweiterung \"Alert Notification\" kann m\u00f6glicherweise nicht alle Funktionen bereitstellen, die sie verspricht.  Um Benachrichtigungen zu erhalten, k\u00f6nnen Sie andere Methoden verwenden, wie beispielsweise das Einstellen eines Klingeltons f\u00fcr Nachrichten oder die Verwendung von Desktop-Benachrichtigungen. Sie k\u00f6nnen auch das Design des Chats anpassen und ein Symbol hinzuf\u00fcgen, um auf eine neue Nachricht zu klicken.  Wenn Sie die fehlende Glocke vermissen, k\u00f6nnen Sie auch \u00fcberlegen, das Problem im offiziellen Discord-Community-Forum zu diskutieren oder ein Feedback direkt \u00fcber die Discord-Anwendung zu senden. Ihre Meinung kann dazu beitragen, zuk\u00fcnftige Aktualisierungen und \u00c4nderungen an der Plattform zu beeinflussen.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nDas klingt nach einem Problem mit der XWiki-Oberfl\u00e4che. Die Beschreibung der Erweiterungen \"Notifications Application\" und \"Alert Notification\" scheint darauf hinzuweisen, dass sie eine Benachrichtigungsfunktion in Form eines Bells/einer Glocke in der oberen rechten Ecke bereitstellen.\n\nDie \"Notifications Application\"-Erweiterung scheint jedoch erst ab XWiki 9.3 diese Funktion bereitzustellen, w\u00e4hrend die \"Alert Notification\"-Erweiterung m\u00f6glicherweise \u00e4lter ist und eventuell nicht mehr gewartet wird oder f\u00fcr \u00e4ltere Versionen von XWiki vorgesehen ist.\n\nDie Glocke in der oberen rechten Ecke k\u00f6nnte auch von einem Theme oder einer anderen Erweiterung bereitgestellt werden, weshalb ihre Abwesenheit nicht unbedingt auf ein Problem mit den erw\u00e4hnten Erweiterungen hindeuten muss.\n\nOhne weitere Informationen zu Ihrer XWiki-Version und eventuellen anderen installierten Erweiterungen kann ich leider keine genaueren Angaben zur Ursache des Problems machen.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -54,13 +54,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 30,
-    "completion_tokens": 196,
-    "total_tokens": 226
+    "prompt_tokens": 3463,
+    "completion_tokens": 204,
+    "total_tokens": 3667
   },
-  "average_power_draw": 76.3417482792528,
-  "energy_consumption": 2005.1543402810155,
-  "energy_per_input_token": 3.856066039001953,
-  "energy_per_output_token": 9.640165097504882,
-  "energy_per_total_token": 8.872364337526617
+  "average_power_draw": 59.92893818733407,
+  "energy_consumption": 6101.944193029015,
+  "energy_per_input_token": 1.535853056387872,
+  "energy_per_output_token": 3.83963264096968,
+  "energy_per_total_token": 1.6640153239784605
 }

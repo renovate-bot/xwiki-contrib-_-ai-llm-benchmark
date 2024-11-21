@@ -2,7 +2,7 @@
   "id": "qa_029",
   "prompt": "Comment puis-je refuser le droit de script \u00e0 un administrateur d'espace?",
   "expected_answer": "Ceci n'est malheureusement pas pris en charge dans XWiki, les droits qui sont impliqu\u00e9s par le droit d'administrateur ne peuvent pas \u00eatre refus\u00e9s.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \n\n\nPour refuser le droit de script \u00e0 un administrateur d'espace, vous pouvez suivre ces \u00e9tapes :\n\n1. Connectez-vous \u00e0 votre compte administrateur.\n2. Acc\u00e9dez \u00e0 la section \"Param\u00e8tres\" ou \"Configuration\".\n3. Recherchez l'option \"Droits d'acc\u00e8s\" ou \"Autorisations\".\n4. Trouvez l'administrateur en question dans la liste des utilisateurs.\n5. D\u00e9cochez la case correspondant au droit de script pour cet administrateur.\n6. Enregistrez les modifications apport\u00e9es.\n\nIl est important de noter que refuser le droit de script \u00e0 un administrateur peut limiter ses capacit\u00e9s \u00e0 g\u00e9rer l'espace. Assurez-vous donc que cette action est justifi\u00e9e avant de proc\u00e9der.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \n\n\nOui, il est possible de refuser le droit de script \u00e0 un administrateur d'espace dans XWiki. Vous pouvez le faire en suivant ces \u00e9tapes:\n\n1. Acc\u00e9dez \u00e0 la page d'administration de l'espace.\n2. Cliquez sur \"Gestion des droits\" dans le menu lat\u00e9ral.\n3. S\u00e9lectionnez l'administrateur d'espace pour lequel vous souhaitez refuser le droit de script.\n4. Dans la section \"Droits\", recherchez la case \u00e0 cocher \"Script\".\n5. D\u00e9cochez la case \u00e0 cocher \"Script\".\n6. Cliquez sur \"Enregistrer les modifications\".\n\nLe droit de script sera maintenant refus\u00e9 \u00e0 l'administrateur d'espace s\u00e9lectionn\u00e9.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 19,
-    "completion_tokens": 154,
-    "total_tokens": 173
+    "prompt_tokens": 3417,
+    "completion_tokens": 152,
+    "total_tokens": 3569
   },
-  "average_power_draw": 195.12011111111116,
-  "energy_consumption": 423.38660502335773,
-  "energy_per_input_token": 1.04798664609742,
-  "energy_per_output_token": 2.61996661524355,
-  "energy_per_total_token": 2.447321416319987
+  "average_power_draw": 210.21323232323232,
+  "energy_consumption": 778.545361646185,
+  "energy_per_input_token": 0.20504223377566105,
+  "energy_per_output_token": 0.5126055844391527,
+  "energy_per_total_token": 0.21814103716620484
 }

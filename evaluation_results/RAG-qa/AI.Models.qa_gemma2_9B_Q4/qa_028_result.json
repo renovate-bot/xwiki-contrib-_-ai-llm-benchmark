@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.3583333333333333,
+  "overall_score": 0.23955157717651945,
   "individual_scores": {
-    "AnswerRelevancy": 0.7916666666666666,
+    "AnswerRelevancy": 0.375,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.062309463059116874
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.79 because the response mostly addresses the question about limiting file types and sizes in a wiki, but it includes multiple irrelevant source links that do not directly relate to the topic, which prevents a higher score.",
+    "AnswerRelevancy": "The score is 0.38 because the output includes multiple irrelevant source links that do not address the question about file upload restrictions, significantly lowering the relevancy. However, the score is not zero, indicating that there is some relevant content present.",
     "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'language preferences and translations in XWiki', which is unrelated to configuring file upload restrictions. The second node is about 'various XWiki applications and features, such as tour guides and administration', which do not relate to file upload settings. The third node focuses on 'PDF export customization using CSS and XSL', which does not pertain to file upload restrictions. The fourth node lists 'various macros and features in XWiki, such as PDF Viewer and Office Document Viewer', which are not relevant to configuring file upload limitations. The fifth and sixth nodes contain 'image links and references to various projects', which do not provide information on setting file upload restrictions.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context, which lacks information on file types, size limitations, MIME type configurations, and specific steps for setting attachment size limits.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to configuring MIME types or setting attachment size limits as mentioned in the expected output."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'language preferences and translations in XWiki', which is unrelated to file upload restrictions. The second node is about 'various applications and features in XWiki, such as tour guides and administration', but does not mention file uploads or MIME types. The third node covers 'PDF and document processing using XSL and FOP', which does not relate to setting upload restrictions for images or PDFs. The fourth node addresses 'system filters and document viewing', which does not address file upload settings or restrictions. The fifth node contains 'links to various image references' and does not provide information on configuring file upload settings. Lastly, the sixth node is about 'image references and links', which are not relevant to configuring file upload restrictions in a wiki.",
+    "ContextualRecall": "The score is 0.00 because none of the expected output sentences can be attributed to any node(s) in the retrieval context, as the context lacks information on file size restrictions, MIME type configurations, and specific steps for setting these parameters.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to configuring MIME types or setting maximum attachment size as outlined in the expected output.",
+    "Correctness": "The actual output lacks specific procedural steps and does not match factual details like MIME type configuration and exact file size settings present in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

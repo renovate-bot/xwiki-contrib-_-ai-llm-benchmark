@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.4875,
+  "overall_score": 0.35257783601612286,
   "individual_scores": {
     "AnswerRelevancy": 0.9375,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.0
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.17796701609673685
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.94 because the response is highly relevant to the issue of the notification bell not being available, with only a minor irrelevant mention of XWiki syntax documentation.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on ensuring the actual output is perfectly aligned with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'custom notification filters and their behavior', which does not relate to enabling notifications in the wiki settings. The second node lists 'various notification-related options and links', but fails to address enabling notifications through the `xwiki.properties` file. The third node describes 'different notification preferences and macros', yet does not mention enabling notifications in the `xwiki.properties` file. The fourth node provides a 'description of the notifications application and its features', but does not relate to enabling notifications in the wiki settings. Lastly, the fifth node discusses 'RSS feeds and notification settings', but does not mention enabling notifications through the `xwiki.properties` file. All nodes should be ranked lower as they do not address the input query.",
-    "ContextualRecall": "The score is 0.50 because the first sentence of the expected output is supported by the 5th node in the retrieval context, which discusses displaying notifications about events on the wiki. However, the second sentence about setting 'notifications.enabled' in 'xwiki.properties' lacks direct support from any node in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications in the wiki or setting `notifications.enabled` to `true` in `xwiki.properties`."
+    "AnswerRelevancy": "The score is 0.94 because the response is highly relevant to the issue of the notification bell not appearing, with only a minor irrelevant detail about XWiki syntax documentation that slightly detracts from the focus.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'custom notification filters and their behavior', the second node lists 'various notification-related links and settings', the third node provides 'links to notification preferences and macros', the fourth node describes 'the notification application and its features', and the fifth node discusses 'obtaining an RSS feed for notifications and settings'. None of these nodes mention 'enabling notifications in the wiki settings', which is relevant to the input.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications through the `xwiki.properties` file or setting `notifications.enabled` to `true`, which is required in the expected output.",
+    "Correctness": "The actual output does not address the activation of notifications via `xwiki.properties` as mentioned in the expected output. Instead, it provides troubleshooting steps for visible alerts and extensions, which deviates from the expected content."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

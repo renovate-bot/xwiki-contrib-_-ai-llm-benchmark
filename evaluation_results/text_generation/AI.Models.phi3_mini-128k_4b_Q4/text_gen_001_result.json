@@ -1,6 +1,6 @@
 {
-  "score": 0.0,
-  "reason": "The Actual Output is incoherent, does not address the Input prompt, and is irrelevant to the Expected Output.",
+  "score": 0.9,
+  "reason": "The Actual Output accurately extracts the key information from the Input and matches the Expected Output in content. However, the format differs slightly as it uses a list format instead of a JSON object.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

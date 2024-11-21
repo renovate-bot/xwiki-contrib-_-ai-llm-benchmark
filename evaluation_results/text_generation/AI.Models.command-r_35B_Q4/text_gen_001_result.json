@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output correctly extracts and presents the key information from the Input, maintaining relevance and coherence. However, it slightly differs in format from the Expected Output by not using JSON structure.",
+  "reason": "The Actual Output accurately extracts and presents the key information from the Input. It is relevant, coherent, and fluent. The only discrepancy is the use of colons instead of JSON format in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

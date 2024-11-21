@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output is highly relevant to the Input, as it discusses a recent scientific discovery about a new material. It is coherent and logically structured, detailing the discovery, its implications, and potential applications, aligning well with the Expected Output of an informative article. The fluency is smooth and readable, closely matching the quality expected.",
+  "reason": "The Actual Output is highly relevant to the Input, providing a detailed article on a recent scientific discovery. It is coherent, with a logical flow and consistent ideas, matching the Expected Output's requirement for an informative article. Minor grammatical errors like 'serendetically' slightly affect fluency.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

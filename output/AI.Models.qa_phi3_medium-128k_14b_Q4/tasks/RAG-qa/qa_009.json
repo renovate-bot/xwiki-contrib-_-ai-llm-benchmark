@@ -2,7 +2,7 @@
   "id": "qa_009",
   "prompt": "How can I deny script right to a space administrator?",
   "expected_answer": "This is unfortunately not supported in XWiki, rights that are implied by admin right cannot be denied.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ContentOrganization/NestedPagesMigration/ \n\n\nTo deny the execution of scripts or certain permissions, you would first need to identify what kind of administrative actions are being performed by your users. Scripts often require access rights that could potentially lead to unautpoerated changes within your system's environment. Here is a basic step-by-step method:\n\n1. Identify the specific script or operation. The exact process would depend on what kind of scripts you want to disable and which permissions they use. For instance, if you wanted to prevent all users with administrative privileges from executing certain PowerShell scripts on Windows systems, your approach would be different than disabling a Python script running as an admin in Linux/Unix environments.\n\n2. Once identified, modify the file permissions: On Unix-like operating systems (Linux or MacOS), you can use `chmod -x <file>`, to remove execute permission from files for all users. Replace `<file>` with the full path of your script. This won't necessarily prevent a user who has root/admin access as they could revoke these changes, but it would stop regular users and other processes not running under privileged accounts from executing that file.\n\n3. Restricting admin rights: If you are on a Microsoft Windows environment or another OS with similar functionality, such as MacOS (before Big Sur), you can modify the user's account type to prevent them from functioning as an admin, using the command line tool `dscl` and entering a command like `dseditgroup -Edit -appendMember <username> administrators`.\n\n    However, these measures might not be enough if users have elevated their own privileges. In such cases:\n    4. A more thorough approach would involve setting up group policies or using tools specifically designed for this purpose (such as SELinux or AppArmor on Linux). This is a complex process that requires careful planning and testing to ensure it doesn't disrupt the system\u2019s functionality. \n\nPlease note: These are just some of the possible methods, not an exhaustive list. The exact steps will vary depending on your specific operating system, network architecture, security infrastructure, and other factors you might need to consider. And always remember that restricting administrative rights is a sensitive operation which can potentially lead to unforeseen complications; proper testing in a controlled environment before rolling out changes to production systems is highly recommended.\n\nAlternatively, consult with your system administrator or IT department for further assistance on tailoring these settings specifically to your organization's needs and constraints.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ContentOrganization/NestedPagesMigration/ \n\n\nTo deny script rights to a space administrator, you need to modify their access permissions at the wiki level. According to the provided information from XWiki documentation, here's how you can do it:\n\n1) Log in as an admin user with all basic rights (LOGIN, VIEW, EDIT, DELETE, REGISTER, COMMENT).\n2) Navigate to the wiki preferences page.\n3) Find 'Script' permission under the Access Rights section. By default, script right is allowed for all users at the main wiki level. If you want to deny it to a specific space administrator, you need to explicitly revoke this right for them. \n4) To do that:\n    - In the Access Rights table, locate 'Script' permission row and set it from \"Allow\" to \"Deny\".\n5) Now, when the page is rendered, the scripts will only execute if the last author of the page has the 'Script' right. \n\nPlease Note: This change will be applied at the main wiki level and could affect sub-wikis as well. If you want to manage this permission granularly (i.e., allow for some users or groups), additional configuration might be needed based on your specific setup.\n\nRemember, denying script rights restricts users from executing scripts they've written in any wiki page. \n\nAlso, as a general knowledge tip: Always make sure to inform the affected user(s) about changes to their permissions and ensure they understand why these changes are being made for transparency and trust within your team.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 21,
-    "completion_tokens": 529,
-    "total_tokens": 550
+    "prompt_tokens": 2831,
+    "completion_tokens": 346,
+    "total_tokens": 3177
   },
-  "average_power_draw": 231.44193650793648,
-  "energy_consumption": 1620.6758707039014,
-  "energy_per_input_token": 1.2063087984398226,
-  "energy_per_output_token": 3.0157719960995557,
-  "energy_per_total_token": 2.9466834012798206
+  "average_power_draw": 261.4118803418802,
+  "energy_consumption": 1504.530980594463,
+  "energy_per_input_token": 0.4070700705071599,
+  "energy_per_output_token": 1.0176751762678997,
+  "energy_per_total_token": 0.47356971375337203
 }

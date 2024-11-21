@@ -1,9 +1,9 @@
 {
-  "score": 0.0,
-  "reason": "The score is 0.00 because the summary includes extensive extra information not present in the original text, indicating a significant deviation from the source material.",
+  "score": 0.3333333333333333,
+  "reason": "The score is 0.33 because the summary contains significant contradictions and includes extra information not found in the original text. It also fails to answer questions that the original text can address, indicating a lack of alignment and completeness.",
   "score_breakdown": {
-    "Alignment": 0.0,
-    "Coverage": 0.2
+    "Alignment": 0.3333333333333333,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

@@ -2,7 +2,7 @@
   "id": "qa_023",
   "prompt": "Je ne re\u00e7ois pas de notifications concernant ma propre activit\u00e9. Comment puis-je activer les notifications pour mes propres actions?",
   "expected_answer": "Par d\u00e9faut, vous ne recevez pas de notifications concernant votre propre activit\u00e9 (sauf si l'\u00e9v\u00e9nement qui a d\u00e9clench\u00e9 la notification cible explicitement cet utilisateur). Vous avez la possibilit\u00e9 de d\u00e9sactiver ce filtre dans la section \"Options de filtrage avanc\u00e9es\" des param\u00e8tres de notification de votre profil utilisateur.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nSi vous n'obtenez pas de notifications concernant vos propres actions, il est possible que le param\u00e8tre \u00ab Notifications \u00bb soit d\u00e9sactiv\u00e9 dans votre compte. Pour afficher des notifications lorsque vous effectuez une action, suivez ces \u00e9tapes\u00a0:\n\n1.  **Ouvrez l\u2019application Facebook**\u00a0: Commencez par ouvrir l\u2019application Facebook sur votre appareil.\n\n2.  **Cliquez sur le menu de gauche**\u00a0: Cliquez sur le menu de gauche pour acc\u00e9der \u00e0 vos param\u00e8tres personnels.\n\n3.  **Allez \u00e0 Param\u00e8tres > Notifications** : Dans la section \u00ab Param\u00e8tres \u00bb, recherchez l\u2019option \u00ab Notifications \u00bb ou \u00ab Param\u00e8tres des notifications \u00bb. Cliquez dessus pour afficher les options de notification.\n\n4.  **Activer les notifications**\u00a0: Dans le menu \u00ab Notifications \u00bb, activez l\u2019option qui permet d\u2019afficher des notifications pour vos propres actions, comme la publication de posts, la mise en ligne de vid\u00e9os ou la partage de photos. Notez que vous pouvez \u00e9galement activer d\u2019autres types de notifications si vous le souhaitez.\n\n5.  **Enregistrez les changements**\u00a0: Une fois que vous avez activ\u00e9 les notifications souhait\u00e9es, enregistrez vos modifications pour qu\u2019elles prennent effet imm\u00e9diatement.\n\nMaintenant, lorsque vous effectuerez une action dans l'application Facebook, comme publier un post ou partager une photo, vous devriez recevoir des notifications.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nPour activer les notifications concernant vos propres actions, vous pouvez suivre ces \u00e9tapes :\n\n1. Allez dans le menu de notification (vous trouverez g\u00e9n\u00e9ralement un lien vers les notifications en haut ou en bas de la page).\n2. Cliquez sur l'ic\u00f4ne des param\u00e8tres (g\u00e9n\u00e9ralement repr\u00e9sent\u00e9e par une roue dentel\u00e9e) pour acc\u00e9der aux r\u00e9glages de notification.\n3. Dans les param\u00e8tres, recherchez l'option \"Filtre \u00e9v\u00e9nements propres\" ou \"Filtrer mes propres \u00e9v\u00e9nements\".\n4. Activez cette option pour permettre de recevoir des notifications concernant vos propres actions.\n\nCela devrait activer les notifications pour vos propres actions, vous permettant de rester inform\u00e9(e) de tout ce qui se passe dans votre wiki ou application XWiki.\n\nSi vous avez besoin d'aide suppl\u00e9mentaire, n'h\u00e9sitez pas \u00e0 me le demander !",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 38,
-    "completion_tokens": 320,
-    "total_tokens": 358
+    "prompt_tokens": 2335,
+    "completion_tokens": 205,
+    "total_tokens": 2540
   },
-  "average_power_draw": 169.0681414141414,
-  "energy_consumption": 623.3967695011851,
-  "energy_per_input_token": 0.7439102261350656,
-  "energy_per_output_token": 1.8597755653376642,
-  "energy_per_total_token": 1.7413317583831986
+  "average_power_draw": 190.45925925925923,
+  "energy_consumption": 569.3035842895507,
+  "energy_per_input_token": 0.19993102169957883,
+  "energy_per_output_token": 0.4998275542489471,
+  "energy_per_total_token": 0.22413526940533493
 }

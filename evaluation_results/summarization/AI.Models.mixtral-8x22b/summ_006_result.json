@@ -1,9 +1,9 @@
 {
-  "score": 0.8333333333333334,
-  "reason": "The score is 0.83 because the summary includes extra information not present in the original text, such as specific actions like creating a page, editing a page, and accessing page history, and a section titled 'Step 1: Creating a page.' However, there are no contradictions, indicating a generally accurate summary with some additional details.",
+  "score": 0.7272727272727273,
+  "reason": "The score is 0.73 because the summary includes extra information not present in the original text, such as user capabilities like creating a page, editing a page, and viewing page history, as well as the ability to create complex web applications. Additionally, it omits a detail about a link to the XWiki Development Zone. However, there are no contradictions, indicating a generally accurate representation of the original content.",
   "score_breakdown": {
-    "Alignment": 0.8333333333333334,
-    "Coverage": 1.0
+    "Alignment": 0.7272727272727273,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

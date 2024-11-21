@@ -2,7 +2,7 @@
   "id": "qa_001",
   "prompt": "In the context of XWiki the 'Bell' in the top right corner is not available, also not when the 'Alert Notification' extension is installed. How can I fix this?",
   "expected_answer": "Make sure that notifications are enabled in your wiki. You can enable them by setting the `notifications.enabled` setting in `xwiki.properties` to `true`.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Model/Validation/UI/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\nIt seems that the 'Bell' icon in the top right corner is a feature of the Notifications Application in XWiki. To fix the issue, you need to install the Notifications Application extension.\n\nHere are the steps to install the Notifications Application extension:\n\n1. Log in to your XWiki instance with a user having Administration rights.\n2. Go to the Administration page and select the Import category.\n3. Follow the on-screen instructions to upload the downloaded XAR file for the Notifications Application extension.\n4. Click on the uploaded XAR file and follow the instructions.\n5. You'll also need to install all dependent extensions that are not already installed in your wiki.\n\nAlternatively, you can use the Extension Manager to install the Notifications Application extension. Make sure that the text \"Installable with the Extension Manager\" is displayed at the top right location on the extension page to know if this extension can be installed with the Extension Manager.\n\nIf you're still facing issues, ensure that all dependencies required by the Notifications Application extension are installed. You can find the list of dependencies on the extension page.\n\nIf none of these steps resolve the issue, please provide more details about your XWiki instance, such as the version and any custom configurations, for further assistance.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Model/Validation/UI/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\nIt seems that the 'Bell' icon in the top right corner is a part of the Notifications Application, not the Alert Notification extension. To enable the 'Bell' icon, you need to install the Notifications Application extension.\n\nHere are the steps to install the Notifications Application extension:\n\n1. Log in to your XWiki instance with a user having Administration rights.\n2. Go to the Administration page and select the Extension Manager.\n3. Search for the \"Notifications Application\" extension and click on the \"Install\" button.\n4. Follow the on-screen instructions to complete the installation.\n5. Make sure to install all dependent extensions that are not already installed in your wiki.\n\nIf you are using an old version of XWiki that doesn't have the Extension Manager, you can use the manual method:\n\n1. Download the Notifications Application extension XAR file.\n2. Log in to your XWiki instance with a user having Administration rights.\n3. Go to the Administration page and select the Import category.\n4. Follow the on-screen instructions to upload the downloaded XAR file.\n5. Click on the uploaded XAR file and follow the instructions.\n6. Make sure to install all dependent extensions that are not already installed in your wiki.\n\nAfter installing the Notifications Application extension, the 'Bell' icon should appear in the top right corner of your XWiki instance.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -38,9 +38,9 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 1948,
-    "completion_tokens": 255,
-    "total_tokens": 2203
+    "prompt_tokens": 1946,
+    "completion_tokens": 270,
+    "total_tokens": 2216
   },
   "average_power_draw": null,
   "energy_consumption": null,

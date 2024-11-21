@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.3,
+  "overall_score": 0.39719142747396835,
   "individual_scores": {
-    "AnswerRelevancy": 0.0,
+    "AnswerRelevancy": 0.6666666666666666,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.21648189817714383
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.00 because the output contains numerous irrelevant statements that do not address the issue of the notification icon not being available, such as links to unrelated documentation and discussions about unrelated features.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant, as they do not address enabling notifications in the wiki settings. The first node discusses 'custom notification filters and their behavior', which is unrelated. The second node lists 'various notification-related topics and links' without providing the needed information. The third node mentions 'notification preferences and macros' but lacks details on enabling notifications. The fourth node describes 'the notification alert menu and its features', which is not pertinent. Lastly, the fifth node talks about 'RSS feeds and notification settings' without addressing the required topic.",
-    "ContextualRecall": "The score is 0.50 because the first sentence about ensuring notifications are enabled is supported by the 5th node in the retrieval context, which discusses displaying notifications. However, the second sentence, which gives specific instructions about setting 'notifications.enabled' in 'xwiki.properties', is not supported by any node in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications via the `xwiki.properties` file or setting `notifications.enabled` to `true`."
+    "AnswerRelevancy": "The score is 0.67 because the response partially addresses the issue of the notification bell not appearing, but includes irrelevant links that do not directly help solve the problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'custom notification filters and their behavior', which is not related to the issue of enabling notifications in the wiki settings. Subsequent nodes also fail to address the relevant topic, such as the second node listing 'various notification-related features and links' without mentioning the enabling of notifications in the wiki settings.",
+    "ContextualRecall": "The score is 0.50 because the retrieval context supports the need for activating notifications as mentioned in sentence 1, but lacks information about setting 'notifications.enabled' in 'xwiki.properties' as described in sentence 2.",
+    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications via the 'xwiki.properties' file or setting 'notifications.enabled' to 'true'.",
+    "Correctness": "The actual output does not mention enabling notifications in 'xwiki.properties' as expected. It introduces new information about the 'Application de notifications' and its icon, which is not present in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

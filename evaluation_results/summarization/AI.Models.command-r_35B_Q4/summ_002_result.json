@@ -1,9 +1,9 @@
 {
-  "score": 0.2,
-  "reason": "The score is 0.20 because the summary contains multiple contradictions with the original text, such as incorrect information about permissions and rights. Additionally, it includes extra information not present in the original text and fails to answer several questions that the original text can address. These issues significantly reduce the accuracy and completeness of the summary.",
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary contains contradictions regarding the administration rights and editing permissions, which affects the accuracy. Additionally, the summary fails to address specific questions about default edit rights and delete rights, indicating incomplete coverage of the original text.",
   "score_breakdown": {
-    "Alignment": 0.5263157894736842,
-    "Coverage": 0.2
+    "Alignment": 0.6666666666666666,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

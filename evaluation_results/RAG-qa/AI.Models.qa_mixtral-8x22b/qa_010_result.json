@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.755,
+  "overall_score": 0.7627337544134255,
   "individual_scores": {
-    "AnswerRelevancy": 0.7333333333333333,
+    "AnswerRelevancy": 0.8,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0.6666666666666666,
     "ContextualRecall": 0.875,
-    "CustomContextualRelevancy": 0.5
+    "CustomContextualRelevancy": 0.5,
+    "Correctness": 0.7347358598138862
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.73 because the response provides relevant information on configuring permissions in XWiki, but the inclusion of multiple source links that do not directly address the configuration question lowers the score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.67 because the relevant nodes in the retrieval context are generally ranked higher than the irrelevant ones. However, the second node focuses on the 'parent/child relationship and the introduction of nested pages', which does not directly address configuring view and edit permissions for teams, and it is ranked higher than a relevant node that explains the XWiki permission system. Additionally, the third node is about 'string formatting and OpenID Connect properties', which is unrelated to configuring access rights in XWiki, yet it is ranked higher than another relevant node that provides basic rules about setting wiki-wide and page-level rights.",
-    "ContextualRecall": "The score is 0.88 because most of the expected output sentences are supported by the nodes in the retrieval context, particularly node 4, which covers aspects like creating groups, setting wiki-wide and space-level rights, and rights inheritance. However, the retrieval context lacks specific information on adjusting rights for additional teams or spaces, which slightly affects the score.",
-    "CustomContextualRelevancy": "The retrieval context mentions setting rights at different levels and inheriting rights, aligning partially with the expected answer. However, it lacks specific details on creating groups for each team and setting 'Edit' rights for team spaces."
+    "AnswerRelevancy": "The score is 0.80 because the response largely addresses the configuration question in XWiki, but it includes multiple irrelevant source links that do not directly contribute to solving the problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output perfectly aligns with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.67 because the relevant nodes in the retrieval context are mostly ranked higher than the irrelevant nodes. However, the second node, which focuses on the 'parent/child relationship and nested spaces concept', and the third node, which discusses 'string formatting and OpenID Connect properties', are ranked higher than the fourth node, which provides information on XWiki's permission system, directly relating to the configuration of access. This affects the precision score as these irrelevant nodes should be ranked lower.",
+    "ContextualRecall": "The score is 0.88 because most of the expected output sentences are supported by the nodes in the retrieval context, such as nodes 4 and 6 aligning with creating groups and setting rights. However, there is a lack of specific mention in the nodes regarding adjusting rights for additional teams or spaces, which slightly affects the score.",
+    "CustomContextualRelevancy": "The retrieval context mentions setting rights at different levels and inheritance of access rights, which partially aligns with the expected output's steps on setting wiki-wide and space-level rights. However, it lacks specific details about creating groups for each team and setting edit rights specifically for team spaces.",
+    "Correctness": "The actual output correctly details creating groups, setting view and edit rights, and inheriting rights. However, it adds an extra step about administering rights and misses mentioning setting 'View' right specifically for 'XWikiAllGroup' and selecting 'Rights: Page & Children' option."
   },
   "question_language": "en",
   "expected_answer_language": "en",

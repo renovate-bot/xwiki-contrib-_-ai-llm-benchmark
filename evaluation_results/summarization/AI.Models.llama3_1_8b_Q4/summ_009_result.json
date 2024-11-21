@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The score is 0.80 because the summary is mostly accurate and concise, with no contradictions or unnecessary information. However, it lacks some detail, as it cannot answer specific questions that the original text can, such as whether most wikis include features like access rights management.",
+  "reason": "The score is 0.80 because the summary is mostly accurate and concise, with no contradictions or unnecessary extra information. However, it lacks the ability to answer certain questions that the original text can, indicating room for improvement in comprehensiveness.",
   "score_breakdown": {
     "Alignment": 1.0,
     "Coverage": 0.8

@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary contains a contradiction regarding the implicit denial of rights when explicitly set, includes extra information about specific permission types and user groups not present in the original text, and fails to answer questions about overriding permissions and setting access rights at a terminal page level.",
+  "score": 0.375,
+  "reason": "The score is 0.38 because the summary includes multiple pieces of extra information not present in the original text, such as details about permission levels, types, and behaviors. Additionally, the summary fails to address a question that the original text can answer regarding permission overrides in XWiki.",
   "score_breakdown": {
-    "Alignment": 0.625,
-    "Coverage": 0.6
+    "Alignment": 0.375,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

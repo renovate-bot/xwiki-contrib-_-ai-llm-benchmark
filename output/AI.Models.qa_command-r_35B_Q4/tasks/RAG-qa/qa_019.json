@@ -2,7 +2,7 @@
   "id": "qa_019",
   "prompt": "Wie kann ich einem Bereichsadministrator das Skriptrecht verweigern?",
   "expected_answer": "Leider wird dies in XWiki nicht unterst\u00fctzt, Rechte, die durch das Admin-Recht impliziert sind, k\u00f6nnen nicht verweigert werden.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Index%20for%20the%20LLM%20Application/ \n\n\nLeider habe ich in den gefundenen Informationen keine genauen Anweisungen dazu gefunden, wie man einem Bereichsadministrator das Skriptrecht verweigert. Allerdings scheint es sich um eine komplexe Aufgabe zu handeln, die spezielle Schritte erfordert, die \u00fcber die normale Benutzerverwaltung hinausgehen.\n\nEs wird empfohlen, mit dem Administrator oder jemandem, der mit der Verwaltung von Benutzerrechten in Ihrem System vertraut ist, Kontakt aufzunehmen, um genaue Anweisungen zu erhalten. Dies scheint nicht als Standardfunktion in den Suchergebnissen implementiert zu sein.\n\nAllgemein kann man jedoch in der Administration Anwendung die Rechte f\u00fcr Benutzer und Gruppen einstellen.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LLM%20Application/Index%20for%20the%20LLM%20Application/ \n\n\nLeider habe ich in den gefundenen Informationen keine genauen Anweisungen dazu gefunden, wie man einem Bereichsadministrator das Skriptrecht verweigert. Allerdings scheint es sich um eine komplexe Aufgabe zu handeln, die spezielle Aktionen und Befehle erfordert.\n\nEs wird empfohlen, sich an einen Administrator oder Experten zu wenden, der mit den internen Prozessen und Berechtigungseinstellungen Ihres Systems vertraut ist, um bei dieser spezifischen Aufgabe zu helfen.\n\nGenerell k\u00f6nnen Berechtigungen ge\u00e4ndert werden, indem man das Interface der Administration nutzt oder Code direkt bearbeitet. Da dies jedoch komplex sein kann und einen tieferen Einblick in Ihr System erfordert, ist es empfehlenswert, professionelle Hilfe in Anspruch zu nehmen.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,12 +31,12 @@
   ],
   "usage": {
     "prompt_tokens": 1547,
-    "completion_tokens": 147,
-    "total_tokens": 1694
+    "completion_tokens": 171,
+    "total_tokens": 1718
   },
-  "average_power_draw": 85.13717841880339,
-  "energy_consumption": 2048.3096324623957,
-  "energy_per_input_token": 1.0698927304582897,
-  "energy_per_output_token": 2.6747318261457242,
-  "energy_per_total_token": 1.209155627191497
+  "average_power_draw": 58.053125371360565,
+  "energy_consumption": 3797.6059003319083,
+  "energy_per_input_token": 1.9233253483575126,
+  "energy_per_output_token": 4.8083133708937815,
+  "energy_per_total_token": 2.2104807336041374
 }

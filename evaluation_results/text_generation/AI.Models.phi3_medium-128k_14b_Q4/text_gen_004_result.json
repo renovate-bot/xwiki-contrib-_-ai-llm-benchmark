@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output is highly relevant to the Input, addressing all features and the target audience. It maintains coherence with a logical flow and aligns closely with the Expected Output's intent. The language is fluent with minor typographical errors, such as 'cutting-e edge' instead of 'cutting-edge'.",
+  "reason": "The Actual Output effectively addresses the topic by targeting tech-savvy professionals and highlighting noise-cancelling, 20-hour battery life, and comfort. It is coherent, fluent, and aligns well with the Expected Output, though it includes additional details about wireless connectivity and style.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

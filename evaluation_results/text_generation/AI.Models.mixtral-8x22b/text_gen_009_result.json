@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output accurately extracts the event name, dates, location, and details, aligning well with the Input. However, it lacks the separation of start and end dates and does not specify the target audience as distinctly as the Expected Output.",
+  "reason": "The Actual Output accurately extracts event details such as event name, date, and location, and includes additional details about the event. However, it does not separate the start and end dates or specifically identify the target audience as in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

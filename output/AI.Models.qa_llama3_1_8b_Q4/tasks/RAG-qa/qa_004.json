@@ -2,7 +2,7 @@
   "id": "qa_004",
   "prompt": "In the context of XWiki I'm receiving lot's of notifications about all kinds of pages I'm not interested in. These seem to have been enabled automatically. How can I disable these notifications?",
   "expected_answer": "By default, a page where you have made a major modification is automatically added to the list of pages you watch. It means you will be notified about changes on your work. You can change the setting for \"Automatic page watching\" in the notification settings in your user profile. You can delete existing notification filters that were created this way in the \"Custom Filters\" list in the notification settings in your user profile.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\nA common issue in XWiki!\n\nXWiki has a feature called \"Watchers\" that allows users to be notified when changes are made to specific pages or spaces. It's possible that you've inadvertently added yourself as a watcher for some pages, which is causing the excessive notifications.\n\nTo disable these notifications, follow these steps:\n\n1. **Check your Watchers**: Go to your profile page (usually located at `http://your-xwiki-site/wiki/bin/view/Main/YourUsername`) and click on the \"Watchers\" tab.\n2. **Remove unwanted watchers**: Look for pages or spaces that you're not interested in, and remove yourself as a watcher by clicking on the \"Unwatch\" button next to each item.\n\nIf this doesn't resolve the issue, it's possible that some other feature is causing the notifications. Here are a few more things to check:\n\n* **Check your notification settings**: Go to your profile page and click on the \"Notifications\" tab. Make sure that you're not subscribed to any unnecessary notifications.\n* **Look for automatic watchers**: Some XWiki features, like the \"Comments\" or \"Attachments\" add-ons, might have automatically added you as a watcher for certain pages. Check the documentation of these add-ons to see if there's an option to disable notifications.\n\nIf none of these steps resolve the issue, feel free to provide more details about your XWiki setup and configuration, and I'll do my best to help you troubleshoot the problem!",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\nYou're experiencing a common issue with XWiki notifications!\n\nTo disable unwanted notifications, follow these steps:\n\n1. Go to your user profile and click on the \"Notifications\" tab.\n2. In the notification settings page, you'll see a list of enabled applications and event types. Look for the ones that are not relevant to you and toggle them off.\n3. If you're seeing notifications about pages you're not interested in, try disabling the \"Watched Pages\" feature. This will prevent XWiki from sending notifications about changes to pages you haven't explicitly watched.\n\nIf you want to disable all notifications for a specific application or event type, look for the bell icon associated with that application. If it's partially enabled (i.e., some types are enabled while others are disabled), click on it to toggle off all notifications for that application.\n\nRemember, you can always re-enable notifications later if needed.\n\nIf you're still experiencing issues or have questions about specific notification settings, feel free to ask!",
   "sources": [
     {
       "collection_id": "Eval",
@@ -54,13 +54,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 49,
-    "completion_tokens": 300,
-    "total_tokens": 349
+    "prompt_tokens": 2859,
+    "completion_tokens": 201,
+    "total_tokens": 3060
   },
-  "average_power_draw": 163.73147474747475,
-  "energy_consumption": 595.1270976076993,
-  "energy_per_input_token": 0.744839921912014,
-  "energy_per_output_token": 1.8620998047800352,
-  "energy_per_total_token": 1.7052352366982788
+  "average_power_draw": 193.7021825396825,
+  "energy_consumption": 587.5458701903384,
+  "energy_per_input_token": 0.17478681249154795,
+  "energy_per_output_token": 0.4369670312288699,
+  "energy_per_total_token": 0.1920084543105681
 }

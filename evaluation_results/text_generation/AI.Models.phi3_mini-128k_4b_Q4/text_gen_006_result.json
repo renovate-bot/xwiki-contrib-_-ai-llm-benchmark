@@ -1,6 +1,6 @@
 {
-  "score": 0.0,
-  "reason": "The Actual Output does not address the theme of nature's beauty from the Input, nor does it align with the Expected Output of a nature poem. It lacks coherence, fluency, and relevance to the prompt.",
+  "score": 0.9,
+  "reason": "The Actual Output is a coherent and fluent poem that beautifully captures the essence of nature, aligning well with the Input prompt and Expected Output. It uses vivid imagery and metaphor to describe the wonders of the natural world, meeting the intended goals effectively.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

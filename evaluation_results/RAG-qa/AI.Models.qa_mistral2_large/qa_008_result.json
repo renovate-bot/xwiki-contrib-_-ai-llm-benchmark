@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.6272727272727272,
+  "overall_score": 0.6261110027809882,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
+    "AnswerRelevancy": 0.9333333333333333,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0.2,
-    "ContextualRecall": 0.6363636363636364,
-    "CustomContextualRelevancy": 0.3
+    "ContextualRecall": 0.6666666666666666,
+    "CustomContextualRelevancy": 0.3,
+    "Correctness": 0.6566660166859294
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the response perfectly addresses the input without any irrelevant information. Great job!",
+    "AnswerRelevancy": "The score is 0.93 because the response is highly relevant and mostly addresses the question about restricting attachments to images or PDFs of a certain size. However, it includes URLs that are not directly related to configuring these specific attachment restrictions, which slightly affects the score.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.20 because the relevant node, which 'describes how to set limits on the maximum size of an attachment and mentions the configuration steps', is ranked fifth. This means that many irrelevant nodes, such as the first node which 'discusses linking to external files and images, but does not address configuring upload restrictions or size limits', are ranked higher than the relevant node. These irrelevant nodes, including the second node that 'explains the structure of XWiki pages and available actions, but does not mention attachment upload restrictions or size limits', should be ranked lower to improve the score.",
-    "ContextualRecall": "The score is 0.64 because while several sentences in the expected output align well with nodes in the retrieval context, particularly steps for configuring mimetypes and maximum attachment size (nodes 4 and 5), introductory and explanatory sentences lack direct matches in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context mentions setting maximum attachment size and mimetype restrictions, but lacks specific instructions for configuring mimetypes in xwiki.properties and setting the size to 10MB as detailed in the expected output."
+    "ContextualPrecision": "The score is 0.20 because the relevant node, which 'mentions setting limits on the maximum size of an attachment and provides steps to change it', is ranked fifth. This means it is ranked lower than several irrelevant nodes, such as the first node that 'discusses linking to external files and images, which is unrelated to configuring upload restrictions or size limits'.",
+    "ContextualRecall": "The score is 0.67 because while the retrieval context (nodes) provides detailed steps for configuring the maximum attachment size (as seen in the 5th node), it lacks information on configuring allowed mimetypes and ensuring only images or PDF files can be uploaded, which are crucial parts of the expected output (as mentioned in sentences 1 and 2).",
+    "CustomContextualRelevancy": "The retrieval context mentions setting maximum attachment size and mimetype restrictions but lacks specific details on configuring xwiki.properties and setting size to 10MB.",
+    "Correctness": "The actual output accurately describes the maximum size configuration, but uses a different MIME type configuration approach by listing specific subtypes rather than a wildcard and includes additional properties not mentioned in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

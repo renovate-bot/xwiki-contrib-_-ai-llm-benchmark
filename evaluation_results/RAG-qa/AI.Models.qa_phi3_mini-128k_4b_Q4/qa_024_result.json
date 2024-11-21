@@ -1,20 +1,22 @@
 {
-  "overall_score": 0.9470967741935483,
+  "overall_score": 0.5916666666666667,
   "individual_scores": {
-    "AnswerRelevancy": 0.9354838709677419,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.0,
+    "Faithfulness": 1,
     "ContextualPrecision": 1.0,
-    "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 0.8
+    "ContextualRecall": 0.75,
+    "CustomContextualRelevancy": 0.8,
+    "Correctness": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.94 because the response is highly relevant and provides a clear solution to disabling notifications, but it includes unnecessary links that do not directly address the question.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than the irrelevant node. The first three nodes discuss topics like 'Choosing the default auto-watched mode', 'Notifications Auto Watch Preferences', and 'Auto Watch' under 'Watched Entities', which are all pertinent to the user's query about managing and disabling automatic notifications. The irrelevant node, ranked fourth, discusses 'Get a notification RSS feed' and 'Notifications Macro', which does not directly address the user's issue. Great job on the ranking!",
-    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is perfectly supported by the information in the nodes in retrieval context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context includes information about auto-watched pages, notification settings, and custom filters, aligning with the expected answer's details on automatic page following and notification settings. However, it lacks explicit mention of modifying the 'Suivi automatique des pages' setting directly in user profile notification settings."
+    "AnswerRelevancy": "The score is 0.00 because none of the statements in the output are relevant to the question about disabling notifications. Each statement addresses unrelated topics, such as URLs, Python scripts, and documentation, which do not provide the requested information.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than the irrelevant node. The irrelevant node, ranked fourth, discusses 'getting a notification RSS feed and the general settings menu', which does not directly address disabling automatic notifications or modifying auto-watch settings, unlike the first three nodes that focus on managing notifications and auto-watched pages.",
+    "ContextualRecall": "The score is 0.75 because most sentences in the expected output can be linked to the 2nd node in the retrieval context, which discusses 'auto watched pages', 'notification preferences', and 'custom notification filters'. However, the specific mention of being notified of changes is not directly supported by the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context includes information about auto-watched pages and custom notification filters, matching the expected answer. However, it lacks explicit mention of being notified of changes on one's work and modifying notification settings in the user profile.",
+    "Correctness": "The actual output contains unrelated information about Python and AI, while the expected output discusses notification settings and management in a user profile context."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",
-  "answer_language": "fr"
+  "answer_language": "en"
 }

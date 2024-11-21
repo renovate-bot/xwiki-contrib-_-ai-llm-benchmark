@@ -1,6 +1,6 @@
 {
-  "score": 0.9,
-  "reason": "The Actual Output addresses all key points from the Input, maintaining relevance. It presents the main ideas consistently with the Expected Output, ensuring coherence. The grammatical structure and word choice are fluent and consistent with the Expected Output, with only slight variations in phrasing.",
+  "score": 0.8,
+  "reason": "The Actual Output is relevant to the Input, addressing the main topic of a cat in a garden on a sunny day. It is coherent, but lacks the adjective 'playful' from the Expected Output, affecting the alignment. The fluency is good, matching the Expected Output's quality.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

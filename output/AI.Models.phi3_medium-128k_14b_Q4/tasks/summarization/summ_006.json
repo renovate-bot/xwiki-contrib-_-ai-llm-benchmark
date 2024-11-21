@@ -2,16 +2,16 @@
   "id": "summ_006",
   "prompt": "Please summarize the following text:\n\n\nThis section will guide you through a number of common actions that you may want to do when starting a new wiki. We divided into 3 different parts depending on whether you're a user, an administrator or a developer. Here goes:\n\n\n\n| **If you're a User** | In order to perform the following actions, you may need to log in. Please ask your administrator for your login credentials. Learn more about:* [Creating a page](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/CreatingAPage) * [Editing a page](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/EditingAPage) * [Page history](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/PageHistory) |\n| --- | --- |\n| **If you're an Administrator** | As an Admin, you may want to get started with the following steps:* [Changing the logo and the panels](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/ChangingTheLogoAndThePanels) * [Creating new users](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/CreatingNewUsers) * [Setting user rights](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/SettingUserRights) |\n| **If you're a Developer** | XWiki is also a second generation wiki. You can build simple applications, extend the platform with custom plugins, or even build complex Web applications. The Getting Started guide only covers basic use cases for users and admins, however, there are plenty of resources for Developers as well in the documentation. XWiki's powerful programming features are documented in the [Developer's Guide](https://www.xwiki.org/xwiki/bin/view/Documentation/DevGuide/). A number of applications are pre-installed but additional applications, macros and other extensions are available on the [Extensions wiki](https://extensions.xwiki.org/xwiki/bin/view/Main/). The documentation for the [XWiki Rendering](https://rendering.xwiki.org/xwiki/bin/view/Main/) has a [dedicated wiki](https://rendering.xwiki.org/xwiki/bin/view/Main/).For documentation related to the development of XWiki itself, visit the [XWiki Development Zone](https://dev.xwiki.org/xwiki/bin/view/Main/). |\n\n**Next: [Step 1 Creating a page](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/CreatingAPage)**\n\n\n",
   "expected_answer": null,
-  "ai_answer": "",
+  "ai_answer": "For new wiki users, administrators, and developers, this guide provides step-by-step instructions on common actions: Users need to log in for creating a page, editing it or viewing the page history. Administrators can change the logo, panels, create users, and set user rights. Developers have access to advanced features like building applications, extending with plugins, or developing complex web apps, supported by extensive documentation and pre-installed tools; additional resources are available on the Extensions wiki, XWiki Rendering's dedicated wiki, and the XWiki Development Zone for contributing to XWiki development.",
   "sources": null,
   "usage": {
     "prompt_tokens": 696,
-    "completion_tokens": 1,
-    "total_tokens": 697
+    "completion_tokens": 132,
+    "total_tokens": 828
   },
-  "average_power_draw": 234.1801111111111,
-  "energy_consumption": 39.59238599096404,
-  "energy_per_input_token": 0.0566820128718168,
-  "energy_per_output_token": 0.14170503217954203,
-  "energy_per_total_token": 0.05680399711759546
+  "average_power_draw": 245.7258169934641,
+  "energy_consumption": 461.02198034821,
+  "energy_per_input_token": 0.44933916213275826,
+  "energy_per_output_token": 1.1233479053318955,
+  "energy_per_total_token": 0.5567898313384179
 }

@@ -2,7 +2,7 @@
   "id": "qa_021",
   "prompt": "La cloche en haut \u00e0 droite n'est pas disponible, m\u00eame lorsque l'extension \"Notification d'alerte\" est install\u00e9e.",
   "expected_answer": "Assurez-vous que les notifications sont activ\u00e9es dans votre wiki. Vous pouvez les activer en d\u00e9finissant la propri\u00e9t\u00e9 `notifications.enabled` dans `xwiki.properties` sur `true`.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nSi la notification de cloche dans le coin sup\u00e9rieur droit ne s'affiche pas malgr\u00e9 que vous ayez install\u00e9 l'extension \"Notification d'alerte\", voici quelques \u00e9tapes pour r\u00e9soudre ce probl\u00e8me :\n\n1. V\u00e9rifiez les param\u00e8tres du navigateur et assurez-vous qu'il n'y a aucune autre extension qui g\u00e8re ou bloque les notifications de cloche, comme un filtre des publicit\u00e9s ou une extension antispam/antiphishing.\n\n2. Red\u00e9marrez le navigateur pour voir si cela r\u00e9sout le probl\u00e8me temporairement.\n\n3. V\u00e9rifiez que l'extension \"Notification d'alerte\" est bien install\u00e9e et activ\u00e9e dans les param\u00e8tres du navigateur (g\u00e9n\u00e9ralement sous la section des extensions). Assurez-vous qu'elle n'est pas d\u00e9sactiv\u00e9e ou bloqu\u00e9e par un autre filtre.\n\n4. Essayez de mettre \u00e0 jour lner extension \"Notification d'alerte\" et le navigateur lui-m\u00eame pour vous assurer que les derni\u00e8res mises \u00e0 jour sont install\u00e9es, car parfois des bugs peuvent causer ce genre de probl\u00e8mes.\n\n5. V\u00e9rifiez si la notification est configur\u00e9e correctement dans les param\u00e8tres du site web concern\u00e9 ou s'il y a un protocole sp\u00e9cifique pour recevoir ces notifications qui doit \u00eatre suivi.\n\n6. Si le probl\u00e8me persiste, essayez de d\u00e9sinstaller compl\u00e8tement l'extension \"Notification d'alerte\" et r\u00e9essayez la connexion \u00e0 votre compte ou si n\u00e9cessaire, contacter le support technique du site web pour obtenir de l'aide suppl\u00e9mentaire.\n\n7. Si vous utilisez un navigateur comme Chrome, assurez-vous que les param\u00e8tres personnalis\u00e9s ne bloquent pas les notifications et qu'il n'y a aucun probl\u00e8me avec le cache ou cookies du navigateur qui pourrait interf\u00e9rer avec la notification de cloche.\n\n8. Si vous utilisez un syst\u00e8me d'exploitation sp\u00e9cifique, v\u00e9rifiez si des mises \u00e0 jour sont n\u00e9cessaires et que les param\u00e8tres r\u00e9seau ne bloquent pas les notifications push (par exemple, le pare-feu ou l'antivirus).",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nIl semble qu'il y ait un probl\u00e8me avec le syst\u00e8me de notifications dans XWiki qui emp\u00eache la notification du changement automatique des pages ou les \u00e9v\u00e9nements li\u00e9s \u00e0 une page sp\u00e9cifique d'apparaitre m\u00eame apr\u00e8s l'installation de l'extension \"Notification d'alerte\". Voici quelques \u00e9tapes pour r\u00e9soudre le probl\u00e8me :\n\n1. Assurez-vous que l'extension est bien install\u00e9e et activ\u00e9e dans XWiki. V\u00e9rifiez les param\u00e8tres des notifications pour vous assurer qu'elle n'est pas d\u00e9sactiv\u00e9e par d\u00e9faut ou bloqu\u00e9e d\u00fb \u00e0 un filtre existant qui contredit le comportement attendu de la notification automatique lorsque l'on observe une page sp\u00e9cifique.\n2. Si un filtre est en place, essayez de supprimer ou modifier pour permettre les notifications automatiques lors du suivi d'une page particuli\u00e8re. Vous pouvez \u00e9galement v\u00e9rifier si le macro Notifications Auto Watch a \u00e9t\u00e9 correctement configur\u00e9 et s'il n'est pas bloqu\u00e9 par un filtre existant.\n3. Si le probl\u00e8me persiste, consultez la documentation ou les forums de XWiki pour obtenir des conseils suppl\u00e9mentaires sp\u00e9cifiques \u00e0 votre version du syst\u00e8me d'exploitation et v\u00e9rifier s'il y a eu des mises \u00e0 jour r\u00e9centes qui pourraient affecter le fonctionnement des notifications.\n4. Si n\u00e9cessaire, contacter le support technique de XWiki ou les d\u00e9veloppeurs fournissant l'extension \"Notification d'alerte\" peut \u00eatre utile pour obtenir une assistance suppl\u00e9mentaire et r\u00e9soudre tout probl\u00e8me li\u00e9 \u00e0 la compatibilit\u00e9 avec votre version sp\u00e9cifique.\n5. En attendant, v\u00e9rifiez r\u00e9guli\u00e8rement les mises \u00e0 jour de XWiki ou l'extension \"Notification d'alerte\" qui pourraient corriger le probl\u00e8me.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -54,13 +54,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 38,
-    "completion_tokens": 508,
-    "total_tokens": 546
+    "prompt_tokens": 3480,
+    "completion_tokens": 440,
+    "total_tokens": 3920
   },
-  "average_power_draw": 211.10130158730158,
-  "energy_consumption": 479.628061574724,
-  "energy_per_input_token": 0.36668812046997246,
-  "energy_per_output_token": 0.9167203011749312,
-  "energy_per_total_token": 0.8784396732137801
+  "average_power_draw": 207.10944444444448,
+  "energy_consumption": 826.8268457815384,
+  "energy_per_input_token": 0.18052987899160228,
+  "energy_per_output_token": 0.45132469747900567,
+  "energy_per_total_token": 0.21092521576059653
 }

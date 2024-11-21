@@ -2,7 +2,7 @@
   "id": "qa_004",
   "prompt": "In the context of XWiki I'm receiving lot's of notifications about all kinds of pages I'm not interested in. These seem to have been enabled automatically. How can I disable these notifications?",
   "expected_answer": "By default, a page where you have made a major modification is automatically added to the list of pages you watch. It means you will be notified about changes on your work. You can change the setting for \"Automatic page watching\" in the notification settings in your user profile. You can delete existing notification filters that were created this way in the \"Custom Filters\" list in the notification settings in your user profile.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\nYou can manage your notification settings in XWiki to better control which notifications you receive. Here's how to disable unwanted notifications:\n\n1. Click on the notifications menu in the top right corner of your XWiki dashboard.\n2. Click on \"Settings\" in the dropdown menu that appears.\n3. In the settings, you will see a list of applications and notification types.\n4. To disable notifications for an entire application, click on the bell icon next to the application name. If some notification types are enabled and others are disabled within an application, the switch will appear as partially enabled.\n5. To disable specific notification types, scroll down and find the specific event types you want to stop receiving notifications for, then toggle the switch off.\n\nPlease note that you will only stop receiving notifications for events that occur after you turn off the notification types.\n\nIf you are receiving notifications for users' activities that you're not interested in, you can also stop following those users. To do this, visit the user's profile and click the \"Unwatch\" button.\n\nIn case you have further questions or need more detailed help, feel free to ask.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\nTo manage your notifications in XWiki, follow these steps:\n\n1. Click on the Notifications menu in your XWiki dashboard.\n2. Choose the \"Settings\" option from the dropdown menu.\n3. In the settings page, you will see various applications listed with bells next to them. These bells indicate the status of notifications for each application.\n  - If the bell is green, it means notifications for that application are enabled.\n  - If the bell is gray, it means notifications for that application are disabled.\n  - If the bell has a minus sign (-), it means some notification types are enabled while others are disabled for that application.\n4. To disable notifications for a specific application, click on the green bell next to it. The bell will turn gray, indicating that notifications for that application are now disabled.\n5. If you want to disable notifications for specific types of events within an application, click on the minus (-) sign next to the application. This will display different types of events. You can then enable or disable notifications for each event type by clicking on the bell icon next to it.\n\nRemember, you will only receive notifications for events that occur after you make these changes. If you have any issues or questions, please refer to the official XWiki documentation: [XWiki Notifications Application](https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/)",
   "sources": [
     {
       "collection_id": "Eval",
@@ -55,8 +55,8 @@
   ],
   "usage": {
     "prompt_tokens": 3556,
-    "completion_tokens": 254,
-    "total_tokens": 3810
+    "completion_tokens": 319,
+    "total_tokens": 3875
   },
   "average_power_draw": null,
   "energy_consumption": null,

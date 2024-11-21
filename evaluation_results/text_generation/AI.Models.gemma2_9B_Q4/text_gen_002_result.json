@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output addresses the main topics and themes from the Input, maintaining relevance. It is coherent with a logical flow similar to the Expected Output, although the verb 'frolicked' differs slightly from 'enjoyed exploring'. The sentence structure, grammar, and readability are fluent and consistent with the Expected Output.",
+  "reason": "The Actual Output maintains the main topic and context of the Input, with all keywords included. It is coherent with a logical flow similar to the Expected Output, though the order of phrases differs slightly. The fluency is high, with correct grammar and syntax.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

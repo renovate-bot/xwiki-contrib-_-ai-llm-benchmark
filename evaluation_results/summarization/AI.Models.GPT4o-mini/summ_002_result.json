@@ -1,9 +1,9 @@
 {
-  "score": 0.6666666666666666,
-  "reason": "The score is 0.67 because the summary contains a significant contradiction regarding the scope of the Programming Right, includes extra information not present in the original text, and fails to answer a question that the original text can address. These issues indicate a moderate level of accuracy and completeness in the summary.",
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary contains a contradiction regarding where Programming Right can be granted, includes extra information about priority orders and permission precedence not mentioned in the original text, and fails to answer questions about specific rights and permissions that the original text can address.",
   "score_breakdown": {
-    "Alignment": 0.6666666666666666,
-    "Coverage": 0.8
+    "Alignment": 0.7272727272727273,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

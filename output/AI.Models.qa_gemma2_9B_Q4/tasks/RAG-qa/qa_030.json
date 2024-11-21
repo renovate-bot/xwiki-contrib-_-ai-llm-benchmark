@@ -2,7 +2,7 @@
   "id": "qa_030",
   "prompt": "Nous avons un espace par \u00e9quipe. Je veux que toutes les \u00e9quipes puissent voir tous les espaces, mais chaque \u00e9quipe ne devrait pouvoir modifier que son propre espace. Comment puis-je configurer cela dans XWiki?",
   "expected_answer": "Pour atteindre le contr\u00f4le d'acc\u00e8s souhait\u00e9, vous pouvez suivre ces \u00e9tapes:\n\n1. **Cr\u00e9er des groupes pour chaque \u00e9quipe**: Cr\u00e9ez un groupe s\u00e9par\u00e9 pour chaque \u00e9quipe dans votre instance XWiki. Cela vous permettra de g\u00e9rer les droits d'acc\u00e8s pour chaque \u00e9quipe individuellement.\n2. **D\u00e9finir des droits au niveau du wiki**: Allez sur la page d'administration du wiki et d\u00e9finissez les droits pour l'ensemble du wiki. En particulier, d\u00e9finissez le droit \"Afficher\" sur \"Autoriser\" pour \"XWikiAllGroup\" pour permettre \u00e0 tous de voir tous les espaces.\n3. **D\u00e9finir des droits au niveau de l'espace**: Pour chaque espace d'\u00e9quipe, allez sur la page d'administration de l'espace et d\u00e9finissez les droits pour cet espace. En particulier, d\u00e9finissez le droit \"Modifier\" sur \"Autoriser\" uniquement pour le groupe d'\u00e9quipe correspondant. Cela permettra uniquement aux membres de cette \u00e9quipe de modifier leur propre espace.\n4. **H\u00e9riter des droits pour les pages enfants**: Lorsque vous d\u00e9finissez des droits pour un espace, assurez-vous de s\u00e9lectionner l'option \"Droits: Page & Enfants\" pour h\u00e9riter des droits pour toutes les pages enfants \u00e0 l'int\u00e9rieur de cet espace.\n\nEn suivant ces \u00e9tapes, vous vous assurez que:\n\n* Toutes les \u00e9quipes peuvent voir tous les espaces.\n* Chaque \u00e9quipe ne peut modifier que son propre espace.\n\nN'oubliez pas d'ajuster les droits en cons\u00e9quence pour tous les \u00e9quipes ou espaces suppl\u00e9mentaires que vous pourriez avoir dans votre instance XWiki.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiRESTfulAPI \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/DocumentLifecycle/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ContentOrganization/NestedPagesMigration/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nYou can achieve this using XWiki's access control system. \n\nHere's a breakdown of how to set it up:\n\n1. **Create Groups:**\n\n   - Create a group for each team in XWiki.\n\n2. **Define Permissions:**\n\n   -  **Read Access:** Grant \"Read\" permissions to all teams on all spaces. This ensures everyone can view all spaces.\n\n   - **Write Access:** Grant \"Write\" permissions to each team only on their respective team spaces.\n\n3. **Apply Permissions:**\n\n   - Go to the \"Administration\" section of XWiki.\n   - Navigate to the \"Security\" or \"Permissions\" settings.\n   -  Assign the permissions defined in step 2 to the respective groups.\n\n**Example:**\n\n- **Team A:**\n    -  Read access: All spaces\n    -  Write access: Team A space only\n- **Team B:**\n    - Read access: All spaces\n    - Write access: Team B space only\n\n**Important Considerations:**\n\n- **User Assignment:** Make sure each team member is assigned to their respective team group.\n- **Space Naming Convention:** Use a consistent naming convention for team spaces (e.g., \"TeamA\", \"TeamB\") to make it clear which space belongs to which team.\n\n\n\nLet me know if you have any more questions.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiRESTfulAPI \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/DocumentLifecycle/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ContentOrganization/NestedPagesMigration/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nYou can achieve this by using XWiki's permission system. Here's how:\n\n1. **Create Spaces:** Create a space for each team.\n\n2. **Define Permissions:**\n   - For each team space, grant the team members \"Read\" and \"Write\" permissions.\n   - For other teams, grant \"Read\" permissions to all team spaces.\n\n3. **Apply Permissions:** Apply these permissions to the spaces and their sub-pages.\n\n**Example:**\n\n* **Team A Space:**\n    * Team A members: Read and Write permissions\n    * Other teams: Read permissions\n\n* **Team B Space:**\n    * Team B members: Read and Write permissions\n    * Other teams: Read permissions\n\n**Note:**\n\n* You can use XWiki's built-in user groups to manage permissions more efficiently.\n* Refer to the XWiki documentation for detailed instructions on managing permissions: [https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Security/Permissions](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Security/Permissions)\n\n\n\n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -55,12 +55,12 @@
   ],
   "usage": {
     "prompt_tokens": 3484,
-    "completion_tokens": 286,
-    "total_tokens": 3770
+    "completion_tokens": 244,
+    "total_tokens": 3728
   },
-  "average_power_draw": 187.7863838383839,
-  "energy_consumption": 1158.6295112879689,
-  "energy_per_input_token": 0.27592986694164534,
-  "energy_per_output_token": 0.6898246673541133,
-  "energy_per_total_token": 0.307328782835005
+  "average_power_draw": 154.21017361111114,
+  "energy_consumption": 1098.0345831776497,
+  "energy_per_input_token": 0.26820580927641663,
+  "energy_per_output_token": 0.6705145231910415,
+  "energy_per_total_token": 0.29453717359915493
 }

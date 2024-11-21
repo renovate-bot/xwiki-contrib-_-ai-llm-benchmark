@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.40499999999999997,
+  "overall_score": 0.369055137867685,
   "individual_scores": {
     "AnswerRelevancy": 0.625,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.4,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.18933082720611033
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.62 because the output attempts to provide sources that might help with configuring XWiki for automatic user activation, but the URLs themselves do not directly address the specific question, leading to a moderate level of relevance.",
+    "AnswerRelevancy": "The score is 0.62 because the output partially addresses the configuration issue related to OpenID Connect in XWiki, but it includes multiple irrelevant source links that do not directly contribute to solving the problem.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'domain-based authentication and session cookies,' which is unrelated to enabling user accounts automatically with OpenID Connect. The second node mentions OpenID Connect but focuses on 'container authentication' without providing information on automatic user activation. The third node talks about 'installation, dependencies, and limitations,' not on configuring automatic user activation. The fourth node lists 'dependencies for the OpenID Connect extension,' which is not relevant to the input query. The fifth node is about 'LDAP and Active Directory integration,' which does not pertain to OpenID Connect or automatic user activation in XWiki.",
-    "ContextualRecall": "The score is 0.40 because while the nodes in the retrieval context mention the 'xwiki.properties' file and modifying properties related to OpenID Connect, they do not specifically address adding or updating the property for user account activation, saving the file, restarting XWiki, or guaranteeing automatic activation of new user accounts.",
-    "CustomContextualRelevancy": "The retrieval context does not mention adjusting the xwiki.properties file or the oidc.enableUser property for automatic user account activation, which are key elements in the expected output."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'domain-based authentication and session cookies', which is unrelated to enabling user accounts automatically on first login using OpenID Connect. The second node talks about 'container authentication and LDAP', missing the specific property `oidc.enableUser` in `xwiki.properties` needed for automatic account activation. The third node, despite mentioning OpenID Connect, does not provide information about configuring `oidc.enableUser` to automatically activate user accounts. The fourth node lists 'dependencies for the OpenID Connect extension', but does not address user account activation. The fifth node is about 'LDAP and Active Directory integration', which is not relevant to the configuration needed.",
+    "ContextualRecall": "The score is 0.40 because while the retrieval context nodes mention 'xwiki.properties' and OpenID Connect, they do not provide specific details about adding or updating properties, saving the file, or restarting XWiki, which are crucial for the expected output sentences 2, 3, and 5.",
+    "CustomContextualRelevancy": "The retrieval context does not contain information about adjusting the xwiki.properties file or setting oidc.enableUser to true for automatic user activation via OpenID Connect.",
+    "Correctness": "The actual output references the wrong file (`xwiki.cfg` instead of `xwiki.properties`) and the wrong property (`xwiki.authentication.createuser` instead of `oidc.enableUser`). It suggests creating users rather than activating them. It does mention restarting XWiki, which aligns with the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

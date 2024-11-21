@@ -1,9 +1,9 @@
 {
-  "score": 0.9090909090909091,
-  "reason": "The score is 0.91 because the summary includes extra information not present in the original text, specifically a tabular view summarizing rights and their details. However, there are no contradictions, indicating a generally high-quality summary.",
+  "score": 0.7272727272727273,
+  "reason": "The score is 0.73 because the summary contains a contradiction regarding the similarity of 'Create Wikis Right' to programming rights, which is not mentioned in the original text. Additionally, the summary includes extra information about XWiki and a tabular view that is not present in the original text. Furthermore, the summary fails to answer a question about the default status of the comment right, which the original text can address.",
   "score_breakdown": {
-    "Alignment": 0.9090909090909091,
-    "Coverage": 1.0
+    "Alignment": 0.7272727272727273,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

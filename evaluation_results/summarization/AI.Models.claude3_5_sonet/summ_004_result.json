@@ -1,8 +1,8 @@
 {
-  "score": 0.8571428571428571,
-  "reason": "The score is 0.86 because the summary includes extra information not present in the original text, such as details about the database schema being automatically upgraded and a preference for upgrading over downgrading. However, there are no contradictions, indicating a generally accurate representation of the original text.",
+  "score": 0.5454545454545454,
+  "reason": "The score is 0.55 because the summary contains a significant contradiction regarding the recommended downgrading method and includes several pieces of extra information not present in the original text. These issues indicate a moderate level of accuracy and completeness in the summary.",
   "score_breakdown": {
-    "Alignment": 0.8571428571428571,
+    "Alignment": 0.5454545454545454,
     "Coverage": 1.0
   },
   "input_language": "en",

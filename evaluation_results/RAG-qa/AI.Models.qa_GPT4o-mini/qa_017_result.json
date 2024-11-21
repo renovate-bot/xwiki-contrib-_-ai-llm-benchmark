@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.4852380952380953,
+  "overall_score": 0.4589173950101399,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
+    "AnswerRelevancy": 0.8888888888888888,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.22619047619047616,
-    "ContextualRecall": 0.2,
-    "CustomContextualRelevancy": 0.0
+    "ContextualPrecision": 0.125,
+    "ContextualRecall": 0.26666666666666666,
+    "CustomContextualRelevancy": 0.2,
+    "Correctness": 0.2729488145052834
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the output is perfectly relevant and directly addresses the question about setting up group synchronization between XWiki and an OpenID Connect provider. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.23 because the relevant nodes in the retrieval context, which discuss 'group synchronization' and the 'oidc.groups.mapping' property, are ranked lower (sixth and seventh) than the irrelevant nodes. The irrelevant nodes, ranked from first to fifth, focus on topics like 'authentication management and OpenID Connect endpoints', 'container authentication', 'domain-based authentication', 'OpenID Connect authentication', and 'dependencies for the OpenID Connect extension', which do not address group synchronization with OpenID Connect.",
-    "ContextualRecall": "The score is 0.20 because only a few elements from the expected output, such as the 'oidc.groups.claim' and 'oidc.groups.mapping' properties, are supported by nodes in the retrieval context. Most of the detailed steps and configurations mentioned in the expected output, like setting up group synchronization, finding and editing the 'xwiki.properties' file, and specific configuration instructions, are not supported by the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context lacks specific instructions on configuring group synchronization properties like 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping' as detailed in the expected output."
+    "AnswerRelevancy": "The score is 0.89 because the answer is mostly relevant and provides useful information, but it includes statements that offer sources and links without directly addressing the specific process of setting up group synchronization, which slightly detracts from its overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on ensuring the actual output aligns perfectly with the retrieval context!",
+    "ContextualPrecision": "The score is 0.12 because the relevant node in the retrieval context, which describes the group synchronization process and mentions the use of the 'oidc.groups.mapping' property, is ranked eighth. However, irrelevant nodes, such as the first node focusing on 'authentication management and endpoints' without mentioning group synchronization, and the second node discussing 'container authentication and LDAP', are ranked higher, which lowers the score.",
+    "ContextualRecall": "The score is 0.27 because while some nodes in the retrieval context mention relevant properties like 'xwiki.properties', 'oidc.groups.mapping', and 'oidc.groups.separator', many specific details and examples from the expected output are missing, such as instructions for opening the file, specific configuration examples, and steps for saving and restarting XWiki.",
+    "CustomContextualRelevancy": "The retrieval context mentions group synchronization and configuration in xwiki.properties but lacks specific details on configuring oidc.groups.claim, oidc.groups.separator, and oidc.groups.mapping as outlined in the expected output.",
+    "Correctness": "Actual output lacks specific instructions for configuring 'oidc.groups.claim' and 'oidc.groups.separator'. It mentions 'oidc.userinfoclaims' and 'oidc.groups.mapping' instead, which is inconsistent with expected output. The sequence and context around file editing and restarting XWiki are missing."
   },
   "question_language": "de",
   "expected_answer_language": "de",

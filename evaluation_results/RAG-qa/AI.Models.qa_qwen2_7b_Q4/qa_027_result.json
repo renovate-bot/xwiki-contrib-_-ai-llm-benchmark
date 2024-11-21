@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.5837037037037037,
+  "overall_score": 0.5023124773615483,
   "individual_scores": {
-    "AnswerRelevancy": 0.8518518518518519,
+    "AnswerRelevancy": 0.7142857142857143,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0.3333333333333333,
-    "ContextualRecall": 0.3333333333333333,
-    "CustomContextualRelevancy": 0.4
+    "ContextualRecall": 0.3076923076923077,
+    "CustomContextualRelevancy": 0.4,
+    "Correctness": 0.2585635088579338
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.85 because the response addresses the main question about configuring group synchronization between XWiki and OpenID Connect, but includes some irrelevant details about accessing the XWiki configuration and administration interface, which are not directly related to the synchronization process.",
+    "AnswerRelevancy": "The score is 0.71 because the output contains some relevant information about configuring group synchronization between XWiki and an OpenID Connect provider. However, it includes several irrelevant statements, such as source links, file names, and unrelated configuration details, which do not directly address the process, preventing a higher score.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.33 because the third node in the retrieval context is relevant as it 'directly addresses group synchronization by mentioning the use of the `oidc.groups.mapping` property and the need to configure it in the `xwiki.properties` file.' However, the first, second, fourth, and fifth nodes are ranked higher or similarly to the relevant node, despite being irrelevant. The first node discusses 'general OpenID Connect properties and endpoints' without mentioning group synchronization, the second node focuses on 'authentication classes' rather than group synchronization, the fourth node provides 'general information about OpenID Connect and its limitations' without covering group synchronization steps, and the fifth node lists 'dependencies for the OpenID Connect extension' unrelated to group synchronization configuration.",
-    "ContextualRecall": "The score is 0.33 because while the 3rd node in the retrieval context covers the general aspects of configuring group synchronization and mentions relevant properties like oidc.groups.claim, oidc.groups.separator, and oidc.groups.mapping, it lacks specific details such as opening the xwiki.properties file with a text editor, providing examples, and instructions on saving and restarting XWiki.",
-    "CustomContextualRelevancy": "The retrieval context mentions group synchronization and mapping using 'oidc.groups.mapping', but lacks details on 'oidc.groups.claim' and 'oidc.groups.separator' properties. It also does not cover editing 'xwiki.properties' or restarting XWiki."
+    "ContextualPrecision": "The score is 0.33 because the relevant node in the retrieval context, which provides information about group synchronization and mentions the use of `oidc.groups.mapping` in the xwiki.properties file, is ranked third. However, it is preceded by irrelevant nodes that discuss authentication management and endpoints for OpenID Connect (first node), various authentication methods and extensions (second node), and general information about OpenID Connect authentication (fourth node), which do not address group synchronization or configuration.",
+    "ContextualRecall": "The score is 0.31 because while the 3rd node in the retrieval context supports the configuration of group synchronization in XWiki, it lacks specific details such as locating and editing the 'xwiki.properties' file, providing examples, and instructions on saving and restarting XWiki, which are crucial for a complete understanding.",
+    "CustomContextualRelevancy": "The retrieval context mentions group synchronization and mapping using oidc.groups.mapping, but lacks details on configuring oidc.groups.claim and oidc.groups.separator as specified in the expected output.",
+    "Correctness": "The output introduces `oidc.userinfoclaims` and `xwiki.cfg` which are incorrect, and lacks details on `oidc.groups.claim`, `oidc.groups.separator`, and saving changes in `xwiki.properties`, as described in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

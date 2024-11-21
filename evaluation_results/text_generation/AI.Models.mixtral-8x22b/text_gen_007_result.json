@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output is highly relevant to the Input prompt, focusing on a recent scientific discovery about converting CO2 into fuel. It is coherent, with a logical flow and consistent ideas, aligning well with the Expected Output of summarizing a groundbreaking finding. The language is fluent and readable, meeting the Expected Output's standard.",
+  "reason": "The Actual Output is highly relevant to the Input prompt, aligning with the topic of a recent scientific discovery. It is coherent, with a logical flow and consistency of ideas, matching the Expected Output's requirement for an informative article. The language is fluent, grammatically correct, and natural, meeting the quality expected.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

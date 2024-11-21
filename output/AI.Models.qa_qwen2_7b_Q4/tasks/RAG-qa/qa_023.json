@@ -2,7 +2,7 @@
   "id": "qa_023",
   "prompt": "Je ne re\u00e7ois pas de notifications concernant ma propre activit\u00e9. Comment puis-je activer les notifications pour mes propres actions?",
   "expected_answer": "Par d\u00e9faut, vous ne recevez pas de notifications concernant votre propre activit\u00e9 (sauf si l'\u00e9v\u00e9nement qui a d\u00e9clench\u00e9 la notification cible explicitement cet utilisateur). Vous avez la possibilit\u00e9 de d\u00e9sactiver ce filtre dans la section \"Options de filtrage avanc\u00e9es\" des param\u00e8tres de notification de votre profil utilisateur.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nPour activer les notifications sur votre propre activit\u00e9, vous devez suivre ces \u00e9tapes g\u00e9n\u00e9rales :\n\n1. Connectez-vous \u00e0 votre compte en ligne o\u00f9 vous souhaitez recevoir des notifications.\n\n2. Recherchez l'option de param\u00e8tres ou d'options de pr\u00e9f\u00e9rences dans le menu principal du site web ou de l'application.\n\n3. Une fois que vous avez acc\u00e9d\u00e9 aux options de param\u00e8tres, recherchez l'onglet ou la section d\u00e9di\u00e9e aux notifications.\n\n4. Dans cette section, vous devriez voir une liste des diff\u00e9rents types de notifications que vous pouvez recevoir. Par exemple : les commentaires sur vos publications, les mentions dans vos publications, etc.\n\n5. Pour activer les notifications pour votre propre activit\u00e9, recherchez l'option qui correspond \u00e0 la notification que vous souhaitez recevoir et activez-la en cliquant dessus ou en cochant la case correspondante.\n\n6. Enfin, n'oubliez pas de sauvegarder vos modifications dans les param\u00e8tres.\n\nSi ces \u00e9tapes ne fonctionnent pas pour votre plateforme sp\u00e9cifique ou si vous rencontrez d'autres probl\u00e8mes, il serait pr\u00e9f\u00e9rable de consulter le centre d'aide en ligne du service ou de contacter directement leur support client.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nPour activer les notifications sur vos propres actions, vous devez d\u00e9sactiver le filtre \"Own event\" par d\u00e9faut qui emp\u00eache g\u00e9n\u00e9ralement la r\u00e9ception des notifications li\u00e9es \u00e0 vos propres activit\u00e9s. Vous pouvez le faire en allant dans les param\u00e8tres des notifications et en activant ce filtre. Une fois que vous avez fait cela, vous devriez recevoir des notifications pour toutes vos actions sur le wiki.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 36,
-    "completion_tokens": 269,
-    "total_tokens": 305
+    "prompt_tokens": 2383,
+    "completion_tokens": 92,
+    "total_tokens": 2475
   },
-  "average_power_draw": 169.934,
-  "energy_consumption": 503.87443157958984,
-  "energy_per_input_token": 0.7111848011003385,
-  "energy_per_output_token": 1.7779620027508463,
-  "energy_per_total_token": 1.652047316654393
+  "average_power_draw": 185.76577777777777,
+  "energy_consumption": 297.82540069166816,
+  "energy_per_input_token": 0.11397833933856416,
+  "energy_per_output_token": 0.2849458483464104,
+  "energy_per_total_token": 0.12033349522895684
 }

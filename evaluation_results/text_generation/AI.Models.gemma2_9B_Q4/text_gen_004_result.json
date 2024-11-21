@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output addresses the topics in the Input, focusing on noise-cancelling, battery life, and comfort, relevant to tech-savvy professionals. It aligns well with the Expected Output, covering key features and benefits. The flow is logical and coherent, with clear and natural language. Minor differences in phrasing prevent a perfect score.",
+  "reason": "The Actual Output aligns well with the Input prompt, covering all main features such as noise-cancelling, battery life, and comfort, targeting tech-savvy professionals. It maintains coherence with a logical flow similar to the Expected Output, though it uses a slightly different structure. The fluency is high, with clear and grammatically correct sentences, closely matching the Expected Output's readability.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

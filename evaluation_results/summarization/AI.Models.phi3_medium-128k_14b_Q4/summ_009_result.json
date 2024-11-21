@@ -1,9 +1,9 @@
 {
-  "score": 0,
-  "reason": "The score is 0.00 because the summary fails to answer multiple questions that the original text can address, indicating it lacks essential information and completeness.",
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary includes extra information not present in the original text, such as specific mentions of XWiki and its features, which were not part of the original content. Additionally, the summary fails to address questions about general wiki features like access rights management and notifications, which the original text could answer.",
   "score_breakdown": {
-    "Alignment": 0,
-    "Coverage": 0.0
+    "Alignment": 0.6,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

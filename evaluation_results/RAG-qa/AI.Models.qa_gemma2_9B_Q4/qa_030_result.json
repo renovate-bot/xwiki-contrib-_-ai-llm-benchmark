@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.425,
+  "overall_score": 0.3413980325857879,
   "individual_scores": {
-    "AnswerRelevancy": 0.875,
+    "AnswerRelevancy": 0.7272727272727273,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.25,
-    "CustomContextualRelevancy": 0.0
+    "ContextualRecall": 0.0,
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.3211154682419999
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.88 because the response largely addresses the question about configuring team spaces in XWiki, but it includes multiple irrelevant source links that do not directly assist with the configuration process.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'XML metadata about a page', which is unrelated to configuring access rights in XWiki. The second node talks about 'sending representations to modify resources', which does not pertain to setting access permissions for spaces. The third node focuses on 'editing and managing comments', which is not relevant to configuring team access. The fourth node explains 'the creation of spaces and sub-pages', but does not address access rights or permissions. The fifth node provides 'a list of actions related to page migration and renaming', which does not relate to access control settings. Finally, the sixth node discusses 'configuration display scopes', which does not provide information on setting access rights for teams.",
-    "ContextualRecall": "The score is 0.25 because while there are connections between defining rights at the wiki and space levels to nodes in the retrieval context, key elements such as creating groups for teams and inheriting rights for child pages are not supported by any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain information about creating groups, setting rights at the wiki or space level, or inheriting rights for child pages, which are key elements in the expected output."
+    "AnswerRelevancy": "The score is 0.73 because the output provides some relevant information about configuring spaces and permissions in XWiki, but it includes multiple source links and a note about user groups that do not directly address the specific configuration question, reducing the overall relevancy.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node is about 'a specific page in XWiki and does not provide information on setting access rights or managing spaces for teams.' The second node discusses 'modifying resources using XML and HTTP methods, which is not relevant to configuring team access in XWiki.' The third node is about 'managing comments and attachments, which is unrelated to setting access rights for spaces in XWiki.' The fourth node explains 'how spaces and sub-pages work in XWiki, but does not provide guidance on configuring access rights for teams.' The fifth node is about 'migration actions and does not address configuring access rights for teams in XWiki.' Finally, the sixth node discusses 'configuration display options in XWiki, which is not related to setting access rights for team spaces.'",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to creating groups, setting rights, or managing access in XWiki, which are key elements in the expected output.",
+    "Correctness": "Actual output creates spaces for teams but misses creating groups for each team and setting wiki-level permissions. It grants read and write permissions instead of specifying modify rights only for team spaces. It lacks mention of inheriting rights for child pages."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

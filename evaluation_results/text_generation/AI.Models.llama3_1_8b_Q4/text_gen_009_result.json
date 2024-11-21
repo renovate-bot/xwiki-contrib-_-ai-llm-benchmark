@@ -1,6 +1,6 @@
 {
-  "score": 0.7,
-  "reason": "The Actual Output accurately extracts the event name, dates, and location, aligning well with the Input. However, it lacks details on the target audience and separates the venue and address differently than the Expected Output, affecting coherence.",
+  "score": 0.8,
+  "reason": "The Actual Output correctly extracts the event name, dates, venue, and address, aligning with the Expected Output. However, it omits the target audience, which is a key theme in the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

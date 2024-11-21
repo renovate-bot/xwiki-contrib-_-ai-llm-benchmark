@@ -1,9 +1,9 @@
 {
-  "score": 0.6666666666666666,
-  "reason": "The score is 0.67 because the summary includes extra information not present in the original text, such as the specification of creating wikis for separate types of content and setting panels differently for each space. However, there is no contradicting information, which is positive for the summary's quality.",
+  "score": 0.5555555555555556,
+  "reason": "The score is 0.56 because the summary contains contradictions regarding panel visibility and user control over panel width, includes extra information about the use of panels and wikis not found in the original text, and fails to answer a question about exporting pages in PDF format that the original text can address.",
   "score_breakdown": {
-    "Alignment": 0.6666666666666666,
-    "Coverage": 1.0
+    "Alignment": 0.5555555555555556,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

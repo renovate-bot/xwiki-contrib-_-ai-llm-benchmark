@@ -2,12 +2,12 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "Here's a nature poem for you:\n\n\"Nature's Symphony\"\n\nGentle breeze through swaying trees,\nDancing leaves in morning light,\nWildflowers bowing to the breeze,\nAs butterflies take graceful flight.\n\nCrystal streams sing ancient songs,\nOver rocks worn smooth with time,\nWhile birds above in countless throngs\nFill branches with their sweet sublime.\n\nMountains pierce the misty sky,\nWrapped in clouds of silver-gray,\nAs golden sunbeams from on high\nPaint colors through the breaking day.\n\nIn every leaf and grain of sand,\nIn every drop of morning dew,\nNature's art adorns the land\nWith endless wonder, ever new.",
+  "ai_answer": "Here's a nature poem for you:\n\n\"Nature's Symphony\"\n\nSunlight dancing through emerald leaves,\nWhile gentle whispers ride the breeze.\nCrystal streams sing ancient songs,\nAs butterflies float where they belong.\n\nMountains reach toward azure skies,\nWhere eagles soar and freedom flies.\nWildflowers paint the meadows bright,\nTheir colors glowing in golden light.\n\nDeep in forests, life abounds,\nIn every sight and every sound.\nFrom morning dew to evening stars,\nNature's beauty near and far.\n\nEach season brings its special grace,\nIn this wild and wonderful place.\nA masterpiece that sets souls free,\nNature's endless symphony.",
   "sources": null,
   "usage": {
     "prompt_tokens": 16,
-    "completion_tokens": 159,
-    "total_tokens": 175
+    "completion_tokens": 157,
+    "total_tokens": 173
   },
   "average_power_draw": null,
   "energy_consumption": null,

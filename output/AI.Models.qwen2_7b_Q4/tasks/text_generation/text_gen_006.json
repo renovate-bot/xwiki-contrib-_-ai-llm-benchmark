@@ -2,16 +2,16 @@
   "id": "text_gen_006",
   "prompt": "Write a poem about the beauty of nature.",
   "expected_answer": "A poem describing the wonders of the natural world.",
-  "ai_answer": "Oh, how vast and wondrous is this land,\nWhere nature's beauty never fades.\nFrom mountains high to valleys wide,\nThere's a tapestry woven by grace.\n\nThe forest floor is carpeted green,\nWith leaves that shimmer in sunlight's breeze.\nThe rustling sound they make when gently pressed,\nIs music to the soul, pure and serene.\n\nMountains stand tall and mighty strong,\nTheir peaks piercing through cloudy skies.\nIn their shadow, streams flow quietly,\nCascading down rocks with a soothing sighs.\n\nFields of flowers as far as eye can see,\nA rainbow palette, painted by nature's hand.\nPinks, yellows, blues, oranges all meet,\nDancing together in perfect band.\n\nThe sky above, vast and blue so deep,\nAn endless canvas for clouds to play.\nAs day turns into night, stars appear like specks,\nAnd though they're far away, their beauty stays.\n\nWildlife roams freely, with no constraint,\nAdapting perfectly to this natural scene.\nFrom the hummingbird to mighty eagle's flight,\nAll creatures here are a testament of serene.\n\nOh, nature, you're more than just a sight,\nYou're a symphony, an eternal poem.\nA treasure beyond measure, that can't be confined,\nIn your glory, every soul is profoundly drawn.",
+  "ai_answer": "In fields of green and skies to see,\nWhere mountains stand with soaring glee,\nThe beauty of nature, so wide,\nA work of art that never dies.\n\nThe rustling leaves in playful breeze,\nA symphony not meant to please,\nBut for those who listen closely,\nAnd feel the earth's life fully.\n\nThe gentle river flows so free,\nCarving paths through rocks and tree,\nIts current strong yet ever calm,\nTeaching us balance, and making room.\n\nIn skies of blue with fluffy clouds,\nLies a beauty that astounds,\nWith sunsets painting golden hues,\nBringing peace to troubled souls anew.\n\nAnd in the night, stars twinkle bright,\nA sky full of secrets just right,\nGuiding lost ones on their way,\nTheir light shining as they play.\n\nNature's beauty surrounds us all,\nIn every breath and every call,\nIt teaches us patience, humility,\nAnd reminds us why we're here to be.\n\nSo let us cherish this gift so dear,\nFor in its splendor, we find our cure,\nA connection deep within our hearts,\nTo the world outside that we must always guard.",
   "sources": null,
   "usage": {
     "prompt_tokens": 28,
-    "completion_tokens": 267,
-    "total_tokens": 295
+    "completion_tokens": 228,
+    "total_tokens": 256
   },
-  "average_power_draw": 202.76247953216375,
-  "energy_consumption": 425.0584075917027,
-  "energy_per_input_token": 0.6111551511023763,
-  "energy_per_output_token": 1.5278878777559406,
-  "energy_per_total_token": 1.4408759579379753
+  "average_power_draw": 150.97440522875817,
+  "energy_consumption": 273.9717604948929,
+  "energy_per_input_token": 0.45814675668042293,
+  "energy_per_output_token": 1.1453668917010573,
+  "energy_per_total_token": 1.0702021894331755
 }

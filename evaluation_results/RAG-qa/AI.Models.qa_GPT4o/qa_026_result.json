@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.5538461538461539,
+  "overall_score": 0.5173066371250744,
   "individual_scores": {
-    "AnswerRelevancy": 0.7692307692307693,
+    "AnswerRelevancy": 0.9333333333333333,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.8,
-    "CustomContextualRelevancy": 0.2
+    "ContextualRecall": 0.4,
+    "CustomContextualRelevancy": 0.2,
+    "Correctness": 0.5705064894171128
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.77 because the answer partially addresses the question about customizing user profile fields in XWiki, but it includes repetitive irrelevant statements that provide source links without directly answering the query.",
+    "AnswerRelevancy": "The score is 0.93 because the response is highly relevant to the question about customizing user profile fields in XWiki with OpenID Connect. However, it includes a link about UI validation, which is not directly related to the query, slightly affecting the score.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'various authentication methods and configurations but does not mention customizing user profile fields or mapping them in xwiki.properties.' The second node is about 'domain-based authentication and session cookies, which is unrelated to mapping user profile fields from OpenID Connect.' The third node lists 'endpoints, bypassing OpenID Connect, and group synchronization, but does not address user profile field mapping.' All nodes fail to address the specific topic of mapping user profile fields from OpenID Connect in XWiki.",
-    "ContextualRecall": "The score is 0.80 because most of the expected output aligns with the information in the 2nd node in the retrieval context, such as references to 'xwiki.properties', 'oidc.user.mapping', and the process of saving and restarting XWiki. However, the retrieval context lacks a specific example of mapping properties, which affects the completeness of the match.",
-    "CustomContextualRelevancy": "The retrieval context mentions OpenID Connect and xwiki.properties but lacks details on customizing user profile fields or using oidc.user.mapping."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input query. The first node discusses 'container authentication and various authentication methods', which does not relate to 'mapping user profile fields or customization using xwiki.properties'. The second node is about 'domain-based instance authentication and session cookie configuration', which is unrelated to the query. Subsequent nodes also fail to address the topic of 'user profile field mapping' in the context of OpenID Connect, focusing instead on unrelated aspects like 'endpoints and customization options', 'general information about the OpenID Connect Authenticator', 'dependencies for the OpenID Connect extension', and 'installation instructions'.",
+    "ContextualRecall": "The score is 0.40 because while the nodes in the retrieval context mention 'OpenId Connect Authentication' and 'xwiki.properties', which support the customization and mapping of user profile fields (as seen in sentences 1 and 2 of the expected output), they lack specific examples, mapping syntax, and instructions on replacing variables, saving the file, and restarting XWiki (as detailed in sentences 3, 4, and 5 of the expected output).",
+    "CustomContextualRelevancy": "The retrieval context mentions OpenID Connect and xwiki.properties but lacks details on customizing user profile fields or using oidc.user.mapping.",
+    "Correctness": "The Actual Output correctly mentions modifying `xwiki.properties` for user profile mapping, but lacks specific examples for `oidc.user.mapping` and omits the restart step. It introduces additional information on using scopes and potential custom development, which is not in the Expected Output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

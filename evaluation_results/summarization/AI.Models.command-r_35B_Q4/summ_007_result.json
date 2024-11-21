@@ -1,6 +1,6 @@
 {
   "score": 0.4,
-  "reason": "The score is 0.40 because the summary contains contradictions regarding the functionality of the 'History' tab and the process of reverting to previous versions, as well as extra information about a 'Version Control page' not present in the original text. Additionally, the summary fails to address a question about content saving that the original text can answer.",
+  "reason": "The score is 0.40 because the summary contains significant inaccuracies, such as incorrect descriptions of features related to version comparison and reverting changes. Additionally, it introduces information not present in the original text, like a 'Version Control' page, and fails to address questions that the original text can answer, indicating a lack of coverage and precision.",
   "score_breakdown": {
     "Alignment": 0.4,
     "Coverage": 0.8

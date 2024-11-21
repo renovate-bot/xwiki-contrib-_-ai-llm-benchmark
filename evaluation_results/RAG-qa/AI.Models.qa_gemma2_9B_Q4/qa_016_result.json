@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.3333333333333333,
+  "overall_score": 0.5842987425374996,
   "individual_scores": {
-    "AnswerRelevancy": 0.6666666666666666,
+    "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0,
+    "ContextualPrecision": 1.0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.5057924552249972
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.67 because the answer partially addresses the question about customizing user profile fields in XWiki, but includes irrelevant information such as sources and documentation links that do not directly help with the customization process.",
+    "AnswerRelevancy": "The score is 1.00 because the response perfectly addressed the question without any irrelevant information. Great job!",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'authentication management and OpenID Connect provider endpoints', the second node is about 'container authentication', the third node provides 'general information about OpenID Connect authentication and configuration guides', the fourth node describes 'the OpenID Connect authenticator extension and its features', and the fifth node lists 'dependencies for the OpenID Connect authenticator extension'. None of these contexts mention or address the mapping or customization of user profile fields, which is the focus of the input.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by the information in the nodes in retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context lacks information on customizing user profile fields using `oidc.user.mapping` in `xwiki.properties` as described in the expected output."
+    "ContextualPrecision": "The score is 1.00 because the relevant node about the 'xwiki.properties' file, which is crucial for configuring OpenID Connect in XWiki, is ranked first. The irrelevant nodes, such as those discussing 'container authentication and LDAP' (second node), 'general information about OpenID Connect authentication' (third node), 'general information about the OpenID Connect Authenticator extension' (fourth node), and 'dependencies for the OpenID Connect Authenticator extension' (fifth node), are all ranked lower, ensuring the most pertinent information is prioritized. Great job on the ranking!",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any node(s) in the retrieval context, as all key instructions and examples are missing.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about customizing user profile fields using `xwiki.properties` or `oidc.user.mapping`, which are key aspects of the expected output.",
+    "Correctness": "The actual output describes customizing user profile fields from OpenID Connect in XWiki, matching the expected output's intent. However, it incorrectly references 'oidc-authenticator-user' instead of 'xwiki.properties' and omits specific variable examples like 'myxproperty1'."
   },
   "question_language": "de",
   "expected_answer_language": "de",

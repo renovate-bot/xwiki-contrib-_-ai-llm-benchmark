@@ -2,12 +2,12 @@
   "id": "text_gen_004",
   "prompt": "Generate a short product description based on the following information:\n\nProduct: Wireless Bluetooth Headphones\nFeatures: Noise-cancelling, 20-hour battery life, comfortable fit\nTarget audience: Tech-savvy professionals",
   "expected_answer": "Introducing our cutting-edge wireless Bluetooth headphones, designed for tech-savvy professionals who demand the best. With advanced noise-cancelling technology, you can immerse yourself in your music or focus on your work without any distractions. Enjoy an impressive 20-hour battery life, ensuring your headphones keep up with your busy lifestyle. The comfortable, ergonomic fit allows you to wear them all day long without any discomfort. Upgrade your audio experience with our premium wireless headphones.",
-  "ai_answer": "Experience unparalleled sound quality with our Wireless Bluetooth Headphones, designed specifically for tech-savvy professionals on the go. Featuring advanced noise-cancelling technology, these headphones ensure you can focus on what matters most\u2014whether it's a crucial conference call or your favorite playlist. With an impressive 20-hour battery life, you can enjoy uninterrupted audio throughout your busy day. The comfortable fit guarantees all-day wear without compromise, making these headphones the ultimate companion for productivity and leisure. Elevate your listening experience and stay connected in style!",
+  "ai_answer": "Experience the ultimate in audio excellence with our Wireless Bluetooth Headphones, designed specifically for tech-savvy professionals. Featuring advanced noise-cancelling technology, these headphones allow you to immerse yourself in your favorite tunes or focus intently on calls without distractions. Enjoy up to 20 hours of seamless playtime on a single charge, making them perfect for long workdays or commutes. With a comfortable fit that molds to your ears, these headphones are your perfect companion for all-day use, ensuring you stay productive and engaged. Elevate your sound experience\u2014wherever your work takes you.",
   "sources": null,
   "usage": {
     "prompt_tokens": 48,
-    "completion_tokens": 103,
-    "total_tokens": 151
+    "completion_tokens": 116,
+    "total_tokens": 164
   },
   "average_power_draw": null,
   "energy_consumption": null,

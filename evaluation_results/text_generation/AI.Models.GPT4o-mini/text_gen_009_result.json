@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output accurately extracts and presents the event details, addressing the Input correctly. It is coherent and fluent, with no grammatical errors. However, it does not separate the start and end dates or explicitly mention the target audience, which are present in the Expected Output.",
+  "reason": "The Actual Output accurately extracts the event name, date, location, and features, addressing the Input. It aligns well with the Expected Output in terms of main ideas but uses a different format and lacks explicit separation of start and end dates.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -2,16 +2,16 @@
   "id": "text_gen_010",
   "prompt": "Adapt the following text to a more technical audience:\n\nThe human brain is a complex organ that controls all functions of the body, interprets information from the outside world, and embodies the essence of the mind and soul.",
   "expected_answer": "The human brain is a highly intricate and sophisticated organ responsible for regulating and coordinating various physiological processes, processing and interpreting sensory information from the external environment, and serving as the biological substrate for cognitive functions, consciousness, and subjective experiences.",
-  "ai_answer": "The human brain, a highly sophisticated biological structure, serves as the central processing unit for overseeing bodily functions, interpreting environmental inputs, and housing the cognitive faculties that define human consciousness. This intricate organ, composed of various neural networks and specialized cells, mediates the execution of complex physiological activities while simultaneously integrating diverse sensory information to facilitate decision-making processes and enable adaptive responses to both internal and external stimuli. Its capacity for cognition, creativity, emotion, and motivation underscores its paramount role in human existence.",
+  "ai_answer": "The human brain, consisting of approximately 86 billion neurons and numerous other support cells, serves as the central processing unit for the entire organism. It receives, integrates, and responds to sensory input from both internal bodily processes and external stimuli. The intricate neural networks within the brain enable complex cognitive functions such as perception, learning, memory, emotion, decision-making, and consciousness, which together define human consciousness and the unique properties of mind and soul in philosophical discourse.",
   "sources": null,
   "usage": {
     "prompt_tokens": 63,
-    "completion_tokens": 98,
-    "total_tokens": 161
+    "completion_tokens": 93,
+    "total_tokens": 156
   },
-  "average_power_draw": 208.80511111111113,
-  "energy_consumption": 164.25627971288895,
-  "energy_per_input_token": 0.5332996094574317,
-  "energy_per_output_token": 1.3332490236435792,
-  "energy_per_total_token": 1.0202253398316083
+  "average_power_draw": 153.63196825396827,
+  "energy_consumption": 117.18090194882288,
+  "energy_per_input_token": 0.39655127563053433,
+  "energy_per_output_token": 0.9913781890763358,
+  "energy_per_total_token": 0.7511596278770697
 }

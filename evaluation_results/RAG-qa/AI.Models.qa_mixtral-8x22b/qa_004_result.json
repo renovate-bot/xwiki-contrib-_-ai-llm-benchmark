@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.85,
+  "overall_score": 0.5775503012533487,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
-    "Faithfulness": 1.0,
-    "ContextualPrecision": 0.95,
+    "AnswerRelevancy": 0.8666666666666667,
+    "Faithfulness": 0.875,
+    "ContextualPrecision": 0.2,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 0.3
+    "CustomContextualRelevancy": 0.4,
+    "Correctness": 0.12363514085342604
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant with no irrelevant statements, directly addressing the question about disabling notifications in XWiki. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.95 because the relevant nodes in the retrieval context are mostly ranked higher than the irrelevant ones. However, the fourth node, which 'primarily discusses email notifications and server settings,' and the sixth node, which 'is about overriding notification templates and installation instructions,' are not directly relevant to the user's query about disabling notifications for unwanted pages and should be ranked lower than the relevant nodes.",
-    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the nodes in the retrieval context, showcasing a perfect alignment. Great job!",
-    "CustomContextualRelevancy": "The retrieval context mentions default notification settings and user profile settings but lacks specific details about automatic page watching and deleting notification filters as described in the expected output."
+    "AnswerRelevancy": "The score is 0.87 because the response effectively addresses how to disable notifications in XWiki, but includes irrelevant source links that do not directly answer the question.",
+    "Faithfulness": "The score is 0.88 because the claim implies notifications are received only after changes to settings, whereas the context states notifications are received after enabling notification types.",
+    "ContextualPrecision": "The score is 0.20 because the relevant node, ranked fifth, correctly addresses changing notification settings by mentioning that 'administrators can change the default auto-watched mode and users can change their notification settings.' However, it is ranked lower than four irrelevant nodes. For example, the first node discusses 'how to get an RSS feed of notifications,' which is unrelated to disabling notifications. Similarly, the second node talks about 'following a user and default watch settings,' which does not provide information on how to disable notifications.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions default watch settings and user profile settings but lacks details about automatic page watching and deleting notification filters.",
+    "Correctness": "The actual output describes managing notifications in XWiki but lacks the specific details about automatic page watching, changing settings, and deleting filters described in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

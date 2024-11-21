@@ -2,7 +2,7 @@
   "id": "qa_006",
   "prompt": "Can I customize the user profile fields that are populated from the OpenID Connect provider in XWiki?\nI want to map additional user profile fields from my OpenID Connect provider to XWiki user properties. How can I achieve this?",
   "expected_answer": "Yes, you can customize the user profile fields that are populated from the OpenID Connect provider by mapping them in the `xwiki.properties` file.\n\nTo map additional user profile fields, use the `oidc.user.mapping` property. Here's an example of how to map custom properties:\n\n```\n# oidc.user.mapping=myxproperty1=${oidc.user.subject}\n# oidc.user.mapping=myxproperty2=myprefix-${oidc.user.subject}\n```\n\nReplace `myxproperty1` and `myxproperty2` with the actual XWiki user property names, and `${oidc.user.subject}` with the appropriate variable based on the data provided by your OpenID Connect provider.\n\nAfter configuring the mappings, save the `xwiki.properties` file and restart XWiki to apply the changes.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \n\n\nYes, you can customize the user profile fields that are populated from the OpenID Connect provider in XWiki. To map additional user profile fields from your OpenID Connect provider to XWiki user properties, you can use the `oidc.user.mapping` property in the `xwiki.properties` file.\n\nHere's an example of how to map `myxproperty1` and `myxproperty2` from the OpenID Connect provider to XWiki user properties:\n```bash\noidc.user.mapping=myxproperty1=${oidc.user.subject}\noidc.user.mapping=myxproperty2=myprefix-${oidc.user.subject}\n```\nThe syntax for the value of the mapping is similar to the one defined for the `oidc.user.nameFormater` property. It allows you to use variable substitution, where the variable is replaced by the corresponding value from the OpenID Connect provider. In the example above, `${oidc.user.subject}` is replaced by the unique identifier of the user in the OpenID Connect provider.\n\nYou can add as many mappings as you need by adding more lines with the `oidc.user.mapping` property. The property name (`myxproperty1` and `myxproperty2` in the example) should match the name of the XWiki user property you want to map.\n\nOnce you've added the mappings, XWiki will populate the mapped user properties with the corresponding values from the OpenID Connect provider when a user logs in.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \n\n\nYes, you can customize the user profile fields that are populated from the OpenID Connect provider in XWiki. To map additional user profile fields from your OpenID Connect provider to XWiki user properties, you can use the `oidc.user.mapping` property in the `xwiki.properties` file.\n\nHere's an example:\n```makefile\noidc.user.mapping=myxproperty1=${oidc.user.subject}\noidc.user.mapping=myxproperty2=myprefix-${oidc.user.subject}\n```\nReplace `myxproperty1` and `myxproperty2` with the names of the XWiki user properties that you want to map to your OpenID Connect provider's fields. The `${oidc.user.subject}` is a placeholder that will be replaced with the unique identifier of the user in the OpenID Connect provider. You can also use other placeholders, such as `${oidc.user.preferredUsername}`, `${oidc.user.email}`, etc.\n\nAfter adding the mapping, XWiki will automatically populate the mapped user profile fields with the corresponding data from your OpenID Connect provider when a user logs in.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -47,8 +47,8 @@
   ],
   "usage": {
     "prompt_tokens": 3116,
-    "completion_tokens": 342,
-    "total_tokens": 3458
+    "completion_tokens": 265,
+    "total_tokens": 3381
   },
   "average_power_draw": null,
   "energy_consumption": null,

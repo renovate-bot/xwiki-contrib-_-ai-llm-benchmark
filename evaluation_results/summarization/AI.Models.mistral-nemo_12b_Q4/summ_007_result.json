@@ -1,9 +1,9 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary includes extra information not present in the original text and fails to address a question that the original text can answer. However, there are no contradictions, indicating a generally accurate representation of the original content.",
+  "score": 0.6,
+  "reason": "The score is 0.60 because the summary contains a contradiction regarding how users access the 'History' menu, includes extra information about XWiki.org's Version Control page not present in the original text, and fails to answer questions about content saving and the location of the 'History' tab that the original text can address.",
   "score_breakdown": {
-    "Alignment": 0.8333333333333334,
-    "Coverage": 0.8
+    "Alignment": 0.7142857142857143,
+    "Coverage": 0.6
   },
   "input_language": "en",
   "summary_language": "en"

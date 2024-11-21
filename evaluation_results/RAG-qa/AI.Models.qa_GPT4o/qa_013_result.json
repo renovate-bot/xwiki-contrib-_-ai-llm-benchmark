@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.36470588235294116,
+  "overall_score": 0.3756952339036755,
   "individual_scores": {
-    "AnswerRelevancy": 0.8235294117647058,
+    "AnswerRelevancy": 0.8421052631578947,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.4120661402641582
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.82 because the response mostly addresses the question about enabling notifications for one's own actions. However, the presence of multiple irrelevant source links slightly detracts from the overall relevancy.",
+    "AnswerRelevancy": "The score is 0.84 because the main content effectively addresses the question about enabling notifications for one's own actions, but the inclusion of multiple source links, which do not directly contribute to answering the question, slightly detracts from the overall relevancy.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'themes, internationalization, accessibility, and scalability', which are unrelated to notification settings. The second node is about 'administrating wiki features like users and rights', which does not pertain to notification settings. The third node covers 'importing office documents, icon themes, and syntax highlighting', none of which relate to notification settings. The fourth node is about 'customizing themes and panels', which is not relevant to enabling notifications for one's own actions. The fifth node discusses 'color themes and access rights', which do not address notification settings.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by any nodes in the retrieval context, indicating a complete mismatch between the expected content and the provided context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about notification settings or user activity, which are the main points in the expected output."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'customization of page templates, internationalization, and other features unrelated to notification settings,' which should be ranked lower. Similarly, the second node is about 'administrating wiki features like users, groups, and rights,' not relevant to notification settings. The third node mentions 'importing office documents and other features but does not relate to notification settings.' The fourth node is about 'themes, panels, and presentation settings, which do not pertain to notification settings.' Finally, the fifth node discusses 'color themes and access rights, which are not relevant to notification settings.'",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about notification settings or user activity filters mentioned in the expected output.",
+    "Correctness": "Actual output provides a general method to activate notifications for own activities, but lacks specific information on disabling the filter as mentioned in the expected output. It mentions consulting documentation, yet doesn't align fully with expected factual content."
   },
   "question_language": "de",
   "expected_answer_language": "de",

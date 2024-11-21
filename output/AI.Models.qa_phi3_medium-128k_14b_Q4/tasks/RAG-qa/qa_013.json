@@ -2,7 +2,7 @@
   "id": "qa_013",
   "prompt": "Ich erhalte keine Benachrichtigungen \u00fcber meine eigene Aktivit\u00e4t. Wie kann ich Benachrichtigungen f\u00fcr meine eigenen Aktionen aktivieren?",
   "expected_answer": "Standardm\u00e4\u00dfig erh\u00e4lt man keine Benachrichtigungen \u00fcber die eigene Aktivit\u00e4t (es sei denn, das Ereignis, das die Benachrichtigung ausl\u00f6st, richtet sich explizit an diesen Benutzer). Sie haben die M\u00f6glichkeit, diesen Filter in den \"Erweiterten Filteroptionen\" Ihrer eigenen Benachrichtigungseinstellungen in Ihrem Benutzerprofil zu deaktivieren.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nUm sicherzustellen, dass du Benachrichtigungen \u00fcber deine eigenen Aktivit\u00e4ten erh\u00e4ltst, musst du die Einstellungen in der App \"Benachrichtigungs-Manager\" oder im Systemeinstellungseingang anpassen. Folgendes solltest du tun:\n\n1. \u00d6ffne den Settings (Einstellungen)-App auf deinem Smartphone.\n2. Suche nach dem Bereich \"System und Wartung\" und dann bei Android-Ger\u00e4ten unter \"Benachrichtigungsmanager\". Bei iOS w\u00e4re es die Einstellungen-App, danach \"Mitteilungen & Benachrichtigungen\".\n3. Im Men\u00fc f\u00fcr den Benachrichtigungsmanager folge den Anweisungen zum Aktivieren von Benachrichtigungen. Stelle sicher, dass du die Optionen so w\u00e4hlst, dass dich Benachrichtigungen \u00fcber deine eigene App und Aktionen erh\u00e4ltst.\n4. Speichere alle \u00c4nderungen, indem du auf \"Speichern\" oder ein \u00e4hnliches Symbol dr\u00fcckst.\n\nWenn all diese Schritte befolgt wurden und die Einstellungen korrekt konfiguriert sind, solltest du nun Benachrichtigungen erhalten.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nSicherlich! Sie k\u00f6nnen die \"Benachrichtigungseinstellungen\" verwenden, um Ihre Benachrichtigungen einzurichten und zu konfigurieren. Hier erfahren Sie mehr \u00fcber die Optionen:\n\n**Benachrichtigungseinrichtung**  \nXwiki bietet verschiedene Arten von Echtzeitbenachrichtigungen f\u00fcr eine Personalisierung der Erfahrung an Ihrem Desktop-Thema oder im Webbrowser. Durch das Festlegen bestimmter Einstellungen k\u00f6nnen Sie festlegen, dass Sie per Posteingang \u00fcber Aktionen anderer Benutzer informiert werden (z. B. \u00c4nderungen der Seiten, die Sie bearbeiten), w\u00e4hrend andere Ihnen vielleicht nur dann Meldung geben, wenn Sie etwas \u00e4ndern, was sie sehen (z. B. \u00c4nderungen in den Favorites).\n\n**Benachrichtigungseinstellungen \u2013 Benutzer**  \nDie folgenden Eigenschaften k\u00f6nnen f\u00fcr die \u00dcbermittlung von Benachrichtigungen \u00fcber Aktionen anderer Personen eingestellt werden:\n* **Never Notify** - Sie erhalten keine Meldung, wenn jemand etwas \u00e4ndert.\n* **Always Notify** - F\u00fcr alle Ihre Favorites und auch auf Seiten, die Sie erstellt haben, werden Benachrichtigungen \u00fcber \u00c4nderungen gesendet.\n* **Notify Me on my Favourites and Pages I created** - F\u00fcr diese Seiten erhalten Sie eine Benachrichtigung. In anderen Bereichen kann ich jedoch nichts wissen.\n\nWenn andere Personen m\u00f6chten, dass Sie informiert werden, k\u00f6nnen sie dies in ihren Aktivit\u00e4ten \u00fcber die Funktion \"Mitteilen\" tun. Auf diese Weise w\u00fcrden Sie immer benachrichtigt werden, wenn jemand etwas \u00e4ndert oder erstellen wird und es sich um eine Seite handelt, an der Sie interessieren k\u00f6nnten (solange sie nicht in den Kategorien Ihrer Favorites liegen).\n\n**Benachrichtigungseinstellungen \u2013 Benutzer k\u00f6nnen mich unterst\u00fctzen**  \nLegen Sie die folgenden Eigenschaften f\u00fcr die \u00dcbermittlung von Benachrichtigungen \u00fcber Aktionen anderer Personen fest:\n* **Never Notify me of your changes** - Sie erhalten nichts, wenn jemand etwas \u00e4ndert oder erstellt.\n* **Notify me if I'm interested in this page (also if it is inside my Favorites)** - Wenn andere ein \"Alle\" f\u00fcr die Seiten eingeben, werden sie informiert und k\u00f6nnen Sie auch \u00fcber \u00c4nderungen auf nicht-Favorite-Seiten benachrichtigen.\n* **Notify me of your changes always** - F\u00fcr alle Ihre Favourites und Pages werden Benachrichtigungen gesendet (selbst wenn es sich um Seiten au\u00dferhalb Ihrer Vorlieben handelt).\n\nStellen Sie sicher, dass die Einstellung \"Benutzer benachrichtigen\" auf der Seite aktiviert ist, an der du Interesse hast. Dadurch wird sichergestellt, dass andere Personen Benachrichtigungen \u00fcber \u00c4nderungen senden k\u00f6nnen.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -30,13 +30,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 46,
-    "completion_tokens": 289,
-    "total_tokens": 335
+    "prompt_tokens": 2182,
+    "completion_tokens": 700,
+    "total_tokens": 2882
   },
-  "average_power_draw": 213.75613675213674,
-  "energy_consumption": 926.8284586358844,
-  "energy_per_input_token": 1.2060227178085678,
-  "energy_per_output_token": 3.0150567945214197,
-  "energy_per_total_token": 2.766652115330998
+  "average_power_draw": 255.4885304659499,
+  "energy_consumption": 2642.7274564048303,
+  "energy_per_input_token": 0.6721076949147584,
+  "energy_per_output_token": 1.6802692372868961,
+  "energy_per_total_token": 0.9169769106193026
 }

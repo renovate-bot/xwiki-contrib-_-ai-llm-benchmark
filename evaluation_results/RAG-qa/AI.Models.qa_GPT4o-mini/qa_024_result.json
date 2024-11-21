@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.5354545454545455,
+  "overall_score": 0.585614193297565,
   "individual_scores": {
-    "AnswerRelevancy": 0.7272727272727273,
-    "Faithfulness": 1.0,
-    "ContextualPrecision": 0,
-    "ContextualRecall": 0.75,
-    "CustomContextualRelevancy": 0.2
+    "AnswerRelevancy": 0.8333333333333334,
+    "Faithfulness": 0.8333333333333334,
+    "ContextualPrecision": 0.5,
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.2,
+    "Correctness": 0.14701849311872278
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.73 because the response partially addresses the question about disabling notifications, but includes irrelevant links that do not directly help with the issue.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'various notification filters and settings' but lacks information on 'automatic page watching' or disabling such notifications. The second node lists 'different notification preferences and macros' without addressing how to stop notifications for 'automatically watched pages'. The third node provides 'a list of notification settings and options' but does not cover 'automatic following of pages'. The fourth node talks about 'RSS feeds and notification settings' without mentioning 'automatic watching of pages'. Lastly, the fifth node outlines 'various notification methods in XWiki' but fails to address 'automatically watched pages'.",
-    "ContextualRecall": "The score is 0.75 because while nodes in the retrieval context support the idea of default notification settings and accessing notification settings (as seen in nodes 2 and 4), they do not explicitly mention being notified of changes on one's own work, which affects the completeness of the expected output.",
-    "CustomContextualRelevancy": "The retrieval context mentions auto-watched pages and notification settings, but lacks details on modifying 'Suivi automatique des pages' and removing filters from 'Filtres personnalis\u00e9s'."
+    "AnswerRelevancy": "The score is 0.83 because the response mostly addresses how to disable notifications, but includes irrelevant source links that do not directly provide the necessary steps.",
+    "Faithfulness": "The score is 0.83 because the actual output incorrectly claims that users do not receive notifications for their own activities by default, whereas the retrieval context specifies that users do not receive notifications about their own activity unless the event targets the user explicitly.",
+    "ContextualPrecision": "The score is 0.50 because the second node in the retrieval context, which is relevant, is ranked lower than the first node. The first node discusses 'technical aspects of notification filters and hidden pages,' which are not directly related to disabling notifications for pages of no interest. This irrelevant node should be ranked lower than the second node, which mentions 'Notifications Auto Watch Preferences' and 'Notifications Custom Filters Preferences,' aligning with the input's need to modify settings related to automatically watched pages and custom filters.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is perfectly supported by the nodes in the retrieval context, indicating a flawless match. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions 'auto watched pages' and 'custom notification filters', but lacks details on automatic addition to watchlist and modifying notification settings as described in the expected output.",
+    "Correctness": "The actual output describes steps for disabling notifications, which is not mentioned in the expected output. While both discuss notification settings, the actual output lacks the specific details on 'Suivi automatique des pages' and 'Filtres personnalis\u00e9s' as outlined in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

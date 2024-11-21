@@ -2,12 +2,12 @@
   "id": "text_gen_004",
   "prompt": "Generate a short product description based on the following information:\n\nProduct: Wireless Bluetooth Headphones\nFeatures: Noise-cancelling, 20-hour battery life, comfortable fit\nTarget audience: Tech-savvy professionals",
   "expected_answer": "Introducing our cutting-edge wireless Bluetooth headphones, designed for tech-savvy professionals who demand the best. With advanced noise-cancelling technology, you can immerse yourself in your music or focus on your work without any distractions. Enjoy an impressive 20-hour battery life, ensuring your headphones keep up with your busy lifestyle. The comfortable, ergonomic fit allows you to wear them all day long without any discomfort. Upgrade your audio experience with our premium wireless headphones.",
-  "ai_answer": "\n\nHere is a short product description:\n\n\"Immerse yourself in uninterrupted sound with our Wireless Bluetooth Headphones, designed for the modern professional on-the-go. Featuring advanced noise-cancelling technology and a long-lasting 20-hour battery life, these headphones deliver crystal-clear audio and seamless connectivity. Ergonomically crafted for a comfortable fit, they're perfect for marathon work sessions, lengthy commutes, or anytime you need to focus on what matters most. Upgrade your mobile productivity with our sleek and sophisticated wireless headphones.\"",
+  "ai_answer": "\n\nHere is a short product description:\n\n**Experience Uninterrupted Sound with Our Wireless Bluetooth Headphones**\n\nStay focused and productive with our cutting-edge wireless Bluetooth headphones, designed for the modern professional. Equipped with advanced noise-cancelling technology, these headphones block out distractions and immerse you in crystal-clear sound. Enjoy up to 20 hours of uninterrupted listening on a single charge, and a comfortable fit that lets you wear them all day long. Perfect for busy professionals on-the-go, our wireless headphones are the ultimate accessory for anyone who demands exceptional sound and convenience.",
   "sources": null,
   "usage": {
     "prompt_tokens": 52,
-    "completion_tokens": 104,
-    "total_tokens": 156
+    "completion_tokens": 115,
+    "total_tokens": 167
   },
   "average_power_draw": null,
   "energy_consumption": null,

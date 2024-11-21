@@ -2,7 +2,7 @@
   "id": "qa_004",
   "prompt": "In the context of XWiki I'm receiving lot's of notifications about all kinds of pages I'm not interested in. These seem to have been enabled automatically. How can I disable these notifications?",
   "expected_answer": "By default, a page where you have made a major modification is automatically added to the list of pages you watch. It means you will be notified about changes on your work. You can change the setting for \"Automatic page watching\" in the notification settings in your user profile. You can delete existing notification filters that were created this way in the \"Custom Filters\" list in the notification settings in your user profile.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\nYou can find the settings for your Xwiki notification preferences in your user account on the XWiki platform. Here are step-by-step instructions:\n\n1. Log into your XWiki account and navigate to \"Settings\" or \"My Account\". The exact name of the menu might vary depending on the version you're using, but it should be easily identifiable as containing settings related to your personal account.\n\n2. Once in the \"Account Settings\", look for a section labeled \"Notifications\". This is usually under General Settings or something similar. \n\n3. Inside \"Notifications\" you will find various types of notifications that can be enabled and disabled according to your preference, such as:\n   - Email Notifications\n   - SMS/Text Messages\n   - Push Notifications (if applicable)\n   - Comments on my changesets\n   - Edits by other users\n   \n4. To disable a particular type of notification, simply click the corresponding box or toggle button next to it until you see that its status is \"Off\". \n\n5. After adjusting your preferences as desired, be sure to save any changes you make to ensure they're applied correctly across the system. There should typically be an \"Save\" or \"Apply Changes\" button near the bottom of the page for this purpose.\n\nRemember that disabling notifications may vary depending on how XWiki is configured in your organization, and some advanced settings might require administrator privileges to adjust. If you are unsure about any setting or if you encounter a problem while making changes, please contact your system administrator for assistance. \n\nWith these steps completed, you should now receive fewer irrelevant notifications from XWiki going forward.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \n\n\nTo control which notifications you receive and which ones are disabled, you need to adjust your settings under the \"Notification Settings\" tab on your profile page. If by default a lot of notifications are being sent, it's possible that all application types were enabled when you started using XWiki. However, starting from version 15.5+, nothing is watched for new users by default; instead, all application types are enabled and not receiving anything until they start to watch something or enable some application types.\n\nTo disable the unnecessary notifications:\n\n1. Go to your profile page using the User Index Application.\n2. Navigate to the \"network\" tab within your user profile. Here you will see a list of all users that are being watched and the events performed by them. \n3. You can then unfollow (stop watching) any unwanted users or disable specific event types for each application from here. This is done using the bells associated to these applications, as shown in the \"NotifUndeterminate.png\" screenshot from the provided document. A partially enabled switch means that only some notification types within an application are active while others are not.\n4. Only notifications occurring after enabling or re-enabling specific notification types will be received. \n\nRemember, you can control whether to receive notifications about your own activity (except when the event targets you explicitly) and you also have options such as hiding read events or minor events by changing settings in the \"Advanced filtering options\" section. This setting is user-specific (per user).\n\nIf you want more detailed instructions, please refer to the provided documents for visual examples of these settings.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -54,13 +54,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 52,
-    "completion_tokens": 367,
-    "total_tokens": 419
+    "prompt_tokens": 3544,
+    "completion_tokens": 350,
+    "total_tokens": 3894
   },
-  "average_power_draw": 222.8190241545894,
-  "energy_consumption": 1138.4312614404316,
-  "energy_per_input_token": 1.174245757029842,
-  "energy_per_output_token": 2.9356143925746045,
-  "energy_per_total_token": 2.717019717041603
+  "average_power_draw": 266.38736111111115,
+  "energy_consumption": 1645.2413998060097,
+  "energy_per_input_token": 0.3723107942534532,
+  "energy_per_output_token": 0.9307769856336331,
+  "energy_per_total_token": 0.4225067796111992
 }

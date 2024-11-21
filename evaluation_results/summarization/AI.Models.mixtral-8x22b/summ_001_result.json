@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary includes extra information not present in the original text and fails to answer some questions that the original text can address. These issues indicate that the summary is not fully aligned with the original content, affecting its quality.",
+  "score": 0.4444444444444444,
+  "reason": "The score is 0.44 because the summary includes a significant amount of extra information not present in the original text, such as details about printing pages, creating child pages, and managing access rights. Additionally, the summary fails to address a question that the original text can answer, indicating a lack of coverage and accuracy.",
   "score_breakdown": {
-    "Alignment": 0.75,
-    "Coverage": 0.6
+    "Alignment": 0.4444444444444444,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

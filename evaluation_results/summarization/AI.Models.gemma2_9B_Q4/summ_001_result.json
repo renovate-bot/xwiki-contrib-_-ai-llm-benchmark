@@ -1,8 +1,8 @@
 {
-  "score": 0.5,
-  "reason": "The score is 0.50 because the summary contains contradictions regarding the features of pages and editing options, includes extra information not present in the original text, and fails to answer questions about subwikis and exporting pages in PDF format that the original text can address.",
+  "score": 0.375,
+  "reason": "The score is 0.38 because the summary contains significant contradictions regarding the content of the tabbed area and panel customization, includes extra information not present in the original text such as details about XWiki as a platform and features like creating child pages, and fails to answer questions about editing and exporting capabilities that the original text covers.",
   "score_breakdown": {
-    "Alignment": 0.5,
+    "Alignment": 0.375,
     "Coverage": 0.6
   },
   "input_language": "en",

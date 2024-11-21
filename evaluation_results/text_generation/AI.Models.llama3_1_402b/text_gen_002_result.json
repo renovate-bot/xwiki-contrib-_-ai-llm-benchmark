@@ -1,6 +1,6 @@
 {
-  "score": 0.9,
-  "reason": "The Actual Output is relevant to the Input, addressing all keywords. It is coherent with a logical flow, though slightly more detailed than the Expected Output. The fluency is high, matching the linguistic quality of the Expected Output.",
+  "score": 0.8,
+  "reason": "The Actual Output is relevant and coherent, addressing the main topic with logical flow. It is grammatically correct and natural. However, it introduces 'chased after butterflies' instead of 'enjoyed exploring,' which slightly deviates from the Expected Output.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.45595238095238094,
+  "overall_score": 0.44601139601139606,
   "individual_scores": {
-    "AnswerRelevancy": 0.5714285714285714,
+    "AnswerRelevancy": 0.6538461538461539,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.3333333333333333,
-    "ContextualRecall": 0.375,
-    "CustomContextualRelevancy": 0.0
+    "ContextualPrecision": 0,
+    "ContextualRecall": 0.2222222222222222,
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.8
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.57 because the output contains several irrelevant links that do not directly address configuring access rights in XWiki, which is the main focus of the input. However, the score is not lower because there is some relevant information related to access rights configuration.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment with the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.33 because the relevant nodes in the retrieval context, like the third node which 'mentions administrating wiki features like users, groups, and rights, which is directly relevant to configuring access controls for teams,' and the sixth node which 'provides a link to managing users and groups, which is relevant for setting up team-specific access controls in XWiki,' are ranked lower than irrelevant nodes. For example, the first node 'discusses XWiki's database support and efficiency, which is not relevant to configuring access controls for teams,' and the second node 'is about displaying notifications and does not relate to access control configurations in XWiki,' both of which are ranked higher than the relevant nodes.",
-    "ContextualRecall": "The score is 0.38 because only some aspects of the expected output are supported by the nodes in the retrieval context. Specifically, sentence 1 is supported by node 5 regarding managing groups, sentence 2 is supported by node 3 about administrating rights, and sentence 4 is supported by node 5 regarding nested pages. However, sentences 3, 5, 6, 7, and the introductory and reminder sentences do not have direct matches in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context lacks information on creating groups, setting wiki-wide and area-specific rights, and inheriting rights for subpages, which are key elements in the expected answer."
+    "AnswerRelevancy": "The score is 0.65 because the response partially addresses the question about configuring user permissions in XWiki, but it is lowered due to multiple irrelevant source links that do not directly relate to the task at hand.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'XWiki's database support and efficiency', which is unrelated to configuring access controls for teams. The second node is about notifications, which does not relate to access control or team permissions in XWiki. The third node covers administrating wiki features but lacks specific steps for configuring team access as required by the input. Subsequent nodes similarly fail to address the specific access control configuration needed for teams in XWiki.",
+    "ContextualRecall": "The score is 0.22 because only a few sentences in the expected output, such as sentence 1 and 2, are supported by nodes in the retrieval context, specifically nodes 6 and 3. However, many other sentences, including sentence 3, 4, and the concluding statements, lack direct support from any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context lacks any information about creating groups, setting rights, or managing access control in XWiki, which are all key components of the expected answer.",
+    "Correctness": "The actual output aligns well with the expected output by covering global permissions, area-specific permissions, and group management. However, it lacks specific instructions for setting 'View' rights for 'XWikiAllGroup' and does not mention inheriting rights for child pages."
   },
   "question_language": "de",
   "expected_answer_language": "de",

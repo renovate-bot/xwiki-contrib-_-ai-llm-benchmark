@@ -2,7 +2,7 @@
   "id": "qa_014",
   "prompt": "Ich erhalte viele Benachrichtigungen \u00fcber alle m\u00f6glichen Seiten, an denen ich nicht interessiert bin. Diese scheinen automatisch aktiviert worden zu sein. Wie kann ich diese Benachrichtigungen deaktivieren?",
   "expected_answer": "Standardm\u00e4\u00dfig wird eine Seite, an der Sie eine wesentliche \u00c4nderung vorgenommen haben, automatisch zu der Liste der Seiten hinzugef\u00fcgt, denen Sie folgen. Das bedeutet, dass Sie \u00fcber \u00c4nderungen an Ihrer Arbeit benachrichtigt werden. Sie k\u00f6nnen die Einstellung f\u00fcr \"Automatisches Verfolgen von Seiten\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil \u00e4ndern. Sie k\u00f6nnen vorhandene Benachrichtigungsfilter, die auf diese Weise erstellt wurden, in der Liste \"Benutzerdefinierte Filter\" in den Benachrichtigungseinstellungen in Ihrem Benutzerprofil l\u00f6schen.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Attachments \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \n\n\nEs gibt mehrere M\u00f6glichkeiten, um die Benachrichtigungen zu deaktivieren:\n\n1. \u00dcberpr\u00fcfen Sie Ihre Einstellungen f\u00fcr Benachrichtigungen: Gehen Sie in Ihrem Browser oder auf Ihrem Ger\u00e4t zu den Einstellungen und suchen Sie nach der Option \"Benachrichtigungen\". Hier k\u00f6nnen Sie die Einstellungen \u00e4ndern, um weniger oder keine Benachrichtigungen mehr zu erhalten.\n2. Deaktivieren Sie Benachrichtigungen f\u00fcr bestimmte Websites: Wenn Sie nur Benachrichtigungen von bestimmten Websites erhalten m\u00f6chten, k\u00f6nnen Sie diese in den Browsereinstellungen deaktivieren. Gehen Sie dazu zu den Einstellungen und suchen Sie nach der Option \"Website-Einstellungen\". Hier k\u00f6nnen Sie die Einstellungen f\u00fcr jede Website \u00e4ndern.\n3. Verwenden Sie eine Browser-Erweiterung oder ein Add-on: Es gibt verschiedene Erweiterungen und Add-ons, die helfen k\u00f6nnen, Benachrichtigungen zu blockieren. Einige Beispiele sind \"Ghostery\" und \"Adblock Plus\".\n4. Verwenden Sie den \"Do Not Track\"-Header: Einige Websites respektieren den \"Do Not Track\"-Header, der von Ihrem Browser gesendet wird. Aktivieren Sie diese Option in den Browsereinstellungen, um weniger oder keine Benachrichtigungen mehr zu erhalten.\n\nEs ist wichtig zu beachten, dass die Schritte zur Deaktivierung von Benachrichtigungen je nach Browser und Ger\u00e4t unterschiedlich sein k\u00f6nnen. Suchen Sie im Hilfe-Bereich Ihres Browsers oder Ger\u00e4ts nach detaillierten Anweisungen.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Attachments \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \n\n\nEs tut mir leid, aber die Informationen in den bereitgestellten Dokumenten beziehen sich haupts\u00e4chlich auf das Hochladen und Verwalten von Anh\u00e4ngen in XWiki, einschlie\u00dflich des Bewegens, L\u00f6schens und Verlinkens von Anh\u00e4ngen. Sie enthalten keine spezifischen Informationen dar\u00fcber, wie Benachrichtigungen f\u00fcr Seiten deaktiviert werden k\u00f6nnen.\n\nAllerdings kann ich Ihnen allgemeine Schritte geben, die Sie ausprobieren k\u00f6nnen, um diese Benachrichtigungen in XWiki zu deaktivieren:\n\n1. Melden Sie sich mit Ihrem Konto an.\n2. Klicken Sie auf das Symbol \"Einstellungen\" oder das Zahnradsymbol in der oberen rechten Ecke des Bildschirms.\n3. Suchen Sie nach einer Option namens \"Benachrichtigungen\" oder \"E-Mail-Einstellungen\".\n4. Scrollen Sie durch die Liste der Benachrichtigungen und deaktivieren Sie diejenigen, die Sie nicht mehr erhalten m\u00f6chten.\n\nWenn diese Schritte nicht funktionieren oder wenn Sie Schwierigkeiten haben, die Benachrichtigungseinstellungen zu finden, empfehle ich Ihnen, sich an den XWiki-Support oder die Community zu wenden, um weitere Hilfe zu erhalten.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -54,13 +54,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 46,
-    "completion_tokens": 320,
-    "total_tokens": 366
+    "prompt_tokens": 3197,
+    "completion_tokens": 250,
+    "total_tokens": 3447
   },
-  "average_power_draw": 216.01038888888883,
-  "energy_consumption": 845.7336586756571,
-  "energy_per_input_token": 0.9996851757395475,
-  "energy_per_output_token": 2.4992129393488685,
-  "energy_per_total_token": 2.3107477012996096
+  "average_power_draw": 186.78880341880335,
+  "energy_consumption": 1078.0206930541174,
+  "energy_per_input_token": 0.28205669624649854,
+  "energy_per_output_token": 0.7051417406162463,
+  "energy_per_total_token": 0.3127417154203996
 }

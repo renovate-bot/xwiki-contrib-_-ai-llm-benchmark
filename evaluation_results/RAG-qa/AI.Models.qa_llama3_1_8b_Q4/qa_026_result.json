@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.475,
+  "overall_score": 0.6025079299332448,
   "individual_scores": {
-    "AnswerRelevancy": 0.875,
+    "AnswerRelevancy": 0.8888888888888888,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0,
-    "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.0
+    "ContextualPrecision": 1.0,
+    "ContextualRecall": 0.4,
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.32615869071057957
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.88 because the answer is mostly relevant and addresses the question about customizing user profile fields in XWiki using OpenID Connect. However, it includes source links that are not directly relevant to the customization process, which slightly detracts from the overall relevance.",
+    "AnswerRelevancy": "The score is 0.89 because the response is mostly relevant and provides useful information, but it includes sources and a documentation link that do not directly address the specific question about customizing user profile fields in XWiki using OpenID Connect.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses the authentication management class and OpenID Connect endpoints, but not user profile field mapping or customization. The second node is about container authentication and other methods like LDAP and Active Directory, not OpenID Connect user profile field mapping. The third node provides general information about the OpenID Connect Authenticator extension without addressing user profile field mapping or customization. The fourth node lists dependencies for the OpenID Connect Authenticator extension, which is unrelated to user profile field mapping. The fifth node provides links to configuration guides and examples for different systems, but does not discuss how to customize user profile fields in XWiki using OpenID Connect.",
-    "ContextualRecall": "The score is 0.50 because while the retrieval context supports the customization of user profile fields and mapping in 'xwiki.properties' (as seen in the 1st node), it lacks specific details about replacing 'myxproperty1' and 'myxproperty2', and the need to save 'xwiki.properties' and restart XWiki, which are mentioned in the expected output.",
-    "CustomContextualRelevancy": "The retrieval context lacks any mention of customizing user profile fields or mapping them in xwiki.properties, which is central to the expected output."
+    "ContextualPrecision": "The score is 1.00 because the relevant node in the retrieval context, which mentions the 'xwiki.properties' file and its relevance for mapping user profile fields, is ranked first. Irrelevant nodes, such as those discussing container authentication and LDAP (second node), general information about the OpenID Connect Authenticator extension (third node), dependencies for the OpenID Connect extension (fourth node), and configuration guides and limitations without discussing 'xwiki.properties' (fifth node), are correctly ranked lower. Great job on getting it spot on!",
+    "ContextualRecall": "The score is 0.40 because while nodes in the retrieval context mention customizing user profile fields and using 'oidc.user.mapping', they lack specific examples and details about replacing property names, using variables, and the process of saving and restarting XWiki.",
+    "CustomContextualRelevancy": "The retrieval context does not mention customizing user profile fields or using `oidc.user.mapping` in `xwiki.properties` as described in the expected output.",
+    "Correctness": "Actual output uses `xwiki.cfg` instead of `xwiki.properties` for mapping. It introduces extraneous information like default fields filled by OpenID Connect and specific examples not present in expected output. Core concept of mapping is maintained, but discrepancies in file and property names reduce alignment."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

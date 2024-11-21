@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.7547619047619047,
+  "overall_score": 0.7342815424108319,
   "individual_scores": {
-    "AnswerRelevancy": 0.8571428571428571,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.7647058823529411,
+    "Faithfulness": 0.7142857142857143,
     "ContextualPrecision": 0.6666666666666666,
-    "ContextualRecall": 0.75,
-    "CustomContextualRelevancy": 0.5
+    "ContextualRecall": 0.875,
+    "CustomContextualRelevancy": 0.6,
+    "Correctness": 0.785030991159669
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.86 because the answer mostly addresses the configuration question in XWiki, but it includes multiple irrelevant source links that do not contribute to solving the problem, preventing a higher score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.67 because the first node in the retrieval context is relevant, discussing 'rights inheritance and administration features' in XWiki, which aligns with setting view and edit permissions. However, the second and third nodes are irrelevant, focusing on 'parent/child relationship and Nested Pages' and 'string formatting and user identification in OpenID Connect', respectively, which do not address the configuration of permissions. These irrelevant nodes are ranked higher than the fourth and sixth nodes, which are relevant as they provide information on 'XWiki's permission system' and 'rules for setting rights in XWiki'.",
-    "ContextualRecall": "The score is 0.75 because most of the expected output sentences are supported by nodes in the retrieval context, such as node 4 aligning with sentences 1, 2, and 3, and node 1 aligning with sentence 4. However, the summary sentences are not directly covered by any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context mentions setting rights at different levels and the concept of rights inheritance, which aligns partially with the expected answer's steps on setting wiki-wide and space-level rights. However, it lacks specific details about creating groups for each team and setting rights specifically for team spaces as outlined in the expected answer."
+    "AnswerRelevancy": "The score is 0.76 because the output partially addresses the configuration question by providing relevant information, but it includes multiple irrelevant source links that do not directly contribute to solving the problem.",
+    "Faithfulness": "The score is 0.71 because the actual output incorrectly claims that 'View' rights can be added at the wiki level for all teams, while the retrieval context clarifies that such permissions at the wiki-wide level are overridden by those set at a page level.",
+    "ContextualPrecision": "The score is 0.67 because relevant nodes in the retrieval context are ranked higher than some irrelevant nodes, but not all. The first node discusses 'rights inheritance and administration features', which is relevant and ranked appropriately. However, the second node, which discusses 'parent/child relationship and nested spaces', is not directly related to configuring view and edit rights and should be ranked lower. Similarly, the third node about 'string formatting and user identification in OpenID Connect' is unrelated and should also be ranked lower. The fourth node correctly addresses the 'permission system in XWiki', making it relevant and well-placed. The fifth node, discussing 'creation of spaces and pages', is not directly related to the input and should be ranked lower. The sixth node provides information on 'setting wiki-wide and page-level rights', which is relevant and appropriately ranked.",
+    "ContextualRecall": "The score is 0.88 because most of the expected output sentences are well-supported by the nodes in the retrieval context, such as the creation of groups and setting of rights at various levels. However, the lack of specific mention regarding the adjustment of rights for additional teams or spaces slightly reduces the score.",
+    "CustomContextualRelevancy": "The retrieval context mentions setting rights at different levels and inheritance, aligning with the expected answer's steps on setting wiki-wide and space-level rights and inheriting rights for child pages. However, it lacks specific details on creating groups for each team and setting 'Edit' rights specifically for team groups, which are crucial steps in the expected answer.",
+    "Correctness": "The actual output aligns with the expected output in setting view and edit rights, but lacks mention of 'Rights: Page & Children' for inheritance and refers to external links not present in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output directly addresses the Input by generating a news article about a recent scientific discovery, aligning well with the Expected Output's requirement for an informative summary. It maintains coherence and fluency throughout, with logical flow and readability. The only deviation is the fictional nature of the discovery, which slightly affects relevance.",
+  "reason": "The Actual Output directly addresses the Input by presenting a news article about a scientific discovery, aligning with the Expected Output of summarizing a groundbreaking finding. It is coherent, logically structured, and fluent, with clear sentence structure and grammar. The fictional note slightly detracts from full realism but does not significantly impact the article's quality.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

@@ -1,7 +1,7 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output provides a comprehensive travel guide for Paris, aligning perfectly with the Input prompt and Expected Output by detailing top attractions, accommodations, and activities. It is coherent, logically structured, and maintains a consistent flow throughout. The language is fluent, grammatically correct, and matches the natural language use expected.",
-  "prompt_language": "en",
+  "reason": "The Actual Output is a comprehensive travel guide for Bali, directly addressing the Input prompt and aligning with the Expected Output by highlighting top attractions, accommodations, and activities. It is coherent, fluent, and exceeds the quality criteria by providing detailed and relevant information.",
+  "prompt_language": "ro",
   "expected_answer_language": "en",
   "generated_text_language": "en"
 }

@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.35454545454545455,
+  "overall_score": 0.3289091503485941,
   "individual_scores": {
     "AnswerRelevancy": 0.7727272727272727,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.2007276293642918
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.77 because the response mostly addresses how to disable notifications, but it includes multiple irrelevant URLs that do not directly help with the issue, preventing a higher score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Keep up the great work!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'attaching files and managing attachments in XWiki', which is unrelated to managing notifications. The second node is about 'moving attachments', not about notification settings. The third node lists 'various macros and their functions in XWiki', none of which pertain to notification settings. The fourth node covers 'administrating wiki features' without mentioning notification settings. The fifth node discusses 'permissions and security modules', which are not relevant to managing notifications. Finally, the sixth node lists 'various XWiki extensions', none of which relate to notification settings or management.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about following pages, notification settings, or custom filters as mentioned in the expected output."
+    "AnswerRelevancy": "The score is 0.77 because the response partially addresses the question about disabling notifications, but it includes several irrelevant links to XWiki pages that do not pertain to the query, thus preventing a higher score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'attaching files', which does not relate to notification settings or disabling notifications. The second node talks about 'moving attachments', which also does not address notification settings. Similarly, the third node is about 'displaying various elements in XWiki', and the fourth node covers 'administrating wiki features', neither of which mention notification settings. The fifth node focuses on 'controlling permissions in the wiki', and the sixth node lists 'various applications and extensions for XWiki', none of which are relevant to the input query about disabling notifications.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information related to automatic page following or notification settings as mentioned in the expected output.",
+    "Correctness": "The actual output does not mention 'Automatisches Verfolgen von Seiten' or 'Benutzerdefinierte Filter'. It inaccurately focuses on deactivating notifications and sources not related to the expected content."
   },
   "question_language": "de",
   "expected_answer_language": "de",

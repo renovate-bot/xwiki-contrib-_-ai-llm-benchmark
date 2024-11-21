@@ -1,8 +1,8 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary includes a contradiction about user capabilities in creating RSS pages and adds extra information about XWiki being open-source, which is not in the original text. Despite these issues, the summary is mostly accurate and informative.",
+  "score": 0.7,
+  "reason": "The score is 0.70 because the summary includes extra information not found in the original text, such as the Notifications Application, Atom, RDF, and customizing RSS content. However, there are no contradictions, which indicates a generally accurate summarization with some additional details.",
   "score_breakdown": {
-    "Alignment": 0.8,
+    "Alignment": 0.7,
     "Coverage": 1.0
   },
   "input_language": "en",

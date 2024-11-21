@@ -2,16 +2,16 @@
   "id": "text_gen_010",
   "prompt": "Adapt the following text to a more technical audience:\n\nThe human brain is a complex organ that controls all functions of the body, interprets information from the outside world, and embodies the essence of the mind and soul.",
   "expected_answer": "The human brain is a highly intricate and sophisticated organ responsible for regulating and coordinating various physiological processes, processing and interpreting sensory information from the external environment, and serving as the biological substrate for cognitive functions, consciousness, and subjective experiences.",
-  "ai_answer": "The cerebral cortex, comprising approximately two percent of the body's total mass, plays an integral role in governing numerous physiological processes, processing external sensory stimuli, and is considered the quintessential locus for cognitive functioning and consciousness.",
+  "ai_answer": "In terms addressing a technical audience, it can be elucidated as follows: The cerebrum, which comprises approximately two-thirds of an average human brain mass, is an intricate neural structure that orchestrates numerous physiological processes, deciphers environmental stimuli via sensory integration mechanisms, and encapsulates the core attributes associated with consciousness and psychological traits. This cerebral organ utilizes a network of neurons to relay signals throughout its highly specialized regions\u2014such as the frontal lobe for executive functions, parietal lobe for spatial awareness, temporal lobe for auditory processing, and occipital lobe for visual perceptions. The brain's complex interconnections facilitate a range of sophisticated cognitive abilities while also underpinning the subjective phenomena commonly referred to as mental or emotional states. This intricate computational system is regulated by neurotransmitters and electrical impulses that traverse through densely packed neural networks, thereby enabling an individual's overall functionality\u2014both physical and psychological\u2014in a dynamically adaptive manner.",
   "sources": null,
   "usage": {
     "prompt_tokens": 59,
-    "completion_tokens": 61,
-    "total_tokens": 120
+    "completion_tokens": 247,
+    "total_tokens": 306
   },
-  "average_power_draw": 255.79368253968255,
-  "energy_consumption": 178.21709392384122,
-  "energy_per_input_token": 0.8426340138243084,
-  "energy_per_output_token": 2.106585034560771,
-  "energy_per_total_token": 1.4851424493653436
+  "average_power_draw": 265.3009777777778,
+  "energy_consumption": 731.0137145318773,
+  "energy_per_input_token": 1.0805819874824498,
+  "energy_per_output_token": 2.701454968706125,
+  "energy_per_total_token": 2.388933707620514
 }

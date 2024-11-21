@@ -1,6 +1,6 @@
 {
   "score": 0.8,
-  "reason": "The Actual Output accurately captures the event name, dates, venue, and address, aligning well with the Expected Output. However, it lacks the 'target_audience' key and separates dates into a single entry instead of 'start_date' and 'end_date'. The coherence and fluency are strong, with logical structure and correct grammar.",
+  "reason": "The Actual Output accurately captures the event name, date, venue, and address from the Input, maintaining relevance and coherence. However, it omits the 'target_audience' detail present in the Expected Output, slightly affecting completeness.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

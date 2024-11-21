@@ -2,7 +2,7 @@
   "id": "qa_023",
   "prompt": "Je ne re\u00e7ois pas de notifications concernant ma propre activit\u00e9. Comment puis-je activer les notifications pour mes propres actions?",
   "expected_answer": "Par d\u00e9faut, vous ne recevez pas de notifications concernant votre propre activit\u00e9 (sauf si l'\u00e9v\u00e9nement qui a d\u00e9clench\u00e9 la notification cible explicitement cet utilisateur). Vous avez la possibilit\u00e9 de d\u00e9sactiver ce filtre dans la section \"Options de filtrage avanc\u00e9es\" des param\u00e8tres de notification de votre profil utilisateur.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nPour activer les notifications sur votre propre activit\u00e9, vous devez vous assurer que les param\u00e8tres de notification sont correctement configur\u00e9s. Voici comment faire :\n\n1. Acc\u00e9dez aux param\u00e8tres de votre compte : Cliquez sur votre photo de profil en haut \u00e0 droite et s\u00e9lectionnez \"Param\u00e8tres\".\n\n2. Recherchez la section \"Notifications\" : Dans le menu lat\u00e9ral gauche, recherchez l'onglet \"Notifications\" et cliquez dessus.\n\n3. Activez les notifications pour votre propre activit\u00e9 : Vous verrez diff\u00e9rentes options de notification. Recherchez l'option \"Votre activit\u00e9\" ou quelque chose de similaire, et assurez-vous qu'elle soit activ\u00e9e. Vous pouvez \u00e9galement personnaliser les types de notifications que vous souhaitez recevoir pour votre propre activit\u00e9, telles que les likes, les commentaires, etc.\n\n4. V\u00e9rifiez vos m\u00e9thodes de notification : V\u00e9rifiez que votre adresse email et votre num\u00e9ro de t\u00e9l\u00e9phone sont correctement renseign\u00e9s, et s\u00e9lectionnez les m\u00e9thodes par lesquelles vous souhaitez recevoir les notifications (email, SMS, notifications push sur l'application, etc.).\n\n5. Enregistrez les modifications : Cliquez sur le bouton \"Enregistrer\" pour appliquer les changements.\n\nApr\u00e8s avoir effectu\u00e9 ces \u00e9tapes, vous devriez commencer \u00e0 recevoir des notifications lorsque vous effectuez des actions sur le r\u00e9seau social, telles que des likes ou des commentaires sur vos publications. Si vous ne recevez toujours pas de notifications, v\u00e9rifiez que votre application est mise \u00e0 jour et consultez la section d'aide ou contactez le support technique du r\u00e9seau social pour obtenir un soutien suppl\u00e9mentaire.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nVous pouvez activer les notifications pour vos propres actions en d\u00e9sactivant le filtre \"Own event\". Acc\u00e9dez au menu des param\u00e8tres des notifications et d\u00e9cochez l'option \"Filter your own events\". \n\nVoici les \u00e9tapes \u00e0 suivre\u00a0:\n\n1. Cliquez sur l'ic\u00f4ne de notification dans la barre d'outils pour acc\u00e9der au menu des notifications.\n2. S\u00e9lectionnez \"Settings\" dans le menu.\n3. D\u00e9cochez l'option \"Filter your own events\".\n\nUne fois cette \u00e9tape effectu\u00e9e, vous devriez recevoir des notifications pour vos propres actions sur le site.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 31,
-    "completion_tokens": 345,
-    "total_tokens": 376
+    "prompt_tokens": 2809,
+    "completion_tokens": 133,
+    "total_tokens": 2942
   },
-  "average_power_draw": 76.72390204310103,
-  "energy_consumption": 3537.3853400710136,
-  "energy_per_input_token": 3.9590210856978323,
-  "energy_per_output_token": 9.897552714244583,
-  "energy_per_total_token": 9.40793973423142
+  "average_power_draw": 61.11988116458704,
+  "energy_consumption": 3981.463252567811,
+  "energy_per_input_token": 1.267376492938982,
+  "energy_per_output_token": 3.1684412323474542,
+  "energy_per_total_token": 1.3533185766715878
 }

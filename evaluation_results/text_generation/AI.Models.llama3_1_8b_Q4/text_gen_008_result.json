@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output is a comprehensive travel guide for Tokyo, Japan, aligning perfectly with the Input prompt. It covers attractions, accommodations, and activities, matching the Expected Output's criteria. The content is relevant, coherent, and fluent, providing detailed and logically structured information about Tokyo as a tourist destination.",
+  "reason": "The Actual Output is a comprehensive travel guide for Paris, aligning perfectly with the Input prompt. It covers top attractions, accommodations, activities, and practical tips, matching the Expected Output's requirement for an informative guide on a popular tourist destination. The content is coherent, fluent, and relevant, addressing all evaluation steps effectively.",
   "prompt_language": "ro",
   "expected_answer_language": "en",
   "generated_text_language": "en"

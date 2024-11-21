@@ -2,16 +2,16 @@
   "id": "summ_009",
   "prompt": "Please summarize the following text:\n\n\n[A wiki is a website that you can edit online easily](https://en.wikipedia.org/wiki/Wiki).\u00a0\n\nWhenever you want to modify a page, click on the \"edit\" button, make your changes and save the page. The modified page now replaces the previous version. This makes it easy to update the website and have people contribute content. Each version of the page is stored in the page history and can be reverted to if needed.\n\nOn top of this basic feature set, most wikis include additional features such as access rights management and notifications.\n\nThe core advantages of a wiki compared with traditional Content Management Systems and ECM lie in its flexibility and the ease with which new pages can be added and linked to.\n\nThanks to their flexibility and ease of use, wikis can be used to address a wide range of situations:\n\n* Share information about a given topic (knowledge base, product catalog, documentation)\n* Manage a project (organize an event, create a product, setup a new tool)\n* Communicate with other people (as a website, an intranet or an extranet)\n* And much more!\n\nBasically, a wiki can be used whenever you want to use a flexible platform to centralize information and share it with other people. It comes as a handy replacement to email when many-to-many communication takes place and information needs to be made available to every participant in one place. Find out more about different XWiki usages by visiting the [references pages](https://www.xwiki.org/xwiki/bin/view/References/).\n\n**Next: [What's special about XWiki?](https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/GettingStarted/WhatsSpecialAboutXWikiEnterprise)**\n\n\n",
   "expected_answer": null,
-  "ai_answer": "A wiki is a website that allows for easy online editing by multiple users. When changes are made, they replace the previous version of the page, and each version is stored in history for reverting if needed. Most wikis offer additional features like access rights management and notifications. The main advantages of using a wiki over traditional Content Management Systems or ECMs are its flexibility and ease of adding new pages with links. Wikis can be used to share information on various topics, manage projects, communicate among people, and more. They serve as a centralized platform for information sharing in situations where many-to-many communication is involved. XWiki is one such wiki software that offers specific features suitable for enterprise use.",
+  "ai_answer": "A wiki is a website that allows users to easily edit and modify content online. When changes are made, the new version replaces the previous one, with each iteration stored in history for potential reverting if needed. Wikis offer additional features like access management and notifications beyond basic editing capabilities.\n\nThe main advantages of wikis over traditional Content Management Systems (CMS) or Enterprise Content Management (ECM) systems lie in their flexibility and ease of use when adding new pages and linking them together. This makes them suitable for various applications, including sharing information about a specific topic, managing projects, communicating with others, and more.\n\nWikis are particularly useful for situations requiring flexible platforms to centralize information and facilitate communication among multiple participants. They can serve as an alternative to email in scenarios involving many-to-many communication where centralized access to information is necessary. For more details on XWiki usage cases, you can visit the references pages provided by XWiki.\n\nThe next section likely explores what makes XWiki special compared to other wiki platforms or alternatives.",
   "sources": null,
   "usage": {
     "prompt_tokens": 373,
-    "completion_tokens": 140,
-    "total_tokens": 513
+    "completion_tokens": 206,
+    "total_tokens": 579
   },
-  "average_power_draw": 169.8811111111111,
-  "energy_consumption": 268.1731354943911,
-  "energy_per_input_token": 0.3709171998539296,
-  "energy_per_output_token": 0.9272929996348239,
-  "energy_per_total_token": 0.5227546500865323
+  "average_power_draw": 166.0456565656566,
+  "energy_consumption": 393.9127088911847,
+  "energy_per_input_token": 0.4435953928954783,
+  "energy_per_output_token": 1.1089884822386957,
+  "energy_per_total_token": 0.6803328305547232
 }

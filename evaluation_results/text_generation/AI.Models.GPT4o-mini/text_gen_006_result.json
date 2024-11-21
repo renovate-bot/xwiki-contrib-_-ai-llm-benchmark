@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output is a coherent and fluent poem that directly addresses the Input prompt by vividly describing the beauty of nature, aligning well with the Expected Output of a poem about the wonders of the natural world.",
+  "reason": "The Actual Output is a coherent and fluent poem that directly addresses the Input prompt by vividly describing the beauty of nature, aligning perfectly with the Expected Output's requirement of depicting the wonders of the natural world.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

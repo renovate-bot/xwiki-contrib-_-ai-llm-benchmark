@@ -1,6 +1,6 @@
 {
   "score": 1.0,
-  "reason": "The Actual Output is a comprehensive travel guide for Amsterdam, directly addressing the Input prompt. It includes detailed sections on attractions, accommodations, and activities, aligning perfectly with the Expected Output. The language is fluent and grammatically correct, maintaining a logical flow throughout.",
+  "reason": "The Actual Output is a comprehensive travel guide for Florence, directly addressing the Input prompt. It includes detailed sections on attractions, accommodations, and activities, aligning with the Expected Output. The content is coherent, logically structured, and fluent, matching the quality expected.",
   "prompt_language": "ro",
   "expected_answer_language": "en",
   "generated_text_language": "en"

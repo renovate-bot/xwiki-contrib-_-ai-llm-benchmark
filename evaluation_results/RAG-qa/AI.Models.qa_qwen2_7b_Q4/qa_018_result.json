@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.6814285714285714,
+  "overall_score": 0.6062713876700743,
   "individual_scores": {
-    "AnswerRelevancy": 0.85,
-    "Faithfulness": 0.8571428571428571,
+    "AnswerRelevancy": 0.8333333333333334,
+    "Faithfulness": 1.0,
     "ContextualPrecision": 0.325,
-    "ContextualRecall": 0.875,
-    "CustomContextualRelevancy": 0.5
+    "ContextualRecall": 0.36363636363636365,
+    "CustomContextualRelevancy": 0.5,
+    "Correctness": 0.6156586290507481
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.85 because the output mostly addresses the question about configuring attachment settings, but includes irrelevant links to pages about exports, XWiki syntax, and document lifecycle, which do not directly relate to the query.",
-    "Faithfulness": "The score is 0.86 because the actual output incorrectly states that the maximum upload size is 10 MB, while the retrieval context specifies a default maximum size of 100GB.",
-    "ContextualPrecision": "The score is 0.33 because the first three nodes in the retrieval context are irrelevant, discussing topics like 'trusted domains and PDF export customization', 'ODT and PDF export features', and 'various macros and features', none of which relate to configuring attachment upload restrictions in a wiki. The relevant nodes, which discuss 'Size Limit' and 'Mimetype Restriction', and provide 'detailed steps on setting the maximum size of an attachment', are ranked fourth and fifth. This lowers the precision score as the relevant information is not prioritized higher than the irrelevant nodes.",
-    "ContextualRecall": "The score is 0.88 because while the 5th node in the retrieval context provides detailed steps for changing the maximum size of an attachment, similar to sentences in the expected output, it does not mention configuring MIME types, which is a key part of the expected output.",
-    "CustomContextualRelevancy": "The retrieval context mentions configuring maximum attachment size and MIME type restrictions, but lacks specific details on setting MIME types and exact steps for setting size to 10 MB."
+    "AnswerRelevancy": "The score is 0.83 because the response mostly addresses the question about setting upload restrictions for images or PDFs, but includes irrelevant links about exports, XWiki syntax, and document lifecycle, which are not directly related to the query.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.33 because the first three nodes in the retrieval context are unrelated to configuring attachment restrictions, discussing topics like 'trusted domains and PDF export look & feel', 'ODT export and PDF export applications', and 'various features and macros'. These irrelevant nodes are ranked higher than the relevant nodes, which mention 'Size Limit' and 'Mimetype Restriction' and provide detailed steps on setting the maximum size of an attachment. This misordering affects the score, as relevant information is not prioritized.",
+    "ContextualRecall": "The score is 0.36 because while some detailed steps about configuring maximum upload size are supported by the 5th node in the retrieval context, key instructions about MIME type configuration and the overall purpose of limiting uploads to images or PDFs up to 10 MB are not supported by any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions setting maximum attachment size and MIME type restrictions but lacks specific details on configuring xwiki.properties and setting size to 10 MB.",
+    "Correctness": "The actual output correctly addresses setting the upload size to 10 MB and mentions editing XWikiPreferences, but lacks specific instructions on configuring MIME types in xwiki.properties and suggests using 'Attachment Validation Application' without details."
   },
   "question_language": "de",
   "expected_answer_language": "de",

@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.49000000000000005,
+  "overall_score": 0.46789112412820605,
   "individual_scores": {
-    "AnswerRelevancy": 0.95,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.9444444444444444,
+    "Faithfulness": 0.8571428571428571,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.2,
+    "Correctness": 0.3057594431819349
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.95 because the response is highly relevant and addresses the main question about configuring OpenID Connect for automatic user activation. However, it includes a mention of LDAP Authenticator, which is not directly related to the query, slightly affecting the score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input query. The first node discusses 'domain-based authentication and session cookie configuration', which does not address enabling user accounts automatically on first login. The second node provides information about 'OpenID Connect endpoints and headers', but lacks details on user account activation settings. Subsequent nodes continue to focus on unrelated topics such as 'configuration guides', 'dependencies for the OpenID Connect extension', and 'LDAP and Active Directory integration', none of which pertain to the specific issue of user account activation during first login.",
-    "ContextualRecall": "The score is 0.50 because while the nodes in retrieval context support the mention of 'xwiki.properties' and 'oidc.enableUser' (sentence 1 and 2), they do not directly support the specific instructions for adding or updating properties (sentence 3) or ensuring new user accounts are activated (sentence 5).",
-    "CustomContextualRelevancy": "The retrieval context lacks any mention of adjusting the xwiki.properties file or the specific property oidc.enableUser, which is crucial for the expected answer."
+    "AnswerRelevancy": "The score is 0.94 because the response is highly relevant to configuring OpenID Connect in XWiki, but it includes an irrelevant mention of LDAP authentication, which slightly detracts from the focus on the main topic.",
+    "Faithfulness": "The score is 0.86 because the actual output suggests configuring `xwiki.authentication.authclass=org.xwiki.contrib.oidc.auth.OIDCAuthServiceImpl` in `xwiki.cfg`, but this configuration is not mentioned in the retrieval context.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'domain-based instance authentication and session cookie configuration,' which is unrelated to enabling user accounts upon first login using OpenID Connect. The second node mentions 'authentication management class and various OpenID Connect endpoints,' but does not provide information about enabling user accounts automatically. Similarly, the third node provides a description of the OpenID Connect authenticator and links to configuration guides, but it does not address the specific configuration needed to enable user accounts automatically.",
+    "ContextualRecall": "The score is 0.50 because while there is some alignment with the retrieval context regarding the xwiki.properties file and properties like oidc.enableUser, specific instructions and effects of the modifications are not directly supported by the nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context mentions the xwiki.properties file but lacks specific details about enabling user accounts with oidc.enableUser=true.",
+    "Correctness": "The actual output mentions adjusting `xwiki.properties` but omits the specific property `oidc.enableUser=true`, which is crucial for activating accounts. It also includes unrelated configuration steps, which are not present in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

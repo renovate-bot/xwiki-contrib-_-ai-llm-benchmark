@@ -1,8 +1,8 @@
 {
-  "score": 0.4,
-  "reason": "The score is 0.40 because the summary contains contradictions, such as incorrectly stating that the Extensions wiki is a resource for developers, and includes extra information not mentioned in the original text, like specific actions requiring login and a 'Creating a page' guide. Additionally, the summary fails to answer questions that the original text can, such as whether developers can build complex web applications using XWiki.",
+  "score": 0.3333333333333333,
+  "reason": "The score is 0.33 because the summary contains multiple contradictions and extra information not present in the original text, such as the scope of the Getting Started guide and details about user actions. Additionally, the summary fails to address certain questions that the original text can answer, indicating a lack of coverage and accuracy.",
   "score_breakdown": {
-    "Alignment": 0.4,
+    "Alignment": 0.3333333333333333,
     "Coverage": 0.8
   },
   "input_language": "en",

@@ -2,7 +2,7 @@
   "id": "qa_025",
   "prompt": "Comment puis-je configurer XWiki pour activer automatiquement les comptes d'utilisateurs lors de leur premi\u00e8re connexion \u00e0 l'aide de OpenID Connect?\nJ'ai configur\u00e9 l'authentification OpenID Connect dans mon instance XWiki, mais les utilisateurs ne sont pas automatiquement activ\u00e9s apr\u00e8s leur premi\u00e8re connexion. Quelle configuration dois-je ajuster?",
   "expected_answer": "Pour activer automatiquement les comptes d'utilisateurs lors de leur premi\u00e8re connexion \u00e0 l'aide de OpenID Connect dans XWiki, vous devez ajuster le fichier `xwiki.properties`.\n\nAjoutez ou mettez \u00e0 jour la propri\u00e9t\u00e9 suivante:\n\n```\n#-# D\u00e9finir si les comptes utilisateurs doivent \u00eatre activ\u00e9s (marqu\u00e9s comme actifs) lors de la premi\u00e8re connexion\n# oidc.enableUser=true\n```\n\nAssurez-vous de d\u00e9commenter et de d\u00e9finir la propri\u00e9t\u00e9 `oidc.enableUser` sur `true`. Apr\u00e8s cette modification, enregistrez le fichier et red\u00e9marrez votre instance XWiki pour que les modifications prennent effet.\n\nCela garantira que les nouveaux comptes d'utilisateurs seront automatiquement activ\u00e9s lorsqu'ils se connecteront pour la premi\u00e8re fois via OpenID Connect.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \n\n\nPour activer automatiquement les comptes d'utilisateurs lors de leur premi\u00e8re connexion avec OpenID Connect dans XWiki, vous devez vous assurer que l'option \"Auto-create accounts\" (Cr\u00e9ation automatique de comptes) est activ\u00e9e dans la configuration d'OpenID Connect.\n\nVoici comment proc\u00e9der\u00a0:\n\n1. Acc\u00e9dez aux param\u00e8tres d'administration de votre instance XWiki et s\u00e9lectionnez la section \"OIDC Settings\" (Param\u00e8tres OIDC).\n\n2. Dans la partie \"Account Management\" (Gestion des comptes), assurez-vous que l'option \"Auto-create accounts\" est coch\u00e9e.\n\n3. Enregistrez les modifications.\n\nAvec cette configuration, XWiki cr\u00e9era automatiquement un compte pour les utilisateurs lors de leur premi\u00e8re connexion avec OpenID Connect, et leurs comptes seront activ\u00e9s imm\u00e9diatement.\n\nV\u00e9rifiez \u00e9galement que vous avez configur\u00e9 correctement le fournisseur d'identit\u00e9 OpenID Connect et que la connexion fonctionne correctement. Si vous rencontrez toujours des difficult\u00e9s apr\u00e8s avoir v\u00e9rifi\u00e9 votre configuration, je vous recommande de consulter le journal d'activit\u00e9 de XWiki pour d\u00e9tecter d'\u00e9ventuels probl\u00e8mes ou erreurs.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/LDAP/Authenticator/ \n\n\nJe n'ai pas trouv\u00e9 de m\u00e9thode int\u00e9gr\u00e9e pour activer automatiquement les comptes d'utilisateurs lors de leur premi\u00e8re connexion avec OpenID Connect dans XWiki. La documentation indique qu'une propri\u00e9t\u00e9 appel\u00e9e `xwiki.authentication.createuser=empty` doit \u00eatre d\u00e9finie pour s'assurer que les utilisateurs sont r\u00e9ellement cr\u00e9\u00e9s et non simplement d\u00e9finis comme contexte d'utilisateur, mais cela semble ne pas fonctionner automatiquement lors de la premi\u00e8re connexion.\n\nIl semble que vous ayez besoin d'une extension ou d'un script personnalis\u00e9 pour atteindre votre objectif. Vous pouvez envisager de contacter le d\u00e9veloppeur XWiki ou la communaut\u00e9 pour obtenir de l'aide sur une solution personnalis\u00e9e. \n\nVous trouverez peut-\u00eatre des informations suppl\u00e9mentaires sur les forums de la communaut\u00e9 XWiki ou sur les pages GitHub du projet, car certaines configurations avanc\u00e9es peuvent n\u00e9cessiter un script personnalis\u00e9.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 80,
-    "completion_tokens": 249,
-    "total_tokens": 329
+    "prompt_tokens": 2464,
+    "completion_tokens": 185,
+    "total_tokens": 2649
   },
-  "average_power_draw": 77.90539083139086,
-  "energy_consumption": 2591.3785506276067,
-  "energy_per_input_token": 3.6887950898613617,
-  "energy_per_output_token": 9.221987724653404,
-  "energy_per_total_token": 7.876530549020082
+  "average_power_draw": 59.18969682539691,
+  "energy_consumption": 4826.235994151604,
+  "energy_per_input_token": 1.6491494939865383,
+  "energy_per_output_token": 4.122873734966346,
+  "energy_per_total_token": 1.821908642563837
 }

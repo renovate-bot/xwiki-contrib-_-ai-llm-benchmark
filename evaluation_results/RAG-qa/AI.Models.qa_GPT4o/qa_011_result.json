@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.37,
+  "overall_score": 0.4265580881444,
   "individual_scores": {
-    "AnswerRelevancy": 0.85,
+    "AnswerRelevancy": 0.8421052631578947,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.2172432657085051
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.85 because the response mostly addresses the issue of the notification bell not being available, but includes repeated irrelevant statements about providing a source link instead of directly resolving the problem.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating a perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'custom notification filters and their behavior' but does not address enabling notifications in the wiki settings. The second node lists 'various ways to receive notifications in XWiki' but does not mention enabling notifications through `xwiki.properties`. The third node provides 'links to notification preferences' but does not address enabling notifications in the wiki settings. The fourth node provides a 'description of the Notifications Application' but does not discuss enabling notifications in the wiki settings. The fifth node outlines 'various notification settings and options' but does not mention enabling notifications in the wiki settings. The sixth node discusses 'administrator settings for notifications' but does not specifically mention enabling notifications through `xwiki.properties`. The seventh node focuses on 'email notification settings' and does not address enabling notifications in the wiki settings.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any node(s) in the retrieval context, as there is no mention of enabling notifications or setting `notifications.enabled` in `xwiki.properties`.",
-    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications through the 'xwiki.properties' file or setting 'notifications.enabled' to 'true'."
+    "AnswerRelevancy": "The score is 0.84 because the main issue about the notification bell not being available is addressed well, but the inclusion of source links that do not directly address the issue slightly lowers the score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'custom notification filters and their behavior', which is not related to enabling notifications in the wiki settings. The second node lists 'various ways to receive notifications in XWiki', but again, does not mention enabling notifications in the wiki settings. Similarly, the third node describes 'various notification preferences macros', which does not provide information on enabling notifications in the wiki settings. All nodes fail to address the specific issue of enabling notifications in the wiki settings, leading to a score of 0.00.",
+    "ContextualRecall": "The score is 0.50 because while the 7th node in the retrieval context mentions configuring notifications and editing the xwiki.properties file, it does not specifically mention setting 'notifications.enabled' to 'true', which is a key part of the expected output.",
+    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications via the 'xwiki.properties' file or setting 'notifications.enabled' to 'true'.",
+    "Correctness": "The actual output provides troubleshooting steps but does not mention setting `notifications.enabled` to `true` in `xwiki.properties`, which is a key fact in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

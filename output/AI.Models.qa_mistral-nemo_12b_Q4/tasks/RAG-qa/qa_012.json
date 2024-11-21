@@ -2,7 +2,7 @@
   "id": "qa_012",
   "prompt": "Ich erhalte keine Benachrichtigungen.",
   "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen. Stellen Sie au\u00dferdem sicher, dass Sie den Seiten oder Benutzern, f\u00fcr die Sie Benachrichtigungen erhalten m\u00f6chten, folgen. Sie k\u00f6nnen einer Seite, einer Seite und ihren Unterseiten oder einem gesamten Wiki folgen. Um einem Ort zu folgen, m\u00fcssen Sie nur dorthin gehen und dann auf das Men\u00fc \"Benachrichtigung\" (dargestellt durch eine Glocke) klicken und die gew\u00fcnschten Benachrichtigungen aktivieren. Um einem Benutzer zu folgen, k\u00f6nnen Sie, wenn Sie auf das Profil eines Benutzers gehen, beispielsweise \u00fcber das Benutzerindex, entscheiden, dem Benutzer zu folgen. Das bedeutet, dass Sie alle Benachrichtigungen \u00fcber Ereignisse erhalten, die von diesem Benutzer ausgel\u00f6st wurden. In Ihrem Benutzerprofil k\u00f6nnen Sie in der Registerkarte \"Netzwerk\" die Liste der Benutzer anzeigen, denen Sie folgen, und die von ihnen durchgef\u00fchrten Ereignisse.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \n\n\nEs tut mir leid zu h\u00f6ren, dass Sie keine Benachrichtigungen erhalten haben. Es gibt mehrere m\u00f6gliche Gr\u00fcnde daf\u00fcr und einige Schritte, die Sie unternehmen k\u00f6nnen, um das Problem zu beheben.\n\n1. \u00dcberpr\u00fcfen Sie Ihre Ger\u00e4teeinstellungen: Stellen Sie sicher, dass die Benachrichtigungen f\u00fcr die betreffende App oder den Dienst aktiviert sind. Gehen Sie dazu auf \"Einstellungen\" > \"Benachrichtigungen\" und \u00fcberpr\u00fcfen Sie die Einstellungen f\u00fcr die betreffende App.\n2. \u00dcberpr\u00fcfen Sie Ihre Sound- und Vibrationseinstellungen: Stellen Sie sicher, dass Ihr Ger\u00e4t nicht auf stumm geschaltet ist und dass die Vibrationsfunktion aktiviert ist, falls Sie Benachrichtigungen als Vibration empfangen m\u00f6chten.\n3. \u00dcberpr\u00fcfen Sie Ihre Internetverbindung: Einige Apps und Dienste ben\u00f6tigen eine aktive Internetverbindung, um Benachrichtigungen zu senden. Stellen Sie sicher, dass Ihr Ger\u00e4t mit dem Internet verbunden ist und dass es keine Probleme mit der Verbindung gibt.\n4. \u00dcberpr\u00fcfen Sie die App oder den Dienst selbst: Es kann sein, dass das Problem auf der Seite der App oder des Dienstes liegt, anstatt auf Ihrem Ger\u00e4t. \u00dcberpr\u00fcfen Sie, ob es bekannte technische Probleme oder Wartungsarbeiten gibt, die Benachrichtigungen beeintr\u00e4chtigen k\u00f6nnten.\n5. Setzen Sie Ihr Ger\u00e4t zur\u00fcck: Wenn alle anderen Schritte fehlgeschlagen sind, k\u00f6nnen Sie versuchen, Ihr Ger\u00e4t auf die Werkseinstellungen zur\u00fcckzusetzen. Dies kann helfen, eventuelle Softwareprobleme oder -fehler zu beheben, die Benachrichtigungen beeintr\u00e4chtigen k\u00f6nnten.\n\nIch hoffe, einer dieser Schritte hilft Ihnen dabei, das Problem mit den fehlenden Benachrichtigungen zu l\u00f6sen. Wenn nicht, k\u00f6nnen Sie sich gerne an einen technischen Support wenden, um weitere Hilfe zu erhalten.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \n\n\nEs tut mir leid zu h\u00f6ren, dass Sie keine Benachrichtigungen erhalten. Es gibt mehrere m\u00f6gliche Gr\u00fcnde daf\u00fcr. Hier sind einige Schritte, die Sie ausprobieren k\u00f6nnen:\n\n1. Stellen Sie sicher, dass Sie Ihre E-Mail-Adresse in Ihrem Profil korrekt eingegeben haben.\n2. \u00dcberpr\u00fcfen Sie Ihren Spam-Ordner, da Benachrichtigungen m\u00f6glicherweise irrt\u00fcmlich als Spam eingestuft werden.\n3. Stellen Sie sicher, dass Sie die Option \"Benachrichtigungen per E-Mail erhalten\" aktiviert haben. Sie k\u00f6nnen dies in Ihrem Profil oder in den Einstellungen \u00fcberpr\u00fcfen.\n4. Wenn Sie immer noch keine Benachrichtigungen erhalten, kann es ein Problem mit dem Server geben. In diesem Fall sollten Sie sich an einen Administrator oder den Support wenden.\n\nWenn Sie weitere Fragen haben oder Hilfe ben\u00f6tigen, z\u00f6gern Sie nicht, mich zu kontaktieren. Ich werde mein Bestes tun, um Ihnen zu helfen!",
   "sources": [
     {
       "collection_id": "Eval",
@@ -30,13 +30,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 12,
-    "completion_tokens": 398,
-    "total_tokens": 410
+    "prompt_tokens": 2152,
+    "completion_tokens": 204,
+    "total_tokens": 2356
   },
-  "average_power_draw": 190.13607264957267,
-  "energy_consumption": 1100.7921575944333,
-  "energy_per_input_token": 1.093140176359914,
-  "energy_per_output_token": 2.7328504408997847,
-  "energy_per_total_token": 2.6848589209620326
+  "average_power_draw": 187.708216374269,
+  "energy_consumption": 794.5717516308848,
+  "energy_per_input_token": 0.2984867586892881,
+  "energy_per_output_token": 0.7462168967232202,
+  "energy_per_total_token": 0.3372545635105623
 }

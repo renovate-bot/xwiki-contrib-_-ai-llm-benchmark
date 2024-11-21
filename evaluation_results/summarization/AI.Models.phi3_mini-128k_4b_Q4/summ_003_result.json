@@ -1,9 +1,9 @@
 {
-  "score": 0.0,
-  "reason": "The score is 0.00 because the summary includes a significant amount of extra information not present in the original text, indicating a poor alignment between the summary and the original content.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary contains significant contradictions and includes extra information not present in the original text. It inaccurately describes the hierarchy of permissions and introduces several elements not mentioned in the original text, such as guest user permissions and sub-wiki access rights. Additionally, it fails to answer questions that the original text can address, such as the precedence of page-level permissions over wiki-wide permissions.",
   "score_breakdown": {
-    "Alignment": 0.0,
-    "Coverage": 0.2
+    "Alignment": 0.4,
+    "Coverage": 0.8
   },
   "input_language": "en",
   "summary_language": "en"

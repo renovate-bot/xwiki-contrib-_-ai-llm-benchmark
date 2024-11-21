@@ -2,7 +2,7 @@
   "id": "qa_009",
   "prompt": "How can I deny script right to a space administrator?",
   "expected_answer": "This is unfortunately not supported in XWiki, rights that are implied by admin right cannot be denied.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ContentOrganization/NestedPagesMigration/ \n\n\nTo deny script rights to a space administrator in Slack, you would need to adjust the permissions settings. Here's how you can do it:\n\n1. Go to the Slack workspace where you want to revoke script rights.\n\n2. As an owner or admin, access the Settings & Administration section by clicking on the corresponding option in the left sidebar.\n\n3. Navigate to the Permissions tab and select \"Scripting\" from the options available.\n\n4. Find the space administrator whose rights you wish to modify. You might need to adjust the role assigned to them if they have a different designation.\n\n5. Toggle off the \"Run scripts\" permission for that specific administrator. This will revoke their ability to run scripts.\n\n6. Finally, click the \"Save Changes\" button to confirm the changes.\n\nRemember that revoking script rights might impact certain functionalities or custom integrations the space administrator was maintaining. Ensure you carefully consider the implications and communicate the changes with the relevant team members.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ContentOrganization/NestedPagesMigration/ \n\n\nI found some information that may be relevant to your request. \n\nIn XWiki, the \"Script\" right determines who has the ability to write and execute scripts. While anyone with edit rights can write a script in a wiki page, the script will only run if the last author of the page has the \"Script\" right. \n\nThe standard XWiki distribution comes with the \"Script\" right allowed for all users at the main wiki level, meaning that unless an administrator revokes this right explicitly, all users will be able to execute the scripts they wrote. \n\nTo deny the script right to a space administrator, you'd have to revoke it at the wiki level. Since this right gives a lot of power to users, it's recommended to manually allow it for specific users or groups instead of allowing it by default.\n\nI hope this helps, though I'm not certain what further details you may require as the source material is somewhat sparse. Let me know if you have any further questions.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 17,
-    "completion_tokens": 200,
-    "total_tokens": 217
+    "prompt_tokens": 2744,
+    "completion_tokens": 204,
+    "total_tokens": 2948
   },
-  "average_power_draw": 76.76149877630935,
-  "energy_consumption": 2030.3823851376396,
-  "energy_per_input_token": 3.9272386559722237,
-  "energy_per_output_token": 9.81809663993056,
-  "energy_per_total_token": 9.356600853168846
+  "average_power_draw": 58.784644194756495,
+  "energy_consumption": 5480.137566763805,
+  "energy_per_input_token": 1.6841234071185633,
+  "energy_per_output_token": 4.210308517796408,
+  "energy_per_total_token": 1.858934045713638
 }

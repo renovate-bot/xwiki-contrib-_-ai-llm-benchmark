@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.3684210526315789,
+  "overall_score": 0.3561232274243851,
   "individual_scores": {
     "AnswerRelevancy": 0.8421052631578947,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.2946341013884163
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.84 because the response mostly addresses the question about enabling notifications for one's own actions, but it includes irrelevant source links that do not directly contribute to answering the query.",
+    "AnswerRelevancy": "The score is 0.84 because the main content effectively addresses the question about enabling notifications for one's own actions, but the inclusion of multiple source links that do not directly contribute to the solution slightly detracts from the overall relevance.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input query about enabling notifications for user activity. The first node discusses 'customization of page templates, menus, and CSS files', which is unrelated. The second node provides information on 'administrating wiki features', not pertaining to notifications. The third node describes 'features like Office Importer and Font Awesome Icon Theme', which are not relevant. The fourth node discusses 'themes, panels, and presentation settings', unrelated to the query. Lastly, the fifth node is about 'color themes and access rights', which does not relate to notifications or user activity settings.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by any nodes in the retrieval context, as there is no mention of notifications, user activity, or disabling filters in the user's notification settings.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to notification settings or user activity filters mentioned in the expected output."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are unrelated to the input about enabling notifications for user actions. The first node discusses 'customization of page templates, internationalization, accessibility, and performance', the second node is about 'administrating wiki features like users, groups, and rights', and subsequent nodes cover topics such as 'importing office documents, icon themes, sharing pages, and syntax highlighting', 'themes, panels, and presentation customization', and 'color themes, access rights, and permissions'. None of these are relevant to notification settings, leading to a low score.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about notification settings or user activity filters, which are mentioned in the expected output.",
+    "Correctness": "The actual output provides steps to enable notifications, while the expected output states they are off by default and can be disabled via 'Erweiterte Filteroptionen'. There's limited alignment on the core fact about default notification settings and the user profile setting."
   },
   "question_language": "de",
   "expected_answer_language": "de",

@@ -2,7 +2,7 @@
   "id": "qa_028",
   "prompt": "Comment puis-je m'assurer que seuls les fichiers image ou PDF d'une taille maximale de 10 Mo peuvent \u00eatre t\u00e9l\u00e9charg\u00e9s en tant que pi\u00e8ces jointes sur l'ensemble du wiki?",
   "expected_answer": "Pour vous assurer que seuls les fichiers image ou PDF d'une taille maximale de 10 Mo peuvent \u00eatre t\u00e9l\u00e9charg\u00e9s en tant que pi\u00e8ces jointes sur l'ensemble du wiki, suivez ces \u00e9tapes:\n\n**\u00c9tape 1: Configurer les types MIME autoris\u00e9s**\n\nModifiez le fichier de configuration `xwiki.properties` dans votre installation et ajoutez ou mettez \u00e0 jour la ligne suivante pour configurer les restrictions de type MIME par d\u00e9faut au niveau de la ferme:\n```\nattachment.upload.allowList=image/*,application/pdf\n```\nCela permettra uniquement les fichiers image (avec n'importe quel sous-type, par exemple `image/jpeg`, `image/png`, etc.) et les fichiers PDF \u00e0 t\u00e9l\u00e9charger, et bloquera tous les autres types MIME.\n\n**\u00c9tape 2: Configurer la taille maximale de la pi\u00e8ce jointe**\n\nPour d\u00e9finir la taille maximale de la pi\u00e8ce jointe sur 10 Mo, suivez ces \u00e9tapes:\n\n1. Allez sur `http://<votrewiki>/xwiki/bin/edit/XWiki/XWikiPreferences?editor=object`\n2. Cliquez sur la ligne qui dit XWikiPreferences 0 (juste en dessous de la ligne qui dit Objects of type XWiki.XWikiPreferences (1))\n3. Faites d\u00e9filer jusqu'au champ qui dit Maximum Upload Size et changez le nombre en `10485760` (10 Mo en octets)\n4. Faites d\u00e9filer jusqu'en bas et cliquez sur \"Enregistrer\"\n5. R\u00e9p\u00e9tez pour chaque (sous-)wiki pour lequel vous devez d\u00e9finir cette configuration!",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Configuration/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \n\n\nIl n'existe pas de solution native pour limiter la taille des fichiers joints et les types de fichiers autoris\u00e9s sur MediaWiki sans l'aide d'extensions. \n\nVoici les options que vous pouvez envisager :\n\n**1. Utiliser une extension MediaWiki:**\n\n* **File Upload Size:** Cette extension permet de d\u00e9finir la taille maximale des fichiers t\u00e9l\u00e9chargeables. Vous pouvez la configurer pour limiter la taille \u00e0 10 Mo.\n* **FileType Restrictions:** Cette extension vous permet de restreindre les types de fichiers autoris\u00e9s. Vous pouvez l'utiliser pour autoriser uniquement les fichiers image et PDF.\n* **Autres extensions:** Il existe d'autres extensions qui peuvent vous aider \u00e0 g\u00e9rer les t\u00e9l\u00e9chargements de fichiers, comme UploadWizard ou FileRename.\n\n**2. Modifier les fichiers de configuration de MediaWiki:**\n\n* Vous pouvez modifier le fichier `LocalSettings.php` pour d\u00e9finir la taille maximale des fichiers t\u00e9l\u00e9chargeables. Cependant, cette m\u00e9thode est moins flexible que l'utilisation d'une extension.\n\n**3. Utiliser un serveur web avec des restrictions de taille de fichier:**\n\n* Vous pouvez configurer votre serveur web pour limiter la taille des fichiers t\u00e9l\u00e9chargeables. Cette m\u00e9thode est plus complexe et n\u00e9cessite des connaissances en administration de serveur.\n\n**Conseils:**\n\n* Avant d'apporter des modifications \u00e0 votre wiki, assurez-vous de cr\u00e9er une sauvegarde.\n* Consultez la documentation des extensions et des fichiers de configuration pour plus d'informations.\n* Testez les modifications sur un environnement de test avant de les d\u00e9ployer sur votre wiki en production.\n\n**Ressources:**\n\n* [Extensions MediaWiki](https://www.mediawiki.org/wiki/Extensions)\n* [Documentation MediaWiki](https://www.mediawiki.org/wiki/Manual:Main_page)\n\n\nEn utilisant l'une de ces m\u00e9thodes, vous pourrez limiter la taille des fichiers joints et les types de fichiers autoris\u00e9s sur votre wiki.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Configuration/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \n\n\nJe ne peux pas acc\u00e9der aux informations sp\u00e9cifiques \u00e0 votre wiki, comme les param\u00e8tres de t\u00e9l\u00e9chargement de fichiers. \n\nPour restreindre la taille des fichiers t\u00e9l\u00e9charg\u00e9s \u00e0 10 Mo pour les images et les PDF, vous devrez probablement modifier les param\u00e8tres de votre wiki. \n\nJe vous recommande de consulter la documentation de XWiki ou de contacter l'administrateur de votre wiki pour obtenir des instructions sp\u00e9cifiques sur la modification des param\u00e8tres de t\u00e9l\u00e9chargement de fichiers. \n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -54,13 +54,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 52,
-    "completion_tokens": 404,
-    "total_tokens": 456
+    "prompt_tokens": 4525,
+    "completion_tokens": 94,
+    "total_tokens": 4619
   },
-  "average_power_draw": 163.48072514619886,
-  "energy_consumption": 1035.6300931026785,
-  "energy_per_input_token": 0.9751695791927293,
-  "energy_per_output_token": 2.4379239479818233,
-  "energy_per_total_token": 2.271118625225172
+  "average_power_draw": 183.06787581699342,
+  "energy_consumption": 688.364978431915,
+  "energy_per_input_token": 0.14461449126720902,
+  "energy_per_output_token": 0.3615362281680226,
+  "energy_per_total_token": 0.14902900593892943
 }

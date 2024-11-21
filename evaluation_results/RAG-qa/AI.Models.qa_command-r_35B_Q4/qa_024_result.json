@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.8766666666666667,
+  "overall_score": 0.7748094256850534,
   "individual_scores": {
-    "AnswerRelevancy": 0.8333333333333334,
+    "AnswerRelevancy": 0.8571428571428571,
     "Faithfulness": 1.0,
     "ContextualPrecision": 1.0,
     "ContextualRecall": 0.75,
-    "CustomContextualRelevancy": 0.8
+    "CustomContextualRelevancy": 0.8,
+    "Correctness": 0.24171369696746323
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.83 because the main response addresses the question about disabling notifications effectively, but it includes irrelevant source links that do not directly relate to the query, preventing a higher score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than the irrelevant node. The first three nodes are relevant as they discuss 'Choosing the default auto-watched mode', 'Notifications Auto Watch Preferences', and 'Auto Watch', which directly relate to modifying notification settings. The irrelevant node, ranked fourth, discusses 'RSS feeds and general notification settings', which is not directly related to disabling notifications for auto-watched pages. Great job on getting everything in the right order!",
-    "ContextualRecall": "The score is 0.75 because most sentences in the expected output are supported by nodes in the retrieval context, such as the 1st node relating to auto-watched mode and the 2nd node relating to notification preferences. However, the sentence about being notified of changes lacks direct support from the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context includes information about auto-watched pages and notification filters, aligning with the expected answer's mention of automatic page tracking and custom filters. However, it lacks explicit details about modifying the 'Suivi automatique des pages' setting and removing filters from 'Filtres personnalis\u00e9s'."
+    "AnswerRelevancy": "The score is 0.86 because the response mostly addresses the question about disabling notifications, but includes irrelevant links that do not pertain to the query, slightly lowering the score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because all nodes in the retrieval context are relevant and appropriately ranked, addressing the input query about disabling automatic notifications with precise information on notification settings and preferences.",
+    "ContextualRecall": "The score is 0.75 because nodes in the retrieval context support the expected output's details about automatic page tracking and modifying notification settings (sentences 1, 3, and 4). However, there is no mention in the retrieval context about being notified of changes to your work (sentence 2).",
+    "CustomContextualRelevancy": "The retrieval context includes information about auto-watched pages and custom notification filters, which aligns with the expected answer. However, it lacks explicit details about modifying notification settings in the user profile.",
+    "Correctness": "Actual output lacks emphasis on automatic tracking of pages after significant edits and does not mention altering 'Suivi automatique des pages' specifically. It introduces unrelated information about notification types and global filters instead."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

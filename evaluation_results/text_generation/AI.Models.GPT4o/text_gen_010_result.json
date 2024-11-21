@@ -1,6 +1,6 @@
 {
-  "score": 0.8,
-  "reason": "The Actual Output is relevant to the Input, addressing the complexity of the brain. It is coherent and aligns well with the Expected Output, though it is slightly less detailed, missing 'coordinating' and 'subjective experiences.' The fluency is consistent with the Expected Output.",
+  "score": 0.9,
+  "reason": "The Actual Output effectively adapts the Input for a technical audience by using precise terminology such as 'physiological processes' and 'cognitive functions.' It maintains coherence and fluency similar to the Expected Output, though it slightly lacks the depth of detail found in the Expected Output's mention of 'subjective experiences.'",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

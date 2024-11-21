@@ -2,7 +2,7 @@
   "id": "qa_033",
   "prompt": "Puis-je authentifier les utilisateurs avec des jetons d'acc\u00e8s ?",
   "expected_answer": "Oui, vous pouvez authentifier les utilisateurs avec des jetons d'acc\u00e8s en utilisant l'extension d'authentification bas\u00e9e sur les jetons pour l'application LLM.\n\nCette extension permet aux applications externes d'authentifier les utilisateurs avec des jetons Web JSON sign\u00e9s (JWT). Le jeton doit contenir des revendications sp\u00e9cifiques, telles que la date d'expiration, l'\u00e9metteur, le sujet et la audience, et doit \u00eatre sign\u00e9 avec une cl\u00e9 Ed25519.\n\nPour utiliser cet authentificateur, vous devez :\n\n1. Activer l'authentificateur de jeton en d\u00e9finissant la propri\u00e9t\u00e9 `xwiki.authentication.authclass` dans le fichier `xwiki.properties` sur `org.xwiki.contrib.llm.authentication.JWTTokenAuth`.\n2. Configurer les applications autoris\u00e9es en ajoutant une nouvelle entr\u00e9e \u00e0 la liste des \u00ab Applications autoris\u00e9es \u00bb, en sp\u00e9cifiant le titre, l'URL, la cl\u00e9 publique et le format de groupe de l'application.\n3. G\u00e9n\u00e9rer un jeton JWT qui r\u00e9pond aux exigences de revendications et de cl\u00e9s de signature.\n4. Inclure le jeton dans l'en-t\u00eate \u00ab Authorization \u00bb de la requ\u00eate sous la forme \u00ab Bearer TOKEN \u00bb.\n\nNotez que cet authentificateur ne prend en charge que la cr\u00e9ation ou la mise \u00e0 jour des utilisateurs en fonction des informations fournies dans le jeton et ne prend pas en charge l'utilisation d'un jeton comme authentification pour un utilisateur existant qui n'a pas \u00e9t\u00e9 cr\u00e9\u00e9 via cet authentificateur.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Upgrade/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nOui, vous pouvez authentifier les utilisateurs avec des jetons d'acc\u00e8s dans XWiki gr\u00e2ce \u00e0 l'extension \"Administration Application\". Cette extension offre la possibilit\u00e9 de g\u00e9rer les droits des groupes et des utilisateurs : contr\u00f4le qui peut visualiser, modifier et supprimer les pages. Vous pouvez \u00e9galement configurer divers param\u00e8tres li\u00e9s \u00e0 l'authentification comme les captcha pour v\u00e9rifier que les utilisateurs sont bien humains lors de la cr\u00e9ation de nouveaux comptes.\n\nPour utiliser cette fonctionnalit\u00e9, vous devez d'abord installer l'extension \"Administration Application\" dans votre instance XWiki. Une fois install\u00e9e et activ\u00e9e, vous pouvez acc\u00e9der aux param\u00e8tres d'authentification \u00e0 travers l'interface d'administration de l'application.\n\nIl est \u00e9galement recommand\u00e9 de consulter la documentation d\u00e9di\u00e9e sur l'[Authentication guide](https://xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/) et les informations sur [Access rights](https://xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/) pour obtenir une compr\u00e9hension plus approfondie de la gestion des droits d'acc\u00e8s dans XWiki.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Upgrade/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nOui, vous pouvez authentifier les utilisateurs avec des jetons d'acc\u00e8s gr\u00e2ce \u00e0 l'extension \"Administration Application\" dans XWiki. Cette extension offre la possibilit\u00e9 de g\u00e9rer les droits des groupes et des utilisateurs : contr\u00f4le qui peut visualiser, modifier et supprimer les pages.\n\nLa section \"Extension Rights\" ajout\u00e9e en XWiki 13.5+ permet de d\u00e9finir les droits sp\u00e9cifiques aux extensions. Par d\u00e9faut, l'interface utilisateur affiche le droit \"Like\", mais d'autres droits peuvent \u00eatre ajout\u00e9s selon les extensions install\u00e9es.\n\nPour g\u00e9rer la cr\u00e9ation de profils d'utilisateurs et contr\u00f4ler les informations qui y sont affich\u00e9es, vous pouvez utiliser la section \"User Profile\" de cette extension. \n\nSi vous souhaitez voir un r\u00e9pertoire des utilisateurs, vous pouvez utiliser l'application \"User Directory\".\n\nVeuillez consulter le guide d'authentification pour plus d'informations : [Authentication guide](https://xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/) et les informations sur les droits d'acc\u00e8s : [Access rights information](https://xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/).",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,12 +31,12 @@
   ],
   "usage": {
     "prompt_tokens": 1497,
-    "completion_tokens": 249,
-    "total_tokens": 1746
+    "completion_tokens": 256,
+    "total_tokens": 1753
   },
-  "average_power_draw": 178.44475396825396,
-  "energy_consumption": 558.0381156336296,
-  "energy_per_input_token": 0.26328762237963177,
-  "energy_per_output_token": 0.6582190559490795,
-  "energy_per_total_token": 0.31960945912579014
+  "average_power_draw": 172.1057777777778,
+  "energy_consumption": 576.9480528401269,
+  "energy_per_input_token": 0.2699803710061427,
+  "energy_per_output_token": 0.6749509275153568,
+  "energy_per_total_token": 0.3291203952311049
 }

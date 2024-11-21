@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.7853658536585366,
+  "overall_score": 0.5600622301987723,
   "individual_scores": {
-    "AnswerRelevancy": 0.926829268292683,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.8333333333333334,
+    "Faithfulness": 0.5,
     "ContextualPrecision": 0,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 1.0
+    "CustomContextualRelevancy": 1.0,
+    "Correctness": 0.027040047859300458
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.93 because the response is highly relevant and effectively addresses the question about denying script rights to a space administrator. However, it includes a repeated irrelevant statement about a source URL, which slightly detracts from a perfect score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses programming rights and script execution but does not address denying script rights to a space administrator. The second node lists various rights and their default states but does not mention the inability to deny script rights to a space administrator. The third node explains the script right and its default settings but does not address the specific question about denying script rights to a space administrator. The fourth node provides technical details about checking access rights but does not relate to denying script rights to a space administrator. The fifth node discusses converting rights during page migration but does not address denying script rights to a space administrator.",
+    "AnswerRelevancy": "The score is 0.83 because the response is mostly relevant to the question about denying script rights to a space administrator. However, the inclusion of a source link that does not directly address the question slightly detracts from the overall relevancy.",
+    "Faithfulness": "The score is 0.50 because the actual output incorrectly describes the conditions under which scripts can be executed in XWiki. It claims that setting the 'Script' right to 'Deny' prevents script execution unless explicitly allowed, but the retrieval context specifies a priority order for rights and conditions based on the last author's permissions. Additionally, the actual output misrepresents the default settings for script rights in the main wiki versus sub-wikis.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'programming rights and script execution' but not the specific issue of denying script rights to a space administrator. The second node lists 'various rights and their properties' but does not mention the inability to deny script rights to a space administrator. The third node talks about 'script rights' but not in the context of denying them to a space administrator. The fourth node is about 'checking access rights programmatically', which is unrelated. Finally, the fifth node discusses 'rights conversion during page migration', which is also unrelated.",
     "ContextualRecall": "The score is 1.00 because every part of the expected output is perfectly supported by the nodes in the retrieval context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context confirms that rights implied by admin cannot be denied, matching the expected output."
+    "CustomContextualRelevancy": "The expected answer states that rights implied by admin cannot be denied, which is supported by the retrieval context indicating that admin rights are not deniable and imply other rights.",
+    "Correctness": "The actual output incorrectly suggests it is possible to deny the 'Script' right to space administrators, contradicting the expected output which states that rights implied by admin rights cannot be denied in XWiki."
   },
   "question_language": "en",
   "expected_answer_language": "en",

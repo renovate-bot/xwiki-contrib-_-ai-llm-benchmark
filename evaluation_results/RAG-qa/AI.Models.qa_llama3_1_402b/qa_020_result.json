@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.35238095238095235,
+  "overall_score": 0.4458142830484104,
   "individual_scores": {
-    "AnswerRelevancy": 0.7619047619047619,
+    "AnswerRelevancy": 0.782608695652174,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
-    "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "ContextualRecall": 0.2222222222222222,
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.6700547804160664
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.76 because the output addresses the main query about configuring team permissions in XWiki, but it includes several irrelevant source links that do not directly relate to the specific task of setting permissions, which prevents the score from being higher.",
+    "AnswerRelevancy": "The score is 0.78 because the response partially addresses the configuration of access rights in XWiki, but includes multiple irrelevant source links that do not directly relate to the specific question about configuring team access and editing permissions.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses XWiki's database support and programming features, which are not relevant to configuring access controls for teams. The second node is about the Notifications Application in XWiki and does not relate to team access control configuration. The third node explains Nested Pages and subwikis in XWiki, which does not directly address the question of configuring team-specific access controls. The fourth node briefly mentions managing users and groups, but it does not provide specific information on setting access rights for teams as required by the input question. The fifth node is about group synchronization and customization in XWiki, which is not directly related to configuring team-specific access rights as asked in the input.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context, as the retrieval context lacks any mention of steps for achieving access control, creating groups, setting rights, or inheriting permissions in XWiki.",
-    "CustomContextualRelevancy": "The retrieval context lacks any information about setting access controls, creating groups, or managing rights in XWiki, which are key elements in the expected output."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses XWiki's database support and programming features, which are unrelated to configuring access control for teams. The second node is about the Notifications Application, not related to access controls. The third node explains Nested Pages and subwikis, which do not address team-specific access controls. The fourth node provides information on managing users and groups but does not specifically address configuring access controls for team areas. Finally, the fifth node discusses group synchronization and customization, which is not directly relevant to the specific access control configuration needed.",
+    "ContextualRecall": "The score is 0.22 because only sentence 1 and sentence 4 of the expected output have supportive reasons linked to nodes in the retrieval context, specifically nodes 4 and 3 respectively. The rest of the sentences lack corresponding information in the nodes, leading to a low score.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about creating groups, setting wiki-wide or area-specific rights, or inheriting rights for subpages as outlined in the expected output.",
+    "Correctness": "Actual output aligns with the expected outcome by ensuring all teams can view all areas and only edit their own. However, it lacks details on setting wiki-wide rights, inheriting rights for child pages, and emphasizes creating a separate area for each team, which is not specified in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

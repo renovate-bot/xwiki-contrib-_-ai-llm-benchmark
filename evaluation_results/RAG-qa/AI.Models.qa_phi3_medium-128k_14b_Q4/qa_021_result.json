@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.4666666666666667,
+  "overall_score": 0.43115784432895193,
   "individual_scores": {
-    "AnswerRelevancy": 0.8333333333333334,
+    "AnswerRelevancy": 0.8,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.2869470659737118
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.83 because the response mostly addresses the issue with the unavailable bell icon, but includes irrelevant links that do not directly help solve the problem.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant. The first node discusses 'custom notification filters and their behavior', the second node lists 'various notification-related options and links', the third node describes 'different notification preferences and macros', the fourth node provides a description of 'the notifications application and its features', and the fifth node discusses 'RSS feeds and notification settings'. None of these address 'enabling notifications in the wiki settings', which is relevant to the input.",
-    "ContextualRecall": "The score is 0.50 because the 1st sentence of the expected output is supported by the 1st node in the retrieval context mentioning 'notifications' and 'wiki'. However, the 2nd sentence lacks support as none of the nodes in the retrieval context mention 'defining the property `notifications.enabled` in `xwiki.properties` on `true`'.",
-    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications through the `xwiki.properties` file or setting `notifications.enabled` to `true`, which is the key information in the expected output."
+    "AnswerRelevancy": "The score is 0.80 because the response partially addresses the issue of the unavailable bell icon, but includes irrelevant information such as source links and unrelated potential causes, which detracts from its overall relevance.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating that the actual output perfectly aligns with the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'custom notification filters and their behavior', but does not address enabling notifications in the wiki settings, which is the core issue in the input. Similarly, the second node lists 'various links related to notification settings and preferences', yet fails to mention enabling notifications in the wiki settings. This pattern continues with the third node, which provides 'links to notification preferences and settings', but again does not address the enabling of notifications. The fourth node describes 'the alert menu and notification display', and the fifth node explains 'how to get an RSS feed of notifications and adjust notification settings', both of which also miss the crucial point of enabling notifications in the wiki settings. Thus, all nodes are ranked incorrectly as they do not provide relevant information to the input query.",
+    "ContextualRecall": "The score is 0.50 because while the 1st node in the retrieval context supports the mention of 'notifications' and 'wiki' in the first sentence of the expected output, none of the nodes provide information about 'xwiki.properties' or setting 'notifications.enabled' to 'true', which is necessary for the second sentence.",
+    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications through the 'xwiki.properties' file or setting 'notifications.enabled' to 'true'.",
+    "Correctness": "The actual output does not directly instruct on setting `notifications.enabled` to `true` in `xwiki.properties` as the expected output does. It instead suggests checking configuration, permissions, and technical errors without mentioning the specific property setting."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

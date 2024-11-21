@@ -1,9 +1,9 @@
 {
-  "score": 0.6,
-  "reason": "The score is 0.60 because the summary contains multiple contradictions regarding user rights and default settings compared to the original text. Additionally, the summary includes extra information about implied rights that are not mentioned in the original text. Furthermore, there are questions that the original text can answer but the summary cannot, indicating a lack of completeness and accuracy in the summary.",
+  "score": 0.4,
+  "reason": "The score is 0.40 because the summary contains multiple inaccuracies, including contradictions about editing rights, script execution, and administration rights, as well as extra information not present in the original text. Additionally, the summary fails to answer several questions that the original text can address, indicating a lack of coverage and accuracy.",
   "score_breakdown": {
-    "Alignment": 0.7894736842105263,
-    "Coverage": 0.6
+    "Alignment": 0.6,
+    "Coverage": 0.4
   },
   "input_language": "en",
   "summary_language": "en"

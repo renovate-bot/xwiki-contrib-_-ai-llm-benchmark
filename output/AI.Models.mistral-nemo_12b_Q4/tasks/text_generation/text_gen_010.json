@@ -2,16 +2,16 @@
   "id": "text_gen_010",
   "prompt": "Adapt the following text to a more technical audience:\n\nThe human brain is a complex organ that controls all functions of the body, interprets information from the outside world, and embodies the essence of the mind and soul.",
   "expected_answer": "The human brain is a highly intricate and sophisticated organ responsible for regulating and coordinating various physiological processes, processing and interpreting sensory information from the external environment, and serving as the biological substrate for cognitive functions, consciousness, and subjective experiences.",
-  "ai_answer": "**The Human Brain: A Complex Neural Network**\n\nThe human brain, an intricate organ composed of approximately 86 billion neurons and glia, serves as the central control unit for all bodily functions. It facilitates motor control, regulates homeostasis, and manages vital autonomic processes such as respiration and cardiovascular function.\n\nThe brain's primary role lies in processing and interpreting information received from external sensory inputs via neurons. It accomplishes this through complex networks of interconnected neurons that form intricate neural circuits. These circuits facilitate cognitive functions like perception, learning, memory, reasoning, and problem-solving.\n\nMoreover, the brain is widely recognized as the physical substrate of consciousness, embodying subjective experiences and mental states that define individual personality, emotions, and cognition. As such, it represents a complex system at the forefront of neuroscience research, with ongoing investigations focused on understanding its underlying mechanisms and neural correlates of mind and soul.",
+  "ai_answer": "**Neural System Overview:**\n\nThe human brain, an intricate organic structure, governs all bodily functionalities via the nervous system. It processes and interprets external stimuli, serving as the headquarters for cognitive processes that are synonymous with consciousness, intellect, and personality.",
   "sources": null,
   "usage": {
     "prompt_tokens": 47,
-    "completion_tokens": 178,
-    "total_tokens": 225
+    "completion_tokens": 52,
+    "total_tokens": 99
   },
-  "average_power_draw": 234.11399999999998,
-  "energy_consumption": 463.0652506341934,
-  "energy_per_input_token": 0.9411895338093362,
-  "energy_per_output_token": 2.35297383452334,
-  "energy_per_total_token": 2.058067780596415
+  "average_power_draw": 222.0487777777778,
+  "energy_consumption": 132.50708339211675,
+  "energy_per_input_token": 0.7486275897859704,
+  "energy_per_output_token": 1.871568974464926,
+  "energy_per_total_token": 1.3384553877991592
 }

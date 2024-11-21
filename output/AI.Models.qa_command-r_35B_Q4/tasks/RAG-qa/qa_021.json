@@ -2,7 +2,7 @@
   "id": "qa_021",
   "prompt": "La cloche en haut \u00e0 droite n'est pas disponible, m\u00eame lorsque l'extension \"Notification d'alerte\" est install\u00e9e.",
   "expected_answer": "Assurez-vous que les notifications sont activ\u00e9es dans votre wiki. Vous pouvez les activer en d\u00e9finissant la propri\u00e9t\u00e9 `notifications.enabled` dans `xwiki.properties` sur `true`.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nNous comprenons que la possibilit\u00e9 de d\u00e9sactiver ou de personnaliser le son de la notification soit une fonctionnalit\u00e9 souhaitable. Malheureusement, nous ne disposons actuellement pas d'une telle option dans l'application Google Chat. Cependant, je vous encourage \u00e0 consulter le Store Web pour trouver des extensions tierces qui peuvent offrir cette fonctionnalit\u00e9. Il existe plusieurs extensions et applications cr\u00e9\u00e9es par des d\u00e9veloppeurs tiers qui peuvent fournir des options de personnalisation du son de notification.\n\nEn outre, si vous utilisez un syst\u00e8me d'exploitation desktop, vous pouvez g\u00e9rer les notifications via les param\u00e8tres du syst\u00e8me. Par exemple, sur un Mac, vous pouvez utiliser le Centre de notifications ou les Pr\u00e9f\u00e9rences syst\u00e8me pour personnaliser les sons des notifications.\n\nSi vous souhaitez voir la possibilit\u00e9 de personnaliser les sons de notification dans Google Chat, je vous encourage \u00e0 donner votre avis et vos suggestions dans le forum d'feedback de l'application. Les retours des utilisateurs sont pr\u00e9cieux pour l'\u00e9quipe de d\u00e9veloppement et peuvent influencer les futures mises \u00e0 jour de l'application. Vous pouvez acc\u00e9der au forum en cliquant sur l'ic\u00f4ne \"Plus\" dans Google Chat, puis en s\u00e9lectionnant \"Envoyer des commentaires\".",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nJe suis d\u00e9sol\u00e9 que vous ayez des probl\u00e8mes avec les notifications. Cependant, d'apr\u00e8s les informations que j'ai trouv\u00e9es, la \"cloche\" dans le menu sup\u00e9rieur droit devrait appara\u00eetre lorsque l'**Application de notifications** est install\u00e9e. Cette application contribue au contenu du **menu Alerte**, repr\u00e9sent\u00e9 par une cloche.\n\nVoulez-vous que je vous donne des instructions sur comment installer l'Application de notifications?",
   "sources": [
     {
       "collection_id": "Eval",
@@ -54,13 +54,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 34,
-    "completion_tokens": 254,
-    "total_tokens": 288
+    "prompt_tokens": 3254,
+    "completion_tokens": 91,
+    "total_tokens": 3345
   },
-  "average_power_draw": 77.57435249042148,
-  "energy_consumption": 2621.313956178229,
-  "energy_per_input_token": 3.9182570346460825,
-  "energy_per_output_token": 9.795642586615207,
-  "energy_per_total_token": 9.101784570063295
+  "average_power_draw": 63.926543483616555,
+  "energy_consumption": 3325.601525345027,
+  "energy_per_input_token": 0.955220889083736,
+  "energy_per_output_token": 2.38805222270934,
+  "energy_per_total_token": 0.994200754961144
 }

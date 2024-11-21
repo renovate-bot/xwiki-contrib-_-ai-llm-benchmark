@@ -2,7 +2,7 @@
   "id": "qa_006",
   "prompt": "Can I customize the user profile fields that are populated from the OpenID Connect provider in XWiki?\nI want to map additional user profile fields from my OpenID Connect provider to XWiki user properties. How can I achieve this?",
   "expected_answer": "Yes, you can customize the user profile fields that are populated from the OpenID Connect provider by mapping them in the `xwiki.properties` file.\n\nTo map additional user profile fields, use the `oidc.user.mapping` property. Here's an example of how to map custom properties:\n\n```\n# oidc.user.mapping=myxproperty1=${oidc.user.subject}\n# oidc.user.mapping=myxproperty2=myprefix-${oidc.user.subject}\n```\n\nReplace `myxproperty1` and `myxproperty2` with the actual XWiki user property names, and `${oidc.user.subject}` with the appropriate variable based on the data provided by your OpenID Connect provider.\n\nAfter configuring the mappings, save the `xwiki.properties` file and restart XWiki to apply the changes.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \n\n\nYes, you can customize the user profile fields that are imported from the OpenID Connect (OIDC) provider into XWiki. To achieve this, you'll need to follow these steps:\n\n1. **Configure the OIDC Authentication Module:**\n\n   Ensure that you have set up the OIDC authentication module in XWiki correctly. This module allows XWiki to communicate with your OIDC provider and fetch user information.\n\n2. **Customize the User Profile Mapping:**\n\n   You can specify which OIDC claims should be mapped to XWiki user properties. Edit the `xwiki.auth.oidc.claimsmapping` property in the XWiki configuration file (`xwiki.cfg`) or in the XWiki Administration UI. The format of this property is a comma-separated list of `XWIKI_PROPERTY=OIDC_CLAIM` pairs.\n\n   For example, to map the OIDC claim \"email\" to the XWiki user property \"mail,\" you would add:\n   `mail=email`\n\n   You can also use special placeholders like `%username%` or `%fullname%` that will be replaced with the corresponding values from the OIDC claims.\n\n3. **Add Custom Claim Mapping:**\n\n   If you need to map additional claims that are not in the standard profile, you can add custom claim mapping. Define the `xwiki.auth.oidc.customclaimmapping` property in the XWiki configuration. This property follows the same format as `xwiki.auth.oidc.claimsmapping`.\n\n   For instance, if you have an OIDC claim called \"department\" that you want to map to a XWiki user property called \"workplace,\" you would add:\n   `workplace=department`\n\n4. **Save and Restart:**\n\n   After making the configurations, save the changes and restart the XWiki instance.\n\n5. **Test and Verify:**\n\n   Attempt a login using the OIDC authentication method, and check if the additional user profile fields are populated as expected.\n\nRemember that the exact steps and configuration may vary based on your XWiki setup and the specific OIDC provider you're using (e.g., Azure AD, Google, etc.). Make sure to consult the documentation of both XWiki and your OIDC provider for detailed instructions.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \n\n\nYes, you can customize the user profile fields that are populated from the OpenID Connect (OIDC) provider in XWiki. \n\nTo map additional user profile fields from the OIDC provider to XWiki user properties, you can use the `oidc.user.mapping` configuration property in your `xwiki.properties` file. This property allows you to define a custom mapping of OIDC claims to XWiki user properties.\n\nHere's an example:\n```\noidc.user.mapping=myxproperty1=${oidc.user.given_name}\noidc.user.mapping=myxproperty2=${oidc.user.family_name}\noidc.user.mapping=myxproperty3=${oidc.user.email}\n```\n\nYou can use this approach to map the desired OIDC claims to specific XWiki user properties. Replace the `${oidc.user.given_name}`, `${oidc.user.family_name}` and `${oidc.user.email}` placeholders with the appropriate claims from your OIDC provider.\n\nRemember to adjust the property names and values according to your specific use case and OIDC provider configuration.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 53,
-    "completion_tokens": 462,
-    "total_tokens": 515
+    "prompt_tokens": 2784,
+    "completion_tokens": 239,
+    "total_tokens": 3023
   },
-  "average_power_draw": 77.23438867765095,
-  "energy_consumption": 4732.809426252463,
-  "energy_per_input_token": 3.9178885978911118,
-  "energy_per_output_token": 9.79472149472778,
-  "energy_per_total_token": 9.1899212160242
+  "average_power_draw": 58.604129371046625,
+  "energy_consumption": 6334.683828723783,
+  "energy_per_input_token": 1.8733354513451967,
+  "energy_per_output_token": 4.683338628362993,
+  "energy_per_total_token": 2.095495808377037
 }

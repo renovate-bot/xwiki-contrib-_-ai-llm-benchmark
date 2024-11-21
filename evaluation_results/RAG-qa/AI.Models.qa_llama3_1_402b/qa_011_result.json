@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.5333333333333333,
+  "overall_score": 0.46151747957511585,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
+    "AnswerRelevancy": 0.875,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0.16666666666666666,
     "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.22743821078402865
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the input without any irrelevant statements. Great job!",
+    "AnswerRelevancy": "The score is 0.88 because the response is mostly relevant to the issue of the unavailable bell icon, but it includes source and documentation links that do not directly address the specific problem mentioned.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.17 because the relevant node in the retrieval context, which mentions 'editing the xwiki.properties file' to enable notifications, is ranked last (6th), while the irrelevant nodes, such as those discussing 'custom notification filters' (1st) and 'alert menu and notification display' (2nd), are ranked higher. This misranking of relevant information contributes to the low score.",
-    "ContextualRecall": "The score is 0.50 because while the general topic of enabling notifications is supported by the 5th node in the retrieval context, there is no specific mention of the setting `notifications.enabled` or the file `xwiki.properties`, which are key details in the expected output.",
-    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications via `xwiki.properties` or setting `notifications.enabled` to `true`."
+    "ContextualPrecision": "The score is 0.17 because the relevant node in retrieval context, ranked sixth, mentions 'editing the xwiki.properties file', which is pertinent to enabling notifications. However, the first five nodes in retrieval context are irrelevant as they discuss 'custom notification filters', 'alert menu', 'different ways to receive notifications', 'links to various notification-related topics', and 'notification email settings', none of which address enabling notifications through the xwiki.properties file.",
+    "ContextualRecall": "The score is 0.50 because while the 5th node in the retrieval context mentions editing the xwiki.properties file, there is no specific mention of setting 'notifications.enabled' to 'true', which is crucial for fully supporting the expected output's instructions.",
+    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications via `xwiki.properties` or setting `notifications.enabled` to `true`.",
+    "Correctness": "The actual output does not mention enabling notifications via `notifications.enabled` in `xwiki.properties`. It discusses unrelated factors for notification visibility, which are factually correct but irrelevant to the expected task."
   },
   "question_language": "de",
   "expected_answer_language": "de",

@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.5846991509782207,
+  "overall_score": 0.6648983710202968,
   "individual_scores": {
-    "AnswerRelevancy": 0.046511627906976744,
-    "Faithfulness": 1,
-    "ContextualPrecision": 0.8055555555555555,
-    "ContextualRecall": 0.5714285714285714,
-    "CustomContextualRelevancy": 0.5
+    "AnswerRelevancy": 1.0,
+    "Faithfulness": 0.8888888888888888,
+    "ContextualPrecision": 0.75,
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.6,
+    "Correctness": 0.25050133723289186
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.05 because the output contains numerous irrelevant and nonsensical statements that do not address the issue of not receiving notifications in XWiki. The low score reflects the lack of relevant content, but it is not zero because there might be a minimal connection or attempt to address the topic.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.81 because most relevant nodes are ranked higher, providing useful information on following users and accessing notification settings in XWiki. However, the second node, discussing 'filtering notifications and hidden pages', and the fifth node, about the 'What's New' application, are ranked higher than they should be as they do not directly address enabling notifications.",
-    "ContextualRecall": "The score is 0.57 because while there are several supported sentences, such as those related to using the 'alert' menu and following users (supported by nodes in the retrieval context), key instructions about enabling notifications in `xwiki.properties` and subscribing to pages or users are not found in the nodes.",
-    "CustomContextualRelevancy": "The retrieval context covers following users and notification settings but lacks details on enabling notifications in xwiki.properties and watching pages."
+    "AnswerRelevancy": "The score is 1.00 because the response perfectly addresses the issue of not receiving notifications in XWiki without any irrelevant information. Great job!",
+    "Faithfulness": "The score is 0.89 because the actual output incorrectly claims that user interaction is required before any activity triggers a notification in XWiki 15.5+, whereas the retrieval context does not mention this requirement.",
+    "ContextualPrecision": "The score is 0.75 because the first node in the retrieval context is relevant, explaining 'how to follow a user to receive notifications', and the fourth node also provides 'an overview of different notification methods in XWiki'. However, the second node, ranked higher than the fourth, discusses 'filters and settings for notifications' without directly addressing enabling notifications, and the third node, also ranked higher than the fourth, mentions 'RSS feeds and notification settings' but lacks crucial information on enabling notifications. Additionally, the fifth node talks about the 'What's New' application, which is not directly related to the expected output.",
+    "ContextualRecall": "The score is 0.50 because while there are references in the nodes in retrieval context to clicking on the 'alert' menu, following a user, and the 'network' tab in the user profile (supporting sentences 4, 5, and 6), there is no mention of enabling notifications in `xwiki.properties`, subscribing to pages or users, or watching a page, its children, or an entire wiki (missing support for sentences 1, 2, and 3).",
+    "CustomContextualRelevancy": "The retrieval context includes information on following users and receiving notifications, but lacks details on enabling notifications in xwiki.properties and watching pages or wikis.",
+    "Correctness": "The actual output does not mention enabling notifications in 'xwiki.properties', watching pages or users, or the 'alert' menu. It includes additional information on notification types, RSS feeds, and software updates not in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

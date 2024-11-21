@@ -2,7 +2,7 @@
   "id": "qa_013",
   "prompt": "Ich erhalte keine Benachrichtigungen \u00fcber meine eigene Aktivit\u00e4t. Wie kann ich Benachrichtigungen f\u00fcr meine eigenen Aktionen aktivieren?",
   "expected_answer": "Standardm\u00e4\u00dfig erh\u00e4lt man keine Benachrichtigungen \u00fcber die eigene Aktivit\u00e4t (es sei denn, das Ereignis, das die Benachrichtigung ausl\u00f6st, richtet sich explizit an diesen Benutzer). Sie haben die M\u00f6glichkeit, diesen Filter in den \"Erweiterten Filteroptionen\" Ihrer eigenen Benachrichtigungseinstellungen in Ihrem Benutzerprofil zu deaktivieren.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nEs tut mir leid, aber die bereitgestellten Informationen enthalten keine direkten Anweisungen zur Aktivierung von Benachrichtigungen f\u00fcr Ihre eigenen Aktivit\u00e4ten in XWiki. Allerdings gibt es eine Funktion namens \"User Mentions\" Extension, die es Ihnen erm\u00f6glicht, Benutzer in Wikinhalten zu erw\u00e4hnen. Es ist jedoch nicht klar, ob diese Erweiterung Benachrichtigungen f\u00fcr eigene Aktionen sendet.\n\nIch empfehle Ihnen, sich an die XWiki-Community oder den Support zu wenden, um weitere Hilfe zur Aktivierung von Benachrichtigungen f\u00fcr Ihre eigenen Aktivit\u00e4ten zu erhalten. Sie k\u00f6nnen auch die Dokumentation auf <https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/> \u00fcberpr\u00fcfen, um zu sehen, ob es dort Anweisungen gibt.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Administration%20Application \n\n\nEs tut mir leid, aber die bereitgestellten Informationen beziehen sich haupts\u00e4chlich auf die Funktionen und Erweiterungen von XWiki, einem Wikisystem. Es gibt jedoch keine direkten Informationen dar\u00fcber, wie man Benachrichtigungen f\u00fcr eigene Aktivit\u00e4ten in diesem System aktivieren kann.\n\nOhne spezifischere Informationen \u00fcber das System oder die Plattform, auf der Sie t\u00e4tig sind, ist es schwierig, eine genaue Anleitung zu geben. Es w\u00e4re hilfreich, wenn Sie mehr Kontext oder Details dar\u00fcber liefern k\u00f6nnten, welches System oder welche Plattform Sie verwenden und woher die Benachrichtigungen kommen sollen.\n\nAllgemein gesprochen, um Benachrichtigungen f\u00fcr eigene Aktivit\u00e4ten in einem Wikisystem wie XWiki zu aktivieren, m\u00fcssen Sie m\u00f6glicherweise folgende Schritte ausf\u00fchren:\n\n1. \u00dcberpr\u00fcfen Sie Ihre Benutzer- oder Kontoeinstellungen, um sicherzustellen, dass Benachrichtigungen f\u00fcr Ihre eigenen Aktionen aktiviert sind.\n2. Stellen Sie sicher, dass Sie bei der Durchf\u00fchrung von Aktivit\u00e4ten (z.B. Erstellen oder Bearbeiten von Seiten) die Option \"Benachrichtigungen senden\" ausw\u00e4hlen oder eine \u00e4hnliche Funktion nutzen.\n3. \u00dcberpr\u00fcfen Sie Ihre E-Mail-Einstellungen, um sicherzustellen, dass Benachrichtigungen an die richtige Adresse gesendet werden und nicht in Spam-oder Junk-Mail-Ordner landen.\n\nWenn Sie weitere Informationen oder Hilfe ben\u00f6tigen, z\u00f6gern Sie bitte nicht, mich zu kontaktieren.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,12 +31,12 @@
   ],
   "usage": {
     "prompt_tokens": 1686,
-    "completion_tokens": 163,
-    "total_tokens": 1849
+    "completion_tokens": 311,
+    "total_tokens": 1997
   },
-  "average_power_draw": 215.5607111111111,
-  "energy_consumption": 598.9820157631767,
-  "energy_per_input_token": 0.28611512575265186,
-  "energy_per_output_token": 0.7152878143816297,
-  "energy_per_total_token": 0.3239491702342762
+  "average_power_draw": 183.68833333333322,
+  "energy_consumption": 1104.6890125783277,
+  "energy_per_input_token": 0.4484225746207947,
+  "energy_per_output_token": 1.1210564365519866,
+  "energy_per_total_token": 0.5531742676906999
 }

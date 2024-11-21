@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.35,
+  "overall_score": 0.21828118736719235,
   "individual_scores": {
-    "AnswerRelevancy": 0.75,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.4444444444444444,
+    "Faithfulness": 0.6666666666666666,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.19857601309204287
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.75 because the response addresses the main question about enabling notifications for one's own actions, but the inclusion of source links and irrelevant statements about the origin of information slightly detracts from its direct relevance.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'customization of page templates and internationalization', the second node is about 'administrating wiki features', and the third node addresses 'importing documents and syntax highlighting'. None of these nodes relate to notification settings for user activity, which is the focus of the input.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be linked to any nodes in the retrieval context, leading to a complete lack of supportive evidence.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about notification settings or user profile options, which are the main points in the expected output."
+    "AnswerRelevancy": "The score is 0.44 because the response contains multiple irrelevant statements, such as unrelated source links and suggestions, which do not directly address the question about enabling notifications for one's own actions. However, there might be some partial relevance or attempts to address the question, which prevents the score from being lower.",
+    "Faithfulness": "The score is 0.67 because the actual output incorrectly refers to 'What's New' as an extension, while the retrieval context specifies it as a UI feature called 'What's New UI'.",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'customization of page templates, internationalization, and other features unrelated to notification settings.' The second node is about 'administrating wiki features and does not mention notification settings or user activity.' The third node covers 'various XWiki extensions like Office Importer, Font Awesome, and others, none of which relate to user notification settings.' These irrelevant nodes should be ranked lower than any relevant nodes.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context lacks any information about notification settings or user activity filters mentioned in the expected output.",
+    "Correctness": "The actual output lacks key facts from the expected output, such as not mentioning the lack of default notifications for one's own activity and how to disable this filter in notification settings. It introduces irrelevant information about features and extensions not present in the expected output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

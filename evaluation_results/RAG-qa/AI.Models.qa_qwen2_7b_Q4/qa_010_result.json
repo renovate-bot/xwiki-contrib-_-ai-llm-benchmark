@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.6725641025641025,
+  "overall_score": 0.7347222222222222,
   "individual_scores": {
     "AnswerRelevancy": 0.8,
-    "Faithfulness": 0.8461538461538461,
+    "Faithfulness": 0.6666666666666666,
     "ContextualPrecision": 0.6666666666666666,
-    "ContextualRecall": 0.75,
-    "CustomContextualRelevancy": 0.3
+    "ContextualRecall": 0.875,
+    "CustomContextualRelevancy": 0.5,
+    "Correctness": 0.8999999999999998
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.80 because the output provides relevant information about configuring permissions in XWiki, but it includes multiple source links and examples that do not directly address the specific configuration question, reducing the overall relevancy.",
-    "Faithfulness": "The score is 0.85 because the actual output inaccurately claims that XWiki uses roles to manage permissions and mentions a Public Role for default access, which are not specified in the retrieval context.",
-    "ContextualPrecision": "The score is 0.67 because relevant nodes in retrieval context, such as the first node discussing 'rights inheritance and administration features' and the fourth node explaining 'XWiki's permission system', are ranked higher. However, irrelevant nodes like the second node focusing on 'parent/child relationship and Nested Pages', and the third node about 'string formatting and OpenID Connect properties', should be ranked lower to improve the score.",
-    "ContextualRecall": "The score is 0.75 because while the retrieval context nodes provide a strong foundation for understanding the general process of setting rights (nodes 4 and 6), specific details about all teams viewing all spaces and each team editing their own space are not directly covered.",
-    "CustomContextualRelevancy": "The retrieval context mentions rights inheritance and setting rights at different levels, but lacks specific details on creating groups for each team and setting space-level rights as outlined in the expected output."
+    "AnswerRelevancy": "The score is 0.80 because the response largely addresses the configuration question effectively, but it includes multiple irrelevant source links that do not directly contribute to solving the problem, preventing a higher score.",
+    "Faithfulness": "The score is 0.67 because the actual output incorrectly states that a new page inherits rights from its parent space by default, whereas the retrieval context indicates that this inheritance can be overridden. Additionally, the actual output claims that wiki-wide rights take precedence over space-specific rights, which contradicts the retrieval context stating that page-level permissions override wiki-wide permissions.",
+    "ContextualPrecision": "The score is 0.67 because the relevant nodes in the retrieval context, such as the first node mentioning 'rights inheritance and administration features' and the fourth node discussing XWiki's 'powerful and granular permission system', are ranked higher. However, the second node, which discusses the 'Nested Spaces concept' and naming conflicts, and the third node about 'string formatting and OpenID Connect properties', are ranked higher than the relevant fourth node, affecting the score. Additionally, the fifth node about 'creation of spaces and pages' is ranked above the relevant sixth node, which explains 'wiki wide rights, granular page level rights'.",
+    "ContextualRecall": "The score is 0.88 because most of the expected output sentences are well-supported by nodes in the retrieval context, particularly regarding setting rights at different levels and managing access through groups. However, there is a lack of specific information in the retrieval context about adjusting rights for additional teams or spaces, which slightly impacts the score.",
+    "CustomContextualRelevancy": "The retrieval context mentions setting rights at different levels and rights inheritance, which partially aligns with the expected output's steps on setting wiki-wide and space-level rights and inheriting rights for child pages. However, it lacks specific details about creating groups for each team and setting specific rights for XWikiAllGroup and team groups.",
+    "Correctness": "The actual output closely follows the expected output with precise steps for creating groups, setting wiki-wide and space-specific rights, and inheriting rights. It adds helpful details like checking priority and testing permissions, which do not impact factual correctness."
   },
   "question_language": "en",
   "expected_answer_language": "en",

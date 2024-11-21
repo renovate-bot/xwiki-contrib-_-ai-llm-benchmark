@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.35,
+  "overall_score": 0.30702494230617144,
   "individual_scores": {
-    "AnswerRelevancy": 0.75,
+    "AnswerRelevancy": 0.6428571428571429,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.1992925109798859
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.75 because the response mostly addresses the question about file upload restrictions, but it includes multiple irrelevant source links that do not directly relate to the query, preventing a higher score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'language preferences and translations in XWiki', which does not relate to configuring file upload restrictions. The second node talks about 'various administrative applications and features in XWiki', but again, it does not address file upload settings. The third node is about 'PDF export customization using CSS and XSL', which is not relevant to the topic of file upload restrictions. The fourth node describes 'various macros and their functionalities in XWiki', none of which pertain to file upload restrictions. The fifth node contains 'links to images and references', offering no information about file upload settings. Lastly, the sixth node is similar to the fifth, with 'links to images and references', unrelated to file upload configurations.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any of the nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to configuring MIME types or attachment size limits as described in the expected output."
+    "AnswerRelevancy": "The score is 0.64 because the actual output contains multiple irrelevant statements in the form of source links that do not address the specific question about restricting file uploads, which lowers the score. However, the relevant parts of the answer do provide some useful information related to the question, maintaining the score above average.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'language preferences and translations in XWiki', which is unrelated to file upload restrictions. The second node describes 'various XWiki applications and their functionalities', without mentioning file upload settings. The third node is about 'CSS and XSL transformations for PDF exports', which does not relate to file upload restrictions. The fourth node lists 'various XWiki macros and their descriptions', none of which are relevant to configuring file upload restrictions. The fifth node contains 'image links and references', which do not provide information about configuring file upload settings. Similarly, the sixth node consists of 'image links and references', which are unrelated to the topic of file upload restrictions.",
+    "ContextualRecall": "The score is 0.00 because none of the expected output content regarding file type or size restrictions, MIME type configuration, or attachment size settings is supported by information in the nodes in retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about configuring MIME types or setting maximum upload size as described in the expected output.",
+    "Correctness": "The actual output mentions steps for image and PDF upload restrictions but lacks specific configuration details like MIME type settings and exact steps for setting max upload size as in the expected output. It also introduces additional content about plugins and customization not present in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

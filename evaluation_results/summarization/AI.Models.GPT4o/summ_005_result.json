@@ -1,8 +1,8 @@
 {
-  "score": 0.8,
-  "reason": "The score is 0.80 because the summary accurately reflects the original text without contradictions or unnecessary additions. However, it lacks completeness as it does not address all questions that the original text can answer, such as the availability of a feed for all Blog posts.",
+  "score": 0.5,
+  "reason": "The score is 0.50 because the summary contains a contradiction regarding the requirement of application installation for watchlist modifications, which is not mentioned in the original text. Additionally, it includes extra information about editing a specific page for RSS feeds that is not present in the original text. Furthermore, the summary fails to answer a question about the availability of a feed for all modified pages, which the original text can address.",
   "score_breakdown": {
-    "Alignment": 1.0,
+    "Alignment": 0.5,
     "Coverage": 0.8
   },
   "input_language": "en",

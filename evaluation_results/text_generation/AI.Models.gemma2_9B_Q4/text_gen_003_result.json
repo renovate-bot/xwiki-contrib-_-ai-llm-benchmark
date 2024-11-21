@@ -1,6 +1,6 @@
 {
   "score": 0.9,
-  "reason": "The Actual Output effectively adapts the concept of photosynthesis for a younger audience, using simple language and relatable metaphors like 'little food factories.' It maintains coherence and fluency throughout. While it introduces additional elements like 'air and water,' which aren't in the Expected Output, it still aligns well with the Input prompt and Expected Output.",
+  "reason": "The Actual Output effectively adapts the concept of photosynthesis for a younger audience by using relatable analogies, addressing the Input prompt. It maintains coherence and fluency, though it adds more detail than the Expected Output, which is more concise.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

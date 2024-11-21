@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.7363333333333333,
+  "overall_score": 0.6484931667977797,
   "individual_scores": {
-    "AnswerRelevancy": 0.84,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.8571428571428571,
+    "Faithfulness": 0.7777777777777778,
     "ContextualPrecision": 0.6666666666666666,
-    "ContextualRecall": 0.875,
-    "CustomContextualRelevancy": 0.3
+    "ContextualRecall": 1.0,
+    "CustomContextualRelevancy": 0.3,
+    "Correctness": 0.28937169919937694
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.84 because the answer largely addresses the question about configuring permissions in XWiki, but it includes multiple irrelevant source links that don't directly contribute to solving the problem, preventing a higher score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.67 because relevant nodes in the retrieval context, such as the first node discussing 'rights inheritance and administration features' and the fourth node providing information about XWiki's permission system, are ranked higher than some irrelevant nodes. However, the second node, focusing on 'the parent/child relationship and the introduction of Nested Pages', and the third node, discussing 'string formatting and OpenID Connect properties', are ranked higher than the fourth relevant node, which affects the score.",
-    "ContextualRecall": "The score is 0.88 because most sentences in the expected output are well-supported by the nodes in the retrieval context. For instance, sentences 1 and 2 are supported by nodes 6 and 4 respectively, while sentence 4 is supported by node 1. However, the lack of information regarding adjusting rights for additional teams or spaces, as noted in the unsupportive reason, slightly impacts the score.",
-    "CustomContextualRelevancy": "The retrieval context mentions setting rights at different levels and rights inheritance, but lacks specific details on creating groups for each team and setting rights for XWikiAllGroup or individual team spaces."
+    "AnswerRelevancy": "The score is 0.86 because the response largely addresses the question about configuring permissions in XWiki, but includes sources that do not directly relate to the specific task of configuring permissions, which slightly detracts from its relevance.",
+    "Faithfulness": "The score is 0.78 because the actual output incorrectly claims that actions can be allowed/denied at the wiki-wide level and page level by selecting 'Space', which contradicts the retrieval context that does not specify selecting 'Space' for these levels.",
+    "ContextualPrecision": "The score is 0.67 because relevant nodes in the retrieval context, such as the first node discussing 'rights inheritance and administration features' and the fourth node explaining 'the permission system in XWiki', are ranked higher. However, irrelevant nodes like the second node focusing on 'parent/child relationship and the Nested Pages concept' and the third node about 'string formatting and user identifiers in OpenID Connect' are ranked higher than some relevant nodes, which prevents a higher score.",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is well-supported by the nodes in the retrieval context. Fantastic job ensuring all details are covered!",
+    "CustomContextualRelevancy": "The retrieval context mentions rights inheritance and setting rights at different levels, but lacks specific steps like creating groups for each team or setting space-level rights as detailed in the expected output.",
+    "Correctness": "The actual output incorrectly suggests setting both view and edit permissions to Deny at the page level, conflicting with the expected output's guidance of allowing view access to all and restricting edit access to each team's space. It also introduces unnecessary steps not present in the expected output, like setting deny permissions for creating pages outside of assigned spaces."
   },
   "question_language": "en",
   "expected_answer_language": "en",

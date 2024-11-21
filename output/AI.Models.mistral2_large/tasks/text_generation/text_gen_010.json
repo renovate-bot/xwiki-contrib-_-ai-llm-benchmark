@@ -2,12 +2,12 @@
   "id": "text_gen_010",
   "prompt": "Adapt the following text to a more technical audience:\n\nThe human brain is a complex organ that controls all functions of the body, interprets information from the outside world, and embodies the essence of the mind and soul.",
   "expected_answer": "The human brain is a highly intricate and sophisticated organ responsible for regulating and coordinating various physiological processes, processing and interpreting sensory information from the external environment, and serving as the biological substrate for cognitive functions, consciousness, and subjective experiences.",
-  "ai_answer": "The human brain is a intricate biological structure that regulates all physiological functions, processes sensory information from external environments, and encapsulates the cognitive and emotional aspects of consciousness and identity. It is composed of approximately 86 billion neurons and an equal number of non-neuronal cells, forming complex networks that facilitate synaptic transmission and neural plasticity. These intricate circuits underlie the brain's capacity to govern motor functions, coordinate sensory perception, and execute cognitive processes, including learning, memory, emotion, and higher-order reasoning. Furthermore, the brain's oscillatory activity and dynamic connectivity patterns are thought to give rise to subjective experiences and consciousness, making it the substrate for what is colloquially referred to as the mind and soul.",
+  "ai_answer": "The human brain is an intricate and sophisticated organ responsible for the regulation of all somatic functions, the processing and interpretation of extrinsic sensory data, and the manifestation of cognitive faculties and consciousness.\n\nHere's a breakdown with more technical terms:\n\n- \"Intricate and sophisticated organ\" instead of \"complex organ\"\n- \"Regulation of all somatic functions\" instead of \"controls all functions of the body\"\n- \"Processing and interpretation of extrinsic sensory data\" instead of \"interprets information from the outside world\"\n- \"Manifestation of cognitive faculties and consciousness\" instead of \"embodies the essence of the mind and soul\"\n\nThese revisions use more formal and scientific language to convey the same information in a manner suitable for a technical audience.",
   "sources": null,
   "usage": {
     "prompt_tokens": 51,
-    "completion_tokens": 162,
-    "total_tokens": 213
+    "completion_tokens": 171,
+    "total_tokens": 222
   },
   "average_power_draw": null,
   "energy_consumption": null,

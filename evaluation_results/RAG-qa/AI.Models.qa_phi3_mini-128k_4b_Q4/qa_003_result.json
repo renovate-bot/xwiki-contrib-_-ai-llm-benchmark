@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.990909090909091,
+  "overall_score": 0.6851851851851851,
   "individual_scores": {
-    "AnswerRelevancy": 0.9545454545454546,
-    "Faithfulness": 1.0,
+    "AnswerRelevancy": 0.1111111111111111,
+    "Faithfulness": 1,
     "ContextualPrecision": 1.0,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 1.0
+    "CustomContextualRelevancy": 1.0,
+    "Correctness": 0.0
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.95 because the response is highly relevant to the input, addressing the issue of enabling notifications for one's own actions in XWiki. However, it includes vague suggestions like 'Check User Permissions' and 'Review Application Settings' that do not directly solve the problem, preventing a perfect score.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Everything aligns perfectly with the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first node states: 'By default, one don\u2019t receive notification about one\u2019s own activity... You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings.' This directly addresses the input question. The second node mentions: 'By default, you won\u2019t receive notifications for actions done by yourself. This can be changed by switching off the Own event filter.' This is relevant to the expected output. Irrelevant nodes, such as the third node discussing administrators' capabilities, the fourth node focusing on RSS feeds, and the fifth node providing general notification methods, are all ranked lower.",
-    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is perfectly supported by the nodes in the retrieval context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context contains all the information from the expected output, including the default behavior of not receiving notifications about one's own activity unless explicitly targeted, and the ability to change this setting in the 'Advanced filtering options' of the notification settings in the user profile."
+    "AnswerRelevancy": "The score is 0.11 because the output contains numerous irrelevant statements that do not address the question about enabling notifications for one's own actions in XWiki. The presence of these unrelated details significantly detracts from the relevancy of the response.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because the relevant nodes in the retrieval context are ranked higher than the irrelevant nodes. The first node mentions that 'By default, one don\u2019t receive notification about one\u2019s own activity... You have the ability to disable this filter in the \"Advanced filtering options\" section of your own notification settings,' which directly relates to the expected output. The second node states 'By default, you won\u2019t receive notifications for actions done by yourself. This can be changed by switching off the Own event filter,' aligning with the expected output about disabling the filter. The irrelevant nodes, such as the third node that focuses on administrators configuring notifications and does not mention user-specific settings, are ranked lower. Great job on the perfect ranking!",
+    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is perfectly supported by the information in the nodes in the retrieval context. Great job!",
+    "CustomContextualRelevancy": "The retrieval context fully contains the expected answer's information about default notification settings and the ability to change them in the advanced filtering options of the user profile.",
+    "Correctness": "The actual output contains no relevant information about notifications settings or disabling filters as mentioned in the expected output."
   },
   "question_language": "en",
   "expected_answer_language": "en",

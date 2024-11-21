@@ -1,6 +1,6 @@
 {
-  "score": 0.0,
-  "reason": "The Actual Output does not address the Input prompt about a space adventure story and is incoherent with numerous unrelated topics. It does not align with the Expected Output of a story about astronauts exploring a new planet.",
+  "score": 0.9,
+  "reason": "The Actual Output is a creative story about a space adventure, aligning well with the Input prompt. It is coherent and fluent, with a logical flow and grammatical correctness. It expands on the Expected Output by detailing the exploration of a new planet, Elysium VI, by astronauts, specifically focusing on Amelia Green's journey. The story exceeds the simplicity of the Expected Output by adding depth and complexity, but remains relevant and consistent with the theme of space exploration.",
   "prompt_language": "en",
   "expected_answer_language": "en",
   "generated_text_language": "en"

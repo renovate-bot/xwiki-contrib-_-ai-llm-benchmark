@@ -2,7 +2,7 @@
   "id": "qa_026",
   "prompt": "Puis-je personnaliser les champs de profil utilisateur qui sont remplis \u00e0 partir du fournisseur OpenID Connect dans XWiki?\nJe souhaite mapper des champs de profil utilisateur suppl\u00e9mentaires de mon fournisseur OpenID Connect aux propri\u00e9t\u00e9s de l'utilisateur XWiki. Comment puis-je y parvenir?",
   "expected_answer": "Oui, vous pouvez personnaliser les champs de profil utilisateur qui sont remplis \u00e0 partir du fournisseur OpenID Connect en les mappant dans le fichier `xwiki.properties`.\n\nPour mapper des champs de profil utilisateur suppl\u00e9mentaires, utilisez la propri\u00e9t\u00e9 `oidc.user.mapping`. Voici un exemple de la fa\u00e7on de mapper des propri\u00e9t\u00e9s personnalis\u00e9es:\n\n```\n# oidc.user.mapping=myxproperty1=${oidc.user.subject}\n# oidc.user.mapping=myxproperty2=myprefix-${oidc.user.subject}\n```\n\nRemplacez `myxproperty1` et `myxproperty2` par les noms de propri\u00e9t\u00e9 d'utilisateur XWiki r\u00e9els, et `${oidc.user.subject}` par la variable appropri\u00e9e en fonction des donn\u00e9es fournies par votre fournisseur OpenID Connect.\n\nApr\u00e8s avoir configur\u00e9 les mappages, enregistrez le fichier `xwiki.properties` et red\u00e9marrez XWiki pour appliquer les modifications.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \n\n\nOui, vous pouvez personnaliser les champs de profil utilisateur qui sont remplis \u00e0 partir du fournisseur OpenID Connect dans XWiki. \n\nPour mapper des champs de profil utilisateur suppl\u00e9mentaires de votre fournisseur OpenID Connect aux propri\u00e9t\u00e9s de l'utilisateur XWiki, vous pouvez utiliser les propri\u00e9t\u00e9s de configuration de l'extension OpenID Connect Authenticator. \n\nConsultez la documentation de l'extension pour des instructions d\u00e9taill\u00e9es sur la configuration de ces mappings. Vous y trouverez des informations sur les propri\u00e9t\u00e9s disponibles et les formats de donn\u00e9es accept\u00e9s. \n\n\n",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/OpenID%20Connect/OpenID%20Connect%20Authenticator/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Authentication/ \n\n\nOui, vous pouvez personnaliser les champs de profil utilisateur qui sont remplis \u00e0 partir du fournisseur OpenID Connect dans XWiki. \n\nPour mapper des champs de profil utilisateur suppl\u00e9mentaires de votre fournisseur OpenID Connect aux propri\u00e9t\u00e9s de l'utilisateur XWiki, vous pouvez utiliser les propri\u00e9t\u00e9s de configuration de l'extension OpenID Connect Authenticator. \n\nConsultez la documentation de l'extension pour plus d'informations sur la configuration des mappings entre les champs OpenID Connect et les champs de profil utilisateur XWiki. \n\nVoici quelques points importants \u00e0 retenir :\n\n* **Nom des propri\u00e9t\u00e9s:** Les noms des propri\u00e9t\u00e9s doivent correspondre aux noms des champs de profil utilisateur XWiki et des champs OpenID Connect.\n* **Valeurs par d\u00e9faut:** Vous pouvez d\u00e9finir des valeurs par d\u00e9faut pour les champs de profil utilisateur XWiki si le fournisseur OpenID Connect ne fournit pas de valeurs pour ces champs.\n* **Tests:** Apr\u00e8s avoir modifi\u00e9 les propri\u00e9t\u00e9s de configuration, assurez-vous de tester l'int\u00e9gration pour vous assurer que les champs de profil utilisateur sont correctement mapp\u00e9s.\n\n\n\n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -47,12 +47,12 @@
   ],
   "usage": {
     "prompt_tokens": 2662,
-    "completion_tokens": 109,
-    "total_tokens": 2771
+    "completion_tokens": 218,
+    "total_tokens": 2880
   },
-  "average_power_draw": 192.3164154589372,
-  "energy_consumption": 489.0924623644663,
-  "energy_per_input_token": 0.16666977759906842,
-  "energy_per_output_token": 0.4166744439976711,
-  "energy_per_total_token": 0.17650395610410188
+  "average_power_draw": 150.59148148148154,
+  "energy_consumption": 905.9863983488086,
+  "energy_per_input_token": 0.28250277466442425,
+  "energy_per_output_token": 0.7062569366610606,
+  "energy_per_total_token": 0.31457861053778075
 }

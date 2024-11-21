@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.2690909090909091,
+  "overall_score": 0.3156164790497742,
   "individual_scores": {
-    "AnswerRelevancy": 0.5454545454545454,
-    "Faithfulness": 0.8,
+    "AnswerRelevancy": 0.6666666666666666,
+    "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.22703220763197868
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.55 because the response includes some relevant information about authenticating users with access tokens, but it is diluted by multiple irrelevant links to documentation and extension pages that do not directly address the question.",
-    "Faithfulness": "The score is 0.80 because the actual output inaccurately claims that the security module of XWiki handles user authentication, while the retrieval context clarifies that the Authentication API is not implemented yet and the old core code is still in use.",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'upgrading and downgrading XWiki', which is unrelated to 'user authentication with access tokens'. The second node talks about 'features related to users and rights in XWiki', but does not mention 'token-based authentication'. The third node covers 'security modules and APIs', but explicitly states that 'the Authentication API is not yet implemented', which does not support 'the use of access tokens for authentication'. The fourth node is about 'managing rights and permissions in XWiki', which is not directly related to 'authenticating users with access tokens'. Finally, the fifth node provides 'a table of rights constants and their descriptions', which does not relate to 'the use of access tokens for authentication'.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be matched to any nodes in the retrieval context, indicating a complete lack of relevant information.",
-    "CustomContextualRelevancy": "The retrieval context lacks any information about token-based authentication or JWT, which are central to the expected answer."
+    "AnswerRelevancy": "The score is 0.67 because the response partially addresses the question about authenticating users with access tokens, but includes several irrelevant links that do not directly pertain to the topic, thus preventing a higher score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'upgrading XWiki' and lacks any mention of 'user authentication with access tokens'. The second node focuses on 'features of the Administration Application' without addressing 'authentication with access tokens'. The third node, while mentioning 'user authentication and access authorization', does not specifically cover 'authentication using access tokens'. The fourth node is about 'managing rights and user profiles', which is not related to 'authenticating users with access tokens'. Lastly, the fifth node provides 'a table of rights constants', which is unrelated to the topic of 'authenticating users with access tokens'.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output could be attributed to any nodes in the retrieval context, as the context lacks any mention of token-based authentication, JWT specifics, or related configuration details.",
+    "CustomContextualRelevancy": "The retrieval context lacks any information about token-based authentication, JWT, or the specific configurations mentioned in the expected output.",
+    "Correctness": "The actual output mentions authentication with access tokens in XWiki and involves configuration, but lacks specific details about JWT requirements, Ed25519 key, and the process outlined in the expected output. It also misses the limitations of the authenticator."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

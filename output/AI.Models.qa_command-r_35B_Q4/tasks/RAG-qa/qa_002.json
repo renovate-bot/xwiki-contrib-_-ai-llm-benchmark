@@ -2,7 +2,7 @@
   "id": "qa_002",
   "prompt": "Why am I not receiving any notifications in XWiki.",
   "expected_answer": "Make sure that notifications are enabled. You can enable them by setting the `notifications.enabled` setting in `xwiki.properties` to `true`. Further, ensure that you're subscribed to the pages or users you want to receive notifications for. You can watch a page, a page and its children, or an entire wiki. To watch a location, all you need is to go to that place, and then click on the \"alert\" menu (represented by a bell) and enable the desired notifications. To follow a user, if you go to the profile of an user, using the User Index for example, you can see decide to watching a user. It means you will receive all notifications about events triggered by this user. In your user profile, if you go to the \"network\" tab, you can see the list of users you are watching and the events that have been performed by them.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nThere could be several reasons why you're not receiving any notifications in XWiki:\n\n1. Notification Settings: Check if you have the correct notification settings configured in your XWiki profile. Ensure that you have selected the appropriate options to receive notifications and that your preferred communication channels (e-mail, pop-ups, etc.) are correctly set up.\n\n2. Email Configuration: If notifications are being sent via email, verify that the email address associated with your XWiki account is correct and that you're checking the right inbox. Sometimes, emails might end up in spam or promotions folders, so make sure to check those folders as well.\n\n3. Server Configuration: In some cases, server-related configurations might block notification deliveries. Contact your IT or system administrator to ensure that the server settings allow notifications from XWiki and that there are no firewalls or network rules blocking the notifications.\n\n4. Activity on the Platform: If you're expecting notifications for specific activities, make sure that those activities are happening on the platform. For example, if you're not receiving any notifications for new page creations, check if anyone has created a new page recently.\n\n5. Technical Issues or Bugs: There might be rare instances where XWiki experiences technical issues or bugs related to notification delivery. In such cases, it's recommended to contact XWiki support or the community forums to see if others are experiencing similar problems and if there's a known solution or workaround.\n\n6. Network Problems: Temporary network glitches or connectivity issues could also impact notification receipt. Ensure your internet connection is stable and functioning properly.\n\nTry these troubleshooting steps, and if none of them resolve the issue, it's recommended to seek assistance from XWiki support channels or the community forums where you might find specific solutions or guidance related to your situation.",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nThere are several ways you can receive notifications in XWiki. First, make sure you have the correct settings configured by going to the \"settings\" of the Notifications Application. If you're not seeing any notifications, it's possible that you have yet to enable any notification types. \n\nYou can do this by accessing the notifications menu and clicking on the different bells associated with each application. For instance, enabling the bell icon next to \"Blog\" will notify you whenever a blog post is published. \n\nAdditionally, ensure that you don't have any filters enabled that may be blocking incoming notifications. Filters for one's own events or read events, if activated, would prevent notifications from being received.\n\nIf you're still not receiving notifications after adjusting the settings, it could be because of the XWiki version you're using. The behavior of notification settings has changed between versions. \n\nFor XWiki <15.5, new users are set to watch the entire wiki by default but no application types are enabled for notifications. Users will need to manually enable the applications they want to receive notifications for. \n\nWhereas for XWiki 15.5+, nothing is watched by default for new users and all application types are enabled. So unless a user specifically chooses to watch something, they won't receive any notifications. \n\nLastly, make sure you're not blocking notifications in your browser. Some browsers allow you to block or limit which websites can show notifications. Check your browser settings to ensure XWiki isn't being blocked.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 17,
-    "completion_tokens": 363,
-    "total_tokens": 380
+    "prompt_tokens": 2546,
+    "completion_tokens": 309,
+    "total_tokens": 2855
   },
-  "average_power_draw": 76.82748399246695,
-  "energy_consumption": 3697.1587290963257,
-  "energy_per_input_token": 3.9990900260641706,
-  "energy_per_output_token": 9.997725065160427,
-  "energy_per_total_token": 9.729365076569279
+  "average_power_draw": 57.48809874361976,
+  "energy_consumption": 7577.183428133883,
+  "energy_per_input_token": 2.28331578367753,
+  "energy_per_output_token": 5.708289459193825,
+  "energy_per_total_token": 2.65400470337439
 }

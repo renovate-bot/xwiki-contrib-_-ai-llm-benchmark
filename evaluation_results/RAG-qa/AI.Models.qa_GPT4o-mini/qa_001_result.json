@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.5333333333333334,
+  "overall_score": 0.45158911416588193,
   "individual_scores": {
-    "AnswerRelevancy": 0.8571428571428571,
+    "AnswerRelevancy": 0.8518518518518519,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0.30952380952380953,
     "ContextualRecall": 0.5,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.04815902361963014
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.86 because the main content effectively addresses the issue with the 'Bell' icon in XWiki, but it includes multiple irrelevant source links that do not contribute to solving the problem.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 0.31 because the relevant nodes in the retrieval context are ranked lower than several irrelevant nodes. For instance, the first node discusses 'installation instructions and prerequisites for extensions,' which does not relate to enabling notifications in XWiki. Similarly, the second node 'addresses issues with configurable applications and administration access,' not related to the bell icon issue. However, the third node provides 'information about the Notifications Application and mentions receiving notifications in the top bar,' which is relevant. Additionally, the seventh node 'mentions that administrators can configure notification settings and edit the xwiki.properties file,' which is also pertinent to the input query.",
-    "ContextualRecall": "The score is 0.50 because while the retrieval context does mention configuring notifications in a general sense (node 7), it lacks specific details about setting 'notifications.enabled' in 'xwiki.properties', which is crucial for full alignment with the expected output.",
-    "CustomContextualRelevancy": "The retrieval context does not mention the 'notifications.enabled' setting in 'xwiki.properties', which is crucial for enabling notifications as outlined in the expected output."
+    "AnswerRelevancy": "The score is 0.85 because the response is mostly relevant to the issue of the missing 'Bell' icon in XWiki, but it includes repeated irrelevant statements about source links that do not directly address the problem.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.31 because the relevant nodes in the retrieval context are ranked lower than several irrelevant nodes. For instance, the first node discusses 'installation instructions and prerequisites', which is not relevant to fixing the bell issue, and the second node is about 'access and error messages related to configurable applications', which also does not pertain to the problem. The third node, which is relevant as it mentions the 'Notifications Application' and the bell icon, is ranked after these irrelevant nodes. Similarly, the seventh node, which is relevant because it discusses 'configuring notification settings in the administration', is also ranked lower than irrelevant nodes like the fourth node, which only describes 'the content of the Alert menu and notifications' without addressing the bell issue.",
+    "ContextualRecall": "The score is 0.50 because while the 7th node in the retrieval context mentions 'notifications' and 'xwiki.properties', there is no specific mention of enabling notifications via 'xwiki.properties', which is crucial for fully supporting the expected output.",
+    "CustomContextualRelevancy": "The retrieval context does not mention enabling notifications via the `xwiki.properties` file, which is the key information in the expected output.",
+    "Correctness": "The actual output does not mention enabling notifications via `notifications.enabled` in `xwiki.properties`, and introduces unrelated troubleshooting steps."
   },
   "question_language": "en",
   "expected_answer_language": "en",

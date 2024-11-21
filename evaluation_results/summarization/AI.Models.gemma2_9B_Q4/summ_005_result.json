@@ -1,8 +1,8 @@
 {
-  "score": 0.9090909090909091,
-  "reason": "The score is 0.91 because the summary is mostly accurate with only minor discrepancies, such as including extra information about a Watchlist application requirement not mentioned in the original text.",
+  "score": 0.6666666666666666,
+  "reason": "The score is 0.67 because the summary includes extra information not found in the original text, such as the requirement of a Watchlist application for the Watchlist RSS feed and specific details about the 'Main.WebRss' page and example implementations. However, there are no contradictions, indicating a generally accurate summary with some unnecessary additions.",
   "score_breakdown": {
-    "Alignment": 0.9090909090909091,
+    "Alignment": 0.6666666666666666,
     "Coverage": 1.0
   },
   "input_language": "en",

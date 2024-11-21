@@ -2,7 +2,7 @@
   "id": "qa_011",
   "prompt": "Die Glocke oben rechts ist nicht verf\u00fcgbar, auch nicht wenn die Erweiterung \"Alert Notification\" installiert ist.",
   "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen in Ihrem Wiki aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nIt seems like you're having trouble with the notification bell in XWiki.  \n\nThe bell icon in the top right corner is part of the **Notifications Application**.  \n\nEven if you have the \"Alert Notification\" extension installed, the bell icon might not be visible if:\n\n* **The Notifications Application is not installed:** Make sure you have the \"Notifications Application\" extension enabled in your XWiki instance.\n* **Permissions:** You might not have the necessary permissions to view notifications. Check your user permissions.\n* **Configuration:** There might be a configuration issue preventing the bell icon from displaying. Check the XWiki administration settings for the Notifications Application.\n\n\n\nLet me know if you have any other questions. \n",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Notifications \n\n\nIt seems like you're having trouble with the notification bell in XWiki.  \n\nThe provided search results indicate that the bell is part of the \"Notifications Application\" extension.  \n\nHere's what we can gather:\n\n* **The \"Notifications Application\" is essential for notifications:**  The bell icon is associated with this extension.\n* **Installation is necessary:** The extension needs to be installed for the bell to appear.\n* **Check for installation:** Make sure the \"Notifications Application\" extension is properly installed in your XWiki instance.\n\n\nLet me know if you have any other questions or need further assistance. \n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -55,12 +55,12 @@
   ],
   "usage": {
     "prompt_tokens": 3392,
-    "completion_tokens": 148,
-    "total_tokens": 3540
+    "completion_tokens": 130,
+    "total_tokens": 3522
   },
-  "average_power_draw": 201.40349820788535,
-  "energy_consumption": 679.8786526157695,
-  "energy_per_input_token": 0.18072266151402697,
-  "energy_per_output_token": 0.4518066537850675,
-  "energy_per_total_token": 0.192056116558127
+  "average_power_draw": 165.71975975975977,
+  "energy_consumption": 686.3980812341387,
+  "energy_per_input_token": 0.1846645362480868,
+  "energy_per_output_token": 0.46166134062021696,
+  "energy_per_total_token": 0.1948887226672739
 }

@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.9436363636363637,
+  "overall_score": 0.8465926893259722,
   "individual_scores": {
-    "AnswerRelevancy": 0.8181818181818182,
+    "AnswerRelevancy": 0.9090909090909091,
     "Faithfulness": 1.0,
     "ContextualPrecision": 1.0,
-    "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 0.9
+    "ContextualRecall": 0.5,
+    "CustomContextualRelevancy": 0.9,
+    "Correctness": 0.7704652268649241
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.82 because the answer mostly addresses the question about enabling notifications for personal actions, but includes links to unrelated sources, which slightly detract from its relevance.",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job on maintaining perfect alignment with the retrieval context!",
-    "ContextualPrecision": "The score is 1.00 because the relevant node in the first rank directly addresses the input question by mentioning 'By default, you won&#x27;t receive notifications for actions done by yourself. This can be changed by switching off the Own event filter,' which is exactly what the input is about. All irrelevant nodes, starting from the second node, discuss topics like 'RSS feeds and general notification settings,' 'a list of links and topics related to notifications,' 'various notification preferences macros,' 'notification email settings and developer options,' and 'following users and default watch settings,' none of which specifically address the issue of receiving notifications for one's own actions. Great job on getting it spot on!",
-    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context. Great job!",
-    "CustomContextualRelevancy": "The retrieval context confirms that by default, users do not receive notifications for their own actions and mentions the option to change this setting, aligning closely with the expected output. However, it lacks specific mention of the 'Options de filtrage avanc\u00e9es' section."
+    "AnswerRelevancy": "The score is 0.91 because the response is highly relevant and helpful in addressing how to enable notifications for one's own actions. However, it includes a link to XWiki syntax documentation, which is not directly related to the query, slightly affecting the score.",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 1.00 because the relevant node in the retrieval context, which states 'By default, you won\u2019t receive notifications for actions done by yourself. This can be changed by switching off the Own event filter,' is ranked first. This directly addresses the input question about not receiving notifications for one's own activity and how to enable them. Great job on getting it spot on!",
+    "ContextualRecall": "The score is 0.50 because only the first sentence of the expected output is supported by the 1st node in the retrieval context, while the information about disabling the filter in 'Options de filtrage avanc\u00e9es' is not supported by any nodes in the retrieval context.",
+    "CustomContextualRelevancy": "The retrieval context confirms that by default, users do not receive notifications for their own actions and mentions the ability to change this setting, aligning closely with the expected output. However, it doesn't explicitly mention the 'Options de filtrage avanc\u00e9es' section.",
+    "Correctness": "The actual output matches most factual elements of the expected output, such as not receiving notifications for own activity by default and the ability to disable this filter. However, the actual output provides additional procedural details not present in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

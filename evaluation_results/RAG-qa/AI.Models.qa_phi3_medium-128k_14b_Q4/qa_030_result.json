@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.35,
+  "overall_score": 0.33429012576248934,
   "individual_scores": {
-    "AnswerRelevancy": 0.75,
+    "AnswerRelevancy": 0.7333333333333333,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.27240742124160283
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.75 because the response addresses the main question about configuring spaces in XWiki, but it includes multiple irrelevant source links that do not directly contribute to solving the problem.",
+    "AnswerRelevancy": "The score is 0.73 because the answer addresses the configuration question about XWiki, but it includes multiple irrelevant source links that do not contribute to solving the problem.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node provides 'XML metadata about a page, which is unrelated to configuring access permissions in XWiki.' The second node discusses 'sending representations to modify resources, which does not relate to access control settings for spaces in XWiki.' The third node is about 'managing comments, which is unrelated to setting up team-specific access permissions in XWiki.' The fourth node describes 'how pages and spaces are created in XWiki, but does not provide information on configuring access rights for teams.' The fifth node lists 'actions needed after running a migrator, which is not relevant to configuring access permissions in XWiki.' Lastly, the sixth node discusses 'configuration display options in XWiki, which does not directly relate to setting up access permissions for team spaces.'",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context, indicating a complete lack of relevant information in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information related to setting access rights or managing teams in XWiki as described in the expected output."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input query. The first node discusses 'a specific page in XWiki and its metadata', which does not relate to configuring access rights for team spaces. The second node talks about 'modifying resources using XML and HTTP methods', which is unrelated to setting access permissions in XWiki. The third node is about 'managing comments and attachments on XWiki pages', which does not pertain to access control configurations. The fourth node explains 'the concept of spaces and pages in XWiki', but does not provide information on configuring access rights for team spaces. The fifth node discusses 'actions needed after running a migrator and changes in XWiki APIs', which is not relevant to setting access permissions. Finally, the sixth node covers 'configuration display options in XWiki', which does not directly relate to setting access rights for team spaces.",
+    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output can be attributed to any nodes in the retrieval context, indicating a complete lack of relevant information.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about creating groups, setting rights at the wiki or space level, or inheriting rights for child pages as described in the expected output.",
+    "Correctness": "The actual output lacks specific steps like creating groups and setting rights at the wiki level. It introduces 'scope' and 'Contr\u00f4le d'acc\u00e8s' parameters not mentioned in the expected output, and doesn't mention inheriting rights for child pages."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

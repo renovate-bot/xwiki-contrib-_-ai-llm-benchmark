@@ -2,7 +2,7 @@
   "id": "qa_021",
   "prompt": "La cloche en haut \u00e0 droite n'est pas disponible, m\u00eame lorsque l'extension \"Notification d'alerte\" est install\u00e9e.",
   "expected_answer": "Assurez-vous que les notifications sont activ\u00e9es dans votre wiki. Vous pouvez les activer en d\u00e9finissant la propri\u00e9t\u00e9 `notifications.enabled` dans `xwiki.properties` sur `true`.",
-  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nBased on the provided search results, it seems like there might be a problem with the \"Notifications Application\" extension.  \n\nHere's what the documents suggest:\n\n* **The bell icon you see is likely from the \"Notifications Application\" extension, not the \"Alerts Application\".**  \n* **The \"Notifications Application\" extension needs to be installed and enabled for the bell icon to appear.**\n* **Double-check that the \"Notifications Application\" extension is installed and active in your XWiki instance.**\n\n\nLet me know if you have any other questions or need further assistance! \n",
+  "ai_answer": "Sources: https://extensions.xwiki.org/xwiki/bin/view/Extension/Notifications%20Application/ \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/XWikiSyntax/ \n\n\nThe bell icon in the top right corner is not available, even when the \"Alert Notifications\" extension is installed. \n\n\nBased on the provided search results, it seems like you're encountering an issue with the \"Notifications Application\" extension, not the \"Alerts Application\". \n\nThe search results indicate that the bell icon is part of the \"Notifications Application\".  It's possible that:\n\n* **The \"Notifications Application\" extension is not installed:**  Make sure you have installed the \"Notifications Application\" extension.\n* **The extension is not enabled:**  Even if installed, the extension might not be enabled. Check your XWiki extensions settings.\n* **There's a configuration issue:** There might be a problem with the extension's configuration. Review the extension's settings to ensure everything is set up correctly.\n\n\n\nLet me know if you have any other questions. \n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -55,12 +55,12 @@
   ],
   "usage": {
     "prompt_tokens": 3166,
-    "completion_tokens": 122,
-    "total_tokens": 3288
+    "completion_tokens": 184,
+    "total_tokens": 3350
   },
-  "average_power_draw": 200.66126495726496,
-  "energy_consumption": 578.3130313719399,
-  "energy_per_input_token": 0.16661280074097953,
-  "energy_per_output_token": 0.4165320018524488,
-  "energy_per_total_token": 0.17588595844645374
+  "average_power_draw": 155.70840277777774,
+  "energy_consumption": 835.7438502470816,
+  "energy_per_input_token": 0.23048644518672962,
+  "energy_per_output_token": 0.5762161129668241,
+  "energy_per_total_token": 0.2494757761931587
 }

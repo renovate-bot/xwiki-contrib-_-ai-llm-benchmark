@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.8466666666666667,
+  "overall_score": 0.8271119936311105,
   "individual_scores": {
     "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
     "ContextualPrecision": 1.0,
-    "ContextualRecall": 0.3333333333333333,
-    "CustomContextualRelevancy": 0.9
+    "ContextualRecall": 0.46153846153846156,
+    "CustomContextualRelevancy": 0.9,
+    "Correctness": 0.6011335002482012
   },
   "reasons": {
     "AnswerRelevancy": "The score is 1.00 because the response is perfectly relevant and directly addresses the question about configuring group synchronization between XWiki and an OpenID Connect provider. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 1.00 because all relevant nodes are ranked higher than irrelevant nodes. The first three nodes provide detailed information on configuring group synchronization, such as setting the `oidc.groups.claim`, `oidc.groups.mapping`, and `oidc.groups.separator` properties. The fourth node, ranked lower, is more about general information on authenticating with an OpenID Connect provider, and the fifth node discusses authentication management without specific details on group synchronization.",
-    "ContextualRecall": "The score is 0.33 because only specific configuration details from the expected output, such as setting the 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping' properties, are supported by nodes in the retrieval context. General instructions and introductory steps are not directly supported by the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context includes configuring 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping', matching the expected answer. However, it lacks explicit instructions to save and restart XWiki."
+    "Faithfulness": "The score is 1.00 because there are no contradictions. Great job maintaining perfect alignment with the retrieval context!",
+    "ContextualPrecision": "The score is 1.00 because all relevant nodes in the retrieval context are ranked higher than irrelevant nodes. The first three nodes provide detailed information about configuring the `oidc.groups.claim` and `oidc.groups.mapping` properties, which are essential for synchronizing groups between XWiki and an OpenID Connect provider. The irrelevant nodes, ranked fourth and fifth, only offer general information about OpenID Connect and authentication management, which do not directly address group synchronization.",
+    "ContextualRecall": "The score is 0.46 because while nodes in the retrieval context provide detailed information on configuring properties like `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping` (supporting sentences 3, 4, and 5), they lack instructions for file handling and specific replacements (unsupporting sentences 1, 2, 6, and 7).",
+    "CustomContextualRelevancy": "The retrieval context contains detailed information about configuring group synchronization, including setting the `oidc.groups.claim`, `oidc.groups.separator`, and `oidc.groups.mapping` properties, which aligns closely with the expected output. However, it lacks explicit instructions on locating and editing the `xwiki.properties` file and restarting the XWiki instance.",
+    "Correctness": "The actual output includes key steps like setting `oidc.groups.claim` and using `oidc.groups.mapping`, but lacks specific instruction on opening and saving the `xwiki.properties` file, and omits the example claim and separator details."
   },
   "question_language": "en",
   "expected_answer_language": "en",

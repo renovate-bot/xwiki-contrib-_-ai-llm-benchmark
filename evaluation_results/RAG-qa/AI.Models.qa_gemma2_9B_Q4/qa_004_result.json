@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.75,
+  "overall_score": 0.608561647961182,
   "individual_scores": {
     "AnswerRelevancy": 1.0,
     "Faithfulness": 1.0,
-    "ContextualPrecision": 0.45,
+    "ContextualPrecision": 0,
     "ContextualRecall": 1.0,
-    "CustomContextualRelevancy": 0.3
+    "CustomContextualRelevancy": 0.3,
+    "Correctness": 0.351369887767092
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the output is perfectly relevant and directly addresses the question about disabling notifications in XWiki. Great job!",
-    "Faithfulness": "The score is 1.00 because there are no contradictions. Everything aligns perfectly with the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.45 because relevant nodes in the retrieval context are ranked lower than some irrelevant nodes. The first node discusses 'how to get a notification RSS feed and manage notification settings', but it does not address disabling automatic notifications, which is the main concern. The third node focuses on 'filtering notifications' without explaining how to disable automatic notifications. The fourth node is about 'enabling or disabling email notifications through configuration files', which is not directly related to the input query. The sixth node talks about 'overriding notification templates and installing extensions', which is unrelated to disabling automatic notifications. However, the second and fifth nodes are relevant as they mention 'Default Watch Settings' and 'Choosing the default auto-watched mode', directly addressing the issue of managing and disabling automatic notifications.",
-    "ContextualRecall": "The score is 1.00 because every sentence in the expected output is fully supported by the nodes in the retrieval context, demonstrating a perfect alignment between the information provided and the expected details. Great job!",
-    "CustomContextualRelevancy": "The retrieval context mentions default watch settings and user profile settings but lacks details on automatic page watching and custom filters as described in the expected output."
+    "AnswerRelevancy": "The score is 1.00 because the response perfectly addresses the question about disabling notifications in XWiki without any irrelevant information. Great job!",
+    "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'getting a notification RSS feed and enabling/disabling notification types', but it does not address 'how to disable notifications for pages you are not interested in'. The second node talks about 'following a user and default watch settings', which does not provide information on 'how to disable notifications for unwanted pages'. Subsequent nodes similarly fail to address the specific need of disabling notifications for unwanted pages, focusing instead on unrelated topics such as 'filtering notifications for hidden pages', 'enabling/disabling email notifications', 'administrative settings for notifications', and 'overriding default notification templates'.",
+    "ContextualRecall": "The score is 1.00 because all sentences in the expected output are fully supported by the nodes in the retrieval context, demonstrating a perfect match. Great job!",
+    "CustomContextualRelevancy": "The retrieval context mentions default notification settings and user profile settings but lacks details on major modifications automatically adding pages to watchlist and deleting custom filters.",
+    "Correctness": "The actual output provides a general guide to notification settings in XWiki but lacks specific mention of 'Automatic page watching' and 'Custom Filters' as stated in the expected output. It does not address the automatic addition of major modification pages to the watchlist or the deletion of filters created that way."
   },
   "question_language": "en",
   "expected_answer_language": "en",

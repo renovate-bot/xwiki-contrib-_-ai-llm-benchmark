@@ -2,7 +2,7 @@
   "id": "qa_029",
   "prompt": "Comment puis-je refuser le droit de script \u00e0 un administrateur d'espace?",
   "expected_answer": "Ceci n'est malheureusement pas pris en charge dans XWiki, les droits qui sont impliqu\u00e9s par le droit d'administrateur ne peuvent pas \u00eatre refus\u00e9s.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \n\n\nIl n'est pas en effet possible de \u00ab d\u00e9sactiver \u00bb compl\u00e8tqueement les r\u00e8gles de s\u00e9curit\u00e9, mais vous pouvez contourner ce probl\u00e8me. Voici quelques options :\n\n1. **Changer le r\u00f4le du groupe d\u2019utilisateurs** : Si l\u2019administrateur fait partie d'un groupe avec un grand nombre d'utilisateurs et que vous ne souhaitez pas d\u00e9sactiver la r\u00e8gle \u00e0 l'\u00e9chelle de tous les utilisateurs, envisagez de d\u00e9placer l'administrateur vers un autre groupe. Cela permettra de s\u2019assurer qu'il n\u2019est plus sujet aux r\u00e8gles sp\u00e9cifiques de ce groupe d'utilisateurs.\n\n2. **Cr\u00e9er une nouvelle r\u00e8gle** : Au lieu de supprimer la r\u00e8gle existante, vous pouvez en cr\u00e9er une nouvelle qui s'applique uniquement \u00e0 l\u2019administrateur et configurer ses param\u00e8tres selon vos besoins. Pour ce faire, allez dans \u00ab R\u00e8gles \u00bb > \u00ab Cr\u00e9er une r\u00e8gle \u00bb, puis d\u00e9finissez-la pour qu'elle ne soit applicable que pour cet utilisateur sp\u00e9cifique en choisissant son nom d\u2019utilisateur dans la section \"Pour les utilisateurs\".\n\n3. **Utiliser des param\u00e8tres par d\u00e9faut** : Si vous avez besoin de permettre \u00e0 l'administrateur d'ex\u00e9cuter certains scripts, et qu'il est important pour votre serveur, envisagez plut\u00f4t d\u2019utiliser la fonctionnalit\u00e9 \"Param\u00e8tres par d\u00e9faut\". Cela permet de remplacer les r\u00e8gles pour des utilisateurs sp\u00e9cifiques.\n\nIl est essentiel de comprendre que toutes ces modifications peuvent affecter l'int\u00e9grit\u00e9 et la s\u00e9curit\u00e9 du serveur, alors assurez-vous qu\u2019elles sont n\u00e9cessaires et r\u00e9alis\u00e9es en toute s\u00e9curit\u00e9.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/I18N \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \n\n\nPour modifier les droits de scripts pour un admin d\u2019espace, vous pouvez suivre les \u00e9tapes ci-dessous:\n'''markdown\n1. Allez sur [Administration] -> [Pr\u00e9f\u00e9rences].\n2. Cliquez sur l'onglet [Access Rights], puis s\u00e9lectionnez la rubrique [Permission types].\n3. Localisez le \"Script\" permission dans la liste des autorisations disponibles et changez-le en 'DENY'.\n4. Appliquer les modifications pour que tous les utilisateurs de l\u2019espace soient affect\u00e9s \u00e0 cette nouvelle r\u00e8gle.",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 28,
-    "completion_tokens": 430,
-    "total_tokens": 458
+    "prompt_tokens": 3658,
+    "completion_tokens": 139,
+    "total_tokens": 3797
   },
-  "average_power_draw": 232.2170718954248,
-  "energy_consumption": 1301.8954279269608,
-  "energy_per_input_token": 1.1803222374677795,
-  "energy_per_output_token": 2.9508055936694486,
-  "energy_per_total_token": 2.8425664365217487
+  "average_power_draw": 282.7718253968255,
+  "energy_consumption": 865.291679988305,
+  "energy_per_input_token": 0.21602588440601797,
+  "energy_per_output_token": 0.5400647110150449,
+  "energy_per_total_token": 0.2278882486142494
 }

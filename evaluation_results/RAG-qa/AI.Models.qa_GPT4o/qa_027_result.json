@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.6576923076923077,
+  "overall_score": 0.5808312516392465,
   "individual_scores": {
-    "AnswerRelevancy": 1.0,
+    "AnswerRelevancy": 0.8333333333333334,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0.25,
     "ContextualRecall": 0.5384615384615384,
-    "CustomContextualRelevancy": 0.5
+    "CustomContextualRelevancy": 0.5,
+    "Correctness": 0.3631926380406078
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 1.00 because the output is perfectly relevant and directly addresses the question about configuring group synchronization between XWiki and an OpenID Connect provider, with no irrelevant statements.",
+    "AnswerRelevancy": "The score is 0.83 because the main content effectively addresses the process of configuring group synchronization between XWiki and an OpenID Connect provider. However, the inclusion of source links and a general suggestion to consult documentation slightly detracts from the direct relevance to the specific configuration process.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.25 because the relevant node in the retrieval context, which 'directly addresses group synchronization, mentioning the use of the 'oidc.groups.mapping' property', is ranked fourth. However, it should be ranked higher than the irrelevant nodes. For example, the first node 'discusses authentication management and OpenID Connect endpoints, but does not address group synchronization or the specific configuration steps needed for it', making it less relevant to the input question.",
-    "ContextualRecall": "The score is 0.54 because while the 4th node in the retrieval context provides detailed information on configuring group synchronization, including properties like 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping', it lacks specific instructions found in the expected output, such as locating and editing the 'xwiki.properties' file, replacing placeholder values, and saving changes.",
-    "CustomContextualRelevancy": "The retrieval context mentions group synchronization and mapping using 'oidc.groups.mapping', but lacks details on 'oidc.groups.claim' and 'oidc.groups.separator' configurations found in the expected output."
+    "ContextualPrecision": "The score is 0.25 because the relevant node in the retrieval context, which is the fourth node, mentions 'group synchronization and the use of the `oidc.groups.mapping` property', directly addressing the input query. However, it is ranked lower than three irrelevant nodes. The first node discusses 'authentication management class and OpenID Connect provider endpoints', the second node talks about 'container authentication and various authentication methods', and the third node is about 'domain-based authentication and session cookie configuration', none of which relate to group synchronization. This misordering results in a lower score.",
+    "ContextualRecall": "The score is 0.54 because while the 4th node in the retrieval context provides detailed information on configuring 'oidc.groups.claim', 'oidc.groups.separator', and 'oidc.groups.mapping', it lacks references to locating and editing the 'xwiki.properties' file, replacing placeholders with actual values, and saving and restarting XWiki, which are essential steps in the expected output.",
+    "CustomContextualRelevancy": "The retrieval context mentions group synchronization using 'oidc.groups.mapping' and 'xwiki.properties' but lacks details on 'oidc.groups.claim' and 'oidc.groups.separator' configurations found in the expected output.",
+    "Correctness": "The actual output addresses group claims and mappings but uses a different property `oidc.userinfoclaims` instead of `oidc.groups.claim`. It lacks details on configuring `oidc.groups.separator` and saving changes, which are present in the expected output."
   },
   "question_language": "fr",
   "expected_answer_language": "fr",

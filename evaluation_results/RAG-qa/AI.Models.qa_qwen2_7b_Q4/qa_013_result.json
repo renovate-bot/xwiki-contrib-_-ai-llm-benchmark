@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.3555555555555555,
+  "overall_score": 0.3423377803423145,
   "individual_scores": {
-    "AnswerRelevancy": 0.7777777777777778,
+    "AnswerRelevancy": 0.8181818181818182,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.23584486387206885
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.78 because the answer addresses the question about enabling notifications for one's own actions, but it includes irrelevant source links that do not directly relate to the query.",
+    "AnswerRelevancy": "The score is 0.82 because the response is mostly relevant to the question about enabling notifications for one's own actions, but it includes source links that do not directly address the issue, which slightly detracts from the overall relevancy.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'customizing page templates, internationalization, and other features unrelated to notification settings.' The second node is about 'administrating wiki features and does not mention notification settings or user activity.' The third node covers 'importing documents, sharing pages, and other functionalities but not about notifications or user activity settings.' This results in irrelevant nodes being ranked higher, leading to a low score.",
-    "ContextualRecall": "The score is 0.00 because none of the sentences in the expected output are supported by any nodes in the retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about notification settings or user activity filters, which are key elements in the expected output."
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'customization of page templates and internationalization', which is unrelated to notifications or user activity settings. The second node is about 'administrating wiki features' and does not mention notifications or user activity settings. The third node covers 'importing documents, sharing pages, and other unrelated features', without any mention of notification settings or user activity. Therefore, no relevant nodes are ranked higher than irrelevant nodes.",
+    "ContextualRecall": "The score is 0.00 because none of the expected output sentences can be linked to any nodes in the retrieval context, as the context lacks information on notifications, user activity, or related settings.",
+    "CustomContextualRelevancy": "The retrieval context does not contain any information about notification settings or user profile options, which are present in the expected output.",
+    "Correctness": "The actual output contains some relevant information about enabling notifications but misses key facts such as the default setting of not receiving notifications unless specified and the option to disable the filter in 'Erweiterten Filteroptionen'. It includes additional steps and details not present in the expected output, leading to discrepancies."
   },
   "question_language": "de",
   "expected_answer_language": "de",

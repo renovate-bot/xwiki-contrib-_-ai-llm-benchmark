@@ -1,18 +1,20 @@
 {
-  "overall_score": 0.3826086956521739,
+  "overall_score": 0.34622268820496704,
   "individual_scores": {
-    "AnswerRelevancy": 0.9130434782608695,
+    "AnswerRelevancy": 0.9259259259259259,
     "Faithfulness": 1.0,
     "ContextualPrecision": 0,
     "ContextualRecall": 0.0,
-    "CustomContextualRelevancy": 0.0
+    "CustomContextualRelevancy": 0.0,
+    "Correctness": 0.1514102033038764
   },
   "reasons": {
-    "AnswerRelevancy": "The score is 0.91 because the response is highly relevant to the question about denying script rights to a domain administrator, but it includes source links that do not directly address the question.",
+    "AnswerRelevancy": "The score is 0.93 because the response is highly relevant and effectively addresses the input question about denying script rights to a domain administrator. However, the inclusion of a source link, which is not directly relevant, slightly detracts from a perfect score.",
     "Faithfulness": "The score is 1.00 because there are no contradictions, indicating perfect alignment between the actual output and the retrieval context. Great job!",
-    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'form validation' and lacks any mention of 'script rights or XWiki admin rights.' The second node focuses on 'templates and page creation in XWiki,' which does not relate to 'script rights or admin rights.' The third node talks about 'a custom right check class and configuration,' but it does not address 'denying script rights to a space admin in XWiki.'",
+    "ContextualPrecision": "The score is 0.00 because all nodes in the retrieval context are irrelevant to the input. The first node discusses 'form validation and JavaScript patterns', which does not relate to denying script rights in XWiki. The second node covers 'template providers and page creation', which is unrelated to script rights or administrative permissions. The third node mentions 'a custom right check and configuration', but it does not address the specific issue of denying script rights to a space administrator.",
     "ContextualRecall": "The score is 0.00 because the expected output sentence about the limitation of admin rights in XWiki is not supported by any information in the nodes in retrieval context.",
-    "CustomContextualRelevancy": "The retrieval context does not contain any information about XWiki not supporting the refusal of rights implied by the admin right."
+    "CustomContextualRelevancy": "The retrieval context does not mention anything about admin rights or their implications, which is the main focus of the expected output.",
+    "Correctness": "The actual output provides steps for configuring permissions in XWiki, which is unrelated to the expected output. The expected output states a limitation in XWiki about admin rights, which is not addressed in the actual output."
   },
   "question_language": "de",
   "expected_answer_language": "de",

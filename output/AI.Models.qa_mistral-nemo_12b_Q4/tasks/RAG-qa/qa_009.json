@@ -2,7 +2,7 @@
   "id": "qa_009",
   "prompt": "How can I deny script right to a space administrator?",
   "expected_answer": "This is unfortunately not supported in XWiki, rights that are implied by admin right cannot be denied.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ContentOrganization/NestedPagesMigration/ \n\n\nTo deny script rights (also known as \"Run Scripts\" permission) to a SharePoint site collection administrator, you can follow these steps:\n\n1. **Remove the user from the Site Collection Administrators group:**\n   - Go to your SharePoint site's settings gear icon > Site permissions.\n   - Under 'Site administrators', click on the three dots (...) next to the user you want to remove.\n   - Click 'Remove user from group'.\n\n2. **Deny the \"Run Scripts\" permission:**\n   - After removing the user from the Site Collection Administrators group, they will be added to the 'Contribute' permission level by default.\n   - To deny the \"Run Scripts\" permission specifically, you'll need to create a new permission level or modify an existing one (other than 'Full Control' or 'Site Collection Administrator'):\n     - Go to your SharePoint site's settings gear icon > Site permissions.\n     - Under 'Permission levels', click on 'Edit'.\n     - Scroll down to the 'Advanced permissions' section and uncheck the box next to \"Run scripts (SharePoint Designer, Workflow Automator, etc.)\".\n     - Click 'Create' or 'Save'.\n\n3. **Assign the new permission level to the user:**\n   - Go back to the 'Site administrators' list.\n   - Click on the three dots (...) next to the user you want to modify permissions for.\n   - Click 'Edit user permissions'.\n   - Select the new permission level you created/modified (ensure it doesn't include \"Run scripts\").\n   - Click 'OK'.\n\nNow, the specified user will no longer have the right to run scripts in your SharePoint site collection.",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/AdminGuide/Access%20Rights/Permission%20types/ \nhttps://extensions.xwiki.org/xwiki/bin/view/Extension/Security%20Module \nhttps://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/ContentOrganization/NestedPagesMigration/ \n\n\nTo deny the \"Script\" right to a space administrator in XWiki:\n\n1. Go to the Space Administration page for the specific space (e.g., `http://<your-xwiki-url>/xwiki/bin/view/SpaceAdmin/<space-name>`).\n2. Click on \"Access Rights\".\n3. Under the \"Script\" right, change the permission from \"Allow\" to \"Deny\". This will revoke the script execution privilege for the space administrator.\n4. Click \"Save\" to apply the changes.\n\nHere's how it looks in markdown format:\n\n```markdown\n1. Go to Space Administration: `http://<your-xwiki-url>/xwiki/bin/view/SpaceAdmin/<space-name>`\n2. Click on \"Access Rights\"\n3. Change \"Script\" permission from \"Allow\" to \"Deny\"\n4. Click \"Save\"\n```",
   "sources": [
     {
       "collection_id": "Eval",
@@ -46,13 +46,13 @@
     }
   ],
   "usage": {
-    "prompt_tokens": 14,
-    "completion_tokens": 344,
-    "total_tokens": 358
+    "prompt_tokens": 2706,
+    "completion_tokens": 178,
+    "total_tokens": 2884
   },
-  "average_power_draw": 195.5951111111111,
-  "energy_consumption": 938.9649469138251,
-  "energy_per_input_token": 1.07433060287623,
-  "energy_per_output_token": 2.6858265071905754,
-  "energy_per_total_token": 2.6228071142844276
+  "average_power_draw": 196.15768253968253,
+  "energy_consumption": 769.6595680733786,
+  "energy_per_input_token": 0.24425882833176094,
+  "energy_per_output_token": 0.6106470708294023,
+  "energy_per_total_token": 0.2668722496787027
 }

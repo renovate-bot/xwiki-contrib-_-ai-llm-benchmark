@@ -2,7 +2,7 @@
   "id": "qa_012",
   "prompt": "Ich erhalte keine Benachrichtigungen.",
   "expected_answer": "Stellen Sie sicher, dass Benachrichtigungen aktiviert sind. Sie k\u00f6nnen sie aktivieren, indem Sie die Einstellung `notifications.enabled` in `xwiki.properties` auf `true` setzen. Stellen Sie au\u00dferdem sicher, dass Sie den Seiten oder Benutzern, f\u00fcr die Sie Benachrichtigungen erhalten m\u00f6chten, folgen. Sie k\u00f6nnen einer Seite, einer Seite und ihren Unterseiten oder einem gesamten Wiki folgen. Um einem Ort zu folgen, m\u00fcssen Sie nur dorthin gehen und dann auf das Men\u00fc \"Benachrichtigung\" (dargestellt durch eine Glocke) klicken und die gew\u00fcnschten Benachrichtigungen aktivieren. Um einem Benutzer zu folgen, k\u00f6nnen Sie, wenn Sie auf das Profil eines Benutzers gehen, beispielsweise \u00fcber das Benutzerindex, entscheiden, dem Benutzer zu folgen. Das bedeutet, dass Sie alle Benachrichtigungen \u00fcber Ereignisse erhalten, die von diesem Benutzer ausgel\u00f6st wurden. In Ihrem Benutzerprofil k\u00f6nnen Sie in der Registerkarte \"Netzwerk\" die Liste der Benutzer anzeigen, denen Sie folgen, und die von ihnen durchgef\u00fchrten Ereignisse.",
-  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \n\n\nPlease provide me with the user's question so I can assist you.  \n\nI can access and process the information from the documents you provided, but I need to know what the user is asking to give a relevant answer. \n",
+  "ai_answer": "Sources: https://www.xwiki.org/xwiki/bin/view/Documentation/UserGuide/Features/Skins \n\n\nPlease provide me with the user's question so I can assist you.  \n",
   "sources": [
     {
       "collection_id": "Eval",
@@ -31,12 +31,12 @@
   ],
   "usage": {
     "prompt_tokens": 2606,
-    "completion_tokens": 49,
-    "total_tokens": 2655
+    "completion_tokens": 18,
+    "total_tokens": 2624
   },
-  "average_power_draw": 199.8497264957265,
-  "energy_consumption": 285.9928193733264,
-  "energy_per_input_token": 0.10481686618043849,
-  "energy_per_output_token": 0.26204216545109627,
-  "energy_per_total_token": 0.1077185760351512
+  "average_power_draw": 178.65838383838383,
+  "energy_consumption": 200.3301963360141,
+  "energy_per_input_token": 0.07556778435911508,
+  "energy_per_output_token": 0.18891946089778772,
+  "energy_per_total_token": 0.07634534921342001
 }
